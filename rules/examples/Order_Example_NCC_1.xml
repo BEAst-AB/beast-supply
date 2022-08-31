@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ubl:Order  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+            xmlns:n0="urn:oasis:names:specification:ubl:schema:xsd:CommonSignatureComponents-2"
+            xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
+            xmlns:sac="urn:oasis:names:specification:ubl:schema:xsd:SignatureAggregateComponents-2"
+            xmlns:sbc="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2"
+            xmlns:ccts-cct="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2"
+            xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+	<?SchematronPath ../../rules/sch/schematron1.sch?>
+	<?SchematronPath ../../rules/sch/schematron2.sch?>
+	<?Name PEPPOL BIS Beast Order?>
+	<?DocumentTerm ubl:Order?>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order:3</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:ordering:3</cbc:ProfileID>
+
+	<cbc:ID>40622705</cbc:ID>
+	<cbc:IssueDate>2020-05-14</cbc:IssueDate>
+	<cbc:IssueTime>08:29:39</cbc:IssueTime>
+	<cbc:Note>TransportationInformation</cbc:Note>
+	<cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+	<cbc:CustomerReference>4016</cbc:CustomerReference>
+	<cbc:AccountingCost>7106095</cbc:AccountingCost>
+	<cac:Contract>
+		<cbc:ID>12</cbc:ID>
+	</cac:Contract>
+	<cac:BuyerCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">5566134929</cbc:EndpointID>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0007">5566134929</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>NCC Sverige AB</cbc:Name>
+			</cac:PartyName>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>SE556613492901</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>NCC Sverige AB</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Name>Dummy User</cbc:Name>
+				<cbc:Telephone>+46701234567</cbc:Telephone>
+				<cbc:ElectronicMail>dummy.user@ncc.se</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:BuyerCustomerParty>
+	<cac:SellerSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">7350012280000</cbc:EndpointID>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0088">7350012280000</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>Hilti Svenska AB</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Sveavägen 159</cbc:StreetName>
+				<cbc:CityName>Stockholm</cbc:CityName>
+				<cbc:PostalZone>113 46</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Hilti Svenska AB</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:SellerSupplierParty>
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">5566134929</cbc:EndpointID>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0007">5566134929</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>NCC Sverige AB</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Herrjärva torg 4</cbc:StreetName>
+				<cbc:CityName>Solna</cbc:CityName>
+				<cbc:PostalZone>170 67</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>SE556613492901</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>NCC Sverige AB</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+	<cac:Delivery>
+		<cac:DeliveryLocation>
+			<cbc:Name>Rudsberget hus 1-7</cbc:Name>
+			<cac:Address>
+				<cbc:StreetName>Elverumsgatan 7</cbc:StreetName>
+				<cbc:CityName>Karlstad</cbc:CityName>
+				<cbc:PostalZone>65221</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:Address>
+		</cac:DeliveryLocation>
+		<cac:Shipment>
+			<cbc:ID>NA</cbc:ID>
+			<cac:TransportHandlingUnit>
+				<cbc:ShippingMarks>Test nr 1 NCC - CGI BTX - Hilti</cbc:ShippingMarks>
+			</cac:TransportHandlingUnit>
+		</cac:Shipment>
+	</cac:Delivery>
+	<cac:DeliveryTerms>
+		<cbc:ID>LLK</cbc:ID>
+		<cac:DeliveryLocation>
+			<cbc:ID>NCC Kontoret</cbc:ID>
+		</cac:DeliveryLocation>
+	</cac:DeliveryTerms>
+
+	<cac:OrderLine>
+		<cbc:Note>CustomerRemarks</cbc:Note>
+		<cac:LineItem>
+			<cbc:ID>2</cbc:ID>
+			<cbc:Quantity unitCode="EA">1.00</cbc:Quantity>
+			<cbc:LineExtensionAmount currencyID="SEK">878.30</cbc:LineExtensionAmount>
+			<cbc:AccountingCost>7106095</cbc:AccountingCost>
+			<cac:Delivery>
+				<cac:RequestedDeliveryPeriod>
+					<cbc:StartDate>2020-05-16</cbc:StartDate>
+				</cac:RequestedDeliveryPeriod>
+			</cac:Delivery>
+			<cac:Price>
+				<cbc:PriceAmount currencyID="SEK">878.30</cbc:PriceAmount>
+			</cac:Price>
+			<cac:Item>
+				<cbc:Name>Kit S-DS01B 3,5x25 M (10000)</cbc:Name>
+				<cac:SellersItemIdentification>
+					<cbc:ID>2038819</cbc:ID>
+				</cac:SellersItemIdentification>
+				<cac:CommodityClassification>
+					<cbc:ItemClassificationCode listID="ZZZ" listVersionID="NA" name="BEAST:DeliveryMarkInstruction">Leveransdel 1</cbc:ItemClassificationCode>
+				</cac:CommodityClassification>
+				<cac:CommodityClassification>
+					<cbc:ItemClassificationCode listID="ZZZ" listVersionID="NA" name="BEAST:OfferNumber">12</cbc:ItemClassificationCode>
+				</cac:CommodityClassification>
+			</cac:Item>
+		</cac:LineItem>
+	</cac:OrderLine>
+	<cac:OrderLine>
+		<cbc:Note>CustomerRemarks</cbc:Note>
+		<cac:LineItem>
+			<cbc:ID>1</cbc:ID>
+			<cbc:Quantity unitCode="EA">2.00</cbc:Quantity>
+			<cbc:LineExtensionAmount currencyID="SEK">299.98</cbc:LineExtensionAmount>
+			<cbc:AccountingCost>7106095</cbc:AccountingCost>
+			<cac:Delivery>
+				<cac:RequestedDeliveryPeriod>
+					<cbc:StartDate>2020-05-16</cbc:StartDate>
+				</cac:RequestedDeliveryPeriod>
+			</cac:Delivery>
+			<cac:Price>
+				<cbc:PriceAmount currencyID="SEK">149.99</cbc:PriceAmount>
+			</cac:Price>
+			<cac:Item>
+				<cbc:Name>Stativplatta PA 940 1/4"</cbc:Name>
+				<cac:SellersItemIdentification>
+					<cbc:ID>310990</cbc:ID>
+				</cac:SellersItemIdentification>
+				<cac:CommodityClassification>
+					<cbc:ItemClassificationCode listID="ZZZ" listVersionID="NA" name="BEAST:DeliveryMarkInstruction">Leveransdel 1</cbc:ItemClassificationCode>
+				</cac:CommodityClassification>
+				<cac:CommodityClassification>
+					<cbc:ItemClassificationCode listID="ZZZ" listVersionID="NA" name="BEAST:OfferNumber">12</cbc:ItemClassificationCode>
+				</cac:CommodityClassification>
+			</cac:Item>
+		</cac:LineItem>
+	</cac:OrderLine>
+</ubl:Order>

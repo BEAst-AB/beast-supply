@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ubl:Order  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+            xmlns:n0="urn:oasis:names:specification:ubl:schema:xsd:CommonSignatureComponents-2"
+            xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
+            xmlns:sac="urn:oasis:names:specification:ubl:schema:xsd:SignatureAggregateComponents-2"
+            xmlns:sbc="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2"
+            xmlns:ccts-cct="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2"
+            xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+	<?SchematronPath ../../rules/sch/schematron1.sch?>
+	<?SchematronPath ../../rules/sch/schematron2.sch?>
+	<?Name PEPPOL BIS Beast Order?>
+	<?DocumentTerm ubl:Order?>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order:3</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:ordering:3</cbc:ProfileID>
+
+	<cbc:ID>INK200030924</cbc:ID>
+	<cbc:IssueDate>2020-12-07</cbc:IssueDate>
+	<cbc:OrderTypeCode>220</cbc:OrderTypeCode>
+	<cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+	<cbc:AccountingCost>Project ABC</cbc:AccountingCost>
+	<cac:BuyerCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">5560999202</cbc:EndpointID>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0007">5560999202</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>Peab Sverige AB</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Box 1282</cbc:StreetName>
+				<cbc:CityName>Ängelholm</cbc:CityName>
+				<cbc:PostalZone>262 24</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>SE556099920201</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Peab Sverige AB</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">5560999202</cbc:CompanyID>
+				<cac:RegistrationAddress>
+					<cbc:CityName>Ängelholm</cbc:CityName>
+					<cac:Country>
+						<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:RegistrationAddress>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Name>XXXX Namnsson</cbc:Name>
+				<cbc:Telephone>+46725334986</cbc:Telephone>
+				<cbc:ElectronicMail>Namn.Namnsson@peab.se</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:BuyerCustomerParty>
+	<cac:SellerSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">5560129206</cbc:EndpointID>
+			<cac:PostalAddress>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Ahlsell Sverige AB</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:ElectronicMail>noreply@ahlsell.se</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:SellerSupplierParty>
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cac:PartyName>
+				<cbc:Name>Peab Sverige AB</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Box 1282</cbc:StreetName>
+				<cbc:CityName>Ängelholm</cbc:CityName>
+				<cbc:PostalZone>262 24</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>SE556099920201</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Peab Sverige AB</cbc:RegistrationName>
+				<cac:RegistrationAddress>
+					<cac:Country>
+						<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:RegistrationAddress>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+	<cac:Delivery>
+		<cac:DeliveryLocation>
+			<cbc:Name>Peab Sverige AB</cbc:Name>
+			<cac:Address>
+				<cbc:StreetName>Bergslagsvägen 45 BillerudKorsnäs P</cbc:StreetName>
+				<cbc:CityName>Skärblacka</cbc:CityName>
+				<cbc:PostalZone>61730</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:Address>
+		</cac:DeliveryLocation>
+		<cac:DeliveryParty>
+			<cac:PartyName>
+				<cbc:Name>Peab Sverige AB</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Bergslagsvägen 45 BillerudKorsnäs P</cbc:StreetName>
+				<cbc:CityName>Skärblacka</cbc:CityName>
+				<cbc:PostalZone>61730</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:Contact>
+				<cbc:Telephone>0725334986</cbc:Telephone>
+				<cbc:ElectronicMail>Namn.Namnsson@peab.se</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:DeliveryParty>
+	</cac:Delivery>
+
+	<cac:OrderLine>
+		<cac:LineItem>
+			<cbc:ID>1</cbc:ID>
+			<cbc:Quantity unitCode="PR">1.00</cbc:Quantity>
+			<cbc:LineExtensionAmount currencyID="SEK">000.43</cbc:LineExtensionAmount>
+			<cbc:AccountingCost>4453710</cbc:AccountingCost>
+			<cac:Delivery>
+				<cac:RequestedDeliveryPeriod>
+					<cbc:StartDate>2020-12-08</cbc:StartDate>
+				</cac:RequestedDeliveryPeriod>
+			</cac:Delivery>
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:AllowanceChargeReasonCode>60</cbc:AllowanceChargeReasonCode>
+				<cbc:MultiplierFactorNumeric>0.00</cbc:MultiplierFactorNumeric>
+				<cbc:Amount currencyID="SEK">0.00</cbc:Amount>
+				<cbc:BaseAmount currencyID="SEK">0.00</cbc:BaseAmount>
+			</cac:AllowanceCharge>
+			<cac:Price>
+				<cbc:PriceAmount currencyID="SEK">000.43</cbc:PriceAmount>
+				<cbc:BaseQuantity unitCode="PR">1.00</cbc:BaseQuantity>
+			</cac:Price>
+			<cac:Item>
+				<cbc:Name>SKYDDSSKO SOLIDGEAR REVOLUTION INFINITY S3 SVART/GRÖN STL 43</cbc:Name>
+				<cac:SellersItemIdentification>
+					<cbc:ID>552696</cbc:ID>
+				</cac:SellersItemIdentification>
+				<cac:CommodityClassification>
+					<cbc:ItemClassificationCode listID="ZZZ" listVersionID="NA" name="BEAST:CustomerReferenceNumber">4872</cbc:ItemClassificationCode>
+				</cac:CommodityClassification>
+			</cac:Item>
+		</cac:LineItem>
+	</cac:OrderLine>
+</ubl:Order>

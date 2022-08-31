@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<StandardBusinessDocument xmlns="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader">
+  <StandardBusinessDocumentHeader>
+    <HeaderVersion>1.0</HeaderVersion>
+    <Sender>
+      <Identifier Authority="iso6523-actorid-upis">0007:5561063529</Identifier>
+    </Sender>
+    <Receiver>
+      <Identifier Authority="iso6523-actorid-upis">0007:5566134929</Identifier>
+    </Receiver>
+    <DocumentIdentification>
+      <Standard>urn:oasis:names:specification:ubl:schema:xsd:Invoice-2</Standard>
+      <TypeVersion>2.1</TypeVersion>
+      <InstanceIdentifier>9732051f-4e5c-4860-b253-7762d325b79c</InstanceIdentifier>
+      <Type>Invoice</Type>
+      <CreationDateAndTime>2020-12-08T14:50:43Z</CreationDateAndTime>
+    </DocumentIdentification>
+    <BusinessScope>
+      <Scope>
+        <Type>DOCUMENTID</Type>
+        <InstanceIdentifier>urn:oasis:names:specification:ubl:schema:xsd:Invoice-2::Invoice##urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0::2.1</InstanceIdentifier>
+      </Scope>
+      <Scope>
+        <Type>PROCESSID</Type>
+        <InstanceIdentifier>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</InstanceIdentifier>
+      </Scope>
+    </BusinessScope>
+  </StandardBusinessDocumentHeader>
+  <Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:oasis:names:specification:ubl:schema:xsd:CoreComponentParameters-2" xmlns:ccts-cct="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:sdt="urn:oasis:names:specification:ubl:schema:xsd:SpecializedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2">
+    <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+    <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+    <cbc:ID>736944</cbc:ID>
+    <cbc:IssueDate>2020-12-08</cbc:IssueDate>
+    <cbc:DueDate>2021-01-07</cbc:DueDate>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:Note>. För att söka upp och granska fakturaunderlag Gå till  internetsida    www . dklbc . seKundnummer: 7000</cbc:Note>
+    <cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+    <cbc:BuyerReference>7313009-2610</cbc:BuyerReference>
+    <cac:OrderReference>
+      <cbc:ID>n/a</cbc:ID>
+    </cac:OrderReference>
+    <cac:AccountingSupplierParty>
+      <cac:Party>
+        <cbc:EndpointID schemeID="0007">5561063529</cbc:EndpointID>
+        <cac:PartyIdentification>
+          <cbc:ID>5561063529</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+          <cbc:Name>DKLBC AB</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+          <cbc:AdditionalStreetName>Box 155</cbc:AdditionalStreetName>
+          <cbc:CityName>VALLENTUNA</cbc:CityName>
+          <cbc:PostalZone>18623</cbc:PostalZone>
+          <cac:Country>
+            <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+          </cac:Country>
+        </cac:PostalAddress>
+        <cac:PartyTaxScheme>
+          <cbc:CompanyID>SE556106352901</cbc:CompanyID>
+          <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+          </cac:TaxScheme>
+        </cac:PartyTaxScheme>
+        <cac:PartyTaxScheme>
+          <cbc:CompanyID>Godkänd för F-skatt</cbc:CompanyID>
+          <cac:TaxScheme>
+            <cbc:ID>TAX</cbc:ID>
+          </cac:TaxScheme>
+        </cac:PartyTaxScheme>
+        <cac:PartyLegalEntity>
+          <cbc:RegistrationName>DKLBC AB</cbc:RegistrationName>
+          <cbc:CompanyID>5561063529</cbc:CompanyID>
+        </cac:PartyLegalEntity>
+        <cac:Contact>
+          <cbc:Telephone>0854471800</cbc:Telephone>
+        </cac:Contact>
+      </cac:Party>
+    </cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty>
+      <cac:Party>
+        <cbc:EndpointID schemeID="0007">5566134929</cbc:EndpointID>
+        <cac:PartyIdentification>
+          <cbc:ID>5566134929</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+          <cbc:Name>NCC Sverige AB</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+          <cbc:AdditionalStreetName>FE 610</cbc:AdditionalStreetName>
+          <cbc:CityName>FRÖSÖN</cbc:CityName>
+          <cbc:PostalZone>83875</cbc:PostalZone>
+          <cac:Country>
+            <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+          </cac:Country>
+        </cac:PostalAddress>
+        <cac:PartyLegalEntity>
+          <cbc:RegistrationName>NCC Sverige AB</cbc:RegistrationName>
+          <cbc:CompanyID>5566134929</cbc:CompanyID>
+        </cac:PartyLegalEntity>
+      </cac:Party>
+    </cac:AccountingCustomerParty>
+    <cac:PaymentMeans>
+      <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+      <cac:PayeeFinancialAccount>
+        <cbc:ID>4820114</cbc:ID>
+        <cac:FinancialInstitutionBranch>
+          <cbc:ID>SE:BANKGIRO</cbc:ID>
+        </cac:FinancialInstitutionBranch>
+      </cac:PayeeFinancialAccount>
+    </cac:PaymentMeans>
+    <cac:PaymentMeans>
+      <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+      <cac:PayeeFinancialAccount>
+        <cbc:ID>SE7860000000000596377932</cbc:ID>
+        <cac:FinancialInstitutionBranch>
+          <cbc:ID>HANDSESS</cbc:ID>
+        </cac:FinancialInstitutionBranch>
+      </cac:PayeeFinancialAccount>
+    </cac:PaymentMeans>
+    <cac:PaymentTerms>
+      <cbc:Note>30  Dagar netto</cbc:Note>
+    </cac:PaymentTerms>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="SEK">1017.00</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="SEK">4068.00</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="SEK">1017.00</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:ID>S</cbc:ID>
+          <cbc:Percent>25</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="SEK">0.00</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="SEK">0.00</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:ID>E</cbc:ID>
+          <cbc:Percent>0</cbc:Percent>
+          <cbc:TaxExemptionReason>Exempt from VAT</cbc:TaxExemptionReason>
+          <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+      <cbc:LineExtensionAmount currencyID="SEK">4068.00</cbc:LineExtensionAmount>
+      <cbc:TaxExclusiveAmount currencyID="SEK">4068.00</cbc:TaxExclusiveAmount>
+      <cbc:TaxInclusiveAmount currencyID="SEK">5085.00</cbc:TaxInclusiveAmount>
+      <cbc:PayableAmount currencyID="SEK">5085.00</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine>
+      <cbc:ID>0</cbc:ID>
+      <cbc:Note>Fordon: 482 EPW 590 Schaktbil,  Anbudsvägen 10---
+Delivery reference: 957058
+Delivery date: 2020-12-04</cbc:Note>
+      <cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
+      <cbc:LineExtensionAmount currencyID="SEK">0.00</cbc:LineExtensionAmount>
+      <cac:Item>
+        <cbc:Name>Fordon: 482 EPW 590 Schaktbil,  Anbudsvägen 10---</cbc:Name>
+        <cac:ClassifiedTaxCategory>
+          <cbc:ID>E</cbc:ID>
+          <cbc:Percent>0</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+          </cac:TaxScheme>
+        </cac:ClassifiedTaxCategory>
+      </cac:Item>
+      <cac:Price>
+        <cbc:PriceAmount currencyID="SEK">0</cbc:PriceAmount>
+      </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+      <cbc:ID>1</cbc:ID>
+      <cbc:Note>20-12-04
+Delivery reference: 957058
+Delivery date: 2020-12-04</cbc:Note>
+      <cbc:InvoicedQuantity unitCode="EA">6.00</cbc:InvoicedQuantity>
+      <cbc:LineExtensionAmount currencyID="SEK">4068.00</cbc:LineExtensionAmount>
+      <cac:Item>
+        <cbc:Description>3-axl Schaktbil</cbc:Description>
+        <cbc:Name>3-axl Schaktbil</cbc:Name>
+        <cac:ClassifiedTaxCategory>
+          <cbc:ID>S</cbc:ID>
+          <cbc:Percent>25</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+          </cac:TaxScheme>
+        </cac:ClassifiedTaxCategory>
+      </cac:Item>
+      <cac:Price>
+        <cbc:PriceAmount currencyID="SEK">678.00</cbc:PriceAmount>
+      </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+      <cbc:ID>2</cbc:ID>
+      <cbc:Note>Varuslag:
+Delivery reference: 957058
+Delivery date: 2020-12-04</cbc:Note>
+      <cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
+      <cbc:LineExtensionAmount currencyID="SEK">0.00</cbc:LineExtensionAmount>
+      <cac:Item>
+        <cbc:Name>Varuslag:</cbc:Name>
+        <cac:ClassifiedTaxCategory>
+          <cbc:ID>E</cbc:ID>
+          <cbc:Percent>0</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+          </cac:TaxScheme>
+        </cac:ClassifiedTaxCategory>
+      </cac:Item>
+      <cac:Price>
+        <cbc:PriceAmount currencyID="SEK">0</cbc:PriceAmount>
+      </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+      <cbc:ID>3</cbc:ID>
+      <cbc:Note>3-axl Schaktbil// Antal:6,00 Tim// Belopp:4 068,00
+Delivery reference: 957058
+Delivery date: 2020-12-04</cbc:Note>
+      <cbc:InvoicedQuantity unitCode="EA">1</cbc:InvoicedQuantity>
+      <cbc:LineExtensionAmount currencyID="SEK">0.00</cbc:LineExtensionAmount>
+      <cac:Item>
+        <cbc:Name>3-axl Schaktbil// Antal:6,00 Tim// Belopp:4 068,00</cbc:Name>
+        <cac:ClassifiedTaxCategory>
+          <cbc:ID>E</cbc:ID>
+          <cbc:Percent>0</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+          </cac:TaxScheme>
+        </cac:ClassifiedTaxCategory>
+      </cac:Item>
+      <cac:Price>
+        <cbc:PriceAmount currencyID="SEK">0</cbc:PriceAmount>
+      </cac:Price>
+    </cac:InvoiceLine>
+  </Invoice>
+</StandardBusinessDocument>
