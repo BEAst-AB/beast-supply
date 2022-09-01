@@ -23,8 +23,8 @@
 	</cbc:IssueDate>
 	<cbc:IssueTime>12:00:00<?DescriptionAddFirst T6325, Document Date/Time. ?>
 	</cbc:IssueTime>
-	<cbc:Note>ABC123
-		<?DescriptionAddFirst Used for Vehicle identity number (T6100) ?>
+	<cbc:Note>text
+		<?DescriptionAddFirst Used for Transport Information (T6008). ?>
 	</cbc:Note>
 	<cac:OrderReference>
 		<cbc:ID schemeID="ProjectReference">AEG012345
@@ -302,8 +302,8 @@
 			<cbc:ID>NA
 				<?DescriptionAddFirst Use a dummy value since this element is mandatory. ?>
 			</cbc:ID>
-			<cbc:Information>Truck with tailgate lift
-				<?DescriptionAddFirst Used for Transport Information (T6008). ?>
+			<cbc:Information>ABC123
+				<?DescriptionAddFirst Used for Vehicle identity number (T6100) ?>
 			</cbc:Information>
 
 			<cac:CarrierParty>
