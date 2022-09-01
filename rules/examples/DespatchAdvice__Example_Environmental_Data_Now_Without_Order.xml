@@ -2,8 +2,6 @@
 <!--
                 Content:
                 This file contains a Example of Miljödata NU! base information in UBL Despatch Adivce.
-				This example is contains buyers reference / code string (kodsträng in Swedish)
-				There is another exampel that contains an exampel of a despatch advice with order number and order number line reference.
 			
 -->
 <DespatchAdvice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -12,22 +10,26 @@
  xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:despatch_advice:3</cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:despatch_advice:3</cbc:ProfileID>
-	<cbc:ID><?Description Unique id from the sender ?>43413589</cbc:ID><!-- Unique ID from the supplier -->
+	<cbc:ID>
+		<?Description Unique id from the sender ?>43413589
+	</cbc:ID>
+	<!-- Unique ID from the supplier -->
 	<cbc:IssueDate>2020-12-21</cbc:IssueDate>
 	<cbc:IssueTime>13:14:34</cbc:IssueTime>
 	<cbc:Note>Some note about the delivery</cbc:Note>
 	<cac:OrderReference>
-	<!-- Attribute schemeID is used to send project number or buyer reference if buyer order number is missing, i.e. electronic order has not been sent. 
+		<!-- Attribute schemeID is used to send project number or buyer reference if buyer order number is missing, i.e. electronic order has not been sent. 
 		Default is order number so if schemeID is missing the number in the element is order number as per Peppol global BIS.
 		ProjectRefereces is used for project number only.
 		BuyerReference is used for the buyer reference if no buyer order number exists, i.e. in construction often code string (kodsträng) -->
 		<cbc:ID schemeID="ProjectReference">9876986</cbc:ID>
 	</cac:OrderReference>
 	<cac:OrderReference>
-		<cbc:ID schemeID="BuyerReference">9876986-1-5544</cbc:ID>
+		<cbc:ID schemeID="CustomersReferenceNumber">9876986-1-5544</cbc:ID>
 	</cac:OrderReference>
 
-	<cac:DespatchSupplierParty> <!-- Mandatory, the party that despatcheds the goods or provides service -->
+	<cac:DespatchSupplierParty>
+		<!-- Mandatory, the party that despatcheds the goods or provides service -->
 		<cac:Party>
 			<cbc:EndpointID schemeID="0007">5560125220</cbc:EndpointID>
 			<cac:PartyIdentification>
@@ -51,7 +53,8 @@
 			</cac:Contact>
 		</cac:Party>
 	</cac:DespatchSupplierParty>
-	<cac:DeliveryCustomerParty> <!-- Mandatory, the party that recieves the goods or service -->
+	<cac:DeliveryCustomerParty>
+		<!-- Mandatory, the party that recieves the goods or service -->
 		<cac:Party>
 			<cbc:EndpointID schemeID="0007">5560339086</cbc:EndpointID>
 			<cac:PartyIdentification>
@@ -75,7 +78,8 @@
 			<cbc:ElectronicMail>some.email@skanska.se</cbc:ElectronicMail>
 		</cac:DeliveryContact>
 	</cac:DeliveryCustomerParty>
-	<cac:BuyerCustomerParty><!-- BEAst recommends sending BuyerCustomerParty even if it is optional since it is easier for the receiver. -->
+	<cac:BuyerCustomerParty>
+		<!-- BEAst recommends sending BuyerCustomerParty even if it is optional since it is easier for the receiver. -->
 		<cac:Party>
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0007">5560339086</cbc:ID>
@@ -93,7 +97,8 @@
 			</cac:PostalAddress>
 		</cac:Party>
 	</cac:BuyerCustomerParty>
-	<cac:SellerSupplierParty><!-- BEAst recommends sending SellerSupplierParty even if it is optional since it is easier for the receiver. -->
+	<cac:SellerSupplierParty>
+		<!-- BEAst recommends sending SellerSupplierParty even if it is optional since it is easier for the receiver. -->
 		<cac:Party>
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0007">5560125220</cbc:ID>
@@ -112,7 +117,8 @@
 		</cac:Party>
 	</cac:SellerSupplierParty>
 	<cac:Shipment>
-		<cbc:ID>1</cbc:ID> <!-- Mandatory Shipment number (fraktsedelsnummer) is mapped to this field -->
+		<cbc:ID>1</cbc:ID>
+		<!-- Mandatory Shipment number (fraktsedelsnummer) is mapped to this field -->
 		<cac:Delivery>
 			<cac:EstimatedDeliveryPeriod>
 				<cbc:StartDate>2022-11-23</cbc:StartDate>
@@ -123,38 +129,41 @@
 	<cac:DespatchLine>
 		<cbc:ID>1</cbc:ID>
 		<cbc:DeliveredQuantity unitCode="EA">84</cbc:DeliveredQuantity>
-		<cac:OrderLineReference>  <!-- Mandatory -->
+		<cac:OrderLineReference>
+			<!-- Mandatory -->
 			<cbc:LineID>NA</cbc:LineID>
 		</cac:OrderLineReference>
 		<cac:Item>
 			<cbc:Name>GIPSSKIVA NORMAL VÄDERPLASTAD 2700x900x13</cbc:Name>
 			<cac:BuyersItemIdentification>
-				<cbc:ID>9870202</cbc:ID><!-- Litera number or similar, used for the buyer reference -->
+				<cbc:ID>9870202</cbc:ID>
+				<!-- Litera number or similar, used for the buyer reference -->
 			</cac:BuyersItemIdentification>
 			<cac:SellersItemIdentification>
 				<cbc:ID>900206705</cbc:ID>
 			</cac:SellersItemIdentification>
 			<cac:StandardItemIdentification>
-				<cbc:ID schemeID="0160">7318936539543</cbc:ID><!-- 0160 = GTIN, full list https://docs.peppol.eu/poacc/upgrade-3/codelist/ICD/ -->
+				<cbc:ID schemeID="0160">7318936539543</cbc:ID>
+				<!-- 0160 = GTIN, full list https://docs.peppol.eu/poacc/upgrade-3/codelist/ICD/ -->
 			</cac:StandardItemIdentification>
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD Dataset ID</cbc:Name>
-				<cbc:NameCode listID="BEAst">EPDDataSetID</cbc:NameCode>
+				<cbc:NameCode listID="BEAST:4.0">EPDDataSetID</cbc:NameCode>
 				<cbc:Value>165f8554-00cd-43ad-aeb7-ba769854554a</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD Dataset URL</cbc:Name>
-				<cbc:NameCode listID="BEAst">EPDDataSetURL</cbc:NameCode>
+				<cbc:NameCode listID="BEAST:4.0">EPDDataSetURL</cbc:NameCode>
 				<cbc:Value>https://epdnorway.lca-data.com/datasetdetail/process.xhtml?uuid=165f8554-00cd-43ad-aeb7-ba769854554a&amp;version=00.01.000&amp;stock=PUBLIC</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD PDF URL</cbc:Name>
-				<cbc:NameCode listID="BEAst">EPDPDFURL</cbc:NameCode>
+				<cbc:NameCode listID="BEAST:4.0">EPDPDFURL</cbc:NameCode>
 				<cbc:Value>https://portal.environdec.com/api/api/v1/EPDLibrary/Files/07e17ba1-cf00-48e5-9cf1-d8bd90a468f8/Data</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Resource ID</cbc:Name>
-				<cbc:NameCode listID="Boverket">ResourceID</cbc:NameCode>
+				<cbc:NameCode listID="BEAST:4.0">ResourceID</cbc:NameCode>
 				<cbc:Value>6000000020</cbc:Value>
 			</cac:AdditionalItemProperty>
 		</cac:Item>
@@ -163,7 +172,8 @@
 		<cbc:ID>2</cbc:ID>
 		<cbc:DeliveredQuantity unitCode="EA">30</cbc:DeliveredQuantity>
 		<cac:OrderLineReference>
-			<cbc:LineID>NA</cbc:LineID><!-- Mandatory, if no order number and line has been provided by the buyer, set it to NA -->
+			<cbc:LineID>NA</cbc:LineID>
+			<!-- Mandatory, if no order number and line has been provided by the buyer, set it to NA -->
 		</cac:OrderLineReference>
 		<cac:Item>
 			<cbc:Name>Gyproc GFE 15 VPL PROTECT F Ergo 2700x900</cbc:Name>
@@ -180,22 +190,22 @@
 			</cac:StandardItemIdentification>
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD Dataset ID</cbc:Name>
-				<cbc:NameCode listID="BEAst">EPDDataSetID</cbc:NameCode>
+				<cbc:NameCode listID="BEAST:4.0">EPDDataSetID</cbc:NameCode>
 				<cbc:Value>a8a00e68-fc50-44e3-8772-1ebfe6c2353c</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD Dataset URL</cbc:Name>
-				<cbc:NameCode listID="BEAst">EPDDataSetURL</cbc:NameCode>
+				<cbc:NameCode listID="BEAST:4.0">EPDDataSetURL</cbc:NameCode>
 				<cbc:Value>https://epdnorway.lca-data.com/resource/processes/a8a00e68-fc50-44e3-8772-1ebfe6c2353c?format=xml</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD PDF URL</cbc:Name>
-				<cbc:NameCode listID="BEAst">EPDPDFURL</cbc:NameCode>
+				<cbc:NameCode listID="BEAST:4.0">EPDPDFURL</cbc:NameCode>
 				<cbc:Value>https://portal.environdec.com/api/api/v1/EPDLibrary/Files/07e17ba1-cf00-48e5-9cf1-d8bd90a468f8/Data</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Resource ID</cbc:Name>
-				<cbc:NameCode listID="BEAst">ResourceID</cbc:NameCode>
+				<cbc:NameCode listID="BEAST:4.0">ResourceID</cbc:NameCode>
 				<cbc:Value>6000000016</cbc:Value>
 			</cac:AdditionalItemProperty>
 		</cac:Item>
