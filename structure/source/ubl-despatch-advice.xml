@@ -30,10 +30,10 @@
 		<cbc:ID schemeID="ProjectReference">AEG012345
 			<?DescriptionAddFirst T3309/T6335, Order Number/Call Off Reference. Attribute schemeID can be used to send Project Number (T6004) or Customers' Reference (T6005).
 			Default is Order Number so if schemeID is missing the number in the element is Order Number as per Peppol global BIS.
-			ProjectRefereces is used for Project Number only.
-			CustomersReferenceNumber is used for the Customer's Reference. 
+			"ProjectReferece" is used for Project Number only.
+			"AccountingCost" is used for the Customer's Reference. Here you always use the accounting information.
 			The group OrderReference can be repeated. ?>
-			<?schemeID-Description ProjectReference and CustomersReferenceNumber can be used as values for the schemeID attribute?>
+			<?schemeID-Description "ProjectReference" and "AccountingCost" can be used as values for the schemeID attribute?>
 		</cbc:ID>
 	</cac:OrderReference>
 
