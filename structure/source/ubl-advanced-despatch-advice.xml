@@ -31,13 +31,13 @@
 		<?DescriptionAddFirst Used for Transport Information (T6008). ?>
 	</cbc:Note>
 	<cac:OrderReference>
-		<cbc:ID schemeID="ProjectReference">AEG012345
+		<cbc:ID schemeID="AccountingCost">9876986-1-5544
 			<?DescriptionAddFirst T3309/T6335, Order Number/Call Off Reference. Attribute schemeID can be used to send Project Number (T6004) or Customers' Reference (T6005).
 			Default is Order Number so if schemeID is missing the number in the element is Order Number as per Peppol global BIS.
-			ProjectRefereces is used for Project Number only.
-			CustomersReferenceNumber is used for the Customer's Reference. 
+			"ProjectReferece" is used for Project Number only.
+			"AccountingCost" is used for the Customer's Reference. Here you always use the accounting information.
 			The group OrderReference can be repeated. ?>
-			<?schemeID-Description ProjectReference and CustomersReferenceNumber can be used as values for the schemeID attribute?>
+			<?schemeID-Description "ProjectReference" and "AccountingCost" can be used as values for the schemeID attribute?>
 		</cbc:ID>
 	</cac:OrderReference>
 
@@ -645,6 +645,9 @@
 				</cbc:ActualDespatchTime>
 				<cac:DespatchAddress>
 					<?DescriptionAddFirst The Despatch Address is used to define the Ship-from when the Despatch Supplier Party is not. When the Despatch Advice describes a movement, the Despatch Address should be included. ?>
+					<cbc:ID>5790000435951
+						<?Description Identity of the Despatch Address (T0129). ?>
+					</cbc:ID>
 					<cbc:StreetName>Avon Way
 						<?DescriptionAddFirst Street Name (T5003).  ?>
 					</cbc:StreetName>
