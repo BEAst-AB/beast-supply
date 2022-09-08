@@ -38,6 +38,7 @@
 			"AccountingCost" is used for the Customer's Reference. Here you always use the accounting information.
 			The group OrderReference can be repeated. ?>
 			<?schemeID-Description "ProjectReference" and "AccountingCost" can be used as values for the schemeID attribute?>
+			<?schemeID-usage Optional?>
 		</cbc:ID>
 	</cac:OrderReference>
 
@@ -87,6 +88,8 @@
 				<cbc:ID schemeID="0088">7300010000001
 					<?DescriptionAddFirst Shipper (T0129) ?>
 					<?schemeID-CodeList ICD?>
+					<?schemeID-usage Optional?>
+					<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PostalAddress>
@@ -144,8 +147,9 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0088">5790000435951
 					<?DescriptionAddFirst Consignee (T0036) ?>
-					<?schemeID-usage Mandatory?>
+					<?schemeID-usage Optional?>
 					<?schemeID-CodeList ICD?>
+					<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PostalAddress>
@@ -198,8 +202,9 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0088">5790000435951
 					<?DescriptionAddFirst Buyer (T0008) ?>
-					<?schemeID-usage Mandatory?>
+					<?schemeID-usage Optional?>
 					<?schemeID-CodeList ICD?>
+					<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
@@ -240,8 +245,9 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0088">5790000435951
 					<?DescriptionAddFirst Supplier (T0009) ?>
-					<?schemeID-usage Mandatory?>
+					<?schemeID-usage Optional?>
 					<?schemeID-CodeList ICD?>
+					<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
@@ -283,8 +289,9 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0088">5790000435951
 					<?DescriptionAddFirst Ultimate Customer ID (T6001 or T6223).  ?>
-					<?schemeID-usage Mandatory?>
+					<?schemeID-usage Optional?>
 					<?schemeID-CodeList ICD?>
+					<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
@@ -360,8 +367,9 @@
 					<cbc:ID schemeID="0088">5790000435951
 						<?Name The Identity of the Carrier Party. ?>
 						<?Description Added by BEAst. Identifies the Carrier party (T3208). ?>
-						<?schemeID-usage Mandatory?>
+						<?schemeID-usage Optional?>
 						<?schemeID-CodeList ICD?>
+						<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 					</cbc:ID>
 				</cac:PartyIdentification>
 				<cac:PartyName>
@@ -434,8 +442,9 @@
 								<?Name Identity of the fuel supplier. ?>
 								<?Description Added by BEAst. The fuel supplier (T6001). ?>
 								<?Cardinality 0..1?>
-								<?schemeID-usage Mandatory?>
+								<?schemeID-usage Optional?>
 								<?schemeID-CodeList ICD?>
+								<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 							</cbc:ID>
 						</cac:PartyIdentification>
 						<cac:PartyName>
@@ -475,8 +484,9 @@
 									<?Name Standard article identity of the fuel. ?>
 									<?Description Added by BEAst. The fuel article number (T0172). The schemeID refers to the Article Number Type (T6317). ?>
 									<?Cardinality 1..1?>
-									<?schemeID-usage Mandatory?>
+									<?schemeID-usage Optional?>
 									<?schemeID-CodeList ICD?>
+									<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 								</cbc:ID>
 							</cac:StandardItemIdentification>
 						</cac:Item>
@@ -525,7 +535,9 @@
 				<cbc:ID schemeID="0088">5790000435951
 					<?Name Identity of the Delivery Location. ?>
 					<?Description Added by BEAst. Identifies the Delivery Location (T0036). ?>
+					<?schemeID-usage Optional?>
 					<?schemeID-CodeList ICD?>
+					<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 				</cbc:ID>
 				<cbc:Name>Name
 					<?Name Name of the Consignee. ?>
