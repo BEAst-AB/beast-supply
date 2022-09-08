@@ -2,7 +2,14 @@
 <!--
                 Content:
                 This file contains a Example of Miljödata NU! base information in UBL Despatch Adivce.
-			
+				
+				Version 1.0
+				Initial version
+				
+				Version: 1.1
+				Added GWP-GHG_A1-3_EPD value to AdditionalItemProperties
+				Changed AdditionalItemProperties listID from BEAst to BEAst:4.0 to support versioning
+				Changed listID value from BEAst to Boverket in AdditionalItemProperties with the namecode ResourceID
 -->
 <DespatchAdvice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
@@ -211,7 +218,7 @@
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Resource ID</cbc:Name>
-				<cbc:NameCode listID="BEAST:4.0">ResourceID</cbc:NameCode>
+				<cbc:NameCode listID="Boverket">ResourceID</cbc:NameCode>
 				<cbc:Value>6000000016</cbc:Value>
 			</cac:AdditionalItemProperty>
 		</cac:Item>
