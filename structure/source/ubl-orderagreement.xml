@@ -93,7 +93,7 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0184">DK12345678
 					<?DescriptionAddFirst Supplier (T0009). schemeID tells what type of identity that is used. ?>
-					<?schemeID-usage Mandatory?>
+					<?schemeID-usage Optional?>
 					<?schemeID-CodeList ICD?>
 				</cbc:ID>
 			</cac:PartyIdentification>
@@ -151,7 +151,7 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0184">DK55412777
 					<?DescriptionAddFirst Buyer (T0008). schemeID describes the type of identity that is used. ?>
-					<?schemeID-usage Mandatory?>
+					<?schemeID-usage Optional?>
 					<?schemeID-CodeList ICD?>
 				</cbc:ID>
 			</cac:PartyIdentification>
@@ -205,7 +205,7 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0184">DK55412777
 					<?DescriptionAddFirst Ultimate Customer (T6223). schemeID describes the type of identity that is used. ?>
-					<?schemeID-usage Mandatory?>
+					<?schemeID-usage Optional?>
 					<?schemeID-CodeList ICD?>
 				</cbc:ID>
 			</cac:PartyIdentification>
@@ -223,7 +223,7 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0184">DK55412777
 					<?DescriptionAddFirst Invoicee (T0085). schemeID describes the type of identity that is used. ?>
-					<?schemeID-usage Mandatory?>
+					<?schemeID-usage Optional?>
 					<?schemeID-CodeList ICD?>
 				</cbc:ID>
 			</cac:PartyIdentification>
@@ -254,7 +254,7 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0184">DK55412777
 					<?DescriptionAddFirst Delivery Party (T0037). schemeID describes the type of identity that is used. ?>
-					<?schemeID-usage Mandatory?>
+					<?schemeID-usage Optional?>
 					<?schemeID-CodeList ICD?>
 				</cbc:ID>
 			</cac:PartyIdentification>
@@ -536,7 +536,7 @@
 				<cac:StandardItemIdentification>
 					<cbc:ID schemeID="0160">7400000001234
 						<?DescriptionAddFirst Global Trade Item Number (T0154) or RSK Article Number Sweden (T6023). All other item number standards used within BEAst can not be used here until the organisation behind the standard decides to be a part of the codelist "ISO 6523 ICD". These are: NOBB Article Number (T6027), RT Article Number (T6460), TUN Article Number (T6028), Finfo/Vilma Article Number (T6029), Norwegian RSK Article Number (T6024), Norwegian E-number (T6026), E-number (T0260) and SGTIN (T6461). ?>
-						<?schemeID-usage Mandatory?>
+						<?schemeID-usage Optional?>
 						<?schemeID-CodeList ICD?>
 						
 					</cbc:ID>

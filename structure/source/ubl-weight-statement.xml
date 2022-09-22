@@ -45,7 +45,7 @@ xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			<cbc:ID schemeID="0088">
 				7300010000001
 				<?Name Sender identity ?>
-				<?schemeID-usage Mandatory?>
+				<?schemeID-usage Optional?>
 				<?schemeID-CodeList ICD?>
 			</cbc:ID>
 		</cac:PartyIdentification>
@@ -69,7 +69,7 @@ xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			<cbc:ID schemeID="0088">
 				9994567987654
 				<?Name Receiver identity ?>
-				<?schemeID-usage Mandatory?>
+				<?schemeID-usage Optional?>
 				<?schemeID-CodeList ICD?>
 			</cbc:ID>
 		</cac:PartyIdentification>
@@ -89,7 +89,7 @@ xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			<cbc:ID schemeID="0088">
 				5790000435951
 				<?Name Weighing party identity ?>
-				<?schemeID-usage Mandatory?>
+				<?schemeID-usage Optional?>
 				<?schemeID-CodeList ICD?>
 			</cbc:ID>
 		</cac:PartyIdentification>
@@ -125,7 +125,7 @@ xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 				5790000435951
 				<?Name Shipper identity ?>
 				<?Description T3208/T6001 ?>
-				<?schemeID-usage Mandatory?>
+				<?schemeID-usage Optional?>
 				<?schemeID-CodeList ICD?>
 			</cbc:ID>
 		</cac:PartyIdentification>

@@ -38,6 +38,7 @@
 			"AccountingCost" is used for the Customer's Reference. Here you always use the accounting information.
 			The group OrderReference can be repeated. ?>
 			<?schemeID-Description "ProjectReference" and "AccountingCost" can be used as values for the schemeID attribute?>
+			<?schemeID-usage Optional?>
 		</cbc:ID>
 	</cac:OrderReference>
 
@@ -62,6 +63,8 @@
 				<?Name Embedded Binary object. ?>
 				<?Cardinality 0..1?>
 				<?mimeCode-CodeList MimeCode?>
+				<?mimeCode-usage Mandatory?>
+				<?filename-usage Mandatory?>
 				<?Description Added by BEAst. The referenced document can here be inserted as a binary object (T6475). filename refers to T6476. ?>
 			</cbc:EmbeddedDocumentBinaryObject>
 			<cac:ExternalReference>
@@ -80,13 +83,13 @@
 		<?DescriptionAddFirst This party defines the company that provides the goods or the service. It also defines the sender of the Despatch Advice. The real Ship-from Address must be provided in the Despatch Address when the Despatch Advice describes a movement. ?>
 		<cac:Party>
 			<cbc:EndpointID schemeID="0088">7300010000001
-				<?schemeID-usage Mandatory?>
 				<?schemeID-CodeList eas?>
 			</cbc:EndpointID>		
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0088">7300010000001
 					<?DescriptionAddFirst Shipper (T0129) ?>
 					<?schemeID-CodeList ICD?>
+					<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PostalAddress>
@@ -138,14 +141,13 @@
 		<?DescriptionAddFirst This party defines the company that receives the goods or the service. It also defines the receiver of the Despatch Advice. The real Ship-to Address must be provided in the Delivery Location if the Despatch Advice describes a movement. If the Despatch address describes a service provided at a specific location, the Delivery Location contains this location. ?>
 		<cac:Party>
 			<cbc:EndpointID schemeID="0088">5798000000124
-				<?schemeID-usage Mandatory?>
 				<?schemeID-CodeList eas?>
 			</cbc:EndpointID>
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0088">5790000435951
 					<?DescriptionAddFirst Consignee (T0036) ?>
-					<?schemeID-usage Mandatory?>
 					<?schemeID-CodeList ICD?>
+					<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PostalAddress>
@@ -198,8 +200,8 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0088">5790000435951
 					<?DescriptionAddFirst Buyer (T0008) ?>
-					<?schemeID-usage Mandatory?>
 					<?schemeID-CodeList ICD?>
+					<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
@@ -240,8 +242,8 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0088">5790000435951
 					<?DescriptionAddFirst Supplier (T0009) ?>
-					<?schemeID-usage Mandatory?>
 					<?schemeID-CodeList ICD?>
+					<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
@@ -283,8 +285,8 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0088">5790000435951
 					<?DescriptionAddFirst Ultimate Customer ID (T6001 or T6223).  ?>
-					<?schemeID-usage Mandatory?>
 					<?schemeID-CodeList ICD?>
+					<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
@@ -360,8 +362,8 @@
 					<cbc:ID schemeID="0088">5790000435951
 						<?Name The Identity of the Carrier Party. ?>
 						<?Description Added by BEAst. Identifies the Carrier party (T3208). ?>
-						<?schemeID-usage Mandatory?>
 						<?schemeID-CodeList ICD?>
+						<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 					</cbc:ID>
 				</cac:PartyIdentification>
 				<cac:PartyName>
@@ -434,8 +436,9 @@
 								<?Name Identity of the fuel supplier. ?>
 								<?Description Added by BEAst. The fuel supplier (T6001). ?>
 								<?Cardinality 0..1?>
-								<?schemeID-usage Mandatory?>
+								<?schemeID-usage Optional?>
 								<?schemeID-CodeList ICD?>
+								<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 							</cbc:ID>
 						</cac:PartyIdentification>
 						<cac:PartyName>
@@ -475,8 +478,9 @@
 									<?Name Standard article identity of the fuel. ?>
 									<?Description Added by BEAst. The fuel article number (T0172). The schemeID refers to the Article Number Type (T6317). ?>
 									<?Cardinality 1..1?>
-									<?schemeID-usage Mandatory?>
+									<?schemeID-usage Optional?>
 									<?schemeID-CodeList ICD?>
+									<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 								</cbc:ID>
 							</cac:StandardItemIdentification>
 						</cac:Item>
@@ -526,6 +530,7 @@
 					<?Name Identity of the Delivery Location. ?>
 					<?Description Added by BEAst. Identifies the Delivery Location (T0036). ?>
 					<?schemeID-CodeList ICD?>
+					<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 				</cbc:ID>
 				<cbc:Name>Name
 					<?Name Name of the Consignee. ?>
