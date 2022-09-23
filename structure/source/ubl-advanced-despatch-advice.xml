@@ -483,6 +483,7 @@
 									<?schemeID-CodeList ICD?>
 									<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 								</cbc:ID>
+								<Reference type="RULE">PEPPOL-T120-R003</Reference>
 							</cac:StandardItemIdentification>
 						</cac:Item>
 					</cac:GoodsItem>
@@ -602,7 +603,6 @@
 							<?Name Latitude Degrees Measure. ?>
 							<?unitCode-usage Mandatory?>
 							<?unitCode-CodeList UNECERec20?>
-							<?unitCode-Rule PEPPOL-T16-B11002?>
 							<?Description Added by BEAst. The X coordinate (T6324). Use degrees with decimals. ?>
 							<?Cardinality 1..1?>
 						</cbc:LatitudeDegreesMeasure>
@@ -610,7 +610,6 @@
 							<?Name Longitude Degrees Measure. ?>
 							<?unitCode-usage Mandatory?>
 							<?unitCode-CodeList UNECERec20?>
-							<?unitCode-Rule PEPPOL-T16-B11002?>
 							<?Description Added by BEAst. The Y coordinate (T6325). Use degrees with decimals. ?>
 							<?Cardinality 1..1?>
 						</cbc:LongitudeDegreesMeasure>
@@ -620,7 +619,6 @@
 							<?Cardinality 0..1?>
 							<?unitCode-usage Mandatory?>
 							<?unitCode-CodeList UNECERec20?>
-							<?unitCode-Rule PEPPOL-T16-B11002?>
 						</cbc:AltitudeMeasure>
 					</cac:LocationCoordinate>
 				</cac:Address>
@@ -863,6 +861,7 @@
 					These are: NOBB Article Number (T6027), RT Article Number (T6460), TUN Article Number (T6028), Finfo/Vilma Article Number (T6029), Norwegian RSK Article Number (T6024), Norwegian E-number (T6026), E-number (T0260) and SGTIN (T6461). ?>
 				</cbc:ID>
 				<cbc:ExtendedID>22114455</cbc:ExtendedID>
+				<?Rule PEPPOL-T120-R003?>
 			</cac:StandardItemIdentification>
 
 			<cac:CommodityClassification>
