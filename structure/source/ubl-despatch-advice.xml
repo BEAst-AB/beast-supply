@@ -159,6 +159,7 @@
 	<cac:BuyerCustomerParty>
 		<cac:Party>
 			<cac:PartyIdentification>
+				<?Rule PEPPOL-T16-R008?>
 				<cbc:ID schemeID="0088">5790000435951
 					<?DescriptionAddFirst Buyer (T0008) ?>
 					<?schemeID-usage Opional?>
@@ -167,6 +168,7 @@
 				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
+				<?Rule PEPPOL-T16-R008?>
 				<cbc:Name>IYT Corporation
 					<?DescriptionAddFirst Party Name (T5001) ?>
 				</cbc:Name>
@@ -202,6 +204,7 @@
 	<cac:SellerSupplierParty>
 		<cac:Party>
 			<cac:PartyIdentification>
+				<?Rule PEPPOL-T16-R009?>
 				<cbc:ID schemeID="0088">5790000435951
 					<?DescriptionAddFirst Supplier (T0009) ?>
 					<?schemeID-usage Optional?>
@@ -210,6 +213,7 @@
 				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
+				<?Rule PEPPOL-T16-R009?>
 				<cbc:Name>IYT Corporation
 					<?DescriptionAddFirst Party Name (T5001) ?>
 				</cbc:Name>
@@ -246,6 +250,7 @@
 		<?DescriptionAddFirst For 3PL shipments, this party defines the final receiver of the goods. ?>
 		<cac:Party>
 			<cac:PartyIdentification>
+				<?Rule PEPPOL-T16-R010?>
 				<cbc:ID schemeID="0088">5790000435951
 					<?DescriptionAddFirst Ultimate Customer ID (T6001 or T6223).  ?>
 					<?schemeID-usage Optional?>
@@ -254,6 +259,7 @@
 				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
+				<?Rule PEPPOL-T16-R010?>
 				<cbc:Name>IYT Corporation
 					<?DescriptionAddFirst Ultimate Customer name (T5001).  ?>
 				</cbc:Name>
@@ -401,13 +407,17 @@
 			<?DescriptionAddFirst Transportation Information (T6008) ?>
 		</cbc:Note>
 		<cbc:DeliveredQuantity unitCode="C62">10
+			<?Rule PEPPOL-T16-R005?>
+			<?Rule PEPPOL-T16-R006?>
 			<?DescriptionAddFirst Delivered Quantity (T0070)/Despatched Quantity (T0131). unitCode refers to T6706 ?>
 		</cbc:DeliveredQuantity>
 		<cbc:OutstandingQuantity unitCode="C62">2
 			<?DescriptionAddFirst Backordered Quantity (T0059). unitCode refers to T6706 ?>
+			<?Rule PEPPOL-T16-R007?>
 		</cbc:OutstandingQuantity>
 		<cbc:OutstandingReason>text
 			<?DescriptionAddFirst Change Reason Description (T6220) ?>
+			<?Rule PEPPOL-T16-R007?>
 		</cbc:OutstandingReason>
 		<cac:OrderLineReference>
 			<cbc:LineID>1
@@ -416,6 +426,7 @@
 			<cac:OrderReference>
 				<cbc:ID>AEG012345
 					<?DescriptionAddFirst Order Number (T3309) ?>
+					<?Rule PEPPOL-T16-R002?>
 				</cbc:ID>
 			</cac:OrderReference>
 		</cac:OrderLineReference>
@@ -423,6 +434,7 @@
 		<cac:Item>
 			<cbc:Name>beeswax
 				<?DescriptionAddFirst Article Description (T6226) ?>
+				<?Rule PEPPOL-T16-R004?>
 			</cbc:Name>
 			<cac:BuyersItemIdentification>
 				<cbc:ID>6578489
@@ -430,11 +442,13 @@
 				</cbc:ID>
 			</cac:BuyersItemIdentification>
 			<cac:SellersItemIdentification>
+				<?Rule PEPPOL-T16-R003?>
 				<cbc:ID>17589683
 					<?DescriptionAddFirst Supplier's Article Number (T0172) ?>
 				</cbc:ID>
 			</cac:SellersItemIdentification>
 			<cac:StandardItemIdentification>
+				<?Rule PEPPOL-T16-R003?>
 				<?DescriptionAddFirst Only one Standard Item Number can be used per line. ?>
 				<cbc:ID schemeID="0160">1234567891234
 					<?DescriptionAddFirst Global Trade Item Number (T0154) or RSK Article Number Sweden (T6023). 
