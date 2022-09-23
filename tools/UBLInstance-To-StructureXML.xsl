@@ -389,7 +389,7 @@
 					</xsl:for-each>
 				</xsl:otherwise>
 			</xsl:choose>
-			<!--xsl:choose>
+			<xsl:choose>
 				<xsl:when test="./processing-instruction('Rule')">
 					<xsl:for-each select="./processing-instruction('Rule')">
 						<Reference type="RULE">
@@ -404,7 +404,7 @@
 						</Reference>
 					</xsl:for-each>
 				</xsl:otherwise>
-			</xsl:choose-->
+			</xsl:choose>
 			<xsl:choose>
 				<xsl:when test="./processing-instruction('CodeList')">
 					<xsl:for-each select="./processing-instruction('CodeList')">
@@ -607,7 +607,7 @@
 							</xsl:for-each>
 						</xsl:otherwise>
 					</xsl:choose>
-					<!--xsl:variable name="varAttrTextValue" select="./text()[normalize-space()][1]"/-->
+					<xsl:variable name="varAttrTextValue" select="./text()[normalize-space()][1]"/>
 					<xsl:choose>
 						<xsl:when test=". != ''">
 							<Value type="EXAMPLE">
