@@ -156,24 +156,25 @@
 					<!-- end::fuel[] -->
 					<!-- tag::environmentalemission[] -->
 					<cac:EnvironmentalEmission>
-						<cbc:EnvironmentalEmissionTypeCode>NOX</cbc:EnvironmentalEmissionTypeCode>
-						<cbc:ValueMeasure unitCode="MGM">6</cbc:ValueMeasure>
-					</cac:EnvironmentalEmission>
-
-					<cac:EnvironmentalEmission>
 						<cbc:EnvironmentalEmissionTypeCode>CO2</cbc:EnvironmentalEmissionTypeCode>
 						<cbc:ValueMeasure unitCode="MGM">2.8</cbc:ValueMeasure>
 					</cac:EnvironmentalEmission>
 
 					<cac:EnvironmentalEmission>
-						<cbc:EnvironmentalEmissionTypeCode>PM</cbc:EnvironmentalEmissionTypeCode>
-						<cbc:ValueMeasure unitCode="MGM">0.07</cbc:ValueMeasure>
+						<cbc:EnvironmentalEmissionTypeCode>HC</cbc:EnvironmentalEmissionTypeCode>
+						<cbc:ValueMeasure unitCode="KGM">0.6</cbc:ValueMeasure>
+					</cac:EnvironmentalEmission>
+					
+					<cac:EnvironmentalEmission>
+						<cbc:EnvironmentalEmissionTypeCode>NOX</cbc:EnvironmentalEmissionTypeCode>
+						<cbc:ValueMeasure unitCode="KGM">6</cbc:ValueMeasure>
 					</cac:EnvironmentalEmission>
 
 					<cac:EnvironmentalEmission>
-						<cbc:EnvironmentalEmissionTypeCode>HC</cbc:EnvironmentalEmissionTypeCode>
-						<cbc:ValueMeasure unitCode="MGM">0.6</cbc:ValueMeasure>
+						<cbc:EnvironmentalEmissionTypeCode>PM</cbc:EnvironmentalEmissionTypeCode>
+						<cbc:ValueMeasure unitCode="GRM">0.07</cbc:ValueMeasure>
 					</cac:EnvironmentalEmission>
+
 					<!-- end::environmentalemission[] -->
 				</cac:OriginalDespatchTransportationService>
 			
