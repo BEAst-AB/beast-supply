@@ -111,44 +111,32 @@
 					<!-- tag::fuel[] -->
 					<cac:TransportEquipment>
 						<cbc:TransportEquipmentTypeCode>Diesel</cbc:TransportEquipmentTypeCode>
-						<cbc:Information>ACP Diesel 50 max 7% RME</cbc:Information>
-						<cbc:Description>Euro 4</cbc:Description>
+						<cbc:Description>ACP Diesel 50 max 7% RME</cbc:Description>
 						<cac:MeasurementDimension>
-							<cbc:AttributeID schemeAgencyName="BEAst">EnergyContent</cbc:AttributeID>
-							<cbc:Measure unitCode="XY">32</cbc:Measure>
-						</cac:MeasurementDimension>
-						<cac:MeasurementDimension>
-							<cbc:AttributeID>CONVERSION_FACTOR</cbc:AttributeID>
-							<cbc:Measure unitCode="ZX">27</cbc:Measure>
-							<cbc:Description>ConversionFactor</cbc:Description>
-						</cac:MeasurementDimension>
-						<cac:MeasurementDimension>
-							<cbc:AttributeID>FUEL_CONSUMPTION</cbc:AttributeID>
+							<cbc:AttributeID>FuelConsumption</cbc:AttributeID>
 							<cbc:Measure unitCode="LTR">15</cbc:Measure>
-							<cbc:Description>FuelConsumption</cbc:Description>
 						</cac:MeasurementDimension>
 						<cac:MeasurementDimension>
-							<cbc:AttributeID>DRIVING_DISTANCE</cbc:AttributeID>
+							<cbc:AttributeID>EnergyContent</cbc:AttributeID>
+							<cbc:Measure unitCode="E14">32</cbc:Measure>
+						</cac:MeasurementDimension>
+						<cac:MeasurementDimension>
+							<cbc:AttributeID>ConversionFactor</cbc:AttributeID>
+							<cbc:Measure unitCode="EA">27</cbc:Measure>
+						</cac:MeasurementDimension>
+						<cac:MeasurementDimension>
+							<cbc:AttributeID>DrivingDistance</cbc:AttributeID>
 							<cbc:Measure unitCode="KMT">86</cbc:Measure>
-							<cbc:Description>DrivingDistance</cbc:Description>
 						</cac:MeasurementDimension>
 						<cac:MeasurementDimension>
-							<cbc:AttributeID>DRIVING_TIME</cbc:AttributeID>
+							<cbc:AttributeID>DrivingTime</cbc:AttributeID>
 							<cbc:Measure unitCode="HUR">7.3</cbc:Measure>
-							<cbc:Description>DrivingTime</cbc:Description>
 						</cac:MeasurementDimension>
 						<cac:MeasurementDimension>
-							<cbc:AttributeID>FUEL_MEASUREMENT_BASIS</cbc:AttributeID>
-							<cbc:Measure unitCode="KMT">10</cbc:Measure>
-							<cbc:Description>FuelMeasurementBasis</cbc:Description>
-						</cac:MeasurementDimension>
-						<cac:MeasurementDimension>
-							<cbc:AttributeID>FUEL_MEASUREMENT_FREQUENCY</cbc:AttributeID>
-							<cbc:Measure unitCode="DAY">1</cbc:Measure>
-							<cbc:Description>FuelMeasurementFrequency</cbc:Description>
+							<cbc:AttributeID>RenewableFuel</cbc:AttributeID>
+							<cbc:Measure unitCode="P1">100.00</cbc:Measure>
 						</cac:MeasurementDimension>
 						<cac:ProviderParty>
-							<cbc:IndustryClassificationCode>FUEL</cbc:IndustryClassificationCode>
 							<cac:PartyIdentification>
 								<cbc:ID schemeID="0007">5560726977</cbc:ID>
 							</cac:PartyIdentification>

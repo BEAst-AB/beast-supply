@@ -485,7 +485,7 @@
 									<?Name Standard article identity of the fuel. ?>
 									<?Description Added by BEAst. The fuel article number (T0172). The schemeID refers to the Article Number Type (T6317). ?>
 									<?Cardinality 1..1?>
-									<?schemeID-usage Optional?>
+									<?schemeID-usage Mandatory?>
 									<?schemeID-CodeList ICD?>
 									<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 								</cbc:ID>
@@ -657,6 +657,7 @@
 					<?DescriptionAddFirst The Despatch Address is used to define the Ship-from when the Despatch Supplier Party is not. When the Despatch Advice describes a movement, the Despatch Address should be included. ?>
 					<cbc:ID>5790000435951
 						<?Description Identity of the Despatch Address (T0129). ?>
+						<?schemeID-usage Optional?>
 					</cbc:ID>
 					<cbc:StreetName>Avon Way
 						<?DescriptionAddFirst Street Name (T5003).  ?>
