@@ -16,14 +16,14 @@ The table below describes the definitions of the AttributeID:s.
 [cols="2,4",options="header",]
 |====
 |AttributeID |Definition
-|*ConversionFactor* a|Conversion and emission factor CO2 equivalent for calculating CO2 according to the fuel specified in T0172. 
-|*DrivingDistance* a|Driving distance in kilometers that has been used for the assignment.
-|*DrivingTime* |Driving time in hours that has been used for the assignment.
-|*EnergyContent* |Amount of energy content (KWh) in the fuel that is specified in T0172
-|*EngineType* |Environment class for the type of engine that has been used for the assignment.
-|*FuelConsumption* |The consumed amount of fuel in the assignment.
-|*FuelMeasurementMethod* |The method that the fuel consumption has been measured. 
-|*RenewableFuel* |Share of renewable fuel in percent.
+|ConversionFactor |Conversion and emission factor CO2 equivalent for calculating CO2 according to the fuel specified in T0172. 
+|DrivingDistance |Driving distance in kilometers that has been used for the assignment.
+|DrivingTime |Driving time in hours that has been used for the assignment.
+|EnergyContent |Amount of energy content (KWh) in the fuel that is specified in T0172
+|EngineType |Environment class for the type of engine that has been used for the assignment.
+|FuelConsumption |The consumed amount of fuel in the assignment.
+|FuelMeasurementMethod |The method that the fuel consumption has been measured. 
+|RenewableFuel |Share of renewable fuel in percent.
 |====
 Example:
 
@@ -42,10 +42,10 @@ The table below describes the definitions of the EnvironmentalEmissionTypeCode:s
 [cols="1,5",options="header",]
 |====
 |AttributeID |Definition
-|*CO2* a|Amount of fossil CO2-eq based on a life cycle perspective, WTW, to be reported in kilogram. 
-|*HC* a|Amount of emission of hydro carbon for the assignment. Preferably reported in kilogram.
-|*NOX* |Amount of emission of nitroge oxide for the assignment. Preferably reported in kilogram.
-|*PM* |Amount of emission of particulate matter. Preferably reported in gram.
+|CO2 |Amount of fossil CO2-eq based on a life cycle perspective, WTW, to be reported in kilogram. 
+|HC |Amount of emission of hydro carbon for the assignment. Preferably reported in kilogram.
+|NOX |Amount of emission of nitroge oxide for the assignment. Preferably reported in kilogram.
+|PM |Amount of emission of particulate matter. Preferably reported in gram.
 |====
 
 Example:
