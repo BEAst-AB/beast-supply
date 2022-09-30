@@ -85,6 +85,14 @@
 						<cbc:AttributeID>RenewableFuel</cbc:AttributeID>
 						<cbc:Measure unitCode="P1">100.00</cbc:Measure>
 					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>FuelMeasurementMethod</cbc:AttributeID>
+						<cbc:Description>CloudData</cbc:Description>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>EngineType</cbc:AttributeID>
+						<cbc:Description>EURO4</cbc:Description>
+					</cac:MeasurementDimension>
 					<cac:ProviderParty>
 						<cac:PartyIdentification>
 							<cbc:ID schemeID="0007">5560726977</cbc:ID>

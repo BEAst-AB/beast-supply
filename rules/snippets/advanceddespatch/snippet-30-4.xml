@@ -136,6 +136,14 @@
 							<cbc:AttributeID>RenewableFuel</cbc:AttributeID>
 							<cbc:Measure unitCode="P1">100.00</cbc:Measure>
 						</cac:MeasurementDimension>
+						<cac:MeasurementDimension>
+							<cbc:AttributeID>FuelMeasurementMethod</cbc:AttributeID>
+							<cbc:Description>CloudData</cbc:Description>
+						</cac:MeasurementDimension>
+						<cac:MeasurementDimension>
+							<cbc:AttributeID>EngineType</cbc:AttributeID>
+							<cbc:Description>EURO4</cbc:Description>
+						</cac:MeasurementDimension>
 						<cac:ProviderParty>
 							<cac:PartyIdentification>
 								<cbc:ID schemeID="0007">5560726977</cbc:ID>
@@ -148,29 +156,23 @@
 					<!-- end::fuel[] -->
 					<!-- tag::environmentalemission[] -->
 					<cac:EnvironmentalEmission>
+						<cbc:EnvironmentalEmissionTypeCode>NOX</cbc:EnvironmentalEmissionTypeCode>
+						<cbc:ValueMeasure unitCode="MGM">6</cbc:ValueMeasure>
+					</cac:EnvironmentalEmission>
+
+					<cac:EnvironmentalEmission>
 						<cbc:EnvironmentalEmissionTypeCode>CO2</cbc:EnvironmentalEmissionTypeCode>
 						<cbc:ValueMeasure unitCode="MGM">2.8</cbc:ValueMeasure>
-						<cbc:Description>CarbonDioxide</cbc:Description>
 					</cac:EnvironmentalEmission>
+
 					<cac:EnvironmentalEmission>
-						<cbc:EnvironmentalEmissionTypeCode>NOx</cbc:EnvironmentalEmissionTypeCode>
-						<cbc:ValueMeasure unitCode="MGM">6</cbc:ValueMeasure>
-						<cbc:Description>NitrogenOxide</cbc:Description>
-					</cac:EnvironmentalEmission>
-					<cac:EnvironmentalEmission>
-						<cbc:EnvironmentalEmissionTypeCode>CH4</cbc:EnvironmentalEmissionTypeCode>
-						<cbc:ValueMeasure unitCode="MGM">0.6</cbc:ValueMeasure>
-						<cbc:Description>HydroCarbon</cbc:Description>
-					</cac:EnvironmentalEmission>
-					<cac:EnvironmentalEmission>
-						<cbc:EnvironmentalEmissionTypeCode>CPM</cbc:EnvironmentalEmissionTypeCode>
+						<cbc:EnvironmentalEmissionTypeCode>PM</cbc:EnvironmentalEmissionTypeCode>
 						<cbc:ValueMeasure unitCode="MGM">0.07</cbc:ValueMeasure>
-						<cbc:Description>ParticulateMatter</cbc:Description>
 					</cac:EnvironmentalEmission>
+
 					<cac:EnvironmentalEmission>
-						<cbc:EnvironmentalEmissionTypeCode>REN</cbc:EnvironmentalEmissionTypeCode>
-						<cbc:ValueMeasure unitCode="P1">100.00</cbc:ValueMeasure>
-						<cbc:Description>RenewableFuel</cbc:Description>
+						<cbc:EnvironmentalEmissionTypeCode>HC</cbc:EnvironmentalEmissionTypeCode>
+						<cbc:ValueMeasure unitCode="MGM">0.6</cbc:ValueMeasure>
 					</cac:EnvironmentalEmission>
 					<!-- end::environmentalemission[] -->
 				</cac:OriginalDespatchTransportationService>
