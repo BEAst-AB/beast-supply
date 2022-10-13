@@ -65,3 +65,24 @@ Example:
 ----
 include::{snippet-dir}/snippet-30-4.xml[tags=environmentalemission]
 ----
+
+Environmental Product Declaration (EPD) are related to despatch line but since it is environmental related information it is presented in this section.
+
+The table below describes the definitions of the EPD related properties:s.
+
+[cols="1,5",options="header",stripes=even]
+|====
+|NameCode |listID |Definition
+|EPDDatasetID |BEAST:4.0 |The EPD dataset id gives the digital reference to a produkt type in the EDP
+|EPDDataSetURL |BEAST:4.0 |URL to grab the machine readable digital information from the program operator
+|EPDPDFURL |BEAST:4.0 |URL to the human readable version of a EPD, for verification purposes
+|GWP-GHG_A1-3_EPD |BEAST:4.0 |Global warming potential green house gases for process A1-3 100 EPD total value for line
+|ResourceID |Boverket | Resource ID according to the Swedish National Board of Housing, Building and Planning (Boverket)
+|====
+
+Example:
+
+[source, xml, indent=0]
+----
+include::{snippet-dir}/snippet-30-4.xml[tags=epd]
+----
