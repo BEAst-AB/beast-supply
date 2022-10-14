@@ -73,15 +73,15 @@ Environmental Product Declaration (EPD) are related to despatch line but since i
 
 The table below describes the definitions of the EPD related properties:s.
 
-[cols="1,1,3",options="header",stripes=even]
+[cols="1,1,1,3",options="header",stripes=even]
 |====
-|NameCode |listID |Definition
-|EPDDatasetID |BEAST:4.0 |The EPD dataset id gives the digital reference to a produkt type in the EDP
-|EPDDataSetURL |BEAST:4.0 |URL to grab the machine readable digital information from the program operator
-|EPDPDFURL |BEAST:4.0 |URL to the human readable version of a EPD, for verification purposes
-|GWP-GHG_A1-3_EPD |BEAST:4.0 |Global warming potential green house gases for process A1-3 100 EPD total value for line
-|ResourceID |Boverket | Resource ID according to the Swedish National Board of Housing, Building and Planning (Boverket)
-|ResourceID |Trafikverket | Resource ID according to the Swedish Transport Administration (Trafikverket)
+|Name |NameCode |listID |Definition
+|EPD Dataset ID |EPDDatasetID |BEAST:4.0 |The EPD dataset id gives the digital reference to a produkt type in the EDP
+|EPD Dataset URL |EPDDataSetURL |BEAST:4.0 |URL to grab the machine readable digital information from the program operator
+|EPD PDF URL |EPDPDFURL |BEAST:4.0 |URL to the human readable version of a EPD, for verification purposes
+|GWP GHG A1-3 EPD line value |GWP-GHG_A1-3_EPD |BEAST:4.0 |Global warming potential green house gases for process A1-3 100 EPD total value for line
+|Resource ID |ResourceID |Boverket | Resource ID according to the Swedish National Board of Housing, Building and Planning (Boverket)
+|Resource ID |ResourceID |Trafikverket | Resource ID according to the Swedish Transport Administration (Trafikverket)
 |====
 
 Example:
