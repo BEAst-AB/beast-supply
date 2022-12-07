@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
                 Content:
-				Exampel of a rental despatch advice with, one item with serial number, one without and one sales item
+				Exampel of a rental despatch advice with
+				 - one item with serial number
+				 - one item without serial number
+				 - one sales item
 
 				
 				Version 1.0
 				Initial version
 				
+				Complies with Logistics Advanced Despatch Advice 1.0	
 
 -->
 <DespatchAdvice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -76,7 +80,7 @@
 		<cac:DeliveryContact>
 			<cbc:Name>Alexander Janving</cbc:Name>
 			<cbc:Telephone>010-448 00 004</cbc:Telephone>
-			<cbc:ElectronicMail>some.email@skanska.se</cbc:ElectronicMail>
+			<cbc:ElectronicMail>some.email@jm.se</cbc:ElectronicMail>
 		</cac:DeliveryContact>
 	</cac:DeliveryCustomerParty>
 	<cac:BuyerCustomerParty>
@@ -225,7 +229,7 @@
 				<!-- 0160 = GTIN, full list https://docs.peppol.eu/poacc/upgrade-3/codelist/ICD/ -->
 			</cac:StandardItemIdentification>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>BEAst:Site</cbc:Name>
+				<cbc:Name>BEAST:Site</cbc:Name>
 				<!-- Säljarens depånummer/site -->
 				<cbc:Value>JORDBRO BOD 54240</cbc:Value>
 			</cac:AdditionalItemProperty>
