@@ -23,7 +23,6 @@
 	<xsl:variable name="varUblXmlReferenceFile" select="$UblXmlReferenceFile"/>
 	<xsl:variable name="varUblDocBaseUrl" select="$UblDocBaseUrl"/>
 	<xsl:variable name="varUblXml" select="document(concat($varUblBaseUrl, $varUblXmlReferenceFile))"/>
-610
 	<xsl:output omit-xml-declaration="no" indent="yes" method="xml"/>
 
 	<xsl:template match="/">
