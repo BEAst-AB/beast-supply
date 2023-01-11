@@ -697,7 +697,6 @@
 							<?Cardinality 1..1?>
 							<?unitCode-usage Mandatory?>
 							<?unitCode-CodeList UNECERec20?>
-							<?unitCode-Rule PEPPOL-T16-B11002?>
 						</cbc:LatitudeDegreesMeasure>
 						<cbc:LongitudeDegreesMeasure unitCode="DD">18.063330898492403
 							<?Name Longitude Degrees Measure. ?>
@@ -705,7 +704,6 @@
 							<?Cardinality 1..1?>
 							<?unitCode-usage Mandatory?>
 							<?unitCode-CodeList UNECERec20?>
-							<?unitCode-Rule PEPPOL-T16-B11002?>
 						</cbc:LongitudeDegreesMeasure>
 						<cbc:AltitudeMeasure unitCode="MTR">12.5
 							<?Name Altitude Measure. ?>
@@ -713,7 +711,7 @@
 							<?Cardinality 0..1?>
 							<?unitCode-usage Mandatory?>
 							<?unitCode-CodeList UNECERec20?>
-							<?unitCode-Rule PEPPOL-T16-B11002?>
+							
 						</cbc:AltitudeMeasure>
 					</cac:LocationCoordinate>
 				</cac:DespatchAddress>
@@ -809,7 +807,6 @@
 			<cac:OrderReference>
 				<cbc:ID>AEG012345
 					<?DescriptionAddFirst Order Number (T3309) ?>
-					<?Rule PEPPOL-T120-R002?>
 				</cbc:ID>
 			</cac:OrderReference>
 		</cac:OrderLineReference>
