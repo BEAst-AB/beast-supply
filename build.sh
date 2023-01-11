@@ -31,7 +31,7 @@ docker run --rm -i -v $PROJECT:/src --entrypoint java klakegg/saxon:9.8.0-7 -cp 
 
 # Copying generated files back to Git
 echo "Copying files"
-docker run --rm -i -v $PROJECT/structure:/src alpine:3.6 cp /src/syntax/ubl-mlr.xml /src/syntax/ubl-mlr2.xml
+docker run --rm -i -v $PROJECT:/src alpine:3.6 cp /src/structure/syntax/ubl-mlr.xml /src/structure/syntax/ubl-mlr2.xml
 echo "Finished copy"
 
 # Structure
