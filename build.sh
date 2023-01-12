@@ -36,6 +36,12 @@ echo "2"
 docker cp $PROJECT:/src /src/structure/source/ubl-mlr.xml /src/structure/syntax/ubl-mlr2.xml
 echo "3"
 docker cp $PROJECT:/src $PROJECT/structure/source/ubl-mlr.xml $PROJECT/structure/syntax/ubl-mlr2.xml
+echo "4"
+docker cp $PROJECT:/structure/source/ubl-mlr.xml $PROJECT/structure/syntax/ubl-mlr2.xml
+echo "5"
+docker cp $PROJECT:/structure/source/ubl-mlr.xml $PROJECT:/structure/syntax/ubl-mlr2.xml
+echo "6"
+docker cp $PROJECT:/structure/source/ubl-mlr.xml ./ubl-mlr2.xml
 echo "Finished copy"
 
 # Structure
