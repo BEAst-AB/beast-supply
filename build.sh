@@ -30,17 +30,19 @@ docker run --rm -i -v $PROJECT:/src --entrypoint java klakegg/saxon:9.8.0-7 -cp 
 docker run --rm -i -v $PROJECT:/src --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-weight-statement.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-weight-statement.xml UblBaseUrl=https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/master/structure/syntax/ UblDocBaseUrl=https://docs.peppol.eu/poacc/upgrade-3/syntax/DespatchAdvice/ UblXmlReferenceFile=ubl-despatch-advice.xml -ext:on --allow-external-functions:on
 
 # Copying generated files back to Git
-docker cp $PROJECT:/structure/source/ubl-mlr.xml ./ubl-mlr2.xml
+echo "Copying output to Github"
 echo "7"
 docker run --rm -v $PROJECT:/src alpine sh -c "ls > /src/file.txt"
 echo "8"
 docker run --rm $PROJECT:/src alpine "cat /src/file.txt"
-echo "9"
-docker run --rm -v $PROJECT:/src alpine:latest sh -c "ls > /src/file.txt" \
-  alpine "cat /src/file.txt"
 echo "10"
-ls
+ls structure/
+echo "10.1"
+ls structure/syntax/
+
 echo "11"
+echo $(pwd)
+echo $PROJECT
 docker run -v $(pwd):/var/opt/project bash:latest \
   bash -c "ls /var/opt/project"                         
 
