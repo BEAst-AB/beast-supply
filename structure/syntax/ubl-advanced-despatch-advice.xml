@@ -41,6 +41,15 @@ Peppol: An transaction instance must contain an identifier. The identifier enabl
          <Reference type="BUSINESS_TERM">tir16-003</Reference>
          <Value type="EXAMPLE">5658999</Value>
       </Element>
+	     <Element>
+         <Term>cbc:IssueDate</Term>
+         <Name>Dispatch advice issue date</Name>
+         <Description>BEAst: 
+Peppol: The date when the advanced despatch advice is issued. Format = "YYYY-MM-DD". </Description>
+         <DataType>Date</DataType>
+         <Reference type="BUSINESS_TERM">tir16-004</Reference>
+         <Value type="EXAMPLE">2021-09-10</Value>
+      </Element>
 	     <Element cardinality="0..1">
          <Term>cbc:IssueTime</Term>
          <Name>Dispatch advice issue time</Name>
@@ -1772,7 +1781,7 @@ Peppol: Identifies the order that the reference order line belongs
          <Element cardinality="0..n">
             <Term>cac:DocumentReference</Term>
             <Name>Document Reference. </Name>
-            <Description>BEAst: Added by BEAst. Used for sending additional references at line level. </Description>
+            <Description>Peppol: Used for sending additional references at line level. </Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Document ID. </Name>
@@ -2128,72 +2137,6 @@ Peppol: The batch number that applies to all items in the dispatch
                         <Description>BEAst: Added by BEAst. The UBL structure used requires this element. Use the value NA. </Description>
                         <Value type="EXAMPLE">NA</Value>
                      </Element>
-                  </Element>
-               </Element>
-            </Element>
-         </Element>
-         <Element>
-            <Term>cac:Shipment</Term>
-            <Element>
-               <Term>cbc:ID</Term>
-               <Value type="EXAMPLE">NA</Value>
-            </Element>
-            <Element>
-               <Term>cac:TransportHandlingUnit</Term>
-               <Description>BEAst: This group is used when it is possible to describe the content of the Transport Handilng Units. If that is not the case, the Transport Handling Units should instead be listed at header level, under Shipment. 
-Peppol: </Description>
-               <Element>
-                  <Term>cbc:ID</Term>
-                  <Description>BEAst: The SSCC identification code of this Transport Handling Unit (T0138). 
-Peppol: </Description>
-                  <Value type="EXAMPLE">5454</Value>
-               </Element>
-               <Element>
-                  <Term>cbc:TransportHandlingUnitTypeCode</Term>
-                  <Description>BEAst: Type of Transport Handling Unit (T6119). Use UN/ECE Recommendation 21 with addition of the codes used by "Retursystem Byggpall". 
-Peppol: </Description>
-                  <Value type="EXAMPLE">4H</Value>
-               </Element>
-               <Element>
-                  <Term>cbc:HazardousRiskIndicator</Term>
-                  <Value type="EXAMPLE">false</Value>
-               </Element>
-               <Element>
-                  <Term>cbc:ShippingMarks</Term>
-                  <Value type="EXAMPLE">text</Value>
-               </Element>
-               <Element>
-                  <Term>cac:MeasurementDimension</Term>
-                  <Element>
-                     <Term>cbc:AttributeID</Term>
-                     <Description>BEAst: To describe the type of measurement (T6714). Use UNCL 6313 subset. 
-Peppol: </Description>
-                     <Value type="EXAMPLE">AAW</Value>
-                  </Element>
-                  <Element>
-                     <Term>cbc:Measure</Term>
-                     <Description>BEAst: For the measure (T6122) and Measure of Unit Code (T6706). Use UN/ECE Recommendation 20 and 21. subset. 
-Peppol: </Description>
-                     <Value type="EXAMPLE">1</Value>
-                     <Attribute>
-                        <Term>unitCode</Term>
-                        <Value type="EXAMPLE">C62</Value>
-                     </Attribute>
-                  </Element>
-               </Element>
-               <Element>
-                  <Term>cac:Package</Term>
-                  <Element>
-                     <Term>cbc:ID</Term>
-                     <Description>BEAst: Unique identity of the package (T0138). 
-Peppol: </Description>
-                     <Value type="EXAMPLE">1267</Value>
-                  </Element>
-                  <Element>
-                     <Term>cbc:PackagingTypeCode</Term>
-                     <Description>BEAst: Type of Package (T6119). Use UN/ECE Recommendation 21 with addition of the codes used by "Retursystem Byggpall". 
-Peppol: </Description>
-                     <Value type="EXAMPLE">BX</Value>
                   </Element>
                </Element>
             </Element>
