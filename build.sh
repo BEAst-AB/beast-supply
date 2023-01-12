@@ -42,6 +42,10 @@ echo "5"
 docker cp $PROJECT:/structure/source/ubl-mlr.xml $PROJECT:/structure/syntax/ubl-mlr2.xml
 echo "6"
 docker cp $PROJECT:/structure/source/ubl-mlr.xml ./ubl-mlr2.xml
+echo "7"
+docker ps -alq
+echo "8"
+docker run --rm -i -v $PROJECT:/src --entrypoint cmd ls
 echo "Finished copy"
 
 # Structure
