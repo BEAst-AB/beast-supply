@@ -43,9 +43,10 @@ docker cp $PROJECT:/structure/source/ubl-mlr.xml $PROJECT:/structure/syntax/ubl-
 echo "6"
 docker cp $PROJECT:/structure/source/ubl-mlr.xml ./ubl-mlr2.xml
 echo "7"
-docker ps -alq
+docker run --rm -v $PROJECT:/src alpine sh -c "ls > /src/file.txt"
 echo "8"
-docker run --rm -i -v $PROJECT:/src --entrypoint cmd ls
+docker run --rm myvolume:/app alpine cat /src/file.txt
+
 echo "Finished copy"
 
 # Structure
