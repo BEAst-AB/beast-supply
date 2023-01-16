@@ -749,7 +749,7 @@
 							<?Name Latitude Degrees Measure. ?>
 							<?unitCode-usage Mandatory?>
 							<?unitCode-CodeList UNECERec20?>
-							<?unitCode-Rule PEPPOL-T16-B11002?>
+							
 							<?Description The X coordinate. Use degrees with decimals. ?>
 							<?Cardinality 1..1?>
 						</cbc:LatitudeDegreesMeasure>
@@ -757,7 +757,7 @@
 							<?Name Longitude Degrees Measure. ?>
 							<?unitCode-usage Mandatory?>
 							<?unitCode-CodeList UNECERec20?>
-							<?unitCode-Rule PEPPOL-T16-B11002?>
+							
 							<?Description The Y coordinate. Use degrees with decimals. ?>
 							<?Cardinality 1..1?>
 						</cbc:LongitudeDegreesMeasure>
@@ -767,7 +767,7 @@
 							<?Cardinality 0..1?>
 							<?unitCode-usage Mandatory?>
 							<?unitCode-CodeList UNECERec20?>
-							<?unitCode-Rule PEPPOL-T16-B11002?>
+							
 						</cbc:AltitudeMeasure>
 					</cac:LocationCoordinate>
 				</cac:PhysicalLocation>
@@ -900,7 +900,7 @@
 								<?Cardinality 1..1?>
 								<?unitCode-usage Mandatory?>
 								<?unitCode-CodeList UNECERec20?>
-								<?unitCode-Rule PEPPOL-T16-B11002?>
+								
 							</cbc:LatitudeDegreesMeasure>
 							<cbc:LongitudeDegreesMeasure unitCode="DD">18.063330898492403
 								<?Name Longitude Degrees Measure. ?>
@@ -908,7 +908,7 @@
 								<?Cardinality 1..1?>
 								<?unitCode-usage Mandatory?>
 								<?unitCode-CodeList UNECERec20?>
-								<?unitCode-Rule PEPPOL-T16-B11002?>
+								
 							</cbc:LongitudeDegreesMeasure>
 							<cbc:AltitudeMeasure unitCode="MTR">12.5
 								<?Name Altitude Measure. ?>
@@ -916,7 +916,7 @@
 								<?Cardinality 0..1?>
 								<?unitCode-usage Mandatory?>
 								<?unitCode-CodeList UNECERec20?>
-								<?unitCode-Rule PEPPOL-T16-B11002?>
+								
 							</cbc:AltitudeMeasure>
 						</cac:LocationCoordinate>
 					</PhysicalLocation>

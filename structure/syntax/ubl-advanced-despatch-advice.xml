@@ -8,59 +8,91 @@
    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
    <Document>
       <Term>ubl:DespatchAdvice</Term>
-      <Element>
+	
+	
+	
+	     <Element>
          <Term>cbc:CustomizationID</Term>
+         <Name>Specification identification</Name>
+         <Description>Peppol: Identifies the specification of content and rules that apply to the
+				transaction.</Description>
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">tir16-002</Reference>
+         <Reference type="RULE">PEPPOL-T120-R011</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1</Value>
       </Element>
-      <Element>
+	     <Element>
          <Term>cbc:ProfileID</Term>
+         <Name>Business process type identifier</Name>
          <Description>BEAst: There are two ProfileIDs defined for the Advanced Despatch Advice. One profile is used when the receiver of the Despatch Advice is expected to return a response message, the other is used when no response message is used. Possible choices are: "urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1" and "urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_response:1" 
-Peppol: </Description>
+Peppol: Identifies the BII profile or business process context in which the transaction appears. There are two ProfileIDs defined for the Advanced Despatch Advice. One profile is used when the receiver of the Despatch Advice is expected to return a response message, the other is used when no response message is used. Possible choices are: "urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1" and "urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_response:1" </Description>
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">tir16-001</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</Value>
       </Element>
-      <Element>
+	     <Element>
          <Term>cbc:ID</Term>
+         <Name>Document identifier</Name>
          <Description>BEAst: T0125/T6338, Despatch Advice Number
-Peppol: </Description>
+Peppol: An transaction instance must contain an identifier. The identifier enables
+				positive referencing the document instance for various purposes including
+				referencing between transactions that are part of the same process.</Description>
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">tir16-003</Reference>
          <Value type="EXAMPLE">5658999</Value>
       </Element>
-      <Element>
+	     <Element>
          <Term>cbc:IssueDate</Term>
-         <Description>BEAst: T6325, Document Date/Time. 
-Peppol: </Description>
+         <Name>Dispatch advice issue date</Name>
+         <Description>BEAst: 
+Peppol: The date when the advanced despatch advice is issued. Format = "YYYY-MM-DD". </Description>
+         <DataType>Date</DataType>
+         <Reference type="BUSINESS_TERM">tir16-004</Reference>
          <Value type="EXAMPLE">2021-09-10</Value>
       </Element>
-      <Element>
+	     <Element cardinality="0..1">
          <Term>cbc:IssueTime</Term>
+         <Name>Dispatch advice issue time</Name>
          <Description>BEAst: T6325, Document Date/Time. 
-Peppol: </Description>
+Peppol: The time when the advanced despatch advice is issued. Format = "hh:mm:ss". </Description>
+         <DataType>Time</DataType>
+         <Reference type="BUSINESS_TERM">tir16-005</Reference>
          <Value type="EXAMPLE">12:00:00</Value>
       </Element>
-      <Element>
+	     <Element cardinality="0..1">
          <Term>cbc:Note</Term>
+         <Name>Dispatch note</Name>
          <Description>BEAst: Used for Transport Information (T6008). 
-Peppol: </Description>
+Peppol: A textual note for the dispatch as whole. Used for Transport Information. </Description>
+         <DataType>Text</DataType>
+         <Reference type="BUSINESS_TERM">tir16-088</Reference>
          <Value type="EXAMPLE">Text</Value>
       </Element>
-      <Element>
+	     <Element cardinality="0..n">
          <Term>cac:OrderReference</Term>
+         <Name>Order reference information</Name>
          <Element>
             <Term>cbc:ID</Term>
+            <Name>Order reference</Name>
             <Description>BEAst: T3309/T6335, Order Number/Call Off Reference. Attribute schemeID can be used to send Project Number (T6004) or Customers' Reference (T6005).
 			Default is Order Number so if schemeID is missing the number in the element is Order Number as per Peppol global BIS.
-			"ProjectReferece" is used for Project Number only.
+			"ProjectReference" is used for Project Number only.
 			"AccountingCost" is used for the Customer's Reference. Here you always use the accounting information.
 			The group OrderReference can be repeated. 
-Peppol: </Description>
+Peppol: Used to provide a reference to the order on which the despatch is
+					based.</Description>
+            <DataType>Identifier</DataType>
+            <Reference type="BUSINESS_TERM">tir16-006</Reference>
             <Value type="EXAMPLE">9876986-1-5544</Value>
-            <Attribute>
+            <Attribute usage="Optional">
                <Term>schemeID</Term>
                <Description>BEAst: "ProjectReference" and "AccountingCost" can be used as values for the schemeID attribute</Description>
                <Value type="EXAMPLE">AccountingCost</Value>
             </Attribute>
          </Element>
       </Element>
-      <Element cardinality="0..n">
+
+	     <Element cardinality="0..n">
          <Term>cac:AdditionalDocumentReference</Term>
          <Name>Additional document reference </Name>
          <Description>BEAst: Added by BEAst. Used for additional BEAst information on header level. </Description>
@@ -68,12 +100,15 @@ Peppol: </Description>
             <Term>cbc:ID</Term>
             <Name>Identity of the reference. </Name>
             <Description>BEAst: Added by BEAst. The reference number of the added information. Can be the Seller's Order Number (T6099), Final Customer's Order Number (T6221), Drawing Number (T6222), Delivery Part (T6340), Freight Payer's Customer Number (T6463) or Document Name (T6484) depending on DocumentType. </Description>
+            <Reference type="BUSINESS_TERM">tir16-p049</Reference>
             <Value type="EXAMPLE">7648779</Value>
          </Element>
-         <Element>
+         <Element cardinality="0..1">
             <Term>cbc:DocumentType</Term>
             <Name>Document Type Code. </Name>
             <Description>BEAst: Added by BEAst. The type of reference. "BEAST:FreightPayersCustomerNumber" (T6463), "BEAST:SellersOrderNumber" (T6099), "BEAST:FinalCustomersOrderNumber" (T6221), "BEAST:DeliveryPart" (T6340), "BEAST:DrawingNumber" (T6222) or Any other document type (T6473). </Description>
+            <DataType>Text</DataType>
+            <Reference type="BUSINESS_TERM">tir16-p050</Reference>
             <Value type="EXAMPLE">BEAST:FreightPayersCustomerNumber</Value>
          </Element>
          <Element cardinality="0..1">
@@ -84,14 +119,20 @@ Peppol: </Description>
                <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                <Name>Embedded Binary object. </Name>
                <Description>BEAst: Added by BEAst. The referenced document can here be inserted as a binary object (T6475). filename refers to T6476. </Description>
+               <DataType>Binary object</DataType>
+               <Reference type="BUSINESS_TERM">tir16-p051</Reference>
                <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
-               <Attribute>
+               <Attribute usage="Mandatory">
                   <Term>mimeCode</Term>
+                  <Name>Attached document Mime code</Name>
+                  <Description>Peppol: Peppol: The mime code of the attached document.</Description>
                   <Reference type="CODE_LIST">MimeCode</Reference>
                   <Value type="EXAMPLE">application/pdf</Value>
                </Attribute>
-               <Attribute>
+               <Attribute usage="Mandatory">
                   <Term>filename</Term>
+                  <Name>Attached document filename</Name>
+                  <Description>Peppol: Peppol: The file name of the attached document</Description>
                   <Value type="EXAMPLE">Hours-spent.pdf</Value>
                </Attribute>
             </Element>
@@ -103,515 +144,864 @@ Peppol: </Description>
                   <Term>cbc:URI</Term>
                   <Name>Address to internet resource. </Name>
                   <Description>BEAst: Added by BEAst. The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource (T6187). </Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p052</Reference>
                   <Value type="EXAMPLE">www.beast.se</Value>
                </Element>
             </Element>
          </Element>
       </Element>
-      <Element>
+
+	     <Element>
          <Term>cac:DespatchSupplierParty</Term>
+         <Name>Despatching party information</Name>
          <Description>BEAst: This party defines the company that provides the goods or the service. It also defines the sender of the Despatch Advice. The real Ship-from Address must be provided in the Despatch Address when the Despatch Advice describes a movement. 
-Peppol: </Description>
+Peppol: The Despatch Party is the person or organization who provides (despatch) the goods or services. It also defines the sender of the Advanced Despatch Advice. The role is carried out by the supplier or on behalf of the supplier. The real ship-from address must be provided in the Despatch Address when the Advanced Despatch Advice describes a movement.</Description>
          <Element>
             <Term>cac:Party</Term>
+            <Name>Party information</Name>
             <Element>
                <Term>cbc:EndpointID</Term>
+               <Name>Despatch party electronic address</Name>
+               <Description>Peppol: Identifies the despatch party's electronic address</Description>
+               <DataType>Identifier</DataType>
+               <Reference type="BUSINESS_TERM">tir16-071</Reference>
                <Value type="EXAMPLE">7300010000001</Value>
                <Attribute usage="Mandatory">
                   <Term>schemeID</Term>
+                  <Name>Scheme identifier</Name>
+                  <Description>Peppol: Peppol: Scheme identifier for electronic address</Description>
                   <Reference type="CODE_LIST">eas</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
+               <Name>Party identification</Name>
                <Element>
                   <Term>cbc:ID</Term>
+                  <Name>Despatching party identifier</Name>
                   <Description>BEAst: Shipper (T0129) 
-Peppol: </Description>
+Peppol: The identifier of the despatching party</Description>
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p001</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute>
+                  <Attribute usage="optional">
                      <Term>schemeID</Term>
+                     <Name>Scheme identifier</Name>
+                     <Description>BEAst: Strongly recommended to use even though it is not mandatory in Peppol.
+Peppol: Peppol: Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
-               <Element>
+               <Name>Postal address</Name>
+               <Description>Peppol: Postal address of the depatching party</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
+                  <Name>Address line 1</Name>
                   <Description>BEAst: Street Name (T5003) 
-Peppol: </Description>
+Peppol: The main address line in a postal address usually the street
+							name and number.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p012</Reference>
                   <Value type="EXAMPLE">Busy Street</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
+                  <Name>Address line 2</Name>
                   <Description>BEAst: Used for Department (T5002). 
-Peppol: </Description>
+Peppol: An additional address line in a postal address that can be used
+							to give further details supplementing the main line. Common use are
+							secondary house number in a complex or in a building.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p013</Reference>
                   <Value type="EXAMPLE">way 1</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
+                  <Name>City</Name>
                   <Description>BEAst: City Name (T5005) 
-Peppol: </Description>
+Peppol: The common name of the city where the postal address is. The
+							name is written in full rather than as a code.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p014</Reference>
                   <Value type="EXAMPLE">Farthing</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
+                  <Name>Post code</Name>
                   <Description>BEAst: Postal Code (T6117) 
-Peppol: </Description>
+Peppol: The identifier for an addressable group of properties according
+							to the relevant national postal service, such as a ZIP code or Post
+							Code.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p015</Reference>
                   <Value type="EXAMPLE">AA99 1BB</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
+                  <Name>Country subdivision</Name>
+                  <Description>Peppol: For specifying a region, county, state, province etc. within a
+							country by using text.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p016</Reference>
                   <Value type="EXAMPLE">Heremouthshire</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
-                  <Element>
+                  <Name>Address Line</Name>
+                  <Element cardinality="0..1">
                      <Term>cbc:Line</Term>
+                     <Name>Address line 3</Name>
                      <Description>BEAst: Used for any other additional address information like Building (T5004). 
-Peppol: </Description>
+Peppol: An additional address line in an address that can be used
+								to give further details supplementing the main line.</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir16-p017</Reference>
                      <Value type="EXAMPLE">The Roundabout</Value>
                   </Element>
                </Element>
                <Element>
                   <Term>cac:Country</Term>
+                  <Name>Country</Name>
                   <Element>
                      <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code</Name>
                      <Description>BEAst: Country Code (T5007) 
-Peppol: </Description>
+Peppol: A code that identifies the country.The lists of valid
+								countries are registered with the ISO 3166-1 Maintenance agency,
+								"Codes for the representation of names of countries and their
+								subdivisions". Codes must be according to the alpha-2
+								representation.</Description>
+                     <DataType>Code</DataType>
+                     <Reference type="BUSINESS_TERM">tir16-p045</Reference>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">GB</Value>
                   </Element>
                </Element>
             </Element>
             <Element>
                <Term>cac:PartyLegalEntity</Term>
-               <Element>
+               <Name>Party Name</Name>
+               <Element cardinality="1..1">
                   <Term>cbc:RegistrationName</Term>
+                  <Name>Dispatching party name</Name>
                   <Description>BEAst: Party Name (T5001) 
-Peppol: </Description>
+Peppol: The name of the dispatching party</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-007</Reference>
                   <Value type="EXAMPLE">Consortial</Value>
                </Element>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:Contact</Term>
-               <Element>
+               <Name>Contact </Name>
+               <Description>Peppol: The contact of the Despatch supplier party. </Description>
+               <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
+                  <Name>Contact name </Name>
                   <Description>BEAst: Name (T5012) 
-Peppol: </Description>
+Peppol: The contact name. </Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-008</Reference>
                   <Value type="EXAMPLE">Mrs Bouquet</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:Telephone</Term>
+                  <Name>Contact email telephone </Name>
                   <Description>BEAst: Phone Number (T5010) 
-Peppol: </Description>
+Peppol: The phone number of the contact. </Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-012</Reference>
                   <Value type="EXAMPLE">0158 1233714</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:ElectronicMail</Term>
+                  <Name>Contact email address </Name>
                   <Description>BEAst: Email Address (T5011) 
-Peppol: </Description>
+Peppol: The electronic mail of the contact. </Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-013</Reference>
                   <Value type="EXAMPLE">bouquet@fpconsortial.co.uk</Value>
                </Element>
             </Element>
          </Element>
       </Element>
-      <Element>
+
+	     <Element>
          <Term>cac:DeliveryCustomerParty</Term>
+         <Name>Consignee information</Name>
          <Description>BEAst: This party defines the company that receives the goods or the service. It also defines the receiver of the Despatch Advice. The real Ship-to Address must be provided in the Delivery Location if the Despatch Advice describes a movement. If the Despatch address describes a service provided at a specific location, the Delivery Location contains this location. 
-Peppol: </Description>
+Peppol: The Consignee is the person or organization to which the products will be shipped and who is taking possession. It also defines the receiver of the Advanced Despatch Advice. The role is carried out by the customer or on behalf of the customer. The real ship-to address must be provided in the delivery location if the Advanced Despatch Advice describes a movement. If the Despatch address describes a service provided at a specific location, the Delivery Location contains this location. </Description>
          <Element>
             <Term>cac:Party</Term>
+            <Name>Party information</Name>
             <Element>
                <Term>cbc:EndpointID</Term>
+               <Name>Consignee party electronic address</Name>
+               <Description>Peppol: Identifies the consignee party's electronic address</Description>
+               <DataType>Identifier</DataType>
+               <Reference type="BUSINESS_TERM">tir16-016</Reference>
                <Value type="EXAMPLE">5798000000124</Value>
-               <Attribute usage="Mandatory">
+               <Attribute>
                   <Term>schemeID</Term>
+                  <Name>Scheme identifier</Name>
+                  <Description>Peppol: Peppol: Scheme identifier for electronic address</Description>
                   <Reference type="CODE_LIST">eas</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
+               <Name>Party identification</Name>
                <Element>
                   <Term>cbc:ID</Term>
+                  <Name>Consignee party identifier</Name>
                   <Description>BEAst: Consignee (T0036) 
-Peppol: </Description>
+Peppol: The receiving party identifier.</Description>
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-015</Reference>
                   <Value type="EXAMPLE">5790000435951</Value>
-                  <Attribute usage="Mandatory">
+                  <Attribute usage="optional">
                      <Term>schemeID</Term>
+                     <Name>Scheme identifier</Name>
+                     <Description>BEAst: Strongly recommended to use even though it is not mandatory in Peppol.
+Peppol: Peppol: Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
-               <Element>
+               <Name>Postal address</Name>
+               <Description>Peppol: Postal address of the consignee</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
+                  <Name>Address line 1</Name>
                   <Description>BEAst: Street Name (T5003) 
-Peppol: </Description>
+Peppol: The main address line in a postal address usually the street
+							name and number.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-018</Reference>
                   <Value type="EXAMPLE">Avon Way</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
+                  <Name>Address line 2</Name>
                   <Description>BEAst: Used for Department (T5002). 
-Peppol: </Description>
+Peppol: An additional address line in a postal address that can be used
+							to give further details supplementing the main line. Common use are
+							secondary house number in a complex or in a building.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-019</Reference>
                   <Value type="EXAMPLE">Big projects</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
+                  <Name>City</Name>
                   <Description>BEAst: City Name (T5005) 
-Peppol: </Description>
+Peppol: The common name of the city where the postal address is. The
+							name is written in full rather than as a code.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-020</Reference>
                   <Value type="EXAMPLE">Bridgtow</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
+                  <Name>Post code</Name>
                   <Description>BEAst: Postal Code (T6117) 
-Peppol: </Description>
+Peppol: The identifier for an addressable group of properties according
+							to the relevant national postal service, such as a ZIP code or Post
+							Code.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-021</Reference>
                   <Value type="EXAMPLE">ZZ99 1ZZ</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
+                  <Name>Country subdivision</Name>
+                  <Description>Peppol: For specifying a region, county, state, province etc. within a
+							country by using text.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-022</Reference>
                   <Value type="EXAMPLE">Avon</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
-                  <Element>
+                  <Name>Address Line</Name>
+                  <Element cardinality="0..1">
                      <Term>cbc:Line</Term>
+                     <Name>Address line 3</Name>
                      <Description>BEAst: Used for any other additional address information like Building (T5004). 
-Peppol: </Description>
+Peppol: An additional address line in an address that can be used
+								to give further details supplementing the main line.</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir16-p011</Reference>
                      <Value type="EXAMPLE">3rd Floor, Room 5</Value>
                   </Element>
                </Element>
                <Element>
                   <Term>cac:Country</Term>
+                  <Name>Country</Name>
                   <Element>
                      <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code</Name>
                      <Description>BEAst: Country Code (T5007) 
-Peppol: </Description>
+Peppol: A code that identifies the country.The lists of valid
+								countries are registered with the ISO 3166-1 Maintenance agency,
+								"Codes for the representation of names of countries and their
+								subdivisions". Codes must be according to the alpha-2
+								representation.</Description>
+                     <DataType>Code</DataType>
+                     <Reference type="BUSINESS_TERM">tir16-023</Reference>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">GB</Value>
                   </Element>
                </Element>
             </Element>
             <Element>
                <Term>cac:PartyLegalEntity</Term>
-               <Element>
+               <Name>Party name</Name>
+               <Element cardinality="1..1">
                   <Term>cbc:RegistrationName</Term>
+                  <Name>Consignee party name</Name>
                   <Description>BEAst: Party Name (T5001) 
-Peppol: </Description>
+Peppol: The name of the receiving party.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-014</Reference>
                   <Value type="EXAMPLE">IYT Corporation</Value>
                </Element>
             </Element>
          </Element>
-         <Element>
+         <Element cardinality="0..1">
             <Term>cac:DeliveryContact</Term>
-            <Element>
+            <Name>Contact information</Name>
+            <Element cardinality="0..1">
                <Term>cbc:Name</Term>
+               <Name>Contact person name</Name>
                <Description>BEAst: Name (T5012) 
-Peppol: </Description>
+Peppol: The name of the contact person.</Description>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">tir16-024</Reference>
                <Value type="EXAMPLE">Mr Fred Churchill</Value>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
+               <Name>Contact telephone number</Name>
                <Description>BEAst: Phone Number (T5010) 
-Peppol: </Description>
+Peppol: A phone number for the contact person. If the person has a direct
+						number, this is that number.</Description>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">tir16-027</Reference>
                <Value type="EXAMPLE">0127 2653214</Value>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
+               <Name>Contact email address</Name>
                <Description>BEAst: Email address (T5011) 
-Peppol: </Description>
+Peppol: The e-mail address for the contact person. If the person has a
+						direct e-mail this is that email.</Description>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">tir16-028</Reference>
                <Value type="EXAMPLE">fred@iytcorporation.gov.uk</Value>
             </Element>
          </Element>
       </Element>
-      <Element>
+
+	     <Element cardinality="0..1">
          <Term>cac:BuyerCustomerParty</Term>
+         <Name>Buyer</Name>
+         <Description>Peppol: The buyer is the legal person or organization who buys or purchases the
+				goods or services. The role is carried out by the customer or on behalf of the
+				customer.</Description>
          <Element>
             <Term>cac:Party</Term>
-            <Element>
+            <Name>Party information</Name>
+            <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
+               <Name>Party identification</Name>
+               <Reference type="RULE">PEPPOL-T120-R008</Reference>
                <Element>
                   <Term>cbc:ID</Term>
+                  <Name>Buying party identifier</Name>
                   <Description>BEAst: Buyer (T0008) 
-Peppol: </Description>
+Peppol: The buying party identifier</Description>
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-030</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R008</Reference>
                   <Value type="EXAMPLE">5790000435951</Value>
-                  <Attribute usage="Mandatory">
+                  <Attribute usage="Optional">
                      <Term>schemeID</Term>
+                     <Name>Scheme identifier</Name>
+                     <Description>BEAst: Strongly recommended to use even though it is not mandatory in Peppol.
+Peppol: Peppol: Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:PartyName</Term>
+               <Name>Party name</Name>
+               <Reference type="RULE">PEPPOL-T120-R008</Reference>
                <Element>
                   <Term>cbc:Name</Term>
+                  <Name>Buying party name</Name>
                   <Description>BEAst: Party Name (T5001) 
-Peppol: </Description>
+Peppol: The name of the buying party</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-029</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R008</Reference>
                   <Value type="EXAMPLE">IYT Corporation</Value>
                </Element>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
-               <Element>
+               <Name>Postal address</Name>
+               <Description>Peppol: Postal address of the customer</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
+                  <Name>Address line 1</Name>
                   <Description>BEAst: Street Name (T5003) 
-Peppol: </Description>
+Peppol: The main address line in a postal address usually the street
+							name and number.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p025</Reference>
                   <Value type="EXAMPLE">Avon Way</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
+                  <Name>Address line 2</Name>
                   <Description>BEAst: Used for Department (T5002). 
-Peppol: </Description>
+Peppol: An additional address line in a postal address that can be used
+							to give further details supplementing the main line. Common use are
+							secondary house number in a complex or in a building.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p026</Reference>
                   <Value type="EXAMPLE">Purchasing</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
+                  <Name>City</Name>
                   <Description>BEAst: City Name (T5005) 
-Peppol: </Description>
+Peppol: The common name of the city where the postal address is. The
+							name is written in full rather than as a code.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p027</Reference>
                   <Value type="EXAMPLE">Bridgtow</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
+                  <Name>Post code</Name>
                   <Description>BEAst: Postal Code (T6117) 
-Peppol: </Description>
+Peppol: The identifier for an addressable group of properties according
+							to the relevant national postal service, such as a ZIP code or Post
+							Code.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p028</Reference>
                   <Value type="EXAMPLE">ZZ99 1ZZ</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
+                  <Name>Country subdivision</Name>
+                  <Description>Peppol: For specifying a region, county, state, province etc. within a
+							country by using text.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p029</Reference>
                   <Value type="EXAMPLE">Avon</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
-                  <Element>
+                  <Name>Address Line</Name>
+                  <Element cardinality="0..1">
                      <Term>cbc:Line</Term>
+                     <Name>Address line 3</Name>
                      <Description>BEAst: Used for any other additional address information like Building (T5004). 
-Peppol: </Description>
+Peppol: An additional address line in an address that can be used
+								to give further details supplementing the main line.</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir16-p030</Reference>
                      <Value type="EXAMPLE">3rd Floor, Room 5</Value>
                   </Element>
                </Element>
                <Element>
                   <Term>cac:Country</Term>
+                  <Name>Country</Name>
                   <Element>
                      <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code</Name>
                      <Description>BEAst: Country Code (T5007) 
-Peppol: </Description>
+Peppol: A code that identifies the country.The lists of valid
+								countries are registered with the ISO 3166-1 Maintenance agency,
+								"Codes for the representation of names of countries and their
+								subdivisions". Codes must be according to the alpha-2
+								representation.</Description>
+                     <DataType>Code</DataType>
+                     <Reference type="BUSINESS_TERM">tir16-p031</Reference>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">GB</Value>
                   </Element>
                </Element>
             </Element>
          </Element>
       </Element>
-      <Element>
+
+	     <Element cardinality="0..1">
          <Term>cac:SellerSupplierParty</Term>
+         <Name>Seller</Name>
+         <Description>Peppol: The seller is the legal person or organization who sells goods or services
+				to the customer. The role is carried out by the supplier or on behalf of the
+				supplier.</Description>
          <Element>
             <Term>cac:Party</Term>
-            <Element>
+            <Name>Party information</Name>
+            <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
+               <Name>Party identification</Name>
+               <Reference type="RULE">PEPPOL-T120-R009</Reference>
                <Element>
                   <Term>cbc:ID</Term>
+                  <Name>Selling party identifier</Name>
                   <Description>BEAst: Supplier (T0009) 
-Peppol: </Description>
+Peppol: An identifier for the seller party.</Description>
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-066</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R009</Reference>
                   <Value type="EXAMPLE">5790000435951</Value>
-                  <Attribute usage="Mandatory">
+                  <Attribute usage="Optional">
                      <Term>schemeID</Term>
+                     <Name>Scheme identifier</Name>
+                     <Description>BEAst: Strongly recommended to use even though it is not mandatory in Peppol.
+Peppol: Peppol: Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:PartyName</Term>
+               <Name>Party name</Name>
+               <Reference type="RULE">PEPPOL-T120-R009</Reference>
                <Element>
                   <Term>cbc:Name</Term>
+                  <Name>Selling party name</Name>
                   <Description>BEAst: Party Name (T5001) 
-Peppol: </Description>
+Peppol: The seller party name.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-065</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R009</Reference>
                   <Value type="EXAMPLE">IYT Corporation</Value>
                </Element>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
-               <Element>
+               <Name>Postal address</Name>
+               <Description>Peppol: Postal address of the supplier</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
+                  <Name>Address line 1</Name>
                   <Description>BEAst: Street Name (T5003) 
-Peppol: </Description>
+Peppol: The main address line in a postal address usually the street
+							name and number.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p018</Reference>
                   <Value type="EXAMPLE">Avon Way</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
+                  <Name>Address line 2</Name>
                   <Description>BEAst: Used for Department (T5002). 
-Peppol: </Description>
+Peppol: An additional address line in a postal address that can be used
+							to give further details supplementing the main line. Common use are
+							secondary house number in a complex or in a building.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p019</Reference>
                   <Value type="EXAMPLE">Sales</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
+                  <Name>City</Name>
                   <Description>BEAst: City Name (T5005) 
-Peppol: </Description>
+Peppol: The common name of the city where the postal address is. The
+							name is written in full rather than as a code.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p020</Reference>
                   <Value type="EXAMPLE">Bridgtow</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
+                  <Name>Post code</Name>
                   <Description>BEAst: Postal Code (T6117) 
-Peppol: </Description>
+Peppol: The identifier for an addressable group of properties according
+							to the relevant national postal service, such as a ZIP code or Post
+							Code.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p021</Reference>
                   <Value type="EXAMPLE">ZZ99 1ZZ</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
+                  <Name>Country subdivision</Name>
+                  <Description>Peppol: For specifying a region, county, state, province etc. within a
+							country by using text.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p022</Reference>
                   <Value type="EXAMPLE">Avon</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
-                  <Element>
+                  <Name>Address Line</Name>
+                  <Element cardinality="0..1">
                      <Term>cbc:Line</Term>
+                     <Name>Address line 3</Name>
                      <Description>BEAst: Used for any other additional address information like Building (T5004). 
-Peppol: </Description>
+Peppol: An additional address line in an address that can be used
+								to give further details supplementing the main line.</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir16-p023</Reference>
                      <Value type="EXAMPLE">3rd Floor, Room 5</Value>
                   </Element>
                </Element>
                <Element>
                   <Term>cac:Country</Term>
+                  <Name>Country</Name>
                   <Element>
                      <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code</Name>
                      <Description>BEAst: Country Code (T5007) 
-Peppol: </Description>
+Peppol: A code that identifies the country.The lists of valid
+								countries are registered with the ISO 3166-1 Maintenance agency,
+								"Codes for the representation of names of countries and their
+								subdivisions". Codes must be according to the alpha-2
+								representation.</Description>
+                     <DataType>Code</DataType>
+                     <Reference type="BUSINESS_TERM">tir16-p024</Reference>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">GB</Value>
                   </Element>
                </Element>
             </Element>
          </Element>
       </Element>
-      <Element>
+
+	     <Element cardinality="0..1">
          <Term>cac:OriginatorCustomerParty</Term>
+         <Name>Originator customer party</Name>
          <Description>BEAst: For 3PL shipments, this party defines the final receiver of the goods. 
-Peppol: </Description>
+Peppol: For 3PL shipments, this party defines the final receiver of the goods. </Description>
          <Element>
             <Term>cac:Party</Term>
-            <Element>
+            <Name>Party information</Name>
+            <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
+               <Name>Party identification</Name>
+               <Reference type="RULE">PEPPOL-T120-R010</Reference>
                <Element>
                   <Term>cbc:ID</Term>
+                  <Name>Originating party identifier</Name>
                   <Description>BEAst: Ultimate Customer ID (T6001 or T6223).  
-Peppol: </Description>
+Peppol: The originator party identifier.</Description>
+                  <Reference type="BUSINESS_TERM">tir16-032</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R010</Reference>
                   <Value type="EXAMPLE">5790000435951</Value>
-                  <Attribute usage="Mandatory">
+                  <Attribute usage="Optional">
                      <Term>schemeID</Term>
+                     <Name>Scheme identifier</Name>
+                     <Description>BEAst: Strongly recommended to use even though it is not mandatory in Peppol.
+Peppol: Peppol: Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:PartyName</Term>
+               <Name>Party name</Name>
+               <Reference type="RULE">PEPPOL-T120-R010</Reference>
                <Element>
                   <Term>cbc:Name</Term>
+                  <Name>Originating party name</Name>
                   <Description>BEAst: Ultimate Customer name (T5001).  
-Peppol: </Description>
+Peppol: The originator party name.</Description>
+                  <Reference type="BUSINESS_TERM">tir16-031</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R010</Reference>
                   <Value type="EXAMPLE">IYT Corporation</Value>
                </Element>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
-               <Element>
+               <Name>Postal address</Name>
+               <Description>Peppol: Postal address of the originator</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
+                  <Name>Address line 1</Name>
                   <Description>BEAst: Street Name (T5003).  
-Peppol: </Description>
+Peppol: The main address line in a postal address usually the street
+							name and number.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p032</Reference>
                   <Value type="EXAMPLE">Avon Way</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
+                  <Name>Address line 2</Name>
                   <Description>BEAst: Not used in BEAst version 3.1.  
-Peppol: </Description>
+Peppol: An additional address line in a postal address that can be used
+							to give further details supplementing the main line. Common use are
+							secondary house number in a complex or in a building.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p033</Reference>
                   <Value type="EXAMPLE">way 2</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
+                  <Name>City</Name>
                   <Description>BEAst: City name (T5005).  
-Peppol: </Description>
+Peppol: The common name of the city where the postal address is. The
+							name is written in full rather than as a code.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p034</Reference>
                   <Value type="EXAMPLE">Bridgtow</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
+                  <Name>Post code</Name>
                   <Description>BEAst: Postal code (T6117).  
-Peppol: </Description>
+Peppol: The identifier for an addressable group of properties according
+							to the relevant national postal service, such as a ZIP code or Post
+							Code.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p035</Reference>
                   <Value type="EXAMPLE">ZZ99 1ZZ</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
+                  <Name>Country subdivision</Name>
                   <Description>BEAst: Not used in BEAst version 3.1.  
-Peppol: </Description>
+Peppol: For specifying a region, county, state, province etc. within a
+							country by using text.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p036</Reference>
                   <Value type="EXAMPLE">Avon</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
-                  <Element>
+                  <Name>Address Line</Name>
+                  <Element cardinality="0..1">
                      <Term>cbc:Line</Term>
+                     <Name>Address line 3</Name>
                      <Description>BEAst: Not used in BEAst version 3.1.  
-Peppol: </Description>
+Peppol: An additional address line in an address that can be used
+								to give further details supplementing the main line.</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir16-p037</Reference>
                      <Value type="EXAMPLE">3rd Floor, Room 5</Value>
                   </Element>
                </Element>
                <Element>
                   <Term>cac:Country</Term>
+                  <Name>Country</Name>
                   <Element>
                      <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code</Name>
                      <Description>BEAst: Country code (T5007).  
-Peppol: </Description>
+Peppol: A code that identifies the country.The lists of valid
+								countries are registered with the ISO 3166-1 Maintenance agency,
+								"Codes for the representation of names of countries and their
+								subdivisions". Codes must be according to the alpha-2
+								representation.</Description>
+                     <DataType>Code</DataType>
+                     <Reference type="BUSINESS_TERM">tir16-p038</Reference>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">GB</Value>
                   </Element>
                </Element>
             </Element>
          </Element>
       </Element>
-      <Element>
+
+	     <Element cardinality="0..1">
          <Term>cac:Shipment</Term>
+         <Name>Shipment information</Name>
          <Element>
             <Term>cbc:ID</Term>
-            <Description>BEAst: T6127, Freight forwarder's reference number 
-Peppol: </Description>
+            <Name>Shipment identifier</Name>
+            <Description>BEAst: T6127, Freight forwarder's referens number 
+Peppol: Identifies a shipment. Freight forwarders reference number. </Description>
+            <Reference type="BUSINESS_TERM">tir16-038</Reference>
             <Value type="EXAMPLE">1</Value>
          </Element>
-         <Element>
+         <Element cardinality="0..n">
             <Term>cbc:Information</Term>
+            <Name>Shipment description</Name>
             <Description>BEAst: Used by BEAst for Supplier Remark (T6038). 
-Peppol: </Description>
+Peppol: Free-form text applying to a shipment. This element may contain notes
+					or any other similar information that is not contained explicitly in another
+					structure.</Description>
+            <Reference type="BUSINESS_TERM">tir16-039</Reference>
             <Value type="EXAMPLE">text</Value>
          </Element>
-         <Element>
+         <Element cardinality="0..1">
             <Term>cbc:GrossWeightMeasure</Term>
+            <Name>Shipment gross weight</Name>
             <Description>BEAst: Total Gross Weight (T6472) 
-Peppol: </Description>
+Peppol: The gross weight of the despatch as a whole. Must be equal the the weight specified for the included transport handling unites if this is specified</Description>
+            <Reference type="BUSINESS_TERM">tir16-074</Reference>
+            <Reference type="RULE">PEPPOL-T120-R018</Reference>
             <Value type="EXAMPLE">1</Value>
             <Attribute>
                <Term>unitCode</Term>
+               <Name>Shipment quantity unit of measure</Name>
+               <Description>Peppol: Peppol: The unit of measure that applies to the shipment
+						quantity.</Description>
+               <DataType>Code</DataType>
+               <Reference type="CODE_LIST">UNECERec20</Reference>
                <Value type="EXAMPLE">KGM</Value>
             </Attribute>
          </Element>
-         <Element>
+         <Element cardinality="0..1">
             <Term>cbc:GrossVolumeMeasure</Term>
+            <Name>Shipment gross volume</Name>
             <Description>BEAst: Total Gross Volume (T6494) 
-Peppol: </Description>
+Peppol: The gross volumen of the despatch as a whole. Must be greather or equal the the volumen specified for the included transport handling unites if this is specified</Description>
+            <Reference type="BUSINESS_TERM">tir16-075</Reference>
+            <Reference type="RULE">PEPPOL-T120-R019</Reference>
             <Value type="EXAMPLE">1</Value>
             <Attribute>
                <Term>unitCode</Term>
+               <Name>Shipment volume unit of measure</Name>
+               <Description>Peppol: Peppol: The unit of measure that applies to the shipment
+						volume.</Description>
+               <DataType>Code</DataType>
+               <Reference type="CODE_LIST">UNECERec20</Reference>
                <Value type="EXAMPLE">MTQ</Value>
             </Attribute>
          </Element>
-         <Element>
+         <Element cardinality="0..1">
             <Term>cbc:TotalTransportHandlingUnitQuantity</Term>
+            <Name>Total number of transport handling units</Name>
             <Description>BEAst: Not used in BEAst version 3.1 
 Peppol: </Description>
+            <Reference type="BUSINESS_TERM">tir16-p002</Reference>
+            <Reference type="RULE">PEPPOL-T120-R016</Reference>
+            <Reference type="RULE">PEPPOL-T120-R017</Reference>
             <Value type="EXAMPLE">3</Value>
          </Element>
-         <Element>
+         <Element cardinality="0..1">
             <Term>cac:Consignment</Term>
+            <Name>Consignment information</Name>
             <Element>
                <Term>cbc:ID</Term>
+               <Name>Consignment identifier</Name>
                <Description>BEAst: Use a dummy value since this element is mandatory. 
-Peppol: </Description>
+Peppol: An association to Consignment covering the shipment. Unique number
+						assigned to goods, both for import and export.</Description>
+               <Reference type="BUSINESS_TERM">tir16-040</Reference>
                <Value type="EXAMPLE">NA</Value>
             </Element>
             <Element cardinality="0..n">
@@ -626,8 +1016,9 @@ Peppol: </Description>
 Peppol: </Description>
                <Value type="EXAMPLE">ABC123</Value>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:CarrierParty</Term>
+               <Name>Carrier party</Name>
                <Element cardinality="0..1">
                   <Term>cac:PartyIdentification</Term>
                   <Name>Party Identification. </Name>
@@ -636,35 +1027,53 @@ Peppol: </Description>
                      <Term>cbc:ID</Term>
                      <Name>The Identity of the Carrier Party. </Name>
                      <Description>BEAst: Added by BEAst. Identifies the Carrier party (T3208). </Description>
+                     <DataType>Identifier</DataType>
+                     <Reference type="BUSINESS_TERM">tir16-p055</Reference>
                      <Value type="EXAMPLE">5790000435951</Value>
-                     <Attribute usage="Mandatory">
+                     <Attribute usage="Optional">
                         <Term>schemeID</Term>
+                        <Name>Scheme identifier</Name>
+                        <Description>BEAst: Strongly recommended to use even though it is not mandatory in Peppol.
+Peppol: Peppol: Scheme identifier for party identification</Description>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">0088</Value>
                      </Attribute>
                   </Element>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cac:PartyName</Term>
+                  <Name>Party name</Name>
                   <Element>
                      <Term>cbc:Name</Term>
+                     <Name>Carrier name</Name>
                      <Description>BEAst: Party Name (T5001) 
-Peppol: </Description>
+Peppol: The name of the carrier that handles the delivery of the
+								dispatched shipment.</Description>
+                     <Reference type="BUSINESS_TERM">tir16-076</Reference>
                      <Value type="EXAMPLE">Name</Value>
                   </Element>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cac:Person</Term>
+                  <Name>Information about the driver</Name>
                   <Description>BEAst: Not used in BEAst version 3.1. 
 Peppol: </Description>
-                  <Element>
+                  <Element cardinality="1..n">
                      <Term>cac:IdentityDocumentReference</Term>
+                     <Name>Person identity document reference</Name>
                      <Element>
                         <Term>cbc:ID</Term>
+                        <Name>Driver information</Name>
+                        <Description>Peppol: Identification about the driver of the vehicle that delivers the despatched shipment.</Description>
+                        <Reference type="BUSINESS_TERM">tir16-078</Reference>
                         <Value type="EXAMPLE">1234</Value>
                      </Element>
-                     <Element>
+                     <Element cardinality="0..1">
                         <Term>cbc:DocumentType</Term>
+                        <Name>Driver identification document type</Name>
+                        <Description>Peppol: The type of document used for identifying the driver,
+									expressed in text.</Description>
+                        <Reference type="BUSINESS_TERM">tir16-p009</Reference>
                         <Value type="EXAMPLE">Inv</Value>
                      </Element>
                   </Element>
@@ -713,6 +1122,8 @@ Peppol: </Description>
                         <Value type="EXAMPLE">123</Value>
                         <Attribute>
                            <Term>unitCode</Term>
+                           <Name>Measure unit of measure </Name>
+                           <Description>Peppol: Logistics: The unit of measure that applies to the measure. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">KGM</Value>
                         </Attribute>
@@ -737,8 +1148,11 @@ Peppol: </Description>
                            <Name>Identity of the fuel supplier. </Name>
                            <Description>BEAst: Added by BEAst. The fuel supplier (T6001). </Description>
                            <Value type="EXAMPLE">7300010000001</Value>
-                           <Attribute usage="Mandatory">
+                           <Attribute usage="Optional">
                               <Term>schemeID</Term>
+                              <Name>Scheme identifier</Name>
+                              <Description>BEAst: Strongly recommended to use even though it is not mandatory in Peppol.
+Peppol: </Description>
                               <Reference type="CODE_LIST">ICD</Reference>
                               <Value type="EXAMPLE">0088</Value>
                            </Attribute>
@@ -786,6 +1200,9 @@ Peppol: </Description>
                               <Value type="EXAMPLE">1234567891234</Value>
                               <Attribute usage="Mandatory">
                                  <Term>schemeID</Term>
+                                 <Name>Scheme identifier</Name>
+                                 <Description>BEAst: Strongly recommended to use even though it is not mandatory in Peppol.
+Peppol: </Description>
                                  <Reference type="CODE_LIST">ICD</Reference>
                                  <Value type="EXAMPLE">0160</Value>
                               </Attribute>
@@ -811,6 +1228,8 @@ Peppol: </Description>
                      <Value type="EXAMPLE">10</Value>
                      <Attribute>
                         <Term>unitCode</Term>
+                        <Name>Measure unit of measure </Name>
+                        <Description>Peppol: Logistics: The unit of measure that applies to measure. </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">MGM</Value>
                      </Attribute>
@@ -826,15 +1245,21 @@ Peppol: </Description>
                <Term>cbc:TransportModeCode</Term>
                <Name>Transport Mode Code. </Name>
                <Description>BEAst: Added by BEAst. Transport Mode Code, T6131. Use UNECE Recommendation 19. (1 = Maritime transport (This code should be used whenever the transport vehicle completes any part of its journey by sea.), 2 = Rail transport, 3 = Road transport, 4 = Air transport, 5 = Mail, 6 = Multimodal transport, 7 = Fixed transport installations, 8 = Inland water transport, 9 = Mode unknown.) </Description>
+               <Reference type="BUSINESS_TERM">tir16-p056</Reference>
+               <Reference type="CODE_LIST">UNECERec19</Reference>
                <Value type="EXAMPLE">3</Value>
             </Element>
          </Element>
-         <Element>
+         <Element cardinality="0..1">
             <Term>cac:Delivery</Term>
-            <Element>
+            <Name>Delivery information</Name>
+            <Element cardinality="0..1">
                <Term>cbc:TrackingID</Term>
+               <Name>Delivery tracking identifier</Name>
                <Description>BEAst: Tracking URL (T6737) 
-Peppol: </Description>
+Peppol: Used to provide a tracking id for delvivery e.g. UPS or
+						postal.</Description>
+               <Reference type="BUSINESS_TERM">tir16-041</Reference>
                <Value type="EXAMPLE">456789</Value>
             </Element>
             <Element cardinality="0..1">
@@ -846,8 +1271,11 @@ Peppol: </Description>
                   <Name>Identity of the Delivery Location. </Name>
                   <Description>BEAst: Added by BEAst. Identifies the Delivery Location (T0036). </Description>
                   <Value type="EXAMPLE">5790000435951</Value>
-                  <Attribute>
+                  <Attribute usage="Optional">
                      <Term>schemeID</Term>
+                     <Name>Scheme identifier</Name>
+                     <Description>BEAst: Strongly recommended to use even though it is not mandatory in Peppol.
+Peppol: </Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
                   </Attribute>
@@ -932,6 +1360,8 @@ Peppol: </Description>
                         <Value type="EXAMPLE">59.331660358041425</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
+                           <Name>Latitude degrees unit of measure </Name>
+                           <Description>Peppol: Logistics: The unit of measure that applies to the latitude degrees. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">DD</Value>
                         </Attribute>
@@ -943,6 +1373,8 @@ Peppol: </Description>
                         <Value type="EXAMPLE">18.063363084988005</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
+                           <Name>Longitude degrees unit of measure </Name>
+                           <Description>Peppol: Logistics: The unit of measure that applies to the longitude degrees. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">DD</Value>
                         </Attribute>
@@ -954,6 +1386,8 @@ Peppol: </Description>
                         <Value type="EXAMPLE">12.5</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
+                           <Name>Altitude unit of measure </Name>
+                           <Description>Peppol: Logistics: The unit of measure that applies to altitude. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">MTR</Value>
                         </Attribute>
@@ -961,99 +1395,160 @@ Peppol: </Description>
                   </Element>
                </Element>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:EstimatedDeliveryPeriod</Term>
-               <Element>
+               <Name>Estimated delivery period</Name>
+               <Element cardinality="1..1">
                   <Term>cbc:StartDate</Term>
+                  <Name>Period start date</Name>
                   <Description>BEAst: Unloading Date and Time (T6372)/Delivery Period Start Date (T6319) 
-Peppol: </Description>
+Peppol: The start date of the period</Description>
+                  <Reference type="BUSINESS_TERM">tir16-042</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R012</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R015</Reference>
                   <Value type="EXAMPLE">2021-09-25</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:StartTime</Term>
+                  <Name>Period start time</Name>
                   <Description>BEAst: Unloading Date and Time (T6372)/Delivery Period Start Time (T6734) 
-Peppol: </Description>
+Peppol: The start time of the period.</Description>
+                  <Reference type="BUSINESS_TERM">tir16-043</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R013</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R015</Reference>
                   <Value type="EXAMPLE">12:00:00</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:EndDate</Term>
+                  <Name>Period end date</Name>
                   <Description>BEAst: Delivery Period End Date (T6320) 
-Peppol: </Description>
+Peppol: The end date of the period.</Description>
+                  <Reference type="BUSINESS_TERM">tir16-044</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R012</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R014</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R015</Reference>
                   <Value type="EXAMPLE">2021-09-27</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:EndTime</Term>
+                  <Name>Period end time</Name>
                   <Description>BEAst: Delivery Period End Time (T6735) 
-Peppol: </Description>
+Peppol: The end time of the period.</Description>
+                  <Reference type="BUSINESS_TERM">tir16-045</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R013</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R014</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R015</Reference>
                   <Value type="EXAMPLE">12:00:00</Value>
                </Element>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:Despatch</Term>
-               <Element>
+               <Name>Actual or expected despatch period</Name>
+               <Element cardinality="0..1">
                   <Term>cbc:ActualDespatchDate</Term>
+                  <Name>Shipment dispatch date</Name>
                   <Description>BEAst: Loading Date and Time (T6371)/Despatch Date and Time (T6242) 
-Peppol: </Description>
+Peppol: The actual or expected date when the shipment was dispatched
+							from the dispatching party.</Description>
+                  <Reference type="BUSINESS_TERM">tir16-072</Reference>
                   <Value type="EXAMPLE">2021-09-25</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:ActualDespatchTime</Term>
+                  <Name>Shipment dispatch time</Name>
                   <Description>BEAst: Loading Date and Time (T6371)/Despatch Date and Time (T6242) 
-Peppol: </Description>
+Peppol: The actual or expected time when the shipment was dispatched
+							from the dispatching party.</Description>
+                  <Reference type="BUSINESS_TERM">tir16-073</Reference>
                   <Value type="EXAMPLE">13:00:00</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cac:DespatchAddress</Term>
+                  <Name>Despatch address</Name>
                   <Description>BEAst: The Despatch Address is used to define the Ship-from when the Despatch Supplier Party is not. When the Despatch Advice describes a movement, the Despatch Address should be included. 
-Peppol: </Description>
-                  <Element>
+Peppol: The Despatch Address is used to define the Ship-from when the Despatch Supplier Party is not. When the Despatch Advice describes a movement, the Despatch Address should be included. </Description>
+                  <Element cardinality="0..1">
                      <Term>cbc:ID</Term>
+                     <Name>Identifier</Name>
                      <Description>BEAst: Identity of the Despatch Address (T0129). </Description>
+                     <Reference type="BUSINESS_TERM">tir16-p046</Reference>
                      <Value type="EXAMPLE">5790000435951</Value>
                   </Element>
-                  <Element>
+                  <Element cardinality="0..1">
                      <Term>cbc:StreetName</Term>
+                     <Name>Address line 1</Name>
                      <Description>BEAst: Street Name (T5003).  
-Peppol: </Description>
+Peppol: The main address line in a postal address usually the street
+							name and number.</Description>
+                     <Reference type="BUSINESS_TERM">tir16-p003</Reference>
                      <Value type="EXAMPLE">Avon Way</Value>
                   </Element>
-                  <Element>
+                  <Element cardinality="0..1">
                      <Term>cbc:AdditionalStreetName</Term>
+                     <Name>Address line 2</Name>
                      <Description>BEAst: Used for Department (T5002).  
-Peppol: </Description>
+Peppol: An additional address line in a postal address that can be used
+							to give further details supplementing the main line. Common use are
+							secondary house number in a complex or in a building.</Description>
+                     <Reference type="BUSINESS_TERM">tir16-p004</Reference>
                      <Value type="EXAMPLE">way 2</Value>
                   </Element>
-                  <Element>
+                  <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
+                     <Name>City</Name>
                      <Description>BEAst: City Name (T5005).  
-Peppol: </Description>
+Peppol: The common name of the city where the postal address is. The
+							name is written in full rather than as a code.</Description>
+                     <Reference type="BUSINESS_TERM">tir16-p005</Reference>
                      <Value type="EXAMPLE">Bridgtow</Value>
                   </Element>
-                  <Element>
+                  <Element cardinality="0..1">
                      <Term>cbc:PostalZone</Term>
+                     <Name>Post code</Name>
                      <Description>BEAst: Postal Code (T6117).  
-Peppol: </Description>
+Peppol: The identifier for an addressable group of properties according
+							to the relevant national postal service, such as a ZIP code or Post
+							Code.</Description>
+                     <Reference type="BUSINESS_TERM">tir16-p006</Reference>
                      <Value type="EXAMPLE">ZZ99 1ZZ</Value>
                   </Element>
-                  <Element>
+                  <Element cardinality="0..1">
                      <Term>cbc:CountrySubentity</Term>
+                     <Name>Country subdivision</Name>
+                     <Description>Peppol: For specifying a region, county, state, province etc. within a
+							country by using text.</Description>
+                     <Reference type="BUSINESS_TERM">tir16-p007</Reference>
                      <Value type="EXAMPLE">Avon</Value>
                   </Element>
-                  <Element>
+                  <Element cardinality="0..1">
                      <Term>cac:AddressLine</Term>
-                     <Element>
+                     <Name>Address Line</Name>
+                     <Element cardinality="0..1">
                         <Term>cbc:Line</Term>
+                        <Name>Address line 3</Name>
                         <Description>BEAst: Used for any other additional address information like Building (T5004).  
-Peppol: </Description>
+Peppol: An additional address line in an address that can be
+									used to give further details supplementing the main
+									line.</Description>
+                        <DataType>Text</DataType>
                         <Value type="EXAMPLE">3rd Floor, Room 5</Value>
                      </Element>
                   </Element>
-                  <Element>
+                  <Element cardinality="0..1">
                      <Term>cac:Country</Term>
+                     <Name>Country</Name>
                      <Element>
                         <Term>cbc:IdentificationCode</Term>
+                        <Name>Country code</Name>
                         <Description>BEAst: Country Code (T5007).  
-Peppol: </Description>
+Peppol: A code that identifies the country.The lists of valid
+									countries are registered with the ISO 3166-1 Maintenance agency,
+									"Codes for the representation of names of countries and their
+									subdivisions". Codes must be according to the alpha-2
+									representation.</Description>
+                        <DataType>Code</DataType>
+                        <Reference type="BUSINESS_TERM">tir16-p008</Reference>
+                        <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">GB</Value>
                      </Element>
                   </Element>
@@ -1074,6 +1569,8 @@ Peppol: </Description>
                         <Value type="EXAMPLE">59.33169866504851</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
+                           <Name>Latitude degrees unit of measure </Name>
+                           <Description>Peppol: Logistics: The unit of measure that applies to the latitude degrees. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">DD</Value>
                         </Attribute>
@@ -1085,6 +1582,8 @@ Peppol: </Description>
                         <Value type="EXAMPLE">18.063330898492403</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
+                           <Name>Longitude degrees unit of measure </Name>
+                           <Description>Peppol: Logistics: The unit of measure that applies to the longitude degrees. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">DD</Value>
                         </Attribute>
@@ -1096,6 +1595,8 @@ Peppol: </Description>
                         <Value type="EXAMPLE">12.5</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
+                           <Name>Altitude unit of measure </Name>
+                           <Description>Peppol: Logistics: The unit of measure that applies to altitude. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">MTR</Value>
                         </Attribute>
@@ -1130,6 +1631,7 @@ Peppol: </Description>
             <Term>cac:TransportHandlingUnit</Term>
             <Name>Transport Handling Unit. </Name>
             <Description>BEAst: Added by BEAst. Used to specify how the goods is packed. </Description>
+            <Reference type="RULE">PEPPOL-T120-R017</Reference>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>ID. </Name>
@@ -1140,6 +1642,7 @@ Peppol: </Description>
                <Term>cbc:TransportHandlingUnitTypeCode</Term>
                <Name>Transport Handling Unit Type Code. </Name>
                <Description>BEAst: Added by BEAst. Type of Transport Handling Unit (T6119). Use UN/ECE Recommendation 21 with addition of the codes used by "Retursystem Byggpall". </Description>
+               <Reference type="RULE">PEPPOL-T16-B11002</Reference>
                <Reference type="CODE_LIST">UNECERec20</Reference>
                <Value type="EXAMPLE">AG</Value>
             </Element>
@@ -1158,9 +1661,12 @@ Peppol: </Description>
                   <Term>cbc:Measure</Term>
                   <Name>Measure. </Name>
                   <Description>BEAst: Added by BEAst. For the measure (T6122) and Measure of Unit Code (T6706). Use UN/ECE Recommendation 20 and 21. subset. </Description>
+                  <Reference type="RULE">PEPPOL-T120-R018</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R019</Reference>
                   <Value type="EXAMPLE">123</Value>
                   <Attribute>
                      <Term>unitCode</Term>
+                     <Name>Measure unit of measure </Name>
                      <Reference type="CODE_LIST">UNECERec20</Reference>
                      <Value type="EXAMPLE">KGM</Value>
                   </Attribute>
@@ -1168,66 +1674,106 @@ Peppol: </Description>
             </Element>
          </Element>
       </Element>
-      <Element>
+
+	     <Element cardinality="1..n">
          <Term>cac:DespatchLine</Term>
+         <Name>Despatch advice line</Name>
          <Element>
             <Term>cbc:ID</Term>
+            <Name>Dispatch line identifier</Name>
             <Description>BEAst: Line Number (T0051) 
-Peppol: </Description>
+Peppol: A indentifier for the individual line in the despatch
+					advice.</Description>
+            <Reference type="BUSINESS_TERM">tir16-046</Reference>
             <Value type="EXAMPLE">1</Value>
          </Element>
-         <Element>
+         <Element cardinality="0..1">
             <Term>cbc:Note</Term>
+            <Name>Dispatch line note</Name>
             <Description>BEAst: Transportation Information (T6008) 
-Peppol: </Description>
+Peppol: General note regarding the despach advice line. Free-form text applying
+					to the Despatch Line. This element may contain notes or any other similar
+					information that is not contained explicitly in another structure.</Description>
+            <Reference type="BUSINESS_TERM">tir16-047</Reference>
             <Value type="EXAMPLE">Mrs Green agreed to waive charge</Value>
          </Element>
          <Element>
             <Term>cbc:DeliveredQuantity</Term>
+            <Name>Delivererd quantity</Name>
             <Description>BEAst: Delivered Quantity (T0070)/Despatched Quantity (T0131). unitCode refers to T6706 
-Peppol: </Description>
+Peppol: The quantity that is despatched in the line.</Description>
+            <Reference type="BUSINESS_TERM">tir16-048</Reference>
+            <Reference type="RULE">PEPPOL-T120-R005</Reference>
+            <Reference type="RULE">PEPPOL-T120-R006</Reference>
             <Value type="EXAMPLE">10</Value>
             <Attribute>
                <Term>unitCode</Term>
+               <Name>Ordered quantity unit of measure</Name>
+               <Description>Peppol: Peppol: The unit of measure that applies to the ordered
+						quantity.</Description>
+               <DataType>Code</DataType>
+               <Reference type="CODE_LIST">UNECERec20</Reference>
                <Value type="EXAMPLE">C62</Value>
             </Attribute>
          </Element>
-         <Element>
+         <Element cardinality="0..1">
             <Term>cbc:OutstandingQuantity</Term>
+            <Name>Outstanding quantity</Name>
             <Description>BEAst: Backordered Quantity (T0059). unitCode refers to T6706 
-Peppol: </Description>
+Peppol: The quantity outstanding (which will follow in a later
+					shipment).</Description>
+            <Reference type="BUSINESS_TERM">tir16-049</Reference>
+            <Reference type="RULE">PEPPOL-T120-R007</Reference>
             <Value type="EXAMPLE">2</Value>
             <Attribute>
                <Term>unitCode</Term>
+               <Name>Ordered quantity unit of measure</Name>
+               <Description>Peppol: Peppol: The unit of measure that applies to the ordered
+						quantity.</Description>
+               <DataType>Code</DataType>
+               <Reference type="CODE_LIST">UNECERec20</Reference>
                <Value type="EXAMPLE">C62</Value>
             </Attribute>
          </Element>
-         <Element>
+         <Element cardinality="0..n">
             <Term>cbc:OutstandingReason</Term>
+            <Name>Outstanding quantity reason</Name>
             <Description>BEAst: Change Reason Description (T6220) 
-Peppol: </Description>
+Peppol: The reason for the outstanding quantity.</Description>
+            <Reference type="BUSINESS_TERM">tir16-050</Reference>
+            <Reference type="RULE">PEPPOL-T120-R007</Reference>
             <Value type="EXAMPLE">text</Value>
          </Element>
          <Element>
             <Term>cac:OrderLineReference</Term>
+            <Name>Order line reference</Name>
             <Element>
                <Term>cbc:LineID</Term>
+               <Name>Order line identifier</Name>
                <Description>BEAst: Calloff Line Reference (T6336)/Reference to Order Line (T3322) 
-Peppol: </Description>
+Peppol: To uniquely identify the line of the order that is being
+						despatched.</Description>
+               <Reference type="BUSINESS_TERM">tir16-051</Reference>
                <Value type="EXAMPLE">1</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:SalesOrderLineID</Term>
                <Name>Sales Order Line number. </Name>
                <Description>BEAst: Added by BEAst. Reference to the sellers orderline number (T6462). </Description>
+               <Reference type="BUSINESS_TERM">tir16-p047</Reference>
                <Value type="EXAMPLE">10</Value>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:OrderReference</Term>
+               <Name>Order reference</Name>
                <Element>
                   <Term>cbc:ID</Term>
+                  <Name>Order identifier</Name>
                   <Description>BEAst: Order Number (T3309) 
-Peppol: </Description>
+Peppol: Identifies the order that the reference order line belongs
+							to.</Description>
+                  <Reference type="BUSINESS_TERM">tir16-p010</Reference>
+                  <Reference type="RULE">PEPPOL-T16-R002</Reference>
                   <Value type="EXAMPLE">AEG012345</Value>
                </Element>
             </Element>
@@ -1235,17 +1781,20 @@ Peppol: </Description>
          <Element cardinality="0..n">
             <Term>cac:DocumentReference</Term>
             <Name>Document Reference. </Name>
-            <Description>BEAst: Added by BEAst. Used for sending additional references at line level. </Description>
+            <Description>Peppol: Used for sending additional references at line level. </Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Document ID. </Name>
                <Description>BEAst: Added by BEAst. ID of the referenced document or item: Reference to Delivery Note (T0063), Customer's Reference Number (T6005), Offer Number (T6010), Vendor's Order Number (T6099), Ultimate Customer's Order Number (T6221), Drawing Number (T6222), Material Ticket Number (T6329), Material Ticket Reference (T6337), Delivery Unit (T6340), Reference to Web (T6373), Ultimate Customer's Order Line Number (T6458), Offer Line Number (T6466) or Document Name (T6484). </Description>
+               <Reference type="BUSINESS_TERM">tir16-p053</Reference>
                <Value type="EXAMPLE">Test</Value>
             </Element>
             <Element cardinality="1..1">
                <Term>cbc:DocumentType</Term>
                <Name>DocumentTypeCode </Name>
                <Description>BEAst: Added by BEAst. Identifies the type of document or item. ("BEAST:ReferenceToDeliveryNote", "BEAST:CustomersReferenceNumber", "BEAST:OfferNumber", "BEAST:VendorsOrderNumber", "BEAST:EndCustomersOrderNumber", "BEAST:DrawingNumber", "BEAST:MaterialTicketNumber", "BEAST:MaterialTicketReference", "BEAST:DeliveryUnit", "BEAST:ReferenceToWeb", "BEAST:EndCustomersOrderLineNumber", "BEAST:OfferLineNumber", any other type of document or item). </Description>
+               <DataType>Text</DataType>
+               <Reference type="BUSINESS_TERM">tir16-p054</Reference>
                <Value type="EXAMPLE">BEAST:EndCustomersOrderNumber</Value>
             </Element>
             <Element cardinality="0..1">
@@ -1259,11 +1808,15 @@ Peppol: </Description>
                   <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
                   <Attribute>
                      <Term>mimeCode</Term>
+                     <Name>Attached document Mime code </Name>
+                     <Description>Peppol: Logistics: The mime code of the attached document. </Description>
                      <Reference type="CODE_LIST">MimeCode</Reference>
                      <Value type="EXAMPLE">application/pdf</Value>
                   </Attribute>
                   <Attribute>
                      <Term>filename</Term>
+                     <Name>Attached document filename </Name>
+                     <Description>Peppol: Logistics: The file name of the attached document. </Description>
                      <Value type="EXAMPLE">Hours-spent.pdf</Value>
                   </Attribute>
                </Element>
@@ -1282,48 +1835,78 @@ Peppol: </Description>
          </Element>
          <Element>
             <Term>cac:Item</Term>
+            <Name>Item information</Name>
             <Element>
                <Term>cbc:Name</Term>
+               <Name>Item name</Name>
                <Description>BEAst: Article Description (T6226) 
-Peppol: </Description>
+Peppol: A short name for an item.</Description>
+               <Reference type="BUSINESS_TERM">tir16-052</Reference>
+               <Reference type="RULE">PEPPOL-T120-R004</Reference>
                <Value type="EXAMPLE">beeswax</Value>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:BuyersItemIdentification</Term>
+               <Name>Buyers item identification</Name>
                <Element>
                   <Term>cbc:ID</Term>
+                  <Name>Buyers item identifier</Name>
                   <Description>BEAst: Buyer's Part Article Number (T6022)/Article Number (T0172) when T6317="BP"/Littera (T6417). 
-Peppol: </Description>
+Peppol: An identifier, assigned by the buyer, for the item. Associates
+							the item with its identification according to the buyer's system. </Description>
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p041</Reference>
                   <Value type="EXAMPLE">6578489</Value>
                </Element>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:SellersItemIdentification</Term>
+               <Name>Sellers item identification</Name>
+               <Reference type="RULE">PEPPOL-T120-R003</Reference>
                <Element>
                   <Term>cbc:ID</Term>
+                  <Name>The Sellers item identifier</Name>
                   <Description>BEAst: Supplier's Article Number (T0172) 
-Peppol: </Description>
+Peppol: An identifier, assigned by the seller, for the item. Associates
+							the item with its identification according to the seller's system. </Description>
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-053</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R003</Reference>
                   <Value type="EXAMPLE">17589683</Value>
                </Element>
             </Element>
-            <Element>
+            <Element cardinality="0..1">
                <Term>cac:StandardItemIdentification</Term>
+               <Name>Standard item identification</Name>
                <Description>BEAst: Only one Standard Item Number can be used per line. 
-Peppol: </Description>
+Peppol: Only one StandardItemIdentification can be used per line. </Description>
+               <Reference type="RULE">PEPPOL-T120-R003</Reference>
                <Element>
                   <Term>cbc:ID</Term>
+                  <Name>Item standard identifier</Name>
                   <Description>BEAst: Global Trade Item Number (T0154) or RSK Article Number Sweden (T6023). 
 					All other item number standards used within BEAst can not be used here until the organisation behind the standard decides to be a part of the codelist "ISO 6523 ICD".
 					These are: NOBB Article Number (T6027), RT Article Number (T6460), TUN Article Number (T6028), Finfo/Vilma Article Number (T6029), Norwegian RSK Article Number (T6024), Norwegian E-number (T6026), E-number (T0260) and SGTIN (T6461). 
-Peppol: </Description>
+Peppol: Global Trade Item Number (GTIN) or other standardized identification.</Description>
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-055</Reference>
+                  <Reference type="RULE">PEPPOL-T120-R003</Reference>
                   <Value type="EXAMPLE">1234567891234</Value>
                   <Attribute>
                      <Term>schemeID</Term>
+                     <Name>Scheme identifier</Name>
+                     <Description>Peppol: Peppol: The identification scheme identifier of the Item standard
+								identifier</Description>
+                     <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0160</Value>
                   </Attribute>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:ExtendedID</Term>
+                  <Name>Item standard extended identifier</Name>
+                  <Description>Peppol: with specific properties, e.g., Item 123 = Chair / Item 123 Ext
+							45 = brown chair.</Description>
+                  <Reference type="BUSINESS_TERM">tir16-056</Reference>
                   <Value type="EXAMPLE">22114455</Value>
                </Element>
             </Element>
@@ -1335,112 +1918,179 @@ Peppol: </Description>
                   <Term>cbc:ItemClassificationCode</Term>
                   <Name>Item Classification code. </Name>
                   <Description>BEAst: Added by BEAst. Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID = BEAST:4.0" and name is Source to Classification (T6467). </Description>
+                  <DataType>Code</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p048</Reference>
                   <Value type="EXAMPLE">SBMI Number</Value>
                   <Attribute usage="Mandatory">
                      <Term>listID</Term>
+                     <Name>Item classification identifier identification scheme
+								identifier</Name>
                      <Description>BEAst: For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID "BEAST:4.0", i.e. mutually agreed. </Description>
                      <Reference type="CODE_LIST">UNCL7143</Reference>
                      <Value type="EXAMPLE">ZZZ</Value>
                   </Attribute>
-                  <Attribute>
+                  <Attribute usage="Optional">
                      <Term>listVersionID</Term>
+                     <Name>Item classification identifier version identification scheme
+								identifier</Name>
+                     <Description>Peppol: Peppol: The identification scheme version identifier of the
+								Item classification identifier</Description>
                      <Value type="EXAMPLE">BEAST:4.0</Value>
                   </Attribute>
-                  <Attribute>
+                  <Attribute usage="Optional">
                      <Term>name</Term>
+                     <Name>Clear text name equivalent of classification code</Name>
                      <Description>BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "SBMI", "SA", "AI", “ME” and "CoClass”. "SBMI" = Sveriges Bergmaterialindustrier, "SA" = Sveriges Åkeriföretag, "AI" = Återvinningsindustrierna, “ME” = Maskinentreprenörerna. </Description>
                      <Value type="EXAMPLE">SBMI</Value>
                   </Attribute>
                </Element>
             </Element>
-            <Element>
+            <Element cardinality="0..n">
                <Term>cac:HazardousItem</Term>
-               <Element>
+               <Name>Hazardous item information</Name>
+               <Element cardinality="0..1">
                   <Term>cbc:UNDGCode</Term>
+                  <Name>Hazardous item UNDG code</Name>
                   <Description>BEAst: Dangerous Goods Code (T0169) 
-Peppol: </Description>
+Peppol: The identifier assigned to transportable hazardous goods by the
+							United Nations, expressed as a code.</Description>
+                  <Reference type="BUSINESS_TERM">tir16-057</Reference>
+                  <Reference type="CODE_LIST">UNCL8273</Reference>
                   <Value type="EXAMPLE">ADR</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:HazardClassID</Term>
+                  <Name>Haszardous hazard class Identifier</Name>
                   <Description>BEAst: Dangerous Goods, Hazard Code (T0263) 
-Peppol: </Description>
+Peppol: Identifies a hazard class applicable to dangerous goods as
+							defined by the relevant regulation authority, such as the IMDG Class
+							Number of the SOLAS Convention ofIMO and the ADR/RID Class Number for
+							the road/rail environment.</Description>
+                  <Reference type="BUSINESS_TERM">tir16-058</Reference>
                   <Value type="EXAMPLE">Code</Value>
                </Element>
             </Element>
-            <Element>
+            <Element cardinality="0..n">
                <Term>cac:AdditionalItemProperty</Term>
+               <Name>Additional item property information</Name>
                <Description>BEAst: This group is also in BEAst used for ConfigurationValue (T6369), GUID Identifier (T6408), Treatment code (T6468), Alternative Vehicle Type (T6339), EPD data, NeC additional information about Asphalt and Concrete, Price information and Rental additional information.  
-Peppol: </Description>
+Peppol: A group of business terms providing information about properties of
+						the goods and services invoiced.</Description>
                <Element>
                   <Term>cbc:Name</Term>
+                  <Name>Item property name</Name>
                   <Description>BEAst: Product Group Code (T0011), Property Name (T6446), Product Type Description (T6442). When the NameCode is used, the name can be set to "NA" since it is mandatory to have. 
-Peppol: </Description>
+Peppol: The name of the property.The name must be sufficiently
+							descriptive to define the value. The definition may be supplemented with
+							the property unit of measure when relevant.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p039</Reference>
                   <Value type="EXAMPLE">NA</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:NameCode</Term>
+                  <Name>Item property code</Name>
                   <Description>BEAst: "ConfigurationValue", "GUIDIdentifier", "TreatmentCode", "AlternativeVehicleType", "EPDDataSetID", "EPDDataSetURL", "EPDPDFURL", "ResourceID", "Price" or "Rental". Property ID NeC (T6469), Property ID Type (T6443), Identity Type Code (T6440). listID refers to Property ID (T6444) but is always "BEAST:4.0" when NameCode is any of the fix values defined here. 
-Peppol: </Description>
+Peppol: Code for the item property according to a property code
+							system.</Description>
+                  <DataType>Code</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p042</Reference>
                   <Value type="EXAMPLE">ConfigurationValue</Value>
-                  <Attribute>
+                  <Attribute usage="Mandatory">
                      <Term>listID</Term>
+                     <Name>Name code list id.</Name>
+                     <Description>Peppol: Peppol: An identifier for the code list used for the Name code,
+								this is bilaterally agreed</Description>
                      <Value type="EXAMPLE">BEAST:4.0</Value>
                   </Attribute>
                </Element>
                <Element>
                   <Term>cbc:Value</Term>
+                  <Name>Item property value</Name>
                   <Description>BEAst: Price Amount (T6235), Alternative Vehicle Type (T6339), Configuration Value (T6369), GUID Identifier (T6408), Property Class ID (T6441), Property Value (T6452), Treatment Code (T6468), EPD data, Resource ID, Rental Indicator (T6477) or Article Property (T6470). The Rental Indicator (T6477) is changed from "True"/"False" to "Rental"/"Purchase". 
-Peppol: </Description>
+Peppol: The value of the item property.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p040</Reference>
                   <Value type="EXAMPLE">Blue</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:ValueQuantity</Term>
+                  <Name>Item property unit of measure</Name>
                   <Description>BEAst: Property Compare Code (T6457), Price Unit Basis Quantity (T6722). unitCode refers to Measure Unit NeB Type (T6706). 
-Peppol: </Description>
+Peppol: The unit of measure in which the property value is stated, if
+						relevant. May not be relevant when properties are descriptive.</Description>
+                  <DataType>Quantity</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p043</Reference>
                   <Value type="EXAMPLE">15.00</Value>
                   <Attribute>
                      <Term>unitCode</Term>
+                     <Name>Value quantity unit of measure</Name>
+                     <Description>Peppol: Peppol: The unit of measure that applies to the value
+							quantity.</Description>
+                     <DataType>Code</DataType>
+                     <Reference type="CODE_LIST">UNECERec20</Reference>
                      <Value type="EXAMPLE">C62</Value>
                   </Attribute>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:ValueQualifier</Term>
+                  <Name>Property classification</Name>
                   <Description>BEAst: Property Value ID (T6450), Price Specification Code (T6721). 
-Peppol: </Description>
+Peppol: Standardized and predefined classification of items
+            properties.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir16-p044</Reference>
                   <Value type="EXAMPLE">descr</Value>
                </Element>
             </Element>
-            <Element>
+            <Element cardinality="0..n">
                <Term>cac:ItemInstance</Term>
-               <Element>
+               <Name>Item instance information</Name>
+               <Element cardinality="0..1">
                   <Term>cbc:ManufactureDate</Term>
+                  <Name>Item manufactured date</Name>
                   <Description>BEAst: Production or Manufacture Date (T0262) 
-Peppol: </Description>
+Peppol: The manufacturing date of all items listed in this dispatch
+							line.</Description>
+                  <Reference type="BUSINESS_TERM">tir16-079</Reference>
                   <Value type="EXAMPLE">2021-01-01</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:BestBeforeDate</Term>
+                  <Name>Item best before date</Name>
                   <Description>BEAst: Best Before Date (T3276) 
-Peppol: </Description>
+Peppol: The best before date of all items listed in this dispatch
+							line.</Description>
+                  <Reference type="BUSINESS_TERM">tir16-080</Reference>
                   <Value type="EXAMPLE">2021-12-01</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cbc:SerialID</Term>
+                  <Name>Item serial numbers</Name>
                   <Description>BEAst: Serial Number (T3236) or SGTIN (T6461)
-Peppol: </Description>
+Peppol: Serial numbers for items listed in the dispatch
+							line.</Description>
+                  <Reference type="BUSINESS_TERM">tir16-083</Reference>
                   <Value type="EXAMPLE">4558784</Value>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cac:LotIdentification</Term>
-                  <Element>
+                  <Name>Lot identifictation</Name>
+                  <Element cardinality="0..1">
                      <Term>cbc:LotNumberID</Term>
+                     <Name>Item batch number</Name>
                      <Description>BEAst: Batch Number (T0132). 
-Peppol: </Description>
+Peppol: The batch number that applies to all items in the dispatch
+								line.</Description>
+                     <Reference type="BUSINESS_TERM">tir16-082</Reference>
                      <Value type="EXAMPLE">546378239</Value>
                   </Element>
-                  <Element>
+                  <Element cardinality="0..1">
                      <Term>cbc:ExpiryDate</Term>
+                     <Name>Item expiry date</Name>
+                     <Description>Peppol: The expiry date of all items listed in this dispatch
+								line.</Description>
+                     <Reference type="BUSINESS_TERM">tir16-081</Reference>
                      <Value type="EXAMPLE">2023-01-01</Value>
                   </Element>
                </Element>
@@ -1487,72 +2137,6 @@ Peppol: </Description>
                         <Description>BEAst: Added by BEAst. The UBL structure used requires this element. Use the value NA. </Description>
                         <Value type="EXAMPLE">NA</Value>
                      </Element>
-                  </Element>
-               </Element>
-            </Element>
-         </Element>
-         <Element>
-            <Term>cac:Shipment</Term>
-            <Element>
-               <Term>cbc:ID</Term>
-               <Value type="EXAMPLE">NA</Value>
-            </Element>
-            <Element>
-               <Term>cac:TransportHandlingUnit</Term>
-               <Description>BEAst: This group is used when it is possible to describe the content of the Transport Handilng Units. If that is not the case, the Transport Handling Units should instead be listed at header level, under Shipment. 
-Peppol: </Description>
-               <Element>
-                  <Term>cbc:ID</Term>
-                  <Description>BEAst: The SSCC identification code of this Transport Handling Unit (T0138). 
-Peppol: </Description>
-                  <Value type="EXAMPLE">5454</Value>
-               </Element>
-               <Element>
-                  <Term>cbc:TransportHandlingUnitTypeCode</Term>
-                  <Description>BEAst: Type of Transport Handling Unit (T6119). Use UN/ECE Recommendation 21 with addition of the codes used by "Retursystem Byggpall". 
-Peppol: </Description>
-                  <Value type="EXAMPLE">4H</Value>
-               </Element>
-               <Element>
-                  <Term>cbc:HazardousRiskIndicator</Term>
-                  <Value type="EXAMPLE">false</Value>
-               </Element>
-               <Element>
-                  <Term>cbc:ShippingMarks</Term>
-                  <Value type="EXAMPLE">text</Value>
-               </Element>
-               <Element>
-                  <Term>cac:MeasurementDimension</Term>
-                  <Element>
-                     <Term>cbc:AttributeID</Term>
-                     <Description>BEAst: To describe the type of measurement (T6714). Use UNCL 6313 subset. 
-Peppol: </Description>
-                     <Value type="EXAMPLE">AAW</Value>
-                  </Element>
-                  <Element>
-                     <Term>cbc:Measure</Term>
-                     <Description>BEAst: For the measure (T6122) and Measure of Unit Code (T6706). Use UN/ECE Recommendation 20 and 21. subset. 
-Peppol: </Description>
-                     <Value type="EXAMPLE">1</Value>
-                     <Attribute>
-                        <Term>unitCode</Term>
-                        <Value type="EXAMPLE">C62</Value>
-                     </Attribute>
-                  </Element>
-               </Element>
-               <Element>
-                  <Term>cac:Package</Term>
-                  <Element>
-                     <Term>cbc:ID</Term>
-                     <Description>BEAst: Unique identity of the package (T0138). 
-Peppol: </Description>
-                     <Value type="EXAMPLE">1267</Value>
-                  </Element>
-                  <Element>
-                     <Term>cbc:PackagingTypeCode</Term>
-                     <Description>BEAst: Type of Package (T6119). Use UN/ECE Recommendation 21 with addition of the codes used by "Retursystem Byggpall". 
-Peppol: </Description>
-                     <Value type="EXAMPLE">BX</Value>
                   </Element>
                </Element>
             </Element>

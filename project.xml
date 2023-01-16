@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
-    <Name>BEAst Supply 4.0</Name>
+    <Name>BEAst Supply 4</Name>
 
 	<!-- Introduction -->
 
@@ -47,12 +47,12 @@
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-advanced-despatch-advice.xml</Path>
-		<Title>Logistics Advanced Despatch Advice 1.0 (T120)</Title>
+		<Title>Logistics Advanced Despatch Advice 1.1 (T120)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-despatch-advice-response.xml</Path>
-		<Title>Logistics Despatch Advice Response 1.0 (T121)</Title>
+		<Title>Logistics Despatch Advice Response 1.1 (T121)</Title>
 </Resource>
 	<Resource>
 		<Type>Structure-1</Type>
@@ -102,13 +102,13 @@
 		<Identifier>T120</Identifier>
 		<Type>native:Schematron</Type>
 		<Path>rules/sch/parts/PEPPOL-M-T120.sch</Path>
-		<Title>Business rules for Logistics Advanced Despatch Advice transaction 1.0</Title>
+		<Title>Business rules for Logistics Advanced Despatch Advice transaction 1.1</Title>
 	</Resource>
 	<Resource>
 		<Identifier>T121</Identifier>
 		<Type>native:Schematron</Type>
 		<Path>rules/sch/parts/PEPPOL-M-T121.sch</Path>
-		<Title>Business rules for Logstics Despatch Advice Response transaction 1.0</Title>
+		<Title>Business rules for Logstics Despatch Advice Response transaction 1.1</Title>
 	</Resource>
 	<Resource>
 		<Identifier>T122</Identifier>
@@ -246,6 +246,10 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNECERec19.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
         <Path>structure/codelist/UNECERec20-11e.xml</Path>
     </Resource>
     <Resource>
@@ -274,15 +278,15 @@
         <Type>native:File</Type>
         <Path>project.xml</Path>
         <Title>Example files (Appendix A)</Title>
-        <Property key="download">Beast-Examples.zip</Property>
-        <Property key="filename">Beast-Examples.zip</Property>
+        <Property key="download">Examples.zip</Property>
+        <Property key="filename">Examples.zip</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>
         <Path>project.xml</Path>
         <Title>Schematron files</Title>
-        <Property key="download">Beast-Schematron.zip</Property>
-        <Property key="filename">Beast-Schematron.zip</Property>
+        <Property key="download">Schematron.zip</Property>
+        <Property key="filename">Schematron.zip</Property>
     </Resource>
     <!-- Namespaces -->
     <Resource>

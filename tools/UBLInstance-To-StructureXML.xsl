@@ -23,7 +23,6 @@
 	<xsl:variable name="varUblXmlReferenceFile" select="$UblXmlReferenceFile"/>
 	<xsl:variable name="varUblDocBaseUrl" select="$UblDocBaseUrl"/>
 	<xsl:variable name="varUblXml" select="document(concat($varUblBaseUrl, $varUblXmlReferenceFile))"/>
-
 	<xsl:output omit-xml-declaration="no" indent="yes" method="xml"/>
 
 	<xsl:template match="/">
@@ -607,7 +606,7 @@
 							</xsl:for-each>
 						</xsl:otherwise>
 					</xsl:choose>
-					<xsl:variable name="varAttrTextValue" select="./text()[normalize-space()][1]"/>
+					<!--xsl:variable name="varAttrTextValue" select="./text()[normalize-space()][1]"/-->
 					<xsl:choose>
 						<xsl:when test=". != ''">
 							<Value type="EXAMPLE">
