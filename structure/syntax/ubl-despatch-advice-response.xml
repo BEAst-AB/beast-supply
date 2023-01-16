@@ -44,20 +44,14 @@ Peppol: A transaction instance must contain an identifier. The identifier enable
       </Element>
 	     <Element>
          <Term>cbc:IssueDate</Term>
-         <Name>Response issue date</Name>
          <Description>BEAst: T6325, Document date time. 
-Peppol: Document date time. </Description>
-         <DataType>Date</DataType>
-         <Reference type="BUSINESS_TERM">tir71-002</Reference>
+Peppol: </Description>
          <Value type="EXAMPLE">2021-08-15</Value>
       </Element>
-	     <Element cardinality="0..1">
+	     <Element>
          <Term>cbc:IssueTime</Term>
-         <Name>Response issue time</Name>
          <Description>BEAst: T6325, Document date time. 
-Peppol: Document date time. </Description>
-         <DataType>Time</DataType>
-         <Reference type="BUSINESS_TERM">tir71-003</Reference>
+Peppol: </Description>
          <Value type="EXAMPLE">12:00:00</Value>
       </Element>
 	
