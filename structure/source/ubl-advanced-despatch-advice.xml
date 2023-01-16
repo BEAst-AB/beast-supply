@@ -429,7 +429,7 @@
 				</cac:TransportEquipment>
 
 				<cac:EnvironmentalEmission>
-					<cbc:EnvironmentalEmissionTypeCode>CO2</cbc:EnvironmentalEmissionTypeCode>
+					<cbc:EnvironmentalEmissionTypeCode listID="UN785" name="Carbon Dioxide">CO2</cbc:EnvironmentalEmissionTypeCode>
 					<cbc:ValueMeasure unitCode="MGM">10</cbc:ValueMeasure>
 				</cac:EnvironmentalEmission>
 			</cac:OriginalDespatchTransportationService>
@@ -581,6 +581,7 @@
 					<?DescriptionAddFirst Delivery Terms code (T6710). ?>
 					<?Cardinality 1..1?>
 				</cbc:ID>
+				<cbc:SpecialTerms>EQN-06</cbc:SpecialTerms>
 				<cac:DeliveryLocation>
 					<cbc:ID>Kalmar
 						<?DescriptionAddFirst Delivery Terms Location (T6020). The location to which the delivery terms refer. Used to qualify the delivery terms e.g. "Terms of delivery are FOB Rotterdam" ?>
@@ -876,12 +877,12 @@
 					</cac:PartyName>
 				</cac:IssuerParty>
 			</cac:Certificate>
-		</cac:Item>
 
-		<cac:Dimension>
-			<cbc:AttributeID>LN</cbc:AttributeID>
-			<cbc:Measure unitCode="MTR">123</cbc:Measure>
-		</cac:Dimension>
+			<cac:Dimension>
+				<cbc:AttributeID>LN</cbc:AttributeID>
+				<cbc:Measure unitCode="MTR">123</cbc:Measure>
+			</cac:Dimension>
+		</cac:Item>
 		
 	</cac:DespatchLine>
 </ubl:DespatchAdvice>
