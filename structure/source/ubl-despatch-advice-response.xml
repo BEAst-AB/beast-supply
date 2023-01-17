@@ -68,9 +68,15 @@
 		</cac:PartyLegalEntity>
 
 		<cac:Contact>
-			<cbc:Name>Mrs Bouquet</cbc:Name>
-			<cbc:Telephone>0158 1233714</cbc:Telephone>
-			<cbc:ElectronicMail>bouquet@fpconsortial.co.uk</cbc:ElectronicMail>
+			<cbc:Name>Mrs Bouquet
+				<?DescriptionAddFirst T5012, Name of Contact. ?>
+			</cbc:Name>
+			<cbc:Telephone>	0158 1233714
+				<?DescriptionAddFirst T5010, Telephone no to Contact. ?>
+			</cbc:Telephone>
+			<cbc:ElectronicMail>bouquet@fpconsortial.co.uk
+				<?DescriptionAddFirst T5011, Mail address to Contact. ?>
+			</cbc:ElectronicMail>
 		</cac:Contact>
 	</cac:SenderParty>
 	
