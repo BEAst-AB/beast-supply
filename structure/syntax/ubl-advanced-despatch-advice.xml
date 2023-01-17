@@ -1417,6 +1417,17 @@ Peppol: The name of the carrier that handles the delivery of the
                      <Name>Environmental emission type code </Name>
                      <Description>Peppol: Defines the type of emission reported. Values: "CO2" (Carbon Dioxide), NOX (Nitrogen Oxide), PM (Particulate Matter), HC (Hydro Carbon). </Description>
                      <Value type="EXAMPLE">CO2</Value>
+                     <Attribute usage="Optional">
+                        <Term>listID</Term>
+                        <Name>Identifier for codelist for environmental emissions type </Name>
+                        <Description>Peppol: Logistics: An identifier for the codelist used for the environmental emission type code </Description>
+                        <Value type="EXAMPLE">UN785</Value>
+                     </Attribute>
+                     <Attribute usage="Optional">
+                        <Term>name</Term>
+                        <Name>Name of environmental emissions type</Name>
+                        <Value type="EXAMPLE">Carbon Dioxide</Value>
+                     </Attribute>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cbc:ValueMeasure</Term>
@@ -1886,6 +1897,12 @@ Peppol: The Z coordinate. </Description>
                   <Description>BEAst: Delivery Terms code (T6710). 
 Peppol: Delivery terms code (Inco terms). </Description>
                   <Value type="EXAMPLE">EXW</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:SpecialTerms</Term>
+                  <Name>Special terms </Name>
+                  <Description>Peppol: Special delivery terms that exceeds the inco terms. </Description>
+                  <Value type="EXAMPLE">EQN-06</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:DeliveryLocation</Term>
@@ -3054,20 +3071,30 @@ Peppol: The UBL structure used requires this element. Use the value NA if not ap
                   </Element>
                </Element>
             </Element>
-         </Element>
-         <Element>
-            <Term>cac:Dimension</Term>
-            <Element>
-               <Term>cbc:AttributeID</Term>
-               <Value type="EXAMPLE">LN</Value>
-            </Element>
-            <Element>
-               <Term>cbc:Measure</Term>
-               <Value type="EXAMPLE">123</Value>
-               <Attribute>
-                  <Term>unitCode</Term>
-                  <Value type="EXAMPLE">MTR</Value>
-               </Attribute>
+            <Element cardinality="0..n">
+               <Term>cac:Dimension</Term>
+               <Name>Measurement Dimension </Name>
+               <Description>Peppol: Used to specify any dimension of the Item. </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:AttributeID</Term>
+                  <Name>Attribute identifier </Name>
+                  <Description>Peppol: To describe the type of measurement.</Description>
+                  <Reference type="CODE_LIST">UNCL6313</Reference>
+                  <Value type="EXAMPLE">LN</Value>
+               </Element>
+               <Element cardinality="1..1">
+                  <Term>cbc:Measure</Term>
+                  <Name>Measure </Name>
+                  <Description>Peppol: For the measure.</Description>
+                  <Value type="EXAMPLE">123</Value>
+                  <Attribute>
+                     <Term>unitCode</Term>
+                     <Name>Measure unit of measure </Name>
+                     <Description>Peppol: Logistics: The unit of measure that applies to the measure. </Description>
+                     <Reference type="CODE_LIST">UNECERec20</Reference>
+                     <Value type="EXAMPLE">MTR</Value>
+                  </Attribute>
+               </Element>
             </Element>
          </Element>
       </Element>
