@@ -213,19 +213,22 @@ Peppol: Identifies the sender party's electronic address</Description>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
-               <Description>Peppol: The contact name. </Description>
+               <Description>BEAst: T5012, Name of Contact. 
+Peppol: The contact name. </Description>
                <Value type="EXAMPLE">Mrs Bouquet</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact telephone number </Name>
-               <Description>Peppol: The phone number of the contact. </Description>
+               <Description>BEAst: T5010, Telephone no to Contact. 
+Peppol: The phone number of the contact. </Description>
                <Value type="EXAMPLE">0158 1233714</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address </Name>
-               <Description>Peppol: The electronic mail of the contact. </Description>
+               <Description>BEAst: T5011, Mail address to Contact. 
+Peppol: The electronic mail of the contact. </Description>
                <Value type="EXAMPLE">bouquet@fpconsortial.co.uk</Value>
             </Element>
          </Element>

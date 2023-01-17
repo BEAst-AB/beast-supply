@@ -377,12 +377,18 @@
 				Z57=Semitrailer, Z58=Short term storage, Z59=Porterage, Z60=Carry-in service, 
 				Z61=Standard transport, Z62=Loaded on truck, Z63=Indoor storage, Z64=Outdoor storage, 
 				Z65=Package maximum weigh, ZZ=Mutually agreed. ?>
+				<?listID-DescriptionAddFirst Use listID HandlingCode for the BEAst codes listed above. ?>
 			</cbc:HandlingCode>
-			<cbc:HandlingInstructions>Keep the Container Carefully Closed</cbc:HandlingInstructions>
+			<cbc:HandlingInstructions>Keep the Container Carefully Closed
+				<?DescriptionAddFirst Unloading Instruction (T6344). ?>
+			</cbc:HandlingInstructions>
 
 			<cac:CarrierParty>
 				<cac:PartyIdentification>
-					<cbc:ID schemeID="0088">5790000435951</cbc:ID>
+					<cbc:ID schemeID="0088">5790000435951
+						<?DescriptionAddFirst Carrier (T3208). ?>
+						<?schemeID-DescriptionAddFirst It is recommended to use the schemeID. ?>
+					</cbc:ID>
 				</cac:PartyIdentification>
 				<cac:PartyName>
 					<cbc:Name>Name
@@ -403,9 +409,16 @@
 					<cbc:TransportEquipmentTypeCode>Diesel</cbc:TransportEquipmentTypeCode>
 					<cbc:Description>Forrest diesel mix</cbc:Description>
 					<cac:MeasurementDimension>
-						<cbc:AttributeID>FuelConsumption</cbc:AttributeID>
-						<cbc:Measure unitCode="KGM">123</cbc:Measure>
-						<cbc:Description>StandardEstimate</cbc:Description>
+						<cbc:AttributeID>FuelConsumption
+							<?DescriptionAddFirst To define the type of measurement. EnergyContent = T6428, ConversionFactor = T6429, FuelConsumption = T6374, DrivingDistance = T6380, DrivingTime = T6381, FuelMeasurementMethod = T6728, EngineType = T6379, RenewableFuel = T6382. ?>
+						</cbc:AttributeID>
+						<cbc:Measure unitCode="KGM">123
+							<?DescriptionAddFirst The measured value. Used for EnergyContent, ConversionFactor, FuelConsumption, DrivingDistance, DrivingTime and RenewableFuel. ?>
+							<?unitCode-DescriptionAddFirst unitCode refers to T6706. ?>
+						</cbc:Measure>
+						<cbc:Description>StandardEstimate
+							<?DescriptionAddFirst Description of the attribute when there is no value to measure. Used for FuelMeasurementMethod and EngineType. Possible values are for FuelMeasurementMethod: "AutomaticMeasurement", "StandardEstimate", "ManualMeasurement" and for EngineType: "Euro2", "Euro3", "Euro4", "Euro5", "Euro6", "EuroStep2", "EuroStep3A", "EuroStep3B", "EuroStep4". ?>
+						</cbc:Description>
 					</cac:MeasurementDimension>
 					<cac:ProviderParty>
 						<cac:PartyIdentification>
@@ -428,21 +441,30 @@
 				</cac:TransportEquipment>
 
 				<cac:EnvironmentalEmission>
-					<cbc:EnvironmentalEmissionTypeCode listID="UN785" name="Carbon Dioxide">CO2</cbc:EnvironmentalEmissionTypeCode>
-					<cbc:ValueMeasure unitCode="MGM">10</cbc:ValueMeasure>
+					<cbc:EnvironmentalEmissionTypeCode listID="UN785" name="Carbon Dioxide">CO2
+						<?DescriptionAddFirst Defines the type of emission reported. Values: "CO2" (Carbon Dioxide), NOX (Nitrogen Oxide), PM (Particulate Matter), HC (Hydro Carbon). ?>
+						<?name-DescriptionAddFirst The textual equivalent for the code. ?>
+					</cbc:EnvironmentalEmissionTypeCode>
+					<cbc:ValueMeasure unitCode="MGM">10
+						<?DescriptionAddFirst The value of the emission. Refers to Carbon Dioxide/Nitrogen Oxide/Particulate Matter/Hydro Carbon. ?>
+					</cbc:ValueMeasure>
 				</cac:EnvironmentalEmission>
 			</cac:OriginalDespatchTransportationService>
 		</cac:Consignment>
 
 		<cac:ShipmentStage>
-			<cbc:TransportModeCode>3</cbc:TransportModeCode>
+			<cbc:TransportModeCode>3
+				<?DescriptionAddFirst Transport mode (T6131). ?>
+			</cbc:TransportModeCode>
 			<cbc:TransportMeansTypeCode>31</cbc:TransportMeansTypeCode>
 			<cac:TransportMeans>
 				<cac:AirTransport>
 					<cbc:AircraftID>JA8088</cbc:AircraftID>
 				</cac:AirTransport>
 				<cac:RoadTransport>
-					<cbc:LicensePlateID>DF10958</cbc:LicensePlateID>
+					<cbc:LicensePlateID>DF10958
+						<?DescriptionAddFirst Used for Transport Information (T6008). ?>
+					</cbc:LicensePlateID>
 				</cac:RoadTransport>
 				<cac:RailTransport>
 					<cbc:TrainID>12014</cbc:TrainID>
@@ -596,10 +618,16 @@
 			<cbc:TransportHandlingUnitTypeCode>AG
 				<?DescriptionAddFirst Type of Transport Handling Unit (T6119). Use UN/ECE Recommendation 21. ?>
 			</cbc:TransportHandlingUnitTypeCode>
-			<cbc:HandlingCode>CCC</cbc:HandlingCode>
-			<cbc:HandlingInstructions>To be set vertical</cbc:HandlingInstructions>
+			<cbc:HandlingCode>CCC
+				<?DescriptionAddFirst Description handling instruction code (T6199) or Unloading instruction code (T6343). ?>
+			</cbc:HandlingCode>
+			<cbc:HandlingInstructions>To be set vertical
+				<?DescriptionAddFirst Description handling instruction text (T6200) or Unloading instruction (T6344). ?>
+			</cbc:HandlingInstructions>
 			<cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
-			<cbc:ShippingMarks>Keep dry</cbc:ShippingMarks>
+			<cbc:ShippingMarks>Keep dry
+				<?DescriptionAddFirst Shipping marks consignment (T0086) or Seller shipping marks consignment (T6065). ?>
+			</cbc:ShippingMarks>
 			
 			<cac:TransportEquipment>
 				<cbc:ID>34563444</cbc:ID>
@@ -629,6 +657,7 @@
 			</cac:MaximumTemperature>
 
 			<cac:GoodsItem>
+				<?DescriptionAddFirst The items packed directly on the TransportHandlingUnit are described here. ?>
 				<cbc:ID>10</cbc:ID>
 				<cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
 				<cbc:DeclaredStatisticsValueAmount currencyID="EUR">23044.78</cbc:DeclaredStatisticsValueAmount>
@@ -637,21 +666,25 @@
 			</cac:GoodsItem>
 
 			<cac:Package>
+				<?DescriptionAddFirst The packages packed on the TransportHandlingUnit are described here. ?>
 				<cbc:ID>3453</cbc:ID>
 				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>CT</cbc:PackagingTypeCode>
 				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 				<cac:ContainedPackage>
+					<?DescriptionAddFirst The packages packed in the larger package are described here. ?>
 					<cbc:ID>3453</cbc:ID>
 					<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 					<cbc:PackagingTypeCode>OB</cbc:PackagingTypeCode>
 					<cbc:PackingMaterial>Wood</cbc:PackingMaterial>
 					<cac:ContainedPackage>
+						<?DescriptionAddFirst The packages packed in the medium sized package are described here. ?>
 						<cbc:ID>3453</cbc:ID>
 						<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 						<cbc:PackagingTypeCode>OB</cbc:PackagingTypeCode>
 						<cbc:PackingMaterial>Wood</cbc:PackingMaterial>
 						<cac:GoodsItem>
+							<?DescriptionAddFirst The items packed in the inner package are described here. ?>
 							<cbc:ID>10</cbc:ID>
 							<cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
 							<cbc:DeclaredStatisticsValueAmount currencyID="EUR">23044.78</cbc:DeclaredStatisticsValueAmount>
@@ -664,6 +697,7 @@
 						</cac:MeasurementDimension>
 					</cac:ContainedPackage>
 					<cac:GoodsItem>
+						<?DescriptionAddFirst The items packed in the middle package are described here. ?>
 						<cbc:ID>10</cbc:ID>
 						<cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
 						<cbc:DeclaredStatisticsValueAmount currencyID="EUR">23044.78</cbc:DeclaredStatisticsValueAmount>
@@ -676,6 +710,7 @@
 					</cac:MeasurementDimension>
 				</cac:ContainedPackage>
 				<cac:GoodsItem>
+					<?DescriptionAddFirst The items packed in the package on the TransportHandlingUnit are described here. ?>
 					<cbc:ID>10</cbc:ID>
 					<cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
 					<cbc:DeclaredStatisticsValueAmount currencyID="EUR">23044.78</cbc:DeclaredStatisticsValueAmount>
@@ -683,8 +718,13 @@
 					<cbc:TraceID schemeID="urn:epc:sgid">345699634527</cbc:TraceID>
 				</cac:GoodsItem>
 				<cac:MeasurementDimension>
-					<cbc:AttributeID>LN</cbc:AttributeID>
-					<cbc:Measure unitCode="MTR">123</cbc:Measure>
+					<cbc:AttributeID>LN
+						<?DescriptionAddFirst Measured attribute code (T6714) ?>
+					</cbc:AttributeID>
+					<cbc:Measure unitCode="MTR">123
+						<?DescriptionAddFirst Measure (T6122) ?>
+						<?unitCode-DescriptionAddFirst Measure Unit NeB Type (T6706) ?>
+					</cbc:Measure>
 				</cac:MeasurementDimension>
 			</cac:Package>
 			
@@ -719,7 +759,9 @@
 				<cbc:ID>AEG012345
 					<?DescriptionAddFirst Order Number (T3309) ?>
 				</cbc:ID>
-				<cbc:SalesOrderID>5678985</cbc:SalesOrderID>
+				<cbc:SalesOrderID>5678985
+					<?DescriptionAddFirst Vendor order number (T6099) ?>
+				</cbc:SalesOrderID>
 			</cac:OrderReference>
 		</cac:OrderLineReference>
 
@@ -730,13 +772,14 @@
 			<cbc:DocumentTypeCode>380
 				<?DescriptionAddFirst Use this code if possible instead of DocumentType. ?>
 			</cbc:DocumentTypeCode>
-			<cbc:DocumentType>BEAST:EndCustomersOrderNumber
-				<?DescriptionAddFirst Identifies the type of document or item. ("BEAST:ReferenceToDeliveryNote", "BEAST:CustomersReferenceNumber", "BEAST:OfferNumber", "BEAST:VendorsOrderNumber", "BEAST:EndCustomersOrderNumber", "BEAST:DrawingNumber", "BEAST:MaterialTicketNumber", "BEAST:MaterialTicketReference", "BEAST:DeliveryUnit", "BEAST:ReferenceToWeb", "BEAST:EndCustomersOrderLineNumber", "BEAST:OfferLineNumber", any other type of document or item). ?>
+			<cbc:DocumentType>EndCustomersOrderNumber
+				<?DescriptionAddFirst Identifies the type of document or item. ("ReferenceToDeliveryNote", "CustomersReferenceNumber", "OfferNumber", "EndCustomersOrderNumber", "DrawingNumber", "MaterialTicketNumber", "MaterialTicketReference", "DeliveryUnit", "ReferenceToWeb", "EndCustomersOrderLineNumber", "OfferLineNumber", any other type of document or item). ?>
 			</cbc:DocumentType>
 			<cac:Attachment>
 				<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">
 					aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==
-					<?DescriptionAddFirst The referenced document can here be inserted as a binary object (T6475). filename refers to T6476. ?>
+					<?DescriptionAddFirst The referenced document can here be inserted as a binary object (T6475). ?>
+					<?filename-DescriptionAddFirst filename refers to T6476. ?>
 				</cbc:EmbeddedDocumentBinaryObject>
 				<cac:ExternalReference>
 					<?DescriptionAddFirst A reference to an attached document that is external to the document(s) being exchanged. ?>
