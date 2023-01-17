@@ -20,13 +20,17 @@
 		<?DescriptionAddFirst T0125/T6338, Despatch Advice Number?>
 	</cbc:ID>
 	<cbc:IssueDate>2021-09-10
-		<?DescriptionAddFirst  ?>
+		<?DescriptionAddFirst T6325, Document Date/Time. ?>
 	</cbc:IssueDate>
 	<cbc:IssueTime>12:00:00
 		<?DescriptionAddFirst T6325, Document Date/Time. ?>
 	</cbc:IssueTime>
-	<cbc:DocumentStatusCode>9</cbc:DocumentStatusCode>
-	<cbc:DespatchAdviceTypeCode>1</cbc:DespatchAdviceTypeCode>
+	<cbc:DocumentStatusCode>9
+		<?DescriptionAddFirst Must be used when the Despatch Advice is replaced or deleted. Default is Original, and the status code is not needed in the first transmission. ?>
+	</cbc:DocumentStatusCode>
+	<cbc:DespatchAdviceTypeCode>1
+		<?DescriptionAddFirst Indicates if the Despatch Advice is sent before the delivery or after the delivery. Default is that it is sent before delivery (1). ?>
+	</cbc:DespatchAdviceTypeCode>
 	<cbc:Note>Text
 		<?DescriptionAddFirst Used for Transport Information (T6008). ?>
 	</cbc:Note>
@@ -47,14 +51,15 @@
 		<cbc:DocumentTypeCode>380
 			<?DescriptionAddFirst Not a part of version 3.1, but use this code instead of the text if possible. An example is "174" for DrawingNumber (T6222) ?>
 		</cbc:DocumentTypeCode>
-		<cbc:DocumentType>BEAST:FreightPayersCustomerNumber
-			<?DescriptionAddFirst The type of reference when a valid code is not possible to use. "BEAST:FreightPayersCustomerNumber" (T6463), 
-			"BEAST:SellersOrderNumber" (T6099), "BEAST:FinalCustomersOrderNumber" (T6221), "BEAST:DeliveryPart" (T6340) or Any other document type (T6473). ?>
+		<cbc:DocumentType>FreightPayersCustomerNumber
+			<?DescriptionAddFirst The type of reference when a valid code is not possible to use. "FreightPayersCustomerNumber" (T6463), 
+			"SellersOrderNumber" (T6099), "FinalCustomersOrderNumber" (T6221), "DeliveryPart" (T6340) or Any other document type (T6473). ?>
 		</cbc:DocumentType>
 		<cac:Attachment>
 			<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">
 				aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==
-				<?DescriptionAddFirst The referenced document can here be inserted as a binary object (T6475). filename refers to T6476. ?>
+				<?DescriptionAddFirst The referenced document can here be inserted as a binary object (T6475).  ?>
+				<?filename-DescriptionAddFirst filename refers to T6476. ?>
 			</cbc:EmbeddedDocumentBinaryObject>
 			<cac:ExternalReference>
 				<cbc:URI>www.beast.se
@@ -322,22 +327,16 @@
 				<cbc:StreetName>Avon Way
 					<?DescriptionAddFirst Street Name (T5003).  ?>
 				</cbc:StreetName>
-				<cbc:AdditionalStreetName>way 2
-					<?DescriptionAddFirst Not used in BEAst version 3.1.  ?>
-				</cbc:AdditionalStreetName>
+				<cbc:AdditionalStreetName>way 2</cbc:AdditionalStreetName>
 				<cbc:CityName>Bridgtow
 					<?DescriptionAddFirst City name (T5005).  ?>
 				</cbc:CityName>
 				<cbc:PostalZone>ZZ99 1ZZ
 					<?DescriptionAddFirst Postal code (T6117).  ?>
 				</cbc:PostalZone>
-				<cbc:CountrySubentity>Avon
-					<?DescriptionAddFirst Not used in BEAst version 3.1.  ?>
-				</cbc:CountrySubentity>
+				<cbc:CountrySubentity>Avon</cbc:CountrySubentity>
 				<cac:AddressLine>
-					<cbc:Line>3rd Floor, Room 5
-						<?DescriptionAddFirst Not used in BEAst version 3.1.  ?>
-					</cbc:Line>
+					<cbc:Line>3rd Floor, Room 5</cbc:Line>
 				</cac:AddressLine>
 				<cac:Country>
 					<cbc:IdentificationCode>GB
