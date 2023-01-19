@@ -68,8 +68,7 @@ Peppol: T6328. 01 = Outbound delivery 02 = Inbound delivery</Description>
 	     <Element>
          <Term>cac:SenderParty</Term>
          <Name>Sender information </Name>
-         <Description>BEAst: The party sending this weight statement, (e.g. Weighing Station, Shipper, Freight Forwarder, Carrier.). 
-Peppol: The party sending this weight statement (e.g. Weighing Station, Shipper, Freight Forwarder, Carrier, ...).</Description>
+         <Description>Peppol: The party sending this weight statement (e.g. Weighing Station, Shipper, Freight Forwarder, Carrier, ...).</Description>
          <Element>
             <Term>cbc:EndpointID</Term>
             <Name>Sender electronic address </Name>
@@ -112,12 +111,11 @@ Peppol: </Description>
 	     <Element>
          <Term>cac:ReceiverParty</Term>
          <Name>Receiver information </Name>
-         <Description>BEAst: The party receiving this weight statement (e.g. Carrier, Terminal Operator, ...).
-Peppol: The party receiving this weight statement (e.g. Carrier, Terminal Operator, ...).</Description>
+         <Description>Peppol: The party receiving this weight statement (e.g. Carrier, Terminal Operator, ...).</Description>
          <Element>
             <Term>cbc:EndpointID</Term>
             <Name>Receiver electronic address </Name>
-            <Description>BEAst: The party receiving this weight statement, T0008.
+            <Description>BEAst: The ID of the party receiving this weight statement, T0008.
 Peppol: </Description>
             <Value type="EXAMPLE">9994567987654</Value>
             <Attribute usage="Mandatory">
@@ -131,7 +129,7 @@ Peppol: </Description>
             <Element>
                <Term>cbc:ID</Term>
                <Name>Receiver identity </Name>
-               <Description>BEAst: The party receiving this weight statement, T0008.
+               <Description>BEAst: The ID of the party receiving this weight statement, T0008.
 Peppol: </Description>
                <Value type="EXAMPLE">9994567987654</Value>
                <Attribute usage="Mandatory">
