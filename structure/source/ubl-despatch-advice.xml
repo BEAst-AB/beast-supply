@@ -27,16 +27,35 @@
 		<?DescriptionAddFirst Used for Transport Information (T6008). ?>
 	</cbc:Note>
 	<cac:OrderReference>
-		<cbc:ID schemeID="AccountingCost">9876986-1-5544
-			<?DescriptionAddFirst T3309/T6335, Order Number/Call Off Reference. Attribute schemeID can be used to send Project Number (T6004) or Customers' Reference (T6005).
-			Default is Order Number so if schemeID is missing the number in the element is Order Number as per Peppol global BIS.
-			"ProjectReferece" is used for Project Number only.
-			"AccountingCost" is used for the Customer's Reference. Here you always use the accounting information.
-			The group OrderReference can be repeated. ?>
-			<?schemeID-Description "ProjectReference" and "AccountingCost" can be used as values for the schemeID attribute?>
-			<?schemeID-usage Optional?>
+		<cbc:ID>9876986-1-5544
+			<?DescriptionAddFirst T3309/T6335, Order Number/Call Off Reference. ?>
 		</cbc:ID>
 	</cac:OrderReference>
+
+	<cac:AdditionalDocumentReference>
+		<?DescriptionAddFirst Used for additional BEAst information on header level. ?>
+		<cbc:ID>7648779
+			<?DescriptionAddFirst The reference number of the added information. Can be the Project Number (T6004), Customers' Reference (T6005), 
+			Seller's Order Number (T6099), Final Customer's Order Number (T6221), Drawing Number (T6222), Delivery Part (T6340), 
+			Freight Payer's Customer Number (T6463) or Document Name (T6484) depending on DocumentType. ?>
+		</cbc:ID>
+		<cbc:DocumentType>FreightPayersCustomerNumber
+			<?DescriptionAddFirst The type of reference when a valid code is not possible to use. "FreightPayersCustomerNumber" (T6463), 
+			"SellersOrderNumber" (T6099), "FinalCustomersOrderNumber" (T6221), "DeliveryPart" (T6340) or Any other document type (T6473). ?>
+		</cbc:DocumentType>
+		<cac:Attachment>
+			<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">
+				aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==
+				<?DescriptionAddFirst The referenced document can here be inserted as a binary object (T6475).  ?>
+				<?filename-DescriptionAddFirst filename refers to T6476. ?>
+			</cbc:EmbeddedDocumentBinaryObject>
+			<cac:ExternalReference>
+				<cbc:URI>www.beast.se
+					<?DescriptionAddFirst The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource (T6187). ?>
+				</cbc:URI>
+			</cac:ExternalReference>
+		</cac:Attachment>
+	</cac:AdditionalDocumentReference>
 
 	<cac:DespatchSupplierParty>
 		<?DescriptionAddFirst This party defines the company that provides the goods or the service. It also defines the sender of the Despatch Advice. The real Ship-from Address must be provided in the Despatch Address when the Despatch Advice describes a movement. ?>
@@ -320,6 +339,12 @@
 			</cbc:Information>
 
 			<cac:CarrierParty>
+				<cac:PartyIdentification>
+					<cbc:ID schemeID="0088">5790000435951
+						<?DescriptionAddFirst Carrier (T3208). ?>
+						<?schemeID-DescriptionAddFirst It is recommended to use the schemeID. ?>
+					</cbc:ID>
+				</cac:PartyIdentification>
 				<cac:PartyName>
 					<cbc:Name>Name
 						<?DescriptionAddFirst Party Name (T5001) ?>
@@ -336,6 +361,12 @@
 
 		</cac:Consignment>
 
+		<cac:ShipmentStage>
+			<cbc:TransportModeCode>3
+				<?DescriptionAddFirst Transport mode (T6131). ?>
+			</cbc:TransportModeCode>
+		</cac:ShipmentStage>
+		
 		<cac:Delivery>
 			<cbc:TrackingID>456789
 				<?DescriptionAddFirst Tracking URL (T6737) ?>
@@ -423,6 +454,9 @@
 			<cbc:LineID>1
 				<?DescriptionAddFirst Calloff Line Reference (T6336)/Reference to Order Line (T3322) ?>
 			</cbc:LineID>
+			<cbc:SalesOrderLineID>10
+				<?DescriptionAddFirst Reference to the sellers orderline number (T6462). ?>
+			</cbc:SalesOrderLineID>
 			<cac:OrderReference>
 				<cbc:ID>AEG012345
 					<?DescriptionAddFirst Order Number (T3309) ?>
@@ -430,6 +464,15 @@
 			</cac:OrderReference>
 		</cac:OrderLineReference>
 
+		<cac:DocumentReference>
+			<cbc:ID>Test
+				<?DescriptionAddFirst ID of the referenced document or item: Reference to Delivery Note (T0063), Customer's Reference Number (T6005), Offer Number (T6010), Vendor's Order Number (T6099), Ultimate Customer's Order Number (T6221), Drawing Number (T6222), Material Ticket Number (T6329), Material Ticket Reference (T6337), Delivery Unit (T6340), Reference to Web (T6373), Ultimate Customer's Order Line Number (T6458), Offer Line Number (T6466) or Document Name (T6484). ?>
+			</cbc:ID>
+			<cbc:DocumentType>EndCustomersOrderNumber
+				<?DescriptionAddFirst Identifies the type of document or item. ("ReferenceToDeliveryNote", "CustomersReferenceNumber", "OfferNumber", "EndCustomersOrderNumber", "DrawingNumber", "MaterialTicketNumber", "MaterialTicketReference", "DeliveryUnit", "ReferenceToWeb", "EndCustomersOrderLineNumber", "OfferLineNumber", any other type of document or item). ?>
+			</cbc:DocumentType>
+		</cac:DocumentReference>
+		
 		<cac:Item>
 			<cbc:Name>beeswax
 				<?DescriptionAddFirst Article Description (T6226) ?>
@@ -445,6 +488,7 @@
 				<cbc:ID>17589683
 					<?DescriptionAddFirst Supplier's Article Number (T0172) ?>
 				</cbc:ID>
+				<cbc:ExtendedID>xxx</cbc:ExtendedID>
 			</cac:SellersItemIdentification>
 			<cac:StandardItemIdentification>
 				<?Rule PEPPOL-T16-R003?>
@@ -457,6 +501,13 @@
 				<cbc:ExtendedID>22114455</cbc:ExtendedID>
 			</cac:StandardItemIdentification>
 
+			<cac:CommodityClassification>
+				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="BEAST:4.0" name="SBMI">SBMI Number
+					<?listID-DescriptionAddFirst For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID "BEAST:4.0", i.e. mutually agreed. ?>
+					<?name-DescriptionAddFirst If construction specific lists are used, name specifies which of them is used. Possible names are: "SBMI", "SA", "AI", “ME” and "CoClass”. "SBMI" = Sveriges Bergmaterialindustrier, "SA" = Sveriges Åkeriföretag, "AI" = Återvinningsindustrierna, “ME” = Maskinentreprenörerna. ?>
+					<?DescriptionAddFirst Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID = BEAST:4.0" and name is Source to Classification (T6467). ?>
+				</cbc:ItemClassificationCode>
+			</cac:CommodityClassification>
 
 			<cac:HazardousItem>
 				<cbc:UNDGCode>ADR

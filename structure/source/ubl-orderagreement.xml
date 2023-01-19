@@ -44,9 +44,7 @@
 	</cbc:CustomerReference>
 	
 	<cac:OrderReference>
-		<cbc:ID>NA
-			<?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-		</cbc:ID>
+		<cbc:ID>NA</cbc:ID>
 	</cac:OrderReference>
 	
 	<cac:OriginatorDocumentReference>
@@ -316,9 +314,7 @@
 				</cbc:PostalZone>
 				<cbc:CountrySubentity>Address</cbc:CountrySubentity>
 				<cac:AddressLine>
-					<cbc:Line>
-						<?DescriptionAddFirst Not used in BEAst version 3.1. ?>
-					</cbc:Line>
+					<cbc:Line>xxx</cbc:Line>
 				</cac:AddressLine>
 				<cac:Country>
 					<cbc:IdentificationCode>SE
@@ -642,9 +638,7 @@
 						</cac:PartyName>
 					</cac:IssuerParty>
 					<cac:DocumentReference>
-						<cbc:ID>http://www.label.eu/test/
-							<?DescriptionAddFirst Not used in BEAst 3.1. ?>
-						</cbc:ID>
+						<cbc:ID>http://www.label.eu/test/ </cbc:ID>
 					</cac:DocumentReference>
 				</cac:Certificate>
 			</cac:Item>
