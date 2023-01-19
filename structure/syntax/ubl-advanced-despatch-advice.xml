@@ -1210,14 +1210,16 @@ Peppol: The handling required for this shipment, expressed as a code. Use TRED40
                <Attribute usage="Optional">
                   <Term>listID</Term>
                   <Name>Identifier for codelist for handling code </Name>
-                  <Description>Peppol: Logistics: An identifier for the codelist used for the handling code </Description>
+                  <Description>BEAst: Use listID HandlingCode for the BEAst codes listed above. 
+Peppol: Logistics: An identifier for the codelist used for the handling code </Description>
                   <Value type="EXAMPLE">TRED4079</Value>
                </Attribute>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:HandlingInstructions</Term>
                <Name>Handling instructions </Name>
-               <Description>Peppol: The handling required for this consignment, expressed as text.</Description>
+               <Description>BEAst: Unloading Instruction (T6344). 
+Peppol: The handling required for this consignment, expressed as text.</Description>
                <Value type="EXAMPLE">Keep the Container Carefully Closed</Value>
             </Element>
             <Element cardinality="0..1">
@@ -1230,14 +1232,16 @@ Peppol: The handling required for this shipment, expressed as a code. Use TRED40
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Carrying party identifier </Name>
-                     <Description>Peppol: Identifies the Carrier party. </Description>
+                     <Description>BEAst: Carrier (T3208). 
+Peppol: Identifies the Carrier party. </Description>
                      <DataType>Identifier</DataType>
                      <Reference type="BUSINESS_TERM">tir16-p055</Reference>
                      <Value type="EXAMPLE">5790000435951</Value>
                      <Attribute usage="Optional">
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
-                        <Description>Peppol: Peppol: Scheme identifier for party identification</Description>
+                        <Description>BEAst: It is recommended to use the schemeID. 
+Peppol: Peppol: Scheme identifier for party identification</Description>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">0088</Value>
                      </Attribute>
@@ -1313,18 +1317,21 @@ Peppol: The name of the carrier that handles the delivery of the
                      <Element cardinality="1..1">
                         <Term>cbc:AttributeID</Term>
                         <Name>Attribute identifier </Name>
-                        <Description>Peppol: To define the type of measurement. EnergyContent = T6428, ConversionFactor = T6429, FuelConsumption = T6374, DrivingDistance = T6380, DrivingTime = T6381, FuelMeasurementMethod = T6728, EngineType = T6379, RenewableFuel = T6382. </Description>
+                        <Description>BEAst: To define the type of measurement. EnergyContent = T6428, ConversionFactor = T6429, FuelConsumption = T6374, DrivingDistance = T6380, DrivingTime = T6381, FuelMeasurementMethod = T6728, EngineType = T6379, RenewableFuel = T6382. 
+Peppol: To define the type of measurement. EnergyContent = T6428, ConversionFactor = T6429, FuelConsumption = T6374, DrivingDistance = T6380, DrivingTime = T6381, FuelMeasurementMethod = T6728, EngineType = T6379, RenewableFuel = T6382. </Description>
                         <Value type="EXAMPLE">FuelConsumption</Value>
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cbc:Measure</Term>
                         <Name>Measure </Name>
-                        <Description>Peppol: The measured value. Used for EnergyContent, ConversionFactor, FuelConsumption, DrivingDistance, DrivingTime and RenewableFuel. unitCode refers to T6706. </Description>
+                        <Description>BEAst: The measured value. Used for EnergyContent, ConversionFactor, FuelConsumption, DrivingDistance, DrivingTime and RenewableFuel. 
+Peppol: The measured value. Used for EnergyContent, ConversionFactor, FuelConsumption, DrivingDistance, DrivingTime and RenewableFuel. unitCode refers to T6706. </Description>
                         <Value type="EXAMPLE">123</Value>
                         <Attribute>
                            <Term>unitCode</Term>
                            <Name>Measure unit of measure </Name>
-                           <Description>Peppol: Logistics: The unit of measure that applies to the measure. </Description>
+                           <Description>BEAst: unitCode refers to T6706. 
+Peppol: Logistics: The unit of measure that applies to the measure. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">KGM</Value>
                         </Attribute>
@@ -1332,7 +1339,8 @@ Peppol: The name of the carrier that handles the delivery of the
                      <Element cardinality="0..1">
                         <Term>cbc:Description</Term>
                         <Name>Attribute value </Name>
-                        <Description>Peppol: Description of the attribute when there is no value to measure. Used for FuelMeasurementMethod and EngineType. Possible values are for FuelMeasurementMethod: "AutomaticMeasurement", "StandardEstimate", "ManualMeasurement" and for EngineType: "Euro2", "Euro3", "Euro4", "Euro5", "Euro6", "EuroStep2", "EuroStep3A", "EuroStep3B", "EuroStep4". </Description>
+                        <Description>BEAst: Description of the attribute when there is no value to measure. Used for FuelMeasurementMethod and EngineType. Possible values are for FuelMeasurementMethod: "AutomaticMeasurement", "StandardEstimate", "ManualMeasurement" and for EngineType: "Euro2", "Euro3", "Euro4", "Euro5", "Euro6", "EuroStep2", "EuroStep3A", "EuroStep3B", "EuroStep4". 
+Peppol: Description of the attribute when there is no value to measure. Used for FuelMeasurementMethod and EngineType. Possible values are for FuelMeasurementMethod: "AutomaticMeasurement", "StandardEstimate", "ManualMeasurement" and for EngineType: "Euro2", "Euro3", "Euro4", "Euro5", "Euro6", "EuroStep2", "EuroStep3A", "EuroStep3B", "EuroStep4". </Description>
                         <Value type="EXAMPLE">StandardEstimate</Value>
                      </Element>
                   </Element>
@@ -1415,7 +1423,8 @@ Peppol: The name of the carrier that handles the delivery of the
                   <Element cardinality="1..1">
                      <Term>cbc:EnvironmentalEmissionTypeCode</Term>
                      <Name>Environmental emission type code </Name>
-                     <Description>Peppol: Defines the type of emission reported. Values: "CO2" (Carbon Dioxide), NOX (Nitrogen Oxide), PM (Particulate Matter), HC (Hydro Carbon). </Description>
+                     <Description>BEAst: Defines the type of emission reported. Values: "CO2" (Carbon Dioxide), NOX (Nitrogen Oxide), PM (Particulate Matter), HC (Hydro Carbon). 
+Peppol: Defines the type of emission reported. Values: "CO2" (Carbon Dioxide), NOX (Nitrogen Oxide), PM (Particulate Matter), HC (Hydro Carbon). </Description>
                      <Value type="EXAMPLE">CO2</Value>
                      <Attribute usage="Optional">
                         <Term>listID</Term>
@@ -1426,13 +1435,16 @@ Peppol: The name of the carrier that handles the delivery of the
                      <Attribute usage="Optional">
                         <Term>name</Term>
                         <Name>Name of environmental emissions type</Name>
+                        <Description>BEAst: The textual equivalent for the code. 
+Peppol: </Description>
                         <Value type="EXAMPLE">Carbon Dioxide</Value>
                      </Attribute>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cbc:ValueMeasure</Term>
                      <Name>Value of measurement </Name>
-                     <Description>Peppol: The value of the emission. Refers to Carbon Dioxide/Nitrogen Oxide/Particulate Matter/Hydro Carbon. </Description>
+                     <Description>BEAst: The value of the emission. Refers to Carbon Dioxide/Nitrogen Oxide/Particulate Matter/Hydro Carbon. 
+Peppol: The value of the emission. Refers to Carbon Dioxide/Nitrogen Oxide/Particulate Matter/Hydro Carbon. </Description>
                      <Value type="EXAMPLE">10</Value>
                      <Attribute>
                         <Term>unitCode</Term>
@@ -1452,7 +1464,8 @@ Peppol: The name of the carrier that handles the delivery of the
             <Element cardinality="1..1">
                <Term>cbc:TransportModeCode</Term>
                <Name>Transport mode code </Name>
-               <Description>Peppol: Must be a value in UNECERec19. </Description>
+               <Description>BEAst: Transport mode (T6131). 
+Peppol: Must be a value in UNECERec19. </Description>
                <Reference type="BUSINESS_TERM">tir16-p056</Reference>
                <Reference type="CODE_LIST">UNECERec19</Reference>
                <Value type="EXAMPLE">3</Value>
@@ -1486,7 +1499,8 @@ Peppol: The name of the carrier that handles the delivery of the
                   <Element cardinality="1..1">
                      <Term>cbc:LicensePlateID</Term>
                      <Name>License plate identifier transport </Name>
-                     <Description>Peppol: The licence plate(s) identifying the vehicle seperated by semicolon if there are more than one</Description>
+                     <Description>BEAst: Used for Transport Information (T6008). 
+Peppol: The licence plate(s) identifying the vehicle seperated by semicolon if there are more than one</Description>
                      <Value type="EXAMPLE">DF10958</Value>
                   </Element>
                </Element>
@@ -1940,13 +1954,15 @@ Peppol: Type of Transport Handling Unit. Use UN/ECE Recommendation 21 with addit
             <Element cardinality="0..1">
                <Term>cbc:HandlingCode</Term>
                <Name>Handling Code </Name>
-               <Description>Peppol: The handling for this transporthandling unit expressed as a code </Description>
+               <Description>BEAst: Description handling instruction code (T6199) or Unloading instruction code (T6343). 
+Peppol: The handling for this transporthandling unit expressed as a code </Description>
                <Value type="EXAMPLE">CCC</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:HandlingInstructions</Term>
                <Name>Handling instructions </Name>
-               <Description>Peppol: The handling for this transporthandling unit expressed as a text </Description>
+               <Description>BEAst: Description handling instruction text (T6200) or Unloading instruction (T6344). 
+Peppol: The handling for this transporthandling unit expressed as a text </Description>
                <Value type="EXAMPLE">To be set vertical</Value>
             </Element>
             <Element cardinality="0..1">
@@ -1958,7 +1974,8 @@ Peppol: Type of Transport Handling Unit. Use UN/ECE Recommendation 21 with addit
             <Element cardinality="0..1">
                <Term>cbc:ShippingMarks</Term>
                <Name>Shipping marks </Name>
-               <Description>Peppol: Free-form description of the marks and numbers on this transport handling unit. </Description>
+               <Description>BEAst: Shipping marks consignment (T0086) or Seller shipping marks consignment (T6065). 
+Peppol: Free-form description of the marks and numbers on this transport handling unit. </Description>
                <Value type="EXAMPLE">Keep dry</Value>
             </Element>
             <Element cardinality="0..n">
@@ -2081,7 +2098,8 @@ Peppol: For the measure. Use UN/ECE Recommendation 20 and 21.subset.</Descriptio
             <Element cardinality="0..n">
                <Term>cac:GoodsItem</Term>
                <Name>Goods item </Name>
-               <Description>Peppol: A Goods item contained in the package.</Description>
+               <Description>BEAst: The items packed directly on the TransportHandlingUnit are described here. 
+Peppol: A Goods item contained in the package.</Description>
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Identifiser goods item </Name>
@@ -2136,7 +2154,8 @@ Peppol: For the measure. Use UN/ECE Recommendation 20 and 21.subset.</Descriptio
             <Element cardinality="0..n">
                <Term>cac:Package</Term>
                <Name>Package information </Name>
-               <Description>Peppol: A package contained in the Transport Handling Unit.</Description>
+               <Description>BEAst: The packages packed on the TransportHandlingUnit are described here. 
+Peppol: A package contained in the Transport Handling Unit.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
                   <Name>Package identifier </Name>
@@ -2165,7 +2184,8 @@ Peppol: For the measure. Use UN/ECE Recommendation 20 and 21.subset.</Descriptio
                <Element cardinality="0..n">
                   <Term>cac:ContainedPackage</Term>
                   <Name>Contained package </Name>
-                  <Description>Peppol: A package contained in the Transport Handling Unit.</Description>
+                  <Description>BEAst: The packages packed in the larger package are described here. 
+Peppol: A package contained in the Transport Handling Unit.</Description>
                   <Element cardinality="0..1">
                      <Term>cbc:ID</Term>
                      <Name>Identifier contained package </Name>
@@ -2194,7 +2214,8 @@ Peppol: For the measure. Use UN/ECE Recommendation 20 and 21.subset.</Descriptio
                   <Element cardinality="0..n">
                      <Term>cac:ContainedPackage</Term>
                      <Name>Contained package </Name>
-                     <Description>Peppol: A package contained in the Transport Handling Unit.</Description>
+                     <Description>BEAst: The packages packed in the medium sized package are described here. 
+Peppol: A package contained in the Transport Handling Unit.</Description>
                      <Element cardinality="0..1">
                         <Term>cbc:ID</Term>
                         <Name>Identifier contained package </Name>
@@ -2223,7 +2244,8 @@ Peppol: For the measure. Use UN/ECE Recommendation 20 and 21.subset.</Descriptio
                      <Element cardinality="0..n">
                         <Term>cac:GoodsItem</Term>
                         <Name>Goods item </Name>
-                        <Description>Peppol: A Goods item contained in the package.</Description>
+                        <Description>BEAst: The items packed in the inner package are described here. 
+Peppol: A Goods item contained in the package.</Description>
                         <Element cardinality="1..1">
                            <Term>cbc:ID</Term>
                            <Name>Identifiser goods item </Name>
@@ -2304,7 +2326,8 @@ Peppol: For the measure. Use UN/ECE Recommendation 20 and 21.subset.</Descriptio
                   <Element cardinality="0..n">
                      <Term>cac:GoodsItem</Term>
                      <Name>Goods item </Name>
-                     <Description>Peppol: A Goods item contained in the package.</Description>
+                     <Description>BEAst: The items packed in the middle package are described here. 
+Peppol: A Goods item contained in the package.</Description>
                      <Element cardinality="1..1">
                         <Term>cbc:ID</Term>
                         <Name>Identifiser goods item </Name>
@@ -2385,7 +2408,8 @@ Peppol: For the measure. Use UN/ECE Recommendation 20 and 21.subset.</Descriptio
                <Element cardinality="0..n">
                   <Term>cac:GoodsItem</Term>
                   <Name>Goods item </Name>
-                  <Description>Peppol: A Goods item contained in the package.</Description>
+                  <Description>BEAst: The items packed in the package on the TransportHandlingUnit are described here. 
+Peppol: A Goods item contained in the package.</Description>
                   <Element cardinality="1..1">
                      <Term>cbc:ID</Term>
                      <Name>Identifiser goods item </Name>
@@ -2444,19 +2468,22 @@ Peppol: For the measure. Use UN/ECE Recommendation 20 and 21.subset.</Descriptio
                   <Element cardinality="1..1">
                      <Term>cbc:AttributeID</Term>
                      <Name>Attribute identifier </Name>
-                     <Description>Peppol: To describe the type of measurement. Use UNCL 6313 subset. </Description>
+                     <Description>BEAst: Measured attribute code (T6714) 
+Peppol: To describe the type of measurement. Use UNCL 6313 subset. </Description>
                      <Reference type="CODE_LIST">UNCL6313-T120</Reference>
                      <Value type="EXAMPLE">LN</Value>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cbc:Measure</Term>
                      <Name>Measure </Name>
-                     <Description>Peppol: For the measure.</Description>
+                     <Description>BEAst: Measure (T6122) 
+Peppol: For the measure.</Description>
                      <Value type="EXAMPLE">123</Value>
                      <Attribute>
                         <Term>unitCode</Term>
                         <Name>Measure unit of measure </Name>
-                        <Description>Peppol: Logistics: The unit of measure that applies to the measure. </Description>
+                        <Description>BEAst: Measure Unit NeB Type (T6706) 
+Peppol: Logistics: The unit of measure that applies to the measure. </Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">MTR</Value>
                      </Attribute>
@@ -2571,7 +2598,8 @@ Peppol: Identifies the order that the reference order line belongs
                <Element cardinality="0..1">
                   <Term>cbc:SalesOrderID</Term>
                   <Name>Sales order number </Name>
-                  <Description>Peppol: Reference to the sellers order number. </Description>
+                  <Description>BEAst: Vendor order number (T6099) 
+Peppol: Reference to the sellers order number. </Description>
                   <Value type="EXAMPLE">5678985</Value>
                </Element>
             </Element>
@@ -2599,11 +2627,11 @@ Peppol: Identifies the type of document or item. </Description>
             <Element cardinality="0..1">
                <Term>cbc:DocumentType</Term>
                <Name>Document type </Name>
-               <Description>BEAst: Identifies the type of document or item. ("BEAST:ReferenceToDeliveryNote", "BEAST:CustomersReferenceNumber", "BEAST:OfferNumber", "BEAST:VendorsOrderNumber", "BEAST:EndCustomersOrderNumber", "BEAST:DrawingNumber", "BEAST:MaterialTicketNumber", "BEAST:MaterialTicketReference", "BEAST:DeliveryUnit", "BEAST:ReferenceToWeb", "BEAST:EndCustomersOrderLineNumber", "BEAST:OfferLineNumber", any other type of document or item). 
+               <Description>BEAst: Identifies the type of document or item. ("ReferenceToDeliveryNote", "CustomersReferenceNumber", "OfferNumber", "EndCustomersOrderNumber", "DrawingNumber", "MaterialTicketNumber", "MaterialTicketReference", "DeliveryUnit", "ReferenceToWeb", "EndCustomersOrderLineNumber", "OfferLineNumber", any other type of document or item). 
 Peppol: The type of reference that cannot be specified by a code </Description>
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">tir16-p054</Reference>
-               <Value type="EXAMPLE">BEAST:EndCustomersOrderNumber</Value>
+               <Value type="EXAMPLE">EndCustomersOrderNumber</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:Attachment</Term>
@@ -2612,7 +2640,7 @@ Peppol: The type of reference that cannot be specified by a code </Description>
                <Element cardinality="0..1">
                   <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                   <Name>Embedded binary object </Name>
-                  <Description>BEAst: The referenced document can here be inserted as a binary object (T6475). filename refers to T6476. 
+                  <Description>BEAst: The referenced document can here be inserted as a binary object (T6475). 
 Peppol: The referenced document can here be inserted as a binary object. </Description>
                   <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
                   <Attribute>
@@ -2625,7 +2653,8 @@ Peppol: The referenced document can here be inserted as a binary object. </Descr
                   <Attribute>
                      <Term>filename</Term>
                      <Name>Attached document filename </Name>
-                     <Description>Peppol: Logistics: The file name of the attached document. </Description>
+                     <Description>BEAst: filename refers to T6476. 
+Peppol: Logistics: The file name of the attached document. </Description>
                      <Value type="EXAMPLE">Hours-spent.pdf</Value>
                   </Attribute>
                </Element>
