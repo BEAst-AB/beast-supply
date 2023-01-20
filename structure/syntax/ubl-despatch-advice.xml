@@ -851,8 +851,7 @@ Peppol: The main address line in a postal address usually the street
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
                   <Name>Address line 2</Name>
-                  <Description>BEAst: Not used in BEAst version 3.1.  
-Peppol: An additional address line in a postal address that can be used
+                  <Description>Peppol: An additional address line in a postal address that can be used
 							to give further details supplementing the main line. Common use are
 							secondary house number in a complex or in a building.</Description>
                   <DataType>Text</DataType>
@@ -883,8 +882,7 @@ Peppol: The identifier for an addressable group of properties according
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
                   <Name>Country subdivision</Name>
-                  <Description>BEAst: Not used in BEAst version 3.1.  
-Peppol: For specifying a region, county, state, province etc. within a
+                  <Description>Peppol: For specifying a region, county, state, province etc. within a
 							country by using text.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir16-p036</Reference>
@@ -896,8 +894,7 @@ Peppol: For specifying a region, county, state, province etc. within a
                   <Element cardinality="0..1">
                      <Term>cbc:Line</Term>
                      <Name>Address line 3</Name>
-                     <Description>BEAst: Not used in BEAst version 3.1.  
-Peppol: An additional address line in an address that can be used
+                     <Description>Peppol: An additional address line in an address that can be used
 								to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir16-p037</Reference>
@@ -986,8 +983,6 @@ Peppol: The total volume of the shipment including packaging, as dispatched
          <Element cardinality="0..1">
             <Term>cbc:TotalTransportHandlingUnitQuantity</Term>
             <Name>Total number of transport handling units</Name>
-            <Description>BEAst: Not used in BEAst version 3.1 
-Peppol: </Description>
             <Reference type="BUSINESS_TERM">tir16-p002</Reference>
             <Value type="EXAMPLE">3</Value>
          </Element>
@@ -1051,8 +1046,6 @@ Peppol: The name of the carrier that handles the delivery of the
                <Element cardinality="0..1">
                   <Term>cac:Person</Term>
                   <Name>Information about the driver</Name>
-                  <Description>BEAst: Not used in BEAst version 3.1. 
-Peppol: </Description>
                   <Element cardinality="1..n">
                      <Term>cac:IdentityDocumentReference</Term>
                      <Name>Person identity document reference</Name>
@@ -1637,8 +1630,6 @@ Peppol: Serial numbers for items listed in the dispatch
                <Element cardinality="0..1">
                   <Term>cac:LotIdentification</Term>
                   <Name>Lot identifictation</Name>
-                  <Description>BEAst: Not used in BEAst version 3.1. 
-Peppol: </Description>
                   <Element cardinality="0..1">
                      <Term>cbc:LotNumberID</Term>
                      <Name>Item batch number</Name>
