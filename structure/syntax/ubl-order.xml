@@ -46,8 +46,7 @@ Peppol: A transaction instance must have an identifier. The identifier enables
       <Element cardinality="0..1">
          <Term>cbc:SalesOrderID</Term>
          <Name>Sales order reference</Name>
-         <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: An identifier of a referenced sales order, issued by the
+         <Description>Peppol: An identifier of a referenced sales order, issued by the
 				Seller.</Description>
          <DataType>Document Reference</DataType>
          <Reference type="BUSINESS_TERM">tir01-p001</Reference>
@@ -84,8 +83,7 @@ Peppol: Indicates wether the order is a purchase order or consignement order.
       <Element cardinality="0..1">
          <Term>cbc:Note</Term>
          <Name>Document level textual note</Name>
-         <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: Free form text applying to the Order. This element may contain notes or any
+         <Description>Peppol: Free form text applying to the Order. This element may contain notes or any
 				other similar information that is not contained explicitly in another
 				structure.</Description>
          <DataType>Text</DataType>
@@ -115,8 +113,7 @@ Peppol: The element is used for the reference of who ordered the products/servic
       <Element cardinality="0..1">
          <Term>cbc:AccountingCost</Term>
          <Name>Buyers accounting string</Name>
-         <Description>BEAst: T6004, Project number. 
-Peppol: Used by the buyer to specify a reference that should be repeated in e.g.
+         <Description>Peppol: Used by the buyer to specify a reference that should be repeated in e.g.
 				invoice to enable the buyer to automatically book e.g. to the right project, or
 				account.</Description>
          <DataType>text</DataType>
@@ -129,8 +126,7 @@ Peppol: Used by the buyer to specify a reference that should be repeated in e.g.
          <Element>
             <Term>cbc:EndDate</Term>
             <Name>Order validity end date</Name>
-            <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: The end date for when the order is valid. The end date for the time
+            <Description>Peppol: The end date for when the order is valid. The end date for the time
 					period within which the seller must respond. An order should contain the
 					validity end date</Description>
             <DataType>Date</DataType>
@@ -266,6 +262,20 @@ Peppol: Positive identification of the reference such as a unique
             <Value type="EXAMPLE">AABC654</Value>
          </Element>
       </Element>
+
+	     <Element cardinality="0..1">
+         <Term>cac:ProjectReference</Term>
+         <Name>PROJECT REFERENCE</Name>
+         <Element>
+            <Term>cbc:ID</Term>
+            <Name>Project reference</Name>
+            <Description>BEAst: Project number (T6004). 
+Peppol: The identification of the project the order refers to.</Description>
+            <DataType>Document Reference</DataType>
+            <Reference type="BUSINESS_TERM"> tir01-p044</Reference>
+            <Value type="EXAMPLE">P212121</Value>
+         </Element>
+      </Element>
 	
       <Element>
          <Term>cac:BuyerCustomerParty</Term>
@@ -371,8 +381,7 @@ Peppol: The identifier for an addressable group of properties according
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
                   <Name>Country subdivision</Name>
-                  <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: For specifying a region, county, state, province etc. within a
+                  <Description>Peppol: For specifying a region, county, state, province etc. within a
 							country by using text.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-141</Reference>
@@ -641,8 +650,7 @@ Peppol: The identifier for an addressable group of properties according
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
                   <Name>Country subdivision</Name>
-                  <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: For specifying a region, county, state, province etc. within a
+                  <Description>Peppol: For specifying a region, county, state, province etc. within a
 							country by using text.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-142</Reference>
@@ -832,8 +840,7 @@ Peppol: The name of the party.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Contact person name</Name>
-                  <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: The name of the contact person.</Description>
+                  <Description>Peppol: The name of the contact person.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-086</Reference>
                   <Value type="EXAMPLE">Erik Nilsson</Value>
@@ -841,8 +848,7 @@ Peppol: The name of the contact person.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:Telephone</Term>
                   <Name>Contact telephone number</Name>
-                  <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: A phone number for the contact person. If the person has a
+                  <Description>Peppol: A phone number for the contact person. If the person has a
 							direct number, this is that number.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-083</Reference>
@@ -851,8 +857,7 @@ Peppol: A phone number for the contact person. If the person has a
                <Element cardinality="0..1">
                   <Term>cbc:ElectronicMail</Term>
                   <Name>Contact email address</Name>
-                  <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: The e-mail address for the contact person. If the person has a
+                  <Description>Peppol: The e-mail address for the contact person. If the person has a
 							direct e-mail this is that email.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-085</Reference>
@@ -970,8 +975,7 @@ Peppol: The identifier for an addressable group of properties according
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
                   <Name>Country subdivision</Name>
-                  <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: For specifying a region, county, state, province etc. within a
+                  <Description>Peppol: For specifying a region, county, state, province etc. within a
 							country by using text.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p016</Reference>
@@ -1216,8 +1220,7 @@ Peppol: The identifier for an addressable group of properties according
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
                   <Name>Country subdivision</Name>
-                  <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: For specifying a region, county, state, province etc. within a
+                  <Description>Peppol: For specifying a region, county, state, province etc. within a
 							country by using text.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-144</Reference>
@@ -1260,25 +1263,41 @@ Peppol: A code that identifies the country.The lists of valid
          <Element cardinality="0..1">
             <Term>cac:RequestedDeliveryPeriod</Term>
             <Name>Requested delivery period </Name>
+            <Description>BEAst: The Requested Delivery Period should be set at line level, not here. 
+Peppol: </Description>
             <Element cardinality="0..1">
                <Term>cbc:StartDate</Term>
                <Name>Period start date</Name>
-               <Description>BEAst: The Requested Delivery Period should be set at line level, not here. 
-Peppol: The date on which the period starts. The start dates counts as part
+               <Description>Peppol: The date on which the period starts. The start dates counts as part
 						of the period.Format ="YYYY-MM-DD"</Description>
                <DataType>Date</DataType>
                <Reference type="BUSINESS_TERM">tir01-099</Reference>
                <Value type="EXAMPLE">2021-11-01</Value>
             </Element>
             <Element cardinality="0..1">
+               <Term>cbc:StartTime</Term>
+               <Name>Period start time</Name>
+               <Description>Peppol: The time at which this period begins. Format = "hh:mm:ss"</Description>
+               <DataType>Time</DataType>
+               <Reference type="BUSINESS_TERM">tir01-p042</Reference>
+               <Value type="EXAMPLE">12:30:00</Value>
+            </Element>
+            <Element cardinality="0..1">
                <Term>cbc:EndDate</Term>
                <Name>Period end date</Name>
-               <Description>BEAst: The Requested Delivery Period should be set at line level, not here. 
-Peppol: The date on which the period ends. The end date counts as part of
+               <Description>Peppol: The date on which the period ends. The end date counts as part of
 						the period.Format ="YYYY-MM-DD"</Description>
                <DataType>Date</DataType>
                <Reference type="BUSINESS_TERM">tir01-100</Reference>
                <Value type="EXAMPLE">2021-11-03</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:EndTime</Term>
+               <Name>Period end time</Name>
+               <Description>Peppol: The time at which this period end. Format = "hh:mm:ss"</Description>
+               <DataType>Time</DataType>
+               <Reference type="BUSINESS_TERM">tir01-p043</Reference>
+               <Value type="EXAMPLE">15:30:00</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
@@ -1370,8 +1389,7 @@ Peppol: The identifier for an addressable group of properties according
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
                   <Name>Country subdivision</Name>
-                  <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: For specifying a region, county, state, province etc. within a
+                  <Description>Peppol: For specifying a region, county, state, province etc. within a
 								country by using text.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p033</Reference>
@@ -1451,7 +1469,7 @@ Peppol: The e-mail address for the contact person. If the person has a
             <Element>
                <Term>cbc:ID</Term>
                <Name>Shipment identifier</Name>
-               <Description>BEAst: Not used in BEAst version 3.1. Always set to "NA".. 
+               <Description>BEAst: Always set to "NA". 
 Peppol: Element is mandated by syntax structure use value NA</Description>
                <Value type="EXAMPLE">NA</Value>
             </Element>
@@ -1525,8 +1543,7 @@ Peppol: The location to which the delivery terms refer. Used to qualify the
       <Element cardinality="0..n">
          <Term>cac:AllowanceCharge</Term>
          <Name>Allowance and charge information</Name>
-         <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: Allowances and charges for the order</Description>
+         <Description>Peppol: Allowances and charges for the order</Description>
          <Element>
             <Term>cbc:ChargeIndicator</Term>
             <Name>AllowanceChargeIndicator</Name>
@@ -1654,8 +1671,7 @@ Peppol: Allowances and charges for the order</Description>
       <Element cardinality="0..1">
          <Term>cac:TaxTotal</Term>
          <Name>Tax total</Name>
-         <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: Specification of expected tax amount</Description>
+         <Description>Peppol: Specification of expected tax amount</Description>
          <Element>
             <Term>cbc:TaxAmount</Term>
             <Name>TAX total amount</Name>
@@ -1679,8 +1695,7 @@ Peppol: Specification of expected tax amount</Description>
       <Element cardinality="0..1">
          <Term>cac:AnticipatedMonetaryTotal</Term>
          <Name>Anticipated monetary total</Name>
-         <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: Estimated total amounts for the order</Description>
+         <Description>Peppol: Estimated total amounts for the order</Description>
          <Element>
             <Term>cbc:LineExtensionAmount</Term>
             <Name>Sum of line amounts</Name>
@@ -1885,8 +1900,7 @@ Peppol: The quantity of Items for the Line Item. The quantity for the order
             <Element cardinality="0..1">
                <Term>cbc:LineExtensionAmount</Term>
                <Name>Order line amount</Name>
-               <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: The total amount for the Line Item, including Allowance Charges but
+               <Description>Peppol: The total amount for the Line Item, including Allowance Charges but
 						net of taxes. The expected line amount excluding TAX but inclusive of other
 						charges, allowances and taxes.</Description>
                <DataType>Amount</DataType>
@@ -1971,8 +1985,7 @@ Peppol: The date on which the period ends. The end date counts as
             <Element cardinality="0..1">
                <Term>cac:OriginatorParty</Term>
                <Name>Originator information</Name>
-               <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: Information regarding the originator of the order line </Description>
+               <Description>Peppol: Information regarding the originator of the order line </Description>
                <Element cardinality="0..1">
                   <Term>cac:PartyIdentification</Term>
                   <Name>Party identification</Name>
@@ -2146,8 +2159,7 @@ Peppol: The actual quantity to which the price applies.</Description>
                <Element cardinality="0..1">
                   <Term>cac:AllowanceCharge</Term>
                   <Name>Price discount information</Name>
-                  <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: Information on discounts connected to the price </Description>
+                  <Description>Peppol: Information on discounts connected to the price </Description>
                   <Element>
                      <Term>cbc:ChargeIndicator</Term>
                      <Name>AllowanceChargeIndicator</Name>
@@ -2325,8 +2337,6 @@ Peppol: A code for classifying the item by its type or nature.
                <Element cardinality="0..1">
                   <Term>cac:ClassifiedTaxCategory</Term>
                   <Name>Line TAX information</Name>
-                  <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: </Description>
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Item TAX category code</Name>
@@ -2444,8 +2454,7 @@ Peppol: An identifier that is specific to the items in the order
                   <Element cardinality="0..1">
                      <Term>cac:LotIdentification</Term>
                      <Name>Item lot information</Name>
-                     <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: Information about the production lot which the order line
+                     <Description>Peppol: Information about the production lot which the order line
 								items come from.</Description>
                      <Element cardinality="0..1">
                         <Term>cbc:LotNumberID</Term>
