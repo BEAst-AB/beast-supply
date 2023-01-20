@@ -107,8 +107,7 @@ Peppol: An identifier assigned by the Buyer used for internal routing purposes. 
          <Element>
             <Term>cbc:ID</Term>
             <Name>Previous order agreement identifier</Name>
-            <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: A reference to a previous identifier for an order agreement. Used to
+            <Description>Peppol: A reference to a previous identifier for an order agreement. Used to
                     indicatete that this agreement is a change to a previous
                     agreement. This is an optional business term but is a required element in the UBL syntax so if no previous order identifier is available use NA.</Description>
             <DataType>Document reference</DataType>
@@ -918,10 +917,9 @@ Peppol: The identifier for an addressable group of properties according
                   <Element cardinality="0..1">
                      <Term>cbc:Line</Term>
                      <Name>Address line 3</Name>
-                     <Description>BEAst: Not used in BEAst version 3.1. 
-Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                     <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
-                     <Value type="EXAMPLE">Gate 34</Value>
+                     <Value type="EXAMPLE">xxx</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">
@@ -1891,8 +1889,7 @@ Peppol: The UBL structure used for item labeling requires this elements,
                      <Element>
                         <Term>cbc:ID</Term>
                         <Name>Item label reference</Name>
-                        <Description>BEAst: Not used in BEAst 3.1. 
-Peppol: A reference to where the label specification can be
+                        <Description>Peppol: A reference to where the label specification can be
                                     found, e.g. a URI.</Description>
                         <DataType>Document reference</DataType>
                         <Reference type="BUSINESS_TERM">OP-110-016</Reference>

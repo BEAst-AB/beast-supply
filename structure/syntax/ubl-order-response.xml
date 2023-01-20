@@ -102,7 +102,7 @@ Peppol: The default currency for the offer.</Description>
 	     <Element cardinality="0..1">
          <Term>cbc:CustomerReference</Term>
          <Name>Buyer reference identifier</Name>
-         <Description>BEAst: TT6004, Project number. 
+         <Description>BEAst: T6004, Project number. 
 Peppol: An identifier assigned by the Buyer used for internal routing purposes.The
             identifier is defined by the buyer (contact ID, department, office id, project
             code), but provided by the seller in the order response.</Description>
@@ -266,6 +266,14 @@ Peppol: </Description>
                <Value type="EXAMPLE">2021-07-15</Value>
             </Element>
             <Element cardinality="0..1">
+               <Term>cbc:StartTime</Term>
+               <Name>Period start time</Name>
+               <Description>Peppol: The time at which this period begins. Format = "hh:mm:ss"</Description>
+               <DataType>Time</DataType>
+               <Reference type="BUSINESS_TERM">tir76-p010</Reference>
+               <Value type="EXAMPLE">12:30:00</Value>
+            </Element>
+            <Element cardinality="0..1">
                <Term>cbc:EndDate</Term>
                <Name>Period end date</Name>
                <Description>Peppol: The date on which the period ends. The end date counts as part of
@@ -274,6 +282,14 @@ Peppol: </Description>
                <Reference type="BUSINESS_TERM">tir76-100</Reference>
                <Reference type="RULE">PEPPOL-T76-R004</Reference>
                <Value type="EXAMPLE">2021-07-16</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:EndTime</Term>
+               <Name>Period end time</Name>
+               <Description>Peppol: The time at which this period end. Format = "hh:mm:ss"</Description>
+               <DataType>Time</DataType>
+               <Reference type="BUSINESS_TERM">tir76-p011</Reference>
+               <Value type="EXAMPLE">15:30:00</Value>
             </Element>
          </Element>
       </Element>
@@ -585,8 +601,7 @@ Peppol: A code for classifying the item by its type or nature. Classification co
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Item TAX category code</Name>
-                     <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: The TAX category code for the item.</Description>
+                     <Description>Peppol: The TAX category code for the item.</Description>
                      <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir76-150</Reference>
                      <Value type="EXAMPLE">S</Value>
@@ -594,8 +609,7 @@ Peppol: The TAX category code for the item.</Description>
                   <Element cardinality="0..1">
                      <Term>cbc:Percent</Term>
                      <Name>Line TAX rate</Name>
-                     <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: The TAX percentage rate that applies to the line
+                     <Description>Peppol: The TAX percentage rate that applies to the line
                                 amount.</Description>
                      <DataType>Percentage</DataType>
                      <Reference type="BUSINESS_TERM">tir04-170</Reference>
@@ -606,8 +620,7 @@ Peppol: The TAX percentage rate that applies to the line
                      <Name>Tax scheme information</Name>
                      <Element>
                         <Term>cbc:ID</Term>
-                        <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: Tax scheme. E.g. “VAT” or “GST”</Description>
+                        <Description>Peppol: Tax scheme. E.g. “VAT” or “GST”</Description>
                         <DataType>Identifier</DataType>
                         <Reference type="BUSINESS_TERM">tir76-p003</Reference>
                         <Value type="EXAMPLE">VAT</Value>
@@ -621,8 +634,7 @@ Peppol: Tax scheme. E.g. “VAT” or “GST”</Description>
                   <Element>
                      <Term>cbc:Name</Term>
                      <Name>Item property name</Name>
-                     <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: The name of the property.The name must be sufficiently
+                     <Description>Peppol: The name of the property.The name must be sufficiently
                                 descriptive to define the value. The definition may be supplemented
                                 with the property unit of measure when relevant.</Description>
                      <DataType>Text</DataType>
@@ -632,8 +644,7 @@ Peppol: The name of the property.The name must be sufficiently
                   <Element cardinality="0..1">
                      <Term>cbc:NameCode</Term>
                      <Name>Item property code</Name>
-                     <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: Code for the item property according to a property code system.</Description>
+                     <Description>Peppol: Code for the item property according to a property code system.</Description>
                      <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir76-p004</Reference>
                      <Value type="EXAMPLE">Code</Value>
@@ -647,8 +658,7 @@ Peppol: Code for the item property according to a property code system.</Descrip
                   <Element>
                      <Term>cbc:Value</Term>
                      <Name>Item property value</Name>
-                     <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: The value of the item property.</Description>
+                     <Description>Peppol: The value of the item property.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir76-139</Reference>
                      <Value type="EXAMPLE">12 gram</Value>
@@ -656,8 +666,7 @@ Peppol: The value of the item property.</Description>
                   <Element cardinality="0..1">
                      <Term>cbc:ValueQuantity</Term>
                      <Name>Item property unit of measure</Name>
-                     <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: The unit of measure in which the property value is stated,
+                     <Description>Peppol: The unit of measure in which the property value is stated,
                                 if relevant. May not be relevant when properties are
                                 descriptive.</Description>
                      <DataType>Quantity</DataType>
@@ -675,8 +684,7 @@ Peppol: The unit of measure in which the property value is stated,
                   <Element cardinality="0..1">
                      <Term>cbc:ValueQualifier</Term>
                      <Name>Property classification</Name>
-                     <Description>BEAst: Not used by BEAst version 3.1. 
-Peppol: Standardized and predefined classification of items properties.</Description>
+                     <Description>Peppol: Standardized and predefined classification of items properties.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir76-p009</Reference>
                      <Value type="EXAMPLE">gram</Value>
