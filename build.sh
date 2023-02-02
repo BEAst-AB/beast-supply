@@ -1,7 +1,7 @@
 #!/bin/sh
 
 PROJECT=$(dirname $(readlink -f "$0"))
-LOGISTICS="https://raw.githubusercontent.com/BEAst-AB/peppol-logistics/main/structure/syntax/"
+LOGISTICS="https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/main/structure/syntax/"
 echo $LOGISTICS
 
 
@@ -25,11 +25,11 @@ docker run --rm -i -v $PROJECT:/src --entrypoint java klakegg/saxon:9.8.0-7 -cp 
 echo "Generating Catalogue"
 docker run --rm -i -v $PROJECT:/src --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-catalogue.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-catalogue.xml UblBaseUrl=https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/master/structure/syntax/ UblDocBaseUrl=https://docs.peppol.eu/poacc/upgrade-3/syntax/Catalogue/ UblXmlReferenceFile=ubl-catalogue.xml -ext:on --allow-external-functions:on
 echo "Generating Advanced Despatch advice"
-docker run --rm -i -v $PROJECT:/src --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-advanced-despatch-advice.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml UblBaseUrl=https://raw.githubusercontent.com/BEAst-AB/peppol-logistics/main/structure/syntax/ UblDocBaseUrl=http://bis.beast.se/peppol-logistics/main/syntax/AdvancedDespatchAdvice/ UblXmlReferenceFile=ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
+docker run --rm -i -v $PROJECT:/src --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-advanced-despatch-advice.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml UblBaseUrl=https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/main/structure/syntax/ UblDocBaseUrl=http://bis.beast.se/peppol-logistics/main/syntax/AdvancedDespatchAdvice/ UblXmlReferenceFile=ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
 echo "Generating Despatch Advice Response"
-docker run --rm -i -v $PROJECT:/src --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-despatch-advice-response.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-despatch-advice-response.xml UblBaseUrl=https://raw.githubusercontent.com/BEAst-AB/peppol-logistics/main/structure/syntax/ UblDocBaseUrl=http://bis.beast.se/peppol-logistics/main/syntax/DespatchAdviceResponse/ UblXmlReferenceFile=ubl-despatch-advice-response.xml -ext:on --allow-external-functions:on
+docker run --rm -i -v $PROJECT:/src --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-despatch-advice-response.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-despatch-advice-response.xml UblBaseUrl=https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/main/structure/syntax/ UblDocBaseUrl=http://bis.beast.se/peppol-logistics/main/syntax/DespatchAdviceResponse/ UblXmlReferenceFile=ubl-despatch-advice-response.xml -ext:on --allow-external-functions:on
 echo "Generating Weight statement"
-docker run --rm -i -v $PROJECT:/src --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-weight-statement.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-weight-statement.xml UblBaseUrl=https://raw.githubusercontent.com/BEAst-AB/peppol-logistics/main/structure/syntax/ UblDocBaseUrl=http://bis.beast.se/peppol-logistics/main/syntax/WeightStatement/ UblXmlReferenceFile=ubl-weight-statement.xml -ext:on --allow-external-functions:on
+docker run --rm -i -v $PROJECT:/src --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-weight-statement.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-weight-statement.xml UblBaseUrl=https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/main/structure/syntax/ UblDocBaseUrl=http://bis.beast.se/peppol-logistics/main/syntax/WeightStatement/ UblXmlReferenceFile=ubl-weight-statement.xml -ext:on --allow-external-functions:on
 
 # Structure
 docker run --rm -i \

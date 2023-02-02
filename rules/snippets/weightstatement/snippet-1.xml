@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WeightStatement xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-				 xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+<WeightStatement xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+				 xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
 				 xmlns="urn:oasis:names:specification:ubl:schema:xsd:WeightStatement-2">
 	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:weight_statement:1</cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:weight_statement:1</cbc:ProfileID>
@@ -8,7 +8,7 @@
 	<cbc:IssueDate>2022-05-12</cbc:IssueDate>
 	<cbc:IssueTime>01:19:19.88</cbc:IssueTime>
 	<cbc:WeightStatementTypeCode>01</cbc:WeightStatementTypeCode>
-
+	
 	<!-- tag::sender-party[] -->
 	<cac:SenderParty>
 		<cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
@@ -20,19 +20,19 @@
 		</cac:PartyName>
 	</cac:SenderParty>
 	<!-- end::sender-party[] -->
-
+	
 	<!-- tag::receiver-party[] -->
 	<cac:ReceiverParty>
 		<cbc:EndpointID schemeID="0088">1251513513245</cbc:EndpointID>
 		<cac:PartyIdentification>
-			<cbc:ID schemeAgencyID="0088">1251513513245</cbc:ID>
+			<cbc:ID schemeID="0088">1251513513245</cbc:ID>
 		</cac:PartyIdentification>
 		<cac:PartyName>
 			<cbc:Name>Transport Management Solutions AB</cbc:Name>
 		</cac:PartyName>
 	</cac:ReceiverParty>
 	<!-- end::receiver-party[] -->
-
+	
 	<!-- tag::weighing-party[] -->
 	<cac:WeighingParty>
 		<cac:PartyIdentification>
@@ -42,12 +42,12 @@
 			<cbc:Name>Gravel Pit Ltd.</cbc:Name>
 		</cac:PartyName>
 		<cac:PhysicalLocation>
-			<cbc:Description>Townsend pit</cbc:Description>
-			<cbc:Description>0114-40-019-a</cbc:Description>
+			<cbc:ID>0114-40-019-a</cbc:ID>
+			<cbc:Name>Townsend pit</cbc:Name>
 		</cac:PhysicalLocation>
 	</cac:WeighingParty>
 	<!-- end::weighing-party[] -->
-
+	
 	<!-- tag::shipper-party[] -->
 	<cac:ShipperParty>
 		<cac:PartyIdentification>
@@ -60,7 +60,7 @@
 	<!-- end::shipper-party[] -->
 
 	<!-- tag::shipment[] -->
-	<cac:Shipment>
+		<cac:Shipment>
 		<cbc:ID>NA</cbc:ID>
 		<cac:GoodsItem>
 			<cbc:ID schemeID="SBMI">KO2001030300</cbc:ID>

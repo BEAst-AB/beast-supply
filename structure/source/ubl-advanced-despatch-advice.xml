@@ -349,7 +349,7 @@
 
 	<cac:Shipment>
 		<cbc:ID>1
-			<?DescriptionAddFirst T6127, Freight forwarder's referens number ?>
+			<?DescriptionAddFirst T6127, Freight forwarders referens number ?>
 		</cbc:ID>
 		<cbc:Information>text
 			<?DescriptionAddFirst Used by BEAst for Supplier Remark (T6038). ?>
@@ -767,7 +767,7 @@
 
 		<cac:DocumentReference>
 			<cbc:ID>Test
-				<?DescriptionAddFirst ID of the referenced document or item: Reference to Delivery Note (T0063), Customer's Reference Number (T6005), Offer Number (T6010), Vendor's Order Number (T6099), Ultimate Customer's Order Number (T6221), Drawing Number (T6222), Material Ticket Number (T6329), Material Ticket Reference (T6337), Delivery Unit (T6340), Reference to Web (T6373), Ultimate Customer's Order Line Number (T6458), Offer Line Number (T6466) or Document Name (T6484). ?>
+				<?DescriptionAddFirst ID of the referenced document or item: Reference to Delivery Note (T0063), Customers Reference Number (T6005), Offer Number (T6010), Vendors Order Number (T6099), Ultimate Customer's Order Number (T6221), Drawing Number (T6222), Material Ticket Number (T6329), Material Ticket Reference (T6337), Delivery Unit (T6340), Reference to Web (T6373), Ultimate Customer's Order Line Number (T6458), Offer Line Number (T6466) or Document Name (T6484). ?>
 			</cbc:ID>
 			<cbc:DocumentTypeCode>380
 				<?DescriptionAddFirst Use this code if possible instead of DocumentType. ?>
@@ -796,12 +796,12 @@
 			</cbc:Name>
 			<cac:BuyersItemIdentification>
 				<cbc:ID>6578489
-					<?DescriptionAddFirst Buyer's Part Article Number (T6022)/Article Number (T0172) when T6317="BP"/Littera (T6417). ?>
+					<?DescriptionAddFirst Buyers Part Article Number (T6022)/Article Number (T0172) when T6317="BP"/Littera (T6417). ?>
 				</cbc:ID>
 			</cac:BuyersItemIdentification>
 			<cac:SellersItemIdentification>
 				<cbc:ID>17589683
-					<?DescriptionAddFirst Supplier's Article Number (T0172) ?>
+					<?DescriptionAddFirst Suppliers Article Number (T0172) ?>
 				</cbc:ID>
 			</cac:SellersItemIdentification>
 			<cac:ManufacturersItemIdentification>
@@ -818,7 +818,7 @@
 			</cac:StandardItemIdentification>
 
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="BEAST:4.0" name="SBMI">SBMI Number
+				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="3.0.2" name="SBMI">KO2012140200
 					<?listID-DescriptionAddFirst For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID "BEAST:4.0", i.e. mutually agreed. ?>
 					<?name-DescriptionAddFirst If construction specific lists are used, name specifies which of them is used. Possible names are: "SBMI", "SA", "AI", “ME” and "CoClass”. "SBMI" = Sveriges Bergmaterialindustrier, "SA" = Sveriges Åkeriföretag, "AI" = Återvinningsindustrierna, “ME” = Maskinentreprenörerna. ?>
 					<?DescriptionAddFirst Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID = BEAST:4.0" and name is Source to Classification (T6467). ?>
@@ -836,14 +836,19 @@
 
 			<cac:AdditionalItemProperty>
 				<?DescriptionAddFirst This group is also in BEAst used for ConfigurationValue (T6369), GUID Identifier (T6408), Treatment code (T6468), Alternative Vehicle Type (T6339), EPD data, NeC additional information about Asphalt and Concrete, Price information and Rental additional information.  ?>
+				<cbc:ID schemeID="ISO22057" schemeVersionID="2022">
+					77e416eb-a363-4258-a04e-171d843a6460
+					<?Description ID of the property if assigned by an Agency?>
+					<?Cardinality 0..1?>
+				</cbc:ID>
 				<cbc:Name>NA
 					<?DescriptionAddFirst Product Group Code (T0011), Property Name (T6446), Product Type Description (T6442). When the NameCode is used, the name can be set to "NA" since it is mandatory to have. ?>
 				</cbc:Name>
-				<cbc:NameCode listID="BEAST:4.0">ConfigurationValue
-					<?DescriptionAddFirst "ConfigurationValue", "GUIDIdentifier", "TreatmentCode", "AlternativeVehicleType", "EPDDataSetID", "EPDDataSetURL", "EPDPDFURL", "ResourceID", "Price" or "Rental". Property ID NeC (T6469), Property ID Type (T6443), Identity Type Code (T6440). listID refers to Property ID (T6444) but is always "BEAST:4.0" when NameCode is any of the fix values defined here. ?>
+				<cbc:NameCode listID="IPNC">EPDNumber
+					<?DescriptionAddFirst Property ID NeC (T6469), Property ID Type (T6443), Identity Type Code (T6440). ?>
 				</cbc:NameCode>
 				<cbc:Value>Blue
-					<?DescriptionAddFirst Price Amount (T6235), Alternative Vehicle Type (T6339), Configuration Value (T6369), GUID Identifier (T6408), Property Class ID (T6441), Property Value (T6452), Treatment Code (T6468), EPD data, Resource ID, Rental Indicator (T6477) or Article Property (T6470). The Rental Indicator (T6477) is changed from "True"/"False" to "Rental"/"Purchase". ?>
+					<?DescriptionAddFirst Price Amount (T6235), Configuration Value (T6369), GUID Identifier (T6408), Property Class ID (T6441), Property Value (T6452), Treatment Code (T6468),  Rental Indicator (T6477) or Article Property (T6470). The Rental Indicator (T6477) is changed from "True"/"False" to "Rental"/"Purchase". ?>
 				</cbc:Value>
 				<cbc:ValueQuantity unitCode="C62">15.00
 					<?DescriptionAddFirst Property Compare Code (T6457), Price Unit Basis Quantity (T6722). unitCode refers to Measure Unit NeB Type (T6706). ?>
@@ -919,12 +924,10 @@
 					</cac:PartyName>
 				</cac:IssuerParty>
 			</cac:Certificate>
-
 			<cac:Dimension>
 				<cbc:AttributeID>LN</cbc:AttributeID>
 				<cbc:Measure unitCode="MTR">123</cbc:Measure>
 			</cac:Dimension>
 		</cac:Item>
-		
 	</cac:DespatchLine>
 </ubl:DespatchAdvice>

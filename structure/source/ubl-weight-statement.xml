@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<WeightStatement
-xmlns="urn:oasis:names:specification:ubl:schema:xsd:WeightStatement-2"
+<ubl:WeightStatement
+xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:WeightStatement-2"
 xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 >
@@ -11,49 +11,49 @@ xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:weight_statement:1</cbc:ProfileID>
 
 	<cbc:ID>GOA294107
-		<?DescriptionAddFirst Material ticket number (T6329). Unique identity identifying the weight statement. ?>
+		<?DescriptionAddFirst Ref to version 3.1 Material ticket number (T6329). ?>
 	</cbc:ID>
 	<cbc:IssueDate>2016-11-03
-		<?DescriptionAddFirst Document date time (T6325). ?>
+		<?DescriptionAddFirst Ref to version 3.1 Document date time (T6325). ?>
 	</cbc:IssueDate>
 	<cbc:IssueTime>09:30:00
-		<?DescriptionAddFirst Document date time (T6325). ?>
+		<?DescriptionAddFirst Ref to version 3.1 Document date time (T6325). ?>
 	</cbc:IssueTime>
 	<cbc:WeightStatementTypeCode>01
 		<?Name Weight statement type code ?>
-		<?DescriptionAddFirst Document type (T6328). 01 = Outbound delivery 02 = Inbound delivery ?>
+		<?DescriptionAddFirst Ref to version 3.1 Document type (T6328). ?>
 	</cbc:WeightStatementTypeCode>
 	
 	<cac:SenderParty>
 		<cbc:EndpointID schemeID="0088">7300010000001
-			<?DescriptionAddFirst Identity of the party sending this weight statement, T0009. ?>
+			<?DescriptionAddFirst Ref to version 3.1 (T0009). ?>
 		</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="0088">7300010000001
-				<?DescriptionAddFirst Identity of the party sending this weight statement, T0009. ?>
+				<?DescriptionAddFirst Ref to version 3.1 (T0009). ?>
 			</cbc:ID>
 		</cac:PartyIdentification>
 		
 		<cac:PartyName>
 			<cbc:Name>Weighing Solutions AB
-				<?DescriptionAddFirst Name of the party sending this weight statement, T5001. ?>
+				<?DescriptionAddFirst Ref to version 3.1 (T5001) ?>
 			</cbc:Name>
 		</cac:PartyName>
 	</cac:SenderParty>
 	
 	<cac:ReceiverParty>
 		<cbc:EndpointID schemeID="0088">9994567987654
-			<?DescriptionAddFirst The ID of the party receiving this weight statement, T0008.?>
+			<?DescriptionAddFirst Ref to version 3.1 (T0008).?>
 		</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="0088">9994567987654
-				<?DescriptionAddFirst The ID of the party receiving this weight statement, T0008.?>
+				<?DescriptionAddFirst Ref to version 3.1 (T0008).?>
 			</cbc:ID>
 		</cac:PartyIdentification>
 		
 		<cac:PartyName>
 			<cbc:Name>Transport Management Solutions AB
-				<?DescriptionAddFirst The name of the party receiving this weight statement, T5001.?>
+				<?DescriptionAddFirst Ref to version 3.1 (T5001).?>
 			</cbc:Name>
 		</cac:PartyName>
 	</cac:ReceiverParty>
@@ -61,85 +61,73 @@ xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 	<cac:WeighingParty>
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="0088">5790000435951
-				<?DescriptionAddFirst Identity of the party executing the weight measure (T6330). ?>
+				<?DescriptionAddFirst Ref to version 3.1 (T6330). ?>
 			</cbc:ID>
 		</cac:PartyIdentification>
 		<cac:PartyName>
 			<cbc:Name>Gravel Pit Ltd.
-				<?DescriptionAddFirst Name of the party executing the weight measure (T5001). ?>
+				<?DescriptionAddFirst Ref to version 3.1 (T5001). ?>
 			</cbc:Name>
 		</cac:PartyName>
-		
 		<cac:PhysicalLocation>
 			<cbc:Description>Townsend pit
-				<?DescriptionAddFirst City name (T5005) ?>
+				<?DescriptionAddFirst Ref to version 3.1 (T5005) ?>
 			</cbc:Description>
 			<cbc:Description>0114-40-019-a
-				<?DescriptionAddFirst Site ID (T6755) ?>
+				<?DescriptionAddFirst Ref to version 3.1 (T6755) ?>
 			</cbc:Description>
 		</cac:PhysicalLocation>
 	</cac:WeighingParty>
-	
 	<cac:ShipperParty>
 		<?Cardinality 0..1?>
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="0088">5790000435951
-				<?DescriptionAddFirst Identity of the Transport party (T3208/T6001). ?>
+				<?DescriptionAddFirst Ref to version 3.1 (T3208/T6001). ?>
 			</cbc:ID>
 		</cac:PartyIdentification>
-		
 		<cac:PartyName>
 			<cbc:Name>Tony's Trucks and Transport
-				<?DescriptionAddFirst Name of the Transport party (T5001). ?>
+				<?DescriptionAddFirst Ref to version 3.1 (T5001). ?>
 			</cbc:Name>
 		</cac:PartyName>
 	</cac:ShipperParty>
-	
 	<cac:Shipment>
 		<cbc:ID>NA</cbc:ID>
 
 		<cac:GoodsItem>
 			<cbc:ID>1
-				<?DescriptionAddFirst T0051 Identifies the Line Item assigned by the weighing partner, the identifier must be unique within the order?>
+				<?DescriptionAddFirst Ref to version 3.1 (T0051).?>
 			</cbc:ID>
-			<cbc:GrossWeightMeasure unitCode="TNE">16.8
-				<?DescriptionAddFirst T6122 (when T6714="AAD"). Weight (mass) of goods including packing but excluding the carrier's equipment.?>
-			</cbc:GrossWeightMeasure>
-			<cbc:NetWeightMeasure unitCode="TNE">16.2
-				<?DescriptionAddFirst T6122 (when T6714="AAA"). Weight of goods including any packaging that normally going with the goods.?>
-			</cbc:NetWeightMeasure>
-			<cbc:NetNetWeightMeasure unitCode="TNE">16.1
-				<?DescriptionAddFirst T6122 (when T6714="AAF"). Weight (mass) of goods without any packaging.?>
-			</cbc:NetNetWeightMeasure>
-			<cbc:GrossVolumeMeasure unitCode="TNE">16.1
-				<?DescriptionAddFirst T6122 (when T6714="AAW"). The volume unadjusted for factors such as temperature or gravity.?>
-			</cbc:GrossVolumeMeasure>
-			<cbc:NetVolumeMeasure unitCode="TNE">16.1
-				<?DescriptionAddFirst T6122 (when T6714="AAX"). The volume after adjustment for factors such as temperature or gravity.?>
-			</cbc:NetVolumeMeasure>
-
 			<cac:Item>
 				<cbc:Name>Sortering 0/2 mm krossat bergmaterial    CE-märkt enligt system 2+ för användning till asfalt.
 					<?DescriptionAddFirst T6226. Description of weighed item ?>
 				</cbc:Name>
 				<cac:BuyersItemIdentification>
 					<cbc:ID>KO2001030300
-						<?DescriptionAddFirst T0172 Supplier's article number (when T6317="BP"). ?>
+						<?DescriptionAddFirst Ref to version 3.1 (T0172) (when T6317="BP"). ?>
 					</cbc:ID>
 				</cac:BuyersItemIdentification>
 
 				<cac:SellersItemIdentification>
 					<cbc:ID>17589683
-						<?DescriptionAddFirst T0172 Supplier's article number (when T6317="SA"). ?>
+						<?DescriptionAddFirst Ref to version 3.1 (T0172) (when T6317="SA"). ?>
 					</cbc:ID>
 				</cac:SellersItemIdentification>
 
 				<cac:StandardItemIdentification>
 					<cbc:ID schemeID="0160">1234567891234
-						<?DescriptionAddFirst T0154 Global Trade Item Number. ?>
+						<?DescriptionAddFirst Ref to version 3.1 (T0154). ?>
 					</cbc:ID>
 				</cac:StandardItemIdentification>
 			</cac:Item>
+			<cac:MeasurementDimension>
+				<cbc:AttributeID>
+					AAF
+				</cbc:AttributeID>
+				<cbc:Measure unitCode="TNE">
+					12.3
+				</cbc:Measure>
+			</cac:MeasurementDimension>
 		</cac:GoodsItem>
 	</cac:Shipment>
-</WeightStatement>
+</ubl:WeightStatement>
