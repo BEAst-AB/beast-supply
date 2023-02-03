@@ -566,8 +566,6 @@
 				<cac:CommodityClassification>
 					<cbc:ItemClassificationCode listID="ZZZ" listVersionID="BEAST" name="IdentityTypeCode">12345678
 						<?listID-CodeList UNCL7143?>
-						
-						<?name-usage Mandatory?>
 						<?DescriptionAddFirst SBMI Number (T0172:01), SÅ Number (T0172:02), Concrete Number (T0172:04), Waste Number (T0172:07), Fuel Number (T0172:08), Product Type GUID (T6441), Identity Type Code (T6440), Product Type Description (T6442), Customer's Reference Number (T6005), Seller's OrderLine Number (T6462), Offer Number (T6010), OfferLine Number (T6459) or GUID OfferLine (T6486). listID is always "ZZZ" and name describes what is in Item Classification Code. Possible values are: "SBMINumber", "SÅNumber", "ConcreteNumber", "WasteNumber", "FuelNumber", "IdentityTypeCode", "ProductTypeGUID", "ProductTypeDescription", "CustomersReferenceNumber", "SellersOrderLineNumber", "OfferNumber", "OfferLineNumber" and "GUIDOfferLine". ?>
 					</cbc:ItemClassificationCode> 
 				</cac:CommodityClassification>
