@@ -33,8 +33,7 @@
 	     <Element cardinality="1..1">
          <Term>cbc:ID</Term>
          <Name>Document identifier </Name>
-         <Description>BEAst: Ref to version 3.1 Material ticket number (T6329). 
-Peppol: Unique identity identifying the weight statement. An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process. </Description>
+         <Description>BEAst: Unique identity identifying the weight statement. An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process. </Description>
          <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-003</Reference>
          <Value type="EXAMPLE">GOA294107</Value>
@@ -42,8 +41,7 @@ Peppol: Unique identity identifying the weight statement. An transaction instanc
 	     <Element>
          <Term>cbc:IssueDate</Term>
          <Name>Weight statement issue date </Name>
-         <Description>BEAst: Ref to version 3.1 Document date time (T6325). 
-Peppol: The date when the weight statement is issued. Format = "YYYY-MM-DD" </Description>
+         <Description>BEAst: The date when the weight statement is issued. Format = "YYYY-MM-DD" </Description>
          <DataType>Date</DataType>
          <Reference type="BUSINESS_TERM">tir16-004</Reference>
          <Value type="EXAMPLE">2016-11-03</Value>
@@ -51,8 +49,7 @@ Peppol: The date when the weight statement is issued. Format = "YYYY-MM-DD" </De
 	     <Element cardinality="0..1">
          <Term>cbc:IssueTime</Term>
          <Name>Weight statement issue time </Name>
-         <Description>BEAst: Ref to version 3.1 Document date time (T6325). 
-Peppol: The time when the weight statement is issued. Format = "hh:mm:ss" </Description>
+         <Description>BEAst: The time when the weight statement is issued. Format = "hh:mm:ss" </Description>
          <DataType>Time</DataType>
          <Reference type="BUSINESS_TERM">tir16-005</Reference>
          <Value type="EXAMPLE">09:30:00</Value>
@@ -60,25 +57,22 @@ Peppol: The time when the weight statement is issued. Format = "hh:mm:ss" </Desc
 	     <Element>
          <Term>cbc:WeightStatementTypeCode</Term>
          <Name>Weight statement type code </Name>
-         <Description>BEAst: Ref to version 3.1 Document type (T6328). 
-Peppol: 01 = Outbound delivery 02 = Inbound delivery</Description>
+         <Description>BEAst: 01 = Outbound delivery 02 = Inbound delivery</Description>
          <Value type="EXAMPLE">01</Value>
       </Element>
-	
 	     <Element>
          <Term>cac:SenderParty</Term>
          <Name>Sender Party </Name>
-         <Description>Peppol: The party sending this weight statement (e.g. Weighing Station, Shipper, Freight Forwarder, Carrier, ...).</Description>
+         <Description>BEAst: The party sending this weight statement (e.g. Weighing Station, Shipper, Freight Forwarder, Carrier, ...).</Description>
          <Element>
             <Term>cbc:EndpointID</Term>
             <Name>Senders electronic address </Name>
-            <Description>BEAst: Ref to version 3.1 (T0009). 
-Peppol: Identifies the senders party's electronic address</Description>
+            <Description>BEAst: Identifies the senders party's electronic address</Description>
             <Value type="EXAMPLE">7300010000001</Value>
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Name>Scheme identifier</Name>
-               <Description>Peppol: Scheme identifier for electronic address</Description>
+               <Description>BEAst: Scheme identifier for electronic address</Description>
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0088</Value>
             </Attribute>
@@ -86,17 +80,16 @@ Peppol: Identifies the senders party's electronic address</Description>
          <Element>
             <Term>cac:PartyIdentification</Term>
             <Name>Party Identification</Name>
-            <Description>Peppol: An identifier for this party.</Description>
+            <Description>BEAst: An identifier for this party.</Description>
             <Element>
                <Term>cbc:ID</Term>
                <Name>Sender party identity </Name>
-               <Description>BEAst: Ref to version 3.1 (T0009). 
-Peppol: The identifier of the Sender party</Description>
+               <Description>BEAst: The identifier of the Sender party</Description>
                <Value type="EXAMPLE">7300010000001</Value>
                <Attribute usage="Mandatory">
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
-                  <Description>Peppol: Scheme identifier for party identification</Description>
+                  <Description>BEAst: Scheme identifier for party identification</Description>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
@@ -108,27 +101,23 @@ Peppol: The identifier of the Sender party</Description>
             <Element>
                <Term>cbc:Name</Term>
                <Name>Sender name </Name>
-               <Description>BEAst: Ref to version 3.1 (T5001) 
-Peppol: </Description>
                <Value type="EXAMPLE">Weighing Solutions AB</Value>
             </Element>
          </Element>
       </Element>
-	
 	     <Element>
          <Term>cac:ReceiverParty</Term>
          <Name>Receiver information </Name>
-         <Description>Peppol: The party receiving this weight statement (e.g. Carrier, Terminal Operator, ...).</Description>
+         <Description>BEAst: The party receiving this weight statement (e.g. Carrier, Terminal Operator, ...).</Description>
          <Element>
             <Term>cbc:EndpointID</Term>
             <Name>Receiver electronic address </Name>
-            <Description>BEAst: Ref to version 3.1 (T0008).
-Peppol: Identifies the receivers party's electronic address</Description>
+            <Description>BEAst: Identifies the receivers party's electronic address</Description>
             <Value type="EXAMPLE">9994567987654</Value>
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Name>Scheme identifier</Name>
-               <Description>Peppol: Scheme identifier for electronic address</Description>
+               <Description>BEAst: Scheme identifier for electronic address</Description>
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0088</Value>
             </Attribute>
@@ -136,17 +125,16 @@ Peppol: Identifies the receivers party's electronic address</Description>
          <Element>
             <Term>cac:PartyIdentification</Term>
             <Name>Party Identification</Name>
-            <Description>Peppol: An identifier for this party.</Description>
+            <Description>BEAst: An identifier for this party.</Description>
             <Element>
                <Term>cbc:ID</Term>
                <Name>Receiver identity </Name>
-               <Description>BEAst: Ref to version 3.1 (T0008).
-Peppol: The identifier of the receiver party</Description>
+               <Description>BEAst: The identifier of the receiver party</Description>
                <Value type="EXAMPLE">9994567987654</Value>
                <Attribute usage="Mandatory">
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
-                  <Description>Peppol: Scheme identifier for party identification</Description>
+                  <Description>BEAst: Scheme identifier for party identification</Description>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
@@ -158,31 +146,27 @@ Peppol: The identifier of the receiver party</Description>
             <Element>
                <Term>cbc:Name</Term>
                <Name>Receiver name </Name>
-               <Description>BEAst: Ref to version 3.1 (T5001).
-Peppol: </Description>
                <Value type="EXAMPLE">Transport Management Solutions AB</Value>
             </Element>
          </Element>
       </Element>
-	
 	     <Element cardinality="1..1">
          <Term>cac:WeighingParty</Term>
          <Name>Weighing party information </Name>
-         <Description>Peppol: The party executing the weight measure (e.g. Weighing Station).</Description>
+         <Description>BEAst: The party executing the weight measure (e.g. Weighing Station).</Description>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>Party Identification</Name>
-            <Description>Peppol: An identifier for this party.</Description>
+            <Description>BEAst: An identifier for this party.</Description>
             <Element>
                <Term>cbc:ID</Term>
                <Name>Weighing party identity </Name>
-               <Description>BEAst: Ref to version 3.1 (T6330). 
-Peppol: The identifier of the Weighing party</Description>
+               <Description>BEAst: The identifier of the Weighing party</Description>
                <Value type="EXAMPLE">5790000435951</Value>
                <Attribute usage="Mandatory">
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
-                  <Description>Peppol: Scheme identifier for party identification</Description>
+                  <Description>BEAst: Scheme identifier for party identification</Description>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
@@ -194,46 +178,47 @@ Peppol: The identifier of the Weighing party</Description>
             <Element>
                <Term>cbc:Name</Term>
                <Name>Weighing party name </Name>
-               <Description>BEAst: Ref to version 3.1 (T5001). 
-Peppol: The name of the weighing party </Description>
+               <Description>BEAst: The name of the weighing party </Description>
                <Value type="EXAMPLE">Gravel Pit Ltd.</Value>
             </Element>
          </Element>
          <Element>
             <Term>cac:PhysicalLocation</Term>
             <Name>Physical Location</Name>
-            <Description>Peppol: The physical location of this party.</Description>
-            <Element>
-               <Term>cbc:Description</Term>
-               <Description>BEAst: Ref to version 3.1 (T5005) 
-Peppol: </Description>
-               <Value type="EXAMPLE">Townsend pit</Value>
-            </Element>
-            <Element>
-               <Term>cbc:Description</Term>
-               <Description>BEAst: Ref to version 3.1 (T6755) 
-Peppol: </Description>
+            <Description>BEAst: The physical location of this party.</Description>
+            <Element cardinality="0..1">
+               <Term>cbc:ID</Term>
+               <Name>Physical Location ID </Name>
+               <Description>BEAst: Unique ID of the site for the weighing party. If possile an ID that is issued by a authority or similar. </Description>
                <Value type="EXAMPLE">0114-40-019-a</Value>
+               <Attribute usage="Optional">
+                  <Term>schemeID</Term>
+               </Attribute>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:Name</Term>
+               <Name>Location name </Name>
+               <Description>BEAst: Physical location name </Description>
+               <Value type="EXAMPLE">Townsend pit</Value>
             </Element>
          </Element>
       </Element>
 	     <Element cardinality="0..1">
          <Term>cac:ShipperParty</Term>
          <Name>Shipper Party </Name>
-         <Description>Peppol: The party transporting or shipping the items.</Description>
+         <Description>BEAst: The party transporting or shipping the items.</Description>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>Party Identification</Name>
             <Element>
                <Term>cbc:ID</Term>
                <Name>Shipping party identity </Name>
-               <Description>BEAst: Ref to version 3.1 (T3208/T6001). 
-Peppol: The identifier of the shippping party</Description>
+               <Description>BEAst: The identifier of the shippping party</Description>
                <Value type="EXAMPLE">5790000435951</Value>
                <Attribute usage="Mandatory">
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
-                  <Description>Peppol: Scheme identifier for party identification</Description>
+                  <Description>BEAst: Scheme identifier for party identification</Description>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
@@ -245,8 +230,7 @@ Peppol: The identifier of the shippping party</Description>
             <Element>
                <Term>cbc:Name</Term>
                <Name>Shipper name </Name>
-               <Description>BEAst: Ref to version 3.1 (T5001). 
-Peppol: The name of the shipper </Description>
+               <Description>BEAst: The name of the shipper </Description>
                <Value type="EXAMPLE">Tony's Trucks and Transport</Value>
             </Element>
          </Element>
@@ -257,30 +241,28 @@ Peppol: The name of the shipper </Description>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Shipment identity </Name>
-            <Description>Peppol: Use NA if no specific shipment ID is available </Description>
+            <Description>BEAst: Use NA if no specific shipment ID is available </Description>
             <Reference type="BUSINESS_TERM">tir16-038</Reference>
             <Value type="EXAMPLE">NA</Value>
          </Element>
          <Element cardinality="1..n">
             <Term>cac:GoodsItem</Term>
             <Name>Goods Item</Name>
-            <Description>Peppol: A goods item included in this shipment.</Description>
+            <Description>BEAst: A goods item included in this shipment.</Description>
             <Element>
                <Term>cbc:ID</Term>
                <Name>Line item identifier</Name>
-               <Description>BEAst: Ref to version 3.1 (T0051).
-Peppol: Identifies the Line Item assigned by the weighing partner, the identifier must be unique within the order</Description>
+               <Description>BEAst: Identifies the Line Item assigned by the weighing partner, the identifier must be unique within the order</Description>
                <Value type="EXAMPLE">1</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:Item</Term>
                <Name>Item</Name>
-               <Description>Peppol: Product information relating to a goods item</Description>
+               <Description>BEAst: Product information relating to a goods item</Description>
                <Element>
                   <Term>cbc:Name</Term>
                   <Name>Item name </Name>
-                  <Description>BEAst: T6226. Description of weighed item 
-Peppol: Name of weighed item </Description>
+                  <Description>BEAst: Name of weighed item </Description>
                   <Value type="EXAMPLE">Sortering 0/2 mm krossat bergmaterial CE-märkt enligt system 2+ för användning till asfalt.</Value>
                </Element>
                <Element cardinality="0..1">
@@ -289,8 +271,7 @@ Peppol: Name of weighed item </Description>
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Buyers item identifier </Name>
-                     <Description>BEAst: Ref to version 3.1 (T0172) (when T6317="BP"). 
-Peppol: An identifier, assigned by the buyer, for the item. Associates the item with its identification according to the buyer's system. </Description>
+                     <Description>BEAst: An identifier, assigned by the buyer, for the item. Associates the item with its identification according to the buyer's system. </Description>
                      <Value type="EXAMPLE">KO2001030300</Value>
                   </Element>
                </Element>
@@ -300,8 +281,7 @@ Peppol: An identifier, assigned by the buyer, for the item. Associates the item 
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>The Sellers item identifier</Name>
-                     <Description>BEAst: Ref to version 3.1 (T0172) (when T6317="SA"). 
-Peppol: An identifier, assigned by the seller, for the item. Associates the item with its identification according to the seller's system. </Description>
+                     <Description>BEAst: An identifier, assigned by the seller, for the item. Associates the item with its identification according to the seller's system. </Description>
                      <Value type="EXAMPLE">17589683</Value>
                   </Element>
                </Element>
@@ -311,14 +291,43 @@ Peppol: An identifier, assigned by the seller, for the item. Associates the item
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Item standard identifier</Name>
-                     <Description>BEAst: Ref to version 3.1 (T0154). 
-Peppol: Global Trade Item Number (GTIN) or other standardized identification. Associates the item with its identification according to a standard system. </Description>
+                     <Description>BEAst: Global Trade Item Number (GTIN) or other standardized identification. Associates the item with its identification according to a standard system. </Description>
                      <Value type="EXAMPLE">1234567891234</Value>
                      <Attribute usage="Mandatory">
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
-                        <Description>Peppol: The identification scheme identifier of the Item standard identifier</Description>
+                        <Description>BEAst: The identification scheme identifier of the Item standard identifier</Description>
                         <Value type="EXAMPLE">0160</Value>
+                     </Attribute>
+                  </Element>
+               </Element>
+               <Element cardinality="0..n">
+                  <Term>cac:CommodityClassification</Term>
+                  <Name>Commodity classification </Name>
+                  <Description>BEAst: To classify when an item number is not sufficient. </Description>
+                  <Element cardinality="1..1">
+                     <Term>cbc:ItemClassificationCode</Term>
+                     <Name>Item classification code </Name>
+                     <Description>BEAst: A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
+                     <Value type="EXAMPLE">KO2012140200</Value>
+                     <Attribute usage="Mandatory">
+                        <Term>listID</Term>
+                        <Name>Item classification identifier identification scheme identifier</Name>
+                        <Description>BEAst: The identification scheme identifier of the Item classification identifier. </Description>
+                        <Reference type="CODE_LIST">UNCL7143</Reference>
+                        <Value type="EXAMPLE">ZZZ</Value>
+                     </Attribute>
+                     <Attribute usage="Optional">
+                        <Term>listVersionID</Term>
+                        <Name>Item classification identifier version identification scheme identifier</Name>
+                        <Description>BEAst: The identification scheme version identifier of the Item classification identifier </Description>
+                        <Value type="EXAMPLE">4.0</Value>
+                     </Attribute>
+                     <Attribute usage="Optional">
+                        <Term>name</Term>
+                        <Name>Clear text name equivalent of classification code</Name>
+                        <Description>BEAst: The textual equivalent of the code value </Description>
+                        <Value type="EXAMPLE">SBMI</Value>
                      </Attribute>
                   </Element>
                </Element>
@@ -326,23 +335,23 @@ Peppol: Global Trade Item Number (GTIN) or other standardized identification. As
             <Element cardinality="1..n">
                <Term>cac:MeasurementDimension</Term>
                <Name>Measurement Dimension </Name>
-               <Description>Peppol: Used to specify weight and/or volume of the Goods Item. </Description>
+               <Description>BEAst: Used to specify weight and/or volume of the Goods Item. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:AttributeID</Term>
                   <Name>Attribute identifier </Name>
-                  <Description>Peppol: To describe the type of measurement. Use UNCL 6313 subset. </Description>
+                  <Description>BEAst: To describe the type of measurement. Use UNCL 6313 subset. </Description>
                   <Reference type="CODE_LIST">UNCL6313-T122</Reference>
                   <Value type="EXAMPLE">AAF</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cbc:Measure</Term>
                   <Name>Measure </Name>
-                  <Description>Peppol: For the measure.</Description>
+                  <Description>BEAst: For the measure.</Description>
                   <Value type="EXAMPLE">12.3</Value>
                   <Attribute>
                      <Term>unitCode</Term>
                      <Name>Measure unit of measure </Name>
-                     <Description>Peppol: The unit of measure that applies to the measure. </Description>
+                     <Description>BEAst: The unit of measure that applies to the measure. </Description>
                      <Reference type="CODE_LIST">UNECERec20</Reference>
                      <Value type="EXAMPLE">TNE</Value>
                   </Attribute>
