@@ -3,7 +3,7 @@
 Release date:: 2023-02-08
 
 [horizontal]
-Based on Peppol POACC version 3.0.10 released 2022-11-03.
+Based on Peppol POACC version 3.0.10 released 2022-11-03 and Peppol Logistics version 1.1.
 Changes to Peppol documentation below
 
 == New BIS documents
@@ -12,6 +12,9 @@ Changes to Peppol documentation below
 ** New transaction - Peppol Order Cancellation transaction 3.0 (T115)
 ** New transaction - Peppol Order Response Advanced transaction 3.0 (T116)
 ** Existing transaction - Peppol Order transaction 3.3 (T01)
+** New transaction - Logistics Advanced Despatch Advice with Response 1.1 (T120)
+** New transaction - Logistics Weight Statement 1.1 (T122)
+** Existing transaction Logistics Advanced Despatch Advice renamed to Logistics Advanced Despatch Advice only.
 
 == New transactions
 * Peppol Order Change transaction 3.0 (T114)
@@ -47,6 +50,63 @@ Changes to Peppol documentation below
 * Order Agreement transaction (T110)
 ** Optional element DocumentTypeCode (tir110-p008) added on ItemSpecificationDocumentReference level. Example updated.
 ** Optional element CompanyID added for PartyLegalEntity in both Buyer (tir110-p009) and Seller (tir110-p010). Example updated.
+* Advanced Despatch Advice (T120).
+** Optional DocumentStatusCode added.
+** Optional DespatchAdviceTypeCode added.
+** Optional @schemeID removed from ID in OrderReference.
+** Optional DocumentTypeCode added in AdditionalDocumentReference.
+** Optional PartyName added in DespatchSupplierParty.
+** Optional PartyTaxScheme added in DespatchSupplierParty.
+** Optional CompanyID and RegistrationAddress added in PartyLegalEntity under DespatchSupplierParty.
+** Optional PartyName added in DeliveryCustomerParty.
+** Optional PartyTaxScheme added in DeliveryCustomerParty.
+** Optional CompanyID and RegistrationAddress added in PartyLegalEntity under DeliveryCustomerParty.
+** Optional Contact added in DeliveryCustomerParty.
+** Optional DeclaredStatisticsValueAmount added in Shipment.
+** Optional CarrierServiceInstructions removed from Consignment under Shipment.
+** Optional Information removed from Consignment under Shipment.
+** Optional HazardousRiskIndicator added in Consignment under Shipment.
+** Optional HandlingCode added in Consignment under Shipment.
+** Optional HandlingInstructions added in Consignment under Shipment.
+** Optional attributes @listID and @name are added to EnvironmentalEmissionTypeCode.
+** Optional TransportMeansTypeCode added in ShipmentStage under Shipment.
+** Optional TransportMeans added in ShipmentStage under Shipment.
+** Optional SpecialTerms added in DeliveryTerms under Delivery in Shipment.
+** Optional HandlingCode added in TransportHandlingUnit under Shipment.
+** Optional HandlingInstruction added in TransportHandlingUnit under Shipment.
+** Optional HazardousRiskIndicator added in TransportHandlingUnit under Shipment.
+** Optional ShippingMarks added in TransportHandlingUnit under Shipment.
+** Optional TransportEquipment added in TransportHandlingUnit under Shipment.
+** Optional MinimumTemperature and MaximumTemperature added in TransportHandlingUnit under Shipment.
+** Optional GoodsItem added in TransportHandlingUnit under Shipment.
+** Optional Package added in TransportHandlingUnit under Shipment.
+** Optional SalesOrderID added in OrderReference under OrderLineReference at line level.
+** Optional DocumentTypeCode added in DocumentReference at line level.
+** Optional ManufacturersItemIdentification added in Item at line level.
+** Optional ID with attributes @schemeID and @schemeVersionID added in AdditionalItemProperty under Item at line level.
+** Optional ManufacturerParty added in Item at line level.
+** Optional Dimension added in Item at line level.
+** Optional Shipment removed from line level.
+* Despatch Advice Response (T121)
+** Optional PartyIdentification added in SenderParty.
+** Optional PartyName added in SenderParty.
+** Optional PostalAddress added in SenderParty.
+** Optional PartyLegalEntity added in SenderParty.
+** Optional Contact added in SenderParty.
+** Optional PartyIdentification added in ReceiverParty.
+** Optional PartyName added in ReceiverParty.
+** Optional PostalAddress added in ReceiverParty.
+** Optional PartyLegalEntity added in ReceiverParty.
+** Optional Contact added in ReceiverParty.
+** Mandatory IssueDate and IssueTime added in DocumentReference under DocumentResponse.
+* Weight Statement (T122)
+** Optional ID added in PhysicalLocation under WeighingParty.
+** Optional Name added in PhysicalLocation under WeighingParty.
+** Optional Description (x2) removed from PhysicalLocation under WeighingParty.
+** Optional GrossWeightMeasure, NetWeightMeasure and NetNetWeightMeasure removed from GoodsItem under Shipment.
+** Optional GrossVolumeMeasure and NetVolumeMeasure removed from GoodsItem under Shipment.
+** Optional CommodityClassification added in Item under GoodsItem in Shipment.
+** Mandatory MeasurementDimension added in GoodsItem under Shipment.
 
 == Changes to code lists and validation artefacts
 
