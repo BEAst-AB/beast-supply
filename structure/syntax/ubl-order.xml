@@ -2296,24 +2296,23 @@ Peppol: Reference to an external document (ID) when it is necessary
                <Element cardinality="0..n">
                   <Term>cac:CommodityClassification</Term>
                   <Name>Commodity classification information</Name>
-                  <Description>BEAst: Used for multiple BEAst elements: SBMI Number (T0172:01), SÅ Number (T0172:02), Concrete Number (T0172:04), Number (T0172:07), Fuel Number (T0172:08), Configuration Value (T6369), GUID Identifier (T6408), BIM Model Name (T6433), GUID for BIM Identity (T6431), GUID for Object (T6455), Identity Type Code (T6440), Product Type GUID (T6441), Product Type Description (T6442), Customer Remarks (T6036), Customer Reference Number (T6005), Offer Number (T6010), Offer Line Number (T6459), Offer Line GUID (T6486), Ultimate Customer Order Number (T6221), Ultimate Customer Order Line Number (T6458), Shipping Marks Consignment (T0086), Rental Indicator (T6477), Expected time of return (T6479), Rental period Start date (T6312), Rental period End date (T6313) Rental time Quantity (T6478), Rental quantity code (T6425), Rental quantity Shift code (T6426), Excess (T6482), Reference to Article class (T6466), Source to Classification (T6467), Size per load (T6460), Delivery Interval; interval start (T6461), Delivery Interval; interval end (T6462), Delivery Interval; Calculated unloading time (T6463), Delivery Interval; Time for Unloading (T6464), Delivery Mark Instruction (T6002), Insurance (T6071). 
-Peppol: </Description>
                   <Element cardinality="0..1">
                      <Term>cbc:ItemClassificationCode</Term>
                      <Name>Item classification code</Name>
-                     <Description>BEAst: When the class is not defined in UNCL7143 the listID shall always be set to ZZZ, listVersionID to BEAST and name identifies what the value is. The ItemClassificationCode itself contains the value of the element. Possible names are: SBMI, SA, AI, ME, CoClass, ConfigurationValue, GUIDIdentifier, BIMModelName, GUIDforBIMIdentity, GUIDforObject, IdentityTypeCode, ProductTyppeGUID, ProductTypeDescription, CustomerRemarks, CustomerReferenceNumber, OfferNumber, OfferLineNumber, OfferLineGUID, UltimateCustomerOrderNumber, UltimateCustomerOrderLineNumber, ShippingMarksConsignment, RentalIndicator, ExpectedTimeOfReturn, RentalPeriodStartDate, RentalPeriodEndDate, RentalTimeQuantity, RentalQuantityCode, RentalQuantityShiftCode, Excess, ReferenceToArticleClass, SourceToClassification, SizePerLoad, DeliveryInterval:IntervalStart, DeliveryInterval:IntervalEnd, DeliveryInterval:CalculatedUnloadingTime, DeliveryInterval:TimeForUnloading, DeliveryMarkInstruction, Insurance. ("SBMI" = Sveriges Bergmaterialindustrier, "SA" = Sveriges Åkeriföretag, "AI" = Återvinningsindustrierna, “ME” = Maskinentreprenörerna. When the class is defined in UNCL7143 the listVersionID and name should be empty. 
+                     <Description>BEAst: Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID = BEAST:4.0" and name is Source to Classification (T6467). 
 Peppol: A code for classifying the item by its type or nature.
 								Classification codes are used to allow grouping of similar items for
 								a various purposes e.g. public procurement (CPV), e-Commerce
 								(UNSPSC) etc.</Description>
                      <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir01-149</Reference>
-                     <Value type="EXAMPLE">The value of the element</Value>
+                     <Value type="EXAMPLE">KO2012140200</Value>
                      <Attribute>
                         <Term>listID</Term>
                         <Name>Item classification identifier identification scheme
 									identifier</Name>
-                        <Description>Peppol: The identification scheme identifier of the Item
+                        <Description>BEAst: For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID "BEAST:4.0", i.e. mutually agreed. 
+Peppol: The identification scheme identifier of the Item
 									classification identifier</Description>
                         <Reference type="CODE_LIST">UNCL7143</Reference>
                         <Value type="EXAMPLE">ZZZ</Value>
@@ -2324,13 +2323,14 @@ Peppol: A code for classifying the item by its type or nature.
 									identifier</Name>
                         <Description>Peppol: The identification scheme version identifier of the
 									Item classification identifier</Description>
-                        <Value type="EXAMPLE">BEAST</Value>
+                        <Value type="EXAMPLE">3.0.2</Value>
                      </Attribute>
                      <Attribute usage="Optional">
                         <Term>name</Term>
                         <Name>Clear text name equivalent of classification code</Name>
-                        <Description>Peppol: The textual equivalent of the code value</Description>
-                        <Value type="EXAMPLE">ConfigurationValue</Value>
+                        <Description>BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "SBMI", "SA", "AI", “ME” and "CoClass”. "SBMI" = Sveriges Bergmaterialindustrier, "SA" = Sveriges Åkeriföretag, "AI" = Återvinningsindustrierna, “ME” = Maskinentreprenörerna. 
+Peppol: The textual equivalent of the code value</Description>
+                        <Value type="EXAMPLE">SBMI</Value>
                      </Attribute>
                   </Element>
                </Element>

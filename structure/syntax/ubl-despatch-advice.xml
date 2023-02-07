@@ -929,7 +929,7 @@ Peppol: A code that identifies the country.The lists of valid
          <Element>
             <Term>cbc:ID</Term>
             <Name>Shipment identifier</Name>
-            <Description>BEAst: T6127, Freight forwarder's referens number 
+            <Description>BEAst: T6127, Freight forwarders referens number 
 Peppol: Identifies a shipment.</Description>
             <Reference type="BUSINESS_TERM">tir16-038</Reference>
             <Value type="EXAMPLE">1</Value>
@@ -1390,7 +1390,7 @@ Peppol: A short name for an item.</Description>
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>Buyers item identifier</Name>
-                  <Description>BEAst: Buyer's Part Article Number (T6022)/Article Number (T0172) when T6317="BP"/Littera (T6417). 
+                  <Description>BEAst: Buyers Part Article Number (T6022)/Article Number (T0172) when T6317="BP"/Littera (T6417). 
 Peppol: An identifier, assigned by the buyer, for the item. Associates
 							the item with its identification according to the buyer's system. </Description>
                   <DataType>Identifier</DataType>
@@ -1405,7 +1405,7 @@ Peppol: An identifier, assigned by the buyer, for the item. Associates
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>The Sellers item identifier</Name>
-                  <Description>BEAst: Supplier's Article Number (T0172) 
+                  <Description>BEAst: Suppliers Article Number (T0172) 
 Peppol: An identifier, assigned by the seller, for the item. Associates
 							the item with its identification according to the seller's system. </Description>
                   <DataType>Identifier</DataType>
@@ -1471,7 +1471,7 @@ Peppol: A code for classifying the item by its type or nature.
 							(UNSPSC) etc.</Description>
                   <DataType>Code</DataType>
                   <Reference type="BUSINESS_TERM">tir16-p048</Reference>
-                  <Value type="EXAMPLE">SBMI Number</Value>
+                  <Value type="EXAMPLE">KO2012140200</Value>
                   <Attribute>
                      <Term>listID</Term>
                      <Name>Item classification identifier identification scheme
@@ -1488,7 +1488,7 @@ Peppol: The identification scheme identifier of the Item
 								identifier</Name>
                      <Description>Peppol: The identification scheme version identifier of the
 								Item classification identifier</Description>
-                     <Value type="EXAMPLE">BEAST:4.0</Value>
+                     <Value type="EXAMPLE">3.0.2</Value>
                   </Attribute>
                   <Attribute usage="Optional">
                      <Term>name</Term>
