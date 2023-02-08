@@ -1902,7 +1902,7 @@ Peppol: The Z coordinate. </Description>
             <Element cardinality="0..1">
                <Term>cac:DeliveryTerms</Term>
                <Name>Delivery terms </Name>
-               <Element cardinality="1..1">
+               <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
                   <Name>Delivery terms </Name>
                   <Description>BEAst: Delivery Terms code (T6710). 
@@ -2832,7 +2832,7 @@ Peppol: A group of business terms providing information about properties of
 						the goods and services invoiced.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
-                  <Description>BEAst: ID of the property if assigned by an Agency</Description>
+                  <Description>Peppol: ID of the property if assigned by an Agency</Description>
                   <Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
                   <Attribute>
                      <Term>schemeID</Term>
