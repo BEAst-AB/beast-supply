@@ -33,7 +33,7 @@
 	  <?DescriptionAddFirst T6018, Order Currency. ?>
 	</cbc:DocumentCurrencyCode>
 	<cbc:CustomerReference>ABC-123
-	  <?DescriptionAddFirst TT6004, Project number. ?>
+	  <?DescriptionAddFirst T6004, Project number. ?>
 	</cbc:CustomerReference>
 	<cac:OrderReference>
 		<?DescriptionAddFirst The order response message always is preceeded by an order message. If the order response is a confirmation of something ordered by telephone, in a shop or a supplier portal, the Peppol message OrderAgreement should be used instead. ?>
@@ -82,7 +82,9 @@
 		<?DescriptionAddFirst Confirmation of delivery dates are always at line level, not here. ?>
 		<cac:PromisedDeliveryPeriod>
 			<cbc:StartDate>2021-07-15</cbc:StartDate>
+			<cbc:StartTime>12:30:00</cbc:StartTime>
 			<cbc:EndDate>2021-07-16</cbc:EndDate>
+			<cbc:EndTime>15:30:00</cbc:EndTime>
 		</cac:PromisedDeliveryPeriod>
 	</cac:Delivery>
 	
@@ -168,39 +170,21 @@
 					</cbc:ID>
 				</cac:StandardItemIdentification>
 				<cac:CommodityClassification>
-					<cbc:ItemClassificationCode listID="MP" listVersionID="19.0501" name="Name">12345678
-					  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-					</cbc:ItemClassificationCode>
+					<cbc:ItemClassificationCode listID="MP" listVersionID="19.0501" name="Name">12345678</cbc:ItemClassificationCode>
 				</cac:CommodityClassification>
 				<cac:ClassifiedTaxCategory>
-					<cbc:ID>S
-					  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-					</cbc:ID>
-					<cbc:Percent>25
-					  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-					</cbc:Percent>
+					<cbc:ID>S</cbc:ID>
+					<cbc:Percent>25</cbc:Percent>
 					<cac:TaxScheme>
-						<cbc:ID>VAT
-						  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-						</cbc:ID>
+						<cbc:ID>VAT</cbc:ID>
 					</cac:TaxScheme>
 				</cac:ClassifiedTaxCategory>
 				<cac:AdditionalItemProperty>
-					<cbc:Name>Weight
-					  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-					</cbc:Name>
-					<cbc:NameCode listID="123">Code
-					  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-					</cbc:NameCode>
-					<cbc:Value>12 gram
-					  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-					</cbc:Value>
-					<cbc:ValueQuantity unitCode="GRM">12
-					  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-					</cbc:ValueQuantity>
-					<cbc:ValueQualifier>gram
-					  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-					</cbc:ValueQualifier>
+					<cbc:Name>Weight</cbc:Name>
+					<cbc:NameCode listID="123">Code</cbc:NameCode>
+					<cbc:Value>12 gram</cbc:Value>
+					<cbc:ValueQuantity unitCode="GRM">12</cbc:ValueQuantity>
+					<cbc:ValueQualifier>gram</cbc:ValueQualifier>
 				</cac:AdditionalItemProperty>
 			</cac:Item>
 		</cac:SellerSubstitutedLineItem>

@@ -19,9 +19,7 @@
   <cbc:ID>110408542
   	<?DescriptionAddFirst T3309 and T0034, Order/Calloff number. ?>
   </cbc:ID>
-  <cbc:SalesOrderID>112233
-  	<?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-  </cbc:SalesOrderID>
+  <cbc:SalesOrderID>112233</cbc:SalesOrderID>
   <cbc:IssueDate>2020-11-05
     <?DescriptionAddFirst T3310, order date. ?>
   </cbc:IssueDate>
@@ -31,22 +29,16 @@
   <cbc:OrderTypeCode>220
   	<?DescriptionAddFirst Order Type (T3100). In this version "220" is the only option. The blanket order ("226") is not yet supported by Peppol, so when you mean "226", this element shall be omitted and when you mean "220", the code "220" shall be sent. ?>
   </cbc:OrderTypeCode>
-  <cbc:Note>Text
-    <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-  </cbc:Note>
+  <cbc:Note>Text</cbc:Note>
   <cbc:DocumentCurrencyCode>SEK
     <?DescriptionAddFirst T6018, Currency code. ?>
   </cbc:DocumentCurrencyCode>
   <cbc:CustomerReference>oik987
     <?DescriptionAddFirst T6005, Customer's Reference/Number. ?>
   </cbc:CustomerReference>
-  <cbc:AccountingCost>1234:45435:243234
-    <?DescriptionAddFirst T6004, Project number. ?>
-  </cbc:AccountingCost>
+  <cbc:AccountingCost>1234:45435:243234</cbc:AccountingCost>
   <cac:ValidityPeriod>
-	<cbc:EndDate>2021-10-31
-	  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-	</cbc:EndDate>
+	<cbc:EndDate>2021-10-31</cbc:EndDate>
   </cac:ValidityPeriod>
   <cac:QuotationDocumentReference>
     <cbc:ID>56669990
@@ -90,6 +82,12 @@
 	  <?DescriptionAddFirst Reference to Agreement or Contract (T0007). ?>
 	</cbc:ID>
   </cac:Contract>
+
+	<cac:ProjectReference>
+		<cbc:ID>P212121
+			<?DescriptionAddFirst Project number (T6004). ?>
+		</cbc:ID>
+	</cac:ProjectReference>
 	
   <cac:BuyerCustomerParty>
     <cac:Party>
@@ -117,9 +115,7 @@
         <cbc:PostalZone>11251
 		  <?DescriptionAddFirst T6117, Postal zone. ?>
 		</cbc:PostalZone>
-		<cbc:CountrySubentity>765
-		  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-		</cbc:CountrySubentity>
+		<cbc:CountrySubentity>765</cbc:CountrySubentity>
 		<cac:AddressLine>
 		  <cbc:Line>The Roundabout
 		    <?DescriptionAddFirst Used for any other additional address information to the buyer. ?>
@@ -189,9 +185,7 @@
         <cbc:PostalZone>541 86
 		  <?DescriptionAddFirst T6117, Postal Zone. ?>
 		</cbc:PostalZone>
-		<cbc:CountrySubentity>765
-		  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-		</cbc:CountrySubentity>
+		<cbc:CountrySubentity>765</cbc:CountrySubentity>
 		<cac:AddressLine>
 		  <cbc:Line>The Roundabout
 		    <?DescriptionAddFirst Used for all other additional address information. ?>
@@ -241,15 +235,9 @@
 		</cbc:Name>
 	  </cac:PartyName>
 	  <cac:Contact>
-		<cbc:Name>Erik Nilsson
-		  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-		</cbc:Name>
-		<cbc:Telephone>0707676767
-		  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-		</cbc:Telephone>
-		<cbc:ElectronicMail>erik@nilssons.se
-		  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-		</cbc:ElectronicMail>
+		<cbc:Name>Erik Nilsson</cbc:Name>
+		<cbc:Telephone>0707676767</cbc:Telephone>
+		<cbc:ElectronicMail>erik@nilssons.se</cbc:ElectronicMail>
 	  </cac:Contact>
 	</cac:Party>
   </cac:OriginatorCustomerParty>
@@ -280,9 +268,7 @@
 		<cbc:PostalZone>11251
 		  <?DescriptionAddFirst T6117, Postal Zone. ?>
 		</cbc:PostalZone>
-		<cbc:CountrySubentity>765
-		  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-		</cbc:CountrySubentity>
+		<cbc:CountrySubentity>765</cbc:CountrySubentity>
 	    <cac:AddressLine>
 		  <cbc:Line>The Roundabout
 		    <?DescriptionAddFirst Used for all other additional address information. ?>
@@ -341,9 +327,7 @@
 		<cbc:PostalZone>29155
 		  <?DescriptionAddFirst T6117, Postal zone. ?>
 		</cbc:PostalZone>
-		<cbc:CountrySubentity>765
-		  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-		</cbc:CountrySubentity>
+		<cbc:CountrySubentity>765</cbc:CountrySubentity>
 		<cac:AddressLine>
 		  <cbc:Line>The Roundabout
 		    <?DescriptionAddFirst Used for all other address information. Coordinates (T6321/T6322) are given in format WGS84, degrees with decimals, separated with a "/". ?>
@@ -358,12 +342,11 @@
 	</cac:DeliveryLocation>
 	  
 	<cac:RequestedDeliveryPeriod>
-	  <cbc:StartDate>2021-11-01
-	    <?DescriptionAddFirst The Requested Delivery Period should be set at line level, not here. ?>
-	  </cbc:StartDate>
-	  <cbc:EndDate>2021-11-03
-	    <?DescriptionAddFirst The Requested Delivery Period should be set at line level, not here. ?>
-	  </cbc:EndDate>
+		<?DescriptionAddFirst The Requested Delivery Period should be set at line level, not here. ?>
+		<cbc:StartDate>2021-11-01</cbc:StartDate>
+		<cbc:StartTime>12:30:00</cbc:StartTime>
+		<cbc:EndDate>2021-11-03</cbc:EndDate>
+		<cbc:EndTime>15:30:00</cbc:EndTime>
 	</cac:RequestedDeliveryPeriod>
 	  
     <cac:DeliveryParty>
@@ -390,9 +373,7 @@
         <cbc:PostalZone>12345
 		  <?DescriptionAddFirst T6117, Postal zone. ?>
 		</cbc:PostalZone>
-		<cbc:CountrySubentity>765
-		  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-		</cbc:CountrySubentity>
+		<cbc:CountrySubentity>765</cbc:CountrySubentity>
 		<cac:AddressLine>
 		  <cbc:Line>The Roundabout
 		    <?DescriptionAddFirst Used for all other address information. ?>
@@ -419,7 +400,7 @@
 	  
     <cac:Shipment>
       <cbc:ID>NA
-		<?DescriptionAddFirst Not used in BEAst version 3.1. Always set to "NA".. ?>
+		<?DescriptionAddFirst Always set to "NA". ?>
 	  </cbc:ID>
       <cac:TransportHandlingUnit>
         <cbc:ShippingMarks>12345
@@ -447,8 +428,7 @@
 	<cbc:Note>30 dagar</cbc:Note>
   </cac:PaymentTerms>
 
-  <cac:AllowanceCharge>
-	  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
+  <cac:AllowanceCharge>	
 	<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
 	<cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
 	<cbc:AllowanceChargeReason>Text</cbc:AllowanceChargeReason>
@@ -465,12 +445,10 @@
   </cac:AllowanceCharge>
 
   <cac:TaxTotal>
-	  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
 	<cbc:TaxAmount currencyID="SEK">550.00</cbc:TaxAmount>
   </cac:TaxTotal>
 
   <cac:AnticipatedMonetaryTotal>
-	  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
 	<cbc:LineExtensionAmount currencyID="SEK">2000.00</cbc:LineExtensionAmount>
 	<cbc:TaxExclusiveAmount currencyID="SEK">2000.00</cbc:TaxExclusiveAmount>
 	<cbc:TaxInclusiveAmount currencyID="SEK">2500.00</cbc:TaxInclusiveAmount>
@@ -492,9 +470,7 @@
       <cbc:Quantity unitCode="MTK">10.00
 	    <?DescriptionAddFirst Ordered Quantity (T0039) and Measure Unit NeB Type (T6706). ?>
 	  </cbc:Quantity>
-	  <cbc:LineExtensionAmount currencyID="SEK">2000.00
-	  	  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-	  </cbc:LineExtensionAmount>
+	  <cbc:LineExtensionAmount currencyID="SEK">2000.00</cbc:LineExtensionAmount>
 	  <cbc:PartialDeliveryIndicator>true
 	    <?DescriptionAddFirst Indication that BackOrders are Permitted (T6724). BEAst value "160" is here "false" and "161" is here "true". The value "137" cannot in this version be used. ?>
 	  </cbc:PartialDeliveryIndicator>
@@ -515,14 +491,13 @@
       </cac:Delivery>
 
 		<cac:OriginatorParty>
-			<?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-		<cac:PartyIdentification>
-		  <cbc:ID schemeID="0007">5560339086</cbc:ID>
-		</cac:PartyIdentification>
-		<cac:PartyName>
-		  <cbc:Name>Originator Name</cbc:Name>
-		</cac:PartyName>
-	  </cac:OriginatorParty>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0007">5560339086</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>Originator Name</cbc:Name>
+			</cac:PartyName>
+		</cac:OriginatorParty>
 
 	  <cac:AllowanceCharge>
 		<cbc:ChargeIndicator>false
@@ -553,7 +528,6 @@
 		  <?DescriptionAddFirst Price Unit Basis Quantity (T6722). ?>
 		</cbc:BaseQuantity>
 		<cac:AllowanceCharge>
-		  <?DescriptionAddFirst Not used by BEAst version 3.1. ?>
 		  <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
 		  <cbc:Amount currencyID="SEK">200</cbc:Amount>
 		  <cbc:BaseAmount currencyID="SEK">1000</cbc:BaseAmount>
@@ -590,14 +564,14 @@
 		  </cac:ItemSpecificationDocumentReference>
 		  
 		  <cac:CommodityClassification>
-			  <?DescriptionAddFirst Used for multiple BEAst elements: SBMI Number (T0172:01), SÅ Number (T0172:02), Concrete Number (T0172:04), Number (T0172:07), Fuel Number (T0172:08), Configuration Value (T6369), GUID Identifier (T6408), BIM Model Name (T6433), GUID for BIM Identity (T6431), GUID for Object (T6455), Identity Type Code (T6440), Product Type GUID (T6441), Product Type Description (T6442), Customer Remarks (T6036), Customer Reference Number (T6005), Offer Number (T6010), Offer Line Number (T6459), Offer Line GUID (T6486), Ultimate Customer Order Number (T6221), Ultimate Customer Order Line Number (T6458), Shipping Marks Consignment (T0086), Rental Indicator (T6477), Expected time of return (T6479), Rental period Start date (T6312), Rental period End date (T6313) Rental time Quantity (T6478), Rental quantity code (T6425), Rental quantity Shift code (T6426), Excess (T6482), Reference to Article class (T6466), Source to Classification (T6467), Size per load (T6460), Delivery Interval; interval start (T6461), Delivery Interval; interval end (T6462), Delivery Interval; Calculated unloading time (T6463), Delivery Interval; Time for Unloading (T6464), Delivery Mark Instruction (T6002), Insurance (T6071). ?>
-			  <cbc:ItemClassificationCode listID="ZZZ" listVersionID="BEAST" name="ConfigurationValue">The value of the element
-			    <?DescriptionAddFirst When the class is not defined in UNCL7143 the listID shall always be set to ZZZ, listVersionID to BEAST and name identifies what the value is. The ItemClassificationCode itself contains the value of the element. Possible names are: SBMI, SA, AI, ME, CoClass, ConfigurationValue, GUIDIdentifier, BIMModelName, GUIDforBIMIdentity, GUIDforObject, IdentityTypeCode, ProductTyppeGUID, ProductTypeDescription, CustomerRemarks, CustomerReferenceNumber, OfferNumber, OfferLineNumber, OfferLineGUID, UltimateCustomerOrderNumber, UltimateCustomerOrderLineNumber, ShippingMarksConsignment, RentalIndicator, ExpectedTimeOfReturn, RentalPeriodStartDate, RentalPeriodEndDate, RentalTimeQuantity, RentalQuantityCode, RentalQuantityShiftCode, Excess, ReferenceToArticleClass, SourceToClassification, SizePerLoad, DeliveryInterval:IntervalStart, DeliveryInterval:IntervalEnd, DeliveryInterval:CalculatedUnloadingTime, DeliveryInterval:TimeForUnloading, DeliveryMarkInstruction, Insurance. ("SBMI" = Sveriges Bergmaterialindustrier, "SA" = Sveriges Åkeriföretag, "AI" = Återvinningsindustrierna, “ME” = Maskinentreprenörerna. When the class is defined in UNCL7143 the listVersionID and name should be empty. ?>
-			  </cbc:ItemClassificationCode>
-		  </cac:CommodityClassification>
+			<cbc:ItemClassificationCode listID="ZZZ" listVersionID="3.0.2" name="SBMI">KO2012140200
+				<?listID-DescriptionAddFirst For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID "BEAST:4.0", i.e. mutually agreed. ?>
+				<?name-DescriptionAddFirst If construction specific lists are used, name specifies which of them is used. Possible names are: "SBMI", "SA", "AI", “ME” and "CoClass”. "SBMI" = Sveriges Bergmaterialindustrier, "SA" = Sveriges Åkeriföretag, "AI" = Återvinningsindustrierna, “ME” = Maskinentreprenörerna. ?>
+				<?DescriptionAddFirst Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID = BEAST:4.0" and name is Source to Classification (T6467). ?>
+			</cbc:ItemClassificationCode>
+		</cac:CommodityClassification>
 		  
 		  <cac:ClassifiedTaxCategory>
-			<?DescriptionAddFirst Not used by BEAst version 3.1. ?>
 			<cbc:ID>S</cbc:ID>
 			<cbc:Percent>25</cbc:Percent>
 			<cac:TaxScheme>
@@ -628,8 +602,7 @@
 		  	<?DescriptionAddFirst T3236, (Serial Number). ?>
 		  </cbc:SerialID>
 		  <cac:LotIdentification>
-			<?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-			<cbc:LotNumberID>FGH456</cbc:LotNumberID>
+			  <cbc:LotNumberID>FGH456</cbc:LotNumberID>
 		  </cac:LotIdentification>
 		</cac:ItemInstance>
 				
@@ -638,4 +611,3 @@
   </cac:OrderLine>
 
 </ubl:Order>
-

@@ -1,0 +1,133 @@
+
+  // https://s3.console.aws.amazon.com/s3/buckets/bis.beast.se?region=eu-north-1&tab=properties 
+  // Sub menu: Static website hosting
+  [
+  {
+    "Condition": {
+      "KeyPrefixEquals": "4.0/"
+    },
+    "Redirect": {
+      "ReplaceKeyPrefixWith": ""
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "profiles/3-order-only/"
+    },
+    "Redirect": {
+      "HostName": "docs.peppol.eu",
+      "Protocol": "https",
+      "ReplaceKeyPrefixWith": "poacc/upgrade-3/profiles/3-order-only/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "profiles/28-ordering/"
+    },
+    "Redirect": {
+      "HostName": "docs.peppol.eu",
+      "Protocol": "https",
+      "ReplaceKeyPrefixWith": "poacc/upgrade-3/profiles/28-ordering/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "profiles/1-catalogueonly/"
+    },
+    "Redirect": {
+      "HostName": "docs.peppol.eu",
+      "Protocol": "https",
+      "ReplaceKeyPrefixWith": "poacc/upgrade-3/profiles/1-catalogueonly/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "profiles/64-catalogue-wo-response/"
+    },
+    "Redirect": {
+      "HostName": "docs.peppol.eu",
+      "Protocol": "https",
+      "ReplaceKeyPrefixWith": "poacc/upgrade-3/profiles/64-catalogue-wo-response/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "profiles/42-orderagreement/"
+    },
+    "Redirect": {
+      "HostName": "docs.peppol.eu",
+      "Protocol": "https",
+      "ReplaceKeyPrefixWith": "poacc/upgrade-3/profiles/42-orderagreement/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "profiles/30-despatchadvice/"
+    },
+    "Redirect": {
+      "HostName": "docs.peppol.eu",
+      "Protocol": "https",
+      "ReplaceKeyPrefixWith": "poacc/upgrade-3/profiles/30-despatchadvice/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "profiles/66-advanceddespatchadvice/"
+    },
+    "Redirect": {
+      "HostName": "test-docs.peppol.eu",
+      "Protocol": "https",
+      "ReplaceKeyPrefixWith": "logistics/profiles/66-advanceddespatchadvice/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "profiles/67-advanceddespatchadvice_w_response/"
+    },
+    "Redirect": {
+      "HostName": "test-docs.peppol.eu",
+      "Protocol": "https",
+      "ReplaceKeyPrefixWith": "logistics/profiles/67-advanceddespatchadvice_w_response/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "profiles/68-weightstatement/"
+    },
+    "Redirect": {
+      "HostName": "test-docs.peppol.eu",
+      "Protocol": "https",
+      "ReplaceKeyPrefixWith": "logistics/profiles/68-weightstatement/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "profiles/billing/"
+    },
+    "Redirect": {
+      "HostName": "docs.peppol.eu",
+      "Protocol": "https",
+      "ReplaceKeyPrefixWith": "poacc/billing/3.0/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "profiles/63-invoiceresponse/"
+    },
+    "Redirect": {
+      "HostName": "docs.peppol.eu",
+      "Protocol": "https",
+      "ReplaceKeyPrefixWith": "poacc/63-invoiceresponse/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "syntax/InvoiceResponse/tree/"
+    },
+    "Redirect": {
+      "HostName": "docs.peppol.eu",
+      "Protocol": "https",
+      "ReplaceKeyPrefixWith": "poacc/upgrade-3/syntax/InvoiceResponse/tree/"
+    }
+  }
+]

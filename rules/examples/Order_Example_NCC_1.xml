@@ -8,10 +8,6 @@
             xmlns:sbc="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2"
             xmlns:ccts-cct="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2"
             xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
-	<?SchematronPath ../../rules/sch/schematron1.sch?>
-	<?SchematronPath ../../rules/sch/schematron2.sch?>
-	<?Name PEPPOL BIS Beast Order?>
-	<?DocumentTerm ubl:Order?>
 	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order:3</cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:ordering:3</cbc:ProfileID>
 
@@ -22,6 +18,9 @@
 	<cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
 	<cbc:CustomerReference>4016</cbc:CustomerReference>
 	<cbc:AccountingCost>7106095</cbc:AccountingCost>
+	<cac:ValidityPeriod>
+		<cbc:EndDate>2020-05-15</cbc:EndDate>
+	</cac:ValidityPeriod>
 	<cac:Contract>
 		<cbc:ID>12</cbc:ID>
 	</cac:Contract>

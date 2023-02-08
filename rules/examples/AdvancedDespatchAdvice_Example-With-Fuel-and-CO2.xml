@@ -46,7 +46,7 @@
 
 			<cac:CarrierParty>
 				<cac:PartyIdentification>
-					<cbc:ID schemeID="0007"></cbc:ID>
+					<cbc:ID schemeID="0007">5562073329</cbc:ID>
 				</cac:PartyIdentification>
 				<cac:Person>
 					<cac:IdentityDocumentReference>
@@ -84,6 +84,14 @@
 					<cac:MeasurementDimension>
 						<cbc:AttributeID>RenewableFuel</cbc:AttributeID>
 						<cbc:Measure unitCode="P1">100.00</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>FuelMeasurementMethod</cbc:AttributeID>
+						<cbc:Description>CloudData</cbc:Description>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>EngineType</cbc:AttributeID>
+						<cbc:Description>EURO4</cbc:Description>
 					</cac:MeasurementDimension>
 					<cac:ProviderParty>
 						<cac:PartyIdentification>
@@ -171,12 +179,12 @@
 			</cac:SellersItemIdentification>
 
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="BEAST:4.0" name="SBMI">K00032eCE</cbc:ItemClassificationCode>
+				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="2021-12-01" name="SBMI">K00032eCE</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 
 			<cac:AdditionalItemProperty>
 				<cbc:Name>NA</cbc:Name>
-				<cbc:NameCode listID="BEAST:4.0">Price</cbc:NameCode>
+				<cbc:NameCode listID="IPNC">Price</cbc:NameCode>
 				<cbc:Value>119</cbc:Value>
 			</cac:AdditionalItemProperty>
 		</cac:Item>

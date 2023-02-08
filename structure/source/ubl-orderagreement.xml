@@ -44,9 +44,7 @@
 	</cbc:CustomerReference>
 	
 	<cac:OrderReference>
-		<cbc:ID>NA
-			<?DescriptionAddFirst Not used by BEAst version 3.1. ?>
-		</cbc:ID>
+		<cbc:ID>NA</cbc:ID>
 	</cac:OrderReference>
 	
 	<cac:OriginatorDocumentReference>
@@ -316,9 +314,7 @@
 				</cbc:PostalZone>
 				<cbc:CountrySubentity>Address</cbc:CountrySubentity>
 				<cac:AddressLine>
-					<cbc:Line>
-						<?DescriptionAddFirst Not used in BEAst version 3.1. ?>
-					</cbc:Line>
+					<cbc:Line>xxx</cbc:Line>
 				</cac:AddressLine>
 				<cac:Country>
 					<cbc:IdentificationCode>SE
@@ -568,14 +564,12 @@
 				</cac:ItemSpecificationDocumentReference>
 				
 				<cac:CommodityClassification>
-					<cbc:ItemClassificationCode listID="ZZZ" listVersionID="BEAST" name="IdentityTypeCode">12345678
-						<?listID-CodeList UNCL7143?>
-						
-						<?name-usage Mandatory?>
-						<?DescriptionAddFirst SBMI Number (T0172:01), SÅ Number (T0172:02), Concrete Number (T0172:04), Waste Number (T0172:07), Fuel Number (T0172:08), Product Type GUID (T6441), Identity Type Code (T6440), Product Type Description (T6442), Customer's Reference Number (T6005), Seller's OrderLine Number (T6462), Offer Number (T6010), OfferLine Number (T6459) or GUID OfferLine (T6486). listID is always "ZZZ" and name describes what is in Item Classification Code. Possible values are: "SBMINumber", "SÅNumber", "ConcreteNumber", "WasteNumber", "FuelNumber", "IdentityTypeCode", "ProductTypeGUID", "ProductTypeDescription", "CustomersReferenceNumber", "SellersOrderLineNumber", "OfferNumber", "OfferLineNumber" and "GUIDOfferLine". ?>
-					</cbc:ItemClassificationCode> 
+					<cbc:ItemClassificationCode listID="ZZZ" listVersionID="3.0.2" name="SBMI">KO2012140200
+						<?listID-DescriptionAddFirst For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID "BEAST:4.0", i.e. mutually agreed. ?>
+						<?name-DescriptionAddFirst If construction specific lists are used, name specifies which of them is used. Possible names are: "SBMI", "SA", "AI", “ME” and "CoClass”. "SBMI" = Sveriges Bergmaterialindustrier, "SA" = Sveriges Åkeriföretag, "AI" = Återvinningsindustrierna, “ME” = Maskinentreprenörerna. ?>
+						<?DescriptionAddFirst Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID = BEAST:4.0" and name is Source to Classification (T6467). ?>
+					</cbc:ItemClassificationCode>
 				</cac:CommodityClassification>
-				
 				
 				<cac:TransactionConditions>
 					<cbc:ActionCode>CT
@@ -642,9 +636,7 @@
 						</cac:PartyName>
 					</cac:IssuerParty>
 					<cac:DocumentReference>
-						<cbc:ID>http://www.label.eu/test/
-							<?DescriptionAddFirst Not used in BEAst 3.1. ?>
-						</cbc:ID>
+						<cbc:ID>http://www.label.eu/test/ </cbc:ID>
 					</cac:DocumentReference>
 				</cac:Certificate>
 			</cac:Item>
