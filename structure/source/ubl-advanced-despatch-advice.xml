@@ -600,7 +600,6 @@
 			<cac:DeliveryTerms>
 				<cbc:ID>EXW
 					<?DescriptionAddFirst Delivery Terms code (T6710). ?>
-					<?Cardinality 1..1?>
 				</cbc:ID>
 				<cbc:SpecialTerms>EQN-06</cbc:SpecialTerms>
 				<cac:DeliveryLocation>
@@ -838,8 +837,6 @@
 				<?DescriptionAddFirst This group is also in BEAst used for ConfigurationValue (T6369), GUID Identifier (T6408), Treatment code (T6468), Alternative Vehicle Type (T6339), EPD data, NeC additional information about Asphalt and Concrete, Price information and Rental additional information.  ?>
 				<cbc:ID schemeID="ISO22057" schemeVersionID="2022">
 					77e416eb-a363-4258-a04e-171d843a6460
-					<?Description ID of the property if assigned by an Agency?>
-					<?Cardinality 0..1?>
 				</cbc:ID>
 				<cbc:Name>NA
 					<?DescriptionAddFirst Product Group Code (T0011), Property Name (T6446), Product Type Description (T6442). When the NameCode is used, the name can be set to "NA" since it is mandatory to have. ?>
