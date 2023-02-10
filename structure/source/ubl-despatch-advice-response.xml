@@ -16,21 +16,13 @@
 	<?DocumentTerm DespatchAdviceResponse?>
 	<?Property key="sch:prefix" PEPPOL-T121?>
 	<?Property key="sch:identifier" T121-basic?>
-	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:despatch_advice_response:1
-		<?DescriptionAddFirst Used by BEAst as the Order Receipt Response message. ?>
-	</cbc:CustomizationID>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:despatch_advice_response:1<?DescriptionAddFirst Used by BEAst as the Order Receipt Response message. ?></cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_response:1</cbc:ProfileID>
-	
 	<cbc:ID>DN12345
 	  <?DescriptionAddFirst T6406, Order receipt response ID. ?>
 	</cbc:ID>
-	<cbc:IssueDate>2021-08-15
-	  <?DescriptionAddFirst T6325, Document date time. ?>
-	</cbc:IssueDate>
-	<cbc:IssueTime>12:00:00
-	  <?DescriptionAddFirst T6325, Document date time. ?>
-	</cbc:IssueTime>
-	
+	<cbc:IssueDate>2021-08-15<?DescriptionAddFirst T6325, Document date time. ?></cbc:IssueDate>
+	<cbc:IssueTime>12:00:00<?DescriptionAddFirst T6325, Document date time. ?></cbc:IssueTime>
 	<cac:SenderParty>
 		<cbc:EndpointID schemeID="0088">7300010000001
 		  <?DescriptionAddFirst T0008, Buyer. ?>

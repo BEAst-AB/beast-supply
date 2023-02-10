@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-                Content:
-                This file contains a Full BIS3 PEPPOL UBL Despatch Adivce.
-
-                Errors:
-                None
-                
-                Warnings:
-                None
-				
+					Content:
+					This file contains a Full BIS3 PEPPOL UBL Despatch Adivce.
+					
+					Errors:
+					None
+					
+					Warnings:
+					None
+					
 -->
 <ubl:DespatchAdvice xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
 	<?DocumentTerm AdvancedDespatchAdvice?>
@@ -16,15 +16,9 @@
 	<?Property key="sch:identifier" T120-basic?>
 	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1</cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</cbc:ProfileID>
-	<cbc:ID>5658999
-		<?DescriptionAddFirst T0125/T6338, Despatch Advice Number?>
-	</cbc:ID>
-	<cbc:IssueDate>2021-09-10
-		<?DescriptionAddFirst T6325, Document Date/Time.  ?>
-	</cbc:IssueDate>
-	<cbc:IssueTime>12:00:00
-		<?DescriptionAddFirst T6325, Document Date/Time. ?>
-	</cbc:IssueTime>
+	<cbc:ID>5658999<?DescriptionAddFirst T0125/T6338, Despatch Advice Number?></cbc:ID>
+	<cbc:IssueDate>2021-09-10<?DescriptionAddFirst T6325, Document Date/Time.  ?></cbc:IssueDate>
+	<cbc:IssueTime>12:00:00<?DescriptionAddFirst T6325, Document Date/Time. ?></cbc:IssueTime>
 	<cbc:DocumentStatusCode>9
 		<?DescriptionAddFirst Must be used when the Despatch Advice is replaced or deleted. Default is Original, and the status code is not needed in the first transmission. ?>
 	</cbc:DocumentStatusCode>
@@ -362,12 +356,10 @@
 		</cbc:GrossVolumeMeasure>
 		<cbc:TotalTransportHandlingUnitQuantity>3</cbc:TotalTransportHandlingUnitQuantity>
 		<cbc:DeclaredStatisticsValueAmount currencyID="SEK">34000.45</cbc:DeclaredStatisticsValueAmount>
-
 		<cac:Consignment>
 			<cbc:ID>NA
 				<?DescriptionAddFirst Use a dummy value since this element is mandatory. ?>
 			</cbc:ID>
-
 			<cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
 			<cbc:HandlingCode listID="TRED4079">1
 				<?DescriptionAddFirst Code to specify additional service from the transport company (T6466) where unique codes per transport company will be used, 
@@ -382,7 +374,6 @@
 			<cbc:HandlingInstructions>Keep the Container Carefully Closed
 				<?DescriptionAddFirst Unloading Instruction (T6344). ?>
 			</cbc:HandlingInstructions>
-
 			<cac:CarrierParty>
 				<cac:PartyIdentification>
 					<cbc:ID schemeID="0088">5790000435951
@@ -477,6 +468,8 @@
 		</cac:ShipmentStage>
 
 		<cac:Delivery>
+			<cbc:ActualDeliveryDate>2021-09-26</cbc:ActualDeliveryDate>
+			<cbc:ActualDeliveryTime>10:00:00</cbc:ActualDeliveryTime>
 			<cbc:TrackingID>456789
 				<?DescriptionAddFirst Tracking URL (T6737) ?>
 			</cbc:TrackingID>
@@ -532,27 +525,15 @@
 			</cac:DeliveryLocation>
 
 			<cac:EstimatedDeliveryPeriod>
-				<cbc:StartDate>2021-09-25
-					<?DescriptionAddFirst Unloading Date and Time (T6372)/Delivery Period Start Date (T6319) ?>
-				</cbc:StartDate>
-				<cbc:StartTime>12:00:00
-					<?DescriptionAddFirst Unloading Date and Time (T6372)/Delivery Period Start Time (T6734) ?>
-				</cbc:StartTime>
-				<cbc:EndDate>2021-09-27
-					<?DescriptionAddFirst Delivery Period End Date (T6320) ?>
-				</cbc:EndDate>
-				<cbc:EndTime>12:00:00
-					<?DescriptionAddFirst Delivery Period End Time (T6735) ?>
-				</cbc:EndTime>
+				<cbc:StartDate>2021-09-25<?DescriptionAddFirst Unloading Date and Time (T6372)/Delivery Period Start Date (T6319) ?></cbc:StartDate>
+				<cbc:StartTime>12:00:00<?DescriptionAddFirst Unloading Date and Time (T6372)/Delivery Period Start Time (T6734) ?></cbc:StartTime>
+				<cbc:EndDate>2021-09-27<?DescriptionAddFirst Delivery Period End Date (T6320) ?></cbc:EndDate>
+				<cbc:EndTime>12:00:00<?DescriptionAddFirst Delivery Period End Time (T6735) ?></cbc:EndTime>
 			</cac:EstimatedDeliveryPeriod>
 
 			<cac:Despatch>
-				<cbc:ActualDespatchDate>2021-09-25
-					<?DescriptionAddFirst Loading Date and Time (T6371)/Despatch Date and Time (T6242) ?>
-				</cbc:ActualDespatchDate>
-				<cbc:ActualDespatchTime>13:00:00
-					<?DescriptionAddFirst Loading Date and Time (T6371)/Despatch Date and Time (T6242) ?>
-				</cbc:ActualDespatchTime>
+				<cbc:ActualDespatchDate>2021-09-25<?DescriptionAddFirst Loading Date and Time (T6371)/Despatch Date and Time (T6242) ?></cbc:ActualDespatchDate>
+				<cbc:ActualDespatchTime>13:00:00<?DescriptionAddFirst Loading Date and Time (T6371)/Despatch Date and Time (T6242) ?></cbc:ActualDespatchTime>
 				<cac:DespatchAddress>
 					<?DescriptionAddFirst The Despatch Address is used to define the Ship-from when the Despatch Supplier Party is not. When the Despatch Advice describes a movement, the Despatch Address should be included. ?>
 					<cbc:ID>5790000435951
@@ -881,15 +862,10 @@
 			</cac:ManufacturerParty>
 			
 			<cac:ItemInstance>
-				<cbc:ManufactureDate>2021-01-01
-					<?DescriptionAddFirst Production or Manufacture Date (T0262) ?>
-				</cbc:ManufactureDate>
-				<cbc:BestBeforeDate>2021-12-01
-					<?DescriptionAddFirst Best Before Date (T3276) ?>
-				</cbc:BestBeforeDate>
-				<cbc:SerialID>4558784
-					<?DescriptionAddFirst Serial Number (T3236) or SGTIN (T6461)?>
-				</cbc:SerialID>
+				<cbc:ManufactureDate>2021-01-01<?DescriptionAddFirst Production or Manufacture Date (T0262) ?></cbc:ManufactureDate>
+				<cbc:ManufactureTime>06:47:30</cbc:ManufactureTime>
+				<cbc:BestBeforeDate>2021-12-01<?DescriptionAddFirst Best Before Date (T3276) ?></cbc:BestBeforeDate>
+				<cbc:SerialID>4558784<?DescriptionAddFirst Serial Number (T3236) or SGTIN (T6461)?></cbc:SerialID>
 				<cac:LotIdentification>
 					<cbc:LotNumberID>546378239
 						<?DescriptionAddFirst Batch Number (T0132). ?>
