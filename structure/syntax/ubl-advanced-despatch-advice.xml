@@ -1537,14 +1537,14 @@ Peppol: The licence plate(s) identifying the vehicle seperated by semicolon if t
             <Element cardinality="0..1">
                <Term>cbc:ActualDeliveryDate</Term>
                <Name>Actual Delivery Date</Name>
-               <Description>Peppol: The date on which the supply of goods or services was made or completed. Format = "YYYY-MM-DD"</Description>
+               <Description>Peppol: The date on which the supply of goods or services was made or completed according to the delivery term. Format = "YYYY-MM-DD"</Description>
                <DataType>Date</DataType>
                <Value type="EXAMPLE">2021-09-26</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ActualDeliveryTime</Term>
                <Name>Actual Delivery Time</Name>
-               <Description>Peppol: The date on which the supply of goods or services was made or completed. Format = "hh:mm:ss"</Description>
+               <Description>Peppol: The date on which the supply of goods or services was made or completed according to the delivery term. Format = "hh:mm:ss"</Description>
                <DataType>Time</DataType>
                <Value type="EXAMPLE">10:00:00</Value>
             </Element>
@@ -1578,15 +1578,15 @@ Peppol: </Description>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
-                  <Name>Name of the consignee</Name>
+                  <Name>Name of the delivery location</Name>
                   <Description>BEAst: The name of the Consignee (T5001). 
-Peppol: The name of the consignee.</Description>
+Peppol: The name of the delivery location.</Description>
                   <Value type="EXAMPLE">Name</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:Address</Term>
-                  <Name>Postal address of consignee</Name>
-                  <Description>Peppol: Postal Address.</Description>
+                  <Name>Address of the delivery location</Name>
+                  <Description>Peppol: The address of the delivery location.</Description>
                   <Element cardinality="0..1">
                      <Term>cbc:StreetName</Term>
                      <Name>Address line 1</Name>
@@ -1921,12 +1921,14 @@ Peppol: The Z coordinate.</Description>
                   <Name>Delivery terms</Name>
                   <Description>BEAst: Delivery Terms code (T6710). 
 Peppol: Delivery terms code (Inco terms).</Description>
+                  <Reference type="RULE">PEPPOL-T120-R022</Reference>
                   <Value type="EXAMPLE">EXW</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:SpecialTerms</Term>
                   <Name>Special terms</Name>
                   <Description>Peppol: Special delivery terms that exceeds the inco terms.</Description>
+                  <Reference type="RULE">PEPPOL-T120-R022</Reference>
                   <Value type="EXAMPLE">EQN-06</Value>
                </Element>
                <Element cardinality="0..1">
