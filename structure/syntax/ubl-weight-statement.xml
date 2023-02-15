@@ -64,6 +64,46 @@
          <Term>cac:SenderParty</Term>
          <Name>Sender Party</Name>
          <Description>Peppol: The party sending this weight statement (e.g. Weighing Station, Shipper, Freight Forwarder, Carrier, ...).</Description>
+         <Element>
+            <Term>cbc:EndpointID</Term>
+            <Name>Senders electronic address</Name>
+            <Description>Peppol: Identifies the senders partys electronic address</Description>
+            <Value type="EXAMPLE">7300010000001</Value>
+            <Attribute usage="Mandatory">
+               <Term>schemeID</Term>
+               <Name>Scheme identifier</Name>
+               <Description>Peppol: Scheme identifier for electronic address</Description>
+               <Reference type="CODE_LIST">eas</Reference>
+               <Value type="EXAMPLE">0088</Value>
+            </Attribute>
+         </Element>
+         <Element>
+            <Term>cac:PartyIdentification</Term>
+            <Name>Party Identification</Name>
+            <Description>Peppol: An identifier for this party.</Description>
+            <Element>
+               <Term>cbc:ID</Term>
+               <Name>Sender party identity</Name>
+               <Description>Peppol: The identifier of the Sender party</Description>
+               <Value type="EXAMPLE">7300010000001</Value>
+               <Attribute usage="Mandatory">
+                  <Term>schemeID</Term>
+                  <Name>Scheme identifier</Name>
+                  <Description>Peppol: Scheme identifier for party identification</Description>
+                  <Reference type="CODE_LIST">ICD</Reference>
+                  <Value type="EXAMPLE">0088</Value>
+               </Attribute>
+            </Element>
+         </Element>
+         <Element>
+            <Term>cac:PartyName</Term>
+            <Name>Party Name</Name>
+            <Element>
+               <Term>cbc:Name</Term>
+               <Name>Sender name</Name>
+               <Value type="EXAMPLE">Weighing Solutions AB</Value>
+            </Element>
+         </Element>
       </Element>
 	     <Element>
          <Term>cac:ReceiverParty</Term>
