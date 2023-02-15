@@ -142,6 +142,11 @@
   </Resource>
   
     <!-- Code lists -->
+	
+	<Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/UNCL4343.xml</Path>
+	</Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1229.xml</Path>
@@ -149,10 +154,6 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL5189.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL4343.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
@@ -188,6 +189,10 @@
         <Path>structure/codelist/UNCL8273.xml</Path>
     </Resource>
     <Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/DespatchAdviceTypeCode.xml</Path>
+	</Resource>
+    <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1001.xml</Path>
     </Resource>
@@ -196,17 +201,43 @@
         <Path>structure/codelist/UNCL5305.xml</Path>
     </Resource>
     <Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/DocumentStatusCode.xml</Path>
+	</Resource>
+    <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/eas.xml</Path>
     </Resource>
     <Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/TRED4079.xml</Path>
+	</Resource>
+	<Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/HandlingCode.xml</Path>
+	</Resource>
+    <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ICD.xml</Path>
+    </Resource>
+	<Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/ItemPropertyNameCode.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL7143.xml</Path>
     </Resource>
+
+
+      <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL6313-T120.xml</Path>
+    </Resource>
+	<Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/UNCL6313-T122.xml</Path>
+	</Resource>
 	<!-- Catalog -->
 	<Resource>
         <Type>CodeList-1</Type>
@@ -216,6 +247,14 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL6313-T16.xml</Path>
     </Resource>
+    <Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/UNCL6313-T120.xml</Path>
+	</Resource>
+    <Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/UNCL6313-T122.xml</Path>
+	</Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/MimeCode.xml</Path>
@@ -282,22 +321,6 @@
 		<Type>CodeList-1</Type>
 		<Path>structure/codelist/SEPA.xml</Path>
 	</Resource>
-	<Resource>
-		<Type>CodeList-1</Type>
-		<Path>structure/codelist/DocumentStatusCode.xml</Path>
-	</Resource>
-	<Resource>
-		<Type>CodeList-1</Type>
-		<Path>structure/codelist/DespatchAdviceTypeCode.xml</Path>
-	</Resource>
-	<Resource>
-		<Type>CodeList-1</Type>
-		<Path>structure/codelist/TRED4079.xml</Path>
-	</Resource>
-	<Resource>
-		<Type>CodeList-1</Type>
-		<Path>structure/codelist/HandlingCode.xml</Path>
-	</Resource>
 		<Resource>
 		<Type>CodeList-1</Type>
 		<Path>structure/codelist/UNECERec28.xml</Path>
@@ -309,14 +332,6 @@
 		<Resource>
 		<Type>CodeList-1</Type>
 		<Path>structure/codelist/TRED8155.xml</Path>
-	</Resource>
-	<Resource>
-		<Type>CodeList-1</Type>
-		<Path>structure/codelist/UNCL6313-T120.xml</Path>
-	</Resource>
-    <Resource>
-		<Type>CodeList-1</Type>
-		<Path>structure/codelist/UNCL6313-T122.xml</Path>
 	</Resource>
 	
     <!-- Files -->
