@@ -124,21 +124,15 @@
 				<?DescriptionAddFirst T6036, Customer remarks. ?>
 			</cbc:Description>
 		</cac:Response>
-
 		<cac:DocumentReference>
 			<cbc:ID>DN12345
 				<?DescriptionAddFirst T6386, Order receipt reference. ?>
 			</cbc:ID>
-			<cbc:IssueDate>2016-08-15
-				<?DescriptionAddFirst Document date of the DespatchAdvice. ?>
-			</cbc:IssueDate>
-			<cbc:IssueTime>12:00:00
-				<?DescriptionAddFirst Document time of the DespatchAdvice. ?>
-			</cbc:IssueTime>
+			<cbc:IssueDate>2016-08-15<?DescriptionAddFirst Document date of the DespatchAdvice. ?></cbc:IssueDate>
+			<cbc:IssueTime>12:00:00<?DescriptionAddFirst Document time of the DespatchAdvice. ?></cbc:IssueTime>
 			<cbc:DocumentTypeCode>351
 			  <?DescriptionAddFirst Used to inform that this message is a response to a Logistics Advanced Despatch Advice, "351" should always be used. ?>
 			</cbc:DocumentTypeCode>
 		</cac:DocumentReference>
-		
 	</cac:DocumentResponse>
 </ApplicationResponse>

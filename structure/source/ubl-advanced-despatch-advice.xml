@@ -348,14 +348,10 @@
 		<cbc:Information>text
 			<?DescriptionAddFirst Used by BEAst for Supplier Remark (T6038). ?>
 		</cbc:Information>
-		<cbc:GrossWeightMeasure unitCode="KGM">1
-			<?DescriptionAddFirst Total Gross Weight (T6472) ?>
-		</cbc:GrossWeightMeasure>
-		<cbc:GrossVolumeMeasure unitCode="MTQ">1
-			<?DescriptionAddFirst Total Gross Volume (T6494) ?>
-		</cbc:GrossVolumeMeasure>
-		<cbc:TotalTransportHandlingUnitQuantity>3</cbc:TotalTransportHandlingUnitQuantity>
-		<cbc:DeclaredStatisticsValueAmount currencyID="SEK">34000.45</cbc:DeclaredStatisticsValueAmount>
+		<cbc:GrossWeightMeasure unitCode="KGM">1030<?DescriptionAddFirst Total Gross Weight (T6472) ?></cbc:GrossWeightMeasure>
+		<cbc:GrossVolumeMeasure unitCode="MTQ">1.456<?DescriptionAddFirst Total Gross Volume (T6494) ?></cbc:GrossVolumeMeasure>
+		<cbc:TotalTransportHandlingUnitQuantity>1</cbc:TotalTransportHandlingUnitQuantity>
+		<cbc:DeclaredStatisticsValueAmount currencyID="SEK">92179.12</cbc:DeclaredStatisticsValueAmount>
 		<cac:Consignment>
 			<cbc:ID>NA
 				<?DescriptionAddFirst Use a dummy value since this element is mandatory. ?>
@@ -712,9 +708,7 @@
 	</cac:Shipment>
 
 	<cac:DespatchLine>
-		<cbc:ID>1
-			<?DescriptionAddFirst Line Number (T0051) ?>
-		</cbc:ID>
+		<cbc:ID>10<?DescriptionAddFirst Line Number (T0051) ?></cbc:ID>
 		<cbc:Note>Mrs Green agreed to waive charge
 			<?DescriptionAddFirst Transportation Information (T6008) ?>
 		</cbc:Note>
