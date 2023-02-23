@@ -80,15 +80,17 @@ Changes to Peppol documentation below
 ** Optional MinimumTemperature and MaximumTemperature added in TransportHandlingUnit under Shipment.
 ** Optional GoodsItem added in TransportHandlingUnit under Shipment.
 ** Optional Package added in TransportHandlingUnit under Shipment.
+** Optional ActualDeliveryDate added in Delivery under Shipment
+** Optional ActualDeliveryTime added in Delivery under Shipment
+** Optional ActualDespatchDate added in Despatch under Shipment
+** Optional ActualDespatchTime added in Despatch under Shipment
 ** Optional SalesOrderID added in OrderReference under OrderLineReference at line level.
 ** Optional DocumentTypeCode added in DocumentReference at line level.
 ** Optional ManufacturersItemIdentification added in Item at line level.
 ** Optional ID with attributes @schemeID and @schemeVersionID added in AdditionalItemProperty under Item at line level.
 ** Optional ManufacturerParty added in Item at line level.
 ** Optional Dimension added in Item at line level.
-** Optional ActualDeliveryDate added in Delivery under Shipment
-** Optional ActualDeliveryTime added in Delivery under Shipment
-** Optional ActualDeliveryDate added in Item at line level.
+** Optional ManufactureTime added in ItemInstance at line level
 ** Optional Shipment removed from line level.
 * Despatch Advice Response (T121)
 ** Optional PartyIdentification added in SenderParty.
