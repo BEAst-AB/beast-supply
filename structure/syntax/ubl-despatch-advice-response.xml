@@ -30,7 +30,6 @@ Peppol: Identifies the specification of content and rules that apply to the
          <Reference type="BUSINESS_TERM">tir71-005</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_response:1</Value>
       </Element>
-	
 	     <Element>
          <Term>cbc:ID</Term>
          <Name>Response identifier</Name>
@@ -46,7 +45,7 @@ Peppol: A transaction instance must contain an identifier. The identifier enable
          <Term>cbc:IssueDate</Term>
          <Name>Issue date </Name>
          <Description>BEAst: T6325, Document date time. 
-Peppol: Document date time. </Description>
+Peppol: Document date time.</Description>
          <DataType>Date</DataType>
          <Reference type="BUSINESS_TERM">tir71-002</Reference>
          <Value type="EXAMPLE">2021-08-15</Value>
@@ -60,7 +59,6 @@ Peppol: Document date time. </Description>
          <Reference type="BUSINESS_TERM">tir71-003</Reference>
          <Value type="EXAMPLE">12:00:00</Value>
       </Element>
-	
 	     <Element>
          <Term>cac:SenderParty</Term>
          <Name>Sender information</Name>
@@ -452,7 +450,7 @@ Peppol: The id of the Despatch- or Receipt advice sent. </Description>
                <Term>cbc:IssueDate</Term>
                <Name>Issue date </Name>
                <Description>BEAst: Document date of the DespatchAdvice. 
-Peppol: Document date time. </Description>
+Peppol: Document date time.</Description>
                <Value type="EXAMPLE">2016-08-15</Value>
             </Element>
             <Element>

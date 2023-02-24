@@ -1,6 +1,6 @@
 = Version 4.0.1
 [horizontal]
-Release date:: 2023-02-08
+Release date:: 2023-02-17
 
 [horizontal]
 Based on Peppol POACC version 3.0.10 released 2022-11-03 and Peppol Logistics version 1.1.
@@ -80,12 +80,17 @@ Changes to Peppol documentation below
 ** Optional MinimumTemperature and MaximumTemperature added in TransportHandlingUnit under Shipment.
 ** Optional GoodsItem added in TransportHandlingUnit under Shipment.
 ** Optional Package added in TransportHandlingUnit under Shipment.
+** Optional ActualDeliveryDate added in Delivery under Shipment
+** Optional ActualDeliveryTime added in Delivery under Shipment
+** Optional ActualDespatchDate added in Despatch under Shipment
+** Optional ActualDespatchTime added in Despatch under Shipment
 ** Optional SalesOrderID added in OrderReference under OrderLineReference at line level.
 ** Optional DocumentTypeCode added in DocumentReference at line level.
 ** Optional ManufacturersItemIdentification added in Item at line level.
 ** Optional ID with attributes @schemeID and @schemeVersionID added in AdditionalItemProperty under Item at line level.
 ** Optional ManufacturerParty added in Item at line level.
 ** Optional Dimension added in Item at line level.
+** Optional ManufactureTime added in ItemInstance at line level
 ** Optional Shipment removed from line level.
 * Despatch Advice Response (T121)
 ** Optional PartyIdentification added in SenderParty.
@@ -120,6 +125,6 @@ Changes to Peppol documentation below
 * Rule PEPPOL-COMMON-R049 (ICD 0007 - Swedish organization number) changed from severity warning to fatal (as announced in the may 2022 release)
 * Correction in Rule PEPPOL-COMMON-R050 (validation of Australian Business Number (ABN)) corrected
 * Added eas codes 9959. Removed 9906 and 9907.
-* Added icd codes 0217, 0218, 0219, 0220
+* Added icd codes 0217, 0218, 0219, 0220,9955
 * Added Action code (UNCL1229) for Order Change
 * For all Logistics transactions Code-lists and Business rules have been added.
