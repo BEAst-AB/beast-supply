@@ -42,16 +42,13 @@
 			<Worksheet ss:Name="Sheet1">
 				<Table>
 					<Column ss:Width="30"/>
+					<Column ss:Width="200"/>
+					<Column ss:Width="200"/>
+					<Column ss:Width="200"/>
+					<Column ss:Width="200"/>
+					<Column ss:Width="200"/>
 					<Column ss:Width="30"/>
-					<Column ss:Width="200"/>
-					<Column ss:Width="200"/>
-					<Column ss:Width="200"/>
-					<Column ss:Width="200"/>
-					<Column ss:Width="200"/>
 					<Row>
-						<Cell  ss:StyleID="s63">
-							<Data ss:Type="String">Sequence</Data>
-						</Cell>
 						<Cell  ss:StyleID="s63">
 							<Data ss:Type="String">Card</Data>
 						</Cell>
@@ -73,13 +70,11 @@
 						<Cell  ss:StyleID="s63">
 							<Data ss:Type="String">Node Level</Data>
 						</Cell>
+						<Cell  ss:StyleID="s63">
+							<Data ss:Type="String">Sequence</Data>
+						</Cell>
 					</Row>
 					<Row>
-						<Cell>
-							<Data ss:Type="Number">
-								<xsl:value-of select="0"/>
-							</Data>
-						</Cell>
 						<Cell>
 							<Data ss:Type="String">
 								<xsl:text>1..1</xsl:text>
@@ -110,15 +105,14 @@
 								<xsl:value-of select="0"/>
 							</Data>
 						</Cell>
+						<Cell>
+							<Data ss:Type="Number">
+								<xsl:value-of select="0"/>
+							</Data>
+						</Cell>
 					</Row>
 					<xsl:for-each select="//str:Element | //str:Attribute">
 						<Row>
-							<Cell>
-								<!-- Sequence -->
-								<Data ss:Type="Number">
-									<xsl:value-of select="position()*100"/>
-								</Data>
-							</Cell>
 							<Cell>
 								<!-- Card -->
 								<Data ss:Type="String">
@@ -166,6 +160,12 @@
 							<Cell>
 								<Data ss:Type="Number">
 									<xsl:value-of select="count(ancestor-or-self::*) - 2"/>
+								</Data>
+							</Cell>
+							<Cell>
+								<!-- Sequence -->
+								<Data ss:Type="Number">
+									<xsl:value-of select="position()*100"/>
 								</Data>
 							</Cell>
 						</Row>
