@@ -116,8 +116,16 @@
 							<Cell>
 								<!-- Card -->
 								<Data ss:Type="String">
+									<xsl:choose>
+										<xsl:when test="(name(.) = 'Element')">			
 									<!-- Default card is 1..1 -->
-									<xsl:value-of select="if (@cardinality) then @cardinality else '1..1'"/>
+										<xsl:value-of select="if (@cardinality) then @cardinality else '1..1'"/>
+										</xsl:when>
+										<xsl:otherwise>
+											<xsl:value-of select="if (@usage) then substring(@usage,1,1) else 'M'"/>
+										</xsl:otherwise>
+									</xsl:choose>
+										
 								</Data>
 							</Cell>
 							<Cell>
