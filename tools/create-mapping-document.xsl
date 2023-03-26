@@ -133,7 +133,7 @@
 								<Data ss:Type="String">
 									<xsl:for-each select="ancestor-or-self::*">
 										<xsl:if test="position() &lt; last() - 1">
-											<xsl:text>&#8226;&#160;</xsl:text>
+											<xsl:text>&#8226;&#160;&#160;</xsl:text>
 										</xsl:if>
 									</xsl:for-each>
 									<!-- Add @ if an attribute -->
