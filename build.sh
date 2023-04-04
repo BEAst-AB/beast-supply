@@ -41,7 +41,7 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entry
 echo "Despatch advice"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/syntax/ubl-despatch-advice.xml -xsl:/src/tools/create-mapping-document.xsl -o:/src/rules/mapping/DespatchAdvice.xml -ext:on --allow-external-functions:on
 echo "Order agreement"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/syntax/ubl-ubl-orderagreement.xml -xsl:/src/tools/create-mapping-document.xsl -o:/src/rules/mapping/Orderagreement.xml -ext:on --allow-external-functions:on
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/syntax/ubl-orderagreement.xml -xsl:/src/tools/create-mapping-document.xsl -o:/src/rules/mapping/Orderagreement.xml -ext:on --allow-external-functions:on
 echo "Catalogue"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/syntax/ubl-catalogue.xml -xsl:/src/tools/create-mapping-document.xsl -o:/src/rules/mapping/Catalogue.xml  -ext:on --allow-external-functions:on
 echo "Advanced Despatch advice"
