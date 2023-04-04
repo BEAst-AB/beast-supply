@@ -38,7 +38,7 @@
 		<?Name Additional document reference ?>
 		<?DescriptionAddFirst Used for additional BEAst information on header level. The whole group can be repeated to send multiple additional information. ?>
 		<cbc:ID>7648779
-			<?DescriptionAddFirst The reference number of the added information. Can be the Project Number (T6004), Customers' Reference (T6005), 
+			<?DescriptionAddFirst The reference number of the added information. Can be the Project Number (T6004), Accounting Cost (T6005), 
 			Seller's Order Number (T6099), Final Customer's Order Number (T6221), Drawing Number (T6222), Delivery Part (T6340), 
 			Freight Payer's Customer Number (T6463) or Document Name (T6484) depending on DocumentType. ?>
 		</cbc:ID>
@@ -46,7 +46,7 @@
 			<?DescriptionAddFirst Not a part of version 3.1, but use this code instead of the text if possible. An example is "174" for DrawingNumber (T6222) ?>
 		</cbc:DocumentTypeCode>
 		<cbc:DocumentType>ProjectReference
-			<?DescriptionAddFirst The type of reference when a valid code is not possible to use. "ProjectReference" (T6004), "CustomersReferenceNumber" (T6005), "FreightPayersCustomerNumber" (T6463), 
+			<?DescriptionAddFirst The type of reference when a valid code is not possible to use. "ProjectReference" (T6004), "AccountingCost" (T6005), "FreightPayersCustomerNumber" (T6463), 
 			"SellersOrderNumber" (T6099), "FinalCustomersOrderNumber" (T6221), "DeliveryPart" (T6340) or Any other document type (T6473). ?>
 		</cbc:DocumentType>
 		<cac:Attachment>
