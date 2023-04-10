@@ -114,6 +114,10 @@ include::{snippet-dir}/snippet-30-1.xml[tags=buyersitemidentification]
 Generic product climate data is often provided from an authority and are related to a product category codes such as UNSPSC or similar.
 Below you will find two examples from Swedish authorities that provide generic product climate data.
 
+To determine the CO~2~ equivalent in kilograms for the despatch line, the following calculation must be performed:
+
+*CO~2~eq despatch line = (Net net weight) x (GWP GHG value per kilogram) x Quantity*
+
 The list id IPNC is a reference to the code list link:{codelist-ItemPropertyNameCode}[Item Property Name Code (openPEPPOL)]
 [cols="1,1,1,3",options="header",stripes=even]
 |====
@@ -141,9 +145,9 @@ The table below describes the definitions of the EPD related properties for mach
 |Name |NameCode |listID |Definition
 |EPD Dataset ID |EPDDatasetID |IPNC |The EPD dataset id gives the digital reference to a produkt type in the EDP
 |EPD Dataset URL |EPDDataSetURL |IPNC |URL to fetch the machine readable digital information from a source assigned by the supplier
-|GWP GHG A1-3 vA1 EPD line value  |GWP-GHG_A1-3_vA1 |IPNC |Global warming potential green house gases for process A1-3 100 EPD total value for line in kilo grams (unitCode="KGM") according to EN15804 amendment version A1
-|GWP GHG A1-3 vA2 EPD line value  |GWP-GHG_A1-3_vA2 |IPNC |Global warming potential green house gases for process A1-3 100 EPD total value for line in kilo grams (unitCode="KGM") according to EN15804 amendment version A2
-|GWP GHG A1-3 vA2 EPD line value  |GWP-GHG_A1-3_vA3 |IPNC |Global warming potential green house gases for process A1-3 100 EPD total value for line in kilo grams (unitCode="KGM") according to EN15804 amendment version A3
+|GWP GHG A1-3 vA1 EPD line value  |GWP-GHG_A1-3_vA1 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilograms (unitCode="KGM") according to EN15804 amendment version A1
+|GWP GHG A1-3 vA2 EPD line value  |GWP-GHG_A1-3_vA2 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilograms (unitCode="KGM") according to EN15804 amendment version A2
+|GWP GHG A1-3 vA3 EPD line value  |GWP-GHG_A1-3_vA3 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilograms (unitCode="KGM") according to EN15804 amendment version A3
 |====
 
 The table below describes the definitions of the EPD related properties for human readable information, e.g. EPD published as PDF.
@@ -155,9 +159,9 @@ See <<reference-to-other-documents>> for more info how to link or attach the PDF
 |EPD Number |EPDNumber |IPNC |The number of the published EDP
 |EPD Product name |EPDProductName |IPNC |The product name relating to an individual dataset in the EPD
 |EPD HR URL |EPDHRURL |IPNC |URL to the human readable version of an EPD, for verification purposes
-|GWP GHG A1-3 vA1 EPD line value  |GWP-GHG_A1-3_vA1 |IPNC |Global warming potential green house gases for process A1-3 100 EPD total value for line in kilo grams (unitCode="KGM") according to EN15804 amendment version A1
-|GWP GHG A1-3 vA2 EPD line value  |GWP-GHG_A1-3_vA2 |IPNC |Global warming potential green house gases for process A1-3 100 EPD total value for line in kilo grams (unitCode="KGM") according to EN15804 amendment version A2
-|GWP GHG A1-3 vA2 EPD line value  |GWP-GHG_A1-3_vA2 |IPNC |Global warming potential green house gases for process A1-3 100 EPD total value for line in kilo grams (unitCode="KGM") according to EN15804 amendment version A3
+|GWP GHG A1-3 vA1 EPD line value  |GWP-GHG_A1-3_vA1 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilograms (unitCode="KGM") according to EN15804 amendment version A1
+|GWP GHG A1-3 vA2 EPD line value  |GWP-GHG_A1-3_vA2 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilograms  (unitCode="KGM") according to EN15804 amendment version A2
+|GWP GHG A1-3 vA3 EPD line value  |GWP-GHG_A1-3_vA3 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilograms  (unitCode="KGM") according to EN15804 amendment version A3
 |====
 
 Example:
