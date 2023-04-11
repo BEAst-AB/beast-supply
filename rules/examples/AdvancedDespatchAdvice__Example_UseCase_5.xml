@@ -16,11 +16,6 @@
 	<cbc:IssueDate>2020-12-21</cbc:IssueDate>
 	<cbc:IssueTime>13:14:34</cbc:IssueTime>
 	<cbc:DespatchAdviceTypeCode>2</cbc:DespatchAdviceTypeCode>
-	<cbc:Note>Some note about the delivery</cbc:Note>
-	
-	<cac:OrderReference>
-		<cbc:ID>AEG012345</cbc:ID>
-	</cac:OrderReference>
 
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>P-12345</cbc:ID>
@@ -30,7 +25,10 @@
 		<cbc:ID>P-12345:7669:12125</cbc:ID>
 		<cbc:DocumentType>AccountingCost</cbc:DocumentType>
 	</cac:AdditionalDocumentReference>
-
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>SEK</cbc:ID>
+		<cbc:DocumentType>CurrencyCode</cbc:DocumentType>
+	</cac:AdditionalDocumentReference>
 
 	<cac:DespatchSupplierParty>
 		<cac:Party>
@@ -216,7 +214,9 @@
 		</cac:ShipmentStage>
 		
 		<cac:Delivery>
-
+			<cbc:ActualDeliveryDate>2020-12-21</cbc:ActualDeliveryDate>
+			<cbc:ActualDeliveryTime>07:15:00</cbc:ActualDeliveryTime>
+			
 			<cac:DeliveryLocation>
 				<cbc:ID>NA</cbc:ID>
 				<cac:Address>
@@ -227,11 +227,6 @@
 					</cac:LocationCoordinate>
 				</cac:Address>
 			</cac:DeliveryLocation>
-			
-			<cac:EstimatedDeliveryPeriod>
-				<cbc:StartDate>2020-12-21</cbc:StartDate>
-				<cbc:StartTime>07:15:00</cbc:StartTime>
-			</cac:EstimatedDeliveryPeriod>
 
 			<cac:Despatch>
 				<cbc:ActualDespatchDate>2020-12-21</cbc:ActualDespatchDate>
@@ -255,6 +250,9 @@
 		
 		<cac:OrderLineReference>
 			<cbc:LineID>10</cbc:LineID>
+			<cac:OrderReference>
+				<cbc:ID>AEG012345</cbc:ID>
+			</cac:OrderReference>
 		</cac:OrderLineReference>
 		
 		<cac:Item>

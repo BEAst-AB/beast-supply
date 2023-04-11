@@ -15,11 +15,7 @@
 	<cbc:ID>43413589</cbc:ID>
 	<cbc:IssueDate>2020-12-21</cbc:IssueDate>
 	<cbc:IssueTime>13:14:34</cbc:IssueTime>
-	<cbc:Note>Some note about the delivery</cbc:Note>
-	
-	<cac:OrderReference>
-		<cbc:ID>AEG012345</cbc:ID>
-	</cac:OrderReference>
+	<cbc:DespatchAdviceTypeCode>2</cbc:DespatchAdviceTypeCode>
 
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>P-12345</cbc:ID>
@@ -29,7 +25,10 @@
 		<cbc:ID>P-12345:7669:12125</cbc:ID>
 		<cbc:DocumentType>AccountingCost</cbc:DocumentType>
 	</cac:AdditionalDocumentReference>
-
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>SEK</cbc:ID>
+		<cbc:DocumentType>CurrencyCode</cbc:DocumentType>
+	</cac:AdditionalDocumentReference>
 
 	<cac:DespatchSupplierParty>
 		<cac:Party>
@@ -143,6 +142,9 @@
 		
 		<cac:OrderLineReference>
 			<cbc:LineID>10</cbc:LineID>
+			<cac:OrderReference>
+				<cbc:ID>AEG012345</cbc:ID>
+			</cac:OrderReference>
 		</cac:OrderLineReference>
 
 		<cac:DocumentReference>
@@ -165,6 +167,30 @@
 				<cbc:NameCode listID="IPNC">Price</cbc:NameCode>
 				<cbc:Value>123.00</cbc:Value>
 				<cbc:ValueQualifier>CON</cbc:ValueQualifier>
+			</cac:AdditionalItemProperty>
+			
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Dataset URL</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDDataSetURL</cbc:NameCode>
+				<cbc:Value>https://epdnorway.lca-data.com/datasetdetail/process.xhtml?uuid=165f8554-00cd-43ad-aeb7-ba769854554a&amp;version=00.01.000&amp;stock=PUBLIC</cbc:Value>
+			</cac:AdditionalItemProperty>
+			
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD HR URL</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDPDFURL</cbc:NameCode>
+				<cbc:Value>https://portal.environdec.com/api/api/v1/EPDLibrary/Files/07e17ba1-cf00-48e5-9cf1-d8bd90a468f8/Data</cbc:Value>
+			</cac:AdditionalItemProperty>
+			
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Boverket Resource ID</cbc:Name>
+				<cbc:NameCode listID="IPNC">ResourceID</cbc:NameCode>
+				<cbc:Value>6000000020</cbc:Value>
+			</cac:AdditionalItemProperty>
+			
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Dataset ID</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDDataSetID</cbc:NameCode>
+				<cbc:Value>165f8554-00cd-43ad-aeb7-ba769854554a</cbc:Value>
 			</cac:AdditionalItemProperty>
 
 		</cac:Item>

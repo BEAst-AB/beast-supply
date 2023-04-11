@@ -230,9 +230,6 @@
 					<cbc:StreetName>Hammarbyvägen 3</cbc:StreetName>
 					<cbc:CityName>Stockholm</cbc:CityName>
 					<cbc:PostalZone>123 45</cbc:PostalZone>
-					<cac:AddressLine>
-						<cbc:Line>3:e våningen, Rum 5</cbc:Line>
-					</cac:AddressLine>
 					<cac:Country>
 						<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 					</cac:Country>
@@ -279,16 +276,10 @@
 				<cbc:AttributeID>AAB</cbc:AttributeID>
 				<cbc:Measure unitCode="KGM">1230</cbc:Measure>
 			</cac:MeasurementDimension>
-			<cac:MeasurementDimension>
-				<cbc:AttributeID>AAW</cbc:AttributeID>
-				<cbc:Measure unitCode="MTQ">1.55</cbc:Measure>
-			</cac:MeasurementDimension>
 
 			<cac:Package>
 				<cbc:ID>3453</cbc:ID>
-				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
-				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 
 				<cac:GoodsItem>
 					<cbc:ID>1</cbc:ID>
@@ -298,9 +289,7 @@
 
 			<cac:Package>
 				<cbc:ID>3454</cbc:ID>
-				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
-				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 
 				<cac:GoodsItem>
 					<cbc:ID>1</cbc:ID>
@@ -310,9 +299,7 @@
 
 			<cac:Package>
 				<cbc:ID>3455</cbc:ID>
-				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
-				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 
 				<cac:GoodsItem>
 					<cbc:ID>1</cbc:ID>
@@ -322,9 +309,7 @@
 
 			<cac:Package>
 				<cbc:ID>3456</cbc:ID>
-				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
-				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 
 				<cac:GoodsItem>
 					<cbc:ID>1</cbc:ID>
@@ -344,16 +329,10 @@
 				<cbc:AttributeID>AAB</cbc:AttributeID>
 				<cbc:Measure unitCode="KGM">1230</cbc:Measure>
 			</cac:MeasurementDimension>
-			<cac:MeasurementDimension>
-				<cbc:AttributeID>AAW</cbc:AttributeID>
-				<cbc:Measure unitCode="MTQ">1.55</cbc:Measure>
-			</cac:MeasurementDimension>
 
 			<cac:Package>
 				<cbc:ID>3457</cbc:ID>
-				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
-				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 
 				<cac:GoodsItem>
 					<cbc:ID>1</cbc:ID>
@@ -363,9 +342,7 @@
 
 			<cac:Package>
 				<cbc:ID>3458</cbc:ID>
-				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
-				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 
 				<cac:GoodsItem>
 					<cbc:ID>1</cbc:ID>
@@ -375,9 +352,7 @@
 
 			<cac:Package>
 				<cbc:ID>3459</cbc:ID>
-				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
-				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 
 				<cac:GoodsItem>
 					<cbc:ID>1</cbc:ID>
@@ -387,9 +362,7 @@
 
 			<cac:Package>
 				<cbc:ID>3460</cbc:ID>
-				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
-				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 
 				<cac:GoodsItem>
 					<cbc:ID>1</cbc:ID>
@@ -441,6 +414,13 @@
 				<cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
 				<cbc:Value>6000000020</cbc:Value>
 			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>NA</cbc:Name>
+				<cbc:NameCode listID="IPNC">Price</cbc:NameCode>
+				<cbc:Value>975.00</cbc:Value>
+				<cbc:ValueQualifier>CON</cbc:ValueQualifier> 
+			</cac:AdditionalItemProperty>
+
 			<cac:Dimension>
 				<cbc:AttributeID>AAF</cbc:AttributeID> 
 				<cbc:Measure unitCode="KGM">4.0</cbc:Measure>

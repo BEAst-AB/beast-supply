@@ -16,7 +16,6 @@
 	<cbc:IssueDate>2020-12-21</cbc:IssueDate>
 	<cbc:IssueTime>13:14:34</cbc:IssueTime>
 	<cbc:DespatchAdviceTypeCode>2</cbc:DespatchAdviceTypeCode>
-	<cbc:Note>Some note about the delivery</cbc:Note>
 	
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>P-12345</cbc:ID>
@@ -132,7 +131,10 @@
 		</cac:ShipmentStage>
 		
 		<cac:Delivery>
-
+			
+			<cbc:ActualDeliveryDate>2020-12-21</cbc:ActualDeliveryDate>
+			<cbc:ActualDeliveryTime>07:15:00</cbc:ActualDeliveryTime>
+			
 			<cac:DeliveryLocation>
 				<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 				<cbc:Name>Recycling location 123</cbc:Name>
@@ -150,11 +152,6 @@
 					</cac:LocationCoordinate>
 				</cac:Address>
 			</cac:DeliveryLocation>
-
-			<cac:EstimatedDeliveryPeriod>
-				<cbc:StartDate>2020-12-21</cbc:StartDate>
-				<cbc:StartTime>07:15:00</cbc:StartTime>
-			</cac:EstimatedDeliveryPeriod>
 			
 			<cac:Despatch>
 				<cbc:ActualDespatchDate>2020-12-21</cbc:ActualDespatchDate>
