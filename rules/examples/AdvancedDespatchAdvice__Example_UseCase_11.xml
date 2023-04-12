@@ -16,7 +16,6 @@
 	<cbc:IssueDate>2020-12-21</cbc:IssueDate>
 	<cbc:IssueTime>13:14:34</cbc:IssueTime>
 	<cbc:DespatchAdviceTypeCode>1</cbc:DespatchAdviceTypeCode>
-	<cbc:Note>Some note about the delivery</cbc:Note>
 	
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>P-12345</cbc:ID>
@@ -122,6 +121,9 @@
 	<cac:Shipment>
 		<cbc:ID>2343127641</cbc:ID>
 		
+		<cbc:GrossWeightMeasure unitCode="KGM">2460</cbc:GrossWeightMeasure>
+		<cbc:GrossVolumeMeasure unitCode="MTQ">3.10</cbc:GrossVolumeMeasure>
+
 		<cac:Consignment>
 			<cbc:ID>NA</cbc:ID>
 			
@@ -184,7 +186,7 @@
 				
 				<cac:EnvironmentalEmission>
 					<cbc:EnvironmentalEmissionTypeCode>CO2</cbc:EnvironmentalEmissionTypeCode>
-					<cbc:ValueMeasure unitCode="MGM">2.8</cbc:ValueMeasure>
+					<cbc:ValueMeasure unitCode="KGM">2.8</cbc:ValueMeasure>
 				</cac:EnvironmentalEmission>
 				
 				<cac:EnvironmentalEmission>
@@ -267,6 +269,122 @@
 			</cac:DeliveryTerms>
 		</cac:Delivery>
 		
+		<cac:TransportHandlingUnit>
+			<cbc:ID>11111222222222</cbc:ID>
+			<cbc:TransportHandlingUnitTypeCode>AG</cbc:TransportHandlingUnitTypeCode>
+
+			<cbc:ShippingMarks>Text</cbc:ShippingMarks>
+
+			<cac:MeasurementDimension>
+				<cbc:AttributeID>AAB</cbc:AttributeID>
+				<cbc:Measure unitCode="KGM">1230</cbc:Measure>
+			</cac:MeasurementDimension>
+
+			<cac:Package>
+				<cbc:ID>3453</cbc:ID>
+				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
+
+				<cac:GoodsItem>
+					<cbc:ID>1</cbc:ID>
+					<cbc:Quantity unitCode="EA">72</cbc:Quantity>
+				</cac:GoodsItem>
+			</cac:Package>
+
+			<cac:Package>
+				<cbc:ID>3454</cbc:ID>
+				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
+
+				<cac:GoodsItem>
+					<cbc:ID>1</cbc:ID>
+					<cbc:Quantity unitCode="EA">72</cbc:Quantity>
+				</cac:GoodsItem>
+			</cac:Package>
+
+			<cac:Package>
+				<cbc:ID>3455</cbc:ID>
+				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
+
+				<cac:GoodsItem>
+					<cbc:ID>1</cbc:ID>
+					<cbc:Quantity unitCode="EA">72</cbc:Quantity>
+				</cac:GoodsItem>
+			</cac:Package>
+
+			<cac:Package>
+				<cbc:ID>3456</cbc:ID>
+				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
+
+				<cac:GoodsItem>
+					<cbc:ID>1</cbc:ID>
+					<cbc:Quantity unitCode="EA">72</cbc:Quantity>
+				</cac:GoodsItem>
+			</cac:Package>
+
+		</cac:TransportHandlingUnit>
+
+		<cac:TransportHandlingUnit>
+			<cbc:ID>111113333333</cbc:ID>
+			<cbc:TransportHandlingUnitTypeCode>AG</cbc:TransportHandlingUnitTypeCode>
+
+			<cbc:ShippingMarks>Text</cbc:ShippingMarks>
+
+			<cac:MeasurementDimension>
+				<cbc:AttributeID>AAB</cbc:AttributeID>
+				<cbc:Measure unitCode="KGM">1230</cbc:Measure>
+			</cac:MeasurementDimension>
+			<cac:MeasurementDimension>
+				<cbc:AttributeID>AAW</cbc:AttributeID>
+				<cbc:Measure unitCode="MTQ">1.55</cbc:Measure>
+			</cac:MeasurementDimension>
+
+			<cac:Package>
+				<cbc:ID>3457</cbc:ID>
+				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
+				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
+				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
+
+				<cac:GoodsItem>
+					<cbc:ID>1</cbc:ID>
+					<cbc:Quantity unitCode="EA">72</cbc:Quantity>
+				</cac:GoodsItem>
+			</cac:Package>
+
+			<cac:Package>
+				<cbc:ID>3458</cbc:ID>
+				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
+				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
+				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
+
+				<cac:GoodsItem>
+					<cbc:ID>1</cbc:ID>
+					<cbc:Quantity unitCode="EA">72</cbc:Quantity>
+				</cac:GoodsItem>
+			</cac:Package>
+
+			<cac:Package>
+				<cbc:ID>3459</cbc:ID>
+				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
+				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
+				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
+
+				<cac:GoodsItem>
+					<cbc:ID>1</cbc:ID>
+					<cbc:Quantity unitCode="EA">72</cbc:Quantity>
+				</cac:GoodsItem>
+			</cac:Package>
+
+			<cac:Package>
+				<cbc:ID>3460</cbc:ID>
+				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
+				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
+				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
+
+				<cac:GoodsItem>
+					<cbc:ID>1</cbc:ID>
+					<cbc:Quantity unitCode="EA">72</cbc:Quantity>
+				</cac:GoodsItem>
+			</cac:Package>
+		</cac:TransportHandlingUnit>
 	</cac:Shipment>
 	
 	<cac:DespatchLine>
@@ -287,7 +405,7 @@
 			</cac:SellersItemIdentification>
 
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="2021-12-01" name="SA">182200000</cbc:ItemClassificationCode>
+				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="2022-05-27" name="SA">182200000</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 
 			<cac:AdditionalItemProperty>

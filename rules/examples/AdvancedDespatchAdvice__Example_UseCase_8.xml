@@ -198,7 +198,7 @@
 			</cac:SellersItemIdentification>
 
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="2022-05-27" name="AI">0301010</cbc:ItemClassificationCode>
+				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="4.5" name="AI">0301010</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 
 			<cac:AdditionalItemProperty>
@@ -228,7 +228,12 @@
 				<cbc:NameCode listID="IPNC">ResourceID</cbc:NameCode>
 				<cbc:Value>6000000020</cbc:Value>
 			</cac:AdditionalItemProperty>
-
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Treatment Code</cbc:Name>
+				<cbc:NameCode listID="IPNC">TreatmentCode</cbc:NameCode>
+				<cbc:Value>1234567890</cbc:Value>
+			</cac:AdditionalItemProperty>
+			
 		</cac:Item>
 	</cac:DespatchLine>
 </DespatchAdvice>
