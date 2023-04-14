@@ -16,11 +16,6 @@
 	<cbc:IssueDate>2020-12-21</cbc:IssueDate>
 	<cbc:IssueTime>13:14:34</cbc:IssueTime>
 	<cbc:DespatchAdviceTypeCode>2</cbc:DespatchAdviceTypeCode>
-	<cbc:Note>Some note about the delivery</cbc:Note>
-	
-	<cac:OrderReference>
-		<cbc:ID>AEG012345</cbc:ID>
-	</cac:OrderReference>
 
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>P-12345</cbc:ID>
@@ -185,7 +180,7 @@
 				
 				<cac:EnvironmentalEmission>
 					<cbc:EnvironmentalEmissionTypeCode>CO2</cbc:EnvironmentalEmissionTypeCode>
-					<cbc:ValueMeasure unitCode="MGM">2.8</cbc:ValueMeasure>
+					<cbc:ValueMeasure unitCode="KGM">2.8</cbc:ValueMeasure>
 				</cac:EnvironmentalEmission>
 				
 				<cac:EnvironmentalEmission>
@@ -216,7 +211,10 @@
 		</cac:ShipmentStage>
 		
 		<cac:Delivery>
-	
+			
+			<cbc:ActualDeliveryDate>2020-12-21</cbc:ActualDeliveryDate>
+			<cbc:ActualDeliveryTime>10:20:00</cbc:ActualDeliveryTime>
+			
 			<cac:DeliveryLocation>
 				<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 				<cbc:Name>Skanska Sverige AB</cbc:Name>
@@ -230,9 +228,10 @@
 				</cac:Address>
 			</cac:DeliveryLocation>
 
-			<cac:EstimatedDeliveryPeriod>
-				<cbc:StartDate>2020-12-21</cbc:StartDate>
-			</cac:EstimatedDeliveryPeriod>
+			<cac:Despatch>
+				<cbc:ActualDespatchDate>2020-12-21</cbc:ActualDespatchDate>
+				<cbc:ActualDespatchTime>02:00:00</cbc:ActualDespatchTime>
+			</cac:Despatch>
 			
 		</cac:Delivery>
 	</cac:Shipment>
@@ -243,6 +242,9 @@
 		
 		<cac:OrderLineReference>
 			<cbc:LineID>10</cbc:LineID>
+			<cac:OrderReference>
+				<cbc:ID>AEG012345</cbc:ID>
+			</cac:OrderReference>
 		</cac:OrderLineReference>
 		
 		<cac:Item>
@@ -251,6 +253,10 @@
 				<cbc:ID>212611</cbc:ID>
 			</cac:SellersItemIdentification>
 			
+			<cac:CommodityClassification>
+				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="2022-05-27" name="SA">182200000</cbc:ItemClassificationCode>
+			</cac:CommodityClassification>
+
 			<cac:AdditionalItemProperty>
 				<cbc:Name>NA</cbc:Name>
 				<cbc:NameCode listID="IPNC">Price</cbc:NameCode>

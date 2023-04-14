@@ -16,7 +16,6 @@
 	<cbc:IssueDate>2020-12-21</cbc:IssueDate>
 	<cbc:IssueTime>13:14:34</cbc:IssueTime>
 	<cbc:DespatchAdviceTypeCode>2</cbc:DespatchAdviceTypeCode>
-	<cbc:Note>Some note about the delivery</cbc:Note>
 
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>P-12345</cbc:ID>
@@ -183,7 +182,7 @@
 
 				<cac:EnvironmentalEmission>
 					<cbc:EnvironmentalEmissionTypeCode>CO2</cbc:EnvironmentalEmissionTypeCode>
-					<cbc:ValueMeasure unitCode="MGM">2.8</cbc:ValueMeasure>
+					<cbc:ValueMeasure unitCode="KGM">2.8</cbc:ValueMeasure>
 				</cac:EnvironmentalEmission>
 
 				<cac:EnvironmentalEmission>
@@ -214,6 +213,10 @@
 		</cac:ShipmentStage>
 		
 		<cac:Delivery>
+			
+			<cbc:ActualDeliveryDate>2020-12-21</cbc:ActualDeliveryDate>
+			<cbc:ActualDeliveryTime>07:15:00</cbc:ActualDeliveryTime>
+
 			<cac:DeliveryLocation>
 				<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 				<cbc:Name>Recycling location 123</cbc:Name>
@@ -231,11 +234,6 @@
 					</cac:LocationCoordinate>
 				</cac:Address>
 			</cac:DeliveryLocation>
-
-			<cac:EstimatedDeliveryPeriod>
-				<cbc:StartDate>2020-12-21</cbc:StartDate>
-				<cbc:StartTime>07:15:00</cbc:StartTime>
-			</cac:EstimatedDeliveryPeriod>
 			
 			<cac:Despatch>
 				<cbc:ActualDespatchDate>2020-12-21</cbc:ActualDespatchDate>
@@ -276,23 +274,23 @@
 			</cac:SellersItemIdentification>
 
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="2021-12-01" name="SBMI">KO2001220000</cbc:ItemClassificationCode>
+				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="3.0.2" name="SBMI">KO2001220000</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 			
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="2021-12-01" name="SA">1000000107</cbc:ItemClassificationCode>
+				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="2022-05-27" name="SA">1000000107</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="2021-12-01" name="ME">1223010</cbc:ItemClassificationCode>
+				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="4.5" name="ME">1223010</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="2021-12-01" name="AI">0501020</cbc:ItemClassificationCode>
+				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="4.5" name="AI">0501020</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="2021-12-01" name="CoClass">0501020</cbc:ItemClassificationCode>
+				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="1.0.0" name="CoClass">0501020</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 			
 			<cac:AdditionalItemProperty>

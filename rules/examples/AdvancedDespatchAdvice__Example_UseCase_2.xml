@@ -15,15 +15,19 @@
 	<cbc:ID>43413589</cbc:ID>
 	<cbc:IssueDate>2020-12-21</cbc:IssueDate>
 	<cbc:IssueTime>13:14:34</cbc:IssueTime>
-	<cbc:Note>Some note about the delivery</cbc:Note>
-	
-	<cac:OrderReference>
-		<cbc:ID>AEG012345</cbc:ID>
-	</cac:OrderReference>
+	<cbc:DespatchAdviceTypeCode>1</cbc:DespatchAdviceTypeCode>
 
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>P-12345</cbc:ID>
 		<cbc:DocumentType>ProjectReference</cbc:DocumentType>
+	</cac:AdditionalDocumentReference>
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>P-12345:7669:12125</cbc:ID>
+		<cbc:DocumentType>AccountingCost</cbc:DocumentType> 
+	</cac:AdditionalDocumentReference>
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>SEK</cbc:ID>
+		<cbc:DocumentType>CurrencyCode</cbc:DocumentType> 
 	</cac:AdditionalDocumentReference>
 
 
@@ -115,29 +119,6 @@
 		</cac:Party>
 	</cac:SellerSupplierParty>
 
-	<cac:OriginatorCustomerParty>
-		<cac:Party>
-			<cac:PartyIdentification>
-				<cbc:ID schemeID="0007">5560339086</cbc:ID>
-			</cac:PartyIdentification>
-			<cac:PartyName>
-				<cbc:Name>Skanska Sverige AB</cbc:Name>
-			</cac:PartyName>
-			<cac:PostalAddress>
-				<cbc:StreetName>Hammarbyvägen 3</cbc:StreetName>
-				<cbc:CityName>Stockholm</cbc:CityName>
-				<cbc:PostalZone>123 45</cbc:PostalZone>
-				<cac:AddressLine>
-					<cbc:Line>3rd Floor, Room 5</cbc:Line>
-				</cac:AddressLine>
-				<cac:Country>
-					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
-				</cac:Country>
-			</cac:PostalAddress>
-		</cac:Party>
-	</cac:OriginatorCustomerParty>
-
-
 	<cac:Shipment>
 		<cbc:ID>1212343445</cbc:ID>
 		<cbc:GrossWeightMeasure unitCode="KGM">2460</cbc:GrossWeightMeasure>
@@ -152,18 +133,86 @@
 				<cac:PartyName>
 					<cbc:Name>DHL</cbc:Name>
 				</cac:PartyName>
-				<cac:Person>
-					<cac:IdentityDocumentReference>
-						<cbc:ID>1234</cbc:ID>
-						<cbc:DocumentType>Inv</cbc:DocumentType>
-					</cac:IdentityDocumentReference>
-				</cac:Person>
-		</cac:CarrierParty>
-		</cac:Consignment>
+			</cac:CarrierParty>
 		
+			<cac:OriginalDespatchTransportationService>
+				<cbc:TransportServiceCode>FuelReport</cbc:TransportServiceCode>
+				<cac:TransportEquipment>
+					<cbc:TransportEquipmentTypeCode>Diesel</cbc:TransportEquipmentTypeCode>
+					<cbc:Description>ACP Diesel 50 max 7% RME</cbc:Description>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>FuelConsumption</cbc:AttributeID>
+						<cbc:Measure unitCode="LTR">15</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>EnergyContent</cbc:AttributeID>
+						<cbc:Measure unitCode="E14">32</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>ConversionFactor</cbc:AttributeID>
+						<cbc:Measure unitCode="EA">27</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>DrivingDistance</cbc:AttributeID>
+						<cbc:Measure unitCode="KMT">86</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>DrivingTime</cbc:AttributeID>
+						<cbc:Measure unitCode="HUR">7.3</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>RenewableFuel</cbc:AttributeID>
+						<cbc:Measure unitCode="P1">100.00</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>FuelMeasurementMethod</cbc:AttributeID>
+						<cbc:Description>AutomaticMeasurement</cbc:Description>	
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>EngineType</cbc:AttributeID>
+						<cbc:Description>EURO4</cbc:Description> 
+					</cac:MeasurementDimension>
+					<cac:ProviderParty>
+						<cac:PartyIdentification>
+							<cbc:ID schemeID="0007">5560726977</cbc:ID>
+						</cac:PartyIdentification>
+						<cac:PartyName>
+							<cbc:Name>Preem AB</cbc:Name> 
+						</cac:PartyName> 
+					</cac:ProviderParty>
+					<cac:GoodsItem>
+						<cac:Item>
+							<cac:SellersItemIdentification>
+								<cbc:ID>123</cbc:ID> 
+							</cac:SellersItemIdentification>
+							<cac:StandardItemIdentification>
+								<cbc:ID schemeID="0160">1234567891234</cbc:ID>
+							</cac:StandardItemIdentification> 
+						</cac:Item> 
+					</cac:GoodsItem> 
+				</cac:TransportEquipment>
+				
+				<cac:EnvironmentalEmission>
+					<cbc:EnvironmentalEmissionTypeCode>CO2</cbc:EnvironmentalEmissionTypeCode>
+					<cbc:ValueMeasure unitCode="KGM">2.8</cbc:ValueMeasure>
+				</cac:EnvironmentalEmission>
+				<cac:EnvironmentalEmission>
+					<cbc:EnvironmentalEmissionTypeCode>HC</cbc:EnvironmentalEmissionTypeCode>
+					<cbc:ValueMeasure unitCode="KGM">0.6</cbc:ValueMeasure>
+				</cac:EnvironmentalEmission>
+				<cac:EnvironmentalEmission>
+					<cbc:EnvironmentalEmissionTypeCode>NOX</cbc:EnvironmentalEmissionTypeCode>
+					<cbc:ValueMeasure unitCode="KGM">6</cbc:ValueMeasure>
+				</cac:EnvironmentalEmission>
+				<cac:EnvironmentalEmission>
+					<cbc:EnvironmentalEmissionTypeCode>PM</cbc:EnvironmentalEmissionTypeCode>
+					<cbc:ValueMeasure unitCode="GRM">0.07</cbc:ValueMeasure>
+				</cac:EnvironmentalEmission> 
+			</cac:OriginalDespatchTransportationService>
+		</cac:Consignment>
+			
 		<cac:ShipmentStage>
 			<cbc:TransportModeCode>3</cbc:TransportModeCode>
-			<cbc:TransportMeansTypeCode>320</cbc:TransportMeansTypeCode>
 			<cac:TransportMeans>
 				<cac:RoadTransport>
 					<cbc:LicensePlateID>ABC123</cbc:LicensePlateID>
@@ -173,7 +222,7 @@
 
 
 		<cac:Delivery>
-			<cbc:TrackingID>435465</cbc:TrackingID>
+			
 			<cac:DeliveryLocation>
 				<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 				<cbc:Name>Skanska Sverige AB</cbc:Name>
@@ -181,9 +230,6 @@
 					<cbc:StreetName>Hammarbyvägen 3</cbc:StreetName>
 					<cbc:CityName>Stockholm</cbc:CityName>
 					<cbc:PostalZone>123 45</cbc:PostalZone>
-					<cac:AddressLine>
-						<cbc:Line>3:e våningen, Rum 5</cbc:Line>
-					</cac:AddressLine>
 					<cac:Country>
 						<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 					</cac:Country>
@@ -230,16 +276,10 @@
 				<cbc:AttributeID>AAB</cbc:AttributeID>
 				<cbc:Measure unitCode="KGM">1230</cbc:Measure>
 			</cac:MeasurementDimension>
-			<cac:MeasurementDimension>
-				<cbc:AttributeID>AAW</cbc:AttributeID>
-				<cbc:Measure unitCode="MTQ">1.55</cbc:Measure>
-			</cac:MeasurementDimension>
 
 			<cac:Package>
 				<cbc:ID>3453</cbc:ID>
-				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
-				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 
 				<cac:GoodsItem>
 					<cbc:ID>1</cbc:ID>
@@ -249,9 +289,7 @@
 
 			<cac:Package>
 				<cbc:ID>3454</cbc:ID>
-				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
-				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 
 				<cac:GoodsItem>
 					<cbc:ID>1</cbc:ID>
@@ -261,9 +299,7 @@
 
 			<cac:Package>
 				<cbc:ID>3455</cbc:ID>
-				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
-				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 
 				<cac:GoodsItem>
 					<cbc:ID>1</cbc:ID>
@@ -273,9 +309,7 @@
 
 			<cac:Package>
 				<cbc:ID>3456</cbc:ID>
-				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
-				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 
 				<cac:GoodsItem>
 					<cbc:ID>1</cbc:ID>
@@ -295,16 +329,10 @@
 				<cbc:AttributeID>AAB</cbc:AttributeID>
 				<cbc:Measure unitCode="KGM">1230</cbc:Measure>
 			</cac:MeasurementDimension>
-			<cac:MeasurementDimension>
-				<cbc:AttributeID>AAW</cbc:AttributeID>
-				<cbc:Measure unitCode="MTQ">1.55</cbc:Measure>
-			</cac:MeasurementDimension>
 
 			<cac:Package>
 				<cbc:ID>3457</cbc:ID>
-				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
-				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 
 				<cac:GoodsItem>
 					<cbc:ID>1</cbc:ID>
@@ -314,9 +342,7 @@
 
 			<cac:Package>
 				<cbc:ID>3458</cbc:ID>
-				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
-				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 
 				<cac:GoodsItem>
 					<cbc:ID>1</cbc:ID>
@@ -326,9 +352,7 @@
 
 			<cac:Package>
 				<cbc:ID>3459</cbc:ID>
-				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
-				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 
 				<cac:GoodsItem>
 					<cbc:ID>1</cbc:ID>
@@ -338,9 +362,7 @@
 
 			<cac:Package>
 				<cbc:ID>3460</cbc:ID>
-				<cbc:ReturnableMaterialIndicator>true</cbc:ReturnableMaterialIndicator>
 				<cbc:PackagingTypeCode>4H</cbc:PackagingTypeCode>
-				<cbc:PackingMaterial>Carbon box</cbc:PackingMaterial>
 
 				<cac:GoodsItem>
 					<cbc:ID>1</cbc:ID>
@@ -358,6 +380,9 @@
 		
 		<cac:OrderLineReference>
 			<cbc:LineID>10</cbc:LineID>
+			<cac:OrderReference>
+				<cbc:ID>AEG012345</cbc:ID>
+			</cac:OrderReference>
 		</cac:OrderLineReference>
 		
 		<cac:Item>
@@ -389,6 +414,13 @@
 				<cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
 				<cbc:Value>6000000020</cbc:Value>
 			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>NA</cbc:Name>
+				<cbc:NameCode listID="IPNC">Price</cbc:NameCode>
+				<cbc:Value>975.00</cbc:Value>
+				<cbc:ValueQualifier>CON</cbc:ValueQualifier> 
+			</cac:AdditionalItemProperty>
+
 			<cac:Dimension>
 				<cbc:AttributeID>AAF</cbc:AttributeID> 
 				<cbc:Measure unitCode="KGM">4.0</cbc:Measure>
