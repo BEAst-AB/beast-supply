@@ -114,10 +114,10 @@
                <Data ss:Type="String">•  cbc:CustomizationID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Specification identification</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identifies the specification of content and rules that apply to the transaction.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">urn:fdc:peppol.eu:logistics:trns:weight_statement:1</Data>
@@ -140,10 +140,10 @@
                <Data ss:Type="String">•  cbc:ProfileID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Business process type identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identifies the BII profile or business process context in which the transaction appears.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">urn:fdc:peppol.eu:logistics:bis:weight_statement:1</Data>
@@ -166,10 +166,10 @@
                <Data ss:Type="String">•  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Document identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Unique identity identifying the weight statement. An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">GOA294107</Data>
@@ -192,10 +192,10 @@
                <Data ss:Type="String">•  cbc:IssueDate</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Weight statement issue date</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The date when the weight statement is issued. Format = "YYYY-MM-DD"</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">2016-11-03</Data>
@@ -212,16 +212,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  cbc:IssueTime</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Weight statement issue time</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The time when the weight statement is issued. Format = "hh:mm:ss"</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">09:30:00</Data>
@@ -244,10 +244,10 @@
                <Data ss:Type="String">•  cbc:WeightStatementTypeCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Weight statement type code</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: 01 = Outbound delivery 02 = Inbound delivery</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">01</Data>
@@ -270,10 +270,10 @@
                <Data ss:Type="String">•  cac:SenderParty</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Sender Party</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The party sending this weight statement (e.g. Weighing Station, Shipper, Freight Forwarder, Carrier, ...).</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -296,10 +296,10 @@
                <Data ss:Type="String">•  •  cbc:EndpointID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Senders electronic address</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identifies the senders partys electronic address</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">7300010000001</Data>
@@ -322,10 +322,10 @@
                <Data ss:Type="String">•  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for electronic address</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
@@ -348,10 +348,10 @@
                <Data ss:Type="String">•  •  cac:PartyIdentification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Party Identification</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An identifier for this party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -374,10 +374,10 @@
                <Data ss:Type="String">•  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Sender party identity</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identifier of the Sender party</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">7300010000001</Data>
@@ -400,10 +400,10 @@
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for party identification</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
@@ -426,7 +426,7 @@
                <Data ss:Type="String">•  •  cac:PartyName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Party Name</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -452,7 +452,7 @@
                <Data ss:Type="String">•  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Sender name</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -478,10 +478,10 @@
                <Data ss:Type="String">•  cac:ReceiverParty</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Receiver information</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The party receiving this weight statement (e.g. Carrier, Terminal Operator, ...).</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -504,10 +504,10 @@
                <Data ss:Type="String">•  •  cbc:EndpointID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Receiver electronic address</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identifies the receivers partys electronic address</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">1251513513245</Data>
@@ -530,10 +530,10 @@
                <Data ss:Type="String">•  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for electronic address</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
@@ -556,10 +556,10 @@
                <Data ss:Type="String">•  •  cac:PartyIdentification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Party Identification</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An identifier for this party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -582,10 +582,10 @@
                <Data ss:Type="String">•  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Receiver identity</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identifier of the receiver party</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">1251513513245</Data>
@@ -608,10 +608,10 @@
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for party identification</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
@@ -634,7 +634,7 @@
                <Data ss:Type="String">•  •  cac:PartyName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Party Name</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -660,7 +660,7 @@
                <Data ss:Type="String">•  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Receiver name</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -686,10 +686,10 @@
                <Data ss:Type="String">•  cac:WeighingParty</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Weighing party information</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The party executing the weight measure (e.g. Weighing Station).</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -706,16 +706,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PartyIdentification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Party Identification</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An identifier for this party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -738,10 +738,10 @@
                <Data ss:Type="String">•  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Weighing party identity</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identifier of the Weighing party</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">5790000435951</Data>
@@ -764,10 +764,10 @@
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for party identification</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
@@ -790,7 +790,7 @@
                <Data ss:Type="String">•  •  cac:PartyName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Party Name</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -816,10 +816,10 @@
                <Data ss:Type="String">•  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Weighing party name</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The name of the weighing party</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Gravel Pit Ltd.</Data>
@@ -842,10 +842,10 @@
                <Data ss:Type="String">•  •  cac:PhysicalLocation</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Physical Location</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The physical location of this party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -862,16 +862,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Physical Location ID</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Unique ID of the site for the weighing party. If possile an ID that is issued by a authority or similar.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0114-40-019-a</Data>
@@ -888,7 +888,7 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">O</Data>
+               <Data ss:Type="String">M</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
@@ -914,16 +914,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Location name</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Physical location name</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Townsend pit</Data>
@@ -940,16 +940,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  cac:ShipperParty</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Shipper Party</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The party transporting or shipping the items.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -966,13 +966,13 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PartyIdentification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Party Identification</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -998,10 +998,10 @@
                <Data ss:Type="String">•  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Shipping party identity</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identifier of the shippping party</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">5790000435951</Data>
@@ -1024,10 +1024,10 @@
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for party identification</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
@@ -1050,7 +1050,7 @@
                <Data ss:Type="String">•  •  cac:PartyName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Party Name</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1076,10 +1076,10 @@
                <Data ss:Type="String">•  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Shipper name</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The name of the shipper</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Tonys Trucks and Transport</Data>
@@ -1102,7 +1102,7 @@
                <Data ss:Type="String">•  cac:Shipment</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Shipment information</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1128,10 +1128,10 @@
                <Data ss:Type="String">•  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Shipment identity</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Use NA if no specific shipment ID is available</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">NA</Data>
@@ -1148,16 +1148,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..n</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:GoodsItem</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Goods Item</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: A goods item included in this shipment.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1180,10 +1180,10 @@
                <Data ss:Type="String">•  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Line item identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identifies the Line Item assigned by the weighing partner, the identifier must be unique within the order</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">1</Data>
@@ -1200,16 +1200,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cac:Item</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Item</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Product information relating to a goods item</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1232,10 +1232,10 @@
                <Data ss:Type="String">•  •  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Item name</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Name of weighed item</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Sortering 0/2 mm krossat bergmaterial CE-märkt enligt system 2+ för användning till asfalt.</Data>
@@ -1252,13 +1252,13 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cac:BuyersItemIdentification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Buyers item identification</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1284,10 +1284,10 @@
                <Data ss:Type="String">•  •  •  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Buyers item identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An identifier, assigned by the buyer, for the item. Associates the item with its identification according to the buyers system.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">KO2001030300</Data>
@@ -1304,13 +1304,13 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cac:SellersItemIdentification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Sellers item identification</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1336,10 +1336,10 @@
                <Data ss:Type="String">•  •  •  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Sellers item identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An identifier, assigned by the seller, for the item. Associates the item with its identification according to the sellers system.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">17589683</Data>
@@ -1356,13 +1356,13 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cac:StandardItemIdentification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Standard item identification</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1388,10 +1388,10 @@
                <Data ss:Type="String">•  •  •  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Item standard identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Global Trade Item Number (GTIN) or other standardized identification. Associates the item with its identification according to a standard system.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">1234567891234</Data>
@@ -1414,10 +1414,10 @@
                <Data ss:Type="String">•  •  •  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme identifier of the Item standard identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0160</Data>
@@ -1434,16 +1434,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..n</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cac:CommodityClassification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Commodity classification</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: To classify when an item number is not sufficient.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1466,10 +1466,10 @@
                <Data ss:Type="String">•  •  •  •  •  cbc:ItemClassificationCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Item classification code</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">KO2012140200</Data>
@@ -1492,10 +1492,10 @@
                <Data ss:Type="String">•  •  •  •  •  •  @listID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Item classification identifier identification scheme identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme identifier of the Item classification identifier.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">ZZZ</Data>
@@ -1512,16 +1512,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">O</Data>
+               <Data ss:Type="String">M</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  •  •  @listVersionID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Item classification identifier version identification scheme identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme version identifier of the Item classification identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">4.0</Data>
@@ -1538,16 +1538,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">O</Data>
+               <Data ss:Type="String">M</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  •  •  @name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Clear text name equivalent of classification code</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The textual equivalent of the code value</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">SBMI</Data>
@@ -1564,16 +1564,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..n</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cac:MeasurementDimension</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Measurement Dimension</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Used to specify weight and/or volume of the Goods Item.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1596,10 +1596,10 @@
                <Data ss:Type="String">•  •  •  •  cbc:AttributeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Attribute identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: To describe the type of measurement. Use UNCL 6313 subset.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">AAF</Data>
@@ -1622,10 +1622,10 @@
                <Data ss:Type="String">•  •  •  •  cbc:Measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Measure</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: For the measure.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">12.3</Data>
@@ -1648,10 +1648,10 @@
                <Data ss:Type="String">•  •  •  •  •  @unitCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Measure unit of measure</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The unit of measure that applies to the measure.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">TNE</Data>
