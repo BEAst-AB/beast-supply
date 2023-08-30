@@ -9,119 +9,137 @@
 	
 	<cbc:ID>99fdd451-87ba-589b-23fc-5173a0192583</cbc:ID>
 	<cbc:IssueDate>2023-02-28</cbc:IssueDate>
-	<cbc:IssueTime>23:00:00.000Z</cbc:IssueTime> 
+	<cbc:IssueTime>23:00:00.000Z</cbc:IssueTime>
+	<cbc:VersionID>2</cbc:VersionID>
+
+	<cac:ValidityPeriod>
+		<cbc:StartDate>2023-03-01</cbc:StartDate>
+		<cbc:EndDate>2023-05-31</cbc:EndDate>
+	</cac:ValidityPeriod>
+
+	<cac:ReferencedContract>
+		<cbc:ID>123456-2021</cbc:ID>
+	</cac:ReferencedContract>
+
+	<cac:RequestedCatalogueReference>
+		<cbc:ID>99fdd451-87ba-589b-23fc-5173a0192583</cbc:ID>
+		<cbc:PreviousVersionID>1</cbc:PreviousVersionID>
+	</cac:RequestedCatalogueReference>
 
 	<cac:ReceiverParty>
-		<!-- This is the Economic Operator! -->
+		<cbc:EndpointID schemeID="0007">5560125220</cbc:EndpointID>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="0007">5560125220</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<cbc:Name>Beijer Byggmaterial AB</cbc:Name>
+		</cac:PartyName>
+
+		<cac:PostalAddress>
+			<cbc:StreetName>Bällstavägen 102</cbc:StreetName>
+			<cbc:CityName>Bromma</cbc:CityName>
+			<cbc:PostalZone>168 64</cbc:PostalZone>
+			<cac:Country>
+				<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+
+		<cac:Contact>
+			<cbc:Name>Robin Olsson</cbc:Name>
+			<cbc:Telephone>075-241 32304</cbc:Telephone>
+			<cbc:ElectronicMail>info.bromma@beijerbygg.se</cbc:ElectronicMail>
+		</cac:Contact>
 	</cac:ReceiverParty>
 
 	<cac:ProviderParty>
-		<cbc:EndpointID schemeID="9958">993-12332123-06</cbc:EndpointID>
+		<cbc:EndpointID schemeID="0007">5560339086</cbc:EndpointID>
 		<cac:PartyIdentification>
-			<cbc:ID schemeID="9958">993-12332123-06</cbc:ID>
+			<cbc:ID schemeID="0007">5560339086</cbc:ID>
 		</cac:PartyIdentification>
 		<cac:PartyName>
-			<cbc:Name>UKL Contracting Authority</cbc:Name>
+			<cbc:Name>Skanska Sverige AB</cbc:Name>
 		</cac:PartyName>
+		
 		<cac:PostalAddress>
-			<cbc:StreetName>Universitätsstraße 1</cbc:StreetName>
-			<cbc:CityName>Koblenz</cbc:CityName>
-			<cbc:PostalZone>56070</cbc:PostalZone>
-			<cbc:CountrySubentity>Rheinland-Pfalz</cbc:CountrySubentity>
+			<cbc:StreetName>Warfvinges väg 25</cbc:StreetName>
+			<cbc:CityName>Stockholm</cbc:CityName>
+			<cbc:PostalZone>112 74</cbc:PostalZone>
 			<cac:Country>
-				<cbc:IdentificationCode>DE</cbc:IdentificationCode>
+				<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 			</cac:Country>
 		</cac:PostalAddress>
+		
 		<cac:Contact>
-			<cbc:Name>John Doe</cbc:Name>
-			<cbc:Telephone>+4915233322111</cbc:Telephone>
-			<cbc:ElectronicMail>jdoe@uni-koblenz.de</cbc:ElectronicMail>
+			<cbc:Name>Alexander Janving</cbc:Name>
+			<cbc:Telephone>010-448 00 004</cbc:Telephone>
+			<cbc:ElectronicMail>some.email@skanska.se</cbc:ElectronicMail>
 		</cac:Contact>
 	</cac:ProviderParty>
 
 	<cac:CatalogueRequestLine>
 		<cbc:ID>86a5b9ea-a27e-887b-9399-82d9c3482db3</cbc:ID>
 		<cac:LineValidityPeriod>
-			<cbc:StartDate>2023-01-01</cbc:StartDate>
-			<cbc:EndDate>2023-03-31</cbc:EndDate>
+			<cbc:StartDate>2023-03-01</cbc:StartDate>
+			<cbc:EndDate>2023-05-31</cbc:EndDate>
 		</cac:LineValidityPeriod>
 		
 		<cac:RequiredItemLocationQuantity>
 			<cbc:MinimumQuantity unitCode="C62">100</cbc:MinimumQuantity>
 			<cbc:MaximumQuantity unitCode="C62">100</cbc:MaximumQuantity>
-			<cbc:TradingRestrictions>
-				Quarter-yearly as per contractual agreement
-			</cbc:TradingRestrictions>
 			
 			<cac:ApplicableTerritoryAddress>
-				<cbc:StreetName>Universitätsstraße 1</cbc:StreetName>
-				<cbc:CityName>Koblenz</cbc:CityName>
-				<cbc:PostalZone>56070</cbc:PostalZone>
-				<cbc:CountrySubentity>Rheinland-Pfalz</cbc:CountrySubentity>
+				<cbc:StreetName>Hammarbyvägen 3</cbc:StreetName>
+				<cbc:CityName>Stockholm</cbc:CityName>
+				<cbc:PostalZone>123 45</cbc:PostalZone>
 				<cac:Country>
-					<cbc:IdentificationCode>DE</cbc:IdentificationCode>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:ApplicableTerritoryAddress>
 			
 			<cac:Price>
-				<cbc:PriceAmount currencyID="EUR">200</cbc:PriceAmount>
-				<cbc:PriceTypeCode>NE</cbc:PriceTypeCode>
+				<cbc:PriceAmount currencyID="SEK">NA</cbc:PriceAmount>
+				<cbc:PriceTypeCode listID="UNCL5387">CP</cbc:PriceTypeCode>
+				<cac:ValidityPeriod>
+					<cbc:StartDate>2023-04-01</cbc:StartDate>
+					<cbc:EndDate>2023-07-31</cbc:EndDate>
+				</cac:ValidityPeriod>
 			</cac:Price>
 		</cac:RequiredItemLocationQuantity>
 
 		<cac:Item>
-			<cbc:Description>SARS-CoV-2 Rapid Antigen Test for the qualitative detection of specific antigens of SARS-CoV-2 present in the human nasopharynx. This test is intended to detect specific antigens from the SARS-CoV-2 virus in individuals suspected of COVID-19.</cbc:Description>
-			<cbc:Name>SARS-CoV-2 Rapid Antigen Self-Test</cbc:Name>
+			<cbc:Description>Fönster enligt bifogad ritning och angiven specifikation. </cbc:Description>
+			<cbc:Name>Fönster enligt specifikation.</cbc:Name>
+
+			<cac:StandardItemIdentification>
+				<cbc:ID schemeID="0160">7318936539543</cbc:ID>
+			</cac:StandardItemIdentification>
 			
+			<cbc:ItemClassificationCode listID="VN">LA23-9</cbc:ItemClassificationCode>
+
+			<cac:ItemSpecificationDocumentReference>
+				<cbc:ID>Ritning_123</cbc:ID>
+				<cbc:DocumentType>PDF-ritning</cbc:DocumentType>
+				<cac:Attachment>
+					<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf">UEVQUE9MIEJJUyBQcmUgYXdhcmQgQ2F0YWxvZ3VlIGV4YW1wbGUgYXR0YWNoZW1lbnQ=</cbc:EmbeddedDocumentBinaryObject>
+				</cac:Attachment>
+			</cac:ItemSpecificationDocumentReference>
+
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="STI">LA23-9</cbc:ItemClassificationCode>
+				<cbc:ItemClassificationCode listID="DW">LA23-9</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 			
 			<cac:AdditionalItemProperty>
 				<cbc:ID>dd26c79d-a78c-8855-c269-2adf4c19c194</cbc:ID>
-				<cbc:Name>Ag-RDTs WHO Sensitivity Requirements</cbc:Name>
-				<cbc:Value>The self-test kits should guarantee ≥ 80% sensitivity among symptomatic individuals in accordance to the WHO standards.</cbc:Value>
-				<cbc:ValueQuantity  unitCode="60">80</cbc:ValueQuantity>
-				<cbc:ValueQualifier>Sensitivity</cbc:ValueQualifier>
+				<cbc:Name>Färg</cbc:Name>
+				<cbc:Value>Vit</cbc:Value>
 			</cac:AdditionalItemProperty>
 			
 			<cac:AdditionalItemProperty>
 				<cbc:ID>b1426194-436d-1414-2529-d399f20145c5</cbc:ID>
-				<cbc:Name>Ag-RDTs WHO Specifity Requirements</cbc:Name>
-				<cbc:Value>The self-test kits should guarantee ≥ 97% specifity among symptomatic individuals in accordance to the WHO standards.</cbc:Value>
-				<cbc:ValueQuantity unitCode="60">97</cbc:ValueQuantity>
-				<cbc:ValueQualifier>Specifity</cbc:ValueQualifier>
+				<cbc:Name>U-värde</cbc:Name>
+				<cbc:Value>1.0</cbc:Value>
+				<cbc:ValueQualifier>LessThan</cbc:ValueQualifier>
 			</cac:AdditionalItemProperty>
-			
-			<cac:Certificate>
-				<cbc:ID>c82d5afb-1040-c878-4575-401308559654</cbc:ID>
-				<cbc:CertificateTypeCode>
-					Enrollment in a register of commercial partnerships
-				</cbc:CertificateTypeCode>
-				<cbc:CertificateType>
-					Occupation and legal form specific certificate for certain reglemented professions.
-				</cbc:CertificateType>
-				<cbc:Remarks>Certificate</cbc:Remarks>
-				<cac:IssuerParty>
-					<cac:PartyName>
-						<cbc:Name>Competent District Court</cbc:Name>
-					</cac:PartyName>
-				</cac:IssuerParty>
-			</cac:Certificate>
-			
-			<cac:Certificate>
-				<cbc:ID>428e17c6-fc16-89c1-d2c2-38b94c4dd486</cbc:ID>
-				<cbc:CertificateTypeCode>
-					Certificate by independent bodies about quality assurance standards or systems
-				</cbc:CertificateTypeCode>
-				<cbc:CertificateType>It is not possible to generally tell if the needed certificate is free of charge or not or to specify the possible price.</cbc:CertificateType>
-				<cbc:Remarks>Certificate</cbc:Remarks>
-				<cac:IssuerParty>
-					<cac:PartyName>
-						<cbc:Name>Competent Independent Quality Assurance Body</cbc:Name>
-					</cac:PartyName>
-				</cac:IssuerParty>
-			</cac:Certificate>
 		</cac:Item>
 	</cac:CatalogueRequestLine>
 </ubl:CatalogueRequest>
