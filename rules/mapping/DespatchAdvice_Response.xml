@@ -114,10 +114,10 @@
                <Data ss:Type="String">•  cbc:CustomizationID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Specification identification</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Used by BEAst as the Order Receipt Response message. Peppol: Identifies the specification of content and rules that apply to the transaction.</Data>
+               <Data ss:Type="String">BEAst: Used by BEAst as the Order Receipt Response message. Peppol:</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">urn:fdc:peppol.eu:logistics:trns:despatch_advice_response:1</Data>
@@ -140,10 +140,10 @@
                <Data ss:Type="String">•  cbc:ProfileID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Business process type identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identifies the BII profile or business process context in which the transaction appears.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_response:1</Data>
@@ -166,10 +166,10 @@
                <Data ss:Type="String">•  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Response identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6406, Order receipt response ID. Peppol: A transaction instance must contain an identifier. The identifier enables positive referencing the transaction instance for various purposes including referencing between transactions that are part of the same process.</Data>
+               <Data ss:Type="String">BEAst: T6406, Order receipt response ID. Peppol:</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">DN12345</Data>
@@ -192,10 +192,10 @@
                <Data ss:Type="String">•  cbc:IssueDate</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Issue date </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6325, Document date time. Peppol: Document date time.</Data>
+               <Data ss:Type="String">BEAst: T6325, Document date time. Peppol:</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-08-15</Data>
@@ -212,16 +212,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  cbc:IssueTime</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Issue time </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6325, Document date time. Peppol: Document date time.</Data>
+               <Data ss:Type="String">BEAst: T6325, Document date time. Peppol:</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">12:00:00</Data>
@@ -244,10 +244,10 @@
                <Data ss:Type="String">•  cac:SenderParty</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Sender information</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The party sending an electronic message level response message back to the sending party of the business document.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -270,10 +270,10 @@
                <Data ss:Type="String">•  •  cbc:EndpointID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Sender party electronic address</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T0008, Buyer. Peppol: Identifies the sender party's electronic address</Data>
+               <Data ss:Type="String">BEAst: T0008, Buyer. Peppol:</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">7300010000001</Data>
@@ -296,10 +296,10 @@
                <Data ss:Type="String">•  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for the electronic address</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
@@ -316,13 +316,13 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PartyIdentification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Party identification </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -348,10 +348,10 @@
                <Data ss:Type="String">•  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Sender party identifier </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Consignee (T0036)</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">5790000435951</Data>
@@ -374,10 +374,10 @@
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme identifier </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for party identification</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
@@ -394,16 +394,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PartyName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Party name </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The name of the Sender Party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -426,10 +426,10 @@
                <Data ss:Type="String">•  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Name of the sender party </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The name of the sender oif the document.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Sender inc.</Data>
@@ -446,13 +446,13 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PostalAddress</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Postal address </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -478,10 +478,10 @@
                <Data ss:Type="String">•  •  •  cbc:StreetName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Address line 1 </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The main address line in a postal address usually the street name and number.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Avon Way</Data>
@@ -504,10 +504,10 @@
                <Data ss:Type="String">•  •  •  cbc:AdditionalStreetName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Address line 2 </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Big projects</Data>
@@ -530,10 +530,10 @@
                <Data ss:Type="String">•  •  •  cbc:CityName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">City </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Bridgtow</Data>
@@ -556,10 +556,10 @@
                <Data ss:Type="String">•  •  •  cbc:PostalZone</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Post code </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">ZZ99 1ZZ</Data>
@@ -582,10 +582,10 @@
                <Data ss:Type="String">•  •  •  cbc:CountrySubentity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Country subdivision </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: For specifying a region, county, state, province etc. within a country by using text.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Avon</Data>
@@ -608,7 +608,7 @@
                <Data ss:Type="String">•  •  •  cac:AddressLine</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Address Line </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -634,10 +634,10 @@
                <Data ss:Type="String">•  •  •  •  cbc:Line</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Address line 3 </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">3rd Floor, Room 5</Data>
@@ -660,7 +660,7 @@
                <Data ss:Type="String">•  •  •  cac:Country</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Country </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -686,10 +686,10 @@
                <Data ss:Type="String">•  •  •  •  cbc:IdentificationCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Country code </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">GB</Data>
@@ -706,13 +706,13 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PartyLegalEntity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Registration name </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -738,10 +738,10 @@
                <Data ss:Type="String">•  •  •  cbc:RegistrationName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Party name </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The name of the party legal entity for the sender party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">IYT Corporation</Data>
@@ -758,16 +758,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cbc:CompanyID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Sender customers parties legal registration name </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The official name of the party as registered with the relevant fiscal authority.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">GB523859989</Data>
@@ -790,10 +790,10 @@
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme identifier </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme identifier of the despatch customer legal registration identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0089</Data>
@@ -810,13 +810,13 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cac:RegistrationAddress</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Legal address </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -836,16 +836,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cbc:CityName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">City name </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The name of the city.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Bridgtown</Data>
@@ -868,10 +868,10 @@
                <Data ss:Type="String">•  •  •  •  cac:Country</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contry </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The residens country for the delivery customer party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -894,7 +894,7 @@
                <Data ss:Type="String">•  •  •  •  •  cbc:IdentificationCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contry code </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -914,16 +914,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:Contact</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contact person name </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The contact of the sender party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -940,16 +940,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contact name </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T5012, Name of Contact. Peppol: The contact name.</Data>
+               <Data ss:Type="String">BEAst: T5012, Name of Contact. Peppol:</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Mrs Bouquet</Data>
@@ -966,16 +966,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cbc:Telephone</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contact telephone number </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T5010, Telephone no to Contact. Peppol: The phone number of the contact.</Data>
+               <Data ss:Type="String">BEAst: T5010, Telephone no to Contact. Peppol:</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0158 1233714</Data>
@@ -992,16 +992,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cbc:ElectronicMail</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contact email address </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T5011, Mail address to Contact. Peppol: The electronic mail of the contact.</Data>
+               <Data ss:Type="String">BEAst: T5011, Mail address to Contact. Peppol:</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">bouquet@fpconsortial.co.uk</Data>
@@ -1024,10 +1024,10 @@
                <Data ss:Type="String">•  cac:ReceiverParty</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Receiver information</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The party, an electronic message level response was addressed to, and who is supposed to process the message level response. This is the same party as the sender of the business document.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1050,10 +1050,10 @@
                <Data ss:Type="String">•  •  cbc:EndpointID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Reciever party electronic address</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T0009, Supplier. Peppol: Identifies the receiver party's electronic address</Data>
+               <Data ss:Type="String">BEAst: T0009, Supplier. Peppol:</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">7315458756328</Data>
@@ -1076,10 +1076,10 @@
                <Data ss:Type="String">•  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for the electronic address</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
@@ -1096,13 +1096,13 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PartyIdentification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Party identification </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1128,10 +1128,10 @@
                <Data ss:Type="String">•  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Receiver party identifier </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identification of the Receiver (consignee)</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">7300010000001</Data>
@@ -1154,10 +1154,10 @@
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme identifier </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for party identification.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
@@ -1174,16 +1174,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PartyName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Party name </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The name of the Receiver Party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1206,10 +1206,10 @@
                <Data ss:Type="String">•  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Name of the fuel supplier </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The name of the receiver.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Receiver inc.</Data>
@@ -1226,13 +1226,13 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PostalAddress</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Postal address </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1258,10 +1258,10 @@
                <Data ss:Type="String">•  •  •  cbc:StreetName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Address line 1 </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The main address line in a postal address usually the street name and number.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Busy Street</Data>
@@ -1284,10 +1284,10 @@
                <Data ss:Type="String">•  •  •  cbc:AdditionalStreetName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Address line 2 </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">way 1</Data>
@@ -1310,10 +1310,10 @@
                <Data ss:Type="String">•  •  •  cbc:CityName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">City </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Farthing</Data>
@@ -1336,10 +1336,10 @@
                <Data ss:Type="String">•  •  •  cbc:PostalZone</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Post code </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">AA99 1BB</Data>
@@ -1362,10 +1362,10 @@
                <Data ss:Type="String">•  •  •  cbc:CountrySubentity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Country subdivision </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: For specifying a region, county, state, province etc. within a country by using text.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Heremouthshire</Data>
@@ -1388,7 +1388,7 @@
                <Data ss:Type="String">•  •  •  cac:AddressLine</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Address line </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1414,10 +1414,10 @@
                <Data ss:Type="String">•  •  •  •  cbc:Line</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Address line 3 </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">The Roundabout</Data>
@@ -1440,7 +1440,7 @@
                <Data ss:Type="String">•  •  •  cac:Country</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Country </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1466,10 +1466,10 @@
                <Data ss:Type="String">•  •  •  •  cbc:IdentificationCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Country code </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">GB</Data>
@@ -1486,13 +1486,13 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PartyLegalEntity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Party name </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1518,10 +1518,10 @@
                <Data ss:Type="String">•  •  •  cbc:RegistrationName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Receiver party registration name </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The registration name of the receiver party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Consortial</Data>
@@ -1538,16 +1538,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cbc:CompanyID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Reveiver parties legal registration ID </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The official ID of the party as registered with the relevant fiscal authority.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">GB523859989</Data>
@@ -1570,10 +1570,10 @@
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme identifier </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme identifier of the despatch customer legal registration identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0089</Data>
@@ -1590,13 +1590,13 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cac:RegistrationAddress</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Legal address </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1616,16 +1616,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cbc:CityName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">City name </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The name of the city.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Bridgtown</Data>
@@ -1648,10 +1648,10 @@
                <Data ss:Type="String">•  •  •  •  cac:Country</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contry </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The residens country for the delivery customer party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1674,7 +1674,7 @@
                <Data ss:Type="String">•  •  •  •  •  cbc:IdentificationCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contry code </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1694,13 +1694,13 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:Contact</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contact </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1726,10 +1726,10 @@
                <Data ss:Type="String">•  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contact name </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The contact name.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Mrs Bouquet</Data>
@@ -1752,10 +1752,10 @@
                <Data ss:Type="String">•  •  •  cbc:Telephone</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Telephone </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The phone number of the contact.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0158 1233714</Data>
@@ -1778,10 +1778,10 @@
                <Data ss:Type="String">•  •  •  cbc:ElectronicMail</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contact email address </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The electronic mail of the contact.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">bouquet@fpconsortial.co.uk</Data>
@@ -1804,10 +1804,10 @@
                <Data ss:Type="String">•  cac:DocumentResponse</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Document response</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The document response is used to indicate the result of business document validation. The element 'cac:DocumentResponse/cac:Response/cbc:ResponseCode' MUST contain the overall result code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1830,7 +1830,7 @@
                <Data ss:Type="String">•  •  cac:Response</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Response information</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1856,10 +1856,10 @@
                <Data ss:Type="String">•  •  •  cbc:ResponseCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Message response code</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6407, Order receipt response status. "AP" corresponds to BEAst's "OK" and "RE" to BEAst's "NOK". Peppol: A code signifying the type of response</Data>
+               <Data ss:Type="String">BEAst: T6407, Order receipt response status. "AP" corresponds to BEAst's "OK" and "RE" to BEAst's "NOK". Peppol:</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">RE</Data>
@@ -1876,16 +1876,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cbc:Description</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Response textual notes</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6036, Customer remarks. Peppol: Used to make any comments or instructions relevant to the response. The use of this element requires manual assessment by the receiver.</Data>
+               <Data ss:Type="String">BEAst: T6036, Customer remarks. Peppol:</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Rejected due to incorrect price.</Data>
@@ -1908,10 +1908,10 @@
                <Data ss:Type="String">•  •  cac:DocumentReference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Document reference</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The document reference is used to provide a reference to the envelope of the business document on which the message level response is based. The message level response message may only cover exactly one business document. The element 'cac:DocumentResponse/cac:DocumentReference/cbc:ID' MUST contain the instance identifier of the envelope of the original business document.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1934,10 +1934,10 @@
                <Data ss:Type="String">•  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Document identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6386, Order receipt reference. Peppol: The id of the Despatch- or Receipt advice sent.</Data>
+               <Data ss:Type="String">BEAst: T6386, Order receipt reference. Peppol:</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">DN12345</Data>
@@ -1960,10 +1960,10 @@
                <Data ss:Type="String">•  •  •  cbc:IssueDate</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Issue date </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Document date of the DespatchAdvice. Peppol: Document date time.</Data>
+               <Data ss:Type="String">BEAst: Document date of the DespatchAdvice. Peppol:</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2016-08-15</Data>
@@ -1986,10 +1986,10 @@
                <Data ss:Type="String">•  •  •  cbc:IssueTime</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Issue time </Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Document time of the DespatchAdvice. Peppol: Document date time.</Data>
+               <Data ss:Type="String">BEAst: Document time of the DespatchAdvice. Peppol:</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">12:00:00</Data>
@@ -2006,16 +2006,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cbc:DocumentTypeCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Document type code</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Used to inform that this message is a response to a Logistics Advanced Despatch Advice, "351" should always be used. Peppol: Specifies if it is a reference to a Despatch or a Receipt advice.</Data>
+               <Data ss:Type="String">BEAst: Used to inform that this message is a response to a Logistics Advanced Despatch Advice, "351" should always be used. Peppol:</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">351</Data>
