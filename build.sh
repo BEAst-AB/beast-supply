@@ -2,10 +2,10 @@
 
 PROJECT=$(dirname $(readlink -f "$0"))
 
-POACCBASEURL= "https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/master/structure/syntax"
+POACCBASEURL= "https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/master/structure/syntax/"
 LOGISTICSBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/main/structure/syntax/"
-echo $POACCDOCURL/Order
-
+echo $POACCBASEURL
+echo $LOGISTICSBASEURL
 
 # Delete target folder if found
 if [ -e $PROJECT/target ]; then
@@ -17,7 +17,7 @@ echo "Transforming files from source to syntax"
 echo "Generating documentation: Invoice"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-invoice.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-invoice.xml UblBaseUrl=https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/master/structure/syntax/ UblDocBaseUrl=https://docs.peppol.eu/poacc/billing/3.0/syntax/ubl-invoice UblXmlReferenceFile=ubl-invoice.xml -ext:on --allow-external-functions:on
 echo "Generating documentation: Order"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-order.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-order.xml UblBaseUrl=$POACCBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-order.xml -ext:on --allow-external-functions:on
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-order.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-order.xml UblBaseUrl=$POACCBASEURL UblDocBaseUrl=$POACCBASEURL UblXmlReferenceFile=ubl-order.xml -ext:on --allow-external-functions:on
 echo "Generating documentation: Order response"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-order-response.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-order-response.xml UblBaseUrl=$POACCBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-order-response.xml -ext:on --allow-external-functions:on
 echo "Generating documentation: Order agreement"
