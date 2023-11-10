@@ -3,6 +3,7 @@
 PROJECT=$(dirname $(readlink -f "$0"))
 LOGISTICS="https://raw.githubusercontent.com/BEAst-AB/peppol-logistics/main/structure/syntax/"
 echo $LOGISTICS
+echo $LOGISTICS/src
 
 
 # Delete target folder if found
