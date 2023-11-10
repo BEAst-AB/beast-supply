@@ -66,23 +66,21 @@
 	     <Element cardinality="0..1">
          <Term>cbc:DespatchAdviceTypeCode</Term>
          <Name>Despatch advice type code</Name>
-         <Description>BEAst: A code signifying the type of the Despatch Advice. Default is Advice of despatch of goods (1)</Description>
+         <Description>Peppol: A code signifying the type of the Despatch Advice. Default is Advice of despatch of goods (1)</Description>
          <Reference type="CODE_LIST">DespatchAdviceTypeCode</Reference>
          <Value type="EXAMPLE">1</Value>
       </Element>
 	     <Element cardinality="0..1">
          <Term>cbc:Note</Term>
          <Name>Dispatch note</Name>
-         <Description>BEAst: A textual note for the dispatch as whole. </Description>
+         <Description>Peppol: A textual note for the dispatch as whole. Used for Transport Information.</Description>
          <DataType>Text</DataType>
          <Reference type="BUSINESS_TERM">tir16-088</Reference>
          <Value type="EXAMPLE">Text</Value>
       </Element>
-	
 	     <Element cardinality="0..n">
          <Term>cac:OrderReference</Term>
          <Name>Order reference information</Name>
-         <Description>BEAst: Can be included here or at Line level. </Description>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Order reference</Name>
@@ -93,7 +91,6 @@
             <Value type="EXAMPLE">AEG0123456</Value>
          </Element>
       </Element>
-	
 	     <Element cardinality="0..n">
          <Term>cac:AdditionalDocumentReference</Term>
          <Name>Additional document reference</Name>
