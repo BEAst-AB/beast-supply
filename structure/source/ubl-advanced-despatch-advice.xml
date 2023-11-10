@@ -16,22 +16,12 @@
 	<?DocumentTerm AdvancedDespatchAdvice?>
 	<?Property key="sch:prefix" PEPPOL-T120?>
 	<?Property key="sch:identifier" T120-basic?>
-	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1<?Rule PEPPOL-T120-R011?></cbc:CustomizationID>
-	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1<?Description Identifies the BII profile or business process context in which the transaction appears. There are two ProfileIDs defined for the Advanced Despatch Advice. One profile is used when the receiver of the Despatch Advice is expected to return a response message, the other is used when no response message is used. Possible choices are: "urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1" and "urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_receipt_advice:1"?></cbc:ProfileID>
-	
-	<cbc:ID>5658999</cbc:ID>
-	<cbc:IssueDate>2021-09-10<?Description The date when the Advanced Despatch Advice is issued. Format = "YYYY-MM-DD".
-		Together with ID and IssueTime the IssueDate forms the identity of the Version of the Advanced Despatch Advice. ?>
-	</cbc:IssueDate>
-	<cbc:IssueTime>12:00:00+01:00<?Description The time when the Advanced Despatch Advice is issued. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the document was issued should be assumed. ?>
-		<?Cardinality 1..1?>
-	</cbc:IssueTime>
-	<cbc:DocumentStatusCode>9
-		<?Name Despatch advice status code?>
-		<?Description A code signifying the status of the Despatch Advice. Default is Original (9)?>
-		<?Cardinality 0..1?>
-		<?CodeList DocumentStatusCode?>
-	</cbc:DocumentStatusCode>
+	<cbc:CustomizationID />
+	<cbc:ProfileID />
+	<cbc:ID />
+	<cbc:IssueDate />
+	<cbc:IssueTime />
+	<cbc:DocumentStatusCode />
 	<cbc:DespatchAdviceTypeCode> 1 
 		<?Name Despatch advice type code?>
 		<?Description A code signifying the type of the Despatch Advice. Default is Advice of despatch of goods (1)?>

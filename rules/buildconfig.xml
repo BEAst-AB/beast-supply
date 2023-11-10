@@ -5,7 +5,6 @@
 	<!-- unit testing -->
 	<testfolder>unit-catalogue</testfolder>
 	<testfolder>unit-common</testfolder>
-	<testfolder>unit-despatch-advice</testfolder>
 	<testfolder>unit-order</testfolder>
 	<testfolder>unit-order-agreement</testfolder>
 	<testfolder>unit-order-response</testfolder>
@@ -175,15 +174,6 @@
 		<profileId>urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3</profileId>
 		<customizationId>urn:fdc:peppol.eu:poacc:trns:catalogue:3</customizationId>
 		<inherit>peppolbis-t19-base-3.0</inherit>
-	</configuration>
-
-
-	<configuration>
-		<identifier>peppolbis-30</identifier>
-		<title>PEPPOL BIS Despatch Advice 3.0</title>
-		<profileId>urn:fdc:peppol.eu:poacc:bis:despatch_advice:3</profileId>
-		<customizationId>urn:fdc:peppol.eu:poacc:trns:despatch_advice:3</customizationId>
-		<inherit>peppolbis-t16-base-3.0</inherit>
 	</configuration>
 
 	<configuration>
