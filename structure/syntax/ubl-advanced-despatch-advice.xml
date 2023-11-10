@@ -13,36 +13,21 @@
 	
 	     <Element>
          <Term>cbc:CustomizationID</Term>
-         <Reference type="RULE">PEPPOL-T120-R011</Reference>
-         <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1</Value>
       </Element>
 	     <Element>
          <Term>cbc:ProfileID</Term>
-         <Description>BEAst: Identifies the BII profile or business process context in which the transaction appears. There are two ProfileIDs defined for the Advanced Despatch Advice. One profile is used when the receiver of the Despatch Advice is expected to return a response message, the other is used when no response message is used. Possible choices are: "urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1" and "urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_receipt_advice:1"</Description>
-         <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</Value>
       </Element>
-	
 	     <Element>
          <Term>cbc:ID</Term>
-         <Value type="EXAMPLE">5658999</Value>
       </Element>
 	     <Element>
          <Term>cbc:IssueDate</Term>
-         <Description>BEAst: The date when the Advanced Despatch Advice is issued. Format = "YYYY-MM-DD".
-		Together with ID and IssueTime the IssueDate forms the identity of the Version of the Advanced Despatch Advice. </Description>
-         <Value type="EXAMPLE">2021-09-10</Value>
       </Element>
-	     <Element cardinality="1..1">
+	     <Element>
          <Term>cbc:IssueTime</Term>
-         <Description>BEAst: The time when the Advanced Despatch Advice is issued. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the document was issued should be assumed. </Description>
-         <Value type="EXAMPLE">12:00:00+01:00</Value>
       </Element>
-	     <Element cardinality="0..1">
+	     <Element>
          <Term>cbc:DocumentStatusCode</Term>
-         <Name>Despatch advice status code</Name>
-         <Description>BEAst: A code signifying the status of the Despatch Advice. Default is Original (9)</Description>
-         <Reference type="CODE_LIST">DocumentStatusCode</Reference>
-         <Value type="EXAMPLE">9</Value>
       </Element>
 	     <Element cardinality="0..1">
          <Term>cbc:DespatchAdviceTypeCode</Term>

@@ -120,7 +120,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cbc:CustomizationID</Data>
@@ -143,10 +143,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Identifies the BII profile or business process context in which the transaction appears. There are two ProfileIDs defined for the Advanced Despatch Advice. One profile is used when the receiver of the Despatch Advice is expected to return a response message, the other is used when no response message is used. Possible choices are: "urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1" and "urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_receipt_advice:1"</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cbc:ProfileID</Data>
@@ -172,7 +172,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5658999</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cbc:ID</Data>
@@ -195,10 +195,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The date when the Advanced Despatch Advice is issued. Format = "YYYY-MM-DD". Together with ID and IssueTime the IssueDate forms the identity of the Version of the Advanced Despatch Advice.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-09-10</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cbc:IssueDate</Data>
@@ -221,10 +221,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The time when the Advanced Despatch Advice is issued. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the document was issued should be assumed.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">12:00:00+01:00</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cbc:IssueTime</Data>
@@ -238,19 +238,19 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  cbc:DocumentStatusCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Despatch advice status code</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: A code signifying the status of the Despatch Advice. Default is Original (9)</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">9</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cbc:DocumentStatusCode</Data>
