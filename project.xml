@@ -18,7 +18,6 @@
 	<Documentation path="profiles/42-orderagreement/">- Peppol BIS Order Agreement 3.0</Documentation>
 	<Documentation path="profiles/66-advanceddespatchadvice/">- Advanced Despatch Advice Only 1.2</Documentation>
 	<Documentation path="profiles/67-advanceddespatchadvice_w_receiptadvice/">- Advanced Despatch Advice with Receipt Advice 1.0</Documentation>
-	<Documentation path="profiles/68-weightstatement/">- Weight Statement 1.1</Documentation>
 	<Documentation path="profiles/68-weightstatement/">- Weight Statement 1.2</Documentation>
 	<Documentation path="profiles/69-transportexecutionplan_w_request/">- Transport Execution Plan with Request 1.0</Documentation>
 	<Documentation path="profiles/70-transportexecutionplan/">- Transport Execution Plan Only 1.0</Documentation>
@@ -60,6 +59,11 @@
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
+		<Path>structure/syntax/ubl-weight-statement.xml</Path>
+		<Title>Weight Statement 1.2 (T122)</Title>
+	</Resource>
+	<Resource>
+		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-transport-execution-plan-request.xml</Path>
 		<Title>Transport Execution Plan Request 1.0 (T123)</Title>
 	</Resource>
@@ -87,11 +91,6 @@
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-receipt-advice.xml</Path>
 		<Title>Receipt Advice 1.0 (T128)</Title>
-	</Resource>
-	<Resource>
-		<Type>Structure-1</Type>
-		<Path>structure/syntax/ubl-weight-statement.xml</Path>
-		<Title>Weight Statement 1.2 (T122)</Title>
 	</Resource>
 
 
@@ -191,6 +190,10 @@
 	</Resource>
 
 	<!-- Code lists -->
+	<Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/UNCL4343_T128.xml</Path>
+	</Resource>
 	<Resource>
 		<Type>CodeList-1</Type>
 		<Path>structure/codelist/UNCL1229.xml</Path>
