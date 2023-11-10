@@ -114,10 +114,10 @@
                <Data ss:Type="String">•  cbc:CustomizationID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Specification identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: Identifies the specification of content and rules that apply to the transaction.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">urn:fdc:peppol.eu:logistics:trns:weight_statement:1</Data>
@@ -140,10 +140,10 @@
                <Data ss:Type="String">•  cbc:ProfileID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Business process type identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: Identifies the BII profile or business process context in which the transaction appears.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">urn:fdc:peppol.eu:logistics:bis:weight_statement:1</Data>
@@ -166,10 +166,10 @@
                <Data ss:Type="String">•  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Document identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Unique identity identifying the Weight Statement. An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">GOA294107</Data>
@@ -192,10 +192,10 @@
                <Data ss:Type="String">•  cbc:IssueDate</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Weight Statement issue date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The date when the Weight Statement is issued. Format = "YYYY-MM-DD"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2016-11-03</Data>
@@ -218,13 +218,13 @@
                <Data ss:Type="String">•  cbc:IssueTime</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Weight Statement issue time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The time when the Weight Statement is issued. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the document was issued should be assumed.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">09:30:00</Data>
+               <Data ss:Type="String">09:30:00+01:00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cbc:IssueTime</Data>
@@ -244,10 +244,10 @@
                <Data ss:Type="String">•  cbc:WeightStatementTypeCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Weight Statement type code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: 01 = Outbound delivery 02 = Inbound delivery</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">01</Data>
@@ -270,10 +270,10 @@
                <Data ss:Type="String">•  cac:SenderParty</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Sender Party</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The party sending this Weight Statement (e.g. Weighing Station, Shipper, Freight Forwarder, Carrier, ...).</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -296,10 +296,10 @@
                <Data ss:Type="String">•  •  cbc:EndpointID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Senders electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Identifies the senders partys electronic address</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">7300010000001</Data>
@@ -322,10 +322,10 @@
                <Data ss:Type="String">•  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Scheme identifier for electronic address</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
@@ -342,16 +342,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PartyIdentification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Party Identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: An identifier for this party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -374,10 +374,10 @@
                <Data ss:Type="String">•  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Sender party identity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The identifier of the Sender party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">7300010000001</Data>
@@ -400,10 +400,10 @@
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Scheme identifier for party identification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
@@ -420,13 +420,13 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PartyName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Party Name</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -452,7 +452,7 @@
                <Data ss:Type="String">•  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Sender name</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -472,16 +472,380 @@
          </Row>
          <Row>
             <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Postal address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The address for the Sender.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The main address line in a postal address usually the street name and number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Skogsgatan nr 1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PostalAddress/cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:AdditionalStreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Second entry</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PostalAddress/cbc:AdditionalStreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">City</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Norrköping</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PostalAddress/cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Post code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">123 45</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PostalAddress/cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:CountrySubentity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country subdivision</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: For specifying a region, county, state, province etc. within a country by using text.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">NA</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PostalAddress/cbc:CountrySubentity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:AddressLine</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PostalAddress/cac:AddressLine</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">To the right</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PostalAddress/cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">SE</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact person name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The contact of the Sender party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The contact name.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Mats Svensson</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:Contact/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact telephone number</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The phone number of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0158 1233714</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:Contact/cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact email address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The electronic mail of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">mats.svensson@senderab.se</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:Contact/cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
                <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  cac:ReceiverParty</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Receiver information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The party receiving this Weight Statement (e.g. Carrier, Terminal Operator, ...).</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -493,7 +857,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">1500</Data>
+               <Data ss:Type="Number">2900</Data>
             </Cell>
          </Row>
          <Row>
@@ -504,10 +868,10 @@
                <Data ss:Type="String">•  •  cbc:EndpointID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Receiver electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Identifies the receivers partys electronic address</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1251513513245</Data>
@@ -519,7 +883,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">1600</Data>
+               <Data ss:Type="Number">3000</Data>
             </Cell>
          </Row>
          <Row>
@@ -530,10 +894,10 @@
                <Data ss:Type="String">•  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Scheme identifier for electronic address</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
@@ -545,21 +909,21 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">1700</Data>
+               <Data ss:Type="Number">3100</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PartyIdentification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Party Identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: An identifier for this party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -571,7 +935,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">1800</Data>
+               <Data ss:Type="Number">3200</Data>
             </Cell>
          </Row>
          <Row>
@@ -582,10 +946,10 @@
                <Data ss:Type="String">•  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Receiver identity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The identifier of the receiver party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1251513513245</Data>
@@ -597,7 +961,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">1900</Data>
+               <Data ss:Type="Number">3300</Data>
             </Cell>
          </Row>
          <Row>
@@ -608,10 +972,10 @@
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Scheme identifier for party identification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
@@ -623,18 +987,18 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2000</Data>
+               <Data ss:Type="Number">3400</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PartyName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Party Name</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -649,7 +1013,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2100</Data>
+               <Data ss:Type="Number">3500</Data>
             </Cell>
          </Row>
          <Row>
@@ -660,7 +1024,7 @@
                <Data ss:Type="String">•  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Receiver name</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -675,7 +1039,371 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2200</Data>
+               <Data ss:Type="Number">3600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Postal address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The address for the Receiver.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The main address line in a postal address usually the street name and number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Byagatan nr 14</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PostalAddress/cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:AdditionalStreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Second entry</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PostalAddress/cbc:AdditionalStreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">City</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Norrköping</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PostalAddress/cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Post code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">123 45</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PostalAddress/cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:CountrySubentity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country subdivision</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: For specifying a region, county, state, province etc. within a country by using text.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">NA</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PostalAddress/cbc:CountrySubentity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:AddressLine</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PostalAddress/cac:AddressLine</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">To the left</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PostalAddress/cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">SE</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact person name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The contact of the Sender party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The contact name.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Nils Johansson</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:Contact/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact telephone number</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The phone number of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0158 1236543</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:Contact/cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact email address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The electronic mail of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">nils.johansson@receiverab.se</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:Contact/cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5000</Data>
             </Cell>
          </Row>
          <Row>
@@ -686,10 +1414,10 @@
                <Data ss:Type="String">•  cac:WeighingParty</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Weighing party information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The party executing the weight measure (e.g. Weighing Station).</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -701,21 +1429,21 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2300</Data>
+               <Data ss:Type="Number">5100</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PartyIdentification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Party Identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: An identifier for this party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -727,7 +1455,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2400</Data>
+               <Data ss:Type="Number">5200</Data>
             </Cell>
          </Row>
          <Row>
@@ -738,10 +1466,10 @@
                <Data ss:Type="String">•  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Weighing party identity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The identifier of the Weighing party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">5790000435951</Data>
@@ -753,7 +1481,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2500</Data>
+               <Data ss:Type="Number">5300</Data>
             </Cell>
          </Row>
          <Row>
@@ -764,10 +1492,10 @@
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Scheme identifier for party identification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
@@ -779,18 +1507,18 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2600</Data>
+               <Data ss:Type="Number">5400</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PartyName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Party Name</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -805,7 +1533,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2700</Data>
+               <Data ss:Type="Number">5500</Data>
             </Cell>
          </Row>
          <Row>
@@ -816,10 +1544,10 @@
                <Data ss:Type="String">•  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Weighing party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The name of the weighing party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Gravel Pit Ltd.</Data>
@@ -831,7 +1559,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2800</Data>
+               <Data ss:Type="Number">5600</Data>
             </Cell>
          </Row>
          <Row>
@@ -842,10 +1570,10 @@
                <Data ss:Type="String">•  •  cac:PhysicalLocation</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Physical Location</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The physical location of this party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -857,21 +1585,21 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2900</Data>
+               <Data ss:Type="Number">5700</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Physical Location ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Unique ID of the site for the weighing party. If possile an ID that is issued by a authority or similar.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0114-40-019-a</Data>
@@ -883,12 +1611,12 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3000</Data>
+               <Data ss:Type="Number">5800</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">M</Data>
+               <Data ss:Type="String">O</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
@@ -909,21 +1637,21 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3100</Data>
+               <Data ss:Type="Number">5900</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Location name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Physical location name</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Townsend pit</Data>
@@ -935,7 +1663,189 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3200</Data>
+               <Data ss:Type="Number">6000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Postal address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The address for the Weighing party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The main address line in a postal address usually the street name and number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Byagatan nr 14</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PostalAddress/cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:AdditionalStreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Second entry</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PostalAddress/cbc:AdditionalStreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">City</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Norrköping</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PostalAddress/cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Post code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">123 45</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PostalAddress/cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:CountrySubentity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country subdivision</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: For specifying a region, county, state, province etc. within a country by using text.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">NA</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PostalAddress/cbc:CountrySubentity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:AddressLine</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PostalAddress/cac:AddressLine</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6700</Data>
             </Cell>
          </Row>
          <Row>
@@ -943,13 +1853,195 @@
                <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">To the left</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PostalAddress/cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">SE</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact person name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The contact of the Sender party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The contact name.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Nils Johansson</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:Contact/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact telephone number</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The phone number of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0158 1236543</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:Contact/cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact email address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The electronic mail of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">nils.johansson@receiverab.se</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:Contact/cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
                <Data ss:Type="String">•  cac:ShipperParty</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Shipper Party</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The party transporting or shipping the items.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -961,18 +2053,18 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3300</Data>
+               <Data ss:Type="Number">7500</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PartyIdentification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Party Identification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -987,7 +2079,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3400</Data>
+               <Data ss:Type="Number">7600</Data>
             </Cell>
          </Row>
          <Row>
@@ -998,10 +2090,10 @@
                <Data ss:Type="String">•  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Shipping party identity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The identifier of the shippping party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">5790000435951</Data>
@@ -1013,7 +2105,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3500</Data>
+               <Data ss:Type="Number">7700</Data>
             </Cell>
          </Row>
          <Row>
@@ -1024,10 +2116,10 @@
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Scheme identifier for party identification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
@@ -1039,18 +2131,18 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3600</Data>
+               <Data ss:Type="Number">7800</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:PartyName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Party Name</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1065,7 +2157,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3700</Data>
+               <Data ss:Type="Number">7900</Data>
             </Cell>
          </Row>
          <Row>
@@ -1076,13 +2168,13 @@
                <Data ss:Type="String">•  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Shipper name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The name of the shipper</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Tonys Trucks and Transport</Data>
+               <Data ss:Type="String">Tony's Trucks and Transport</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PartyName/cbc:Name</Data>
@@ -1091,7 +2183,371 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3800</Data>
+               <Data ss:Type="Number">8000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Postal address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The address for the Shipper party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The main address line in a postal address usually the street name and number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Skogsgatan nr 1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PostalAddress/cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:AdditionalStreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Second entry</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PostalAddress/cbc:AdditionalStreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">City</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Norrköping</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PostalAddress/cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Post code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">123 45</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PostalAddress/cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:CountrySubentity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country subdivision</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: For specifying a region, county, state, province etc. within a country by using text.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">NA</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PostalAddress/cbc:CountrySubentity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:AddressLine</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PostalAddress/cac:AddressLine</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">To the right</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PostalAddress/cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">SE</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact person name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The contact of the Sender party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The contact name.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Mats Svensson</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:Contact/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact telephone number</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The phone number of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0158 1233714</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:Contact/cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact email address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: The electronic mail of the contact.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">mats.svensson@senderab.se</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:Contact/cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9400</Data>
             </Cell>
          </Row>
          <Row>
@@ -1102,7 +2558,7 @@
                <Data ss:Type="String">•  cac:Shipment</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Shipment information</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1117,7 +2573,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3900</Data>
+               <Data ss:Type="Number">9500</Data>
             </Cell>
          </Row>
          <Row>
@@ -1128,10 +2584,10 @@
                <Data ss:Type="String">•  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Shipment identity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Use NA if no specific shipment ID is available</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">NA</Data>
@@ -1143,21 +2599,21 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4000</Data>
+               <Data ss:Type="Number">9600</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">1..n</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  cac:GoodsItem</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Goods Item</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: A goods item included in this shipment.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1169,7 +2625,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4100</Data>
+               <Data ss:Type="Number">9700</Data>
             </Cell>
          </Row>
          <Row>
@@ -1180,10 +2636,10 @@
                <Data ss:Type="String">•  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Line item identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Identifies the Line Item assigned by the weighing partner, the identifier must be unique within the order</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1</Data>
@@ -1195,21 +2651,21 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4200</Data>
+               <Data ss:Type="Number">9800</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cac:Item</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Item</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Product information relating to a goods item</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1221,7 +2677,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4300</Data>
+               <Data ss:Type="Number">9900</Data>
             </Cell>
          </Row>
          <Row>
@@ -1232,10 +2688,10 @@
                <Data ss:Type="String">•  •  •  •  cbc:Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Item name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Name of weighed item</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Sortering 0/2 mm krossat bergmaterial CE-märkt enligt system 2+ för användning till asfalt.</Data>
@@ -1247,18 +2703,18 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4400</Data>
+               <Data ss:Type="Number">10000</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cac:BuyersItemIdentification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Buyers item identification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1273,7 +2729,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4500</Data>
+               <Data ss:Type="Number">10100</Data>
             </Cell>
          </Row>
          <Row>
@@ -1284,10 +2740,10 @@
                <Data ss:Type="String">•  •  •  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Buyers item identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: An identifier, assigned by the buyer, for the item. Associates the item with its identification according to the buyers system.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">KO2001030300</Data>
@@ -1299,18 +2755,18 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4600</Data>
+               <Data ss:Type="Number">10200</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cac:SellersItemIdentification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Sellers item identification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1325,7 +2781,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4700</Data>
+               <Data ss:Type="Number">10300</Data>
             </Cell>
          </Row>
          <Row>
@@ -1336,10 +2792,10 @@
                <Data ss:Type="String">•  •  •  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The Sellers item identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: An identifier, assigned by the seller, for the item. Associates the item with its identification according to the sellers system.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">17589683</Data>
@@ -1351,18 +2807,18 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4800</Data>
+               <Data ss:Type="Number">10400</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cac:StandardItemIdentification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Standard item identification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1377,7 +2833,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4900</Data>
+               <Data ss:Type="Number">10500</Data>
             </Cell>
          </Row>
          <Row>
@@ -1388,10 +2844,10 @@
                <Data ss:Type="String">•  •  •  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Item standard identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Global Trade Item Number (GTIN) or other standardized identification. Associates the item with its identification according to a standard system.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1234567891234</Data>
@@ -1403,7 +2859,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5000</Data>
+               <Data ss:Type="Number">10600</Data>
             </Cell>
          </Row>
          <Row>
@@ -1414,10 +2870,10 @@
                <Data ss:Type="String">•  •  •  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The identification scheme identifier of the Item standard identifier</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0160</Data>
@@ -1429,21 +2885,21 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5100</Data>
+               <Data ss:Type="Number">10700</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..n</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cac:CommodityClassification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Commodity classification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: To classify when an item number is not sufficient.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1455,7 +2911,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5200</Data>
+               <Data ss:Type="Number">10800</Data>
             </Cell>
          </Row>
          <Row>
@@ -1466,10 +2922,10 @@
                <Data ss:Type="String">•  •  •  •  •  cbc:ItemClassificationCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Item classification code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">KO2012140200</Data>
@@ -1481,7 +2937,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5300</Data>
+               <Data ss:Type="Number">10900</Data>
             </Cell>
          </Row>
          <Row>
@@ -1492,10 +2948,10 @@
                <Data ss:Type="String">•  •  •  •  •  •  @listID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Item classification identifier identification scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The identification scheme identifier of the Item classification identifier.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">ZZZ</Data>
@@ -1507,21 +2963,21 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5400</Data>
+               <Data ss:Type="Number">11000</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">M</Data>
+               <Data ss:Type="String">O</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  •  •  @listVersionID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Item classification identifier version identification scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The identification scheme version identifier of the Item classification identifier</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">4.0</Data>
@@ -1533,21 +2989,21 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5500</Data>
+               <Data ss:Type="Number">11100</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">M</Data>
+               <Data ss:Type="String">O</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  •  •  @name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Clear text name equivalent of classification code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The textual equivalent of the code value</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">SBMI</Data>
@@ -1559,21 +3015,21 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5600</Data>
+               <Data ss:Type="Number">11200</Data>
             </Cell>
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">1..n</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cac:MeasurementDimension</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Measurement Dimension</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Used to specify weight and/or volume of the Goods Item.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1585,7 +3041,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5700</Data>
+               <Data ss:Type="Number">11300</Data>
             </Cell>
          </Row>
          <Row>
@@ -1596,10 +3052,10 @@
                <Data ss:Type="String">•  •  •  •  cbc:AttributeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Attribute identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: To describe the type of measurement. Use UNCL 6313 subset.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">AAF</Data>
@@ -1611,7 +3067,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5800</Data>
+               <Data ss:Type="Number">11400</Data>
             </Cell>
          </Row>
          <Row>
@@ -1622,10 +3078,10 @@
                <Data ss:Type="String">•  •  •  •  cbc:Measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: For the measure.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">12.3</Data>
@@ -1637,7 +3093,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5900</Data>
+               <Data ss:Type="Number">11500</Data>
             </Cell>
          </Row>
          <Row>
@@ -1648,10 +3104,10 @@
                <Data ss:Type="String">•  •  •  •  •  @unitCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Measure unit of measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: The unit of measure that applies to the measure.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">TNE</Data>
@@ -1663,7 +3119,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6000</Data>
+               <Data ss:Type="Number">11600</Data>
             </Cell>
          </Row>
       </Table>
