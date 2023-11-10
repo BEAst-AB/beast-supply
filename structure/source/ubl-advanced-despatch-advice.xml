@@ -22,21 +22,11 @@
 	<cbc:IssueDate />
 	<cbc:IssueTime />
 	<cbc:DocumentStatusCode />
-	<cbc:DespatchAdviceTypeCode> 1 
-		<?Name Despatch advice type code?>
-		<?Description A code signifying the type of the Despatch Advice. Default is Advice of despatch of goods (1)?>
-		<?Cardinality 0..1?>
-		<?CodeList DespatchAdviceTypeCode?>
-	</cbc:DespatchAdviceTypeCode>
-	<cbc:Note> Text 
-		<?Description A textual note for the dispatch as whole. ?>
-	</cbc:Note>
-	
+	<cbc:DespatchAdviceTypeCode />
+	<cbc:Note />
 	<cac:OrderReference>
-		<?Description Can be included here or at Line level. ?>
-		<cbc:ID>AEG0123456</cbc:ID>
+		<cbc:ID />
 	</cac:OrderReference>
-	
 	<cac:AdditionalDocumentReference>
 		<?Name Additional document reference?>
 		<?Description Reference to additional documents relevant for this Despatch advice. Can also be used for additional information on header level.?>
