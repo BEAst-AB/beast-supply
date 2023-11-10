@@ -2,7 +2,7 @@
 
 PROJECT=$(dirname $(readlink -f "$0"))
 
-POACCBASEURL= "https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/master/structure/syntax/"
+POACCBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/master/structure/syntax/"
 echo $POACCBASEURL
 
 LOGISTICSBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/main/structure/syntax/"
