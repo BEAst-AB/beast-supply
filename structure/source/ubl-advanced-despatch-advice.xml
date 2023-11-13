@@ -16,6 +16,7 @@
 	<?DocumentTerm AdvancedDespatchAdvice?>
 	<?Property key="sch:prefix" PEPPOL-T120?>
 	<?Property key="sch:identifier" T120-basic?>
+	
 	<cbc:CustomizationID></cbc:CustomizationID>
 	<cbc:ProfileID></cbc:ProfileID>
 	<cbc:ID></cbc:ID>
@@ -24,277 +25,113 @@
 	<cbc:DocumentStatusCode></cbc:DocumentStatusCode>
 	<cbc:DespatchAdviceTypeCode></cbc:DespatchAdviceTypeCode>
 	<cbc:Note></cbc:Note>
+	
 	<cac:OrderReference>
 		<cbc:ID></cbc:ID>
 	</cac:OrderReference>
+	
 	<cac:AdditionalDocumentReference>
-		<?Name Additional document reference?>
-		<?Description Reference to additional documents relevant for this Despatch advice. Can also be used for additional information on header level.?>
-		<?Cardinality 0..n?>
-		<cbc:ID> 7648779 
-			<?Name Identity of the reference?>
-			<?Description The reference number of added document?>
-		</cbc:ID>
-		<cbc:DocumentTypeCode> 380 
-			<?Name Document type code?>
-			<?Description The type of reference. Must me part of UNCL1001. At least one of Document Type Code and Document Type must be used. ?>
-			<?Cardinality 0..1?>
-			<?CodeList UNCL1001?>
-			<?Rule PEPPOL-T120-R031?>
-		</cbc:DocumentTypeCode>
-		<cbc:DocumentType> FreightPayersCustomerNumber 
-			<?Name Document type?>
-			<?Description The type of reference that cannot be specified by a code. At least one of Document Type Code and Document Type must be used. ?>
-			<?Cardinality 0..1?>
-			<?Rule PEPPOL-T120-R031?>
-		</cbc:DocumentType>
+		<cbc:ID></cbc:ID>
+		<cbc:DocumentTypeCode></cbc:DocumentTypeCode>
+		<cbc:DocumentType></cbc:DocumentType>
 		<cac:Attachment>
-			<?Name Attachment?>
-			<?Cardinality 0..1?>
-			<?Description Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.?>
-			<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">
-				aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== <?Name Embedded binary object?>
-				<?Cardinality 0..1?>
-				<?mimeCode-CodeList MimeCode?>
-				<?Description The referenced document can here be inserted as a binary object.?>
-			</cbc:EmbeddedDocumentBinaryObject>
+			<cbc:EmbeddedDocumentBinaryObject mimeCode="" filename=""></cbc:EmbeddedDocumentBinaryObject>
 			<cac:ExternalReference>
-				<?Name External reference?>
-				<?Description A reference to an attached document that is external to the document(s) being exchanged.?>
-				<?Cardinality 0..1?>
-				<cbc:URI> www.beast.se 
-					<?Name Address to internet resource?>
-					<?Description The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.?>
-				</cbc:URI>
+				<cbc:URI></cbc:URI>
 			</cac:ExternalReference>
 		</cac:Attachment>
 	</cac:AdditionalDocumentReference>
 	
 	<cac:DespatchSupplierParty>
-		<?Description The Despatch Party is the person or organization who provides (despatch) the goods or services. It also defines the sender of the Advanced Despatch Advice. The role is carried out by the supplier or on behalf of the supplier. The real ship-from address must be provided in the Despatch Address when the Advanced Despatch Advice describes a movement.?>
 		<cac:Party>
-			<cbc:EndpointID schemeID="0088"> 7300010000001 
-				<?schemeID-usage Mandatory?>
-				<?schemeID-CodeList eas?>
-			</cbc:EndpointID>
+			<cbc:EndpointID schemeID=""></cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088"> 7300010000001 
-					<?schemeID-CodeList ICD?>
-					<?Rule PEPPOL-T120-R109?>
-				</cbc:ID>
+				<cbc:ID schemeID=""></cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
-				<?Name Party Name?>
-				<?Description The name of the Despatch Supplier Party.?>
-				<?Cardinality 0..1?>
-				<cbc:Name> Sender inc. 
-					<?Name Name of the fuel supplier?>
-					<?Description The Despatch Supplier.?>
-					<?Cardinality 1..1?>
-					<?Rule PEPPOL-T120-R109?>
-				</cbc:Name>
+				<cbc:Name></cbc:Name>
 			</cac:PartyName>
 			<cac:PostalAddress>
-				<cbc:StreetName>Busy Street</cbc:StreetName>
-				<cbc:AdditionalStreetName>way 1</cbc:AdditionalStreetName>
-				<cbc:CityName>Farthing</cbc:CityName>
-				<cbc:PostalZone>AA99 1BB</cbc:PostalZone>
-				<cbc:CountrySubentity>Heremouthshire</cbc:CountrySubentity>
+				<cbc:StreetName></cbc:StreetName>
+				<cbc:AdditionalStreetName></cbc:AdditionalStreetName>
+				<cbc:CityName></cbc:CityName>
+				<cbc:PostalZone></cbc:PostalZone>
+				<cbc:CountrySubentity></cbc:CountrySubentity>
 				<cac:AddressLine>
-					<cbc:Line>The Roundabout
-						<?Cardinality 1..1?>
-					</cbc:Line>
+					<cbc:Line></cbc:Line>
 				</cac:AddressLine>
 				<cac:Country>
-					<cbc:IdentificationCode>GB</cbc:IdentificationCode>
+					<cbc:IdentificationCode></cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
 			<cac:PartyTaxScheme>
-				<?Name Party tax scheme?>
-				<?Description The tax information about the Despatch Party.?>
-				<?Cardinality 0..1?>
-				<cbc:CompanyID> GB325456788 
-					<?Name Company ID?>
-					<?Description The Despatch Party Value Added Tax identifer.?>
-					<?Cardinality 1..1?>
-				</cbc:CompanyID>
+				<cbc:CompanyID></cbc:CompanyID>
 				<cac:TaxScheme>
-					<?Name Tax scheme?>
-					<?Cardinality 1..1?>
-					<cbc:ID> VAT 
-						<?Name Tax scheme identifier?>
-						<?Description Tax scheme identifier. E.g. "VAT" or "GST".?>
-						<?Cardinality 1..1?>
-					</cbc:ID>
+					<cbc:ID></cbc:ID>
 				</cac:TaxScheme>
 			</cac:PartyTaxScheme>
 			<cac:PartyLegalEntity>
-				<?Name Party Legal Entity?>
-				<cbc:RegistrationName> Consortial 
-					<?Cardinality 1..1?>
-					<?Name Despatching party's legal name. ?>
-					<?Description The legal name of the Despatching party. ?>
-				</cbc:RegistrationName>
-				<cbc:CompanyID schemeID="0089"> SC234567 
-					<?Name Despatch supplier parties legal registration ID. ?>
-					<?Description The official identity of the party as registered with the relevant fiscal authority.?>
-					<?Cardinality 0..1?>
-					<?schemeID-Name Scheme identifier?>
-					<?schemeID-Description The identification scheme identifier of the despatch supplier legal registration identifier?>
-					<?schemeID-Usage optional?>
-					<?schemeID-CodeList ICD?>
-				</cbc:CompanyID>
+				<cbc:RegistrationName></cbc:RegistrationName>
+				<cbc:CompanyID schemeID=""></cbc:CompanyID>
 				<cac:RegistrationAddress>
-					<?Name Legal address?>
-					<?Cardinality 0..1?>
-					<cbc:CityName> Farthing 
-						<?Name City name?>
-						<?Description The name of the city.?>
-						<?Cardinality 0..1?>
-					</cbc:CityName>
+					<cbc:CityName></cbc:CityName>
 					<cac:Country>
-						<?Name Contry?>
-						<?Description The residens country for the despatch party.?>
-						<?Cardinality 1..1?>
-						<cbc:IdentificationCode> UK 
-							<?Name Country code?>
-							<?Description Country Code?>
-						</cbc:IdentificationCode>
+						<cbc:IdentificationCode></cbc:IdentificationCode>
 					</cac:Country>
 				</cac:RegistrationAddress>
 			</cac:PartyLegalEntity>
+			
 			<cac:Contact>
-				<?Name Contact?>
-				<?Description The contact of the Despatch supplier party.?>
-				<?Cardinality 0..1?>
-				<cbc:Name> Mrs Bouquet 
-					<?Name Contact name?>
-					<?Description The contact name.?>
-					<?Cardinality 0..1?>
-				</cbc:Name>
-				<cbc:Telephone> 0158 1233714 
-					<?Name Contact email telephone?>
-					<?Description The phone number of the contact.?>
-					<?Cardinality 0..1?>
-				</cbc:Telephone>
-				<cbc:ElectronicMail> bouquet@fpconsortial.co.uk 
-					<?Name Contact email address?>
-					<?Description The electronic mail of the contact.?>
-					<?Cardinality 0..1?>
-				</cbc:ElectronicMail>
+				<cbc:Name></cbc:Name>
+				<cbc:Telephone></cbc:Telephone>
+				<cbc:ElectronicMail></cbc:ElectronicMail>
 			</cac:Contact>
 		</cac:Party>
 	</cac:DespatchSupplierParty>
 	
 	<cac:DeliveryCustomerParty>
-		<?Description The Consignee is the person or organization to which the products will be shipped and who is taking possession. It also defines the receiver of the Advanced Despatch Advice. The role is carried out by the customer or on behalf of the customer. The real ship-to address must be provided in the delivery location if the Advanced Despatch Advice describes a movement. If the Despatch address describes a service provided at a specific location, the Delivery Location contains this location.?>
 		<cac:Party>
-			<cbc:EndpointID schemeID="0088">5798000000124</cbc:EndpointID>
+			<cbc:EndpointID schemeID=""></cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088"> 5790000435951 
-					<?schemeID-CodeList ICD?>
-					<?Rule PEPPOL-T120-R108?>
-				</cbc:ID>
+				<cbc:ID schemeID=""></cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
-				<?Name Party name?>
-				<?Description The name of the Delivery Customer Party.?>
-				<?Cardinality 0..1?>
-				<cbc:Name> Sender inc. 
-					<?Name Name of the fuel supplier?>
-					<?Description The Despatch Supplier.?>
-					<?Cardinality 1..1?>
-					<?Rule PEPPOL-T120-R108?>
-				</cbc:Name>
+				<cbc:Name></cbc:Name>
 			</cac:PartyName>
 			<cac:PostalAddress>
-				<cbc:StreetName>Avon Way</cbc:StreetName>
-				<cbc:AdditionalStreetName>Big projects</cbc:AdditionalStreetName>
-				<cbc:CityName>Bridgtown</cbc:CityName>
-				<cbc:PostalZone>ZZ99 1ZZ</cbc:PostalZone>
-				<cbc:CountrySubentity>Avon</cbc:CountrySubentity>
+				<cbc:StreetName></cbc:StreetName>
+				<cbc:AdditionalStreetName></cbc:AdditionalStreetName>
+				<cbc:CityName></cbc:CityName>
+				<cbc:PostalZone></cbc:PostalZone>
+				<cbc:CountrySubentity></cbc:CountrySubentity>
 				<cac:AddressLine>
-					<cbc:Line>3rd Floor, Room 5
-						<?Cardinality 1..1?>
-					</cbc:Line>
+					<cbc:Line></cbc:Line>
 				</cac:AddressLine>
 				<cac:Country>
-					<cbc:IdentificationCode>GB</cbc:IdentificationCode>
+					<cbc:IdentificationCode></cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
 			<cac:PartyTaxScheme>
-				<?Name Party tax scheme?>
-				<?Description The tax information about the Delivery Party.?>
-				<?Cardinality 0..1?>
-				<cbc:CompanyID> GB523859989 
-					<?Name Company ID?>
-					<?Description The Delivery Party Value Added Tax identifer.?>
-					<?Cardinality 1..1?>
-				</cbc:CompanyID>
+				<cbc:CompanyID></cbc:CompanyID>
 				<cac:TaxScheme>
-					<?Name Tax scheme?>
-					<?Cardinality 1..1?>
-					<cbc:ID> VAT 
-						<?Name Tax scheme identifier?>
-						<?Description Tax scheme identifier. E.g. "VAT" or "GST".?>
-						<?Cardinality 1..1?>
-					</cbc:ID>
+					<cbc:ID></cbc:ID>
 				</cac:TaxScheme>
 			</cac:PartyTaxScheme>
 			<cac:PartyLegalEntity>
-				<?Name Party Legal Entity?>
-				<cbc:RegistrationName> Sender inc. 
-					<?Cardinality 1..1?>
-					<?Name Consignee party's Legal name. ?>
-					<?Description The Legal Name of the Receiving party. ?>
-				</cbc:RegistrationName>
-				<cbc:CompanyID schemeID="0089"> GB523859989 
-					<?Name Delivery customers parties legal registration ID. ?>
-					<?Description The official identity of the party as registered with the relevant fiscal authority.?>
-					<?Cardinality 0..1?>
-					<?schemeID-Usage optional?>
-					<?schemeID-CodeList ICD?>
-					<?schemeID-Name Scheme identifier?>
-					<?schemeID-Description The identification scheme identifier of the despatch customer legal registration identifier?>
-				</cbc:CompanyID>
+				<cbc:RegistrationName></cbc:RegistrationName>
+				<cbc:CompanyID schemeID=""></cbc:CompanyID>
 				<cac:RegistrationAddress>
-					<?Name Legal address?>
-					<?Cardinality 0..1?>
-					<cbc:CityName> Bridgtown 
-						<?Name City name?>
-						<?Description The name of the city.?>
-						<?Cardinality 0..1?>
-					</cbc:CityName>
+					<cbc:CityName></cbc:CityName>
 					<cac:Country>
-						<?Name Contry?>
-						<?Description The residens country for the delivery customer party.?>
-						<?Cardinality 1..1?>
-						<cbc:IdentificationCode> UK 
-							<?Name Contry code?>
-						</cbc:IdentificationCode>
+						<cbc:IdentificationCode></cbc:IdentificationCode>
 					</cac:Country>
 				</cac:RegistrationAddress>
 			</cac:PartyLegalEntity>
 
 			<cac:Contact>
-				<?Name Contact person name?>
-				<?Description The contact of the Delivery customer party.?>
-				<?Cardinality 0..1?>
-				<cbc:Name> Mrs Bouquet 
-					<?Name Contact name?>
-					<?Description The contact name.?>
-					<?Cardinality 0..1?>
-				</cbc:Name>
-				<cbc:Telephone> 0158 1233714 
-					<?Name Contact telephone number?>
-					<?Description The phone number of the contact.?>
-					<?Cardinality 0..1?>
-				</cbc:Telephone>
-				<cbc:ElectronicMail> bouquet@fpconsortial.co.uk 
-					<?Name Contact email address?>
-					<?Description The electronic mail of the contact.?>
-					<?Cardinality 0..1?>
-				</cbc:ElectronicMail>
+				<cbc:Name></cbc:Name>
+				<cbc:Telephone></cbc:Telephone>
+				<cbc:ElectronicMail></cbc:ElectronicMail>
 			</cac:Contact>
 		</cac:Party>
 	</cac:DeliveryCustomerParty>
@@ -302,108 +139,46 @@
 	<cac:BuyerCustomerParty>
 		<cac:Party>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0088"> 5790000435951 
-					<?Rule PEPPOL-T120-R008?>
-					<?schemeID-usage Optional?>
-					<?schemeID-CodeList ICD?>
-				</cbc:ID>
+				<cbc:ID schemeID=""></cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
-				<cbc:Name> IYT Corporation 
-					<?Rule PEPPOL-T120-R008?>
-				</cbc:Name>
+				<cbc:Name></cbc:Name>
 			</cac:PartyName>
 			<cac:PostalAddress>
-				<cbc:StreetName>Avon Way</cbc:StreetName>
-				<cbc:AdditionalStreetName>Purchasing</cbc:AdditionalStreetName>
-				<cbc:CityName>Bridgtow</cbc:CityName>
-				<cbc:PostalZone>ZZ99 1ZZ</cbc:PostalZone>
-				<cbc:CountrySubentity>Avon</cbc:CountrySubentity>
+				<cbc:StreetName></cbc:StreetName>
+				<cbc:AdditionalStreetName></cbc:AdditionalStreetName>
+				<cbc:CityName></cbc:CityName>
+				<cbc:PostalZone></cbc:PostalZone>
+				<cbc:CountrySubentity></cbc:CountrySubentity>
 				<cac:AddressLine>
-					<cbc:Line>3rd Floor, Room 5
-						<?Cardinality 1..1?>
-					</cbc:Line>
+					<cbc:Line></cbc:Line>
 				</cac:AddressLine>
 				<cac:Country>
-					<cbc:IdentificationCode>GB</cbc:IdentificationCode>
+					<cbc:IdentificationCode></cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
 			
 			<cac:PartyTaxScheme>
-				<?Name Party tax scheme?>
-				<?Description The tax information about the Buyer Party.?>
-				<?Cardinality 0..1?>
-				<cbc:CompanyID>GB523859989
-					<?Name Company ID?>
-					<?Description The Buyer Party Value Added Tax identifer.?>
-					<?Cardinality 1..1?>
-				</cbc:CompanyID>
+				<cbc:CompanyID></cbc:CompanyID>
 				<cac:TaxScheme>
-					<?Name Tax scheme?>
-					<?Cardinality 1..1?>
-					<cbc:ID>VAT
-						<?Name Tax scheme identifier?>
-						<?Description Tax scheme identifier. E.g. "VAT" or "GST".?>
-						<?Cardinality 1..1?>
-					</cbc:ID>
+					<cbc:ID></cbc:ID>
 				</cac:TaxScheme>
 			</cac:PartyTaxScheme>
-			
 			<cac:PartyLegalEntity>
-				<?Name Party Legal Entity?>
-				<?Cardinality 0..1?>
-				<cbc:RegistrationName>Buyer inc.
-					<?Cardinality 1..1?>
-					<?Name Buyer party's Legal name. ?>
-					<?Description The Legal Name of the Buying party. ?>
-				</cbc:RegistrationName>
-				<cbc:CompanyID schemeID="0089">GB523859989
-					<?Name Buyer party's legal registration ID. ?>
-					<?Description The official identity of the party as registered with the relevant fiscal authority.?>
-					<?Cardinality 0..1?>
-					<?schemeID-Usage optional?>
-					<?schemeID-CodeList ICD?>
-					<?schemeID-Name Scheme identifier?>
-					<?schemeID-Description The identification scheme identifier of the Buyer's legal registration identifier?>
-				</cbc:CompanyID>
+				<cbc:RegistrationName></cbc:RegistrationName>
+				<cbc:CompanyID schemeID=""></cbc:CompanyID>
 				<cac:RegistrationAddress>
-					<?Name Legal address?>
-					<?Cardinality 0..1?>
-					<cbc:CityName>Bridgtown
-						<?Name City name?>
-						<?Description The name of the city.?>
-						<?Cardinality 0..1?>
-					</cbc:CityName>
+					<cbc:CityName></cbc:CityName>
 					<cac:Country>
-						<?Name Contry?>
-						<?Description The residens country for the Buyer party.?>
-						<?Cardinality 1..1?>
-						<cbc:IdentificationCode>UK
-							<?Name Contry code?>
-						</cbc:IdentificationCode>
+						<cbc:IdentificationCode></cbc:IdentificationCode>
 					</cac:Country>
 				</cac:RegistrationAddress>
 			</cac:PartyLegalEntity>
 
 			<cac:Contact>
-				<?Name Contact person name?>
-				<?Description The contact of the Buyer party.?>
-				<?Cardinality 0..1?>
-				<cbc:Name>Mrs Bouquet
-					<?Name Contact name?>
-					<?Description The contact name.?>
-					<?Cardinality 0..1?>
-				</cbc:Name>
-				<cbc:Telephone>0158 1233714
-					<?Name Contact telephone number?>
-					<?Description The phone number of the contact.?>
-					<?Cardinality 0..1?>
-				</cbc:Telephone>
-				<cbc:ElectronicMail>bouquet@fpconsortial.co.uk
-					<?Name Contact email address?>
-					<?Description The electronic mail of the contact.?>
-					<?Cardinality 0..1?>
-				</cbc:ElectronicMail>
+				<cbc:Name></cbc:Name>
+				<cbc:Telephone></cbc:Telephone>
+				<cbc:ElectronicMail></cbc:ElectronicMail>
 			</cac:Contact>
 		</cac:Party>
 	</cac:BuyerCustomerParty>
