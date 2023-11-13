@@ -11,6 +11,7 @@
 	
 	
 	
+	
 	     <Element>
          <Term>cbc:CustomizationID</Term>
          <Name>Specification identification</Name>
@@ -78,6 +79,7 @@
          <Reference type="BUSINESS_TERM">tir16-088</Reference>
          <Value type="EXAMPLE">Text</Value>
       </Element>
+	
 	     <Element cardinality="0..n">
          <Term>cac:OrderReference</Term>
          <Name>Order reference information</Name>
@@ -91,21 +93,22 @@
             <Value type="EXAMPLE">AEG0123456</Value>
          </Element>
       </Element>
+	
 	     <Element cardinality="0..n">
          <Term>cac:AdditionalDocumentReference</Term>
          <Name>Additional document reference</Name>
-         <Description>BEAst: Reference to additional documents relevant for this Despatch advice. Can also be used for additional information on header level.</Description>
+         <Description>Peppol: Reference to additional documents relevant for this Despatch advice. Can be used for additional BEAst information on header level.</Description>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Identity of the reference</Name>
-            <Description>BEAst: The reference number of added document</Description>
+            <Description>Peppol: The reference number of added document</Description>
             <Reference type="BUSINESS_TERM">tir16-p049</Reference>
             <Value type="EXAMPLE">7648779</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:DocumentTypeCode</Term>
             <Name>Document type code</Name>
-            <Description>BEAst: The type of reference. Must me part of UNCL1001. At least one of Document Type Code and Document Type must be used. </Description>
+            <Description>Peppol: The type of reference. Must me part of UNCL1001. At least one of Document Type Code and Document Type must be used. </Description>
             <Reference type="RULE">PEPPOL-T120-R031</Reference>
             <Reference type="CODE_LIST">UNCL1001</Reference>
             <Value type="EXAMPLE">380</Value>
@@ -113,7 +116,7 @@
          <Element cardinality="0..1">
             <Term>cbc:DocumentType</Term>
             <Name>Document type</Name>
-            <Description>BEAst: The type of reference that cannot be specified by a code. At least one of Document Type Code and Document Type must be used. </Description>
+            <Description>Peppol: The type of reference that cannot be specified by a code. At least one of Document Type Code and Document Type must be used. </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">tir16-p050</Reference>
             <Reference type="RULE">PEPPOL-T120-R031</Reference>
@@ -122,36 +125,23 @@
          <Element cardinality="0..1">
             <Term>cac:Attachment</Term>
             <Name>Attachment</Name>
-            <Description>BEAst: Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Description>
+            <Description>Peppol: Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Description>
             <Element cardinality="0..1">
                <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                <Name>Embedded binary object</Name>
-               <Description>BEAst: The referenced document can here be inserted as a binary object.</Description>
+               <Description>Peppol: The referenced document can here be inserted as a binary object.</Description>
                <DataType>Binary object</DataType>
                <Reference type="BUSINESS_TERM">tir16-p051</Reference>
                <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
-               <Attribute>
-                  <Term>mimeCode</Term>
-                  <Name>Attached document Mime code</Name>
-                  <Description>Peppol: The mime code of the attached document.</Description>
-                  <Reference type="CODE_LIST">MimeCode</Reference>
-                  <Value type="EXAMPLE">application/pdf</Value>
-               </Attribute>
-               <Attribute>
-                  <Term>filename</Term>
-                  <Name>Attached document filename</Name>
-                  <Description>Peppol: The file name of the attached document</Description>
-                  <Value type="EXAMPLE">Hours-spent.pdf</Value>
-               </Attribute>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:ExternalReference</Term>
                <Name>External reference</Name>
-               <Description>BEAst: A reference to an attached document that is external to the document(s) being exchanged.</Description>
+               <Description>Peppol: A reference to an attached document that is external to the document(s) being exchanged.</Description>
                <Element>
                   <Term>cbc:URI</Term>
                   <Name>Address to internet resource</Name>
-                  <Description>BEAst: The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Description>
+                  <Description>Peppol: The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir16-p052</Reference>
                   <Value type="EXAMPLE">www.beast.se</Value>
@@ -163,7 +153,7 @@
 	     <Element>
          <Term>cac:DespatchSupplierParty</Term>
          <Name>Despatching party information</Name>
-         <Description>BEAst: The Despatch Party is the person or organization who provides (despatch) the goods or services. It also defines the sender of the Advanced Despatch Advice. The role is carried out by the supplier or on behalf of the supplier. The real ship-from address must be provided in the Despatch Address when the Advanced Despatch Advice describes a movement.</Description>
+         <Description>Peppol: The Despatch Party is the person or organization who provides (despatch) the goods or services. It also defines the sender of the Advanced Despatch Advice. The role is carried out by the supplier or on behalf of the supplier. The real ship-from address must be provided in the Despatch Address when the Advanced Despatch Advice describes a movement.</Description>
          <Element>
             <Term>cac:Party</Term>
             <Name>Party information</Name>
@@ -174,13 +164,6 @@
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir16-071</Reference>
                <Value type="EXAMPLE">7300010000001</Value>
-               <Attribute usage="Mandatory">
-                  <Term>schemeID</Term>
-                  <Name>Scheme identifier</Name>
-                  <Description>Peppol: Scheme identifier for electronic address</Description>
-                  <Reference type="CODE_LIST">eas</Reference>
-                  <Value type="EXAMPLE">0088</Value>
-               </Attribute>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
@@ -193,23 +176,16 @@
                   <Reference type="BUSINESS_TERM">tir16-p001</Reference>
                   <Reference type="RULE">PEPPOL-T120-R109</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute usage="optional">
-                     <Term>schemeID</Term>
-                     <Name>Scheme identifier</Name>
-                     <Description>Peppol: Scheme identifier for party identification</Description>
-                     <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0088</Value>
-                  </Attribute>
                </Element>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PartyName</Term>
                <Name>Party Name</Name>
-               <Description>BEAst: The name of the Despatch Supplier Party.</Description>
+               <Description>Peppol: The name of the Despatch Supplier Party.</Description>
                <Element cardinality="1..1">
                   <Term>cbc:Name</Term>
                   <Name>Name of the fuel supplier</Name>
-                  <Description>BEAst: The Despatch Supplier.</Description>
+                  <Description>Peppol: The Despatch Supplier.</Description>
                   <Reference type="RULE">PEPPOL-T120-R109</Reference>
                   <Value type="EXAMPLE">Sender inc.</Value>
                </Element>
@@ -299,11 +275,11 @@
             <Element cardinality="0..1">
                <Term>cac:PartyTaxScheme</Term>
                <Name>Party tax scheme</Name>
-               <Description>BEAst: The tax information about the Despatch Party.</Description>
+               <Description>Peppol: The tax information about the Despatch Party.</Description>
                <Element cardinality="1..1">
                   <Term>cbc:CompanyID</Term>
                   <Name>Company ID</Name>
-                  <Description>BEAst: The Despatch Party Value Added Tax identifer.</Description>
+                  <Description>Peppol: The Despatch Party Value Added Tax identifer.</Description>
                   <Value type="EXAMPLE">GB325456788</Value>
                </Element>
                <Element cardinality="1..1">
@@ -312,7 +288,7 @@
                   <Element cardinality="1..1">
                      <Term>cbc:ID</Term>
                      <Name>Tax scheme identifier</Name>
-                     <Description>BEAst: Tax scheme identifier. E.g. "VAT" or "GST".</Description>
+                     <Description>Peppol: Tax scheme identifier. E.g. "VAT" or "GST".</Description>
                      <Value type="EXAMPLE">VAT</Value>
                   </Element>
                </Element>
@@ -323,7 +299,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:RegistrationName</Term>
                   <Name>Despatching party's legal name. </Name>
-                  <Description>BEAst: The legal name of the Despatching party. </Description>
+                  <Description>Peppol: The legal name of the Despatching party. </Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir16-007</Reference>
                   <Value type="EXAMPLE">Consortial</Value>
@@ -331,15 +307,8 @@
                <Element cardinality="0..1">
                   <Term>cbc:CompanyID</Term>
                   <Name>Despatch supplier parties legal registration ID. </Name>
-                  <Description>BEAst: The official identity of the party as registered with the relevant fiscal authority.</Description>
+                  <Description>Peppol: The official identity of the party as registered with the relevant fiscal authority.</Description>
                   <Value type="EXAMPLE">SC234567</Value>
-                  <Attribute>
-                     <Term>schemeID</Term>
-                     <Name>Scheme identifier</Name>
-                     <Description>BEAst: The identification scheme identifier of the despatch supplier legal registration identifier</Description>
-                     <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0089</Value>
-                  </Attribute>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:RegistrationAddress</Term>
@@ -347,17 +316,17 @@
                   <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
                      <Name>City name</Name>
-                     <Description>BEAst: The name of the city.</Description>
+                     <Description>Peppol: The name of the city.</Description>
                      <Value type="EXAMPLE">Farthing</Value>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cac:Country</Term>
                      <Name>Contry</Name>
-                     <Description>BEAst: The residens country for the despatch party.</Description>
+                     <Description>Peppol: The residens country for the despatch party.</Description>
                      <Element>
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code</Name>
-                        <Description>BEAst: Country Code</Description>
+                        <Description>Peppol: Country Code</Description>
                         <Value type="EXAMPLE">UK</Value>
                      </Element>
                   </Element>
@@ -366,11 +335,11 @@
             <Element cardinality="0..1">
                <Term>cac:Contact</Term>
                <Name>Contact</Name>
-               <Description>BEAst: The contact of the Despatch supplier party.</Description>
+               <Description>Peppol: The contact of the Despatch supplier party.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Contact name</Name>
-                  <Description>BEAst: The contact name.</Description>
+                  <Description>Peppol: The contact name.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir16-008</Reference>
                   <Value type="EXAMPLE">Mrs Bouquet</Value>
@@ -378,7 +347,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:Telephone</Term>
                   <Name>Contact email telephone</Name>
-                  <Description>BEAst: The phone number of the contact.</Description>
+                  <Description>Peppol: The phone number of the contact.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir16-012</Reference>
                   <Value type="EXAMPLE">0158 1233714</Value>
@@ -386,7 +355,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:ElectronicMail</Term>
                   <Name>Contact email address</Name>
-                  <Description>BEAst: The electronic mail of the contact.</Description>
+                  <Description>Peppol: The electronic mail of the contact.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir16-013</Reference>
                   <Value type="EXAMPLE">bouquet@fpconsortial.co.uk</Value>
