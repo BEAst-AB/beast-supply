@@ -169,7 +169,7 @@
                <Data ss:Type="String">Document identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The identity of the Receipt Advice set by the sender. It must be a unique identity. The Identity together with the Issue Date and Issue Time gives the version of the Receipt Advice.</Data>
+               <Data ss:Type="String">Peppol: The identity of the Receipt Advice set by the sender. It must be a unique identity. The Identity together with the Issue Date and Issue Time gives the version of the Receipt Advice.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">5658999</Data>
@@ -195,7 +195,7 @@
                <Data ss:Type="String">Receipt Advice Issue Date. </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The date when the Receipt Advice was issued. Format = "YYYY-MM-DD"</Data>
+               <Data ss:Type="String">Peppol: The date when the Receipt Advice was issued. Format = "YYYY-MM-DD"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-09-10</Data>
@@ -221,7 +221,7 @@
                <Data ss:Type="String">Receipt Advice Issue Time. </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The time when the Receipt Advice is issued. Format = "HH:MM:SS+timezone". Timezone is optional to use. If omitted, the local timezone where the document was issued should be assumed.</Data>
+               <Data ss:Type="String">Peppol: The time when the Receipt Advice is issued. Format = "HH:MM:SS+timezone". Timezone is optional to use. If omitted, the local timezone where the document was issued should be assumed.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">12:00:00+01:00</Data>
@@ -247,7 +247,7 @@
                <Data ss:Type="String">Receipt Advice Status Code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: A code signifying the status of the Receipt Advice. Default is Original (9)</Data>
+               <Data ss:Type="String">Peppol: A code signifying the status of the Receipt Advice. Default is Original (9)</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">9</Data>
@@ -273,7 +273,7 @@
                <Data ss:Type="String">Receipt Advice Type Code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: A code signifying the type of the Receipt Advice - Response to the Advanced Despatch Advice (D) or Response to the received Shipment (S).</Data>
+               <Data ss:Type="String">Peppol: A code signifying the type of the Receipt Advice - Response to the Advanced Despatch Advice (D) or Response to the received Shipment (S).</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">S</Data>
@@ -299,7 +299,7 @@
                <Data ss:Type="String">Note. </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: A textual note for the delivery as whole.</Data>
+               <Data ss:Type="String">Peppol: A textual note for the delivery as whole.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Delivery ok</Data>
@@ -325,7 +325,7 @@
                <Data ss:Type="String">Order reference information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: A reference to the original order</Data>
+               <Data ss:Type="String">Peppol: A reference to the original order</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -377,7 +377,7 @@
                <Data ss:Type="String">Despatch Document Reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: A reference to the Advanced Despatch Advice.</Data>
+               <Data ss:Type="String">Peppol: A reference to the Advanced Despatch Advice.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -403,7 +403,7 @@
                <Data ss:Type="String">Identity of the Despatch Document. </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The ID of the Advanced Despatch Advice. The unique identity of the Advanced Despatch Advice is made up by ID, IssueDate and IssueTime in combination.</Data>
+               <Data ss:Type="String">Peppol: The ID of the Advanced Despatch Advice. The unique identity of the Advanced Despatch Advice is made up by ID, IssueDate and IssueTime in combination.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">565899</Data>
@@ -429,7 +429,7 @@
                <Data ss:Type="String">Issue Date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The date the Advanced Despatch Advice was issued.</Data>
+               <Data ss:Type="String">Peppol: The date the Advanced Despatch Advice was issued.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-09-10</Data>
@@ -455,7 +455,7 @@
                <Data ss:Type="String">The time the Advanced Despatch Advice was issued.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The time when the Advanced Despatch Advice was issued. Format = "HH:MM:SS+timezone". Timezone is optional to use. If omitted, the local timezone where the document was issued should be assumed.</Data>
+               <Data ss:Type="String">Peppol: The time when the Advanced Despatch Advice was issued. Format = "HH:MM:SS+timezone". Timezone is optional to use. If omitted, the local timezone where the document was issued should be assumed.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">12:00:00+01:00</Data>
@@ -481,7 +481,7 @@
                <Data ss:Type="String">Document Status Code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: To be used when the Receipt Advice is a response to the received Advanced Despatch Advice. The status Code describes whether the Advanced Despatch Advice is accepted or if it is rejected due to errors, and the supplier should send a new.</Data>
+               <Data ss:Type="String">Peppol: To be used when the Receipt Advice is a response to the received Advanced Despatch Advice. The status Code describes whether the Advanced Despatch Advice is accepted or if it is rejected due to errors, and the supplier should send a new.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">RE</Data>
@@ -507,7 +507,7 @@
                <Data ss:Type="String">Document Status Description</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Text to describe the reason for the rejection.</Data>
+               <Data ss:Type="String">Peppol: Text to describe the reason for the rejection.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Incorrect Identity of the buyer.</Data>
@@ -533,7 +533,7 @@
                <Data ss:Type="String">Additional document reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Reference to additional documents relevant for this Receipt Advice. Can also be used for additional information on header level.</Data>
+               <Data ss:Type="String">Peppol: Reference to additional documents relevant for this Receipt Advice. Can also be used for additional information on header level.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -559,7 +559,7 @@
                <Data ss:Type="String">Identity of the reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The reference number of added document</Data>
+               <Data ss:Type="String">Peppol: The reference number of added document</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">7648779</Data>
@@ -585,7 +585,7 @@
                <Data ss:Type="String">Document type code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The type of reference. Must me part of UNCL1001. At least one of Document Type Code and Document Type must be used.</Data>
+               <Data ss:Type="String">Peppol: The type of reference. Must me part of UNCL1001. At least one of Document Type Code and Document Type must be used.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">380</Data>
@@ -611,7 +611,7 @@
                <Data ss:Type="String">Document type</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The type of reference that cannot be specified by a code. At least one of Document Type Code and Document Type must be used.</Data>
+               <Data ss:Type="String">Peppol: The type of reference that cannot be specified by a code. At least one of Document Type Code and Document Type must be used.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Photo</Data>
@@ -637,7 +637,7 @@
                <Data ss:Type="String">Attachment</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Data>
+               <Data ss:Type="String">Peppol: Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -663,7 +663,7 @@
                <Data ss:Type="String">Embedded binary object</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The referenced document can here be inserted as a binary object.</Data>
+               <Data ss:Type="String">Peppol: The referenced document can here be inserted as a binary object.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Data>
@@ -741,7 +741,7 @@
                <Data ss:Type="String">External reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: A reference to an attached document that is external to the document(s) being exchanged.</Data>
+               <Data ss:Type="String">Peppol: A reference to an attached document that is external to the document(s) being exchanged.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -767,7 +767,7 @@
                <Data ss:Type="String">Address to internet resource</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Data>
+               <Data ss:Type="String">Peppol: The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">www.beast.se</Data>
@@ -793,7 +793,7 @@
                <Data ss:Type="String">Consignee information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The Consignee is the person or organization to which the products will be or has been shipped and who is taking possession. It also defines the sender of the Receipt Advice. The role is carried out by the customer or on behalf of the customer.</Data>
+               <Data ss:Type="String">Peppol: The Consignee is the person or organization to which the products will be or has been shipped and who is taking possession. It also defines the sender of the Receipt Advice. The role is carried out by the customer or on behalf of the customer.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -975,7 +975,7 @@
                <Data ss:Type="String">Party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The name of the Delivery Customer Party.</Data>
+               <Data ss:Type="String">Peppol: The name of the Delivery Customer Party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1001,7 +1001,7 @@
                <Data ss:Type="String">Name of the Consignee </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The Name of the Consignee.</Data>
+               <Data ss:Type="String">Peppol: The Name of the Consignee.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Goods Receiver inc.</Data>
@@ -1287,7 +1287,7 @@
                <Data ss:Type="String">Party tax scheme</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The tax information about the Delivery Party.</Data>
+               <Data ss:Type="String">Peppol: The tax information about the Delivery Party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1313,7 +1313,7 @@
                <Data ss:Type="String">Company ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The Delivery Party Value Added Tax identifer.</Data>
+               <Data ss:Type="String">Peppol: The Delivery Party Value Added Tax identifer.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">GB523859989</Data>
@@ -1365,7 +1365,7 @@
                <Data ss:Type="String">Tax scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Tax scheme identifier. E.g. "VAT" or "GST".</Data>
+               <Data ss:Type="String">Peppol: Tax scheme identifier. E.g. "VAT" or "GST".</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">VAT</Data>
@@ -1443,7 +1443,7 @@
                <Data ss:Type="String">Delivery customers parties legal registration name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The official name of the party as registered with the relevant fiscal authority.</Data>
+               <Data ss:Type="String">Peppol: The official name of the party as registered with the relevant fiscal authority.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">GB523859989</Data>
@@ -1469,7 +1469,7 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The identification scheme identifier of the despatch customer legal registration identifier</Data>
+               <Data ss:Type="String">Peppol: The identification scheme identifier of the despatch customer legal registration identifier</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0089</Data>
@@ -1521,7 +1521,7 @@
                <Data ss:Type="String">City name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The name of the city.</Data>
+               <Data ss:Type="String">Peppol: The name of the city.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Bridgtown</Data>
@@ -1547,7 +1547,7 @@
                <Data ss:Type="String">Contry</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The residens country for the delivery customer party.</Data>
+               <Data ss:Type="String">Peppol: The residens country for the delivery customer party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1599,7 +1599,7 @@
                <Data ss:Type="String">Contact</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The contact of the Delivery Customer party.</Data>
+               <Data ss:Type="String">Peppol: The contact of the Delivery Customer party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1625,7 +1625,7 @@
                <Data ss:Type="String">Contact name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The contact name.</Data>
+               <Data ss:Type="String">Peppol: The contact name.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Mr Fred Churchill</Data>
@@ -1651,7 +1651,7 @@
                <Data ss:Type="String">Contact email telephone</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The phone number of the contact.</Data>
+               <Data ss:Type="String">Peppol: The phone number of the contact.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0127 2653214</Data>
@@ -1677,7 +1677,7 @@
                <Data ss:Type="String">Contact email address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The electronic mail of the contact.</Data>
+               <Data ss:Type="String">Peppol: The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">fred@iytcorporation.gov.uk</Data>
@@ -1703,7 +1703,7 @@
                <Data ss:Type="String">Despatching party information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The Despatch Party is the person or organization who provides (despatch) the goods or services. It also defines the receiver of the Receipt Advice. The role is carried out by the supplier or on behalf of the supplier.</Data>
+               <Data ss:Type="String">Peppol: The Despatch Party is the person or organization who provides (despatch) the goods or services. It also defines the receiver of the Receipt Advice. The role is carried out by the supplier or on behalf of the supplier.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1885,7 +1885,7 @@
                <Data ss:Type="String">Party Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The name of the Despatch Supplier Party.</Data>
+               <Data ss:Type="String">Peppol: The name of the Despatch Supplier Party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1911,7 +1911,7 @@
                <Data ss:Type="String">Name of the Consignor</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The name of the Despatch Supplier.</Data>
+               <Data ss:Type="String">Peppol: The name of the Despatch Supplier.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Sender inc.</Data>
@@ -2197,7 +2197,7 @@
                <Data ss:Type="String">Party tax scheme</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The tax information about the Despatch Party.</Data>
+               <Data ss:Type="String">Peppol: The tax information about the Despatch Party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2223,7 +2223,7 @@
                <Data ss:Type="String">Company ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The Despatch Party Value Added Tax identifer.</Data>
+               <Data ss:Type="String">Peppol: The Despatch Party Value Added Tax identifer.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">GB325456788</Data>
@@ -2275,7 +2275,7 @@
                <Data ss:Type="String">Tax scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Tax scheme identifier. E.g. "VAT" or "GST".</Data>
+               <Data ss:Type="String">Peppol: Tax scheme identifier. E.g. "VAT" or "GST".</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">VAT</Data>
@@ -2353,7 +2353,7 @@
                <Data ss:Type="String">Despatch supplier parties legal registration name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The official name of the party as registered with the relevant fiscal authority.</Data>
+               <Data ss:Type="String">Peppol: The official name of the party as registered with the relevant fiscal authority.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">SC234567</Data>
@@ -2379,7 +2379,7 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The identification scheme identifier of the despatch supplier legal registration identifier</Data>
+               <Data ss:Type="String">Peppol: The identification scheme identifier of the despatch supplier legal registration identifier</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0089</Data>
@@ -2431,7 +2431,7 @@
                <Data ss:Type="String">City name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The name of the city.</Data>
+               <Data ss:Type="String">Peppol: The name of the city.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Farthing</Data>
@@ -2457,7 +2457,7 @@
                <Data ss:Type="String">Contry</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The residens country for the despatch party.</Data>
+               <Data ss:Type="String">Peppol: The residens country for the despatch party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2483,7 +2483,7 @@
                <Data ss:Type="String">Country code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Country Code</Data>
+               <Data ss:Type="String">Peppol: Country Code</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">UK</Data>
@@ -2509,7 +2509,7 @@
                <Data ss:Type="String">Contact</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The contact of the Despatch supplier party.</Data>
+               <Data ss:Type="String">Peppol: The contact of the Despatch supplier party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2535,7 +2535,7 @@
                <Data ss:Type="String">Contact name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The contact name.</Data>
+               <Data ss:Type="String">Peppol: The contact name.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Mrs Bouquet</Data>
@@ -2561,7 +2561,7 @@
                <Data ss:Type="String">Contact email telephone</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The phone number of the contact.</Data>
+               <Data ss:Type="String">Peppol: The phone number of the contact.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0158 1233714</Data>
@@ -2587,7 +2587,7 @@
                <Data ss:Type="String">Contact email address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The electronic mail of the contact.</Data>
+               <Data ss:Type="String">Peppol: The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">bouquet@fpconsortial.co.uk</Data>
@@ -3497,7 +3497,7 @@
                <Data ss:Type="String">Shipment information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Use the Shipment group only when the Receipt Advice is used as a response to a received shipment.</Data>
+               <Data ss:Type="String">Peppol: Use the Shipment group only when the Receipt Advice is used as a response to a received shipment.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3523,7 +3523,7 @@
                <Data ss:Type="String">Shipment identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Identifies a shipment. Freight forwarder's reference number.</Data>
+               <Data ss:Type="String">Peppol: Identifies a shipment. Freight forwarder's reference number.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1</Data>
@@ -3549,7 +3549,7 @@
                <Data ss:Type="String">Shipment description</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Information from Goods receiver to Supplier.</Data>
+               <Data ss:Type="String">Peppol: Information from Goods receiver to Supplier.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">text</Data>
@@ -3601,7 +3601,7 @@
                <Data ss:Type="String">Consignment identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Use a dummy value if the Consignment ID is unknown since this element is mandatory.</Data>
+               <Data ss:Type="String">Peppol: Use a dummy value if the Consignment ID is unknown since this element is mandatory.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">NA</Data>
@@ -3627,7 +3627,7 @@
                <Data ss:Type="String">Status</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: To report the status of the received consignment.</Data>
+               <Data ss:Type="String">Peppol: To report the status of the received consignment.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3653,7 +3653,7 @@
                <Data ss:Type="String">Condition Code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Specifies the status condition of the consignment.</Data>
+               <Data ss:Type="String">Peppol: Specifies the status condition of the consignment.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">CA</Data>
@@ -3679,7 +3679,7 @@
                <Data ss:Type="String">Status Reason Code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The reason for this status condition or position, expressed as a code.</Data>
+               <Data ss:Type="String">Peppol: The reason for this status condition or position, expressed as a code.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">3</Data>
@@ -3705,7 +3705,7 @@
                <Data ss:Type="String">Status Reason </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The reason for this status condition or position, expressed as a text.</Data>
+               <Data ss:Type="String">Peppol: The reason for this status condition or position, expressed as a text.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Delivery outside requested time window.</Data>
@@ -3757,7 +3757,7 @@
                <Data ss:Type="String">Party identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: This party defines the company providing the transport service</Data>
+               <Data ss:Type="String">Peppol: This party defines the company providing the transport service</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3783,7 +3783,7 @@
                <Data ss:Type="String">Carrying party identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Identifies the Carrier party.</Data>
+               <Data ss:Type="String">Peppol: Identifies the Carrier party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">5790000435951</Data>
@@ -4017,7 +4017,7 @@
                <Data ss:Type="String">Actual Delivery Date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The Date the goods or service was delivered.</Data>
+               <Data ss:Type="String">Peppol: The Date the goods or service was delivered.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-09-26</Data>
@@ -4043,7 +4043,7 @@
                <Data ss:Type="String">Actual Delivery Time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The time on which the supply of goods or services was made or completed according to the delivery term. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the delivery was made should be assumed.</Data>
+               <Data ss:Type="String">Peppol: The time on which the supply of goods or services was made or completed according to the delivery term. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the delivery was made should be assumed.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">10:00:00+01:00</Data>
@@ -4069,7 +4069,7 @@
                <Data ss:Type="String">Delivery terms</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst:</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4095,7 +4095,7 @@
                <Data ss:Type="String">Delivery terms</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Delivery terms code (Inco terms).</Data>
+               <Data ss:Type="String">Peppol: Delivery terms code (Inco terms).</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">EXW</Data>
@@ -4121,7 +4121,7 @@
                <Data ss:Type="String">Special terms</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Special delivery terms that exceeds the inco terms.</Data>
+               <Data ss:Type="String">Peppol: Special delivery terms that exceeds the inco terms.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">EQN-06</Data>
@@ -4147,7 +4147,7 @@
                <Data ss:Type="String">Delivery terms location</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst:</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4173,7 +4173,7 @@
                <Data ss:Type="String">Delivery terms location</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Delivery terms location. The location to which the delivery terms refer. Used to qualify the delivery terms e.g. "Terms of delivery are FOB Rotterdam"</Data>
+               <Data ss:Type="String">Peppol: Delivery terms location. The location to which the delivery terms refer. Used to qualify the delivery terms e.g. "Terms of delivery are FOB Rotterdam"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Kalmar</Data>
@@ -4199,7 +4199,7 @@
                <Data ss:Type="String">Transport handling unit</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Used to specify how the goods is marked and if there are any damages. If this group is used, all Transport Handling Units in the Advanced Despatch Advice must be included, not just some.</Data>
+               <Data ss:Type="String">Peppol: Used to specify how the goods is marked and if there are any damages. If this group is used, all Transport Handling Units in the Advanced Despatch Advice must be included, not just some.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4225,7 +4225,7 @@
                <Data ss:Type="String">Identifier transport handling unit</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The SSCC identification code of this Transport Handling Unit.</Data>
+               <Data ss:Type="String">Peppol: The SSCC identification code of this Transport Handling Unit.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">11111222222222</Data>
@@ -4251,7 +4251,7 @@
                <Data ss:Type="String">Transport Handling Unit type code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Type of Transport Handling Unit. Use UN/ECE Recommendation 21.</Data>
+               <Data ss:Type="String">Peppol: Type of Transport Handling Unit. Use UN/ECE Recommendation 21.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">AG</Data>
@@ -4277,7 +4277,7 @@
                <Data ss:Type="String">Status of the Transport Handling Unit. </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: To report if there are any claims related to this Transport Handling Unit.</Data>
+               <Data ss:Type="String">Peppol: To report if there are any claims related to this Transport Handling Unit. If omitted, default is that the THU is received ok and with no damage or claim related to it.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4303,7 +4303,7 @@
                <Data ss:Type="String">ConditionCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: A code describing the status of the TransportHandlingUnit.</Data>
+               <Data ss:Type="String">Peppol: A code describing the status of the TransportHandlingUnit.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">CA</Data>
@@ -4329,7 +4329,7 @@
                <Data ss:Type="String">Status Reason Code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The reason for this status condition or position, expressed as a code.</Data>
+               <Data ss:Type="String">Peppol: The reason for this status condition or position, expressed as a code.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">3</Data>
@@ -4355,7 +4355,7 @@
                <Data ss:Type="String">Status Reason </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The reason for this status condition or position, expressed as a text.</Data>
+               <Data ss:Type="String">Peppol: The reason for this status condition or position, expressed as a text.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Pallet broken. See attached photo.</Data>
@@ -4381,7 +4381,7 @@
                <Data ss:Type="String">Receipt Line</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: A line detailing a kind of item received.</Data>
+               <Data ss:Type="String">Peppol: A line detailing a kind of item received.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4407,7 +4407,7 @@
                <Data ss:Type="String">Line identity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: A unique identity on this line, normally an increasing sequence number.</Data>
+               <Data ss:Type="String">Peppol: A unique identity on this line, normally an increasing sequence number.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1</Data>
@@ -4433,7 +4433,7 @@
                <Data ss:Type="String">Note </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Text conveying information that is not contained explicitly in other structures.</Data>
+               <Data ss:Type="String">Peppol: Text conveying information that is not contained explicitly in other structures.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">SAMPLE</Data>
@@ -4459,7 +4459,7 @@
                <Data ss:Type="String">Received quantity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The total quantity received, including any rejected parts.</Data>
+               <Data ss:Type="String">Peppol: The total quantity received, including any rejected parts.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">90</Data>
@@ -4485,7 +4485,7 @@
                <Data ss:Type="String">Quantity unit of measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The unit of measure that applies to the quantity.</Data>
+               <Data ss:Type="String">Peppol: The unit of measure that applies to the quantity.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">KGM</Data>
@@ -4511,7 +4511,7 @@
                <Data ss:Type="String">Short quantity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The quantity received short; the difference between the quantity reported despatched and the quantity actually received.</Data>
+               <Data ss:Type="String">Peppol: The quantity received short; the difference between the quantity reported despatched and the quantity actually received.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">10</Data>
@@ -4537,7 +4537,7 @@
                <Data ss:Type="String">Quantity unit of measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The unit of measure that applies to the quantity.</Data>
+               <Data ss:Type="String">Peppol: The unit of measure that applies to the quantity.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">KGM</Data>
@@ -4563,7 +4563,7 @@
                <Data ss:Type="String">Shortage Action Code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: A code signifying the action that the delivery party wishes the despatch party to take as the result of a shortage.</Data>
+               <Data ss:Type="String">Peppol: A code signifying the action that the delivery party wishes the despatch party to take as the result of a shortage.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2</Data>
@@ -4589,7 +4589,7 @@
                <Data ss:Type="String">Rejected quantity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The quantity rejected due to damage, quality issues or any other cause.</Data>
+               <Data ss:Type="String">Peppol: The quantity rejected due to damage, quality issues or any other cause.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1</Data>
@@ -4615,7 +4615,7 @@
                <Data ss:Type="String">Quantity unit of measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The unit of measure that applies to the quantity.</Data>
+               <Data ss:Type="String">Peppol: The unit of measure that applies to the quantity.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">KGM</Data>
@@ -4641,7 +4641,7 @@
                <Data ss:Type="String">Reject Reason Code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The reason for a rejection, expressed as a code.</Data>
+               <Data ss:Type="String">Peppol: The reason for a rejection, expressed as a code.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1</Data>
@@ -4667,7 +4667,7 @@
                <Data ss:Type="String">Reject Reason</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The reason for a rejection, expressed as text.</Data>
+               <Data ss:Type="String">Peppol: The reason for a rejection, expressed as text.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Wrong item delivered.</Data>
@@ -4693,7 +4693,7 @@
                <Data ss:Type="String">Reject Action Code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: A code signifying the action that the delivery party wishes the despatch party to take as the result of a rejection.</Data>
+               <Data ss:Type="String">Peppol: A code signifying the action that the delivery party wishes the despatch party to take as the result of a rejection.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1</Data>
@@ -4719,7 +4719,7 @@
                <Data ss:Type="String">Oversupply Quantity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The quantity over-supplied, i.e., the quantity over and above the quantity ordered.</Data>
+               <Data ss:Type="String">Peppol: The quantity over-supplied, i.e., the quantity over and above the quantity ordered.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">5</Data>
@@ -4745,7 +4745,7 @@
                <Data ss:Type="String">Quantity unit of measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The unit of measure that applies to the quantity.</Data>
+               <Data ss:Type="String">Peppol: The unit of measure that applies to the quantity.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">KGM</Data>
@@ -4771,7 +4771,7 @@
                <Data ss:Type="String">Orderline Reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: A reference to the order line associated with this receipt line.</Data>
+               <Data ss:Type="String">Peppol: A reference to the order line associated with this receipt line.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4797,7 +4797,7 @@
                <Data ss:Type="String">Line ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The Orderline this Responseline refers to. Use NA if this is unknown or not relevant since the ID is Mandatory to use.</Data>
+               <Data ss:Type="String">Peppol: The Orderline this Responseline refers to. Use NA if this is unknown or not relevant since the ID is Mandatory to use.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1</Data>
@@ -4823,7 +4823,7 @@
                <Data ss:Type="String">Sales order line number</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Reference to the sellers orderline number.</Data>
+               <Data ss:Type="String">Peppol: Reference to the sellers orderline number.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">10</Data>
@@ -4849,7 +4849,7 @@
                <Data ss:Type="String">Order reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The order can be referred to at header level or here. Doing it here at line level it is possible to refer to multiple order in one document.</Data>
+               <Data ss:Type="String">Peppol: The order can be referred to at header level or here. Doing it here at line level it is possible to refer to multiple order in one document.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4875,7 +4875,7 @@
                <Data ss:Type="String">Order number</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The order number referred to.</Data>
+               <Data ss:Type="String">Peppol: The order number referred to.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">AEG012345</Data>
@@ -4901,7 +4901,7 @@
                <Data ss:Type="String">Sales order number</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Reference to the sellers order number.</Data>
+               <Data ss:Type="String">Peppol: Reference to the sellers order number.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">5678985</Data>
@@ -4927,7 +4927,7 @@
                <Data ss:Type="String">Despatch line Reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: A reference to a despatch line associated with this receipt line.</Data>
+               <Data ss:Type="String">Peppol: A reference to a despatch line associated with this receipt line.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4953,7 +4953,7 @@
                <Data ss:Type="String">Line ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The identity of the Despatch Advice line number referred to. Use NA if this is not relevant, like reporting having received something that was not in the Despatch Advice with the shipment, since the ID is Mandatory to use.</Data>
+               <Data ss:Type="String">Peppol: The identity of the Despatch Advice line number referred to.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1</Data>
@@ -4979,7 +4979,7 @@
                <Data ss:Type="String">Item. </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Information to describe and identify the item.</Data>
+               <Data ss:Type="String">Peppol: Information to describe and identify the item.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5005,7 +5005,7 @@
                <Data ss:Type="String">Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The name of the item.</Data>
+               <Data ss:Type="String">Peppol: The name of the item.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Beeswax</Data>
@@ -5031,7 +5031,7 @@
                <Data ss:Type="String">Buyer's item Identification. </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The identity on the item assigned by the buyer.</Data>
+               <Data ss:Type="String">Peppol: The identity on the item assigned by the buyer.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5057,7 +5057,7 @@
                <Data ss:Type="String">Item identity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The buyer's identity on the item.</Data>
+               <Data ss:Type="String">Peppol: The buyer's identity on the item.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">6578489</Data>
@@ -5083,7 +5083,7 @@
                <Data ss:Type="String">Seller's item Identification. </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The identity on the item assigned by the seller.</Data>
+               <Data ss:Type="String">Peppol: The identity on the item assigned by the seller.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5109,7 +5109,7 @@
                <Data ss:Type="String">Item identity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The seller's identity on the item.</Data>
+               <Data ss:Type="String">Peppol: The seller's identity on the item.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">17589683</Data>
@@ -5135,7 +5135,7 @@
                <Data ss:Type="String">Manufacturers item identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Identifying information for this item, assigned by the manufacturer.</Data>
+               <Data ss:Type="String">Peppol: Identifying information for this item, assigned by the manufacturer.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5161,7 +5161,7 @@
                <Data ss:Type="String">Manufacturers item identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Manufacturers article number</Data>
+               <Data ss:Type="String">Peppol: Manufacturers article number</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">17589683</Data>
@@ -5187,7 +5187,7 @@
                <Data ss:Type="String">Standard Item Identification </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: A standardized item number. Only one StandardItemIdentification can be used per line.</Data>
+               <Data ss:Type="String">Peppol: A standardized item number. Only one StandardItemIdentification can be used per line.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5213,7 +5213,7 @@
                <Data ss:Type="String">Standard Item number</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Global Trade Item Number (GTIN) or other standardized identification.</Data>
+               <Data ss:Type="String">Peppol: Global Trade Item Number (GTIN) or other standardized identification.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1234567891234</Data>
@@ -5239,7 +5239,7 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The scheme identifier of the Item standard identifier.</Data>
+               <Data ss:Type="String">Peppol: The scheme identifier of the Item standard identifier.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0160</Data>
@@ -5265,7 +5265,7 @@
                <Data ss:Type="String">Item standard extended identifier. </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: With specific properties, e.g., Item 123 = Chair / Item 123 Ext 45 = brown chair.</Data>
+               <Data ss:Type="String">Peppol: With specific properties, e.g., Item 123 = Chair / Item 123 Ext 45 = brown chair.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">22114455</Data>
