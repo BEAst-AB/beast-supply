@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Namespace xmlns="urn:fdc:difi.no:2017:vefa:structure:Namespace-1">
+	<Identifier prefix="sbdh">http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader</Identifier>
+	<Version>2.3</Version>
+	<Include prefix="xs">http://www.w3.org/2001/XMLSchema</Include>
+
+	<Element name="HeaderVersion">
+		<DataType>xs:string</DataType>
+	</Element>
+	<Element name="Sender">
+		<DataType>Partner</DataType>
+	</Element>
+	<Element name="Receiver">
+		<DataType>Partner</DataType>
+	</Element>
+	<Element name="DocumentIdentification">
+		<Ref card="1..1">Standard</Ref>
+		<Ref card="1..1">TypeVersion</Ref>
+		<Ref card="1..1">InstanceIdentifier</Ref>
+		<Ref card="1..1">Type</Ref>
+		<Ref card="1..1">MultipleType</Ref>
+		<Ref card="1..1">CreationDateAndTime</Ref>
+	</Element>
+	<Element name="Manifest">
+		<Ref card="1..1">Standard</Ref>
+		<Ref card="1..1">TypeVersion</Ref>
+		<Ref card="1..1">InstanceIdentifier</Ref>
+		<Ref card="1..1">Type</Ref>
+		<Ref card="1..1">MultipleType</Ref>
+		<Ref card="1..1">CreationDateAndTime</Ref>
+	</Element>
+	<Element name="StandardBusinessDocumentHeader">
+		<Ref card="1..1">HeaderVersion</Ref>
+		<Ref card="1..n">Sender</Ref>
+		<Ref card="1..n">Receiver</Ref>
+		<Ref card="0..1">DocumentIdentification</Ref>
+		<Ref card="0..1">Manifest</Ref>
+		<Ref card="1..1">BusinessScope</Ref>
+	</Element>
+	<Element name="StandardBusinessDocument">
+		<Ref card="0..1">StandardBusinessDocumentHeader</Ref>
+	</Element>
+</Namespace>
