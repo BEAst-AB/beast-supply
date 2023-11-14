@@ -192,7 +192,7 @@
                <Data ss:Type="String">•  cbc:IssueDate</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Dispatch advice issue date</Data>
+               <Data ss:Type="String">Advanced Despatch Advice issue date</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Peppol: The date when the Advanced Despatch Advice is issued. Format = "YYYY-MM-DD". Together with ID and IssueTime the IssueDate forms the identity of the Version of the Advanced Despatch Advice.</Data>
@@ -218,7 +218,7 @@
                <Data ss:Type="String">•  cbc:IssueTime</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Dispatch advice issue time</Data>
+               <Data ss:Type="String">Advanced Despatch Advice issue time</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Peppol: The time when the Advanced Despatch Advice is issued. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the document was issued should be assumed.</Data>
@@ -296,10 +296,10 @@
                <Data ss:Type="String">•  cbc:Note</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Dispatch note</Data>
+               <Data ss:Type="String">Despatch note</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: A textual note for the dispatch as whole. Used for Transport Information.</Data>
+               <Data ss:Type="String">Peppol: A textual note for the despatch as whole.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Text</Data>
@@ -325,7 +325,7 @@
                <Data ss:Type="String">Order reference information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: Can be included here or at Line level.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -377,7 +377,7 @@
                <Data ss:Type="String">Additional document reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Reference to additional documents relevant for this Despatch advice. Can be used for additional BEAst information on header level.</Data>
+               <Data ss:Type="String">Peppol: Reference to additional documents relevant for this Despatch advice. Can also be used for additional information on header level.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1388,7 +1388,7 @@
                <Data ss:Type="String">•  •  •  •  •  cac:Country</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contry</Data>
+               <Data ss:Type="String">Country</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Peppol: The residens country for the despatch party.</Data>
@@ -2298,7 +2298,7 @@
                <Data ss:Type="String">•  •  •  •  •  cac:Country</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contry</Data>
+               <Data ss:Type="String">Country</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Peppol: The residens country for the delivery customer party.</Data>
@@ -2324,7 +2324,7 @@
                <Data ss:Type="String">•  •  •  •  •  •  cbc:IdentificationCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contry code</Data>
+               <Data ss:Type="String">Country code</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3156,7 +3156,7 @@
                <Data ss:Type="String">•  •  •  •  •  cac:Country</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contry</Data>
+               <Data ss:Type="String">Country</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Peppol: The residens country for the Buyer party.</Data>
@@ -3182,7 +3182,7 @@
                <Data ss:Type="String">•  •  •  •  •  •  cbc:IdentificationCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contry code</Data>
+               <Data ss:Type="String">Country code</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4014,7 +4014,7 @@
                <Data ss:Type="String">•  •  •  •  •  cac:Country</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contry</Data>
+               <Data ss:Type="String">Country</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Peppol: The residens country for the Seller party.</Data>
@@ -5704,7 +5704,7 @@
                <Data ss:Type="String">•  •  •  •  •  •  cac:Country</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contry</Data>
+               <Data ss:Type="String">Country</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Peppol: The residens country for the Carrier party.</Data>
@@ -6048,7 +6048,7 @@
                <Data ss:Type="String">Peppol: Used to specify the type of fuel.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Diesel</Data>
+               <Data ss:Type="String">HVO</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment/cbc:TransportEquipmentTypeCode</Data>
@@ -6062,19 +6062,19 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">M</Data>
+               <Data ss:Type="String">O</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  •  •  @listID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">List Identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: Identifies the codelist.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">FuelGroup</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment/cbc:TransportEquipmentTypeCode/listID</Data>
@@ -6088,19 +6088,19 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">M</Data>
+               <Data ss:Type="String">O</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  •  •  @listAgencyID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">List Agency Identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: Identifies the Agency that issues the Type-code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Trafikverket</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment/cbc:TransportEquipmentTypeCode/listAgencyID</Data>
@@ -6114,19 +6114,19 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">M</Data>
+               <Data ss:Type="String">O</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  •  •  @listVersionID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">List Version Identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: Identifies the version of the List.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">2023:1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment/cbc:TransportEquipmentTypeCode/listVersionID</Data>
@@ -6152,7 +6152,7 @@
                <Data ss:Type="String">Peppol: Fuel description.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Forrest diesel mix</Data>
+               <Data ss:Type="String">HVO Diesel</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment/cbc:Description</Data>
@@ -6201,7 +6201,7 @@
                <Data ss:Type="String">Attribute identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: To define the type of measurement. EnergyContent = T6428, ConversionFactor = T6429, FuelConsumption = T6374, DrivingDistance = T6380, DrivingTime = T6381, FuelMeasurementMethod = T6728, EngineType = T6379, RenewableFuel = T6382.</Data>
+               <Data ss:Type="String">Peppol: To define the type of measurement. EnergyContent, ConversionFactor, FuelConsumption, DrivingDistance, DrivingTime, FuelMeasurementMethod, EngineType, RenewableFuel.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">FuelConsumption</Data>
@@ -6230,7 +6230,7 @@
                <Data ss:Type="String">Peppol: The measured value. Used for EnergyContent, ConversionFactor, FuelConsumption, DrivingDistance, DrivingTime and RenewableFuel. unitCode refers to T6706.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123</Data>
+               <Data ss:Type="String">115.6</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment/cac:MeasurementDimension/cbc:Measure</Data>
@@ -6256,7 +6256,7 @@
                <Data ss:Type="String">Peppol: The unit of measure that applies to the measure.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">KGM</Data>
+               <Data ss:Type="String">LTR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment/cac:MeasurementDimension/cbc:Measure/unitCode</Data>
@@ -6279,7 +6279,7 @@
                <Data ss:Type="String">Attribute value</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Description of the attribute when there is no value to measure. Used for FuelMeasurementMethod and EngineType. Possible values are for FuelMeasurementMethod: "AutomaticMeasurement", "StandardEstimate", "ManualMeasurement" and for EngineType: "Euro2", "Euro3", "Euro4", "Euro5", "Euro6", "EuroStep2", "EuroStep3A", "EuroStep3B", "EuroStep4".</Data>
+               <Data ss:Type="String">Peppol: Description of the attribute when there is no value to measure. Used for FuelMeasurementMethod and EngineType. Possible values are for FuelMeasurementMethod: "AutomaticMeasurement", "StandardEstimate", "ManualMeasurement" and for EngineType: "Euro2", "Euro3", "Euro4", "Euro5", "Euro6", "EuroStep2", "EuroStep3A", "EuroStep3B", "EuroStep4", "EV", "FuelCell", "Hybrid".</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">StandardEstimate</Data>
@@ -6750,7 +6750,7 @@
                <Data ss:Type="String">Peppol: The value of the emission. Refers to Carbon Dioxide/Nitrogen Oxide/Particulate Matter/Hydro Carbon.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">10</Data>
+               <Data ss:Type="String">2.8</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:EnvironmentalEmission/cbc:ValueMeasure</Data>
@@ -6981,10 +6981,10 @@
                <Data ss:Type="String">License plate identifier transport</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The licence plate(s) identifying the vehicle seperated by semicolon if there are more than one</Data>
+               <Data ss:Type="String">Peppol: The licence plate(s) identifying the vehicle seperated by semicolon if there are more than one.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">DF10958</Data>
+               <Data ss:Type="String">DK-DF10958;DK-DF23314</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:Shipment/cac:ShipmentStage/cac:TransportMeans/cac:RoadTransport/cbc:LicensePlateID</Data>
@@ -8070,10 +8070,10 @@
                <Data ss:Type="String">•  •  •  •  cbc:ActualDespatchDate</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Shipment dispatch date</Data>
+               <Data ss:Type="String">Shipment despatch date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The actual or expected date when the shipment was dispatched from the dispatching party.</Data>
+               <Data ss:Type="String">Peppol: The actual or expected date when the shipment was despatched from the despatching party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-09-25</Data>
@@ -8096,10 +8096,10 @@
                <Data ss:Type="String">•  •  •  •  cbc:ActualDespatchTime</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Shipment dispatch time</Data>
+               <Data ss:Type="String">Shipment despatch time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The actual or expected date when the shipment was dispatched from the dispatching party. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the despatch was made should be assumed.</Data>
+               <Data ss:Type="String">Peppol: The actual or expected date when the shipment was despatched from the despatching party. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the despatch was made should be assumed.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">13:00:00+01:00</Data>
@@ -9633,7 +9633,7 @@
                <Data ss:Type="String">Trace identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An identifier for use in tracing this goods item, such as the EPC number used in RFID.</Data>
+               <Data ss:Type="String">Peppol: An identifier to use for different purposes. Specify in schemeID which type of Trace ID you use.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">345699634527</Data>
@@ -10257,7 +10257,7 @@
                <Data ss:Type="String">Trace identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An identifier for use in tracing this goods item, such as the EPC number used in RFID.</Data>
+               <Data ss:Type="String">Peppol: An identifier to use for different purposes. Specify in schemeID which type of Trace ID you use.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">345699634527</Data>
@@ -10595,7 +10595,7 @@
                <Data ss:Type="String">Trace identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An identifier for use in tracing this goods item, such as the EPC number used in RFID.</Data>
+               <Data ss:Type="String">Peppol: An identifier to use for different purposes. Specify in schemeID which type of Trace ID you use.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">345699634527</Data>
@@ -10933,7 +10933,7 @@
                <Data ss:Type="String">Trace identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An identifier for use in tracing this goods item, such as the EPC number used in RFID.</Data>
+               <Data ss:Type="String">Peppol: An identifier to use for different purposes. Specify in schemeID which type of Trace ID you use.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">345699634527</Data>
@@ -11112,7 +11112,7 @@
                <Data ss:Type="String">•  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Dispatch line identifier</Data>
+               <Data ss:Type="String">Despatch line identifier</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Peppol: A indentifier for the individual line in the despatch advice.</Data>
@@ -11138,13 +11138,13 @@
                <Data ss:Type="String">•  •  cbc:Note</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Dispatch line note</Data>
+               <Data ss:Type="String">Despatch line note</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Peppol: General note regarding the despach advice line. Free-form text applying to the Despatch Line. This element may contain notes or any other similar information that is not contained explicitly in another structure.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Mrs Green agreed to waive charge</Data>
+               <Data ss:Type="String">Gift</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cbc:Note</Data>
@@ -11196,7 +11196,7 @@
                <Data ss:Type="String">Peppol: The unit of measure that applies to the ordered quantity.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">C62</Data>
+               <Data ss:Type="String">EA</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cbc:DeliveredQuantity/unitCode</Data>
@@ -11248,7 +11248,7 @@
                <Data ss:Type="String">Peppol: The unit of measure that applies to the ordered quantity.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">C62</Data>
+               <Data ss:Type="String">EA</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cbc:OutstandingQuantity/unitCode</Data>
@@ -11765,7 +11765,7 @@
                <Data ss:Type="String">Buyers item identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: Identifying information for this item, assigned by the buyer.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -11817,7 +11817,7 @@
                <Data ss:Type="String">Sellers item identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: Identifying information for this item, assigned by the seller.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -12131,7 +12131,7 @@
                <Data ss:Type="String">Clear text name equivalent of classification code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The textual equivalent of the code value</Data>
+               <Data ss:Type="String">Peppol: The name of the Identification scheme identifier when @listID = ZZZ. Must be provided when @listID = ZZZ.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">SBMI</Data>
@@ -12157,7 +12157,7 @@
                <Data ss:Type="String">Hazardous item information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: Contains information on the Hazardous item.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -12174,19 +12174,19 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: An identifier for this hazardous item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">123</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:HazardousItem/cbc:ID</Data>
@@ -12226,19 +12226,19 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cbc:TechnicalName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Technical Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: The full technical name of a specific hazardous substance contained in this goods item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Corrosive liquid, n.o.s., 8, UN 1760, II (contains Octanoyl chloride)</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:HazardousItem/cbc:TechnicalName</Data>
@@ -12252,19 +12252,19 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cbc:CategoryName</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Category Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: The name of the category of hazard that applies to the Item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Acute toxicity</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:HazardousItem/cbc:CategoryName</Data>
@@ -12278,19 +12278,19 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cbc:HazardousCategoryCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Hazardous Category Code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: A code signifying a kind of hazard for a material.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">123</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:HazardousItem/cbc:HazardousCategoryCode</Data>
@@ -12382,19 +12382,19 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cbc:NetVolumeMeasure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Net Volume Measure </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: Net volume of the Hazardous item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">12.3</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:HazardousItem/cbc:NetVolumeMeasure</Data>
@@ -12414,13 +12414,13 @@
                <Data ss:Type="String">•  •  •  •  •  @unitCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Measure unit of measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: The unit of measure that applies to the Net Volume.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">MTQ</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:HazardousItem/cbc:NetVolumeMeasure/unitCode</Data>
@@ -12434,16 +12434,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..n</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cac:HazardousGoodsTransit</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Hazardous Goods Transit </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: Information related to the transit of this kind of hazardous goods.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -12466,13 +12466,13 @@
                <Data ss:Type="String">•  •  •  •  •  cbc:PackingCriteriaCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Packing Criteria Code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: A code signifying the packaging requirement for transportation of the hazardous goods as assigned by IATA, IMDB, ADR, RID etc.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">123</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:HazardousItem/cac:HazardousGoodsTransit/cbc:PackingCriteriaCode</Data>
@@ -12486,16 +12486,16 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">1..1</Data>
+               <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  cac:EmergencyTemperature</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Emergency Temperature </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: The threshold temperature at which emergency procedures apply in the handling of temperature-controlled goods.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -12518,13 +12518,13 @@
                <Data ss:Type="String">•  •  •  •  •  cbc:AttributeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Attribute ID </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: An identifier for this temperature measurement.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">ABC</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:HazardousItem/cac:EmergencyTemperature/cbc:AttributeID</Data>
@@ -12544,13 +12544,13 @@
                <Data ss:Type="String">•  •  •  •  •  cbc:Measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Measure </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: The value of this temperature measurement.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">78</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:HazardousItem/cac:EmergencyTemperature/cbc:Measure</Data>
@@ -12570,13 +12570,13 @@
                <Data ss:Type="String">•  •  •  •  •  •  @unitCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Measure unit of measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: The unit of measure that applies to the Emergency Temperature.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">CEL</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:HazardousItem/cac:EmergencyTemperature/cbc:Measure/unitCode</Data>
@@ -12862,7 +12862,7 @@
                <Data ss:Type="String">Peppol: The unit of measure that applies to the value quantity.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">C62</Data>
+               <Data ss:Type="String">EA</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:AdditionalItemProperty/cbc:ValueQuantity/unitCode</Data>
@@ -13379,7 +13379,7 @@
                <Data ss:Type="String">Item instance information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Peppol: Adding information on individual instances of the item.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -13405,7 +13405,7 @@
                <Data ss:Type="String">Item manufactured date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The manufacturing date of all items listed in this dispatch line.</Data>
+               <Data ss:Type="String">Peppol: The manufacturing date of all items listed in this despatch line.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-01-01</Data>
@@ -13457,7 +13457,7 @@
                <Data ss:Type="String">Item best before date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The best before date of all items listed in this dispatch line.</Data>
+               <Data ss:Type="String">Peppol: The best before date of all items listed in this despatch line.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-12-01</Data>
@@ -13535,7 +13535,7 @@
                <Data ss:Type="String">Item batch number</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The batch number that applies to all items in the dispatch line.</Data>
+               <Data ss:Type="String">Peppol: The batch number that applies to all items in the despatch line.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">546378239</Data>
@@ -13561,7 +13561,7 @@
                <Data ss:Type="String">Item expiry date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The expiry date of all items listed in this dispatch line.</Data>
+               <Data ss:Type="String">Peppol: The expiry date of all items listed in this despatch line.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2023-01-01</Data>
@@ -13587,7 +13587,7 @@
                <Data ss:Type="String">Certificate</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Used for referring to the Certificate for Wooden products.</Data>
+               <Data ss:Type="String">Peppol: Used for referring to the Certificates for the product.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>

@@ -11,6 +11,7 @@
 	
 	
 	
+	
 	     <Element>
          <Term>cbc:CustomizationID</Term>
          <Name>Specification identification</Name>
@@ -24,12 +25,13 @@
 	     <Element>
          <Term>cbc:ProfileID</Term>
          <Name>Business process type identifier</Name>
-         <Description>BEAst: Identifies the BII profile or business process context in which the transaction appears. There are two ProfileIDs defined for the Transport Execution Plan. One profile is used when a request is expected, the other is used when no request message is expected. Possible choices are: "urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_w_request:1" and "urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_only:1".</Description>
+         <Description>Peppol: Identifies the BII profile or business process context in which the transaction appears. There are two ProfileIDs defined for the Transport Execution Plan. One profile is used when a request is expected, the other is used when no request message is expected. Possible choices are: "urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_w_request:1" and "urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_only:1".</Description>
          <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-001</Reference>
          <Reference type="RULE">PEPPOL-T124-R002</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_w_request:1</Value>
       </Element>
+	
 	     <Element>
          <Term>cbc:ID</Term>
          <Name>Document identifier</Name>
@@ -43,7 +45,7 @@
 	     <Element>
          <Term>cbc:IssueDate</Term>
          <Name>Dispatch advice issue date</Name>
-         <Description>BEAst: The date when the Transport Execution Plan is issued. Format = "YYYY-MM-DD". </Description>
+         <Description>Peppol: The date when the Transport Execution Plan is issued. Format = "YYYY-MM-DD". </Description>
          <DataType>Date</DataType>
          <Reference type="BUSINESS_TERM">tir16-004</Reference>
          <Value type="EXAMPLE">2021-09-29</Value>
@@ -51,7 +53,7 @@
 	     <Element cardinality="1..1">
          <Term>cbc:IssueTime</Term>
          <Name>Dispatch advice issue time</Name>
-         <Description>BEAst: The time when the Transport Execution Plan is issued. Format = "hh:mm:ss". </Description>
+         <Description>Peppol: The time when the Transport Execution Plan is issued. Format = "hh:mm:ss". </Description>
          <DataType>Time</DataType>
          <Reference type="BUSINESS_TERM">tir16-005</Reference>
          <Reference type="RULE">PEPPOL-T124-R018</Reference>
@@ -60,35 +62,36 @@
 	     <Element cardinality="0..1">
          <Term>cbc:DocumentStatusCode</Term>
          <Name>Transport Execution Plan status code </Name>
-         <Description>BEAst: A code signifying the status of the Transport Execution Plan. Default is Original (9)</Description>
+         <Description>Peppol: A code signifying the status of the Transport Execution Plan. Default is Original (9)</Description>
          <Reference type="CODE_LIST">DocumentStatusCode</Reference>
          <Value type="EXAMPLE">9</Value>
       </Element>
 	     <Element cardinality="0..1">
          <Term>cbc:TransportUserRemarks</Term>
          <Name>Transport Service Provider Remarks </Name>
-         <Description>BEAst: Remarks from the transport user regarding the transport operations copied from the Transport Execution Plan Request. Not used in the Transport Execution Plan Only profile</Description>
+         <Description>Peppol: Remarks from the transport user regarding the transport operations copied from the Transport Execution Plan Request. Not used in the Transport Execution Plan Only profile</Description>
          <Value type="EXAMPLE">Some remarks</Value>
       </Element>
 	     <Element cardinality="0..1">
          <Term>cbc:TransportServiceProviderRemarks</Term>
          <Name>Transport User Remarks </Name>
-         <Description>BEAst: Remarks from the transport service provider regarding the transport operations referred to in the Transport Execution Plan.</Description>
+         <Description>Peppol: Remarks from the transport service provider regarding the transport operations referred to in the Transport Execution Plan.</Description>
          <Value type="EXAMPLE">Some remarks</Value>
       </Element>
+	
 	     <Element cardinality="1..1">
          <Term>cac:SenderParty</Term>
          <Name>Sender party </Name>
-         <Description>BEAst: The party sending the Transport Execution Plan. </Description>
+         <Description>Peppol: The party sending the Transport Execution Plan. </Description>
          <Element cardinality="1..1">
             <Term>cbc:EndpointID</Term>
             <Name>Sender party electronic address </Name>
-            <Description>BEAst: The endpoint for the sender party. </Description>
+            <Description>Peppol: The endpoint for the sender party. </Description>
             <Value type="EXAMPLE">41955619</Value>
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Name>Scheme identifier</Name>
-               <Description>BEAst: Scheme identifier for electronic address</Description>
+               <Description>Peppol: Scheme identifier for electronic address</Description>
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0198</Value>
             </Attribute>
@@ -96,7 +99,7 @@
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>Sender party identification </Name>
-            <Description>BEAst: An identifier for the sender party as known to the receiver party. </Description>
+            <Description>Peppol: An identifier for the sender party as known to the receiver party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>ID </Name>
@@ -115,7 +118,7 @@
             <Element cardinality="1..1">
                <Term>cbc:Name</Term>
                <Name>Sender party name</Name>
-               <Description>BEAst: The name of the sender party. </Description>
+               <Description>Peppol: The name of the sender party. </Description>
                <Reference type="RULE">PEPPOL-T124-R031</Reference>
                <Value type="EXAMPLE">Leman</Value>
             </Element>
@@ -123,41 +126,41 @@
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
             <Name>Postal address </Name>
-            <Description>BEAst: The postal address for the sender party. </Description>
+            <Description>Peppol: The postal address for the sender party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1 </Name>
-               <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+               <Description>Peppol: The main address line in a postal address usually the street name and number. </Description>
                <Value type="EXAMPLE">Ventrupvej 6</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2 </Name>
-               <Description>BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+               <Description>Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
                <Value type="EXAMPLE">Greve Landsby</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
                <Name>City </Name>
-               <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+               <Description>Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
                <Value type="EXAMPLE">Greve</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
                <Name>Post code </Name>
-               <Description>BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+               <Description>Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
                <Value type="EXAMPLE">2670</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
                <Name>Country sub entity </Name>
-               <Description>BEAst: For specifying a region, county, state, province etc. within a country by using text. </Description>
+               <Description>Peppol: For specifying a region, county, state, province etc. within a country by using text. </Description>
                <Value type="EXAMPLE">Region Sjælland</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
                <Name>Address line 3 </Name>
-               <Description>BEAst: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+               <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                <Element>
                   <Term>cbc:Line</Term>
                   <Value type="EXAMPLE">Bygning 5</Value>
@@ -169,7 +172,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code </Name>
-                  <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                  <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                   <Reference type="CODE_LIST">ISO3166</Reference>
                   <Value type="EXAMPLE">DK</Value>
                </Element>
@@ -178,11 +181,11 @@
          <Element cardinality="0..1">
             <Term>cac:PartyTaxScheme</Term>
             <Name>Party tax scheme </Name>
-            <Description>BEAst: The tax information about the sender party. </Description>
+            <Description>Peppol: The tax information about the sender party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:CompanyID</Term>
                <Name>Company ID </Name>
-               <Description>BEAst: The Sender Party Value Added Tax identifer. </Description>
+               <Description>Peppol: The Sender Party Value Added Tax identifer. </Description>
                <Value type="EXAMPLE">GB325456788</Value>
             </Element>
             <Element cardinality="1..1">
@@ -191,7 +194,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Tax scheme identifier </Name>
-                  <Description>BEAst: Tax scheme identifier. E.g. "VAT" or "GST". </Description>
+                  <Description>Peppol: Tax scheme identifier. E.g. "VAT" or "GST". </Description>
                   <Value type="EXAMPLE">VAT</Value>
                </Element>
             </Element>
@@ -202,18 +205,18 @@
             <Element cardinality="1..1">
                <Term>cbc:RegistrationName</Term>
                <Name>Sender party name</Name>
-               <Description>BEAst: The name of the sender party. </Description>
+               <Description>Peppol: The name of the sender party. </Description>
                <Value type="EXAMPLE">Consortial</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CompanyID</Term>
                <Name>Sender parties legal registration name </Name>
-               <Description>BEAst: The official name of the party as registered with the relevant fiscal authority. </Description>
+               <Description>Peppol: The official name of the party as registered with the relevant fiscal authority. </Description>
                <Value type="EXAMPLE">SC234567</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Scheme identifier </Name>
-                  <Description>BEAst: The identification scheme identifier of the sender partys legal registration identifier </Description>
+                  <Description>Peppol: The identification scheme identifier of the sender partys legal registration identifier </Description>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0089</Value>
                </Attribute>
@@ -224,17 +227,17 @@
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
                   <Name>City name </Name>
-                  <Description>BEAst: The name of the city. </Description>
+                  <Description>Peppol: The name of the city. </Description>
                   <Value type="EXAMPLE">Farthing</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cac:Country</Term>
                   <Name>Country </Name>
-                  <Description>BEAst: The residens country for the sender party. </Description>
+                  <Description>Peppol: The residens country for the sender party. </Description>
                   <Element cardinality="0..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
-                     <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                     <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                      <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">GB</Value>
                   </Element>
@@ -244,40 +247,41 @@
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
             <Name>Contact </Name>
-            <Description>BEAst: The contact of the sender party. </Description>
+            <Description>Peppol: The contact of the sender party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
-               <Description>BEAst: The contact name. </Description>
+               <Description>Peppol: The contact name. </Description>
                <Value type="EXAMPLE">Mr Sender</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact telephone number </Name>
-               <Description>BEAst: The phone number of the contact. </Description>
+               <Description>Peppol: The phone number of the contact. </Description>
                <Value type="EXAMPLE">0158 1233714</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address </Name>
-               <Description>BEAst: The electronic mail of the contact. </Description>
+               <Description>Peppol: The electronic mail of the contact. </Description>
                <Value type="EXAMPLE">sender@consignor-company.co.uk</Value>
             </Element>
          </Element>
       </Element>
+	
 	     <Element cardinality="1..1">
          <Term>cac:ReceiverParty</Term>
          <Name>Receiver Party </Name>
-         <Description>BEAst: The party receiving the Transport Execution Plan. </Description>
+         <Description>Peppol: The party receiving the Transport Execution Plan. </Description>
          <Element cardinality="1..1">
             <Term>cbc:EndpointID</Term>
             <Name>Receiver party electronic address </Name>
-            <Description>BEAst: The endpoint id for the receiver party. </Description>
+            <Description>Peppol: The endpoint id for the receiver party. </Description>
             <Value type="EXAMPLE">10154596</Value>
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Name>Scheme identifier</Name>
-               <Description>BEAst: Scheme identifier for electronic address</Description>
+               <Description>Peppol: Scheme identifier for electronic address</Description>
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0198</Value>
             </Attribute>
@@ -285,7 +289,7 @@
          <Element>
             <Term>cac:PartyIdentification</Term>
             <Name>Receiver party identification </Name>
-            <Description>BEAst: An identifier for the sender party as known to the sender party. </Description>
+            <Description>Peppol: An identifier for the sender party as known to the sender party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:ID</Term>
                <Name>ID</Name>
@@ -304,7 +308,7 @@
             <Element cardinality="1..1">
                <Term>cbc:Name</Term>
                <Name>Receiver party name </Name>
-               <Description>BEAst: The name of the receiver party. </Description>
+               <Description>Peppol: The name of the receiver party. </Description>
                <Reference type="RULE">PEPPOL-T124-R032</Reference>
                <Value type="EXAMPLE">DHL Express</Value>
             </Element>
@@ -312,41 +316,41 @@
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
             <Name>Postal address </Name>
-            <Description>BEAst: The postal address for the receiver party. </Description>
+            <Description>Peppol: The postal address for the receiver party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1 </Name>
-               <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+               <Description>Peppol: The main address line in a postal address usually the street name and number. </Description>
                <Value type="EXAMPLE">Jydekrogen 14</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2 </Name>
-               <Description>BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+               <Description>Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
                <Value type="EXAMPLE">Indkørsel 5</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
                <Name>City </Name>
-               <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+               <Description>Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
                <Value type="EXAMPLE">Vallensbæk Landsby</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
                <Name>Post code </Name>
-               <Description>BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+               <Description>Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
                <Value type="EXAMPLE">2625</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
                <Name>Country sub entity </Name>
-               <Description>BEAst: For specifying a region, county, state, province etc. within a country by using text. </Description>
+               <Description>Peppol: For specifying a region, county, state, province etc. within a country by using text. </Description>
                <Value type="EXAMPLE">Region Hovedstaden</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
                <Name>Address line 3 </Name>
-               <Description>BEAst: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+               <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
                   <Value type="EXAMPLE">Bygning 5</Value>
@@ -358,7 +362,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code </Name>
-                  <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                  <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                   <Reference type="CODE_LIST">ISO3166</Reference>
                   <Value type="EXAMPLE">DK</Value>
                </Element>
@@ -367,11 +371,11 @@
          <Element cardinality="0..1">
             <Term>cac:PartyTaxScheme</Term>
             <Name>Party tax scheme </Name>
-            <Description>BEAst: The tax information about the receiver party. </Description>
+            <Description>Peppol: The tax information about the receiver party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:CompanyID</Term>
                <Name>Company ID </Name>
-               <Description>BEAst: The Receiver Party Value Added Tax identifer. </Description>
+               <Description>Peppol: The Receiver Party Value Added Tax identifer. </Description>
                <Value type="EXAMPLE">GB325456788</Value>
             </Element>
             <Element cardinality="1..1">
@@ -380,7 +384,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Tax scheme identifier </Name>
-                  <Description>BEAst: Tax scheme identifier. E.g. "VAT" or "GST". </Description>
+                  <Description>Peppol: Tax scheme identifier. E.g. "VAT" or "GST". </Description>
                   <Value type="EXAMPLE">VAT</Value>
                </Element>
             </Element>
@@ -388,22 +392,22 @@
          <Element cardinality="1..1">
             <Term>cac:PartyLegalEntity</Term>
             <Name>Party Legal Entity </Name>
-            <Description>BEAst: The party legal entity for the receiver party.</Description>
+            <Description>Peppol: The party legal entity for the receiver party.</Description>
             <Element cardinality="1..1">
                <Term>cbc:RegistrationName</Term>
                <Name>Receiver party name</Name>
-               <Description>BEAst: The name of the receiver party. </Description>
+               <Description>Peppol: The name of the receiver party. </Description>
                <Value type="EXAMPLE">Consortial</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CompanyID</Term>
                <Name>Receiver parties legal registration name </Name>
-               <Description>BEAst: The official name of the party as registered with the relevant fiscal authority. </Description>
+               <Description>Peppol: The official name of the party as registered with the relevant fiscal authority. </Description>
                <Value type="EXAMPLE">SC234567</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Scheme identifier </Name>
-                  <Description>BEAst: The identification scheme identifier of the receiver parties legal registration identifier </Description>
+                  <Description>Peppol: The identification scheme identifier of the receiver parties legal registration identifier </Description>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0089</Value>
                </Attribute>
@@ -414,17 +418,17 @@
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
                   <Name>City name </Name>
-                  <Description>BEAst: The name of the city. </Description>
+                  <Description>Peppol: The name of the city. </Description>
                   <Value type="EXAMPLE">Farthing</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cac:Country</Term>
                   <Name>Country </Name>
-                  <Description>BEAst: The residens country for the receiver party. </Description>
+                  <Description>Peppol: The residens country for the receiver party. </Description>
                   <Element cardinality="0..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
-                     <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                     <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                      <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">GB</Value>
                   </Element>
@@ -434,35 +438,36 @@
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
             <Name>Contact </Name>
-            <Description>BEAst: The contact of the receiver party. </Description>
+            <Description>Peppol: The contact of the receiver party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
-               <Description>BEAst: The contact name. </Description>
+               <Description>Peppol: The contact name. </Description>
                <Value type="EXAMPLE">Mrs Receiver</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact telephone number </Name>
-               <Description>BEAst: The phone number of the contact. </Description>
+               <Description>Peppol: The phone number of the contact. </Description>
                <Value type="EXAMPLE">0158 1233714</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address </Name>
-               <Description>BEAst: The electronic mail of the contact. </Description>
+               <Description>Peppol: The electronic mail of the contact. </Description>
                <Value type="EXAMPLE">msreceiver@tplogistics.co.uk</Value>
             </Element>
          </Element>
       </Element>
+	
 	     <Element cardinality="1..1">
          <Term>cac:TransportUserParty</Term>
          <Name>Transport user party </Name>
-         <Description>BEAst: The party requesting the transport services referenced in the Transport Execution Plan. </Description>
+         <Description>Peppol: The party requesting the transport services referenced in the Transport Execution Plan. </Description>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>Transport user party identification </Name>
-            <Description>BEAst: An identifier for the transport user party. </Description>
+            <Description>Peppol: An identifier for the transport user party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>ID </Name>
@@ -481,7 +486,7 @@
             <Element>
                <Term>cbc:Name</Term>
                <Name>Transport user party name</Name>
-               <Description>BEAst: The name of the transport user party. </Description>
+               <Description>Peppol: The name of the transport user party. </Description>
                <Reference type="RULE">PEPPOL-T124-R033</Reference>
                <Value type="EXAMPLE">Novo Nordisk Pharmatech A/S</Value>
             </Element>
@@ -489,41 +494,41 @@
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
             <Name>Postal address </Name>
-            <Description>BEAst: The postal address for the transport user party. </Description>
+            <Description>Peppol: The postal address for the transport user party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1 </Name>
-               <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+               <Description>Peppol: The main address line in a postal address usually the street name and number. </Description>
                <Value type="EXAMPLE">Københavnsvej 216</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2 </Name>
-               <Description>BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+               <Description>Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
                <Value type="EXAMPLE">way 1</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
                <Name>City </Name>
-               <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+               <Description>Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
                <Value type="EXAMPLE">Køge</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
                <Name>Post code </Name>
-               <Description>BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+               <Description>Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
                <Value type="EXAMPLE">4600</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
                <Name>Country sub entity </Name>
-               <Description>BEAst: For specifying a region, county, state, province etc. within a country by using text. </Description>
+               <Description>Peppol: For specifying a region, county, state, province etc. within a country by using text. </Description>
                <Value type="EXAMPLE">Region Hovedstaden</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
                <Name>Address line 3 </Name>
-               <Description>BEAst: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+               <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
                   <Value type="EXAMPLE">Bygning 5</Value>
@@ -535,7 +540,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code </Name>
-                  <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                  <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                   <Reference type="CODE_LIST">ISO3166</Reference>
                   <Value type="EXAMPLE">DK</Value>
                </Element>
@@ -544,11 +549,11 @@
          <Element cardinality="0..1">
             <Term>cac:PartyTaxScheme</Term>
             <Name>Party tax scheme </Name>
-            <Description>BEAst: The tax information about the transport user party. </Description>
+            <Description>Peppol: The tax information about the transport user party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:CompanyID</Term>
                <Name>Company ID </Name>
-               <Description>BEAst: The Transport User Party Value Added Tax identifer. </Description>
+               <Description>Peppol: The Transport User Party Value Added Tax identifer. </Description>
                <Value type="EXAMPLE">GB325456788</Value>
             </Element>
             <Element cardinality="1..1">
@@ -557,7 +562,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Tax scheme identifier </Name>
-                  <Description>BEAst: Tax scheme identifier. E.g. "VAT" or "GST". </Description>
+                  <Description>Peppol: Tax scheme identifier. E.g. "VAT" or "GST". </Description>
                   <Value type="EXAMPLE">VAT</Value>
                </Element>
             </Element>
@@ -565,22 +570,22 @@
          <Element cardinality="1..1">
             <Term>cac:PartyLegalEntity</Term>
             <Name>Party Legal Entity </Name>
-            <Description>BEAst: The party legal entity for the transport user party.</Description>
+            <Description>Peppol: The party legal entity for the transport user party.</Description>
             <Element cardinality="1..1">
                <Term>cbc:RegistrationName</Term>
                <Name>Transport user party name</Name>
-               <Description>BEAst: The name of the transport user party. </Description>
+               <Description>Peppol: The name of the transport user party. </Description>
                <Value type="EXAMPLE">Consortial</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CompanyID</Term>
                <Name>Transport user parties legal registration name </Name>
-               <Description>BEAst: The official name of the party as registered with the relevant fiscal authority. </Description>
+               <Description>Peppol: The official name of the party as registered with the relevant fiscal authority. </Description>
                <Value type="EXAMPLE">SC234567</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Scheme identifier </Name>
-                  <Description>BEAst: The identification scheme identifier of the transport users legal registration identifier </Description>
+                  <Description>Peppol: The identification scheme identifier of the transport users legal registration identifier </Description>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0089</Value>
                </Attribute>
@@ -591,17 +596,17 @@
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
                   <Name>City name </Name>
-                  <Description>BEAst: The name of the city. </Description>
+                  <Description>Peppol: The name of the city. </Description>
                   <Value type="EXAMPLE">Farthing</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cac:Country</Term>
                   <Name>Country </Name>
-                  <Description>BEAst: The residens country for the transport user party. </Description>
+                  <Description>Peppol: The residens country for the transport user party. </Description>
                   <Element cardinality="0..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
-                     <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                     <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                      <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">GB</Value>
                   </Element>
@@ -611,35 +616,36 @@
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
             <Name>Contact </Name>
-            <Description>BEAst: The contact of the transport user party. </Description>
+            <Description>Peppol: The contact of the transport user party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
-               <Description>BEAst: The contact name. </Description>
+               <Description>Peppol: The contact name. </Description>
                <Value type="EXAMPLE">Mr Transport user</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact telephone number </Name>
-               <Description>BEAst: The phone number of the contact. </Description>
+               <Description>Peppol: The phone number of the contact. </Description>
                <Value type="EXAMPLE">0158 1233714</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address </Name>
-               <Description>BEAst: The electronic mail of the contact. </Description>
+               <Description>Peppol: The electronic mail of the contact. </Description>
                <Value type="EXAMPLE">transport-user@transportuser.dk</Value>
             </Element>
          </Element>
       </Element>
+	
 	     <Element cardinality="1..1">
          <Term>cac:TransportServiceProviderParty</Term>
          <Name>Transport service provider party </Name>
-         <Description>BEAst: The party providing the transport services referenced in the Transport Execution Plan. </Description>
+         <Description>Peppol: The party providing the transport services referenced in the Transport Execution Plan. </Description>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>Transport service provider party identification </Name>
-            <Description>BEAst: An identifier for the transport service provider party. </Description>
+            <Description>Peppol: An identifier for the transport service provider party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>ID </Name>
@@ -658,7 +664,7 @@
             <Element>
                <Term>cbc:Name</Term>
                <Name>Transport service provider party name</Name>
-               <Description>BEAst: The name of the transport service provider party. </Description>
+               <Description>Peppol: The name of the transport service provider party. </Description>
                <Reference type="RULE">PEPPOL-T124-R034</Reference>
                <Value type="EXAMPLE">Leman</Value>
             </Element>
@@ -666,41 +672,41 @@
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
             <Name>Postal address </Name>
-            <Description>BEAst: The postal address for the transport service provider party. </Description>
+            <Description>Peppol: The postal address for the transport service provider party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1 </Name>
-               <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+               <Description>Peppol: The main address line in a postal address usually the street name and number. </Description>
                <Value type="EXAMPLE">Ventrupvej 6</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2 </Name>
-               <Description>BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+               <Description>Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
                <Value type="EXAMPLE">way 1</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
                <Name>City </Name>
-               <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+               <Description>Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
                <Value type="EXAMPLE">Greve</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
                <Name>Post code </Name>
-               <Description>BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+               <Description>Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
                <Value type="EXAMPLE">2670</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
                <Name>Country sub entity </Name>
-               <Description>BEAst: For specifying a region, county, state, province etc. within a country by using text. </Description>
+               <Description>Peppol: For specifying a region, county, state, province etc. within a country by using text. </Description>
                <Value type="EXAMPLE">Region Sjælland</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
                <Name>Address line 3 </Name>
-               <Description>BEAst: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+               <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                <Element>
                   <Term>cbc:Line</Term>
                   <Value type="EXAMPLE">Bygning 5</Value>
@@ -712,7 +718,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code </Name>
-                  <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                  <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                   <Reference type="CODE_LIST">ISO3166</Reference>
                   <Value type="EXAMPLE">DK</Value>
                </Element>
@@ -721,11 +727,11 @@
          <Element cardinality="0..1">
             <Term>cac:PartyTaxScheme</Term>
             <Name>Party tax scheme </Name>
-            <Description>BEAst: The tax information about the transport service provider party. </Description>
+            <Description>Peppol: The tax information about the transport service provider party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:CompanyID</Term>
                <Name>Company ID </Name>
-               <Description>BEAst: The Transport Service Provider Party Value Added Tax identifer. </Description>
+               <Description>Peppol: The Transport Service Provider Party Value Added Tax identifer. </Description>
                <Value type="EXAMPLE">GB325456788</Value>
             </Element>
             <Element cardinality="1..1">
@@ -734,7 +740,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Tax scheme identifier </Name>
-                  <Description>BEAst: Tax scheme identifier. E.g. "VAT" or "GST". </Description>
+                  <Description>Peppol: Tax scheme identifier. E.g. "VAT" or "GST". </Description>
                   <Value type="EXAMPLE">VAT</Value>
                </Element>
             </Element>
@@ -742,22 +748,22 @@
          <Element cardinality="1..1">
             <Term>cac:PartyLegalEntity</Term>
             <Name>Party legal entity </Name>
-            <Description>BEAst: The party legel entity of the transport service provider party. </Description>
+            <Description>Peppol: The party legel entity of the transport service provider party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:RegistrationName</Term>
                <Name>Transport service provider party name</Name>
-               <Description>BEAst: The name of the transport service provider party. </Description>
+               <Description>Peppol: The name of the transport service provider party. </Description>
                <Value type="EXAMPLE">Consortial</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CompanyID</Term>
                <Name>Transport service provider parties legal registration name </Name>
-               <Description>BEAst: The official name of the party as registered with the relevant fiscal authority. </Description>
+               <Description>Peppol: The official name of the party as registered with the relevant fiscal authority. </Description>
                <Value type="EXAMPLE">SC234567</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Scheme identifier </Name>
-                  <Description>BEAst: The identification scheme identifier of the transport users legal registration identifier </Description>
+                  <Description>Peppol: The identification scheme identifier of the transport users legal registration identifier </Description>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0089</Value>
                </Attribute>
@@ -768,17 +774,17 @@
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
                   <Name>City name </Name>
-                  <Description>BEAst: The name of the city. </Description>
+                  <Description>Peppol: The name of the city. </Description>
                   <Value type="EXAMPLE">Farthing</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cac:Country</Term>
                   <Name>Country </Name>
-                  <Description>BEAst: The residens country for the transport service provider party. </Description>
+                  <Description>Peppol: The residens country for the transport service provider party. </Description>
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
-                     <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                     <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                      <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">GB</Value>
                   </Element>
@@ -788,35 +794,36 @@
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
             <Name>Contact </Name>
-            <Description>BEAst: The contact of the transport service provider party. </Description>
+            <Description>Peppol: The contact of the transport service provider party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
-               <Description>BEAst: The contact name. </Description>
+               <Description>Peppol: The contact name. </Description>
                <Value type="EXAMPLE">Mr Transport user</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact telephone number </Name>
-               <Description>BEAst: The phone number of the contact. </Description>
+               <Description>Peppol: The phone number of the contact. </Description>
                <Value type="EXAMPLE">0158 1233714</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address </Name>
-               <Description>BEAst: The electronic mail of the contact. </Description>
+               <Description>Peppol: The electronic mail of the contact. </Description>
                <Value type="EXAMPLE">transport-user@transportuser.dk</Value>
             </Element>
          </Element>
       </Element>
+	
 	     <Element cardinality="0..1">
          <Term>cac:BillToParty</Term>
          <Name>Bill To Party </Name>
-         <Description>BEAst: The party that will pay for the transport service(s) referred to in this Transport Execution Plan. </Description>
+         <Description>Peppol: The party that will pay for the transport service(s) referred to in this Transport Execution Plan. </Description>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>Payer party identification (Bill to Party) </Name>
-            <Description>BEAst: An identifier for the bill-to party. </Description>
+            <Description>Peppol: An identifier for the bill-to party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Reference type="RULE">PEPPOL-T124-R035</Reference>
@@ -834,7 +841,7 @@
             <Element cardinality="1..1">
                <Term>cbc:Name</Term>
                <Name>Transport user party name</Name>
-               <Description>BEAst: The name of the bill-to party. </Description>
+               <Description>Peppol: The name of the bill-to party. </Description>
                <Reference type="RULE">PEPPOL-T124-R035</Reference>
                <Value type="EXAMPLE">Novo Nordisk Pharmatech A/S</Value>
             </Element>
@@ -842,41 +849,41 @@
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
             <Name>Postal address </Name>
-            <Description>BEAst: The postal address for the bill-to party. </Description>
+            <Description>Peppol: The postal address for the bill-to party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1 </Name>
-               <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+               <Description>Peppol: The main address line in a postal address usually the street name and number. </Description>
                <Value type="EXAMPLE">Københavnsvej 216</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2 </Name>
-               <Description>BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+               <Description>Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
                <Value type="EXAMPLE">way 1</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
                <Name>City </Name>
-               <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+               <Description>Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
                <Value type="EXAMPLE">Køge</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
                <Name>Post code </Name>
-               <Description>BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+               <Description>Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
                <Value type="EXAMPLE">4600</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
                <Name>Country sub entity </Name>
-               <Description>BEAst: For specifying a region, county, state, province etc. within a country by using text. </Description>
+               <Description>Peppol: For specifying a region, county, state, province etc. within a country by using text. </Description>
                <Value type="EXAMPLE">Region Hovedstaden</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
                <Name>Address line 3 </Name>
-               <Description>BEAst: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+               <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
                   <Value type="EXAMPLE">Bygning 5</Value>
@@ -888,7 +895,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code </Name>
-                  <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                  <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                   <Reference type="CODE_LIST">ISO3166</Reference>
                   <Value type="EXAMPLE">DK</Value>
                </Element>
@@ -897,11 +904,11 @@
          <Element cardinality="0..1">
             <Term>cac:PartyTaxScheme</Term>
             <Name>Party tax scheme </Name>
-            <Description>BEAst: The tax information about the bill-to party. </Description>
+            <Description>Peppol: The tax information about the bill-to party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:CompanyID</Term>
                <Name>Company ID </Name>
-               <Description>BEAst: The bill-to party Value Added Tax identifer. </Description>
+               <Description>Peppol: The bill-to party Value Added Tax identifer. </Description>
                <Value type="EXAMPLE">GB325456788</Value>
             </Element>
             <Element cardinality="1..1">
@@ -910,7 +917,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Tax scheme identifier </Name>
-                  <Description>BEAst: Tax scheme identifier. E.g. "VAT" or "GST". </Description>
+                  <Description>Peppol: Tax scheme identifier. E.g. "VAT" or "GST". </Description>
                   <Value type="EXAMPLE">VAT</Value>
                </Element>
             </Element>
@@ -918,22 +925,22 @@
          <Element cardinality="1..1">
             <Term>cac:PartyLegalEntity</Term>
             <Name>Party Legal Entity </Name>
-            <Description>BEAst: The party legal entity for the bill-to party.</Description>
+            <Description>Peppol: The party legal entity for the bill-to party.</Description>
             <Element cardinality="1..1">
                <Term>cbc:RegistrationName</Term>
                <Name>Transport user party name</Name>
-               <Description>BEAst: The name of the bill-to party. </Description>
+               <Description>Peppol: The name of the bill-to party. </Description>
                <Value type="EXAMPLE">Consortial</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CompanyID</Term>
                <Name>Transport user parties legal registration name </Name>
-               <Description>BEAst: The official name of the party as registered with the relevant fiscal authority. </Description>
+               <Description>Peppol: The official name of the party as registered with the relevant fiscal authority. </Description>
                <Value type="EXAMPLE">SC234567</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Scheme identifier </Name>
-                  <Description>BEAst: The identification scheme identifier of the transport users legal registration identifier </Description>
+                  <Description>Peppol: The identification scheme identifier of the transport users legal registration identifier </Description>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0089</Value>
                </Attribute>
@@ -944,17 +951,17 @@
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
                   <Name>City name </Name>
-                  <Description>BEAst: The name of the city. </Description>
+                  <Description>Peppol: The name of the city. </Description>
                   <Value type="EXAMPLE">Farthing</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cac:Country</Term>
                   <Name>Country </Name>
-                  <Description>BEAst: The residens country for the transport user party. </Description>
+                  <Description>Peppol: The residens country for the transport user party. </Description>
                   <Element cardinality="0..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
-                     <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                     <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                      <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">GB</Value>
                   </Element>
@@ -964,72 +971,73 @@
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
             <Name>Contact </Name>
-            <Description>BEAst: The contact of the bill-to party. </Description>
+            <Description>Peppol: The contact of the bill-to party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
-               <Description>BEAst: The contact name. </Description>
+               <Description>Peppol: The contact name. </Description>
                <Value type="EXAMPLE">Mr Transport user</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact telephone number </Name>
-               <Description>BEAst: The phone number of the contact. </Description>
+               <Description>Peppol: The phone number of the contact. </Description>
                <Value type="EXAMPLE">0158 1233714</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address </Name>
-               <Description>BEAst: The electronic mail of the contact. </Description>
+               <Description>Peppol: The electronic mail of the contact. </Description>
                <Value type="EXAMPLE">transport-user@transportuser.dk</Value>
             </Element>
          </Element>
       </Element>
+	
 	     <Element cardinality="0..1">
          <Term>cac:TransportExecutionPlanRequestDocumentReference</Term>
          <Name>Additional document reference</Name>
-         <Description>BEAst: Reference to a Transport Execution Plan Request. Mandatory if it is not  </Description>
+         <Description>Peppol: Reference to a Transport Execution Plan Request. Mandatory if it is not  </Description>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Identity of the reference</Name>
-            <Description>BEAst: The reference number of added document</Description>
+            <Description>Peppol: The reference number of added document</Description>
             <Value type="EXAMPLE">7648779</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:IssueDate</Term>
             <Name>Issue Date</Name>
-            <Description>BEAst: The Issue Date when the Transport Execution Plan Request was issued </Description>
+            <Description>Peppol: The Issue Date when the Transport Execution Plan Request was issued </Description>
             <Value type="EXAMPLE">2021-09-29</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:IssueTime</Term>
             <Name>Issue Time</Name>
-            <Description>BEAst: The Issue time when the Transport Execution Plan Request was issued </Description>
+            <Description>Peppol: The Issue time when the Transport Execution Plan Request was issued </Description>
             <Value type="EXAMPLE">07:49:00+02:00</Value>
          </Element>
       </Element>
 	     <Element cardinality="0..n">
          <Term>cac:AdditionalDocumentReference</Term>
          <Name>Additional document reference</Name>
-         <Description>BEAst: Reference to additional documents relevant for this Transport Execution Plan. </Description>
+         <Description>Peppol: Reference to additional documents relevant for this Transport Execution Plan. </Description>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Identity of the reference</Name>
-            <Description>BEAst: The reference number of added document</Description>
+            <Description>Peppol: The reference number of added document</Description>
             <Reference type="BUSINESS_TERM">tir16-p049</Reference>
             <Value type="EXAMPLE">7648779</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:DocumentTypeCode</Term>
             <Name>Document type code</Name>
-            <Description>BEAst: The type of reference. Must me part of UNCL1001</Description>
+            <Description>Peppol: The type of reference. Must me part of UNCL1001</Description>
             <Reference type="CODE_LIST">UNCL1001</Reference>
             <Value type="EXAMPLE">380</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:DocumentType</Term>
             <Name>Document type</Name>
-            <Description>BEAst: The type of reference that cannot be specified by a code</Description>
+            <Description>Peppol: The type of reference that cannot be specified by a code</Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">tir16-p050</Reference>
             <Value type="EXAMPLE">Delivery soecification</Value>
@@ -1037,11 +1045,11 @@
          <Element cardinality="0..1">
             <Term>cac:Attachment</Term>
             <Name>Attachment</Name>
-            <Description>BEAst: Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Description>
+            <Description>Peppol: Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Description>
             <Element cardinality="0..1">
                <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                <Name>Embedded binary object</Name>
-               <Description>BEAst: The referenced document can here be inserted as a binary object.</Description>
+               <Description>Peppol: The referenced document can here be inserted as a binary object.</Description>
                <DataType>Binary object</DataType>
                <Reference type="BUSINESS_TERM">tir16-p051</Reference>
                <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
@@ -1062,11 +1070,11 @@
             <Element cardinality="0..1">
                <Term>cac:ExternalReference</Term>
                <Name>External reference</Name>
-               <Description>BEAst: A reference to an attached document that is external to the document(s) being exchanged.</Description>
+               <Description>Peppol: A reference to an attached document that is external to the document(s) being exchanged.</Description>
                <Element>
                   <Term>cbc:URI</Term>
                   <Name>Address to internet resource</Name>
-                  <Description>BEAst: The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Description>
+                  <Description>Peppol: The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir16-p052</Reference>
                   <Value type="EXAMPLE">www.beast.se</Value>
@@ -1074,67 +1082,70 @@
             </Element>
          </Element>
       </Element>
+	
 	     <Element cardinality="1..1">
          <Term>cac:MainTransportationService</Term>
          <Name>Main Transportation Service</Name>
-         <Description>BEAst: A description of the main transportation service referenced in the Transport Execution Plan.</Description>
+         <Description>Peppol: A description of the main transportation service referenced in the Transport Execution Plan.</Description>
          <Element cardinality="1..1">
             <Term>cbc:TransportServiceCode</Term>
             <Name>Main Transportatin Service Code</Name>
-            <Description>BEAst: A code signifying the extent of this transportation service (e.g., door-to-door, port-to-port).</Description>
+            <Description>Peppol: A code signifying the extent of this transportation service (e.g., door-to-door, port-to-port).</Description>
             <Reference type="CODE_LIST">TransportServiceCode</Reference>
             <Value type="EXAMPLE">4</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:TransportationServiceDescription</Term>
             <Name>Main Transportatin Service Description</Name>
-            <Description>BEAst: Text describing the transportation service.</Description>
+            <Description>Peppol: Text describing the transportation service.</Description>
             <Value type="EXAMPLE">Transport from door to door</Value>
          </Element>
       </Element>
+	
 	     <Element cardinality="0..n">
          <Term>cac:AdditionalTransportationService</Term>
          <Name>Additional Transportation Service</Name>
-         <Description>BEAst: A description of an additional transportation service referenced in the Transport Execution Plan. Can only be used in conjunction with a main transportation service.</Description>
+         <Description>Peppol: A description of an additional transportation service referenced in the Transport Execution Plan. Can only be used in conjunction with a main transportation service.</Description>
          <Element cardinality="1..1">
             <Term>cbc:TransportServiceCode</Term>
             <Name>Main Transportatin Service Code</Name>
-            <Description>BEAst: A code signifying the extent of this transportation service (e.g., door-to-door, port-to-port).</Description>
+            <Description>Peppol: A code signifying the extent of this transportation service (e.g., door-to-door, port-to-port).</Description>
             <Reference type="CODE_LIST">TransportServiceCode</Reference>
             <Value type="EXAMPLE">12</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:TransportationServiceDescription</Term>
             <Name>Main Transportatin Service Description</Name>
-            <Description>BEAst: Text describing the transportation service.</Description>
+            <Description>Peppol: Text describing the transportation service.</Description>
             <Value type="EXAMPLE">Insurance</Value>
          </Element>
       </Element>
+	
 	     <Element cardinality="1..1">
          <Term>cac:Consignment</Term>
          <Name>Consignment information </Name>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Consignment identifier </Name>
-            <Description>BEAst: Id for the consignment, often a number from the Transport Service provider. Use N/A if not applicable.</Description>
+            <Description>Peppol: Id for the consignment, often a number from the Transport Service provider. Use N/A if not applicable.</Description>
             <Value type="EXAMPLE">12535157654567654</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:ConsigneeAssignedID</Term>
             <Name>Consignee reference </Name>
-            <Description>BEAst: ID or reference used by the consignee to identify this consignment.</Description>
+            <Description>Peppol: ID or reference used by the consignee to identify this consignment.</Description>
             <Value type="EXAMPLE">0160110</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:ConsignorAssignedID</Term>
             <Name>Consignor reference </Name>
-            <Description>BEAst: ID or reference used by the consignor to identify this consignment.</Description>
+            <Description>Peppol: ID or reference used by the consignor to identify this consignment.</Description>
             <Value type="EXAMPLE">501153162</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:GrossWeightMeasure</Term>
             <Name>Consignment gross weight </Name>
-            <Description>BEAst: The gross weight of the consignment as a whole. Must be equal the sum of the gross weight specified for the included transport handling unites if this is specified</Description>
+            <Description>Peppol: The gross weight of the consignment as a whole. Must be equal the sum of the gross weight specified for the included transport handling unites if this is specified</Description>
             <Reference type="RULE">PEPPOL-T124-R005</Reference>
             <Reference type="RULE">PEPPOL-T124-R008</Reference>
             <Value type="EXAMPLE">1030</Value>
@@ -1146,7 +1157,7 @@
          <Element cardinality="0..1">
             <Term>cbc:GrossVolumeMeasure</Term>
             <Name>Consignment gross volume </Name>
-            <Description>BEAst: The gross volumen of the consignment. Must be greather or equal the the volumen specified for the included transport handling unites if this is specified</Description>
+            <Description>Peppol: The gross volumen of the consignment. Must be greather or equal the the volumen specified for the included transport handling unites if this is specified</Description>
             <Reference type="RULE">PEPPOL-T124-R006</Reference>
             <Reference type="RULE">PEPPOL-T124-R008</Reference>
             <Value type="EXAMPLE">20</Value>
@@ -1158,7 +1169,7 @@
          <Element cardinality="0..1">
             <Term>cbc:LoadingLengthMeasure</Term>
             <Name>Loading length measure </Name>
-            <Description>BEAst: The total length in a means of transport or a piece of transport equipment which, given the width and height of the transport means, will accommodate all of the consignments in a single consolidation.</Description>
+            <Description>Peppol: The total length in a means of transport or a piece of transport equipment which, given the width and height of the transport means, will accommodate all of the consignments in a single consolidation.</Description>
             <Reference type="RULE">PEPPOL-T124-R008</Reference>
             <Value type="EXAMPLE">0.4</Value>
             <Attribute>
@@ -1169,7 +1180,7 @@
          <Element cardinality="0..1">
             <Term>cbc:HazardousRiskIndicator</Term>
             <Name>Hazardous risk indicator </Name>
-            <Description>BEAst: An indication that the transported goods in this consignment are subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).</Description>
+            <Description>Peppol: An indication that the transported goods in this consignment are subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).</Description>
             <Value type="EXAMPLE">false</Value>
          </Element>
          <Element cardinality="0..1">
@@ -1186,21 +1197,21 @@
          <Element cardinality="0..1">
             <Term>cac:RequestedPickupTransportEvent</Term>
             <Name>Requested pickup transport event </Name>
-            <Description>BEAst: The pickup of this consignment requested by the party requesting a transportation service (the transport user).</Description>
+            <Description>Peppol: The pickup of this consignment requested by the party requesting a transportation service (the transport user).</Description>
             <Element cardinality="0..1">
                <Term>cbc:IdentificationID</Term>
                <Name>Identifier pickup transport event </Name>
-               <Description>BEAst: An identifier for this pickup transport event within an agreed event identification scheme. </Description>
+               <Description>Peppol: An identifier for this pickup transport event within an agreed event identification scheme. </Description>
                <Value type="EXAMPLE">21412312412</Value>
             </Element>
             <Element cardinality="1..1">
                <Term>cac:Location</Term>
                <Name>Location of requested pickup </Name>
-               <Description>BEAst: The location where the pickup takes place.</Description>
+               <Description>Peppol: The location where the pickup takes place.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
                   <Name>Identity of the  pickup location </Name>
-                  <Description>BEAst: Identifies the pickup location. </Description>
+                  <Description>Peppol: Identifies the pickup location. </Description>
                   <Value type="EXAMPLE">5790000435951</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
@@ -1212,41 +1223,41 @@
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Name of the pickup location </Name>
-                  <Description>BEAst: The name of the pickup location.</Description>
+                  <Description>Peppol: The name of the pickup location.</Description>
                   <Value type="EXAMPLE">Novo Nordisk Pharmatech A/S</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:Address</Term>
                   <Name>Address of location </Name>
-                  <Description>BEAst: Location address. </Description>
+                  <Description>Peppol: Location address. </Description>
                   <Element cardinality="0..1">
                      <Term>cbc:StreetName</Term>
                      <Name>Address line 1 </Name>
-                     <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+                     <Description>Peppol: The main address line in a postal address usually the street name and number. </Description>
                      <Value type="EXAMPLE">Københavnsvej 216</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:AdditionalStreetName</Term>
                      <Name>Address line 2 </Name>
-                     <Description>BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+                     <Description>Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
                      <Value type="EXAMPLE">Purchasing</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
                      <Name>City </Name>
-                     <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+                     <Description>Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
                      <Value type="EXAMPLE">Køge</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:PostalZone</Term>
                      <Name>Post code </Name>
-                     <Description>BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+                     <Description>Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
                      <Value type="EXAMPLE">4600</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CountrySubentity</Term>
                      <Name>Country subdivision </Name>
-                     <Description>BEAst: For specifying a region, county, state, province etc. within a country by using text. </Description>
+                     <Description>Peppol: For specifying a region, county, state, province etc. within a country by using text. </Description>
                      <Value type="EXAMPLE">Region Hovedstaden</Value>
                   </Element>
                   <Element cardinality="0..1">
@@ -1255,7 +1266,7 @@
                      <Element cardinality="1..1">
                         <Term>cbc:Line</Term>
                         <Name>Address line 3 </Name>
-                        <Description>BEAst: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+                        <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                         <Value type="EXAMPLE">3rd Floor, Room 5</Value>
                      </Element>
                   </Element>
@@ -1265,7 +1276,7 @@
                      <Element cardinality="0..1">
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code </Name>
-                        <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                        <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                         <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">DK</Value>
                      </Element>
@@ -1273,22 +1284,22 @@
                   <Element cardinality="0..1">
                      <Term>cac:LocationCoordinate</Term>
                      <Name>Location coordinate </Name>
-                     <Description>BEAst: To specify the coordinates. </Description>
+                     <Description>Peppol: To specify the coordinates. </Description>
                      <Element cardinality="1..1">
                         <Term>cbc:CoordinateSystemCode</Term>
                         <Name>Coordinate system code </Name>
-                        <Description>BEAst: Always "EPSG:3857" by definition. </Description>
+                        <Description>Peppol: Always "EPSG:3857" by definition. </Description>
                         <Value type="EXAMPLE">EPSG:3857</Value>
                      </Element>
                      <Element cardinality="1..1">
                         <Term>cbc:LatitudeDegreesMeasure</Term>
                         <Name>Latitude degrees </Name>
-                        <Description>BEAst: The X coordinate. Use degrees with decimals. </Description>
+                        <Description>Peppol: The X coordinate. Use degrees with decimals. </Description>
                         <Value type="EXAMPLE">59.331660358041425</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
                            <Name>Latitude degrees unit of measure </Name>
-                           <Description>BEAst: The unit of measure that applies to the latitude degrees. </Description>
+                           <Description>Peppol: The unit of measure that applies to the latitude degrees. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">DD</Value>
                         </Attribute>
@@ -1296,12 +1307,12 @@
                      <Element cardinality="1..1">
                         <Term>cbc:LongitudeDegreesMeasure</Term>
                         <Name>Longitude degrees </Name>
-                        <Description>BEAst: The Y coordinate. Use degrees with decimals. </Description>
+                        <Description>Peppol: The Y coordinate. Use degrees with decimals. </Description>
                         <Value type="EXAMPLE">18.063363084988005</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
                            <Name>Longitude degrees unit of measure </Name>
-                           <Description>BEAst: The unit of measure that applies to the longitude degrees. </Description>
+                           <Description>Peppol: The unit of measure that applies to the longitude degrees. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">DD</Value>
                         </Attribute>
@@ -1309,12 +1320,12 @@
                      <Element cardinality="0..1">
                         <Term>cbc:AltitudeMeasure</Term>
                         <Name>Altitude </Name>
-                        <Description>BEAst: The Z coordinate. </Description>
+                        <Description>Peppol: The Z coordinate. </Description>
                         <Value type="EXAMPLE">12.5</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
                            <Name>Altitude unit of measure </Name>
-                           <Description>BEAst: The unit of measure that applies to altitude. </Description>
+                           <Description>Peppol: The unit of measure that applies to altitude. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">MTR</Value>
                         </Attribute>
@@ -1325,11 +1336,11 @@
             <Element cardinality="1..1">
                <Term>cac:Period</Term>
                <Name>Period </Name>
-               <Description>BEAst: The period within the pickup event takes place.</Description>
+               <Description>Peppol: The period within the pickup event takes place.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:StartDate</Term>
                   <Name>Period start date</Name>
-                  <Description>BEAst: The start date for the pickup event.</Description>
+                  <Description>Peppol: The start date for the pickup event.</Description>
                   <Reference type="RULE">PEPPOL-T124-R011</Reference>
                   <Reference type="RULE">PEPPOL-T124-R012</Reference>
                   <Value type="EXAMPLE">2021-09-29</Value>
@@ -1337,7 +1348,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:StartTime</Term>
                   <Name>Period start time</Name>
-                  <Description>BEAst: The start time for the pickup event.</Description>
+                  <Description>Peppol: The start time for the pickup event.</Description>
                   <Reference type="RULE">PEPPOL-T124-R013</Reference>
                   <Reference type="RULE">PEPPOL-T124-R015</Reference>
                   <Reference type="RULE">PEPPOL-T124-R016</Reference>
@@ -1346,7 +1357,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:EndDate</Term>
                   <Name>Period end date</Name>
-                  <Description>BEAst: The end date for the pickup event.</Description>
+                  <Description>Peppol: The end date for the pickup event.</Description>
                   <Reference type="RULE">PEPPOL-T124-R011</Reference>
                   <Reference type="RULE">PEPPOL-T124-R012</Reference>
                   <Value type="EXAMPLE">2021-09-29</Value>
@@ -1354,7 +1365,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:EndTime</Term>
                   <Name>Period end time</Name>
-                  <Description>BEAst: The end time for the pickup event.</Description>
+                  <Description>Peppol: The end time for the pickup event.</Description>
                   <Reference type="RULE">PEPPOL-T124-R013</Reference>
                   <Reference type="RULE">PEPPOL-T124-R014</Reference>
                   <Reference type="RULE">PEPPOL-T124-R017</Reference>
@@ -1365,21 +1376,21 @@
          <Element cardinality="0..1">
             <Term>cac:RequestedDeliveryTransportEvent</Term>
             <Name>Requested delivery transport event </Name>
-            <Description>BEAst: The delivery of this consignment requested by the party requesting a transportation service (the transport user).</Description>
+            <Description>Peppol: The delivery of this consignment requested by the party requesting a transportation service (the transport user).</Description>
             <Element cardinality="0..1">
                <Term>cbc:IdentificationID</Term>
                <Name>Identifier delivery transport event </Name>
-               <Description>BEAst: An identifier for this delivery transport event within an agreed event identification scheme. </Description>
+               <Description>Peppol: An identifier for this delivery transport event within an agreed event identification scheme. </Description>
                <Value type="EXAMPLE">625435485674654132</Value>
             </Element>
             <Element cardinality="1..1">
                <Term>cac:Location</Term>
                <Name>Location of requested delivery </Name>
-               <Description>BEAst: The location of the requested delivery.</Description>
+               <Description>Peppol: The location of the requested delivery.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
                   <Name>Identity of the delivery location </Name>
-                  <Description>BEAst: Identifies the delivery location. </Description>
+                  <Description>Peppol: Identifies the delivery location. </Description>
                   <Value type="EXAMPLE">5790000435951</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
@@ -1391,41 +1402,41 @@
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Name of the delivery location </Name>
-                  <Description>BEAst: The name of the delivery location. </Description>
+                  <Description>Peppol: The name of the delivery location. </Description>
                   <Value type="EXAMPLE">DHL Københavns lufthavn</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:Address</Term>
                   <Name>Address of the location </Name>
-                  <Description>BEAst: Location Address. </Description>
+                  <Description>Peppol: Location Address. </Description>
                   <Element cardinality="0..1">
                      <Term>cbc:StreetName</Term>
                      <Name>Address line 1 </Name>
-                     <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+                     <Description>Peppol: The main address line in a postal address usually the street name and number. </Description>
                      <Value type="EXAMPLE">Kystvejen 24</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:AdditionalStreetName</Term>
                      <Name>Address line 2 </Name>
-                     <Description>BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+                     <Description>Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
                      <Value type="EXAMPLE">Ved lufthavnen</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
                      <Name>City </Name>
-                     <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+                     <Description>Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
                      <Value type="EXAMPLE">Kastrup</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:PostalZone</Term>
                      <Name>Post code </Name>
-                     <Description>BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+                     <Description>Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
                      <Value type="EXAMPLE">2770</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CountrySubentity</Term>
                      <Name>Country subdivision </Name>
-                     <Description>BEAst: For specifying a region, county, state, province etc. within a country by using text. </Description>
+                     <Description>Peppol: For specifying a region, county, state, province etc. within a country by using text. </Description>
                      <Value type="EXAMPLE">Region Hovedstaden</Value>
                   </Element>
                   <Element cardinality="0..1">
@@ -1434,7 +1445,7 @@
                      <Element cardinality="1..1">
                         <Term>cbc:Line</Term>
                         <Name>Address line 3 </Name>
-                        <Description>BEAst: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+                        <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                         <Value type="EXAMPLE">3rd Floor, Room 5</Value>
                      </Element>
                   </Element>
@@ -1444,7 +1455,7 @@
                      <Element cardinality="0..1">
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code </Name>
-                        <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                        <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                         <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">DK</Value>
                      </Element>
@@ -1452,22 +1463,22 @@
                   <Element cardinality="0..1">
                      <Term>cac:LocationCoordinate</Term>
                      <Name>Location coordinate </Name>
-                     <Description>BEAst: To specify the coordinates. </Description>
+                     <Description>Peppol: To specify the coordinates. </Description>
                      <Element cardinality="1..1">
                         <Term>cbc:CoordinateSystemCode</Term>
                         <Name>Coordinate system code </Name>
-                        <Description>BEAst: Always "EPSG:3857" by definition. </Description>
+                        <Description>Peppol: Always "EPSG:3857" by definition. </Description>
                         <Value type="EXAMPLE">EPSG:3857</Value>
                      </Element>
                      <Element cardinality="1..1">
                         <Term>cbc:LatitudeDegreesMeasure</Term>
                         <Name>Latitude degrees </Name>
-                        <Description>BEAst: The X coordinate. Use degrees with decimals. </Description>
+                        <Description>Peppol: The X coordinate. Use degrees with decimals. </Description>
                         <Value type="EXAMPLE">59.331660358041425</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
                            <Name>Latitude degrees unit of measure </Name>
-                           <Description>BEAst: The unit of measure that applies to the latitude degrees. </Description>
+                           <Description>Peppol: The unit of measure that applies to the latitude degrees. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">DD</Value>
                         </Attribute>
@@ -1475,12 +1486,12 @@
                      <Element cardinality="1..1">
                         <Term>cbc:LongitudeDegreesMeasure</Term>
                         <Name>Longitude degrees </Name>
-                        <Description>BEAst: The Y coordinate. Use degrees with decimals. </Description>
+                        <Description>Peppol: The Y coordinate. Use degrees with decimals. </Description>
                         <Value type="EXAMPLE">18.063363084988005</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
                            <Name>Longitude degrees unit of measure </Name>
-                           <Description>BEAst: The unit of measure that applies to the longitude degrees. </Description>
+                           <Description>Peppol: The unit of measure that applies to the longitude degrees. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">DD</Value>
                         </Attribute>
@@ -1488,12 +1499,12 @@
                      <Element cardinality="0..1">
                         <Term>cbc:AltitudeMeasure</Term>
                         <Name>Altitude </Name>
-                        <Description>BEAst: The Z coordinate. </Description>
+                        <Description>Peppol: The Z coordinate. </Description>
                         <Value type="EXAMPLE">12.5</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
                            <Name>Altitude unit of measure </Name>
-                           <Description>BEAst: The unit of measure that applies to altitude. </Description>
+                           <Description>Peppol: The unit of measure that applies to altitude. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">MTR</Value>
                         </Attribute>
@@ -1504,11 +1515,11 @@
             <Element cardinality="1..1">
                <Term>cac:Period</Term>
                <Name>Period </Name>
-               <Description>BEAst: The period within the delivery event takes place.</Description>
+               <Description>Peppol: The period within the delivery event takes place.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:StartDate</Term>
                   <Name>Period start date</Name>
-                  <Description>BEAst: The start date for the delivery event.</Description>
+                  <Description>Peppol: The start date for the delivery event.</Description>
                   <Reference type="RULE">PEPPOL-T124-R011</Reference>
                   <Reference type="RULE">PEPPOL-T124-R012</Reference>
                   <Value type="EXAMPLE">2021-09-29</Value>
@@ -1516,7 +1527,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:StartTime</Term>
                   <Name>Period start time</Name>
-                  <Description>BEAst: The start time for the delivery event.</Description>
+                  <Description>Peppol: The start time for the delivery event.</Description>
                   <Reference type="RULE">PEPPOL-T124-R013</Reference>
                   <Reference type="RULE">PEPPOL-T124-R015</Reference>
                   <Reference type="RULE">PEPPOL-T124-R016</Reference>
@@ -1525,7 +1536,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:EndDate</Term>
                   <Name>Period end date</Name>
-                  <Description>BEAst: The end date for the delivery event.</Description>
+                  <Description>Peppol: The end date for the delivery event.</Description>
                   <Reference type="RULE">PEPPOL-T124-R011</Reference>
                   <Reference type="RULE">PEPPOL-T124-R012</Reference>
                   <Value type="EXAMPLE">2021-09-29</Value>
@@ -1533,7 +1544,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:EndTime</Term>
                   <Name>Period end time</Name>
-                  <Description>BEAst: The end time for the delivery event.</Description>
+                  <Description>Peppol: The end time for the delivery event.</Description>
                   <Reference type="RULE">PEPPOL-T124-R013</Reference>
                   <Reference type="RULE">PEPPOL-T124-R014</Reference>
                   <Reference type="RULE">PEPPOL-T124-R017</Reference>
@@ -1544,21 +1555,21 @@
          <Element cardinality="1..1">
             <Term>cac:PlannedPickupTransportEvent</Term>
             <Name>Planned pickup transport event </Name>
-            <Description>BEAst: The pickup of this consignment planned by the party responsible for providing the transportation service (the transport service provider)</Description>
+            <Description>Peppol: The pickup of this consignment planned by the party responsible for providing the transportation service (the transport service provider)</Description>
             <Element cardinality="0..1">
                <Term>cbc:IdentificationID</Term>
                <Name>Identifier pickup transport event </Name>
-               <Description>BEAst: An identifier for this pickup transport event within an agreed event identification scheme. </Description>
+               <Description>Peppol: An identifier for this pickup transport event within an agreed event identification scheme. </Description>
                <Value type="EXAMPLE">21412312412</Value>
             </Element>
             <Element cardinality="1..1">
                <Term>cac:Location</Term>
                <Name>Location of requested pickup </Name>
-               <Description>BEAst: The location where the pickup takes place.</Description>
+               <Description>Peppol: The location where the pickup takes place.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
                   <Name>Identity of the  pickup location </Name>
-                  <Description>BEAst: Identifies the pickup location. </Description>
+                  <Description>Peppol: Identifies the pickup location. </Description>
                   <Value type="EXAMPLE">5790000435951</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
@@ -1570,41 +1581,41 @@
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Name of the pickup location </Name>
-                  <Description>BEAst: The name of the pickup location.</Description>
+                  <Description>Peppol: The name of the pickup location.</Description>
                   <Value type="EXAMPLE">Novo Nordisk Pharmatech A/S</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:Address</Term>
                   <Name>Address of location </Name>
-                  <Description>BEAst: Location address. </Description>
+                  <Description>Peppol: Location address. </Description>
                   <Element cardinality="0..1">
                      <Term>cbc:StreetName</Term>
                      <Name>Address line 1 </Name>
-                     <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+                     <Description>Peppol: The main address line in a postal address usually the street name and number. </Description>
                      <Value type="EXAMPLE">Københavnsvej 216</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:AdditionalStreetName</Term>
                      <Name>Address line 2 </Name>
-                     <Description>BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+                     <Description>Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
                      <Value type="EXAMPLE">Purchasing</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
                      <Name>City </Name>
-                     <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+                     <Description>Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
                      <Value type="EXAMPLE">Køge</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:PostalZone</Term>
                      <Name>Post code </Name>
-                     <Description>BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+                     <Description>Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
                      <Value type="EXAMPLE">4600</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CountrySubentity</Term>
                      <Name>Country subdivision </Name>
-                     <Description>BEAst: For specifying a region, county, state, province etc. within a country by using text. </Description>
+                     <Description>Peppol: For specifying a region, county, state, province etc. within a country by using text. </Description>
                      <Value type="EXAMPLE">Region Hovedstaden</Value>
                   </Element>
                   <Element cardinality="0..1">
@@ -1613,7 +1624,7 @@
                      <Element cardinality="1..1">
                         <Term>cbc:Line</Term>
                         <Name>Address line 3 </Name>
-                        <Description>BEAst: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+                        <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                         <Value type="EXAMPLE">3rd Floor, Room 5</Value>
                      </Element>
                   </Element>
@@ -1623,7 +1634,7 @@
                      <Element cardinality="0..1">
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code </Name>
-                        <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                        <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                         <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">DK</Value>
                      </Element>
@@ -1631,22 +1642,22 @@
                   <Element cardinality="0..1">
                      <Term>cac:LocationCoordinate</Term>
                      <Name>Location coordinate </Name>
-                     <Description>BEAst: To specify the coordinates. </Description>
+                     <Description>Peppol: To specify the coordinates. </Description>
                      <Element cardinality="1..1">
                         <Term>cbc:CoordinateSystemCode</Term>
                         <Name>Coordinate system code </Name>
-                        <Description>BEAst: Always "EPSG:3857" by definition. </Description>
+                        <Description>Peppol: Always "EPSG:3857" by definition. </Description>
                         <Value type="EXAMPLE">EPSG:3857</Value>
                      </Element>
                      <Element cardinality="1..1">
                         <Term>cbc:LatitudeDegreesMeasure</Term>
                         <Name>Latitude degrees </Name>
-                        <Description>BEAst: The X coordinate. Use degrees with decimals. </Description>
+                        <Description>Peppol: The X coordinate. Use degrees with decimals. </Description>
                         <Value type="EXAMPLE">59.331660358041425</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
                            <Name>Latitude degrees unit of measure </Name>
-                           <Description>BEAst: The unit of measure that applies to the latitude degrees. </Description>
+                           <Description>Peppol: The unit of measure that applies to the latitude degrees. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">DD</Value>
                         </Attribute>
@@ -1654,12 +1665,12 @@
                      <Element cardinality="1..1">
                         <Term>cbc:LongitudeDegreesMeasure</Term>
                         <Name>Longitude degrees </Name>
-                        <Description>BEAst: The Y coordinate. Use degrees with decimals. </Description>
+                        <Description>Peppol: The Y coordinate. Use degrees with decimals. </Description>
                         <Value type="EXAMPLE">18.063363084988005</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
                            <Name>Longitude degrees unit of measure </Name>
-                           <Description>BEAst: The unit of measure that applies to the longitude degrees. </Description>
+                           <Description>Peppol: The unit of measure that applies to the longitude degrees. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">DD</Value>
                         </Attribute>
@@ -1667,12 +1678,12 @@
                      <Element cardinality="0..1">
                         <Term>cbc:AltitudeMeasure</Term>
                         <Name>Altitude </Name>
-                        <Description>BEAst: The Z coordinate. </Description>
+                        <Description>Peppol: The Z coordinate. </Description>
                         <Value type="EXAMPLE">12.5</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
                            <Name>Altitude unit of measure </Name>
-                           <Description>BEAst: The unit of measure that applies to altitude. </Description>
+                           <Description>Peppol: The unit of measure that applies to altitude. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">MTR</Value>
                         </Attribute>
@@ -1683,11 +1694,11 @@
             <Element cardinality="1..1">
                <Term>cac:Period</Term>
                <Name>Period </Name>
-               <Description>BEAst: The period within the pickup event takes place.</Description>
+               <Description>Peppol: The period within the pickup event takes place.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:StartDate</Term>
                   <Name>Period start date</Name>
-                  <Description>BEAst: The start date for the pickup event.</Description>
+                  <Description>Peppol: The start date for the pickup event.</Description>
                   <Reference type="RULE">PEPPOL-T124-R011</Reference>
                   <Reference type="RULE">PEPPOL-T124-R012</Reference>
                   <Value type="EXAMPLE">2021-09-29</Value>
@@ -1695,7 +1706,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:StartTime</Term>
                   <Name>Period start time</Name>
-                  <Description>BEAst: The start time for the pickup event.</Description>
+                  <Description>Peppol: The start time for the pickup event.</Description>
                   <Reference type="RULE">PEPPOL-T124-R013</Reference>
                   <Reference type="RULE">PEPPOL-T124-R015</Reference>
                   <Reference type="RULE">PEPPOL-T124-R016</Reference>
@@ -1704,7 +1715,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:EndDate</Term>
                   <Name>Period end date</Name>
-                  <Description>BEAst: The end date for the pickup event.</Description>
+                  <Description>Peppol: The end date for the pickup event.</Description>
                   <Reference type="RULE">PEPPOL-T124-R011</Reference>
                   <Reference type="RULE">PEPPOL-T124-R012</Reference>
                   <Value type="EXAMPLE">2021-09-29</Value>
@@ -1712,7 +1723,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:EndTime</Term>
                   <Name>Period end time</Name>
-                  <Description>BEAst: The end time for the pickup event.</Description>
+                  <Description>Peppol: The end time for the pickup event.</Description>
                   <Reference type="RULE">PEPPOL-T124-R013</Reference>
                   <Reference type="RULE">PEPPOL-T124-R014</Reference>
                   <Reference type="RULE">PEPPOL-T124-R017</Reference>
@@ -1723,21 +1734,21 @@
          <Element cardinality="1..1">
             <Term>cac:PlannedDeliveryTransportEvent</Term>
             <Name>Requested delivery transport event </Name>
-            <Description>BEAst: The delivery of this consignment requested by the party requesting a transportation service (the transport user).</Description>
+            <Description>Peppol: The delivery of this consignment requested by the party requesting a transportation service (the transport user).</Description>
             <Element cardinality="0..1">
                <Term>cbc:IdentificationID</Term>
                <Name>Identifier delivery transport event </Name>
-               <Description>BEAst: An identifier for this delivery transport event within an agreed event identification scheme. </Description>
+               <Description>Peppol: An identifier for this delivery transport event within an agreed event identification scheme. </Description>
                <Value type="EXAMPLE">625435485674654132</Value>
             </Element>
             <Element cardinality="1..1">
                <Term>cac:Location</Term>
                <Name>Location of requested delivery </Name>
-               <Description>BEAst: The location of the requested delivery.</Description>
+               <Description>Peppol: The location of the requested delivery.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
                   <Name>Identity of the delivery location </Name>
-                  <Description>BEAst: Identifies the delivery location. </Description>
+                  <Description>Peppol: Identifies the delivery location. </Description>
                   <Value type="EXAMPLE">5790000435951</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
@@ -1749,41 +1760,41 @@
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Name of the delivery location </Name>
-                  <Description>BEAst: The name of the delivery location. </Description>
+                  <Description>Peppol: The name of the delivery location. </Description>
                   <Value type="EXAMPLE">DHL Københavns lufthavn</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:Address</Term>
                   <Name>Address of the location </Name>
-                  <Description>BEAst: Location Address. </Description>
+                  <Description>Peppol: Location Address. </Description>
                   <Element cardinality="0..1">
                      <Term>cbc:StreetName</Term>
                      <Name>Address line 1 </Name>
-                     <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+                     <Description>Peppol: The main address line in a postal address usually the street name and number. </Description>
                      <Value type="EXAMPLE">Kystvejen 24</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:AdditionalStreetName</Term>
                      <Name>Address line 2 </Name>
-                     <Description>BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+                     <Description>Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
                      <Value type="EXAMPLE">Ved lufthavnen</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
                      <Name>City </Name>
-                     <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+                     <Description>Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
                      <Value type="EXAMPLE">Kastrup</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:PostalZone</Term>
                      <Name>Post code </Name>
-                     <Description>BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+                     <Description>Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
                      <Value type="EXAMPLE">2770</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CountrySubentity</Term>
                      <Name>Country subdivision </Name>
-                     <Description>BEAst: For specifying a region, county, state, province etc. within a country by using text. </Description>
+                     <Description>Peppol: For specifying a region, county, state, province etc. within a country by using text. </Description>
                      <Value type="EXAMPLE">Region Hovedstaden</Value>
                   </Element>
                   <Element cardinality="0..1">
@@ -1792,7 +1803,7 @@
                      <Element cardinality="1..1">
                         <Term>cbc:Line</Term>
                         <Name>Address line 3 </Name>
-                        <Description>BEAst: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+                        <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                         <Value type="EXAMPLE">3rd Floor, Room 5</Value>
                      </Element>
                   </Element>
@@ -1802,7 +1813,7 @@
                      <Element cardinality="0..1">
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code </Name>
-                        <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                        <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                         <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">DK</Value>
                      </Element>
@@ -1810,22 +1821,22 @@
                   <Element cardinality="0..1">
                      <Term>cac:LocationCoordinate</Term>
                      <Name>Location coordinate </Name>
-                     <Description>BEAst: To specify the coordinates. </Description>
+                     <Description>Peppol: To specify the coordinates. </Description>
                      <Element cardinality="1..1">
                         <Term>cbc:CoordinateSystemCode</Term>
                         <Name>Coordinate system code </Name>
-                        <Description>BEAst: Always "EPSG:3857" by definition. </Description>
+                        <Description>Peppol: Always "EPSG:3857" by definition. </Description>
                         <Value type="EXAMPLE">EPSG:3857</Value>
                      </Element>
                      <Element cardinality="1..1">
                         <Term>cbc:LatitudeDegreesMeasure</Term>
                         <Name>Latitude degrees </Name>
-                        <Description>BEAst: The X coordinate. Use degrees with decimals. </Description>
+                        <Description>Peppol: The X coordinate. Use degrees with decimals. </Description>
                         <Value type="EXAMPLE">59.331660358041425</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
                            <Name>Latitude degrees unit of measure </Name>
-                           <Description>BEAst: The unit of measure that applies to the latitude degrees. </Description>
+                           <Description>Peppol: The unit of measure that applies to the latitude degrees. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">DD</Value>
                         </Attribute>
@@ -1833,12 +1844,12 @@
                      <Element cardinality="1..1">
                         <Term>cbc:LongitudeDegreesMeasure</Term>
                         <Name>Longitude degrees </Name>
-                        <Description>BEAst: The Y coordinate. Use degrees with decimals. </Description>
+                        <Description>Peppol: The Y coordinate. Use degrees with decimals. </Description>
                         <Value type="EXAMPLE">18.063363084988005</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
                            <Name>Longitude degrees unit of measure </Name>
-                           <Description>BEAst: The unit of measure that applies to the longitude degrees. </Description>
+                           <Description>Peppol: The unit of measure that applies to the longitude degrees. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">DD</Value>
                         </Attribute>
@@ -1846,12 +1857,12 @@
                      <Element cardinality="0..1">
                         <Term>cbc:AltitudeMeasure</Term>
                         <Name>Altitude </Name>
-                        <Description>BEAst: The Z coordinate. </Description>
+                        <Description>Peppol: The Z coordinate. </Description>
                         <Value type="EXAMPLE">12.5</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
                            <Name>Altitude unit of measure </Name>
-                           <Description>BEAst: The unit of measure that applies to altitude. </Description>
+                           <Description>Peppol: The unit of measure that applies to altitude. </Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">MTR</Value>
                         </Attribute>
@@ -1862,11 +1873,11 @@
             <Element cardinality="1..1">
                <Term>cac:Period</Term>
                <Name>Period </Name>
-               <Description>BEAst: The period within the delivery event takes place.</Description>
+               <Description>Peppol: The period within the delivery event takes place.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:StartDate</Term>
                   <Name>Period start date</Name>
-                  <Description>BEAst: The start date for the delivery event.</Description>
+                  <Description>Peppol: The start date for the delivery event.</Description>
                   <Reference type="RULE">PEPPOL-T124-R011</Reference>
                   <Reference type="RULE">PEPPOL-T124-R012</Reference>
                   <Value type="EXAMPLE">2021-09-29</Value>
@@ -1874,7 +1885,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:StartTime</Term>
                   <Name>Period start time</Name>
-                  <Description>BEAst: The start time for the delivery event.</Description>
+                  <Description>Peppol: The start time for the delivery event.</Description>
                   <Reference type="RULE">PEPPOL-T124-R013</Reference>
                   <Reference type="RULE">PEPPOL-T124-R015</Reference>
                   <Reference type="RULE">PEPPOL-T124-R016</Reference>
@@ -1883,7 +1894,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:EndDate</Term>
                   <Name>Period end date</Name>
-                  <Description>BEAst: The end date for the delivery event.</Description>
+                  <Description>Peppol: The end date for the delivery event.</Description>
                   <Reference type="RULE">PEPPOL-T124-R011</Reference>
                   <Reference type="RULE">PEPPOL-T124-R012</Reference>
                   <Value type="EXAMPLE">2021-09-29</Value>
@@ -1891,7 +1902,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:EndTime</Term>
                   <Name>Period end time</Name>
-                  <Description>BEAst: The end time for the delivery event.</Description>
+                  <Description>Peppol: The end time for the delivery event.</Description>
                   <Reference type="RULE">PEPPOL-T124-R013</Reference>
                   <Reference type="RULE">PEPPOL-T124-R014</Reference>
                   <Reference type="RULE">PEPPOL-T124-R017</Reference>
@@ -1902,11 +1913,11 @@
          <Element cardinality="1..1">
             <Term>cac:ConsigneeParty</Term>
             <Name>Consignee party </Name>
-            <Description>BEAst: The party responsible for receiving the goods in the Transport Execution Plan. </Description>
+            <Description>Peppol: The party responsible for receiving the goods in the Transport Execution Plan. </Description>
             <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
                <Name>Consignee party identification </Name>
-               <Description>BEAst: An identifier for the consignee party. </Description>
+               <Description>Peppol: An identifier for the consignee party. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Reference type="RULE">PEPPOL-T124-R036</Reference>
@@ -1924,7 +1935,7 @@
                <Element>
                   <Term>cbc:Name</Term>
                   <Name>Consignee party name</Name>
-                  <Description>BEAst: The name of the consignee party.</Description>
+                  <Description>Peppol: The name of the consignee party.</Description>
                   <Reference type="RULE">PEPPOL-T124-R036</Reference>
                   <Value type="EXAMPLE">HUS Hospital</Value>
                </Element>
@@ -1932,41 +1943,41 @@
             <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
                <Name>Postal address </Name>
-               <Description>BEAst: The postal address of the Consignee</Description>
+               <Description>Peppol: The postal address of the Consignee</Description>
                <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
                   <Name>Address line 1 </Name>
-                  <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+                  <Description>Peppol: The main address line in a postal address usually the street name and number. </Description>
                   <Value type="EXAMPLE">Topeliuksenkatu 5</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
                   <Name>Address line 2 </Name>
-                  <Description>BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+                  <Description>Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
                   <Value type="EXAMPLE">way 1</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
                   <Name>City </Name>
-                  <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+                  <Description>Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
                   <Value type="EXAMPLE">Helsinki</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
                   <Name>Post code </Name>
-                  <Description>BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+                  <Description>Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
                   <Value type="EXAMPLE">00260</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
                   <Name>Country sub entity </Name>
-                  <Description>BEAst: For specifying a region, county, state, province etc. within a country by using text. </Description>
+                  <Description>Peppol: For specifying a region, county, state, province etc. within a country by using text. </Description>
                   <Value type="EXAMPLE">Region Hovedstaden</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
                   <Name>Address line 3 </Name>
-                  <Description>BEAst: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+                  <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                   <Element cardinality="1..1">
                      <Term>cbc:Line</Term>
                      <Value type="EXAMPLE">Bygning 5</Value>
@@ -1978,7 +1989,7 @@
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
-                     <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                     <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                      <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">FI</Value>
                   </Element>
@@ -1990,18 +2001,18 @@
                <Element cardinality="1..1">
                   <Term>cbc:RegistrationName</Term>
                   <Name>Consignee party name </Name>
-                  <Description>BEAst: The name of the consignee party.</Description>
+                  <Description>Peppol: The name of the consignee party.</Description>
                   <Value type="EXAMPLE">HUS Hospital</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CompanyID</Term>
                   <Name>Consignee parties legal registration name </Name>
-                  <Description>BEAst: The official name of the party as registered with the relevant fiscal authority. </Description>
+                  <Description>Peppol: The official name of the party as registered with the relevant fiscal authority. </Description>
                   <Value type="EXAMPLE">1567535-0</Value>
                   <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier </Name>
-                     <Description>BEAst: The identification scheme identifier of the consinee parties legal registration identifier </Description>
+                     <Description>Peppol: The identification scheme identifier of the consinee parties legal registration identifier </Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0212</Value>
                   </Attribute>
@@ -2012,17 +2023,17 @@
                   <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
                      <Name>City name </Name>
-                     <Description>BEAst: The name of the city. </Description>
+                     <Description>Peppol: The name of the city. </Description>
                      <Value type="EXAMPLE">Helsinki</Value>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cac:Country</Term>
                      <Name>Country </Name>
-                     <Description>BEAst: The residens country for the sender party. </Description>
+                     <Description>Peppol: The residens country for the sender party. </Description>
                      <Element cardinality="1..1">
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code </Name>
-                        <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                        <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                         <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">FI</Value>
                      </Element>
@@ -2032,23 +2043,23 @@
             <Element cardinality="0..1">
                <Term>cac:Contact</Term>
                <Name>Contact </Name>
-               <Description>BEAst: The contact of the consignee party. </Description>
+               <Description>Peppol: The contact of the consignee party. </Description>
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Contact name </Name>
-                  <Description>BEAst: The contact name. </Description>
+                  <Description>Peppol: The contact name. </Description>
                   <Value type="EXAMPLE">Mr Sender</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Telephone</Term>
                   <Name>Contact telephone number </Name>
-                  <Description>BEAst: The phone number of the contact. </Description>
+                  <Description>Peppol: The phone number of the contact. </Description>
                   <Value type="EXAMPLE">0158 1233714</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:ElectronicMail</Term>
                   <Name>Contact email address </Name>
-                  <Description>BEAst: The electronic mail of the contact. </Description>
+                  <Description>Peppol: The electronic mail of the contact. </Description>
                   <Value type="EXAMPLE">sender@consignor-company.co.uk</Value>
                </Element>
             </Element>
@@ -2056,11 +2067,11 @@
          <Element cardinality="1..1">
             <Term>cac:ConsignorParty</Term>
             <Name>Consignor Party </Name>
-            <Description>BEAst: The party responsible for sending the goods in the Transport Execution Plan. </Description>
+            <Description>Peppol: The party responsible for sending the goods in the Transport Execution Plan. </Description>
             <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
                <Name>Consignor party identification </Name>
-               <Description>BEAst: An identifier for the consignor party. </Description>
+               <Description>Peppol: An identifier for the consignor party. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Reference type="RULE">PEPPOL-T124-R037</Reference>
@@ -2078,7 +2089,7 @@
                <Element>
                   <Term>cbc:Name</Term>
                   <Name>Consignor party name</Name>
-                  <Description>BEAst: The name of the consignor party.</Description>
+                  <Description>Peppol: The name of the consignor party.</Description>
                   <Reference type="RULE">PEPPOL-T124-R037</Reference>
                   <Value type="EXAMPLE">Novo Nordisk Pharmatech A/S</Value>
                </Element>
@@ -2086,41 +2097,41 @@
             <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
                <Name>Postal address </Name>
-               <Description>BEAst: The postal address of the consignor party.</Description>
+               <Description>Peppol: The postal address of the consignor party.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
                   <Name>Address line 1 </Name>
-                  <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+                  <Description>Peppol: The main address line in a postal address usually the street name and number. </Description>
                   <Value type="EXAMPLE">Københavnsvej 216</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
                   <Name>Address line 2 </Name>
-                  <Description>BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+                  <Description>Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
                   <Value type="EXAMPLE">way 1</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
                   <Name>City </Name>
-                  <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+                  <Description>Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
                   <Value type="EXAMPLE">Køge</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
                   <Name>Post code </Name>
-                  <Description>BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+                  <Description>Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
                   <Value type="EXAMPLE">4600</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
                   <Name>Country sub entity </Name>
-                  <Description>BEAst: For specifying a region, county, state, province etc. within a country by using text. </Description>
+                  <Description>Peppol: For specifying a region, county, state, province etc. within a country by using text. </Description>
                   <Value type="EXAMPLE">Region Hovedstaden</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
                   <Name>Address line 3 </Name>
-                  <Description>BEAst: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+                  <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                   <Element cardinality="1..1">
                      <Term>cbc:Line</Term>
                      <Value type="EXAMPLE">Bygning 5</Value>
@@ -2132,7 +2143,7 @@
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
-                     <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                     <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                      <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">DK</Value>
                   </Element>
@@ -2144,18 +2155,18 @@
                <Element cardinality="1..1">
                   <Term>cbc:RegistrationName</Term>
                   <Name>Consignor party name </Name>
-                  <Description>BEAst: The name of the consignor party.</Description>
+                  <Description>Peppol: The name of the consignor party.</Description>
                   <Value type="EXAMPLE">Novo Nordisk Pharmatech A/S</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CompanyID</Term>
                   <Name>Consignor parties legal registration name </Name>
-                  <Description>BEAst: The official name of the party as registered with the relevant fiscal authority. </Description>
+                  <Description>Peppol: The official name of the party as registered with the relevant fiscal authority. </Description>
                   <Value type="EXAMPLE">13246149</Value>
                   <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier </Name>
-                     <Description>BEAst: The identification scheme identifier of the consignor legal registration identifier </Description>
+                     <Description>Peppol: The identification scheme identifier of the consignor legal registration identifier </Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0198</Value>
                   </Attribute>
@@ -2166,17 +2177,17 @@
                   <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
                      <Name>City name </Name>
-                     <Description>BEAst: The name of the city. </Description>
+                     <Description>Peppol: The name of the city. </Description>
                      <Value type="EXAMPLE">Køge</Value>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cac:Country</Term>
                      <Name>Country </Name>
-                     <Description>BEAst: The residens country for the consignor party. </Description>
+                     <Description>Peppol: The residens country for the consignor party. </Description>
                      <Element cardinality="0..1">
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code </Name>
-                        <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                        <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                         <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">DK</Value>
                      </Element>
@@ -2186,23 +2197,23 @@
             <Element cardinality="0..1">
                <Term>cac:Contact</Term>
                <Name>Contact </Name>
-               <Description>BEAst: The contact of the consignor party. </Description>
+               <Description>Peppol: The contact of the consignor party. </Description>
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Contact name </Name>
-                  <Description>BEAst: The contact name. </Description>
+                  <Description>Peppol: The contact name. </Description>
                   <Value type="EXAMPLE">Mr Sender</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Telephone</Term>
                   <Name>Contact telephone number </Name>
-                  <Description>BEAst: The phone number of the contact. </Description>
+                  <Description>Peppol: The phone number of the contact. </Description>
                   <Value type="EXAMPLE">0158 1233714</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:ElectronicMail</Term>
                   <Name>Contact email address </Name>
-                  <Description>BEAst: The electronic mail of the contact. </Description>
+                  <Description>Peppol: The electronic mail of the contact. </Description>
                   <Value type="EXAMPLE">sender@consignor-company.co.uk</Value>
                </Element>
             </Element>
@@ -2210,11 +2221,11 @@
          <Element cardinality="0..1">
             <Term>cac:OriginalDepartureCountry</Term>
             <Name>Original departure country </Name>
-            <Description>BEAst: The country from which the goods in this consignment were originally exported, without any commercial transaction taking place in intermediate countries. </Description>
+            <Description>Peppol: The country from which the goods in this consignment were originally exported, without any commercial transaction taking place in intermediate countries. </Description>
             <Element cardinality="1..1">
                <Term>cbc:IdentificationCode</Term>
                <Name>Country code </Name>
-               <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+               <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                <Reference type="CODE_LIST">ISO3166</Reference>
                <Value type="EXAMPLE">DK</Value>
             </Element>
@@ -2222,11 +2233,11 @@
          <Element cardinality="0..1">
             <Term>cac:FinalDestinationCountry</Term>
             <Name>Final destination country </Name>
-            <Description>BEAst: The country in which the goods in this consignment are to be delivered to the final consignee or buyer. </Description>
+            <Description>Peppol: The country in which the goods in this consignment are to be delivered to the final consignee or buyer. </Description>
             <Element cardinality="0..1">
                <Term>cbc:IdentificationCode</Term>
                <Name>Country code </Name>
-               <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+               <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                <Reference type="CODE_LIST">ISO3166</Reference>
                <Value type="EXAMPLE">FI</Value>
             </Element>
@@ -2234,29 +2245,29 @@
          <Element cardinality="0..1">
             <Term>cac:DeliveryTerms</Term>
             <Name>Delivery terms </Name>
-            <Description>BEAst: The conditions agreed upon between a seller and a buyer with regard to the delivery of goods and/or services (e.g., CIF, FOB, or EXW from the INCOTERMS Terms of Delivery). </Description>
+            <Description>Peppol: The conditions agreed upon between a seller and a buyer with regard to the delivery of goods and/or services (e.g., CIF, FOB, or EXW from the INCOTERMS Terms of Delivery). </Description>
             <Element cardinality="0..1">
                <Term>cbc:ID</Term>
                <Name>Delivery terms identification </Name>
-               <Description>BEAst: Delivery terms code (Inco terms). </Description>
+               <Description>Peppol: Delivery terms code (Inco terms). </Description>
                <Reference type="RULE">PEPPOL-T124-R007</Reference>
                <Value type="EXAMPLE">DAP</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:SpecialTerms</Term>
                <Name>Special terms </Name>
-               <Description>BEAst: Special delivery terms that exceeds the inco terms. </Description>
+               <Description>Peppol: Special delivery terms that exceeds the inco terms. </Description>
                <Reference type="RULE">PEPPOL-T124-R007</Reference>
                <Value type="EXAMPLE">DAP</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:Location</Term>
                <Name>Location of attchaed to the delivery terms </Name>
-               <Description>BEAst: The location where the pickup takes place.</Description>
+               <Description>Peppol: The location where the pickup takes place.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
                   <Name>Identity of the  location </Name>
-                  <Description>BEAst: Identifies the location. </Description>
+                  <Description>Peppol: Identifies the location. </Description>
                   <Value type="EXAMPLE">5790000435951</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
@@ -2268,7 +2279,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Name of the location </Name>
-                  <Description>BEAst: The name of the location.</Description>
+                  <Description>Peppol: The name of the location.</Description>
                   <Value type="EXAMPLE">CPH</Value>
                </Element>
             </Element>
@@ -2276,18 +2287,18 @@
          <Element cardinality="0..1">
             <Term>cac:PaymentTerms</Term>
             <Name>Payment terms </Name>
-            <Description>BEAst: The terms of payment between the parties (such as logistics service client, logistics service provider) in a transaction. </Description>
+            <Description>Peppol: The terms of payment between the parties (such as logistics service client, logistics service provider) in a transaction. </Description>
             <Element cardinality="0..1">
                <Term>cbc:ID</Term>
                <Name>Payment terms identification </Name>
-               <Description>BEAst: An identifier for this set of payment terms. </Description>
+               <Description>Peppol: An identifier for this set of payment terms. </Description>
                <Reference type="RULE">PEPPOL-T124-R010</Reference>
                <Value type="EXAMPLE">DAP</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Note</Term>
                <Name>Payment terms note </Name>
-               <Description>BEAst: A free text describing this set of payment terms. </Description>
+               <Description>Peppol: A free text describing this set of payment terms. </Description>
                <Reference type="RULE">PEPPOL-T124-R010</Reference>
                <Value type="EXAMPLE">To be paid on invoice</Value>
             </Element>
@@ -2295,52 +2306,52 @@
          <Element cardinality="0..n">
             <Term>cac:FreightAllowanceCharge</Term>
             <Name>Freight Allowance Charge </Name>
-            <Description>BEAst: A cost incurred by the shipper in moving goods, by whatever means, from one place to another under the terms of the contract of carriage for this consignment. In addition to transport costs, this may include such elements as packing, documentation, loading, unloading, and insurance to the extent that they relate to the freight costs.</Description>
+            <Description>Peppol: A cost incurred by the shipper in moving goods, by whatever means, from one place to another under the terms of the contract of carriage for this consignment. In addition to transport costs, this may include such elements as packing, documentation, loading, unloading, and insurance to the extent that they relate to the freight costs.</Description>
             <Element cardinality="1..1">
                <Term>cbc:ChargeIndicator</Term>
                <Name>ChargeIndication </Name>
-               <Description>BEAst: An indicator that this AllowanceCharge describes a charge (true) or a discount (false). </Description>
+               <Description>Peppol: An indicator that this AllowanceCharge describes a charge (true) or a discount (false). </Description>
                <Value type="EXAMPLE">true</Value>
             </Element>
             <Element cardinality="1..1">
                <Term>cbc:AllowanceChargeReasonCode</Term>
                <Name>Allowance Charge Reason Code </Name>
-               <Description>BEAst: A code signifying this freight allowance or charge. </Description>
+               <Description>Peppol: A code signifying this freight allowance or charge. </Description>
                <Reference type="CODE_LIST">FreightAllowanceChargeReasonCode</Reference>
                <Value type="EXAMPLE">1</Value>
             </Element>
             <Element cardinality="1..1">
                <Term>cbc:Amount</Term>
                <Name>Amount </Name>
-               <Description>BEAst: The amount for this allowance or charge. </Description>
+               <Description>Peppol: The amount for this allowance or charge. </Description>
                <Value type="EXAMPLE">100</Value>
             </Element>
          </Element>
          <Element cardinality="1..1">
             <Term>cac:MainCarriageShipmentStage</Term>
             <Name>Main carriage shipment stage </Name>
-            <Description>BEAst: The shipment stage during main carriage. </Description>
+            <Description>Peppol: The shipment stage during main carriage. </Description>
             <Element cardinality="1..1">
                <Term>cbc:TransportModeCode</Term>
                <Name>Transport mode code</Name>
-               <Description>BEAst: A code signifying the method of transport used for this shipment stage. </Description>
+               <Description>Peppol: A code signifying the method of transport used for this shipment stage. </Description>
                <Reference type="CODE_LIST">UNECERec19</Reference>
                <Value type="EXAMPLE">4</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:HazardousRiskIndicator</Term>
                <Name>Hazardous risk indicator </Name>
-               <Description>BEAst: An indication that the transported goods in this consignment are subject to an international regulation concerning the carriage of dangerous goods (true) or not (false). </Description>
+               <Description>Peppol: An indication that the transported goods in this consignment are subject to an international regulation concerning the carriage of dangerous goods (true) or not (false). </Description>
                <Value type="EXAMPLE">false</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:CarrierParty</Term>
                <Name>Carrier party </Name>
-               <Description>BEAst: The party providing the transport of goods in this consignment between named points. </Description>
+               <Description>Peppol: The party providing the transport of goods in this consignment between named points. </Description>
                <Element cardinality="0..1">
                   <Term>cac:PartyIdentification</Term>
                   <Name>Sender party identification </Name>
-                  <Description>BEAst: An identifier for the sender party as known to the receiver party. </Description>
+                  <Description>Peppol: An identifier for the sender party as known to the receiver party. </Description>
                   <Element cardinality="1..1">
                      <Term>cbc:ID</Term>
                      <Name>ID </Name>
@@ -2359,7 +2370,7 @@
                   <Element>
                      <Term>cbc:Name</Term>
                      <Name>Carrier party name</Name>
-                     <Description>BEAst: The name of the carrier party. </Description>
+                     <Description>Peppol: The name of the carrier party. </Description>
                      <Reference type="RULE">PEPPOL-T124-R030</Reference>
                      <Value type="EXAMPLE">DHL Express</Value>
                   </Element>
@@ -2367,41 +2378,41 @@
                <Element cardinality="0..1">
                   <Term>cac:PostalAddress</Term>
                   <Name>Postal address </Name>
-                  <Description>BEAst: The postal address of the carrier party.</Description>
+                  <Description>Peppol: The postal address of the carrier party.</Description>
                   <Element cardinality="0..1">
                      <Term>cbc:StreetName</Term>
                      <Name>Address line 1 </Name>
-                     <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+                     <Description>Peppol: The main address line in a postal address usually the street name and number. </Description>
                      <Value type="EXAMPLE">Jydekrogen 14</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:AdditionalStreetName</Term>
                      <Name>Address line 2 </Name>
-                     <Description>BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+                     <Description>Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
                      <Value type="EXAMPLE">way 1</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
                      <Name>City </Name>
-                     <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+                     <Description>Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
                      <Value type="EXAMPLE">Vallensbæk Landsby</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:PostalZone</Term>
                      <Name>Post code </Name>
-                     <Description>BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+                     <Description>Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
                      <Value type="EXAMPLE">2625</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CountrySubentity</Term>
                      <Name>Country sub entity </Name>
-                     <Description>BEAst: For specifying a region, county, state, province etc. within a country by using text. </Description>
+                     <Description>Peppol: For specifying a region, county, state, province etc. within a country by using text. </Description>
                      <Value type="EXAMPLE">Region Hovedstaden</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:AddressLine</Term>
                      <Name>Address line 3 </Name>
-                     <Description>BEAst: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+                     <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                      <Element cardinality="1..1">
                         <Term>cbc:Line</Term>
                         <Value type="EXAMPLE">Bygning 5</Value>
@@ -2413,7 +2424,7 @@
                      <Element cardinality="1..1">
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code </Name>
-                        <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                        <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                         <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">DK</Value>
                      </Element>
@@ -2425,18 +2436,18 @@
                   <Element cardinality="1..1">
                      <Term>cbc:RegistrationName</Term>
                      <Name>Carrier party name </Name>
-                     <Description>BEAst: The name of the carrier party.</Description>
+                     <Description>Peppol: The name of the carrier party.</Description>
                      <Value type="EXAMPLE">DHL Express</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CompanyID</Term>
                      <Name>Carrier parties legal registration name </Name>
-                     <Description>BEAst: The official name of the party as registered with the relevant fiscal authority. </Description>
+                     <Description>Peppol: The official name of the party as registered with the relevant fiscal authority. </Description>
                      <Value type="EXAMPLE">10154596</Value>
                      <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier </Name>
-                        <Description>BEAst: The identification scheme identifier of the carrier legal registration identifier </Description>
+                        <Description>Peppol: The identification scheme identifier of the carrier legal registration identifier </Description>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">0198</Value>
                      </Attribute>
@@ -2447,17 +2458,17 @@
                      <Element cardinality="0..1">
                         <Term>cbc:CityName</Term>
                         <Name>City name </Name>
-                        <Description>BEAst: The name of the city. </Description>
+                        <Description>Peppol: The name of the city. </Description>
                         <Value type="EXAMPLE">Vallensbæk Landsby</Value>
                      </Element>
                      <Element cardinality="1..1">
                         <Term>cac:Country</Term>
                         <Name>Country </Name>
-                        <Description>BEAst: The residens country for the carrier party. </Description>
+                        <Description>Peppol: The residens country for the carrier party. </Description>
                         <Element cardinality="1..1">
                            <Term>cbc:IdentificationCode</Term>
                            <Name>Country code </Name>
-                           <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                           <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                            <Reference type="CODE_LIST">ISO3166</Reference>
                            <Value type="EXAMPLE">DK</Value>
                         </Element>
@@ -2467,44 +2478,44 @@
                <Element cardinality="0..1">
                   <Term>cac:Contact</Term>
                   <Name>Contact</Name>
-                  <Description>BEAst: The contact of the Carrier party.</Description>
+                  <Description>Peppol: The contact of the Carrier party.</Description>
                   <Element cardinality="0..1">
                      <Term>cbc:Name</Term>
                      <Name>Contact name</Name>
-                     <Description>BEAst: The contact name.</Description>
+                     <Description>Peppol: The contact name.</Description>
                      <Value type="EXAMPLE">Mrs Bouquet</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:Telephone</Term>
                      <Name>Contact email telephone</Name>
-                     <Description>BEAst: The phone number of the contact.</Description>
+                     <Description>Peppol: The phone number of the contact.</Description>
                      <Value type="EXAMPLE">0158 1233714</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:ElectronicMail</Term>
                      <Name>Contact email address</Name>
-                     <Description>BEAst: The electronic mail of the contact.</Description>
+                     <Description>Peppol: The electronic mail of the contact.</Description>
                      <Value type="EXAMPLE">bouquet@fpconsortial.co.uk</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:Person</Term>
                   <Name>Person</Name>
-                  <Description>BEAst: The driver or master person for the carrier party.</Description>
+                  <Description>Peppol: The driver or master person for the carrier party.</Description>
                   <Element cardinality="1..1">
                      <Term>cac:IdentityDocumentReference</Term>
                      <Name>Identity Document Reference</Name>
-                     <Description>BEAst: Reference to an identity of the driver or master person.</Description>
+                     <Description>Peppol: Reference to an identity of the driver or master person.</Description>
                      <Element cardinality="1..1">
                         <Term>cbc:ID</Term>
                         <Name>ID</Name>
-                        <Description>BEAst: The ID of identity the person for instance a driver license number.</Description>
+                        <Description>Peppol: The ID of identity the person for instance a driver license number.</Description>
                         <Value type="EXAMPLE">45642323</Value>
                      </Element>
                      <Element cardinality="1..1">
                         <Term>cbc:DocumentType</Term>
                         <Name>Document Type</Name>
-                        <Description>BEAst: The type of identity for instance a driver license.</Description>
+                        <Description>Peppol: The type of identity for instance a driver license.</Description>
                         <Value type="EXAMPLE">ID06</Value>
                      </Element>
                   </Element>
@@ -3995,6 +4006,7 @@
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cbc:NetWeightMeasure</Term>
+                        <Name>Net Weight Measure </Name>
                         <Description>BEAst: The net weight for the item. Use if the Hazard class ID requires it</Description>
                         <Value type="EXAMPLE">40.8</Value>
                         <Attribute usage="Mandatory">
