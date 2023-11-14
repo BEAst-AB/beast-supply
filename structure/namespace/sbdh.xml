@@ -3,11 +3,9 @@
 	<Identifier prefix="sbdh">http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader</Identifier>
 	<Version>2.3</Version>
 	<Include prefix="xs">http://www.w3.org/2001/XMLSchema</Include>
-
 	<Element name="HeaderVersion">
 		<DataType>xs:string</DataType>
 	</Element>
-	
 	<Element name="Sender">
 		<DataType>Partner</DataType>
 	</Element>
@@ -22,13 +20,45 @@
 		<Ref card="1..1">MultipleType</Ref>
 		<Ref card="1..1">CreationDateAndTime</Ref>
 	</Element>
+	<Element name="NumberOfItems">
+		<DataType>xs:integer</DataType>
+	</Element>
+	<Element name="MimeTypeQualifier">
+		<DataType>xs:string</DataType>
+	</Element>
+	<Element name="MimeTypeQualifierCode">
+		<DataType>MimeTypeQualifier</DataType>
+	</Element>
+	<Element name="UniformResourceIdentifier">
+		<DataType>xs:anyURI</DataType>
+	</Element>
+	<Element name="Description">
+		<DataType>xs:string</DataType>
+	</Element>
+	<Element name="Language">
+		<DataType>xs:string</DataType>
+	</Element>
+	<Element name="LanguageCode">
+		<DataType>Language</DataType>
+	</Element>
+	<Element name="ManifestItem">
+		<Ref card="1..1">MimeTypeQualifierCode</Ref>
+		<Ref card="1..1">UniformResourceIdentifier</Ref>
+		<Ref card="0..1">Description</Ref>
+		<Ref card="0..1">LanguageCode</Ref>
+	</Element>
 	<Element name="Manifest">
-		<Ref card="1..1">Standard</Ref>
-		<Ref card="1..1">TypeVersion</Ref>
-		<Ref card="1..1">InstanceIdentifier</Ref>
-		<Ref card="1..1">Type</Ref>
-		<Ref card="1..1">MultipleType</Ref>
-		<Ref card="1..1">CreationDateAndTime</Ref>
+		<Ref card="1..1">NumberOfItems</Ref>
+		<Ref card="1..1">ManifestItem</Ref>
+	</Element>
+	<Element name="ScopeInformation">
+		<DataType>xs:anyType</DataType>
+	</Element>
+	<Element name="Scope">
+		<Ref card="0..n">ScopeInformation</Ref>
+	</Element>
+	<Element name="BusinessScope">
+		<Ref card="0..n">Scope</Ref>
 	</Element>
 	<Element name="StandardBusinessDocumentHeader">
 		<Ref card="1..1">HeaderVersion</Ref>
