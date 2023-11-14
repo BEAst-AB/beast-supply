@@ -11,10 +11,10 @@
    <cac:SenderParty>
       <cbc:EndpointID schemeID=""/>
       <cac:PartyIdentification>
-         <cbc:ID schemeID=""/>
+         <cbc:ID schemeID=""/>    
       </cac:PartyIdentification>
       <cac:PartyName>
-         <cbc:Name/>
+         <cbc:Name/>    
       </cac:PartyName>
       <cac:PostalAddress>
          <cbc:StreetName/>
@@ -23,25 +23,25 @@
          <cbc:PostalZone/>
          <cbc:CountrySubentity/>
          <cac:AddressLine>
-            <cbc:Line/>
+            <cbc:Line/>      
          </cac:AddressLine>
          <cac:Country>
-            <cbc:IdentificationCode/>
-         </cac:Country>
+            <cbc:IdentificationCode/>      
+         </cac:Country>    
       </cac:PostalAddress>
       <cac:Contact>
          <cbc:Name/>
          <cbc:Telephone/>
-         <cbc:ElectronicMail/>
-      </cac:Contact>
+         <cbc:ElectronicMail/>    
+      </cac:Contact>  
    </cac:SenderParty>
    <cac:ReceiverParty>
       <cbc:EndpointID schemeID=""/>
       <cac:PartyIdentification>
-         <cbc:ID schemeID=""/>
+         <cbc:ID schemeID=""/>    
       </cac:PartyIdentification>
       <cac:PartyName>
-         <cbc:Name/>
+         <cbc:Name/>    
       </cac:PartyName>
       <cac:PostalAddress>
          <cbc:StreetName/>
@@ -50,28 +50,28 @@
          <cbc:PostalZone/>
          <cbc:CountrySubentity/>
          <cac:AddressLine>
-            <cbc:Line/>
+            <cbc:Line/>      
          </cac:AddressLine>
          <cac:Country>
-            <cbc:IdentificationCode/>
-         </cac:Country>
+            <cbc:IdentificationCode/>      
+         </cac:Country>    
       </cac:PostalAddress>
       <cac:Contact>
          <cbc:Name/>
          <cbc:Telephone/>
-         <cbc:ElectronicMail/>
-      </cac:Contact>
+         <cbc:ElectronicMail/>    
+      </cac:Contact>  
    </cac:ReceiverParty>
    <cac:WeighingParty>
       <cac:PartyIdentification>
-         <cbc:ID schemeID="00"/>
+         <cbc:ID schemeID="00"/>    
       </cac:PartyIdentification>
       <cac:PartyName>
-         <cbc:Name/>
+         <cbc:Name/>    
       </cac:PartyName>
       <cac:PhysicalLocation>
          <cbc:ID schemeID=""/>
-         <cbc:Name/>
+         <cbc:Name/>    
       </cac:PhysicalLocation>
       <cac:PostalAddress>
          <cbc:StreetName/>
@@ -80,24 +80,24 @@
          <cbc:PostalZone/>
          <cbc:CountrySubentity/>
          <cac:AddressLine>
-            <cbc:Line/>
+            <cbc:Line/>      
          </cac:AddressLine>
          <cac:Country>
-            <cbc:IdentificationCode/>
-         </cac:Country>
+            <cbc:IdentificationCode/>      
+         </cac:Country>    
       </cac:PostalAddress>
       <cac:Contact>
          <cbc:Name/>
          <cbc:Telephone/>
-         <cbc:ElectronicMail/>
-      </cac:Contact>
+         <cbc:ElectronicMail/>    
+      </cac:Contact>  
    </cac:WeighingParty>
    <cac:ShipperParty>
       <cac:PartyIdentification>
-         <cbc:ID schemeID=""/>
+         <cbc:ID schemeID=""/>    
       </cac:PartyIdentification>
       <cac:PartyName>
-         <cbc:Name/>
+         <cbc:Name/>    
       </cac:PartyName>
       <cac:PostalAddress>
          <cbc:StreetName/>
@@ -106,17 +106,17 @@
          <cbc:PostalZone/>
          <cbc:CountrySubentity/>
          <cac:AddressLine>
-            <cbc:Line/>
+            <cbc:Line/>      
          </cac:AddressLine>
          <cac:Country>
-            <cbc:IdentificationCode/>
-         </cac:Country>
+            <cbc:IdentificationCode/>      
+         </cac:Country>    
       </cac:PostalAddress>
       <cac:Contact>
          <cbc:Name/>
          <cbc:Telephone/>
-         <cbc:ElectronicMail/>
-      </cac:Contact>
+         <cbc:ElectronicMail/>    
+      </cac:Contact>  
    </cac:ShipperParty>
    <cac:Shipment>
       <cbc:ID/>
@@ -125,22 +125,22 @@
          <cac:Item>
             <cbc:Name/>
             <cac:BuyersItemIdentification>
-               <cbc:ID/>
+               <cbc:ID/>        
             </cac:BuyersItemIdentification>
             <cac:SellersItemIdentification>
-               <cbc:ID/>
+               <cbc:ID/>        
             </cac:SellersItemIdentification>
             <cac:StandardItemIdentification>
-               <cbc:ID schemeID=""/>
+               <cbc:ID schemeID=""/>        
             </cac:StandardItemIdentification>
             <cac:CommodityClassification>
-               <cbc:ItemClassificationCode listID="" listVersionID="" name=""/>
-            </cac:CommodityClassification>
+               <cbc:ItemClassificationCode listID="" listVersionID="" name=""/>        
+            </cac:CommodityClassification>      
          </cac:Item>
          <cac:MeasurementDimension>
             <cbc:AttributeID/>
-            <cbc:Measure unitCode=""/>
-         </cac:MeasurementDimension>
-      </cac:GoodsItem>
+            <cbc:Measure unitCode=""/>      
+         </cac:MeasurementDimension>    
+      </cac:GoodsItem>  
    </cac:Shipment>
 </ubl:WeightStatement>
