@@ -13,8 +13,8 @@
 	<Documentation path="">BIS DOCUMENTS (External links)</Documentation>
 	<Documentation path="profiles/3-order-only/">- Peppol BIS Order only 3.3</Documentation>
 	<Documentation path="profiles/28-ordering/">- Peppol BIS Ordering 3.3</Documentation>
-	<!--Documentation path="profiles/1-catalogueonly/">- Peppol BIS Catalogue with response 3.1</Documentation>
-	<Documentation path="profiles/64-catalogue-wo-response/">- Peppol BIS Catalogue without response 3.1</Documentation-->
+	<Documentation path="profiles/1-catalogueonly/">- Peppol BIS Catalogue with response 3.1</Documentation>
+	<Documentation path="profiles/64-catalogue-wo-response/">- Peppol BIS Catalogue without response 3.1</Documentation>
 	<Documentation path="profiles/42-orderagreement/">- Peppol BIS Order Agreement 3.0</Documentation>
 	<Documentation path="profiles/66-advanceddespatchadvice/">- Peppol BIS Advanced Despatch Advice Only 1.2</Documentation>
 	<Documentation path="profiles/67-advanceddespatchadvice_w_receiptadvice/">- Peppol BIS Advanced Despatch Advice with Receipt Advice 1.0</Documentation>
@@ -42,11 +42,11 @@
 		<Path>structure/syntax/ubl-orderagreement.xml</Path>
 		<Title>Peppol Order Agreement 3.1 (T110)</Title>
 	</Resource>
-	<!--Resource>
+	<Resource>
     <Type>Structure-1</Type>
     <Path>structure/syntax/ubl-catalogue.xml</Path>
     <Title>Peppol Catalogue transaction 3.1 (T19)</Title>
-  </Resource-->
+  </Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-invoice.xml</Path>
@@ -119,12 +119,12 @@
 		<Path>rules/sch/parts/PEPPOL-M-T110.sch</Path>
 		<Title>Business rules for Peppol Order Agreement transaction 3.0</Title>
 	</Resource>
-	<!--Resource>
+	<Resource>
 		<Identifier>T19</Identifier>
 		<Type>native:Schematron</Type>
 		<Path>rules/sch/parts/PEPPOL-M-T19.sch</Path>
 		<Title>Business rules for Peppol Catalogue transaction 3.0</Title>
-	</Resource -->
+	</Resource>
 	<Resource>
 		<Identifier>T120</Identifier>
 		<Type>native:Schematron</Type>
@@ -227,10 +227,10 @@
 		<Type>CodeList-1</Type>
 		<Path>structure/codelist/UNCL7161.xml</Path>
 	</Resource>
-	<!--Resource>
+	<Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ClarificationListID.xml</Path>
-    </Resource-->
+    </Resource>
 	<Resource>
 		<Type>CodeList-1</Type>
 		<Path>structure/codelist/ISO3166-1_Alpha2.xml</Path>
