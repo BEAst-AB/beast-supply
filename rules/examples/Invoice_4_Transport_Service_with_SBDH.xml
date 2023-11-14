@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<StandardBusinessDocument xmlns="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader">
-	<StandardBusinessDocumentHeader>
-		<HeaderVersion>1.0</HeaderVersion>
-		<Sender>
-			<Identifier Authority="iso6523-actorid-upis">0007:5561063529</Identifier>
-		</Sender>
-		<Receiver>
-			<Identifier Authority="iso6523-actorid-upis">0007:5566134929</Identifier>
-		</Receiver>
-		<DocumentIdentification>
-			<Standard>urn:oasis:names:specification:ubl:schema:xsd:Invoice-2</Standard>
-			<TypeVersion>2.1</TypeVersion>
-			<InstanceIdentifier>9732051f-4e5c-4860-b253-7762d325b79c</InstanceIdentifier>
-			<Type>Invoice</Type>
-			<CreationDateAndTime>2020-12-08T14:50:43Z</CreationDateAndTime>
-		</DocumentIdentification>
-		<BusinessScope>
-			<Scope>
-				<Type>DOCUMENTID</Type>
-				<InstanceIdentifier>urn:oasis:names:specification:ubl:schema:xsd:Invoice-2::Invoice##urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0::2.1</InstanceIdentifier>
-			</Scope>
-			<Scope>
-				<Type>PROCESSID</Type>
-				<InstanceIdentifier>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</InstanceIdentifier>
-			</Scope>
-			<Scope>
-				<Type>COUNTRY_C1</Type>
-				<InstanceIdentifier>SE</InstanceIdentifier>
-			</Scope>
-		</BusinessScope>
-	</StandardBusinessDocumentHeader>
+<sbdh:StandardBusinessDocument xmlns:sbdh="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader">
+	<sbdh:StandardBusinessDocumentHeader>
+		<sbdh:HeaderVersion>1.0</sbdh:HeaderVersion>
+		<sbdh:Sender>
+			<sbdh:Identifier Authority="iso6523-actorid-upis">0007:5561063529</sbdh:Identifier>
+		</sbdh:Sender>
+		<sbdh:Receiver>
+			<sbdh:Identifier Authority="iso6523-actorid-upis">0007:5566134929</sbdh:Identifier>
+		</sbdh:Receiver>
+		<sbdh:DocumentIdentification>
+			<sbdh:Standard>urn:oasis:names:specification:ubl:schema:xsd:Invoice-2</sbdh:Standard>
+			<sbdh:TypeVersion>2.1</sbdh:TypeVersion>
+			<sbdh:InstanceIdentifier>9732051f-4e5c-4860-b253-7762d325b79c</sbdh:InstanceIdentifier>
+			<sbdh:Type>Invoice</sbdh:Type>
+			<sbdh:CreationDateAndTime>2020-12-08T14:50:43Z</sbdh:CreationDateAndTime>
+		</sbdh:DocumentIdentification>
+		<sbdh:BusinessScope>
+			<sbdh:Scope>
+				<sbdh:Type>DOCUMENTID</sbdh:Type>
+				<sbdh:InstanceIdentifier>urn:oasis:names:specification:ubl:schema:xsd:Invoice-2::Invoice##urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0::2.1</sbdh:InstanceIdentifier>
+			</sbdh:Scope>
+			<sbdh:Scope>
+				<sbdh:Type>PROCESSID</sbdh:Type>
+				<sbdh:InstanceIdentifier>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</sbdh:InstanceIdentifier>
+			</sbdh:Scope>
+			<sbdh:Scope>
+				<sbdh:Type>COUNTRY_C1</sbdh:Type>
+				<sbdh:InstanceIdentifier>SE</sbdh:InstanceIdentifier>
+			</sbdh:Scope>
+		</sbdh:BusinessScope>
+    </sbdh:StandardBusinessDocumentHeader>
 	<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:oasis:names:specification:ubl:schema:xsd:CoreComponentParameters-2" xmlns:ccts-cct="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:sdt="urn:oasis:names:specification:ubl:schema:xsd:SpecializedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2">
 		<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
 		<cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
@@ -252,4 +252,4 @@
 			</cac:Price>
 		</cac:InvoiceLine>
 	</Invoice>
-</StandardBusinessDocument>
+</sbdh:StandardBusinessDocument>
