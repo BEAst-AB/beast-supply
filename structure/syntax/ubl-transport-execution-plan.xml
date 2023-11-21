@@ -2260,27 +2260,16 @@
                <Reference type="RULE">PEPPOL-T124-R007</Reference>
                <Value type="EXAMPLE">DAP</Value>
             </Element>
-            <Element cardinality="0..1">
+            <Element>
                <Term>cac:Location</Term>
-               <Name>Location of attchaed to the delivery terms </Name>
-               <Description>Peppol: The location where the pickup takes place.</Description>
-               <Element cardinality="0..1">
+               <Element>
                   <Term>cbc:ID</Term>
-                  <Name>Identity of the  location </Name>
-                  <Description>Peppol: Identifies the location. </Description>
-                  <Value type="EXAMPLE">5790000435951</Value>
-                  <Attribute usage="Optional">
+                  <Attribute>
                      <Term>schemeID</Term>
-                     <Name>Scheme identifier</Name>
-                     <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
-               <Element cardinality="0..1">
+               <Element>
                   <Term>cbc:Name</Term>
-                  <Name>Name of the location </Name>
-                  <Description>Peppol: The name of the location.</Description>
-                  <Value type="EXAMPLE">CPH</Value>
                </Element>
             </Element>
          </Element>
