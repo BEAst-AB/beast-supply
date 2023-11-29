@@ -270,10 +270,10 @@
                <Data ss:Type="String">•  cbc:OrderTypeCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Consignment order indication</Data>
+               <Data ss:Type="String">Order type code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Order Type (T3100). In this version "220" is the only option. The blanket order ("226") is not yet supported by Peppol, so when you mean "226", this element shall be omitted and when you mean "220", the code "220" shall be sent. Peppol: Indicates wether the order is a purchase order or consignement order. Default is purchase order.</Data>
+               <Data ss:Type="String">BEAst: Order Type (T3100). In this version "220" is the only option. The blanket order ("226") is not yet supported by Peppol, so when you mean "226", this element shall be omitted and when you mean "220", the code "220" shall be sent. Peppol: Indicates wether the order is a Purchase order (tir01-153), Consignement order (tir01-p050), Blanket order (tir01-p051) or Call of order (tir01-p052). Default is purchase order. See section Order Type Code in BIS-documentation for handling of order types.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">220</Data>
