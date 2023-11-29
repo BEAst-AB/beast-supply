@@ -13,24 +13,6 @@
 	
 	
 	     <Element>
-         <Term>cbc:CustomizationID</Term>
-         <Name>Specification identification</Name>
-         <Description>Peppol: Identifies the specification of content and rules that apply to the
-				transaction.</Description>
-         <DataType>Identifier</DataType>
-         <Reference type="BUSINESS_TERM">tir16-002</Reference>
-         <Reference type="RULE">PEPPOL-T120-R011</Reference>
-         <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1</Value>
-      </Element>
-	     <Element>
-         <Term>cbc:ProfileID</Term>
-         <Name>Business process type identifier</Name>
-         <Description>Peppol: Identifies the BII profile or business process context in which the transaction appears. There are two ProfileIDs defined for the Advanced Despatch Advice. One profile is used when the receiver of the Despatch Advice is expected to return a response message, the other is used when no response message is used. Possible choices are: "urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1" and "urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_receipt_advice:1"</Description>
-         <DataType>Identifier</DataType>
-         <Reference type="BUSINESS_TERM">tir16-001</Reference>
-         <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</Value>
-      </Element>
-	     <Element>
          <Term>cbc:ID</Term>
          <Name>Document identifier</Name>
          <Description>BEAst: T0125/T6338, Despatch Advice Number
