@@ -77,7 +77,7 @@ docker pull atomgraph/saxon
 # Create examples based on documentation.
 echo "Generating example: Advanced Despatch advice"
 #docker run --rm -v "$PWD/xml/source.xml":"/xml/source.xml" -v "$PWD/xsl/stylesheet.xsl":"/xsl/stylesheet.xsl" atomgraph/saxon -s:/xml/source.xml -xsl:/xsl/stylesheet.xsl param=value
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon -s /src/structure/source/ubl-advanced-despatch-advice.xml -xsl /src/tools/remove-pi.xsl -o /src/rules/examples/AdvancedDespatchAdvice_Example_Full.xml -ext:on --allow-external-functions:on
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon -s:/src/structure/source/ubl-advanced-despatch-advice.xml -xsl:/src/tools/remove-pi.xsl -o:/src/rules/examples/AdvancedDespatchAdvice_Example_Full.xml -ext:on --allow-external-functions:on
 echo "Pulling klakegg/saxon container"
 docker pull klakegg/saxon
 echo "Generating example: Weight statement"
