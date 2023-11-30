@@ -1,6 +1,6 @@
 //description and subheading text
 :description: The PEPPOL Business Interoperability Specification, “BIS” from here on after, has been developed by the OpenPEPPOL AISBL Post Award Coordinating Community and is published as part of the PEPPOL specifications.
-:author: OpenPEPPOL AISBL, BEAst Supply 4.0 Project and Peppol Logistics Incubation Project 
+:author: OpenPEPPOL AISBL and Peppol Logistics Incubation Project 
 :version: 1.0.0
 :ord_version: 1.0.0
 //PEPPOL
@@ -11,7 +11,7 @@
 :migration-policy: https://github.com/OpenPEPPOL/documentation/blob/master/LifecycleManagement/ReleaseManagement/Migration%20Policy%20-%20Common%20Document%202014-02-24%20rev%202014-08-27.pdf[OpenPEPPOL Migration Policy]
 :peppol-transport: https://peppol.eu/downloads/the-peppol-edelivery-network-specifications/[PEPPOL eDelivery Network Specifications]
 :peppol-billing: http://docs.peppol.eu/poacc/billing/3.0/[PEPPOL BIS Billing 3.0]
-:main-site: link:/4.0/[Main documentation site]
+:main-site: link:/logistics[Main documentation site]
 
 //CEN
 :CEN: https://www.cen.eu/Pages/default.aspx[CEN]
@@ -23,11 +23,13 @@
 
 //UBL
 :ubl: http://docs.oasis-open.org/ubl/UBL-2.1.html[UBL 2.1]
+:ubl23: http://docs.oasis-open.org/ubl/UBL-2.3.html[UBL 2.3]
 :ubl-catalogue: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Catalogue-2.1.xsd[UBL Catalogue 2.1]
 :ubl-order: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Order-2.1.xsd[UBL Order 2.1]
 :ubl-order-response: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-OrderResponse-2.1.xsd[UBL Order Response 2.1]
 :ubl-appl-resp: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-ApplicationResponse-2.1.xsd[UBL Application Response 2.1]
 :ubl-despatch-advice: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-DespatchAdvice-2.1.xsd[UBL Despatch Advice 2.1]
+:ubl-weight-statement: http://docs.oasis-open.org/ubl/os-UBL-2.3/xsd/maindoc/UBL-WeightStatement-2.3.xsd[UBL Weight Statement 2.3]
 
 //ISO:
 :ISO15000: https://www.iso.org/standard/61433.html[ISO 15000-5:2014]
@@ -61,7 +63,7 @@
 :order-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/rules/use-case-examples/order[Use case example files]
 :order-response-UC: https://github.com/OpenPEPPOL/poacc-upgrade-3/tree/master/rules/use-case-examples/order-response[Use case example files]
 :imr-UC: https://docs.peppol.eu/poacc/upgrade-3/files/PEPPOLBIS-Examples.zip[Use case example files]
-:examples-zip: http://bis.beast.se/files/Examples.zip[Example files (ZIP)]
+:examples-zip: link:../../files/Examples.zip[Examples files Appendix A]
 
 //internal
 :link-codelist: link:/codelist/[Code list section]
@@ -69,3 +71,4 @@
 :codelist-EAS: link:/codelist/eas/[EAS codes]
 :vat-codes: link:/codelist/UNCL5305/[Code list UNCL5305]
 :mime-codes: link:/codelist/MimeCode/[Mime codes]
+:codelist-ItemPropertyNameCode: link:/codelist/ItemPropertyNameCode/[Item Property Name Code list]
