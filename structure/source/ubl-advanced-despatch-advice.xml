@@ -34,9 +34,7 @@
 	<cbc:DespatchAdviceTypeCode>
 		<?DescriptionAddFirst Indicates if the Despatch Advice is sent before the delivery or after the delivery. Default is that it is sent before delivery (1). ?>
 	</cbc:DespatchAdviceTypeCode>
-	<cbc:Note>
-		<?DescriptionAddFirst Used for Transport Information (T6008). ?>
-	</cbc:Note>
+	<cbc:Note></cbc:Note>
 	
 	
 	<cac:OrderReference>
@@ -50,7 +48,7 @@
 		<?DescriptionAddFirst Used for additional BEAst information on header level. The whole group can be repeated to send multiple additional information. ?>
 		<cbc:ID>
 			<?DescriptionAddFirst The reference number of the added information. Can be the Project Number (T6004), Accounting Cost (T6005), 
-			Seller's Order Number (T6099), Final Customer's Order Number (T6221), Drawing Number (T6222), Delivery Part (T6340), 
+			Final Customer's Order Number (T6221), Drawing Number (T6222), Delivery Part (T6340), 
 			Freight Payer's Customer Number (T6463) or Document Name (T6484) depending on DocumentType. ?>
 		</cbc:ID>
 		<cbc:DocumentTypeCode>
@@ -58,16 +56,16 @@
 		</cbc:DocumentTypeCode>
 		<cbc:DocumentType>
 			<?DescriptionAddFirst The type of reference when a valid code is not possible to use. "ProjectReference" (T6004), "AccountingCost" (T6005), "FreightPayersCustomerNumber" (T6463), 
-			"SellersOrderNumber" (T6099), "FinalCustomersOrderNumber" (T6221), "DeliveryPart" (T6340) or Any other document type (T6473). ?>
+			"FinalCustomersOrderNumber" (T6221), "DeliveryPart" (T6340) or Any other document type (T6473). ?>
 		</cbc:DocumentType>
 		<cac:Attachment>
 			<cbc:EmbeddedDocumentBinaryObject mimeCode="" filename="">
-				<?DescriptionAddFirst The referenced document can here be inserted as a binary object (T6475).  ?>
+				<?DescriptionAddFirst The binary object (T6475).  ?>
 				<?filename-DescriptionAddFirst filename refers to T6476. ?>
 			</cbc:EmbeddedDocumentBinaryObject>
 			<cac:ExternalReference>
 				<cbc:URI>
-					<?DescriptionAddFirst The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource (T6187). ?>
+					<?DescriptionAddFirst The URI (T6187). ?>
 				</cbc:URI>
 			</cac:ExternalReference>
 		</cac:Attachment>
@@ -75,7 +73,6 @@
 	
 	
 	<cac:DespatchSupplierParty>
-		<?DescriptionAddFirst This party defines the company that provides the goods or the service. It also defines the sender of the Despatch Advice. The real Ship-from Address must be provided in the Despatch Address when the Despatch Advice describes a movement. ?>
 		<cac:Party>
 			<cbc:EndpointID schemeID=""></cbc:EndpointID>
 			<cac:PartyIdentification>
@@ -153,7 +150,6 @@
 	
 	
 	<cac:DeliveryCustomerParty>
-		<?DescriptionAddFirst This party defines the company that receives the goods or the service. It also defines the receiver of the Despatch Advice. The real Ship-to Address must be provided in the Delivery Location if the Despatch Advice describes a movement. If the Despatch address describes a service provided at a specific location, the Delivery Location contains this location. ?>
 		<cac:Party>
 			<cbc:EndpointID schemeID=""></cbc:EndpointID>
 			<cac:PartyIdentification>
@@ -367,7 +363,6 @@
 	
 	
 	<cac:OriginatorCustomerParty>
-		<?DescriptionAddFirst For 3PL shipments, this party defines the final receiver of the goods. ?>
 		<cac:Party>
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="">
@@ -409,7 +404,7 @@
 	
 	<cac:Shipment>
 		<cbc:ID>
-			<?DescriptionAddFirst T6127, Freight forwarders referens number ?>
+			<?DescriptionAddFirst T6127. Use NA if there is no clear identity on the shipment. ?>
 		</cbc:ID>
 		<cbc:Information>
 			<?DescriptionAddFirst Used by BEAst for Supplier Remark (T6038). ?>
@@ -425,9 +420,7 @@
 		
 		
 		<cac:Consignment>
-			<cbc:ID>
-				<?DescriptionAddFirst Use a dummy value since this element is mandatory. ?>
-			</cbc:ID>
+			<cbc:ID></cbc:ID>
 			<cbc:HazardousRiskIndicator></cbc:HazardousRiskIndicator>
 			<cbc:HandlingCode listID="">
 				<?DescriptionAddFirst Code to specify additional service from the transport company (T6466) where unique codes per transport company will be used, 
@@ -509,15 +502,12 @@
 					<cbc:Description></cbc:Description>
 					<cac:MeasurementDimension>
 						<cbc:AttributeID>
-							<?DescriptionAddFirst To define the type of measurement. EnergyContent = T6428, ConversionFactor = T6429, FuelConsumption = T6374, DrivingDistance = T6380, DrivingTime = T6381, FuelMeasurementMethod = T6728, EngineType = T6379, RenewableFuel = T6382. ?>
+							<?DescriptionAddFirst EnergyContent = T6428, ConversionFactor = T6429, FuelConsumption = T6374, DrivingDistance = T6380, DrivingTime = T6381, FuelMeasurementMethod = T6728, EngineType = T6379, RenewableFuel = T6382. ?>
 						</cbc:AttributeID>
 						<cbc:Measure unitCode="">
-							<?DescriptionAddFirst The measured value. Used for EnergyContent, ConversionFactor, FuelConsumption, DrivingDistance, DrivingTime and RenewableFuel. ?>
 							<?unitCode-DescriptionAddFirst unitCode refers to T6706. ?>
 						</cbc:Measure>
-						<cbc:Description>
-							<?DescriptionAddFirst Description of the attribute when there is no value to measure. Used for FuelMeasurementMethod and EngineType. Possible values are for FuelMeasurementMethod: "AutomaticMeasurement", "StandardEstimate", "ManualMeasurement" and for EngineType: "Euro2", "Euro3", "Euro4", "Euro5", "Euro6", "EuroStep2", "EuroStep3A", "EuroStep3B", "EuroStep4". ?>
-						</cbc:Description>
+						<cbc:Description></cbc:Description>
 					</cac:MeasurementDimension>
 					
 					<cac:ProviderParty>
@@ -543,12 +533,9 @@
 				
 				<cac:EnvironmentalEmission>
 					<cbc:EnvironmentalEmissionTypeCode listID="" name="">
-						<?DescriptionAddFirst Defines the type of emission reported. Values: "CO2" (Carbon Dioxide), NOX (Nitrogen Oxide), PM (Particulate Matter), HC (Hydro Carbon). ?>
 						<?name-DescriptionAddFirst The textual equivalent for the code. ?>
 					</cbc:EnvironmentalEmissionTypeCode>
-					<cbc:ValueMeasure unitCode="">
-						<?DescriptionAddFirst The value of the emission. Refers to Carbon Dioxide/Nitrogen Oxide/Particulate Matter/Hydro Carbon. ?>
-					</cbc:ValueMeasure>
+					<cbc:ValueMeasure unitCode=""></cbc:ValueMeasure>
 				</cac:EnvironmentalEmission>
 			</cac:OriginalDespatchTransportationService>
 		</cac:Consignment>
@@ -593,7 +580,7 @@
 			
 			<cac:DeliveryLocation>
 				<cbc:ID schemeID="">
-					<?DescriptionAddFirst Identifies the Delivery Location (T0036). ?>
+					<?DescriptionAddFirst The Delivery Location (T0036). ?>
 					<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
 				</cbc:ID>
 				<cbc:Name>
@@ -626,10 +613,10 @@
 					<cac:LocationCoordinate>
 						<cbc:CoordinateSystemCode></cbc:CoordinateSystemCode>
 						<cbc:LatitudeDegreesMeasure unitCode="">
-							<?DescriptionAddFirst The X coordinate (T6324). Use degrees with decimals. ?>
+							<?DescriptionAddFirst The X coordinate (T6324). ?>
 						</cbc:LatitudeDegreesMeasure>
 						<cbc:LongitudeDegreesMeasure unitCode="">
-							<?DescriptionAddFirst The Y coordinate (T6325). Use degrees with decimals. ?>
+							<?DescriptionAddFirst The Y coordinate (T6325).  ?>
 						</cbc:LongitudeDegreesMeasure>
 						<cbc:AltitudeMeasure unitCode="">
 							<?DescriptionAddFirst The Z coordinate (T6424). ?>
@@ -662,7 +649,6 @@
 				</cbc:ActualDespatchTime>
 				
 				<cac:DespatchAddress>
-					<?DescriptionAddFirst The Despatch Address is used to define the Ship-from when the Despatch Supplier Party is not. When the Despatch Advice describes a movement, the Despatch Address should be included. ?>
 					<cbc:ID>
 						<?DescriptionAddFirst Identity of the Despatch Address (T0129). ?>
 					</cbc:ID>
@@ -692,10 +678,10 @@
 					<cac:LocationCoordinate>
 						<cbc:CoordinateSystemCode></cbc:CoordinateSystemCode>
 						<cbc:LatitudeDegreesMeasure unitCode="">
-							<?DescriptionAddFirst The X coordinate (T6323). Use degrees with decimals. ?>
+							<?DescriptionAddFirst The X coordinate (T6323). ?>
 						</cbc:LatitudeDegreesMeasure>
 						<cbc:LongitudeDegreesMeasure unitCode="">
-							<?DescriptionAddFirst The Y coordinate (T6324). Use degrees with decimals. ?>
+							<?DescriptionAddFirst The Y coordinate (T6324). ?>
 						</cbc:LongitudeDegreesMeasure>
 						<cbc:AltitudeMeasure unitCode="">
 							<?DescriptionAddFirst The Z coordinate (T6424). ?>
@@ -712,7 +698,7 @@
 				<cbc:SpecialTerms></cbc:SpecialTerms>
 				<cac:DeliveryLocation>
 					<cbc:ID>
-						<?DescriptionAddFirst Delivery Terms Location (T6020). The location to which the delivery terms refer. Used to qualify the delivery terms e.g. "Terms of delivery are FOB Rotterdam" ?>
+						<?DescriptionAddFirst Delivery Terms Location (T6020). ?>
 					</cbc:ID>
 				</cac:DeliveryLocation>
 			</cac:DeliveryTerms>
@@ -721,10 +707,10 @@
 		
 		<cac:TransportHandlingUnit>
 			<cbc:ID>
-				<?DescriptionAddFirst The SSCC identification code of this Transport Handling Unit (T0138). ?>
+				<?DescriptionAddFirst The SSCC identification code (T0138). ?>
 			</cbc:ID>
 			<cbc:TransportHandlingUnitTypeCode>
-				<?DescriptionAddFirst Type of Transport Handling Unit (T6119). Use UN/ECE Recommendation 21. ?>
+				<?DescriptionAddFirst Type of THU (T6119). ?>
 			</cbc:TransportHandlingUnitTypeCode>
 			<cbc:HandlingCode listID="">
 				<?DescriptionAddFirst Description handling instruction code (T6199) or Unloading instruction code (T6343). ?>
@@ -748,10 +734,10 @@
 			
 			<cac:MeasurementDimension>
 				<cbc:AttributeID>
-					<?DescriptionAddFirst To describe the type of measurement (T6714). Use UNCL 6313 subset. ?>
+					<?DescriptionAddFirst Type of measurement (T6714). ?>
 				</cbc:AttributeID>
 				<cbc:Measure unitCode="">
-					<?DescriptionAddFirst For the measure (T6122) and Measure of Unit Code (T6706). Use UN/ECE Recommendation 20 and 21. subset. ?>
+					<?DescriptionAddFirst For the measure (T6122) and Measure of Unit Code (T6706). ?>
 				</cbc:Measure>
 			</cac:MeasurementDimension>
 			<cac:MinimumTemperature>
@@ -786,7 +772,7 @@
 					<cbc:PackagingTypeCode></cbc:PackagingTypeCode>
 					<cbc:PackingMaterial></cbc:PackingMaterial>
 					<cac:ContainedPackage>
-						<?DescriptionAddFirst The packages packed in the medium sized package are described here. ?>
+						<?DescriptionAddFirst The packages packed in the middle level package are described here. ?>
 						<cbc:ID></cbc:ID>
 						<cbc:ReturnableMaterialIndicator></cbc:ReturnableMaterialIndicator>
 						<cbc:PackagingTypeCode></cbc:PackagingTypeCode>
@@ -864,7 +850,7 @@
 				<?DescriptionAddFirst Calloff Line Reference (T6336)/Reference to Order Line (T3322) ?>
 			</cbc:LineID>
 			<cbc:SalesOrderLineID>
-				<?DescriptionAddFirst Reference to the sellers orderline number (T6462). ?>
+				<?DescriptionAddFirst The sellers orderline number (T6462). ?>
 			</cbc:SalesOrderLineID>
 			<cac:OrderReference>
 				<cbc:ID>
@@ -879,7 +865,7 @@
 		
 		<cac:DocumentReference>
 			<cbc:ID>
-				<?DescriptionAddFirst ID of the referenced document or item: Reference to Delivery Note (T0063), Customers Reference Number (T6005), Offer Number (T6010), Vendors Order Number (T6099), Ultimate Customer's Order Number (T6221), Drawing Number (T6222), Material Ticket Number (T6329), Material Ticket Reference (T6337), Delivery Unit (T6340), Reference to Web (T6373), Ultimate Customer's Order Line Number (T6458), Offer Line Number (T6466) or Document Name (T6484). ?>
+				<?DescriptionAddFirst ID of the referenced document or item: Reference to Delivery Note (T0063), Customers Reference Number (T6005), Offer Number (T6010), Ultimate Customer's Order Number (T6221), Drawing Number (T6222), Material Ticket Number (T6329), Material Ticket Reference (T6337), Delivery Unit (T6340), Reference to Web (T6373), Ultimate Customer's Order Line Number (T6458), Offer Line Number (T6466) or Document Name (T6484). ?>
 			</cbc:ID>
 			<cbc:DocumentTypeCode>
 				<?DescriptionAddFirst Use this code if possible instead of DocumentType. ?>
@@ -889,13 +875,12 @@
 			</cbc:DocumentType>
 			<cac:Attachment>
 				<cbc:EmbeddedDocumentBinaryObject mimeCode="" filename="">
-					<?DescriptionAddFirst The referenced document can here be inserted as a binary object (T6475). ?>
+					<?DescriptionAddFirst The binary object (T6475). ?>
 					<?filename-DescriptionAddFirst filename refers to T6476. ?>
 				</cbc:EmbeddedDocumentBinaryObject>
 				<cac:ExternalReference>
-					<?DescriptionAddFirst A reference to an attached document that is external to the document(s) being exchanged. ?>
 					<cbc:URI>
-						<?DescriptionAddFirst The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource (T6187). ?>
+						<?DescriptionAddFirst The URI (T6187). ?>
 					</cbc:URI>
 				</cac:ExternalReference>
 			</cac:Attachment>
@@ -920,7 +905,6 @@
 				<cbc:ID></cbc:ID>
 			</cac:ManufacturersItemIdentification>
 			<cac:StandardItemIdentification>
-				<?DescriptionAddFirst Only one Standard Item Number can be used per line. ?>
 				<cbc:ID schemeID="">
 					<?DescriptionAddFirst Global Trade Item Number (T0154)  Sweden. 
 					All other item number standards used within BEAst can not be used here until the organisation behind the standard decides to be a part of the codelist "ISO 6523 ICD".
@@ -1030,22 +1014,16 @@
 				<cbc:ID>
 					<?DescriptionAddFirst Certificate Number (T6413). ?>
 				</cbc:ID>
-				<cbc:CertificateTypeCode>
-					<?DescriptionAddFirst The UBL structure used requires this element. Use the value NA. ?>
-				</cbc:CertificateTypeCode>
+				<cbc:CertificateTypeCode></cbc:CertificateTypeCode>
 				<cbc:CertificateType>
-					<?DescriptionAddFirst Identifies the type of Certificate (T6412). ?>
+					<?DescriptionAddFirst The type of Certificate (T6412). ?>
 				</cbc:CertificateType>
 				<cbc:Remarks>
-					<?DescriptionAddFirst Used to inform about how much is certified, in percent (T6414). ?>
+					<?DescriptionAddFirst How much is certified. (T6414). ?>
 				</cbc:Remarks>
 				<cac:IssuerParty>
-					<?DescriptionAddFirst The authorized organization that issued this certificate, the provider of the certificate. ?>
 					<cac:PartyName>
-						<?DescriptionAddFirst The name of the party issuing the certificate. ?>
-						<cbc:Name>
-							<?DescriptionAddFirst The UBL structure used requires this element. Use the value NA. ?>
-						</cbc:Name>
+						<cbc:Name></cbc:Name>
 					</cac:PartyName>
 				</cac:IssuerParty>
 			</cac:Certificate>
