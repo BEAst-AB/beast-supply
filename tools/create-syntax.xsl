@@ -11,17 +11,14 @@
 				exclude-result-prefixes="xs fo fn xsl nsPep map array oraext">
 	<xsl:param name="UblBaseUrl"/>
 	<xsl:param name="UblXmlReferenceFile"/>
-	<xsl:param name="UblDocBaseUrl"/>
 
 	<!--xsl:variable name="varUblBaseUrl" select="'file:///C:/Users/Kishore/Documents/Navigate/BEAst/GIT/test/ubl-invoice-short/'"/-->
 	<!--xsl:variable name="varUblBaseUrl" select="'https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/master/structure/syntax/'"/>
 	<xsl:variable name="varUblXmlReferenceFile" select="'ubl-invoice.xml'"/>
-	<xsl:variable name="varUblDocBaseUrl" select="'https://docs.peppol.eu/poacc/billing/3.0/syntax/ubl-invoice'"/>
 	<xsl:variable name="varUblXml" select="document(concat($varUblBaseUrl, $varUblXmlReferenceFile))"/-->
 
 	<xsl:variable name="varUblBaseUrl" select="$UblBaseUrl"/>
 	<xsl:variable name="varUblXmlReferenceFile" select="$UblXmlReferenceFile"/>
-	<xsl:variable name="varUblDocBaseUrl" select="$UblDocBaseUrl"/>
 	<xsl:variable name="varUblXml" select="document(concat($varUblBaseUrl, $varUblXmlReferenceFile))"/>
 	<xsl:output omit-xml-declaration="no" indent="yes" method="xml"/>
 
@@ -346,20 +343,7 @@
 					</Description>
 				</xsl:when>
 			</xsl:choose>
-			<!-- Below is creation of url code for description
-        <Description>
-        <xsl:if test="./processing-instruction('Description')">
-          <xsl:value-of select="./processing-instruction('Description')"/>
-        </xsl:if>
-        <xsl:value-of select="'&lt;br/>&lt;a href=&quot;'"/>
-        <xsl:value-of select="$varUblDocBaseUrl"/>
-        <xsl:call-template name="buildDocUrl">
-          <xsl:with-param name="paramBaseUri" select="$varUblDocBaseUrl"/>
-          <xsl:with-param name="paramRelativeUri" select="$varAnscestorNodes"/>
-        </xsl:call-template>
-        <xsl:value-of select="'&quot;>Peppol Documentation&lt;/a>'"/>
-        </Description>
-        -->
+
 			<xsl:choose>
 				<xsl:when test="./processing-instruction('DataType')">
 					<DataType>
@@ -420,41 +404,9 @@
 					</xsl:for-each>
 				</xsl:otherwise>
 			</xsl:choose>
-			<!--Reference type="URL">
-				<xsl:call-template name="findElement">
-					<xsl:with-param name="paramAnscestorNodes" select="$varAnscestorNodes"/>
-					<xsl:with-param name="paramAnscestorCount" select="count(ancestor-or-self::*)-1"/>
-					<xsl:with-param name="paramCurrentIndex" select="1"/>
-					<xsl:with-param name="paramElement" select="$varTopElement"/>
-					<xsl:with-param name="paramReferenceBaseUrl" select="$varUblBaseUrl"/>
-					<xsl:with-param name="paramReferenceRelativeFile" select="$varUblXmlReferenceFile"/>
-					<xsl:with-param name="paramPrintReferenceUrlOnly" select="true()"/>
-				</xsl:call-template>
-			</Reference>
-			<Reference type="DOC_URL">
-				<xsl:value-of select="$varUblDocBaseUrl"/>
-				<xsl:call-template name="buildDocUrl">
-					<xsl:with-param name="paramBaseUri" select="$varUblDocBaseUrl"/>
-					<xsl:with-param name="paramRelativeUri" select="$varAnscestorNodes"/>
-				</xsl:call-template>
-			</Reference>
-			<Property>
-				<xsl:attribute name="name">
-					<xsl:value-of select="'UBL_HEADER'"/>
-				</xsl:attribute>
-				<xsl:value-of select="$varUblElement/nsPep:Element/nsPep:Name"/>
-			</Property-->
+
 			<xsl:variable name="varElementTextNodeValue" select="./text()[normalize-space()][1]"/>
 			<xsl:choose>
-				<!--xsl:when test="count(*) = 0 and ./text() != ''">
-				<xsl:for-each select="./text()">
-					<xsl:if test="fn:normalize-space(./text()) != ''">
-					<Value type="EXAMPLE">
-						<xsl:value-of select="fn:normalize-space($varElementTextNodeValue)"/>
-					</Value>
-					</xsl:if>
-				</xsl:for-each>
-			</xsl:when-->
 				<xsl:when test="$varElementTextNodeValue != ''">
 					<Value type="EXAMPLE">
 						<xsl:value-of select="fn:normalize-space($varElementTextNodeValue)"/>

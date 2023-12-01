@@ -43,7 +43,7 @@ echo "Generating documentation: Receipt Advice"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-receipt-advice.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-receipt-advice.xml UblBaseUrl=$LOGISTICSBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-receipt-advice.xml -ext:on --allow-external-functions:on
 
 
-# Generate maping documents.
+# Generate mapping documents.
 echo "Generating mapping documents: Invoice"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/syntax/ubl-invoice.xml -xsl:/src/tools/create-mapping-document.xsl -o:/src/rules/mapping/Invoice.xml -ext:on --allow-external-functions:on
 echo "Generating mapping documents: Order"
@@ -76,10 +76,11 @@ docker pull atomgraph/saxon
 
 # Create examples based on documentation.
 echo "Generating example: Advanced Despatch advice"
-#docker run --rm -v "$PWD/xml/source.xml":"/xml/source.xml" -v "$PWD/xsl/stylesheet.xsl":"/xsl/stylesheet.xsl" atomgraph/saxon -s:/xml/source.xml -xsl:/xsl/stylesheet.xsl param=value
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon -s:/src/structure/source/ubl-advanced-despatch-advice.xml -xsl:/src/tools/create-example.xsl -o:/src/rules/examples/AdvancedDespatchAdvice_Example_Full.xml -ext:on --allow-external-functions:on
-echo "Pulling klakegg/saxon container"
-docker pull klakegg/saxon
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/source/ubl-advanced-despatch-advice.xml \
+  #   -xsl:/src/tools/create-example.xsl \
+    # -o:/src/rules/examples/AdvancedDespatchAdvice_Example_Full.xml \
+    # overrideFile=src/structure/source/ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
 echo "Generating example: Weight statement"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target klakegg/saxon xslt -s:/src/structure/source/ubl-weight-statement.xml -xsl:/src/tools/create-example.xsl -o:/src/rules/examples/WeightStatement_Example_Full.xml  -ext:on --allow-external-functions:on
 echo "Generating example: Transport execution plan request"
