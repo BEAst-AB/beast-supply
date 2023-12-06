@@ -13,6 +13,9 @@ if [ -e $PROJECT/target ]; then
     docker run --rm -i -v $PROJECT:/src alpine:3.6 rm -rf /src/target
 fi
 
+echo "Pulling atomgraph/saxon container"
+docker pull atomgraph/saxon
+
 # Transform the files in source dir to syntax.
 echo "Transforming files from source to syntax"
 echo "Generating documentation: Invoice"
@@ -26,7 +29,12 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entry
 echo "Generating documentation: Catalogue"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-catalogue.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-catalogue.xml UblBaseUrl=$POACCBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-catalogue.xml -ext:on --allow-external-functions:on
 echo "Generating documentation: Advanced Despatch advice"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-advanced-despatch-advice.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml UblBaseUrl=$LOGISTICSBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
+#docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-advanced-despatch-advice.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml UblBaseUrl=$LOGISTICSBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:$LOGISTICSBASEURL/ubl-advanced-despatch-advice.xml \
+     -xsl:/src/tools/create-syntax.xsl \
+     -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml \
+    overrideFile=src/structure/source/ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
 echo "Generating documentation: Weight statement"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-weight-statement.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-weight-statement.xml UblBaseUrl=$LOGISTICSBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-weight-statement.xml -ext:on --allow-external-functions:on
 echo "Generating documentation: Transport execution plan request"
@@ -70,9 +78,6 @@ echo "Generating mapping documents: Transportation Status"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/syntax/ubl-transportation-status.xml -xsl:/src/tools/create-mapping-document.xsl -o:/src/rules/mapping/TransportationStatus.xml -ext:on --allow-external-functions:on
 echo "Generating mapping documents: Receipt Advice"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/syntax/ubl-receipt-advice.xml -xsl:/src/tools/create-mapping-document.xsl -o:/src/rules/mapping/ReceiptAdvice.xml -ext:on --allow-external-functions:on
-
-echo "Pulling atomgraph/saxon container"
-docker pull atomgraph/saxon
 
 # Create examples based on documentation.
 echo "Generating example: Advanced Despatch advice"
