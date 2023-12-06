@@ -1,177 +1,185 @@
-<?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                              xmlns:fn="http://www.w3.org/2005/xpath-functions"
-                              xmlns:synstr="urn:fdc:difi.no:2017:vefa:structure-1"
-                              xmlns="urn:fdc:difi.no:2017:vefa:structure-1"
-                              xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
-                              xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-                              xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-                              exclude-result-prefixes="xsl fn ubl cac cbc synstr">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
-  <xsl:param name="varOverrideSample"/>
-  <xsl:variable name="varOverrideSampleXml" select="document($varOverrideSample)"/>
-  <xsl:template match="comment()|processing-instruction()|/">
-    <xsl:copy>
-      <xsl:apply-templates/>
-    </xsl:copy>
-  </xsl:template>
-  <!--xsl:template match="synstr:Document">
-    <xsl:element name="{name()}">
-      <xsl:apply-templates select="@*|node()"/>
-    </xsl:element>
-  </xsl:template-->
-  <xsl:template match="synstr:Element">
-    <xsl:variable name="varDocXPath">
-      <xsl:for-each select="ancestor-or-self::*">
-        <xsl:choose>
-          <xsl:when test="fn:name(.)='Structure'">
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:text>/</xsl:text>
-            <xsl:value-of select="synstr:Term"/>
-          </xsl:otherwise>
-        </xsl:choose>
-      </xsl:for-each>
-      <!--xsl:text>/processing-instruction('DescriptionAddFirst')</xsl:text-->
-    </xsl:variable>
-    <xsl:variable name="varDocNode">
-      <xsl:evaluate xpath="$varDocXPath" context-item="$varOverrideSampleXml" />
-    </xsl:variable>
-    <!--xsl:message>
-      Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-    </xsl:message-->
-    <xsl:element name="{name()}">
-      <xsl:apply-templates select="@*"/>
-        <xsl:choose>
-          <xsl:when test="$varDocNode!='' and not(empty($varDocNode))">
-            <xsl:apply-templates select="synstr:Term"/>
-            <xsl:apply-templates select="synstr:Name"/>
-            <xsl:variable name="varDocNode_Description" select="$varDocNode/*/processing-instruction('Description')"/>
-            <xsl:variable name="varDocNode_DescriptionAddFirst" select="$varDocNode/child::*/processing-instruction('DescriptionAddFirst')"/>
-            <xsl:variable name="varDocNode_DescriptionAddLast" select="$varDocNode/child::*/processing-instruction('DescriptionAddLast')"/>
-            <xsl:variable name="varDocNode_DataType" select="$varDocNode/child::*/processing-instruction('DataType')"/>
-            <xsl:variable name="varDocNode_BusinessTerm" select="$varDocNode/child::*/processing-instruction('BusinessTerm')"/>
-            <xsl:variable name="varDocNode_Rule" select="$varDocNode/child::*/processing-instruction('Rule')"/>
-            <xsl:variable name="varDocNode_CodeList" select="$varDocNode/child::*/processing-instruction('CodeList')"/>
-            <xsl:variable name="varDocNode_Example" select="$varDocNode/child::*/processing-instruction('Example')"/>
-            <xsl:if test="$varDocNode_Description!='' and not(empty($varDocNode_Description))">
-              <!--xsl:message>
-                Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-                Description: <xsl:value-of select="$varDocNode_Description"/>
-              </xsl:message-->
-              <Description>
-                <xsl:value-of select="$varDocNode_Description"/>
-              </Description>
-            </xsl:if>
-            <xsl:if test="$varDocNode_DescriptionAddFirst!='' and not(empty($varDocNode_DescriptionAddFirst))">
-              <!--xsl:message>
-                Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-                DescriptionAddFirst: <xsl:value-of select="$varDocNode_DescriptionAddFirst"/>
-              </xsl:message-->
-              <Description>
-                BEAst: <xsl:value-of select="$varDocNode_DescriptionAddFirst"/>
-                <xsl:if test="synstr:Description != ''">
-                  <xsl:value-of select="concat(' Peppol: ', synstr:Description)"/>
-                </xsl:if>
-              </Description>
-            </xsl:if>
-            <xsl:if test="$varDocNode_DescriptionAddLast!='' and not(empty($varDocNode_DescriptionAddLast))">
-              <!--xsl:message>
-                Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-                DescriptionAddLast: <xsl:value-of select="$varDocNode_DescriptionAddLast"/>
-              </xsl:message-->
-              <Description>
-                <xsl:if test="synstr:Description != ''">
-                  <xsl:value-of select="concat('Peppol: ', synstr:Description, ' BEAst: ')"/>
-                </xsl:if>
-                <xsl:value-of select="$varDocNode_DescriptionAddLast"/>
-              </Description>
-            </xsl:if>
-            <xsl:if test="$varDocNode_DataType!='' and not(empty($varDocNode_DataType))">
-              <!--xsl:message>
-                Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-                DataType: <xsl:value-of select="$varDocNode_DataType"/>
-              </xsl:message-->
-              <DataType>
-                <xsl:value-of select="$varDocNode_DataType"/>
-              </DataType>
-            </xsl:if>
-            <xsl:if test="$varDocNode_BusinessTerm!='' and not(empty($varDocNode_BusinessTerm))">
-              <!--xsl:message>
-                Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-              </xsl:message-->
-                <xsl:for-each select="$varDocNode_BusinessTerm">
-                  <!--xsl:message>
-  				  BusinessTerm: <xsl:value-of select="."/>
-				  </xsl:message-->
-                  <Reference type="BUSINESS_TERM">
-                    <xsl:value-of select="."/>
-                  </Reference>
-                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="$varDocNode_Rule!='' and not(empty($varDocNode_Rule))">
-              <!--xsl:message>
-                Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-              </xsl:message-->
-                <xsl:for-each select="$varDocNode_Rule">
-                  <!--xsl:message>
-                  Rule: <xsl:value-of select="."/>
-				  </xsl:message-->
-                  <Reference type="RULE">
-                    <xsl:value-of select="."/>
-                  </Reference>
-                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="$varDocNode_CodeList!='' and not(empty($varDocNode_CodeList))">
-              <!--xsl:message>
-                Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-              </xsl:message-->
-                <xsl:for-each select="$varDocNode_CodeList">
-                  <!--xsl:message>
-                  CodeList: <xsl:value-of select="."/>
-				  </xsl:message-->
-                  <Reference type="CODE_LIST">
-                    <xsl:value-of select="."/>
-                  </Reference>
-                </xsl:for-each>
-            </xsl:if>
-            <xsl:if test="$varDocNode_Example!='' and not(empty($varDocNode_Example))">
-              <!--xsl:message>
-                Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-              </xsl:message-->
-                <xsl:for-each select="$varDocNode_Example">
-                  <!--xsl:message>
-                  Example: <xsl:value-of select="."/>
-				  </xsl:message-->
-                  <Value type="EXAMPLE">
-                    <xsl:value-of select="."/>
-                  </Value>
-                </xsl:for-each>
-            </xsl:if>
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:apply-templates select="node()"/>
-          </xsl:otherwise>
-        </xsl:choose>
-        <xsl:apply-templates select="synstr:Attribute"/>
-        <xsl:apply-templates select="synstr:Element"/>
-      <!--xsl:apply-templates select="@*|node()"/-->
-    </xsl:element>
-  </xsl:template>
-  <!--xsl:template match="/">
-    <xsl:message>
-      varOverrideSample: <xsl:value-of select="$varOverrideSample"/>
-    </xsl:message>
-    <xsl:apply-templates select="@*|node()"/>
-  </xsl:template-->
-  <xsl:template match="*">
-    <xsl:element name="{name()}">
-      <xsl:apply-templates select="@*|node()"/>
-    </xsl:element>
-  </xsl:template>
-  <xsl:template match="@*">
-    <xsl:attribute name="{name()}">
-      <xsl:value-of select="."/>
-    </xsl:attribute>
-  </xsl:template>
+<xsl:stylesheet   version="3.0"
+    xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+    xmlns:str="urn:fdc:difi.no:2017:vefa:structure-1"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:msxsl="urn:schemas-microsoft-com:xslt"
+    xmlns:o="urn:schemas-microsoft-com:office:office"
+    xmlns:x="urn:schemas-microsoft-com:office:excel"
+    xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+
+	<xsl:output method="xml" indent="yes"/>
+
+
+	<xsl:template match="/">
+		<Workbook>
+			<Styles>
+				<Style ss:ID="Default" ss:Name="Normal">
+					<Alignment ss:Vertical="Bottom"/>
+					<Borders/>
+					<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+					<Interior/>
+					<NumberFormat/>
+					<Protection/>
+				</Style>
+				<Style ss:ID="s24" ss:Name="Heading 3">
+					<Borders>
+						<Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+                            ss:Color="#8EA9DB"/>
+					</Borders>
+					<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#339966"
+                        ss:Bold="1"/>
+				</Style>
+				<Style ss:ID="s63" ss:Parent="s24">
+					<Borders>
+						<Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+                            ss:Color="#8EA9DB"/>
+					</Borders>
+					<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#333333"
+                        ss:Bold="1"/>
+					<Interior/>
+				</Style>
+			</Styles>
+			<Worksheet ss:Name="Sheet1">
+				<Table>
+					<Column ss:Width="30"/>
+					<Column ss:Width="200"/>
+					<Column ss:Width="200"/>
+					<Column ss:Width="200"/>
+					<Column ss:Width="200"/>
+					<Column ss:Width="200"/>
+					<Column ss:Width="30"/>
+					<Row>
+						<Cell  ss:StyleID="s63">
+							<Data ss:Type="String">Card</Data>
+						</Cell>
+						<Cell  ss:StyleID="s63">
+							<Data ss:Type="String">Term</Data>
+						</Cell>
+						<Cell  ss:StyleID="s63">
+							<Data ss:Type="String">Name</Data>
+						</Cell>
+						<Cell  ss:StyleID="s63">
+							<Data ss:Type="String">Description</Data>
+						</Cell>
+						<Cell  ss:StyleID="s63">
+							<Data ss:Type="String">Example</Data>
+						</Cell>
+						<Cell  ss:StyleID="s63">
+							<Data ss:Type="String">XPath</Data>
+						</Cell>
+						<Cell  ss:StyleID="s63">
+							<Data ss:Type="String">Node Level</Data>
+						</Cell>
+						<Cell  ss:StyleID="s63">
+							<Data ss:Type="String">Sequence</Data>
+						</Cell>
+					</Row>
+					<Row>
+						<Cell>
+							<Data ss:Type="String">
+								<xsl:text>1..1</xsl:text>
+							</Data>
+						</Cell>
+						<Cell>
+							<Data ss:Type="String">
+								<xsl:value-of select="//str:Document/str:Term"/>
+							</Data>
+						</Cell>
+						<Cell>
+							<Data ss:Type="String"/>
+						</Cell>
+						<Cell>
+							<Data ss:Type="String"/>
+						</Cell>
+						<Cell>
+							<Data ss:Type="String"/>
+						</Cell>
+						<Cell>
+							<Data ss:Type="String">
+								<xsl:text>/</xsl:text>
+								<xsl:value-of select="//str:Document/str:Term"/>
+							</Data>
+						</Cell>
+						<Cell>
+							<Data ss:Type="Number">
+								<xsl:value-of select="0"/>
+							</Data>
+						</Cell>
+						<Cell>
+							<Data ss:Type="Number">
+								<xsl:value-of select="0"/>
+							</Data>
+						</Cell>
+					</Row>
+					<xsl:for-each select="//str:Element | //str:Attribute">
+						<Row>
+							<Cell>
+								<!-- Card -->
+								<Data ss:Type="String">
+									<xsl:choose>
+										<xsl:when test="(name(.) = 'Element')">			
+									<!-- Default card is 1..1 -->
+										<xsl:value-of select="if (@cardinality) then @cardinality else '1..1'"/>
+										</xsl:when>
+										<xsl:otherwise>
+											<xsl:value-of select="if (@usage) then substring(@usage,1,1) else 'M'"/>
+										</xsl:otherwise>
+									</xsl:choose>
+										
+								</Data>
+							</Cell>
+							<Cell>
+								<!-- Term -->
+								<Data ss:Type="String">
+									<xsl:for-each select="ancestor-or-self::*">
+										<xsl:if test="position() &lt; last() - 1">
+											<xsl:text>&#8226;&#160;&#160;</xsl:text>
+										</xsl:if>
+									</xsl:for-each>
+									<!-- Add @ if an attribute -->
+									<xsl:value-of select="if (name(.) = 'Attribute') then concat('@', str:Term) else str:Term"/>
+								</Data>
+							</Cell>
+							<Cell>
+								<Data ss:Type="String">
+									<xsl:value-of select="str:Name"/>
+								</Data>
+							</Cell>
+							<Cell>
+								<Data ss:Type="String">
+									<xsl:value-of select="normalize-space(str:Description)"/>
+								</Data>
+							</Cell>
+							<Cell>
+								<Data ss:Type="String">
+									<xsl:value-of select="str:Value[@type = 'EXAMPLE']"/>
+								</Data>
+							</Cell>
+							<Cell>
+								<Data ss:Type="String">
+									<xsl:for-each select="ancestor-or-self::*">
+										<xsl:if test="position() != 1">
+											<xsl:text>/</xsl:text>
+											<xsl:value-of select="str:Term"/>
+										</xsl:if>
+									</xsl:for-each>
+								</Data>
+							</Cell>
+							<Cell>
+								<Data ss:Type="Number">
+									<xsl:value-of select="count(ancestor-or-self::*) - 2"/>
+								</Data>
+							</Cell>
+							<Cell>
+								<!-- Sequence -->
+								<Data ss:Type="Number">
+									<xsl:value-of select="position()*100"/>
+								</Data>
+							</Cell>
+						</Row>
+					</xsl:for-each>
+				</Table>
+			</Worksheet>
+		</Workbook>
+	</xsl:template>
 </xsl:stylesheet>
