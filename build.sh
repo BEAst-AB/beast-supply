@@ -31,10 +31,10 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entry
 echo "Generating documentation: Advanced Despatch advice"
 #docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-advanced-despatch-advice.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml UblBaseUrl=$LOGISTICSBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$LOGISTICSBASEURL/ubl-advanced-despatch-advice.xml \
+    -s:$LOGISTICSBASEURLubl-advanced-despatch-advice.xml \
      -xsl:/src/tools/create-syntax.xsl \
      -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml \
-    overrideFile=src/structure/source/ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
+    varOverrideSample=src/structure/source/ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
 echo "Generating documentation: Weight statement"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-weight-statement.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-weight-statement.xml UblBaseUrl=$LOGISTICSBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-weight-statement.xml -ext:on --allow-external-functions:on
 echo "Generating documentation: Transport execution plan request"
