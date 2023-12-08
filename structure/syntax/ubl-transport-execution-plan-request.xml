@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ubl:TransportExecutionPlanRequest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
+	<?DocumentTerm TransportExecutionPlanRequest?>
+	<?Property key="sch:prefix" PEPPOL-T123?>
+	<?Property key="sch:identifier" T123-basic?>
+   <cbc:CustomizationID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+   <cbc:ProfileID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+   <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+   <cbc:IssueDate xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+   <cbc:IssueTime xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+   <cbc:DocumentStatusCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+   <cbc:TransportUserRemarks xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+   <cac:TransportUserParty xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+      <cbc:EndpointID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                      schemeID=""/>
+      <cac:PartyIdentification>
+         <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                 schemeID=""/>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+         <cbc:Name xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      </cac:PartyName>
+      <cac:PostalAddress>
+         <cbc:StreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:AdditionalStreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:CityName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:PostalZone xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:CountrySubentity xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cac:AddressLine>
+            <cbc:Line xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:AddressLine>
+         <cac:Country>
+            <cbc:IdentificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:Country>
+      </cac:PostalAddress>
+      <cac:PartyTaxScheme>
+         <cbc:CompanyID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cac:TaxScheme>
+            <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:CompanyID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                        schemeID=""/>
+         <cac:RegistrationAddress>
+            <cbc:CityName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cac:Country>
+               <cbc:IdentificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            </cac:Country>
+         </cac:RegistrationAddress>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+         <cbc:Name xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:Telephone xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:ElectronicMail xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      </cac:Contact>
+   </cac:TransportUserParty>
+   <cac:TransportServiceProviderParty xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+      <cbc:EndpointID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                      schemeID=""/>
+      <cac:PartyIdentification>
+         <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                 schemeID=""/>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+         <cbc:Name xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      </cac:PartyName>
+      <cac:PostalAddress>
+         <cbc:StreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:AdditionalStreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:CityName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:PostalZone xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:CountrySubentity xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cac:AddressLine>
+            <cbc:Line xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:AddressLine>
+         <cac:Country>
+            <cbc:IdentificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:Country>
+      </cac:PostalAddress>
+      <cac:PartyTaxScheme>
+         <cbc:CompanyID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cac:TaxScheme>
+            <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:CompanyID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                        schemeID=""/>
+         <cac:RegistrationAddress>
+            <cbc:CityName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Farthing</cbc:CityName>
+            <cac:Country>
+               <cbc:IdentificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            </cac:Country>
+         </cac:RegistrationAddress>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+         <cbc:Name xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:Telephone xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:ElectronicMail xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      </cac:Contact>
+   </cac:TransportServiceProviderParty>
+   <cac:PayeeParty xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+      <cac:PartyIdentification>
+         <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                 schemeID=""/>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+         <cbc:Name xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      </cac:PartyName>
+      <cac:PostalAddress>
+         <cbc:StreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:AdditionalStreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:CityName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:PostalZone xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:CountrySubentity xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cac:AddressLine>
+            <cbc:Line xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:AddressLine>
+         <cac:Country>
+            <cbc:IdentificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:Country>
+      </cac:PostalAddress>
+      <cac:PartyTaxScheme>
+         <cbc:CompanyID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cac:TaxScheme>
+            <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:CompanyID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                        schemeID=""/>
+         <cac:RegistrationAddress>
+            <cbc:CityName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cac:Country>
+               <cbc:IdentificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            </cac:Country>
+         </cac:RegistrationAddress>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+         <cbc:Name xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:Telephone xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:ElectronicMail xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      </cac:Contact>
+   </cac:PayeeParty>
+   <cac:AdditionalDocumentReference xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+      <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      <cbc:DocumentTypeCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      <cbc:DocumentType xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      <cac:Attachment>
+         <cbc:EmbeddedDocumentBinaryObject xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                           mimeCode=""
+                                           filename=""/>
+         <cac:ExternalReference>
+            <cbc:URI xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:ExternalReference>
+      </cac:Attachment>
+   </cac:AdditionalDocumentReference>
+   <cac:MainTransportationService xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+      <cbc:TransportServiceCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      <cbc:TransportationServiceDescription xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+   </cac:MainTransportationService>
+   <cac:AdditionalTransportationService xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+      <cbc:TransportServiceCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      <cbc:TransportationServiceDescription xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+   </cac:AdditionalTransportationService>
+   <cac:Consignment xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+      <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      <cbc:ConsigneeAssignedID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      <cbc:ConsignorAssignedID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      <cbc:GrossWeightMeasure xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                              unitCode=""/>
+      <cbc:GrossVolumeMeasure xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                              unitCode=""/>
+      <cbc:LoadingLengthMeasure xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                unitCode=""/>
+      <cbc:HazardousRiskIndicator xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      <cbc:TotalTransportHandlingUnitQuantity xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                              unitCode=""/>
+      <cac:RequestedPickupTransportEvent>
+         <cbc:IdentificationID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cac:Location>
+            <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                    schemeID=""/>
+            <cbc:Name xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cac:Address>
+               <cbc:StreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cbc:AdditionalStreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cbc:CityName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cbc:PostalZone xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cbc:CountrySubentity xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cac:AddressLine>
+                  <cbc:Line xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               </cac:AddressLine>
+               <cac:Country>
+                  <cbc:IdentificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               </cac:Country>
+               <cac:LocationCoordinate>
+                  <cbc:CoordinateSystemCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">EPSG:3857</cbc:CoordinateSystemCode>
+                  <cbc:LatitudeDegreesMeasure xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                              unitCode=""/>
+                  <cbc:LongitudeDegreesMeasure xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                               unitCode=""/>
+                  <cbc:AltitudeMeasure xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                       unitCode=""/>
+               </cac:LocationCoordinate>
+            </cac:Address>
+         </cac:Location>
+         <cac:Period>
+            <cbc:StartDate xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:StartTime xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:EndDate xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:EndTime xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:Period>
+      </cac:RequestedPickupTransportEvent>
+      <cac:RequestedDeliveryTransportEvent>
+         <cbc:IdentificationID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cac:Location>
+            <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                    schemeID=""/>
+            <cbc:Name xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cac:Address>
+               <cbc:StreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cbc:AdditionalStreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cbc:CityName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cbc:PostalZone xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cbc:CountrySubentity xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cac:AddressLine>
+                  <cbc:Line xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               </cac:AddressLine>
+               <cac:Country>
+                  <cbc:IdentificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               </cac:Country>
+               <cac:LocationCoordinate>
+                  <cbc:CoordinateSystemCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+                  <cbc:LatitudeDegreesMeasure xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                              unitCode=""/>
+                  <cbc:LongitudeDegreesMeasure xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                               unitCode=""/>
+                  <cbc:AltitudeMeasure xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                       unitCode=""/>
+               </cac:LocationCoordinate>
+            </cac:Address>
+         </cac:Location>
+         <cac:Period>
+            <cbc:StartDate xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:StartTime xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:EndDate xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:EndTime xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:Period>
+      </cac:RequestedDeliveryTransportEvent>
+      <cac:ConsigneeParty>
+         <cac:PartyIdentification>
+            <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                    schemeID=""/>
+         </cac:PartyIdentification>
+         <cac:PartyName>
+            <cbc:Name xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:StreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:AdditionalStreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:CityName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:PostalZone xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:CountrySubentity xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cac:AddressLine>
+               <cbc:Line xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            </cac:AddressLine>
+            <cac:Country>
+               <cbc:IdentificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            </cac:Country>
+         </cac:PostalAddress>
+         <cac:PartyLegalEntity>
+            <cbc:RegistrationName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:CompanyID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                           schemeID=""/>
+            <cac:RegistrationAddress>
+               <cbc:CityName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cac:Country>
+                  <cbc:IdentificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               </cac:Country>
+            </cac:RegistrationAddress>
+         </cac:PartyLegalEntity>
+         <cac:Contact>
+            <cbc:Name xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:Telephone xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:ElectronicMail xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:Contact>
+      </cac:ConsigneeParty>
+      <cac:ConsignorParty>
+         <cac:PartyIdentification>
+            <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                    schemeID=""/>
+         </cac:PartyIdentification>
+         <cac:PartyName>
+            <cbc:Name xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:StreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:AdditionalStreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:CityName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:PostalZone xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:CountrySubentity xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cac:AddressLine>
+               <cbc:Line xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            </cac:AddressLine>
+            <cac:Country>
+               <cbc:IdentificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            </cac:Country>
+         </cac:PostalAddress>
+         <cac:PartyLegalEntity>
+            <cbc:RegistrationName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:CompanyID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                           schemeID=""/>
+            <cac:RegistrationAddress>
+               <cbc:CityName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cac:Country>
+                  <cbc:IdentificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               </cac:Country>
+            </cac:RegistrationAddress>
+         </cac:PartyLegalEntity>
+         <cac:Contact>
+            <cbc:Name xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:Telephone xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:ElectronicMail xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:Contact>
+      </cac:ConsignorParty>
+      <cac:OriginalDepartureCountry>
+         <cbc:IdentificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      </cac:OriginalDepartureCountry>
+      <cac:FinalDestinationCountry>
+         <cbc:IdentificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      </cac:FinalDestinationCountry>
+      <cac:DeliveryTerms>
+         <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:SpecialTerms xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cac:DeliveryLocation>
+            <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                    schemeID=""/>
+            <cbc:Name xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:DeliveryLocation>
+      </cac:DeliveryTerms>
+      <cac:PaymentTerms>
+         <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:Note xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      </cac:PaymentTerms>
+      <cac:FreightAllowanceCharge>
+         <cbc:ChargeIndicator xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:AllowanceChargeReasonCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:Amount xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+      </cac:FreightAllowanceCharge>
+      <cac:MainCarriageShipmentStage>
+         <cbc:TransportModeCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:HazardousRiskIndicator xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cac:RequestedDepartureTransportEvent>
+            <cbc:IdentificationID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cac:Location>
+               <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                       schemeID=""/>
+               <cbc:Name xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cac:Address>
+                  <cbc:StreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+                  <cbc:AdditionalStreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+                  <cbc:CityName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+                  <cbc:PostalZone xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+                  <cbc:CountrySubentity xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+                  <cac:AddressLine>
+                     <cbc:Line xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+                  </cac:AddressLine>
+                  <cac:Country>
+                     <cbc:IdentificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+                  </cac:Country>
+                  <cac:LocationCoordinate>
+                     <cbc:CoordinateSystemCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+                     <cbc:LatitudeDegreesMeasure xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                                 unitCode=""/>
+                     <cbc:LongitudeDegreesMeasure xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                                  unitCode=""/>
+                     <cbc:AltitudeMeasure xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                          unitCode=""/>
+                  </cac:LocationCoordinate>
+               </cac:Address>
+            </cac:Location>
+            <cac:Period>
+               <cbc:StartDate xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cbc:StartTime xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cbc:EndDate xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cbc:EndTime xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            </cac:Period>
+         </cac:RequestedDepartureTransportEvent>
+         <cac:RequestedArrivalTransportEvent>
+            <cbc:IdentificationID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cac:Location>
+               <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                       schemeID=""/>
+               <cbc:Name xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cac:Address>
+                  <cbc:StreetName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+                  <cbc:CityName xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+                  <cbc:PostalZone xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+                  <cac:Country>
+                     <cbc:IdentificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+                  </cac:Country>
+               </cac:Address>
+            </cac:Location>
+            <cac:Period>
+               <cbc:StartDate xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cbc:StartTime xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cbc:EndDate xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cbc:EndTime xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            </cac:Period>
+         </cac:RequestedArrivalTransportEvent>
+      </cac:MainCarriageShipmentStage>
+      <cac:TransportHandlingUnit>
+         <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:TransportHandlingUnitTypeCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:HandlingCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:HandlingInstructions xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:HazardousRiskIndicator xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cbc:ShippingMarks xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         <cac:TransportEquipment>
+            <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:TransportEquipmentTypeCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:SizeTypeCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:RefrigerationOnIndicator xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:Description xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:PowerIndicator xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+         </cac:TransportEquipment>
+         <cac:MeasurementDimension>
+            <cbc:AttributeID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:Measure xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                         unitCode=""/>
+         </cac:MeasurementDimension>
+         <cac:MinimumTemperature>
+            <cbc:AttributeID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:Measure xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                         unitCode=""/>
+         </cac:MinimumTemperature>
+         <cac:MaximumTemperature>
+            <cbc:AttributeID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:Measure xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                         unitCode=""/>
+         </cac:MaximumTemperature>
+         <cac:GoodsItem>
+            <cbc:ID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:Description xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cbc:HazardousRiskIndicator xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+            <cac:Item>
+               <cbc:Name xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+               <cac:CommodityClassification>
+                  <cbc:ItemClassificationCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                              listID=""
+                                              listVersionID=""
+                                              name=""/>
+               </cac:CommodityClassification>
+               <cac:HazardousItem>
+                  <cbc:UNDGCode xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+                  <cbc:HazardClassID xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+                  <cbc:NetWeightMeasure xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                        unitCode=""/>
+               </cac:HazardousItem>
+            </cac:Item>
+         </cac:GoodsItem>
+      </cac:TransportHandlingUnit>
+   </cac:Consignment>
+</ubl:TransportExecutionPlanRequest>
