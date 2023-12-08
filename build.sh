@@ -13,6 +13,9 @@ if [ -e $PROJECT/target ]; then
     docker run --rm -i -v $PROJECT:/src alpine:3.6 rm -rf /src/target
 fi
 
+echo "Pulling klakegg/saxon container"
+docker pull klakegg/saxon
+
 echo "Pulling atomgraph/saxon container"
 docker pull atomgraph/saxon
 
