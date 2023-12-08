@@ -17,40 +17,103 @@ echo "Pulling atomgraph/saxon container"
 docker pull atomgraph/saxon
 
 # Transform the files in source dir to syntax.
-echo "Transforming files from source to syntax"
 echo "Generating documentation: Invoice"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-invoice.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-invoice.xml UblBaseUrl=https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/master/structure/syntax/ UblDocBaseUrl="" UblXmlReferenceFile=ubl-invoice.xml -ext:on --allow-external-functions:on
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/master/structure/syntax/ubl-invoice.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-invoice.xml \
+    varOverrideSample=/src/structure/source/ubl-invoice.xml -ext:on --allow-external-functions:on
+
 echo "Generating documentation: Order"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-order.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-order.xml UblBaseUrl=$POACCBASEURL UblDocBaseUrl=$POACCBASEURL UblXmlReferenceFile=ubl-order.xml -ext:on --allow-external-functions:on
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:$POACCBASEURL/ubl-order.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-order.xml \
+    varOverrideSample=/src/structure/source/ubl-order.xml -ext:on --allow-external-functions:on
+
 echo "Generating documentation: Order response"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-order-response.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-order-response.xml UblBaseUrl=$POACCBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-order-response.xml -ext:on --allow-external-functions:on
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:$POACCBASEURL/ubl-order-response.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-order-response.xml \
+    varOverrideSample=/src/structure/source/ubl-order-response.xml -ext:on --allow-external-functions:on
+
 echo "Generating documentation: Order agreement"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-orderagreement.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-orderagreement.xml UblBaseUrl=$POACCBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-orderagreement.xml -ext:on --allow-external-functions:on
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:$POACCBASEURL/ubl-orderagreement.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-orderagreement.xml \
+    varOverrideSample=/src/structure/source/ubl-orderagreement.xml -ext:on --allow-external-functions:on
+
 echo "Generating documentation: Catalogue"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-catalogue.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl \
--o:/src/structure/syntax/ubl-catalogue.xml UblBaseUrl=$POACCBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-catalogue.xml -ext:on --allow-external-functions:on
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:$POACCBASEURL/ubl-catalogue.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-catalogue.xml \
+    UblBaseUrl=$POACCBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-catalogue.xml -ext:on --allow-external-functions:on
+
 echo "Generating documentation: Advanced Despatch advice"
-#docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-advanced-despatch-advice.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml UblBaseUrl=$LOGISTICSBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
     -s:$LOGISTICSBASEURL/ubl-advanced-despatch-advice.xml \
-     -xsl:/src/tools/create-syntax.xsl \
-     -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml \
     varOverrideSample=/src/structure/source/ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
-echo "Generating documentation: Weight statement"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-weight-statement.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-weight-statement.xml UblBaseUrl=$LOGISTICSBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-weight-statement.xml -ext:on --allow-external-functions:on
-echo "Generating documentation: Transport execution plan request"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-transport-execution-plan-request.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-transport-execution-plan-request.xml UblBaseUrl=$LOGISTICSBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-transport-execution-plan-request.xml -ext:on --allow-external-functions:on
-echo "Generating documentation: Transport execution plan"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-transport-execution-plan.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-transport-execution-plan.xml UblBaseUrl=$LOGISTICSBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-transport-execution-plan.xml -ext:on --allow-external-functions:on
-echo "Generating documentation: Waybill"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-waybill.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-waybill.xml UblBaseUrl=$LOGISTICSBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-waybill.xml -ext:on --allow-external-functions:on
-echo "Generating documentation: Transportation Status Request"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-transportation-status-request.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-transportation-status-request.xml  UblBaseUrl=$LOGISTICSBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-transportation-status-request.xml -ext:on --allow-external-functions:on
-echo "Generating documentation: Transportation Status"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-transportation-status.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-transportation-status.xml UblBaseUrl=$LOGISTICSBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-transportation-status.xml -ext:on --allow-external-functions:on
-echo "Generating documentation: Receipt Advice"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-receipt-advice.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-receipt-advice.xml UblBaseUrl=$LOGISTICSBASEURL UblDocBaseUrl="" UblXmlReferenceFile=ubl-receipt-advice.xml -ext:on --allow-external-functions:on
 
+echo "Generating documentation: Weight statement"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:/src/structure/source/ubl-weight-statement.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-weight-statement.xml \
+    varOverrideSample=/src/structure/source/ubl-weight-statement.xml -ext:on --allow-external-functions:on
+
+echo "Generating documentation: Transport execution plan request"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:/src/structure/source/ubl-transport-execution-plan-request.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-transport-execution-plan-request.xml \
+    varOverrideSample=/src/structure/source/ubl-transport-execution-plan-request.xml -ext:on --allow-external-functions:on
+
+echo "Generating documentation: Transport execution plan"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:/src/structure/source/ubl-transport-execution-plan.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-transport-execution-plan.xml \
+    varOverrideSample=/src/structure/source/ubl-transport-execution-plan.xml -ext:on --allow-external-functions:on
+
+echo "Generating documentation: Waybill"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:/src/structure/source/ubl-waybill.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-waybill.xml \
+    varOverrideSample=/src/structure/source/ubl-waybill.xml -ext:on --allow-external-functions:on
+
+echo "Generating documentation: Transportation Status Request"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:/src/structure/source/ubl-transportation-status-request.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-transportation-status-request.xml \
+    varOverrideSample=/src/structure/source/ubl-transportation-status-request.xml -ext:on --allow-external-functions:on
+
+echo "Generating documentation: Transportation Status"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:/src/structure/source/ubl-transportation-status.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-transportation-status.xml \
+    varOverrideSample=/src/structure/source/ubl-transportation-status.xml -ext:on --allow-external-functions:on
+
+echo "Generating documentation: Receipt Advice"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:/src/structure/source/ubl-receipt-advice.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-receipt-advice.xml \
+    varOverrideSample=/src/structure/source/ubl-receipt-advice.xml -ext:on --allow-external-functions:on
+
+echo "Generating documentation: Receipt Advice"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:/src/structure/source/ubl-receipt-advice.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-receipt-advice.xml \
+    varOverrideSample=/src/structure/source/ubl-receipt-advice.xml -ext:on --allow-external-functions:on
 
 # Generate mapping documents.
 echo "Generating mapping documents: Invoice"
