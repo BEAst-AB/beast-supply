@@ -194,7 +194,7 @@ echo "Generating example: Advanced Despatch advice"
 echo "Generating example: Weight statement"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform \
     -s:/src/structure/source/ubl-weight-statement.xml \
-    -xsl:/src/tools/create-example.xsl 
+    -xsl:/src/tools/create-example.xsl \
     -o:/src/rules/examples/WeightStatement_Example_Full.xml  -ext:on --allow-external-functions:on
 echo "Generating example: Transport execution plan request"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform \
@@ -222,7 +222,7 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entry
     -xsl:/src/tools/remove-pi.xsl \
     -o:/src/rules/examples/TransportationStatus_Example_Full.xml -ext:on --allow-external-functions:on
 echo "Generating example: Receipt Advice"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon -cp /saxon.jar net.sf.saxon.Transform \
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform \
     -s:/src/structure/source/ubl-receipt-advice.xml \
     -xsl:/src/tools/remove-pi.xsl \
     -o:/src/rules/examples/ReceiptAdvice_Example_Full.xml  -ext:on --allow-external-functions:on
