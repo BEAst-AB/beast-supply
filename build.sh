@@ -125,7 +125,7 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
 echo "Generating mapping documents: Order response"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
     -s:/src/structure/syntax/ubl-order-response.xml \
-    -xsl:/src/tools/create-mapping-document.xsl 
+    -xsl:/src/tools/create-mapping-document.xsl \
     -o:/src/rules/mapping/OrderResponse.xml  -ext:on --allow-external-functions:on
 echo "Generating mapping documents: Order agreement"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
@@ -133,10 +133,10 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     -xsl:/src/tools/create-mapping-document.xsl \
     -o:/src/rules/mapping/Orderagreement.xml -ext:on --allow-external-functions:on
 #echo ""Generating mapping documents: Catalogue"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/syntax/ubl-catalogue.xml \
-    -xsl:/src/tools/create-mapping-document.xsl \
-    -o:/src/rules/mapping/Catalogue.xml  -ext:on --allow-external-functions:on
+#docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+ #   -s:/src/structure/syntax/ubl-catalogue.xml \
+  #  -xsl:/src/tools/create-mapping-document.xsl \
+   # -o:/src/rules/mapping/Catalogue.xml  -ext:on --allow-external-functions:on
 echo "Generating mapping documents: Advanced Despatch advice"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
     -s:/src/structure/syntax/ubl-advanced-despatch-advice.xml \
