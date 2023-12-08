@@ -189,7 +189,7 @@ echo "Generating example: Advanced Despatch advice"
  docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
      -s:/src/structure/syntax/ubl-advanced-despatch-advice.xml \
      -xsl:/src/tools/create-example.xsl \
-     -o:/src/rules/examples/AdvancedDespatchAdvice_Example_Full.xml \
+     -o:/src/rules/examples/AdvancedDespatchAdvice_Example_Full.xml -ext:on --allow-external-functions:on
 echo "Generating example: Weight statement"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform \
     -s:/src/structure/syntax/ubl-weight-statement.xml \
