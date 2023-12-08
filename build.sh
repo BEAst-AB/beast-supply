@@ -227,32 +227,33 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entry
     -xsl:/src/tools/remove-pi.xsl \
     -o:/src/rules/examples/ReceiptAdvice_Example_Full.xml  -ext:on --allow-external-functions:on
 
-# Structure
+
+echo "Generating structure"
 docker run --rm -i \
     -v $PROJECT:/src \
     -v $PROJECT/target:/target \
     difi/vefa-structure:0.6.1
 
-# Testing validation rules
+echo "Testing validation rules"
 docker run --rm -i -v $PROJECT:/src anskaffelser/validator:2.1.0 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
 
-# Schematron
+echo "Schematrons"
 for sch in $PROJECT/rules/sch/*.sch; do
     docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/schematron:/target klakegg/schematron prepare /src/rules/sch/$(basename $sch) /target/$(basename $sch)
 done
 docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/Schematron.zip
 docker run --rm -i -v $PROJECT/target/schematron:/src -v $PROJECT/target/site/files:/target -w /src kramos/alpine-zip -r /target/Schematron.zip .
 
-# Example files
+echo "Exampel files"
 docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/Examples.zip
 docker run --rm -i -v $PROJECT/rules/examples:/src -v $PROJECT/target/site/files:/target -w /src kramos/alpine-zip -r /target/Examples.zip .
 
-# Mapping files
+echo "Mapping files"
 docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/Mapping.zip
 docker run --rm -i -v $PROJECT/rules/mapping:/src -v $PROJECT/target/site/files:/target -w /src kramos/alpine-zip -r /target/Mapping.zip .
 
-# Guides
+echo "Generating guides"
 docker run --rm -i -v $PROJECT:/documents -v $PROJECT/target:/target difi/asciidoctor
 
-# Fix ownership
+echo "Fix ownership"
 docker run --rm -i -v $PROJECT:/src alpine:3.6 chown -R $(id -g $USER).$(id -g $USER) /src/target
