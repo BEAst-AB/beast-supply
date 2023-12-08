@@ -10,9 +10,7 @@
   <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
   <xsl:param name="varOverrideSample"/>
   <xsl:variable name="varOverrideSampleXml" select="document($varOverrideSample)"/>
-  <xsl:message>
-                Override file path: <xsl:value-of select="$varOverrideSample"/>
-  </xsl:message>
+
   <xsl:template match="comment()|processing-instruction()|/">
     <xsl:copy>
       <xsl:apply-templates/>
@@ -24,6 +22,9 @@
     </xsl:element>
   </xsl:template-->
   <xsl:template match="synstr:Element">
+	  <xsl:message>
+		  Override file path: <xsl:value-of select="$varOverrideSample"/>
+	  </xsl:message>
     <xsl:variable name="varDocXPath">
       <xsl:for-each select="ancestor-or-self::*">
         <xsl:choose>
