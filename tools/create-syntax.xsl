@@ -22,9 +22,6 @@
     </xsl:element>
   </xsl:template-->
   <xsl:template match="synstr:Element">
-	  <xsl:message>
-		  Override file path: <xsl:value-of select="$varOverrideSample"/>
-	  </xsl:message>
     <xsl:variable name="varDocXPath">
       <xsl:for-each select="ancestor-or-self::*">
         <xsl:choose>
