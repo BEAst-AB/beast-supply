@@ -70,49 +70,49 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
 
 echo "Generating documentation: Weight statement"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/source/ubl-weight-statement.xml \
+    -s:$LOGISTICSBASEURL/ubl-weight-statement.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-weight-statement.xml \
     varOverrideSample=/src/structure/source/ubl-weight-statement.xml -ext:on --allow-external-functions:on
 
 echo "Generating documentation: Transport execution plan request"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/source/ubl-transport-execution-plan-request.xml \
+    -s:$LOGISTICSBASEURL/ubl-transport-execution-plan-request.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-transport-execution-plan-request.xml \
     varOverrideSample=/src/structure/source/ubl-transport-execution-plan-request.xml -ext:on --allow-external-functions:on
 
 echo "Generating documentation: Transport execution plan"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/source/ubl-transport-execution-plan.xml \
+    -s:$LOGISTICSBASEURL/ubl-transport-execution-plan.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-transport-execution-plan.xml \
     varOverrideSample=/src/structure/source/ubl-transport-execution-plan.xml -ext:on --allow-external-functions:on
 
 echo "Generating documentation: Waybill"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/source/ubl-waybill.xml \
+    -s:$LOGISTICSBASEURL/ubl-waybill.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-waybill.xml \
     varOverrideSample=/src/structure/source/ubl-waybill.xml -ext:on --allow-external-functions:on
 
 echo "Generating documentation: Transportation Status Request"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/source/ubl-transportation-status-request.xml \
+    -s:$LOGISTICSBASEURL/ubl-transportation-status-request.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-transportation-status-request.xml \
     varOverrideSample=/src/structure/source/ubl-transportation-status-request.xml -ext:on --allow-external-functions:on
 
 echo "Generating documentation: Transportation Status"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/source/ubl-transportation-status.xml \
+    -s:$LOGISTICSBASEURL/ubl-transportation-status.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-transportation-status.xml \
     varOverrideSample=/src/structure/source/ubl-transportation-status.xml -ext:on --allow-external-functions:on
 
 echo "Generating documentation: Receipt Advice"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/source/ubl-receipt-advice.xml \
+    -s:$LOGISTICSBASEURL/ubl-receipt-advice.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-receipt-advice.xml \
     varOverrideSample=/src/structure/source/ubl-receipt-advice.xml -ext:on --allow-external-functions:on
