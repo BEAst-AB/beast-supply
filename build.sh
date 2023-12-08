@@ -108,13 +108,6 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     -o:/src/structure/syntax/ubl-receipt-advice.xml \
     varOverrideSample=/src/structure/source/ubl-receipt-advice.xml -ext:on --allow-external-functions:on
 
-echo "Generating documentation: Receipt Advice"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/source/ubl-receipt-advice.xml \
-    -xsl:/src/tools/create-syntax.xsl \
-    -o:/src/structure/syntax/ubl-receipt-advice.xml \
-    varOverrideSample=/src/structure/source/ubl-receipt-advice.xml -ext:on --allow-external-functions:on
-
 # Generate mapping documents.
 echo "Generating mapping documents: Invoice"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/syntax/ubl-invoice.xml -xsl:/src/tools/create-mapping-document.xsl -o:/src/rules/mapping/Invoice.xml -ext:on --allow-external-functions:on
