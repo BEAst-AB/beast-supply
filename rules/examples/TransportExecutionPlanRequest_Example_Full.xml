@@ -1,429 +1,428 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ubl:TransportExecutionPlanRequest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlanRequest-2"
-                                   xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-                                   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-   <cbc:CustomizationID/>
-   <cbc:ProfileID/>
-   <cbc:ID/>
-   <cbc:IssueDate/>
-   <cbc:IssueTime/>
-   <cbc:DocumentStatusCode/>
-   <cbc:TransportUserRemarks/>
-   <cac:TransportUserParty>
-      <cbc:EndpointID schemeID=""/>
-      <cac:PartyIdentification>
-         <cbc:ID schemeID=""/>    
-      </cac:PartyIdentification>
-      <cac:PartyName>
-         <cbc:Name/>    
-      </cac:PartyName>
-      <cac:PostalAddress>
-         <cbc:StreetName/>
-         <cbc:AdditionalStreetName/>
-         <cbc:CityName/>
-         <cbc:PostalZone/>
-         <cbc:CountrySubentity/>
-         <cac:AddressLine>
-            <cbc:Line/>      
-         </cac:AddressLine>
-         <cac:Country>
-            <cbc:IdentificationCode/>      
-         </cac:Country>    
-      </cac:PostalAddress>
-      <cac:PartyTaxScheme>
-         <cbc:CompanyID/>
-         <cac:TaxScheme>
-            <cbc:ID/>      
-         </cac:TaxScheme>    
-      </cac:PartyTaxScheme>
-      <cac:PartyLegalEntity>
-         <cbc:RegistrationName/>
-         <cbc:CompanyID schemeID=""/>
-         <cac:RegistrationAddress>
-            <cbc:CityName/>
-            <cac:Country>
-               <cbc:IdentificationCode/>        
-            </cac:Country>      
-         </cac:RegistrationAddress>    
-      </cac:PartyLegalEntity>
-      <cac:Contact>
-         <cbc:Name/>
-         <cbc:Telephone/>
-         <cbc:ElectronicMail/>    
-      </cac:Contact>  
-   </cac:TransportUserParty>
-   <cac:TransportServiceProviderParty>
-      <cbc:EndpointID schemeID=""/>
-      <cac:PartyIdentification>
-         <cbc:ID schemeID=""/>    
-      </cac:PartyIdentification>
-      <cac:PartyName>
-         <cbc:Name/>    
-      </cac:PartyName>
-      <cac:PostalAddress>
-         <cbc:StreetName/>
-         <cbc:AdditionalStreetName/>
-         <cbc:CityName/>
-         <cbc:PostalZone/>
-         <cbc:CountrySubentity/>
-         <cac:AddressLine>
-            <cbc:Line/>      
-         </cac:AddressLine>
-         <cac:Country>
-            <cbc:IdentificationCode/>      
-         </cac:Country>    
-      </cac:PostalAddress>
-      <cac:PartyTaxScheme>
-         <cbc:CompanyID/>
-         <cac:TaxScheme>
-            <cbc:ID/>      
-         </cac:TaxScheme>    
-      </cac:PartyTaxScheme>
-      <cac:PartyLegalEntity>
-         <cbc:RegistrationName/>
-         <cbc:CompanyID schemeID=""/>
-         <cac:RegistrationAddress>
-            <cbc:CityName>Farthing</cbc:CityName>
-            <cac:Country>
-               <cbc:IdentificationCode/>        
-            </cac:Country>      
-         </cac:RegistrationAddress>    
-      </cac:PartyLegalEntity>
-      <cac:Contact>
-         <cbc:Name/>
-         <cbc:Telephone/>
-         <cbc:ElectronicMail/>    
-      </cac:Contact>  
-   </cac:TransportServiceProviderParty>
-   <cac:PayeeParty>
-      <cac:PartyIdentification>
-         <cbc:ID schemeID=""/>    
-      </cac:PartyIdentification>
-      <cac:PartyName>
-         <cbc:Name/>    
-      </cac:PartyName>
-      <cac:PostalAddress>
-         <cbc:StreetName/>
-         <cbc:AdditionalStreetName/>
-         <cbc:CityName/>
-         <cbc:PostalZone/>
-         <cbc:CountrySubentity/>
-         <cac:AddressLine>
-            <cbc:Line/>      
-         </cac:AddressLine>
-         <cac:Country>
-            <cbc:IdentificationCode/>      
-         </cac:Country>    
-      </cac:PostalAddress>
-      <cac:PartyTaxScheme>
-         <cbc:CompanyID/>
-         <cac:TaxScheme>
-            <cbc:ID/>      
-         </cac:TaxScheme>    
-      </cac:PartyTaxScheme>
-      <cac:PartyLegalEntity>
-         <cbc:RegistrationName/>
-         <cbc:CompanyID schemeID=""/>
-         <cac:RegistrationAddress>
-            <cbc:CityName/>
-            <cac:Country>
-               <cbc:IdentificationCode/>        
-            </cac:Country>      
-         </cac:RegistrationAddress>    
-      </cac:PartyLegalEntity>
-      <cac:Contact>
-         <cbc:Name/>
-         <cbc:Telephone/>
-         <cbc:ElectronicMail/>    
-      </cac:Contact>  
-   </cac:PayeeParty>
-   <cac:AdditionalDocumentReference>
-      <cbc:ID/>
-      <cbc:DocumentTypeCode/>
-      <cbc:DocumentType/>
-      <cac:Attachment>
-         <cbc:EmbeddedDocumentBinaryObject mimeCode="" filename=""/>
-         <cac:ExternalReference>
-            <cbc:URI/>      
-         </cac:ExternalReference>    
-      </cac:Attachment>  
-   </cac:AdditionalDocumentReference>
-   <cac:MainTransportationService>
-      <cbc:TransportServiceCode/>
-      <cbc:TransportationServiceDescription/>  
-   </cac:MainTransportationService>
-   <cac:AdditionalTransportationService>
-      <cbc:TransportServiceCode/>
-      <cbc:TransportationServiceDescription/>  
-   </cac:AdditionalTransportationService>
-   <cac:Consignment>
-      <cbc:ID/>
-      <cbc:ConsigneeAssignedID/>
-      <cbc:ConsignorAssignedID/>
-      <cbc:GrossWeightMeasure unitCode=""/>
-      <cbc:GrossVolumeMeasure unitCode=""/>
-      <cbc:LoadingLengthMeasure unitCode=""/>
-      <cbc:HazardousRiskIndicator/>
-      <cbc:TotalTransportHandlingUnitQuantity unitCode=""/>
-      <cac:RequestedPickupTransportEvent>
-         <cbc:IdentificationID/>
-         <cac:Location>
-            <cbc:ID schemeID=""/>
-            <cbc:Name/>
-            <cac:Address>
-               <cbc:StreetName/>
-               <cbc:AdditionalStreetName/>
-               <cbc:CityName/>
-               <cbc:PostalZone/>
-               <cbc:CountrySubentity/>
-               <cac:AddressLine>
-                  <cbc:Line/>          
-               </cac:AddressLine>
-               <cac:Country>
-                  <cbc:IdentificationCode/>          
-               </cac:Country>
-               <cac:LocationCoordinate>
-                  <cbc:CoordinateSystemCode>EPSG:3857</cbc:CoordinateSystemCode>
-                  <cbc:LatitudeDegreesMeasure unitCode=""/>
-                  <cbc:LongitudeDegreesMeasure unitCode=""/>
-                  <cbc:AltitudeMeasure unitCode=""/>          
-               </cac:LocationCoordinate>        
-            </cac:Address>      
-         </cac:Location>
-         <cac:Period>
-            <cbc:StartDate/>
-            <cbc:StartTime/>
-            <cbc:EndDate/>
-            <cbc:EndTime/>      
-         </cac:Period>    
-      </cac:RequestedPickupTransportEvent>
-      <cac:RequestedDeliveryTransportEvent>
-         <cbc:IdentificationID/>
-         <cac:Location>
-            <cbc:ID schemeID=""/>
-            <cbc:Name/>
-            <cac:Address>
-               <cbc:StreetName/>
-               <cbc:AdditionalStreetName/>
-               <cbc:CityName/>
-               <cbc:PostalZone/>
-               <cbc:CountrySubentity/>
-               <cac:AddressLine>
-                  <cbc:Line/>          
-               </cac:AddressLine>
-               <cac:Country>
-                  <cbc:IdentificationCode/>          
-               </cac:Country>
-               <cac:LocationCoordinate>
-                  <cbc:CoordinateSystemCode/>
-                  <cbc:LatitudeDegreesMeasure unitCode=""/>
-                  <cbc:LongitudeDegreesMeasure unitCode=""/>
-                  <cbc:AltitudeMeasure unitCode=""/>          
-               </cac:LocationCoordinate>        
-            </cac:Address>      
-         </cac:Location>
-         <cac:Period>
-            <cbc:StartDate/>
-            <cbc:StartTime/>
-            <cbc:EndDate/>
-            <cbc:EndTime/>      
-         </cac:Period>    
-      </cac:RequestedDeliveryTransportEvent>
-      <cac:ConsigneeParty>
-         <cac:PartyIdentification>
-            <cbc:ID schemeID=""/>      
-         </cac:PartyIdentification>
-         <cac:PartyName>
-            <cbc:Name/>      
-         </cac:PartyName>
-         <cac:PostalAddress>
-            <cbc:StreetName/>
-            <cbc:AdditionalStreetName/>
-            <cbc:CityName/>
-            <cbc:PostalZone/>
-            <cbc:CountrySubentity/>
-            <cac:AddressLine>
-               <cbc:Line/>        
-            </cac:AddressLine>
-            <cac:Country>
-               <cbc:IdentificationCode/>        
-            </cac:Country>      
-         </cac:PostalAddress>
-         <cac:PartyLegalEntity>
-            <cbc:RegistrationName/>
-            <cbc:CompanyID schemeID=""/>
-            <cac:RegistrationAddress>
-               <cbc:CityName/>
-               <cac:Country>
-                  <cbc:IdentificationCode/>          
-               </cac:Country>        
-            </cac:RegistrationAddress>      
-         </cac:PartyLegalEntity>
-         <cac:Contact>
-            <cbc:Name/>
-            <cbc:Telephone/>
-            <cbc:ElectronicMail/>      
-         </cac:Contact>    
-      </cac:ConsigneeParty>
-      <cac:ConsignorParty>
-         <cac:PartyIdentification>
-            <cbc:ID schemeID=""/>      
-         </cac:PartyIdentification>
-         <cac:PartyName>
-            <cbc:Name/>      
-         </cac:PartyName>
-         <cac:PostalAddress>
-            <cbc:StreetName/>
-            <cbc:AdditionalStreetName/>
-            <cbc:CityName/>
-            <cbc:PostalZone/>
-            <cbc:CountrySubentity/>
-            <cac:AddressLine>
-               <cbc:Line/>        
-            </cac:AddressLine>
-            <cac:Country>
-               <cbc:IdentificationCode/>        
-            </cac:Country>      
-         </cac:PostalAddress>
-         <cac:PartyLegalEntity>
-            <cbc:RegistrationName/>
-            <cbc:CompanyID schemeID=""/>
-            <cac:RegistrationAddress>
-               <cbc:CityName/>
-               <cac:Country>
-                  <cbc:IdentificationCode/>          
-               </cac:Country>        
-            </cac:RegistrationAddress>      
-         </cac:PartyLegalEntity>
-         <cac:Contact>
-            <cbc:Name/>
-            <cbc:Telephone/>
-            <cbc:ElectronicMail/>      
-         </cac:Contact>    
-      </cac:ConsignorParty>
-      <cac:OriginalDepartureCountry>
-         <cbc:IdentificationCode/>    
-      </cac:OriginalDepartureCountry>
-      <cac:FinalDestinationCountry>
-         <cbc:IdentificationCode/>    
-      </cac:FinalDestinationCountry>
-      <cac:DeliveryTerms>
-         <cbc:ID/>
-         <cbc:SpecialTerms/>
-         <cac:DeliveryLocation>
-            <cbc:ID schemeID=""/>
-            <cbc:Name/>      
-         </cac:DeliveryLocation>    
-      </cac:DeliveryTerms>
-      <cac:PaymentTerms>
-         <cbc:ID/>
-         <cbc:Note/>    
-      </cac:PaymentTerms>
-      <cac:FreightAllowanceCharge>
-         <cbc:ChargeIndicator/>
-         <cbc:AllowanceChargeReasonCode/>
-         <cbc:Amount/>    
-      </cac:FreightAllowanceCharge>
-      <cac:MainCarriageShipmentStage>
-         <cbc:TransportModeCode/>
-         <cbc:HazardousRiskIndicator/>
-         <cac:RequestedDepartureTransportEvent>
-            <cbc:IdentificationID/>
-            <cac:Location>
-               <cbc:ID schemeID=""/>
-               <cbc:Name/>
-               <cac:Address>
-                  <cbc:StreetName/>
-                  <cbc:AdditionalStreetName/>
-                  <cbc:CityName/>
-                  <cbc:PostalZone/>
-                  <cbc:CountrySubentity/>
-                  <cac:AddressLine>
-                     <cbc:Line/>            
-                  </cac:AddressLine>
-                  <cac:Country>
-                     <cbc:IdentificationCode/>            
-                  </cac:Country>
-                  <cac:LocationCoordinate>
-                     <cbc:CoordinateSystemCode/>
-                     <cbc:LatitudeDegreesMeasure unitCode=""/>
-                     <cbc:LongitudeDegreesMeasure unitCode=""/>
-                     <cbc:AltitudeMeasure unitCode=""/>            
-                  </cac:LocationCoordinate>          
-               </cac:Address>        
-            </cac:Location>
-            <cac:Period>
-               <cbc:StartDate/>
-               <cbc:StartTime/>
-               <cbc:EndDate/>
-               <cbc:EndTime/>        
-            </cac:Period>      
-         </cac:RequestedDepartureTransportEvent>
-         <cac:RequestedArrivalTransportEvent>
-            <cbc:IdentificationID/>
-            <cac:Location>
-               <cbc:ID schemeID=""/>
-               <cbc:Name/>
-               <cac:Address>
-                  <cbc:StreetName/>
-                  <cbc:CityName/>
-                  <cbc:PostalZone/>
-                  <cac:Country>
-                     <cbc:IdentificationCode/>            
-                  </cac:Country>          
-               </cac:Address>        
-            </cac:Location>
-            <cac:Period>
-               <cbc:StartDate/>
-               <cbc:StartTime/>
-               <cbc:EndDate/>
-               <cbc:EndTime/>        
-            </cac:Period>      
-         </cac:RequestedArrivalTransportEvent>    
-      </cac:MainCarriageShipmentStage>
-      <cac:TransportHandlingUnit>
-         <cbc:ID/>
-         <cbc:TransportHandlingUnitTypeCode/>
-         <cbc:HandlingCode/>
-         <cbc:HandlingInstructions/>
-         <cbc:HazardousRiskIndicator/>
-         <cbc:ShippingMarks/>
-         <cac:TransportEquipment>
-            <cbc:ID/>
-            <cbc:TransportEquipmentTypeCode/>
-            <cbc:SizeTypeCode/>
-            <cbc:RefrigerationOnIndicator/>
-            <cbc:Description/>
-            <cbc:PowerIndicator/>      
-         </cac:TransportEquipment>
-         <cac:MeasurementDimension>
-            <cbc:AttributeID/>
-            <cbc:Measure unitCode=""/>      
-         </cac:MeasurementDimension>
-         <cac:MinimumTemperature>
-            <cbc:AttributeID/>
-            <cbc:Measure unitCode=""/>      
-         </cac:MinimumTemperature>
-         <cac:MaximumTemperature>
-            <cbc:AttributeID/>
-            <cbc:Measure unitCode=""/>      
-         </cac:MaximumTemperature>
-         <cac:GoodsItem>
-            <cbc:ID/>
-            <cbc:Description/>
-            <cbc:HazardousRiskIndicator/>
-            <cac:Item>
-               <cbc:Name/>
-               <cac:CommodityClassification>
-                  <cbc:ItemClassificationCode listID="" listVersionID="" name=""/>          
-               </cac:CommodityClassification>
-               <cac:HazardousItem>
-                  <cbc:UNDGCode/>
-                  <cbc:HazardClassID/>
-                  <cbc:NetWeightMeasure unitCode=""/>          
-               </cac:HazardousItem>        
-            </cac:Item>      
-         </cac:GoodsItem>    
-      </cac:TransportHandlingUnit>  
-   </cac:Consignment>
-</ubl:TransportExecutionPlanRequest>
+	
+	
+	
+   
+   
+   
+   
+   
+   
+   
+   
+      
+      
+         
+      
+      
+         
+      
+      
+         
+         
+         
+         
+         
+         
+            
+         
+         
+            
+         
+      
+      
+         
+         
+            
+         
+      
+      
+         
+         
+         
+            
+            
+               
+            
+         
+      
+      
+         
+         
+         
+      
+   
+   
+      
+      
+         
+      
+      
+         
+      
+      
+         
+         
+         
+         
+         
+         
+            
+         
+         
+            
+         
+      
+      
+         
+         
+            
+         
+      
+      
+         
+         
+         
+            Farthing
+            
+               
+            
+         
+      
+      
+         
+         
+         
+      
+   
+   
+      
+         
+      
+      
+         
+      
+      
+         
+         
+         
+         
+         
+         
+            
+         
+         
+            
+         
+      
+      
+         
+         
+            
+         
+      
+      
+         
+         
+         
+            
+            
+               
+            
+         
+      
+      
+         
+         
+         
+      
+   
+   
+      
+      
+      
+      
+         
+         
+            
+         
+      
+   
+   
+      
+      
+   
+   
+      
+      
+   
+   
+      
+      
+      
+      
+      
+      
+      
+      
+      
+         
+         
+            
+            
+            
+               
+               
+               
+               
+               
+               
+                  
+               
+               
+                  
+               
+               
+                  EPSG:3857
+                  
+                  
+                  
+               
+            
+         
+         
+            
+            
+            
+            
+         
+      
+      
+         
+         
+            
+            
+            
+               
+               
+               
+               
+               
+               
+                  
+               
+               
+                  
+               
+               
+                  
+                  
+                  
+                  
+               
+            
+         
+         
+            
+            
+            
+            
+         
+      
+      
+         
+            
+         
+         
+            
+         
+         
+            
+            
+            
+            
+            
+            
+               
+            
+            
+               
+            
+         
+         
+            
+            
+            
+               
+               
+                  
+               
+            
+         
+         
+            
+            
+            
+         
+      
+      
+         
+            
+         
+         
+            
+         
+         
+            
+            
+            
+            
+            
+            
+               
+            
+            
+               
+            
+         
+         
+            
+            
+            
+               
+               
+                  
+               
+            
+         
+         
+            
+            
+            
+         
+      
+      
+         
+      
+      
+         
+      
+      
+         
+         
+         
+            
+            
+         
+      
+      
+         
+         
+      
+      
+         
+         
+         
+      
+      
+         
+         
+         
+            
+            
+               
+               
+               
+                  
+                  
+                  
+                  
+                  
+                  
+                     
+                  
+                  
+                     
+                  
+                  
+                     
+                     
+                     
+                     
+                  
+               
+            
+            
+               
+               
+               
+               
+            
+         
+         
+            
+            
+               
+               
+               
+                  
+                  
+                  
+                  
+                     
+                  
+               
+            
+            
+               
+               
+               
+               
+            
+         
+      
+      
+         
+         
+         
+         
+         
+         
+         
+            
+            
+            
+            
+            
+            
+         
+         
+            
+            
+         
+         
+            
+            
+         
+         
+            
+            
+         
+         
+            
+            
+            
+            
+               
+               
+                  
+               
+               
+                  
+                  
+                  
+               
+            
+         
+      
+   
