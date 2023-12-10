@@ -10,7 +10,6 @@
   <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
   <xsl:param name="varOverrideSample"/>
   <xsl:variable name="varOverrideSampleXml" select="document($varOverrideSample)"/>
-
   <xsl:template match="comment()|processing-instruction()|/">
     <xsl:copy>
       <xsl:apply-templates/>
@@ -43,10 +42,10 @@
     </xsl:message-->
     <xsl:element name="{name()}">
       <xsl:apply-templates select="@*"/>
+        <xsl:apply-templates select="synstr:Term"/>
+        <xsl:apply-templates select="synstr:Name"/>
         <xsl:choose>
           <xsl:when test="$varDocNode!='' and not(empty($varDocNode))">
-            <xsl:apply-templates select="synstr:Term"/>
-            <xsl:apply-templates select="synstr:Name"/>
             <xsl:variable name="varDocNode_Description" select="$varDocNode/*/processing-instruction('Description')"/>
             <xsl:variable name="varDocNode_DescriptionAddFirst" select="$varDocNode/child::*/processing-instruction('DescriptionAddFirst')"/>
             <xsl:variable name="varDocNode_DescriptionAddLast" select="$varDocNode/child::*/processing-instruction('DescriptionAddLast')"/>
@@ -164,7 +163,10 @@
 			</xsl:choose>
           </xsl:when>
           <xsl:otherwise>
-            <xsl:apply-templates select="node()"/>
+            <!--xsl:apply-templates select="node()"/-->
+            <xsl:apply-templates select="synstr:Description"/>
+            <xsl:apply-templates select="synstr:Reference"/>
+            <xsl:apply-templates select="synstr:Value"/>
           </xsl:otherwise>
         </xsl:choose>
         <xsl:apply-templates select="synstr:Attribute"/>
