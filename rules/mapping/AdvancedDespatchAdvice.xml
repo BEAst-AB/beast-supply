@@ -4901,7 +4901,7 @@
                <Data ss:Type="String">Consignment identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Use a dummy value since this element is mandatory.</Data>
+               <Data ss:Type="String">BEAst: Use NA if there is no clear identity on the consignment. Peppol: Use a dummy value since this element is mandatory.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">NA</Data>
@@ -6045,7 +6045,7 @@
                <Data ss:Type="String">Tranport equipment type code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Used to specify the type of fuel.</Data>
+               <Data ss:Type="String">BEAst: Pick your value from Boverket's Climate database. Peppol: Used to specify the type of fuel.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">HVO</Data>
@@ -6201,7 +6201,7 @@
                <Data ss:Type="String">Attribute identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: EnergyContent = T6428, ConversionFactor = T6429, FuelConsumption = T6374, DrivingDistance = T6380, DrivingTime = T6381, FuelMeasurementMethod = T6728, EngineType = T6379, RenewableFuel = T6382. Peppol: To define the type of measurement. EnergyContent, ConversionFactor, FuelConsumption, DrivingDistance, DrivingTime, FuelMeasurementMethod, EngineType, RenewableFuel.</Data>
+               <Data ss:Type="String">BEAst: EnergyContent = T6428, ConversionFactor = T6429, FuelConsumption = T6374, DrivingDistance = T6380, DrivingTime = T6381, FuelMeasurementMethod = T6728, EngineType = T6379, RenewableFuel = T6382. One of DrivingDistance and Driving time must be provided. If both are available, both should be sent. Peppol: To define the type of measurement. EnergyContent, ConversionFactor, FuelConsumption, DrivingDistance, DrivingTime, FuelMeasurementMethod, EngineType, RenewableFuel.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">FuelConsumption</Data>
@@ -6981,7 +6981,7 @@
                <Data ss:Type="String">License plate identifier transport</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Used for Transport Information (T6008). Peppol: The licence plate(s) identifying the vehicle seperated by semicolon if there are more than one.</Data>
+               <Data ss:Type="String">BEAst: Used for Transport Information (T6008). In case there is no License Plate ID, as for machines, use the manufacturer's model number together with the machine-number. Peppol: The licence plate(s) identifying the vehicle seperated by semicolon if there are more than one.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">DK-DF10958;DK-DF23314</Data>
@@ -11349,7 +11349,7 @@
                <Data ss:Type="String">Order line identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Calloff Line Reference (T6336)/Reference to Order Line (T3322) Peppol: To uniquely identify the line of the order that is being despatched.</Data>
+               <Data ss:Type="String">BEAst: Calloff Line Reference (T6336)/Reference to Order Line (T3322). Use NA if this is not available. Peppol: To uniquely identify the line of the order that is being despatched.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1</Data>

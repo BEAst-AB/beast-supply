@@ -1152,8 +1152,8 @@
             <Element>
                <Term>cbc:ID</Term>
                <Name>Consignment identifier</Name>
-               <Description>Use a dummy value since this element is mandatory.</Description>
-               <Reference type="BUSINESS_TERM">tir16-040</Reference>
+               <Description>
+                BEAst: Use NA if there is no clear identity on the consignment.  Peppol: Use a dummy value since this element is mandatory.</Description>
                <Value type="EXAMPLE">NA</Value>
             </Element>
             <Element cardinality="0..1">
@@ -1397,7 +1397,8 @@
                   <Element cardinality="0..1">
                      <Term>cbc:TransportEquipmentTypeCode</Term>
                      <Name>Tranport equipment type code</Name>
-                     <Description>Used to specify the type of fuel.</Description>
+                     <Description>
+                BEAst: Pick your value from Boverket's Climate database.  Peppol: Used to specify the type of fuel.</Description>
                      <Value type="EXAMPLE">HVO</Value>
                      <Attribute usage="Optional">
                         <Term>listID</Term>
@@ -1431,7 +1432,8 @@
                         <Term>cbc:AttributeID</Term>
                         <Name>Attribute identifier</Name>
                         <Description>
-                BEAst: EnergyContent = T6428, ConversionFactor = T6429, FuelConsumption = T6374, DrivingDistance = T6380, DrivingTime = T6381, FuelMeasurementMethod = T6728, EngineType = T6379, RenewableFuel = T6382.  Peppol: To define the type of measurement. EnergyContent, ConversionFactor, FuelConsumption, DrivingDistance, DrivingTime, FuelMeasurementMethod, EngineType, RenewableFuel.</Description>
+                BEAst: EnergyContent = T6428, ConversionFactor = T6429, FuelConsumption = T6374, DrivingDistance = T6380, DrivingTime = T6381, FuelMeasurementMethod = T6728, EngineType = T6379, RenewableFuel = T6382.
+							One of DrivingDistance and Driving time must be provided. If both are available, both should be sent. Peppol: To define the type of measurement. EnergyContent, ConversionFactor, FuelConsumption, DrivingDistance, DrivingTime, FuelMeasurementMethod, EngineType, RenewableFuel.</Description>
                         <Value type="EXAMPLE">FuelConsumption</Value>
                      </Element>
                      <Element cardinality="0..1">
@@ -1590,7 +1592,7 @@
                      <Term>cbc:LicensePlateID</Term>
                      <Name>License plate identifier transport</Name>
                      <Description>
-                BEAst: Used for Transport Information (T6008).  Peppol: The licence plate(s) identifying the vehicle seperated by semicolon if there are more than one. </Description>
+                BEAst: Used for Transport Information (T6008). In case there is no License Plate ID, as for machines, use the manufacturer's model number together with the machine-number.  Peppol: The licence plate(s) identifying the vehicle seperated by semicolon if there are more than one. </Description>
                      <Value type="EXAMPLE">DK-DF10958;DK-DF23314</Value>
                   </Element>
                </Element>
@@ -2642,7 +2644,7 @@
                <Term>cbc:LineID</Term>
                <Name>Order line identifier</Name>
                <Description>
-                BEAst: Calloff Line Reference (T6336)/Reference to Order Line (T3322)  Peppol: To uniquely identify the line of the order that is being
+                BEAst: Calloff Line Reference (T6336)/Reference to Order Line (T3322). Use NA if this is not available.  Peppol: To uniquely identify the line of the order that is being
 						despatched.</Description>
                <Value type="EXAMPLE">1</Value>
             </Element>
