@@ -8,85 +8,77 @@
    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
    <Document>
       <Term>ubl:TransportationStatusRequest</Term>
-	
-	
-	
-	     <Element>
+      <Element>
          <Term>cbc:CustomizationID</Term>
          <Name>Specification identification</Name>
-         <Description>Peppol: Identifies the specification of content and rules that apply to the
+         <Description>Identifies the specification of content and rules that apply to the
 				transaction.</Description>
-         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-002</Reference>
          <Reference type="RULE">PEPPOL-T126-R001</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:trns:transportation_status_request:1</Value>
       </Element>
-	     <Element cardinality="1..1">
+      <Element cardinality="1..1">
          <Term>cbc:ProfileID</Term>
          <Name>Profile ID</Name>
-         <Description>BEAst: Identifies the Peppol profile or business process context in which the transaction appears.</Description>
-         <DataType>Identifier</DataType>
+         <Description>Identifies the Peppol profile or business process context in which the transaction appears.</Description>
          <Reference type="BUSINESS_TERM">tir16-001</Reference>
          <Reference type="RULE">PEPPOL-T126-R002</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:transportation_status_w_request:1</Value>
       </Element>
-	     <Element>
+      <Element>
          <Term>cbc:ID</Term>
          <Name>Document identifier</Name>
-         <Description>Peppol: An transaction instance must contain an identifier. The identifier enables
+         <Description>An transaction instance must contain an identifier. The identifier enables
 				positive referencing the document instance for various purposes including
 				referencing between transactions that are part of the same process.</Description>
-         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-003</Reference>
          <Value type="EXAMPLE">TSR_1</Value>
       </Element>
-	     <Element cardinality="1..1">
+      <Element cardinality="1..1">
          <Term>cbc:IssueDate</Term>
          <Name>Issue Date</Name>
-         <Description>BEAst: The date when the Transportation Status Request was issued. Format = "YYYY-MM-DD". </Description>
-         <DataType>Date</DataType>
+         <Description>The date when the Transportation Status Request was issued. Format = "YYYY-MM-DD". </Description>
          <Reference type="BUSINESS_TERM">tir16-004</Reference>
          <Value type="EXAMPLE">2011-10-06</Value>
       </Element>
-	     <Element cardinality="1..1">
+      <Element cardinality="1..1">
          <Term>cbc:IssueTime</Term>
          <Name>Issue Time</Name>
-         <Description>BEAst: The time when the Transportation Status Request was issued. </Description>
-         <DataType>Time</DataType>
+         <Description>The time when the Transportation Status Request was issued. </Description>
          <Reference type="BUSINESS_TERM">tir16-005</Reference>
          <Reference type="RULE">PEPPOL-T123-R018</Reference>
          <Value type="EXAMPLE">09:29:30+02:00</Value>
       </Element>
-	     <Element cardinality="1..1">
+      <Element cardinality="1..1">
          <Term>cbc:ShippingOrderID</Term>
          <Name>Shipping Order ID </Name>
-         <Description>BEAst: An identifier (in the form of a reference number) of the Shipping Order or Forwarding Instruction associated with this shipment. </Description>
+         <Description>An identifier (in the form of a reference number) of the Shipping Order or Forwarding Instruction associated with this shipment. </Description>
          <Value type="EXAMPLE">KHN23-44044</Value>
          <Attribute usage="Optional">
             <Term>schemeID</Term>
             <Value type="EXAMPLE">zzz</Value>
          </Attribute>
       </Element>
-	     <Element cardinality="1..1">
+      <Element cardinality="1..1">
          <Term>cbc:TransportationStatusTypeCode</Term>
          <Name>Transportation Status Type Code</Name>
-         <Description>BEAst: The type of status being requested.</Description>
+         <Description>The type of status being requested.</Description>
          <Reference type="CODE_LIST">TransportationStatusTypeCode</Reference>
          <Value type="EXAMPLE">3</Value>
       </Element>
-	     <Element cardinality="1..1">
+      <Element cardinality="1..1">
          <Term>cac:SenderParty</Term>
          <Name>Sender party </Name>
-         <Description>BEAst: The party sending the Transportation Status Request. </Description>
+         <Description>The party sending the Transportation Status Request. </Description>
          <Element cardinality="1..1">
             <Term>cbc:EndpointID</Term>
             <Name>Sender party electronic address </Name>
-            <Description>BEAst: The endpoint for the sender party. </Description>
+            <Description>The endpoint for the sender party. </Description>
             <Value type="EXAMPLE">41955619</Value>
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Name>Scheme identifier</Name>
-               <Description>BEAst: Scheme identifier for electronic address</Description>
+               <Description>Scheme identifier for electronic address</Description>
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0198</Value>
             </Attribute>
@@ -94,7 +86,7 @@
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>Sender party identification </Name>
-            <Description>BEAst: An identifier for the sender party as known to the receiver party. </Description>
+            <Description>An identifier for the sender party as known to the receiver party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>ID </Name>
@@ -113,7 +105,7 @@
             <Element cardinality="1..1">
                <Term>cbc:Name</Term>
                <Name>Sender party name</Name>
-               <Description>BEAst: The name of the sender party. </Description>
+               <Description>The name of the sender party. </Description>
                <Reference type="RULE">PEPPOL-T126-R031</Reference>
                <Value type="EXAMPLE">Leman</Value>
             </Element>
@@ -121,41 +113,41 @@
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
             <Name>Postal address </Name>
-            <Description>BEAst: The postal address for the sender party. </Description>
+            <Description>The postal address for the sender party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1 </Name>
-               <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+               <Description>The main address line in a postal address usually the street name and number. </Description>
                <Value type="EXAMPLE">Ventrupvej 6</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2 </Name>
-               <Description>BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
                <Value type="EXAMPLE">Greve Landsby</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
                <Name>City </Name>
-               <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+               <Description>The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
                <Value type="EXAMPLE">Greve</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
                <Name>Post code </Name>
-               <Description>BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+               <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
                <Value type="EXAMPLE">2670</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
                <Name>Country sub entity </Name>
-               <Description>BEAst: For specifying a region, county, state, province etc. within a country by using text. </Description>
+               <Description>For specifying a region, county, state, province etc. within a country by using text. </Description>
                <Value type="EXAMPLE">Region Sjælland</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
                <Name>Address line 3 </Name>
-               <Description>BEAst: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+               <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                <Element>
                   <Term>cbc:Line</Term>
                   <Value type="EXAMPLE">Bygning 5</Value>
@@ -167,7 +159,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code </Name>
-                  <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                  <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                   <Reference type="CODE_LIST">ISO3166</Reference>
                   <Value type="EXAMPLE">DK</Value>
                </Element>
@@ -176,11 +168,11 @@
          <Element cardinality="0..1">
             <Term>cac:PartyTaxScheme</Term>
             <Name>Party tax scheme </Name>
-            <Description>BEAst: The tax information about the sender party. </Description>
+            <Description>The tax information about the sender party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:CompanyID</Term>
                <Name>Company ID </Name>
-               <Description>BEAst: The sender party value added tax identifer. </Description>
+               <Description>The sender party value added tax identifer. </Description>
                <Value type="EXAMPLE">GB325456788</Value>
             </Element>
             <Element cardinality="1..1">
@@ -189,7 +181,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Tax scheme identifier </Name>
-                  <Description>BEAst: Tax scheme identifier. E.g. "VAT" or "GST". </Description>
+                  <Description>Tax scheme identifier. E.g. "VAT" or "GST". </Description>
                   <Value type="EXAMPLE">VAT</Value>
                </Element>
             </Element>
@@ -200,18 +192,18 @@
             <Element cardinality="1..1">
                <Term>cbc:RegistrationName</Term>
                <Name>Sender party name</Name>
-               <Description>BEAst: The name of the sender party. </Description>
+               <Description>The name of the sender party. </Description>
                <Value type="EXAMPLE">Consortial</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CompanyID</Term>
                <Name>Sender parties legal registration name </Name>
-               <Description>BEAst: The official name of the party as registered with the relevant fiscal authority. </Description>
+               <Description>The official name of the party as registered with the relevant fiscal authority. </Description>
                <Value type="EXAMPLE">SC234567</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Scheme identifier </Name>
-                  <Description>BEAst: The identification scheme identifier of the sender partys legal registration identifier </Description>
+                  <Description>The identification scheme identifier of the sender partys legal registration identifier </Description>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0089</Value>
                </Attribute>
@@ -222,17 +214,17 @@
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
                   <Name>City name </Name>
-                  <Description>BEAst: The name of the city. </Description>
+                  <Description>The name of the city. </Description>
                   <Value type="EXAMPLE">Farthing</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cac:Country</Term>
                   <Name>Country </Name>
-                  <Description>BEAst: The residens country for the sender party. </Description>
+                  <Description>The residens country for the sender party. </Description>
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
-                     <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                     <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                      <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">GB</Value>
                   </Element>
@@ -242,40 +234,40 @@
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
             <Name>Contact </Name>
-            <Description>BEAst: The contact of the sender party. </Description>
+            <Description>The contact of the sender party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
-               <Description>BEAst: The contact name. </Description>
+               <Description>The contact name. </Description>
                <Value type="EXAMPLE">Mr Sender</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact telephone number </Name>
-               <Description>BEAst: The phone number of the contact. </Description>
+               <Description>The phone number of the contact. </Description>
                <Value type="EXAMPLE">0158 1233714</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address </Name>
-               <Description>BEAst: The electronic mail of the contact. </Description>
+               <Description>The electronic mail of the contact. </Description>
                <Value type="EXAMPLE">sender@consignor-company.co.uk</Value>
             </Element>
          </Element>
       </Element>
-	     <Element cardinality="1..1">
+      <Element cardinality="1..1">
          <Term>cac:ReceiverParty</Term>
          <Name>Receiver Party </Name>
-         <Description>BEAst: The party receiving the Transportation Status Request. </Description>
+         <Description>The party receiving the Transportation Status Request. </Description>
          <Element cardinality="1..1">
             <Term>cbc:EndpointID</Term>
             <Name>Receiver party electronic address </Name>
-            <Description>BEAst: The endpoint id for the receiver party. </Description>
+            <Description>The endpoint id for the receiver party. </Description>
             <Value type="EXAMPLE">10154596</Value>
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Name>Scheme identifier</Name>
-               <Description>BEAst: Scheme identifier for electronic address</Description>
+               <Description>Scheme identifier for electronic address</Description>
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0198</Value>
             </Attribute>
@@ -283,7 +275,7 @@
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>Receiver party identification </Name>
-            <Description>BEAst: An identifier for the sender party as known to the sender party. </Description>
+            <Description>An identifier for the sender party as known to the sender party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>ID</Name>
@@ -302,7 +294,7 @@
             <Element cardinality="1..1">
                <Term>cbc:Name</Term>
                <Name>Receiver party name </Name>
-               <Description>BEAst: The name of the receiver party. </Description>
+               <Description>The name of the receiver party. </Description>
                <Reference type="RULE">PEPPOL-T126-R032</Reference>
                <Value type="EXAMPLE">DHL Express</Value>
             </Element>
@@ -310,41 +302,41 @@
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
             <Name>Postal address </Name>
-            <Description>BEAst: The postal address for the receiver party. </Description>
+            <Description>The postal address for the receiver party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1 </Name>
-               <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+               <Description>The main address line in a postal address usually the street name and number. </Description>
                <Value type="EXAMPLE">Jydekrogen 14</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2 </Name>
-               <Description>BEAst: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
                <Value type="EXAMPLE">Indkørsel 5</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
                <Name>City </Name>
-               <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+               <Description>The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
                <Value type="EXAMPLE">Vallensbæk Landsby</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
                <Name>Post code </Name>
-               <Description>BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
+               <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code. </Description>
                <Value type="EXAMPLE">2625</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
                <Name>Country sub entity </Name>
-               <Description>BEAst: For specifying a region, county, state, province etc. within a country by using text. </Description>
+               <Description>For specifying a region, county, state, province etc. within a country by using text. </Description>
                <Value type="EXAMPLE">Region Hovedstaden</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
                <Name>Address line 3 </Name>
-               <Description>BEAst: An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+               <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
                   <Value type="EXAMPLE">Bygning 5</Value>
@@ -356,7 +348,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code </Name>
-                  <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                  <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                   <Reference type="CODE_LIST">ISO3166</Reference>
                   <Value type="EXAMPLE">DK</Value>
                </Element>
@@ -365,11 +357,11 @@
          <Element cardinality="0..1">
             <Term>cac:PartyTaxScheme</Term>
             <Name>Party tax scheme </Name>
-            <Description>BEAst: The tax information about the receiver party. </Description>
+            <Description>The tax information about the receiver party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:CompanyID</Term>
                <Name>Company ID </Name>
-               <Description>BEAst: The receiver party value added tax identifer. </Description>
+               <Description>The receiver party value added tax identifer. </Description>
                <Value type="EXAMPLE">GB325456788</Value>
             </Element>
             <Element cardinality="1..1">
@@ -378,7 +370,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Tax scheme identifier </Name>
-                  <Description>BEAst: Tax scheme identifier. E.g. "VAT" or "GST". </Description>
+                  <Description>Tax scheme identifier. E.g. "VAT" or "GST". </Description>
                   <Value type="EXAMPLE">VAT</Value>
                </Element>
             </Element>
@@ -386,22 +378,22 @@
          <Element cardinality="1..1">
             <Term>cac:PartyLegalEntity</Term>
             <Name>Party Legal Entity </Name>
-            <Description>BEAst: The party legal entity for the receiver party.</Description>
+            <Description>The party legal entity for the receiver party.</Description>
             <Element cardinality="1..1">
                <Term>cbc:RegistrationName</Term>
                <Name>Receiver party name</Name>
-               <Description>BEAst: The name of the receiver party. </Description>
+               <Description>The name of the receiver party. </Description>
                <Value type="EXAMPLE">Consortial</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CompanyID</Term>
                <Name>Receiver parties legal registration name </Name>
-               <Description>BEAst: The official name of the party as registered with the relevant fiscal authority. </Description>
+               <Description>The official name of the party as registered with the relevant fiscal authority. </Description>
                <Value type="EXAMPLE">SC234567</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Scheme identifier </Name>
-                  <Description>BEAst: The identification scheme identifier of the receiver parties legal registration identifier </Description>
+                  <Description>The identification scheme identifier of the receiver parties legal registration identifier </Description>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0089</Value>
                </Attribute>
@@ -412,17 +404,17 @@
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
                   <Name>City name </Name>
-                  <Description>BEAst: The name of the city. </Description>
+                  <Description>The name of the city. </Description>
                   <Value type="EXAMPLE">Farthing</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cac:Country</Term>
                   <Name>Country </Name>
-                  <Description>BEAst: The residens country for the receiver party. </Description>
+                  <Description>The residens country for the receiver party. </Description>
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
-                     <Description>BEAst: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
+                     <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation. </Description>
                      <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">GB</Value>
                   </Element>
@@ -432,74 +424,74 @@
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
             <Name>Contact </Name>
-            <Description>BEAst: The contact of the receiver party. </Description>
+            <Description>The contact of the receiver party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
-               <Description>BEAst: The contact name. </Description>
+               <Description>The contact name. </Description>
                <Value type="EXAMPLE">Mrs Receiver</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact telephone number </Name>
-               <Description>BEAst: The phone number of the contact. </Description>
+               <Description>The phone number of the contact. </Description>
                <Value type="EXAMPLE">0158 1233714</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address </Name>
-               <Description>BEAst: The electronic mail of the contact. </Description>
+               <Description>The electronic mail of the contact. </Description>
                <Value type="EXAMPLE">msreceiver@tplogistics.co.uk</Value>
             </Element>
          </Element>
       </Element>
-	     <Element cardinality="0..1">
+      <Element cardinality="0..1">
          <Term>cac:TransportExecutionPlanDocumentReference</Term>
          <Name>Additional document reference</Name>
-         <Description>BEAst: Reference to a Transport Execution Plan. </Description>
+         <Description>Reference to a Transport Execution Plan. </Description>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Identity of the reference</Name>
-            <Description>BEAst: The reference number of added document</Description>
+            <Description>The reference number of added document</Description>
             <Value type="EXAMPLE">7648779</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:IssueDate</Term>
             <Name>Issue Date</Name>
-            <Description>BEAst: The Issue Date when the Transport Execution Plan was issued </Description>
+            <Description>The Issue Date when the Transport Execution Plan was issued </Description>
             <Value type="EXAMPLE">2021-09-29</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:IssueTime</Term>
             <Name>Issue Time</Name>
-            <Description>BEAst: The Issue time when the Transport Execution Plan was issued </Description>
+            <Description>The Issue time when the Transport Execution Plan was issued </Description>
             <Value type="EXAMPLE">07:49:00+02:00</Value>
          </Element>
       </Element>
-	     <Element cardinality="0..1">
+      <Element cardinality="0..1">
          <Term>cac:Consignment</Term>
          <Name>Consignment information </Name>
-         <Description>BEAst: The consignment related to this Transportation Status.</Description>
+         <Description>The consignment related to this Transportation Status.</Description>
          <Element cardinality="1..1">
             <Term>cbc:ID</Term>
             <Name>Consignment identifier </Name>
-            <Description>BEAst: Id for the consignment, often a number from the transport service provider. </Description>
+            <Description>Id for the consignment, often a number from the transport service provider. </Description>
             <Value type="EXAMPLE">12535157654567654</Value>
          </Element>
          <Element cardinality="0..n">
             <Term>cac:TransportEvent</Term>
             <Name>Transport event </Name>
-            <Description>BEAst: A transport event in this consignment a status is requested for.</Description>
+            <Description>A transport event in this consignment a status is requested for.</Description>
             <Element cardinality="0..1">
                <Term>cbc:IdentificationID</Term>
                <Name>Identifier pickup transport event </Name>
-               <Description>BEAst: An identifier for this pickup transport event within an agreed event identification scheme. </Description>
+               <Description>An identifier for this pickup transport event within an agreed event identification scheme. </Description>
                <Value type="EXAMPLE">21412312412</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:TransportEventTypeCode</Term>
                <Name>Transport Event Type Code </Name>
-               <Description>BEAst: A code specifying the requested transport event type. </Description>
+               <Description>A code specifying the requested transport event type. </Description>
                <Reference type="CODE_LIST">TransportEventTypeCode</Reference>
                <Value type="EXAMPLE">1</Value>
             </Element>
@@ -507,11 +499,11 @@
          <Element cardinality="0..n">
             <Term>cac:TransportHandlingUnit</Term>
             <Name>Transport handling unit </Name>
-            <Description>BEAst: A transport handling unit from which a status is requested. </Description>
+            <Description>A transport handling unit from which a status is requested. </Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Identifier transport handling unit </Name>
-               <Description>BEAst: The SSCC identification code of this transport handling unit. </Description>
+               <Description>The SSCC identification code of this transport handling unit. </Description>
                <Value type="EXAMPLE">11111222222222</Value>
                <Attribute usage="Optional">
                   <Term>schemeID</Term>

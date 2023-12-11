@@ -8,75 +8,64 @@
    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
    <Document>
       <Term>ubl:WeightStatement</Term>
-	
-	
-	
-	
-	     <Element>
+      <Element>
          <Term>cbc:CustomizationID</Term>
          <Name>Specification identification</Name>
-         <Description>Peppol: Identifies the specification of content and rules that apply to the
+         <Description>Identifies the specification of content and rules that apply to the
 				transaction.</Description>
-         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-002</Reference>
          <Reference type="RULE">PEPPOL-T122-R001</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:trns:weight_statement:1</Value>
       </Element>
-	     <Element>
+      <Element>
          <Term>cbc:ProfileID</Term>
          <Name>Business process type identifier</Name>
-         <Description>Peppol: Identifies the BII profile or business process context in which the
+         <Description>Identifies the BII profile or business process context in which the
 				transaction appears.</Description>
-         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-001</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:weight_statement:1</Value>
       </Element>
-
-	     <Element cardinality="1..1">
+      <Element cardinality="1..1">
          <Term>cbc:ID</Term>
          <Name>Document identifier</Name>
-         <Description>Peppol: Unique identity identifying the Weight Statement. An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Description>
-         <DataType>Identifier</DataType>
+         <Description>Unique identity identifying the Weight Statement. An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Description>
          <Reference type="BUSINESS_TERM">tir16-003</Reference>
          <Value type="EXAMPLE">GOA294107</Value>
       </Element>
-	     <Element cardinality="1..1">
+      <Element cardinality="1..1">
          <Term>cbc:IssueDate</Term>
          <Name>Weight Statement issue date</Name>
-         <Description>Peppol: The date when the Weight Statement is issued. Format = "YYYY-MM-DD"</Description>
-         <DataType>Date</DataType>
+         <Description>The date when the Weight Statement is issued. Format = "YYYY-MM-DD"</Description>
          <Reference type="BUSINESS_TERM">tir16-004</Reference>
          <Value type="EXAMPLE">2016-11-03</Value>
       </Element>
-	     <Element cardinality="1..1">
+      <Element cardinality="1..1">
          <Term>cbc:IssueTime</Term>
          <Name>Weight Statement issue time</Name>
-         <Description>Peppol: The time when the Weight Statement is issued. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the document was issued should be assumed. </Description>
-         <DataType>Time</DataType>
+         <Description>The time when the Weight Statement is issued. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the document was issued should be assumed. </Description>
          <Reference type="BUSINESS_TERM">tir16-005</Reference>
          <Value type="EXAMPLE">09:30:00+01:00</Value>
       </Element>
-	     <Element>
+      <Element>
          <Term>cbc:WeightStatementTypeCode</Term>
          <Name>Weight Statement type code</Name>
-         <Description>Peppol: 01 = Outbound delivery 02 = Inbound delivery</Description>
+         <Description>01 = Outbound delivery 02 = Inbound delivery</Description>
          <Reference type="CODE_LIST">WeightStatementTypeCode</Reference>
          <Value type="EXAMPLE">01</Value>
       </Element>
-	
-	     <Element cardinality="1..1">
+      <Element cardinality="1..1">
          <Term>cac:SenderParty</Term>
          <Name>Sender Party</Name>
-         <Description>Peppol: The party sending this Weight Statement (e.g. Weighing Station, Shipper, Freight Forwarder, Carrier, ...).</Description>
+         <Description>The party sending this Weight Statement (e.g. Weighing Station, Shipper, Freight Forwarder, Carrier, ...).</Description>
          <Element cardinality="1..1">
             <Term>cbc:EndpointID</Term>
             <Name>Senders electronic address</Name>
-            <Description>Peppol: Identifies the senders partys electronic address</Description>
+            <Description>Identifies the senders partys electronic address</Description>
             <Value type="EXAMPLE">7300010000001</Value>
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Name>Scheme identifier</Name>
-               <Description>Peppol: Scheme identifier for electronic address</Description>
+               <Description>Scheme identifier for electronic address</Description>
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0088</Value>
             </Attribute>
@@ -84,17 +73,17 @@
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>Party Identification</Name>
-            <Description>Peppol: An identifier for this party.</Description>
+            <Description>An identifier for this party.</Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Sender party identity</Name>
-               <Description>Peppol: The identifier of the Sender party</Description>
+               <Description>The identifier of the Sender party</Description>
                <Reference type="RULE">PEPPOL-T122-R011</Reference>
                <Value type="EXAMPLE">7300010000001</Value>
                <Attribute usage="Mandatory">
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
-                  <Description>Peppol: Scheme identifier for party identification</Description>
+                  <Description>Scheme identifier for party identification</Description>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
@@ -113,35 +102,35 @@
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
             <Name>Postal address</Name>
-            <Description>Peppol: The address for the Sender.</Description>
+            <Description>The address for the Sender.</Description>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1</Name>
-               <Description>Peppol: The main address line in a postal address usually the street name and number.</Description>
+               <Description>The main address line in a postal address usually the street name and number.</Description>
                <Value type="EXAMPLE">Skogsgatan nr 1</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2</Name>
-               <Description>Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
+               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
                <Value type="EXAMPLE">Second entry</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
                <Name>City</Name>
-               <Description>Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
+               <Description>The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
                <Value type="EXAMPLE">Norrköping</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
                <Name>Post code</Name>
-               <Description>Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
+               <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
                <Value type="EXAMPLE">123 45</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
                <Name>Country subdivision</Name>
-               <Description>Peppol: For specifying a region, county, state, province etc. within a country by using text.</Description>
+               <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
                <Value type="EXAMPLE">NA</Value>
             </Element>
             <Element cardinality="0..1">
@@ -150,7 +139,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
                   <Name>Address line 3</Name>
-                  <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <Value type="EXAMPLE">To the right</Value>
                </Element>
             </Element>
@@ -160,7 +149,7 @@
                <Element>
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code</Name>
-                  <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
+                  <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
                   <Value type="EXAMPLE">SE</Value>
                </Element>
             </Element>
@@ -168,41 +157,40 @@
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
             <Name>Contact person name</Name>
-            <Description>Peppol: The contact of the Sender party.</Description>
+            <Description>The contact of the Sender party.</Description>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name</Name>
-               <Description>Peppol: The contact name.</Description>
+               <Description>The contact name.</Description>
                <Value type="EXAMPLE">Mats Svensson</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact telephone number</Name>
-               <Description>Peppol: The phone number of the contact.</Description>
+               <Description>The phone number of the contact.</Description>
                <Value type="EXAMPLE">0158 1233714</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address</Name>
-               <Description>Peppol: The electronic mail of the contact.</Description>
+               <Description>The electronic mail of the contact.</Description>
                <Value type="EXAMPLE">mats.svensson@senderab.se</Value>
             </Element>
          </Element>
       </Element>
-	
-	     <Element cardinality="1..1">
+      <Element cardinality="1..1">
          <Term>cac:ReceiverParty</Term>
          <Name>Receiver information</Name>
-         <Description>Peppol: The party receiving this Weight Statement (e.g. Carrier, Terminal Operator, ...).</Description>
+         <Description>The party receiving this Weight Statement (e.g. Carrier, Terminal Operator, ...).</Description>
          <Element cardinality="1..1">
             <Term>cbc:EndpointID</Term>
             <Name>Receiver electronic address</Name>
-            <Description>Peppol: Identifies the receivers partys electronic address</Description>
+            <Description>Identifies the receivers partys electronic address</Description>
             <Value type="EXAMPLE">1251513513245</Value>
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Name>Scheme identifier</Name>
-               <Description>Peppol: Scheme identifier for electronic address</Description>
+               <Description>Scheme identifier for electronic address</Description>
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0088</Value>
             </Attribute>
@@ -210,17 +198,17 @@
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>Party Identification</Name>
-            <Description>Peppol: An identifier for this party.</Description>
+            <Description>An identifier for this party.</Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Receiver identity</Name>
-               <Description>Peppol: The identifier of the receiver party</Description>
+               <Description>The identifier of the receiver party</Description>
                <Reference type="RULE">PEPPOL-T122-R012</Reference>
                <Value type="EXAMPLE">1251513513245</Value>
                <Attribute usage="Mandatory">
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
-                  <Description>Peppol: Scheme identifier for party identification</Description>
+                  <Description>Scheme identifier for party identification</Description>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
@@ -239,35 +227,35 @@
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
             <Name>Postal address</Name>
-            <Description>Peppol: The address for the Receiver.</Description>
+            <Description>The address for the Receiver.</Description>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1</Name>
-               <Description>Peppol: The main address line in a postal address usually the street name and number.</Description>
+               <Description>The main address line in a postal address usually the street name and number.</Description>
                <Value type="EXAMPLE">Byagatan nr 14</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2</Name>
-               <Description>Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
+               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
                <Value type="EXAMPLE">Second entry</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
                <Name>City</Name>
-               <Description>Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
+               <Description>The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
                <Value type="EXAMPLE">Norrköping</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
                <Name>Post code</Name>
-               <Description>Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
+               <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
                <Value type="EXAMPLE">123 45</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
                <Name>Country subdivision</Name>
-               <Description>Peppol: For specifying a region, county, state, province etc. within a country by using text.</Description>
+               <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
                <Value type="EXAMPLE">NA</Value>
             </Element>
             <Element cardinality="0..1">
@@ -276,7 +264,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
                   <Name>Address line 3</Name>
-                  <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <Value type="EXAMPLE">To the left</Value>
                </Element>
             </Element>
@@ -286,7 +274,7 @@
                <Element>
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code</Name>
-                  <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
+                  <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
                   <Value type="EXAMPLE">SE</Value>
                </Element>
             </Element>
@@ -294,48 +282,47 @@
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
             <Name>Contact person name</Name>
-            <Description>Peppol: The contact of the Sender party.</Description>
+            <Description>The contact of the Sender party.</Description>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name</Name>
-               <Description>Peppol: The contact name.</Description>
+               <Description>The contact name.</Description>
                <Value type="EXAMPLE">Nils Johansson</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact telephone number</Name>
-               <Description>Peppol: The phone number of the contact.</Description>
+               <Description>The phone number of the contact.</Description>
                <Value type="EXAMPLE">0158 1236543</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address</Name>
-               <Description>Peppol: The electronic mail of the contact.</Description>
+               <Description>The electronic mail of the contact.</Description>
                <Value type="EXAMPLE">nils.johansson@receiverab.se</Value>
             </Element>
          </Element>
       </Element>
-	
-	     <Element cardinality="1..1">
+      <Element cardinality="1..1">
          <Term>cac:WeighingParty</Term>
          <Name>Weighing party information</Name>
-         <Description>Peppol: The party executing the weight measure (e.g. Weighing Station).</Description>
+         <Description>The party executing the weight measure (e.g. Weighing Station).</Description>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>Party Identification</Name>
-            <Description>Peppol: An identifier for this party.</Description>
+            <Description>An identifier for this party.</Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Weighing party identity</Name>
-               <Description>Peppol: The identifier of the Weighing party</Description>
+               <Description>The identifier of the Weighing party</Description>
                <Reference type="RULE">PEPPOL-T122-R013</Reference>
                <Value type="EXAMPLE">5790000435951</Value>
                <Attribute usage="Mandatory">
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
-                  <Description>Peppol: Scheme identifier for party identification</Description>
+                  <Description>Scheme identifier for party identification</Description>
                   <Reference type="CODE_LIST">ICD</Reference>
-                  <Value type="EXAMPLE">00</Value>
+                  <Value type="EXAMPLE">0088</Value>
                </Attribute>
             </Element>
          </Element>
@@ -345,65 +332,43 @@
             <Element cardinality="1..1">
                <Term>cbc:Name</Term>
                <Name>Weighing party name</Name>
-               <Description>Peppol: The name of the weighing party</Description>
+               <Description>The name of the weighing party</Description>
                <Reference type="RULE">PEPPOL-T122-R013</Reference>
                <Value type="EXAMPLE">Gravel Pit Ltd.</Value>
-            </Element>
-         </Element>
-         <Element>
-            <Term>cac:PhysicalLocation</Term>
-            <Name>Physical Location</Name>
-            <Description>Peppol: The physical location of this party.</Description>
-            <Element cardinality="0..1">
-               <Term>cbc:ID</Term>
-               <Name>Physical Location ID</Name>
-               <Description>Peppol: Unique ID of the site for the weighing party. If possile an ID that is issued by a authority or similar.</Description>
-               <Reference type="RULE">PEPPOL-T122-R010</Reference>
-               <Value type="EXAMPLE">0114-40-019-a</Value>
-               <Attribute usage="Optional">
-                  <Term>schemeID</Term>
-               </Attribute>
-            </Element>
-            <Element cardinality="0..1">
-               <Term>cbc:Name</Term>
-               <Name>Location name</Name>
-               <Description>Peppol: Physical location name</Description>
-               <Reference type="RULE">PEPPOL-T122-R010</Reference>
-               <Value type="EXAMPLE">Townsend pit</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
             <Name>Postal address</Name>
-            <Description>Peppol: The address for the Weighing party.</Description>
+            <Description>The address for the Weighing party.</Description>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1</Name>
-               <Description>Peppol: The main address line in a postal address usually the street name and number.</Description>
+               <Description>The main address line in a postal address usually the street name and number.</Description>
                <Value type="EXAMPLE">Byagatan nr 14</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2</Name>
-               <Description>Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
+               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
                <Value type="EXAMPLE">Second entry</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
                <Name>City</Name>
-               <Description>Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
+               <Description>The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
                <Value type="EXAMPLE">Norrköping</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
                <Name>Post code</Name>
-               <Description>Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
+               <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
                <Value type="EXAMPLE">123 45</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
                <Name>Country subdivision</Name>
-               <Description>Peppol: For specifying a region, county, state, province etc. within a country by using text.</Description>
+               <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
                <Value type="EXAMPLE">NA</Value>
             </Element>
             <Element cardinality="0..1">
@@ -412,7 +377,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
                   <Name>Address line 3</Name>
-                  <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <Value type="EXAMPLE">To the left</Value>
                </Element>
             </Element>
@@ -422,53 +387,74 @@
                <Element>
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code</Name>
-                  <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
+                  <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
                   <Value type="EXAMPLE">SE</Value>
                </Element>
+            </Element>
+         </Element>
+         <Element>
+            <Term>cac:PhysicalLocation</Term>
+            <Name>Physical Location</Name>
+            <Description>The physical location of this party.</Description>
+            <Element cardinality="0..1">
+               <Term>cbc:ID</Term>
+               <Name>Physical Location ID</Name>
+               <Description>Unique ID of the site for the weighing party. If possile an ID that is issued by a authority or similar.</Description>
+               <Reference type="RULE">PEPPOL-T122-R010</Reference>
+               <Value type="EXAMPLE">0114-40-019-a</Value>
+               <Attribute usage="Optional">
+                  <Term>schemeID</Term>
+               </Attribute>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:Name</Term>
+               <Name>Location name</Name>
+               <Description>Physical location name</Description>
+               <Reference type="RULE">PEPPOL-T122-R010</Reference>
+               <Value type="EXAMPLE">Townsend pit</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
             <Name>Contact person name</Name>
-            <Description>Peppol: The contact of the Sender party.</Description>
+            <Description>The contact of the Sender party.</Description>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name</Name>
-               <Description>Peppol: The contact name.</Description>
+               <Description>The contact name.</Description>
                <Value type="EXAMPLE">Nils Johansson</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact telephone number</Name>
-               <Description>Peppol: The phone number of the contact.</Description>
+               <Description>The phone number of the contact.</Description>
                <Value type="EXAMPLE">0158 1236543</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address</Name>
-               <Description>Peppol: The electronic mail of the contact.</Description>
+               <Description>The electronic mail of the contact.</Description>
                <Value type="EXAMPLE">nils.johansson@receiverab.se</Value>
             </Element>
          </Element>
       </Element>
-	
-	     <Element cardinality="0..1">
+      <Element cardinality="0..1">
          <Term>cac:ShipperParty</Term>
          <Name>Shipper Party</Name>
-         <Description>Peppol: The party transporting or shipping the items.</Description>
+         <Description>The party transporting or shipping the items.</Description>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>Party Identification</Name>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Shipping party identity</Name>
-               <Description>Peppol: The identifier of the shippping party</Description>
+               <Description>The identifier of the shippping party</Description>
                <Reference type="RULE">PEPPOL-T122-R014</Reference>
                <Value type="EXAMPLE">5790000435951</Value>
                <Attribute usage="Mandatory">
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
-                  <Description>Peppol: Scheme identifier for party identification</Description>
+                  <Description>Scheme identifier for party identification</Description>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
@@ -480,7 +466,7 @@
             <Element cardinality="1..1">
                <Term>cbc:Name</Term>
                <Name>Shipper name</Name>
-               <Description>Peppol: The name of the shipper</Description>
+               <Description>The name of the shipper</Description>
                <Reference type="RULE">PEPPOL-T122-R014</Reference>
                <Value type="EXAMPLE">Tony's Trucks and Transport</Value>
             </Element>
@@ -488,35 +474,35 @@
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
             <Name>Postal address</Name>
-            <Description>Peppol: The address for the Shipper party.</Description>
+            <Description>The address for the Shipper party.</Description>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1</Name>
-               <Description>Peppol: The main address line in a postal address usually the street name and number.</Description>
+               <Description>The main address line in a postal address usually the street name and number.</Description>
                <Value type="EXAMPLE">Skogsgatan nr 1</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Address line 2</Name>
-               <Description>Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
+               <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
                <Value type="EXAMPLE">Second entry</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
                <Name>City</Name>
-               <Description>Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
+               <Description>The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
                <Value type="EXAMPLE">Norrköping</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
                <Name>Post code</Name>
-               <Description>Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
+               <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
                <Value type="EXAMPLE">123 45</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
                <Name>Country subdivision</Name>
-               <Description>Peppol: For specifying a region, county, state, province etc. within a country by using text.</Description>
+               <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
                <Value type="EXAMPLE">NA</Value>
             </Element>
             <Element cardinality="0..1">
@@ -525,7 +511,7 @@
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
                   <Name>Address line 3</Name>
-                  <Description>Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <Value type="EXAMPLE">To the right</Value>
                </Element>
             </Element>
@@ -535,7 +521,7 @@
                <Element>
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code</Name>
-                  <Description>Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
+                  <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
                   <Value type="EXAMPLE">SE</Value>
                </Element>
             </Element>
@@ -543,56 +529,55 @@
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
             <Name>Contact person name</Name>
-            <Description>Peppol: The contact of the Sender party.</Description>
+            <Description>The contact of the Sender party.</Description>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name</Name>
-               <Description>Peppol: The contact name.</Description>
+               <Description>The contact name.</Description>
                <Value type="EXAMPLE">Mats Svensson</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Telephone</Term>
                <Name>Contact telephone number</Name>
-               <Description>Peppol: The phone number of the contact.</Description>
+               <Description>The phone number of the contact.</Description>
                <Value type="EXAMPLE">0158 1233714</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ElectronicMail</Term>
                <Name>Contact email address</Name>
-               <Description>Peppol: The electronic mail of the contact.</Description>
+               <Description>The electronic mail of the contact.</Description>
                <Value type="EXAMPLE">mats.svensson@senderab.se</Value>
             </Element>
          </Element>
       </Element>
-	
-	     <Element cardinality="1..1">
+      <Element cardinality="1..1">
          <Term>cac:Shipment</Term>
          <Name>Shipment information</Name>
          <Element cardinality="1..1">
             <Term>cbc:ID</Term>
             <Name>Shipment identity</Name>
-            <Description>Peppol: Use NA if no specific shipment ID is available</Description>
+            <Description>Use NA if no specific shipment ID is available</Description>
             <Reference type="BUSINESS_TERM">tir16-038</Reference>
             <Value type="EXAMPLE">NA</Value>
          </Element>
          <Element cardinality="1..n">
             <Term>cac:GoodsItem</Term>
             <Name>Goods Item</Name>
-            <Description>Peppol: A goods item included in this shipment.</Description>
+            <Description>A goods item included in this shipment.</Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Line item identifier</Name>
-               <Description>Peppol: Identifies the Line Item assigned by the weighing partner, the identifier must be unique within the order</Description>
+               <Description>Identifies the Line Item assigned by the weighing partner, the identifier must be unique within the order</Description>
                <Value type="EXAMPLE">1</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:Item</Term>
                <Name>Item</Name>
-               <Description>Peppol: Product information relating to a goods item</Description>
+               <Description>Product information relating to a goods item</Description>
                <Element cardinality="1..1">
                   <Term>cbc:Name</Term>
                   <Name>Item name</Name>
-                  <Description>Peppol: Name of weighed item</Description>
+                  <Description>Name of weighed item</Description>
                   <Value type="EXAMPLE">Sortering 0/2 mm krossat bergmaterial CE-märkt enligt system 2+ för användning till asfalt.</Value>
                </Element>
                <Element cardinality="0..1">
@@ -601,7 +586,7 @@
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Buyers item identifier</Name>
-                     <Description>Peppol: An identifier, assigned by the buyer, for the item. Associates the item with its identification according to the buyers system.</Description>
+                     <Description>An identifier, assigned by the buyer, for the item. Associates the item with its identification according to the buyers system.</Description>
                      <Value type="EXAMPLE">KO2001030300</Value>
                   </Element>
                </Element>
@@ -611,7 +596,7 @@
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>The Sellers item identifier</Name>
-                     <Description>Peppol: An identifier, assigned by the seller, for the item. Associates the item with its identification according to the sellers system.</Description>
+                     <Description>An identifier, assigned by the seller, for the item. Associates the item with its identification according to the sellers system.</Description>
                      <Reference type="RULE">PEPPOL-T122-R003</Reference>
                      <Value type="EXAMPLE">17589683</Value>
                   </Element>
@@ -622,13 +607,13 @@
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Item standard identifier</Name>
-                     <Description>Peppol: Global Trade Item Number (GTIN) or other standardized identification. Associates the item with its identification according to a standard system.</Description>
+                     <Description>Global Trade Item Number (GTIN) or other standardized identification. Associates the item with its identification according to a standard system.</Description>
                      <Reference type="RULE">PEPPOL-T122-R003</Reference>
                      <Value type="EXAMPLE">1234567891234</Value>
                      <Attribute usage="Mandatory">
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
-                        <Description>Peppol: The identification scheme identifier of the Item standard identifier</Description>
+                        <Description>The identification scheme identifier of the Item standard identifier</Description>
                         <Value type="EXAMPLE">0160</Value>
                      </Attribute>
                   </Element>
@@ -636,29 +621,29 @@
                <Element cardinality="0..n">
                   <Term>cac:CommodityClassification</Term>
                   <Name>Commodity classification</Name>
-                  <Description>Peppol: To classify when an item number is not sufficient.</Description>
+                  <Description>To classify when an item number is not sufficient.</Description>
                   <Element cardinality="1..1">
                      <Term>cbc:ItemClassificationCode</Term>
                      <Name>Item classification code</Name>
-                     <Description>Peppol: A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
+                     <Description>A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
                      <Value type="EXAMPLE">KO2012140200</Value>
                      <Attribute usage="Mandatory">
                         <Term>listID</Term>
                         <Name>Item classification identifier identification scheme identifier</Name>
-                        <Description>Peppol: The identification scheme identifier of the Item classification identifier.</Description>
+                        <Description>The identification scheme identifier of the Item classification identifier.</Description>
                         <Reference type="CODE_LIST">UNCL7143</Reference>
                         <Value type="EXAMPLE">ZZZ</Value>
                      </Attribute>
                      <Attribute usage="Optional">
                         <Term>listVersionID</Term>
                         <Name>Item classification identifier version identification scheme identifier</Name>
-                        <Description>Peppol: The identification scheme version identifier of the Item classification identifier</Description>
+                        <Description>The identification scheme version identifier of the Item classification identifier</Description>
                         <Value type="EXAMPLE">4.0</Value>
                      </Attribute>
                      <Attribute usage="Optional">
                         <Term>name</Term>
                         <Name>Clear text name equivalent of classification code</Name>
-                        <Description>Peppol: The textual equivalent of the code value</Description>
+                        <Description>The textual equivalent of the code value</Description>
                         <Value type="EXAMPLE">SBMI</Value>
                      </Attribute>
                   </Element>
@@ -667,23 +652,23 @@
             <Element cardinality="1..n">
                <Term>cac:MeasurementDimension</Term>
                <Name>Measurement Dimension</Name>
-               <Description>Peppol: Used to specify weight and/or volume of the Goods Item.</Description>
+               <Description>Used to specify weight and/or volume of the Goods Item.</Description>
                <Element cardinality="1..1">
                   <Term>cbc:AttributeID</Term>
                   <Name>Attribute identifier</Name>
-                  <Description>Peppol: To describe the type of measurement. Use UNCL 6313 subset.</Description>
+                  <Description>To describe the type of measurement. Use UNCL 6313 subset.</Description>
                   <Reference type="CODE_LIST">UNCL6313-T122</Reference>
                   <Value type="EXAMPLE">AAF</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cbc:Measure</Term>
                   <Name>Measure</Name>
-                  <Description>Peppol: For the measure.</Description>
+                  <Description>For the measure.</Description>
                   <Value type="EXAMPLE">12.3</Value>
                   <Attribute>
                      <Term>unitCode</Term>
                      <Name>Measure unit of measure</Name>
-                     <Description>Peppol: The unit of measure that applies to the measure.</Description>
+                     <Description>The unit of measure that applies to the measure.</Description>
                      <Reference type="CODE_LIST">UNECERec20</Reference>
                      <Value type="EXAMPLE">TNE</Value>
                   </Attribute>
