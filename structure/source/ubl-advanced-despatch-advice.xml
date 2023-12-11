@@ -418,7 +418,9 @@
 		
 		
 		<cac:Consignment>
-			<cbc:ID></cbc:ID>
+			<cbc:ID>
+				<?DescriptionAddFirst Use NA if there is no clear identity on the consignment. ?>
+			</cbc:ID>
 			<cbc:HazardousRiskIndicator></cbc:HazardousRiskIndicator>
 			<cbc:HandlingCode listID="">
 				<?DescriptionAddFirst Code to specify additional service from the transport company (T6466) where unique codes per transport company will be used, 
@@ -496,11 +498,14 @@
 				<cbc:TransportServiceCode></cbc:TransportServiceCode>
 				
 				<cac:TransportEquipment>
-					<cbc:TransportEquipmentTypeCode listID="" listAgencyID="" listVersionID=""></cbc:TransportEquipmentTypeCode>
+					<cbc:TransportEquipmentTypeCode listID="" listAgencyID="" listVersionID="">
+						<?DescriptionAddFirst Pick your value from Boverket's Climate database. ?>
+					</cbc:TransportEquipmentTypeCode>
 					<cbc:Description></cbc:Description>
 					<cac:MeasurementDimension>
 						<cbc:AttributeID>
-							<?DescriptionAddFirst EnergyContent = T6428, ConversionFactor = T6429, FuelConsumption = T6374, DrivingDistance = T6380, DrivingTime = T6381, FuelMeasurementMethod = T6728, EngineType = T6379, RenewableFuel = T6382. ?>
+							<?DescriptionAddFirst EnergyContent = T6428, ConversionFactor = T6429, FuelConsumption = T6374, DrivingDistance = T6380, DrivingTime = T6381, FuelMeasurementMethod = T6728, EngineType = T6379, RenewableFuel = T6382.
+							One of DrivingDistance and Driving time must be provided. If both are available, both should be sent.?>
 						</cbc:AttributeID>
 						<cbc:Measure unitCode="">
 							<?unitCode-DescriptionAddFirst unitCode refers to T6706. ?>
@@ -550,7 +555,7 @@
 				</cac:AirTransport>
 				<cac:RoadTransport>
 					<cbc:LicensePlateID>
-						<?DescriptionAddFirst Used for Transport Information (T6008). ?>
+						<?DescriptionAddFirst Used for Transport Information (T6008). In case there is no License Plate ID, as for machines, use the manufacturer's model number together with the machine-number. ?>
 					</cbc:LicensePlateID>
 				</cac:RoadTransport>
 				<cac:RailTransport>
@@ -845,7 +850,7 @@
 		
 		<cac:OrderLineReference>
 			<cbc:LineID>
-				<?DescriptionAddFirst Calloff Line Reference (T6336)/Reference to Order Line (T3322) ?>
+				<?DescriptionAddFirst Calloff Line Reference (T6336)/Reference to Order Line (T3322). Use NA if this is not available. ?>
 			</cbc:LineID>
 			<cbc:SalesOrderLineID>
 				<?DescriptionAddFirst The sellers orderline number (T6462). ?>
