@@ -32,7 +32,7 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     -s:$POACCBASEURL/ubl-order.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-order.xml 
-   # varOverrideSample=/src/structure/source/ubl-order.xml -ext:on --allow-external-functions:on
+    varOverrideSample=/src/structure/source/ubl-order.xml -ext:on --allow-external-functions:on
 
 echo "Generating documentation: Order response"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
@@ -48,19 +48,19 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     -o:/src/structure/syntax/ubl-orderagreement.xml \
     varOverrideSample=/src/structure/source/ubl-orderagreement.xml -ext:on --allow-external-functions:on
 
-#echo "Generating documentation: Catalogue"
-#docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-#    -s:$POACCBASEURL/ubl-catalogue.xml \
-#    -xsl:/src/tools/create-syntax.xsl \
-#    -o:/src/structure/syntax/ubl-catalogue.xml \
-#    varOverrideSample=/src/structure/source/ubl-catalogue.xml -ext:on --allow-external-functions:on
+echo "Generating documentation: Catalogue"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:$POACCBASEURL/ubl-catalogue.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-catalogue.xml \
+    varOverrideSample=/src/structure/source/ubl-catalogue.xml -ext:on --allow-external-functions:on
 
 echo "Generating documentation: Advanced Despatch advice"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
     -s:$LOGISTICSBASEURL/ubl-advanced-despatch-advice.xml \
     -xsl:/src/tools/create-syntax.xsl \
-    -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml
-    # varOverrideSample=/src/structure/source/ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
+    -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml \
+     varOverrideSample=/src/structure/source/ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
 
  #   docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform \
  #   -s:/src/structure/source/ubl-advanced-despatch-advice.xml \
