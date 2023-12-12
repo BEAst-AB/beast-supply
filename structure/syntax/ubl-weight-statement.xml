@@ -13,6 +13,7 @@
          <Name>Specification identification</Name>
          <Description>Identifies the specification of content and rules that apply to the
 				transaction.</Description>
+         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-002</Reference>
          <Reference type="RULE">PEPPOL-T122-R001</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:trns:weight_statement:1</Value>
@@ -22,6 +23,7 @@
          <Name>Business process type identifier</Name>
          <Description>Identifies the BII profile or business process context in which the
 				transaction appears.</Description>
+         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-001</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:weight_statement:1</Value>
       </Element>
@@ -29,6 +31,7 @@
          <Term>cbc:ID</Term>
          <Name>Document identifier</Name>
          <Description>Unique identity identifying the Weight Statement. An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Description>
+         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-003</Reference>
          <Value type="EXAMPLE">GOA294107</Value>
       </Element>
@@ -36,6 +39,7 @@
          <Term>cbc:IssueDate</Term>
          <Name>Weight Statement issue date</Name>
          <Description>The date when the Weight Statement is issued. Format = "YYYY-MM-DD"</Description>
+         <DataType>Date</DataType>
          <Reference type="BUSINESS_TERM">tir16-004</Reference>
          <Value type="EXAMPLE">2016-11-03</Value>
       </Element>
@@ -43,6 +47,7 @@
          <Term>cbc:IssueTime</Term>
          <Name>Weight Statement issue time</Name>
          <Description>The time when the Weight Statement is issued. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the document was issued should be assumed. </Description>
+         <DataType>Time</DataType>
          <Reference type="BUSINESS_TERM">tir16-005</Reference>
          <Value type="EXAMPLE">09:30:00+01:00</Value>
       </Element>

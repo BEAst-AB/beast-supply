@@ -117,7 +117,7 @@
                <Data ss:Type="String">Specification identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Identifies the specification of content and rules that apply to the transaction.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">urn:fdc:peppol.eu:logistics:trns:transportation_status_request:1</Data>
@@ -169,7 +169,7 @@
                <Data ss:Type="String">Document identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">TSR_1</Data>
@@ -328,7 +328,7 @@
                <Data ss:Type="String">The party sending the Transportation Status Request.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">41955619 7300010000001 Leman Ventrupvej 6 Greve Landsby Greve 2670 Region Sjælland Bygning 5 DK GB325456788 VAT Consortial SC234567 Farthing GB Mr Sender 0158 1233714 sender@consignor-company.co.uk</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty</Data>
@@ -406,7 +406,7 @@
                <Data ss:Type="String">An identifier for the sender party as known to the receiver party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyIdentification</Data>
@@ -484,7 +484,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Leman</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyName</Data>
@@ -536,7 +536,7 @@
                <Data ss:Type="String">The postal address for the sender party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Ventrupvej 6 Greve Landsby Greve 2670 Region Sjælland Bygning 5 DK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PostalAddress</Data>
@@ -692,7 +692,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Bygning 5</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PostalAddress/cac:AddressLine</Data>
@@ -744,7 +744,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">DK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PostalAddress/cac:Country</Data>
@@ -796,7 +796,7 @@
                <Data ss:Type="String">The tax information about the sender party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">GB325456788 VAT</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyTaxScheme</Data>
@@ -848,7 +848,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">VAT</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyTaxScheme/cac:TaxScheme</Data>
@@ -900,7 +900,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Consortial SC234567 Farthing GB</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyLegalEntity</Data>
@@ -1004,7 +1004,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Farthing GB</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyLegalEntity/cac:RegistrationAddress</Data>
@@ -1056,7 +1056,7 @@
                <Data ss:Type="String">The residens country for the sender party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">GB</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyLegalEntity/cac:RegistrationAddress/cac:Country</Data>
@@ -1108,7 +1108,7 @@
                <Data ss:Type="String">The contact of the sender party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Mr Sender 0158 1233714 sender@consignor-company.co.uk</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:Contact</Data>
@@ -1212,7 +1212,7 @@
                <Data ss:Type="String">The party receiving the Transportation Status Request.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">10154596 7300010000001 DHL Express Jydekrogen 14 Indkørsel 5 Vallensbæk Landsby 2625 Region Hovedstaden Bygning 5 DK GB325456788 VAT Consortial SC234567 Farthing GB Mrs Receiver 0158 1233714 msreceiver@tplogistics.co.uk</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty</Data>
@@ -1290,7 +1290,7 @@
                <Data ss:Type="String">An identifier for the sender party as known to the sender party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyIdentification</Data>
@@ -1368,7 +1368,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">DHL Express</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyName</Data>
@@ -1420,7 +1420,7 @@
                <Data ss:Type="String">The postal address for the receiver party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Jydekrogen 14 Indkørsel 5 Vallensbæk Landsby 2625 Region Hovedstaden Bygning 5 DK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PostalAddress</Data>
@@ -1576,7 +1576,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Bygning 5</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PostalAddress/cac:AddressLine</Data>
@@ -1628,7 +1628,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">DK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PostalAddress/cac:Country</Data>
@@ -1680,7 +1680,7 @@
                <Data ss:Type="String">The tax information about the receiver party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">GB325456788 VAT</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyTaxScheme</Data>
@@ -1732,7 +1732,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">VAT</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyTaxScheme/cac:TaxScheme</Data>
@@ -1784,7 +1784,7 @@
                <Data ss:Type="String">The party legal entity for the receiver party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Consortial SC234567 Farthing GB</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyLegalEntity</Data>
@@ -1888,7 +1888,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Farthing GB</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyLegalEntity/cac:RegistrationAddress</Data>
@@ -1940,7 +1940,7 @@
                <Data ss:Type="String">The residens country for the receiver party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">GB</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyLegalEntity/cac:RegistrationAddress/cac:Country</Data>
@@ -1992,7 +1992,7 @@
                <Data ss:Type="String">The contact of the receiver party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Mrs Receiver 0158 1233714 msreceiver@tplogistics.co.uk</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:Contact</Data>
@@ -2096,7 +2096,7 @@
                <Data ss:Type="String">Reference to a Transport Execution Plan.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">7648779 2021-09-29 07:49:00+02:00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:TransportExecutionPlanDocumentReference</Data>
@@ -2200,7 +2200,7 @@
                <Data ss:Type="String">The consignment related to this Transportation Status.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">12535157654567654 21412312412 1 11111222222222</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:Consignment</Data>
@@ -2252,7 +2252,7 @@
                <Data ss:Type="String">A transport event in this consignment a status is requested for.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">21412312412 1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:Consignment/cac:TransportEvent</Data>
@@ -2330,7 +2330,7 @@
                <Data ss:Type="String">A transport handling unit from which a status is requested.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">11111222222222</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:Consignment/cac:TransportHandlingUnit</Data>

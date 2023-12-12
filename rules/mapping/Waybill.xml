@@ -117,7 +117,7 @@
                <Data ss:Type="String">Specification identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Identifies the specification of content and rules that apply to the transaction.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">urn:fdc:peppol.eu:logistics:trns:waybill:1</Data>
@@ -169,7 +169,7 @@
                <Data ss:Type="String">Document identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">KHN23-44044-1</Data>
@@ -328,7 +328,7 @@
                <Data ss:Type="String">The party sending the goods in the Waybill, often the issuer of the Waybill.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">13246149 7300010000001 Novo Nordisk Pharmatech A/S Københavnsvej 216 Purchasing Køge 4600 Heremouthshire Gate 34 DK Novo Nordisk Pharmatech A/S 13246149 Køge DK Mr Sender 0158 1233714 sender@consignor-company.co.uk</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ConsignorParty</Data>
@@ -406,7 +406,7 @@
                <Data ss:Type="String">An identifier for the consignor party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ConsignorParty/cac:PartyIdentification</Data>
@@ -484,7 +484,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Novo Nordisk Pharmatech A/S</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ConsignorParty/cac:PartyName</Data>
@@ -536,7 +536,7 @@
                <Data ss:Type="String">The postal address of the consignor party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Københavnsvej 216 Purchasing Køge 4600 Heremouthshire Gate 34 DK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ConsignorParty/cac:PostalAddress</Data>
@@ -692,7 +692,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Gate 34</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ConsignorParty/cac:PostalAddress/cac:AddressLine</Data>
@@ -744,7 +744,7 @@
                <Data ss:Type="String">The country of the address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">DK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ConsignorParty/cac:PostalAddress/cac:Country</Data>
@@ -796,7 +796,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Novo Nordisk Pharmatech A/S 13246149 Køge DK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ConsignorParty/cac:PartyLegalEntity</Data>
@@ -900,7 +900,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Køge DK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ConsignorParty/cac:PartyLegalEntity/cac:RegistrationAddress</Data>
@@ -952,7 +952,7 @@
                <Data ss:Type="String">The residens country for the consignor party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">DK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ConsignorParty/cac:PartyLegalEntity/cac:RegistrationAddress/cac:Country</Data>
@@ -1004,7 +1004,7 @@
                <Data ss:Type="String">The contact of the consignor party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Mr Sender 0158 1233714 sender@consignor-company.co.uk</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:ConsignorParty/cac:Contact</Data>
@@ -1108,7 +1108,7 @@
                <Data ss:Type="String">The carrier party responsible for this Waybill.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">0108023-3 7300010000001 Finnair Oyj Tietotie 9 Purchasing Vantaa 4600 Heremouthshire Gate 34 FI Leman 0108023-3 Vantaa FI Mrs Bouquet 0158 1233714 bouquet@fpconsortial.co.uk 45642323 ID06</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty</Data>
@@ -1186,7 +1186,7 @@
                <Data ss:Type="String">An identifier for the Carrier party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:PartyIdentification</Data>
@@ -1264,7 +1264,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Finnair Oyj</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:PartyName</Data>
@@ -1316,7 +1316,7 @@
                <Data ss:Type="String">The postal address of the carrier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Tietotie 9 Purchasing Vantaa 4600 Heremouthshire Gate 34 FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:PostalAddress</Data>
@@ -1472,7 +1472,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Gate 34</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:PostalAddress/cac:AddressLine</Data>
@@ -1524,7 +1524,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:PostalAddress/cac:Country</Data>
@@ -1576,7 +1576,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Leman 0108023-3 Vantaa FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:PartyLegalEntity</Data>
@@ -1680,7 +1680,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Vantaa FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:PartyLegalEntity/cac:RegistrationAddress</Data>
@@ -1732,7 +1732,7 @@
                <Data ss:Type="String">The residens country for the carrier party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:PartyLegalEntity/cac:RegistrationAddress/cac:Country</Data>
@@ -1784,7 +1784,7 @@
                <Data ss:Type="String">The contact of the Carrier party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Mrs Bouquet 0158 1233714 bouquet@fpconsortial.co.uk</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:Contact</Data>
@@ -1888,7 +1888,7 @@
                <Data ss:Type="String">The driver or master person for the carrier party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">45642323 ID06</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:Person</Data>
@@ -1914,7 +1914,7 @@
                <Data ss:Type="String">Reference to an identity of the driver or master person.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">45642323 ID06</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:CarrierParty/cac:Person/cac:IdentityDocumentReference</Data>
@@ -1992,7 +1992,7 @@
                <Data ss:Type="String">The party responsible for organizing the shipment, often known as the integrator</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">7300010000001 Finnair Oyj Tietotie 9 Purchasing Vantaa 4600 Heremouthshire Gate 34 FI Leman 0108023-3 Vantaa FI Mr Sender 0158 1233714 sender@forwarder-company.se</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty</Data>
@@ -2018,7 +2018,7 @@
                <Data ss:Type="String">An identifier for the Freight Forwarder party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:PartyIdentification</Data>
@@ -2096,7 +2096,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Finnair Oyj</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:PartyName</Data>
@@ -2148,7 +2148,7 @@
                <Data ss:Type="String">The postal address of the freight forwarder.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Tietotie 9 Purchasing Vantaa 4600 Heremouthshire Gate 34 FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:PostalAddress</Data>
@@ -2304,7 +2304,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Gate 34</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:PostalAddress/cac:AddressLine</Data>
@@ -2356,7 +2356,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:PostalAddress/cac:Country</Data>
@@ -2408,7 +2408,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Leman 0108023-3 Vantaa FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:PartyLegalEntity</Data>
@@ -2512,7 +2512,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Vantaa FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:PartyLegalEntity/cac:RegistrationAddress</Data>
@@ -2564,7 +2564,7 @@
                <Data ss:Type="String">The residens country for the carrier party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:PartyLegalEntity/cac:RegistrationAddress/cac:Country</Data>
@@ -2616,7 +2616,7 @@
                <Data ss:Type="String">The contact of the freight forwareder party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Mr Sender 0158 1233714 sender@forwarder-company.se</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:FreightForwarderParty/cac:Contact</Data>
@@ -2720,7 +2720,7 @@
                <Data ss:Type="String">The shipment for this Waybill.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">1 hank at arriving 12535157654567654 1234 5678 1030 20 0.4 false 1 7300010000001 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI HUS Hospital 1567535-0 Helsinki FI Mr Sender 0158 1233714 sender@consignor-company.co.uk DK FI DAP To be paid on invoice 11111222222222 AG ZZ To be set vertical false Keep dry 34563444 CN 10 true A 20 foot refrigerated container that is not actively controlling temperature of the product. true LN 123 TC -21 TC -21 Torsk sl u/h fersk fulliset 20kg iso 2-4 kg false Torsk KO2012140200 ADR 2 40.8 3 JA8088 DF10958 12014 50 63 20-33 801-5 wrt34663 456789 5790000435951 Name Avon Way Purchasing Bridgtow ZZ99 1ZZ Avon 3rd Floor, Room 5 GB EPSG:3857 59.331660358041425 18.063363084988005 2021-09-29 08:00:00+01:00 2021-09-29 10:00:00+01:00 34456456456456 Avon Way way 2 Bridgtow ZZ99 1ZZ Avon 3rd Floor, Room 5 GB EPSG:3857 59.33169866504851 18.063330898492403 12.5 2021-09-29 08:00:00+01:00 2021-09-29 10:00:00+01:00 DAP DAP Kalmar</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment</Data>
@@ -2798,7 +2798,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">12535157654567654 1234 5678 1030 20 0.4 false 1 7300010000001 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI HUS Hospital 1567535-0 Helsinki FI Mr Sender 0158 1233714 sender@consignor-company.co.uk DK FI DAP To be paid on invoice 11111222222222 AG ZZ To be set vertical false Keep dry 34563444 CN 10 true A 20 foot refrigerated container that is not actively controlling temperature of the product. true LN 123 TC -21 TC -21 Torsk sl u/h fersk fulliset 20kg iso 2-4 kg false Torsk KO2012140200 ADR 2 40.8</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment</Data>
@@ -2821,7 +2821,7 @@
                <Data ss:Type="String">Consignment identifier </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An association to Consignment covering the shipment. Unique number assigned to goods, both for import and export.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">12535157654567654</Data>
@@ -3136,7 +3136,7 @@
                <Data ss:Type="String">The party responsible for receiving the goods in the Waybill.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">7300010000001 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI HUS Hospital 1567535-0 Helsinki FI Mr Sender 0158 1233714 sender@consignor-company.co.uk</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsigneeParty</Data>
@@ -3162,7 +3162,7 @@
                <Data ss:Type="String">An identifier for the consignee party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsigneeParty/cac:PartyIdentification</Data>
@@ -3240,7 +3240,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">HUS Hospital</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsigneeParty/cac:PartyName</Data>
@@ -3292,7 +3292,7 @@
                <Data ss:Type="String">The postal address of the Consignee</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsigneeParty/cac:PostalAddress</Data>
@@ -3448,7 +3448,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Gate 34</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsigneeParty/cac:PostalAddress/cac:AddressLine</Data>
@@ -3500,7 +3500,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsigneeParty/cac:PostalAddress/cac:Country</Data>
@@ -3552,7 +3552,7 @@
                <Data ss:Type="String">Information about the legal entity for the consignee party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">HUS Hospital 1567535-0 Helsinki FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsigneeParty/cac:PartyLegalEntity</Data>
@@ -3656,7 +3656,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Helsinki FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsigneeParty/cac:PartyLegalEntity/cac:RegistrationAddress</Data>
@@ -3708,7 +3708,7 @@
                <Data ss:Type="String">The residens country for the consignee party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsigneeParty/cac:PartyLegalEntity/cac:RegistrationAddress/cac:Country</Data>
@@ -3760,7 +3760,7 @@
                <Data ss:Type="String">The contact of the delivery party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Mr Sender 0158 1233714 sender@consignor-company.co.uk</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:ConsigneeParty/cac:Contact</Data>
@@ -3864,7 +3864,7 @@
                <Data ss:Type="String">The country from which the goods in this consignment were originally exported, without any commercial transaction taking place in intermediate countries.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">DK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:OriginalDepartureCountry</Data>
@@ -3916,7 +3916,7 @@
                <Data ss:Type="String">The country in which the goods in this consignment are to be delivered to the final consignee or buyer.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:FinalDestinationCountry</Data>
@@ -3968,7 +3968,7 @@
                <Data ss:Type="String">The terms of payment between the parties (such as logistics service client, logistics service provider) in a transaction.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">DAP To be paid on invoice</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:PaymentTerms</Data>
@@ -4046,7 +4046,7 @@
                <Data ss:Type="String">Used to specify the outer most packages, the units that the transporters deals with.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">11111222222222 AG ZZ To be set vertical false Keep dry 34563444 CN 10 true A 20 foot refrigerated container that is not actively controlling temperature of the product. true LN 123 TC -21 TC -21 Torsk sl u/h fersk fulliset 20kg iso 2-4 kg false Torsk KO2012140200 ADR 2 40.8</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit</Data>
@@ -4254,7 +4254,7 @@
                <Data ss:Type="String">Used to specify Transport Equipment details associated with this Transport Handling Unit.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">34563444 CN 10 true A 20 foot refrigerated container that is not actively controlling temperature of the product. true</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:TransportEquipment</Data>
@@ -4436,7 +4436,7 @@
                <Data ss:Type="String">Used to specify any measurement of the Transport Handling Unit.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">LN 123</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:MeasurementDimension</Data>
@@ -4540,7 +4540,7 @@
                <Data ss:Type="String">Used to specify the minimal temperature for the transport handling unit under the transport.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">TC -21</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:MinimumTemperature</Data>
@@ -4644,7 +4644,7 @@
                <Data ss:Type="String">Used to specify the maximum temperature for the transport handling unit under the transport.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">TC -21</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:MaximumTemperature</Data>
@@ -4748,7 +4748,7 @@
                <Data ss:Type="String">A Goods item contained in the transport handling unit.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Torsk sl u/h fersk fulliset 20kg iso 2-4 kg false Torsk KO2012140200 ADR 2 40.8</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem</Data>
@@ -4826,7 +4826,7 @@
                <Data ss:Type="String">Description of the product beeing transported. Used for a structurel description of an item. Mandatory if the goods item is a Hazardous items.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Torsk KO2012140200 ADR 2 40.8</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item</Data>
@@ -4878,7 +4878,7 @@
                <Data ss:Type="String">To classify when an item number is not sufficient.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">KO2012140200</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:CommodityClassification</Data>
@@ -5005,10 +5005,10 @@
                <Data ss:Type="String">Hazardous item information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contains information on the Hazardous item.</Data>
+               <Data ss:Type="String">Description of hazardous item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">ADR 2 40.8</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:HazardousItem</Data>
@@ -5083,7 +5083,7 @@
                <Data ss:Type="String">Hazardous item UNDG code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier assigned to transportable hazardous goods by the United Nations, expressed as a code.</Data>
+               <Data ss:Type="String">The UN code for this kind of hazardous item.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">ADR</Data>
@@ -5187,10 +5187,10 @@
                <Data ss:Type="String">Haszardous hazard class Identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">dentifies a hazard class applicable to dangerous goods as defined by the relevant regulation authority, such as the IMDG Class Number of the SOLAS Convention ofIMO and the ADR/RID Class Number for the road/rail environment.</Data>
+               <Data ss:Type="String">The UN code for this kind of hazardous item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Code</Data>
+               <Data ss:Type="String">2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:HazardousItem/cbc:HazardClassID</Data>
@@ -5213,10 +5213,10 @@
                <Data ss:Type="String">Net Weight Measure </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Net weight of the Hazardous item.</Data>
+               <Data ss:Type="String">The net weight for the item. Use if the Hazard class ID requires it</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123</Data>
+               <Data ss:Type="String">40.8</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Consignment/cac:TransportHandlingUnit/cac:GoodsItem/cac:Item/cac:HazardousItem/cbc:NetWeightMeasure</Data>
@@ -5476,7 +5476,7 @@
                <Data ss:Type="String">The shipment stage for this Waybill.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">3 JA8088 DF10958 12014 50 63 20-33 801-5 wrt34663</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:ShipmentStage</Data>
@@ -5528,7 +5528,7 @@
                <Data ss:Type="String">The means of transport used in this shipment stage.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">JA8088 DF10958 12014 50 63 20-33 801-5 wrt34663</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:ShipmentStage/cac:TransportMeans</Data>
@@ -5554,7 +5554,7 @@
                <Data ss:Type="String">An aircraft used in this shipment stage.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">JA8088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:ShipmentStage/cac:TransportMeans/cac:AirTransport</Data>
@@ -5606,7 +5606,7 @@
                <Data ss:Type="String">Description of a truck or a vehicle transporting the goods. Use only if Transport mode code is set to road transport</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">DF10958</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:ShipmentStage/cac:TransportMeans/cac:RoadTransport</Data>
@@ -5658,7 +5658,7 @@
                <Data ss:Type="String">Equipment used for rail transport in this shipment stage.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">12014 50 63 20-33 801-5</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:ShipmentStage/cac:TransportMeans/cac:RailTransport</Data>
@@ -5736,7 +5736,7 @@
                <Data ss:Type="String">Description of a truck or a vehicle transporting the goods. Use only if TransportModeCode is set to maritime transport.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">wrt34663</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:ShipmentStage/cac:TransportMeans/cac:MaritimeTransport</Data>
@@ -5788,7 +5788,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">456789 5790000435951 Name Avon Way Purchasing Bridgtow ZZ99 1ZZ Avon 3rd Floor, Room 5 GB EPSG:3857 59.331660358041425 18.063363084988005 2021-09-29 08:00:00+01:00 2021-09-29 10:00:00+01:00 34456456456456 Avon Way way 2 Bridgtow ZZ99 1ZZ Avon 3rd Floor, Room 5 GB EPSG:3857 59.33169866504851 18.063330898492403 12.5 2021-09-29 08:00:00+01:00 2021-09-29 10:00:00+01:00 DAP DAP Kalmar</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery</Data>
@@ -5811,7 +5811,7 @@
                <Data ss:Type="String">Delivery tracking identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Used to provide a tracking id for delvivery e.g. UPS or postal.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">456789</Data>
@@ -5840,7 +5840,7 @@
                <Data ss:Type="String">The location where the goods are delivered.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">5790000435951 Name Avon Way Purchasing Bridgtow ZZ99 1ZZ Avon 3rd Floor, Room 5 GB EPSG:3857 59.331660358041425 18.063363084988005</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryLocation</Data>
@@ -5944,7 +5944,7 @@
                <Data ss:Type="String">The address of the delivery location.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Avon Way Purchasing Bridgtow ZZ99 1ZZ Avon 3rd Floor, Room 5 GB</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cac:Address</Data>
@@ -6100,7 +6100,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">3rd Floor, Room 5</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cac:Address/cac:AddressLine</Data>
@@ -6152,7 +6152,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">GB</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cac:Address/cac:Country</Data>
@@ -6204,7 +6204,7 @@
                <Data ss:Type="String">To specify the coordinates.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">EPSG:3857 59.331660358041425 18.063363084988005</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cac:LocationCoordinate</Data>
@@ -6360,7 +6360,7 @@
                <Data ss:Type="String">The estimated delivery period.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">2021-09-29 08:00:00+01:00 2021-09-29 10:00:00+01:00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:EstimatedDeliveryPeriod</Data>
@@ -6490,7 +6490,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">34456456456456 Avon Way way 2 Bridgtow ZZ99 1ZZ Avon 3rd Floor, Room 5 GB EPSG:3857 59.33169866504851 18.063330898492403 12.5 2021-09-29 08:00:00+01:00 2021-09-29 10:00:00+01:00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch</Data>
@@ -6516,7 +6516,7 @@
                <Data ss:Type="String">The Despatch Address is the address from where the goods is despatched.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">34456456456456 Avon Way way 2 Bridgtow ZZ99 1ZZ Avon 3rd Floor, Room 5 GB EPSG:3857 59.33169866504851 18.063330898492403 12.5</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress</Data>
@@ -6617,7 +6617,7 @@
                <Data ss:Type="String">City</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Bridgtow</Data>
@@ -6643,7 +6643,7 @@
                <Data ss:Type="String">Post code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">ZZ99 1ZZ</Data>
@@ -6669,7 +6669,7 @@
                <Data ss:Type="String">Country subdivision</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Avon</Data>
@@ -6698,7 +6698,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">3rd Floor, Room 5</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress/cac:AddressLine</Data>
@@ -6721,7 +6721,7 @@
                <Data ss:Type="String">Address line 3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">3rd Floor, Room 5</Data>
@@ -6750,7 +6750,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">GB</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress/cac:Country</Data>
@@ -6773,7 +6773,7 @@
                <Data ss:Type="String">Country code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">GB</Data>
@@ -6802,7 +6802,7 @@
                <Data ss:Type="String">To specify the coordinates.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">EPSG:3857 59.33169866504851 18.063330898492403 12.5</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress/cac:LocationCoordinate</Data>
@@ -7010,7 +7010,7 @@
                <Data ss:Type="String">The estimated despatch period.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">2021-09-29 08:00:00+01:00 2021-09-29 10:00:00+01:00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:Despatch/cac:EstimatedDespatchPeriod</Data>
@@ -7140,7 +7140,7 @@
                <Data ss:Type="String">The conditions agreed upon between a seller and a buyer with regard to the delivery of goods and/or services (e.g., CIF, FOB, or EXW from the INCOTERMS Terms of Delivery).</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">DAP DAP Kalmar</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryTerms</Data>
@@ -7218,7 +7218,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Kalmar</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Shipment/cac:Delivery/cac:DeliveryTerms/cac:DeliveryLocation</Data>
@@ -7270,7 +7270,7 @@
                <Data ss:Type="String">Reference to documents relevant for this Waybill.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">7648779 380 Delivery soecification aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:DocumentReference</Data>
@@ -7374,7 +7374,7 @@
                <Data ss:Type="String">Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:DocumentReference/cac:Attachment</Data>
@@ -7478,7 +7478,7 @@
                <Data ss:Type="String">A reference to an attached document that is external to the document(s) being exchanged.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">www.beast.se</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:DocumentReference/cac:Attachment/cac:ExternalReference</Data>
@@ -7530,7 +7530,7 @@
                <Data ss:Type="String">A signature applied to this Waybill.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">3453 2021-09-29 09:49:00+02:00 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature</Data>
@@ -7634,7 +7634,7 @@
                <Data ss:Type="String">The party signing this Waybill.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cac:SignatoryParty</Data>
@@ -7660,7 +7660,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">HUS Hospital</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cac:SignatoryParty/cac:PartyName</Data>
@@ -7712,7 +7712,7 @@
                <Data ss:Type="String">The postal address of the Signature Party</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cac:SignatoryParty/cac:PostalAddress</Data>
@@ -7868,7 +7868,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Gate 34</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cac:SignatoryParty/cac:PostalAddress/cac:AddressLine</Data>
@@ -7920,7 +7920,7 @@
                <Data ss:Type="String">The country for the address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">FI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cac:SignatoryParty/cac:PostalAddress/cac:Country</Data>
@@ -7972,7 +7972,7 @@
                <Data ss:Type="String">The person who applies the signature on behalf of the Signature Party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">45976 Valiry Sender Director</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cac:SignatoryParty/cac:Person</Data>
@@ -8128,7 +8128,7 @@
                <Data ss:Type="String">The actual signature included or refered to as an attachment .</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cac:DigitalSignatureAttachment</Data>
@@ -8232,7 +8232,7 @@
                <Data ss:Type="String">A reference to an attached document that is external to the document(s) being exchanged.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">www.beast.se</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Waybill/cac:Signature/cac:DigitalSignatureAttachment/cac:ExternalReference</Data>

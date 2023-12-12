@@ -11,9 +11,6 @@
       <Element>
          <Term>cbc:CustomizationID</Term>
          <Name>Specification identification</Name>
-         <Description>Identifies the specification of content and rules that apply to the
-				transaction.</Description>
-         <Reference type="BUSINESS_TERM">tir16-002</Reference>
          <Reference type="RULE">PEPPOL-T127-R001</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:trns:transportation_status:1</Value>
       </Element>
@@ -21,17 +18,12 @@
          <Term>cbc:ProfileID</Term>
          <Name>Profile ID</Name>
          <Description>Identifies the Peppol profile or business process context in which the transaction appears.</Description>
-         <Reference type="BUSINESS_TERM">tir16-001</Reference>
          <Reference type="RULE">PEPPOL-T127-R002</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:transportation_status_w_request:1</Value>
       </Element>
       <Element>
          <Term>cbc:ID</Term>
          <Name>Document identifier</Name>
-         <Description>An transaction instance must contain an identifier. The identifier enables
-				positive referencing the document instance for various purposes including
-				referencing between transactions that are part of the same process.</Description>
-         <Reference type="BUSINESS_TERM">tir16-003</Reference>
          <Value type="EXAMPLE">TS_1</Value>
       </Element>
       <Element>
@@ -39,14 +31,12 @@
          <Name>Issue Date</Name>
          <Description>The date when the Transportation Status was issued. Format = "YYYY-MM-DD". ?
 		&lt;?Cardinality 1..1</Description>
-         <Reference type="BUSINESS_TERM">tir16-004</Reference>
          <Value type="EXAMPLE">2023-06-06</Value>
       </Element>
       <Element cardinality="1..1">
          <Term>cbc:IssueTime</Term>
          <Name>Issue Time</Name>
          <Description>The time when the Transportation Status was issued. Format = "hh:mm:ss". </Description>
-         <Reference type="BUSINESS_TERM">tir16-005</Reference>
          <Reference type="RULE">PEPPOL-T127-R018</Reference>
          <Value type="EXAMPLE">09:29:30+01:00</Value>
       </Element>
@@ -84,6 +74,7 @@
          <Term>cac:Consignment</Term>
          <Name>Consignment information </Name>
          <Description>The consignment related to this Transportation Status.</Description>
+         <Value type="EXAMPLE">12535157654567654 4 Description 234526457 2023-06-01 10:23:34+01:00 1 true 4 Description 80 Prolonged coffebreak 3453 2021-09-29 09:49:00+01:00 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se 2021-09-25 12:00:00+01:00 2021-09-27 12:00:00+01:00 CON_THU_1 4 Description</Value>
          <Element cardinality="1..1">
             <Term>cbc:ID</Term>
             <Name>Consignment identifier </Name>
@@ -94,6 +85,7 @@
             <Term>cac:Status</Term>
             <Name>Status </Name>
             <Description>Staus related to the consignment as a whole. </Description>
+            <Value type="EXAMPLE">4 Description</Value>
             <Element cardinality="0..1">
                <Term>cbc:ConditionCode</Term>
                <Name>Status </Name>
@@ -115,6 +107,7 @@
             <Term>cac:TransportEvent</Term>
             <Name>Transport Event </Name>
             <Description>A transport event associated to this Transportation Status. </Description>
+            <Value type="EXAMPLE">234526457 2023-06-01 10:23:34+01:00 1 true 4 Description 80 Prolonged coffebreak 3453 2021-09-29 09:49:00+01:00 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se 2021-09-25 12:00:00+01:00 2021-09-27 12:00:00+01:00</Value>
             <Element cardinality="0..1">
                <Term>cbc:IdentificationID</Term>
                <Name>Identification ID </Name>
@@ -150,6 +143,7 @@
                <Term>cac:CurrentStatus</Term>
                <Name>Status </Name>
                <Description>Staus related to the consignment as a whole. </Description>
+               <Value type="EXAMPLE">4 Description 80 Prolonged coffebreak</Value>
                <Element cardinality="0..1">
                   <Term>cbc:ConditionCode</Term>
                   <Name>Status </Name>
@@ -187,6 +181,7 @@
                <Term>cac:Signature</Term>
                <Name>Signature</Name>
                <Description>A signature applied to this transport event. </Description>
+               <Value type="EXAMPLE">3453 2021-09-29 09:49:00+01:00 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se</Value>
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Identifier Signature </Name>
@@ -207,9 +202,11 @@
                   <Term>cac:SignatoryParty</Term>
                   <Name>Signature party </Name>
                   <Description>The party signing this event. </Description>
+                  <Value type="EXAMPLE">HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director</Value>
                   <Element cardinality="0..1">
                      <Term>cac:PartyName</Term>
                      <Name>Party name </Name>
+                     <Value type="EXAMPLE">HUS Hospital</Value>
                      <Element>
                         <Term>cbc:Name</Term>
                         <Name>Consignee party name</Name>
@@ -221,6 +218,7 @@
                      <Term>cac:PostalAddress</Term>
                      <Name>Postal address </Name>
                      <Description>The postal address of the signatory party</Description>
+                     <Value type="EXAMPLE">Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI</Value>
                      <Element cardinality="0..1">
                         <Term>cbc:StreetName</Term>
                         <Name>Address line 1 </Name>
@@ -254,6 +252,7 @@
                      <Element cardinality="0..1">
                         <Term>cac:AddressLine</Term>
                         <Name>Address line </Name>
+                        <Value type="EXAMPLE">Gate 34</Value>
                         <Element cardinality="1..1">
                            <Term>cbc:Line</Term>
                            <Name>Address line 3 </Name>
@@ -265,6 +264,7 @@
                         <Term>cac:Country</Term>
                         <Name>Country </Name>
                         <Description>The country for the address</Description>
+                        <Value type="EXAMPLE">FI</Value>
                         <Element cardinality="1.1">
                            <Term>cbc:IdentificationCode</Term>
                            <Name>Country code </Name>
@@ -278,6 +278,7 @@
                      <Term>cac:Person</Term>
                      <Name>Person </Name>
                      <Description>The person who applies the signature on behalf of the signatory party. </Description>
+                     <Value type="EXAMPLE">45976 Valiry Sender Director</Value>
                      <Element cardinality="0..1">
                         <Term>cbc:ID</Term>
                         <Name>Person ID </Name>
@@ -312,6 +313,7 @@
                   <Term>cac:DigitalSignatureAttachment</Term>
                   <Name>Attachment</Name>
                   <Description>The actual signature included or refered to as an attachment .</Description>
+                  <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se</Value>
                   <Element cardinality="0..1">
                      <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                      <Name>Embedded binary object</Name>
@@ -331,6 +333,7 @@
                      <Term>cac:ExternalReference</Term>
                      <Name>External reference</Name>
                      <Description>A reference to an attached document that is external to the document(s) being exchanged.</Description>
+                     <Value type="EXAMPLE">www.beast.se</Value>
                      <Element>
                         <Term>cbc:URI</Term>
                         <Name>Address to internet resource</Name>
@@ -344,6 +347,7 @@
                <Term>cac:Period</Term>
                <Name>Period</Name>
                <Description>The updated period for this transport event. Unse only if the event has not occured. </Description>
+               <Value type="EXAMPLE">2021-09-25 12:00:00+01:00 2021-09-27 12:00:00+01:00</Value>
                <Element cardinality="0..1">
                   <Term>cbc:StartDate</Term>
                   <Description>The start date of the period. </Description>
@@ -370,6 +374,7 @@
             <Term>cac:TransportHandlingUnit</Term>
             <Name>Transport handling Unit </Name>
             <Description>The transport handling unit refered to in this Transportation Status. </Description>
+            <Value type="EXAMPLE">CON_THU_1 4 Description</Value>
             <Element>
                <Term>cbc:ID</Term>
                <Value type="EXAMPLE">CON_THU_1</Value>
@@ -378,6 +383,7 @@
                <Term>cac:Status</Term>
                <Name>Status </Name>
                <Description>Status related to the transport handling unit. </Description>
+               <Value type="EXAMPLE">4 Description</Value>
                <Element cardinality="0..1">
                   <Term>cbc:ConditionCode</Term>
                   <Name>Status </Name>
@@ -401,6 +407,7 @@
          <Term>cac:TransportEvent</Term>
          <Name>Transport Event </Name>
          <Description>A transport event related to this Transportation Status.</Description>
+         <Value type="EXAMPLE">1234 2023-06-06 09:29:30+01:00 1 true 4 Description 80 Prolonged coffebreak 3453 2021-09-29 09:49:00+01:00 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se 2021-09-25 12:00:00+01:00 2021-09-27 12:00:00+01:00</Value>
          <Element cardinality="1..1">
             <Term>cbc:IdentificationID</Term>
             <Name>Identification ID </Name>
@@ -436,6 +443,7 @@
             <Term>cac:CurrentStatus</Term>
             <Name>Status </Name>
             <Description>Staus related to the consignment as a whole. </Description>
+            <Value type="EXAMPLE">4 Description 80 Prolonged coffebreak</Value>
             <Element cardinality="0..1">
                <Term>cbc:ConditionCode</Term>
                <Name>Status </Name>
@@ -473,6 +481,7 @@
             <Term>cac:Signature</Term>
             <Name>Signature</Name>
             <Description>A signature applied to this transport event. </Description>
+            <Value type="EXAMPLE">3453 2021-09-29 09:49:00+01:00 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se</Value>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Identifier Signature </Name>
@@ -493,9 +502,11 @@
                <Term>cac:SignatoryParty</Term>
                <Name>Signature party </Name>
                <Description>The party signing this event. </Description>
+               <Value type="EXAMPLE">HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director</Value>
                <Element cardinality="0..1">
                   <Term>cac:PartyName</Term>
                   <Name>Party name </Name>
+                  <Value type="EXAMPLE">HUS Hospital</Value>
                   <Element>
                      <Term>cbc:Name</Term>
                      <Name>Signatory party name</Name>
@@ -507,6 +518,7 @@
                   <Term>cac:PostalAddress</Term>
                   <Name>Postal address </Name>
                   <Description>The postal address of the signatory party</Description>
+                  <Value type="EXAMPLE">Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI</Value>
                   <Element cardinality="0..1">
                      <Term>cbc:StreetName</Term>
                      <Name>Address line 1 </Name>
@@ -540,6 +552,7 @@
                   <Element cardinality="0..1">
                      <Term>cac:AddressLine</Term>
                      <Name>Address line </Name>
+                     <Value type="EXAMPLE">Gate 34</Value>
                      <Element cardinality="1..1">
                         <Term>cbc:Line</Term>
                         <Name>Address line 3 </Name>
@@ -551,6 +564,7 @@
                      <Term>cac:Country</Term>
                      <Name>Country </Name>
                      <Description>The country for the address</Description>
+                     <Value type="EXAMPLE">FI</Value>
                      <Element cardinality="1.1">
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code </Name>
@@ -564,6 +578,7 @@
                   <Term>cac:Person</Term>
                   <Name>Person </Name>
                   <Description>The person who applies the signature on behalf of the signatory party. </Description>
+                  <Value type="EXAMPLE">45976 Valiry Sender Director</Value>
                   <Element cardinality="0..1">
                      <Term>cbc:ID</Term>
                      <Name>Person ID </Name>
@@ -598,6 +613,7 @@
                <Term>cac:DigitalSignatureAttachment</Term>
                <Name>Attachment</Name>
                <Description>The actual signature included or refered to as an attachment .</Description>
+               <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se</Value>
                <Element cardinality="0..1">
                   <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                   <Name>Embedded binary object</Name>
@@ -617,6 +633,7 @@
                   <Term>cac:ExternalReference</Term>
                   <Name>External reference</Name>
                   <Description>A reference to an attached document that is external to the document(s) being exchanged.</Description>
+                  <Value type="EXAMPLE">www.beast.se</Value>
                   <Element>
                      <Term>cbc:URI</Term>
                      <Name>Address to internet resource</Name>
@@ -630,6 +647,7 @@
             <Term>cac:Period</Term>
             <Name>Period</Name>
             <Description>The updated period for this transport event. Unse only if the event has not occured. </Description>
+            <Value type="EXAMPLE">2021-09-25 12:00:00+01:00 2021-09-27 12:00:00+01:00</Value>
             <Element cardinality="0..1">
                <Term>cbc:StartDate</Term>
                <Description>The start date of the period. </Description>
@@ -656,6 +674,7 @@
          <Term>cac:DocumentReference</Term>
          <Name>Document reference</Name>
          <Description>Reference to additional documents relevant for this Transportation Status such as pictures of damages. </Description>
+         <Value type="EXAMPLE">7648779 380 Delivery soecification aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se</Value>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Identity of the reference</Name>
@@ -679,6 +698,7 @@
             <Term>cac:Attachment</Term>
             <Name>Attachment</Name>
             <Description>Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Description>
+            <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se</Value>
             <Element cardinality="0..1">
                <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                <Name>Embedded binary object</Name>
@@ -698,6 +718,7 @@
                <Term>cac:ExternalReference</Term>
                <Name>External reference</Name>
                <Description>A reference to an attached document that is external to the document(s) being exchanged.</Description>
+               <Value type="EXAMPLE">www.beast.se</Value>
                <Element>
                   <Term>cbc:URI</Term>
                   <Name>Address to internet resource</Name>
@@ -711,6 +732,7 @@
          <Term>cac:Signature</Term>
          <Name>Signature</Name>
          <Description>A signature applied to this Transportation Status. </Description>
+         <Value type="EXAMPLE">3453 2021-09-29 09:49:00+01:00 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se</Value>
          <Element cardinality="1..1">
             <Term>cbc:ID</Term>
             <Name>Identifier Signature </Name>
@@ -731,9 +753,11 @@
             <Term>cac:SignatoryParty</Term>
             <Name>Signature party </Name>
             <Description>The party signing this Transportation Status </Description>
+            <Value type="EXAMPLE">HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director</Value>
             <Element cardinality="0..1">
                <Term>cac:PartyName</Term>
                <Name>Party name </Name>
+               <Value type="EXAMPLE">HUS Hospital</Value>
                <Element>
                   <Term>cbc:Name</Term>
                   <Name>Signatory party name</Name>
@@ -745,6 +769,7 @@
                <Term>cac:PostalAddress</Term>
                <Name>Postal address </Name>
                <Description>The postal address of the signatory party</Description>
+               <Value type="EXAMPLE">Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI</Value>
                <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
                   <Name>Address line 1 </Name>
@@ -778,6 +803,7 @@
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
                   <Name>Address line </Name>
+                  <Value type="EXAMPLE">Gate 34</Value>
                   <Element cardinality="1..1">
                      <Term>cbc:Line</Term>
                      <Name>Address line 3 </Name>
@@ -789,6 +815,7 @@
                   <Term>cac:Country</Term>
                   <Name>Country </Name>
                   <Description>The country for the address</Description>
+                  <Value type="EXAMPLE">FI</Value>
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
@@ -802,6 +829,7 @@
                <Term>cac:Person</Term>
                <Name>Person </Name>
                <Description>The person who applies the signature on behalf of the signatory party. </Description>
+               <Value type="EXAMPLE">45976 Valiry Sender Director</Value>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
                   <Name>Person ID </Name>
@@ -836,6 +864,7 @@
             <Term>cac:DigitalSignatureAttachment</Term>
             <Name>Attachment</Name>
             <Description>The actual signature included or refered to as an attachment .</Description>
+            <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se</Value>
             <Element cardinality="0..1">
                <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                <Name>Embedded binary object</Name>
@@ -855,6 +884,7 @@
                <Term>cac:ExternalReference</Term>
                <Name>External reference</Name>
                <Description>A reference to an attached document that is external to the document(s) being exchanged.</Description>
+               <Value type="EXAMPLE">www.beast.se</Value>
                <Element>
                   <Term>cbc:URI</Term>
                   <Name>Address to internet resource</Name>
@@ -868,6 +898,7 @@
          <Term>cac:SenderParty</Term>
          <Name>Sender party </Name>
          <Description>The party sending the Transportation Status. </Description>
+         <Value type="EXAMPLE">41955619 7300010000001 Leman Ventrupvej 6 Greve Landsby Greve 2670 Region Sjælland Bygning 5 DK GB325456788 VAT Consortial SC234567 Farthing GB Mr Sender 0158 1233714 sender@consignor-company.co.uk</Value>
          <Element cardinality="1..1">
             <Term>cbc:EndpointID</Term>
             <Name>Sender party electronic address </Name>
@@ -885,6 +916,7 @@
             <Term>cac:PartyIdentification</Term>
             <Name>Sender party identification </Name>
             <Description>An identifier for the sender party as known to the receiver party. </Description>
+            <Value type="EXAMPLE">7300010000001</Value>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>ID </Name>
@@ -900,6 +932,7 @@
          <Element cardinality="0..1">
             <Term>cac:PartyName</Term>
             <Name>Party name </Name>
+            <Value type="EXAMPLE">Leman</Value>
             <Element cardinality="1..1">
                <Term>cbc:Name</Term>
                <Name>Sender party name</Name>
@@ -912,6 +945,7 @@
             <Term>cac:PostalAddress</Term>
             <Name>Postal address </Name>
             <Description>The postal address for the sender party. </Description>
+            <Value type="EXAMPLE">Ventrupvej 6 Greve Landsby Greve 2670 Region Sjælland Bygning 5 DK</Value>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1 </Name>
@@ -946,6 +980,7 @@
                <Term>cac:AddressLine</Term>
                <Name>Address line 3 </Name>
                <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+               <Value type="EXAMPLE">Bygning 5</Value>
                <Element>
                   <Term>cbc:Line</Term>
                   <Value type="EXAMPLE">Bygning 5</Value>
@@ -954,6 +989,7 @@
             <Element>
                <Term>cac:Country</Term>
                <Name>Country </Name>
+               <Value type="EXAMPLE">DK</Value>
                <Element cardinality="1..1">
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code </Name>
@@ -967,6 +1003,7 @@
             <Term>cac:PartyTaxScheme</Term>
             <Name>Party tax scheme </Name>
             <Description>The tax information about the sender party. </Description>
+            <Value type="EXAMPLE">GB325456788 VAT</Value>
             <Element cardinality="1..1">
                <Term>cbc:CompanyID</Term>
                <Name>Company ID </Name>
@@ -976,6 +1013,7 @@
             <Element cardinality="1..1">
                <Term>cac:TaxScheme</Term>
                <Name>Tax scheme </Name>
+               <Value type="EXAMPLE">VAT</Value>
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Tax scheme identifier </Name>
@@ -987,6 +1025,7 @@
          <Element>
             <Term>cac:PartyLegalEntity</Term>
             <Name>Party legal entity </Name>
+            <Value type="EXAMPLE">Consortial SC234567 Farthing GB</Value>
             <Element cardinality="1..1">
                <Term>cbc:RegistrationName</Term>
                <Name>Sender party name</Name>
@@ -1009,6 +1048,7 @@
             <Element cardinality="0..1">
                <Term>cac:RegistrationAddress</Term>
                <Name>Legal address </Name>
+               <Value type="EXAMPLE">Farthing GB</Value>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
                   <Name>City name </Name>
@@ -1019,6 +1059,7 @@
                   <Term>cac:Country</Term>
                   <Name>Country </Name>
                   <Description>The residens country for the sender party. </Description>
+                  <Value type="EXAMPLE">GB</Value>
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
@@ -1033,6 +1074,7 @@
             <Term>cac:Contact</Term>
             <Name>Contact </Name>
             <Description>The contact of the sender party. </Description>
+            <Value type="EXAMPLE">Mr Sender 0158 1233714 sender@consignor-company.co.uk</Value>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
@@ -1057,6 +1099,7 @@
          <Term>cac:ReceiverParty</Term>
          <Name>Receiver Party </Name>
          <Description>The party receiving the Transportation Status. </Description>
+         <Value type="EXAMPLE">10154596 7300010000001 DHL Express Jydekrogen 14 Indkørsel 5 Vallensbæk Landsby 2625 Region Hovedstaden Bygning 5 DK GB325456788 VAT Consortial SC234567 Farthing GB Mrs Receiver 0158 1233714 msreceiver@tplogistics.co.uk</Value>
          <Element cardinality="1..1">
             <Term>cbc:EndpointID</Term>
             <Name>Receiver party electronic address </Name>
@@ -1074,6 +1117,7 @@
             <Term>cac:PartyIdentification</Term>
             <Name>Receiver party identification </Name>
             <Description>An identifier for the receiver party. </Description>
+            <Value type="EXAMPLE">7300010000001</Value>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>ID</Name>
@@ -1089,6 +1133,7 @@
          <Element cardinality="0..1">
             <Term>cac:PartyName</Term>
             <Name>Party name </Name>
+            <Value type="EXAMPLE">DHL Express</Value>
             <Element cardinality="1..1">
                <Term>cbc:Name</Term>
                <Name>Receiver party name </Name>
@@ -1101,6 +1146,7 @@
             <Term>cac:PostalAddress</Term>
             <Name>Postal address </Name>
             <Description>The postal address for the receiver party. </Description>
+            <Value type="EXAMPLE">Jydekrogen 14 Indkørsel 5 Vallensbæk Landsby 2625 Region Hovedstaden Bygning 5 DK</Value>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1 </Name>
@@ -1135,6 +1181,7 @@
                <Term>cac:AddressLine</Term>
                <Name>Address line 3 </Name>
                <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+               <Value type="EXAMPLE">Bygning 5</Value>
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
                   <Value type="EXAMPLE">Bygning 5</Value>
@@ -1143,6 +1190,7 @@
             <Element cardinality="1..1">
                <Term>cac:Country</Term>
                <Name>Country </Name>
+               <Value type="EXAMPLE">DK</Value>
                <Element cardinality="1..1">
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code </Name>
@@ -1156,6 +1204,7 @@
             <Term>cac:PartyTaxScheme</Term>
             <Name>Party tax scheme </Name>
             <Description>The tax information about the receiver party. </Description>
+            <Value type="EXAMPLE">GB325456788 VAT</Value>
             <Element cardinality="1..1">
                <Term>cbc:CompanyID</Term>
                <Name>Company ID </Name>
@@ -1165,6 +1214,7 @@
             <Element cardinality="1..1">
                <Term>cac:TaxScheme</Term>
                <Name>Tax scheme </Name>
+               <Value type="EXAMPLE">VAT</Value>
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Tax scheme identifier </Name>
@@ -1177,6 +1227,7 @@
             <Term>cac:PartyLegalEntity</Term>
             <Name>Party Legal Entity </Name>
             <Description>The party legal entity for the receiver party.</Description>
+            <Value type="EXAMPLE">Consortial SC234567 Farthing GB</Value>
             <Element cardinality="1..1">
                <Term>cbc:RegistrationName</Term>
                <Name>Receiver party name</Name>
@@ -1199,6 +1250,7 @@
             <Element cardinality="0..1">
                <Term>cac:RegistrationAddress</Term>
                <Name>Legal address </Name>
+               <Value type="EXAMPLE">Farthing GB</Value>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
                   <Name>City name </Name>
@@ -1209,6 +1261,7 @@
                   <Term>cac:Country</Term>
                   <Name>Country </Name>
                   <Description>The residens country for the receiver party. </Description>
+                  <Value type="EXAMPLE">GB</Value>
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
@@ -1223,6 +1276,7 @@
             <Term>cac:Contact</Term>
             <Name>Contact </Name>
             <Description>The contact of the receiver party. </Description>
+            <Value type="EXAMPLE">Mrs Receiver 0158 1233714 msreceiver@tplogistics.co.uk</Value>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
@@ -1247,6 +1301,7 @@
          <Term>cac:TransportationStatusRequestDocumentReference</Term>
          <Name>Additional document reference</Name>
          <Description>Reference to a Transportation Status Request. </Description>
+         <Value type="EXAMPLE">7648779 2021-09-29 07:49:00+01:00</Value>
          <Element cardinality="1..1">
             <Term>cbc:ID</Term>
             <Name>Identity of the reference</Name>
@@ -1270,6 +1325,7 @@
          <Term>cac:TransportExecutionPlanDocumentReference</Term>
          <Name>Additional document reference</Name>
          <Description>Reference to a Transport Execution Plan. </Description>
+         <Value type="EXAMPLE">7648779 2021-09-29 07:49:00+01:00</Value>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Identity of the reference</Name>

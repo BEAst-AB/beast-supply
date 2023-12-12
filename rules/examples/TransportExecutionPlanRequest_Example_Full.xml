@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ubl_0:TransportExecutionPlanRequest xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlanRequest-2"
-                                     xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-                                     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-                                     xmlns:ubl_0="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
+<TransportExecutionPlanRequest xmlns="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlanRequest-2"
+                               xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                               xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
    <cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:transport_execution_plan_request:1</cbc:CustomizationID>
    <cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_w_request:1</cbc:ProfileID>
    <cbc:ID>141278571829041241241</cbc:ID>
@@ -11,9 +10,9 @@
    <cbc:DocumentStatusCode>9</cbc:DocumentStatusCode>
    <cbc:TransportUserRemarks>Some remarks</cbc:TransportUserRemarks>
    <cac:TransportUserParty>
-      <cbc:EndpointID>41955619</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0198">41955619</cbc:EndpointID>
       <cac:PartyIdentification>
-         <cbc:ID>7300010000001</cbc:ID>
+         <cbc:ID schemeID="0088">7300010000001</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>
          <cbc:Name>Novo Nordisk Pharmatech A/S</cbc:Name>
@@ -39,7 +38,7 @@
       </cac:PartyTaxScheme>
       <cac:PartyLegalEntity>
          <cbc:RegistrationName>Consortial</cbc:RegistrationName>
-         <cbc:CompanyID>SC234567</cbc:CompanyID>
+         <cbc:CompanyID schemeID="0089">SC234567</cbc:CompanyID>
          <cac:RegistrationAddress>
             <cbc:CityName>Farthing</cbc:CityName>
             <cac:Country>
@@ -53,10 +52,9 @@
          <cbc:ElectronicMail>transport-user@transportuser.dk</cbc:ElectronicMail>
       </cac:Contact>
    </cac:TransportUserParty>
-   <cac:TransportServiceProviderParty>
-      <cbc:EndpointID>85955619</cbc:EndpointID>
+   <cac:TransportServiceProviderParty>Farthing<cbc:EndpointID schemeID="0198">85955619</cbc:EndpointID>
       <cac:PartyIdentification>
-         <cbc:ID>7300010000001</cbc:ID>
+         <cbc:ID schemeID="0088">7300010000001</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>
          <cbc:Name>Leman</cbc:Name>
@@ -80,11 +78,9 @@
             <cbc:ID>VAT</cbc:ID>
          </cac:TaxScheme>
       </cac:PartyTaxScheme>
-      <cac:PartyLegalEntity>
-         <cbc:RegistrationName>Consortial</cbc:RegistrationName>
-         <cbc:CompanyID>SC234567</cbc:CompanyID>
-         <cac:RegistrationAddress>
-            <cbc:CityName>Farthing</cbc:CityName>
+      <cac:PartyLegalEntity>Farthing<cbc:RegistrationName>Consortial</cbc:RegistrationName>
+         <cbc:CompanyID schemeID="0089">SC234567</cbc:CompanyID>
+         <cac:RegistrationAddress>Farthing<cbc:CityName>Farthing</cbc:CityName>
             <cac:Country>
                <cbc:IdentificationCode>GB</cbc:IdentificationCode>
             </cac:Country>
@@ -98,7 +94,7 @@
    </cac:TransportServiceProviderParty>
    <cac:PayeeParty>
       <cac:PartyIdentification>
-         <cbc:ID>7300010000001</cbc:ID>
+         <cbc:ID schemeID="0088">7300010000001</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>
          <cbc:Name>Novo Nordisk Pharmatech A/S</cbc:Name>
@@ -124,7 +120,7 @@
       </cac:PartyTaxScheme>
       <cac:PartyLegalEntity>
          <cbc:RegistrationName>Consortial</cbc:RegistrationName>
-         <cbc:CompanyID>SC234567</cbc:CompanyID>
+         <cbc:CompanyID schemeID="0089">SC234567</cbc:CompanyID>
          <cac:RegistrationAddress>
             <cbc:CityName>Farthing</cbc:CityName>
             <cac:Country>
@@ -143,7 +139,7 @@
       <cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
       <cbc:DocumentType>Delivery soecification</cbc:DocumentType>
       <cac:Attachment>
-         <cbc:EmbeddedDocumentBinaryObject>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+         <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
          <cac:ExternalReference>
             <cbc:URI>www.beast.se</cbc:URI>
          </cac:ExternalReference>
@@ -157,22 +153,18 @@
       <cbc:TransportServiceCode>12</cbc:TransportServiceCode>
       <cbc:TransportationServiceDescription>Insurance</cbc:TransportationServiceDescription>
    </cac:AdditionalTransportationService>
-   <cac:Consignment>
-      <cbc:ID>12535157654567654</cbc:ID>
+   <cac:Consignment>EPSG:3857<cbc:ID>12535157654567654</cbc:ID>
       <cbc:ConsigneeAssignedID>0160110</cbc:ConsigneeAssignedID>
       <cbc:ConsignorAssignedID>501153162</cbc:ConsignorAssignedID>
-      <cbc:GrossWeightMeasure>1030</cbc:GrossWeightMeasure>
-      <cbc:GrossVolumeMeasure>20</cbc:GrossVolumeMeasure>
-      <cbc:LoadingLengthMeasure>0.4</cbc:LoadingLengthMeasure>
+      <cbc:GrossWeightMeasure unitCode="KGM">1030</cbc:GrossWeightMeasure>
+      <cbc:GrossVolumeMeasure unitCode="MTQ">20</cbc:GrossVolumeMeasure>
+      <cbc:LoadingLengthMeasure unitCode="MTR">0.4</cbc:LoadingLengthMeasure>
       <cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
-      <cbc:TotalTransportHandlingUnitQuantity>1</cbc:TotalTransportHandlingUnitQuantity>
-      <cac:RequestedPickupTransportEvent>
-         <cbc:IdentificationID>21412312412</cbc:IdentificationID>
-         <cac:Location>
-            <cbc:ID>5790000435951</cbc:ID>
+      <cbc:TotalTransportHandlingUnitQuantity unitCode="EA">1</cbc:TotalTransportHandlingUnitQuantity>
+      <cac:RequestedPickupTransportEvent>EPSG:3857<cbc:IdentificationID>21412312412</cbc:IdentificationID>
+         <cac:Location>EPSG:3857<cbc:ID schemeID="0088">5790000435951</cbc:ID>
             <cbc:Name>Novo Nordisk Pharmatech A/S</cbc:Name>
-            <cac:Address>
-               <cbc:StreetName>Københavnsvej 216</cbc:StreetName>
+            <cac:Address>EPSG:3857<cbc:StreetName>Københavnsvej 216</cbc:StreetName>
                <cbc:AdditionalStreetName>Purchasing</cbc:AdditionalStreetName>
                <cbc:CityName>Køge</cbc:CityName>
                <cbc:PostalZone>4600</cbc:PostalZone>
@@ -183,11 +175,10 @@
                <cac:Country>
                   <cbc:IdentificationCode>DK</cbc:IdentificationCode>
                </cac:Country>
-               <cac:LocationCoordinate>
-                  <cbc:CoordinateSystemCode>EPSG:3857</cbc:CoordinateSystemCode>
-                  <cbc:LatitudeDegreesMeasure>59.331660358041425</cbc:LatitudeDegreesMeasure>
-                  <cbc:LongitudeDegreesMeasure>18.063363084988005</cbc:LongitudeDegreesMeasure>
-                  <cbc:AltitudeMeasure>12.5</cbc:AltitudeMeasure>
+               <cac:LocationCoordinate>EPSG:3857<cbc:CoordinateSystemCode>EPSG:3857</cbc:CoordinateSystemCode>
+                  <cbc:LatitudeDegreesMeasure unitCode="DD">59.331660358041425</cbc:LatitudeDegreesMeasure>
+                  <cbc:LongitudeDegreesMeasure unitCode="DD">18.063363084988005</cbc:LongitudeDegreesMeasure>
+                  <cbc:AltitudeMeasure unitCode="MTR">12.5</cbc:AltitudeMeasure>
                </cac:LocationCoordinate>
             </cac:Address>
          </cac:Location>
@@ -201,7 +192,7 @@
       <cac:RequestedDeliveryTransportEvent>
          <cbc:IdentificationID>625435485674654132</cbc:IdentificationID>
          <cac:Location>
-            <cbc:ID>5790000435951</cbc:ID>
+            <cbc:ID schemeID="0088">5790000435951</cbc:ID>
             <cbc:Name>DHL Københavns lufthavn</cbc:Name>
             <cac:Address>
                <cbc:StreetName>Kystvejen 24</cbc:StreetName>
@@ -217,9 +208,9 @@
                </cac:Country>
                <cac:LocationCoordinate>
                   <cbc:CoordinateSystemCode>EPSG:3857</cbc:CoordinateSystemCode>
-                  <cbc:LatitudeDegreesMeasure>59.331660358041425</cbc:LatitudeDegreesMeasure>
-                  <cbc:LongitudeDegreesMeasure>18.063363084988005</cbc:LongitudeDegreesMeasure>
-                  <cbc:AltitudeMeasure>12.5</cbc:AltitudeMeasure>
+                  <cbc:LatitudeDegreesMeasure unitCode="DD">59.331660358041425</cbc:LatitudeDegreesMeasure>
+                  <cbc:LongitudeDegreesMeasure unitCode="DD">18.063363084988005</cbc:LongitudeDegreesMeasure>
+                  <cbc:AltitudeMeasure unitCode="MTR">12.5</cbc:AltitudeMeasure>
                </cac:LocationCoordinate>
             </cac:Address>
          </cac:Location>
@@ -232,7 +223,7 @@
       </cac:RequestedDeliveryTransportEvent>
       <cac:ConsigneeParty>
          <cac:PartyIdentification>
-            <cbc:ID>7300010000001</cbc:ID>
+            <cbc:ID schemeID="0088">7300010000001</cbc:ID>
          </cac:PartyIdentification>
          <cac:PartyName>
             <cbc:Name>HUS Hospital</cbc:Name>
@@ -252,7 +243,7 @@
          </cac:PostalAddress>
          <cac:PartyLegalEntity>
             <cbc:RegistrationName>HUS Hospital</cbc:RegistrationName>
-            <cbc:CompanyID>1567535-0</cbc:CompanyID>
+            <cbc:CompanyID schemeID="0212">1567535-0</cbc:CompanyID>
             <cac:RegistrationAddress>
                <cbc:CityName>Helsinki</cbc:CityName>
                <cac:Country>
@@ -268,7 +259,7 @@
       </cac:ConsigneeParty>
       <cac:ConsignorParty>
          <cac:PartyIdentification>
-            <cbc:ID>7300010000001</cbc:ID>
+            <cbc:ID schemeID="0088">7300010000001</cbc:ID>
          </cac:PartyIdentification>
          <cac:PartyName>
             <cbc:Name>Novo Nordisk Pharmatech A/S</cbc:Name>
@@ -288,7 +279,7 @@
          </cac:PostalAddress>
          <cac:PartyLegalEntity>
             <cbc:RegistrationName>Novo Nordisk Pharmatech A/S</cbc:RegistrationName>
-            <cbc:CompanyID>13246149</cbc:CompanyID>
+            <cbc:CompanyID schemeID="0198">13246149</cbc:CompanyID>
             <cac:RegistrationAddress>
                <cbc:CityName>Køge</cbc:CityName>
                <cac:Country>
@@ -312,7 +303,7 @@
          <cbc:ID>DAP</cbc:ID>
          <cbc:SpecialTerms>DAP</cbc:SpecialTerms>
          <cac:DeliveryLocation>
-            <cbc:ID>5790000435951</cbc:ID>
+            <cbc:ID schemeID="0088">5790000435951</cbc:ID>
             <cbc:Name>CPH</cbc:Name>
          </cac:DeliveryLocation>
       </cac:DeliveryTerms>
@@ -323,7 +314,7 @@
       <cac:FreightAllowanceCharge>
          <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
          <cbc:AllowanceChargeReasonCode>1</cbc:AllowanceChargeReasonCode>
-         <cbc:Amount>100</cbc:Amount>
+         <cbc:Amount currencyID="EUR">100</cbc:Amount>
       </cac:FreightAllowanceCharge>
       <cac:MainCarriageShipmentStage>
          <cbc:TransportModeCode>4</cbc:TransportModeCode>
@@ -331,7 +322,7 @@
          <cac:RequestedDepartureTransportEvent>
             <cbc:IdentificationID>6522956526554654</cbc:IdentificationID>
             <cac:Location>
-               <cbc:ID>5790000435951</cbc:ID>
+               <cbc:ID schemeID="0088">5790000435951</cbc:ID>
                <cbc:Name>Name</cbc:Name>
                <cac:Address>
                   <cbc:StreetName>Avon Way</cbc:StreetName>
@@ -347,9 +338,9 @@
                   </cac:Country>
                   <cac:LocationCoordinate>
                      <cbc:CoordinateSystemCode>EPSG:3857</cbc:CoordinateSystemCode>
-                     <cbc:LatitudeDegreesMeasure>59.331660358041425</cbc:LatitudeDegreesMeasure>
-                     <cbc:LongitudeDegreesMeasure>18.063363084988005</cbc:LongitudeDegreesMeasure>
-                     <cbc:AltitudeMeasure>12.5</cbc:AltitudeMeasure>
+                     <cbc:LatitudeDegreesMeasure unitCode="DD">59.331660358041425</cbc:LatitudeDegreesMeasure>
+                     <cbc:LongitudeDegreesMeasure unitCode="DD">18.063363084988005</cbc:LongitudeDegreesMeasure>
+                     <cbc:AltitudeMeasure unitCode="MTR">12.5</cbc:AltitudeMeasure>
                   </cac:LocationCoordinate>
                </cac:Address>
             </cac:Location>
@@ -363,7 +354,7 @@
          <cac:RequestedArrivalTransportEvent>
             <cbc:IdentificationID>54354684732168476514</cbc:IdentificationID>
             <cac:Location>
-               <cbc:ID>5790000435951</cbc:ID>
+               <cbc:ID schemeID="0088">5790000435951</cbc:ID>
                <cbc:Name>Finnair Cargo terminal</cbc:Name>
                <cac:Address>
                   <cbc:StreetName>Turbiinitie 4</cbc:StreetName>
@@ -399,15 +390,15 @@
          </cac:TransportEquipment>
          <cac:MeasurementDimension>
             <cbc:AttributeID>LN</cbc:AttributeID>
-            <cbc:Measure>123</cbc:Measure>
+            <cbc:Measure unitCode="MTR">123</cbc:Measure>
          </cac:MeasurementDimension>
          <cac:MinimumTemperature>
             <cbc:AttributeID>TC</cbc:AttributeID>
-            <cbc:Measure>-21</cbc:Measure>
+            <cbc:Measure unitCode="CEL">-21</cbc:Measure>
          </cac:MinimumTemperature>
          <cac:MaximumTemperature>
             <cbc:AttributeID>TC</cbc:AttributeID>
-            <cbc:Measure>-21</cbc:Measure>
+            <cbc:Measure unitCode="CEL">-21</cbc:Measure>
          </cac:MaximumTemperature>
          <cac:GoodsItem>
             <cbc:ID>10</cbc:ID>
@@ -416,7 +407,7 @@
             <cac:Item>
                <cbc:Name>Torsk</cbc:Name>
                <cac:CommodityClassification>
-                  <cbc:ItemClassificationCode>KO2012140200</cbc:ItemClassificationCode>
+                  <cbc:ItemClassificationCode listID="ZZZ" listVersionID="3.0.2" name="SBMI">KO2012140200</cbc:ItemClassificationCode>
                </cac:CommodityClassification>
                <cac:HazardousItem>
                   <cbc:ID>123</cbc:ID>
@@ -426,18 +417,18 @@
                   <cbc:CategoryName>Acute toxicity</cbc:CategoryName>
                   <cbc:HazardousCategoryCode>123</cbc:HazardousCategoryCode>
                   <cbc:HazardClassID>Code</cbc:HazardClassID>
-                  <cbc:NetWeightMeasure>123</cbc:NetWeightMeasure>
-                  <cbc:NetVolumeMeasure>12.3</cbc:NetVolumeMeasure>
+                  <cbc:NetWeightMeasure unitCode="KGM">123</cbc:NetWeightMeasure>
+                  <cbc:NetVolumeMeasure unitCode="MTQ">12.3</cbc:NetVolumeMeasure>
                   <cac:HazardousGoodsTransit>
                      <cbc:PackingCriteriaCode>123</cbc:PackingCriteriaCode>
                   </cac:HazardousGoodsTransit>
                   <cac:EmergencyTemperature>
                      <cbc:AttributeID>ABC</cbc:AttributeID>
-                     <cbc:Measure>78</cbc:Measure>
+                     <cbc:Measure unitCode="CEL">78</cbc:Measure>
                   </cac:EmergencyTemperature>
                </cac:HazardousItem>
             </cac:Item>
          </cac:GoodsItem>
       </cac:TransportHandlingUnit>
    </cac:Consignment>
-</ubl_0:TransportExecutionPlanRequest>
+</TransportExecutionPlanRequest>

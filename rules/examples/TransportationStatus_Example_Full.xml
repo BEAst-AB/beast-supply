@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ubl_0:TransportationStatus xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:TransportationStatus-2"
-                            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-                            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-                            xmlns:ubl_0="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
+<TransportationStatus xmlns="urn:oasis:names:specification:ubl:schema:xsd:TransportationStatus-2"
+                      xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                      xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
    <cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:transportation_status:1</cbc:CustomizationID>
    <cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:transportation_status_w_request:1</cbc:ProfileID>
    <cbc:ID>TS_1</cbc:ID>
@@ -10,270 +9,204 @@
    <cbc:IssueTime>09:29:30+01:00</cbc:IssueTime>
    <cbc:Description>Description</cbc:Description>
    <cbc:ShippingOrderID>KHN23-44044</cbc:ShippingOrderID>
-   <cbc:TransportationStatusTypeCode>3</cbc:TransportationStatusTypeCode>
+   <cbc:TransportationStatusTypeCode listID="TrStatus1">3</cbc:TransportationStatusTypeCode>
    <cbc:TransportExecutionStatusCode>35</cbc:TransportExecutionStatusCode>
-   <cac:Consignment>
-      <cbc:ID>12535157654567654</cbc:ID>
-      <cac:Status>
-         <cbc:ConditionCode>4</cbc:ConditionCode>
+   <cac:Consignment>12535157654567654 4 Description 234526457 2023-06-01 10:23:34+01:00 1 true 4 Description 80 Prolonged coffebreak 3453 2021-09-29 09:49:00+01:00 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se 2021-09-25 12:00:00+01:00 2021-09-27 12:00:00+01:00 CON_THU_1 4 Description<cbc:ID>12535157654567654</cbc:ID>
+      <cac:Status>4 Description<cbc:ConditionCode listID="zzz">4</cbc:ConditionCode>
          <cbc:Description>Description</cbc:Description>
       </cac:Status>
-      <cac:TransportEvent>
-         <cbc:IdentificationID>234526457</cbc:IdentificationID>
+      <cac:TransportEvent>234526457 2023-06-01 10:23:34+01:00 1 true 4 Description 80 Prolonged coffebreak 3453 2021-09-29 09:49:00+01:00 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se 2021-09-25 12:00:00+01:00 2021-09-27 12:00:00+01:00<cbc:IdentificationID>234526457</cbc:IdentificationID>
          <cbc:OccurrenceDate>2023-06-01</cbc:OccurrenceDate>
          <cbc:OccurrenceTime>10:23:34+01:00</cbc:OccurrenceTime>
          <cbc:TransportEventTypeCode>1</cbc:TransportEventTypeCode>
          <cbc:CompletionIndicator>true</cbc:CompletionIndicator>
-         <cac:CurrentStatus>
-            <cbc:ConditionCode>4</cbc:ConditionCode>
+         <cac:CurrentStatus>4 Description 80 Prolonged coffebreak<cbc:ConditionCode listID="zzz">4</cbc:ConditionCode>
             <cbc:Description>Description</cbc:Description>
-            <cbc:StatusReasonCode>80</cbc:StatusReasonCode>
+            <cbc:StatusReasonCode listID="zzz">80</cbc:StatusReasonCode>
             <cbc:StatusReason>Prolonged coffebreak</cbc:StatusReason>
          </cac:CurrentStatus>
-         <cac:Signature>
-            <cbc:ID>3453</cbc:ID>
+         <cac:Signature>3453 2021-09-29 09:49:00+01:00 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se<cbc:ID>3453</cbc:ID>
             <cbc:ValidationDate>2021-09-29</cbc:ValidationDate>
             <cbc:ValidationTime>09:49:00+01:00</cbc:ValidationTime>
-            <cac:SignatoryParty>
-               <cac:PartyName>
-                  <cbc:Name>HUS Hospital</cbc:Name>
+            <cac:SignatoryParty>HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director<cac:PartyName>HUS Hospital<cbc:Name>HUS Hospital</cbc:Name>
                </cac:PartyName>
-               <cac:PostalAddress>
-                  <cbc:StreetName>Topeliuksenkatu 5</cbc:StreetName>
+               <cac:PostalAddress>Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI<cbc:StreetName>Topeliuksenkatu 5</cbc:StreetName>
                   <cbc:AdditionalStreetName>Purchasing</cbc:AdditionalStreetName>
                   <cbc:CityName>Helsinki</cbc:CityName>
                   <cbc:PostalZone>00260</cbc:PostalZone>
                   <cbc:CountrySubentity>Heremouthshire</cbc:CountrySubentity>
-                  <cac:AddressLine>
-                     <cbc:Line>Gate 34</cbc:Line>
+                  <cac:AddressLine>Gate 34<cbc:Line>Gate 34</cbc:Line>
                   </cac:AddressLine>
-                  <cac:Country>
-                     <cbc:IdentificationCode>FI</cbc:IdentificationCode>
+                  <cac:Country>FI<cbc:IdentificationCode>FI</cbc:IdentificationCode>
                   </cac:Country>
                </cac:PostalAddress>
-               <cac:Person>
-                  <cbc:ID>45976</cbc:ID>
+               <cac:Person>45976 Valiry Sender Director<cbc:ID schemeID="zzz">45976</cbc:ID>
                   <cbc:FirstName>Valiry</cbc:FirstName>
                   <cbc:FamilyName>Sender</cbc:FamilyName>
                   <cbc:JobTitle>Director</cbc:JobTitle>
                </cac:Person>
             </cac:SignatoryParty>
-            <cac:DigitalSignatureAttachment>
-               <cbc:EmbeddedDocumentBinaryObject>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
-               <cac:ExternalReference>
-                  <cbc:URI>www.beast.se</cbc:URI>
+            <cac:DigitalSignatureAttachment>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+               <cac:ExternalReference>www.beast.se<cbc:URI>www.beast.se</cbc:URI>
                </cac:ExternalReference>
             </cac:DigitalSignatureAttachment>
          </cac:Signature>
-         <cac:Period>
-            <cbc:StartDate>2021-09-25</cbc:StartDate>
+         <cac:Period>2021-09-25 12:00:00+01:00 2021-09-27 12:00:00+01:00<cbc:StartDate>2021-09-25</cbc:StartDate>
             <cbc:StartTime>12:00:00+01:00</cbc:StartTime>
             <cbc:EndDate>2021-09-27</cbc:EndDate>
             <cbc:EndTime>12:00:00+01:00</cbc:EndTime>
          </cac:Period>
       </cac:TransportEvent>
-      <cac:TransportHandlingUnit>
-         <cbc:ID>CON_THU_1</cbc:ID>
-         <cac:Status>
-            <cbc:ConditionCode>4</cbc:ConditionCode>
+      <cac:TransportHandlingUnit>CON_THU_1 4 Description<cbc:ID>CON_THU_1</cbc:ID>
+         <cac:Status>4 Description<cbc:ConditionCode listID="zzz">4</cbc:ConditionCode>
             <cbc:Description>Description</cbc:Description>
          </cac:Status>
       </cac:TransportHandlingUnit>
    </cac:Consignment>
-   <cac:TransportEvent>
-      <cbc:IdentificationID>1234</cbc:IdentificationID>
+   <cac:TransportEvent>1234 2023-06-06 09:29:30+01:00 1 true 4 Description 80 Prolonged coffebreak 3453 2021-09-29 09:49:00+01:00 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se 2021-09-25 12:00:00+01:00 2021-09-27 12:00:00+01:00<cbc:IdentificationID>1234</cbc:IdentificationID>
       <cbc:OccurrenceDate>2023-06-06</cbc:OccurrenceDate>
       <cbc:OccurrenceTime>09:29:30+01:00</cbc:OccurrenceTime>
       <cbc:TransportEventTypeCode>1</cbc:TransportEventTypeCode>
       <cbc:CompletionIndicator>true</cbc:CompletionIndicator>
-      <cac:CurrentStatus>
-         <cbc:ConditionCode>4</cbc:ConditionCode>
+      <cac:CurrentStatus>4 Description 80 Prolonged coffebreak<cbc:ConditionCode listID="zzz">4</cbc:ConditionCode>
          <cbc:Description>Description</cbc:Description>
-         <cbc:StatusReasonCode>80</cbc:StatusReasonCode>
+         <cbc:StatusReasonCode listID="zzz">80</cbc:StatusReasonCode>
          <cbc:StatusReason>Prolonged coffebreak</cbc:StatusReason>
       </cac:CurrentStatus>
-      <cac:Signature>
-         <cbc:ID>3453</cbc:ID>
+      <cac:Signature>3453 2021-09-29 09:49:00+01:00 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se<cbc:ID>3453</cbc:ID>
          <cbc:ValidationDate>2021-09-29</cbc:ValidationDate>
          <cbc:ValidationTime>09:49:00+01:00</cbc:ValidationTime>
-         <cac:SignatoryParty>
-            <cac:PartyName>
-               <cbc:Name>HUS Hospital</cbc:Name>
+         <cac:SignatoryParty>HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director<cac:PartyName>HUS Hospital<cbc:Name>HUS Hospital</cbc:Name>
             </cac:PartyName>
-            <cac:PostalAddress>
-               <cbc:StreetName>Topeliuksenkatu 5</cbc:StreetName>
+            <cac:PostalAddress>Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI<cbc:StreetName>Topeliuksenkatu 5</cbc:StreetName>
                <cbc:AdditionalStreetName>Purchasing</cbc:AdditionalStreetName>
                <cbc:CityName>Helsinki</cbc:CityName>
                <cbc:PostalZone>00260</cbc:PostalZone>
                <cbc:CountrySubentity>Heremouthshire</cbc:CountrySubentity>
-               <cac:AddressLine>
-                  <cbc:Line>Gate 34</cbc:Line>
+               <cac:AddressLine>Gate 34<cbc:Line>Gate 34</cbc:Line>
                </cac:AddressLine>
-               <cac:Country>
-                  <cbc:IdentificationCode>FI</cbc:IdentificationCode>
+               <cac:Country>FI<cbc:IdentificationCode>FI</cbc:IdentificationCode>
                </cac:Country>
             </cac:PostalAddress>
-            <cac:Person>
-               <cbc:ID>45976</cbc:ID>
+            <cac:Person>45976 Valiry Sender Director<cbc:ID schemeID="zzz">45976</cbc:ID>
                <cbc:FirstName>Valiry</cbc:FirstName>
                <cbc:FamilyName>Sender</cbc:FamilyName>
                <cbc:JobTitle>Director</cbc:JobTitle>
             </cac:Person>
          </cac:SignatoryParty>
-         <cac:DigitalSignatureAttachment>
-            <cbc:EmbeddedDocumentBinaryObject>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
-            <cac:ExternalReference>
-               <cbc:URI>www.beast.se</cbc:URI>
+         <cac:DigitalSignatureAttachment>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+            <cac:ExternalReference>www.beast.se<cbc:URI>www.beast.se</cbc:URI>
             </cac:ExternalReference>
          </cac:DigitalSignatureAttachment>
       </cac:Signature>
-      <cac:Period>
-         <cbc:StartDate>2021-09-25</cbc:StartDate>
+      <cac:Period>2021-09-25 12:00:00+01:00 2021-09-27 12:00:00+01:00<cbc:StartDate>2021-09-25</cbc:StartDate>
          <cbc:StartTime>12:00:00+01:00</cbc:StartTime>
          <cbc:EndDate>2021-09-27</cbc:EndDate>
          <cbc:EndTime>12:00:00+01:00</cbc:EndTime>
       </cac:Period>
    </cac:TransportEvent>
-   <cac:DocumentReference>
-      <cbc:ID>7648779</cbc:ID>
+   <cac:DocumentReference>7648779 380 Delivery soecification aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se<cbc:ID>7648779</cbc:ID>
       <cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
       <cbc:DocumentType>Delivery soecification</cbc:DocumentType>
-      <cac:Attachment>
-         <cbc:EmbeddedDocumentBinaryObject>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
-         <cac:ExternalReference>
-            <cbc:URI>www.beast.se</cbc:URI>
+      <cac:Attachment>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+         <cac:ExternalReference>www.beast.se<cbc:URI>www.beast.se</cbc:URI>
          </cac:ExternalReference>
       </cac:Attachment>
    </cac:DocumentReference>
-   <cac:Signature>
-      <cbc:ID>3453</cbc:ID>
+   <cac:Signature>3453 2021-09-29 09:49:00+01:00 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se<cbc:ID>3453</cbc:ID>
       <cbc:ValidationDate>2021-09-29</cbc:ValidationDate>
       <cbc:ValidationTime>09:49:00+01:00</cbc:ValidationTime>
-      <cac:SignatoryParty>
-         <cac:PartyName>
-            <cbc:Name>HUS Hospital</cbc:Name>
+      <cac:SignatoryParty>HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI 45976 Valiry Sender Director<cac:PartyName>HUS Hospital<cbc:Name>HUS Hospital</cbc:Name>
          </cac:PartyName>
-         <cac:PostalAddress>
-            <cbc:StreetName>Topeliuksenkatu 5</cbc:StreetName>
+         <cac:PostalAddress>Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI<cbc:StreetName>Topeliuksenkatu 5</cbc:StreetName>
             <cbc:AdditionalStreetName>Purchasing</cbc:AdditionalStreetName>
             <cbc:CityName>Helsinki</cbc:CityName>
             <cbc:PostalZone>00260</cbc:PostalZone>
             <cbc:CountrySubentity>Heremouthshire</cbc:CountrySubentity>
-            <cac:AddressLine>
-               <cbc:Line>Gate 34</cbc:Line>
+            <cac:AddressLine>Gate 34<cbc:Line>Gate 34</cbc:Line>
             </cac:AddressLine>
-            <cac:Country>
-               <cbc:IdentificationCode>FI</cbc:IdentificationCode>
+            <cac:Country>FI<cbc:IdentificationCode>FI</cbc:IdentificationCode>
             </cac:Country>
          </cac:PostalAddress>
-         <cac:Person>
-            <cbc:ID>45976</cbc:ID>
+         <cac:Person>45976 Valiry Sender Director<cbc:ID schemeID="zzz">45976</cbc:ID>
             <cbc:FirstName>Valiry</cbc:FirstName>
             <cbc:FamilyName>Sender</cbc:FamilyName>
             <cbc:JobTitle>Director</cbc:JobTitle>
          </cac:Person>
       </cac:SignatoryParty>
-      <cac:DigitalSignatureAttachment>
-         <cbc:EmbeddedDocumentBinaryObject>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
-         <cac:ExternalReference>
-            <cbc:URI>www.beast.se</cbc:URI>
+      <cac:DigitalSignatureAttachment>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+         <cac:ExternalReference>www.beast.se<cbc:URI>www.beast.se</cbc:URI>
          </cac:ExternalReference>
       </cac:DigitalSignatureAttachment>
    </cac:Signature>
-   <cac:SenderParty>
-      <cbc:EndpointID>41955619</cbc:EndpointID>
-      <cac:PartyIdentification>
-         <cbc:ID>7300010000001</cbc:ID>
+   <cac:SenderParty>41955619 7300010000001 Leman Ventrupvej 6 Greve Landsby Greve 2670 Region Sjælland Bygning 5 DK GB325456788 VAT Consortial SC234567 Farthing GB Mr Sender 0158 1233714 sender@consignor-company.co.uk<cbc:EndpointID schemeID="0198">41955619</cbc:EndpointID>
+      <cac:PartyIdentification>7300010000001<cbc:ID schemeID="0088">7300010000001</cbc:ID>
       </cac:PartyIdentification>
-      <cac:PartyName>
-         <cbc:Name>Leman</cbc:Name>
+      <cac:PartyName>Leman<cbc:Name>Leman</cbc:Name>
       </cac:PartyName>
-      <cac:PostalAddress>
-         <cbc:StreetName>Ventrupvej 6</cbc:StreetName>
+      <cac:PostalAddress>Ventrupvej 6 Greve Landsby Greve 2670 Region Sjælland Bygning 5 DK<cbc:StreetName>Ventrupvej 6</cbc:StreetName>
          <cbc:AdditionalStreetName>Greve Landsby</cbc:AdditionalStreetName>
          <cbc:CityName>Greve</cbc:CityName>
          <cbc:PostalZone>2670</cbc:PostalZone>
          <cbc:CountrySubentity>Region Sjælland</cbc:CountrySubentity>
-         <cac:AddressLine>
-            <cbc:Line>Bygning 5</cbc:Line>
+         <cac:AddressLine>Bygning 5<cbc:Line>Bygning 5</cbc:Line>
          </cac:AddressLine>
-         <cac:Country>
-            <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+         <cac:Country>DK<cbc:IdentificationCode>DK</cbc:IdentificationCode>
          </cac:Country>
       </cac:PostalAddress>
-      <cac:PartyTaxScheme>
-         <cbc:CompanyID>GB325456788</cbc:CompanyID>
-         <cac:TaxScheme>
-            <cbc:ID>VAT</cbc:ID>
+      <cac:PartyTaxScheme>GB325456788 VAT<cbc:CompanyID>GB325456788</cbc:CompanyID>
+         <cac:TaxScheme>VAT<cbc:ID>VAT</cbc:ID>
          </cac:TaxScheme>
       </cac:PartyTaxScheme>
-      <cac:PartyLegalEntity>
-         <cbc:RegistrationName>Consortial</cbc:RegistrationName>
-         <cbc:CompanyID>SC234567</cbc:CompanyID>
-         <cac:RegistrationAddress>
-            <cbc:CityName>Farthing</cbc:CityName>
-            <cac:Country>
-               <cbc:IdentificationCode>GB</cbc:IdentificationCode>
+      <cac:PartyLegalEntity>Consortial SC234567 Farthing GB<cbc:RegistrationName>Consortial</cbc:RegistrationName>
+         <cbc:CompanyID schemeID="0089">SC234567</cbc:CompanyID>
+         <cac:RegistrationAddress>Farthing GB<cbc:CityName>Farthing</cbc:CityName>
+            <cac:Country>GB<cbc:IdentificationCode>GB</cbc:IdentificationCode>
             </cac:Country>
          </cac:RegistrationAddress>
       </cac:PartyLegalEntity>
-      <cac:Contact>
-         <cbc:Name>Mr Sender</cbc:Name>
+      <cac:Contact>Mr Sender 0158 1233714 sender@consignor-company.co.uk<cbc:Name>Mr Sender</cbc:Name>
          <cbc:Telephone>0158 1233714</cbc:Telephone>
          <cbc:ElectronicMail>sender@consignor-company.co.uk</cbc:ElectronicMail>
       </cac:Contact>
    </cac:SenderParty>
-   <cac:ReceiverParty>
-      <cbc:EndpointID>10154596</cbc:EndpointID>
-      <cac:PartyIdentification>
-         <cbc:ID>7300010000001</cbc:ID>
+   <cac:ReceiverParty>10154596 7300010000001 DHL Express Jydekrogen 14 Indkørsel 5 Vallensbæk Landsby 2625 Region Hovedstaden Bygning 5 DK GB325456788 VAT Consortial SC234567 Farthing GB Mrs Receiver 0158 1233714 msreceiver@tplogistics.co.uk<cbc:EndpointID schemeID="0198">10154596</cbc:EndpointID>
+      <cac:PartyIdentification>7300010000001<cbc:ID schemeID="0088">7300010000001</cbc:ID>
       </cac:PartyIdentification>
-      <cac:PartyName>
-         <cbc:Name>DHL Express</cbc:Name>
+      <cac:PartyName>DHL Express<cbc:Name>DHL Express</cbc:Name>
       </cac:PartyName>
-      <cac:PostalAddress>
-         <cbc:StreetName>Jydekrogen 14</cbc:StreetName>
+      <cac:PostalAddress>Jydekrogen 14 Indkørsel 5 Vallensbæk Landsby 2625 Region Hovedstaden Bygning 5 DK<cbc:StreetName>Jydekrogen 14</cbc:StreetName>
          <cbc:AdditionalStreetName>Indkørsel 5</cbc:AdditionalStreetName>
          <cbc:CityName>Vallensbæk Landsby</cbc:CityName>
          <cbc:PostalZone>2625</cbc:PostalZone>
          <cbc:CountrySubentity>Region Hovedstaden</cbc:CountrySubentity>
-         <cac:AddressLine>
-            <cbc:Line>Bygning 5</cbc:Line>
+         <cac:AddressLine>Bygning 5<cbc:Line>Bygning 5</cbc:Line>
          </cac:AddressLine>
-         <cac:Country>
-            <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+         <cac:Country>DK<cbc:IdentificationCode>DK</cbc:IdentificationCode>
          </cac:Country>
       </cac:PostalAddress>
-      <cac:PartyTaxScheme>
-         <cbc:CompanyID>GB325456788</cbc:CompanyID>
-         <cac:TaxScheme>
-            <cbc:ID>VAT</cbc:ID>
+      <cac:PartyTaxScheme>GB325456788 VAT<cbc:CompanyID>GB325456788</cbc:CompanyID>
+         <cac:TaxScheme>VAT<cbc:ID>VAT</cbc:ID>
          </cac:TaxScheme>
       </cac:PartyTaxScheme>
-      <cac:PartyLegalEntity>
-         <cbc:RegistrationName>Consortial</cbc:RegistrationName>
-         <cbc:CompanyID>SC234567</cbc:CompanyID>
-         <cac:RegistrationAddress>
-            <cbc:CityName>Farthing</cbc:CityName>
-            <cac:Country>
-               <cbc:IdentificationCode>GB</cbc:IdentificationCode>
+      <cac:PartyLegalEntity>Consortial SC234567 Farthing GB<cbc:RegistrationName>Consortial</cbc:RegistrationName>
+         <cbc:CompanyID schemeID="0089">SC234567</cbc:CompanyID>
+         <cac:RegistrationAddress>Farthing GB<cbc:CityName>Farthing</cbc:CityName>
+            <cac:Country>GB<cbc:IdentificationCode>GB</cbc:IdentificationCode>
             </cac:Country>
          </cac:RegistrationAddress>
       </cac:PartyLegalEntity>
-      <cac:Contact>
-         <cbc:Name>Mrs Receiver</cbc:Name>
+      <cac:Contact>Mrs Receiver 0158 1233714 msreceiver@tplogistics.co.uk<cbc:Name>Mrs Receiver</cbc:Name>
          <cbc:Telephone>0158 1233714</cbc:Telephone>
          <cbc:ElectronicMail>msreceiver@tplogistics.co.uk</cbc:ElectronicMail>
       </cac:Contact>
    </cac:ReceiverParty>
-   <cac:TransportationStatusRequestDocumentReference>
-      <cbc:ID>7648779</cbc:ID>
+   <cac:TransportationStatusRequestDocumentReference>7648779 2021-09-29 07:49:00+01:00<cbc:ID>7648779</cbc:ID>
       <cbc:IssueDate>2021-09-29</cbc:IssueDate>
       <cbc:IssueTime>07:49:00+01:00</cbc:IssueTime>
    </cac:TransportationStatusRequestDocumentReference>
-   <cac:TransportExecutionPlanDocumentReference>
-      <cbc:ID>7648779</cbc:ID>
+   <cac:TransportExecutionPlanDocumentReference>7648779 2021-09-29 07:49:00+01:00<cbc:ID>7648779</cbc:ID>
       <cbc:IssueDate>2021-09-29</cbc:IssueDate>
       <cbc:IssueTime>07:49:00+01:00</cbc:IssueTime>
    </cac:TransportExecutionPlanDocumentReference>
-</ubl_0:TransportationStatus>
+</TransportationStatus>
