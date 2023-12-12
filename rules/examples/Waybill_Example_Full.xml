@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ubl_0:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+<ubl:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
                xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
                xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-               xmlns:ubl_0="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
    <cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:waybill:1</cbc:CustomizationID>
    <cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:waybill_only:1</cbc:ProfileID>
    <cbc:ID>KHN23-44044-1</cbc:ID>
@@ -284,4 +283,4 @@
          </cac:ExternalReference>
       </cac:DigitalSignatureAttachment>
    </cac:Signature>
-</ubl_0:Waybill>
+</ubl:Waybill>
