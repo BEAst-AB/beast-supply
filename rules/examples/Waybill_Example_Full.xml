@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ubl_0:Waybill xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
-               xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-               xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-               xmlns:ubl_0="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
+<Waybill xmlns="urn:oasis:names:specification:ubl:schema:xsd:Waybill-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
    <cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:waybill:1</cbc:CustomizationID>
    <cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:waybill_only:1</cbc:ProfileID>
    <cbc:ID>KHN23-44044-1</cbc:ID>
@@ -11,8 +10,8 @@
    <cbc:IssueTime>09:00:00+02:00</cbc:IssueTime>
    <cbc:Name>Air Waybill</cbc:Name>
    <cbc:ShippingOrderID>KHN23-44044</cbc:ShippingOrderID>
-   <cac:ConsignorParty>13246149 7300010000001 Novo Nordisk Pharmatech A/S Københavnsvej 216 Purchasing Køge 4600 Heremouthshire Gate 34 DK Novo Nordisk Pharmatech A/S 13246149 Køge DK Mr Sender 0158 1233714 sender@consignor-company.co.uk<cbc:EndpointID>13246149</cbc:EndpointID>
-      <cac:PartyIdentification>7300010000001<cbc:ID>7300010000001</cbc:ID>
+   <cac:ConsignorParty>13246149 7300010000001 Novo Nordisk Pharmatech A/S Københavnsvej 216 Purchasing Køge 4600 Heremouthshire Gate 34 DK Novo Nordisk Pharmatech A/S 13246149 Køge DK Mr Sender 0158 1233714 sender@consignor-company.co.uk<cbc:EndpointID schemeID="0198">13246149</cbc:EndpointID>
+      <cac:PartyIdentification>7300010000001<cbc:ID schemeID="0088">7300010000001</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>Novo Nordisk Pharmatech A/S<cbc:Name>Novo Nordisk Pharmatech A/S</cbc:Name>
       </cac:PartyName>
@@ -27,7 +26,7 @@
          </cac:Country>
       </cac:PostalAddress>
       <cac:PartyLegalEntity>Novo Nordisk Pharmatech A/S 13246149 Køge DK<cbc:RegistrationName>Novo Nordisk Pharmatech A/S</cbc:RegistrationName>
-         <cbc:CompanyID>13246149</cbc:CompanyID>
+         <cbc:CompanyID schemeID="0198">13246149</cbc:CompanyID>
          <cac:RegistrationAddress>Køge DK<cbc:CityName>Køge</cbc:CityName>
             <cac:Country>DK<cbc:IdentificationCode>DK</cbc:IdentificationCode>
             </cac:Country>
@@ -38,8 +37,8 @@
          <cbc:ElectronicMail>sender@consignor-company.co.uk</cbc:ElectronicMail>
       </cac:Contact>
    </cac:ConsignorParty>
-   <cac:CarrierParty>0108023-3 7300010000001 Finnair Oyj Tietotie 9 Purchasing Vantaa 4600 Heremouthshire Gate 34 FI Leman 0108023-3 Vantaa FI Mrs Bouquet 0158 1233714 bouquet@fpconsortial.co.uk 45642323 ID06<cbc:EndpointID>0108023-3</cbc:EndpointID>
-      <cac:PartyIdentification>7300010000001<cbc:ID>7300010000001</cbc:ID>
+   <cac:CarrierParty>0108023-3 7300010000001 Finnair Oyj Tietotie 9 Purchasing Vantaa 4600 Heremouthshire Gate 34 FI Leman 0108023-3 Vantaa FI Mrs Bouquet 0158 1233714 bouquet@fpconsortial.co.uk 45642323 ID06<cbc:EndpointID schemeID="0212">0108023-3</cbc:EndpointID>
+      <cac:PartyIdentification>7300010000001<cbc:ID schemeID="0088">7300010000001</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>Finnair Oyj<cbc:Name>Finnair Oyj</cbc:Name>
       </cac:PartyName>
@@ -54,7 +53,7 @@
          </cac:Country>
       </cac:PostalAddress>
       <cac:PartyLegalEntity>Leman 0108023-3 Vantaa FI<cbc:RegistrationName>Leman</cbc:RegistrationName>
-         <cbc:CompanyID>0108023-3</cbc:CompanyID>
+         <cbc:CompanyID schemeID="0212">0108023-3</cbc:CompanyID>
          <cac:RegistrationAddress>Vantaa FI<cbc:CityName>Vantaa</cbc:CityName>
             <cac:Country>FI<cbc:IdentificationCode>FI</cbc:IdentificationCode>
             </cac:Country>
@@ -69,7 +68,7 @@
          </cac:IdentityDocumentReference>
       </cac:Person>
    </cac:CarrierParty>
-   <cac:FreightForwarderParty>7300010000001 Finnair Oyj Tietotie 9 Purchasing Vantaa 4600 Heremouthshire Gate 34 FI Leman 0108023-3 Vantaa FI Mr Sender 0158 1233714 sender@forwarder-company.se<cac:PartyIdentification>7300010000001<cbc:ID>7300010000001</cbc:ID>
+   <cac:FreightForwarderParty>7300010000001 Finnair Oyj Tietotie 9 Purchasing Vantaa 4600 Heremouthshire Gate 34 FI Leman 0108023-3 Vantaa FI Mr Sender 0158 1233714 sender@forwarder-company.se<cac:PartyIdentification>7300010000001<cbc:ID schemeID="0088">7300010000001</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>Finnair Oyj<cbc:Name>Finnair Oyj</cbc:Name>
       </cac:PartyName>
@@ -84,7 +83,7 @@
          </cac:Country>
       </cac:PostalAddress>
       <cac:PartyLegalEntity>Leman 0108023-3 Vantaa FI<cbc:RegistrationName>Leman</cbc:RegistrationName>
-         <cbc:CompanyID>0108023-3</cbc:CompanyID>
+         <cbc:CompanyID schemeID="0212">0108023-3</cbc:CompanyID>
          <cac:RegistrationAddress>Vantaa FI<cbc:CityName>Vantaa</cbc:CityName>
             <cac:Country>FI<cbc:IdentificationCode>FI</cbc:IdentificationCode>
             </cac:Country>
@@ -100,12 +99,12 @@
       <cac:Consignment>12535157654567654 1234 5678 1030 20 0.4 false 1 7300010000001 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI HUS Hospital 1567535-0 Helsinki FI Mr Sender 0158 1233714 sender@consignor-company.co.uk DK FI DAP To be paid on invoice 11111222222222 AG ZZ To be set vertical false Keep dry 34563444 CN 10 true A 20 foot refrigerated container that is not actively controlling temperature of the product. true LN 123 TC -21 TC -21 Torsk sl u/h fersk fulliset 20kg iso 2-4 kg false Torsk KO2012140200 ADR 2 40.8<cbc:ID>12535157654567654</cbc:ID>
          <cbc:ConsigneeAssignedID>1234</cbc:ConsigneeAssignedID>
          <cbc:ConsignorAssignedID>5678</cbc:ConsignorAssignedID>
-         <cbc:GrossWeightMeasure>1030</cbc:GrossWeightMeasure>
-         <cbc:GrossVolumeMeasure>20</cbc:GrossVolumeMeasure>
-         <cbc:LoadingLengthMeasure>0.4</cbc:LoadingLengthMeasure>
+         <cbc:GrossWeightMeasure unitCode="KGM">1030</cbc:GrossWeightMeasure>
+         <cbc:GrossVolumeMeasure unitCode="MTQ">20</cbc:GrossVolumeMeasure>
+         <cbc:LoadingLengthMeasure unitCode="MTR">0.4</cbc:LoadingLengthMeasure>
          <cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
-         <cbc:TotalTransportHandlingUnitQuantity>1</cbc:TotalTransportHandlingUnitQuantity>
-         <cac:ConsigneeParty>7300010000001 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI HUS Hospital 1567535-0 Helsinki FI Mr Sender 0158 1233714 sender@consignor-company.co.uk<cac:PartyIdentification>7300010000001<cbc:ID>7300010000001</cbc:ID>
+         <cbc:TotalTransportHandlingUnitQuantity unitCode="EA">1</cbc:TotalTransportHandlingUnitQuantity>
+         <cac:ConsigneeParty>7300010000001 HUS Hospital Topeliuksenkatu 5 Purchasing Helsinki 00260 Heremouthshire Gate 34 FI HUS Hospital 1567535-0 Helsinki FI Mr Sender 0158 1233714 sender@consignor-company.co.uk<cac:PartyIdentification>7300010000001<cbc:ID schemeID="0088">7300010000001</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>HUS Hospital<cbc:Name>HUS Hospital</cbc:Name>
             </cac:PartyName>
@@ -120,7 +119,7 @@
                </cac:Country>
             </cac:PostalAddress>
             <cac:PartyLegalEntity>HUS Hospital 1567535-0 Helsinki FI<cbc:RegistrationName>HUS Hospital</cbc:RegistrationName>
-               <cbc:CompanyID>1567535-0</cbc:CompanyID>
+               <cbc:CompanyID schemeID="0212">1567535-0</cbc:CompanyID>
                <cac:RegistrationAddress>Helsinki FI<cbc:CityName>Helsinki</cbc:CityName>
                   <cac:Country>FI<cbc:IdentificationCode>FI</cbc:IdentificationCode>
                   </cac:Country>
@@ -140,7 +139,7 @@
          </cac:PaymentTerms>
          <cac:TransportHandlingUnit>11111222222222 AG ZZ To be set vertical false Keep dry 34563444 CN 10 true A 20 foot refrigerated container that is not actively controlling temperature of the product. true LN 123 TC -21 TC -21 Torsk sl u/h fersk fulliset 20kg iso 2-4 kg false Torsk KO2012140200 ADR 2 40.8<cbc:ID>11111222222222</cbc:ID>
             <cbc:TransportHandlingUnitTypeCode>AG</cbc:TransportHandlingUnitTypeCode>
-            <cbc:HandlingCode>ZZ</cbc:HandlingCode>
+            <cbc:HandlingCode listID="HandlingCode">ZZ</cbc:HandlingCode>
             <cbc:HandlingInstructions>To be set vertical</cbc:HandlingInstructions>
             <cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
             <cbc:ShippingMarks>Keep dry</cbc:ShippingMarks>
@@ -152,18 +151,18 @@
                <cbc:PowerIndicator>true</cbc:PowerIndicator>
             </cac:TransportEquipment>
             <cac:MeasurementDimension>LN 123<cbc:AttributeID>LN</cbc:AttributeID>
-               <cbc:Measure>123</cbc:Measure>
+               <cbc:Measure unitCode="MTR">123</cbc:Measure>
             </cac:MeasurementDimension>
             <cac:MinimumTemperature>TC -21<cbc:AttributeID>TC</cbc:AttributeID>
-               <cbc:Measure>-21</cbc:Measure>
+               <cbc:Measure unitCode="CEL">-21</cbc:Measure>
             </cac:MinimumTemperature>
             <cac:MaximumTemperature>TC -21<cbc:AttributeID>TC</cbc:AttributeID>
-               <cbc:Measure>-21</cbc:Measure>
+               <cbc:Measure unitCode="CEL">-21</cbc:Measure>
             </cac:MaximumTemperature>
             <cac:GoodsItem>Torsk sl u/h fersk fulliset 20kg iso 2-4 kg false Torsk KO2012140200 ADR 2 40.8<cbc:Description>Torsk sl u/h fersk fulliset 20kg iso 2-4 kg</cbc:Description>
                <cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
                <cac:Item>Torsk KO2012140200 ADR 2 40.8<cbc:Name>Torsk</cbc:Name>
-                  <cac:CommodityClassification>KO2012140200<cbc:ItemClassificationCode>KO2012140200</cbc:ItemClassificationCode>
+                  <cac:CommodityClassification>KO2012140200<cbc:ItemClassificationCode listID="ZZZ" listVersionID="3.0.2" name="SBMI">KO2012140200</cbc:ItemClassificationCode>
                   </cac:CommodityClassification>
                   <cac:HazardousItem>ADR 2 40.8<cbc:ID>123</cbc:ID>
                      <cbc:AdditionalInformation>Information about the hazardous item</cbc:AdditionalInformation>
@@ -172,14 +171,14 @@
                      <cbc:CategoryName>Acute toxicity</cbc:CategoryName>
                      <cbc:HazardousCategoryCode>123</cbc:HazardousCategoryCode>
                      <cbc:HazardClassID>2</cbc:HazardClassID>
-                     <cbc:NetWeightMeasure>40.8</cbc:NetWeightMeasure>
-                     <cbc:NetVolumeMeasure>12.3</cbc:NetVolumeMeasure>
+                     <cbc:NetWeightMeasure unitCode="KGM">40.8</cbc:NetWeightMeasure>
+                     <cbc:NetVolumeMeasure unitCode="MTQ">12.3</cbc:NetVolumeMeasure>
                      <cac:HazardousGoodsTransit>
                         <cbc:PackingCriteriaCode>123</cbc:PackingCriteriaCode>
                      </cac:HazardousGoodsTransit>
                      <cac:EmergencyTemperature>
                         <cbc:AttributeID>ABC</cbc:AttributeID>
-                        <cbc:Measure>78</cbc:Measure>
+                        <cbc:Measure unitCode="CEL">78</cbc:Measure>
                      </cac:EmergencyTemperature>
                   </cac:HazardousItem>
                </cac:Item>
@@ -199,7 +198,7 @@
          </cac:TransportMeans>
       </cac:ShipmentStage>
       <cac:Delivery>456789 5790000435951 Name Avon Way Purchasing Bridgtow ZZ99 1ZZ Avon 3rd Floor, Room 5 GB EPSG:3857 59.331660358041425 18.063363084988005 2021-09-29 08:00:00+01:00 2021-09-29 10:00:00+01:00 34456456456456 Avon Way way 2 Bridgtow ZZ99 1ZZ Avon 3rd Floor, Room 5 GB EPSG:3857 59.33169866504851 18.063330898492403 12.5 2021-09-29 08:00:00+01:00 2021-09-29 10:00:00+01:00 DAP DAP Kalmar<cbc:TrackingID>456789</cbc:TrackingID>
-         <cac:DeliveryLocation>5790000435951 Name Avon Way Purchasing Bridgtow ZZ99 1ZZ Avon 3rd Floor, Room 5 GB EPSG:3857 59.331660358041425 18.063363084988005<cbc:ID>5790000435951</cbc:ID>
+         <cac:DeliveryLocation>5790000435951 Name Avon Way Purchasing Bridgtow ZZ99 1ZZ Avon 3rd Floor, Room 5 GB EPSG:3857 59.331660358041425 18.063363084988005<cbc:ID schemeID="0088">5790000435951</cbc:ID>
             <cbc:Name>Name</cbc:Name>
             <cac:Address>Avon Way Purchasing Bridgtow ZZ99 1ZZ Avon 3rd Floor, Room 5 GB<cbc:StreetName>Avon Way</cbc:StreetName>
                <cbc:AdditionalStreetName>Purchasing</cbc:AdditionalStreetName>
@@ -212,8 +211,8 @@
                </cac:Country>
             </cac:Address>
             <cac:LocationCoordinate>EPSG:3857 59.331660358041425 18.063363084988005<cbc:CoordinateSystemCode>EPSG:3857</cbc:CoordinateSystemCode>
-               <cbc:LatitudeDegreesMeasure>59.331660358041425</cbc:LatitudeDegreesMeasure>
-               <cbc:LongitudeDegreesMeasure>18.063363084988005</cbc:LongitudeDegreesMeasure>
+               <cbc:LatitudeDegreesMeasure unitCode="DD">59.331660358041425</cbc:LatitudeDegreesMeasure>
+               <cbc:LongitudeDegreesMeasure unitCode="DD">18.063363084988005</cbc:LongitudeDegreesMeasure>
             </cac:LocationCoordinate>
          </cac:DeliveryLocation>
          <cac:EstimatedDeliveryPeriod>2021-09-29 08:00:00+01:00 2021-09-29 10:00:00+01:00<cbc:StartDate>2021-09-29</cbc:StartDate>
@@ -232,9 +231,9 @@
                <cac:Country>GB<cbc:IdentificationCode>GB</cbc:IdentificationCode>
                </cac:Country>
                <cac:LocationCoordinate>EPSG:3857 59.33169866504851 18.063330898492403 12.5<cbc:CoordinateSystemCode>EPSG:3857</cbc:CoordinateSystemCode>
-                  <cbc:LatitudeDegreesMeasure>59.33169866504851</cbc:LatitudeDegreesMeasure>
-                  <cbc:LongitudeDegreesMeasure>18.063330898492403</cbc:LongitudeDegreesMeasure>
-                  <cbc:AltitudeMeasure>12.5</cbc:AltitudeMeasure>
+                  <cbc:LatitudeDegreesMeasure unitCode="DD">59.33169866504851</cbc:LatitudeDegreesMeasure>
+                  <cbc:LongitudeDegreesMeasure unitCode="DD">18.063330898492403</cbc:LongitudeDegreesMeasure>
+                  <cbc:AltitudeMeasure unitCode="MTR">12.5</cbc:AltitudeMeasure>
                </cac:LocationCoordinate>
             </cac:DespatchAddress>
             <cac:EstimatedDespatchPeriod>2021-09-29 08:00:00+01:00 2021-09-29 10:00:00+01:00<cbc:StartDate>2021-09-29</cbc:StartDate>
@@ -253,7 +252,7 @@
    <cac:DocumentReference>7648779 380 Delivery soecification aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se<cbc:ID>7648779</cbc:ID>
       <cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
       <cbc:DocumentType>Delivery soecification</cbc:DocumentType>
-      <cac:Attachment>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se<cbc:EmbeddedDocumentBinaryObject>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+      <cac:Attachment>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
          <cac:ExternalReference>www.beast.se<cbc:URI>www.beast.se</cbc:URI>
          </cac:ExternalReference>
       </cac:Attachment>
@@ -273,15 +272,15 @@
             <cac:Country>FI<cbc:IdentificationCode>FI</cbc:IdentificationCode>
             </cac:Country>
          </cac:PostalAddress>
-         <cac:Person>45976 Valiry Sender Director<cbc:ID>45976</cbc:ID>
+         <cac:Person>45976 Valiry Sender Director<cbc:ID schemeID="zzz">45976</cbc:ID>
             <cbc:FirstName>Valiry</cbc:FirstName>
             <cbc:FamilyName>Sender</cbc:FamilyName>
             <cbc:JobTitle>Director</cbc:JobTitle>
          </cac:Person>
       </cac:SignatoryParty>
-      <cac:DigitalSignatureAttachment>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se<cbc:EmbeddedDocumentBinaryObject>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+      <cac:DigitalSignatureAttachment>aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw== www.beast.se<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="Hours-spent.pdf">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
          <cac:ExternalReference>www.beast.se<cbc:URI>www.beast.se</cbc:URI>
          </cac:ExternalReference>
       </cac:DigitalSignatureAttachment>
    </cac:Signature>
-</ubl_0:Waybill>
+</Waybill>
