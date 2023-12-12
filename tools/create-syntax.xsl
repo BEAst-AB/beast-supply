@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                              xmlns:fn="http://www.w3.org/2005/xpath-functions"
-                              xmlns:synstr="urn:fdc:difi.no:2017:vefa:structure-1"
-                              xmlns="urn:fdc:difi.no:2017:vefa:structure-1"
-                              exclude-result-prefixes="xsl fn synstr">
+	xmlns:fn="http://www.w3.org/2005/xpath-functions"
+	xmlns:synstr="urn:fdc:difi.no:2017:vefa:structure-1"
+	xmlns="urn:fdc:difi.no:2017:vefa:structure-1"
+	exclude-result-prefixes="xsl fn synstr">
 	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
 	<xsl:param name="varOverrideSample"/>
 	<xsl:variable name="varOverrideSampleXml" select="document($varOverrideSample)"/>
@@ -97,54 +97,74 @@
 							<xsl:value-of select="$varDocNode_DescriptionAddLast"/>
 						</Description>
 					</xsl:if>
-					<xsl:if test="$varDocNode_DataType!='' and not(empty($varDocNode_DataType))">
-						<!--xsl:message>
-                Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-                DataType: <xsl:value-of select="$varDocNode_DataType"/>
-              </xsl:message-->
-						<DataType>
-							<xsl:value-of select="$varDocNode_DataType"/>
-						</DataType>
-					</xsl:if>
-					<xsl:if test="$varDocNode_BusinessTerm!='' and not(empty($varDocNode_BusinessTerm))">
-						<!--xsl:message>
-                Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-              </xsl:message-->
-						<xsl:for-each select="$varDocNode_BusinessTerm">
+					<xsl:choose>
+						<xsl:when test="$varDocNode_DataType!='' and not(empty($varDocNode_DataType))">
 							<!--xsl:message>
+                  Doc Xpath: <xsl:value-of select="$varDocXPath"/>
+                  DataType: <xsl:value-of select="$varDocNode_DataType"/>
+                </xsl:message-->
+							<DataType>
+								<xsl:value-of select="$varDocNode_DataType"/>
+							</DataType>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:copy-of select="synstr:DataType"/>
+						</xsl:otherwise>
+					</xsl:choose>
+					<xsl:choose>
+						<xsl:when test="$varDocNode_BusinessTerm!='' and not(empty($varDocNode_BusinessTerm))">
+							<!--xsl:message>
+                  Doc Xpath: <xsl:value-of select="$varDocXPath"/>
+                </xsl:message-->
+							<xsl:for-each select="$varDocNode_BusinessTerm">
+								<!--xsl:message>
   				  BusinessTerm: <xsl:value-of select="."/>
 				  </xsl:message-->
-							<Reference type="BUSINESS_TERM">
-								<xsl:value-of select="."/>
-							</Reference>
-						</xsl:for-each>
-					</xsl:if>
-					<xsl:if test="$varDocNode_Rule!='' and not(empty($varDocNode_Rule))">
-						<!--xsl:message>
+								<Reference type="BUSINESS_TERM">
+									<xsl:value-of select="."/>
+								</Reference>
+							</xsl:for-each>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:copy-of select="synstr:Reference[@type='BUSINESS_TERM']"/>
+						</xsl:otherwise>
+					</xsl:choose>
+					<xsl:choose>
+						<xsl:when test="$varDocNode_Rule!='' and not(empty($varDocNode_Rule))">
+							<!--xsl:message>
                 Doc Xpath: <xsl:value-of select="$varDocXPath"/>
               </xsl:message-->
-						<xsl:for-each select="$varDocNode_Rule">
-							<!--xsl:message>
+							<xsl:for-each select="$varDocNode_Rule">
+								<!--xsl:message>
                   Rule: <xsl:value-of select="."/>
 				  </xsl:message-->
-							<Reference type="RULE">
-								<xsl:value-of select="."/>
-							</Reference>
-						</xsl:for-each>
-					</xsl:if>
-					<xsl:if test="$varDocNode_CodeList!='' and not(empty($varDocNode_CodeList))">
-						<!--xsl:message>
+								<Reference type="RULE">
+									<xsl:value-of select="."/>
+								</Reference>
+							</xsl:for-each>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:copy-of select="synstr:Reference[@type='RULE']"/>
+						</xsl:otherwise>
+					</xsl:choose>
+					<xsl:choose>
+						<xsl:when test="$varDocNode_CodeList!='' and not(empty($varDocNode_CodeList))">
+							<!--xsl:message>
                 Doc Xpath: <xsl:value-of select="$varDocXPath"/>
               </xsl:message-->
-						<xsl:for-each select="$varDocNode_CodeList">
-							<!--xsl:message>
+							<xsl:for-each select="$varDocNode_CodeList">
+								<!--xsl:message>
                   CodeList: <xsl:value-of select="."/>
 				  </xsl:message-->
-							<Reference type="CODE_LIST">
-								<xsl:value-of select="."/>
-							</Reference>
-						</xsl:for-each>
-					</xsl:if>
+								<Reference type="CODE_LIST">
+									<xsl:value-of select="."/>
+								</Reference>
+							</xsl:for-each>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:copy-of select="synstr:Reference[@type='CODE_LIST']"/>
+						</xsl:otherwise>
+					</xsl:choose>
 					<xsl:choose>
 						<xsl:when test="normalize-space($varDocNode_Value)!='' and not(empty(normalize-space($varDocNode_Value)))">
 							<Value>
@@ -167,7 +187,7 @@
 							<!--xsl:message>
                   Doc Xpath: <xsl:value-of select="$varDocXPath"/>
                 </xsl:message-->
-							<xsl:copy-of select="normalize-space(synstr:Value)"/>
+							<xsl:copy-of select="synstr:Value"/>
 						</xsl:when>
 					</xsl:choose>
 				</xsl:when>
