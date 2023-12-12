@@ -167,13 +167,14 @@
 							<!--xsl:message>
                   Doc Xpath: <xsl:value-of select="$varDocXPath"/>
                 </xsl:message-->
-							<xsl:copy-of select="synstr:Value"/>
+							<xsl:copy-of select="normalize-space(synstr:Value)"/>
 						</xsl:when>
 					</xsl:choose>
 				</xsl:when>
 				<xsl:otherwise>
 					<!--xsl:apply-templates select="node()"/-->
 					<xsl:apply-templates select="synstr:Description"/>
+					<xsl:apply-templates select="synstr:DataType"/>
 					<xsl:apply-templates select="synstr:Reference"/>
 					<xsl:apply-templates select="synstr:Value"/>
 				</xsl:otherwise>
