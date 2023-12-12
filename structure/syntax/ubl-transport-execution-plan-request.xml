@@ -65,7 +65,6 @@
       <Element cardinality="1..1">
          <Term>cac:TransportUserParty</Term>
          <Name>Transport user party </Name>
-         <Description>The party requesting the transport services referenced in the Transport Execution Plan Request and the sender of the Transport Execution Plan. </Description>
          <Element cardinality="1..1">
             <Term>cbc:EndpointID</Term>
             <Name>Sender party electronic address </Name>
@@ -82,7 +81,6 @@
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>Transport user party identification </Name>
-            <Description>An identifier for the transport user party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Reference type="RULE">PEPPOL-T123-R031</Reference>
@@ -108,7 +106,6 @@
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
             <Name>Postal address </Name>
-            <Description>The postal address for the transport user party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1 </Name>
@@ -142,7 +139,6 @@
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
                <Name>Address line 3 </Name>
-               <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
                   <Value type="EXAMPLE">Bygning 5</Value>
@@ -163,7 +159,6 @@
          <Element cardinality="0..1">
             <Term>cac:PartyTaxScheme</Term>
             <Name>Party tax scheme </Name>
-            <Description>The tax information about the transport user party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:CompanyID</Term>
                <Name>Company ID </Name>
@@ -184,7 +179,6 @@
          <Element cardinality="1..1">
             <Term>cac:PartyLegalEntity</Term>
             <Name>Party Legal Entity </Name>
-            <Description>The party legal entity for the transport user party.</Description>
             <Element cardinality="1..1">
                <Term>cbc:RegistrationName</Term>
                <Name>Transport user party name</Name>
@@ -216,7 +210,6 @@
                <Element cardinality="1..1">
                   <Term>cac:Country</Term>
                   <Name>Country </Name>
-                  <Description>The residens country for the transport user party. </Description>
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
@@ -230,7 +223,6 @@
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
             <Name>Contact </Name>
-            <Description>The contact of the transport user party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
@@ -254,7 +246,7 @@
       <Element cardinality="1..1">
          <Term>cac:TransportServiceProviderParty</Term>
          <Name>Transport service provider party </Name>
-         <Description>The party providing the transport services referenced in the Transport Execution Plan Request. The receiver of the Transport Execution Plan. </Description>
+         <Value type="EXAMPLE">Farthing</Value>
          <Element cardinality="1..1">
             <Term>cbc:EndpointID</Term>
             <Name>Sender party electronic address </Name>
@@ -271,7 +263,6 @@
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>Transport service provider party identification </Name>
-            <Description>An identifier for the transport service provider party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Reference type="RULE">PEPPOL-T123-R032</Reference>
@@ -297,7 +288,6 @@
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
             <Name>Postal address </Name>
-            <Description>The postal address for the transport service provider party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1 </Name>
@@ -331,7 +321,6 @@
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
                <Name>Address line 3 </Name>
-               <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                <Element>
                   <Term>cbc:Line</Term>
                   <Value type="EXAMPLE">Bygning 5</Value>
@@ -352,7 +341,6 @@
          <Element cardinality="0..1">
             <Term>cac:PartyTaxScheme</Term>
             <Name>Party tax scheme </Name>
-            <Description>The tax information about the transport service provider party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:CompanyID</Term>
                <Name>Company ID </Name>
@@ -373,7 +361,7 @@
          <Element cardinality="1..1">
             <Term>cac:PartyLegalEntity</Term>
             <Name>Party legal entity </Name>
-            <Description>The party legel entity of the transport service provider party. </Description>
+            <Value type="EXAMPLE">Farthing</Value>
             <Element cardinality="1..1">
                <Term>cbc:RegistrationName</Term>
                <Name>Transport service provider party name</Name>
@@ -396,16 +384,15 @@
             <Element cardinality="0..1">
                <Term>cac:RegistrationAddress</Term>
                <Name>Legal address </Name>
+               <Value type="EXAMPLE">Farthing</Value>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
                   <Name>City name </Name>
-                  <Description>The name of the city. </Description>
                   <Value type="EXAMPLE">Farthing</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cac:Country</Term>
                   <Name>Country </Name>
-                  <Description>The residens country for the transport service provider party. </Description>
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
@@ -419,7 +406,6 @@
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
             <Name>Contact </Name>
-            <Description>The contact of the transport service provider party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
@@ -443,11 +429,9 @@
       <Element cardinality="0..1">
          <Term>cac:PayeeParty</Term>
          <Name>Payee party </Name>
-         <Description>The party that will pay for the transport service(s) referred to in a Transport Execution Plan. </Description>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>Payee party identification </Name>
-            <Description>An identifier for the payee party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Reference type="RULE">PEPPOL-T123-R033</Reference>
@@ -473,7 +457,6 @@
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
             <Name>Postal address </Name>
-            <Description>The postal address for the payee party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1 </Name>
@@ -507,7 +490,6 @@
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
                <Name>Address line 3 </Name>
-               <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
                   <Value type="EXAMPLE">Bygning 5</Value>
@@ -528,7 +510,6 @@
          <Element cardinality="0..1">
             <Term>cac:PartyTaxScheme</Term>
             <Name>Party tax scheme </Name>
-            <Description>The tax information about the payee party. </Description>
             <Element cardinality="1..1">
                <Term>cbc:CompanyID</Term>
                <Name>Company ID </Name>
@@ -549,7 +530,6 @@
          <Element cardinality="1..1">
             <Term>cac:PartyLegalEntity</Term>
             <Name>Party Legal Entity </Name>
-            <Description>The party legal entity for the payee party.</Description>
             <Element cardinality="1..1">
                <Term>cbc:RegistrationName</Term>
                <Name>Transport user party name</Name>
@@ -581,7 +561,6 @@
                <Element cardinality="1..1">
                   <Term>cac:Country</Term>
                   <Name>Country </Name>
-                  <Description>The residens country for the transport user party. </Description>
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
@@ -595,7 +574,6 @@
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
             <Name>Contact </Name>
-            <Description>The contact of the payee party. </Description>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
@@ -619,7 +597,6 @@
       <Element cardinality="0..n">
          <Term>cac:AdditionalDocumentReference</Term>
          <Name>Additional document reference</Name>
-         <Description>Reference to additional documents relevant for this Transport Execution Plan Request. </Description>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Identity of the reference</Name>
@@ -644,7 +621,6 @@
          <Element cardinality="0..1">
             <Term>cac:Attachment</Term>
             <Name>Attachment</Name>
-            <Description>Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Description>
             <Element cardinality="0..1">
                <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                <Name>Embedded binary object</Name>
@@ -668,7 +644,6 @@
             <Element cardinality="0..1">
                <Term>cac:ExternalReference</Term>
                <Name>External reference</Name>
-               <Description>A reference to an attached document that is external to the document(s) being exchanged.</Description>
                <Element>
                   <Term>cbc:URI</Term>
                   <Name>Address to internet resource</Name>
@@ -682,7 +657,6 @@
       <Element cardinality="1..1">
          <Term>cac:MainTransportationService</Term>
          <Name>Main Transportatin Service</Name>
-         <Description>A description of the main transportation service referenced in the Transport Execution Plan Request.</Description>
          <Element cardinality="1..1">
             <Term>cbc:TransportServiceCode</Term>
             <Name>Main Transportatin Service Code</Name>
@@ -700,7 +674,6 @@
       <Element cardinality="0..n">
          <Term>cac:AdditionalTransportationService</Term>
          <Name>Additional Transportatin Service</Name>
-         <Description>A description of an additional transportation service referenced in the Transport Execution Plan Request. Can only be used in conjunction with a main transportation service.</Description>
          <Element cardinality="1..1">
             <Term>cbc:TransportServiceCode</Term>
             <Name>Main Transportatin Service Code</Name>
@@ -718,6 +691,7 @@
       <Element cardinality="1..1">
          <Term>cac:Consignment</Term>
          <Name>Consignment information </Name>
+         <Value type="EXAMPLE">EPSG:3857</Value>
          <Element cardinality="1..1">
             <Term>cbc:ID</Term>
             <Name>Consignment identifier </Name>
@@ -791,8 +765,7 @@
          <Element cardinality="0..1">
             <Term>cac:RequestedPickupTransportEvent</Term>
             <Name>Requested pickup transport event </Name>
-            <Description>The pickup of this consignment requested by the party requesting a transportation service (the transport user). Mandatory if the Requested delivery transport event is not specified.</Description>
-            <Reference type="RULE">PEPPOL-T123-R021</Reference>
+            <Value type="EXAMPLE">EPSG:3857</Value>
             <Element cardinality="0..1">
                <Term>cbc:IdentificationID</Term>
                <Name>Identifier pickup transport event </Name>
@@ -802,7 +775,7 @@
             <Element cardinality="1..1">
                <Term>cac:Location</Term>
                <Name>Location of requested pickup </Name>
-               <Description>The location where the pickup takes place.</Description>
+               <Value type="EXAMPLE">EPSG:3857</Value>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
                   <Name>Identity of the  pickup location </Name>
@@ -824,7 +797,7 @@
                <Element cardinality="0..1">
                   <Term>cac:Address</Term>
                   <Name>Address of location </Name>
-                  <Description>Location address. </Description>
+                  <Value type="EXAMPLE">EPSG:3857</Value>
                   <Element cardinality="0..1">
                      <Term>cbc:StreetName</Term>
                      <Name>Address line 1 </Name>
@@ -879,11 +852,10 @@
                   <Element cardinality="0..1">
                      <Term>cac:LocationCoordinate</Term>
                      <Name>Location coordinate </Name>
-                     <Description>To specify the coordinates. </Description>
+                     <Value type="EXAMPLE">EPSG:3857</Value>
                      <Element cardinality="1..1">
                         <Term>cbc:CoordinateSystemCode</Term>
                         <Name>Coordinate system code </Name>
-                        <Description>Always "EPSG:3857" by definition. </Description>
                         <Value type="EXAMPLE">EPSG:3857</Value>
                      </Element>
                      <Element cardinality="1..1">
@@ -931,7 +903,6 @@
             <Element cardinality="1..1">
                <Term>cac:Period</Term>
                <Name>Period </Name>
-               <Description>The period within the pickup event takes place.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:StartDate</Term>
                   <Name>Period start date</Name>
@@ -975,8 +946,6 @@
          <Element cardinality="0..1">
             <Term>cac:RequestedDeliveryTransportEvent</Term>
             <Name>Requested delivery transport event </Name>
-            <Description>The delivery of this consignment requested by the party requesting a transportation service (the transport user). Mandatory if the requested pickup transpoinrt event is not present.</Description>
-            <Reference type="RULE">PEPPOL-T123-R021</Reference>
             <Element cardinality="0..1">
                <Term>cbc:IdentificationID</Term>
                <Name>Identifier delivery transport event </Name>
@@ -986,7 +955,6 @@
             <Element cardinality="1..1">
                <Term>cac:Location</Term>
                <Name>Location of requested delivery </Name>
-               <Description>The location of the requested delivery.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
                   <Name>Identity of the delivery location </Name>
@@ -1008,7 +976,6 @@
                <Element cardinality="0..1">
                   <Term>cac:Address</Term>
                   <Name>Address of the location </Name>
-                  <Description>Location Address. </Description>
                   <Element cardinality="0..1">
                      <Term>cbc:StreetName</Term>
                      <Name>Address line 1 </Name>
@@ -1063,7 +1030,6 @@
                   <Element cardinality="0..1">
                      <Term>cac:LocationCoordinate</Term>
                      <Name>Location coordinate </Name>
-                     <Description>To specify the coordinates. </Description>
                      <Element cardinality="1..1">
                         <Term>cbc:CoordinateSystemCode</Term>
                         <Name>Coordinate system code </Name>
@@ -1115,7 +1081,6 @@
             <Element cardinality="1..1">
                <Term>cac:Period</Term>
                <Name>Period </Name>
-               <Description>The period within the delivery event takes place.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:StartDate</Term>
                   <Name>Period start date</Name>
@@ -1159,11 +1124,9 @@
          <Element cardinality="1..1">
             <Term>cac:ConsigneeParty</Term>
             <Name>Consignee party </Name>
-            <Description>The party responsible for receiveing the goods. </Description>
             <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
                <Name>Consignee party identification </Name>
-               <Description>An identifier for the consignee party. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Reference type="RULE">PEPPOL-T123-R034</Reference>
@@ -1189,7 +1152,6 @@
             <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
                <Name>Postal address </Name>
-               <Description>The postal address of the Consignee</Description>
                <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
                   <Name>Address line 1 </Name>
@@ -1276,7 +1238,6 @@
                   <Element cardinality="1..1">
                      <Term>cac:Country</Term>
                      <Name>Country </Name>
-                     <Description>The residens country for the sender party. </Description>
                      <Element cardinality="1..1">
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code </Name>
@@ -1290,7 +1251,6 @@
             <Element cardinality="0..1">
                <Term>cac:Contact</Term>
                <Name>Contact </Name>
-               <Description>The contact of the consignee party. </Description>
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Contact name </Name>
@@ -1314,11 +1274,9 @@
          <Element cardinality="1..1">
             <Term>cac:ConsignorParty</Term>
             <Name>Consignor Party </Name>
-            <Description>The party responsible for sending the goods. </Description>
             <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
                <Name>Consignor party identification </Name>
-               <Description>An identifier for the consignor party. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Reference type="RULE">PEPPOL-T123-R035</Reference>
@@ -1344,7 +1302,6 @@
             <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
                <Name>Postal address </Name>
-               <Description>The postal address of the consignor party.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
                   <Name>Address line 1 </Name>
@@ -1431,7 +1388,6 @@
                   <Element cardinality="1..1">
                      <Term>cac:Country</Term>
                      <Name>Country </Name>
-                     <Description>The residens country for the consignor party. </Description>
                      <Element cardinality="1..1">
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code </Name>
@@ -1445,7 +1401,6 @@
             <Element cardinality="0..1">
                <Term>cac:Contact</Term>
                <Name>Contact </Name>
-               <Description>The contact of the consignor party. </Description>
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Contact name </Name>
@@ -1469,7 +1424,6 @@
          <Element cardinality="0..1">
             <Term>cac:OriginalDepartureCountry</Term>
             <Name>Original departure country </Name>
-            <Description>The country from which the goods in this consignment were originally exported, without any commercial transaction taking place in intermediate countries. </Description>
             <Element cardinality="0..1">
                <Term>cbc:IdentificationCode</Term>
                <Name>Country code </Name>
@@ -1481,7 +1435,6 @@
          <Element cardinality="0..1">
             <Term>cac:FinalDestinationCountry</Term>
             <Name>Final destination country </Name>
-            <Description>The country in which the goods in this consignment are to be delivered to the final consignee or buyer. </Description>
             <Element cardinality="0..1">
                <Term>cbc:IdentificationCode</Term>
                <Name>Country code </Name>
@@ -1493,7 +1446,6 @@
          <Element cardinality="0..1">
             <Term>cac:DeliveryTerms</Term>
             <Name>Delivery terms </Name>
-            <Description>The conditions agreed upon between a seller and a buyer with regard to the delivery of goods and/or services (e.g., CIF, FOB, or EXW from the INCOTERMS Terms of Delivery). </Description>
             <Element cardinality="0..1">
                <Term>cbc:ID</Term>
                <Name>Delivery terms identification </Name>
@@ -1511,7 +1463,6 @@
             <Element cardinality="0..1">
                <Term>cac:DeliveryLocation</Term>
                <Name>Location of attchaed to the delivery terms </Name>
-               <Description>The location where the pickup takes place.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
                   <Name>Identity of the  location </Name>
@@ -1535,7 +1486,6 @@
          <Element cardinality="0..1">
             <Term>cac:PaymentTerms</Term>
             <Name>Payment terms </Name>
-            <Description>The terms of payment between the parties (such as logistics service client, logistics service provider) in a transaction as related to the reqested transport service. </Description>
             <Element cardinality="0..1">
                <Term>cbc:ID</Term>
                <Name>Payment terms identification </Name>
@@ -1554,7 +1504,6 @@
          <Element cardinality="0..n">
             <Term>cac:FreightAllowanceCharge</Term>
             <Name>Freight Allowance Charge </Name>
-            <Description>A cost incurred by the shipper in moving goods, by whatever means, from one place to another under the terms of the contract of carriage for this consignment. In addition to transport costs, this may include such elements as packing, documentation, loading, unloading, and insurance to the extent that they relate to the freight costs.</Description>
             <Element cardinality="1..1">
                <Term>cbc:ChargeIndicator</Term>
                <Name>ChargeIndication </Name>
@@ -1582,7 +1531,6 @@
          <Element cardinality="0..1">
             <Term>cac:MainCarriageShipmentStage</Term>
             <Name>Main carriage shipment stage </Name>
-            <Description>The shipment stage during main carriage. </Description>
             <Element cardinality="1..1">
                <Term>cbc:TransportModeCode</Term>
                <Name>Transport mode code</Name>
@@ -1599,7 +1547,6 @@
             <Element cardinality="0..1">
                <Term>cac:RequestedDepartureTransportEvent</Term>
                <Name>Requested departure transport event </Name>
-               <Description>The departure requested by the party requesting a transportation service. </Description>
                <Element cardinality="0..1">
                   <Term>cbc:IdentificationID</Term>
                   <Name>Identifier departure transport event </Name>
@@ -1609,7 +1556,6 @@
                <Element cardinality="1..1">
                   <Term>cac:Location</Term>
                   <Name>Shipment departure location </Name>
-                  <Description>The location where the departure of this shipment stage takes place. </Description>
                   <Element cardinality="0..1">
                      <Term>cbc:ID</Term>
                      <Name>Identity of the delivery location  </Name>
@@ -1631,7 +1577,6 @@
                   <Element cardinality="0..1">
                      <Term>cac:Address</Term>
                      <Name>The adress of the loaction </Name>
-                     <Description>Postal Address. </Description>
                      <Element cardinality="0..1">
                         <Term>cbc:StreetName</Term>
                         <Name>Address line 1 </Name>
@@ -1686,7 +1631,6 @@
                      <Element cardinality="0..1">
                         <Term>cac:LocationCoordinate</Term>
                         <Name>Location coordinate </Name>
-                        <Description>To specify the coordinates. </Description>
                         <Element cardinality="1..1">
                            <Term>cbc:CoordinateSystemCode</Term>
                            <Name>Coordinate system code </Name>
@@ -1738,7 +1682,6 @@
                <Element cardinality="1..1">
                   <Term>cac:Period</Term>
                   <Name>Period </Name>
-                  <Description>The period within the departure of this transport event takes place. </Description>
                   <Element cardinality="0..1">
                      <Term>cbc:StartDate</Term>
                      <Name>Period start date</Name>
@@ -1782,7 +1725,6 @@
             <Element cardinality="0..1">
                <Term>cac:RequestedArrivalTransportEvent</Term>
                <Name>Requested arrival transport event </Name>
-               <Description>The arrival requested by the party requesting a transportation service. </Description>
                <Element cardinality="0..1">
                   <Term>cbc:IdentificationID</Term>
                   <Name>Identifier arrival transport event </Name>
@@ -1792,7 +1734,6 @@
                <Element cardinality="1..1">
                   <Term>cac:Location</Term>
                   <Name>Arrival location </Name>
-                  <Description>The location where the arrival takes place.</Description>
                   <Element cardinality="0..1">
                      <Term>cbc:ID</Term>
                      <Name>Identity of the delivery location </Name>
@@ -1814,7 +1755,6 @@
                   <Element cardinality="0..1">
                      <Term>cac:Address</Term>
                      <Name>Address of the arrival location </Name>
-                     <Description>The address of the arrival location.</Description>
                      <Element cardinality="0..1">
                         <Term>cbc:StreetName</Term>
                         <Name>Address line 1 </Name>
@@ -1849,7 +1789,6 @@
                <Element cardinality="1..1">
                   <Term>cac:Period</Term>
                   <Name>Period </Name>
-                  <Description>The period within the departure of this transport event takes place. </Description>
                   <Element cardinality="0..1">
                      <Term>cbc:StartDate</Term>
                      <Name>Period start date</Name>
@@ -1894,7 +1833,6 @@
          <Element cardinality="0..n">
             <Term>cac:TransportHandlingUnit</Term>
             <Name>Transport handling unit </Name>
-            <Description>Used to specify how the goods are packed. </Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Identifier transport handling unit </Name>
@@ -1935,7 +1873,6 @@
             <Element cardinality="0..n">
                <Term>cac:TransportEquipment</Term>
                <Name>Transport equipment </Name>
-               <Description>Used to specify Transport Equipment details associated with this Transport Handling Unit. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Identifier transport equipment </Name>
@@ -1978,7 +1915,6 @@
             <Element cardinality="0..n">
                <Term>cac:MeasurementDimension</Term>
                <Name>Measurement dimension </Name>
-               <Description>Used to specify any measurement of the Transport Handling Unit. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:AttributeID</Term>
                   <Name>Attribute identifier </Name>
@@ -2002,7 +1938,6 @@
             <Element cardinality="0..1">
                <Term>cac:MinimumTemperature</Term>
                <Name>Minimum temperature </Name>
-               <Description>Used to specify the minimal temperature for the transport handling unit under the transport. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:AttributeID</Term>
                   <Name>Attribute identifier </Name>
@@ -2025,7 +1960,6 @@
             <Element cardinality="0..1">
                <Term>cac:MaximumTemperature</Term>
                <Name>Maximum temperature </Name>
-               <Description>Used to specify the maximum temperature for the transport handling unit under the transport. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:AttributeID</Term>
                   <Name>Attribute identifier </Name>
@@ -2048,7 +1982,6 @@
             <Element cardinality="0..n">
                <Term>cac:GoodsItem</Term>
                <Name>Goods item </Name>
-               <Description>A Goods item contained in the transport handling unit.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
                   <Name>Identifiser goods item </Name>
@@ -2070,7 +2003,6 @@
                <Element cardinality="0..1">
                   <Term>cac:Item</Term>
                   <Name>Item </Name>
-                  <Description>Description of the product beeing transported. </Description>
                   <Element cardinality="0..1">
                      <Term>cbc:Name</Term>
                      <Name>Name</Name>
@@ -2080,7 +2012,6 @@
                   <Element cardinality="0..n">
                      <Term>cac:CommodityClassification</Term>
                      <Name>Commodity classification</Name>
-                     <Description>To classify when an item number is not sufficient.</Description>
                      <Element cardinality="1..1">
                         <Term>cbc:ItemClassificationCode</Term>
                         <Name>Item classification code</Name>
@@ -2104,7 +2035,6 @@
                   <Element cardinality="0..n">
                      <Term>cac:HazardousItem</Term>
                      <Name>Hazardous item information</Name>
-                     <Description>Contains information on the Hazardous item. </Description>
                      <Element cardinality="0..1">
                         <Term>cbc:ID</Term>
                         <Name>Identifier</Name>

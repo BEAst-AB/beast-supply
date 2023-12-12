@@ -73,7 +73,6 @@
       <Element cardinality="0..1">
          <Term>cac:OrderReference</Term>
          <Name>Order reference information</Name>
-         <Description>A reference to the original order</Description>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Order reference</Name>
@@ -86,7 +85,6 @@
       <Element cardinality="1..1">
          <Term>cac:DespatchDocumentReference</Term>
          <Name>Despatch Document Reference</Name>
-         <Description>A reference to the Advanced Despatch Advice. </Description>
          <Element cardinality="1..1">
             <Term>cbc:ID</Term>
             <Name>Identity of the Despatch Document. </Name>
@@ -124,7 +122,6 @@
       <Element cardinality="0..n">
          <Term>cac:AdditionalDocumentReference</Term>
          <Name>Additional document reference</Name>
-         <Description>Reference to additional documents relevant for this Receipt Advice. Can also be used for additional information on header level.</Description>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Identity of the reference</Name>
@@ -151,7 +148,6 @@
          <Element cardinality="0..1">
             <Term>cac:Attachment</Term>
             <Name>Attachment</Name>
-            <Description>Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Description>
             <Element cardinality="0..1">
                <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                <Name>Embedded binary object</Name>
@@ -175,7 +171,6 @@
             <Element cardinality="0..1">
                <Term>cac:ExternalReference</Term>
                <Name>External reference</Name>
-               <Description>A reference to an attached document that is external to the document(s) being exchanged.</Description>
                <Element>
                   <Term>cbc:URI</Term>
                   <Name>Address to internet resource</Name>
@@ -189,7 +184,6 @@
       <Element>
          <Term>cac:DeliveryCustomerParty</Term>
          <Name>Consignee information</Name>
-         <Description>The Consignee is the person or organization to which the products will be or has been shipped and who is taking possession. It also defines the sender of the Receipt Advice. The role is carried out by the customer or on behalf of the customer. </Description>
          <Element>
             <Term>cac:Party</Term>
             <Name>Party information</Name>
@@ -229,7 +223,6 @@
             <Element cardinality="0..1">
                <Term>cac:PartyName</Term>
                <Name>Party name</Name>
-               <Description>The name of the Delivery Customer Party.</Description>
                <Element cardinality="1..1">
                   <Term>cbc:Name</Term>
                   <Name>Name of the Consignee </Name>
@@ -241,7 +234,6 @@
             <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
                <Name>Postal address</Name>
-               <Description>Postal address of the consignee</Description>
                <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
                   <Name>Address line 1</Name>
@@ -316,7 +308,6 @@
             <Element cardinality="0..1">
                <Term>cac:PartyTaxScheme</Term>
                <Name>Party tax scheme</Name>
-               <Description>The tax information about the Delivery Party.</Description>
                <Element cardinality="1..1">
                   <Term>cbc:CompanyID</Term>
                   <Name>Company ID</Name>
@@ -369,7 +360,6 @@
                   <Element cardinality="1..1">
                      <Term>cac:Country</Term>
                      <Name>Contry</Name>
-                     <Description>The residens country for the delivery customer party.</Description>
                      <Element>
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Contry code</Name>
@@ -381,7 +371,6 @@
             <Element cardinality="0..1">
                <Term>cac:Contact</Term>
                <Name>Contact</Name>
-               <Description>The contact of the Delivery Customer party.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Contact name</Name>
@@ -406,7 +395,6 @@
       <Element>
          <Term>cac:DespatchSupplierParty</Term>
          <Name>Despatching party information</Name>
-         <Description>The Despatch Party is the person or organization who provides (despatch) the goods or services. It also defines the receiver of the Receipt Advice. The role is carried out by the supplier or on behalf of the supplier. </Description>
          <Element>
             <Term>cac:Party</Term>
             <Name>Party information</Name>
@@ -446,7 +434,6 @@
             <Element cardinality="0..1">
                <Term>cac:PartyName</Term>
                <Name>Party Name</Name>
-               <Description>The name of the Despatch Supplier Party.</Description>
                <Element cardinality="1..1">
                   <Term>cbc:Name</Term>
                   <Name>Name of the Consignor</Name>
@@ -458,7 +445,6 @@
             <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
                <Name>Postal address</Name>
-               <Description>Postal address of the depatching party</Description>
                <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
                   <Name>Address line 1</Name>
@@ -533,7 +519,6 @@
             <Element cardinality="0..1">
                <Term>cac:PartyTaxScheme</Term>
                <Name>Party tax scheme</Name>
-               <Description>The tax information about the Despatch Party.</Description>
                <Element cardinality="1..1">
                   <Term>cbc:CompanyID</Term>
                   <Name>Company ID</Name>
@@ -586,7 +571,6 @@
                   <Element cardinality="1..1">
                      <Term>cac:Country</Term>
                      <Name>Contry</Name>
-                     <Description>The residens country for the despatch party.</Description>
                      <Element>
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code</Name>
@@ -599,7 +583,6 @@
             <Element cardinality="0..1">
                <Term>cac:Contact</Term>
                <Name>Contact</Name>
-               <Description>The contact of the Despatch supplier party.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Contact name</Name>
@@ -627,9 +610,6 @@
       <Element cardinality="0..1">
          <Term>cac:BuyerCustomerParty</Term>
          <Name>Buyer</Name>
-         <Description>The buyer is the legal person or organization who buys or purchases the
-				goods or services. The role is carried out by the customer or on behalf of the
-				customer.</Description>
          <Element>
             <Term>cac:Party</Term>
             <Name>Party information</Name>
@@ -667,7 +647,6 @@
             <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
                <Name>Postal address</Name>
-               <Description>Postal address of the customer</Description>
                <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
                   <Name>Address line 1</Name>
@@ -744,9 +723,6 @@
       <Element cardinality="0..1">
          <Term>cac:SellerSupplierParty</Term>
          <Name>Seller</Name>
-         <Description>The seller is the legal person or organization who sells goods or services
-				to the customer. The role is carried out by the supplier or on behalf of the
-				supplier.</Description>
          <Element>
             <Term>cac:Party</Term>
             <Name>Party information</Name>
@@ -784,7 +760,6 @@
             <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
                <Name>Postal address</Name>
-               <Description>Postal address of the supplier</Description>
                <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
                   <Name>Address line 1</Name>
@@ -861,7 +836,6 @@
       <Element cardinality="0..1">
          <Term>cac:Shipment</Term>
          <Name>Shipment information</Name>
-         <Description>Use the Shipment group only when the Receipt Advice is used as a response to a received shipment. </Description>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Shipment identifier</Name>
@@ -890,7 +864,6 @@
             <Element cardinality="1..1">
                <Term>cac:Status</Term>
                <Name>Status</Name>
-               <Description>To report the status of the received consignment. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:ConditionCode</Term>
                   <Name>Condition Code</Name>
@@ -922,7 +895,6 @@
                <Element cardinality="0..1">
                   <Term>cac:PartyIdentification</Term>
                   <Name>Party identification</Name>
-                  <Description>This party defines the company providing the transport service</Description>
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Carrying party identifier</Name>
@@ -995,7 +967,6 @@
             <Element cardinality="0..1">
                <Term>cac:DeliveryTerms</Term>
                <Name>Delivery terms</Name>
-               <Description/>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
                   <Name>Delivery terms</Name>
@@ -1013,7 +984,6 @@
                <Element cardinality="0..1">
                   <Term>cac:DeliveryLocation</Term>
                   <Name>Delivery terms location</Name>
-                  <Description/>
                   <Element cardinality="1..1">
                      <Term>cbc:ID</Term>
                      <Name>Delivery terms location</Name>
@@ -1026,8 +996,6 @@
          <Element cardinality="0..n">
             <Term>cac:TransportHandlingUnit</Term>
             <Name>Transport handling unit</Name>
-            <Description>Used to specify how the goods is marked and if there are any damages.
-			If this group is used, all Transport Handling Units in the Advanced Despatch Advice must be included, not just some. </Description>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Identifier transport handling unit</Name>
@@ -1044,7 +1012,6 @@
             <Element cardinality="1..1">
                <Term>cac:Status</Term>
                <Name>Status of the Transport Handling Unit. </Name>
-               <Description>The Status of this Transport Handling Unit. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:ConditionCode</Term>
                   <Name>ConditionCode</Name>
@@ -1075,7 +1042,6 @@
       <Element cardinality="1..n">
          <Term>cac:ReceiptLine</Term>
          <Name>Receipt Line</Name>
-         <Description>A line detailing a kind of item received.</Description>
          <Element cardinality="1..1">
             <Term>cbc:ID</Term>
             <Name>Line identity</Name>
@@ -1173,7 +1139,6 @@
          <Element cardinality="0..1">
             <Term>cac:OrderLineReference</Term>
             <Name>Orderline Reference</Name>
-            <Description>A reference to the order line associated with this receipt line. </Description>
             <Element cardinality="1..1">
                <Term>cbc:LineID</Term>
                <Name>Line ID</Name>
@@ -1189,7 +1154,6 @@
             <Element cardinality="0..1">
                <Term>cac:OrderReference</Term>
                <Name>Order reference</Name>
-               <Description>The order can be referred to at header level or here. Doing it here at line level it is possible to refer to multiple order in one document. </Description>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
                   <Name>Order number</Name>
@@ -1207,7 +1171,6 @@
          <Element cardinality="1..1">
             <Term>cac:DespatchLineReference</Term>
             <Name>Despatch line Reference</Name>
-            <Description>A reference to a despatch line associated with this receipt line. </Description>
             <Element cardinality="1..1">
                <Term>cbc:LineID</Term>
                <Name>Line ID</Name>
@@ -1218,7 +1181,6 @@
          <Element cardinality="0..1">
             <Term>cac:Item</Term>
             <Name>Item. </Name>
-            <Description>Information to describe and identify the item. </Description>
             <Element cardinality="1..1">
                <Term>cbc:Name</Term>
                <Name>Name</Name>
@@ -1228,7 +1190,6 @@
             <Element cardinality="0..1">
                <Term>cac:BuyersItemIdentification</Term>
                <Name>Buyer's item Identification. </Name>
-               <Description>The identity on the item assigned by the buyer. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Item identity</Name>
@@ -1239,7 +1200,6 @@
             <Element cardinality="0..1">
                <Term>cac:SellersItemIdentification</Term>
                <Name>Seller's item Identification. </Name>
-               <Description>The identity on the item assigned by the seller. </Description>
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Item identity</Name>
@@ -1251,7 +1211,6 @@
             <Element cardinality="0..1">
                <Term>cac:ManufacturersItemIdentification</Term>
                <Name>Manufacturers item identification</Name>
-               <Description>Identifying information for this item, assigned by the manufacturer.</Description>
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Manufacturers item identifier</Name>
@@ -1262,7 +1221,6 @@
             <Element cardinality="0..1">
                <Term>cac:StandardItemIdentification</Term>
                <Name>Standard Item Identification </Name>
-               <Description>A standardized item number. Only one StandardItemIdentification can be used per line.</Description>
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Standard Item number</Name>

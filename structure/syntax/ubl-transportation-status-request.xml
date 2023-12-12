@@ -11,9 +11,6 @@
       <Element>
          <Term>cbc:CustomizationID</Term>
          <Name>Specification identification</Name>
-         <Description>Identifies the specification of content and rules that apply to the
-				transaction.</Description>
-         <Reference type="BUSINESS_TERM">tir16-002</Reference>
          <Reference type="RULE">PEPPOL-T126-R001</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:trns:transportation_status_request:1</Value>
       </Element>
@@ -21,31 +18,24 @@
          <Term>cbc:ProfileID</Term>
          <Name>Profile ID</Name>
          <Description>Identifies the Peppol profile or business process context in which the transaction appears.</Description>
-         <Reference type="BUSINESS_TERM">tir16-001</Reference>
          <Reference type="RULE">PEPPOL-T126-R002</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:transportation_status_w_request:1</Value>
       </Element>
       <Element>
          <Term>cbc:ID</Term>
          <Name>Document identifier</Name>
-         <Description>An transaction instance must contain an identifier. The identifier enables
-				positive referencing the document instance for various purposes including
-				referencing between transactions that are part of the same process.</Description>
-         <Reference type="BUSINESS_TERM">tir16-003</Reference>
          <Value type="EXAMPLE">TSR_1</Value>
       </Element>
       <Element cardinality="1..1">
          <Term>cbc:IssueDate</Term>
          <Name>Issue Date</Name>
          <Description>The date when the Transportation Status Request was issued. Format = "YYYY-MM-DD". </Description>
-         <Reference type="BUSINESS_TERM">tir16-004</Reference>
          <Value type="EXAMPLE">2011-10-06</Value>
       </Element>
       <Element cardinality="1..1">
          <Term>cbc:IssueTime</Term>
          <Name>Issue Time</Name>
          <Description>The time when the Transportation Status Request was issued. </Description>
-         <Reference type="BUSINESS_TERM">tir16-005</Reference>
          <Reference type="RULE">PEPPOL-T123-R018</Reference>
          <Value type="EXAMPLE">09:29:30+02:00</Value>
       </Element>
@@ -70,6 +60,7 @@
          <Term>cac:SenderParty</Term>
          <Name>Sender party </Name>
          <Description>The party sending the Transportation Status Request. </Description>
+         <Value type="EXAMPLE">41955619 7300010000001 Leman Ventrupvej 6 Greve Landsby Greve 2670 Region Sjælland Bygning 5 DK GB325456788 VAT Consortial SC234567 Farthing GB Mr Sender 0158 1233714 sender@consignor-company.co.uk</Value>
          <Element cardinality="1..1">
             <Term>cbc:EndpointID</Term>
             <Name>Sender party electronic address </Name>
@@ -87,6 +78,7 @@
             <Term>cac:PartyIdentification</Term>
             <Name>Sender party identification </Name>
             <Description>An identifier for the sender party as known to the receiver party. </Description>
+            <Value type="EXAMPLE">7300010000001</Value>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>ID </Name>
@@ -102,6 +94,7 @@
          <Element cardinality="0..1">
             <Term>cac:PartyName</Term>
             <Name>Party name </Name>
+            <Value type="EXAMPLE">Leman</Value>
             <Element cardinality="1..1">
                <Term>cbc:Name</Term>
                <Name>Sender party name</Name>
@@ -114,6 +107,7 @@
             <Term>cac:PostalAddress</Term>
             <Name>Postal address </Name>
             <Description>The postal address for the sender party. </Description>
+            <Value type="EXAMPLE">Ventrupvej 6 Greve Landsby Greve 2670 Region Sjælland Bygning 5 DK</Value>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1 </Name>
@@ -148,6 +142,7 @@
                <Term>cac:AddressLine</Term>
                <Name>Address line 3 </Name>
                <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+               <Value type="EXAMPLE">Bygning 5</Value>
                <Element>
                   <Term>cbc:Line</Term>
                   <Value type="EXAMPLE">Bygning 5</Value>
@@ -156,6 +151,7 @@
             <Element>
                <Term>cac:Country</Term>
                <Name>Country </Name>
+               <Value type="EXAMPLE">DK</Value>
                <Element cardinality="1..1">
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code </Name>
@@ -169,6 +165,7 @@
             <Term>cac:PartyTaxScheme</Term>
             <Name>Party tax scheme </Name>
             <Description>The tax information about the sender party. </Description>
+            <Value type="EXAMPLE">GB325456788 VAT</Value>
             <Element cardinality="1..1">
                <Term>cbc:CompanyID</Term>
                <Name>Company ID </Name>
@@ -178,6 +175,7 @@
             <Element cardinality="1..1">
                <Term>cac:TaxScheme</Term>
                <Name>Tax scheme </Name>
+               <Value type="EXAMPLE">VAT</Value>
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Tax scheme identifier </Name>
@@ -189,6 +187,7 @@
          <Element>
             <Term>cac:PartyLegalEntity</Term>
             <Name>Party legal entity </Name>
+            <Value type="EXAMPLE">Consortial SC234567 Farthing GB</Value>
             <Element cardinality="1..1">
                <Term>cbc:RegistrationName</Term>
                <Name>Sender party name</Name>
@@ -211,6 +210,7 @@
             <Element cardinality="0..1">
                <Term>cac:RegistrationAddress</Term>
                <Name>Legal address </Name>
+               <Value type="EXAMPLE">Farthing GB</Value>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
                   <Name>City name </Name>
@@ -221,6 +221,7 @@
                   <Term>cac:Country</Term>
                   <Name>Country </Name>
                   <Description>The residens country for the sender party. </Description>
+                  <Value type="EXAMPLE">GB</Value>
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
@@ -235,6 +236,7 @@
             <Term>cac:Contact</Term>
             <Name>Contact </Name>
             <Description>The contact of the sender party. </Description>
+            <Value type="EXAMPLE">Mr Sender 0158 1233714 sender@consignor-company.co.uk</Value>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
@@ -259,6 +261,7 @@
          <Term>cac:ReceiverParty</Term>
          <Name>Receiver Party </Name>
          <Description>The party receiving the Transportation Status Request. </Description>
+         <Value type="EXAMPLE">10154596 7300010000001 DHL Express Jydekrogen 14 Indkørsel 5 Vallensbæk Landsby 2625 Region Hovedstaden Bygning 5 DK GB325456788 VAT Consortial SC234567 Farthing GB Mrs Receiver 0158 1233714 msreceiver@tplogistics.co.uk</Value>
          <Element cardinality="1..1">
             <Term>cbc:EndpointID</Term>
             <Name>Receiver party electronic address </Name>
@@ -276,6 +279,7 @@
             <Term>cac:PartyIdentification</Term>
             <Name>Receiver party identification </Name>
             <Description>An identifier for the sender party as known to the sender party. </Description>
+            <Value type="EXAMPLE">7300010000001</Value>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>ID</Name>
@@ -291,6 +295,7 @@
          <Element cardinality="0..1">
             <Term>cac:PartyName</Term>
             <Name>Party name </Name>
+            <Value type="EXAMPLE">DHL Express</Value>
             <Element cardinality="1..1">
                <Term>cbc:Name</Term>
                <Name>Receiver party name </Name>
@@ -303,6 +308,7 @@
             <Term>cac:PostalAddress</Term>
             <Name>Postal address </Name>
             <Description>The postal address for the receiver party. </Description>
+            <Value type="EXAMPLE">Jydekrogen 14 Indkørsel 5 Vallensbæk Landsby 2625 Region Hovedstaden Bygning 5 DK</Value>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1 </Name>
@@ -337,6 +343,7 @@
                <Term>cac:AddressLine</Term>
                <Name>Address line 3 </Name>
                <Description>An additional address line in an address that can be used to give further details supplementing the main line. </Description>
+               <Value type="EXAMPLE">Bygning 5</Value>
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
                   <Value type="EXAMPLE">Bygning 5</Value>
@@ -345,6 +352,7 @@
             <Element cardinality="1..1">
                <Term>cac:Country</Term>
                <Name>Country </Name>
+               <Value type="EXAMPLE">DK</Value>
                <Element cardinality="1..1">
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code </Name>
@@ -358,6 +366,7 @@
             <Term>cac:PartyTaxScheme</Term>
             <Name>Party tax scheme </Name>
             <Description>The tax information about the receiver party. </Description>
+            <Value type="EXAMPLE">GB325456788 VAT</Value>
             <Element cardinality="1..1">
                <Term>cbc:CompanyID</Term>
                <Name>Company ID </Name>
@@ -367,6 +376,7 @@
             <Element cardinality="1..1">
                <Term>cac:TaxScheme</Term>
                <Name>Tax scheme </Name>
+               <Value type="EXAMPLE">VAT</Value>
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Tax scheme identifier </Name>
@@ -379,6 +389,7 @@
             <Term>cac:PartyLegalEntity</Term>
             <Name>Party Legal Entity </Name>
             <Description>The party legal entity for the receiver party.</Description>
+            <Value type="EXAMPLE">Consortial SC234567 Farthing GB</Value>
             <Element cardinality="1..1">
                <Term>cbc:RegistrationName</Term>
                <Name>Receiver party name</Name>
@@ -401,6 +412,7 @@
             <Element cardinality="0..1">
                <Term>cac:RegistrationAddress</Term>
                <Name>Legal address </Name>
+               <Value type="EXAMPLE">Farthing GB</Value>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
                   <Name>City name </Name>
@@ -411,6 +423,7 @@
                   <Term>cac:Country</Term>
                   <Name>Country </Name>
                   <Description>The residens country for the receiver party. </Description>
+                  <Value type="EXAMPLE">GB</Value>
                   <Element cardinality="1..1">
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code </Name>
@@ -425,6 +438,7 @@
             <Term>cac:Contact</Term>
             <Name>Contact </Name>
             <Description>The contact of the receiver party. </Description>
+            <Value type="EXAMPLE">Mrs Receiver 0158 1233714 msreceiver@tplogistics.co.uk</Value>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name </Name>
@@ -449,6 +463,7 @@
          <Term>cac:TransportExecutionPlanDocumentReference</Term>
          <Name>Additional document reference</Name>
          <Description>Reference to a Transport Execution Plan. </Description>
+         <Value type="EXAMPLE">7648779 2021-09-29 07:49:00+02:00</Value>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Identity of the reference</Name>
@@ -472,6 +487,7 @@
          <Term>cac:Consignment</Term>
          <Name>Consignment information </Name>
          <Description>The consignment related to this Transportation Status.</Description>
+         <Value type="EXAMPLE">12535157654567654 21412312412 1 11111222222222</Value>
          <Element cardinality="1..1">
             <Term>cbc:ID</Term>
             <Name>Consignment identifier </Name>
@@ -482,6 +498,7 @@
             <Term>cac:TransportEvent</Term>
             <Name>Transport event </Name>
             <Description>A transport event in this consignment a status is requested for.</Description>
+            <Value type="EXAMPLE">21412312412 1</Value>
             <Element cardinality="0..1">
                <Term>cbc:IdentificationID</Term>
                <Name>Identifier pickup transport event </Name>
@@ -500,6 +517,7 @@
             <Term>cac:TransportHandlingUnit</Term>
             <Name>Transport handling unit </Name>
             <Description>A transport handling unit from which a status is requested. </Description>
+            <Value type="EXAMPLE">11111222222222</Value>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Identifier transport handling unit </Name>

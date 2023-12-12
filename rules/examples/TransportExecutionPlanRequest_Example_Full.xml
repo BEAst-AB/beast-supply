@@ -53,8 +53,7 @@
          <cbc:ElectronicMail>transport-user@transportuser.dk</cbc:ElectronicMail>
       </cac:Contact>
    </cac:TransportUserParty>
-   <cac:TransportServiceProviderParty>
-      <cbc:EndpointID>85955619</cbc:EndpointID>
+   <cac:TransportServiceProviderParty>Farthing<cbc:EndpointID>85955619</cbc:EndpointID>
       <cac:PartyIdentification>
          <cbc:ID>7300010000001</cbc:ID>
       </cac:PartyIdentification>
@@ -80,11 +79,9 @@
             <cbc:ID>VAT</cbc:ID>
          </cac:TaxScheme>
       </cac:PartyTaxScheme>
-      <cac:PartyLegalEntity>
-         <cbc:RegistrationName>Consortial</cbc:RegistrationName>
+      <cac:PartyLegalEntity>Farthing<cbc:RegistrationName>Consortial</cbc:RegistrationName>
          <cbc:CompanyID>SC234567</cbc:CompanyID>
-         <cac:RegistrationAddress>
-            <cbc:CityName>Farthing</cbc:CityName>
+         <cac:RegistrationAddress>Farthing<cbc:CityName>Farthing</cbc:CityName>
             <cac:Country>
                <cbc:IdentificationCode>GB</cbc:IdentificationCode>
             </cac:Country>
@@ -157,8 +154,7 @@
       <cbc:TransportServiceCode>12</cbc:TransportServiceCode>
       <cbc:TransportationServiceDescription>Insurance</cbc:TransportationServiceDescription>
    </cac:AdditionalTransportationService>
-   <cac:Consignment>
-      <cbc:ID>12535157654567654</cbc:ID>
+   <cac:Consignment>EPSG:3857<cbc:ID>12535157654567654</cbc:ID>
       <cbc:ConsigneeAssignedID>0160110</cbc:ConsigneeAssignedID>
       <cbc:ConsignorAssignedID>501153162</cbc:ConsignorAssignedID>
       <cbc:GrossWeightMeasure>1030</cbc:GrossWeightMeasure>
@@ -166,13 +162,10 @@
       <cbc:LoadingLengthMeasure>0.4</cbc:LoadingLengthMeasure>
       <cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
       <cbc:TotalTransportHandlingUnitQuantity>1</cbc:TotalTransportHandlingUnitQuantity>
-      <cac:RequestedPickupTransportEvent>
-         <cbc:IdentificationID>21412312412</cbc:IdentificationID>
-         <cac:Location>
-            <cbc:ID>5790000435951</cbc:ID>
+      <cac:RequestedPickupTransportEvent>EPSG:3857<cbc:IdentificationID>21412312412</cbc:IdentificationID>
+         <cac:Location>EPSG:3857<cbc:ID>5790000435951</cbc:ID>
             <cbc:Name>Novo Nordisk Pharmatech A/S</cbc:Name>
-            <cac:Address>
-               <cbc:StreetName>Københavnsvej 216</cbc:StreetName>
+            <cac:Address>EPSG:3857<cbc:StreetName>Københavnsvej 216</cbc:StreetName>
                <cbc:AdditionalStreetName>Purchasing</cbc:AdditionalStreetName>
                <cbc:CityName>Køge</cbc:CityName>
                <cbc:PostalZone>4600</cbc:PostalZone>
@@ -183,8 +176,7 @@
                <cac:Country>
                   <cbc:IdentificationCode>DK</cbc:IdentificationCode>
                </cac:Country>
-               <cac:LocationCoordinate>
-                  <cbc:CoordinateSystemCode>EPSG:3857</cbc:CoordinateSystemCode>
+               <cac:LocationCoordinate>EPSG:3857<cbc:CoordinateSystemCode>EPSG:3857</cbc:CoordinateSystemCode>
                   <cbc:LatitudeDegreesMeasure>59.331660358041425</cbc:LatitudeDegreesMeasure>
                   <cbc:LongitudeDegreesMeasure>18.063363084988005</cbc:LongitudeDegreesMeasure>
                   <cbc:AltitudeMeasure>12.5</cbc:AltitudeMeasure>
