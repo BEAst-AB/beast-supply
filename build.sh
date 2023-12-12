@@ -59,8 +59,8 @@ echo "Generating documentation: Advanced Despatch advice"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
     -s:$LOGISTICSBASEURL/ubl-advanced-despatch-advice.xml \
     -xsl:/src/tools/create-syntax.xsl \
-    -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml \
-    varOverrideSample=/src/structure/source/ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
+    -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml
+    # varOverrideSample=/src/structure/source/ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
 
  #   docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform \
  #   -s:/src/structure/source/ubl-advanced-despatch-advice.xml \
