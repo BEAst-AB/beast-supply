@@ -773,6 +773,7 @@
          <Element cardinality="0..1">
             <Term>cac:RequestedPickupTransportEvent</Term>
             <Name>Requested pickup transport event </Name>
+            <Reference type="RULE">PEPPOL-T123-R021</Reference>
             <Value type="EXAMPLE">EPSG:3857</Value>
             <Element cardinality="0..1">
                <Term>cbc:IdentificationID</Term>
@@ -954,6 +955,7 @@
          <Element cardinality="0..1">
             <Term>cac:RequestedDeliveryTransportEvent</Term>
             <Name>Requested delivery transport event </Name>
+            <Reference type="RULE">PEPPOL-T123-R021</Reference>
             <Element cardinality="0..1">
                <Term>cbc:IdentificationID</Term>
                <Name>Identifier delivery transport event </Name>

@@ -11,6 +11,8 @@
       <Element>
          <Term>cbc:CustomizationID</Term>
          <Name>Specification identification</Name>
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">tir16-002</Reference>
          <Reference type="RULE">PEPPOL-T126-R001</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:trns:transportation_status_request:1</Value>
       </Element>
@@ -18,24 +20,32 @@
          <Term>cbc:ProfileID</Term>
          <Name>Profile ID</Name>
          <Description>Identifies the Peppol profile or business process context in which the transaction appears.</Description>
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">tir16-001</Reference>
          <Reference type="RULE">PEPPOL-T126-R002</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:transportation_status_w_request:1</Value>
       </Element>
       <Element>
          <Term>cbc:ID</Term>
          <Name>Document identifier</Name>
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">tir16-003</Reference>
          <Value type="EXAMPLE">TSR_1</Value>
       </Element>
       <Element cardinality="1..1">
          <Term>cbc:IssueDate</Term>
          <Name>Issue Date</Name>
          <Description>The date when the Transportation Status Request was issued. Format = "YYYY-MM-DD". </Description>
+         <DataType>Date</DataType>
+         <Reference type="BUSINESS_TERM">tir16-004</Reference>
          <Value type="EXAMPLE">2011-10-06</Value>
       </Element>
       <Element cardinality="1..1">
          <Term>cbc:IssueTime</Term>
          <Name>Issue Time</Name>
          <Description>The time when the Transportation Status Request was issued. </Description>
+         <DataType>Time</DataType>
+         <Reference type="BUSINESS_TERM">tir16-005</Reference>
          <Reference type="RULE">PEPPOL-T123-R018</Reference>
          <Value type="EXAMPLE">09:29:30+02:00</Value>
       </Element>
