@@ -138,6 +138,7 @@
             <Term>cbc:ID</Term>
             <Name>Catalogue reference</Name>
             <Description>A reference to the Catalogue on which this Order is based.</Description>
+            <DataType>Document reference</DataType>
             <Reference type="BUSINESS_TERM">tir01-p45</Reference>
             <Value type="EXAMPLE">Cat2023-03-07</Value>
          </Element>
@@ -1207,6 +1208,7 @@
                <Term>cbc:ShippingPriorityLevelCode</Term>
                <Name>Requested shipping priority</Name>
                <Description>The priority level requested by the buyer for the shipping of the order. Use value: "1" for Express/urgent/rush.</Description>
+               <DataType>code</DataType>
                <Reference type="BUSINESS_TERM">tir01-p47</Reference>
                <Reference type="CODE_LIST">UNCL4219</Reference>
                <Value type="EXAMPLE">1</Value>
@@ -1575,6 +1577,7 @@
                      <Term>cbc:StartTime</Term>
                      <Name>Period start time</Name>
                      <Description>The time at which this period begins. Format = "hh:mm:ss"</Description>
+                     <DataType>Time</DataType>
                      <Reference type="BUSINESS_TERM">tir01-p48</Reference>
                      <Value type="EXAMPLE">12:30:00</Value>
                   </Element>
@@ -1590,6 +1593,7 @@
                      <Term>cbc:EndTime</Term>
                      <Name>Period end time</Name>
                      <Description>The time at which this period end. Format = "hh:mm:ss"</Description>
+                     <DataType>Time</DataType>
                      <Reference type="BUSINESS_TERM">tir01-p49</Reference>
                      <Value type="EXAMPLE">18:00:00</Value>
                   </Element>
@@ -1834,6 +1838,7 @@
                      <Term>cbc:ID</Term>
                      <Name>Manufacturers Item Identifier</Name>
                      <Description>An identifier, assigned by the items manufacturer, for the item.</Description>
+                     <DataType>Identifier</DataType>
                      <Reference type="BUSINESS_TERM">tir01-p46</Reference>
                      <Value type="EXAMPLE">manid659</Value>
                   </Element>

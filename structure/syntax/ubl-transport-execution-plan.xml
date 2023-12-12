@@ -13,6 +13,7 @@
          <Name>Specification identification</Name>
          <Description>Identifies the specification of content and rules that apply to the
 				transaction.</Description>
+         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-002</Reference>
          <Reference type="RULE">PEPPOL-T124-R001</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:trns:transport_execution_plan:1</Value>
@@ -21,6 +22,7 @@
          <Term>cbc:ProfileID</Term>
          <Name>Business process type identifier</Name>
          <Description>Identifies the BII profile or business process context in which the transaction appears. There are two ProfileIDs defined for the Transport Execution Plan. One profile is used when a request is expected, the other is used when no request message is expected. Possible choices are: "urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_w_request:1" and "urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_only:1".</Description>
+         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-001</Reference>
          <Reference type="RULE">PEPPOL-T124-R002</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_w_request:1</Value>
@@ -31,6 +33,7 @@
          <Description>An transaction instance must contain an identifier. The identifier enables
 				positive referencing the document instance for various purposes including
 				referencing between transactions that are part of the same process.</Description>
+         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-003</Reference>
          <Value type="EXAMPLE">691278571829041271246</Value>
       </Element>
@@ -38,6 +41,7 @@
          <Term>cbc:IssueDate</Term>
          <Name>Dispatch advice issue date</Name>
          <Description>The date when the Transport Execution Plan is issued. Format = "YYYY-MM-DD". </Description>
+         <DataType>Date</DataType>
          <Reference type="BUSINESS_TERM">tir16-004</Reference>
          <Value type="EXAMPLE">2021-09-29</Value>
       </Element>
@@ -45,6 +49,7 @@
          <Term>cbc:IssueTime</Term>
          <Name>Dispatch advice issue time</Name>
          <Description>The time when the Transport Execution Plan is issued. Format = "hh:mm:ss". </Description>
+         <DataType>Time</DataType>
          <Reference type="BUSINESS_TERM">tir16-005</Reference>
          <Reference type="RULE">PEPPOL-T124-R018</Reference>
          <Value type="EXAMPLE">09:49:00+02:00</Value>
@@ -981,6 +986,7 @@
             <Term>cbc:DocumentType</Term>
             <Name>Document type</Name>
             <Description>The type of reference that cannot be specified by a code</Description>
+            <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">tir16-p050</Reference>
             <Value type="EXAMPLE">Delivery soecification</Value>
          </Element>
@@ -991,6 +997,7 @@
                <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                <Name>Embedded binary object</Name>
                <Description>The referenced document can here be inserted as a binary object.</Description>
+               <DataType>Binary object</DataType>
                <Reference type="BUSINESS_TERM">tir16-p051</Reference>
                <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
                <Attribute>
@@ -1014,6 +1021,7 @@
                   <Term>cbc:URI</Term>
                   <Name>Address to internet resource</Name>
                   <Description>The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir16-p052</Reference>
                   <Value type="EXAMPLE">www.beast.se</Value>
                </Element>

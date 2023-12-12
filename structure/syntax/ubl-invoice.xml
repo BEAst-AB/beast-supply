@@ -85,6 +85,7 @@
             <Term>cbc:StartDate</Term>
             <Name>Invoicing period start date</Name>
             <Description>The date when the Invoice period starts. Format = "YYYY-MM-DD".</Description>
+            <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">BT-73</Reference>
             <Reference type="RULE">BR-CO-19</Reference>
             <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
@@ -94,6 +95,7 @@
             <Term>cbc:EndDate</Term>
             <Name>Invoicing period end date</Name>
             <Description>The date when the Invoice period ends. Format = "YYYY-MM-DD".</Description>
+            <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">BT-74</Reference>
             <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
             <Reference type="RULE">BR-29</Reference>
@@ -104,6 +106,7 @@
             <Term>cbc:DescriptionCode</Term>
             <Name>Value added tax point date code</Name>
             <Description>The code of the date when the VAT becomes accountable for the Seller and for the Buyer.</Description>
+            <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-8</Reference>
             <Reference type="RULE">BR-CO-03</Reference>
             <Reference type="RULE">BR-CL-06</Reference>
@@ -119,6 +122,7 @@
             <Term>cbc:ID</Term>
             <Name>Purchase order reference</Name>
             <Description>An identifier of a referenced purchase order, issued by the Buyer. An invoice must have buyer reference (BT-10) or purchase order reference. In cases where sales order reference is provided, but there's no purchase order reference, then use value "NA" as this element is mandatory in UBL.</Description>
+            <DataType>Document Reference</DataType>
             <Reference type="BUSINESS_TERM">BT-13</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R003</Reference>
             <Value type="EXAMPLE">98776</Value>
@@ -127,6 +131,7 @@
             <Term>cbc:SalesOrderID</Term>
             <Name>Sales order reference</Name>
             <Description>An identifier of a referenced sales order, issued by the Seller. In cases where sales order reference is provided, but there's no purchase order reference, then set cac:OrderReference/cbc:ID to value "NA" as this element is mandatory in UBL.</Description>
+            <DataType>Document Reference</DataType>
             <Reference type="BUSINESS_TERM">BT-14</Reference>
             <Value type="EXAMPLE">112233</Value>
          </Element>
@@ -143,6 +148,7 @@
                <Term>cbc:ID</Term>
                <Name>Preceding Invoice number</Name>
                <Description>The identification of an Invoice that was previously sent by the Seller.</Description>
+               <DataType>Document Reference</DataType>
                <Reference type="BUSINESS_TERM">BT-25</Reference>
                <Reference type="RULE">BR-55</Reference>
                <Value type="EXAMPLE">inv123</Value>
@@ -152,6 +158,7 @@
                <Name>Preceding Invoice issue date</Name>
                <Description>The date when the Preceding Invoice was issued.Shall be
                         provided in case the Preceding Invoice identifier is not unique. Format = "YYYY-MM-DD".</Description>
+               <DataType>Date</DataType>
                <Reference type="BUSINESS_TERM">BT-26</Reference>
                <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
                <Value type="EXAMPLE">2017-09-15</Value>
@@ -165,6 +172,7 @@
             <Term>cbc:ID</Term>
             <Name>Despatch advice reference</Name>
             <Description>An identifier of a referenced despatch advice.</Description>
+            <DataType>Document Reference</DataType>
             <Reference type="BUSINESS_TERM">BT-16</Reference>
             <Value type="EXAMPLE">desp98</Value>
          </Element>
@@ -176,6 +184,7 @@
             <Term>cbc:ID</Term>
             <Name>Receiving advice reference</Name>
             <Description>An identifier of a referenced receiving advice.</Description>
+            <DataType>Document Reference</DataType>
             <Reference type="BUSINESS_TERM">BT-15</Reference>
             <Value type="EXAMPLE">rec98</Value>
          </Element>
@@ -187,6 +196,7 @@
             <Term>cbc:ID</Term>
             <Name>Tender or lot reference</Name>
             <Description>The identification of the call for tender or lot the invoice relates to.</Description>
+            <DataType>Document Reference</DataType>
             <Reference type="BUSINESS_TERM">BT-17</Reference>
             <Value type="EXAMPLE">PPID-123</Value>
          </Element>
@@ -198,6 +208,7 @@
             <Term>cbc:ID</Term>
             <Name>Contract reference</Name>
             <Description>The identification of a contract.</Description>
+            <DataType>Document Reference</DataType>
             <Reference type="BUSINESS_TERM">BT-12</Reference>
             <Value type="EXAMPLE">123Contractref</Value>
          </Element>
@@ -210,6 +221,7 @@
             <Term>cbc:ID</Term>
             <Name>Project reference</Name>
             <Description>The identification of the project the invoice refers to.</Description>
+            <DataType>Document Reference</DataType>
             <Reference type="BUSINESS_TERM">BT-11</Reference>
             <Value type="EXAMPLE">PID33</Value>
          </Element>
@@ -229,6 +241,7 @@
             <Name>Payment means type code</Name>
             <Description>The means, expressed as code, for how a payment is expected to be or has been settled.
             </Description>
+            <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-81</Reference>
             <Reference type="RULE">BR-49</Reference>
             <Reference type="RULE">BR-CL-16</Reference>
@@ -250,6 +263,7 @@
             <Description>A textual value used to establish a link between the payment and the Invoice, issued by the
                 Seller. Used for creditor's critical reconciliation information. This information element helps the Seller to assign an incoming payment to the relevant payment process.
             </Description>
+            <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-83</Reference>
             <Value type="EXAMPLE">432948234234234</Value>
          </Element>
@@ -263,6 +277,7 @@
             <Description>A textual description of the payment terms that apply to the amount due for payment (Including
                     description of possible penalties). In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.
                 </Description>
+            <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-20</Reference>
             <Reference type="RULE">BR-CO-25</Reference>
             <Value type="EXAMPLE">Net within 30 days</Value>
@@ -281,6 +296,7 @@
             <Term>cbc:ID</Term>
             <Name>Invoice line identifier</Name>
             <Description>A unique identifier for the individual line within the Invoice.</Description>
+            <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">BT-126</Reference>
             <Reference type="RULE">BR-21</Reference>
             <Value type="EXAMPLE">12</Value>
@@ -290,6 +306,7 @@
             <Name>Invoice line note</Name>
             <Description>A textual note that gives unstructured information that is relevant to the Invoice line.
                 </Description>
+            <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-127</Reference>
             <Value type="EXAMPLE">New article number 12345</Value>
          </Element>
@@ -297,6 +314,7 @@
             <Term>cbc:InvoicedQuantity</Term>
             <Name>Invoiced quantity</Name>
             <Description>The quantity of items (goods or services) that is charged in the Invoice line.</Description>
+            <DataType>Quantity</DataType>
             <Reference type="BUSINESS_TERM">BT-129</Reference>
             <Reference type="RULE">BR-22</Reference>
             <Reference type="RULE">BR-CL-23</Reference>
@@ -321,6 +339,7 @@
             <Description>The total amount of the Invoice line.
                     The amount is “net” without VAT, i.e. inclusive of line level allowances and charges as well as other relevant taxes.
                     Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-131</Reference>
             <Reference type="RULE">BR-24</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R120</Reference>
@@ -343,6 +362,7 @@
             <Description>A textual value that specifies where to book the relevant data into the Buyer's financial
                     accounts.
                 </Description>
+            <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">BT-133</Reference>
             <Value type="EXAMPLE">1287:65464</Value>
          </Element>
@@ -353,6 +373,7 @@
                <Term>cbc:LineID</Term>
                <Name>Referenced purchase order line reference</Name>
                <Description>An identifier for a referenced line within a purchase order, issued by the Buyer.</Description>
+               <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-132</Reference>
                <Value type="EXAMPLE">3</Value>
             </Element>
@@ -366,6 +387,7 @@
                <Term>cbc:ID</Term>
                <Name>Invoice line object identifier</Name>
                <Description>An identifier for an object on which the invoice line is based, given by the Seller.</Description>
+               <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-128</Reference>
                <Value type="EXAMPLE">AB12345</Value>
                <Attribute usage="Optional">
@@ -380,6 +402,7 @@
                <Term>cbc:DocumentTypeCode</Term>
                <Name>Document type code</Name>
                <Description>Code "130" MUST be used to indicate an invoice object reference. Not used for other additional documents</Description>
+               <DataType>Code</DataType>
                <Reference type="BUSINESS_TERM">BT-128</Reference>
                <Value type="DEFAULT">130</Value>
             </Element>
