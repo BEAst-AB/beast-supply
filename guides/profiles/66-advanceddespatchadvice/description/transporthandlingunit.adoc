@@ -16,8 +16,7 @@ Serial shipping container code (SSCC) issued by GS1 may be used to identify the 
 Note that the same physical handling unit may contain items from different despatch lines.
 Besides the ID you also need to provide a Type-code of the THU from the code-list.
 
-Example:
-
+.Example:
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/snippet-30-1.xml[tags=transporthandling]
@@ -31,8 +30,7 @@ Refer to the container under all THUs packed in it.
 For the first reference you can provide information about the container - like type, weight etc. 
 For all after the first you should only have the container ID with no additional information.
 
-Example:
-
+.Example:
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/snippet-30-1.xml[tags=transportequipment]
@@ -44,8 +42,7 @@ include::{snippet-dir}/snippet-30-1.xml[tags=transportequipment]
 If any item is packed directly in/on the THU, you specify that here. The ID is the reference to the DespatchLine/ID. All information about the item itselt will be found on this line.
 Besides the ID you also need to provide information of the quantity packed in/on this THU.
 
-Example:
-
+.Example:
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/snippet-30-1.xml[tags=goodsitemTHU]
@@ -58,8 +55,7 @@ If the THU contains any package, you specify that here.	You may give an ID on th
 The type-code, however, you need to give.
 Like for the THU you also can describe what is inside the package. There can be items and/or smaller packages.
 
-Example:
-
+.Example:
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/snippet-30-1.xml[tags=packageTHU]
@@ -70,8 +66,7 @@ include::{snippet-dir}/snippet-30-1.xml[tags=packageTHU]
 
 In the two last levels of the packing structure the ContainedPackage is used. They should be used the same way as described above for Package.
 
-Example:
-
+.Example:
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/snippet-30-1.xml[tags=containedpackage]
@@ -80,8 +75,7 @@ include::{snippet-dir}/snippet-30-1.xml[tags=containedpackage]
 Finally an example of a full packing structure where the THU contains one goods item and one package, the package contains one goods item and one package,
 this package contains again one goods item and one smaller package. Finally this package contains two goods items.
 
-Example:
-
+.Example:
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/snippet-30-1.xml[tags=fullstructure]
