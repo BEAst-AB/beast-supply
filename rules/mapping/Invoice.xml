@@ -559,7 +559,7 @@
                <Data ss:Type="String">Purchase order reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An identifier of a referenced purchase order, issued by the Buyer.An invoice must have buyer reference (BT-10) or purchase order reference.</Data>
+               <Data ss:Type="String">Peppol: An identifier of a referenced purchase order, issued by the Buyer. An invoice must have buyer reference (BT-10) or purchase order reference. In cases where sales order reference is provided, but there's no purchase order reference, then use value "NA" as this element is mandatory in UBL.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">98776</Data>
@@ -585,7 +585,7 @@
                <Data ss:Type="String">Sales order reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An identifier of a referenced sales order, issued by the Seller.</Data>
+               <Data ss:Type="String">Peppol: An identifier of a referenced sales order, issued by the Seller. In cases where sales order reference is provided, but there's no purchase order reference, then set cac:OrderReference/cbc:ID to value "NA" as this element is mandatory in UBL.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">112233</Data>
