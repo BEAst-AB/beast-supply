@@ -7,55 +7,96 @@
 	<cbc:CustomizationID></cbc:CustomizationID>
 	<cbc:ProfileID></cbc:ProfileID>
 	
-	<cbc:ID></cbc:ID>
-	<cbc:IssueDate></cbc:IssueDate>
-	<cbc:IssueTime></cbc:IssueTime>
+	<cbc:ID>
+		<?DescriptionAddFirst T6406 Order receipt response ID when used as a response to the Advanced Despatch Advice. T3385 Receiving advice number when used as a confirmation of received goods/service.  ?>
+	</cbc:ID>
+	<cbc:IssueDate>
+		<?DescriptionAddFirst T6325, Document Date/Time.  ?>
+	</cbc:IssueDate>
+	<cbc:IssueTime>
+		<?DescriptionAddFirst T6325, Document Date/Time.  ?>
+	</cbc:IssueTime>
 	<cbc:DocumentStatusCode></cbc:DocumentStatusCode>
 	<cbc:ReceiptAdviceTypeCode></cbc:ReceiptAdviceTypeCode>
-	<cbc:Note></cbc:Note>
+	<cbc:Note>
+		<?DescriptionAddFirst T6036 Customer remarks ?>
+	</cbc:Note>
 	
 	<cac:OrderReference>
-		<cbc:ID></cbc:ID>
+		<cbc:ID>
+			<?DescriptionAddFirst T3309 Order number ?>
+		</cbc:ID>
 	</cac:OrderReference>
 	<cac:DespatchDocumentReference>
-		<cbc:ID></cbc:ID>		
+		<cbc:ID>
+			<?DescriptionAddFirst T6386 Order receipt reference when used as a response to the Advanced Despatch Advice. T6314 Despatch advice number Neb when used as a confirmation of received goods/service.  ?>
+		</cbc:ID>		
 		<cbc:IssueDate></cbc:IssueDate>
 		<cbc:IssueTime></cbc:IssueTime>
-		<cbc:DocumentStatusCode></cbc:DocumentStatusCode>
+		<cbc:DocumentStatusCode>
+			<?DescriptionAddFirst T6407 Order receipt response status. ?>
+		</cbc:DocumentStatusCode>
 		<cbc:DocumentDescription></cbc:DocumentDescription>
 	</cac:DespatchDocumentReference>	
 	<cac:AdditionalDocumentReference>
-		<cbc:ID></cbc:ID>
-		<cbc:DocumentTypeCode></cbc:DocumentTypeCode>
-		<cbc:DocumentType></cbc:DocumentType>
+		<cbc:ID>
+			<?DescriptionAddFirst T6004 Project number, T6099 Vendor order number or T6484 Document Name. ?>
+		</cbc:ID>
+		<cbc:DocumentTypeCode>
+			<?DescriptionAddFirst Used for T6099 - use code "220". In other cases - T6473 Document  type external. ?>
+		</cbc:DocumentTypeCode>
+		<cbc:DocumentType>
+			<?DescriptionAddFirst Used for T6004 - use value "ProjectReference". In other cases - T6473 Document  type external. ?>
+		</cbc:DocumentType>
 		<cac:Attachment>
-			<cbc:EmbeddedDocumentBinaryObject mimeCode="" filename=""></cbc:EmbeddedDocumentBinaryObject>
+			<cbc:EmbeddedDocumentBinaryObject mimeCode="" filename="">
+				<?DescriptionAddFirst T6475 Embedded document binary object. ?>
+				<?filename-DescriptionAddFirst T6476 Embedded document file name. ?>
+			</cbc:EmbeddedDocumentBinaryObject>
 			<cac:ExternalReference>
-				<cbc:URI></cbc:URI>
+				<cbc:URI>
+					<?DescriptionAddFirst T6187 Link to related document. ?>
+				</cbc:URI>
 			</cac:ExternalReference>
 		</cac:Attachment>
 	</cac:AdditionalDocumentReference>
 	
 	<cac:DeliveryCustomerParty>
 		<cac:Party>
-			<cbc:EndpointID schemeID=""></cbc:EndpointID>
+			<cbc:EndpointID schemeID="">
+				<?DescriptionAddFirst T0008 Buyer, T0037 Delivery party, T6001 Party Identifier. ?>
+			</cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID=""></cbc:ID>
+				<cbc:ID schemeID="">
+					<?DescriptionAddFirst T0008 Buyer, T0037 Delivery party, T6001 Party Identifier. ?>
+				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
-				<cbc:Name></cbc:Name>
+				<cbc:Name>
+					<?DescriptionAddFirst T5001 Party name. ?>
+				</cbc:Name>
 			</cac:PartyName>
 			<cac:PostalAddress>
-				<cbc:StreetName></cbc:StreetName>
-				<cbc:AdditionalStreetName></cbc:AdditionalStreetName>
-				<cbc:CityName></cbc:CityName>
-				<cbc:PostalZone></cbc:PostalZone>
+				<cbc:StreetName>
+					<?DescriptionAddFirst T5003 Street name. ?>
+				</cbc:StreetName>
+				<cbc:AdditionalStreetName>
+					<?DescriptionAddFirst T5002 Department. ?>
+				</cbc:AdditionalStreetName>
+				<cbc:CityName>
+					<?DescriptionAddFirst T5005 City name. ?>
+				</cbc:CityName>
+				<cbc:PostalZone>
+					<?DescriptionAddFirst T6117 Postal code NeB. ?>
+				</cbc:PostalZone>
 				<cbc:CountrySubentity></cbc:CountrySubentity>
 				<cac:AddressLine>
 					<cbc:Line></cbc:Line>
 				</cac:AddressLine>
 				<cac:Country>
-					<cbc:IdentificationCode></cbc:IdentificationCode>
+					<cbc:IdentificationCode>
+						<?DescriptionAddFirst T5007 Country code. ?>
+					</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
 			<cac:PartyTaxScheme>
@@ -76,33 +117,55 @@
 			</cac:PartyLegalEntity>
 			
 			<cac:Contact>
-				<cbc:Name></cbc:Name>
-				<cbc:Telephone></cbc:Telephone>
-				<cbc:ElectronicMail></cbc:ElectronicMail>
+				<cbc:Name>
+					<?DescriptionAddFirst T5012 Name. ?>
+				</cbc:Name>
+				<cbc:Telephone>
+					<?DescriptionAddFirst T5010 Phone number. ?>
+				</cbc:Telephone>
+				<cbc:ElectronicMail>
+					<?DescriptionAddFirst T5011 Email address. ?>
+				</cbc:ElectronicMail>
 			</cac:Contact>
 		</cac:Party>
 	</cac:DeliveryCustomerParty>
 	
 	<cac:DespatchSupplierParty>
 		<cac:Party>
-			<cbc:EndpointID schemeID=""></cbc:EndpointID>
+			<cbc:EndpointID schemeID="">
+				<?DescriptionAddFirst T0009 Supplier, T6001 Party Identifier. ?>
+			</cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID=""></cbc:ID>
+				<cbc:ID schemeID="">
+					<?DescriptionAddFirst T0009 Supplier, T6001 Party Identifier. ?>
+				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
-				<cbc:Name></cbc:Name>
+				<cbc:Name>
+					<?DescriptionAddFirst T5001 Party name. ?>
+				</cbc:Name>
 			</cac:PartyName>
 			<cac:PostalAddress>
-				<cbc:StreetName></cbc:StreetName>
-				<cbc:AdditionalStreetName></cbc:AdditionalStreetName>
-				<cbc:CityName></cbc:CityName>
-				<cbc:PostalZone></cbc:PostalZone>
+				<cbc:StreetName>
+					<?DescriptionAddFirst T5003 Street name. ?>
+				</cbc:StreetName>
+				<cbc:AdditionalStreetName>
+					<?DescriptionAddFirst T5002 Department. ?>
+				</cbc:AdditionalStreetName>
+				<cbc:CityName>
+					<?DescriptionAddFirst T5005 City name. ?>
+				</cbc:CityName>
+				<cbc:PostalZone>
+					<?DescriptionAddFirst T6117 Postal code NeB. ?>
+				</cbc:PostalZone>
 				<cbc:CountrySubentity></cbc:CountrySubentity>
 				<cac:AddressLine>
 					<cbc:Line></cbc:Line>
 				</cac:AddressLine>
 				<cac:Country>
-					<cbc:IdentificationCode></cbc:IdentificationCode>
+					<cbc:IdentificationCode>
+						<?DescriptionAddFirst T5007 Country code. ?>
+					</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
 			<cac:PartyTaxScheme>
@@ -123,9 +186,15 @@
 			</cac:PartyLegalEntity>
 			
 			<cac:Contact>
-				<cbc:Name></cbc:Name>
-				<cbc:Telephone></cbc:Telephone>
-				<cbc:ElectronicMail></cbc:ElectronicMail>
+				<cbc:Name>
+					<?DescriptionAddFirst T5012 Name. ?>
+				</cbc:Name>
+				<cbc:Telephone>
+					<?DescriptionAddFirst T5010 Phone number. ?>
+				</cbc:Telephone>
+				<cbc:ElectronicMail>
+					<?DescriptionAddFirst T5011 Email address. ?>
+				</cbc:ElectronicMail>
 			</cac:Contact>
 		</cac:Party>
 	</cac:DespatchSupplierParty>
@@ -133,22 +202,36 @@
 	<cac:BuyerCustomerParty>
 		<cac:Party>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID=""></cbc:ID>
+				<cbc:ID schemeID="">
+					<?DescriptionAddFirst T0008 Buyer, T6001 Party Identifier. ?>
+				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
-				<cbc:Name></cbc:Name>
+				<cbc:Name>
+					<?DescriptionAddFirst T5001 Party name. ?>
+				</cbc:Name>
 			</cac:PartyName>
 			<cac:PostalAddress>
-				<cbc:StreetName></cbc:StreetName>
-				<cbc:AdditionalStreetName></cbc:AdditionalStreetName>
-				<cbc:CityName></cbc:CityName>
-				<cbc:PostalZone></cbc:PostalZone>
+				<cbc:StreetName>
+					<?DescriptionAddFirst T5003 Street name. ?>
+				</cbc:StreetName>
+				<cbc:AdditionalStreetName>
+					<?DescriptionAddFirst T5002 Department. ?>
+				</cbc:AdditionalStreetName>
+				<cbc:CityName>
+					<?DescriptionAddFirst T5005 City name. ?>
+				</cbc:CityName>
+				<cbc:PostalZone>
+					<?DescriptionAddFirst T6117 Postal code NeB. ?>
+				</cbc:PostalZone>
 				<cbc:CountrySubentity></cbc:CountrySubentity>
 				<cac:AddressLine>
 					<cbc:Line></cbc:Line>
 				</cac:AddressLine>
 				<cac:Country>
-					<cbc:IdentificationCode></cbc:IdentificationCode>
+					<cbc:IdentificationCode>
+						<?DescriptionAddFirst T5007 Country code. ?>
+					</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
 		</cac:Party>
@@ -157,22 +240,36 @@
 	<cac:SellerSupplierParty>
 		<cac:Party>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID=""></cbc:ID>
+				<cbc:ID schemeID="">
+					<?DescriptionAddFirst T0009 Supplier, T6001 Party Identifier. ?>
+				</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
-				<cbc:Name></cbc:Name>
+				<cbc:Name>
+					<?DescriptionAddFirst T5001 Party name. ?>
+				</cbc:Name>
 			</cac:PartyName>
 			<cac:PostalAddress>
-				<cbc:StreetName></cbc:StreetName>
-				<cbc:AdditionalStreetName></cbc:AdditionalStreetName>
-				<cbc:CityName></cbc:CityName>
-				<cbc:PostalZone></cbc:PostalZone>
+				<cbc:StreetName>
+					<?DescriptionAddFirst T5003 Street name. ?>
+				</cbc:StreetName>
+				<cbc:AdditionalStreetName>
+					<?DescriptionAddFirst T5002 Department. ?>
+				</cbc:AdditionalStreetName>
+				<cbc:CityName>
+					<?DescriptionAddFirst T5005 City name. ?>
+				</cbc:CityName>
+				<cbc:PostalZone>
+					<?DescriptionAddFirst T6117 Postal code NeB. ?>
+				</cbc:PostalZone>
 				<cbc:CountrySubentity></cbc:CountrySubentity>
 				<cac:AddressLine>
 					<cbc:Line></cbc:Line>
 				</cac:AddressLine>
 				<cac:Country>
-					<cbc:IdentificationCode></cbc:IdentificationCode>
+					<cbc:IdentificationCode>
+						<?DescriptionAddFirst T5007 Country code. ?>
+					</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
 		</cac:Party>
@@ -231,13 +328,20 @@
 	</cac:Shipment>
 	
 	<cac:ReceiptLine>
-		<cbc:ID></cbc:ID>
+		<cbc:ID>
+			<?DescriptionAddFirst T0051 Line number. ?>
+		</cbc:ID>
 		<cbc:Note></cbc:Note>
-		<cbc:ReceivedQuantity unitCode=""></cbc:ReceivedQuantity>
+		<cbc:ReceivedQuantity unitCode="">
+			<?DescriptionAddFirst T3315 Received quantity. ?>
+			<?unitCode-DescriptionAddFirst T6706 Measure Unit NeB Type. ?>
+		</cbc:ReceivedQuantity>
 		<cbc:ShortQuantity unitCode=""></cbc:ShortQuantity>
 		<cbc:ShortageActionCode></cbc:ShortageActionCode>
 		<cbc:RejectedQuantity unitCode=""></cbc:RejectedQuantity>
-		<cbc:RejectReasonCode></cbc:RejectReasonCode>
+		<cbc:RejectReasonCode>
+			<?DescriptionAddFirst T6163 Change reason NeB. ?>
+		</cbc:RejectReasonCode>
 		<cbc:RejectReason></cbc:RejectReason>
 		<cbc:RejectActionCode></cbc:RejectActionCode>
 		<cbc:OversupplyQuantity unitCode=""></cbc:OversupplyQuantity>
@@ -255,18 +359,24 @@
 		</cac:DespatchLineReference>
 		
 		<cac:Item>
-			<cbc:Name></cbc:Name>
+			<cbc:Name>
+				<?DescriptionAddFirst T6226 Article description. ?>
+			</cbc:Name>
 			<cac:BuyersItemIdentification>
 				<cbc:ID></cbc:ID>
 			</cac:BuyersItemIdentification>
 			<cac:SellersItemIdentification>
-				<cbc:ID></cbc:ID>
+				<cbc:ID>
+					<?DescriptionAddFirst T0172 Supplier's article number. ?>
+				</cbc:ID>
 			</cac:SellersItemIdentification>
 			<cac:ManufacturersItemIdentification>
 				<cbc:ID></cbc:ID>
 			</cac:ManufacturersItemIdentification>
 			<cac:StandardItemIdentification>
-				<cbc:ID schemeID=""></cbc:ID>
+				<cbc:ID schemeID="">
+					<?DescriptionAddFirst T0154 Global Trade Item Number. ?>
+				</cbc:ID>
 				<cbc:ExtendedID></cbc:ExtendedID>
 			</cac:StandardItemIdentification>
 		</cac:Item>
