@@ -5,6 +5,261 @@
 	<?DocumentTerm WeightStatement?>
 	<?Property key="sch:prefix" PEPPOL-T122?>
 	<?Property key="sch:identifier" T122-basic?>
-	
+	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:weight_statement:1<?Rule PEPPOL-T122-R001?></cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:weight_statement:1</cbc:ProfileID>
 
+	<cbc:ID>
+		<?DescriptionAddFirst T6329 Material ticket number.  ?>
+	</cbc:ID>
+	<cbc:IssueDate>
+		<?DescriptionAddFirst T6325, Document Date/Time.  ?>
+	</cbc:IssueDate>
+	<cbc:IssueTime>
+		<?DescriptionAddFirst T6325, Document Date/Time.  ?>
+	</cbc:IssueTime>
+	<cbc:WeightStatementTypeCode>
+		<?DescriptionAddFirst T6328 Document type.  ?>
+	</cbc:WeightStatementTypeCode>
+	
+	<cac:SenderParty>
+		<cbc:EndpointID schemeID="">
+			<?DescriptionAddFirst T6001 Party Identifier, T0009 Supplier.  ?>
+		</cbc:EndpointID>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="">
+				<?DescriptionAddFirst T6001 Party Identifier, T0009 Supplier.  ?>
+			</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<cbc:Name>
+				<?DescriptionAddFirst T5001 Party name.  ?>
+			</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:StreetName>
+				<?DescriptionAddFirst T5003 Street name.  ?>
+			</cbc:StreetName>
+			<cbc:AdditionalStreetName>
+				<?DescriptionAddFirst T5002 Department.  ?>
+			</cbc:AdditionalStreetName>
+			<cbc:CityName>
+				<?DescriptionAddFirst T5005 City name.  ?>
+			</cbc:CityName>
+			<cbc:PostalZone>
+				<?DescriptionAddFirst T6117 Postal code NeB.  ?>
+			</cbc:PostalZone>
+			<cbc:CountrySubentity></cbc:CountrySubentity>
+			<cac:AddressLine>
+				<cbc:Line></cbc:Line>
+			</cac:AddressLine>
+			<cac:Country>
+				<cbc:IdentificationCode>
+					<?DescriptionAddFirst T5007 Country code.  ?>
+				</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:Contact>
+			<cbc:Name>
+				<?DescriptionAddFirst T5012 Name.  ?>
+			</cbc:Name>
+			<cbc:Telephone>
+				<?DescriptionAddFirst T5010 Phone number.  ?>
+			</cbc:Telephone>
+			<cbc:ElectronicMail>
+				<?DescriptionAddFirst T5011 Email address.  ?>
+			</cbc:ElectronicMail>
+		</cac:Contact>
+	</cac:SenderParty>
+	
+	<cac:ReceiverParty>
+		<cbc:EndpointID schemeID="">
+			<?DescriptionAddFirst T6001 Party Identifier, T0008 Buyer.  ?>
+		</cbc:EndpointID>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="">
+				<?DescriptionAddFirst T6001 Party Identifier, T0008 Buyer.  ?>
+			</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<cbc:Name>
+				<?DescriptionAddFirst T5001 Party name.  ?>
+			</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:StreetName>
+				<?DescriptionAddFirst T5003 Street name.  ?>
+			</cbc:StreetName>
+			<cbc:AdditionalStreetName>
+				<?DescriptionAddFirst T5002 Department.  ?>
+			</cbc:AdditionalStreetName>
+			<cbc:CityName>
+				<?DescriptionAddFirst T5005 City name.  ?>
+			</cbc:CityName>
+			<cbc:PostalZone>
+				<?DescriptionAddFirst T6117 Postal code NeB.  ?>
+			</cbc:PostalZone>
+			<cbc:CountrySubentity></cbc:CountrySubentity>
+			<cac:AddressLine>
+				<cbc:Line></cbc:Line>
+			</cac:AddressLine>
+			<cac:Country>
+				<cbc:IdentificationCode>
+					<?DescriptionAddFirst T5007 Country code.  ?>
+				</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:Contact>
+			<cbc:Name>
+				<?DescriptionAddFirst T5012 Name.  ?>
+			</cbc:Name>
+			<cbc:Telephone>
+				<?DescriptionAddFirst T5010 Phone number.  ?>
+			</cbc:Telephone>
+			<cbc:ElectronicMail>
+				<?DescriptionAddFirst T5011 Email address.  ?>
+			</cbc:ElectronicMail>
+		</cac:Contact>
+	</cac:ReceiverParty>
+	
+	<cac:WeighingParty>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="">
+				<?DescriptionAddFirst T6001 Party Identifier, T6330 Place of weighing.  ?>
+			</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<cbc:Name>
+				<?DescriptionAddFirst T5001 Party name.  ?>
+			</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:StreetName>
+				<?DescriptionAddFirst T5003 Street name.  ?>
+			</cbc:StreetName>
+			<cbc:AdditionalStreetName>
+				<?DescriptionAddFirst T5002 Department.  ?>
+			</cbc:AdditionalStreetName>
+			<cbc:CityName>
+				<?DescriptionAddFirst T5005 City name.  ?>
+			</cbc:CityName>
+			<cbc:PostalZone>
+				<?DescriptionAddFirst T6117 Postal code NeB.  ?>
+			</cbc:PostalZone>
+			<cbc:CountrySubentity></cbc:CountrySubentity>
+			<cac:AddressLine>
+				<cbc:Line></cbc:Line>
+			</cac:AddressLine>
+			<cac:Country>
+				<cbc:IdentificationCode>
+					<?DescriptionAddFirst T5007 Country code.  ?>
+				</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:PhysicalLocation>
+			<cbc:ID schemeID="">
+				<?DescriptionAddFirst T6755 SiteID.  ?>
+			</cbc:ID>
+			<cbc:Name>
+				<?DescriptionAddFirst T6465 Property Registration ID.  ?>
+			</cbc:Name>
+		</cac:PhysicalLocation>
+		<cac:Contact>
+			<cbc:Name>
+				<?DescriptionAddFirst T5012 Name.  ?>
+			</cbc:Name>
+			<cbc:Telephone>
+				<?DescriptionAddFirst T5010 Phone number.  ?>
+			</cbc:Telephone>
+			<cbc:ElectronicMail>
+				<?DescriptionAddFirst T5011 Email address.  ?>
+			</cbc:ElectronicMail>
+		</cac:Contact>
+	</cac:WeighingParty>
+	
+	<cac:ShipperParty>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="">
+				<?DescriptionAddFirst T6001 Party Identifier, T3208 Carrier.  ?>
+			</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<cbc:Name>
+				<?DescriptionAddFirst T5001 Party name.  ?>
+			</cbc:Name>
+		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:StreetName>
+				<?DescriptionAddFirst T5003 Street name.  ?>
+			</cbc:StreetName>
+			<cbc:AdditionalStreetName>
+				<?DescriptionAddFirst T5002 Department.  ?>
+			</cbc:AdditionalStreetName>
+			<cbc:CityName>
+				<?DescriptionAddFirst T5005 City name.  ?>
+			</cbc:CityName>
+			<cbc:PostalZone>
+				<?DescriptionAddFirst T6117 Postal code NeB.  ?>
+			</cbc:PostalZone>
+			<cbc:CountrySubentity></cbc:CountrySubentity>
+			<cac:AddressLine>
+				<cbc:Line></cbc:Line>
+			</cac:AddressLine>
+			<cac:Country>
+				<cbc:IdentificationCode>
+					<?DescriptionAddFirst T5007 Country code.  ?>
+				</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:Contact>
+			<cbc:Name>
+				<?DescriptionAddFirst T5012 Name.  ?>
+			</cbc:Name>
+			<cbc:Telephone>
+				<?DescriptionAddFirst T5010 Phone number.  ?>
+			</cbc:Telephone>
+			<cbc:ElectronicMail>
+				<?DescriptionAddFirst T5011 Email address.  ?>
+			</cbc:ElectronicMail>
+		</cac:Contact>
+	</cac:ShipperParty>
+	
+	<cac:Shipment>
+		<cbc:ID></cbc:ID>
+		
+		<cac:GoodsItem>
+			<cbc:ID></cbc:ID>
+			<cac:Item>
+				<cbc:Name>
+					<?DescriptionAddFirst T6226 Article description.  ?>
+				</cbc:Name>
+				<cac:BuyersItemIdentification>
+					<cbc:ID></cbc:ID>
+				</cac:BuyersItemIdentification>
+				<cac:SellersItemIdentification>
+					<cbc:ID>
+						<?DescriptionAddFirst T0172 Supplier's article number.  ?>
+					</cbc:ID>
+				</cac:SellersItemIdentification>	
+				<cac:StandardItemIdentification>
+					<cbc:ID schemeID="">
+						<?DescriptionAddFirst T0154 Global Trade Item Number.  ?>
+					</cbc:ID>
+				</cac:StandardItemIdentification>
+
+				<cac:CommodityClassification>
+					<cbc:ItemClassificationCode listID="" listVersionID="" name=""></cbc:ItemClassificationCode>
+				</cac:CommodityClassification>
+			</cac:Item>
+			
+			<cac:MeasurementDimension>
+				<cbc:AttributeID>
+					<?DescriptionAddFirst T6714 Measured attribute code.  ?>
+				</cbc:AttributeID>
+				<cbc:Measure unitCode="">
+					<?DescriptionAddFirst T6122 Measure.  ?>
+					<?unitCode-DescriptionAddFirst T6706 Measure Unit NeB Type.  ?>
+				</cbc:Measure>
+			</cac:MeasurementDimension>
+		</cac:GoodsItem>
+	</cac:Shipment>
 </ubl:WeightStatement>
