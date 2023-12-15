@@ -40,176 +40,135 @@
 				</xsl:choose>
 			</xsl:for-each>
 		</xsl:variable>
-		<!--xsl:message>
-      Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-    </xsl:message>
-    <xsl:message>
-	  Doc Xpath 2: <xsl:value-of select="$varDocXPath2"/>
-    </xsl:message-->
-		<xsl:variable name="varDocNode">
+		<xsl:variable name="varOverrideNode">
 			<xsl:evaluate xpath="$varDocXPath2" context-item="$varOverrideSampleXml"/>
 		</xsl:variable>
 		<xsl:element name="{name()}">
 			<xsl:apply-templates select="@*"/>
 			<xsl:apply-templates select="synstr:Term"/>
 			<xsl:apply-templates select="synstr:Name"/>
+			<xsl:variable name="varOverrideNode_Description" select="$varOverrideNode/*/processing-instruction('Description')"/>
+			<xsl:variable name="varOverrideNode_DescriptionAddFirst" select="$varOverrideNode/child::*/processing-instruction('DescriptionAddFirst')"/>
+			<xsl:variable name="varOverrideNode_DescriptionAddLast" select="$varOverrideNode/child::*/processing-instruction('DescriptionAddLast')"/>
+			<xsl:variable name="varOverrideNode_DataType" select="$varOverrideNode/child::*/processing-instruction('DataType')"/>
+			<xsl:variable name="varOverrideNode_BusinessTerm" select="$varOverrideNode/child::*/processing-instruction('BusinessTerm')"/>
+			<xsl:variable name="varOverrideNode_Rule" select="$varOverrideNode/child::*/processing-instruction('Rule')"/>
+			<xsl:variable name="varOverrideNode_CodeList" select="$varOverrideNode/child::*/processing-instruction('CodeList')"/>
+			<xsl:variable name="varOverrideNode_ValueType" select="$varOverrideNode/child::*/processing-instruction('ValueType')"/>
+			<xsl:variable name="varOverrideNode_Value" select="$varOverrideNode/child::*/child::text()[1]"/>
+			<!--xsl:if test="$varDocXPath = '/ubl:Order/cac:AdditionalDocumentReference/cbc:ID' or $varDocXPath = '/ubl:Order/cac:AdditionalDocumentReference'">
+			<xsl:message>
+			  XPath: <xsl:value-of select="$varDocXPath"/>
+			  Value: <xsl:value-of select="$varOverrideNode_Value"/>
+			</xsl:message>
+          </xsl:if-->
 			<xsl:choose>
-				<xsl:when test="$varDocNode!='' and not(empty($varDocNode)) and count($varDocNode/child::*) > 0 and $varDocNode/text()!=''">
-					<xsl:variable name="varDocNode_Description" select="$varDocNode/*/processing-instruction('Description')"/>
-					<xsl:variable name="varDocNode_DescriptionAddFirst" select="$varDocNode/child::*/processing-instruction('DescriptionAddFirst')"/>
-					<xsl:variable name="varDocNode_DescriptionAddLast" select="$varDocNode/child::*/processing-instruction('DescriptionAddLast')"/>
-					<xsl:variable name="varDocNode_DataType" select="$varDocNode/child::*/processing-instruction('DataType')"/>
-					<xsl:variable name="varDocNode_BusinessTerm" select="$varDocNode/child::*/processing-instruction('BusinessTerm')"/>
-					<xsl:variable name="varDocNode_Rule" select="$varDocNode/child::*/processing-instruction('Rule')"/>
-					<xsl:variable name="varDocNode_CodeList" select="$varDocNode/child::*/processing-instruction('CodeList')"/>
-					<xsl:variable name="varDocNode_ValueType" select="$varDocNode/child::*/processing-instruction('ValueType')"/>
-					<xsl:variable name="varDocNode_Value" select="$varDocNode"/>
-					<xsl:if test="$varDocNode_Description!='' and not(empty($varDocNode_Description))">
-						<!--xsl:message>
-                Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-                Description: <xsl:value-of select="$varDocNode_Description"/>
-              </xsl:message-->
-						<Description>
-							<xsl:value-of select="$varDocNode_Description"/>
-						</Description>
-					</xsl:if>
-					<xsl:if test="$varDocNode_DescriptionAddFirst!='' and not(empty($varDocNode_DescriptionAddFirst))">
-						<!--xsl:message>
-                Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-                DescriptionAddFirst: <xsl:value-of select="$varDocNode_DescriptionAddFirst"/>
-              </xsl:message-->
-						<Description>
-							BEAst: <xsl:value-of select="$varDocNode_DescriptionAddFirst"/>
-							<xsl:if test="synstr:Description != ''">
-								<xsl:value-of select="concat(' Peppol: ', synstr:Description)"/>
-							</xsl:if>
-						</Description>
-					</xsl:if>
-					<xsl:if test="$varDocNode_DescriptionAddLast!='' and not(empty($varDocNode_DescriptionAddLast))">
-						<!--xsl:message>
-                Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-                DescriptionAddLast: <xsl:value-of select="$varDocNode_DescriptionAddLast"/>
-              </xsl:message-->
-						<Description>
-							<xsl:if test="synstr:Description != ''">
-								<xsl:value-of select="concat('Peppol: ', synstr:Description, ' BEAst: ')"/>
-							</xsl:if>
-							<xsl:value-of select="$varDocNode_DescriptionAddLast"/>
-						</Description>
-					</xsl:if>
-					<xsl:choose>
-						<xsl:when test="$varDocNode_DataType!='' and not(empty($varDocNode_DataType))">
-							<!--xsl:message>
-                  Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-                  DataType: <xsl:value-of select="$varDocNode_DataType"/>
-                </xsl:message-->
-							<DataType>
-								<xsl:value-of select="$varDocNode_DataType"/>
-							</DataType>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:copy-of select="synstr:DataType"/>
-						</xsl:otherwise>
-					</xsl:choose>
-					<xsl:choose>
-						<xsl:when test="$varDocNode_BusinessTerm!='' and not(empty($varDocNode_BusinessTerm))">
-							<!--xsl:message>
-                  Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-                </xsl:message-->
-							<xsl:for-each select="$varDocNode_BusinessTerm">
-								<!--xsl:message>
-  				  BusinessTerm: <xsl:value-of select="."/>
-				  </xsl:message-->
-								<Reference type="BUSINESS_TERM">
-									<xsl:value-of select="."/>
-								</Reference>
-							</xsl:for-each>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:copy-of select="synstr:Reference[@type='BUSINESS_TERM']"/>
-						</xsl:otherwise>
-					</xsl:choose>
-					<xsl:choose>
-						<xsl:when test="$varDocNode_Rule!='' and not(empty($varDocNode_Rule))">
-							<!--xsl:message>
-                Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-              </xsl:message-->
-							<xsl:for-each select="$varDocNode_Rule">
-								<!--xsl:message>
-                  Rule: <xsl:value-of select="."/>
-				  </xsl:message-->
-								<Reference type="RULE">
-									<xsl:value-of select="."/>
-								</Reference>
-							</xsl:for-each>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:copy-of select="synstr:Reference[@type='RULE']"/>
-						</xsl:otherwise>
-					</xsl:choose>
-					<xsl:choose>
-						<xsl:when test="$varDocNode_CodeList!='' and not(empty($varDocNode_CodeList))">
-							<!--xsl:message>
-                Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-              </xsl:message-->
-							<xsl:for-each select="$varDocNode_CodeList">
-								<!--xsl:message>
-                  CodeList: <xsl:value-of select="."/>
-				  </xsl:message-->
-								<Reference type="CODE_LIST">
-									<xsl:value-of select="."/>
-								</Reference>
-							</xsl:for-each>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:copy-of select="synstr:Reference[@type='CODE_LIST']"/>
-						</xsl:otherwise>
-					</xsl:choose>
-					<xsl:choose>
-						<xsl:when test="normalize-space($varDocNode_Value)!='' and not(empty(normalize-space($varDocNode_Value)))">
-							<Value>
-								<xsl:choose>
-									<xsl:when test="$varDocNode_ValueType!=''">
-										<xsl:attribute name="type">
-											<xsl:value-of select="normalize-space($varDocNode_ValueType)"/>
-										</xsl:attribute>
-									</xsl:when>
-									<xsl:otherwise>
-										<xsl:attribute name="type">
-											<xsl:value-of select="'EXAMPLE'"/>
-										</xsl:attribute>
-									</xsl:otherwise>
-								</xsl:choose>
-								<xsl:value-of select="normalize-space($varDocNode_Value)"/>
-							</Value>
-						</xsl:when>
-						<xsl:when test="not(empty(synstr:Value))">
-							<!--xsl:message>
-                  Doc Xpath: <xsl:value-of select="$varDocXPath"/>
-                </xsl:message-->
-							<xsl:copy-of select="synstr:Value"/>
-						</xsl:when>
-					</xsl:choose>
+				<xsl:when test="$varOverrideNode_Description!='' and not(empty($varOverrideNode_Description))">
+					<Description>
+						<xsl:value-of select="$varOverrideNode_Description"/>
+					</Description>
+				</xsl:when>
+				<xsl:when test="$varOverrideNode_DescriptionAddFirst!='' and not(empty($varOverrideNode_DescriptionAddFirst))">
+					<Description>
+						BEAst: <xsl:value-of select="$varOverrideNode_DescriptionAddFirst"/>
+						<xsl:if test="synstr:Description != ''">
+							<xsl:value-of select="concat(' Peppol: ', synstr:Description)"/>
+						</xsl:if>
+					</Description>
+				</xsl:when>
+				<xsl:when test="$varOverrideNode_DescriptionAddLast!='' and not(empty($varOverrideNode_DescriptionAddLast))">
+					<Description>
+						<xsl:if test="synstr:Description != ''">
+							<xsl:value-of select="concat('Peppol: ', synstr:Description, ' BEAst: ')"/>
+						</xsl:if>
+						<xsl:value-of select="$varOverrideNode_DescriptionAddLast"/>
+					</Description>
 				</xsl:when>
 				<xsl:otherwise>
-					<!--xsl:apply-templates select="node()"/-->
 					<xsl:apply-templates select="synstr:Description"/>
-					<xsl:apply-templates select="synstr:DataType"/>
-					<xsl:apply-templates select="synstr:Reference"/>
-					<xsl:apply-templates select="synstr:Value"/>
+				</xsl:otherwise>
+			</xsl:choose>
+			<xsl:choose>
+				<xsl:when test="$varOverrideNode_DataType!='' and not(empty($varOverrideNode_DataType))">
+					<DataType>
+						<xsl:value-of select="$varOverrideNode_DataType"/>
+					</DataType>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:copy-of select="synstr:DataType"/>
+				</xsl:otherwise>
+			</xsl:choose>
+			<xsl:choose>
+				<xsl:when test="$varOverrideNode_BusinessTerm!='' and not(empty($varOverrideNode_BusinessTerm))">
+					<xsl:for-each select="$varOverrideNode_BusinessTerm">
+						<Reference type="BUSINESS_TERM">
+							<xsl:value-of select="."/>
+						</Reference>
+					</xsl:for-each>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:copy-of select="synstr:Reference[@type='BUSINESS_TERM']"/>
+				</xsl:otherwise>
+			</xsl:choose>
+			<xsl:choose>
+				<xsl:when test="$varOverrideNode_Rule!='' and not(empty($varOverrideNode_Rule))">
+					<xsl:for-each select="$varOverrideNode_Rule">
+						<Reference type="RULE">
+							<xsl:value-of select="."/>
+						</Reference>
+					</xsl:for-each>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:copy-of select="synstr:Reference[@type='RULE']"/>
+				</xsl:otherwise>
+			</xsl:choose>
+			<xsl:choose>
+				<xsl:when test="$varOverrideNode_CodeList!='' and not(empty($varOverrideNode_CodeList))">
+					<xsl:for-each select="$varOverrideNode_CodeList">
+						<Reference type="CODE_LIST">
+							<xsl:value-of select="."/>
+						</Reference>
+					</xsl:for-each>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:copy-of select="synstr:Reference[@type='CODE_LIST']"/>
+				</xsl:otherwise>
+			</xsl:choose>
+			<xsl:choose>
+				<!--xsl:when test="normalize-space($varOverrideNode_Value)!='' and not(empty(normalize-space($varOverrideNode_Value)))"-->
+				<xsl:when test="normalize-space($varOverrideNode_Value)!=''">
+					<Value>
+						<xsl:choose>
+							<xsl:when test="$varOverrideNode_ValueType!=''">
+								<xsl:attribute name="type">
+									<xsl:value-of select="normalize-space($varOverrideNode_ValueType)"/>
+								</xsl:attribute>
+							</xsl:when>
+							<xsl:when test="synstr:Value/@type!=''">
+								<xsl:attribute name="type">
+									<xsl:value-of select="synstr:Value/@type"/>
+								</xsl:attribute>
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:attribute name="type">
+									<xsl:value-of select="'EXAMPLE'"/>
+								</xsl:attribute>
+							</xsl:otherwise>
+						</xsl:choose>
+						<xsl:value-of select="normalize-space($varOverrideNode_Value)"/>
+					</Value>
+				</xsl:when>
+				<!--xsl:when test="not(empty(synstr:Value))">
+                <xsl:copy-of select="synstr:Value"/>
+              </xsl:when-->
+				<xsl:otherwise>
+					<xsl:copy-of select="synstr:Value"/>
 				</xsl:otherwise>
 			</xsl:choose>
 			<xsl:apply-templates select="synstr:Attribute"/>
 			<xsl:apply-templates select="synstr:Element"/>
-			<!--xsl:apply-templates select="@*|node()"/-->
 		</xsl:element>
 	</xsl:template>
-	<!--xsl:template match="/">
-    <xsl:message>
-      varOverrideSample: <xsl:value-of select="$varOverrideSample"/>
-    </xsl:message>
-    <xsl:apply-templates select="@*|node()"/>
-  </xsl:template-->
 	<xsl:template match="*">
 		<xsl:element name="{name()}">
 			<xsl:apply-templates select="@*|node()"/>
