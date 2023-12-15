@@ -54,7 +54,7 @@
 			<xsl:apply-templates select="synstr:Term"/>
 			<xsl:apply-templates select="synstr:Name"/>
 			<xsl:choose>
-				<xsl:when test="$varDocNode!='' and not(empty($varDocNode))">
+				<xsl:when test="$varDocNode!='' and not(empty($varDocNode)) and count($varDocNode/child::*) > 0 and $varDocNode/text()!=''">
 					<xsl:variable name="varDocNode_Description" select="$varDocNode/*/processing-instruction('Description')"/>
 					<xsl:variable name="varDocNode_DescriptionAddFirst" select="$varDocNode/child::*/processing-instruction('DescriptionAddFirst')"/>
 					<xsl:variable name="varDocNode_DescriptionAddLast" select="$varDocNode/child::*/processing-instruction('DescriptionAddLast')"/>
