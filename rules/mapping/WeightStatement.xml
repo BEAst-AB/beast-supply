@@ -169,7 +169,7 @@
                <Data ss:Type="String">Document identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Unique identity identifying the Weight Statement. An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Data>
+               <Data ss:Type="String">BEAst: T6329 Material ticket number. Peppol: Unique identity identifying the Weight Statement. An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">GOA294107</Data>
@@ -195,7 +195,7 @@
                <Data ss:Type="String">Weight Statement issue date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The date when the Weight Statement is issued. Format = "YYYY-MM-DD"</Data>
+               <Data ss:Type="String">BEAst: T6325, Document Date/Time. Peppol: The date when the Weight Statement is issued. Format = "YYYY-MM-DD"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2016-11-03</Data>
@@ -221,7 +221,7 @@
                <Data ss:Type="String">Weight Statement issue time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The time when the Weight Statement is issued. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the document was issued should be assumed.</Data>
+               <Data ss:Type="String">BEAst: T6325, Document Date/Time. Peppol: The time when the Weight Statement is issued. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the document was issued should be assumed.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">09:30:00+01:00</Data>
@@ -247,7 +247,7 @@
                <Data ss:Type="String">Weight Statement type code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">01 = Outbound delivery 02 = Inbound delivery</Data>
+               <Data ss:Type="String">BEAst: T6328 Document type. Peppol: 01 = Outbound delivery 02 = Inbound delivery</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">01</Data>
@@ -299,7 +299,7 @@
                <Data ss:Type="String">Senders electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Identifies the senders partys electronic address</Data>
+               <Data ss:Type="String">BEAst: T6001 Party Identifier, T0009 Supplier. Peppol: Identifies the senders partys electronic address</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">7300010000001</Data>
@@ -377,7 +377,7 @@
                <Data ss:Type="String">Sender party identity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier of the Sender party</Data>
+               <Data ss:Type="String">BEAst: T6001 Party Identifier, T0009 Supplier. Peppol: The identifier of the Sender party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">7300010000001</Data>
@@ -455,7 +455,7 @@
                <Data ss:Type="String">Sender name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: T5001 Party name.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Weighing Solutions AB</Data>
@@ -507,7 +507,7 @@
                <Data ss:Type="String">Address line 1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+               <Data ss:Type="String">BEAst: T5003 Street name. Peppol: The main address line in a postal address usually the street name and number.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Skogsgatan nr 1</Data>
@@ -533,7 +533,7 @@
                <Data ss:Type="String">Address line 2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+               <Data ss:Type="String">BEAst: T5002 Department. Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Second entry</Data>
@@ -559,7 +559,7 @@
                <Data ss:Type="String">City</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String">BEAst: T5005 City name. Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Norrköping</Data>
@@ -585,7 +585,7 @@
                <Data ss:Type="String">Post code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String">BEAst: T6117 Postal code NeB. Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">123 45</Data>
@@ -715,7 +715,7 @@
                <Data ss:Type="String">Country code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String">BEAst: T5007 Country code. Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">SE</Data>
@@ -767,7 +767,7 @@
                <Data ss:Type="String">Contact name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The contact name.</Data>
+               <Data ss:Type="String">BEAst: T5012 Name. Peppol: The contact name.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Mats Svensson</Data>
@@ -793,7 +793,7 @@
                <Data ss:Type="String">Contact telephone number</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The phone number of the contact.</Data>
+               <Data ss:Type="String">BEAst: T5010 Phone number. Peppol: The phone number of the contact.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0158 1233714</Data>
@@ -819,7 +819,7 @@
                <Data ss:Type="String">Contact email address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The electronic mail of the contact.</Data>
+               <Data ss:Type="String">BEAst: T5011 Email address. Peppol: The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">mats.svensson@senderab.se</Data>
@@ -871,7 +871,7 @@
                <Data ss:Type="String">Receiver electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Identifies the receivers partys electronic address</Data>
+               <Data ss:Type="String">BEAst: T6001 Party Identifier, T0008 Buyer. Peppol: Identifies the receivers partys electronic address</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1251513513245</Data>
@@ -949,7 +949,7 @@
                <Data ss:Type="String">Receiver identity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier of the receiver party</Data>
+               <Data ss:Type="String">BEAst: T6001 Party Identifier, T0008 Buyer. Peppol: The identifier of the receiver party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1251513513245</Data>
@@ -1027,7 +1027,7 @@
                <Data ss:Type="String">Receiver name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: T5001 Party name.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Transport Management Solutions AB</Data>
@@ -1079,7 +1079,7 @@
                <Data ss:Type="String">Address line 1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+               <Data ss:Type="String">BEAst: T5003 Street name. Peppol: The main address line in a postal address usually the street name and number.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Byagatan nr 14</Data>
@@ -1105,7 +1105,7 @@
                <Data ss:Type="String">Address line 2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+               <Data ss:Type="String">BEAst: T5002 Department. Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Second entry</Data>
@@ -1131,7 +1131,7 @@
                <Data ss:Type="String">City</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String">BEAst: T5005 City name. Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Norrköping</Data>
@@ -1157,7 +1157,7 @@
                <Data ss:Type="String">Post code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String">BEAst: T6117 Postal code NeB. Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">123 45</Data>
@@ -1287,7 +1287,7 @@
                <Data ss:Type="String">Country code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String">BEAst: T5007 Country code. Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">SE</Data>
@@ -1339,7 +1339,7 @@
                <Data ss:Type="String">Contact name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The contact name.</Data>
+               <Data ss:Type="String">BEAst: T5012 Name. Peppol: The contact name.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Nils Johansson</Data>
@@ -1365,7 +1365,7 @@
                <Data ss:Type="String">Contact telephone number</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The phone number of the contact.</Data>
+               <Data ss:Type="String">BEAst: T5010 Phone number. Peppol: The phone number of the contact.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0158 1236543</Data>
@@ -1391,7 +1391,7 @@
                <Data ss:Type="String">Contact email address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The electronic mail of the contact.</Data>
+               <Data ss:Type="String">BEAst: T5011 Email address. Peppol: The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">nils.johansson@receiverab.se</Data>
@@ -1469,7 +1469,7 @@
                <Data ss:Type="String">Weighing party identity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier of the Weighing party</Data>
+               <Data ss:Type="String">BEAst: T6001 Party Identifier, T6330 Place of weighing. Peppol: The identifier of the Weighing party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">5790000435951</Data>
@@ -1547,7 +1547,7 @@
                <Data ss:Type="String">Weighing party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the weighing party</Data>
+               <Data ss:Type="String">BEAst: T5001 Party name. Peppol: The name of the weighing party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Gravel Pit Ltd.</Data>
@@ -1599,7 +1599,7 @@
                <Data ss:Type="String">Address line 1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+               <Data ss:Type="String">BEAst: T5003 Street name. Peppol: The main address line in a postal address usually the street name and number.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Byagatan nr 14</Data>
@@ -1625,7 +1625,7 @@
                <Data ss:Type="String">Address line 2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+               <Data ss:Type="String">BEAst: T5002 Department. Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Second entry</Data>
@@ -1651,7 +1651,7 @@
                <Data ss:Type="String">City</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String">BEAst: T5005 City name. Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Norrköping</Data>
@@ -1677,7 +1677,7 @@
                <Data ss:Type="String">Post code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String">BEAst: T6117 Postal code NeB. Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">123 45</Data>
@@ -1807,7 +1807,7 @@
                <Data ss:Type="String">Country code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String">BEAst: T5007 Country code. Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">SE</Data>
@@ -1859,7 +1859,7 @@
                <Data ss:Type="String">Physical Location ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Unique ID of the site for the weighing party. If possile an ID that is issued by a authority or similar.</Data>
+               <Data ss:Type="String">BEAst: T6755 SiteID. Peppol: Unique ID of the site for the weighing party. If possile an ID that is issued by a authority or similar.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0114-40-019-a</Data>
@@ -1911,7 +1911,7 @@
                <Data ss:Type="String">Location name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Physical location name</Data>
+               <Data ss:Type="String">BEAst: T6465 Property Registration ID. Peppol: Physical location name</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Townsend pit</Data>
@@ -1963,7 +1963,7 @@
                <Data ss:Type="String">Contact name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The contact name.</Data>
+               <Data ss:Type="String">BEAst: T5012 Name. Peppol: The contact name.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Nils Johansson</Data>
@@ -1989,7 +1989,7 @@
                <Data ss:Type="String">Contact telephone number</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The phone number of the contact.</Data>
+               <Data ss:Type="String">BEAst: T5010 Phone number. Peppol: The phone number of the contact.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0158 1236543</Data>
@@ -2015,7 +2015,7 @@
                <Data ss:Type="String">Contact email address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The electronic mail of the contact.</Data>
+               <Data ss:Type="String">BEAst: T5011 Email address. Peppol: The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">nils.johansson@receiverab.se</Data>
@@ -2093,7 +2093,7 @@
                <Data ss:Type="String">Shipping party identity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier of the shippping party</Data>
+               <Data ss:Type="String">BEAst: T6001 Party Identifier, T3208 Carrier. Peppol: The identifier of the shippping party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">5790000435951</Data>
@@ -2171,7 +2171,7 @@
                <Data ss:Type="String">Shipper name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the shipper</Data>
+               <Data ss:Type="String">BEAst: T5001 Party name. Peppol: The name of the shipper</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Tony's Trucks and Transport</Data>
@@ -2223,7 +2223,7 @@
                <Data ss:Type="String">Address line 1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+               <Data ss:Type="String">BEAst: T5003 Street name. Peppol: The main address line in a postal address usually the street name and number.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Skogsgatan nr 1</Data>
@@ -2249,7 +2249,7 @@
                <Data ss:Type="String">Address line 2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+               <Data ss:Type="String">BEAst: T5002 Department. Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Second entry</Data>
@@ -2275,7 +2275,7 @@
                <Data ss:Type="String">City</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String">BEAst: T5005 City name. Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Norrköping</Data>
@@ -2301,7 +2301,7 @@
                <Data ss:Type="String">Post code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String">BEAst: T6117 Postal code NeB. Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">123 45</Data>
@@ -2431,7 +2431,7 @@
                <Data ss:Type="String">Country code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String">BEAst: T5007 Country code. Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">SE</Data>
@@ -2483,7 +2483,7 @@
                <Data ss:Type="String">Contact name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The contact name.</Data>
+               <Data ss:Type="String">BEAst: T5012 Name. Peppol: The contact name.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Mats Svensson</Data>
@@ -2509,7 +2509,7 @@
                <Data ss:Type="String">Contact telephone number</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The phone number of the contact.</Data>
+               <Data ss:Type="String">BEAst: T5010 Phone number. Peppol: The phone number of the contact.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0158 1233714</Data>
@@ -2535,7 +2535,7 @@
                <Data ss:Type="String">Contact email address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The electronic mail of the contact.</Data>
+               <Data ss:Type="String">BEAst: T5011 Email address. Peppol: The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">mats.svensson@senderab.se</Data>
@@ -2691,7 +2691,7 @@
                <Data ss:Type="String">Item name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Name of weighed item</Data>
+               <Data ss:Type="String">BEAst: T6226 Article description. Peppol: Name of weighed item</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Sortering 0/2 mm krossat bergmaterial CE-märkt enligt system 2+ för användning till asfalt.</Data>
@@ -2795,7 +2795,7 @@
                <Data ss:Type="String">The Sellers item identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An identifier, assigned by the seller, for the item. Associates the item with its identification according to the sellers system.</Data>
+               <Data ss:Type="String">BEAst: T0172 Supplier's article number. Peppol: An identifier, assigned by the seller, for the item. Associates the item with its identification according to the sellers system.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">17589683</Data>
@@ -2847,7 +2847,7 @@
                <Data ss:Type="String">Item standard identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Global Trade Item Number (GTIN) or other standardized identification. Associates the item with its identification according to a standard system.</Data>
+               <Data ss:Type="String">BEAst: T0154 Global Trade Item Number. Peppol: Global Trade Item Number (GTIN) or other standardized identification. Associates the item with its identification according to a standard system.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1234567891234</Data>
@@ -3055,7 +3055,7 @@
                <Data ss:Type="String">Attribute identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">To describe the type of measurement. Use UNCL 6313 subset.</Data>
+               <Data ss:Type="String">BEAst: T6714 Measured attribute code. Peppol: To describe the type of measurement. Use UNCL 6313 subset.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">AAF</Data>
@@ -3081,7 +3081,7 @@
                <Data ss:Type="String">Measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">For the measure.</Data>
+               <Data ss:Type="String">BEAst: T6122 Measure. Peppol: For the measure.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">12.3</Data>
