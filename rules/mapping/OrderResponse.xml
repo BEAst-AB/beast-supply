@@ -117,7 +117,7 @@
                <Data ss:Type="String">Specification identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: This document describes the BEAst profile, and how BEAst's order response messages, version 3.1, for NeC, Rental and Material are linked to the Peppol structure. Peppol: Identifies the specification of content and rules that apply to the transaction.</Data>
+               <Data ss:Type="String">Identifies the specification of content and rules that apply to the transaction.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">urn:fdc:peppol.eu:poacc:trns:order_response:3</Data>
@@ -143,10 +143,10 @@
                <Data ss:Type="String">Business process type identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Identifies the BII profile or business process context in which the transaction appears.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">urn:fdc:peppol.eu:poacc:bis:ordering:3</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cbc:ProfileID</Data>
@@ -169,10 +169,10 @@
                <Data ss:Type="String">Order response identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T3345, Order response number. Peppol: A transaction instance must have an identifier. The identifier enables referencing the transaction for various purposes such as from other transactions that are part of the same process.</Data>
+               <Data ss:Type="String">A transaction instance must have an identifier. The identifier enables referencing the transaction for various purposes such as from other transactions that are part of the same process.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">101</Data>
+               <Data ss:Type="String">or0987</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cbc:ID</Data>
@@ -195,10 +195,10 @@
                <Data ss:Type="String">Sales order reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6099, Supplier's Order number. Peppol: An identifier of a referenced sales order, issued by the Seller.</Data>
+               <Data ss:Type="String">An identifier of a referenced sales order, issued by the Seller.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">101-111</Data>
+               <Data ss:Type="String">112233</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cbc:SalesOrderID</Data>
@@ -221,10 +221,10 @@
                <Data ss:Type="String">Order response issue date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6325, Document Date/Time. Peppol: The date on which the transaction instance was issued.</Data>
+               <Data ss:Type="String">The date on which the transaction instance was issued.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-07-01</Data>
+               <Data ss:Type="String">2018-05-15</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cbc:IssueDate</Data>
@@ -247,10 +247,10 @@
                <Data ss:Type="String">Order response issue time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6325, Document Date/Time. Peppol: The time on which the transaction instance was issued</Data>
+               <Data ss:Type="String">The time on which the transaction instance was issued</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">06:10:10</Data>
+               <Data ss:Type="String">09:23:56</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cbc:IssueTime</Data>
@@ -273,10 +273,10 @@
                <Data ss:Type="String">Response code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6114, Order response status. Peppol: A code that indicates whether the referenced order has been received and not yet processed, or is Accepted or Rejected as whole, alternatively, Accepted with change or already delivered.If response code is Accept or Reject there may not be any response lines.</Data>
+               <Data ss:Type="String">A code that indicates whether the referenced order has been received and not yet processed, or is Accepted or Rejected as whole, alternatively, Accepted with change or already delivered.If response code is Accept or Reject there may not be any response lines.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">CA</Data>
+               <Data ss:Type="String">AP</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cbc:OrderResponseCode</Data>
@@ -299,10 +299,10 @@
                <Data ss:Type="String">Response clarification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6008 and T6038, Transport information or Supplier's remark. Peppol: Clarification of the suppliers decision.</Data>
+               <Data ss:Type="String">Clarification of the suppliers decision.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Response message with amendments in the details</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cbc:Note</Data>
@@ -325,7 +325,7 @@
                <Data ss:Type="String">Document currency</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6018, Order Currency. Peppol: The default currency for the offer.</Data>
+               <Data ss:Type="String">The default currency for the offer.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">EUR</Data>
@@ -351,10 +351,10 @@
                <Data ss:Type="String">Buyer reference identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6004, Project number. Peppol: An identifier assigned by the Buyer used for internal routing purposes.The identifier is defined by the buyer (contact ID, department, office id, project code), but provided by the seller in the order response.</Data>
+               <Data ss:Type="String">An identifier assigned by the Buyer used for internal routing purposes.The identifier is defined by the buyer (contact ID, department, office id, project code), but provided by the seller in the order response.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">ABC-123</Data>
+               <Data ss:Type="String">abc123</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cbc:CustomerReference</Data>
@@ -377,10 +377,10 @@
                <Data ss:Type="String">Order reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The order response message always is preceeded by an order message. If the order response is a confirmation of something ordered by telephone, in a shop or a supplier portal, the Peppol message OrderAgreement should be used instead.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">11233</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderReference</Data>
@@ -403,10 +403,10 @@
                <Data ss:Type="String">Order document reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T3309 and T6335, Reference to the Order/Calloff. Peppol: Used to reference the order that is being responded to.</Data>
+               <Data ss:Type="String">Used to reference the order that is being responded to.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">11233</Data>
+               <Data ss:Type="String">o-23424</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderReference/cbc:ID</Data>
@@ -432,7 +432,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7598000000128 DK12345678 The Supplier AB</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty</Data>
@@ -458,7 +458,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7598000000128 DK12345678 The Supplier AB</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty/cac:Party</Data>
@@ -481,10 +481,10 @@
                <Data ss:Type="String">Seller party electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T0009 or T6001, Identification of the Supplier. Peppol: Identifies the seller party's electronic address</Data>
+               <Data ss:Type="String">Identifies the seller party's electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7598000000128</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty/cac:Party/cbc:EndpointID</Data>
@@ -536,7 +536,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">DK12345678</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty/cac:Party/cac:PartyIdentification</Data>
@@ -559,10 +559,10 @@
                <Data ss:Type="String">Seller party identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T0009 or T6001, Identification of the Supplier. Peppol: Identifies a party.</Data>
+               <Data ss:Type="String">Identifies a party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">DK12345678</Data>
+               <Data ss:Type="String">DK88777654</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID</Data>
@@ -614,7 +614,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Supplier AB</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity</Data>
@@ -637,10 +637,10 @@
                <Data ss:Type="String">Seller party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T5001, Name of the Supplier. Peppol: The name of the party.</Data>
+               <Data ss:Type="String">The name of the party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Supplier AB</Data>
+               <Data ss:Type="String">Seller Inc.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName</Data>
@@ -666,7 +666,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7590000012347 DK55412777 City Hospital</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty</Data>
@@ -692,7 +692,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7590000012347 DK55412777 City Hospital</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty/cac:Party</Data>
@@ -715,10 +715,10 @@
                <Data ss:Type="String">Buyer party electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T0008 or T6001, Identification of the Buyer. Peppol: Identifies the buyer party's electronic address</Data>
+               <Data ss:Type="String">Identifies the buyer party's electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7590000012347</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty/cac:Party/cbc:EndpointID</Data>
@@ -770,7 +770,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">DK55412777</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty/cac:Party/cac:PartyIdentification</Data>
@@ -793,10 +793,10 @@
                <Data ss:Type="String">Buyer party identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T0008 or T6001, Identification of the Buyer. Peppol: An identification for the buyer party.</Data>
+               <Data ss:Type="String">An identification for the buyer party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">DK55412777</Data>
+               <Data ss:Type="String">DK88777654</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID</Data>
@@ -848,7 +848,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">City Hospital</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity</Data>
@@ -871,10 +871,10 @@
                <Data ss:Type="String">Buyer party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T5001, Name of the Buyer. Peppol: The name of the party who ordered the items and receives the response.</Data>
+               <Data ss:Type="String">The name of the party who ordered the items and receives the response.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">City Hospital</Data>
+               <Data ss:Type="String">Buyer name</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName</Data>
@@ -897,10 +897,10 @@
                <Data ss:Type="String">Delivery information </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Confirmation of delivery dates are always at line level, not here.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-07-15 12:30:00 2021-07-16 15:30:00</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:Delivery</Data>
@@ -926,7 +926,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-07-15 12:30:00 2021-07-16 15:30:00</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:Delivery/cac:PromisedDeliveryPeriod</Data>
@@ -949,10 +949,10 @@
                <Data ss:Type="String">Period start date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The date on which the period starts. The start dates counts as part of the period.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-07-15</Data>
+               <Data ss:Type="String">2018-06-01</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:StartDate</Data>
@@ -975,7 +975,7 @@
                <Data ss:Type="String">Period start time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The time at which this period begins. Format = "hh:mm:ss"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">12:30:00</Data>
@@ -1001,10 +1001,10 @@
                <Data ss:Type="String">Period end date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The date on which the period ends. The end date counts as part of the period.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-07-16</Data>
+               <Data ss:Type="String">2018-06-30</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:EndDate</Data>
@@ -1027,10 +1027,10 @@
                <Data ss:Type="String">Period end time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The time at which this period end. Format = "hh:mm:ss"</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">15:30:00</Data>
+               <Data ss:Type="String">18:00:00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:EndTime</Data>
@@ -1053,10 +1053,10 @@
                <Data ss:Type="String">Specification of order lines</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Orderlines should be included in the order response only when the OrderResponseCode is "CA" (Conditionally Accepted). For all other codes only the document header should be sent. When the order is Conditionally Accepted, all orderlines shall be included, not only those that are changed.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1 Order line note text 3 10 3 2021-08-10 2021-08-12 1.50 1 Brown sauce 123456 SN-33 7400000001234 12356 Sauce brown, ready SN-34 7400000001235 12345678 S 25 VAT Weight Code 12 gram 12 gram 1</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine</Data>
@@ -1082,7 +1082,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1 Order line note text 3 10 3 2021-08-10 2021-08-12 1.50 1 Brown sauce 123456 SN-33 7400000001234</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem</Data>
@@ -1105,10 +1105,10 @@
                <Data ss:Type="String">Document line identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T0051, Line number. Peppol: Identifies the response line. Each order response line MUST be unique within the order response.</Data>
+               <Data ss:Type="String">Identifies the response line. Each order response line MUST be unique within the order response.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1</Data>
+               <Data ss:Type="String">3</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cbc:ID</Data>
@@ -1131,10 +1131,10 @@
                <Data ss:Type="String">Response clarification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6031, Line item information. Peppol: Clarifacation of the suppliers decision for the line.</Data>
+               <Data ss:Type="String">Clarifacation of the suppliers decision for the line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Order line note text</Data>
+               <Data ss:Type="String">Please note our offices are closed in July, all orders received will be processed in August</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cbc:Note</Data>
@@ -1157,7 +1157,7 @@
                <Data ss:Type="String">Response code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6115 and T6384, Line Status. Peppol: A code that indicates whether the referenced order line as whole is Accepted or Rejected or, alternatively, Accepted with change.</Data>
+               <Data ss:Type="String">A code that indicates whether the referenced order line as whole is Accepted or Rejected or, alternatively, Accepted with change.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">3</Data>
@@ -1183,7 +1183,7 @@
                <Data ss:Type="String">Quantity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T3240, Quantity to be delivered. unitCode = T6706, Measure Unit NeB Type. Peppol: The quantity of items that will be delivered.</Data>
+               <Data ss:Type="String">The quantity of items that will be delivered.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">10</Data>
@@ -1235,7 +1235,7 @@
                <Data ss:Type="String">Maximum backorder quantity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T0059 and T6461, Backordered quantity. Peppol: The quantity of items that will be delivered at a later time. A unit for the backordered quantity is the same as for the Quantity. If none of the remaining quantity for the response line is to be delivered, use 0 "zero".</Data>
+               <Data ss:Type="String">The quantity of items that will be delivered at a later time. A unit for the backordered quantity is the same as for the Quantity. If none of the remaining quantity for the response line is to be delivered, use 0 "zero".</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">3</Data>
@@ -1264,7 +1264,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-08-10 2021-08-12</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Delivery</Data>
@@ -1290,7 +1290,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-08-10 2021-08-12</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Delivery/cac:PromisedDeliveryPeriod</Data>
@@ -1313,10 +1313,10 @@
                <Data ss:Type="String">Period start date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6319 and T6461, Delivery period Start date. Peppol: The date on which the period starts. The start dates counts as part of the period.</Data>
+               <Data ss:Type="String">The date on which the period starts. The start dates counts as part of the period.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-08-10</Data>
+               <Data ss:Type="String">2018-05-28</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:StartDate</Data>
@@ -1365,10 +1365,10 @@
                <Data ss:Type="String">Period end date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6320 and T6462, Delivery period End date. Peppol: The date on which the period ends. The end date counts as part of the period.</Data>
+               <Data ss:Type="String">The date on which the period ends. The end date counts as part of the period.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-08-12</Data>
+               <Data ss:Type="String">2018-05-29</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:EndDate</Data>
@@ -1420,7 +1420,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1.50 1</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Price</Data>
@@ -1443,10 +1443,10 @@
                <Data ss:Type="String">Item price</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6235, Prfice amount. currencyID = T6018, Order currency. Peppol: The net price of an item including discounts or surcharges that apply to the price.Although price is an optional element in an offer it recommended as best practice to either state the price or provide reference to an appropriate source from which the price can be identified such as a contract, catalogue or a quote.. The price amount. The net price of the item including all allowances, charges and taxes but exluding TAX.</Data>
+               <Data ss:Type="String">The net price of an item including discounts or surcharges that apply to the price.Although price is an optional element in an offer it recommended as best practice to either state the price or provide reference to an appropriate source from which the price can be identified such as a contract, catalogue or a quote.. The price amount. The net price of the item including all allowances, charges and taxes but exluding TAX.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1.50</Data>
+               <Data ss:Type="String">1000.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Price/cbc:PriceAmount</Data>
@@ -1495,10 +1495,10 @@
                <Data ss:Type="String">Item price base quantity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6722, Price unit basis quantity. unitCode = T6706, Measure Unit NeB Type. Peppol: The actual quantity to which the price applies.</Data>
+               <Data ss:Type="String">The actual quantity to which the price applies.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1</Data>
+               <Data ss:Type="String">2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Price/cbc:BaseQuantity</Data>
@@ -1550,7 +1550,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Brown sauce 123456 SN-33 7400000001234</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item</Data>
@@ -1573,10 +1573,10 @@
                <Data ss:Type="String">Item name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6226, Article description. Peppol: A short name given to an item, such as a name from a Catalogue, as distinct from a description. A short name for the item.</Data>
+               <Data ss:Type="String">A short name given to an item, such as a name from a Catalogue, as distinct from a description. A short name for the item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Brown sauce</Data>
+               <Data ss:Type="String">Copy paper, 500 sheets</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cbc:Name</Data>
@@ -1602,7 +1602,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123456</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:BuyersItemIdentification</Data>
@@ -1625,10 +1625,10 @@
                <Data ss:Type="String">Buyers item identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6022, T6417 and T0172 if T6317 = "BP", Buyers part article number. Peppol: An identifier, assigned by the buyer, for the item. Associates the item with its identification according to the buyer's system.</Data>
+               <Data ss:Type="String">An identifier, assigned by the buyer, for the item. Associates the item with its identification according to the buyer's system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123456</Data>
+               <Data ss:Type="String">111111</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:BuyersItemIdentification/cbc:ID</Data>
@@ -1654,7 +1654,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SN-33</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:SellersItemIdentification</Data>
@@ -1677,10 +1677,10 @@
                <Data ss:Type="String">The Sellers item identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T0172, Supplier's article number. Peppol: An identifier, assigned by the seller, for the item. Associates the item with its identification according to the seller's system.</Data>
+               <Data ss:Type="String">An identifier, assigned by the seller, for the item. Associates the item with its identification according to the seller's system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SN-33</Data>
+               <Data ss:Type="String">3249834</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:SellersItemIdentification/cbc:ID</Data>
@@ -1706,7 +1706,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7400000001234</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:StandardItemIdentification</Data>
@@ -1729,10 +1729,10 @@
                <Data ss:Type="String">Item standard identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Global Trade Item Number (T0154) or RSK Article Number Sweden (T6023). All other item number standards used within BEAst can not be used here until the organisation behind the standard decides to be a part of the codelist "ISO 6523 ICD". These are: NOBB Article Number (T6027), RT Article Number (T6460), TUN Article Number (T6028), Finfo/Vilma Article Number (T6029), Norwegian RSK Article Number (T6024), Norwegian E-number (T6026), E-number (T0260) and SGTIN (T6461). Peppol: An item identifier based on a registered scheme. Associates the item with its identification according to a standard system.</Data>
+               <Data ss:Type="String">An item identifier based on a registered scheme. Associates the item with its identification according to a standard system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7400000001234</Data>
+               <Data ss:Type="String">05704066204093</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:StandardItemIdentification/cbc:ID</Data>
@@ -1784,7 +1784,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">12356 Sauce brown, ready SN-34 7400000001235 12345678 S 25 VAT Weight Code 12 gram 12 gram</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem</Data>
@@ -1807,10 +1807,10 @@
                <Data ss:Type="String">Substituted Line Item Identifier </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T0051, Line number. Peppol: Identifier of the substituted line item</Data>
+               <Data ss:Type="String">Identifier of the substituted line item</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">12356</Data>
+               <Data ss:Type="String">3</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cbc:ID</Data>
@@ -1836,7 +1836,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Sauce brown, ready SN-34 7400000001235 12345678 S 25 VAT Weight Code 12 gram 12 gram</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item</Data>
@@ -1859,10 +1859,10 @@
                <Data ss:Type="String">Item name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6226, Article description of the replacing article. Peppol: A short name optionally given to an item, such as a name from a Catalogue, as distinct from a description. A short name for the item.</Data>
+               <Data ss:Type="String">A short name optionally given to an item, such as a name from a Catalogue, as distinct from a description. A short name for the item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Sauce brown, ready</Data>
+               <Data ss:Type="String">Copy paper, 1000 sheets</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cbc:Name</Data>
@@ -1888,7 +1888,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SN-34</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:SellersItemIdentification</Data>
@@ -1911,10 +1911,10 @@
                <Data ss:Type="String">Sellers item identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T0172, Supplier's article identification of the replacing article. Peppol: An identifier, assigned by the seller, for the item. Associates the item with its identification according to the seller's system.</Data>
+               <Data ss:Type="String">An identifier, assigned by the seller, for the item. Associates the item with its identification according to the seller's system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SN-34</Data>
+               <Data ss:Type="String">3249834</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:SellersItemIdentification/cbc:ID</Data>
@@ -1940,7 +1940,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7400000001235</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:StandardItemIdentification</Data>
@@ -1963,10 +1963,10 @@
                <Data ss:Type="String">Item standard identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Global Trade Item Number (T0154) or RSK Article Number Sweden (T6023). All other item number standards used within BEAst can not be used here until the organisation behind the standard decides to be a part of the codelist "ISO 6523 ICD". These are: NOBB Article Number (T6027), RT Article Number (T6460), TUN Article Number (T6028), Finfo/Vilma Article Number (T6029), Norwegian RSK Article Number (T6024), Norwegian E-number (T6026), E-number (T0260) and SGTIN (T6461). Peppol: An item identifier based on a registered scheme. Associates the item with its identification according to a standard system.</Data>
+               <Data ss:Type="String">An item identifier based on a registered scheme. Associates the item with its identification according to a standard system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7400000001235</Data>
+               <Data ss:Type="String">87463294723134124</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:StandardItemIdentification/cbc:ID</Data>
@@ -2018,7 +2018,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">12345678</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:CommodityClassification</Data>
@@ -2041,10 +2041,10 @@
                <Data ss:Type="String">Item classification code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">12345678</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode</Data>
@@ -2148,7 +2148,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">S 25 VAT</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:ClassifiedTaxCategory</Data>
@@ -2171,7 +2171,7 @@
                <Data ss:Type="String">Item TAX category code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The TAX category code for the item.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">S</Data>
@@ -2197,7 +2197,7 @@
                <Data ss:Type="String">Line TAX rate</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The TAX percentage rate that applies to the line amount.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">25</Data>
@@ -2226,7 +2226,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">VAT</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme</Data>
@@ -2249,10 +2249,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Tax scheme. E.g. “VAT” or “GST”</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">VAT</Data>
+               <Data ss:Type="String">VAT or GST</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme/cbc:ID</Data>
@@ -2275,10 +2275,10 @@
                <Data ss:Type="String">Additional item property information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A group of business terms providing information about properties of the goods and services invoiced.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Weight Code 12 gram 12 gram</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty</Data>
@@ -2301,10 +2301,10 @@
                <Data ss:Type="String">Item property name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The name of the property.The name must be sufficiently descriptive to define the value. The definition may be supplemented with the property unit of measure when relevant.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Weight</Data>
+               <Data ss:Type="String">Color</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:Name</Data>
@@ -2327,10 +2327,10 @@
                <Data ss:Type="String">Item property code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Code for the item property according to a property code system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Code</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:NameCode</Data>
@@ -2379,10 +2379,10 @@
                <Data ss:Type="String">Item property value</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The value of the item property.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">12 gram</Data>
+               <Data ss:Type="String">Red</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:Value</Data>
@@ -2405,10 +2405,10 @@
                <Data ss:Type="String">Item property unit of measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The unit of measure in which the property value is stated, if relevant. May not be relevant when properties are descriptive.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">12</Data>
+               <Data ss:Type="String">2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:ValueQuantity</Data>
@@ -2457,10 +2457,10 @@
                <Data ss:Type="String">Property classification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Standardized and predefined classification of items properties.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">gram</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:ValueQualifier</Data>
@@ -2486,7 +2486,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:OrderLineReference</Data>
@@ -2509,10 +2509,10 @@
                <Data ss:Type="String">Order line reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T3322 and T6336, Reference to Order line. Peppol: Used to reference the initial order line that correspondes to the response.All order lines should be stated when an order is changed.</Data>
+               <Data ss:Type="String">Used to reference the initial order line that correspondes to the response.All order lines should be stated when an order is changed.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1</Data>
+               <Data ss:Type="String">34</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:OrderLineReference/cbc:LineID</Data>

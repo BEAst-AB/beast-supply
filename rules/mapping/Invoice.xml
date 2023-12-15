@@ -117,10 +117,10 @@
                <Data ss:Type="String">Specification identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cbc:CustomizationID</Data>
@@ -143,10 +143,10 @@
                <Data ss:Type="String">Business process type</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Identifies the business process context in which the transaction appears, to enable the Buyer to process the Invoice in an appropriate way.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cbc:ProfileID</Data>
@@ -169,10 +169,10 @@
                <Data ss:Type="String">Invoice number</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A unique identification of the Invoice. The sequential number required in Article 226(2) of the directive 2006/112/EC [2], to uniquely identify the Invoice within the business context, time-frame, operating systems and records of the Seller. No identification scheme is to be used.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">9742025</Data>
+               <Data ss:Type="String">33445566</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cbc:ID</Data>
@@ -195,10 +195,10 @@
                <Data ss:Type="String">Invoice issue date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The date when the Invoice was issued. Format "YYYY-MM-DD"</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2020-10-31</Data>
+               <Data ss:Type="String">2017-11-01</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cbc:IssueDate</Data>
@@ -221,10 +221,10 @@
                <Data ss:Type="String">Payment due date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The date when the payment is due.Format "YYYY-MM-DD". In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2020-12-05</Data>
+               <Data ss:Type="String">2017-11-01</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cbc:DueDate</Data>
@@ -247,7 +247,7 @@
                <Data ss:Type="String">Invoice type code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A code specifying the functional type of the Invoice.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">380</Data>
@@ -273,10 +273,10 @@
                <Data ss:Type="String">Invoice note</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A textual note that gives unstructured information that is relevant to the Invoice as a whole.Such as the reason for any correction or assignment note in case the invoice has been factored.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">FAKTURASAMMANSTÄLLNING Kostnadsslag 43790 Summa 409.20</Data>
+               <Data ss:Type="String">Please note our new phone number 33 44 55 66</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cbc:Note</Data>
@@ -299,10 +299,10 @@
                <Data ss:Type="String">Value added tax point date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The date when the VAT becomes accountable for the Seller and for the Buyer in so far as that date can be determined and differs from the date of issue of the invoice, according to the VAT directive.This element is required if the Value added tax point date is different from the Invoice issue date.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-11-07</Data>
+               <Data ss:Type="String">2017-11-01</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cbc:TaxPointDate</Data>
@@ -325,10 +325,10 @@
                <Data ss:Type="String">Invoice currency code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The currency in which all Invoice amounts are given, except for the Total VAT amount in accounting currency. Only one currency shall be used in the Invoice, except for the VAT accounting currency code (BT-6) and the invoice total VAT amount in accounting currency (BT-111).</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cbc:DocumentCurrencyCode</Data>
@@ -351,7 +351,7 @@
                <Data ss:Type="String">VAT accounting currency code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The currency used for VAT accounting and reporting purposes as accepted or required in the country of the Seller. Shall be used in combination with the Invoice total VAT amount in accounting currency (BT-111), when the VAT accounting currency code differs from the Invoice currency code.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">SEK</Data>
@@ -377,10 +377,10 @@
                <Data ss:Type="String">Buyer accounting reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Can be used for natural account or code string Peppol: A textual value that specifies where to book the relevant data into the Buyer's financial accounts.</Data>
+               <Data ss:Type="String">A textual value that specifies where to book the relevant data into the Buyer's financial accounts.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">4415</Data>
+               <Data ss:Type="String">4217:2323:2323</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cbc:AccountingCost</Data>
@@ -403,10 +403,10 @@
                <Data ss:Type="String">Buyer reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">An identifier assigned by the Buyer used for internal routing purposes. An invoice must have buyer reference or purchase order reference (BT-13).</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Byggare Bob</Data>
+               <Data ss:Type="String">abs1234</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cbc:BuyerReference</Data>

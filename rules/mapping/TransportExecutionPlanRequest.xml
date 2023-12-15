@@ -299,7 +299,7 @@
                <Data ss:Type="String">Transport user party </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The party requesting the transport services referenced in the Transport Execution Plan Request and the sender of the Transport Execution Plan.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -377,7 +377,7 @@
                <Data ss:Type="String">Transport user party identification </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">An identifier for the transport user party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -507,7 +507,7 @@
                <Data ss:Type="String">Postal address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The postal address for the transport user party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -663,7 +663,7 @@
                <Data ss:Type="String">Address line 3 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -767,7 +767,7 @@
                <Data ss:Type="String">Party tax scheme </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The tax information about the transport user party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -871,7 +871,7 @@
                <Data ss:Type="String">Party Legal Entity </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The party legal entity for the transport user party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1027,7 +1027,7 @@
                <Data ss:Type="String">Country </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The residens country for the transport user party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1079,7 +1079,7 @@
                <Data ss:Type="String">Contact </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The contact of the transport user party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1183,10 +1183,10 @@
                <Data ss:Type="String">Transport service provider party </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The party providing the transport services referenced in the Transport Execution Plan Request. The receiver of the Transport Execution Plan.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Farthing</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportExecutionPlanRequest/cac:TransportServiceProviderParty</Data>
@@ -1261,7 +1261,7 @@
                <Data ss:Type="String">Transport service provider party identification </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">An identifier for the transport service provider party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1391,7 +1391,7 @@
                <Data ss:Type="String">Postal address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The postal address for the transport service provider party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1547,7 +1547,7 @@
                <Data ss:Type="String">Address line 3 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1651,7 +1651,7 @@
                <Data ss:Type="String">Party tax scheme </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The tax information about the transport service provider party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1755,10 +1755,10 @@
                <Data ss:Type="String">Party legal entity </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The party legel entity of the transport service provider party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Farthing</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportExecutionPlanRequest/cac:TransportServiceProviderParty/cac:PartyLegalEntity</Data>
@@ -1862,7 +1862,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Farthing</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportExecutionPlanRequest/cac:TransportServiceProviderParty/cac:PartyLegalEntity/cac:RegistrationAddress</Data>
@@ -1885,7 +1885,7 @@
                <Data ss:Type="String">City name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The name of the city.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Farthing</Data>
@@ -1911,7 +1911,7 @@
                <Data ss:Type="String">Country </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The residens country for the transport service provider party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1963,7 +1963,7 @@
                <Data ss:Type="String">Contact </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The contact of the transport service provider party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2067,7 +2067,7 @@
                <Data ss:Type="String">Payee party </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The party that will pay for the transport service(s) referred to in a Transport Execution Plan.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2093,7 +2093,7 @@
                <Data ss:Type="String">Payee party identification </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">An identifier for the payee party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2223,7 +2223,7 @@
                <Data ss:Type="String">Postal address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The postal address for the payee party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2379,7 +2379,7 @@
                <Data ss:Type="String">Address line 3 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2483,7 +2483,7 @@
                <Data ss:Type="String">Party tax scheme </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The tax information about the payee party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2587,7 +2587,7 @@
                <Data ss:Type="String">Party Legal Entity </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The party legal entity for the payee party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2743,7 +2743,7 @@
                <Data ss:Type="String">Country </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The residens country for the transport user party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2795,7 +2795,7 @@
                <Data ss:Type="String">Contact </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The contact of the payee party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2899,7 +2899,7 @@
                <Data ss:Type="String">Additional document reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Reference to additional documents relevant for this Transport Execution Plan Request.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3003,7 +3003,7 @@
                <Data ss:Type="String">Attachment</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3107,7 +3107,7 @@
                <Data ss:Type="String">External reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A reference to an attached document that is external to the document(s) being exchanged.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3159,7 +3159,7 @@
                <Data ss:Type="String">Main Transportatin Service</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A description of the main transportation service referenced in the Transport Execution Plan Request.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3237,7 +3237,7 @@
                <Data ss:Type="String">Additional Transportatin Service</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A description of an additional transportation service referenced in the Transport Execution Plan Request. Can only be used in conjunction with a main transportation service.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3318,7 +3318,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EPSG:3857</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportExecutionPlanRequest/cac:Consignment</Data>
@@ -3653,10 +3653,10 @@
                <Data ss:Type="String">Requested pickup transport event </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The pickup of this consignment requested by the party requesting a transportation service (the transport user). Mandatory if the Requested delivery transport event is not specified.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EPSG:3857</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportExecutionPlanRequest/cac:Consignment/cac:RequestedPickupTransportEvent</Data>
@@ -3705,10 +3705,10 @@
                <Data ss:Type="String">Location of requested pickup </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The location where the pickup takes place.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EPSG:3857</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportExecutionPlanRequest/cac:Consignment/cac:RequestedPickupTransportEvent/cac:Location</Data>
@@ -3809,10 +3809,10 @@
                <Data ss:Type="String">Address of location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Location address.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EPSG:3857</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportExecutionPlanRequest/cac:Consignment/cac:RequestedPickupTransportEvent/cac:Location/cac:Address</Data>
@@ -4069,10 +4069,10 @@
                <Data ss:Type="String">Location coordinate </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">To specify the coordinates.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EPSG:3857</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportExecutionPlanRequest/cac:Consignment/cac:RequestedPickupTransportEvent/cac:Location/cac:Address/cac:LocationCoordinate</Data>
@@ -4095,7 +4095,7 @@
                <Data ss:Type="String">Coordinate system code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Always "EPSG:3857" by definition.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">EPSG:3857</Data>
@@ -4277,7 +4277,7 @@
                <Data ss:Type="String">Period </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The period within the pickup event takes place.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4407,7 +4407,7 @@
                <Data ss:Type="String">Requested delivery transport event </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The delivery of this consignment requested by the party requesting a transportation service (the transport user). Mandatory if the requested pickup transpoinrt event is not present.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4459,7 +4459,7 @@
                <Data ss:Type="String">Location of requested delivery </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The location of the requested delivery.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4563,7 +4563,7 @@
                <Data ss:Type="String">Address of the location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Location Address.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4823,7 +4823,7 @@
                <Data ss:Type="String">Location coordinate </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">To specify the coordinates.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5031,7 +5031,7 @@
                <Data ss:Type="String">Period </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The period within the delivery event takes place.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5161,7 +5161,7 @@
                <Data ss:Type="String">Consignee party </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The party responsible for receiveing the goods.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5187,7 +5187,7 @@
                <Data ss:Type="String">Consignee party identification </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">An identifier for the consignee party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5317,7 +5317,7 @@
                <Data ss:Type="String">Postal address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The postal address of the Consignee</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5733,7 +5733,7 @@
                <Data ss:Type="String">Country </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The residens country for the sender party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5785,7 +5785,7 @@
                <Data ss:Type="String">Contact </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The contact of the consignee party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5889,7 +5889,7 @@
                <Data ss:Type="String">Consignor Party </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The party responsible for sending the goods.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5915,7 +5915,7 @@
                <Data ss:Type="String">Consignor party identification </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">An identifier for the consignor party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6045,7 +6045,7 @@
                <Data ss:Type="String">Postal address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The postal address of the consignor party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6461,7 +6461,7 @@
                <Data ss:Type="String">Country </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The residens country for the consignor party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6513,7 +6513,7 @@
                <Data ss:Type="String">Contact </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The contact of the consignor party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6617,7 +6617,7 @@
                <Data ss:Type="String">Original departure country </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The country from which the goods in this consignment were originally exported, without any commercial transaction taking place in intermediate countries.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6669,7 +6669,7 @@
                <Data ss:Type="String">Final destination country </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The country in which the goods in this consignment are to be delivered to the final consignee or buyer.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6721,7 +6721,7 @@
                <Data ss:Type="String">Delivery terms </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The conditions agreed upon between a seller and a buyer with regard to the delivery of goods and/or services (e.g., CIF, FOB, or EXW from the INCOTERMS Terms of Delivery).</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6799,7 +6799,7 @@
                <Data ss:Type="String">Location of attchaed to the delivery terms </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The location where the pickup takes place.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6903,7 +6903,7 @@
                <Data ss:Type="String">Payment terms </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The terms of payment between the parties (such as logistics service client, logistics service provider) in a transaction as related to the reqested transport service.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6981,7 +6981,7 @@
                <Data ss:Type="String">Freight Allowance Charge </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A cost incurred by the shipper in moving goods, by whatever means, from one place to another under the terms of the contract of carriage for this consignment. In addition to transport costs, this may include such elements as packing, documentation, loading, unloading, and insurance to the extent that they relate to the freight costs.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7111,7 +7111,7 @@
                <Data ss:Type="String">Main carriage shipment stage </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The shipment stage during main carriage.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7189,7 +7189,7 @@
                <Data ss:Type="String">Requested departure transport event </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The departure requested by the party requesting a transportation service.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7241,7 +7241,7 @@
                <Data ss:Type="String">Shipment departure location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The location where the departure of this shipment stage takes place.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7345,7 +7345,7 @@
                <Data ss:Type="String">The adress of the loaction </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Postal Address.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7605,7 +7605,7 @@
                <Data ss:Type="String">Location coordinate </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">To specify the coordinates.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7813,7 +7813,7 @@
                <Data ss:Type="String">Period </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The period within the departure of this transport event takes place.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7943,7 +7943,7 @@
                <Data ss:Type="String">Requested arrival transport event </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The arrival requested by the party requesting a transportation service.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7995,7 +7995,7 @@
                <Data ss:Type="String">Arrival location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The location where the arrival takes place.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -8099,7 +8099,7 @@
                <Data ss:Type="String">Address of the arrival location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The address of the arrival location.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -8255,7 +8255,7 @@
                <Data ss:Type="String">Period </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The period within the departure of this transport event takes place.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -8385,7 +8385,7 @@
                <Data ss:Type="String">Transport handling unit </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Used to specify how the goods are packed.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -8567,7 +8567,7 @@
                <Data ss:Type="String">Transport equipment </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Used to specify Transport Equipment details associated with this Transport Handling Unit.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -8749,7 +8749,7 @@
                <Data ss:Type="String">Measurement dimension </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Used to specify any measurement of the Transport Handling Unit.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -8853,7 +8853,7 @@
                <Data ss:Type="String">Minimum temperature </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Used to specify the minimal temperature for the transport handling unit under the transport.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -8957,7 +8957,7 @@
                <Data ss:Type="String">Maximum temperature </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Used to specify the maximum temperature for the transport handling unit under the transport.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -9061,7 +9061,7 @@
                <Data ss:Type="String">Goods item </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A Goods item contained in the transport handling unit.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -9165,7 +9165,7 @@
                <Data ss:Type="String">Item </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Description of the product beeing transported.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -9217,7 +9217,7 @@
                <Data ss:Type="String">Commodity classification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">To classify when an item number is not sufficient.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -9347,7 +9347,7 @@
                <Data ss:Type="String">Hazardous item information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Contains information on the Hazardous item.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
