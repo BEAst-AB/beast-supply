@@ -30,7 +30,8 @@
          <Term>cbc:ID</Term>
          <Name>Document identifier</Name>
          <Description>
-						BEAst: T0125/T6338, Despatch Advice Number Peppol: An transaction instance must contain an identifier. The identifier enables
+						BEAst: T0125/T6338, Despatch Advice Number. The normal rule is that one Despatch Advice contains information about one shipment.
+		Exceptionally some accumulation may be made if all header information is common (same Vehicle, same Project, same Despatch- and Delivery Locations, same Despatch- and Delivery Dates).  Peppol: An transaction instance must contain an identifier. The identifier enables
 				positive referencing the document instance for various purposes including
 				referencing between transactions that are part of the same process.</Description>
          <DataType>Identifier</DataType>
