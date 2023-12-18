@@ -10,10 +10,9 @@ The group *Environmental Emission,* contains CO~2~ and other emissions related t
 == Fuel
 
 The fuel consumption and related information regarding the fuel type, that is used to calculate emissions for the transport or other service that consumes fuel.
-Table 4 shows which information that can be sent, and by repeating the group MeasurementDimension you can send several. The value in Table 4 is sent in element AttributeID and the value of it in Measure or Description. See example below.
+The table below shows which information that can be sent, and by repeating the group MeasurementDimension you can send several. The value in the table is sent in element AttributeID and the value of it in Measure or Description. See example below.
 
-Table 4. Definitions of the AttributeID:s.
-
+.Definitions of the AttributeID:s.
 [cols="2,4",options="header",stripes=even]
 |====
 |AttributeID           |Definition
@@ -27,10 +26,9 @@ Table 4. Definitions of the AttributeID:s.
 |RenewableFuel         |Share of renewable fuel in percent.
 |====
 
-Table 5 contains the possible values for the Description element when the AttributeID is FuelMeasurementMethod.
+Contains the possible values for the Description element when the AttributeID is FuelMeasurementMethod.
 
-Table 5. Definitions of the FuelMeasurementMethod values.
-
+.Definitions of the FuelMeasurementMethod values.
 [cols="2,4",options="header",stripes=even]
 |====
 |FuelMeasurementMethod |Definition
@@ -40,10 +38,7 @@ Table 5. Definitions of the FuelMeasurementMethod values.
 
 |====
 
-Table 6 contains the possible values for the Description element when the AttributeID is EngineType.
-
-Table 6. Definitions of the EngineType values.
-
+.Definitions of the EngineType values. Contains the possible values for the Description element when the AttributeID is EngineType.
 [cols="2,4",options="header",stripes=even]
 |====
 |EngineType |Definition
@@ -61,8 +56,7 @@ Table 6. Definitions of the EngineType values.
 |Hybrid     |Hybrid
 |====
 
-Example:
-
+.Example:
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/snippet-30-4.xml[tags=fuel]
@@ -75,8 +69,7 @@ Caculated envionmental emissions related to the transport or other related servi
 
 For all other AttributeIDs, the element Measure is used instead of Description.
 
-Table 7. Definitions of the EnvironmentalEmissionTypeCode:s.
-
+.Definitions of the EnvironmentalEmissionTypeCode:s.
 [cols="1,5",options="header",stripes=even]
 |====
 |AttributeID |Definition
@@ -88,8 +81,7 @@ Table 7. Definitions of the EnvironmentalEmissionTypeCode:s.
 |PM          |Amount of emission of particulate matter.
 |====
 
-Example:
-
+.Example:
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/snippet-30-4.xml[tags=environmentalemission]
@@ -103,6 +95,7 @@ To determine the CO~2~ equivalent in kilograms for the despatch line, in total, 
 *CO~2~eq despatch line = (Net net weight) x (GWP GHG value per kilogram) x Quantity*
 
 Where *GWP GHG value per kilogram* is one of the following
+
 * GWP GHG A1-3 vA1 EPD value
 * GWP GHG A1-3 vA2 EPD value
 * GWP GHG A1-3 vA3 EPD value
@@ -114,8 +107,7 @@ The GWP GHG value per kilogram can be either a generic value from an authority o
 To be able to calculate product climate data the related CO~2~ value and the weight of products are needed. 
 The net weight per item is the recommended way to provide the weight information to the customer. See related information here: link:{ada-dir}/cac-DespatchLine/cac-Item/cac-Dimension/[cac-Dimension]
 
-Example:
-
+.Example:
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/snippet-30-1.xml[tags=itemnetweight]
@@ -124,8 +116,7 @@ Item identifiers are used for the receiver to understand what article has been r
 In some cases, the authority has specific requirements carbon accounting in regards to where the products are beeing used. This requirement can be fulfilled by the use of Buyers item identification. See related information here: 
 link:{ada-dir}/cac-DespatchLine/cac-Item/cac-BuyersItemIdentification/[cac:BuyersItemIdentification]
 
-Example:
-
+.Example:
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/snippet-30-1.xml[tags=buyersitemidentification]
@@ -139,8 +130,7 @@ Below you will find two examples from Swedish authorities that provide generic p
 
 The list id IPNC is a reference to the code list link:{codelist-ItemPropertyNameCode}[Item Property Name Code (openPEPPOL)]
 
-Table 8. Reference external generic climate data list.
-
+.Reference external generic climate data list.
 [cols="1,1,1,3",options="header",stripes=even]
 |====
 |Name |NameCode |listID |Definition
@@ -150,8 +140,7 @@ Table 8. Reference external generic climate data list.
 
 If no suitable generic value can be found in the resource lists, it is recommended to use 'NA' to indicate that there are no applicable resources available for the item.
 
-Example:
-
+.Example:
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/snippet-30-4.xml[tags=genericproductclimatedata]
@@ -165,8 +154,7 @@ EPD:s are related to despatch line but since it is environmental related informa
 Please note that "GWP-GHG" and "GWP-IOBC" are interchangable terms and can be used interchangeably, but in this document
 "GWP-GHG" is used. The term "GWP-IOBC" is commonly utilized by certain program operators, which are organizations responsible for publishing Environmental Product Declarations (EPDs).
 
-Table 9. Definitions of the EPD related properties for machine readable information.
-
+.Definitions of the EPD related properties for machine readable information.
 [cols="1,1,1,3",options="header",stripes=even]
 |====
 |Name |NameCode |listID |Definition
@@ -175,9 +163,10 @@ Table 9. Definitions of the EPD related properties for machine readable informat
 |GWP GHG A1-3 vA1 EPD value  |GWP-GHG_A1-3_vA1 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilograms (unitCode="KGM") according to EN15804 amendment version A1
 |GWP GHG A1-3 vA2 EPD value  |GWP-GHG_A1-3_vA2 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilo grams (unitCode="KGM") according to EN15804 amendment version A2
 |GWP GHG A1-3 vA3 EPD value  |GWP-GHG_A1-3_vA3 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilo grams (unitCode="KGM") according to EN15804 amendment version A3
+|Mother EPD ID |MotherEPDID |IPNC |If a daughter EPD is utilized, the identifier of the corresponding mother EPD should be provided in this element.
 |====
 
-Table 10. Definition of the EPD related properties for human readable information, e.g. EPD published as PDF.
+.Definition of the EPD related properties for human readable information, e.g. EPD published as PDF.
 [cols="1,1,1,3",options="header",stripes=even]
 |====
 |Name |NameCode |listID |Definition
@@ -188,12 +177,12 @@ Table 10. Definition of the EPD related properties for human readable informatio
 |GWP GHG A1-3 vA1 EPD value  |GWP-GHG_A1-3_vA1 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilo grams (unitCode="KGM") according to EN15804 amendment version A1
 |GWP GHG A1-3 vA2 EPD value  |GWP-GHG_A1-3_vA2 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilo grams (unitCode="KGM") according to EN15804 amendment version A2
 |GWP GHG A1-3 vA3 EPD value  |GWP-GHG_A1-3_vA3 |IPNC |Global warming potential green house gases for process A1-3 100 EPD calculated per kilo grams (unitCode="KGM") according to EN15804 amendment version A3
+|Mother EPD ID |MotherEPDID |IPNC |If a daughter EPD is utilized, the identifier of the corresponding mother EPD should be provided in this element.
 |====
 
 See <<reference-to-other-documents>> for more info how to link or attach the PDF.
 
-Example:
-
+.Example:
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/snippet-30-4.xml[tags=epd]
