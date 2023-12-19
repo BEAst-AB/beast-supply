@@ -482,11 +482,17 @@
 		<cbc:ID schemeID="0007">5560339086</cbc:ID>
         <cac:RequestedDeliveryPeriod>
           <cbc:StartDate>2021-11-01
-		    <?DescriptionAddFirst Delivery Period Start Date (T6319). In this version it is not possible to specify the time (T6734), only date. ?>
+		    <?DescriptionAddFirst Delivery Period Start Date (T6319). ?>
 		  </cbc:StartDate>
+			<cbc:StartTime>09:00:00
+				<?DescriptionAddFirst Delivery Period Start time (T6734). ?>
+			</cbc:StartTime>
 		  <cbc:EndDate>2021-11-03
-		    <?DescriptionAddFirst Delivery Period End Date (T6320). In this version it is not possible to specify the time (T6735), only date. ?>
+		    <?DescriptionAddFirst Delivery Period End Date (T6320). ?>
 		  </cbc:EndDate>
+			<cbc:EndTime>10:30:00
+				<?DescriptionAddFirst Delivery Period End Time (T6735). ?>
+			</cbc:EndTime>
         </cac:RequestedDeliveryPeriod>
       </cac:Delivery>
 
@@ -598,11 +604,11 @@
         </cac:AdditionalItemProperty>
 		  
 		<cac:ItemInstance>
-		  <cbc:SerialID>123456
+		  <cbc:SerialID>
 		  	<?DescriptionAddFirst T3236, (Serial Number). ?>
 		  </cbc:SerialID>
 		  <cac:LotIdentification>
-			  <cbc:LotNumberID>FGH456</cbc:LotNumberID>
+			  <cbc:LotNumberID></cbc:LotNumberID>
 		  </cac:LotIdentification>
 		</cac:ItemInstance>
 				

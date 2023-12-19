@@ -113,15 +113,21 @@
 					<cbc:StartDate>2021-08-10
 					  <?DescriptionAddFirst T6319 and T6461, Delivery period Start date. ?>
 					</cbc:StartDate>
+					<cbc:StartTime>09:00:00
+						<?DescriptionAddFirst T6734, Delivery period Start time. ?>
+					</cbc:StartTime>
 					<cbc:EndDate>2021-08-12
 					  <?DescriptionAddFirst T6320 and T6462, Delivery period End date. ?>
 					</cbc:EndDate>
+					<cbc:EndTime>10:30:00
+						<?DescriptionAddFirst T6735, Delivery period End time. ?>
+					</cbc:EndTime>
 				</cac:PromisedDeliveryPeriod>
 			</cac:Delivery>
 			
 			<cac:Price>
 				<cbc:PriceAmount currencyID="EUR">1.50
-				  <?DescriptionAddFirst T6235, Prfice amount. currencyID = T6018, Order currency. ?>
+				  <?DescriptionAddFirst T6235, Price amount. currencyID = T6018, Order currency. ?>
 				</cbc:PriceAmount>
 				<cbc:BaseQuantity unitCode="C62">1
 				  <?DescriptionAddFirst T6722, Price unit basis quantity. unitCode = T6706, Measure Unit NeB Type. ?>

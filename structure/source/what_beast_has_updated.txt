@@ -5,15 +5,18 @@ messages and BIS documentation.
 Principles for how changes are made:
 1. The BIS documents are managed like this:
 	- We create a new file as a copy of an existing one when we want to edit the text in the file.
-	  Name of the new file is "beast_" + the old filename. Example: Old name "shipment.adoc" becomes "beast_shipment.adoc"
-	- In files named "index.adoc" we need to replace the old filenames with the beast filenames to include the BEAst versions instead of the standard versions.
+	  Name of the new file is "beast_" + the old filename. Example: Old name "shipment.adoc" 
+	  becomes "beast_shipment.adoc"
+	- In files named "index.adoc" we need to replace the old filenames with the beast filenames to 
+	  include the BEAst versions instead of the standard versions.
 	  Example: "include::shipment.adoc[]" is replaced by "include::beast_shipment.adoc[]"
-	- We avoid, if possible, to edit an existing file except the index files. 
+	- We avoid, if possible, to edit an existing file except the index files, where we just replace 
+	  the filenames to iclude from the standard to the BEAst-version. 
 
 2. The message documentations are managed like this:
-	Basically the documentation is retrieved from the Peppol standard documentation.
-	In some cases BEAst want to add more information, and that is done by adding lines with the command
-	"<?DescriptionAddFirst xxxxx ?>" or variants of it, like "<?schemeID-DescriptionAddFirst xxxxx ?>"
+	- Basically the documentation is retrieved from the Peppol standard documentation.
+	- In some cases BEAst want to add more information, and that is done by adding lines with the command
+	  "<?DescriptionAddFirst xxxxx ?>" or variants of it, like "<?schemeID-DescriptionAddFirst xxxxx ?>"
 
 
 
@@ -33,16 +36,18 @@ In this version (4.0.2) the following changes are made:
 	- Added file beast_usecase9.adoc.
 	- Added file beast_usecase10.adoc.
 	- Edited file index.adoc.
+	In folder rules/snippets/advanceddespatch we have edited:
+	- Snippet file for Advanced Despatch Advice, snippet-30-1.xml, updated (bug corrected).
+		- tag itemproperty:	"<cbc:Value>Purchase</cbc:Value>" changed to "<cbc:Value>Rental</cbc:Value>".
+	- Snippet file for Advanced Despatch Advice, snippet-30-4.xml, updated (bug corrected).
+		- tag fuel:	"<cbc:TransportEquipmentTypeCode listID="FuelGroup" listAgencyID="Trafikverket" listVersionID="2023:1">HVO</cbc:TransportEquipmentTypeCode>" 
+		  changed to "<cbc:TransportEquipmentTypeCode listID="FuelGroup" listAgencyID="Boverket" listVersionID="2023:1">HVO</cbc:TransportEquipmentTypeCode>" 
+
 - Message documentation of Advanced Despatch Advice
 	In folder structure/source included comments in
 	-  ubl-advanced-despatch-advice.xml.
 	-  ubl-receipt-advice.xml.
 	-  ubl-weight-statement.xml.
-- Snippet file for Advanced Despatch Advice, snippet-30-1.xml, updated (bug corrected).
-	- tag itemproperty:	"<cbc:Value>Purchase</cbc:Value>" changed to "<cbc:Value>Rental</cbc:Value>".
-- Snippet file for Advanced Despatch Advice, snippet-30-4.xml, updated (bug corrected).
-	- tag fuel:	"<cbc:TransportEquipmentTypeCode listID="FuelGroup" listAgencyID="Trafikverket" listVersionID="2023:1">HVO</cbc:TransportEquipmentTypeCode>" 
-		changed to "<cbc:TransportEquipmentTypeCode listID="FuelGroup" listAgencyID="Boverket" listVersionID="2023:1">HVO</cbc:TransportEquipmentTypeCode>" 
 
 - Codelists updated with new values from POAC.
 	-  UNCL1001_T01.xml. "105" and "402" are added.
