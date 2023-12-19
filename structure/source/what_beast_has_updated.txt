@@ -8,7 +8,7 @@ Principles for how changes are made:
 	  Name of the new file is "beast_" + the old filename. Example: Old name "shipment.adoc" becomes "beast_shipment.adoc"
 	- In files named "index.adoc" we need to replace the old filenames with the beast filenames to include the BEAst versions instead of the standard versions.
 	  Example: "include::shipment.adoc[]" is replaced by "include::beast_shipment.adoc[]"
-	- We never edit an existing file except the index files. 
+	- We avoid, if possible, to edit an existing file except the index files. 
 
 2. The message documentations are managed like this:
 	Basically the documentation is retrieved from the Peppol standard documentation.
@@ -38,6 +38,12 @@ In this version (4.0.2) the following changes are made:
 	-  ubl-advanced-despatch-advice.xml.
 	-  ubl-receipt-advice.xml.
 	-  ubl-weight-statement.xml.
+- Snippet file for Advanced Despatch Advice, snippet-30-1.xml, updated (bug corrected).
+	- tag itemproperty:	"<cbc:Value>Purchase</cbc:Value>" changed to "<cbc:Value>Rental</cbc:Value>".
+- Snippet file for Advanced Despatch Advice, snippet-30-4.xml, updated (bug corrected).
+	- tag fuel:	"<cbc:TransportEquipmentTypeCode listID="FuelGroup" listAgencyID="Trafikverket" listVersionID="2023:1">HVO</cbc:TransportEquipmentTypeCode>" 
+		changed to "<cbc:TransportEquipmentTypeCode listID="FuelGroup" listAgencyID="Boverket" listVersionID="2023:1">HVO</cbc:TransportEquipmentTypeCode>" 
+
 - Codelists updated with new values from POAC.
 	-  UNCL1001_T01.xml. "105" and "402" are added.
 	-  eas.xml.          Refreshed to the same as in POAC.
