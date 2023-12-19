@@ -926,7 +926,7 @@
                <Data ss:Type="String">BEAst: Used for Department (T5002). Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">way 1</Data>
+               <Data ss:Type="String">Department A</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchSupplierParty/cac:Party/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -1056,7 +1056,7 @@
                <Data ss:Type="String">BEAst: Used for any other additional address information like Building (T5004). Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Roundabout</Data>
+               <Data ss:Type="String">Building 2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DespatchSupplierParty/cac:Party/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -1758,7 +1758,7 @@
                <Data ss:Type="String">BEAst: Party Name (T5001) Peppol: The Despatch Supplier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Sender inc.</Data>
+               <Data ss:Type="String">Receiver Inc.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DeliveryCustomerParty/cac:Party/cac:PartyName/cbc:Name</Data>
@@ -2174,7 +2174,7 @@
                <Data ss:Type="String">BEAst: Party Name (T5001) Peppol: The Legal Name of the Receiving party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Sender inc.</Data>
+               <Data ss:Type="String">Receiver Inc.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DeliveryCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName</Data>
@@ -2382,7 +2382,7 @@
                <Data ss:Type="String">BEAst: Name (T5012) Peppol: The contact name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Mrs Bouquet</Data>
+               <Data ss:Type="String">Mr Pearson</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DeliveryCustomerParty/cac:Party/cac:Contact/cbc:Name</Data>
@@ -2408,7 +2408,7 @@
                <Data ss:Type="String">BEAst: Phone Number (T5010) Peppol: The phone number of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0158 1233714</Data>
+               <Data ss:Type="String">0158 76778921</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DeliveryCustomerParty/cac:Party/cac:Contact/cbc:Telephone</Data>
@@ -2434,7 +2434,7 @@
                <Data ss:Type="String">BEAst: Email address (T5011) Peppol: The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">bouquet@fpconsortial.co.uk</Data>
+               <Data ss:Type="String">pearson@receiverinc.co.uk</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:DeliveryCustomerParty/cac:Party/cac:Contact/cbc:ElectronicMail</Data>
@@ -2616,7 +2616,7 @@
                <Data ss:Type="String">BEAst: Party Name (T5001) Peppol: The name of the buying party</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">IYT Corporation</Data>
+               <Data ss:Type="String">Buyer Inc.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:BuyerCustomerParty/cac:Party/cac:PartyName/cbc:Name</Data>
@@ -3240,7 +3240,7 @@
                <Data ss:Type="String">The contact name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Mrs Bouquet</Data>
+               <Data ss:Type="String">Mr Partridge</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:BuyerCustomerParty/cac:Party/cac:Contact/cbc:Name</Data>
@@ -3266,7 +3266,7 @@
                <Data ss:Type="String">The phone number of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0158 1233714</Data>
+               <Data ss:Type="String">0123 5465768</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:BuyerCustomerParty/cac:Party/cac:Contact/cbc:Telephone</Data>
@@ -3292,7 +3292,7 @@
                <Data ss:Type="String">The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">bouquet@fpconsortial.co.uk</Data>
+               <Data ss:Type="String">partridge@buyerinc.co.uk</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:BuyerCustomerParty/cac:Party/cac:Contact/cbc:ElectronicMail</Data>
@@ -3474,7 +3474,7 @@
                <Data ss:Type="String">BEAst: Party Name (T5001) Peppol: The seller party name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">IYT Corporation</Data>
+               <Data ss:Type="String">Seller Inc.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:SellerSupplierParty/cac:Party/cac:PartyName/cbc:Name</Data>
@@ -4098,7 +4098,7 @@
                <Data ss:Type="String">The contact name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Mrs Bouquet</Data>
+               <Data ss:Type="String">Mrs Smith</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:SellerSupplierParty/cac:Party/cac:Contact/cbc:Name</Data>
@@ -4124,7 +4124,7 @@
                <Data ss:Type="String">The phone number of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0158 1233714</Data>
+               <Data ss:Type="String">0123 9898767</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:SellerSupplierParty/cac:Party/cac:Contact/cbc:Telephone</Data>
@@ -4150,7 +4150,7 @@
                <Data ss:Type="String">The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">bouquet@fpconsortial.co.uk</Data>
+               <Data ss:Type="String">smith@sellerinc.co.uk</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:SellerSupplierParty/cac:Party/cac:Contact/cbc:ElectronicMail</Data>
@@ -4332,7 +4332,7 @@
                <Data ss:Type="String">BEAst: Ultimate Customer name (T5001). Peppol: The originator party name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">IYT Corporation</Data>
+               <Data ss:Type="String">ExternalWarehouse Inc.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:DespatchAdvice/cac:OriginatorCustomerParty/cac:Party/cac:PartyName/cbc:Name</Data>
