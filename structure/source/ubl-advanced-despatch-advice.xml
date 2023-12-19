@@ -91,7 +91,7 @@
 				<cbc:StreetName>
 					<?DescriptionAddFirst Street Name (T5003) ?>
 				</cbc:StreetName>
-				<cbc:AdditionalStreetName>
+				<cbc:AdditionalStreetName>Department A
 					<?DescriptionAddFirst Used for Department (T5002). ?>
 				</cbc:AdditionalStreetName>
 				<cbc:CityName>
@@ -102,7 +102,7 @@
 				</cbc:PostalZone>
 				<cbc:CountrySubentity></cbc:CountrySubentity>
 				<cac:AddressLine>
-					<cbc:Line>
+					<cbc:Line>Building 2
 						<?DescriptionAddFirst Used for any other additional address information like Building (T5004). ?>
 					</cbc:Line>
 				</cac:AddressLine>
@@ -159,7 +159,7 @@
 			</cac:PartyIdentification>
 			
 			<cac:PartyName>
-				<cbc:Name>
+				<cbc:Name>Receiver Inc.
 					<?DescriptionAddFirst Party Name (T5001) ?>
 				</cbc:Name>
 			</cac:PartyName>
@@ -198,7 +198,7 @@
 				
 			</cac:PartyTaxScheme>
 			<cac:PartyLegalEntity>
-				<cbc:RegistrationName>
+				<cbc:RegistrationName>Receiver Inc.
 					<?DescriptionAddFirst Party Name (T5001) ?>
 				</cbc:RegistrationName>
 				<cbc:CompanyID schemeID=""></cbc:CompanyID>
@@ -211,13 +211,13 @@
 			</cac:PartyLegalEntity>
 
 			<cac:Contact>
-				<cbc:Name>
+				<cbc:Name>Mr Pearson
 					<?DescriptionAddFirst Name (T5012) ?>
 				</cbc:Name>
-				<cbc:Telephone>
+				<cbc:Telephone>0158 76778921
 					<?DescriptionAddFirst Phone Number (T5010) ?>
 				</cbc:Telephone>
-				<cbc:ElectronicMail>
+				<cbc:ElectronicMail>pearson@receiverinc.co.uk
 					<?DescriptionAddFirst Email address (T5011) ?>
 				</cbc:ElectronicMail>
 			</cac:Contact>
@@ -235,7 +235,7 @@
 			</cac:PartyIdentification>
 			
 			<cac:PartyName>
-				<cbc:Name>
+				<cbc:Name>Buyer Inc.
 					<?DescriptionAddFirst Party Name (T5001) ?>
 				</cbc:Name>
 			</cac:PartyName>
@@ -285,9 +285,9 @@
 			</cac:PartyLegalEntity>
 
 			<cac:Contact>
-				<cbc:Name></cbc:Name>
-				<cbc:Telephone></cbc:Telephone>
-				<cbc:ElectronicMail></cbc:ElectronicMail>
+				<cbc:Name>Mr Partridge</cbc:Name>
+				<cbc:Telephone>0123 5465768</cbc:Telephone>
+				<cbc:ElectronicMail>partridge@buyerinc.co.uk</cbc:ElectronicMail>
 			</cac:Contact>
 		</cac:Party>
 	</cac:BuyerCustomerParty>
@@ -303,7 +303,7 @@
 			</cac:PartyIdentification>
 			
 			<cac:PartyName>
-				<cbc:Name>
+				<cbc:Name>Seller Inc.
 					<?DescriptionAddFirst Party Name (T5001) ?>
 				</cbc:Name>
 			</cac:PartyName>
@@ -353,9 +353,9 @@
 			</cac:PartyLegalEntity>
 			
 			<cac:Contact>
-				<cbc:Name></cbc:Name>
-				<cbc:Telephone></cbc:Telephone>
-				<cbc:ElectronicMail></cbc:ElectronicMail>
+				<cbc:Name>Mrs Smith</cbc:Name>
+				<cbc:Telephone>0123 9898767</cbc:Telephone>
+				<cbc:ElectronicMail>smith@sellerinc.co.uk</cbc:ElectronicMail>
 			</cac:Contact>
 		</cac:Party>
 	</cac:SellerSupplierParty>
@@ -371,7 +371,7 @@
 			</cac:PartyIdentification>
 			
 			<cac:PartyName>
-				<cbc:Name>
+				<cbc:Name>ExternalWarehouse Inc.
 					<?DescriptionAddFirst Ultimate Customer name (T5001).  ?>
 				</cbc:Name>
 			</cac:PartyName>
@@ -499,7 +499,7 @@
 				<cbc:TransportServiceCode></cbc:TransportServiceCode>
 				
 				<cac:TransportEquipment>
-					<cbc:TransportEquipmentTypeCode listID="" listAgencyID="" listVersionID="">
+					<cbc:TransportEquipmentTypeCode listID="" listAgencyID="Boverket" listVersionID="">
 						<?DescriptionAddFirst Pick your value from Boverket's Climate database. ?>
 					</cbc:TransportEquipmentTypeCode>
 					<cbc:Description></cbc:Description>
