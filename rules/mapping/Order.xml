@@ -6515,7 +6515,7 @@
                <Data ss:Type="String">Period start date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Delivery Period Start Date (T6319). In this version it is not possible to specify the time (T6734), only date. Peppol: The date on which the period starts. The start dates counts as part of the period. Format ="YYYY-MM-DD"</Data>
+               <Data ss:Type="String">BEAst: Delivery Period Start Date (T6319). Peppol: The date on which the period starts. The start dates counts as part of the period. Format ="YYYY-MM-DD"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-11-01</Data>
@@ -6541,10 +6541,10 @@
                <Data ss:Type="String">Period start time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The time at which this period begins. Format = "hh:mm:ss"</Data>
+               <Data ss:Type="String">BEAst: Delivery Period Start time (T6734). Peppol: The time at which this period begins. Format = "hh:mm:ss"</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">12:30:00</Data>
+               <Data ss:Type="String">09:00:00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Delivery/cac:RequestedDeliveryPeriod/cbc:StartTime</Data>
@@ -6567,7 +6567,7 @@
                <Data ss:Type="String">Period end date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Delivery Period End Date (T6320). In this version it is not possible to specify the time (T6735), only date. Peppol: The date on which the period ends. The end date counts as part of the period.Format ="YYYY-MM-DD"</Data>
+               <Data ss:Type="String">BEAst: Delivery Period End Date (T6320). Peppol: The date on which the period ends. The end date counts as part of the period.Format ="YYYY-MM-DD"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-11-03</Data>
@@ -6593,10 +6593,10 @@
                <Data ss:Type="String">Period end time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The time at which this period end. Format = "hh:mm:ss"</Data>
+               <Data ss:Type="String">BEAst: Delivery Period End Time (T6735). Peppol: The time at which this period end. Format = "hh:mm:ss"</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">18:00:00</Data>
+               <Data ss:Type="String">10:30:00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Delivery/cac:RequestedDeliveryPeriod/cbc:EndTime</Data>
@@ -8158,7 +8158,7 @@
                <Data ss:Type="String">BEAst: T3236, (Serial Number). Peppol: An identifier that is specific to the items in the order line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123456</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:ItemInstance/cbc:SerialID</Data>
@@ -8210,7 +8210,7 @@
                <Data ss:Type="String">An identifier for the production lot which the order line items come from.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">FGH456</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:ItemInstance/cac:LotIdentification/cbc:LotNumberID</Data>

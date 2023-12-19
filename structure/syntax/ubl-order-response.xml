@@ -373,10 +373,11 @@
                   <Element cardinality="0..1">
                      <Term>cbc:StartTime</Term>
                      <Name>Period start time</Name>
-                     <Description>The time at which this period begins. Format = "hh:mm:ss"</Description>
+                     <Description>
+						BEAst: T6734, Delivery period Start time.  Peppol: The time at which this period begins. Format = "hh:mm:ss"</Description>
                      <DataType>Time</DataType>
                      <Reference type="BUSINESS_TERM">tir76-p012</Reference>
-                     <Value type="EXAMPLE">12:30:00</Value>
+                     <Value type="EXAMPLE">09:00:00</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:EndDate</Term>
@@ -391,10 +392,11 @@
                   <Element cardinality="0..1">
                      <Term>cbc:EndTime</Term>
                      <Name>Period end time</Name>
-                     <Description>The time at which this period end. Format = "hh:mm:ss"</Description>
+                     <Description>
+						BEAst: T6735, Delivery period End time.  Peppol: The time at which this period end. Format = "hh:mm:ss"</Description>
                      <DataType>Time</DataType>
                      <Reference type="BUSINESS_TERM">tir76-p013</Reference>
-                     <Value type="EXAMPLE">18:00:00</Value>
+                     <Value type="EXAMPLE">10:30:00</Value>
                   </Element>
                </Element>
             </Element>
@@ -405,7 +407,7 @@
                   <Term>cbc:PriceAmount</Term>
                   <Name>Item price</Name>
                   <Description>
-						BEAst: T6235, Prfice amount. currencyID = T6018, Order currency.  Peppol: The net price of an item including discounts or surcharges
+						BEAst: T6235, Price amount. currencyID = T6018, Order currency.  Peppol: The net price of an item including discounts or surcharges
                             that apply to the price.Although price is an optional element in an
                             offer it recommended as best practice to either state the price or
                             provide reference to an appropriate source from which the price can be

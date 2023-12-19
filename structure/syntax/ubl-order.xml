@@ -1975,7 +1975,7 @@
                      <Term>cbc:StartDate</Term>
                      <Name>Period start date</Name>
                      <Description>
-						BEAst: Delivery Period Start Date (T6319). In this version it is not possible to specify the time (T6734), only date.  Peppol: The date on which the period starts. The start dates counts
+						BEAst: Delivery Period Start Date (T6319).  Peppol: The date on which the period starts. The start dates counts
 								as part of the period. Format ="YYYY-MM-DD"</Description>
                      <DataType>Date</DataType>
                      <Reference type="BUSINESS_TERM">tir01-126</Reference>
@@ -1984,16 +1984,17 @@
                   <Element cardinality="0..1">
                      <Term>cbc:StartTime</Term>
                      <Name>Period start time</Name>
-                     <Description>The time at which this period begins. Format = "hh:mm:ss"</Description>
+                     <Description>
+						BEAst: Delivery Period Start time (T6734).  Peppol: The time at which this period begins. Format = "hh:mm:ss"</Description>
                      <DataType>Time</DataType>
                      <Reference type="BUSINESS_TERM">tir01-p48</Reference>
-                     <Value type="EXAMPLE">12:30:00</Value>
+                     <Value type="EXAMPLE">09:00:00</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:EndDate</Term>
                      <Name>Period end date</Name>
                      <Description>
-						BEAst: Delivery Period End Date (T6320). In this version it is not possible to specify the time (T6735), only date.  Peppol: The date on which the period ends. The end date counts as
+						BEAst: Delivery Period End Date (T6320).  Peppol: The date on which the period ends. The end date counts as
 								part of the period.Format ="YYYY-MM-DD"</Description>
                      <DataType>Date</DataType>
                      <Reference type="BUSINESS_TERM">tir01-127</Reference>
@@ -2002,10 +2003,11 @@
                   <Element cardinality="0..1">
                      <Term>cbc:EndTime</Term>
                      <Name>Period end time</Name>
-                     <Description>The time at which this period end. Format = "hh:mm:ss"</Description>
+                     <Description>
+						BEAst: Delivery Period End Time (T6735).  Peppol: The time at which this period end. Format = "hh:mm:ss"</Description>
                      <DataType>Time</DataType>
                      <Reference type="BUSINESS_TERM">tir01-p49</Reference>
-                     <Value type="EXAMPLE">18:00:00</Value>
+                     <Value type="EXAMPLE">10:30:00</Value>
                   </Element>
                </Element>
             </Element>
@@ -2490,7 +2492,6 @@
 						BEAst: T3236, (Serial Number).  Peppol: An identifier that is specific to the items in the order
 								line.</Description>
                      <Reference type="BUSINESS_TERM">tir01-p023</Reference>
-                     <Value type="EXAMPLE">123456</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:LotIdentification</Term>
@@ -2503,7 +2504,6 @@
                         <Description>An identifier for the production lot which the order
 									line items come from.</Description>
                         <Reference type="BUSINESS_TERM">tir01-p022</Reference>
-                        <Value type="EXAMPLE">FGH456</Value>
                      </Element>
                   </Element>
                </Element>
