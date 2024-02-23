@@ -21,11 +21,15 @@ docker pull atomgraph/saxon
 
 # Transform the files in source dir to syntax.
 echo "Generating documentation: Invoice"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/master/structure/syntax/ubl-invoice.xml \
-    -xsl:/src/tools/create-syntax.xsl \
-    -o:/src/structure/syntax/ubl-invoice.xml \
-    varOverrideSample=/src/structure/source/ubl-invoice.xml -ext:on --allow-external-functions:on
+# new way
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/master/structure/syntax/ubl-invoice.xml \
+#     -xsl:/src/tools/create-syntax.xsl \
+#     -o:/src/structure/syntax/ubl-invoice.xml \
+#     varOverrideSample=/src/structure/source/ubl-invoice.xml -ext:on --allow-external-functions:on
+# Old way
+docker run --rm -i -v $PROJECT:/src --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-invoice.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-invoice.xml UblBaseUrl=https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/master/structure/syntax/ UblDocBaseUrl=https://docs.peppol.eu/poacc/billing/3.0/syntax/ubl-invoice UblXmlReferenceFile=ubl-invoice.xml -ext:on --allow-external-functions:on
+
 
 echo "Generating documentation: Order"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
@@ -118,11 +122,11 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     varOverrideSample=/src/structure/source/ubl-receipt-advice.xml -ext:on --allow-external-functions:on
 
 # Generate mapping documents.
-echo "Generating mapping documents: Invoice"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/syntax/ubl-invoice.xml \
-    -xsl:/src/tools/create-mapping-document.xsl \
-    -o:/src/rules/mapping/Invoice.xml -ext:on --allow-external-functions:on
+# echo "Generating mapping documents: Invoice"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/syntax/ubl-invoice.xml \
+#     -xsl:/src/tools/create-mapping-document.xsl \
+#     -o:/src/rules/mapping/Invoice.xml -ext:on --allow-external-functions:on
 echo "Generating mapping documents: Order"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
     -s:/src/structure/syntax/ubl-order.xml \
