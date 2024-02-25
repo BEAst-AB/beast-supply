@@ -294,7 +294,7 @@
                <Description>Identifies the buyer party's electronic address</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir01-021</Reference>
-               <Value type="EXAMPLE">5560339086</Value>
+               <Value type="EXAMPLE">7300010000001</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
@@ -314,7 +314,7 @@
 						BEAst: T0008 or T6001, the identity of the buyer. Only one identification of the buyer will be used.
  Peppol: An identification for the buyer party.</Description>
                   <Reference type="BUSINESS_TERM">tir01-022</Reference>
-                  <Value type="EXAMPLE">5560339086</Value>
+                  <Value type="EXAMPLE">7300010000001</Value>
                   <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
@@ -468,7 +468,7 @@
                   <Description>Identifies a company as registered with the company registration scheme.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-043</Reference>
-                  <Value type="EXAMPLE">5560363763</Value>
+                  <Value type="EXAMPLE">7300010000001</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
@@ -557,7 +557,7 @@
                <Description>Identifies the seller party's electronic address</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir01-058</Reference>
-               <Value type="EXAMPLE">5560363763</Value>
+               <Value type="EXAMPLE">7300010000001</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
@@ -578,7 +578,7 @@
  Peppol: Identifies a party.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-059</Reference>
-                  <Value type="EXAMPLE">5560363763</Value>
+                  <Value type="EXAMPLE">7300010000001</Value>
                   <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
@@ -706,7 +706,7 @@
                   <Description>Identifies a company as registered with the company registration scheme.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p039</Reference>
-                  <Value type="EXAMPLE">5560363763</Value>
+                  <Value type="EXAMPLE">7300010000001</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
@@ -804,7 +804,7 @@
  Peppol: Identifies a party.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-081</Reference>
-                  <Value type="EXAMPLE">5561111111</Value>
+                  <Value type="EXAMPLE">7300010000001</Value>
                   <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
@@ -875,7 +875,7 @@
                <Description>Identifies the invoicee party's electronic address</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir01-157</Reference>
-               <Value type="EXAMPLE">5560339086</Value>
+               <Value type="EXAMPLE">7300010000001</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
@@ -896,7 +896,7 @@
  Peppol: An identifer for the invoicee party.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-156</Reference>
-                  <Value type="EXAMPLE">5560339086</Value>
+                  <Value type="EXAMPLE">7300010000001</Value>
                   <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
@@ -1051,7 +1051,7 @@
                   <Description>Identifies a company as registered with the company registration scheme.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-158</Reference>
-                  <Value type="EXAMPLE">5560363763</Value>
+                  <Value type="EXAMPLE">7300010000001</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Buyer legal registration identifier identification scheme
@@ -1137,7 +1137,7 @@
  Peppol: An identifer for the location to where the ordered items should be delivered.</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir01-169</Reference>
-               <Value type="EXAMPLE">5560339086</Value>
+               <Value type="EXAMPLE">7300010000001</Value>
                <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Name>Deliver to location identifier identification scheme identifier</Name>
@@ -1295,7 +1295,7 @@
 						BEAst: T0037 or T6001, Identity of the Delivery party. Use only one identity of this party.
  Peppol: In this BIS: The identifier of the party that should receive the ordered items</Description>
                   <Reference type="BUSINESS_TERM">tir01-101</Reference>
-                  <Value type="EXAMPLE">5560339086</Value>
+                  <Value type="EXAMPLE">7300010000001</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Deliver party registration identifier identification scheme
@@ -1917,7 +1917,7 @@
                   <Description>An identifer for the location to where the ordered line item should be delivered.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p037</Reference>
-                  <Value type="EXAMPLE">5560339086</Value>
+                  <Value type="EXAMPLE">7300010000001</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Deliver to location identifier identification scheme identifier</Name>
@@ -1985,7 +1985,7 @@
                      <Name>Order line originator party ID</Name>
                      <Description>The party who originated Order.</Description>
                      <Reference type="BUSINESS_TERM">tir01-121</Reference>
-                     <Value type="EXAMPLE">5560339086</Value>
+                     <Value type="EXAMPLE">7300010000001</Value>
                      <Attribute usage="optional">
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
@@ -2445,6 +2445,7 @@
 						BEAst: T3236, (Serial Number).
  Peppol: An identifier that is specific to the items in the order line.</Description>
                      <Reference type="BUSINESS_TERM">tir01-p023</Reference>
+                     <Value type="EXAMPLE">9874587</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:LotIdentification</Term>
@@ -2453,8 +2454,11 @@
                      <Element cardinality="0..1">
                         <Term>cbc:LotNumberID</Term>
                         <Name>Item lot identifier</Name>
-                        <Description>An identifier for the production lot which the order line items come from.</Description>
+                        <Description>
+						BEAst: T0132, (Batch Number).
+ Peppol: An identifier for the production lot which the order line items come from.</Description>
                         <Reference type="BUSINESS_TERM">tir01-p022</Reference>
+                        <Value type="EXAMPLE">4587</Value>
                      </Element>
                   </Element>
                </Element>
