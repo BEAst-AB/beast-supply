@@ -166,12 +166,12 @@
 				</xsl:otherwise>
 			</xsl:choose>
 			<xsl:apply-templates select="synstr:Attribute"/>
-			<xsl:apply-templates select="synstr:Element"/>
-			<xsl:for-each select="synstr:Include">
-				<xsl:variable name="varIncludeXml" select="document(.)"/>
-				<xsl:apply-templates select="$varIncludeXml/synstr:Element"/>
-			</xsl:for-each>
+			<xsl:apply-templates select="child::synstr:Include|child::synstr:Element"/>
 		</xsl:element>
+	</xsl:template>
+	<xsl:template match="synstr:Include">
+		<xsl:variable name="varIncludeXml" select="document(.)"/>
+		<xsl:apply-templates select="$varIncludeXml/synstr:Element"/>
 	</xsl:template>
 	<xsl:template match="*">
 		<xsl:element name="{name()}">
