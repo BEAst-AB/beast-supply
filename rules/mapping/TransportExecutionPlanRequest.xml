@@ -117,7 +117,7 @@
                <Data ss:Type="String">Specification identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Identifies the specification of content and rules that apply to the transaction.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">urn:fdc:peppol.eu:logistics:trns:transport_execution_plan_request:1</Data>
@@ -143,7 +143,7 @@
                <Data ss:Type="String">Business process type identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Identifies the BII profile or business process context in which the transaction appears. There are two ProfileIDs defined for the Transport Execution Plan Request. One profile is used when a request is expected, the other is used when no request message is expected. Possible choices are: "urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_w_request:1" and "urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_only:1".</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_w_request:1</Data>
@@ -169,7 +169,7 @@
                <Data ss:Type="String">Document identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">141278571829041241241</Data>
@@ -195,7 +195,7 @@
                <Data ss:Type="String">Dispatch advice issue date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The date when the Transport Execution Plan Request is issued. Format = "YYYY-MM-DD".</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-09-29</Data>
@@ -221,7 +221,7 @@
                <Data ss:Type="String">Dispatch advice issue time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The time when the Transport Execution Plan Request is issued.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">09:49:00+02:00</Data>
@@ -247,7 +247,7 @@
                <Data ss:Type="String">Transport Execution Plan Request status code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code signifying the status of the Transport Execution Plan Request. Default is Original (9)</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">9</Data>
@@ -273,7 +273,7 @@
                <Data ss:Type="String">Transport User Remarks </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Remarks from the transport user regarding the transport operations referenced in the Transport Execution Plan Request.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Some remarks</Data>
@@ -299,7 +299,7 @@
                <Data ss:Type="String">Transport user party </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The party requesting the transport services referenced in the Transport Execution Plan Request and the sender of the Transport Execution Plan.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -325,7 +325,7 @@
                <Data ss:Type="String">Sender party electronic address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The endpoint for the transport user party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">41955619</Data>
@@ -377,7 +377,7 @@
                <Data ss:Type="String">Transport user party identification </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An identifier for the transport user party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -481,7 +481,7 @@
                <Data ss:Type="String">Transport user party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the transport user party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Novo Nordisk Pharmatech A/S</Data>
@@ -507,7 +507,7 @@
                <Data ss:Type="String">Postal address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The postal address for the transport user party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -533,7 +533,7 @@
                <Data ss:Type="String">Address line 1 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Københavnsvej 216</Data>
@@ -559,7 +559,7 @@
                <Data ss:Type="String">Address line 2 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">way 1</Data>
@@ -585,7 +585,7 @@
                <Data ss:Type="String">City </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Køge</Data>
@@ -611,7 +611,7 @@
                <Data ss:Type="String">Post code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">4600</Data>
@@ -637,7 +637,7 @@
                <Data ss:Type="String">Country sub entity </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Region Hovedstaden</Data>
@@ -663,7 +663,7 @@
                <Data ss:Type="String">Address line 3 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -741,7 +741,7 @@
                <Data ss:Type="String">Country code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">DK</Data>
@@ -767,7 +767,7 @@
                <Data ss:Type="String">Party tax scheme </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The tax information about the transport user party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -793,7 +793,7 @@
                <Data ss:Type="String">Company ID </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Transport User Party Value Added Tax identifer.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">GB325456788</Data>
@@ -845,7 +845,7 @@
                <Data ss:Type="String">Tax scheme identifier </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Tax scheme identifier. E.g. "VAT" or "GST".</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">VAT</Data>
@@ -871,7 +871,7 @@
                <Data ss:Type="String">Party Legal Entity </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The party legal entity for the transport user party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -897,7 +897,7 @@
                <Data ss:Type="String">Transport user party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the transport user party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Consortial</Data>
@@ -923,7 +923,7 @@
                <Data ss:Type="String">Transport user parties legal registration name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The official name of the party as registered with the relevant fiscal authority.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">SC234567</Data>
@@ -1001,7 +1001,7 @@
                <Data ss:Type="String">City name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the city.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Farthing</Data>
@@ -1027,7 +1027,7 @@
                <Data ss:Type="String">Country </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The residens country for the transport user party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1053,7 +1053,7 @@
                <Data ss:Type="String">Country code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">GB</Data>
@@ -1079,7 +1079,7 @@
                <Data ss:Type="String">Contact </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The contact of the transport user party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1105,7 +1105,7 @@
                <Data ss:Type="String">Contact name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The contact name.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Mr Transport user</Data>
@@ -1131,7 +1131,7 @@
                <Data ss:Type="String">Contact telephone number </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The phone number of the contact.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0158 1233714</Data>
@@ -1157,7 +1157,7 @@
                <Data ss:Type="String">Contact email address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The electronic mail of the contact.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">transport-user@transportuser.dk</Data>
@@ -1183,7 +1183,7 @@
                <Data ss:Type="String">Transport service provider party </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The party providing the transport services referenced in the Transport Execution Plan Request. The receiver of the Transport Execution Plan.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1209,7 +1209,7 @@
                <Data ss:Type="String">Sender party electronic address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The endpoint for the transport service provider party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">85955619</Data>
@@ -1261,7 +1261,7 @@
                <Data ss:Type="String">Transport service provider party identification </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An identifier for the transport service provider party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1365,7 +1365,7 @@
                <Data ss:Type="String">Transport service provider party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the transport service provider party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Leman</Data>
@@ -1391,7 +1391,7 @@
                <Data ss:Type="String">Postal address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The postal address for the transport service provider party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1417,7 +1417,7 @@
                <Data ss:Type="String">Address line 1 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Ventrupvej 6</Data>
@@ -1443,7 +1443,7 @@
                <Data ss:Type="String">Address line 2 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">way 1</Data>
@@ -1469,7 +1469,7 @@
                <Data ss:Type="String">City </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Greve</Data>
@@ -1495,7 +1495,7 @@
                <Data ss:Type="String">Post code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">2670</Data>
@@ -1521,7 +1521,7 @@
                <Data ss:Type="String">Country sub entity </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Region Sjælland</Data>
@@ -1547,7 +1547,7 @@
                <Data ss:Type="String">Address line 3 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1625,7 +1625,7 @@
                <Data ss:Type="String">Country code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">DK</Data>
@@ -1651,7 +1651,7 @@
                <Data ss:Type="String">Party tax scheme </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The tax information about the transport service provider party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1677,7 +1677,7 @@
                <Data ss:Type="String">Company ID </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Transport Service Provider Party Value Added Tax identifer.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">GB325456788</Data>
@@ -1729,7 +1729,7 @@
                <Data ss:Type="String">Tax scheme identifier </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Tax scheme identifier. E.g. "VAT" or "GST".</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">VAT</Data>
@@ -1755,7 +1755,7 @@
                <Data ss:Type="String">Party legal entity </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The party legel entity of the transport service provider party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1781,7 +1781,7 @@
                <Data ss:Type="String">Transport service provider party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the transport service provider party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Consortial</Data>
@@ -1807,7 +1807,7 @@
                <Data ss:Type="String">Transport service provider parties legal registration name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The official name of the party as registered with the relevant fiscal authority.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">SC234567</Data>
@@ -1885,7 +1885,7 @@
                <Data ss:Type="String">City name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the city.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Farthing</Data>
@@ -1911,7 +1911,7 @@
                <Data ss:Type="String">Country </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The residens country for the transport service provider party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1937,7 +1937,7 @@
                <Data ss:Type="String">Country code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">GB</Data>
@@ -1963,7 +1963,7 @@
                <Data ss:Type="String">Contact </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The contact of the transport service provider party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1989,7 +1989,7 @@
                <Data ss:Type="String">Contact name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The contact name.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Mr Transport user</Data>
@@ -2015,7 +2015,7 @@
                <Data ss:Type="String">Contact telephone number </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The phone number of the contact.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0158 1233714</Data>
@@ -2041,7 +2041,7 @@
                <Data ss:Type="String">Contact email address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The electronic mail of the contact.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">transport-user@transportuser.dk</Data>
@@ -2067,7 +2067,7 @@
                <Data ss:Type="String">Payee party </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The party that will pay for the transport service(s) referred to in a Transport Execution Plan.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2093,7 +2093,7 @@
                <Data ss:Type="String">Payee party identification </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An identifier for the payee party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2197,7 +2197,7 @@
                <Data ss:Type="String">Transport user party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the payee party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Novo Nordisk Pharmatech A/S</Data>
@@ -2223,7 +2223,7 @@
                <Data ss:Type="String">Postal address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The postal address for the payee party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2249,7 +2249,7 @@
                <Data ss:Type="String">Address line 1 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Københavnsvej 216</Data>
@@ -2275,7 +2275,7 @@
                <Data ss:Type="String">Address line 2 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">way 1</Data>
@@ -2301,7 +2301,7 @@
                <Data ss:Type="String">City </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Køge</Data>
@@ -2327,7 +2327,7 @@
                <Data ss:Type="String">Post code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">4600</Data>
@@ -2353,7 +2353,7 @@
                <Data ss:Type="String">Country sub entity </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Region Hovedstaden</Data>
@@ -2379,7 +2379,7 @@
                <Data ss:Type="String">Address line 3 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2457,7 +2457,7 @@
                <Data ss:Type="String">Country code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">DK</Data>
@@ -2483,7 +2483,7 @@
                <Data ss:Type="String">Party tax scheme </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The tax information about the payee party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2509,7 +2509,7 @@
                <Data ss:Type="String">Company ID </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Payee Party Value Added Tax identifer.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">GB325456788</Data>
@@ -2561,7 +2561,7 @@
                <Data ss:Type="String">Tax scheme identifier </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Tax scheme identifier. E.g. "VAT" or "GST".</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">VAT</Data>
@@ -2587,7 +2587,7 @@
                <Data ss:Type="String">Party Legal Entity </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The party legal entity for the payee party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2613,7 +2613,7 @@
                <Data ss:Type="String">Transport user party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the payee party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Consortial</Data>
@@ -2639,7 +2639,7 @@
                <Data ss:Type="String">Transport user parties legal registration name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The official name of the party as registered with the relevant fiscal authority.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">SC234567</Data>
@@ -2717,7 +2717,7 @@
                <Data ss:Type="String">City name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the city.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Farthing</Data>
@@ -2743,7 +2743,7 @@
                <Data ss:Type="String">Country </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The residens country for the transport user party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2769,7 +2769,7 @@
                <Data ss:Type="String">Country code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">GB</Data>
@@ -2795,7 +2795,7 @@
                <Data ss:Type="String">Contact </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The contact of the payee party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2821,7 +2821,7 @@
                <Data ss:Type="String">Contact name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The contact name.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Mr Transport user</Data>
@@ -2847,7 +2847,7 @@
                <Data ss:Type="String">Contact telephone number </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The phone number of the contact.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0158 1233714</Data>
@@ -2873,7 +2873,7 @@
                <Data ss:Type="String">Contact email address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The electronic mail of the contact.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">transport-user@transportuser.dk</Data>
@@ -2899,7 +2899,7 @@
                <Data ss:Type="String">Additional document reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Reference to additional documents relevant for this Transport Execution Plan Request.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2925,7 +2925,7 @@
                <Data ss:Type="String">Identity of the reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The reference number of added document</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">7648779</Data>
@@ -2951,7 +2951,7 @@
                <Data ss:Type="String">Document type code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The type of reference. Must me part of UNCL1001</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">380</Data>
@@ -2977,7 +2977,7 @@
                <Data ss:Type="String">Document type</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The type of reference that cannot be specified by a code</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Delivery soecification</Data>
@@ -3003,7 +3003,7 @@
                <Data ss:Type="String">Attachment</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3029,7 +3029,7 @@
                <Data ss:Type="String">Embedded binary object</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The referenced document can here be inserted as a binary object.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Data>
@@ -3107,7 +3107,7 @@
                <Data ss:Type="String">External reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A reference to an attached document that is external to the document(s) being exchanged.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3133,7 +3133,7 @@
                <Data ss:Type="String">Address to internet resource</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">www.beast.se</Data>
@@ -3159,7 +3159,7 @@
                <Data ss:Type="String">Main Transportatin Service</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A description of the main transportation service referenced in the Transport Execution Plan Request.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3185,7 +3185,7 @@
                <Data ss:Type="String">Main Transportatin Service Code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code signifying the extent of this transportation service (e.g., door-to-door, port-to-port).</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">4</Data>
@@ -3211,7 +3211,7 @@
                <Data ss:Type="String">Main Transportatin Service Description</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Text describing the transportation service.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Transport from door to door</Data>
@@ -3237,7 +3237,7 @@
                <Data ss:Type="String">Additional Transportatin Service</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A description of an additional transportation service referenced in the Transport Execution Plan Request. Can only be used in conjunction with a main transportation service.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3263,7 +3263,7 @@
                <Data ss:Type="String">Main Transportatin Service Code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code signifying the extent of this transportation service (e.g., door-to-door, port-to-port).</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">12</Data>
@@ -3289,7 +3289,7 @@
                <Data ss:Type="String">Main Transportation Service Description</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Text describing the transportation service.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Insurance</Data>
@@ -3367,7 +3367,7 @@
                <Data ss:Type="String">Consignee reference </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">ID or reference used by the consignee to identify this consignment.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0160110</Data>
@@ -3393,7 +3393,7 @@
                <Data ss:Type="String">Consignor reference </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">ID or reference used by the consignor to identify this consignment.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">501153162</Data>
@@ -3419,7 +3419,7 @@
                <Data ss:Type="String">Consignment gross weight </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The gross weight of the consignment as a whole. Must be equal the sum of the gross weight specified for the included transport handling unites if this is specified</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">1030</Data>
@@ -3471,7 +3471,7 @@
                <Data ss:Type="String">Consignment gross volume </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The gross volumen of the consignment. Must be greather or equal the the volumen specified for the included transport handling unites if this is specified</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">20</Data>
@@ -3523,7 +3523,7 @@
                <Data ss:Type="String">Loading length measure </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The total length in a means of transport or a piece of transport equipment which, given the width and height of the transport means, will accommodate all of the consignments in a single consolidation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0.4</Data>
@@ -3575,7 +3575,7 @@
                <Data ss:Type="String">Hazardous risk indicator </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An indication that the transported goods in this consignment are subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">false</Data>
@@ -3601,7 +3601,7 @@
                <Data ss:Type="String">Total number of transport handling units </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The total number of transport handling units for this consignment.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">1</Data>
@@ -3653,7 +3653,7 @@
                <Data ss:Type="String">Requested pickup transport event </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The pickup of this consignment requested by the party requesting a transportation service (the transport user). Mandatory if the Requested delivery transport event is not specified.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3679,7 +3679,7 @@
                <Data ss:Type="String">Identifier pickup transport event </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An identifier for this pickup transport event within an agreed event identification scheme.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">21412312412</Data>
@@ -3705,7 +3705,7 @@
                <Data ss:Type="String">Location of requested pickup </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The location where the pickup takes place.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3731,7 +3731,7 @@
                <Data ss:Type="String">Identity of the  pickup location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Identifies the pickup location.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">5790000435951</Data>
@@ -3783,7 +3783,7 @@
                <Data ss:Type="String">Name of the pickup location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the pickup location.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Novo Nordisk Pharmatech A/S</Data>
@@ -3809,7 +3809,7 @@
                <Data ss:Type="String">Address of location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Location address.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3835,7 +3835,7 @@
                <Data ss:Type="String">Address line 1 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Københavnsvej 216</Data>
@@ -3861,7 +3861,7 @@
                <Data ss:Type="String">Address line 2 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Purchasing</Data>
@@ -3887,7 +3887,7 @@
                <Data ss:Type="String">City </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Køge</Data>
@@ -3913,7 +3913,7 @@
                <Data ss:Type="String">Post code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">4600</Data>
@@ -3939,7 +3939,7 @@
                <Data ss:Type="String">Country subdivision </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Region Hovedstaden</Data>
@@ -3991,7 +3991,7 @@
                <Data ss:Type="String">Address line 3 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">3rd Floor, Room 5</Data>
@@ -4043,7 +4043,7 @@
                <Data ss:Type="String">Country code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">DK</Data>
@@ -4069,7 +4069,7 @@
                <Data ss:Type="String">Location coordinate </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">To specify the coordinates.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4095,7 +4095,7 @@
                <Data ss:Type="String">Coordinate system code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Always "EPSG:3857" by definition.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">EPSG:3857</Data>
@@ -4121,7 +4121,7 @@
                <Data ss:Type="String">Latitude degrees </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The X coordinate. Use degrees with decimals.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">59.331660358041425</Data>
@@ -4173,7 +4173,7 @@
                <Data ss:Type="String">Longitude degrees </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Y coordinate. Use degrees with decimals.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">18.063363084988005</Data>
@@ -4225,7 +4225,7 @@
                <Data ss:Type="String">Altitude </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Z coordinate.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">12.5</Data>
@@ -4277,7 +4277,7 @@
                <Data ss:Type="String">Period </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The period within the pickup event takes place.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4303,7 +4303,7 @@
                <Data ss:Type="String">Period start date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The start date for the pickup event.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-09-29</Data>
@@ -4329,7 +4329,7 @@
                <Data ss:Type="String">Period start time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The start time for the pickup event.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">08:00:00+01:00</Data>
@@ -4355,7 +4355,7 @@
                <Data ss:Type="String">Period end date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The end date for the pickup event.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-09-29</Data>
@@ -4381,7 +4381,7 @@
                <Data ss:Type="String">Period end time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The end time for the pickup event.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">10:00:00+01:00</Data>
@@ -4407,7 +4407,7 @@
                <Data ss:Type="String">Requested delivery transport event </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The delivery of this consignment requested by the party requesting a transportation service (the transport user). Mandatory if the requested pickup transpoinrt event is not present.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4433,7 +4433,7 @@
                <Data ss:Type="String">Identifier delivery transport event </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An identifier for this delivery transport event within an agreed event identification scheme.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">625435485674654132</Data>
@@ -4459,7 +4459,7 @@
                <Data ss:Type="String">Location of requested delivery </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The location of the requested delivery.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4485,7 +4485,7 @@
                <Data ss:Type="String">Identity of the delivery location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Identifies the delivery location.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">5790000435951</Data>
@@ -4537,7 +4537,7 @@
                <Data ss:Type="String">Name of the delivery location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the delivery location.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">DHL Københavns lufthavn</Data>
@@ -4563,7 +4563,7 @@
                <Data ss:Type="String">Address of the location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Location Address.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4589,7 +4589,7 @@
                <Data ss:Type="String">Address line 1 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Kystvejen 24</Data>
@@ -4615,7 +4615,7 @@
                <Data ss:Type="String">Address line 2 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Ved lufthavnen</Data>
@@ -4641,7 +4641,7 @@
                <Data ss:Type="String">City </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Kastrup</Data>
@@ -4667,7 +4667,7 @@
                <Data ss:Type="String">Post code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">2770</Data>
@@ -4693,7 +4693,7 @@
                <Data ss:Type="String">Country subdivision </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Region Hovedstaden</Data>
@@ -4745,7 +4745,7 @@
                <Data ss:Type="String">Address line 3 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">3rd Floor, Room 5</Data>
@@ -4797,7 +4797,7 @@
                <Data ss:Type="String">Country code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">DK</Data>
@@ -4823,7 +4823,7 @@
                <Data ss:Type="String">Location coordinate </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">To specify the coordinates.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4849,7 +4849,7 @@
                <Data ss:Type="String">Coordinate system code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Always "EPSG:3857" by definition.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">EPSG:3857</Data>
@@ -4875,7 +4875,7 @@
                <Data ss:Type="String">Latitude degrees </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The X coordinate. Use degrees with decimals.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">59.331660358041425</Data>
@@ -4927,7 +4927,7 @@
                <Data ss:Type="String">Longitude degrees </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Y coordinate. Use degrees with decimals.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">18.063363084988005</Data>
@@ -4979,7 +4979,7 @@
                <Data ss:Type="String">Altitude </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Z coordinate.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">12.5</Data>
@@ -5031,7 +5031,7 @@
                <Data ss:Type="String">Period </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The period within the delivery event takes place.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5057,7 +5057,7 @@
                <Data ss:Type="String">Period start date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The start date for the delivery event.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-09-29</Data>
@@ -5083,7 +5083,7 @@
                <Data ss:Type="String">Period start time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The start time for the delivery event.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">10:00:00+01:00</Data>
@@ -5109,7 +5109,7 @@
                <Data ss:Type="String">Period end date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The end date for the delivery event.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-09-29</Data>
@@ -5135,7 +5135,7 @@
                <Data ss:Type="String">Period end time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The end time for the delivery event.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">11:00:00+01:00</Data>
@@ -5161,7 +5161,7 @@
                <Data ss:Type="String">Consignee party </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The party responsible for receiveing the goods.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5187,7 +5187,7 @@
                <Data ss:Type="String">Consignee party identification </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An identifier for the consignee party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5291,7 +5291,7 @@
                <Data ss:Type="String">Consignee party common name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the consignee party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">HUS Hospital</Data>
@@ -5317,7 +5317,7 @@
                <Data ss:Type="String">Postal address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The postal address of the Consignee</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5343,7 +5343,7 @@
                <Data ss:Type="String">Address line 1 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Topeliuksenkatu 5</Data>
@@ -5369,7 +5369,7 @@
                <Data ss:Type="String">Address line 2 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">way 1</Data>
@@ -5395,7 +5395,7 @@
                <Data ss:Type="String">City </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Helsinki</Data>
@@ -5421,7 +5421,7 @@
                <Data ss:Type="String">Post code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">00260</Data>
@@ -5447,7 +5447,7 @@
                <Data ss:Type="String">Country subdivision </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Heremouthshire</Data>
@@ -5499,7 +5499,7 @@
                <Data ss:Type="String">Address line 3 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Gate 34</Data>
@@ -5551,7 +5551,7 @@
                <Data ss:Type="String">Country code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">FI</Data>
@@ -5603,7 +5603,7 @@
                <Data ss:Type="String">Consignee party name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the consignee party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">HUS Hospital</Data>
@@ -5629,7 +5629,7 @@
                <Data ss:Type="String">Consignee parties legal registration name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The official name of the party as registered with the relevant fiscal authority.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">1567535-0</Data>
@@ -5707,7 +5707,7 @@
                <Data ss:Type="String">City name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the city.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Helsinki</Data>
@@ -5733,7 +5733,7 @@
                <Data ss:Type="String">Country </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The residens country for the sender party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5759,7 +5759,7 @@
                <Data ss:Type="String">Country code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">FI</Data>
@@ -5785,7 +5785,7 @@
                <Data ss:Type="String">Contact </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The contact of the consignee party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5811,7 +5811,7 @@
                <Data ss:Type="String">Contact name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The contact name.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Mr Sender</Data>
@@ -5837,7 +5837,7 @@
                <Data ss:Type="String">Contact telephone number </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The phone number of the contact.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0158 1233714</Data>
@@ -5863,7 +5863,7 @@
                <Data ss:Type="String">Contact email address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The electronic mail of the contact.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">sender@consignor-company.co.uk</Data>
@@ -5889,7 +5889,7 @@
                <Data ss:Type="String">Consignor Party </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The party responsible for sending the goods.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5915,7 +5915,7 @@
                <Data ss:Type="String">Consignor party identification </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An identifier for the consignor party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6019,7 +6019,7 @@
                <Data ss:Type="String">Consignor party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the consignor party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Novo Nordisk Pharmatech A/S</Data>
@@ -6045,7 +6045,7 @@
                <Data ss:Type="String">Postal address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The postal address of the consignor party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6071,7 +6071,7 @@
                <Data ss:Type="String">Address line 1 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Københavnsvej 216</Data>
@@ -6097,7 +6097,7 @@
                <Data ss:Type="String">Address line 2 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">way 1</Data>
@@ -6123,7 +6123,7 @@
                <Data ss:Type="String">City </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Køge</Data>
@@ -6149,7 +6149,7 @@
                <Data ss:Type="String">Post code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">4600</Data>
@@ -6175,7 +6175,7 @@
                <Data ss:Type="String">Country subdivision </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Heremouthshire</Data>
@@ -6227,7 +6227,7 @@
                <Data ss:Type="String">Address line 3 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Gate 34</Data>
@@ -6279,7 +6279,7 @@
                <Data ss:Type="String">Country code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">DK</Data>
@@ -6331,7 +6331,7 @@
                <Data ss:Type="String">Consignor party name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the consignor party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Novo Nordisk Pharmatech A/S</Data>
@@ -6357,7 +6357,7 @@
                <Data ss:Type="String">Consignor parties legal registration name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The official name of the party as registered with the relevant fiscal authority.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">13246149</Data>
@@ -6435,7 +6435,7 @@
                <Data ss:Type="String">City name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the city.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Køge</Data>
@@ -6461,7 +6461,7 @@
                <Data ss:Type="String">Country </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The residens country for the consignor party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6487,7 +6487,7 @@
                <Data ss:Type="String">Country code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">DK</Data>
@@ -6513,7 +6513,7 @@
                <Data ss:Type="String">Contact </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The contact of the consignor party.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6539,7 +6539,7 @@
                <Data ss:Type="String">Contact name </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The contact name.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Mr Sender</Data>
@@ -6565,7 +6565,7 @@
                <Data ss:Type="String">Contact telephone number </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The phone number of the contact.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">0158 1233714</Data>
@@ -6591,7 +6591,7 @@
                <Data ss:Type="String">Contact email address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The electronic mail of the contact.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">sender@consignor-company.co.uk</Data>
@@ -6617,7 +6617,7 @@
                <Data ss:Type="String">Original departure country </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The country from which the goods in this consignment were originally exported, without any commercial transaction taking place in intermediate countries.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6643,7 +6643,7 @@
                <Data ss:Type="String">Country code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">DK</Data>
@@ -6669,7 +6669,7 @@
                <Data ss:Type="String">Final destination country </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The country in which the goods in this consignment are to be delivered to the final consignee or buyer.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6695,7 +6695,7 @@
                <Data ss:Type="String">Country code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">FI</Data>
@@ -6721,7 +6721,7 @@
                <Data ss:Type="String">Delivery terms </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The conditions agreed upon between a seller and a buyer with regard to the delivery of goods and/or services (e.g., CIF, FOB, or EXW from the INCOTERMS Terms of Delivery).</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6747,7 +6747,7 @@
                <Data ss:Type="String">Delivery terms identification </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Delivery terms code (Inco terms).</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">DAP</Data>
@@ -6773,7 +6773,7 @@
                <Data ss:Type="String">Special terms </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Special delivery terms that exceeds the inco terms.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">DAP</Data>
@@ -6799,7 +6799,7 @@
                <Data ss:Type="String">Location of attchaed to the delivery terms </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The location where the pickup takes place.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6825,7 +6825,7 @@
                <Data ss:Type="String">Identity of the  location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Identifies the location.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">5790000435951</Data>
@@ -6877,7 +6877,7 @@
                <Data ss:Type="String">Name of the location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the location.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">CPH</Data>
@@ -6903,7 +6903,7 @@
                <Data ss:Type="String">Payment terms </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The terms of payment between the parties (such as logistics service client, logistics service provider) in a transaction as related to the reqested transport service.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6929,7 +6929,7 @@
                <Data ss:Type="String">Payment terms identification </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An identifier for this set of payment terms.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">DAP</Data>
@@ -6955,7 +6955,7 @@
                <Data ss:Type="String">Payment terms note </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A free text describing this set of payment terms.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">To be paid on invoice</Data>
@@ -6981,7 +6981,7 @@
                <Data ss:Type="String">Freight Allowance Charge </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A cost incurred by the shipper in moving goods, by whatever means, from one place to another under the terms of the contract of carriage for this consignment. In addition to transport costs, this may include such elements as packing, documentation, loading, unloading, and insurance to the extent that they relate to the freight costs.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7007,7 +7007,7 @@
                <Data ss:Type="String">ChargeIndication </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An indicator that this AllowanceCharge describes a charge (true) or a discount (false).</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">true</Data>
@@ -7033,7 +7033,7 @@
                <Data ss:Type="String">Allowance Charge Reason Code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code signifying this freight allowance or charge.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">1</Data>
@@ -7059,7 +7059,7 @@
                <Data ss:Type="String">Amount </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The amount for this allowance or charge.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">100</Data>
@@ -7111,7 +7111,7 @@
                <Data ss:Type="String">Main carriage shipment stage </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The shipment stage during main carriage.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7137,7 +7137,7 @@
                <Data ss:Type="String">Transport mode code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code signifying the method of transport used for this shipment stage.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">4</Data>
@@ -7163,7 +7163,7 @@
                <Data ss:Type="String">Hazardous risk indicator </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An indication that the transported goods in this consignment are subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">false</Data>
@@ -7189,7 +7189,7 @@
                <Data ss:Type="String">Requested departure transport event </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The departure requested by the party requesting a transportation service.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7215,7 +7215,7 @@
                <Data ss:Type="String">Identifier departure transport event </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An identifier for this departure transport event within an agreed event identification scheme.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">6522956526554654</Data>
@@ -7241,7 +7241,7 @@
                <Data ss:Type="String">Shipment departure location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The location where the departure of this shipment stage takes place.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7267,7 +7267,7 @@
                <Data ss:Type="String">Identity of the delivery location  </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Identifies the delivery location with e.g. UN Loco code</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">5790000435951</Data>
@@ -7319,7 +7319,7 @@
                <Data ss:Type="String">Name of the location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the consignee.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Name</Data>
@@ -7345,7 +7345,7 @@
                <Data ss:Type="String">The adress of the loaction </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Postal Address.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7371,7 +7371,7 @@
                <Data ss:Type="String">Address line 1 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Avon Way</Data>
@@ -7397,7 +7397,7 @@
                <Data ss:Type="String">Address line 2 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Purchasing</Data>
@@ -7423,7 +7423,7 @@
                <Data ss:Type="String">City </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Bridgtow</Data>
@@ -7449,7 +7449,7 @@
                <Data ss:Type="String">Post code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">ZZ99 1ZZ</Data>
@@ -7475,7 +7475,7 @@
                <Data ss:Type="String">Country subdivision </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Avon</Data>
@@ -7527,7 +7527,7 @@
                <Data ss:Type="String">Address line 3 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">3rd Floor, Room 5</Data>
@@ -7579,7 +7579,7 @@
                <Data ss:Type="String">Country code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">GB</Data>
@@ -7605,7 +7605,7 @@
                <Data ss:Type="String">Location coordinate </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">To specify the coordinates.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7631,7 +7631,7 @@
                <Data ss:Type="String">Coordinate system code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Always "EPSG:3857" by definition.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">EPSG:3857</Data>
@@ -7657,7 +7657,7 @@
                <Data ss:Type="String">Latitude degrees </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The X coordinate. Use degrees with decimals.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">59.331660358041425</Data>
@@ -7709,7 +7709,7 @@
                <Data ss:Type="String">Longitude degrees </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Y coordinate. Use degrees with decimals.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">18.063363084988005</Data>
@@ -7761,7 +7761,7 @@
                <Data ss:Type="String">Altitude </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Z coordinate.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">12.5</Data>
@@ -7813,7 +7813,7 @@
                <Data ss:Type="String">Period </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The period within the departure of this transport event takes place.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7839,7 +7839,7 @@
                <Data ss:Type="String">Period start date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The start date for the period.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-09-29</Data>
@@ -7865,7 +7865,7 @@
                <Data ss:Type="String">Period start time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The start time for the period.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">10:00:00+01:00</Data>
@@ -7891,7 +7891,7 @@
                <Data ss:Type="String">Period end date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The end date for the period.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-09-29</Data>
@@ -7917,7 +7917,7 @@
                <Data ss:Type="String">Period end time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The end time for the period.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">11:00:00+01:00</Data>
@@ -7943,7 +7943,7 @@
                <Data ss:Type="String">Requested arrival transport event </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The arrival requested by the party requesting a transportation service.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7969,7 +7969,7 @@
                <Data ss:Type="String">Identifier arrival transport event </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An identifier for this arrival transport event within an agreed event identification scheme.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">54354684732168476514</Data>
@@ -7995,7 +7995,7 @@
                <Data ss:Type="String">Arrival location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The location where the arrival takes place.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -8021,7 +8021,7 @@
                <Data ss:Type="String">Identity of the delivery location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Identifies the delivery location.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">5790000435951</Data>
@@ -8073,7 +8073,7 @@
                <Data ss:Type="String">Name of arrival location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the location.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Finnair Cargo terminal</Data>
@@ -8099,7 +8099,7 @@
                <Data ss:Type="String">Address of the arrival location </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The address of the arrival location.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -8125,7 +8125,7 @@
                <Data ss:Type="String">Address line 1 </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Turbiinitie 4</Data>
@@ -8151,7 +8151,7 @@
                <Data ss:Type="String">City </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Vantaa</Data>
@@ -8177,7 +8177,7 @@
                <Data ss:Type="String">Post code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">01530</Data>
@@ -8229,7 +8229,7 @@
                <Data ss:Type="String">Country code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">FI</Data>
@@ -8255,7 +8255,7 @@
                <Data ss:Type="String">Period </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The period within the departure of this transport event takes place.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -8281,7 +8281,7 @@
                <Data ss:Type="String">Period start date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The start date for the period.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-09-29</Data>
@@ -8307,7 +8307,7 @@
                <Data ss:Type="String">Period start time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The start time for the period.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">10:00:00+01:00</Data>
@@ -8333,7 +8333,7 @@
                <Data ss:Type="String">Period end date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The end date for the period.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-09-29</Data>
@@ -8359,7 +8359,7 @@
                <Data ss:Type="String">Period end time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The end time for the period.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">11:00:00+01:00</Data>
@@ -8385,7 +8385,7 @@
                <Data ss:Type="String">Transport handling unit </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Used to specify how the goods are packed.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -8411,7 +8411,7 @@
                <Data ss:Type="String">Identifier transport handling unit </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The SSCC identification code of this Transport Handling Unit.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">11111222222222</Data>
@@ -8437,7 +8437,7 @@
                <Data ss:Type="String">Handling unit type code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Type of Transport Handling Unit. Use UN/ECE Recommendation 21 with addition of the codes used by "Retursystem Byggpall".</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">AG</Data>
@@ -8463,7 +8463,7 @@
                <Data ss:Type="String">Handling Code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The handling for this transporthandling unit expressed as a code</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">CCC</Data>
@@ -8489,7 +8489,7 @@
                <Data ss:Type="String">Handling instructions </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The handling for this transporthandling unit expressed as a text</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">To be set vertical</Data>
@@ -8515,7 +8515,7 @@
                <Data ss:Type="String">Handling unit hazardous indicator </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An indicator that the materials contained in this transport handling unit are subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">false</Data>
@@ -8541,7 +8541,7 @@
                <Data ss:Type="String">Shipping marks </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Free-form description of the marks and numbers on this transport handling unit.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Keep dry</Data>
@@ -8567,7 +8567,7 @@
                <Data ss:Type="String">Transport equipment </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Used to specify Transport Equipment details associated with this Transport Handling Unit.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -8593,7 +8593,7 @@
                <Data ss:Type="String">Identifier transport equipment </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An id for the physical transport equipment e.g. a container number.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">34563444</Data>
@@ -8619,7 +8619,7 @@
                <Data ss:Type="String">Tranport equipment type code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An code specifying the type of equipment.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">CN</Data>
@@ -8645,7 +8645,7 @@
                <Data ss:Type="String">Size type code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code signifying the size and type of this piece of piece of transport equipment. When the piece of transport equipment is a shipping container, it is recommended to use ContainerSizeTypeCode for validation.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">10</Data>
@@ -8671,7 +8671,7 @@
                <Data ss:Type="String">Indicator refrigeration transport equipment </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An indicator that this piece of transport equipment's refrigeration is on (true) or off (false).</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">true</Data>
@@ -8697,7 +8697,7 @@
                <Data ss:Type="String">Description transport equipment </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A textual description of the transport equipment.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">A 20 foot refrigerated container that is not actively controlling temperature of the product.</Data>
@@ -8723,7 +8723,7 @@
                <Data ss:Type="String">Power indicator transport equipment </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An indicator that this piece of transport equipment can supply power (true) or not (false).</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">true</Data>
@@ -8749,7 +8749,7 @@
                <Data ss:Type="String">Measurement dimension </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Used to specify any measurement of the Transport Handling Unit.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -8775,7 +8775,7 @@
                <Data ss:Type="String">Attribute identifier </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">To describe the type of measurement. Use UNCL 6313 subset.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">LN</Data>
@@ -8801,7 +8801,7 @@
                <Data ss:Type="String">Measure </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">For the measure. Use UN/ECE Recommendation 20 and 21.subset.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">123</Data>
@@ -8853,7 +8853,7 @@
                <Data ss:Type="String">Minimum temperature </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Used to specify the minimal temperature for the transport handling unit under the transport.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -8879,7 +8879,7 @@
                <Data ss:Type="String">Attribute identifier </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">To describe the type of messure that in this context is the minimal temperature.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">TC</Data>
@@ -8905,7 +8905,7 @@
                <Data ss:Type="String">Measure </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The value of the minimal temperature measurement.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">-21</Data>
@@ -8957,7 +8957,7 @@
                <Data ss:Type="String">Maximum temperature </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Used to specify the maximum temperature for the transport handling unit under the transport.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -8983,7 +8983,7 @@
                <Data ss:Type="String">Attribute identifier </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">To describe the type of messure that in this context is the maximal temperature.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">TC</Data>
@@ -9009,7 +9009,7 @@
                <Data ss:Type="String">Measure </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The value of the maximum temperature measurement.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">-21</Data>
@@ -9061,7 +9061,7 @@
                <Data ss:Type="String">Goods item </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A Goods item contained in the transport handling unit.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -9087,7 +9087,7 @@
                <Data ss:Type="String">Identifiser goods item </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An identifier for this goods item.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">10</Data>
@@ -9113,7 +9113,7 @@
                <Data ss:Type="String">Description </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A textual descript this goods item.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Torsk sl u/h fersk fulliset 20kg iso 2-4 kg</Data>
@@ -9139,7 +9139,7 @@
                <Data ss:Type="String">Hazardous risk indicator </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An indication that the transported goods item is subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">false</Data>
@@ -9165,7 +9165,7 @@
                <Data ss:Type="String">Item </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Description of the product beeing transported.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -9191,7 +9191,7 @@
                <Data ss:Type="String">Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the Item.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Torsk</Data>
@@ -9217,7 +9217,7 @@
                <Data ss:Type="String">Commodity classification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">To classify when an item number is not sufficient.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -9347,7 +9347,7 @@
                <Data ss:Type="String">Hazardous item information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contains information on the Hazardous item.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -9373,7 +9373,7 @@
                <Data ss:Type="String">Identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An identifier for this hazardous item.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">123</Data>
@@ -9399,7 +9399,7 @@
                <Data ss:Type="String">Additional Information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Text providing further information about the hazardous substance.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Information about the hazardous item</Data>
@@ -9425,7 +9425,7 @@
                <Data ss:Type="String">Hazardous item UNDG code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier assigned to transportable hazardous goods by the United Nations, expressed as a code.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">ADR</Data>
@@ -9451,7 +9451,7 @@
                <Data ss:Type="String">Technical Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The full technical name of a specific hazardous substance contained in this goods item.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Corrosive liquid, n.o.s., 8, UN 1760, II (contains Octanoyl chloride)</Data>
@@ -9477,7 +9477,7 @@
                <Data ss:Type="String">Category Name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the category of hazard that applies to the Item.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Acute toxicity</Data>
@@ -9503,7 +9503,7 @@
                <Data ss:Type="String">Hazardous Category Code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code signifying a kind of hazard for a material.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">123</Data>
@@ -9529,7 +9529,7 @@
                <Data ss:Type="String">Haszardous hazard class Identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">dentifies a hazard class applicable to dangerous goods as defined by the relevant regulation authority, such as the IMDG Class Number of the SOLAS Convention ofIMO and the ADR/RID Class Number for the road/rail environment.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">Code</Data>
@@ -9555,7 +9555,7 @@
                <Data ss:Type="String">Net Weight Measure </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Net weight of the Hazardous item.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">123</Data>
@@ -9607,7 +9607,7 @@
                <Data ss:Type="String">Net Volume Measure </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Net volume of the Hazardous item.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">12.3</Data>
@@ -9659,7 +9659,7 @@
                <Data ss:Type="String">Hazardous Goods Transit </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Information related to the transit of this kind of hazardous goods.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -9685,7 +9685,7 @@
                <Data ss:Type="String">Packing Criteria Code </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code signifying the packaging requirement for transportation of the hazardous goods as assigned by IATA, IMDB, ADR, RID etc.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">123</Data>
@@ -9711,7 +9711,7 @@
                <Data ss:Type="String">Emergency Temperature </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The threshold temperature at which emergency procedures apply in the handling of temperature-controlled goods.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -9737,7 +9737,7 @@
                <Data ss:Type="String">Attribute ID </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An identifier for this temperature measurement.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">ABC</Data>
@@ -9763,7 +9763,7 @@
                <Data ss:Type="String">Measure </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The value of this temperature measurement.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">78</Data>
