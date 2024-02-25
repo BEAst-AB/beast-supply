@@ -36,7 +36,7 @@
          <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">BT-1</Reference>
          <Reference type="RULE">BR-02</Reference>
-         <Value type="EXAMPLE">9742025</Value>
+         <Value type="EXAMPLE">33445566</Value>
       </Element>
       <Element>
          <Term>cbc:IssueDate</Term>
@@ -46,7 +46,7 @@
          <Reference type="BUSINESS_TERM">BT-2</Reference>
          <Reference type="RULE">BR-03</Reference>
          <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
-         <Value type="EXAMPLE">2020-10-31</Value>
+         <Value type="EXAMPLE">2017-11-01</Value>
       </Element>
       <Element cardinality="0..1">
          <Term>cbc:DueDate</Term>
@@ -56,14 +56,14 @@
          <Reference type="BUSINESS_TERM">BT-9</Reference>
          <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
          <Reference type="RULE">BR-CO-25</Reference>
-         <Value type="EXAMPLE">2020-12-05</Value>
+         <Value type="EXAMPLE">2017-11-01</Value>
       </Element>
       <Element>
          <Term>cbc:InvoiceTypeCode</Term>
          <Name>Invoice type code</Name>
          <Description>A code specifying the functional type of the Invoice.</Description>
          <DataType>Code</DataType>
-         <Reference type="BUSINESS_TERM">BT-24</Reference>
+         <Reference type="BUSINESS_TERM">BT-3</Reference>
          <Reference type="RULE">BR-04</Reference>
          <Reference type="RULE">BR-CL-01</Reference>
          <Reference type="RULE">PEPPOL-EN16931-P0100</Reference>
@@ -87,7 +87,7 @@
          <DataType>Date</DataType>
          <Reference type="BUSINESS_TERM">BT-7</Reference>
          <Reference type="RULE">BR-CO-03</Reference>
-         <Value type="EXAMPLE">2021-11-07</Value>
+         <Value type="EXAMPLE">2017-11-01</Value>
       </Element>
       <Element>
          <Term>cbc:DocumentCurrencyCode</Term>
@@ -120,7 +120,7 @@
  Peppol: A textual value that specifies where to book the relevant data into the Buyer's financial accounts.</Description>
          <DataType>Text</DataType>
          <Reference type="BUSINESS_TERM">BT-19</Reference>
-         <Value type="EXAMPLE">4415</Value>
+         <Value type="EXAMPLE">4217:2323:2323</Value>
       </Element>
       <Element cardinality="0..1">
          <Term>cbc:BuyerReference</Term>
@@ -147,7 +147,7 @@
             <Reference type="BUSINESS_TERM">BT-73</Reference>
             <Reference type="RULE">BR-CO-19</Reference>
             <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
-            <Value type="EXAMPLE">2020-10-31</Value>
+            <Value type="EXAMPLE">2017-10-01</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:EndDate</Term>
@@ -158,7 +158,7 @@
             <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
             <Reference type="RULE">BR-29</Reference>
             <Reference type="RULE">BR-CO-19</Reference>
-            <Value type="EXAMPLE">2020-12-05</Value>
+            <Value type="EXAMPLE">2017-10-31</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:DescriptionCode</Term>
@@ -220,7 +220,7 @@
                <DataType>Date</DataType>
                <Reference type="BUSINESS_TERM">BT-26</Reference>
                <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
-               <Value type="EXAMPLE">2021-10-15</Value>
+               <Value type="EXAMPLE">2017-09-15</Value>
             </Element>
          </Element>
       </Element>
