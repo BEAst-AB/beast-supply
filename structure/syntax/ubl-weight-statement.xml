@@ -10,14 +10,18 @@
       <Term>ubl:WeightStatement</Term>
       <Element>
          <Term>cbc:CustomizationID</Term>
-         <Name>Specification identification</Name>Identifies the specification of content and rules that apply to the transaction.<DataType>Identifier</DataType>
+         <Name>Specification identification</Name>
+         <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
+         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-002</Reference>
          <Reference type="RULE">PEPPOL-T122-R001</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:trns:weight_statement:1</Value>
       </Element>
       <Element>
          <Term>cbc:ProfileID</Term>
-         <Name>Business process type identifier</Name>Identifies the BII profile or business process context in which the transaction appears.<DataType>Identifier</DataType>
+         <Name>Business process type identifier</Name>
+         <Description>Identifies the BII profile or business process context in which the transaction appears.</Description>
+         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-001</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:weight_statement:1</Value>
       </Element>
@@ -62,7 +66,9 @@
       </Element>
       <Element cardinality="1..1">
          <Term>cac:SenderParty</Term>
-         <Name>Sender Party</Name>The party sending this Weight Statement (e.g. Weighing Station, Shipper, Freight Forwarder, Carrier, ...).<Element cardinality="1..1">
+         <Name>Sender Party</Name>
+         <Description>The party sending this Weight Statement (e.g. Weighing Station, Shipper, Freight Forwarder, Carrier, ...).</Description>
+         <Element cardinality="1..1">
             <Term>cbc:EndpointID</Term>
             <Name>Senders electronic address</Name>
             <Description>
@@ -79,7 +85,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
-            <Name>Party Identification</Name>An identifier for this party.<Element cardinality="1..1">
+            <Name>Party Identification</Name>
+            <Description>An identifier for this party.</Description>
+            <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Sender party identity</Name>
                <Description>
@@ -99,6 +107,7 @@
          <Element cardinality="0..1">
             <Term>cac:PartyName</Term>
             <Name>Party Name</Name>
+            <Description/>
             <Element cardinality="1..1">
                <Term>cbc:Name</Term>
                <Name>Sender name</Name>
@@ -110,7 +119,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
-            <Name>Postal address</Name>The address for the Sender.<Element cardinality="0..1">
+            <Name>Postal address</Name>
+            <Description>The address for the Sender.</Description>
+            <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1</Name>
                <Description>
@@ -144,19 +155,25 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
-               <Name>Country subdivision</Name>For specifying a region, county, state, province etc. within a country by using text.<Value type="EXAMPLE">NA</Value>
+               <Name>Country subdivision</Name>
+               <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
+               <Value type="EXAMPLE">NA</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
                <Name>Address line</Name>
+               <Description/>
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
-                  <Name>Address line 3</Name>An additional address line in an address that can be used to give further details supplementing the main line.<Value type="EXAMPLE">To the right</Value>
+                  <Name>Address line 3</Name>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                  <Value type="EXAMPLE">To the right</Value>
                </Element>
             </Element>
             <Element>
                <Term>cac:Country</Term>
                <Name>Country</Name>
+               <Description/>
                <Element>
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code</Name>
@@ -169,7 +186,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
-            <Name>Contact person name</Name>The contact of the Sender party.<Element cardinality="0..1">
+            <Name>Contact person name</Name>
+            <Description>The contact of the Sender party.</Description>
+            <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name</Name>
                <Description>
@@ -197,7 +216,9 @@
       </Element>
       <Element cardinality="1..1">
          <Term>cac:ReceiverParty</Term>
-         <Name>Receiver information</Name>The party receiving this Weight Statement (e.g. Carrier, Terminal Operator, ...).<Element cardinality="1..1">
+         <Name>Receiver information</Name>
+         <Description>The party receiving this Weight Statement (e.g. Carrier, Terminal Operator, ...).</Description>
+         <Element cardinality="1..1">
             <Term>cbc:EndpointID</Term>
             <Name>Receiver electronic address</Name>
             <Description>
@@ -214,7 +235,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
-            <Name>Party Identification</Name>An identifier for this party.<Element cardinality="1..1">
+            <Name>Party Identification</Name>
+            <Description>An identifier for this party.</Description>
+            <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Receiver identity</Name>
                <Description>
@@ -234,6 +257,7 @@
          <Element cardinality="0..1">
             <Term>cac:PartyName</Term>
             <Name>Party Name</Name>
+            <Description/>
             <Element cardinality="1..1">
                <Term>cbc:Name</Term>
                <Name>Receiver name</Name>
@@ -245,7 +269,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
-            <Name>Postal address</Name>The address for the Receiver.<Element cardinality="0..1">
+            <Name>Postal address</Name>
+            <Description>The address for the Receiver.</Description>
+            <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1</Name>
                <Description>
@@ -279,19 +305,25 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
-               <Name>Country subdivision</Name>For specifying a region, county, state, province etc. within a country by using text.<Value type="EXAMPLE">NA</Value>
+               <Name>Country subdivision</Name>
+               <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
+               <Value type="EXAMPLE">NA</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
                <Name>Address line</Name>
+               <Description/>
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
-                  <Name>Address line 3</Name>An additional address line in an address that can be used to give further details supplementing the main line.<Value type="EXAMPLE">To the left</Value>
+                  <Name>Address line 3</Name>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                  <Value type="EXAMPLE">To the left</Value>
                </Element>
             </Element>
             <Element>
                <Term>cac:Country</Term>
                <Name>Country</Name>
+               <Description/>
                <Element>
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code</Name>
@@ -304,7 +336,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
-            <Name>Contact person name</Name>The contact of the Sender party.<Element cardinality="0..1">
+            <Name>Contact person name</Name>
+            <Description>The contact of the Sender party.</Description>
+            <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name</Name>
                <Description>
@@ -332,9 +366,13 @@
       </Element>
       <Element cardinality="1..1">
          <Term>cac:WeighingParty</Term>
-         <Name>Weighing party information</Name>The party executing the weight measure (e.g. Weighing Station).<Element cardinality="0..1">
+         <Name>Weighing party information</Name>
+         <Description>The party executing the weight measure (e.g. Weighing Station).</Description>
+         <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
-            <Name>Party Identification</Name>An identifier for this party.<Element cardinality="1..1">
+            <Name>Party Identification</Name>
+            <Description>An identifier for this party.</Description>
+            <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Weighing party identity</Name>
                <Description>
@@ -354,6 +392,7 @@
          <Element cardinality="0..1">
             <Term>cac:PartyName</Term>
             <Name>Party Name</Name>
+            <Description/>
             <Element cardinality="1..1">
                <Term>cbc:Name</Term>
                <Name>Weighing party name</Name>
@@ -366,7 +405,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
-            <Name>Postal address</Name>The address for the Weighing party.<Element cardinality="0..1">
+            <Name>Postal address</Name>
+            <Description>The address for the Weighing party.</Description>
+            <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1</Name>
                <Description>
@@ -400,19 +441,25 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
-               <Name>Country subdivision</Name>For specifying a region, county, state, province etc. within a country by using text.<Value type="EXAMPLE">NA</Value>
+               <Name>Country subdivision</Name>
+               <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
+               <Value type="EXAMPLE">NA</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
                <Name>Address line</Name>
+               <Description/>
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
-                  <Name>Address line 3</Name>An additional address line in an address that can be used to give further details supplementing the main line.<Value type="EXAMPLE">To the left</Value>
+                  <Name>Address line 3</Name>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                  <Value type="EXAMPLE">To the left</Value>
                </Element>
             </Element>
             <Element>
                <Term>cac:Country</Term>
                <Name>Country</Name>
+               <Description/>
                <Element>
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code</Name>
@@ -425,7 +472,9 @@
          </Element>
          <Element>
             <Term>cac:PhysicalLocation</Term>
-            <Name>Physical Location</Name>The physical location of this party.<Element cardinality="0..1">
+            <Name>Physical Location</Name>
+            <Description>The physical location of this party.</Description>
+            <Element cardinality="0..1">
                <Term>cbc:ID</Term>
                <Name>Physical Location ID</Name>
                <Description>
@@ -449,7 +498,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
-            <Name>Contact person name</Name>The contact of the Sender party.<Element cardinality="0..1">
+            <Name>Contact person name</Name>
+            <Description>The contact of the Sender party.</Description>
+            <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name</Name>
                <Description>
@@ -477,9 +528,12 @@
       </Element>
       <Element cardinality="0..1">
          <Term>cac:ShipperParty</Term>
-         <Name>Shipper Party</Name>The party transporting or shipping the items.<Element cardinality="0..1">
+         <Name>Shipper Party</Name>
+         <Description>The party transporting or shipping the items.</Description>
+         <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>Party Identification</Name>
+            <Description/>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Shipping party identity</Name>
@@ -500,6 +554,7 @@
          <Element cardinality="0..1">
             <Term>cac:PartyName</Term>
             <Name>Party Name</Name>
+            <Description/>
             <Element cardinality="1..1">
                <Term>cbc:Name</Term>
                <Name>Shipper name</Name>
@@ -512,7 +567,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PostalAddress</Term>
-            <Name>Postal address</Name>The address for the Shipper party.<Element cardinality="0..1">
+            <Name>Postal address</Name>
+            <Description>The address for the Shipper party.</Description>
+            <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Address line 1</Name>
                <Description>
@@ -546,19 +603,25 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
-               <Name>Country subdivision</Name>For specifying a region, county, state, province etc. within a country by using text.<Value type="EXAMPLE">NA</Value>
+               <Name>Country subdivision</Name>
+               <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
+               <Value type="EXAMPLE">NA</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
                <Name>Address line</Name>
+               <Description/>
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
-                  <Name>Address line 3</Name>An additional address line in an address that can be used to give further details supplementing the main line.<Value type="EXAMPLE">To the right</Value>
+                  <Name>Address line 3</Name>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                  <Value type="EXAMPLE">To the right</Value>
                </Element>
             </Element>
             <Element>
                <Term>cac:Country</Term>
                <Name>Country</Name>
+               <Description/>
                <Element>
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Country code</Name>
@@ -571,7 +634,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cac:Contact</Term>
-            <Name>Contact person name</Name>The contact of the Sender party.<Element cardinality="0..1">
+            <Name>Contact person name</Name>
+            <Description>The contact of the Sender party.</Description>
+            <Element cardinality="0..1">
                <Term>cbc:Name</Term>
                <Name>Contact name</Name>
                <Description>
@@ -600,20 +665,29 @@
       <Element cardinality="1..1">
          <Term>cac:Shipment</Term>
          <Name>Shipment information</Name>
+         <Description/>
          <Element cardinality="1..1">
             <Term>cbc:ID</Term>
-            <Name>Shipment identity</Name>Use NA if no specific shipment ID is available<Reference type="BUSINESS_TERM">tir16-038</Reference>
+            <Name>Shipment identity</Name>
+            <Description>Use NA if no specific shipment ID is available</Description>
+            <Reference type="BUSINESS_TERM">tir16-038</Reference>
             <Value type="EXAMPLE">NA</Value>
          </Element>
          <Element cardinality="1..n">
             <Term>cac:GoodsItem</Term>
-            <Name>Goods Item</Name>A goods item included in this shipment.<Element cardinality="1..1">
+            <Name>Goods Item</Name>
+            <Description>A goods item included in this shipment.</Description>
+            <Element cardinality="1..1">
                <Term>cbc:ID</Term>
-               <Name>Line item identifier</Name>Identifies the Line Item assigned by the weighing partner, the identifier must be unique within the order<Value type="EXAMPLE">1</Value>
+               <Name>Line item identifier</Name>
+               <Description>Identifies the Line Item assigned by the weighing partner, the identifier must be unique within the order</Description>
+               <Value type="EXAMPLE">1</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:Item</Term>
-               <Name>Item</Name>Product information relating to a goods item<Element cardinality="1..1">
+               <Name>Item</Name>
+               <Description>Product information relating to a goods item</Description>
+               <Element cardinality="1..1">
                   <Term>cbc:Name</Term>
                   <Name>Item name</Name>
                   <Description>
@@ -624,14 +698,18 @@
                <Element cardinality="0..1">
                   <Term>cac:BuyersItemIdentification</Term>
                   <Name>Buyers item identification</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:ID</Term>
-                     <Name>Buyers item identifier</Name>An identifier, assigned by the buyer, for the item. Associates the item with its identification according to the buyers system.<Value type="EXAMPLE">KO2001030300</Value>
+                     <Name>Buyers item identifier</Name>
+                     <Description>An identifier, assigned by the buyer, for the item. Associates the item with its identification according to the buyers system.</Description>
+                     <Value type="EXAMPLE">KO2001030300</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:SellersItemIdentification</Term>
                   <Name>Sellers item identification</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>The Sellers item identifier</Name>
@@ -645,6 +723,7 @@
                <Element cardinality="0..1">
                   <Term>cac:StandardItemIdentification</Term>
                   <Name>Standard item identification</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Item standard identifier</Name>
@@ -663,9 +742,13 @@
                </Element>
                <Element cardinality="0..n">
                   <Term>cac:CommodityClassification</Term>
-                  <Name>Commodity classification</Name>To classify when an item number is not sufficient.<Element cardinality="1..1">
+                  <Name>Commodity classification</Name>
+                  <Description>To classify when an item number is not sufficient.</Description>
+                  <Element cardinality="1..1">
                      <Term>cbc:ItemClassificationCode</Term>
-                     <Name>Item classification code</Name>A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.<Value type="EXAMPLE">KO2012140200</Value>
+                     <Name>Item classification code</Name>
+                     <Description>A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
+                     <Value type="EXAMPLE">KO2012140200</Value>
                      <Attribute usage="Mandatory">
                         <Term>listID</Term>
                         <Name>Item classification identifier identification scheme identifier</Name>
@@ -690,7 +773,9 @@
             </Element>
             <Element cardinality="1..n">
                <Term>cac:MeasurementDimension</Term>
-               <Name>Measurement Dimension</Name>Used to specify weight and/or volume of the Goods Item.<Element cardinality="1..1">
+               <Name>Measurement Dimension</Name>
+               <Description>Used to specify weight and/or volume of the Goods Item.</Description>
+               <Element cardinality="1..1">
                   <Term>cbc:AttributeID</Term>
                   <Name>Attribute identifier</Name>
                   <Description>

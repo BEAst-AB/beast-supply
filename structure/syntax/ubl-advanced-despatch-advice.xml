@@ -10,14 +10,18 @@
       <Term>ubl:DespatchAdvice</Term>
       <Element>
          <Term>cbc:CustomizationID</Term>
-         <Name>Specification identification</Name>Identifies the specification of content and rules that apply to the transaction.<DataType>Identifier</DataType>
+         <Name>Specification identification</Name>
+         <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
+         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-002</Reference>
          <Reference type="RULE">PEPPOL-T120-R011</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1</Value>
       </Element>
       <Element>
          <Term>cbc:ProfileID</Term>
-         <Name>Business process type identifier</Name>Identifies the BII profile or business process context in which the transaction appears. There are two ProfileIDs defined for the Advanced Despatch Advice. One profile is used when the receiver of the Despatch Advice is expected to return a response message, the other is used when no response message is used. Possible choices are: "urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1" and "urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_receipt_advice:1"<DataType>Identifier</DataType>
+         <Name>Business process type identifier</Name>
+         <Description>Identifies the BII profile or business process context in which the transaction appears. There are two ProfileIDs defined for the Advanced Despatch Advice. One profile is used when the receiver of the Despatch Advice is expected to return a response message, the other is used when no response message is used. Possible choices are: "urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1" and "urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_receipt_advice:1"</Description>
+         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir16-001</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</Value>
       </Element>
@@ -71,13 +75,17 @@
       </Element>
       <Element cardinality="0..1">
          <Term>cbc:Note</Term>
-         <Name>Despatch note</Name>A textual note for the despatch as whole.<DataType>Text</DataType>
+         <Name>Despatch note</Name>
+         <Description>A textual note for the despatch as whole.</Description>
+         <DataType>Text</DataType>
          <Reference type="BUSINESS_TERM">tir16-088</Reference>
          <Value type="EXAMPLE">Text</Value>
       </Element>
       <Element cardinality="0..n">
          <Term>cac:OrderReference</Term>
-         <Name>Order reference information</Name>Can be included here or at Line level.<Element>
+         <Name>Order reference information</Name>
+         <Description>Can be included here or at Line level.</Description>
+         <Element>
             <Term>cbc:ID</Term>
             <Name>Order reference</Name>
             <Description>
@@ -126,7 +134,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cac:Attachment</Term>
-            <Name>Attachment</Name>Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.<Element cardinality="0..1">
+            <Name>Attachment</Name>
+            <Description>Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Description>
+            <Element cardinality="0..1">
                <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                <Name>Embedded binary object</Name>
                <Description>
@@ -151,7 +161,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:ExternalReference</Term>
-               <Name>External reference</Name>A reference to an attached document that is external to the document(s) being exchanged.<Element>
+               <Name>External reference</Name>
+               <Description>A reference to an attached document that is external to the document(s) being exchanged.</Description>
+               <Element>
                   <Term>cbc:URI</Term>
                   <Name>Address to internet resource</Name>
                   <Description>
@@ -166,12 +178,17 @@
       </Element>
       <Element>
          <Term>cac:DespatchSupplierParty</Term>
-         <Name>Despatching party information</Name>The Despatch Party is the person or organization who provides (despatch) the goods or services. It also defines the sender of the Advanced Despatch Advice. The role is carried out by the supplier or on behalf of the supplier. The real ship-from address must be provided in the Despatch Address when the Advanced Despatch Advice describes a movement.<Element>
+         <Name>Despatching party information</Name>
+         <Description>The Despatch Party is the person or organization who provides (despatch) the goods or services. It also defines the sender of the Advanced Despatch Advice. The role is carried out by the supplier or on behalf of the supplier. The real ship-from address must be provided in the Despatch Address when the Advanced Despatch Advice describes a movement.</Description>
+         <Element>
             <Term>cac:Party</Term>
             <Name>Party information</Name>
+            <Description/>
             <Element>
                <Term>cbc:EndpointID</Term>
-               <Name>Despatch party electronic address</Name>Identifies the despatch party's electronic address<DataType>Identifier</DataType>
+               <Name>Despatch party electronic address</Name>
+               <Description>Identifies the despatch party's electronic address</Description>
+               <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir16-071</Reference>
                <Value type="EXAMPLE">7300010000001</Value>
                <Attribute usage="Mandatory">
@@ -185,6 +202,7 @@
             <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
                <Name>Party identification</Name>
+               <Description/>
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>Despatching party identifier</Name>
@@ -206,7 +224,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PartyName</Term>
-               <Name>Party Name</Name>The name of the Despatch Supplier Party.<Element cardinality="1..1">
+               <Name>Party Name</Name>
+               <Description>The name of the Despatch Supplier Party.</Description>
+               <Element cardinality="1..1">
                   <Term>cbc:Name</Term>
                   <Name>Name of the fuel supplier</Name>
                   <Description>
@@ -218,7 +238,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
-               <Name>Postal address</Name>Postal address of the depatching party<Element cardinality="0..1">
+               <Name>Postal address</Name>
+               <Description>Postal address of the depatching party</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
                   <Name>Address line 1</Name>
                   <Description>
@@ -260,13 +282,16 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
-                  <Name>Country subdivision</Name>For specifying a region, county, state, province etc. within a country by using text.<DataType>Text</DataType>
+                  <Name>Country subdivision</Name>
+                  <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir16-p016</Reference>
                   <Value type="EXAMPLE">Heremouthshire</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
                   <Name>Address Line</Name>
+                  <Description/>
                   <Element cardinality="1..1">
                      <Term>cbc:Line</Term>
                      <Name>Address line 3</Name>
@@ -281,6 +306,7 @@
                <Element>
                   <Term>cac:Country</Term>
                   <Name>Country</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code</Name>
@@ -296,22 +322,30 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PartyTaxScheme</Term>
-               <Name>Party tax scheme</Name>The tax information about the Despatch Party.<Element cardinality="1..1">
+               <Name>Party tax scheme</Name>
+               <Description>The tax information about the Despatch Party.</Description>
+               <Element cardinality="1..1">
                   <Term>cbc:CompanyID</Term>
-                  <Name>Company ID</Name>The Despatch Party Value Added Tax identifer.<Value type="EXAMPLE">GB325456788</Value>
+                  <Name>Company ID</Name>
+                  <Description>The Despatch Party Value Added Tax identifer.</Description>
+                  <Value type="EXAMPLE">GB325456788</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cac:TaxScheme</Term>
                   <Name>Tax scheme</Name>
+                  <Description/>
                   <Element cardinality="1..1">
                      <Term>cbc:ID</Term>
-                     <Name>Tax scheme identifier</Name>Tax scheme identifier. E.g. "VAT" or "GST".<Value type="EXAMPLE">VAT</Value>
+                     <Name>Tax scheme identifier</Name>
+                     <Description>Tax scheme identifier. E.g. "VAT" or "GST".</Description>
+                     <Value type="EXAMPLE">VAT</Value>
                   </Element>
                </Element>
             </Element>
             <Element>
                <Term>cac:PartyLegalEntity</Term>
                <Name>Party Legal Entity</Name>
+               <Description/>
                <Element cardinality="1..1">
                   <Term>cbc:RegistrationName</Term>
                   <Name>Despatching party's legal name. </Name>
@@ -324,7 +358,9 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CompanyID</Term>
-                  <Name>Despatch supplier parties legal registration ID. </Name>The official identity of the party as registered with the relevant fiscal authority.<Value type="EXAMPLE">SC234567</Value>
+                  <Name>Despatch supplier parties legal registration ID. </Name>
+                  <Description>The official identity of the party as registered with the relevant fiscal authority.</Description>
+                  <Value type="EXAMPLE">SC234567</Value>
                   <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
@@ -336,22 +372,31 @@
                <Element cardinality="0..1">
                   <Term>cac:RegistrationAddress</Term>
                   <Name>Legal address</Name>
+                  <Description/>
                   <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
-                     <Name>City name</Name>The name of the city.<Value type="EXAMPLE">Farthing</Value>
+                     <Name>City name</Name>
+                     <Description>The name of the city.</Description>
+                     <Value type="EXAMPLE">Farthing</Value>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cac:Country</Term>
-                     <Name>Country</Name>The residens country for the despatch party.<Element>
+                     <Name>Country</Name>
+                     <Description>The residens country for the despatch party.</Description>
+                     <Element>
                         <Term>cbc:IdentificationCode</Term>
-                        <Name>Country code</Name>Country Code<Value type="EXAMPLE">UK</Value>
+                        <Name>Country code</Name>
+                        <Description>Country Code</Description>
+                        <Value type="EXAMPLE">UK</Value>
                      </Element>
                   </Element>
                </Element>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:Contact</Term>
-               <Name>Contact</Name>The contact of the Despatch supplier party.<Element cardinality="0..1">
+               <Name>Contact</Name>
+               <Description>The contact of the Despatch supplier party.</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Contact name</Name>
                   <Description>
@@ -386,12 +431,17 @@
       </Element>
       <Element>
          <Term>cac:DeliveryCustomerParty</Term>
-         <Name>Consignee information</Name>The Consignee is the person or organization to which the products will be shipped and who is taking possession. It also defines the receiver of the Advanced Despatch Advice. The role is carried out by the customer or on behalf of the customer. The real ship-to address must be provided in the delivery location if the Advanced Despatch Advice describes a movement. If the Despatch address describes a service provided at a specific location, the Delivery Location contains this location.<Element>
+         <Name>Consignee information</Name>
+         <Description>The Consignee is the person or organization to which the products will be shipped and who is taking possession. It also defines the receiver of the Advanced Despatch Advice. The role is carried out by the customer or on behalf of the customer. The real ship-to address must be provided in the delivery location if the Advanced Despatch Advice describes a movement. If the Despatch address describes a service provided at a specific location, the Delivery Location contains this location.</Description>
+         <Element>
             <Term>cac:Party</Term>
             <Name>Party information</Name>
+            <Description/>
             <Element>
                <Term>cbc:EndpointID</Term>
-               <Name>Consignee party electronic address</Name>Identifies the consignee party's electronic address<DataType>Identifier</DataType>
+               <Name>Consignee party electronic address</Name>
+               <Description>Identifies the consignee party's electronic address</Description>
+               <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir16-016</Reference>
                <Value type="EXAMPLE">5798000000124</Value>
                <Attribute>
@@ -405,6 +455,7 @@
             <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
                <Name>Party identification</Name>
+               <Description/>
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>Consignee party identifier</Name>
@@ -426,7 +477,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PartyName</Term>
-               <Name>Party name</Name>The name of the Delivery Customer Party.<Element cardinality="1..1">
+               <Name>Party name</Name>
+               <Description>The name of the Delivery Customer Party.</Description>
+               <Element cardinality="1..1">
                   <Term>cbc:Name</Term>
                   <Name>Name of the fuel supplier</Name>
                   <Description>
@@ -438,7 +491,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
-               <Name>Postal address</Name>Postal address of the consignee<Element cardinality="0..1">
+               <Name>Postal address</Name>
+               <Description>Postal address of the consignee</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
                   <Name>Address line 1</Name>
                   <Description>
@@ -480,13 +535,16 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
-                  <Name>Country subdivision</Name>For specifying a region, county, state, province etc. within a country by using text.<DataType>Text</DataType>
+                  <Name>Country subdivision</Name>
+                  <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir16-022</Reference>
                   <Value type="EXAMPLE">Avon</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
                   <Name>Address Line</Name>
+                  <Description/>
                   <Element cardinality="1..1">
                      <Term>cbc:Line</Term>
                      <Name>Address line 3</Name>
@@ -501,6 +559,7 @@
                <Element>
                   <Term>cac:Country</Term>
                   <Name>Country</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code</Name>
@@ -516,22 +575,30 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PartyTaxScheme</Term>
-               <Name>Party tax scheme</Name>The tax information about the Delivery Party.<Element cardinality="1..1">
+               <Name>Party tax scheme</Name>
+               <Description>The tax information about the Delivery Party.</Description>
+               <Element cardinality="1..1">
                   <Term>cbc:CompanyID</Term>
-                  <Name>Company ID</Name>The Delivery Party Value Added Tax identifer.<Value type="EXAMPLE">GB523859989</Value>
+                  <Name>Company ID</Name>
+                  <Description>The Delivery Party Value Added Tax identifer.</Description>
+                  <Value type="EXAMPLE">GB523859989</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cac:TaxScheme</Term>
                   <Name>Tax scheme</Name>
+                  <Description/>
                   <Element cardinality="1..1">
                      <Term>cbc:ID</Term>
-                     <Name>Tax scheme identifier</Name>Tax scheme identifier. E.g. "VAT" or "GST".<Value type="EXAMPLE">VAT</Value>
+                     <Name>Tax scheme identifier</Name>
+                     <Description>Tax scheme identifier. E.g. "VAT" or "GST".</Description>
+                     <Value type="EXAMPLE">VAT</Value>
                   </Element>
                </Element>
             </Element>
             <Element>
                <Term>cac:PartyLegalEntity</Term>
                <Name>Party Legal Entity</Name>
+               <Description/>
                <Element cardinality="1..1">
                   <Term>cbc:RegistrationName</Term>
                   <Name>Consignee party's Legal name. </Name>
@@ -544,7 +611,9 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CompanyID</Term>
-                  <Name>Delivery customers parties legal registration ID. </Name>The official identity of the party as registered with the relevant fiscal authority.<Value type="EXAMPLE">GB523859989</Value>
+                  <Name>Delivery customers parties legal registration ID. </Name>
+                  <Description>The official identity of the party as registered with the relevant fiscal authority.</Description>
+                  <Value type="EXAMPLE">GB523859989</Value>
                   <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
@@ -556,15 +625,21 @@
                <Element cardinality="0..1">
                   <Term>cac:RegistrationAddress</Term>
                   <Name>Legal address</Name>
+                  <Description/>
                   <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
-                     <Name>City name</Name>The name of the city.<Value type="EXAMPLE">Bridgtown</Value>
+                     <Name>City name</Name>
+                     <Description>The name of the city.</Description>
+                     <Value type="EXAMPLE">Bridgtown</Value>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cac:Country</Term>
-                     <Name>Country</Name>The residens country for the delivery customer party.<Element>
+                     <Name>Country</Name>
+                     <Description>The residens country for the delivery customer party.</Description>
+                     <Element>
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code</Name>
+                        <Description/>
                         <Value type="EXAMPLE">UK</Value>
                      </Element>
                   </Element>
@@ -572,7 +647,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:Contact</Term>
-               <Name>Contact person name</Name>The contact of the Delivery customer party.<Element cardinality="0..1">
+               <Name>Contact person name</Name>
+               <Description>The contact of the Delivery customer party.</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Contact name</Name>
                   <Description>
@@ -601,12 +678,16 @@
       </Element>
       <Element cardinality="0..1">
          <Term>cac:BuyerCustomerParty</Term>
-         <Name>Buyer</Name>The buyer is the legal person or organization who buys or purchases the goods or services. The role is carried out by the customer or on behalf of the customer.<Element>
+         <Name>Buyer</Name>
+         <Description>The buyer is the legal person or organization who buys or purchases the goods or services. The role is carried out by the customer or on behalf of the customer.</Description>
+         <Element>
             <Term>cac:Party</Term>
             <Name>Party information</Name>
+            <Description/>
             <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
                <Name>Party identification</Name>
+               <Description/>
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>Buying party identifier</Name>
@@ -629,6 +710,7 @@
             <Element cardinality="0..1">
                <Term>cac:PartyName</Term>
                <Name>Party name</Name>
+               <Description/>
                <Element>
                   <Term>cbc:Name</Term>
                   <Name>Buying party name</Name>
@@ -643,7 +725,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
-               <Name>Postal address</Name>Postal address of the customer<Element cardinality="0..1">
+               <Name>Postal address</Name>
+               <Description>Postal address of the customer</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
                   <Name>Address line 1</Name>
                   <Description>
@@ -685,13 +769,16 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
-                  <Name>Country subdivision</Name>For specifying a region, county, state, province etc. within a country by using text.<DataType>Text</DataType>
+                  <Name>Country subdivision</Name>
+                  <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir16-p029</Reference>
                   <Value type="EXAMPLE">Avon</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
                   <Name>Address Line</Name>
+                  <Description/>
                   <Element cardinality="1..1">
                      <Term>cbc:Line</Term>
                      <Name>Address line 3</Name>
@@ -706,6 +793,7 @@
                <Element>
                   <Term>cac:Country</Term>
                   <Name>Country</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code</Name>
@@ -721,29 +809,41 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PartyTaxScheme</Term>
-               <Name>Party tax scheme</Name>The tax information about the Buyer Party.<Element cardinality="1..1">
+               <Name>Party tax scheme</Name>
+               <Description>The tax information about the Buyer Party.</Description>
+               <Element cardinality="1..1">
                   <Term>cbc:CompanyID</Term>
-                  <Name>Company ID</Name>The Buyer Party Value Added Tax identifer.<Value type="EXAMPLE">GB523859989</Value>
+                  <Name>Company ID</Name>
+                  <Description>The Buyer Party Value Added Tax identifer.</Description>
+                  <Value type="EXAMPLE">GB523859989</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cac:TaxScheme</Term>
                   <Name>Tax scheme</Name>
+                  <Description/>
                   <Element cardinality="1..1">
                      <Term>cbc:ID</Term>
-                     <Name>Tax scheme identifier</Name>Tax scheme identifier. E.g. "VAT" or "GST".<Value type="EXAMPLE">VAT</Value>
+                     <Name>Tax scheme identifier</Name>
+                     <Description>Tax scheme identifier. E.g. "VAT" or "GST".</Description>
+                     <Value type="EXAMPLE">VAT</Value>
                   </Element>
                </Element>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PartyLegalEntity</Term>
                <Name>Party Legal Entity</Name>
+               <Description/>
                <Element cardinality="1..1">
                   <Term>cbc:RegistrationName</Term>
-                  <Name>Buyer party's Legal name. </Name>The Legal Name of the Buying party.<Value type="EXAMPLE">Buyer inc.</Value>
+                  <Name>Buyer party's Legal name. </Name>
+                  <Description>The Legal Name of the Buying party.</Description>
+                  <Value type="EXAMPLE">Buyer inc.</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CompanyID</Term>
-                  <Name>Buyer party's legal registration ID. </Name>The official identity of the party as registered with the relevant fiscal authority.<Value type="EXAMPLE">GB523859989</Value>
+                  <Name>Buyer party's legal registration ID. </Name>
+                  <Description>The official identity of the party as registered with the relevant fiscal authority.</Description>
+                  <Value type="EXAMPLE">GB523859989</Value>
                   <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
@@ -755,15 +855,21 @@
                <Element cardinality="0..1">
                   <Term>cac:RegistrationAddress</Term>
                   <Name>Legal address</Name>
+                  <Description/>
                   <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
-                     <Name>City name</Name>The name of the city.<Value type="EXAMPLE">Bridgtown</Value>
+                     <Name>City name</Name>
+                     <Description>The name of the city.</Description>
+                     <Value type="EXAMPLE">Bridgtown</Value>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cac:Country</Term>
-                     <Name>Country</Name>The residens country for the Buyer party.<Element>
+                     <Name>Country</Name>
+                     <Description>The residens country for the Buyer party.</Description>
+                     <Element>
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code</Name>
+                        <Description/>
                         <Value type="EXAMPLE">UK</Value>
                      </Element>
                   </Element>
@@ -771,29 +877,41 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:Contact</Term>
-               <Name>Contact person name</Name>The contact of the Buyer party.<Element cardinality="0..1">
+               <Name>Contact person name</Name>
+               <Description>The contact of the Buyer party.</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
-                  <Name>Contact name</Name>The contact name.<Value type="EXAMPLE">Mr Partridge</Value>
+                  <Name>Contact name</Name>
+                  <Description>The contact name.</Description>
+                  <Value type="EXAMPLE">Mr Partridge</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Telephone</Term>
-                  <Name>Contact telephone number</Name>The phone number of the contact.<Value type="EXAMPLE">0123 5465768</Value>
+                  <Name>Contact telephone number</Name>
+                  <Description>The phone number of the contact.</Description>
+                  <Value type="EXAMPLE">0123 5465768</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:ElectronicMail</Term>
-                  <Name>Contact email address</Name>The electronic mail of the contact.<Value type="EXAMPLE">partridge@buyerinc.co.uk</Value>
+                  <Name>Contact email address</Name>
+                  <Description>The electronic mail of the contact.</Description>
+                  <Value type="EXAMPLE">partridge@buyerinc.co.uk</Value>
                </Element>
             </Element>
          </Element>
       </Element>
       <Element cardinality="0..1">
          <Term>cac:SellerSupplierParty</Term>
-         <Name>Seller</Name>The seller is the legal person or organization who sells goods or services to the customer. The role is carried out by the supplier or on behalf of the supplier.<Element>
+         <Name>Seller</Name>
+         <Description>The seller is the legal person or organization who sells goods or services to the customer. The role is carried out by the supplier or on behalf of the supplier.</Description>
+         <Element>
             <Term>cac:Party</Term>
             <Name>Party information</Name>
+            <Description/>
             <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
                <Name>Party identification</Name>
+               <Description/>
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>Selling party identifier</Name>
@@ -816,6 +934,7 @@
             <Element cardinality="0..1">
                <Term>cac:PartyName</Term>
                <Name>Party name</Name>
+               <Description/>
                <Element>
                   <Term>cbc:Name</Term>
                   <Name>Selling party name</Name>
@@ -830,7 +949,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
-               <Name>Postal address</Name>Postal address of the supplier<Element cardinality="0..1">
+               <Name>Postal address</Name>
+               <Description>Postal address of the supplier</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
                   <Name>Address line 1</Name>
                   <Description>
@@ -872,13 +993,16 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
-                  <Name>Country subdivision</Name>For specifying a region, county, state, province etc. within a country by using text.<DataType>Text</DataType>
+                  <Name>Country subdivision</Name>
+                  <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir16-p022</Reference>
                   <Value type="EXAMPLE">Avon</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
                   <Name>Address Line</Name>
+                  <Description/>
                   <Element cardinality="1..1">
                      <Term>cbc:Line</Term>
                      <Name>Address line 3</Name>
@@ -893,6 +1017,7 @@
                <Element>
                   <Term>cac:Country</Term>
                   <Name>Country</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code</Name>
@@ -908,29 +1033,41 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PartyTaxScheme</Term>
-               <Name>Party tax scheme</Name>The tax information about the Seller Party.<Element cardinality="1..1">
+               <Name>Party tax scheme</Name>
+               <Description>The tax information about the Seller Party.</Description>
+               <Element cardinality="1..1">
                   <Term>cbc:CompanyID</Term>
-                  <Name>Company ID</Name>The Seller Party Value Added Tax identifer.<Value type="EXAMPLE">GB325456788</Value>
+                  <Name>Company ID</Name>
+                  <Description>The Seller Party Value Added Tax identifer.</Description>
+                  <Value type="EXAMPLE">GB325456788</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cac:TaxScheme</Term>
                   <Name>Tax scheme</Name>
+                  <Description/>
                   <Element cardinality="1..1">
                      <Term>cbc:ID</Term>
-                     <Name>Tax scheme identifier</Name>Tax scheme identifier. E.g. "VAT" or "GST".<Value type="EXAMPLE">VAT</Value>
+                     <Name>Tax scheme identifier</Name>
+                     <Description>Tax scheme identifier. E.g. "VAT" or "GST".</Description>
+                     <Value type="EXAMPLE">VAT</Value>
                   </Element>
                </Element>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PartyLegalEntity</Term>
                <Name>Party Legal Entity</Name>
+               <Description/>
                <Element cardinality="1..1">
                   <Term>cbc:RegistrationName</Term>
-                  <Name>Selling party's legal name. </Name>The legal name of the Selling party.<Value type="EXAMPLE">Consortial</Value>
+                  <Name>Selling party's legal name. </Name>
+                  <Description>The legal name of the Selling party.</Description>
+                  <Value type="EXAMPLE">Consortial</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CompanyID</Term>
-                  <Name>Seller party's legal registration ID. </Name>The official identity of the party as registered with the relevant fiscal authority.<Value type="EXAMPLE">SC234567</Value>
+                  <Name>Seller party's legal registration ID. </Name>
+                  <Description>The official identity of the party as registered with the relevant fiscal authority.</Description>
+                  <Value type="EXAMPLE">SC234567</Value>
                   <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
@@ -942,44 +1079,63 @@
                <Element cardinality="0..1">
                   <Term>cac:RegistrationAddress</Term>
                   <Name>Legal address</Name>
+                  <Description/>
                   <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
-                     <Name>City name</Name>The name of the city.<Value type="EXAMPLE">Farthing</Value>
+                     <Name>City name</Name>
+                     <Description>The name of the city.</Description>
+                     <Value type="EXAMPLE">Farthing</Value>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cac:Country</Term>
-                     <Name>Country</Name>The residens country for the Seller party.<Element>
+                     <Name>Country</Name>
+                     <Description>The residens country for the Seller party.</Description>
+                     <Element>
                         <Term>cbc:IdentificationCode</Term>
-                        <Name>Country code</Name>Country Code<Value type="EXAMPLE">UK</Value>
+                        <Name>Country code</Name>
+                        <Description>Country Code</Description>
+                        <Value type="EXAMPLE">UK</Value>
                      </Element>
                   </Element>
                </Element>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:Contact</Term>
-               <Name>Contact</Name>The contact of the Seller party.<Element cardinality="0..1">
+               <Name>Contact</Name>
+               <Description>The contact of the Seller party.</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
-                  <Name>Contact name</Name>The contact name.<Value type="EXAMPLE">Mrs Smith</Value>
+                  <Name>Contact name</Name>
+                  <Description>The contact name.</Description>
+                  <Value type="EXAMPLE">Mrs Smith</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Telephone</Term>
-                  <Name>Contact email telephone</Name>The phone number of the contact.<Value type="EXAMPLE">0123 9898767</Value>
+                  <Name>Contact email telephone</Name>
+                  <Description>The phone number of the contact.</Description>
+                  <Value type="EXAMPLE">0123 9898767</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:ElectronicMail</Term>
-                  <Name>Contact email address</Name>The electronic mail of the contact.<Value type="EXAMPLE">smith@sellerinc.co.uk</Value>
+                  <Name>Contact email address</Name>
+                  <Description>The electronic mail of the contact.</Description>
+                  <Value type="EXAMPLE">smith@sellerinc.co.uk</Value>
                </Element>
             </Element>
          </Element>
       </Element>
       <Element cardinality="0..1">
          <Term>cac:OriginatorCustomerParty</Term>
-         <Name>Originator customer party</Name>For 3PL shipments, this party defines the final receiver of the goods.<Element>
+         <Name>Originator customer party</Name>
+         <Description>For 3PL shipments, this party defines the final receiver of the goods.</Description>
+         <Element>
             <Term>cac:Party</Term>
             <Name>Party information</Name>
+            <Description/>
             <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
                <Name>Party identification</Name>
+               <Description/>
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>Originating party identifier</Name>
@@ -1001,6 +1157,7 @@
             <Element cardinality="0..1">
                <Term>cac:PartyName</Term>
                <Name>Party name</Name>
+               <Description/>
                <Element>
                   <Term>cbc:Name</Term>
                   <Name>Originating party name</Name>
@@ -1014,7 +1171,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PostalAddress</Term>
-               <Name>Postal address</Name>Postal address of the originator<Element cardinality="0..1">
+               <Name>Postal address</Name>
+               <Description>Postal address of the originator</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
                   <Name>Address line 1</Name>
                   <Description>
@@ -1026,7 +1185,9 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
-                  <Name>Address line 2</Name>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.<DataType>Text</DataType>
+                  <Name>Address line 2</Name>
+                  <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir16-p033</Reference>
                   <Value type="EXAMPLE">way 2</Value>
                </Element>
@@ -1052,16 +1213,21 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
-                  <Name>Country subdivision</Name>For specifying a region, county, state, province etc. within a country by using text.<DataType>Text</DataType>
+                  <Name>Country subdivision</Name>
+                  <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir16-p036</Reference>
                   <Value type="EXAMPLE">Avon</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
                   <Name>Address Line</Name>
+                  <Description/>
                   <Element cardinality="1..1">
                      <Term>cbc:Line</Term>
-                     <Name>Address line 3</Name>An additional address line in an address that can be used to give further details supplementing the main line.<DataType>Text</DataType>
+                     <Name>Address line 3</Name>
+                     <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                     <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir16-p037</Reference>
                      <Value type="EXAMPLE">3rd Floor, Room 5</Value>
                   </Element>
@@ -1069,6 +1235,7 @@
                <Element>
                   <Term>cac:Country</Term>
                   <Name>Country</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Country code</Name>
@@ -1087,6 +1254,7 @@
       <Element cardinality="1..1">
          <Term>cac:Shipment</Term>
          <Name>Shipment information</Name>
+         <Description/>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Shipment identifier</Name>
@@ -1146,6 +1314,7 @@
          <Element cardinality="0..1">
             <Term>cbc:TotalTransportHandlingUnitQuantity</Term>
             <Name>Total number of transport handling units</Name>
+            <Description/>
             <Reference type="BUSINESS_TERM">tir16-p002</Reference>
             <Reference type="RULE">PEPPOL-T120-R016</Reference>
             <Reference type="RULE">PEPPOL-T120-R017</Reference>
@@ -1153,7 +1322,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:DeclaredStatisticsValueAmount</Term>
-            <Name>Declared statistics value amount</Name>The total declared value for customs purposes of those goods in this shipment that are subject to the same customs procedure and have the same tariff/statistical heading, country information, and duty regime.<Reference type="RULE">PEPPOL-T120-R021</Reference>
+            <Name>Declared statistics value amount</Name>
+            <Description>The total declared value for customs purposes of those goods in this shipment that are subject to the same customs procedure and have the same tariff/statistical heading, country information, and duty regime.</Description>
+            <Reference type="RULE">PEPPOL-T120-R021</Reference>
             <Value type="EXAMPLE">92179.12</Value>
             <Attribute>
                <Term>currencyID</Term>
@@ -1166,6 +1337,7 @@
          <Element cardinality="0..1">
             <Term>cac:Consignment</Term>
             <Name>Consignment information</Name>
+            <Description/>
             <Element>
                <Term>cbc:ID</Term>
                <Name>Consignment identifier</Name>
@@ -1177,7 +1349,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:HazardousRiskIndicator</Term>
-               <Name>Hazardous risk indicator</Name>An indication that the transported goods in this consignment are subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).<Value type="EXAMPLE">false</Value>
+               <Name>Hazardous risk indicator</Name>
+               <Description>An indication that the transported goods in this consignment are subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).</Description>
+               <Value type="EXAMPLE">false</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:HandlingCode</Term>
@@ -1206,9 +1380,12 @@
             <Element cardinality="0..1">
                <Term>cac:CarrierParty</Term>
                <Name>Carrier party</Name>
+               <Description/>
                <Element cardinality="0..1">
                   <Term>cac:PartyIdentification</Term>
-                  <Name>Party identification</Name>This party defines the company providing the transport service<Element>
+                  <Name>Party identification</Name>
+                  <Description>This party defines the company providing the transport service</Description>
+                  <Element>
                      <Term>cbc:ID</Term>
                      <Name>Carrying party identifier</Name>
                      <Description>
@@ -1229,7 +1406,9 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:PartyName</Term>
-                  <Name>Carrier Party Name</Name>The name of the Carrier party.<Element>
+                  <Name>Carrier Party Name</Name>
+                  <Description>The name of the Carrier party.</Description>
+                  <Element>
                      <Term>cbc:Name</Term>
                      <Name>Carrier party name</Name>
                      <Description>
@@ -1242,67 +1421,97 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:PostalAddress</Term>
-                  <Name>Postal Address</Name>The address of the Carrier Party.<Element cardinality="0..1">
+                  <Name>Postal Address</Name>
+                  <Description>The address of the Carrier Party.</Description>
+                  <Element cardinality="0..1">
                      <Term>cbc:StreetName</Term>
-                     <Name>Street name</Name>The name of the Street.<Value type="EXAMPLE">Busy Street</Value>
+                     <Name>Street name</Name>
+                     <Description>The name of the Street.</Description>
+                     <Value type="EXAMPLE">Busy Street</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:AdditionalStreetName</Term>
-                     <Name>Additional Street name </Name>Second line of the address.<Value type="EXAMPLE">way 1</Value>
+                     <Name>Additional Street name </Name>
+                     <Description>Second line of the address.</Description>
+                     <Value type="EXAMPLE">way 1</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
-                     <Name>City name </Name>The name of the City.<Value type="EXAMPLE">Farthing</Value>
+                     <Name>City name </Name>
+                     <Description>The name of the City.</Description>
+                     <Value type="EXAMPLE">Farthing</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:PostalZone</Term>
-                     <Name>Postal Zone</Name>The Zip-code.<Value type="EXAMPLE">AA99 1BB</Value>
+                     <Name>Postal Zone</Name>
+                     <Description>The Zip-code.</Description>
+                     <Value type="EXAMPLE">AA99 1BB</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CountrySubentity</Term>
-                     <Name>Country Subentity</Name>The county or similar.<Value type="EXAMPLE">Heremouthshire</Value>
+                     <Name>Country Subentity</Name>
+                     <Description>The county or similar.</Description>
+                     <Value type="EXAMPLE">Heremouthshire</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:AddressLine</Term>
                      <Name>Address Line</Name>
+                     <Description/>
                      <Element cardinality="1..1">
                         <Term>cbc:Line</Term>
-                        <Name>Line</Name>An additional address line.<Value type="EXAMPLE">The Roundabout</Value>
+                        <Name>Line</Name>
+                        <Description>An additional address line.</Description>
+                        <Value type="EXAMPLE">The Roundabout</Value>
                      </Element>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:Country</Term>
+                     <Description/>
                      <Element>
                         <Term>cbc:IdentificationCode</Term>
-                        <Name>Country identification code</Name>The country code.<Value type="EXAMPLE">GB</Value>
+                        <Name>Country identification code</Name>
+                        <Description>The country code.</Description>
+                        <Value type="EXAMPLE">GB</Value>
                      </Element>
                   </Element>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:PartyTaxScheme</Term>
-                  <Name>Party tax scheme</Name>The tax information for the Carrier Party.<Element cardinality="1..1">
+                  <Name>Party tax scheme</Name>
+                  <Description>The tax information for the Carrier Party.</Description>
+                  <Element cardinality="1..1">
                      <Term>cbc:CompanyID</Term>
-                     <Name>Company ID</Name>The Carrier Party Value Added Tax identifer.<Value type="EXAMPLE">GB325456788</Value>
+                     <Name>Company ID</Name>
+                     <Description>The Carrier Party Value Added Tax identifer.</Description>
+                     <Value type="EXAMPLE">GB325456788</Value>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cac:TaxScheme</Term>
                      <Name>Tax scheme</Name>
+                     <Description/>
                      <Element cardinality="1..1">
                         <Term>cbc:ID</Term>
-                        <Name>Tax scheme identifier</Name>Tax scheme identifier. E.g. "VAT" or "GST".<Value type="EXAMPLE">VAT</Value>
+                        <Name>Tax scheme identifier</Name>
+                        <Description>Tax scheme identifier. E.g. "VAT" or "GST".</Description>
+                        <Value type="EXAMPLE">VAT</Value>
                      </Element>
                   </Element>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:PartyLegalEntity</Term>
                   <Name>Party Legal Entity</Name>
+                  <Description/>
                   <Element cardinality="1..1">
                      <Term>cbc:RegistrationName</Term>
-                     <Name>Carrier party's legal name. </Name>The legal name of the Carrier party.<Value type="EXAMPLE">Consortial</Value>
+                     <Name>Carrier party's legal name. </Name>
+                     <Description>The legal name of the Carrier party.</Description>
+                     <Value type="EXAMPLE">Consortial</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CompanyID</Term>
-                     <Name>Carrier supplier parties legal registration ID. </Name>The official identity of the party as registered with the relevant fiscal authority.<Value type="EXAMPLE">SC234567</Value>
+                     <Name>Carrier supplier parties legal registration ID. </Name>
+                     <Description>The official identity of the party as registered with the relevant fiscal authority.</Description>
+                     <Value type="EXAMPLE">SC234567</Value>
                      <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
@@ -1314,48 +1523,69 @@
                   <Element cardinality="0..1">
                      <Term>cac:RegistrationAddress</Term>
                      <Name>Legal address</Name>
+                     <Description/>
                      <Element cardinality="0..1">
                         <Term>cbc:CityName</Term>
-                        <Name>City name</Name>The name of the city.<Value type="EXAMPLE">Farthing</Value>
+                        <Name>City name</Name>
+                        <Description>The name of the city.</Description>
+                        <Value type="EXAMPLE">Farthing</Value>
                      </Element>
                      <Element cardinality="1..1">
                         <Term>cac:Country</Term>
-                        <Name>Country</Name>The residens country for the Carrier party.<Element>
+                        <Name>Country</Name>
+                        <Description>The residens country for the Carrier party.</Description>
+                        <Element>
                            <Term>cbc:IdentificationCode</Term>
-                           <Name>Country code</Name>Country Code<Value type="EXAMPLE">UK</Value>
+                           <Name>Country code</Name>
+                           <Description>Country Code</Description>
+                           <Value type="EXAMPLE">UK</Value>
                         </Element>
                      </Element>
                   </Element>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:Contact</Term>
-                  <Name>Contact</Name>The contact of the Carrier party.<Element cardinality="0..1">
+                  <Name>Contact</Name>
+                  <Description>The contact of the Carrier party.</Description>
+                  <Element cardinality="0..1">
                      <Term>cbc:Name</Term>
-                     <Name>Contact name</Name>The contact name.<Value type="EXAMPLE">Mrs Bouquet</Value>
+                     <Name>Contact name</Name>
+                     <Description>The contact name.</Description>
+                     <Value type="EXAMPLE">Mrs Bouquet</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:Telephone</Term>
-                     <Name>Contact email telephone</Name>The phone number of the contact.<Value type="EXAMPLE">0158 1233714</Value>
+                     <Name>Contact email telephone</Name>
+                     <Description>The phone number of the contact.</Description>
+                     <Value type="EXAMPLE">0158 1233714</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:ElectronicMail</Term>
-                     <Name>Contact email address</Name>The electronic mail of the contact.<Value type="EXAMPLE">bouquet@fpconsortial.co.uk</Value>
+                     <Name>Contact email address</Name>
+                     <Description>The electronic mail of the contact.</Description>
+                     <Value type="EXAMPLE">bouquet@fpconsortial.co.uk</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:Person</Term>
                   <Name>Information about the driver</Name>
+                  <Description/>
                   <Element cardinality="1..n">
                      <Term>cac:IdentityDocumentReference</Term>
                      <Name>Person identity document reference</Name>
+                     <Description/>
                      <Element>
                         <Term>cbc:ID</Term>
-                        <Name>Driver information</Name>Identification about the driver of the vehicle that delivers the despatched shipment.<Reference type="BUSINESS_TERM">tir16-078</Reference>
+                        <Name>Driver information</Name>
+                        <Description>Identification about the driver of the vehicle that delivers the despatched shipment.</Description>
+                        <Reference type="BUSINESS_TERM">tir16-078</Reference>
                         <Value type="EXAMPLE">45642323</Value>
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cbc:DocumentType</Term>
-                        <Name>Driver identification document type</Name>The type of document used for identifying the driver, expressed in text.<Reference type="BUSINESS_TERM">tir16-p009</Reference>
+                        <Name>Driver identification document type</Name>
+                        <Description>The type of document used for identifying the driver, expressed in text.</Description>
+                        <Reference type="BUSINESS_TERM">tir16-p009</Reference>
                         <Value type="EXAMPLE">ID06</Value>
                      </Element>
                   </Element>
@@ -1363,13 +1593,19 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:OriginalDespatchTransportationService</Term>
-               <Name>Original despatch transportation service</Name>Used to specify Fuel consumption and Environmental Emission.<Element cardinality="1..1">
+               <Name>Original despatch transportation service</Name>
+               <Description>Used to specify Fuel consumption and Environmental Emission.</Description>
+               <Element cardinality="1..1">
                   <Term>cbc:TransportServiceCode</Term>
-                  <Name>Tranport service code</Name>Use "FuelReport" since this element is mandatory.<Value type="EXAMPLE">FuelReport</Value>
+                  <Name>Tranport service code</Name>
+                  <Description>Use "FuelReport" since this element is mandatory.</Description>
+                  <Value type="EXAMPLE">FuelReport</Value>
                </Element>
                <Element cardinality="0..n">
                   <Term>cac:TransportEquipment</Term>
-                  <Name>Transport equipment</Name>Used to specify fuel consumption. To be repeated for all fuel types used.<Element cardinality="0..1">
+                  <Name>Transport equipment</Name>
+                  <Description>Used to specify fuel consumption. To be repeated for all fuel types used.</Description>
+                  <Element cardinality="0..1">
                      <Term>cbc:TransportEquipmentTypeCode</Term>
                      <Name>Tranport equipment type code</Name>
                      <Description>
@@ -1397,11 +1633,15 @@
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:Description</Term>
-                     <Name>Description</Name>Fuel description.<Value type="EXAMPLE">HVO Diesel</Value>
+                     <Name>Description</Name>
+                     <Description>Fuel description.</Description>
+                     <Value type="EXAMPLE">HVO Diesel</Value>
                   </Element>
                   <Element cardinality="0..n">
                      <Term>cac:MeasurementDimension</Term>
-                     <Name>Fuel measurements</Name>Used to specify information about the fuel and fuel consumption.<Element cardinality="1..1">
+                     <Name>Fuel measurements</Name>
+                     <Description>Used to specify information about the fuel and fuel consumption.</Description>
+                     <Element cardinality="1..1">
                         <Term>cbc:AttributeID</Term>
                         <Name>Attribute identifier</Name>
                         <Description>
@@ -1411,7 +1651,9 @@
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cbc:Measure</Term>
-                        <Name>Measure</Name>The measured value. Used for EnergyContent, ConversionFactor, FuelConsumption, DrivingDistance, DrivingTime and RenewableFuel. unitCode refers to T6706.<Value type="EXAMPLE">115.6</Value>
+                        <Name>Measure</Name>
+                        <Description>The measured value. Used for EnergyContent, ConversionFactor, FuelConsumption, DrivingDistance, DrivingTime and RenewableFuel. unitCode refers to T6706.</Description>
+                        <Value type="EXAMPLE">115.6</Value>
                         <Attribute>
                            <Term>unitCode</Term>
                            <Name>Measure unit of measure</Name>
@@ -1422,16 +1664,24 @@
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cbc:Description</Term>
-                        <Name>Attribute value</Name>Description of the attribute when there is no value to measure. Used for FuelMeasurementMethod and EngineType. Possible values are for FuelMeasurementMethod: "AutomaticMeasurement", "StandardEstimate", "ManualMeasurement" and for EngineType: "Euro2", "Euro3", "Euro4", "Euro5", "Euro6", "EuroStep2", "EuroStep3A", "EuroStep3B", "EuroStep4", "EV", "FuelCell", "Hybrid".<Value type="EXAMPLE">StandardEstimate</Value>
+                        <Name>Attribute value</Name>
+                        <Description>Description of the attribute when there is no value to measure. Used for FuelMeasurementMethod and EngineType. Possible values are for FuelMeasurementMethod: "AutomaticMeasurement", "StandardEstimate", "ManualMeasurement" and for EngineType: "Euro2", "Euro3", "Euro4", "Euro5", "Euro6", "EuroStep2", "EuroStep3A", "EuroStep3B", "EuroStep4", "EV", "FuelCell", "Hybrid".</Description>
+                        <Value type="EXAMPLE">StandardEstimate</Value>
                      </Element>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:ProviderParty</Term>
-                     <Name>Provider party</Name>To define the fuel supplier.<Element cardinality="0..1">
+                     <Name>Provider party</Name>
+                     <Description>To define the fuel supplier.</Description>
+                     <Element cardinality="0..1">
                         <Term>cac:PartyIdentification</Term>
-                        <Name>Party identification</Name>To identify the fuel supplier.<Element cardinality="0..1">
+                        <Name>Party identification</Name>
+                        <Description>To identify the fuel supplier.</Description>
+                        <Element cardinality="0..1">
                            <Term>cbc:ID</Term>
-                           <Name>Identity of the fuel supplier</Name>The fuel supplier.<Value type="EXAMPLE">7300010000001</Value>
+                           <Name>Identity of the fuel supplier</Name>
+                           <Description>The fuel supplier.</Description>
+                           <Value type="EXAMPLE">7300010000001</Value>
                            <Attribute usage="Optional">
                               <Term>schemeID</Term>
                               <Name>Scheme identifier</Name>
@@ -1442,28 +1692,44 @@
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cac:PartyName</Term>
-                        <Name>Party name</Name>The name of the fuel supplier.<Element cardinality="0..1">
+                        <Name>Party name</Name>
+                        <Description>The name of the fuel supplier.</Description>
+                        <Element cardinality="0..1">
                            <Term>cbc:Name</Term>
-                           <Name>Name of the fuel supplier</Name>The fuel supplier.<Value type="EXAMPLE">Preem</Value>
+                           <Name>Name of the fuel supplier</Name>
+                           <Description>The fuel supplier.</Description>
+                           <Value type="EXAMPLE">Preem</Value>
                         </Element>
                      </Element>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:GoodsItem</Term>
-                     <Name>Goods item</Name>Used to specify the type of fuel.<Element cardinality="0..1">
+                     <Name>Goods item</Name>
+                     <Description>Used to specify the type of fuel.</Description>
+                     <Element cardinality="0..1">
                         <Term>cac:Item</Term>
-                        <Name>Item</Name>Used to specify the type of fuel.<Element cardinality="0..1">
+                        <Name>Item</Name>
+                        <Description>Used to specify the type of fuel.</Description>
+                        <Element cardinality="0..1">
                            <Term>cac:SellersItemIdentification</Term>
-                           <Name>Seller's item identification</Name>Used to specify the type of fuel.<Element cardinality="1..1">
+                           <Name>Seller's item identification</Name>
+                           <Description>Used to specify the type of fuel.</Description>
+                           <Element cardinality="1..1">
                               <Term>cbc:ID</Term>
-                              <Name>Supplier's identity of the fuel</Name>The fuel article number.<Value type="EXAMPLE">123</Value>
+                              <Name>Supplier's identity of the fuel</Name>
+                              <Description>The fuel article number.</Description>
+                              <Value type="EXAMPLE">123</Value>
                            </Element>
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cac:StandardItemIdentification</Term>
-                           <Name>Standard item identification</Name>Only one Standard Item Number can be used. Specify the type of standard in schemeID.<Element cardinality="1..1">
+                           <Name>Standard item identification</Name>
+                           <Description>Only one Standard Item Number can be used. Specify the type of standard in schemeID.</Description>
+                           <Element cardinality="1..1">
                               <Term>cbc:ID</Term>
-                              <Name>Standard article identity of the fuel</Name>The fuel article number. The schemeID refers to the Article Number Type.<Value type="EXAMPLE">1234567891234</Value>
+                              <Name>Standard article identity of the fuel</Name>
+                              <Description>The fuel article number. The schemeID refers to the Article Number Type.</Description>
+                              <Value type="EXAMPLE">1234567891234</Value>
                               <Attribute>
                                  <Term>schemeID</Term>
                                  <Name>Scheme identifier</Name>
@@ -1477,9 +1743,13 @@
                </Element>
                <Element cardinality="0..n">
                   <Term>cac:EnvironmentalEmission</Term>
-                  <Name>Environmental emission</Name>To report the emissions.<Element cardinality="1..1">
+                  <Name>Environmental emission</Name>
+                  <Description>To report the emissions.</Description>
+                  <Element cardinality="1..1">
                      <Term>cbc:EnvironmentalEmissionTypeCode</Term>
-                     <Name>Environmental emission type code</Name>Defines the type of emission reported. Values: "CO2" (Carbon Dioxide), NOX (Nitrogen Oxide), PM (Particulate Matter), HC (Hydro Carbon).<Value type="EXAMPLE">CO2</Value>
+                     <Name>Environmental emission type code</Name>
+                     <Description>Defines the type of emission reported. Values: "CO2" (Carbon Dioxide), NOX (Nitrogen Oxide), PM (Particulate Matter), HC (Hydro Carbon).</Description>
+                     <Value type="EXAMPLE">CO2</Value>
                      <Attribute usage="Optional">
                         <Term>listID</Term>
                         <Name>Identifier for codelist for environmental emissions type</Name>
@@ -1494,7 +1764,9 @@
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cbc:ValueMeasure</Term>
-                     <Name>Value of measurement</Name>The value of the emission. Refers to Carbon Dioxide/Nitrogen Oxide/Particulate Matter/Hydro Carbon.<Value type="EXAMPLE">2.8</Value>
+                     <Name>Value of measurement</Name>
+                     <Description>The value of the emission. Refers to Carbon Dioxide/Nitrogen Oxide/Particulate Matter/Hydro Carbon.</Description>
+                     <Value type="EXAMPLE">2.8</Value>
                      <Attribute>
                         <Term>unitCode</Term>
                         <Name>Measure unit of measure</Name>
@@ -1508,7 +1780,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cac:ShipmentStage</Term>
-            <Name>Shipment stage</Name>The shipment stage for the last mile of the delivery<Element cardinality="1..1">
+            <Name>Shipment stage</Name>
+            <Description>The shipment stage for the last mile of the delivery</Description>
+            <Element cardinality="1..1">
                <Term>cbc:TransportModeCode</Term>
                <Name>Transport mode code</Name>
                <Description>
@@ -1520,21 +1794,31 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:TransportMeansTypeCode</Term>
-               <Name>Transport means type code</Name>The means of transport used in this shipment stage.<Reference type="CODE_LIST">UNECERec28</Reference>
+               <Name>Transport means type code</Name>
+               <Description>The means of transport used in this shipment stage.</Description>
+               <Reference type="CODE_LIST">UNECERec28</Reference>
                <Value type="EXAMPLE">31</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:TransportMeans</Term>
-               <Name>Transport means</Name>A code signifying the type of this means of transport (truck, vessel, etc.) used in this shipment stage.<Element cardinality="0..1">
+               <Name>Transport means</Name>
+               <Description>A code signifying the type of this means of transport (truck, vessel, etc.) used in this shipment stage.</Description>
+               <Element cardinality="0..1">
                   <Term>cac:AirTransport</Term>
-                  <Name>Air transport</Name>An aircraft used in this shipment stage.<Element cardinality="1..1">
+                  <Name>Air transport</Name>
+                  <Description>An aircraft used in this shipment stage.</Description>
+                  <Element cardinality="1..1">
                      <Term>cbc:AircraftID</Term>
-                     <Name>Air transport identifier</Name>An identifer for a specific aircraft.<Value type="EXAMPLE">JA8088</Value>
+                     <Name>Air transport identifier</Name>
+                     <Description>An identifer for a specific aircraft.</Description>
+                     <Value type="EXAMPLE">JA8088</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:RoadTransport</Term>
-                  <Name>Road transport</Name>Description of a truck or a vehicle transporting the goods. Use only if Transport mode code is set to road transport<Element cardinality="1..1">
+                  <Name>Road transport</Name>
+                  <Description>Description of a truck or a vehicle transporting the goods. Use only if Transport mode code is set to road transport</Description>
+                  <Element cardinality="1..1">
                      <Term>cbc:LicensePlateID</Term>
                      <Name>License plate identifier transport</Name>
                      <Description>
@@ -1545,32 +1829,48 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:RailTransport</Term>
-                  <Name>Rail transport</Name>Equipment used for rail transport in this shipment stage.<Element cardinality="1..1">
+                  <Name>Rail transport</Name>
+                  <Description>Equipment used for rail transport in this shipment stage.</Description>
+                  <Element cardinality="1..1">
                      <Term>cbc:TrainID</Term>
-                     <Name>Train identifier</Name>An identifier for the train used as the means of transport.<Value type="EXAMPLE">12014</Value>
+                     <Name>Train identifier</Name>
+                     <Description>An identifier for the train used as the means of transport.</Description>
+                     <Value type="EXAMPLE">12014</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:RailCarID</Term>
-                     <Name>Rail car identifier</Name>An identifier for the rail car on the train used as the means of transport..<Value type="EXAMPLE">50 63 20-33 801-5</Value>
+                     <Name>Rail car identifier</Name>
+                     <Description>An identifier for the rail car on the train used as the means of transport..</Description>
+                     <Value type="EXAMPLE">50 63 20-33 801-5</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:MaritimeTransport</Term>
-                  <Name>Maritime transport</Name>Description of a truck or a vehicle transporting the goods. Use only if TransportModeCode is set to maritime transport.<Element cardinality="1..1">
+                  <Name>Maritime transport</Name>
+                  <Description>Description of a truck or a vehicle transporting the goods. Use only if TransportModeCode is set to maritime transport.</Description>
+                  <Element cardinality="1..1">
                      <Term>cbc:VesselID</Term>
-                     <Name>Vessel identifier</Name>The registred identifier of the vessel<Value type="EXAMPLE">wrt34663</Value>
+                     <Name>Vessel identifier</Name>
+                     <Description>The registred identifier of the vessel</Description>
+                     <Value type="EXAMPLE">wrt34663</Value>
                   </Element>
                </Element>
                <Element cardinality="0..n">
                   <Term>cac:MeasurementDimension</Term>
-                  <Name>Measurement dimension</Name>Used to specify any measurement of the Transport Means.<Element cardinality="1..1">
+                  <Name>Measurement dimension</Name>
+                  <Description>Used to specify any measurement of the Transport Means.</Description>
+                  <Element cardinality="1..1">
                      <Term>cbc:AttributeID</Term>
-                     <Name>Attribute identifier</Name>To describe the type of measurement. Use UNCL 6313 subset.<Reference type="CODE_LIST">UNCL6313-T120</Reference>
+                     <Name>Attribute identifier</Name>
+                     <Description>To describe the type of measurement. Use UNCL 6313 subset.</Description>
+                     <Reference type="CODE_LIST">UNCL6313-T120</Reference>
                      <Value type="EXAMPLE">ABT</Value>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cbc:Measure</Term>
-                     <Name>Measure</Name>For the measure. Use UN/ECE Recommendation 20 and 21.subset.<Value type="EXAMPLE">12.3</Value>
+                     <Name>Measure</Name>
+                     <Description>For the measure. Use UN/ECE Recommendation 20 and 21.subset.</Description>
+                     <Value type="EXAMPLE">12.3</Value>
                      <Attribute>
                         <Term>unitCode</Term>
                         <Name>Measure unit of measure</Name>
@@ -1584,14 +1884,19 @@
          <Element cardinality="0..1">
             <Term>cac:Delivery</Term>
             <Name>Delivery information</Name>
+            <Description/>
             <Element cardinality="0..1">
                <Term>cbc:ActualDeliveryDate</Term>
-               <Name>Actual Delivery Date</Name>The date on which the supply of goods or services was made or completed according to the delivery term. Used only when Advanced Despatch Advice is sent after delivery. Format = "YYYY-MM-DD"<DataType>Date</DataType>
+               <Name>Actual Delivery Date</Name>
+               <Description>The date on which the supply of goods or services was made or completed according to the delivery term. Used only when Advanced Despatch Advice is sent after delivery. Format = "YYYY-MM-DD"</Description>
+               <DataType>Date</DataType>
                <Value type="EXAMPLE">2021-09-26</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ActualDeliveryTime</Term>
-               <Name>Actual Delivery Time</Name>The date on which the supply of goods or services was made or completed according to the delivery term. Used only when Advanced Despatch Advice is sent after delivery. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the delivery was made should be assumed.<DataType>Time</DataType>
+               <Name>Actual Delivery Time</Name>
+               <Description>The date on which the supply of goods or services was made or completed according to the delivery term. Used only when Advanced Despatch Advice is sent after delivery. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the delivery was made should be assumed.</Description>
+               <DataType>Time</DataType>
                <Value type="EXAMPLE">10:00:00+01:00</Value>
             </Element>
             <Element cardinality="0..1">
@@ -1605,7 +1910,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:DeliveryLocation</Term>
-               <Name>Delivery location</Name>The Delivery Location is used to define the Ship-to when the Delivery Customer Party is not. If Delivery Location is omitted, the Delivery Customer Party is the actual Delivery Location. When the Despatch Advice describes a movement, the Delivery Location should always be included. When the Despatch Advice describes a service given at a location, the Delivery Location describes this location.<Element cardinality="0..1">
+               <Name>Delivery location</Name>
+               <Description>The Delivery Location is used to define the Ship-to when the Delivery Customer Party is not. If Delivery Location is omitted, the Delivery Customer Party is the actual Delivery Location. When the Despatch Advice describes a movement, the Delivery Location should always be included. When the Despatch Advice describes a service given at a location, the Delivery Location describes this location.</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
                   <Name>Identity of the delivery location</Name>
                   <Description>
@@ -1629,7 +1936,9 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:Address</Term>
-                  <Name>Address of the delivery location</Name>The address of the delivery location.<Element cardinality="0..1">
+                  <Name>Address of the delivery location</Name>
+                  <Description>The address of the delivery location.</Description>
+                  <Element cardinality="0..1">
                      <Term>cbc:StreetName</Term>
                      <Name>Address line 1</Name>
                      <Description>
@@ -1663,11 +1972,14 @@
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CountrySubentity</Term>
-                     <Name>Country subdivision</Name>For specifying a region, county, state, province etc. within a country by using text.<Value type="EXAMPLE">Avon</Value>
+                     <Name>Country subdivision</Name>
+                     <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
+                     <Value type="EXAMPLE">Avon</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:AddressLine</Term>
                      <Name>Address line</Name>
+                     <Description/>
                      <Element cardinality="1..1">
                         <Term>cbc:Line</Term>
                         <Name>Address line 3</Name>
@@ -1680,6 +1992,7 @@
                   <Element cardinality="0..1">
                      <Term>cac:Country</Term>
                      <Name>Country</Name>
+                     <Description/>
                      <Element cardinality="0..1">
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code</Name>
@@ -1692,9 +2005,13 @@
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:LocationCoordinate</Term>
-                     <Name>Location coordinate</Name>To specify the coordinates.<Element cardinality="1..1">
+                     <Name>Location coordinate</Name>
+                     <Description>To specify the coordinates.</Description>
+                     <Element cardinality="1..1">
                         <Term>cbc:CoordinateSystemCode</Term>
-                        <Name>Coordinate system code</Name>Always "EPSG:3857" by definition.<Value type="EXAMPLE">EPSG:3857</Value>
+                        <Name>Coordinate system code</Name>
+                        <Description>Always "EPSG:3857" by definition.</Description>
+                        <Value type="EXAMPLE">EPSG:3857</Value>
                      </Element>
                      <Element cardinality="1..1">
                         <Term>cbc:LatitudeDegreesMeasure</Term>
@@ -1746,7 +2063,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:EstimatedDeliveryPeriod</Term>
-               <Name>Estimated delivery period</Name>Used only when Advanced Despatch Advice is sent before delivery.<Element cardinality="0..1">
+               <Name>Estimated delivery period</Name>
+               <Description>Used only when Advanced Despatch Advice is sent before delivery.</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:StartDate</Term>
                   <Name>Period start date</Name>
                   <Description>
@@ -1796,6 +2115,7 @@
             <Element cardinality="0..1">
                <Term>cac:Despatch</Term>
                <Name>Actual or expected despatch period</Name>
+               <Description/>
                <Element cardinality="0..1">
                   <Term>cbc:ActualDespatchDate</Term>
                   <Name>Shipment despatch date</Name>
@@ -1816,7 +2136,9 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:DespatchAddress</Term>
-                  <Name>Despatch address</Name>The Despatch Address is used to define the Ship-from when the Despatch Supplier Party is not. When the Despatch Advice describes a movement, the Despatch Address should be included.<Element cardinality="0..1">
+                  <Name>Despatch address</Name>
+                  <Description>The Despatch Address is used to define the Ship-from when the Despatch Supplier Party is not. When the Despatch Advice describes a movement, the Despatch Address should be included.</Description>
+                  <Element cardinality="0..1">
                      <Term>cbc:ID</Term>
                      <Name>Identifier</Name>
                      <Description>
@@ -1869,12 +2191,15 @@
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CountrySubentity</Term>
-                     <Name>Country subdivision</Name>For specifying a region, county, state, province etc. within a country by using text.<Reference type="BUSINESS_TERM">tir16-p007</Reference>
+                     <Name>Country subdivision</Name>
+                     <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
+                     <Reference type="BUSINESS_TERM">tir16-p007</Reference>
                      <Value type="EXAMPLE">Avon</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:AddressLine</Term>
                      <Name>Address Line</Name>
+                     <Description/>
                      <Element cardinality="1..1">
                         <Term>cbc:Line</Term>
                         <Name>Address line 3</Name>
@@ -1888,6 +2213,7 @@
                   <Element cardinality="0..1">
                      <Term>cac:Country</Term>
                      <Name>Country</Name>
+                     <Description/>
                      <Element>
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Country code</Name>
@@ -1902,9 +2228,13 @@
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:LocationCoordinate</Term>
-                     <Name>Location coordinate</Name>To specify the coordinates.<Element cardinality="1..1">
+                     <Name>Location coordinate</Name>
+                     <Description>To specify the coordinates.</Description>
+                     <Element cardinality="1..1">
                         <Term>cbc:CoordinateSystemCode</Term>
-                        <Name>Coordinate system code</Name>Always "EPSG:3857" by definition.<Value type="EXAMPLE">EPSG:3857</Value>
+                        <Name>Coordinate system code</Name>
+                        <Description>Always "EPSG:3857" by definition.</Description>
+                        <Value type="EXAMPLE">EPSG:3857</Value>
                      </Element>
                      <Element cardinality="1..1">
                         <Term>cbc:LatitudeDegreesMeasure</Term>
@@ -1957,6 +2287,7 @@
             <Element cardinality="0..1">
                <Term>cac:DeliveryTerms</Term>
                <Name>Delivery terms</Name>
+               <Description/>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
                   <Name>Delivery terms</Name>
@@ -1968,12 +2299,15 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:SpecialTerms</Term>
-                  <Name>Special terms</Name>Special delivery terms that exceeds the inco terms.<Reference type="RULE">PEPPOL-T120-R022</Reference>
+                  <Name>Special terms</Name>
+                  <Description>Special delivery terms that exceeds the inco terms.</Description>
+                  <Reference type="RULE">PEPPOL-T120-R022</Reference>
                   <Value type="EXAMPLE">EQN-06</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:DeliveryLocation</Term>
                   <Name>Delivery terms location</Name>
+                  <Description/>
                   <Element cardinality="1..1">
                      <Term>cbc:ID</Term>
                      <Name>Delivery terms location</Name>
@@ -1987,7 +2321,9 @@
          </Element>
          <Element cardinality="0..n">
             <Term>cac:TransportHandlingUnit</Term>
-            <Name>Transport handling unit</Name>Used to specify how the goods is packed.<Reference type="RULE">PEPPOL-T120-R017</Reference>
+            <Name>Transport handling unit</Name>
+            <Description>Used to specify how the goods is packed.</Description>
+            <Reference type="RULE">PEPPOL-T120-R017</Reference>
             <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Identifier transport handling unit</Name>
@@ -2031,7 +2367,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:HazardousRiskIndicator</Term>
-               <Name>Handling unit hazardous indicator</Name>An indicator that the materials contained in this transport handling unit are subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).<Value type="EXAMPLE">false</Value>
+               <Name>Handling unit hazardous indicator</Name>
+               <Description>An indicator that the materials contained in this transport handling unit are subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).</Description>
+               <Value type="EXAMPLE">false</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ShippingMarks</Term>
@@ -2043,36 +2381,52 @@
             </Element>
             <Element cardinality="0..n">
                <Term>cac:TransportEquipment</Term>
-               <Name>Transport equipment</Name>Used to specify Transport Equipment details associated with this Transport Handling Unit.<Element cardinality="1..1">
+               <Name>Transport equipment</Name>
+               <Description>Used to specify Transport Equipment details associated with this Transport Handling Unit.</Description>
+               <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
-                  <Name>Identifier transport equipment</Name>An id for the physical transport equipment e.g. a container number.<Value type="EXAMPLE">34563444</Value>
+                  <Name>Identifier transport equipment</Name>
+                  <Description>An id for the physical transport equipment e.g. a container number.</Description>
+                  <Value type="EXAMPLE">34563444</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:TransportEquipmentTypeCode</Term>
-                  <Name>Tranport equipment type code</Name>An code specifying the type of equipment.<Reference type="CODE_LIST">UNCL8053</Reference>
+                  <Name>Tranport equipment type code</Name>
+                  <Description>An code specifying the type of equipment.</Description>
+                  <Reference type="CODE_LIST">UNCL8053</Reference>
                   <Value type="EXAMPLE">CN</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:SizeTypeCode</Term>
-                  <Name>Size type code</Name>A code signifying the size and type of this piece of piece of transport equipment. When the piece of transport equipment is a shipping container, it is recommended to use ContainerSizeTypeCode for validation.<Reference type="CODE_LIST">TRED8155</Reference>
+                  <Name>Size type code</Name>
+                  <Description>A code signifying the size and type of this piece of piece of transport equipment. When the piece of transport equipment is a shipping container, it is recommended to use ContainerSizeTypeCode for validation.</Description>
+                  <Reference type="CODE_LIST">TRED8155</Reference>
                   <Value type="EXAMPLE">10</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:RefrigerationOnIndicator</Term>
-                  <Name>Indicator refrigeration transport equipment</Name>An indicator that this piece of transport equipments refrigeration is on (true) or off (false).<Value type="EXAMPLE">true</Value>
+                  <Name>Indicator refrigeration transport equipment</Name>
+                  <Description>An indicator that this piece of transport equipments refrigeration is on (true) or off (false).</Description>
+                  <Value type="EXAMPLE">true</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Description</Term>
-                  <Name>Description transport equipment</Name>A textual description of the transport equipment.<Value type="EXAMPLE">A 20 foot refrigerated container that is not actively controlling temperature of the product.</Value>
+                  <Name>Description transport equipment</Name>
+                  <Description>A textual description of the transport equipment.</Description>
+                  <Value type="EXAMPLE">A 20 foot refrigerated container that is not actively controlling temperature of the product.</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:PowerIndicator</Term>
-                  <Name>Power indicator transport equipment</Name>An indicator that this piece of transport equipment can supply power (true) or not (false).<Value type="EXAMPLE">true</Value>
+                  <Name>Power indicator transport equipment</Name>
+                  <Description>An indicator that this piece of transport equipment can supply power (true) or not (false).</Description>
+                  <Value type="EXAMPLE">true</Value>
                </Element>
             </Element>
             <Element cardinality="0..n">
                <Term>cac:MeasurementDimension</Term>
-               <Name>Measurement dimension</Name>Used to specify any measurement of the Transport Handling Unit.<Element cardinality="1..1">
+               <Name>Measurement dimension</Name>
+               <Description>Used to specify any measurement of the Transport Handling Unit.</Description>
+               <Element cardinality="1..1">
                   <Term>cbc:AttributeID</Term>
                   <Name>Attribute identifier</Name>
                   <Description>
@@ -2100,14 +2454,20 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:MinimumTemperature</Term>
-               <Name>Minimum temperature</Name>Used to specify the minimal temperature for the transport handling unit under the transport.<Element cardinality="1..1">
+               <Name>Minimum temperature</Name>
+               <Description>Used to specify the minimal temperature for the transport handling unit under the transport.</Description>
+               <Element cardinality="1..1">
                   <Term>cbc:AttributeID</Term>
-                  <Name>Attribute identifier</Name>To describe the type of messure that in this context is the minimal temperature.<Reference type="CODE_LIST">UNCL6313-T120</Reference>
+                  <Name>Attribute identifier</Name>
+                  <Description>To describe the type of messure that in this context is the minimal temperature.</Description>
+                  <Reference type="CODE_LIST">UNCL6313-T120</Reference>
                   <Value type="EXAMPLE">TC</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cbc:Measure</Term>
-                  <Name>Measure</Name>The value of the minimal temperature measurement.<Value type="EXAMPLE">-21</Value>
+                  <Name>Measure</Name>
+                  <Description>The value of the minimal temperature measurement.</Description>
+                  <Value type="EXAMPLE">-21</Value>
                   <Attribute>
                      <Term>unitCode</Term>
                      <Name>Measure unit of measure</Name>
@@ -2117,14 +2477,20 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:MaximumTemperature</Term>
-               <Name>Maximum temperature</Name>Used to specify the maximum temperature for the transport handling unit under the transport.<Element cardinality="1..1">
+               <Name>Maximum temperature</Name>
+               <Description>Used to specify the maximum temperature for the transport handling unit under the transport.</Description>
+               <Element cardinality="1..1">
                   <Term>cbc:AttributeID</Term>
-                  <Name>Attribute identifier</Name>To describe the type of messure that in this context is the maximal temperature.<Reference type="CODE_LIST">UNCL6313-T120</Reference>
+                  <Name>Attribute identifier</Name>
+                  <Description>To describe the type of messure that in this context is the maximal temperature.</Description>
+                  <Reference type="CODE_LIST">UNCL6313-T120</Reference>
                   <Value type="EXAMPLE">TC</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cbc:Measure</Term>
-                  <Name>Measure</Name>The value of the maximum temperature measurement.<Value type="EXAMPLE">-21</Value>
+                  <Name>Measure</Name>
+                  <Description>The value of the maximum temperature measurement.</Description>
+                  <Value type="EXAMPLE">-21</Value>
                   <Attribute>
                      <Term>unitCode</Term>
                      <Name>Measure unit of measure</Name>
@@ -2140,16 +2506,22 @@
  Peppol: A Goods item contained in the Transport Handling Unit.</Description>
                <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
-                  <Name>Identifier goods item</Name>An identifier for this goods item. Refering to the Despatch Line<Reference type="RULE">PEPPOL-T120-R020</Reference>
+                  <Name>Identifier goods item</Name>
+                  <Description>An identifier for this goods item. Refering to the Despatch Line</Description>
+                  <Reference type="RULE">PEPPOL-T120-R020</Reference>
                   <Value type="EXAMPLE">10</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:HazardousRiskIndicator</Term>
-                  <Name>Hazardous risk indicator</Name>An indication that the transported goods item is subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).<Value type="EXAMPLE">false</Value>
+                  <Name>Hazardous risk indicator</Name>
+                  <Description>An indication that the transported goods item is subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).</Description>
+                  <Value type="EXAMPLE">false</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:DeclaredStatisticsValueAmount</Term>
-                  <Name>Declared statistics value amount</Name>The total declared value for customs purposes of the goods item.<Reference type="RULE">PEPPOL-T120-R021</Reference>
+                  <Name>Declared statistics value amount</Name>
+                  <Description>The total declared value for customs purposes of the goods item.</Description>
+                  <Reference type="RULE">PEPPOL-T120-R021</Reference>
                   <Value type="EXAMPLE">23044.78</Value>
                   <Attribute>
                      <Term>currencyID</Term>
@@ -2161,7 +2533,9 @@
                </Element>
                <Element cardinality="1..1">
                   <Term>cbc:Quantity</Term>
-                  <Name>Quantity</Name>The number of units making up this goods item.<Value type="EXAMPLE">6</Value>
+                  <Name>Quantity</Name>
+                  <Description>The number of units making up this goods item.</Description>
+                  <Value type="EXAMPLE">6</Value>
                   <Attribute>
                      <Term>unitCode</Term>
                      <Name>Quantity unit of measure</Name>
@@ -2171,7 +2545,9 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:TraceID</Term>
-                  <Name>Trace identifier</Name>An identifier to use for different purposes. Specify in schemeID which type of Trace ID you use.<Value type="EXAMPLE">345699634527</Value>
+                  <Name>Trace identifier</Name>
+                  <Description>An identifier to use for different purposes. Specify in schemeID which type of Trace ID you use.</Description>
+                  <Value type="EXAMPLE">345699634527</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
@@ -2187,20 +2563,28 @@
  Peppol: A package contained in the Transport Handling Unit.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
-                  <Name>Package identifier</Name>The Id of the package for instance a SSCC.<Value type="EXAMPLE">3453</Value>
+                  <Name>Package identifier</Name>
+                  <Description>The Id of the package for instance a SSCC.</Description>
+                  <Value type="EXAMPLE">3453</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:ReturnableMaterialIndicator</Term>
-                  <Name>Returnable material indicator</Name>An indicator that the packaging material is returnable (true) or not (false).<Value type="EXAMPLE">true</Value>
+                  <Name>Returnable material indicator</Name>
+                  <Description>An indicator that the packaging material is returnable (true) or not (false).</Description>
+                  <Value type="EXAMPLE">true</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cbc:PackagingTypeCode</Term>
-                  <Name>Packaging type code</Name>A code signifying a level of packaging.<Reference type="CODE_LIST">UNECERec21</Reference>
+                  <Name>Packaging type code</Name>
+                  <Description>A code signifying a level of packaging.</Description>
+                  <Reference type="CODE_LIST">UNECERec21</Reference>
                   <Value type="EXAMPLE">CT</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:PackingMaterial</Term>
-                  <Name>Packing material</Name>Text describing the packaging material.<Value type="EXAMPLE">Carbon box</Value>
+                  <Name>Packing material</Name>
+                  <Description>Text describing the packaging material.</Description>
+                  <Value type="EXAMPLE">Carbon box</Value>
                </Element>
                <Element cardinality="0..n">
                   <Term>cac:ContainedPackage</Term>
@@ -2210,20 +2594,28 @@
  Peppol: A package contained in the Transport Handling Unit.</Description>
                   <Element cardinality="0..1">
                      <Term>cbc:ID</Term>
-                     <Name>Identifier contained package</Name>The Id of the package for instance a SSCC.<Value type="EXAMPLE">3453</Value>
+                     <Name>Identifier contained package</Name>
+                     <Description>The Id of the package for instance a SSCC.</Description>
+                     <Value type="EXAMPLE">3453</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:ReturnableMaterialIndicator</Term>
-                     <Name>Returnable material indicator</Name>An indicator that the packaging material is returnable (true) or not (false).<Value type="EXAMPLE">true</Value>
+                     <Name>Returnable material indicator</Name>
+                     <Description>An indicator that the packaging material is returnable (true) or not (false).</Description>
+                     <Value type="EXAMPLE">true</Value>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cbc:PackagingTypeCode</Term>
-                     <Name>Packaging type code</Name>A code signifying a level of packaging.<Reference type="CODE_LIST">UNECERec21</Reference>
+                     <Name>Packaging type code</Name>
+                     <Description>A code signifying a level of packaging.</Description>
+                     <Reference type="CODE_LIST">UNECERec21</Reference>
                      <Value type="EXAMPLE">OB</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:PackingMaterial</Term>
-                     <Name>Packing material</Name>Text describing the packaging material.<Value type="EXAMPLE">Wood</Value>
+                     <Name>Packing material</Name>
+                     <Description>Text describing the packaging material.</Description>
+                     <Value type="EXAMPLE">Wood</Value>
                   </Element>
                   <Element cardinality="0..n">
                      <Term>cac:ContainedPackage</Term>
@@ -2233,20 +2625,28 @@
  Peppol: A package contained in the Transport Handling Unit.</Description>
                      <Element cardinality="0..1">
                         <Term>cbc:ID</Term>
-                        <Name>Identifier contained package</Name>The Id of the package for instance a SSCC.<Value type="EXAMPLE">3453</Value>
+                        <Name>Identifier contained package</Name>
+                        <Description>The Id of the package for instance a SSCC.</Description>
+                        <Value type="EXAMPLE">3453</Value>
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cbc:ReturnableMaterialIndicator</Term>
-                        <Name>Returnable material indicator</Name>An indicator that the packaging material is returnable (true) or not (false).<Value type="EXAMPLE">true</Value>
+                        <Name>Returnable material indicator</Name>
+                        <Description>An indicator that the packaging material is returnable (true) or not (false).</Description>
+                        <Value type="EXAMPLE">true</Value>
                      </Element>
                      <Element cardinality="1..1">
                         <Term>cbc:PackagingTypeCode</Term>
-                        <Name>Packaging type code</Name>A code signifying a level of packaging.<Reference type="CODE_LIST">UNECERec21</Reference>
+                        <Name>Packaging type code</Name>
+                        <Description>A code signifying a level of packaging.</Description>
+                        <Reference type="CODE_LIST">UNECERec21</Reference>
                         <Value type="EXAMPLE">OB</Value>
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cbc:PackingMaterial</Term>
-                        <Name>Packing material</Name>Text describing the packaging material.<Value type="EXAMPLE">Wood</Value>
+                        <Name>Packing material</Name>
+                        <Description>Text describing the packaging material.</Description>
+                        <Value type="EXAMPLE">Wood</Value>
                      </Element>
                      <Element cardinality="0..n">
                         <Term>cac:GoodsItem</Term>
@@ -2256,16 +2656,22 @@
  Peppol: A Goods item contained in the package.</Description>
                         <Element cardinality="1..1">
                            <Term>cbc:ID</Term>
-                           <Name>Identifiser goods item</Name>An identifier for this goods item. Refering to the Despatch Line<Reference type="RULE">PEPPOL-T120-R020</Reference>
+                           <Name>Identifiser goods item</Name>
+                           <Description>An identifier for this goods item. Refering to the Despatch Line</Description>
+                           <Reference type="RULE">PEPPOL-T120-R020</Reference>
                            <Value type="EXAMPLE">10</Value>
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cbc:HazardousRiskIndicator</Term>
-                           <Name>Hazardous risk indicator</Name>An indication that the transported goods item is subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).<Value type="EXAMPLE">false</Value>
+                           <Name>Hazardous risk indicator</Name>
+                           <Description>An indication that the transported goods item is subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).</Description>
+                           <Value type="EXAMPLE">false</Value>
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cbc:DeclaredStatisticsValueAmount</Term>
-                           <Name>Declared statistics value amount</Name>The total declared value for customs purposes of the goods item.<Reference type="RULE">PEPPOL-T120-R021</Reference>
+                           <Name>Declared statistics value amount</Name>
+                           <Description>The total declared value for customs purposes of the goods item.</Description>
+                           <Reference type="RULE">PEPPOL-T120-R021</Reference>
                            <Value type="EXAMPLE">23044.78</Value>
                            <Attribute>
                               <Term>currencyID</Term>
@@ -2277,7 +2683,9 @@
                         </Element>
                         <Element cardinality="1..1">
                            <Term>cbc:Quantity</Term>
-                           <Name>Quantity</Name>The number of units making up this goods item.<Value type="EXAMPLE">6</Value>
+                           <Name>Quantity</Name>
+                           <Description>The number of units making up this goods item.</Description>
+                           <Value type="EXAMPLE">6</Value>
                            <Attribute>
                               <Term>unitCode</Term>
                               <Name>Quantity unit of measure</Name>
@@ -2287,7 +2695,9 @@
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cbc:TraceID</Term>
-                           <Name>Trace identifier</Name>An identifier to use for different purposes. Specify in schemeID which type of Trace ID you use.<Value type="EXAMPLE">345699634527</Value>
+                           <Name>Trace identifier</Name>
+                           <Description>An identifier to use for different purposes. Specify in schemeID which type of Trace ID you use.</Description>
+                           <Value type="EXAMPLE">345699634527</Value>
                            <Attribute usage="Optional">
                               <Term>schemeID</Term>
                               <Name>Scheme identifier</Name>
@@ -2297,14 +2707,20 @@
                      </Element>
                      <Element cardinality="0..n">
                         <Term>cac:MeasurementDimension</Term>
-                        <Name>Measurement dimension</Name>Used to specify any measurement of this Package<Element cardinality="1..1">
+                        <Name>Measurement dimension</Name>
+                        <Description>Used to specify any measurement of this Package</Description>
+                        <Element cardinality="1..1">
                            <Term>cbc:AttributeID</Term>
-                           <Name>Attribute identifier</Name>To describe the type of measurement. Use UNCL 6313 subset.<Reference type="CODE_LIST">UNCL6313-T120</Reference>
+                           <Name>Attribute identifier</Name>
+                           <Description>To describe the type of measurement. Use UNCL 6313 subset.</Description>
+                           <Reference type="CODE_LIST">UNCL6313-T120</Reference>
                            <Value type="EXAMPLE">LN</Value>
                         </Element>
                         <Element cardinality="1..1">
                            <Term>cbc:Measure</Term>
-                           <Name>Measure</Name>For the measure.<Value type="EXAMPLE">123</Value>
+                           <Name>Measure</Name>
+                           <Description>For the measure.</Description>
+                           <Value type="EXAMPLE">123</Value>
                            <Attribute>
                               <Term>unitCode</Term>
                               <Name>Measure unit of measure</Name>
@@ -2323,16 +2739,22 @@
  Peppol: A Goods item contained in the package.</Description>
                      <Element cardinality="1..1">
                         <Term>cbc:ID</Term>
-                        <Name>Identifier goods item</Name>An identifier for this goods item. Refering to the Despatch Line<Reference type="RULE">PEPPOL-T120-R020</Reference>
+                        <Name>Identifier goods item</Name>
+                        <Description>An identifier for this goods item. Refering to the Despatch Line</Description>
+                        <Reference type="RULE">PEPPOL-T120-R020</Reference>
                         <Value type="EXAMPLE">10</Value>
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cbc:HazardousRiskIndicator</Term>
-                        <Name>Hazardous risk indicator</Name>An indication that the transported goods item is subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).<Value type="EXAMPLE">false</Value>
+                        <Name>Hazardous risk indicator</Name>
+                        <Description>An indication that the transported goods item is subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).</Description>
+                        <Value type="EXAMPLE">false</Value>
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cbc:DeclaredStatisticsValueAmount</Term>
-                        <Name>Declared statistics value amount</Name>The total declared value for customs purposes of the goods item.<Reference type="RULE">PEPPOL-T120-R021</Reference>
+                        <Name>Declared statistics value amount</Name>
+                        <Description>The total declared value for customs purposes of the goods item.</Description>
+                        <Reference type="RULE">PEPPOL-T120-R021</Reference>
                         <Value type="EXAMPLE">23044.78</Value>
                         <Attribute>
                            <Term>currencyID</Term>
@@ -2344,7 +2766,9 @@
                      </Element>
                      <Element cardinality="1..1">
                         <Term>cbc:Quantity</Term>
-                        <Name>Quantity</Name>The number of units making up this goods item.<Value type="EXAMPLE">6</Value>
+                        <Name>Quantity</Name>
+                        <Description>The number of units making up this goods item.</Description>
+                        <Value type="EXAMPLE">6</Value>
                         <Attribute>
                            <Term>unitCode</Term>
                            <Name>Quantity unit of measure</Name>
@@ -2354,7 +2778,9 @@
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cbc:TraceID</Term>
-                        <Name>Trace identifier</Name>An identifier to use for different purposes. Specify in schemeID which type of Trace ID you use.<Value type="EXAMPLE">345699634527</Value>
+                        <Name>Trace identifier</Name>
+                        <Description>An identifier to use for different purposes. Specify in schemeID which type of Trace ID you use.</Description>
+                        <Value type="EXAMPLE">345699634527</Value>
                         <Attribute usage="Optional">
                            <Term>schemeID</Term>
                            <Name>Scheme identifier</Name>
@@ -2364,14 +2790,20 @@
                   </Element>
                   <Element cardinality="0..n">
                      <Term>cac:MeasurementDimension</Term>
-                     <Name>Measurement dimension</Name>Used to specify any measurement of this Package<Element cardinality="1..1">
+                     <Name>Measurement dimension</Name>
+                     <Description>Used to specify any measurement of this Package</Description>
+                     <Element cardinality="1..1">
                         <Term>cbc:AttributeID</Term>
-                        <Name>Attribute identifier</Name>To describe the type of measurement.<Reference type="CODE_LIST">UNCL6313-T120</Reference>
+                        <Name>Attribute identifier</Name>
+                        <Description>To describe the type of measurement.</Description>
+                        <Reference type="CODE_LIST">UNCL6313-T120</Reference>
                         <Value type="EXAMPLE">LN</Value>
                      </Element>
                      <Element cardinality="1..1">
                         <Term>cbc:Measure</Term>
-                        <Name>Measure</Name>For the measure.<Value type="EXAMPLE">123</Value>
+                        <Name>Measure</Name>
+                        <Description>For the measure.</Description>
+                        <Value type="EXAMPLE">123</Value>
                         <Attribute>
                            <Term>unitCode</Term>
                            <Name>Measure unit of measure</Name>
@@ -2390,16 +2822,22 @@
  Peppol: A Goods item contained in the package.</Description>
                   <Element cardinality="1..1">
                      <Term>cbc:ID</Term>
-                     <Name>Identifiser goods item</Name>An identifier for this goods item. Refering to the Despatch Line<Reference type="RULE">PEPPOL-T120-R020</Reference>
+                     <Name>Identifiser goods item</Name>
+                     <Description>An identifier for this goods item. Refering to the Despatch Line</Description>
+                     <Reference type="RULE">PEPPOL-T120-R020</Reference>
                      <Value type="EXAMPLE">10</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:HazardousRiskIndicator</Term>
-                     <Name>Hazardous risk indicator</Name>An indication that the transported goods item is subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).<Value type="EXAMPLE">false</Value>
+                     <Name>Hazardous risk indicator</Name>
+                     <Description>An indication that the transported goods item is subject to an international regulation concerning the carriage of dangerous goods (true) or not (false).</Description>
+                     <Value type="EXAMPLE">false</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:DeclaredStatisticsValueAmount</Term>
-                     <Name>Declared statistics value amount</Name>The total declared value for customs purposes of the goods item.<Reference type="RULE">PEPPOL-T120-R021</Reference>
+                     <Name>Declared statistics value amount</Name>
+                     <Description>The total declared value for customs purposes of the goods item.</Description>
+                     <Reference type="RULE">PEPPOL-T120-R021</Reference>
                      <Value type="EXAMPLE">23044.78</Value>
                      <Attribute>
                         <Term>currencyID</Term>
@@ -2411,7 +2849,9 @@
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cbc:Quantity</Term>
-                     <Name>Quantity</Name>The number of units making up this goods item.<Value type="EXAMPLE">6</Value>
+                     <Name>Quantity</Name>
+                     <Description>The number of units making up this goods item.</Description>
+                     <Value type="EXAMPLE">6</Value>
                      <Attribute>
                         <Term>unitCode</Term>
                         <Name>Quantity unit of measure</Name>
@@ -2421,7 +2861,9 @@
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:TraceID</Term>
-                     <Name>Trace identifier</Name>An identifier to use for different purposes. Specify in schemeID which type of Trace ID you use.<Value type="EXAMPLE">345699634527</Value>
+                     <Name>Trace identifier</Name>
+                     <Description>An identifier to use for different purposes. Specify in schemeID which type of Trace ID you use.</Description>
+                     <Value type="EXAMPLE">345699634527</Value>
                      <Attribute usage="Optional">
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
@@ -2431,7 +2873,9 @@
                </Element>
                <Element cardinality="0..n">
                   <Term>cac:MeasurementDimension</Term>
-                  <Name>Measurement dimension</Name>Used to specify any measurement of this Package<Element cardinality="1..1">
+                  <Name>Measurement dimension</Name>
+                  <Description>Used to specify any measurement of this Package</Description>
+                  <Element cardinality="1..1">
                      <Term>cbc:AttributeID</Term>
                      <Name>Attribute identifier</Name>
                      <Description>
@@ -2462,6 +2906,7 @@
       <Element cardinality="1..n">
          <Term>cac:DespatchLine</Term>
          <Name>Despatch advice line</Name>
+         <Description/>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Despatch line identifier</Name>
@@ -2532,6 +2977,7 @@
          <Element>
             <Term>cac:OrderLineReference</Term>
             <Name>Order line reference</Name>
+            <Description/>
             <Element>
                <Term>cbc:LineID</Term>
                <Name>Order line identifier</Name>
@@ -2553,6 +2999,7 @@
             <Element cardinality="0..1">
                <Term>cac:OrderReference</Term>
                <Name>Order reference</Name>
+               <Description/>
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>Order identifier</Name>
@@ -2575,7 +3022,9 @@
          </Element>
          <Element cardinality="0..n">
             <Term>cac:DocumentReference</Term>
-            <Name>Document reference</Name>Used for sending additional references at line level.<Element cardinality="1..1">
+            <Name>Document reference</Name>
+            <Description>Used for sending additional references at line level.</Description>
+            <Element cardinality="1..1">
                <Term>cbc:ID</Term>
                <Name>Document identifier</Name>
                <Description>
@@ -2607,7 +3056,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:Attachment</Term>
-               <Name>Attachment</Name>Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.<Element cardinality="0..1">
+               <Name>Attachment</Name>
+               <Description>Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                   <Name>Embedded binary object</Name>
                   <Description>
@@ -2630,7 +3081,9 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:ExternalReference</Term>
-                  <Name>External reference</Name>A reference to an attached document that is external to the document(s) being exchanged.<Element>
+                  <Name>External reference</Name>
+                  <Description>A reference to an attached document that is external to the document(s) being exchanged.</Description>
+                  <Element>
                      <Term>cbc:URI</Term>
                      <Name>Address to internet resource</Name>
                      <Description>
@@ -2644,6 +3097,7 @@
          <Element>
             <Term>cac:Item</Term>
             <Name>Item information</Name>
+            <Description/>
             <Element>
                <Term>cbc:Name</Term>
                <Name>Item name</Name>
@@ -2656,7 +3110,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:BuyersItemIdentification</Term>
-               <Name>Buyers item identification</Name>Identifying information for this item, assigned by the buyer.<Element>
+               <Name>Buyers item identification</Name>
+               <Description>Identifying information for this item, assigned by the buyer.</Description>
+               <Element>
                   <Term>cbc:ID</Term>
                   <Name>Buyers item identifier</Name>
                   <Description>
@@ -2669,7 +3125,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:SellersItemIdentification</Term>
-               <Name>Sellers item identification</Name>Identifying information for this item, assigned by the seller.<Reference type="RULE">PEPPOL-T120-R003</Reference>
+               <Name>Sellers item identification</Name>
+               <Description>Identifying information for this item, assigned by the seller.</Description>
+               <Reference type="RULE">PEPPOL-T120-R003</Reference>
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>The Sellers item identifier</Name>
@@ -2684,14 +3142,20 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:ManufacturersItemIdentification</Term>
-               <Name>Manufacturers item identification</Name>Identifying information for this item, assigned by the manufacturer.<Element>
+               <Name>Manufacturers item identification</Name>
+               <Description>Identifying information for this item, assigned by the manufacturer.</Description>
+               <Element>
                   <Term>cbc:ID</Term>
-                  <Name>Manufacturers item identifier</Name>Manufacturers article number<Value type="EXAMPLE">17589683</Value>
+                  <Name>Manufacturers item identifier</Name>
+                  <Description>Manufacturers article number</Description>
+                  <Value type="EXAMPLE">17589683</Value>
                </Element>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:StandardItemIdentification</Term>
-               <Name>Standard item identification</Name>Only one StandardItemIdentification can be used per line.<Reference type="RULE">PEPPOL-T120-R003</Reference>
+               <Name>Standard item identification</Name>
+               <Description>Only one StandardItemIdentification can be used per line.</Description>
+               <Reference type="RULE">PEPPOL-T120-R003</Reference>
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>Item standard identifier</Name>
@@ -2713,13 +3177,17 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:ExtendedID</Term>
-                  <Name>Item standard extended identifier</Name>with specific properties, e.g., Item 123 = Chair / Item 123 Ext 45 = brown chair.<Reference type="BUSINESS_TERM">tir16-056</Reference>
+                  <Name>Item standard extended identifier</Name>
+                  <Description>with specific properties, e.g., Item 123 = Chair / Item 123 Ext 45 = brown chair.</Description>
+                  <Reference type="BUSINESS_TERM">tir16-056</Reference>
                   <Value type="EXAMPLE">22114455</Value>
                </Element>
             </Element>
             <Element cardinality="0..n">
                <Term>cac:CommodityClassification</Term>
-               <Name>Commodity classification</Name>To classify when an item number is not sufficient.<Element cardinality="1..1">
+               <Name>Commodity classification</Name>
+               <Description>To classify when an item number is not sufficient.</Description>
+               <Element cardinality="1..1">
                   <Term>cbc:ItemClassificationCode</Term>
                   <Name>Item classification code</Name>
                   <Description>
@@ -2755,13 +3223,19 @@
             </Element>
             <Element cardinality="0..n">
                <Term>cac:HazardousItem</Term>
-               <Name>Hazardous item information</Name>Contains information on the Hazardous item.<Element cardinality="0..1">
+               <Name>Hazardous item information</Name>
+               <Description>Contains information on the Hazardous item.</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
-                  <Name>Identifier</Name>An identifier for this hazardous item.<Value type="EXAMPLE">123</Value>
+                  <Name>Identifier</Name>
+                  <Description>An identifier for this hazardous item.</Description>
+                  <Value type="EXAMPLE">123</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalInformation</Term>
-                  <Name>Additional Information</Name>Text providing further information about the hazardous substance.<Value type="EXAMPLE">Information about the hazardous item</Value>
+                  <Name>Additional Information</Name>
+                  <Description>Text providing further information about the hazardous substance.</Description>
+                  <Value type="EXAMPLE">Information about the hazardous item</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:UNDGCode</Term>
@@ -2775,15 +3249,21 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:TechnicalName</Term>
-                  <Name>Technical Name</Name>The full technical name of a specific hazardous substance contained in this goods item.<Value type="EXAMPLE">Corrosive liquid, n.o.s., 8, UN 1760, II (contains Octanoyl chloride)</Value>
+                  <Name>Technical Name</Name>
+                  <Description>The full technical name of a specific hazardous substance contained in this goods item.</Description>
+                  <Value type="EXAMPLE">Corrosive liquid, n.o.s., 8, UN 1760, II (contains Octanoyl chloride)</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CategoryName</Term>
-                  <Name>Category Name</Name>The name of the category of hazard that applies to the Item.<Value type="EXAMPLE">Acute toxicity</Value>
+                  <Name>Category Name</Name>
+                  <Description>The name of the category of hazard that applies to the Item.</Description>
+                  <Value type="EXAMPLE">Acute toxicity</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:HazardousCategoryCode</Term>
-                  <Name>Hazardous Category Code</Name>A code signifying a kind of hazard for a material.<Value type="EXAMPLE">123</Value>
+                  <Name>Hazardous Category Code</Name>
+                  <Description>A code signifying a kind of hazard for a material.</Description>
+                  <Value type="EXAMPLE">123</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:HazardClassID</Term>
@@ -2796,7 +3276,9 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:NetWeightMeasure</Term>
-                  <Name>Net Weight Measure </Name>Net weight of the Hazardous item.<Value type="EXAMPLE">123</Value>
+                  <Name>Net Weight Measure </Name>
+                  <Description>Net weight of the Hazardous item.</Description>
+                  <Value type="EXAMPLE">123</Value>
                   <Attribute usage="Mandatory">
                      <Term>unitCode</Term>
                      <Name>Measure unit of measure</Name>
@@ -2807,7 +3289,9 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:NetVolumeMeasure</Term>
-                  <Name>Net Volume Measure </Name>Net volume of the Hazardous item.<Value type="EXAMPLE">12.3</Value>
+                  <Name>Net Volume Measure </Name>
+                  <Description>Net volume of the Hazardous item.</Description>
+                  <Value type="EXAMPLE">12.3</Value>
                   <Attribute usage="Mandatory">
                      <Term>unitCode</Term>
                      <Name>Measure unit of measure</Name>
@@ -2818,20 +3302,30 @@
                </Element>
                <Element cardinality="0..n">
                   <Term>cac:HazardousGoodsTransit</Term>
-                  <Name>Hazardous Goods Transit </Name>Information related to the transit of this kind of hazardous goods.<Element cardinality="1..1">
+                  <Name>Hazardous Goods Transit </Name>
+                  <Description>Information related to the transit of this kind of hazardous goods.</Description>
+                  <Element cardinality="1..1">
                      <Term>cbc:PackingCriteriaCode</Term>
-                     <Name>Packing Criteria Code </Name>A code signifying the packaging requirement for transportation of the hazardous goods as assigned by IATA, IMDB, ADR, RID etc.<Value type="EXAMPLE">123</Value>
+                     <Name>Packing Criteria Code </Name>
+                     <Description>A code signifying the packaging requirement for transportation of the hazardous goods as assigned by IATA, IMDB, ADR, RID etc.</Description>
+                     <Value type="EXAMPLE">123</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:EmergencyTemperature</Term>
-                  <Name>Emergency Temperature </Name>The threshold temperature at which emergency procedures apply in the handling of temperature-controlled goods.<Element cardinality="1..1">
+                  <Name>Emergency Temperature </Name>
+                  <Description>The threshold temperature at which emergency procedures apply in the handling of temperature-controlled goods.</Description>
+                  <Element cardinality="1..1">
                      <Term>cbc:AttributeID</Term>
-                     <Name>Attribute ID </Name>An identifier for this temperature measurement.<Value type="EXAMPLE">ABC</Value>
+                     <Name>Attribute ID </Name>
+                     <Description>An identifier for this temperature measurement.</Description>
+                     <Value type="EXAMPLE">ABC</Value>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cbc:Measure</Term>
-                     <Name>Measure </Name>The value of this temperature measurement.<Value type="EXAMPLE">78</Value>
+                     <Name>Measure </Name>
+                     <Description>The value of this temperature measurement.</Description>
+                     <Value type="EXAMPLE">78</Value>
                      <Attribute usage="Mandatory">
                         <Term>unitCode</Term>
                         <Name>Measure unit of measure</Name>
@@ -2849,7 +3343,9 @@
 						BEAst: This group is also in BEAst used for ConfigurationValue (T6369), GUID Identifier (T6408), Treatment code (T6468), Alternative Vehicle Type (T6339), EPD data, NeC additional information about Asphalt and Concrete, Price information and Rental additional information.
  Peppol: A group of business terms providing information about properties of the goods and services invoiced.</Description>
                <Element cardinality="0..1">
-                  <Term>cbc:ID</Term>ID of the property if assigned by an Agency<Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
+                  <Term>cbc:ID</Term>
+                  <Description>ID of the property if assigned by an Agency</Description>
+                  <Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
                   <Attribute usage="Optional">
                      <Term>schemeDataURI</Term>
                      <Name>Scheme Data URI</Name>
@@ -2934,12 +3430,17 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:ManufacturerParty</Term>
-               <Name>Manufacturer party</Name>The manufacturer of this item.<Element cardinality="0..1">
+               <Name>Manufacturer party</Name>
+               <Description>The manufacturer of this item.</Description>
+               <Element cardinality="0..1">
                   <Term>cac:PartyIdentification</Term>
                   <Name>Party identification</Name>
+                  <Description/>
                   <Element cardinality="1..1">
                      <Term>cbc:ID</Term>
-                     <Name>Manufacturer party identifier</Name>Identifies the manufacturer party.<Reference type="RULE">PEPPOL-T120-R111</Reference>
+                     <Name>Manufacturer party identifier</Name>
+                     <Description>Identifies the manufacturer party.</Description>
+                     <Reference type="RULE">PEPPOL-T120-R111</Reference>
                      <Value type="EXAMPLE">5790000435951</Value>
                      <Attribute usage="Optional">
                         <Term>schemeID</Term>
@@ -2952,63 +3453,89 @@
                <Element cardinality="0..1">
                   <Term>cac:PartyName</Term>
                   <Name>Party name</Name>
+                  <Description/>
                   <Element cardinality="1..1">
                      <Term>cbc:Name</Term>
-                     <Name>Manufacturer party name</Name>The name of the manufacturer party.<Reference type="RULE">PEPPOL-T120-R111</Reference>
+                     <Name>Manufacturer party name</Name>
+                     <Description>The name of the manufacturer party.</Description>
+                     <Reference type="RULE">PEPPOL-T120-R111</Reference>
                      <Value type="EXAMPLE">IYT Corporation</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:PostalAddress</Term>
-                  <Name>Postal address</Name>The address for the manufacturer.<Element cardinality="0..1">
+                  <Name>Postal address</Name>
+                  <Description>The address for the manufacturer.</Description>
+                  <Element cardinality="0..1">
                      <Term>cbc:StreetName</Term>
-                     <Name>Address line 1</Name>The main address line in a postal address usually the street name and number.<Value type="EXAMPLE">Busy Street</Value>
+                     <Name>Address line 1</Name>
+                     <Description>The main address line in a postal address usually the street name and number.</Description>
+                     <Value type="EXAMPLE">Busy Street</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:AdditionalStreetName</Term>
-                     <Name>Address line 2</Name>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.<Value type="EXAMPLE">way 1</Value>
+                     <Name>Address line 2</Name>
+                     <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
+                     <Value type="EXAMPLE">way 1</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CityName</Term>
-                     <Name>City</Name>The common name of the city where the postal address is. The name is written in full rather than as a code.<Value type="EXAMPLE">Farthing</Value>
+                     <Name>City</Name>
+                     <Description>The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
+                     <Value type="EXAMPLE">Farthing</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:PostalZone</Term>
-                     <Name>Post code</Name>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.<Value type="EXAMPLE">AA99 1BB</Value>
+                     <Name>Post code</Name>
+                     <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
+                     <Value type="EXAMPLE">AA99 1BB</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:CountrySubentity</Term>
-                     <Name>Country subdivision</Name>For specifying a region, county, state, province etc. within a country by using text.<Value type="EXAMPLE">Heremouthshire</Value>
+                     <Name>Country subdivision</Name>
+                     <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
+                     <Value type="EXAMPLE">Heremouthshire</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:AddressLine</Term>
                      <Name>Address line</Name>
+                     <Description/>
                      <Element cardinality="1..1">
                         <Term>cbc:Line</Term>
-                        <Name>Address line 3</Name>An additional address line in an address that can be used to give further details supplementing the main line.<Value type="EXAMPLE">The Roundabout</Value>
+                        <Name>Address line 3</Name>
+                        <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                        <Value type="EXAMPLE">The Roundabout</Value>
                      </Element>
                   </Element>
                   <Element>
                      <Term>cac:Country</Term>
                      <Name>Country</Name>
+                     <Description/>
                      <Element>
                         <Term>cbc:IdentificationCode</Term>
-                        <Name>Country code</Name>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.<Value type="EXAMPLE">GB</Value>
+                        <Name>Country code</Name>
+                        <Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
+                        <Value type="EXAMPLE">GB</Value>
                      </Element>
                   </Element>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:PartyLegalEntity</Term>
                   <Name>Party legal entity</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:RegistrationName</Term>
-                     <Name>Manufacturer party legal name</Name>The legal name of the manufacturing party.<Value type="EXAMPLE">Consortial</Value>
+                     <Name>Manufacturer party legal name</Name>
+                     <Description>The legal name of the manufacturing party.</Description>
+                     <Value type="EXAMPLE">Consortial</Value>
                   </Element>
                </Element>
             </Element>
             <Element cardinality="0..n">
                <Term>cac:ItemInstance</Term>
-               <Name>Item instance information</Name>Adding information on individual instances of the item.<Element cardinality="0..1">
+               <Name>Item instance information</Name>
+               <Description>Adding information on individual instances of the item.</Description>
+               <Element cardinality="0..1">
                   <Term>cbc:ManufactureDate</Term>
                   <Name>Item manufactured date</Name>
                   <Description>
@@ -3019,7 +3546,9 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:ManufactureTime</Term>
-                  <Name>Item manufactured time</Name>The time at which this item instance was manufactured. Timezone is optional to use. If omitted, the local timezone where the manufacturing was made should be assumed.<Value type="EXAMPLE">06:47:30+01:00</Value>
+                  <Name>Item manufactured time</Name>
+                  <Description>The time at which this item instance was manufactured. Timezone is optional to use. If omitted, the local timezone where the manufacturing was made should be assumed.</Description>
+                  <Value type="EXAMPLE">06:47:30+01:00</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:BestBeforeDate</Term>
@@ -3042,6 +3571,7 @@
                <Element cardinality="0..1">
                   <Term>cac:LotIdentification</Term>
                   <Name>Lot identifictation</Name>
+                  <Description/>
                   <Element cardinality="0..1">
                      <Term>cbc:LotNumberID</Term>
                      <Name>Item batch number</Name>
@@ -3053,14 +3583,18 @@
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:ExpiryDate</Term>
-                     <Name>Item expiry date</Name>The expiry date of all items listed in this despatch line.<Reference type="BUSINESS_TERM">tir16-081</Reference>
+                     <Name>Item expiry date</Name>
+                     <Description>The expiry date of all items listed in this despatch line.</Description>
+                     <Reference type="BUSINESS_TERM">tir16-081</Reference>
                      <Value type="EXAMPLE">2023-01-01</Value>
                   </Element>
                </Element>
             </Element>
             <Element cardinality="0..n">
                <Term>cac:Certificate</Term>
-               <Name>Certificate</Name>Used for referring to the Certificates for the product.<Element cardinality="1..1">
+               <Name>Certificate</Name>
+               <Description>Used for referring to the Certificates for the product.</Description>
+               <Element cardinality="1..1">
                   <Term>cbc:ID</Term>
                   <Name>Identity of the certificate</Name>
                   <Description>
@@ -3070,7 +3604,9 @@
                </Element>
                <Element cardinality="1..1">
                   <Term>cbc:CertificateTypeCode</Term>
-                  <Name>Certificate type code</Name>Code that specifies the certificate type expressed as a code. Use the value NA if not applicabel.<Value type="EXAMPLE">NA</Value>
+                  <Name>Certificate type code</Name>
+                  <Description>Code that specifies the certificate type expressed as a code. Use the value NA if not applicabel.</Description>
+                  <Value type="EXAMPLE">NA</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cbc:CertificateType</Term>
@@ -3090,25 +3626,37 @@
                </Element>
                <Element cardinality="1..1">
                   <Term>cac:IssuerParty</Term>
-                  <Name>Issuer party</Name>The authorized organization that issued this certificate, the provider of the certificate.<Element cardinality="1..1">
+                  <Name>Issuer party</Name>
+                  <Description>The authorized organization that issued this certificate, the provider of the certificate.</Description>
+                  <Element cardinality="1..1">
                      <Term>cac:PartyName</Term>
-                     <Name>Party name</Name>The name of the party issuing the certificate.<Element cardinality="1..1">
+                     <Name>Party name</Name>
+                     <Description>The name of the party issuing the certificate.</Description>
+                     <Element cardinality="1..1">
                         <Term>cbc:Name</Term>
-                        <Name>Party name</Name>The UBL structure used requires this element. Use the value NA if not applicable.<Value type="EXAMPLE">NA</Value>
+                        <Name>Party name</Name>
+                        <Description>The UBL structure used requires this element. Use the value NA if not applicable.</Description>
+                        <Value type="EXAMPLE">NA</Value>
                      </Element>
                   </Element>
                </Element>
             </Element>
             <Element cardinality="0..n">
                <Term>cac:Dimension</Term>
-               <Name>Measurement Dimension</Name>Used to specify any dimension of the Item.<Element cardinality="1..1">
+               <Name>Measurement Dimension</Name>
+               <Description>Used to specify any dimension of the Item.</Description>
+               <Element cardinality="1..1">
                   <Term>cbc:AttributeID</Term>
-                  <Name>Attribute identifier</Name>To describe the type of measurement.<Reference type="CODE_LIST">UNCL6313-T120</Reference>
+                  <Name>Attribute identifier</Name>
+                  <Description>To describe the type of measurement.</Description>
+                  <Reference type="CODE_LIST">UNCL6313-T120</Reference>
                   <Value type="EXAMPLE">LN</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cbc:Measure</Term>
-                  <Name>Measure</Name>For the measure.<Value type="EXAMPLE">123</Value>
+                  <Name>Measure</Name>
+                  <Description>For the measure.</Description>
+                  <Value type="EXAMPLE">123</Value>
                   <Attribute>
                      <Term>unitCode</Term>
                      <Name>Measure unit of measure</Name>

@@ -117,7 +117,7 @@
                <Data ss:Type="String">Specification identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.The identification may include the version of the specification as well as any customizations applied.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">urn:fdc:peppol.eu:poacc:trns:order_agreement:3</Data>
@@ -143,7 +143,7 @@
                <Data ss:Type="String">Business process type identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -377,7 +377,7 @@
                <Data ss:Type="String">Previous order agreement identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A reference to a previous identifier for an order agreement. Used to indicatete that this agreement is a change to a previous agreement. This is an optional business term but is a required element in the UBL syntax so if no previous order identifier is available use NA.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">NA</Data>
@@ -637,7 +637,7 @@
                <Data ss:Type="String">External reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Reference to external document</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -689,7 +689,7 @@
                <Data ss:Type="String">Contract reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The identification of a contract.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -741,7 +741,7 @@
                <Data ss:Type="String">Seller supplier party</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The supplier is the legal person or organization who provides a product or service.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -793,7 +793,7 @@
                <Data ss:Type="String">Seller party electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Identifies the seller party's electronic address</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">7598000000128</Data>
@@ -1053,7 +1053,7 @@
                <Data ss:Type="String">Country subdivision</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The subdivision of a country such as region, county, state, province etc.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Region</Data>
@@ -1235,7 +1235,7 @@
                <Data ss:Type="String">Seller legal registration identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Identifies a company as registered with the company registration scheme.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">987654321</Data>
@@ -1391,7 +1391,7 @@
                <Data ss:Type="String">Customer party</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The customer is the legal person or organization who is in demand of a product or service.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1443,7 +1443,7 @@
                <Data ss:Type="String">Buyer party electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Identifies the buyer party's electronic address</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">7590000012347</Data>
@@ -1703,7 +1703,7 @@
                <Data ss:Type="String">Country subdivision</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The subdivision of a country such as region, county, state, province etc.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Region</Data>
@@ -1885,7 +1885,7 @@
                <Data ss:Type="String">Buyers legal registration identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Identifies a company as registered with the company registration scheme.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">987654321</Data>
@@ -2041,7 +2041,7 @@
                <Data ss:Type="String">Originator party</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The unit initiating the order. Most often the end user.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2223,7 +2223,7 @@
                <Data ss:Type="String">Accounting customer party/Invoicee</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The invoicee is the legal person or organization acting on behalf of the customer and who receives the invoice for the order.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2405,7 +2405,7 @@
                <Data ss:Type="String">Delivery information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Delivery gives information on when and where the goods and services are deleivered.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2431,7 +2431,7 @@
                <Data ss:Type="String">Promised delivery period</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The period when the goods or services are delivered.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2847,7 +2847,7 @@
                <Data ss:Type="String">Country subdivision</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The subdivision of a country such as region, county, state, province etc.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">code</Data>
@@ -2977,7 +2977,7 @@
                <Data ss:Type="String">Delivery terms information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Information on delivery location and special delivery terms</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3159,7 +3159,7 @@
                <Data ss:Type="String">Address line 1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Additional address</Data>
@@ -3237,7 +3237,7 @@
                <Data ss:Type="String">Country subdivision</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The subdivision of a country such as region, county, state, province etc.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Address</Data>
@@ -3289,7 +3289,7 @@
                <Data ss:Type="String">Address line 3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">xxx</Data>
@@ -3367,7 +3367,7 @@
                <Data ss:Type="String">Allowance or charge information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Information on allowance and/or charges applies to the whole order agreement and is included in the calculation of the order agreement total amount.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3393,7 +3393,7 @@
                <Data ss:Type="String">Charge indicator</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Boolean indicator, charge ='true', allowance = 'false'</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">false</Data>
@@ -3627,7 +3627,7 @@
                <Data ss:Type="String">Document level allowance or charge TAX category code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A coded identification of what TAX category applies to the document level allowance or charge.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">S</Data>
@@ -3653,7 +3653,7 @@
                <Data ss:Type="String">Document level allowance or charge TAX rate</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The TAX rate, represented as percentage that applies to the document level allowance or charge.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">25</Data>
@@ -3705,7 +3705,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Tax scheme. E.g. “VAT” or “GST”</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">VAT</Data>
@@ -3757,7 +3757,7 @@
                <Data ss:Type="String">TAX total amount</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The total TAX amount.The sum of all TAX category tax amounts.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">7.81</Data>
@@ -3809,7 +3809,7 @@
                <Data ss:Type="String">TAX breakdown</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A group of business terms providing information about TAX breakdown by different categories, rates and exemption reasons</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3835,7 +3835,7 @@
                <Data ss:Type="String">TAX category taxable amount</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Sum of all taxable amounts subject to a specific TAX category code and TAX category rate (if the TAX category rate is applicable). The sum of line net amounts minus allowances plus charges on document level which are subject to a specific TAX categorycode and TAX category rate (if the TAX category rate is applicable).</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">31.25</Data>
@@ -3887,7 +3887,7 @@
                <Data ss:Type="String">TAX category tax amount</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The total TAX amount for a given TAX category.Calculated by multiplying the TAX category taxable amount with the TAX category rate for the relevant TAX category.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">7.81</Data>
@@ -3965,7 +3965,7 @@
                <Data ss:Type="String">TAX category code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Coded identification of a TAX category.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">S</Data>
@@ -3991,7 +3991,7 @@
                <Data ss:Type="String">TAX category rate</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The TAX rate, represented as percentage that applies for the relevant TAX category.A TAX rate of 0% is applied for calculation purposes, even if the item is outside the scope of TAX.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">25</Data>
@@ -4017,7 +4017,7 @@
                <Data ss:Type="String">TAX exemption reason text</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A textual statement of the reason for why the base amount is exempted from TAX.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Text</Data>
@@ -4069,7 +4069,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Tax scheme. E.g. “VAT” or “GST”</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">VAT</Data>
@@ -4121,7 +4121,7 @@
                <Data ss:Type="String">Sum of line amounts</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Sum of all line amounts in the document.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">32.5</Data>
@@ -4173,7 +4173,7 @@
                <Data ss:Type="String">Total amount without TAX</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The total amount of the document without TAX including all line net amounts minus sum of allowance amount on document level plus sum of charges on document level.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">31.25</Data>
@@ -4225,7 +4225,7 @@
                <Data ss:Type="String">Total amount with TAX</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The total amount of the document with TAX. The total amount with TAX is the Total amount without TAX plus the Total TAX amount. The Total amount shall be equal or greater than zero.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">39.06</Data>
@@ -4277,7 +4277,7 @@
                <Data ss:Type="String">Sum of allowances on document level</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Sum of all allowances on document levelAllowances on line level are included in the line amount which is summed up into the "sum of line net amount".</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">3.25</Data>
@@ -4329,7 +4329,7 @@
                <Data ss:Type="String">Sum of charges on document level</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Sum of all charges on document level.Charges on line level are included in the line amount which is summed up into the "sum of line net amount".</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2.00</Data>
@@ -4381,7 +4381,7 @@
                <Data ss:Type="String">Paid amounts</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The sum of amounts which have been paid a-priori.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">10.00</Data>
@@ -4433,7 +4433,7 @@
                <Data ss:Type="String">Rounding of document total</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Any rounding of the "Document total including TAX"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0.94</Data>
@@ -4485,7 +4485,7 @@
                <Data ss:Type="String">Amount due for payment</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The outstanding amount that is requested to be paid.This amount is the "document total amount with TAX" minus the "Paid amount" that has been paid a-priori. The amount will be zero in case the document total amount with TAX is fully paid .</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">30.00</Data>
@@ -5109,7 +5109,7 @@
                <Data ss:Type="String">Price discount information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Information on discounts connected to the price</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5135,7 +5135,7 @@
                <Data ss:Type="String">AllowanceChargeIndicator</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Only discounts are allowed for the price, hence the only valid value is false (meaning an allowance)</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5577,7 +5577,7 @@
                <Data ss:Type="String">External Item Specifications Type</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A functional description of the attachment/image expressed as code</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6097,7 +6097,7 @@
                <Data ss:Type="String">Additional item property information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A group of business terms providing information about properties of the goods and services invoiced.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6305,7 +6305,7 @@
                <Data ss:Type="String">Item label information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Information about the items environmental, social, ethical and quality type of labelling.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6539,7 +6539,7 @@
                <Data ss:Type="String">Item label reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A reference to where the label specification can be found, e.g. a URI.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">http://www.label.eu/test/</Data>

@@ -11,7 +11,9 @@
       <Term>ubl:Invoice</Term>
       <Element>
          <Term>cbc:CustomizationID</Term>
-         <Name>Specification identifier</Name>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.<DataType>Identifier</DataType>
+         <Name>Specification identifier</Name>
+         <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
+         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">BT-24</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R004</Reference>
          <Reference type="RULE">BR-01</Reference>
@@ -19,7 +21,9 @@
       </Element>
       <Element>
          <Term>cbc:ProfileID</Term>
-         <Name>Business process type</Name>Identifies the business process context in which the transaction appears, to enable the Buyer to process the Invoice in an appropriate way.<DataType>Text</DataType>
+         <Name>Business process type</Name>
+         <Description>Identifies the business process context in which the transaction appears, to enable the Buyer to process the Invoice in an appropriate way.</Description>
+         <DataType>Text</DataType>
          <Reference type="BUSINESS_TERM">BT-23</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R001</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R007</Reference>
@@ -27,14 +31,18 @@
       </Element>
       <Element>
          <Term>cbc:ID</Term>
-         <Name>Invoice number</Name>A unique identification of the Invoice. The sequential number required in Article 226(2) of the directive 2006/112/EC [2], to uniquely identify the Invoice within the business context, time-frame, operating systems and records of the Seller. No identification scheme is to be used.<DataType>Identifier</DataType>
+         <Name>Invoice number</Name>
+         <Description>A unique identification of the Invoice. The sequential number required in Article 226(2) of the directive 2006/112/EC [2], to uniquely identify the Invoice within the business context, time-frame, operating systems and records of the Seller. No identification scheme is to be used.</Description>
+         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">BT-1</Reference>
          <Reference type="RULE">BR-02</Reference>
          <Value type="EXAMPLE">9742025</Value>
       </Element>
       <Element>
          <Term>cbc:IssueDate</Term>
-         <Name>Invoice issue date</Name>The date when the Invoice was issued. Format "YYYY-MM-DD"<DataType>Date</DataType>
+         <Name>Invoice issue date</Name>
+         <Description>The date when the Invoice was issued. Format "YYYY-MM-DD"</Description>
+         <DataType>Date</DataType>
          <Reference type="BUSINESS_TERM">BT-2</Reference>
          <Reference type="RULE">BR-03</Reference>
          <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
@@ -42,7 +50,9 @@
       </Element>
       <Element cardinality="0..1">
          <Term>cbc:DueDate</Term>
-         <Name>Payment due date</Name>The date when the payment is due.Format "YYYY-MM-DD". In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.<DataType>Date</DataType>
+         <Name>Payment due date</Name>
+         <Description>The date when the payment is due.Format "YYYY-MM-DD". In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.</Description>
+         <DataType>Date</DataType>
          <Reference type="BUSINESS_TERM">BT-9</Reference>
          <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
          <Reference type="RULE">BR-CO-25</Reference>
@@ -50,7 +60,9 @@
       </Element>
       <Element>
          <Term>cbc:InvoiceTypeCode</Term>
-         <Name>Invoice type code</Name>A code specifying the functional type of the Invoice.<DataType>Code</DataType>
+         <Name>Invoice type code</Name>
+         <Description>A code specifying the functional type of the Invoice.</Description>
+         <DataType>Code</DataType>
          <Reference type="BUSINESS_TERM">BT-24</Reference>
          <Reference type="RULE">BR-04</Reference>
          <Reference type="RULE">BR-CL-01</Reference>
@@ -60,7 +72,9 @@
       </Element>
       <Element cardinality="0..1">
          <Term>cbc:Note</Term>
-         <Name>Invoice note</Name>A textual note that gives unstructured information that is relevant to the Invoice as a whole.Such as the reason for any correction or assignment note in case the invoice has been factored.<DataType>Text</DataType>
+         <Name>Invoice note</Name>
+         <Description>A textual note that gives unstructured information that is relevant to the Invoice as a whole.Such as the reason for any correction or assignment note in case the invoice has been factored.</Description>
+         <DataType>Text</DataType>
          <Reference type="BUSINESS_TERM">BT-22</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R002</Reference>
          <Reference type="RULE">BR-CL-08</Reference>
@@ -68,14 +82,18 @@
       </Element>
       <Element cardinality="0..1">
          <Term>cbc:TaxPointDate</Term>
-         <Name>Value added tax point date</Name>The date when the VAT becomes accountable for the Seller and for the Buyer in so far as that date can be determined and differs from the date of issue of the invoice, according to the VAT directive.This element is required if the Value added tax point date is different from the Invoice issue date.<DataType>Date</DataType>
+         <Name>Value added tax point date</Name>
+         <Description>The date when the VAT becomes accountable for the Seller and for the Buyer in so far as that date can be determined and differs from the date of issue of the invoice, according to the VAT directive.This element is required if the Value added tax point date is different from the Invoice issue date.</Description>
+         <DataType>Date</DataType>
          <Reference type="BUSINESS_TERM">BT-7</Reference>
          <Reference type="RULE">BR-CO-03</Reference>
          <Value type="EXAMPLE">2021-11-07</Value>
       </Element>
       <Element>
          <Term>cbc:DocumentCurrencyCode</Term>
-         <Name>Invoice currency code</Name>The currency in which all Invoice amounts are given, except for the Total VAT amount in accounting currency. Only one currency shall be used in the Invoice, except for the VAT accounting currency code (BT-6) and the invoice total VAT amount in accounting currency (BT-111).<DataType>Code</DataType>
+         <Name>Invoice currency code</Name>
+         <Description>The currency in which all Invoice amounts are given, except for the Total VAT amount in accounting currency. Only one currency shall be used in the Invoice, except for the VAT accounting currency code (BT-6) and the invoice total VAT amount in accounting currency (BT-111).</Description>
+         <DataType>Code</DataType>
          <Reference type="BUSINESS_TERM">BT-5</Reference>
          <Reference type="RULE">BR-05</Reference>
          <Reference type="RULE">BR-CL-04</Reference>
@@ -84,7 +102,9 @@
       </Element>
       <Element cardinality="0..1">
          <Term>cbc:TaxCurrencyCode</Term>
-         <Name>VAT accounting currency code</Name>The currency used for VAT accounting and reporting purposes as accepted or required in the country of the Seller. Shall be used in combination with the Invoice total VAT amount in accounting currency (BT-111), when the VAT accounting currency code differs from the Invoice currency code.<DataType>Code</DataType>
+         <Name>VAT accounting currency code</Name>
+         <Description>The currency used for VAT accounting and reporting purposes as accepted or required in the country of the Seller. Shall be used in combination with the Invoice total VAT amount in accounting currency (BT-111), when the VAT accounting currency code differs from the Invoice currency code.</Description>
+         <DataType>Code</DataType>
          <Reference type="BUSINESS_TERM">BT-6</Reference>
          <Reference type="RULE">BR-CL-05</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R005</Reference>
@@ -104,7 +124,9 @@
       </Element>
       <Element cardinality="0..1">
          <Term>cbc:BuyerReference</Term>
-         <Name>Buyer reference</Name>An identifier assigned by the Buyer used for internal routing purposes. An invoice must have buyer reference or purchase order reference (BT-13).<DataType>Text</DataType>
+         <Name>Buyer reference</Name>
+         <Description>An identifier assigned by the Buyer used for internal routing purposes. An invoice must have buyer reference or purchase order reference (BT-13).</Description>
+         <DataType>Text</DataType>
          <Reference type="BUSINESS_TERM">BT-10</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R003</Reference>
          <Value type="EXAMPLE">abs1234</Value>
@@ -119,7 +141,9 @@
          <Reference type="RULE">BR-IC-11</Reference>
          <Element cardinality="0..1">
             <Term>cbc:StartDate</Term>
-            <Name>Invoicing period start date</Name>The date when the Invoice period starts. Format = "YYYY-MM-DD".<DataType>Date</DataType>
+            <Name>Invoicing period start date</Name>
+            <Description>The date when the Invoice period starts. Format = "YYYY-MM-DD".</Description>
+            <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">BT-73</Reference>
             <Reference type="RULE">BR-CO-19</Reference>
             <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
@@ -127,7 +151,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:EndDate</Term>
-            <Name>Invoicing period end date</Name>The date when the Invoice period ends. Format = "YYYY-MM-DD".<DataType>Date</DataType>
+            <Name>Invoicing period end date</Name>
+            <Description>The date when the Invoice period ends. Format = "YYYY-MM-DD".</Description>
+            <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">BT-74</Reference>
             <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
             <Reference type="RULE">BR-29</Reference>
@@ -136,7 +162,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:DescriptionCode</Term>
-            <Name>Value added tax point date code</Name>The code of the date when the VAT becomes accountable for the Seller and for the Buyer.<DataType>Code</DataType>
+            <Name>Value added tax point date code</Name>
+            <Description>The code of the date when the VAT becomes accountable for the Seller and for the Buyer.</Description>
+            <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-8</Reference>
             <Reference type="RULE">BR-CO-03</Reference>
             <Reference type="RULE">BR-CL-06</Reference>
@@ -148,36 +176,48 @@
       <Element cardinality="0..1">
          <Term>cac:OrderReference</Term>
          <Name>ORDER AND SALES ORDER REFERENCE</Name>
+         <Description/>
          <Element>
             <Term>cbc:ID</Term>
-            <Name>Purchase order reference</Name>An identifier of a referenced purchase order, issued by the Buyer. An invoice must have buyer reference (BT-10) or purchase order reference. In cases where sales order reference is provided, but there's no purchase order reference, then use value "NA" as this element is mandatory in UBL.<DataType>Document Reference</DataType>
+            <Name>Purchase order reference</Name>
+            <Description>An identifier of a referenced purchase order, issued by the Buyer. An invoice must have buyer reference (BT-10) or purchase order reference. In cases where sales order reference is provided, but there's no purchase order reference, then use value "NA" as this element is mandatory in UBL.</Description>
+            <DataType>Document Reference</DataType>
             <Reference type="BUSINESS_TERM">BT-13</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R003</Reference>
             <Value type="EXAMPLE">98776</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:SalesOrderID</Term>
-            <Name>Sales order reference</Name>An identifier of a referenced sales order, issued by the Seller. In cases where sales order reference is provided, but there's no purchase order reference, then set cac:OrderReference/cbc:ID to value "NA" as this element is mandatory in UBL.<DataType>Document Reference</DataType>
+            <Name>Sales order reference</Name>
+            <Description>An identifier of a referenced sales order, issued by the Seller. In cases where sales order reference is provided, but there's no purchase order reference, then set cac:OrderReference/cbc:ID to value "NA" as this element is mandatory in UBL.</Description>
+            <DataType>Document Reference</DataType>
             <Reference type="BUSINESS_TERM">BT-14</Reference>
             <Value type="EXAMPLE">112233</Value>
          </Element>
       </Element>
       <Element cardinality="0..n">
          <Term>cac:BillingReference</Term>
-         <Name>PRECEDING INVOICE REFERENCE</Name>A group of business terms providing information on one or more preceding Invoices.<Reference type="BUSINESS_TERM">BG-3</Reference>
+         <Name>PRECEDING INVOICE REFERENCE</Name>
+         <Description>A group of business terms providing information on one or more preceding Invoices.</Description>
+         <Reference type="BUSINESS_TERM">BG-3</Reference>
          <Element>
             <Term>cac:InvoiceDocumentReference</Term>
             <Name>INVOICE DOCUMENT REFERENCE</Name>
+            <Description/>
             <Element>
                <Term>cbc:ID</Term>
-               <Name>Preceding Invoice number</Name>The identification of an Invoice that was previously sent by the Seller.<DataType>Document Reference</DataType>
+               <Name>Preceding Invoice number</Name>
+               <Description>The identification of an Invoice that was previously sent by the Seller.</Description>
+               <DataType>Document Reference</DataType>
                <Reference type="BUSINESS_TERM">BT-25</Reference>
                <Reference type="RULE">BR-55</Reference>
                <Value type="EXAMPLE">9742024</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:IssueDate</Term>
-               <Name>Preceding Invoice issue date</Name>The date when the Preceding Invoice was issued.Shall be provided in case the Preceding Invoice identifier is not unique. Format = "YYYY-MM-DD".<DataType>Date</DataType>
+               <Name>Preceding Invoice issue date</Name>
+               <Description>The date when the Preceding Invoice was issued.Shall be provided in case the Preceding Invoice identifier is not unique. Format = "YYYY-MM-DD".</Description>
+               <DataType>Date</DataType>
                <Reference type="BUSINESS_TERM">BT-26</Reference>
                <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
                <Value type="EXAMPLE">2021-10-15</Value>
@@ -187,9 +227,12 @@
       <Element cardinality="0..1">
          <Term>cac:DespatchDocumentReference</Term>
          <Name>DESPATCH ADVICE REFERENCE</Name>
+         <Description/>
          <Element>
             <Term>cbc:ID</Term>
-            <Name>Despatch advice reference</Name>An identifier of a referenced despatch advice.<DataType>Document Reference</DataType>
+            <Name>Despatch advice reference</Name>
+            <Description>An identifier of a referenced despatch advice.</Description>
+            <DataType>Document Reference</DataType>
             <Reference type="BUSINESS_TERM">BT-16</Reference>
             <Value type="EXAMPLE">desp100</Value>
          </Element>
@@ -197,9 +240,12 @@
       <Element cardinality="0..1">
          <Term>cac:ReceiptDocumentReference</Term>
          <Name>RECEIPT ADVICE REFERENCE</Name>
+         <Description/>
          <Element>
             <Term>cbc:ID</Term>
-            <Name>Receiving advice reference</Name>An identifier of a referenced receiving advice.<DataType>Document Reference</DataType>
+            <Name>Receiving advice reference</Name>
+            <Description>An identifier of a referenced receiving advice.</Description>
+            <DataType>Document Reference</DataType>
             <Reference type="BUSINESS_TERM">BT-15</Reference>
             <Value type="EXAMPLE">rec100</Value>
          </Element>
@@ -207,9 +253,12 @@
       <Element cardinality="0..1">
          <Term>cac:OriginatorDocumentReference</Term>
          <Name>TENDER OR LOT REFERENCE</Name>
+         <Description/>
          <Element>
             <Term>cbc:ID</Term>
-            <Name>Tender or lot reference</Name>The identification of the call for tender or lot the invoice relates to.<DataType>Document Reference</DataType>
+            <Name>Tender or lot reference</Name>
+            <Description>The identification of the call for tender or lot the invoice relates to.</Description>
+            <DataType>Document Reference</DataType>
             <Reference type="BUSINESS_TERM">BT-17</Reference>
             <Value type="EXAMPLE">PPID-123</Value>
          </Element>
@@ -217,21 +266,28 @@
       <Element cardinality="0..1">
          <Term>cac:ContractDocumentReference</Term>
          <Name>CONTRACT REFERENCE</Name>
+         <Description/>
          <Element>
             <Term>cbc:ID</Term>
-            <Name>Contract reference</Name>The identification of a contract.<DataType>Document Reference</DataType>
+            <Name>Contract reference</Name>
+            <Description>The identification of a contract.</Description>
+            <DataType>Document Reference</DataType>
             <Reference type="BUSINESS_TERM">BT-12</Reference>
             <Value type="EXAMPLE">7987093</Value>
          </Element>
       </Element>
       <Element cardinality="0..n">
          <Term>cac:AdditionalDocumentReference</Term>
-         <Name>ADDITIONAL SUPPORTING DOCUMENTS</Name>A group of business terms providing information about additional supporting documents substantiating the claims made in the Invoice. The additional supporting documents can be used for both referencing a document number which is expected to be known by the receiver, an external document (referenced by a URL) or as an embedded document, Base64 encoded (such as a time report).<Reference type="BUSINESS_TERM">BG-24</Reference>
+         <Name>ADDITIONAL SUPPORTING DOCUMENTS</Name>
+         <Description>A group of business terms providing information about additional supporting documents substantiating the claims made in the Invoice. The additional supporting documents can be used for both referencing a document number which is expected to be known by the receiver, an external document (referenced by a URL) or as an embedded document, Base64 encoded (such as a time report).</Description>
+         <Reference type="BUSINESS_TERM">BG-24</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R006</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R080</Reference>
          <Element>
             <Term>cbc:ID</Term>
-            <Name>Invoiced object identifier, Supporting document reference</Name>An identifier for an object on which the invoice is based, given by the Seller, or the identifier for the supporting document.<DataType>Identifier</DataType>
+            <Name>Invoiced object identifier, Supporting document reference</Name>
+            <Description>An identifier for an object on which the invoice is based, given by the Seller, or the identifier for the supporting document.</Description>
+            <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">BT-18, BT-122</Reference>
             <Reference type="RULE">BR-52</Reference>
             <Value type="EXAMPLE">AB23456</Value>
@@ -246,22 +302,29 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:DocumentTypeCode</Term>
-            <Name>Document type code</Name>Code "130" MUST be used to indicate an invoice object reference. Not used for other additional documents<DataType>Code</DataType>
+            <Name>Document type code</Name>
+            <Description>Code "130" MUST be used to indicate an invoice object reference. Not used for other additional documents</Description>
+            <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-18</Reference>
             <Value type="DEFAULT">130</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:DocumentDescription</Term>
-            <Name>Supporting document description</Name>A description of the supporting document, such as: timesheet, usage report etc.<DataType>Text</DataType>
+            <Name>Supporting document description</Name>
+            <Description>A description of the supporting document, such as: timesheet, usage report etc.</Description>
+            <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-123</Reference>
             <Value type="EXAMPLE">Time list</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:Attachment</Term>
             <Name>ATTACHMENT</Name>
+            <Description/>
             <Element cardinality="0..1">
                <Term>cbc:EmbeddedDocumentBinaryObject</Term>
-               <Name>Attached document</Name>An attached document embedded as binary object (Base64) or sent together with the invoice.<DataType>Binary object</DataType>
+               <Name>Attached document</Name>
+               <Description>An attached document embedded as binary object (Base64) or sent together with the invoice.</Description>
+               <DataType>Binary object</DataType>
                <Reference type="BUSINESS_TERM">BT-125</Reference>
                <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
                <Attribute>
@@ -285,9 +348,12 @@
             <Element cardinality="0..1">
                <Term>cac:ExternalReference</Term>
                <Name>EXTERNAL REFERENCE</Name>
+               <Description/>
                <Element>
                   <Term>cbc:URI</Term>
-                  <Name>External document location</Name>The URL (Uniform Resource Locator) that identifies where the external document is located. A means of locating the resource, including its primary access mechanism, e.g. http:// or ftp://.<DataType>Text</DataType>
+                  <Name>External document location</Name>
+                  <Description>The URL (Uniform Resource Locator) that identifies where the external document is located. A means of locating the resource, including its primary access mechanism, e.g. http:// or ftp://.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-124</Reference>
                   <Value type="EXAMPLE">http://www.example.com/index.html</Value>
                </Element>
@@ -297,22 +363,30 @@
       <Element cardinality="0..1">
          <Term>cac:ProjectReference</Term>
          <Name>PROJECT REFERENCE</Name>
+         <Description/>
          <Element>
             <Term>cbc:ID</Term>
-            <Name>Project reference</Name>The identification of the project the invoice refers to.<DataType>Document Reference</DataType>
+            <Name>Project reference</Name>
+            <Description>The identification of the project the invoice refers to.</Description>
+            <DataType>Document Reference</DataType>
             <Reference type="BUSINESS_TERM">BT-11</Reference>
             <Value type="EXAMPLE">9876986</Value>
          </Element>
       </Element>
       <Element>
          <Term>cac:AccountingSupplierParty</Term>
-         <Name>SELLER</Name>A group of business terms providing information about the Seller.<Reference type="BUSINESS_TERM">BG-4</Reference>
+         <Name>SELLER</Name>
+         <Description>A group of business terms providing information about the Seller.</Description>
+         <Reference type="BUSINESS_TERM">BG-4</Reference>
          <Element>
             <Term>cac:Party</Term>
             <Name>PARTY</Name>
+            <Description/>
             <Element>
                <Term>cbc:EndpointID</Term>
-               <Name>Seller electronic address</Name>Identifies the Seller's electronic address to which the application level response to the invoice may be delivered.<DataType>Identifier</DataType>
+               <Name>Seller electronic address</Name>
+               <Description>Identifies the Seller's electronic address to which the application level response to the invoice may be delivered.</Description>
+               <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-34</Reference>
                <Reference type="RULE">BR-62</Reference>
                <Reference type="RULE">BR-CL-25</Reference>
@@ -341,9 +415,12 @@
             <Element cardinality="0..n">
                <Term>cac:PartyIdentification</Term>
                <Name>PARTY IDENTIFICATION</Name>
+               <Description/>
                <Element>
                   <Term>cbc:ID</Term>
-                  <Name>Seller identifier or bank assigned creditor identifier</Name>This element is used for both the identification of the Seller, or the unique banking reference identifier of Seller (assigned by the Seller bank.). For seller identification use ICD code list, for SEPA bank assigned creditor reference, use SEPA. In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present<DataType>Identifier</DataType>
+                  <Name>Seller identifier or bank assigned creditor identifier</Name>
+                  <Description>This element is used for both the identification of the Seller, or the unique banking reference identifier of Seller (assigned by the Seller bank.). For seller identification use ICD code list, for SEPA bank assigned creditor reference, use SEPA. In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present</Description>
+                  <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-29, BT-90</Reference>
                   <Reference type="RULE">BR-CO-26</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
@@ -373,56 +450,74 @@
             <Element cardinality="0..1">
                <Term>cac:PartyName</Term>
                <Name>PARTY NAME</Name>
+               <Description/>
                <Element>
                   <Term>cbc:Name</Term>
-                  <Name>Seller trading name</Name>A name by which the Seller is known, other than Seller name (also known as Business name).<DataType>Text</DataType>
+                  <Name>Seller trading name</Name>
+                  <Description>A name by which the Seller is known, other than Seller name (also known as Business name).</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-28</Reference>
                   <Value type="EXAMPLE">Seller Business Name AS</Value>
                </Element>
             </Element>
             <Element>
                <Term>cac:PostalAddress</Term>
-               <Name>SELLER POSTAL ADDRESS</Name>A group of business terms providing information about the address of the Seller. Sufficient components of the address are to be filled to comply with legal requirements.<Reference type="BUSINESS_TERM">BG-5</Reference>
+               <Name>SELLER POSTAL ADDRESS</Name>
+               <Description>A group of business terms providing information about the address of the Seller. Sufficient components of the address are to be filled to comply with legal requirements.</Description>
+               <Reference type="BUSINESS_TERM">BG-5</Reference>
                <Reference type="RULE">BR-08</Reference>
                <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
-                  <Name>Seller address line 1</Name>The main address line in an address.<DataType>Text</DataType>
+                  <Name>Seller address line 1</Name>
+                  <Description>The main address line in an address.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-35</Reference>
                   <Reference type="RULE">IT-R-002</Reference>
                   <Value type="EXAMPLE">Main Street 1</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
-                  <Name>Seller address line 2</Name>An additional address line in an address that can be used to give further details supplementing the main line.<DataType>Text</DataType>
+                  <Name>Seller address line 2</Name>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-36</Reference>
                   <Value type="EXAMPLE">Po Box 351</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
-                  <Name>Seller city</Name>The common name of the city, town or village, where the Seller address is located.<DataType>Text</DataType>
+                  <Name>Seller city</Name>
+                  <Description>The common name of the city, town or village, where the Seller address is located.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-37</Reference>
                   <Reference type="RULE">IT-R-003</Reference>
                   <Value type="EXAMPLE">London</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
-                  <Name>Seller post code</Name>The identifier for an addressable group of properties according to the relevant postal service.<DataType>Text</DataType>
+                  <Name>Seller post code</Name>
+                  <Description>The identifier for an addressable group of properties according to the relevant postal service.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-38</Reference>
                   <Reference type="RULE">IT-R-004</Reference>
                   <Value type="EXAMPLE">W1G 8LZ</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
-                  <Name>Seller country subdivision</Name>The subdivision of a country.<DataType>Text</DataType>
+                  <Name>Seller country subdivision</Name>
+                  <Description>The subdivision of a country.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-39</Reference>
                   <Value type="EXAMPLE">Region A</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
                   <Name>ADDRESS LINE</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:Line</Term>
-                     <Name>Seller address line 3</Name>An additional address line in an address that can be used to give further details supplementing the main line.<DataType>Text</DataType>
+                     <Name>Seller address line 3</Name>
+                     <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                     <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-162</Reference>
                      <Value type="EXAMPLE">Building 23</Value>
                   </Element>
@@ -430,9 +525,12 @@
                <Element>
                   <Term>cac:Country</Term>
                   <Name>COUNTRY</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:IdentificationCode</Term>
-                     <Name>Seller country code</Name>A code that identifies the country.<DataType>Text</DataType>
+                     <Name>Seller country code</Name>
+                     <Description>A code that identifies the country.</Description>
+                     <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-40</Reference>
                      <Reference type="RULE">BR-09</Reference>
                      <Reference type="RULE">BR-CL-14</Reference>
@@ -444,9 +542,12 @@
             <Element cardinality="0..2">
                <Term>cac:PartyTaxScheme</Term>
                <Name>PARTY VAT/TAX IDENTIFIERS</Name>
+               <Description/>
                <Element>
                   <Term>cbc:CompanyID</Term>
-                  <Name>Seller VAT identifier, Seller tax registration identifier</Name>The Seller's VAT identifier (also known as Seller VAT identification number) or the local identification (defined by the Seller’s address) of the Seller for tax purposes or a reference that enables the Seller to state his registered tax status. In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present<DataType>Identifier</DataType>
+                  <Name>Seller VAT identifier, Seller tax registration identifier</Name>
+                  <Description>The Seller's VAT identifier (also known as Seller VAT identification number) or the local identification (defined by the Seller’s address) of the Seller for tax purposes or a reference that enables the Seller to state his registered tax status. In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present</Description>
+                  <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-31, BT-32</Reference>
                   <Reference type="RULE">BR-CO-09</Reference>
                   <Reference type="RULE">BR-CO-26</Reference>
@@ -500,24 +601,32 @@
                <Element>
                   <Term>cac:TaxScheme</Term>
                   <Name>TAX SCHEME</Name>
+                  <Description/>
                   <Element>
-                     <Term>cbc:ID</Term>Mandatory element. For Seller VAT identifier (BT-31), use value “VAT”, for the seller tax registration identifier (BT-32), use != "VAT"<Value type="EXAMPLE">VAT</Value>
+                     <Term>cbc:ID</Term>
+                     <Description>Mandatory element. For Seller VAT identifier (BT-31), use value “VAT”, for the seller tax registration identifier (BT-32), use != "VAT"</Description>
+                     <Value type="EXAMPLE">VAT</Value>
                   </Element>
                </Element>
             </Element>
             <Element>
                <Term>cac:PartyLegalEntity</Term>
                <Name>PARTY LEGAL ENTITY</Name>
+               <Description/>
                <Element>
                   <Term>cbc:RegistrationName</Term>
-                  <Name>Seller name</Name>The full formal name by which the Seller is registered in the national registry of legal entities or as a Taxable person or otherwise trades as a person or persons.<DataType>Text</DataType>
+                  <Name>Seller name</Name>
+                  <Description>The full formal name by which the Seller is registered in the national registry of legal entities or as a Taxable person or otherwise trades as a person or persons.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-27</Reference>
                   <Reference type="RULE">BR-06</Reference>
                   <Value type="EXAMPLE">Full Formal Seller Name LTD.</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CompanyID</Term>
-                  <Name>Seller legal registration identifier</Name>An identifier issued by an official registrar that identifies the Seller as a legal entity or person. In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present<DataType>Identifier</DataType>
+                  <Name>Seller legal registration identifier</Name>
+                  <Description>An identifier issued by an official registrar that identifies the Seller as a legal entity or person. In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present</Description>
+                  <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-30</Reference>
                   <Reference type="RULE">BR-CO-26</Reference>
                   <Reference type="RULE">BR-CL-11</Reference>
@@ -536,29 +645,39 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CompanyLegalForm</Term>
-                  <Name>Seller additional legal information</Name>Additional legal information relevant for the Seller.<DataType>Text</DataType>
+                  <Name>Seller additional legal information</Name>
+                  <Description>Additional legal information relevant for the Seller.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-33</Reference>
                   <Value type="EXAMPLE">Share capital</Value>
                </Element>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:Contact</Term>
-               <Name>SELLER CONTACT</Name>A group of business terms providing contact information about the Seller.<Reference type="BUSINESS_TERM">BG-6</Reference>
+               <Name>SELLER CONTACT</Name>
+               <Description>A group of business terms providing contact information about the Seller.</Description>
+               <Reference type="BUSINESS_TERM">BG-6</Reference>
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
-                  <Name>Seller contact point</Name>A contact point for a legal entity or person.<DataType>Text</DataType>
+                  <Name>Seller contact point</Name>
+                  <Description>A contact point for a legal entity or person.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-41</Reference>
                   <Value type="EXAMPLE">xyz123</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Telephone</Term>
-                  <Name>Seller contact telephone number</Name>A phone number for the contact point.<DataType>Text</DataType>
+                  <Name>Seller contact telephone number</Name>
+                  <Description>A phone number for the contact point.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-42</Reference>
                   <Value type="EXAMPLE">887 654 321</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:ElectronicMail</Term>
-                  <Name>Seller contact email address</Name>An e-mail address for the contact point.<DataType>Text</DataType>
+                  <Name>Seller contact email address</Name>
+                  <Description>An e-mail address for the contact point.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-43</Reference>
                   <Value type="EXAMPLE">test.name@foo.bar</Value>
                </Element>
@@ -567,13 +686,18 @@
       </Element>
       <Element>
          <Term>cac:AccountingCustomerParty</Term>
-         <Name>BUYER</Name>A group of business terms providing information about the Buyer.<Reference type="BUSINESS_TERM">BG-7</Reference>
+         <Name>BUYER</Name>
+         <Description>A group of business terms providing information about the Buyer.</Description>
+         <Reference type="BUSINESS_TERM">BG-7</Reference>
          <Element>
             <Term>cac:Party</Term>
             <Name>PARTY</Name>
+            <Description/>
             <Element>
                <Term>cbc:EndpointID</Term>
-               <Name>Buyer electronic address</Name>Identifies the Buyer's electronic address to which the invoice is delivered.<DataType>Identifier</DataType>
+               <Name>Buyer electronic address</Name>
+               <Description>Identifies the Buyer's electronic address to which the invoice is delivered.</Description>
+               <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-49</Reference>
                <Reference type="RULE">BR-63</Reference>
                <Reference type="RULE">BR-CL-25</Reference>
@@ -602,9 +726,12 @@
             <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
                <Name>PARTY IDENTIFICATION</Name>
+               <Description/>
                <Element>
                   <Term>cbc:ID</Term>
-                  <Name>Buyer identifier</Name>An identifier of the Buyer.<DataType>Identifier</DataType>
+                  <Name>Buyer identifier</Name>
+                  <Description>An identifier of the Buyer.</Description>
+                  <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-46</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
@@ -632,53 +759,71 @@
             <Element cardinality="0..1">
                <Term>cac:PartyName</Term>
                <Name>PARTY NAME</Name>
+               <Description/>
                <Element>
                   <Term>cbc:Name</Term>
-                  <Name>Buyer trading name</Name>A name by which the Buyer is known, other than Buyer name (also known as Business name).<DataType>Text</DataType>
+                  <Name>Buyer trading name</Name>
+                  <Description>A name by which the Buyer is known, other than Buyer name (also known as Business name).</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-45</Reference>
                   <Value type="EXAMPLE">Buyer Trading Name</Value>
                </Element>
             </Element>
             <Element>
                <Term>cac:PostalAddress</Term>
-               <Name>BUYER POSTAL ADDRESS</Name>A group of business terms providing information about the postal address for the Buyer. Sufficient components of the address are to be filled to comply with legal requirements.<Reference type="BUSINESS_TERM">BG-8</Reference>
+               <Name>BUYER POSTAL ADDRESS</Name>
+               <Description>A group of business terms providing information about the postal address for the Buyer. Sufficient components of the address are to be filled to comply with legal requirements.</Description>
+               <Reference type="BUSINESS_TERM">BG-8</Reference>
                <Reference type="RULE">BR-10</Reference>
                <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
-                  <Name>Buyer address line 1</Name>The main address line in an address.<DataType>Text</DataType>
+                  <Name>Buyer address line 1</Name>
+                  <Description>The main address line in an address.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-50</Reference>
                   <Value type="EXAMPLE">Hovudgatan 32</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
-                  <Name>Buyer address line 2</Name>An additional address line in an address that can be used to give further details supplementing the main line.<DataType>Text</DataType>
+                  <Name>Buyer address line 2</Name>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-51</Reference>
                   <Value type="EXAMPLE">Po box 43</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
-                  <Name>Buyer city</Name>The common name of the city, town or village, where the Buyer's address is located.<DataType>Text</DataType>
+                  <Name>Buyer city</Name>
+                  <Description>The common name of the city, town or village, where the Buyer's address is located.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-52</Reference>
                   <Value type="EXAMPLE">Stockholm</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
-                  <Name>Buyer post code</Name>The identifier for an addressable group of properties according to the relevant postal service.<DataType>Text</DataType>
+                  <Name>Buyer post code</Name>
+                  <Description>The identifier for an addressable group of properties according to the relevant postal service.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-53</Reference>
                   <Value type="EXAMPLE">34567</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
-                  <Name>Buyer country subdivision</Name>The subdivision of a country.<DataType>Text</DataType>
+                  <Name>Buyer country subdivision</Name>
+                  <Description>The subdivision of a country.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-54</Reference>
                   <Value type="EXAMPLE">Region A</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
                   <Name>ADDRESS LINE</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:Line</Term>
-                     <Name>Buyer address line 3</Name>An additional address line in an address that can be used to give further details supplementing the main line.<DataType>Text</DataType>
+                     <Name>Buyer address line 3</Name>
+                     <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                     <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-163</Reference>
                      <Value type="EXAMPLE">Building F2</Value>
                   </Element>
@@ -686,9 +831,12 @@
                <Element>
                   <Term>cac:Country</Term>
                   <Name>COUNTRY</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:IdentificationCode</Term>
-                     <Name>Buyer country code</Name>A code that identifies the country.<DataType>Code</DataType>
+                     <Name>Buyer country code</Name>
+                     <Description>A code that identifies the country.</Description>
+                     <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">BT-55</Reference>
                      <Reference type="RULE">BR-11</Reference>
                      <Reference type="RULE">BR-CL-14</Reference>
@@ -700,9 +848,12 @@
             <Element cardinality="0..1">
                <Term>cac:PartyTaxScheme</Term>
                <Name>PARTY VAT IDENTIFIER</Name>
+               <Description/>
                <Element>
                   <Term>cbc:CompanyID</Term>
-                  <Name>Buyer VAT identifier</Name>The Buyer's VAT identifier (also known as Buyer VAT identification number).<DataType>Identifier</DataType>
+                  <Name>Buyer VAT identifier</Name>
+                  <Description>The Buyer's VAT identifier (also known as Buyer VAT identification number).</Description>
+                  <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-48</Reference>
                   <Reference type="RULE">BR-CO-09</Reference>
                   <Reference type="RULE">BR-AE-02</Reference>
@@ -730,8 +881,11 @@
                <Element>
                   <Term>cac:TaxScheme</Term>
                   <Name>TAX SCHEME</Name>
+                  <Description/>
                   <Element>
-                     <Term>cbc:ID</Term>Mandatory element. Use “VAT”<DataType>Identifier</DataType>
+                     <Term>cbc:ID</Term>
+                     <Description>Mandatory element. Use “VAT”</Description>
+                     <DataType>Identifier</DataType>
                      <Value type="DEFAULT">VAT</Value>
                   </Element>
                </Element>
@@ -739,16 +893,21 @@
             <Element>
                <Term>cac:PartyLegalEntity</Term>
                <Name>PARTY LEGAL ENTITY</Name>
+               <Description/>
                <Element>
                   <Term>cbc:RegistrationName</Term>
-                  <Name>Buyer name</Name>The full name of the Buyer.<DataType>Text</DataType>
+                  <Name>Buyer name</Name>
+                  <Description>The full name of the Buyer.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-44</Reference>
                   <Reference type="RULE">BR-07</Reference>
                   <Value type="EXAMPLE">Buyer Full Name AS</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CompanyID</Term>
-                  <Name>Buyer legal registration identifier</Name>An identifier issued by an official registrar that identifies the Buyer as a legal entity or person.<DataType>Identifier</DataType>
+                  <Name>Buyer legal registration identifier</Name>
+                  <Description>An identifier issued by an official registrar that identifies the Buyer as a legal entity or person.</Description>
+                  <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-47</Reference>
                   <Reference type="RULE">BR-AE-02</Reference>
                   <Reference type="RULE">BR-AE-03</Reference>
@@ -767,22 +926,30 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:Contact</Term>
-               <Name>BUYER CONTACT</Name>A group of business terms providing contact information relevant for the Buyer.<Reference type="BUSINESS_TERM">BG-9</Reference>
+               <Name>BUYER CONTACT</Name>
+               <Description>A group of business terms providing contact information relevant for the Buyer.</Description>
+               <Reference type="BUSINESS_TERM">BG-9</Reference>
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
-                  <Name>Buyer contact point</Name>A contact point for a legal entity or person.<DataType>Text</DataType>
+                  <Name>Buyer contact point</Name>
+                  <Description>A contact point for a legal entity or person.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-56</Reference>
                   <Value type="EXAMPLE">Jens Jensen</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Telephone</Term>
-                  <Name>Buyer contact telephone number</Name>A phone number for the contact point.<DataType>Text</DataType>
+                  <Name>Buyer contact telephone number</Name>
+                  <Description>A phone number for the contact point.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-57</Reference>
                   <Value type="EXAMPLE">876 654 321</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:ElectronicMail</Term>
-                  <Name>Buyer contact email address</Name>An e-mail address for the contact point.<DataType>Text</DataType>
+                  <Name>Buyer contact email address</Name>
+                  <Description>An e-mail address for the contact point.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-58</Reference>
                   <Value type="EXAMPLE">jens.j@buyer.se</Value>
                </Element>
@@ -791,13 +958,18 @@
       </Element>
       <Element cardinality="0..1">
          <Term>cac:PayeeParty</Term>
-         <Name>PAYEE</Name>A group of business terms providing information about the Payee, i.e. the role that receives the payment. Shall be used when the Payee is different from the Seller.<Reference type="BUSINESS_TERM">BG-10</Reference>
+         <Name>PAYEE</Name>
+         <Description>A group of business terms providing information about the Payee, i.e. the role that receives the payment. Shall be used when the Payee is different from the Seller.</Description>
+         <Reference type="BUSINESS_TERM">BG-10</Reference>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
             <Name>PARTY IDENTIFICATION</Name>
+            <Description/>
             <Element>
                <Term>cbc:ID</Term>
-               <Name>Payee identifier or bank assigned creditor identifier</Name>This element is used for both the identification of the Payee, or the unique banking reference identifier of Payee (assigned by the Payee bank.) For payee identification use ICD code list, for SEPA bank assigned creditor reference, use SEPA.<DataType>Text</DataType>
+               <Name>Payee identifier or bank assigned creditor identifier</Name>
+               <Description>This element is used for both the identification of the Payee, or the unique banking reference identifier of Payee (assigned by the Payee bank.) For payee identification use ICD code list, for SEPA bank assigned creditor reference, use SEPA.</Description>
+               <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-60, BT-90</Reference>
                <Value type="EXAMPLE">FR932874294</Value>
                <Attribute usage="Optional">
@@ -814,9 +986,12 @@
          <Element>
             <Term>cac:PartyName</Term>
             <Name>PARTY NAME</Name>
+            <Description/>
             <Element>
                <Term>cbc:Name</Term>
-               <Name>Payee name</Name>The name of the Payee.<DataType>Text</DataType>
+               <Name>Payee name</Name>
+               <Description>The name of the Payee.</Description>
+               <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-59</Reference>
                <Reference type="RULE">BR-17</Reference>
                <Value type="EXAMPLE">Payee Name Ltd</Value>
@@ -825,9 +1000,12 @@
          <Element cardinality="0..1">
             <Term>cac:PartyLegalEntity</Term>
             <Name>PARTY LEGAL ENTITY</Name>
+            <Description/>
             <Element>
                <Term>cbc:CompanyID</Term>
-               <Name>Payee legal registration identifier</Name>An identifier issued by an official registrar that identifies the Payee as a legal entity or person.<DataType>Identifier</DataType>
+               <Name>Payee legal registration identifier</Name>
+               <Description>An identifier issued by an official registrar that identifies the Payee as a legal entity or person.</Description>
+               <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-61</Reference>
                <Reference type="RULE">BR-CL-11</Reference>
                <Value type="EXAMPLE">FR932874294</Value>
@@ -844,13 +1022,18 @@
       </Element>
       <Element cardinality="0..1">
          <Term>cac:TaxRepresentativeParty</Term>
-         <Name>SELLER TAX REPRESENTATIVE PARTY</Name>A group of business terms providing information about the Seller's tax representative.<Reference type="BUSINESS_TERM">BG-11</Reference>
+         <Name>SELLER TAX REPRESENTATIVE PARTY</Name>
+         <Description>A group of business terms providing information about the Seller's tax representative.</Description>
+         <Reference type="BUSINESS_TERM">BG-11</Reference>
          <Element>
             <Term>cac:PartyName</Term>
             <Name>PARTY NAME</Name>
+            <Description/>
             <Element>
                <Term>cbc:Name</Term>
-               <Name>Seller tax representative name</Name>The full name of the Seller's tax representative party.<DataType>Text</DataType>
+               <Name>Seller tax representative name</Name>
+               <Description>The full name of the Seller's tax representative party.</Description>
+               <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-62</Reference>
                <Reference type="RULE">BR-18</Reference>
                <Value type="EXAMPLE">Tax Representative Name AS</Value>
@@ -858,44 +1041,59 @@
          </Element>
          <Element>
             <Term>cac:PostalAddress</Term>
-            <Name>SELLER TAX REPRESENTATIVE POSTAL ADDRESS</Name>A group of business terms providing information about the postal address for the tax representative party. Sufficient components of the address are to be filled to comply with legal requirements.<Reference type="BUSINESS_TERM">BG-12</Reference>
+            <Name>SELLER TAX REPRESENTATIVE POSTAL ADDRESS</Name>
+            <Description>A group of business terms providing information about the postal address for the tax representative party. Sufficient components of the address are to be filled to comply with legal requirements.</Description>
+            <Reference type="BUSINESS_TERM">BG-12</Reference>
             <Reference type="RULE">BR-19</Reference>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
-               <Name>Tax representative address line 1</Name>The main address line in an address.<DataType>Text</DataType>
+               <Name>Tax representative address line 1</Name>
+               <Description>The main address line in an address.</Description>
+               <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-64</Reference>
                <Value type="EXAMPLE">Lille gatan 545</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
-               <Name>Tax representative address line 2</Name>An additional address line in an address that can be used to give further details supplementing the main line.<DataType>Text</DataType>
+               <Name>Tax representative address line 2</Name>
+               <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+               <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-65</Reference>
                <Value type="EXAMPLE">Po Box 987</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
-               <Name>Tax representative city</Name>The common name of the city, town or village, where the tax representative address is located.<DataType>Text</DataType>
+               <Name>Tax representative city</Name>
+               <Description>The common name of the city, town or village, where the tax representative address is located.</Description>
+               <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-66</Reference>
                <Value type="EXAMPLE">Göteborg</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
-               <Name>Tax representative post code</Name>The identifier for an addressable group of properties according to the relevant postal service.<DataType>Text</DataType>
+               <Name>Tax representative post code</Name>
+               <Description>The identifier for an addressable group of properties according to the relevant postal service.</Description>
+               <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-67</Reference>
                <Value type="EXAMPLE">12345</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
-               <Name>Tax representative country subdivision</Name>The subdivision of a country.<DataType>Text</DataType>
+               <Name>Tax representative country subdivision</Name>
+               <Description>The subdivision of a country.</Description>
+               <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-68</Reference>
                <Value type="EXAMPLE">Region Vest</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
                <Name>ADDRESS LINE</Name>
+               <Description/>
                <Element>
                   <Term>cbc:Line</Term>
-                  <Name>Tax representative address line 3</Name>An additional address line in an address that can be used to give further details supplementing the main line.<DataType>Text</DataType>
+                  <Name>Tax representative address line 3</Name>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-164</Reference>
                   <Value type="EXAMPLE">A87</Value>
                </Element>
@@ -903,9 +1101,12 @@
             <Element>
                <Term>cac:Country</Term>
                <Name>COUNTRY</Name>
+               <Description/>
                <Element>
                   <Term>cbc:IdentificationCode</Term>
-                  <Name>Tax representative country code</Name>A code that identifies the country.<DataType>Code</DataType>
+                  <Name>Tax representative country code</Name>
+                  <Description>A code that identifies the country.</Description>
+                  <DataType>Code</DataType>
                   <Reference type="BUSINESS_TERM">BT-69</Reference>
                   <Reference type="RULE">BR-20</Reference>
                   <Reference type="RULE">BR-CL-14</Reference>
@@ -917,9 +1118,12 @@
          <Element>
             <Term>cac:PartyTaxScheme</Term>
             <Name>PARTY VAT IDENTIFIER</Name>
+            <Description/>
             <Element>
                <Term>cbc:CompanyID</Term>
-               <Name>Seller tax representative VAT identifier</Name>The VAT identifier of the Seller's tax representative party.<DataType>Identifier</DataType>
+               <Name>Seller tax representative VAT identifier</Name>
+               <Description>The VAT identifier of the Seller's tax representative party.</Description>
+               <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-63</Reference>
                <Reference type="RULE">BR-56</Reference>
                <Reference type="RULE">BR-CO-09</Reference>
@@ -955,18 +1159,25 @@
             <Element>
                <Term>cac:TaxScheme</Term>
                <Name>TAX SCHEME</Name>
+               <Description/>
                <Element>
-                  <Term>cbc:ID</Term>Mandatory element. Use “VAT”<Value type="DEFAULT">VAT</Value>
+                  <Term>cbc:ID</Term>
+                  <Description>Mandatory element. Use “VAT”</Description>
+                  <Value type="DEFAULT">VAT</Value>
                </Element>
             </Element>
          </Element>
       </Element>
       <Element cardinality="0..1">
          <Term>cac:Delivery</Term>
-         <Name>DELIVERY INFORMATION</Name>A group of business terms providing information about where and when the goods and services invoiced are delivered.<Reference type="BUSINESS_TERM">BG-13</Reference>
+         <Name>DELIVERY INFORMATION</Name>
+         <Description>A group of business terms providing information about where and when the goods and services invoiced are delivered.</Description>
+         <Reference type="BUSINESS_TERM">BG-13</Reference>
          <Element cardinality="0..1">
             <Term>cbc:ActualDeliveryDate</Term>
-            <Name>Actual delivery date</Name>The date on which the supply of goods or services was made or completed. Format = "YYYY-MM-DD"<DataType>Date</DataType>
+            <Name>Actual delivery date</Name>
+            <Description>The date on which the supply of goods or services was made or completed. Format = "YYYY-MM-DD"</Description>
+            <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">BT-72</Reference>
             <Reference type="RULE">BR-IC-11</Reference>
             <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
@@ -974,9 +1185,12 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cac:DeliveryLocation</Term>
+            <Description/>
             <Element cardinality="0..1">
                <Term>cbc:ID</Term>
-               <Name>Deliver to location identifier</Name>An identifier for the location at which the goods and services are delivered.<DataType>Identifier</DataType>
+               <Name>Deliver to location identifier</Name>
+               <Description>An identifier for the location at which the goods and services are delivered.</Description>
+               <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-71</Reference>
                <Value type="EXAMPLE">83745498753497</Value>
                <Attribute usage="Optional">
@@ -989,43 +1203,58 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cac:Address</Term>
-               <Name>DELIVER TO ADDRESS</Name>A group of business terms providing information about the address to which goods and services invoiced were or are delivered.<Reference type="BUSINESS_TERM">BG-15</Reference>
+               <Name>DELIVER TO ADDRESS</Name>
+               <Description>A group of business terms providing information about the address to which goods and services invoiced were or are delivered.</Description>
+               <Reference type="BUSINESS_TERM">BG-15</Reference>
                <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
-                  <Name>Deliver to address line 1</Name>The main address line in an address.<DataType>Text</DataType>
+                  <Name>Deliver to address line 1</Name>
+                  <Description>The main address line in an address.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-75</Reference>
                   <Value type="EXAMPLE">Delivery Street 1</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
-                  <Name>Deliver to address line 2</Name>An additional address line in an address that can be used to give further details supplementing the main line.<DataType>Text</DataType>
+                  <Name>Deliver to address line 2</Name>
+                  <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-76</Reference>
                   <Value type="EXAMPLE">Delivery Street 2</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
-                  <Name>Deliver to city</Name>The common name of the city, town or village, where the deliver to address is located.<DataType>Text</DataType>
+                  <Name>Deliver to city</Name>
+                  <Description>The common name of the city, town or village, where the deliver to address is located.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-77</Reference>
                   <Value type="EXAMPLE">Malmö</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
-                  <Name>Deliver to post code</Name>The identifier for an addressable group of properties according to the relevant postal service.<DataType>Text</DataType>
+                  <Name>Deliver to post code</Name>
+                  <Description>The identifier for an addressable group of properties according to the relevant postal service.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-78</Reference>
                   <Value type="EXAMPLE">86756</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
-                  <Name>Deliver to country subdivision</Name>The subdivision of a country.<DataType>Text</DataType>
+                  <Name>Deliver to country subdivision</Name>
+                  <Description>The subdivision of a country.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-79</Reference>
                   <Value type="EXAMPLE">South Region</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
                   <Name>ADDRESS LINE</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:Line</Term>
-                     <Name>Deliver to address line 3</Name>An additional address line in an address that can be used to give further details supplementing the main line.<DataType>Text</DataType>
+                     <Name>Deliver to address line 3</Name>
+                     <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                     <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-165</Reference>
                      <Value type="EXAMPLE">C54</Value>
                   </Element>
@@ -1033,9 +1262,12 @@
                <Element>
                   <Term>cac:Country</Term>
                   <Name>COUNTRY</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:IdentificationCode</Term>
-                     <Name>Deliver to country code</Name>A code that identifies the country.<DataType>Code</DataType>
+                     <Name>Deliver to country code</Name>
+                     <Description>A code that identifies the country.</Description>
+                     <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">BT-80</Reference>
                      <Reference type="RULE">BR-57</Reference>
                      <Reference type="RULE">BR-CL-14</Reference>
@@ -1049,12 +1281,16 @@
          <Element cardinality="0..1">
             <Term>cac:DeliveryParty</Term>
             <Name>DELIVER PARTY</Name>
+            <Description/>
             <Element>
                <Term>cac:PartyName</Term>
                <Name>PARTY NAME</Name>
+               <Description/>
                <Element>
                   <Term>cbc:Name</Term>
-                  <Name>Deliver to party name</Name>The name of the party to which the goods and services are delivered.<DataType>Text</DataType>
+                  <Name>Deliver to party name</Name>
+                  <Description>The name of the party to which the goods and services are delivered.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-70</Reference>
                   <Value type="EXAMPLE">Deliver name</Value>
                </Element>
@@ -1063,10 +1299,14 @@
       </Element>
       <Element cardinality="0..n">
          <Term>cac:PaymentMeans</Term>
-         <Name>PAYMENT INSTRUCTIONS</Name>A group of business terms providing information about the payment.<Reference type="BUSINESS_TERM">BG-16</Reference>
+         <Name>PAYMENT INSTRUCTIONS</Name>
+         <Description>A group of business terms providing information about the payment.</Description>
+         <Reference type="BUSINESS_TERM">BG-16</Reference>
          <Element>
             <Term>cbc:PaymentMeansCode</Term>
-            <Name>Payment means type code</Name>The means, expressed as code, for how a payment is expected to be or has been settled.<DataType>Code</DataType>
+            <Name>Payment means type code</Name>
+            <Description>The means, expressed as code, for how a payment is expected to be or has been settled.</Description>
+            <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-81</Reference>
             <Reference type="RULE">BR-49</Reference>
             <Reference type="RULE">BR-CL-16</Reference>
@@ -1084,38 +1324,52 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:PaymentID</Term>
-            <Name>Remittance information</Name>A textual value used to establish a link between the payment and the Invoice, issued by the Seller. Used for creditor's critical reconciliation information. This information element helps the Seller to assign an incoming payment to the relevant payment process.<DataType>Text</DataType>
+            <Name>Remittance information</Name>
+            <Description>A textual value used to establish a link between the payment and the Invoice, issued by the Seller. Used for creditor's critical reconciliation information. This information element helps the Seller to assign an incoming payment to the relevant payment process.</Description>
+            <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-83</Reference>
             <Value type="EXAMPLE">7697699</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:CardAccount</Term>
-            <Name>PAYMENT CARD INFORMATION</Name>A group of business terms providing information about card used for payment contemporaneous with invoice issuance.<Reference type="BUSINESS_TERM">BG-18</Reference>
+            <Name>PAYMENT CARD INFORMATION</Name>
+            <Description>A group of business terms providing information about card used for payment contemporaneous with invoice issuance.</Description>
+            <Reference type="BUSINESS_TERM">BG-18</Reference>
             <Reference type="RULE">BR-66</Reference>
             <Element>
                <Term>cbc:PrimaryAccountNumberID</Term>
-               <Name>Payment card primary account number</Name>The Primary Account Number (PAN) of the card used for payment.In accordance with card payments security standards, an invoice should never include a full card primary account number.<DataType>Text</DataType>
+               <Name>Payment card primary account number</Name>
+               <Description>The Primary Account Number (PAN) of the card used for payment.In accordance with card payments security standards, an invoice should never include a full card primary account number.</Description>
+               <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-87</Reference>
                <Reference type="RULE">BR-51</Reference>
                <Value type="EXAMPLE">1234</Value>
             </Element>
             <Element>
-               <Term>cbc:NetworkID</Term>Syntax required element not related to a business term.<DataType>Text</DataType>
+               <Term>cbc:NetworkID</Term>
+               <Description>Syntax required element not related to a business term.</Description>
+               <DataType>Text</DataType>
                <Value type="EXAMPLE">NA</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:HolderName</Term>
-               <Name>Payment card holder name</Name>The name of the payment card holder.<DataType>Text</DataType>
+               <Name>Payment card holder name</Name>
+               <Description>The name of the payment card holder.</Description>
+               <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-88</Reference>
                <Value type="EXAMPLE">John Doe</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PayeeFinancialAccount</Term>
-            <Name>CREDIT TRANSFER</Name>A group of business terms to specify credit transfer payments.<Reference type="BUSINESS_TERM">BG-17</Reference>
+            <Name>CREDIT TRANSFER</Name>
+            <Description>A group of business terms to specify credit transfer payments.</Description>
+            <Reference type="BUSINESS_TERM">BG-17</Reference>
             <Element>
                <Term>cbc:ID</Term>
-               <Name>Payment account identifier</Name>A unique identifier of the financial payment account, at a payment service provider, to which payment should be made. Such as IBAN or BBAN.<DataType>Identifier</DataType>
+               <Name>Payment account identifier</Name>
+               <Description>A unique identifier of the financial payment account, at a payment service provider, to which payment should be made. Such as IBAN or BBAN.</Description>
+               <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-84</Reference>
                <Reference type="RULE">BR-50</Reference>
                <Reference type="RULE">BR-61</Reference>
@@ -1123,16 +1377,21 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
-               <Name>Payment account name</Name>The name of the payment account, at a payment service provider, to which payment should be made.<DataType>Text</DataType>
+               <Name>Payment account name</Name>
+               <Description>The name of the payment account, at a payment service provider, to which payment should be made.</Description>
+               <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-85</Reference>
                <Value type="EXAMPLE">Payment Account</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:FinancialInstitutionBranch</Term>
                <Name>FINANCIAL INSTITUTION BRANCH</Name>
+               <Description/>
                <Element>
                   <Term>cbc:ID</Term>
-                  <Name>Payment service provider identifier</Name>An identifier for the payment service provider where a payment account is located. Such as a BIC or a national clearing code where required. No identification scheme Identifier to be used.<DataType>Identifier</DataType>
+                  <Name>Payment service provider identifier</Name>
+                  <Description>An identifier for the payment service provider where a payment account is located. Such as a BIC or a national clearing code where required. No identification scheme Identifier to be used.</Description>
+                  <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-86</Reference>
                   <Value type="EXAMPLE">9999</Value>
                </Element>
@@ -1140,11 +1399,15 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PaymentMandate</Term>
-            <Name>DIRECT DEBIT</Name>A group of business terms to specify a direct debit.<Reference type="BUSINESS_TERM">BG-19</Reference>
+            <Name>DIRECT DEBIT</Name>
+            <Description>A group of business terms to specify a direct debit.</Description>
+            <Reference type="BUSINESS_TERM">BG-19</Reference>
             <Reference type="RULE">BR-67</Reference>
             <Element cardinality="0..1">
                <Term>cbc:ID</Term>
-               <Name>Mandate reference identifier</Name>Unique identifier assigned by the Payee for referencing the direct debit mandate. Used in order to pre-notify the Buyer of a SEPA direct debit.<DataType>Identifier</DataType>
+               <Name>Mandate reference identifier</Name>
+               <Description>Unique identifier assigned by the Payee for referencing the direct debit mandate. Used in order to pre-notify the Buyer of a SEPA direct debit.</Description>
+               <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-89</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R061</Reference>
                <Value type="EXAMPLE">123456</Value>
@@ -1152,9 +1415,12 @@
             <Element cardinality="0..1">
                <Term>cac:PayerFinancialAccount</Term>
                <Name>PAYER FINANCIAL ACCOUNT</Name>
+               <Description/>
                <Element>
                   <Term>cbc:ID</Term>
-                  <Name>Debited account identifier</Name>The account to be debited by the direct debit.<DataType>Identifier</DataType>
+                  <Name>Debited account identifier</Name>
+                  <Description>The account to be debited by the direct debit.</Description>
+                  <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-91</Reference>
                   <Value type="EXAMPLE">12345676543</Value>
                </Element>
@@ -1164,9 +1430,12 @@
       <Element cardinality="0..1">
          <Term>cac:PaymentTerms</Term>
          <Name>PAYMENT TERMS</Name>
+         <Description/>
          <Element>
             <Term>cbc:Note</Term>
-            <Name>Payment terms</Name>A textual description of the payment terms that apply to the amount due for payment (Including description of possible penalties). In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.<DataType>Text</DataType>
+            <Name>Payment terms</Name>
+            <Description>A textual description of the payment terms that apply to the amount due for payment (Including description of possible penalties). In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.</Description>
+            <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-20</Reference>
             <Reference type="RULE">BR-CO-25</Reference>
             <Value type="EXAMPLE">30 dagar efter mottagen faktura</Value>
@@ -1174,14 +1443,20 @@
       </Element>
       <Element cardinality="0..n">
          <Term>cac:AllowanceCharge</Term>
-         <Name>DOCUMENT LEVEL ALLOWANCES AND CHARGES</Name>A group of business terms providing information about allowances applicable to the Invoice as a whole. A group of business terms providing information about charges and taxes other than VAT, applicable to the Invoice as a whole.<Reference type="BUSINESS_TERM">BG-20, BG-21</Reference>
+         <Name>DOCUMENT LEVEL ALLOWANCES AND CHARGES</Name>
+         <Description>A group of business terms providing information about allowances applicable to the Invoice as a whole. A group of business terms providing information about charges and taxes other than VAT, applicable to the Invoice as a whole.</Description>
+         <Reference type="BUSINESS_TERM">BG-20, BG-21</Reference>
          <Element>
-            <Term>cbc:ChargeIndicator</Term>Use “true” when informing about Charges and “false” when informing about Allowances.<Reference type="RULE">PEPPOL-EN16931-R043</Reference>
+            <Term>cbc:ChargeIndicator</Term>
+            <Description>Use “true” when informing about Charges and “false” when informing about Allowances.</Description>
+            <Reference type="RULE">PEPPOL-EN16931-R043</Reference>
             <Value type="EXAMPLE">false</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:AllowanceChargeReasonCode</Term>
-            <Name>Document level allowance or charge reason code</Name>The reason for the document level allowance or charge, expressed as a code. For allowances a subset of codelist UNCL5189 is to be used, and for charges codelist UNCL7161 applies. The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason<DataType>Code</DataType>
+            <Name>Document level allowance or charge reason code</Name>
+            <Description>The reason for the document level allowance or charge, expressed as a code. For allowances a subset of codelist UNCL5189 is to be used, and for charges codelist UNCL7161 applies. The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason</Description>
+            <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-98, BT-105</Reference>
             <Reference type="RULE">BR-33</Reference>
             <Reference type="RULE">BR-38</Reference>
@@ -1200,7 +1475,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:AllowanceChargeReason</Term>
-            <Name>Document level allowance or charge reason</Name>The reason for the document level allowance or charge, expressed as text. The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason<DataType>Text</DataType>
+            <Name>Document level allowance or charge reason</Name>
+            <Description>The reason for the document level allowance or charge, expressed as text. The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason</Description>
+            <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-97, BT-104</Reference>
             <Reference type="RULE">BR-33</Reference>
             <Reference type="RULE">BR-38</Reference>
@@ -1213,14 +1490,18 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:MultiplierFactorNumeric</Term>
-            <Name>Document level allowance or charge percentage</Name>The percentage that may be used, in conjunction with the document level allowance base amount, to calculate the document level allowance or charge amount. To state 20%, use value 20.<DataType>Percentage</DataType>
+            <Name>Document level allowance or charge percentage</Name>
+            <Description>The percentage that may be used, in conjunction with the document level allowance base amount, to calculate the document level allowance or charge amount. To state 20%, use value 20.</Description>
+            <DataType>Percentage</DataType>
             <Reference type="BUSINESS_TERM">BT-94,BT-101</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R042</Reference>
             <Value type="EXAMPLE">20</Value>
          </Element>
          <Element>
             <Term>cbc:Amount</Term>
-            <Name>Document level allowance or charge amount</Name>The amount of an allowance or a charge, without VAT. Must be rounded to maximum 2 decimals<DataType>Amount</DataType>
+            <Name>Document level allowance or charge amount</Name>
+            <Description>The amount of an allowance or a charge, without VAT. Must be rounded to maximum 2 decimals</Description>
+            <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-92,BT-99</Reference>
             <Reference type="RULE">BR-31</Reference>
             <Reference type="RULE">BR-36</Reference>
@@ -1241,7 +1522,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:BaseAmount</Term>
-            <Name>Document level allowance or charge base amount</Name>The base amount that may be used, in conjunction with the document level allowance or charge percentage, to calculate the document level allowance or charge amount. Must be rounded to maximum 2 decimals<DataType>Amount</DataType>
+            <Name>Document level allowance or charge base amount</Name>
+            <Description>The base amount that may be used, in conjunction with the document level allowance or charge percentage, to calculate the document level allowance or charge amount. Must be rounded to maximum 2 decimals</Description>
+            <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-93,BT-100</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R041</Reference>
             <Reference type="RULE">BR-DEC-02</Reference>
@@ -1261,9 +1544,12 @@
          <Element>
             <Term>cac:TaxCategory</Term>
             <Name>TAX CATEGORY</Name>
+            <Description/>
             <Element>
                <Term>cbc:ID</Term>
-               <Name>Document level allowance or charge VAT category code</Name>A coded identification of what VAT category applies to the document level allowance or charge.<DataType>Code</DataType>
+               <Name>Document level allowance or charge VAT category code</Name>
+               <Description>A coded identification of what VAT category applies to the document level allowance or charge.</Description>
+               <DataType>Code</DataType>
                <Reference type="BUSINESS_TERM">BT-95,BT-102</Reference>
                <Reference type="RULE">BR-32</Reference>
                <Reference type="RULE">BR-37</Reference>
@@ -1275,7 +1561,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Percent</Term>
-               <Name>Document level allowance or charge VAT rate</Name>The VAT rate, represented as percentage that applies to the document level allowance or charge.<DataType>Percentage</DataType>
+               <Name>Document level allowance or charge VAT rate</Name>
+               <Description>The VAT rate, represented as percentage that applies to the document level allowance or charge.</Description>
+               <DataType>Percentage</DataType>
                <Reference type="BUSINESS_TERM">BT-96,BT-103</Reference>
                <Reference type="RULE">BR-S-06</Reference>
                <Reference type="RULE">BR-S-07</Reference>
@@ -1301,18 +1589,25 @@
             <Element>
                <Term>cac:TaxScheme</Term>
                <Name>TAX SCHEME</Name>
+               <Description/>
                <Element>
-                  <Term>cbc:ID</Term>Mandatory element. Use “VAT”<Value type="DEFAULT">VAT</Value>
+                  <Term>cbc:ID</Term>
+                  <Description>Mandatory element. Use “VAT”</Description>
+                  <Value type="DEFAULT">VAT</Value>
                </Element>
             </Element>
          </Element>
       </Element>
       <Element cardinality="1..2">
          <Term>cac:TaxTotal</Term>
-         <Name>TAX TOTAL</Name>When tax currency code is provided, two instances of the tax total must be present, but only one with tax subtotal.<Reference type="RULE">PEPPOL-EN16931-R054</Reference>
+         <Name>TAX TOTAL</Name>
+         <Description>When tax currency code is provided, two instances of the tax total must be present, but only one with tax subtotal.</Description>
+         <Reference type="RULE">PEPPOL-EN16931-R054</Reference>
          <Element>
             <Term>cbc:TaxAmount</Term>
-            <Name>Invoice total VAT amount, Invoice total VAT amount in accounting currency</Name>The total VAT amount for the Invoice or the VAT total amount expressed in the accounting currency accepted or required in the country of the Seller. Must be rounded to maximum 2 decimals<DataType>Amount</DataType>
+            <Name>Invoice total VAT amount, Invoice total VAT amount in accounting currency</Name>
+            <Description>The total VAT amount for the Invoice or the VAT total amount expressed in the accounting currency accepted or required in the country of the Seller. Must be rounded to maximum 2 decimals</Description>
+            <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-110, BT-111</Reference>
             <Reference type="RULE">BR-53</Reference>
             <Reference type="RULE">BR-CO-14</Reference>
@@ -1332,13 +1627,17 @@
          </Element>
          <Element cardinality="0..n">
             <Term>cac:TaxSubtotal</Term>
-            <Name>VAT BREAKDOWN</Name>A group of business terms providing information about VAT breakdown by different categories, rates and exemption reasons<Reference type="BUSINESS_TERM">BG-23</Reference>
+            <Name>VAT BREAKDOWN</Name>
+            <Description>A group of business terms providing information about VAT breakdown by different categories, rates and exemption reasons</Description>
+            <Reference type="BUSINESS_TERM">BG-23</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R053</Reference>
             <Reference type="RULE">BR-CO-18</Reference>
             <Reference type="RULE">BR-O-11</Reference>
             <Element>
                <Term>cbc:TaxableAmount</Term>
-               <Name>VAT category taxable amount</Name>Sum of all taxable amounts subject to a specific VAT category code and VAT category rate (if the VAT category rate is applicable). Must be rounded to maximum 2 decimals.<DataType>Amount</DataType>
+               <Name>VAT category taxable amount</Name>
+               <Description>Sum of all taxable amounts subject to a specific VAT category code and VAT category rate (if the VAT category rate is applicable). Must be rounded to maximum 2 decimals.</Description>
+               <DataType>Amount</DataType>
                <Reference type="BUSINESS_TERM">BT-116</Reference>
                <Reference type="RULE">BR-45</Reference>
                <Reference type="RULE">BR-S-08</Reference>
@@ -1365,7 +1664,9 @@
             </Element>
             <Element>
                <Term>cbc:TaxAmount</Term>
-               <Name>VAT category tax amount</Name>The total VAT amount for a given VAT category. Must be rounded to maximum 2 decimals.<DataType>Amount</DataType>
+               <Name>VAT category tax amount</Name>
+               <Description>The total VAT amount for a given VAT category. Must be rounded to maximum 2 decimals.</Description>
+               <DataType>Amount</DataType>
                <Reference type="BUSINESS_TERM">BT-117</Reference>
                <Reference type="RULE">BR-46</Reference>
                <Reference type="RULE">BR-CO-17</Reference>
@@ -1393,9 +1694,12 @@
             <Element>
                <Term>cac:TaxCategory</Term>
                <Name>VAT CATEGORY</Name>
+               <Description/>
                <Element>
                   <Term>cbc:ID</Term>
-                  <Name>VAT category code</Name>Coded identification of a VAT category.<DataType>Code</DataType>
+                  <Name>VAT category code</Name>
+                  <Description>Coded identification of a VAT category.</Description>
+                  <DataType>Code</DataType>
                   <Reference type="BUSINESS_TERM">BT-118</Reference>
                   <Reference type="RULE">BR-47</Reference>
                   <Reference type="RULE">BR-S-01</Reference>
@@ -1413,7 +1717,9 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Percent</Term>
-                  <Name>VAT category rate</Name>The VAT rate, represented as percentage that applies for the relevant VAT category.<DataType>Percentage</DataType>
+                  <Name>VAT category rate</Name>
+                  <Description>The VAT rate, represented as percentage that applies for the relevant VAT category.</Description>
+                  <DataType>Percentage</DataType>
                   <Reference type="BUSINESS_TERM">BT-119</Reference>
                   <Reference type="RULE">BR-48</Reference>
                   <Reference type="RULE">SE-R-006</Reference>
@@ -1421,7 +1727,9 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:TaxExemptionReasonCode</Term>
-                  <Name>VAT exemption reason code</Name>A coded statement of the reason for why the amount is exempted from VAT.<DataType>Text</DataType>
+                  <Name>VAT exemption reason code</Name>
+                  <Description>A coded statement of the reason for why the amount is exempted from VAT.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-121</Reference>
                   <Reference type="RULE">BR-CL-22</Reference>
                   <Reference type="RULE">BR-S-10</Reference>
@@ -1444,7 +1752,9 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:TaxExemptionReason</Term>
-                  <Name>VAT exemption reason text</Name>A textual statement of the reason why the amount is exempted from VAT or why no VAT is being charged.<DataType>Text</DataType>
+                  <Name>VAT exemption reason text</Name>
+                  <Description>A textual statement of the reason why the amount is exempted from VAT or why no VAT is being charged.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-120</Reference>
                   <Reference type="RULE">BR-S-10</Reference>
                   <Reference type="RULE">BR-Z-10</Reference>
@@ -1460,8 +1770,11 @@
                <Element>
                   <Term>cac:TaxScheme</Term>
                   <Name>TAX SCHEME</Name>
+                  <Description/>
                   <Element>
-                     <Term>cbc:ID</Term>Mandatory element. Use “VAT”<Value type="DEFAULT">VAT</Value>
+                     <Term>cbc:ID</Term>
+                     <Description>Mandatory element. Use “VAT”</Description>
+                     <Value type="DEFAULT">VAT</Value>
                   </Element>
                </Element>
             </Element>
@@ -1469,10 +1782,14 @@
       </Element>
       <Element>
          <Term>cac:LegalMonetaryTotal</Term>
-         <Name>DOCUMENT TOTALS</Name>A group of business terms providing the monetary totals for the Invoice.<Reference type="BUSINESS_TERM">BG-22</Reference>
+         <Name>DOCUMENT TOTALS</Name>
+         <Description>A group of business terms providing the monetary totals for the Invoice.</Description>
+         <Reference type="BUSINESS_TERM">BG-22</Reference>
          <Element>
             <Term>cbc:LineExtensionAmount</Term>
-            <Name>Sum of Invoice line net amount</Name>Sum of all Invoice line net amounts in the Invoice. Must be rounded to maximum 2 decimals.<DataType>Amount</DataType>
+            <Name>Sum of Invoice line net amount</Name>
+            <Description>Sum of all Invoice line net amounts in the Invoice. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-106</Reference>
             <Reference type="RULE">BR-12</Reference>
             <Reference type="RULE">BR-CO-10</Reference>
@@ -1491,7 +1808,9 @@
          </Element>
          <Element>
             <Term>cbc:TaxExclusiveAmount</Term>
-            <Name>Invoice total amount without VAT</Name>The total amount of the Invoice without VAT. Must be rounded to maximum 2 decimals.<DataType>Amount</DataType>
+            <Name>Invoice total amount without VAT</Name>
+            <Description>The total amount of the Invoice without VAT. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-109</Reference>
             <Reference type="RULE">BR-13</Reference>
             <Reference type="RULE">BR-CO-13</Reference>
@@ -1510,7 +1829,9 @@
          </Element>
          <Element>
             <Term>cbc:TaxInclusiveAmount</Term>
-            <Name>Invoice total amount with VAT</Name>The total amount of the Invoice with VAT. Must be rounded to maximum 2 decimals.<DataType>Amount</DataType>
+            <Name>Invoice total amount with VAT</Name>
+            <Description>The total amount of the Invoice with VAT. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-112</Reference>
             <Reference type="RULE">BR-14</Reference>
             <Reference type="RULE">BR-CO-15</Reference>
@@ -1529,7 +1850,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:AllowanceTotalAmount</Term>
-            <Name>Sum of allowances on document level</Name>Sum of all allowances on document level in the Invoice. Must be rounded to maximum 2 decimals.<DataType>Amount</DataType>
+            <Name>Sum of allowances on document level</Name>
+            <Description>Sum of all allowances on document level in the Invoice. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-107</Reference>
             <Reference type="RULE">BR-CO-11</Reference>
             <Reference type="RULE">BR-DEC-10</Reference>
@@ -1547,7 +1870,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:ChargeTotalAmount</Term>
-            <Name>Sum of charges on document level</Name>Sum of all charges on document level in the Invoice. Must be rounded to maximum 2 decimals.<DataType>Amount</DataType>
+            <Name>Sum of charges on document level</Name>
+            <Description>Sum of all charges on document level in the Invoice. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-108</Reference>
             <Reference type="RULE">BR-CO-12</Reference>
             <Reference type="RULE">BR-DEC-11</Reference>
@@ -1565,7 +1890,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:PrepaidAmount</Term>
-            <Name>Paid amount</Name>The sum of amounts which have been paid in advance. Must be rounded to maximum 2 decimals.<DataType>Amount</DataType>
+            <Name>Paid amount</Name>
+            <Description>The sum of amounts which have been paid in advance. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-113</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
@@ -1582,7 +1909,9 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:PayableRoundingAmount</Term>
-            <Name>Rounding amount</Name>The amount to be added to the invoice total to round the amount to be paid. Must be rounded to maximum 2 decimals.<DataType>Amount</DataType>
+            <Name>Rounding amount</Name>
+            <Description>The amount to be added to the invoice total to round the amount to be paid. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-114</Reference>
             <Reference type="RULE">BR-DEC-17</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
@@ -1599,7 +1928,9 @@
          </Element>
          <Element>
             <Term>cbc:PayableAmount</Term>
-            <Name>Amount due for payment</Name>The outstanding amount that is requested to be paid. Must be rounded to maximum 2 decimals.<DataType>Amount</DataType>
+            <Name>Amount due for payment</Name>
+            <Description>The outstanding amount that is requested to be paid. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-115</Reference>
             <Reference type="RULE">BR-15</Reference>
             <Reference type="RULE">BR-CO-16</Reference>
@@ -1619,18 +1950,24 @@
       </Element>
       <Element cardinality="1..n">
          <Term>cac:InvoiceLine</Term>
-         <Name>INVOICE LINE</Name>A group of business terms providing information on individual Invoice lines.<Reference type="BUSINESS_TERM">BG-25</Reference>
+         <Name>INVOICE LINE</Name>
+         <Description>A group of business terms providing information on individual Invoice lines.</Description>
+         <Reference type="BUSINESS_TERM">BG-25</Reference>
          <Reference type="RULE">BR-16</Reference>
          <Element>
             <Term>cbc:ID</Term>
-            <Name>Invoice line identifier</Name>A unique identifier for the individual line within the Invoice.<DataType>Identifier</DataType>
+            <Name>Invoice line identifier</Name>
+            <Description>A unique identifier for the individual line within the Invoice.</Description>
+            <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">BT-126</Reference>
             <Reference type="RULE">BR-21</Reference>
             <Value type="EXAMPLE">1</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:Note</Term>
-            <Name>Invoice line note</Name>A textual note that gives unstructured information that is relevant to the Invoice line.<DataType>Text</DataType>
+            <Name>Invoice line note</Name>
+            <Description>A textual note that gives unstructured information that is relevant to the Invoice line.</Description>
+            <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-127</Reference>
             <Value type="EXAMPLE">Note from supplier</Value>
          </Element>
@@ -1661,7 +1998,9 @@
          </Element>
          <Element>
             <Term>cbc:LineExtensionAmount</Term>
-            <Name>Invoice line net amount</Name>The total amount of the Invoice line. The amount is “net” without VAT, i.e. inclusive of line level allowances and charges as well as other relevant taxes. Must be rounded to maximum 2 decimals.<DataType>Amount</DataType>
+            <Name>Invoice line net amount</Name>
+            <Description>The total amount of the Invoice line. The amount is “net” without VAT, i.e. inclusive of line level allowances and charges as well as other relevant taxes. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-131</Reference>
             <Reference type="RULE">BR-24</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R120</Reference>
@@ -1690,10 +2029,14 @@
          </Element>
          <Element cardinality="0..1">
             <Term>cac:InvoicePeriod</Term>
-            <Name>INVOICE LINE PERIOD</Name>A group of business terms providing information about the period relevant for the Invoice line.<Reference type="BUSINESS_TERM">BG-26</Reference>
+            <Name>INVOICE LINE PERIOD</Name>
+            <Description>A group of business terms providing information about the period relevant for the Invoice line.</Description>
+            <Reference type="BUSINESS_TERM">BG-26</Reference>
             <Element cardinality="0..1">
                <Term>cbc:StartDate</Term>
-               <Name>Invoice line period start date</Name>The date when the Invoice period for this Invoice line starts. Format ="YYYY-MM-DD"<DataType>Date</DataType>
+               <Name>Invoice line period start date</Name>
+               <Description>The date when the Invoice period for this Invoice line starts. Format ="YYYY-MM-DD"</Description>
+               <DataType>Date</DataType>
                <Reference type="BUSINESS_TERM">BT-134</Reference>
                <Reference type="RULE">BR-CO-20</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R110</Reference>
@@ -1702,7 +2045,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:EndDate</Term>
-               <Name>Invoice line period end date</Name>The date when the Invoice period for this Invoice line ends. Format ="YYYY-MM-DD"<DataType>Date</DataType>
+               <Name>Invoice line period end date</Name>
+               <Description>The date when the Invoice period for this Invoice line ends. Format ="YYYY-MM-DD"</Description>
+               <DataType>Date</DataType>
                <Reference type="BUSINESS_TERM">BT-135</Reference>
                <Reference type="RULE">BR-30</Reference>
                <Reference type="RULE">BR-CO-20</Reference>
@@ -1714,6 +2059,7 @@
          <Element cardinality="0..1">
             <Term>cac:OrderLineReference</Term>
             <Name>ORDER LINE REFERENCE</Name>
+            <Description/>
             <Element>
                <Term>cbc:LineID</Term>
                <Name>Referenced purchase order line reference</Name>
@@ -1728,6 +2074,7 @@
          <Element cardinality="0..1">
             <Term>cac:DocumentReference</Term>
             <Name>LINE OBJECT IDENTIFIER</Name>
+            <Description/>
             <Reference type="RULE">PEPPOL-EN16931-R100</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R101</Reference>
             <Element>
@@ -1747,23 +2094,31 @@
             </Element>
             <Element>
                <Term>cbc:DocumentTypeCode</Term>
-               <Name>Document type code</Name>Code "130" MUST be used to indicate an invoice object reference. Not used for other additional documents<DataType>Code</DataType>
+               <Name>Document type code</Name>
+               <Description>Code "130" MUST be used to indicate an invoice object reference. Not used for other additional documents</Description>
+               <DataType>Code</DataType>
                <Reference type="BUSINESS_TERM">BT-128</Reference>
                <Value type="DEFAULT">130</Value>
             </Element>
          </Element>
          <Element cardinality="0..n">
             <Term>cac:AllowanceCharge</Term>
-            <Name>INVOICE LINE ALLOWANCES OR CHARGES</Name>A group of business terms providing information about allowances or charges applicable to the individual Invoice line.<Reference type="BUSINESS_TERM">BG-27, BG-28</Reference>
+            <Name>INVOICE LINE ALLOWANCES OR CHARGES</Name>
+            <Description>A group of business terms providing information about allowances or charges applicable to the individual Invoice line.</Description>
+            <Reference type="BUSINESS_TERM">BG-27, BG-28</Reference>
             <Reference type="RULE">BR-CO-23</Reference>
             <Reference type="RULE">BR-CO-24</Reference>
             <Element>
-               <Term>cbc:ChargeIndicator</Term>Use “true” when informing about Charges and “false” when informing about Allowances<Reference type="RULE">PEPPOL-EN16931-R043</Reference>
+               <Term>cbc:ChargeIndicator</Term>
+               <Description>Use “true” when informing about Charges and “false” when informing about Allowances</Description>
+               <Reference type="RULE">PEPPOL-EN16931-R043</Reference>
                <Value type="EXAMPLE">false</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:AllowanceChargeReasonCode</Term>
-               <Name>Line level allowance or charge reason code</Name>The reason for the line level allowance or charge, expressed as a code.<DataType>Code</DataType>
+               <Name>Line level allowance or charge reason code</Name>
+               <Description>The reason for the line level allowance or charge, expressed as a code.</Description>
+               <DataType>Code</DataType>
                <Reference type="BUSINESS_TERM">BT-140, BT-145</Reference>
                <Reference type="RULE">BR-42</Reference>
                <Reference type="RULE">BR-44</Reference>
@@ -1780,7 +2135,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:AllowanceChargeReason</Term>
-               <Name>Line level allowance or charge reason</Name>The reason for the line level allowance or charge, expressed as text.<DataType>Text</DataType>
+               <Name>Line level allowance or charge reason</Name>
+               <Description>The reason for the line level allowance or charge, expressed as text.</Description>
+               <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-139, BT-144</Reference>
                <Reference type="RULE">BR-42</Reference>
                <Reference type="RULE">BR-44</Reference>
@@ -1791,14 +2148,18 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:MultiplierFactorNumeric</Term>
-               <Name>Line level allowance or charge percentage</Name>The percentage that may be used, in conjunction with the line level allowance base amount, to calculate the line level allowance or charge amount.<DataType>Percentage</DataType>
+               <Name>Line level allowance or charge percentage</Name>
+               <Description>The percentage that may be used, in conjunction with the line level allowance base amount, to calculate the line level allowance or charge amount.</Description>
+               <DataType>Percentage</DataType>
                <Reference type="BUSINESS_TERM">BT-138,BT-143</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R042</Reference>
                <Value type="EXAMPLE">20</Value>
             </Element>
             <Element>
                <Term>cbc:Amount</Term>
-               <Name>Line level allowance or charge amount</Name>The amount of an allowance or a charge, without VAT. Must be rounded to maximum 2 decimals<DataType>Amount</DataType>
+               <Name>Line level allowance or charge amount</Name>
+               <Description>The amount of an allowance or a charge, without VAT. Must be rounded to maximum 2 decimals</Description>
+               <DataType>Amount</DataType>
                <Reference type="BUSINESS_TERM">BT-136,BT-141</Reference>
                <Reference type="RULE">BR-41</Reference>
                <Reference type="RULE">BR-43</Reference>
@@ -1819,7 +2180,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:BaseAmount</Term>
-               <Name>Line level allowance or charge base amount</Name>The base amount that may be used, in conjunction with the line level allowance or charge percentage, to calculate the line level allowance or charge amount. Must be rounded to maximum 2 decimals<DataType>Amount</DataType>
+               <Name>Line level allowance or charge base amount</Name>
+               <Description>The base amount that may be used, in conjunction with the line level allowance or charge percentage, to calculate the line level allowance or charge amount. Must be rounded to maximum 2 decimals</Description>
+               <DataType>Amount</DataType>
                <Reference type="BUSINESS_TERM">BT-137,BT-142</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R041</Reference>
                <Reference type="RULE">BR-DEC-25</Reference>
@@ -1839,16 +2202,22 @@
          </Element>
          <Element>
             <Term>cac:Item</Term>
-            <Name>ITEM INFORMATION</Name>A group of business terms providing information about the goods and services invoiced.<Reference type="BUSINESS_TERM">BG-31</Reference>
+            <Name>ITEM INFORMATION</Name>
+            <Description>A group of business terms providing information about the goods and services invoiced.</Description>
+            <Reference type="BUSINESS_TERM">BG-31</Reference>
             <Element cardinality="0..1">
                <Term>cbc:Description</Term>
-               <Name>Item description</Name>A description for an item.The item description allows for describing the item and its features in more detail than the Item name.<DataType>Text</DataType>
+               <Name>Item description</Name>
+               <Description>A description for an item.The item description allows for describing the item and its features in more detail than the Item name.</Description>
+               <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-154</Reference>
                <Value type="EXAMPLE">Long description of the item on the invoice line</Value>
             </Element>
             <Element>
                <Term>cbc:Name</Term>
-               <Name>Item name</Name>A name for an item.<DataType>Text</DataType>
+               <Name>Item name</Name>
+               <Description>A name for an item.</Description>
+               <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-153</Reference>
                <Reference type="RULE">BR-25</Reference>
                <Value type="EXAMPLE">Item name</Value>
@@ -1856,9 +2225,12 @@
             <Element cardinality="0..1">
                <Term>cac:BuyersItemIdentification</Term>
                <Name>BUYERS ITEM IDENTIFICATION</Name>
+               <Description/>
                <Element>
                   <Term>cbc:ID</Term>
-                  <Name>Item Buyer's identifier</Name>An identifier, assigned by the Buyer, for the item.<DataType>Identifier</DataType>
+                  <Name>Item Buyer's identifier</Name>
+                  <Description>An identifier, assigned by the Buyer, for the item.</Description>
+                  <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-156</Reference>
                   <Value type="EXAMPLE">123455</Value>
                </Element>
@@ -1866,9 +2238,12 @@
             <Element cardinality="0..1">
                <Term>cac:SellersItemIdentification</Term>
                <Name>SELLERS ITEM IDENTIFICATION</Name>
+               <Description/>
                <Element>
                   <Term>cbc:ID</Term>
-                  <Name>Item Seller's identifier</Name>An identifier, assigned by the Seller, for the item.<DataType>Identifier</DataType>
+                  <Name>Item Seller's identifier</Name>
+                  <Description>An identifier, assigned by the Seller, for the item.</Description>
+                  <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-155</Reference>
                   <Value type="EXAMPLE">9873242</Value>
                </Element>
@@ -1876,9 +2251,12 @@
             <Element cardinality="0..1">
                <Term>cac:StandardItemIdentification</Term>
                <Name>STANDARD ITEM IDENTIFICATION</Name>
+               <Description/>
                <Element>
                   <Term>cbc:ID</Term>
-                  <Name>Item standard identifier</Name>An item identifier based on a registered scheme.<DataType>Identifier</DataType>
+                  <Name>Item standard identifier</Name>
+                  <Description>An item identifier based on a registered scheme.</Description>
+                  <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-157</Reference>
                   <Reference type="RULE">BR-64</Reference>
                   <Reference type="RULE">BR-CL-21</Reference>
@@ -1895,9 +2273,12 @@
             <Element cardinality="0..1">
                <Term>cac:OriginCountry</Term>
                <Name>ORIGIN COUNTRY</Name>
+               <Description/>
                <Element>
                   <Term>cbc:IdentificationCode</Term>
-                  <Name>Item country of origin</Name>The code identifying the country from which the item originates.<DataType>Code</DataType>
+                  <Name>Item country of origin</Name>
+                  <Description>The code identifying the country from which the item originates.</Description>
+                  <DataType>Code</DataType>
                   <Reference type="BUSINESS_TERM">BT-159</Reference>
                   <Reference type="RULE">BR-CL-15</Reference>
                   <Reference type="CODE_LIST">ISO3166</Reference>
@@ -1907,9 +2288,12 @@
             <Element cardinality="0..n">
                <Term>cac:CommodityClassification</Term>
                <Name>COMMODITY CLASSIFICATION</Name>
+               <Description/>
                <Element>
                   <Term>cbc:ItemClassificationCode</Term>
-                  <Name>Item classification identifier</Name>A code for classifying the item by its type or nature.<DataType>Identifier</DataType>
+                  <Name>Item classification identifier</Name>
+                  <Description>A code for classifying the item by its type or nature.</Description>
+                  <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-158</Reference>
                   <Reference type="RULE">BR-65</Reference>
                   <Value type="EXAMPLE">9873242</Value>
@@ -1931,10 +2315,14 @@
             </Element>
             <Element>
                <Term>cac:ClassifiedTaxCategory</Term>
-               <Name>LINE VAT INFORMATION</Name>A group of business terms providing information about the VAT applicable for the goods and services invoiced on the Invoice line.<Reference type="BUSINESS_TERM">BG-30</Reference>
+               <Name>LINE VAT INFORMATION</Name>
+               <Description>A group of business terms providing information about the VAT applicable for the goods and services invoiced on the Invoice line.</Description>
+               <Reference type="BUSINESS_TERM">BG-30</Reference>
                <Element>
                   <Term>cbc:ID</Term>
-                  <Name>Invoiced item VAT category code</Name>The VAT category code for the invoiced item.<DataType>Code</DataType>
+                  <Name>Invoiced item VAT category code</Name>
+                  <Description>The VAT category code for the invoiced item.</Description>
+                  <DataType>Code</DataType>
                   <Reference type="BUSINESS_TERM">BT-151</Reference>
                   <Reference type="RULE">BR-CO-04</Reference>
                   <Reference type="RULE">BR-O-12</Reference>
@@ -1944,7 +2332,9 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Percent</Term>
-                  <Name>Invoiced item VAT rate</Name>The VAT rate, represented as percentage that applies to the invoiced item.<DataType>Percentage</DataType>
+                  <Name>Invoiced item VAT rate</Name>
+                  <Description>The VAT rate, represented as percentage that applies to the invoiced item.</Description>
+                  <DataType>Percentage</DataType>
                   <Reference type="BUSINESS_TERM">BT-152</Reference>
                   <Reference type="RULE">BR-S-05</Reference>
                   <Reference type="RULE">BR-Z-05</Reference>
@@ -1961,24 +2351,33 @@
                <Element>
                   <Term>cac:TaxScheme</Term>
                   <Name>TAX SCHEME</Name>
+                  <Description/>
                   <Element>
-                     <Term>cbc:ID</Term>Mandatory element. Use “VAT”<Value type="DEFAULT">VAT</Value>
+                     <Term>cbc:ID</Term>
+                     <Description>Mandatory element. Use “VAT”</Description>
+                     <Value type="DEFAULT">VAT</Value>
                   </Element>
                </Element>
             </Element>
             <Element cardinality="0..n">
                <Term>cac:AdditionalItemProperty</Term>
-               <Name>ITEM ATTRIBUTES</Name>A group of business terms providing information about properties of the goods and services invoiced.<Reference type="BUSINESS_TERM">BG-32</Reference>
+               <Name>ITEM ATTRIBUTES</Name>
+               <Description>A group of business terms providing information about properties of the goods and services invoiced.</Description>
+               <Reference type="BUSINESS_TERM">BG-32</Reference>
                <Element>
                   <Term>cbc:Name</Term>
-                  <Name>Item attribute name</Name>The name of the attribute or property of the item.<DataType>Text</DataType>
+                  <Name>Item attribute name</Name>
+                  <Description>The name of the attribute or property of the item.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-160</Reference>
                   <Reference type="RULE">BR-54</Reference>
                   <Value type="EXAMPLE">Color</Value>
                </Element>
                <Element>
                   <Term>cbc:Value</Term>
-                  <Name>Item attribute value</Name>The value of the attribute or property of the item.<DataType>Text</DataType>
+                  <Name>Item attribute value</Name>
+                  <Description>The value of the attribute or property of the item.</Description>
+                  <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-161</Reference>
                   <Reference type="RULE">BR-54</Reference>
                   <Value type="EXAMPLE">Black</Value>
@@ -1987,10 +2386,14 @@
          </Element>
          <Element>
             <Term>cac:Price</Term>
-            <Name>PRICE DETAILS</Name>A group of business terms providing information about the price applied for the goods and services invoiced on the Invoice line.<Reference type="BUSINESS_TERM">BG-29</Reference>
+            <Name>PRICE DETAILS</Name>
+            <Description>A group of business terms providing information about the price applied for the goods and services invoiced on the Invoice line.</Description>
+            <Reference type="BUSINESS_TERM">BG-29</Reference>
             <Element>
                <Term>cbc:PriceAmount</Term>
-               <Name>Item net price</Name>The price of an item, exclusive of VAT, after subtracting item price discount. The Item net price has to be equal with the Item gross price less the Item price discount, if they are both provided. Item price can not be negative.<DataType>Amount</DataType>
+               <Name>Item net price</Name>
+               <Description>The price of an item, exclusive of VAT, after subtracting item price discount. The Item net price has to be equal with the Item gross price less the Item price discount, if they are both provided. Item price can not be negative.</Description>
+               <DataType>Amount</DataType>
                <Reference type="BUSINESS_TERM">BT-146</Reference>
                <Reference type="RULE">BR-26</Reference>
                <Reference type="RULE">BR-27</Reference>
@@ -2008,7 +2411,9 @@
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:BaseQuantity</Term>
-               <Name>Item price base quantity</Name>The number of item units to which the price applies.<DataType>Quantity</DataType>
+               <Name>Item price base quantity</Name>
+               <Description>The number of item units to which the price applies.</Description>
+               <DataType>Quantity</DataType>
                <Reference type="BUSINESS_TERM">BT-149</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R121</Reference>
                <Reference type="RULE">BR-CL-23</Reference>
@@ -2027,13 +2432,18 @@
             <Element cardinality="0..1">
                <Term>cac:AllowanceCharge</Term>
                <Name>ALLOWANCE</Name>
+               <Description/>
                <Element>
-                  <Term>cbc:ChargeIndicator</Term>Mandatory element. Value must be “false”<Reference type="RULE">PEPPOL-EN16931-R044</Reference>
+                  <Term>cbc:ChargeIndicator</Term>
+                  <Description>Mandatory element. Value must be “false”</Description>
+                  <Reference type="RULE">PEPPOL-EN16931-R044</Reference>
                   <Value type="FIXED">false</Value>
                </Element>
                <Element>
                   <Term>cbc:Amount</Term>
-                  <Name>Item price discount</Name>The total discount subtracted from the Item gross price to calculate the Item net price.<DataType>Amount</DataType>
+                  <Name>Item price discount</Name>
+                  <Description>The total discount subtracted from the Item gross price to calculate the Item net price.</Description>
+                  <DataType>Amount</DataType>
                   <Reference type="BUSINESS_TERM">BT-147</Reference>
                   <Value type="EXAMPLE">100</Value>
                   <Attribute>
@@ -2048,7 +2458,9 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:BaseAmount</Term>
-                  <Name>Item gross price</Name>The unit price, exclusive of VAT, before subtracting Item price discount, can not be negative<DataType>Amount</DataType>
+                  <Name>Item gross price</Name>
+                  <Description>The unit price, exclusive of VAT, before subtracting Item price discount, can not be negative</Description>
+                  <DataType>Amount</DataType>
                   <Reference type="BUSINESS_TERM">BT-148</Reference>
                   <Reference type="RULE">BR-28</Reference>
                   <Reference type="RULE">BR-CL-03</Reference>

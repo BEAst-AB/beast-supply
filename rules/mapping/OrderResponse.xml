@@ -143,7 +143,7 @@
                <Data ss:Type="String">Business process type identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Identifies the BII profile or business process context in which the transaction appears.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -949,7 +949,7 @@
                <Data ss:Type="String">Period start date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The date on which the period starts. The start dates counts as part of the period.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-07-15</Data>
@@ -975,7 +975,7 @@
                <Data ss:Type="String">Period start time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The time at which this period begins. Format = "hh:mm:ss"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">12:30:00</Data>
@@ -1001,7 +1001,7 @@
                <Data ss:Type="String">Period end date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The date on which the period ends. The end date counts as part of the period.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-07-16</Data>
@@ -1027,7 +1027,7 @@
                <Data ss:Type="String">Period end time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The time at which this period end. Format = "hh:mm:ss"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">15:30:00</Data>
@@ -2041,7 +2041,7 @@
                <Data ss:Type="String">Item classification code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">12345678</Data>
@@ -2171,7 +2171,7 @@
                <Data ss:Type="String">Item TAX category code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The TAX category code for the item.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">S</Data>
@@ -2197,7 +2197,7 @@
                <Data ss:Type="String">Line TAX rate</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The TAX percentage rate that applies to the line amount.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">25</Data>
@@ -2249,7 +2249,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Tax scheme. E.g. “VAT” or “GST”</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">VAT</Data>
@@ -2275,7 +2275,7 @@
                <Data ss:Type="String">Additional item property information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">A group of business terms providing information about properties of the goods and services invoiced.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2301,7 +2301,7 @@
                <Data ss:Type="String">Item property name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The name of the property.The name must be sufficiently descriptive to define the value. The definition may be supplemented with the property unit of measure when relevant.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Weight</Data>
@@ -2327,7 +2327,7 @@
                <Data ss:Type="String">Item property code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Code for the item property according to a property code system.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Code</Data>
@@ -2379,7 +2379,7 @@
                <Data ss:Type="String">Item property value</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The value of the item property.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">12 gram</Data>
@@ -2405,7 +2405,7 @@
                <Data ss:Type="String">Item property unit of measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">The unit of measure in which the property value is stated, if relevant. May not be relevant when properties are descriptive.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">12</Data>
@@ -2457,7 +2457,7 @@
                <Data ss:Type="String">Property classification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Standardized and predefined classification of items properties.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">gram</Data>

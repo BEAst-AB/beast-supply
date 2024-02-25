@@ -20,7 +20,9 @@
       </Element>
       <Element>
          <Term>cbc:ProfileID</Term>
-         <Name>Business process type identifier</Name>Identifies the BII profile or business process context in which the transaction appears.<DataType>Identifier</DataType>
+         <Name>Business process type identifier</Name>
+         <Description>Identifies the BII profile or business process context in which the transaction appears.</Description>
+         <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir76-002</Reference>
          <Value type="FIXED">urn:fdc:peppol.eu:poacc:bis:ordering:3</Value>
       </Element>
@@ -124,9 +126,11 @@
       <Element>
          <Term>cac:SellerSupplierParty</Term>
          <Name>Seller information </Name>
+         <Description/>
          <Element cardinality="1..1">
             <Term>cac:Party</Term>
             <Name>Description of seller</Name>
+            <Description/>
             <Element>
                <Term>cbc:EndpointID</Term>
                <Name>Seller party electronic address</Name>
@@ -147,6 +151,7 @@
             <Element cardinality="0..n">
                <Term>cac:PartyIdentification</Term>
                <Name>Seller identification </Name>
+               <Description/>
                <Reference type="RULE">PEPPOL-T76-R002</Reference>
                <Element>
                   <Term>cbc:ID</Term>
@@ -169,6 +174,7 @@
             <Element cardinality="0..1">
                <Term>cac:PartyLegalEntity</Term>
                <Name>Name of seller</Name>
+               <Description/>
                <Reference type="RULE">PEPPOL-T76-R002</Reference>
                <Element>
                   <Term>cbc:RegistrationName</Term>
@@ -186,9 +192,11 @@
       <Element>
          <Term>cac:BuyerCustomerParty</Term>
          <Name>Buyer information</Name>
+         <Description/>
          <Element>
             <Term>cac:Party</Term>
             <Name>Description of buyer</Name>
+            <Description/>
             <Element>
                <Term>cbc:EndpointID</Term>
                <Name>Buyer party electronic address</Name>
@@ -209,6 +217,7 @@
             <Element cardinality="0..n">
                <Term>cac:PartyIdentification</Term>
                <Name>Buyer identification</Name>
+               <Description/>
                <Reference type="RULE">PEPPOL-T76-R001</Reference>
                <Element>
                   <Term>cbc:ID</Term>
@@ -230,6 +239,7 @@
             <Element cardinality="0..1">
                <Term>cac:PartyLegalEntity</Term>
                <Name>Party name</Name>
+               <Description/>
                <Reference type="RULE">PEPPOL-T76-R001</Reference>
                <Element>
                   <Term>cbc:RegistrationName</Term>
@@ -253,29 +263,38 @@
          <Element>
             <Term>cac:PromisedDeliveryPeriod</Term>
             <Name>Promised delivery period</Name>
+            <Description/>
             <Element cardinality="0..1">
                <Term>cbc:StartDate</Term>
-               <Name>Period start date</Name>The date on which the period starts. The start dates counts as part of the period.<DataType>date</DataType>
+               <Name>Period start date</Name>
+               <Description>The date on which the period starts. The start dates counts as part of the period.</Description>
+               <DataType>date</DataType>
                <Reference type="BUSINESS_TERM">tir76-099</Reference>
                <Reference type="RULE">PEPPOL-T76-R004</Reference>
                <Value type="EXAMPLE">2021-07-15</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:StartTime</Term>
-               <Name>Period start time</Name>The time at which this period begins. Format = "hh:mm:ss"<DataType>Time</DataType>
+               <Name>Period start time</Name>
+               <Description>The time at which this period begins. Format = "hh:mm:ss"</Description>
+               <DataType>Time</DataType>
                <Reference type="BUSINESS_TERM">tir76-p010</Reference>
                <Value type="EXAMPLE">12:30:00</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:EndDate</Term>
-               <Name>Period end date</Name>The date on which the period ends. The end date counts as part of the period.<DataType>Date</DataType>
+               <Name>Period end date</Name>
+               <Description>The date on which the period ends. The end date counts as part of the period.</Description>
+               <DataType>Date</DataType>
                <Reference type="BUSINESS_TERM">tir76-100</Reference>
                <Reference type="RULE">PEPPOL-T76-R004</Reference>
                <Value type="EXAMPLE">2021-07-16</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:EndTime</Term>
-               <Name>Period end time</Name>The time at which this period end. Format = "hh:mm:ss"<DataType>Time</DataType>
+               <Name>Period end time</Name>
+               <Description>The time at which this period end. Format = "hh:mm:ss"</Description>
+               <DataType>Time</DataType>
                <Reference type="BUSINESS_TERM">tir76-p011</Reference>
                <Value type="EXAMPLE">15:30:00</Value>
             </Element>
@@ -289,6 +308,7 @@
          <Element>
             <Term>cac:LineItem</Term>
             <Name>Description of line item</Name>
+            <Description/>
             <Element>
                <Term>cbc:ID</Term>
                <Name>Document line identifier</Name>
@@ -351,9 +371,11 @@
             <Element cardinality="0..1">
                <Term>cac:Delivery</Term>
                <Name>Delivery information</Name>
+               <Description/>
                <Element>
                   <Term>cac:PromisedDeliveryPeriod</Term>
                   <Name>Delivery period</Name>
+                  <Description/>
                   <Element cardinality="0..1">
                      <Term>cbc:StartDate</Term>
                      <Name>Period start date</Name>
@@ -401,6 +423,7 @@
             <Element cardinality="0..1">
                <Term>cac:Price</Term>
                <Name>Price information</Name>
+               <Description/>
                <Element>
                   <Term>cbc:PriceAmount</Term>
                   <Name>Item price</Name>
@@ -440,6 +463,7 @@
             <Element>
                <Term>cac:Item</Term>
                <Name>Item information</Name>
+               <Description/>
                <Element>
                   <Term>cbc:Name</Term>
                   <Name>Item name</Name>
@@ -453,6 +477,7 @@
                <Element cardinality="0..1">
                   <Term>cac:BuyersItemIdentification</Term>
                   <Name>Buyer item identification</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Buyers item identifier</Name>
@@ -467,6 +492,7 @@
                <Element cardinality="0..1">
                   <Term>cac:SellersItemIdentification</Term>
                   <Name>Sellers item identification</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>The Sellers item identifier</Name>
@@ -481,6 +507,7 @@
                <Element cardinality="0..1">
                   <Term>cac:StandardItemIdentification</Term>
                   <Name>Standard item identification</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Item standard identifier</Name>
@@ -504,6 +531,7 @@
          <Element cardinality="0..1">
             <Term>cac:SellerSubstitutedLineItem</Term>
             <Name>Substituted line item by the seller</Name>
+            <Description/>
             <Element>
                <Term>cbc:ID</Term>
                <Name>Substituted Line Item Identifier </Name>
@@ -516,6 +544,7 @@
             <Element>
                <Term>cac:Item</Term>
                <Name>Item information</Name>
+               <Description/>
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Item name</Name>
@@ -529,6 +558,7 @@
                <Element cardinality="0..1">
                   <Term>cac:SellersItemIdentification</Term>
                   <Name>Sellers item identification</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Sellers item identifier</Name>
@@ -543,6 +573,7 @@
                <Element cardinality="0..1">
                   <Term>cac:StandardItemIdentification</Term>
                   <Name>Standard item identification</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Item standard identifier</Name>
@@ -564,9 +595,12 @@
                <Element cardinality="0..n">
                   <Term>cac:CommodityClassification</Term>
                   <Name>Commodity classification information</Name>
+                  <Description/>
                   <Element cardinality="0..1">
                      <Term>cbc:ItemClassificationCode</Term>
-                     <Name>Item classification code</Name>A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.<DataType>Code</DataType>
+                     <Name>Item classification code</Name>
+                     <Description>A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
+                     <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir76-149</Reference>
                      <Value type="EXAMPLE">12345678</Value>
                      <Attribute>
@@ -593,23 +627,31 @@
                <Element cardinality="0..1">
                   <Term>cac:ClassifiedTaxCategory</Term>
                   <Name>Line TAX information</Name>
+                  <Description/>
                   <Element>
                      <Term>cbc:ID</Term>
-                     <Name>Item TAX category code</Name>The TAX category code for the item.<DataType>Code</DataType>
+                     <Name>Item TAX category code</Name>
+                     <Description>The TAX category code for the item.</Description>
+                     <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir76-150</Reference>
                      <Value type="EXAMPLE">S</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:Percent</Term>
-                     <Name>Line TAX rate</Name>The TAX percentage rate that applies to the line amount.<DataType>Percentage</DataType>
+                     <Name>Line TAX rate</Name>
+                     <Description>The TAX percentage rate that applies to the line amount.</Description>
+                     <DataType>Percentage</DataType>
                      <Reference type="BUSINESS_TERM">tir04-170</Reference>
                      <Value type="EXAMPLE">25</Value>
                   </Element>
                   <Element>
                      <Term>cac:TaxScheme</Term>
                      <Name>Tax scheme information</Name>
+                     <Description/>
                      <Element>
-                        <Term>cbc:ID</Term>Tax scheme. E.g. “VAT” or “GST”<DataType>Identifier</DataType>
+                        <Term>cbc:ID</Term>
+                        <Description>Tax scheme. E.g. “VAT” or “GST”</Description>
+                        <DataType>Identifier</DataType>
                         <Reference type="BUSINESS_TERM">tir76-p003</Reference>
                         <Value type="EXAMPLE">VAT</Value>
                      </Element>
@@ -617,15 +659,21 @@
                </Element>
                <Element cardinality="0..n">
                   <Term>cac:AdditionalItemProperty</Term>
-                  <Name>Additional item property information</Name>A group of business terms providing information about properties of the goods and services invoiced.<Element>
+                  <Name>Additional item property information</Name>
+                  <Description>A group of business terms providing information about properties of the goods and services invoiced.</Description>
+                  <Element>
                      <Term>cbc:Name</Term>
-                     <Name>Item property name</Name>The name of the property.The name must be sufficiently descriptive to define the value. The definition may be supplemented with the property unit of measure when relevant.<DataType>Text</DataType>
+                     <Name>Item property name</Name>
+                     <Description>The name of the property.The name must be sufficiently descriptive to define the value. The definition may be supplemented with the property unit of measure when relevant.</Description>
+                     <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir76-138</Reference>
                      <Value type="EXAMPLE">Weight</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:NameCode</Term>
-                     <Name>Item property code</Name>Code for the item property according to a property code system.<DataType>Code</DataType>
+                     <Name>Item property code</Name>
+                     <Description>Code for the item property according to a property code system.</Description>
+                     <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir76-p004</Reference>
                      <Value type="EXAMPLE">Code</Value>
                      <Attribute>
@@ -636,13 +684,17 @@
                   </Element>
                   <Element>
                      <Term>cbc:Value</Term>
-                     <Name>Item property value</Name>The value of the item property.<DataType>Text</DataType>
+                     <Name>Item property value</Name>
+                     <Description>The value of the item property.</Description>
+                     <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir76-139</Reference>
                      <Value type="EXAMPLE">12 gram</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:ValueQuantity</Term>
-                     <Name>Item property unit of measure</Name>The unit of measure in which the property value is stated, if relevant. May not be relevant when properties are descriptive.<DataType>Quantity</DataType>
+                     <Name>Item property unit of measure</Name>
+                     <Description>The unit of measure in which the property value is stated, if relevant. May not be relevant when properties are descriptive.</Description>
+                     <DataType>Quantity</DataType>
                      <Reference type="BUSINESS_TERM">tir76-p008</Reference>
                      <Value type="EXAMPLE">12</Value>
                      <Attribute>
@@ -656,7 +708,9 @@
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:ValueQualifier</Term>
-                     <Name>Property classification</Name>Standardized and predefined classification of items properties.<DataType>Text</DataType>
+                     <Name>Property classification</Name>
+                     <Description>Standardized and predefined classification of items properties.</Description>
+                     <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir76-p009</Reference>
                      <Value type="EXAMPLE">gram</Value>
                   </Element>
@@ -666,6 +720,7 @@
          <Element>
             <Term>cac:OrderLineReference</Term>
             <Name>Reference to order line</Name>
+            <Description/>
             <Element>
                <Term>cbc:LineID</Term>
                <Name>Order line reference</Name>
