@@ -5,27 +5,35 @@
 	<!-- unit testing -->
 	<testfolder>unit-catalogue</testfolder>
 	<testfolder>unit-common</testfolder>
-	<testfolder>unit-despatch-advice</testfolder>
 	<testfolder>unit-order</testfolder>
 	<testfolder>unit-order-agreement</testfolder>
 	<testfolder>unit-order-response</testfolder>
 	<testfolder>unit-advanced-despatch-advice</testfolder>
-	<testfolder>unit-despatch-advice-w-response</testfolder>
 	<testfolder>unit-weight-statement</testfolder>
+	<testfolder>unit-transport-execution-plan-request</testfolder>
+	<testfolder>unit-transport-execution-plan</testfolder>
+	<testfolder>unit-waybill</testfolder>
+	<testfolder>unit-transportation-status-request</testfolder>
+	<testfolder>unit-transportation-status</testfolder>
+	<testfolder>unit-receipt-advice</testfolder>
 
 
 	<!-- example and snippet folders -->
 	<testfolder>examples</testfolder>
 	<testfolder>use-case-examples/order</testfolder>
 	<testfolder>use-case-examples/order-response</testfolder>
-	<testfolder>use-case-examples/advaced-despatch-advice</testfolder>
 	<testfolder>snippets/order</testfolder>
 	<testfolder>snippets/order-response</testfolder>
 	<testfolder>snippets/order-agreement</testfolder>
 	<testfolder>snippets/catalogue</testfolder>
 	<testfolder>snippets/advanceddespatch</testfolder>
-	<testfolder>snippets/despatch-response</testfolder>
 	<testfolder>snippets/weightstatement</testfolder>
+	<testfolder>snippets/transport-execution-plan-request</testfolder>
+	<testfolder>snippets/transport-execution-plan</testfolder>
+	<testfolder>snippets/waybill</testfolder>
+	<testfolder>snippets/transportation-status-request</testfolder>
+	<testfolder>snippets/transportation-status</testfolder>
+	<testfolder>snippets/receipt-advice</testfolder>
 
 	<!-- base config -->
 	<configuration>
@@ -53,13 +61,13 @@
 		<inherit>ubl-orderresponse-2.1</inherit>
 		<file source="sch/PEPPOLBIS-T110.sch" path="xsl/PEPPOLBIS-T110.xsl"/>
 	</configuration>
-	
-	<configuration>
+
+	<!--configuration>
 		<identifier>peppolbis-t16-base-3.0</identifier>
 		<title>PEPPOL Despatch Advice 3.0 (T16)</title>
 		<inherit>ubl-despatchadvice-2.1</inherit>
 		<file source="sch/PEPPOLBIS-T16.sch" path="xsl/PEPPOLBIS-T16.xsl"/>
-	</configuration>
+	</configuration-->
 
 	<configuration>
 		<identifier>peppolbis-T120-base-1.1</identifier>
@@ -69,18 +77,54 @@
 	</configuration>
 
 	<configuration>
-		<identifier>peppolbis-T121-base-1.1</identifier>
-		<title>Despach Advice Response 1.0 (T121)</title>
-		<inherit>ubl-applicationresponse-2.1</inherit>
-		<file source="sch/PEPPOLBIS-T121.sch" path="xsl/PEPPOLBIS-T121.xsl"/>
-	</configuration>
-	
-	<configuration>
 		<identifier>peppolbis-T122-base-1.1</identifier>
 		<title>Weight Statement (T122)</title>
 		<inherit>ubl-weightstatement-2.3</inherit>
 		<file source="sch/PEPPOLBIS-T122.sch" path="xsl/PEPPOLBIS-T122.xsl"/>
 	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-T123-base-1.0</identifier>
+		<title>Transport Execution Plan Request (T123)</title>
+		<inherit>ubl-transport-execution-plan-request-2.3</inherit>
+		<file source="sch/PEPPOLBIS-T123.sch" path="xsl/PEPPOLBIS-T123.xsl"/>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-T124-base-1.0</identifier>
+		<title>Transport Execution Plan (T124)</title>
+		<inherit>ubl-transport-execution-plan-2.3</inherit>
+		<file source="sch/PEPPOLBIS-T124.sch" path="xsl/PEPPOLBIS-T124.xsl"/>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-T125-base-1.0</identifier>
+		<title>Waybill (T125)</title>
+		<inherit>ubl-waybill-2.3</inherit>
+		<file source="sch/PEPPOLBIS-T125.sch" path="xsl/PEPPOLBIS-T125.xsl"/>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-T126-base-1.0</identifier>
+		<title>Transportation Status Request (T126)</title>
+		<inherit>ubl-transportation-status-request-2.3</inherit>
+		<file source="sch/PEPPOLBIS-T126.sch" path="xsl/PEPPOLBIS-T126.xsl"/>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-T127-base-1.0</identifier>
+		<title>Transportation Status (T127)</title>
+		<inherit>ubl-transportation-status-2.3</inherit>
+		<file source="sch/PEPPOLBIS-T127.sch" path="xsl/PEPPOLBIS-T127.xsl"/>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-T128-base-1.0</identifier>
+		<title>Receipt Advice (T128)</title>
+		<inherit>ubl-receipt-advice-2.3</inherit>
+		<file source="sch/PEPPOLBIS-T128.sch" path="xsl/PEPPOLBIS-T128.xsl"/>
+	</configuration>
+
 
 	<!-- profile config -->
 	<configuration>
@@ -131,15 +175,6 @@
 		<inherit>peppolbis-t19-base-3.0</inherit>
 	</configuration>
 
-
-	<configuration>
-		<identifier>peppolbis-30</identifier>
-		<title>PEPPOL BIS Despatch Advice 3.0</title>
-		<profileId>urn:fdc:peppol.eu:poacc:bis:despatch_advice:3</profileId>
-		<customizationId>urn:fdc:peppol.eu:poacc:trns:despatch_advice:3</customizationId>
-		<inherit>peppolbis-t16-base-3.0</inherit>
-	</configuration>
-
 	<configuration>
 		<identifier>peppolbis-120-only</identifier>
 		<title>Advanced Despatch Advice Only 1.1</title>
@@ -155,15 +190,7 @@
 		<customizationId>urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1</customizationId>
 		<inherit>peppolbis-T120-base-1.1</inherit>
 	</configuration>
-
-	<configuration>
-		<identifier>peppolbis-121</identifier>
-		<title>Despatch Advice Response</title>
-		<profileId>urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_response:1</profileId>
-		<customizationId>urn:fdc:peppol.eu:logistics:trns:despatch_advice_response:1</customizationId>
-		<inherit>peppolbis-T121-base-1.1</inherit>
-	</configuration>
-
+	
 	<configuration>
 		<identifier>peppolbis-122</identifier>
 		<title>Weight Statement</title>
@@ -173,47 +200,111 @@
 	</configuration>
 
 	<configuration>
+		<identifier>peppolbis-123-request</identifier>
+		<title>Transport Execution Plan with Request</title>
+		<profileId>urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_w_request:1</profileId>
+		<customizationId>urn:fdc:peppol.eu:logistics:trns:transport_execution_plan_request:1</customizationId>
+		<inherit>peppolbis-T123-base-1.0</inherit>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-124-request</identifier>
+		<title>Transport Execution Plan with Request</title>
+		<profileId>urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_w_request:1</profileId>
+		<customizationId>urn:fdc:peppol.eu:logistics:trns:transport_execution_plan:1</customizationId>
+		<inherit>peppolbis-T124-base-1.0</inherit>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-124-only</identifier>
+		<title>Transport Execution Plan Only</title>
+		<profileId>urn:fdc:peppol.eu:logistics:bis:transport_execution_plan_only:1</profileId>
+		<customizationId>urn:fdc:peppol.eu:logistics:trns:transport_execution_plan:1</customizationId>
+		<inherit>peppolbis-T124-base-1.0</inherit>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-125</identifier>
+		<title>Waybill</title>
+		<profileId>urn:fdc:peppol.eu:logistics:bis:waybill_only:1</profileId>
+		<customizationId>urn:fdc:peppol.eu:logistics:trns:waybill:1</customizationId>
+		<inherit>peppolbis-T125-base-1.0</inherit>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-126-request</identifier>
+		<title>Transportation Status with Request</title>
+		<profileId>urn:fdc:peppol.eu:logistics:bis:transportation_status_w_request:1</profileId>
+		<customizationId>urn:fdc:peppol.eu:logistics:trns:transportation_status_request:1</customizationId>
+		<inherit>peppolbis-T126-base-1.0</inherit>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-127-only</identifier>
+		<title>Transportation Status Only</title>
+		<profileId>urn:fdc:peppol.eu:logistics:bis:transportation_status_only:1</profileId>
+		<customizationId>urn:fdc:peppol.eu:logistics:trns:transportation_status:1</customizationId>
+		<inherit>peppolbis-T127-base-1.0</inherit>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-127-request</identifier>
+		<title>Transportation Status with Request</title>
+		<profileId>urn:fdc:peppol.eu:logistics:bis:transportation_status_w_request:1</profileId>
+		<customizationId>urn:fdc:peppol.eu:logistics:trns:transportation_status:1</customizationId>
+		<inherit>peppolbis-T127-base-1.0</inherit>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-128-w-despatch-advice</identifier>
+		<title>Receipt Advice</title>
+		<profileId>urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_receipt_advice:1</profileId>
+		<customizationId>urn:fdc:peppol.eu:logistics:trns:receipt_advice:1</customizationId>
+		<inherit>peppolbis-T128-base-1.0</inherit>
+	</configuration>
+
+	<configuration>
 		<identifier>peppolbis-en16931-cen-cii</identifier>
 		<title>CEN TC434 UBL</title>
 		<file path="sch/CEN-EN16931-CII.sch"/>
-	  </configuration>
-	
-	  <configuration>
+	</configuration>
+
+	<configuration>
 		<identifier>peppolbis-en16931-base-3.0-cii</identifier>
 		<title>PEPPOL BIS Billing 3.0 (Base)</title>
 		<file path="sch/PEPPOL-EN16931-CII.sch"/>
-	  </configuration>
-	
-	  <configuration>
+	</configuration>
+
+	<configuration>
 		<identifier>peppolbis-en16931-01-3.0-cii</identifier>
 		<title>PEPPOL BIS Billing 3.0 (Profile 01)</title>
 		<declaration type="xml.uncefact">CrossIndustryInvoice::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0::urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
 		<inherit>uncefact-d16b-cii-uncoupled</inherit>
 		<inherit>peppolbis-en16931-cen-cii</inherit>
 		<inherit>peppolbis-en16931-base-3.0-cii</inherit>
-	  </configuration>
-	
-	  <!-- UBL -->
-	
-	  <configuration>
+	</configuration>
+
+	<!-- UBL -->
+
+	<configuration>
 		<identifier>peppolbis-en16931-cen-ubl</identifier>
 		<title>CEN TC434 UBL</title>
 		<file path="sch/CEN-EN16931-UBL.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
-	  </configuration>
-	
-	  <configuration>
+	</configuration>
+
+	<configuration>
 		<identifier>peppolbis-en16931-base-3.0-ubl</identifier>
 		<title>PEPPOL BIS Billing 3.0 (Base)</title>
 		<file path="sch/PEPPOL-EN16931-UBL.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
-	  </configuration>
-	
-	  <configuration>
+	</configuration>
+
+	<configuration>
 		<identifier>peppolbis-en16931-stylesheet-3.0-ubl</identifier>
 		<title>PEPPOL BIS Billing 3.0 Stylesheet</title>
 		<stylesheet identifier="peppol-bis-billing-v3-ubl" source="../stylesheet/stylesheet-ubl.xslt" path="stylesheet/stylesheet-ubl.xslt"/>
-	  </configuration>
-	
-	  <configuration>
+	</configuration>
+
+	<configuration>
 		<identifier>peppolbis-en16931-01-3.0-ubl-invoice</identifier>
 		<title>PEPPOL BIS Billing 3.0 (Profile 01)</title>
 		<declaration type="xml.ubl">Invoice::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
@@ -221,9 +312,9 @@
 		<inherit>peppolbis-en16931-cen-ubl</inherit>
 		<inherit>peppolbis-en16931-base-3.0-ubl</inherit>
 		<inherit>peppolbis-en16931-stylesheet-3.0-ubl</inherit>
-	  </configuration>
-	
-	  <configuration>
+	</configuration>
+
+	<configuration>
 		<identifier>peppolbis-en16931-01-3.0-ubl-creditnote</identifier>
 		<title>PEPPOL BIS Billing 3.0 (Profile 01)</title>
 		<declaration type="xml.ubl">CreditNote::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
@@ -231,5 +322,7 @@
 		<inherit>peppolbis-en16931-cen-ubl</inherit>
 		<inherit>peppolbis-en16931-base-3.0-ubl</inherit>
 		<inherit>peppolbis-en16931-stylesheet-3.0-ubl</inherit>
-	  </configuration>
+	</configuration>
+
 </buildConfigurations>
+

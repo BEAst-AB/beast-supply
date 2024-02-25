@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
-          xmlns:str="urn:fdc:difi.no:2017:vefa:structure-1"
           xmlns:msxsl="urn:schemas-microsoft-com:xslt"
           xmlns:o="urn:schemas-microsoft-com:office:office"
-          xmlns:x="urn:schemas-microsoft-com:office:excel"
-          xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+          xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:str="urn:fdc:difi.no:2017:vefa:structure-1"
+          xmlns:x="urn:schemas-microsoft-com:office:excel">
    <Styles>
       <Style ss:ID="Default" ss:Name="Normal">
          <Alignment ss:Vertical="Bottom"/>
@@ -85,7 +85,7 @@
                <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">OrderResponse</Data>
+               <Data ss:Type="String">ubl:OrderResponse</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -97,7 +97,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse</Data>
+               <Data ss:Type="String">/ubl:OrderResponse</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">0</Data>
@@ -123,7 +123,7 @@
                <Data ss:Type="String">urn:fdc:peppol.eu:poacc:trns:order_response:3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cbc:CustomizationID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cbc:CustomizationID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">1</Data>
@@ -143,13 +143,13 @@
                <Data ss:Type="String">Business process type identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identifies the BII profile or business process context in which the transaction appears.</Data>
+               <Data ss:Type="String">Identifies the BII profile or business process context in which the transaction appears.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">urn:fdc:peppol.eu:poacc:bis:ordering:3</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cbc:ProfileID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cbc:ProfileID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">1</Data>
@@ -175,7 +175,7 @@
                <Data ss:Type="String">101</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cbc:ID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cbc:ID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">1</Data>
@@ -201,7 +201,7 @@
                <Data ss:Type="String">101-111</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cbc:SalesOrderID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cbc:SalesOrderID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">1</Data>
@@ -227,7 +227,7 @@
                <Data ss:Type="String">2021-07-01</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cbc:IssueDate</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cbc:IssueDate</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">1</Data>
@@ -253,7 +253,7 @@
                <Data ss:Type="String">06:10:10</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cbc:IssueTime</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cbc:IssueTime</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">1</Data>
@@ -279,7 +279,7 @@
                <Data ss:Type="String">CA</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cbc:OrderResponseCode</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cbc:OrderResponseCode</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">1</Data>
@@ -305,7 +305,7 @@
                <Data ss:Type="String">Response message with amendments in the details</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cbc:Note</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cbc:Note</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">1</Data>
@@ -331,7 +331,7 @@
                <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cbc:DocumentCurrencyCode</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cbc:DocumentCurrencyCode</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">1</Data>
@@ -357,7 +357,7 @@
                <Data ss:Type="String">ABC-123</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cbc:CustomerReference</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cbc:CustomerReference</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">1</Data>
@@ -377,13 +377,13 @@
                <Data ss:Type="String">Order reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The order response message always is preceeded by an order message. If the order response is a confirmation of something ordered by telephone, in a shop or a supplier portal, the Peppol message OrderAgreement should be used instead. Peppol:</Data>
+               <Data ss:Type="String">BEAst: The order response message always is preceeded by an order message. If the order response is a confirmation of something ordered by telephone, in a shop or a supplier portal, the Peppol message OrderAgreement should be used instead.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderReference</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderReference</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">1</Data>
@@ -409,7 +409,7 @@
                <Data ss:Type="String">11233</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderReference/cbc:ID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderReference/cbc:ID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">2</Data>
@@ -435,7 +435,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:SellerSupplierParty</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">1</Data>
@@ -461,7 +461,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:SellerSupplierParty/cac:Party</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty/cac:Party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">2</Data>
@@ -487,7 +487,7 @@
                <Data ss:Type="String">7598000000128</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:SellerSupplierParty/cac:Party/cbc:EndpointID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty/cac:Party/cbc:EndpointID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -507,13 +507,13 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for the electronic address</Data>
+               <Data ss:Type="String">Scheme identifier for the electronic address</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:SellerSupplierParty/cac:Party/cbc:EndpointID/schemeID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty/cac:Party/cbc:EndpointID/schemeID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
@@ -539,7 +539,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:SellerSupplierParty/cac:Party/cac:PartyIdentification</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty/cac:Party/cac:PartyIdentification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -565,7 +565,7 @@
                <Data ss:Type="String">DK12345678</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:SellerSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
@@ -585,13 +585,13 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for party identification</Data>
+               <Data ss:Type="String">Scheme identifier for party identification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0184</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:SellerSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID/schemeID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID/schemeID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
@@ -617,7 +617,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -643,7 +643,7 @@
                <Data ss:Type="String">The Supplier AB</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
@@ -669,7 +669,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:BuyerCustomerParty</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">1</Data>
@@ -695,7 +695,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:BuyerCustomerParty/cac:Party</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty/cac:Party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">2</Data>
@@ -721,7 +721,7 @@
                <Data ss:Type="String">7590000012347</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:BuyerCustomerParty/cac:Party/cbc:EndpointID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty/cac:Party/cbc:EndpointID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -741,13 +741,13 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for the electronic address</Data>
+               <Data ss:Type="String">Scheme identifier for the electronic address</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:BuyerCustomerParty/cac:Party/cbc:EndpointID/schemeID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty/cac:Party/cbc:EndpointID/schemeID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
@@ -773,7 +773,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:BuyerCustomerParty/cac:Party/cac:PartyIdentification</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty/cac:Party/cac:PartyIdentification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -799,7 +799,7 @@
                <Data ss:Type="String">DK55412777</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:BuyerCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
@@ -819,13 +819,13 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for party identification</Data>
+               <Data ss:Type="String">Scheme identifier for party identification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0184</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:BuyerCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID/schemeID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID/schemeID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
@@ -851,7 +851,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -877,7 +877,7 @@
                <Data ss:Type="String">City Hospital</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
@@ -897,13 +897,13 @@
                <Data ss:Type="String">Delivery information </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Confirmation of delivery dates are always at line level, not here. Peppol:</Data>
+               <Data ss:Type="String">BEAst: Confirmation of delivery dates are always at line level, not here.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:Delivery</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:Delivery</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">1</Data>
@@ -929,7 +929,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:Delivery/cac:PromisedDeliveryPeriod</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:Delivery/cac:PromisedDeliveryPeriod</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">2</Data>
@@ -949,13 +949,13 @@
                <Data ss:Type="String">Period start date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The date on which the period starts. The start dates counts as part of the period.</Data>
+               <Data ss:Type="String">The date on which the period starts. The start dates counts as part of the period.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-07-15</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:StartDate</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:StartDate</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -975,13 +975,13 @@
                <Data ss:Type="String">Period start time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The time at which this period begins. Format = "hh:mm:ss"</Data>
+               <Data ss:Type="String">The time at which this period begins. Format = "hh:mm:ss"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">12:30:00</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:StartTime</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:StartTime</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -1001,13 +1001,13 @@
                <Data ss:Type="String">Period end date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The date on which the period ends. The end date counts as part of the period.</Data>
+               <Data ss:Type="String">The date on which the period ends. The end date counts as part of the period.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-07-16</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:EndDate</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:EndDate</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -1027,13 +1027,13 @@
                <Data ss:Type="String">Period end time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The time at which this period end. Format = "hh:mm:ss"</Data>
+               <Data ss:Type="String">The time at which this period end. Format = "hh:mm:ss"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">15:30:00</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:EndTime</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:EndTime</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -1053,13 +1053,13 @@
                <Data ss:Type="String">Specification of order lines</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Orderlines should be included in the order response only when the OrderResponseCode is "CA" (Conditionally Accepted). For all other codes only the document header should be sent. When the order is Conditionally Accepted, all orderlines shall be included, not only those that are changed. Peppol:</Data>
+               <Data ss:Type="String">BEAst: Orderlines should be included in the order response only when the OrderResponseCode is "CA" (Conditionally Accepted). For all other codes only the document header should be sent. When the order is Conditionally Accepted, all orderlines shall be included, not only those that are changed.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">1</Data>
@@ -1085,7 +1085,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">2</Data>
@@ -1111,7 +1111,7 @@
                <Data ss:Type="String">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cbc:ID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cbc:ID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -1137,7 +1137,7 @@
                <Data ss:Type="String">Order line note text</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cbc:Note</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cbc:Note</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -1163,7 +1163,7 @@
                <Data ss:Type="String">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cbc:LineStatusCode</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cbc:LineStatusCode</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -1189,7 +1189,7 @@
                <Data ss:Type="String">10</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cbc:Quantity</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cbc:Quantity</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -1209,13 +1209,13 @@
                <Data ss:Type="String">Ordered quantity unit of measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The unit of measure that applies to the ordered quantity.</Data>
+               <Data ss:Type="String">The unit of measure that applies to the ordered quantity.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">C62</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cbc:Quantity/unitCode</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cbc:Quantity/unitCode</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
@@ -1241,7 +1241,7 @@
                <Data ss:Type="String">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cbc:MaximumBackorderQuantity</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cbc:MaximumBackorderQuantity</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -1267,7 +1267,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Delivery</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Delivery</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -1293,7 +1293,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Delivery/cac:PromisedDeliveryPeriod</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Delivery/cac:PromisedDeliveryPeriod</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
@@ -1319,13 +1319,39 @@
                <Data ss:Type="String">2021-08-10</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:StartDate</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:StartDate</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:StartTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Period start time</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: T6734, Delivery period Start time. Peppol: The time at which this period begins. Format = "hh:mm:ss"</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">09:00:00</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:StartTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4800</Data>
             </Cell>
          </Row>
          <Row>
@@ -1345,13 +1371,39 @@
                <Data ss:Type="String">2021-08-12</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:EndDate</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:EndDate</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4800</Data>
+               <Data ss:Type="Number">4900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:EndTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Period end time</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: T6735, Delivery period End time. Peppol: The time at which this period end. Format = "hh:mm:ss"</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">10:30:00</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Delivery/cac:PromisedDeliveryPeriod/cbc:EndTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5000</Data>
             </Cell>
          </Row>
          <Row>
@@ -1371,13 +1423,13 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Price</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Price</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4900</Data>
+               <Data ss:Type="Number">5100</Data>
             </Cell>
          </Row>
          <Row>
@@ -1391,19 +1443,19 @@
                <Data ss:Type="String">Item price</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T6235, Prfice amount. currencyID = T6018, Order currency. Peppol: The net price of an item including discounts or surcharges that apply to the price.Although price is an optional element in an offer it recommended as best practice to either state the price or provide reference to an appropriate source from which the price can be identified such as a contract, catalogue or a quote.. The price amount. The net price of the item including all allowances, charges and taxes but exluding TAX.</Data>
+               <Data ss:Type="String">BEAst: T6235, Price amount. currencyID = T6018, Order currency. Peppol: The net price of an item including discounts or surcharges that apply to the price.Although price is an optional element in an offer it recommended as best practice to either state the price or provide reference to an appropriate source from which the price can be identified such as a contract, catalogue or a quote.. The price amount. The net price of the item including all allowances, charges and taxes but exluding TAX.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1.50</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Price/cbc:PriceAmount</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Price/cbc:PriceAmount</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5000</Data>
+               <Data ss:Type="Number">5200</Data>
             </Cell>
          </Row>
          <Row>
@@ -1417,19 +1469,19 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, must have the same value as element "Document currency".</Data>
+               <Data ss:Type="String">Currency identifier, must have the same value as element "Document currency".</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Price/cbc:PriceAmount/currencyID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Price/cbc:PriceAmount/currencyID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5100</Data>
+               <Data ss:Type="Number">5300</Data>
             </Cell>
          </Row>
          <Row>
@@ -1449,13 +1501,13 @@
                <Data ss:Type="String">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Price/cbc:BaseQuantity</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Price/cbc:BaseQuantity</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5200</Data>
+               <Data ss:Type="Number">5400</Data>
             </Cell>
          </Row>
          <Row>
@@ -1469,19 +1521,19 @@
                <Data ss:Type="String">Base quantity unit of measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The unit of measure that applies to the base quantity.</Data>
+               <Data ss:Type="String">The unit of measure that applies to the base quantity.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">C62</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Price/cbc:BaseQuantity/unitCode</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Price/cbc:BaseQuantity/unitCode</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5300</Data>
+               <Data ss:Type="Number">5500</Data>
             </Cell>
          </Row>
          <Row>
@@ -1501,13 +1553,13 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Item</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5400</Data>
+               <Data ss:Type="Number">5600</Data>
             </Cell>
          </Row>
          <Row>
@@ -1527,13 +1579,13 @@
                <Data ss:Type="String">Brown sauce</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cbc:Name</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cbc:Name</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5500</Data>
+               <Data ss:Type="Number">5700</Data>
             </Cell>
          </Row>
          <Row>
@@ -1553,13 +1605,13 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:BuyersItemIdentification</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:BuyersItemIdentification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5600</Data>
+               <Data ss:Type="Number">5800</Data>
             </Cell>
          </Row>
          <Row>
@@ -1579,13 +1631,13 @@
                <Data ss:Type="String">123456</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:BuyersItemIdentification/cbc:ID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:BuyersItemIdentification/cbc:ID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5700</Data>
+               <Data ss:Type="Number">5900</Data>
             </Cell>
          </Row>
          <Row>
@@ -1605,13 +1657,13 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:SellersItemIdentification</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:SellersItemIdentification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5800</Data>
+               <Data ss:Type="Number">6000</Data>
             </Cell>
          </Row>
          <Row>
@@ -1631,13 +1683,13 @@
                <Data ss:Type="String">SN-33</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:SellersItemIdentification/cbc:ID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:SellersItemIdentification/cbc:ID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5900</Data>
+               <Data ss:Type="Number">6100</Data>
             </Cell>
          </Row>
          <Row>
@@ -1657,13 +1709,13 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:StandardItemIdentification</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:StandardItemIdentification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6000</Data>
+               <Data ss:Type="Number">6200</Data>
             </Cell>
          </Row>
          <Row>
@@ -1683,13 +1735,13 @@
                <Data ss:Type="String">7400000001234</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:StandardItemIdentification/cbc:ID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:StandardItemIdentification/cbc:ID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6100</Data>
+               <Data ss:Type="Number">6300</Data>
             </Cell>
          </Row>
          <Row>
@@ -1703,19 +1755,19 @@
                <Data ss:Type="String">Item standard identifier identification scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme identifier of the Item standard identifier</Data>
+               <Data ss:Type="String">The identification scheme identifier of the Item standard identifier</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0160</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:StandardItemIdentification/cbc:ID/schemeID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:StandardItemIdentification/cbc:ID/schemeID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6200</Data>
+               <Data ss:Type="Number">6400</Data>
             </Cell>
          </Row>
          <Row>
@@ -1735,13 +1787,13 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6300</Data>
+               <Data ss:Type="Number">6500</Data>
             </Cell>
          </Row>
          <Row>
@@ -1761,13 +1813,13 @@
                <Data ss:Type="String">12356</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cbc:ID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cbc:ID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6400</Data>
+               <Data ss:Type="Number">6600</Data>
             </Cell>
          </Row>
          <Row>
@@ -1787,13 +1839,13 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6500</Data>
+               <Data ss:Type="Number">6700</Data>
             </Cell>
          </Row>
          <Row>
@@ -1813,13 +1865,13 @@
                <Data ss:Type="String">Sauce brown, ready</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cbc:Name</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cbc:Name</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6600</Data>
+               <Data ss:Type="Number">6800</Data>
             </Cell>
          </Row>
          <Row>
@@ -1839,13 +1891,13 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:SellersItemIdentification</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:SellersItemIdentification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6700</Data>
+               <Data ss:Type="Number">6900</Data>
             </Cell>
          </Row>
          <Row>
@@ -1865,13 +1917,13 @@
                <Data ss:Type="String">SN-34</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:SellersItemIdentification/cbc:ID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:SellersItemIdentification/cbc:ID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6800</Data>
+               <Data ss:Type="Number">7000</Data>
             </Cell>
          </Row>
          <Row>
@@ -1891,13 +1943,13 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:StandardItemIdentification</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:StandardItemIdentification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6900</Data>
+               <Data ss:Type="Number">7100</Data>
             </Cell>
          </Row>
          <Row>
@@ -1917,13 +1969,13 @@
                <Data ss:Type="String">7400000001235</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:StandardItemIdentification/cbc:ID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:StandardItemIdentification/cbc:ID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7000</Data>
+               <Data ss:Type="Number">7200</Data>
             </Cell>
          </Row>
          <Row>
@@ -1937,19 +1989,19 @@
                <Data ss:Type="String">Item standard identifier identification scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme identifier of the Item standard identifier</Data>
+               <Data ss:Type="String">The identification scheme identifier of the Item standard identifier</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0160</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:StandardItemIdentification/cbc:ID/schemeID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:StandardItemIdentification/cbc:ID/schemeID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7100</Data>
+               <Data ss:Type="Number">7300</Data>
             </Cell>
          </Row>
          <Row>
@@ -1969,13 +2021,13 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:CommodityClassification</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:CommodityClassification</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7200</Data>
+               <Data ss:Type="Number">7400</Data>
             </Cell>
          </Row>
          <Row>
@@ -1989,19 +2041,19 @@
                <Data ss:Type="String">Item classification code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Data>
+               <Data ss:Type="String">A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">12345678</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7300</Data>
+               <Data ss:Type="Number">7500</Data>
             </Cell>
          </Row>
          <Row>
@@ -2015,19 +2067,19 @@
                <Data ss:Type="String">Item classification identifier identification scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme identifier of the Item classification identifier</Data>
+               <Data ss:Type="String">The identification scheme identifier of the Item classification identifier</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">MP</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7400</Data>
+               <Data ss:Type="Number">7600</Data>
             </Cell>
          </Row>
          <Row>
@@ -2041,19 +2093,19 @@
                <Data ss:Type="String">Item classification identifier version identification scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme version identifier of the Item classification identifier</Data>
+               <Data ss:Type="String">The identification scheme version identifier of the Item classification identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">19.0501</Data>
+               <Data ss:Type="String">20.0601</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listVersionID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listVersionID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7500</Data>
+               <Data ss:Type="Number">7700</Data>
             </Cell>
          </Row>
          <Row>
@@ -2067,19 +2119,19 @@
                <Data ss:Type="String">Clear text name equivalent of classification code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The textual equivalent of the code value</Data>
+               <Data ss:Type="String">The textual equivalent of the code value</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Name</Data>
+               <Data ss:Type="String">Office furniture</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/name</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/name</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7600</Data>
+               <Data ss:Type="Number">7800</Data>
             </Cell>
          </Row>
          <Row>
@@ -2099,13 +2151,13 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:ClassifiedTaxCategory</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:ClassifiedTaxCategory</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7700</Data>
+               <Data ss:Type="Number">7900</Data>
             </Cell>
          </Row>
          <Row>
@@ -2119,19 +2171,19 @@
                <Data ss:Type="String">Item TAX category code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The TAX category code for the item.</Data>
+               <Data ss:Type="String">The TAX category code for the item.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">S</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:ClassifiedTaxCategory/cbc:ID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:ClassifiedTaxCategory/cbc:ID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7800</Data>
+               <Data ss:Type="Number">8000</Data>
             </Cell>
          </Row>
          <Row>
@@ -2145,19 +2197,19 @@
                <Data ss:Type="String">Line TAX rate</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The TAX percentage rate that applies to the line amount.</Data>
+               <Data ss:Type="String">The TAX percentage rate that applies to the line amount.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">25</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:ClassifiedTaxCategory/cbc:Percent</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:ClassifiedTaxCategory/cbc:Percent</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7900</Data>
+               <Data ss:Type="Number">8100</Data>
             </Cell>
          </Row>
          <Row>
@@ -2177,13 +2229,13 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8000</Data>
+               <Data ss:Type="Number">8200</Data>
             </Cell>
          </Row>
          <Row>
@@ -2197,19 +2249,19 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Tax scheme. E.g. “VAT” or “GST”</Data>
+               <Data ss:Type="String">Tax scheme. E.g. “VAT” or “GST”</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">VAT</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme/cbc:ID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme/cbc:ID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8100</Data>
+               <Data ss:Type="Number">8300</Data>
             </Cell>
          </Row>
          <Row>
@@ -2223,19 +2275,19 @@
                <Data ss:Type="String">Additional item property information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: A group of business terms providing information about properties of the goods and services invoiced.</Data>
+               <Data ss:Type="String">A group of business terms providing information about properties of the goods and services invoiced.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8200</Data>
+               <Data ss:Type="Number">8400</Data>
             </Cell>
          </Row>
          <Row>
@@ -2249,19 +2301,19 @@
                <Data ss:Type="String">Item property name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The name of the property.The name must be sufficiently descriptive to define the value. The definition may be supplemented with the property unit of measure when relevant.</Data>
+               <Data ss:Type="String">The name of the property.The name must be sufficiently descriptive to define the value. The definition may be supplemented with the property unit of measure when relevant.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Weight</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:Name</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:Name</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8300</Data>
+               <Data ss:Type="Number">8500</Data>
             </Cell>
          </Row>
          <Row>
@@ -2275,19 +2327,19 @@
                <Data ss:Type="String">Item property code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Code for the item property according to a property code system.</Data>
+               <Data ss:Type="String">Code for the item property according to a property code system.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:NameCode</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:NameCode</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8400</Data>
+               <Data ss:Type="Number">8600</Data>
             </Cell>
          </Row>
          <Row>
@@ -2301,19 +2353,19 @@
                <Data ss:Type="String">Name code list id.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An identifier for the code list used for the Name code, this is bilaterally agreed</Data>
+               <Data ss:Type="String">An identifier for the code list used for the Name code, this is bilaterally agreed</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:NameCode/listID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:NameCode/listID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8500</Data>
+               <Data ss:Type="Number">8700</Data>
             </Cell>
          </Row>
          <Row>
@@ -2327,19 +2379,19 @@
                <Data ss:Type="String">Item property value</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The value of the item property.</Data>
+               <Data ss:Type="String">The value of the item property.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">12 gram</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:Value</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:Value</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8600</Data>
+               <Data ss:Type="Number">8800</Data>
             </Cell>
          </Row>
          <Row>
@@ -2353,19 +2405,19 @@
                <Data ss:Type="String">Item property unit of measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The unit of measure in which the property value is stated, if relevant. May not be relevant when properties are descriptive.</Data>
+               <Data ss:Type="String">The unit of measure in which the property value is stated, if relevant. May not be relevant when properties are descriptive.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">12</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:ValueQuantity</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:ValueQuantity</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8700</Data>
+               <Data ss:Type="Number">8900</Data>
             </Cell>
          </Row>
          <Row>
@@ -2379,19 +2431,19 @@
                <Data ss:Type="String">Value quantity unit of measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The unit of measure that applies to the value quantity.</Data>
+               <Data ss:Type="String">The unit of measure that applies to the value quantity.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">GRM</Data>
+               <Data ss:Type="String">NAR</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:ValueQuantity/unitCode</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:ValueQuantity/unitCode</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8800</Data>
+               <Data ss:Type="Number">9000</Data>
             </Cell>
          </Row>
          <Row>
@@ -2405,19 +2457,19 @@
                <Data ss:Type="String">Property classification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Standardized and predefined classification of items properties.</Data>
+               <Data ss:Type="String">Standardized and predefined classification of items properties.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">gram</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:ValueQualifier</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:ValueQualifier</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8900</Data>
+               <Data ss:Type="Number">9100</Data>
             </Cell>
          </Row>
          <Row>
@@ -2437,13 +2489,13 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:OrderLineReference</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:OrderLineReference</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">9000</Data>
+               <Data ss:Type="Number">9200</Data>
             </Cell>
          </Row>
          <Row>
@@ -2463,13 +2515,13 @@
                <Data ss:Type="String">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/OrderResponse/cac:OrderLine/cac:OrderLineReference/cbc:LineID</Data>
+               <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:OrderLineReference/cbc:LineID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">9100</Data>
+               <Data ss:Type="Number">9300</Data>
             </Cell>
          </Row>
       </Table>

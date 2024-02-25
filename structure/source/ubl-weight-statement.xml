@@ -1,80 +1,264 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ubl:WeightStatement
-xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:WeightStatement-2"
-xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+<ubl:WeightStatement xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:WeightStatement-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 	<?DocumentTerm WeightStatement?>
 	<?Property key="sch:prefix" PEPPOL-T122?>
 	<?Property key="sch:identifier" T122-basic?>
-	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:weight_statement:1</cbc:CustomizationID>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:weight_statement:1<?Rule PEPPOL-T122-R001?></cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:weight_statement:1</cbc:ProfileID>
 
 	<cbc:ID>
-		GOA294107
+		<?DescriptionAddFirst T6329 Material ticket number.  ?>
 	</cbc:ID>
-	<cbc:IssueDate>2016-11-03</cbc:IssueDate>
-	<cbc:IssueTime>09:30:00</cbc:IssueTime>
-	<cbc:WeightStatementTypeCode>01</cbc:WeightStatementTypeCode>
+	<cbc:IssueDate>
+		<?DescriptionAddFirst T6325, Document Date/Time.  ?>
+	</cbc:IssueDate>
+	<cbc:IssueTime>
+		<?DescriptionAddFirst T6325, Document Date/Time.  ?>
+	</cbc:IssueTime>
+	<cbc:WeightStatementTypeCode>
+		<?DescriptionAddFirst T6328 Document type.  ?>
+	</cbc:WeightStatementTypeCode>
+	
 	<cac:SenderParty>
-		<cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+		<cbc:EndpointID schemeID="">
+			<?DescriptionAddFirst T6001 Party Identifier, T0009 Supplier.  ?>
+		</cbc:EndpointID>
 		<cac:PartyIdentification>
-			<cbc:ID schemeID="0088">7300010000001</cbc:ID>
+			<cbc:ID schemeID="">
+				<?DescriptionAddFirst T6001 Party Identifier, T0009 Supplier.  ?>
+			</cbc:ID>
 		</cac:PartyIdentification>
 		<cac:PartyName>
-			<cbc:Name> Weighing Solutions AB</cbc:Name>
+			<cbc:Name>
+				<?DescriptionAddFirst T5001 Party name.  ?>
+			</cbc:Name>
 		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:StreetName>
+				<?DescriptionAddFirst T5003 Street name.  ?>
+			</cbc:StreetName>
+			<cbc:AdditionalStreetName>Department A
+				<?DescriptionAddFirst T5002 Department.  ?>
+			</cbc:AdditionalStreetName>
+			<cbc:CityName>
+				<?DescriptionAddFirst T5005 City name.  ?>
+			</cbc:CityName>
+			<cbc:PostalZone>
+				<?DescriptionAddFirst T6117 Postal code NeB.  ?>
+			</cbc:PostalZone>
+			<cbc:CountrySubentity></cbc:CountrySubentity>
+			<cac:AddressLine>
+				<cbc:Line></cbc:Line>
+			</cac:AddressLine>
+			<cac:Country>
+				<cbc:IdentificationCode>
+					<?DescriptionAddFirst T5007 Country code.  ?>
+				</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:Contact>
+			<cbc:Name>
+				<?DescriptionAddFirst T5012 Name.  ?>
+			</cbc:Name>
+			<cbc:Telephone>
+				<?DescriptionAddFirst T5010 Phone number.  ?>
+			</cbc:Telephone>
+			<cbc:ElectronicMail>
+				<?DescriptionAddFirst T5011 Email address.  ?>
+			</cbc:ElectronicMail>
+		</cac:Contact>
 	</cac:SenderParty>
+	
 	<cac:ReceiverParty>
-	    <cbc:EndpointID schemeID="0088">1251513513245</cbc:EndpointID>
+		<cbc:EndpointID schemeID="">
+			<?DescriptionAddFirst T6001 Party Identifier, T0008 Buyer.  ?>
+		</cbc:EndpointID>
 		<cac:PartyIdentification>
-			<cbc:ID schemeID="0088">1251513513245</cbc:ID>
+			<cbc:ID schemeID="">
+				<?DescriptionAddFirst T6001 Party Identifier, T0008 Buyer.  ?>
+			</cbc:ID>
 		</cac:PartyIdentification>
 		<cac:PartyName>
-			<cbc:Name>Transport Management Solutions AB</cbc:Name>
+			<cbc:Name>
+				<?DescriptionAddFirst T5001 Party name.  ?>
+			</cbc:Name>
 		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:StreetName>
+				<?DescriptionAddFirst T5003 Street name.  ?>
+			</cbc:StreetName>
+			<cbc:AdditionalStreetName>Department B
+				<?DescriptionAddFirst T5002 Department.  ?>
+			</cbc:AdditionalStreetName>
+			<cbc:CityName>
+				<?DescriptionAddFirst T5005 City name.  ?>
+			</cbc:CityName>
+			<cbc:PostalZone>
+				<?DescriptionAddFirst T6117 Postal code NeB.  ?>
+			</cbc:PostalZone>
+			<cbc:CountrySubentity></cbc:CountrySubentity>
+			<cac:AddressLine>
+				<cbc:Line></cbc:Line>
+			</cac:AddressLine>
+			<cac:Country>
+				<cbc:IdentificationCode>
+					<?DescriptionAddFirst T5007 Country code.  ?>
+				</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:Contact>
+			<cbc:Name>
+				<?DescriptionAddFirst T5012 Name.  ?>
+			</cbc:Name>
+			<cbc:Telephone>
+				<?DescriptionAddFirst T5010 Phone number.  ?>
+			</cbc:Telephone>
+			<cbc:ElectronicMail>
+				<?DescriptionAddFirst T5011 Email address.  ?>
+			</cbc:ElectronicMail>
+		</cac:Contact>
 	</cac:ReceiverParty>
+	
 	<cac:WeighingParty>
 		<cac:PartyIdentification>
-			<cbc:ID schemeID="0088">5790000435951</cbc:ID>
+			<cbc:ID schemeID="">
+				<?DescriptionAddFirst T6001 Party Identifier, T6330 Place of weighing.  ?>
+			</cbc:ID>
 		</cac:PartyIdentification>
 		<cac:PartyName>
-			<cbc:Name>Gravel Pit Ltd.</cbc:Name>
+			<cbc:Name>
+				<?DescriptionAddFirst T5001 Party name.  ?>
+			</cbc:Name>
 		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:StreetName>
+				<?DescriptionAddFirst T5003 Street name.  ?>
+			</cbc:StreetName>
+			<cbc:AdditionalStreetName>Department 1
+				<?DescriptionAddFirst T5002 Department.  ?>
+			</cbc:AdditionalStreetName>
+			<cbc:CityName>
+				<?DescriptionAddFirst T5005 City name.  ?>
+			</cbc:CityName>
+			<cbc:PostalZone>
+				<?DescriptionAddFirst T6117 Postal code NeB.  ?>
+			</cbc:PostalZone>
+			<cbc:CountrySubentity></cbc:CountrySubentity>
+			<cac:AddressLine>
+				<cbc:Line></cbc:Line>
+			</cac:AddressLine>
+			<cac:Country>
+				<cbc:IdentificationCode>
+					<?DescriptionAddFirst T5007 Country code.  ?>
+				</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
 		<cac:PhysicalLocation>
-			<cbc:ID schemeID="">0114-40-019-a</cbc:ID>
-			<cbc:Name>Townsend pit</cbc:Name>
+			<cbc:ID schemeID="">
+				<?DescriptionAddFirst T6755 SiteID.  ?>
+			</cbc:ID>
+			<cbc:Name>
+				<?DescriptionAddFirst T6465 Property Registration ID.  ?>
+			</cbc:Name>
 		</cac:PhysicalLocation>
+		<cac:Contact>
+			<cbc:Name>
+				<?DescriptionAddFirst T5012 Name.  ?>
+			</cbc:Name>
+			<cbc:Telephone>
+				<?DescriptionAddFirst T5010 Phone number.  ?>
+			</cbc:Telephone>
+			<cbc:ElectronicMail>
+				<?DescriptionAddFirst T5011 Email address.  ?>
+			</cbc:ElectronicMail>
+		</cac:Contact>
 	</cac:WeighingParty>
+	
 	<cac:ShipperParty>
 		<cac:PartyIdentification>
-			<cbc:ID schemeID="0088">5790000435951</cbc:ID>
+			<cbc:ID schemeID="">
+				<?DescriptionAddFirst T6001 Party Identifier, T3208 Carrier.  ?>
+			</cbc:ID>
 		</cac:PartyIdentification>
 		<cac:PartyName>
-			<cbc:Name>Tonys Trucks and Transport</cbc:Name>
+			<cbc:Name>
+				<?DescriptionAddFirst T5001 Party name.  ?>
+			</cbc:Name>
 		</cac:PartyName>
+		<cac:PostalAddress>
+			<cbc:StreetName>
+				<?DescriptionAddFirst T5003 Street name.  ?>
+			</cbc:StreetName>
+			<cbc:AdditionalStreetName>Department 2
+				<?DescriptionAddFirst T5002 Department.  ?>
+			</cbc:AdditionalStreetName>
+			<cbc:CityName>
+				<?DescriptionAddFirst T5005 City name.  ?>
+			</cbc:CityName>
+			<cbc:PostalZone>
+				<?DescriptionAddFirst T6117 Postal code NeB.  ?>
+			</cbc:PostalZone>
+			<cbc:CountrySubentity></cbc:CountrySubentity>
+			<cac:AddressLine>
+				<cbc:Line></cbc:Line>
+			</cac:AddressLine>
+			<cac:Country>
+				<cbc:IdentificationCode>
+					<?DescriptionAddFirst T5007 Country code.  ?>
+				</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:Contact>
+			<cbc:Name>
+				<?DescriptionAddFirst T5012 Name.  ?>
+			</cbc:Name>
+			<cbc:Telephone>
+				<?DescriptionAddFirst T5010 Phone number.  ?>
+			</cbc:Telephone>
+			<cbc:ElectronicMail>
+				<?DescriptionAddFirst T5011 Email address.  ?>
+			</cbc:ElectronicMail>
+		</cac:Contact>
 	</cac:ShipperParty>
+	
 	<cac:Shipment>
-		<cbc:ID>NA</cbc:ID>
+		<cbc:ID></cbc:ID>
+		
 		<cac:GoodsItem>
-			<cbc:ID>1</cbc:ID>
+			<cbc:ID></cbc:ID>
 			<cac:Item>
-				<cbc:Name>Sortering 0/2 mm krossat bergmaterial CE-märkt enligt system 2+ för användning till asfalt.</cbc:Name>
+				<cbc:Name>
+					<?DescriptionAddFirst T6226 Article description.  ?>
+				</cbc:Name>
 				<cac:BuyersItemIdentification>
-					<cbc:ID>KO2001030300</cbc:ID>
+					<cbc:ID></cbc:ID>
 				</cac:BuyersItemIdentification>
 				<cac:SellersItemIdentification>
-					<cbc:ID>17589683</cbc:ID>
-				</cac:SellersItemIdentification>
+					<cbc:ID>
+						<?DescriptionAddFirst T0172 Supplier's article number.  ?>
+					</cbc:ID>
+				</cac:SellersItemIdentification>	
 				<cac:StandardItemIdentification>
-					<cbc:ID schemeID="0160">1234567891234</cbc:ID>
+					<cbc:ID schemeID="">
+						<?DescriptionAddFirst T0154 Global Trade Item Number.  ?>
+					</cbc:ID>
 				</cac:StandardItemIdentification>
+
 				<cac:CommodityClassification>
-					<cbc:ItemClassificationCode listID="ZZZ" listVersionID="4.0" name="SBMI">KO2012140200</cbc:ItemClassificationCode>
+					<cbc:ItemClassificationCode listID="" listVersionID="" name=""></cbc:ItemClassificationCode>
 				</cac:CommodityClassification>
 			</cac:Item>
+			
 			<cac:MeasurementDimension>
-				<cbc:AttributeID>AAF</cbc:AttributeID>
-				<cbc:Measure unitCode="TNE">12.3</cbc:Measure>
+				<cbc:AttributeID>
+					<?DescriptionAddFirst T6714 Measured attribute code.  ?>
+				</cbc:AttributeID>
+				<cbc:Measure unitCode="">
+					<?DescriptionAddFirst T6122 Measure.  ?>
+					<?unitCode-DescriptionAddFirst T6706 Measure Unit NeB Type.  ?>
+				</cbc:Measure>
 			</cac:MeasurementDimension>
 		</cac:GoodsItem>
 	</cac:Shipment>

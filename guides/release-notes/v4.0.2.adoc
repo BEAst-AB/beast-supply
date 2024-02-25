@@ -1,0 +1,117 @@
+= Version 4.0.2
+[horizontal]
+This release is based on Peppol POACC version 3.0.12 released 2023-11-27 and mandatory use is set to 2024-02-26.
+This release is also based on link:https://docs.peppol.eu/logistics/2024-Q1/[Peppol Logistics version 1.0] with planned use 2024-02-26.
+
+== Migration plan
+*Publication*
+The date is set to 2024-01-10. As of this date the release content is published. 
+Stakeholders can start with implementing the changes.
+
+*Mandatory use*
+The date for the release content to become mandatory is set to 2024-02-26
+As of this date the old version, May release 2023, is not allowed to be used anymore. 
+
+[horizontal]
+Changes to Peppol documentation below
+
+== Changes of BIS documents
+* New BIS Documents added: 
+** Advanced Despatch Advice with Receipt Advice 1.0
+** Transport Execution Plan with Request 1.0
+** Transport Execution Plan Only 1.0
+** Waybill 1.0
+** Transportation Status with Request 1.0
+** Transportation Status Only 1.0
+* Removed BIS Documents 
+** Advanced Despatch Advice with Response
+
+== New transactions
+* Transport Execution Plan Request 1.0 (T123)
+* Transport Execution Plan 1.0 (T124)
+* Waybill 1.0 (T125)
+* Transportation Status Request 1.0 (T126)
+* Transportation Status 1.0 (T127)
+* Receipt Advice 1.0 (T128)
+
+== Removed transactions
+* Despatch Advice Response 1.1 (T121)
+
+== BIS documentation
+* Advanced Despatch Advice with Response is replaced by Avanced Despatch Advice with Receipt Advice.
+* Advanced Despatch Avice Only is updated from version 1.1 to 1.2.
+* Weight Statement is updated from version 1.1 to version 1.2.
+
+== Syntax documentation
+* Despatch Advice Response is replaced by Receipt Advice.
+* Advanced Despatch Advice is updated from version 1.1 to 1.2.
+* Weight Statement is updated from version 1.1 to 1.2.
+
+== Changes to syntax
+* Advanced Despatch Advice (T120).
+** Issue Time changed from optional to mandatory since the Version of the document is defined by ID together with Issue Date and Issue Time.
+** Timezone added to Issue Time, ActualDeliveryTime, StartTime and EndTime in EstimatedDeliveryTime, ActualDespatchTime, .
+** Element Line under AddressLine changed from optional to mandatory in all places where it is used.
+** Group DeliveryContact under DeliveryCustomerParty is removed since it was a duplicate. The group Contact under Party should be used instead.
+** PartyTaxScheme, PartyLegalEntity and Contact added for BuyerCustomerParty and SellerSupplierParty.
+** Shipment group changed from optional to mandatory.
+** Attribute @listID under HandlingCode in Consignment changed from optional to mandatory.
+** PostalAddress, PartyTaxScheme, PartyLegalEntity and Contact added for CarrierParty.
+** Attributes @listID, @listAgencyID and @listVersionID are added to element TransportEquipmentTypeCode under TransportEquipment in OriginalDespatchTransportationService.
+** Group MeasurementDimension added in group TransportMeans in ShipmentStage.
+** Element ID in DeliveryLocation changed from mandatory to optional.
+** Element StartDate in EstimatedDeliveryPeriod changed from mandatory to optional.
+** Attribute @listID (mandatory) added to element HandlingCode under TransportHandlingUnit.
+** To group HazardousItem, the following elements have been added:  ID, AdditionalInformation, TechnicalName, CategoryName, HazardousCategoryCode, NetWeightMeasure, NetVolumeMeasure, HazardousGoodsTransit/PackingCriteriaCode, EmergencyTemperature/AttributeID and EmergencyTemperature/Measure.
+** Attribute @schemeDataURI (optional) added to element ID in AdditionalItemProperty.
+** Attributes @schemeID and @schemeVersionID for element ID in AdditionalItemProperty changed from mandatory to optional.
+** Group PartyIdentification changed from mandatory to optional in ManufacturerParty.
+* Weight Statement (T122)
+** Issue Time changed from optional to mandatory since the Version of the document is defined by ID together with Issue Date and Issue Time.
+** Timezone added to Issue Time.
+** Groups Party Identification and Party Name changed from mandatory to optional for Sender Party, Receiver Party, Weighing Party and Shipper Party.
+** Postal Address and Contact added for Sender Party, Receiver Party, Weighing Party and Shipper Party.
+
+== Changes to code lists and validation artefacts 
+* Validation rules added for Advanced Despatch Advice (T120):
+** R002: Validation of ProfileID.
+** R031: AdditionalDocumentReference must contain a DocumentTypeCode or a DocumentType.
+** R032: DocumentReference (at line level) must contain a DocumentTypeCode or a DocumentType.
+** R108: The DeliveryCustomerParty must have a PartyIdentifier or a PartyName.
+** R109: The DespatchSupplierParty must have a PartyIdentifier or a PartyName.
+** R110: The CarrierParty must have a PartyIdentifier or a PartyName.
+** R111: The ManufacturerParty must have a PartyIdentifier or a PartyName.
+
+* Validation rules added for Weight Statement (T122):
+** R010: The Weighing party's Physical location SHALL contain the Name or an Identifier.
+** R011: The Sender party SHALL contain the Name or an Identifier.
+** R012: The Receiver party SHALL contain the Name or an Identifier.
+** R013: The Weighing party SHALL contain the Name or an Identifier.
+** R014: The Shipper party SHALL contain the Name or an Identifier.
+
+* Validation rules added for Transport Execution Plan Request (T123):
+** R001 - R035. All are new.
+* Validation rules added for Transport Execution Plan (T124):
+** R001 - R039. All are new.
+* Validation rules added for Waybill (T125):
+** R001 - R051. All are new.
+* Validation rules added for Transportation Status Request (T126):
+** R001 - R032. All are new.
+* Validation rules added for Transportation Status (T127):
+** R001 - R032. All are new.
+* Validation rules added for Receipt Advice (T128):
+** R001 - R110. All are new.
+
+* The following Codelists have been added:
+** Consignment Status Reason (openPEPPOL)
+** Freight Allowance-Charge Reason Code
+** Hazard Classes
+** Receipt Advice Type (openPEPPOL)
+** Receipt Advice Action (openPEPPOL)
+** Reject Reason (openPEPPOL)
+** Transport Handling Unit Reason codes (based on UNCL7007).
+** Transport Service Code (openPEPPOL)
+** Transportation Status Code (openPEPPOL)
+** Transportation Status Type Code (openPEPPOL)
+** Transport Event Type Code (openPEPPOL)
+** Weight Statement Type Code (openPEPPOL)

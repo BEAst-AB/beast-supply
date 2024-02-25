@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
-          xmlns:str="urn:fdc:difi.no:2017:vefa:structure-1"
           xmlns:msxsl="urn:schemas-microsoft-com:xslt"
           xmlns:o="urn:schemas-microsoft-com:office:office"
-          xmlns:x="urn:schemas-microsoft-com:office:excel"
-          xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+          xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:str="urn:fdc:difi.no:2017:vefa:structure-1"
+          xmlns:x="urn:schemas-microsoft-com:office:excel">
    <Styles>
       <Style ss:ID="Default" ss:Name="Normal">
          <Alignment ss:Vertical="Bottom"/>
@@ -143,7 +143,7 @@
                <Data ss:Type="String">Business process type identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identifies the BII profile or business process context in which the transaction appears. Values to be used are either urn:fdc:peppol.eu:poacc:bis:order_only:3 or urn:fdc:peppol.eu:poacc:bis:ordering:3</Data>
+               <Data ss:Type="String">Identifies the BII profile or business process context in which the transaction appears.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">urn:fdc:peppol.eu:poacc:bis:ordering:3</Data>
@@ -195,7 +195,7 @@
                <Data ss:Type="String">Sales order reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An identifier of a referenced sales order, issued by the Seller.</Data>
+               <Data ss:Type="String">An identifier of a referenced sales order, issued by the Seller.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">112233</Data>
@@ -270,10 +270,10 @@
                <Data ss:Type="String">•  cbc:OrderTypeCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Consignment order indication</Data>
+               <Data ss:Type="String">Order type code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Order Type (T3100). In this version "220" is the only option. The blanket order ("226") is not yet supported by Peppol, so when you mean "226", this element shall be omitted and when you mean "220", the code "220" shall be sent. Peppol: Indicates wether the order is a purchase order or consignement order. Default is purchase order.</Data>
+               <Data ss:Type="String">BEAst: Order Type (T3100). In this version "220" is the only option. The blanket order ("226") is not yet supported by Peppol, so when you mean "226", this element shall be omitted and when you mean "220", the code "220" shall be sent. Peppol: Indicates wether the order is a Purchase order (tir01-153), Consignement order (tir01-p050), Blanket order (tir01-p051) or Call of order (tir01-p052). Default is purchase order. See section Order Type Code in BIS-documentation for handling of order types.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">220</Data>
@@ -299,7 +299,7 @@
                <Data ss:Type="String">Document level textual note</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Free form text applying to the Order. This element may contain notes or any other similar information that is not contained explicitly in another structure.</Data>
+               <Data ss:Type="String">Free form text applying to the Order. This element may contain notes or any other similar information that is not contained explicitly in another structure.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Text</Data>
@@ -328,7 +328,7 @@
                <Data ss:Type="String">BEAst: T6018, Currency code. Peppol: The default currency for the order.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cbc:DocumentCurrencyCode</Data>
@@ -377,7 +377,7 @@
                <Data ss:Type="String">Buyers accounting string</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Used by the buyer to specify a reference that should be repeated in e.g. invoice to enable the buyer to automatically book e.g. to the right project, or account.</Data>
+               <Data ss:Type="String">Used by the buyer to specify a reference that should be repeated in e.g. invoice to enable the buyer to automatically book e.g. to the right project, or account.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1234:45435:243234</Data>
@@ -429,7 +429,7 @@
                <Data ss:Type="String">Order validity end date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The end date for when the order is valid. The end date for the time period within which the seller must respond. An order should contain the validity end date</Data>
+               <Data ss:Type="String">The end date for when the order is valid. The end date for the time period within which the seller must respond. An order should contain the validity end date</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-10-31</Data>
@@ -455,7 +455,7 @@
                <Data ss:Type="String">Quotation reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Reference to quotation which is basis for the order</Data>
+               <Data ss:Type="String">Reference to quotation which is basis for the order</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -602,6 +602,58 @@
          </Row>
          <Row>
             <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:CatalogueReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Catalogue reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:CatalogueReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Catalogue reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A reference to the Catalogue on which this Order is based.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Cat2023-03-07</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:CatalogueReference/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
                <Data ss:Type="String">0..n</Data>
             </Cell>
             <Cell>
@@ -623,7 +675,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2000</Data>
+               <Data ss:Type="Number">2200</Data>
             </Cell>
          </Row>
          <Row>
@@ -649,7 +701,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2100</Data>
+               <Data ss:Type="Number">2300</Data>
             </Cell>
          </Row>
          <Row>
@@ -675,7 +727,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2200</Data>
+               <Data ss:Type="Number">2400</Data>
             </Cell>
          </Row>
          <Row>
@@ -701,7 +753,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2300</Data>
+               <Data ss:Type="Number">2500</Data>
             </Cell>
          </Row>
          <Row>
@@ -727,7 +779,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2400</Data>
+               <Data ss:Type="Number">2600</Data>
             </Cell>
          </Row>
          <Row>
@@ -741,10 +793,10 @@
                <Data ss:Type="String">Attached document Mime code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The mime code of the attached document.</Data>
+               <Data ss:Type="String">The mime code of the attached document.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">application/pdf</Data>
+               <Data ss:Type="String">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AdditionalDocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject/mimeCode</Data>
@@ -753,7 +805,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2500</Data>
+               <Data ss:Type="Number">2700</Data>
             </Cell>
          </Row>
          <Row>
@@ -767,10 +819,10 @@
                <Data ss:Type="String">Attached document filename</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The file name of the attached document</Data>
+               <Data ss:Type="String">The file name of the attached document</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Hours-spent.pdf</Data>
+               <Data ss:Type="String">Hours-spent.xsl</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AdditionalDocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject/filename</Data>
@@ -779,7 +831,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2600</Data>
+               <Data ss:Type="Number">2800</Data>
             </Cell>
          </Row>
          <Row>
@@ -793,7 +845,7 @@
                <Data ss:Type="String">External reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Reference to external document</Data>
+               <Data ss:Type="String">Reference to external document</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -805,7 +857,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2700</Data>
+               <Data ss:Type="Number">2900</Data>
             </Cell>
          </Row>
          <Row>
@@ -831,7 +883,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2800</Data>
+               <Data ss:Type="Number">3000</Data>
             </Cell>
          </Row>
          <Row>
@@ -845,7 +897,7 @@
                <Data ss:Type="String">Contract information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Reference to contract</Data>
+               <Data ss:Type="String">Reference to contract</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -857,7 +909,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">2900</Data>
+               <Data ss:Type="Number">3100</Data>
             </Cell>
          </Row>
          <Row>
@@ -883,7 +935,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3000</Data>
+               <Data ss:Type="Number">3200</Data>
             </Cell>
          </Row>
          <Row>
@@ -909,7 +961,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3100</Data>
+               <Data ss:Type="Number">3300</Data>
             </Cell>
          </Row>
          <Row>
@@ -935,7 +987,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3200</Data>
+               <Data ss:Type="Number">3400</Data>
             </Cell>
          </Row>
          <Row>
@@ -949,7 +1001,7 @@
                <Data ss:Type="String">Buyer information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Description of buyer</Data>
+               <Data ss:Type="String">Description of buyer</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -961,7 +1013,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3300</Data>
+               <Data ss:Type="Number">3500</Data>
             </Cell>
          </Row>
          <Row>
@@ -987,7 +1039,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3400</Data>
+               <Data ss:Type="Number">3600</Data>
             </Cell>
          </Row>
          <Row>
@@ -1001,10 +1053,10 @@
                <Data ss:Type="String">Buyer party electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identifies the buyer party's electronic address</Data>
+               <Data ss:Type="String">Identifies the buyer party's electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5560339086</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:BuyerCustomerParty/cac:Party/cbc:EndpointID</Data>
@@ -1013,7 +1065,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3500</Data>
+               <Data ss:Type="Number">3700</Data>
             </Cell>
          </Row>
          <Row>
@@ -1027,10 +1079,10 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for the electronic address</Data>
+               <Data ss:Type="String">Scheme identifier for the electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:BuyerCustomerParty/cac:Party/cbc:EndpointID/schemeID</Data>
@@ -1039,7 +1091,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3600</Data>
+               <Data ss:Type="Number">3800</Data>
             </Cell>
          </Row>
          <Row>
@@ -1065,7 +1117,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3700</Data>
+               <Data ss:Type="Number">3900</Data>
             </Cell>
          </Row>
          <Row>
@@ -1082,7 +1134,7 @@
                <Data ss:Type="String">BEAst: T0008 or T6001, the identity of the buyer. Only one identification of the buyer will be used. Peppol: An identification for the buyer party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5560339086</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:BuyerCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID</Data>
@@ -1091,7 +1143,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3800</Data>
+               <Data ss:Type="Number">4000</Data>
             </Cell>
          </Row>
          <Row>
@@ -1105,10 +1157,10 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for party identification</Data>
+               <Data ss:Type="String">Scheme identifier for party identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:BuyerCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID/schemeID</Data>
@@ -1117,7 +1169,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">3900</Data>
+               <Data ss:Type="Number">4100</Data>
             </Cell>
          </Row>
          <Row>
@@ -1143,7 +1195,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4000</Data>
+               <Data ss:Type="Number">4200</Data>
             </Cell>
          </Row>
          <Row>
@@ -1169,7 +1221,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4100</Data>
+               <Data ss:Type="Number">4300</Data>
             </Cell>
          </Row>
          <Row>
@@ -1183,7 +1235,7 @@
                <Data ss:Type="String">Postal address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Postal address of the buyer</Data>
+               <Data ss:Type="String">Postal address of the buyer</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1195,7 +1247,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4200</Data>
+               <Data ss:Type="Number">4400</Data>
             </Cell>
          </Row>
          <Row>
@@ -1221,7 +1273,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4300</Data>
+               <Data ss:Type="Number">4500</Data>
             </Cell>
          </Row>
          <Row>
@@ -1247,7 +1299,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4400</Data>
+               <Data ss:Type="Number">4600</Data>
             </Cell>
          </Row>
          <Row>
@@ -1273,7 +1325,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4500</Data>
+               <Data ss:Type="Number">4700</Data>
             </Cell>
          </Row>
          <Row>
@@ -1299,7 +1351,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4600</Data>
+               <Data ss:Type="Number">4800</Data>
             </Cell>
          </Row>
          <Row>
@@ -1313,7 +1365,7 @@
                <Data ss:Type="String">Country subdivision</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: For specifying a region, county, state, province etc. within a country by using text.</Data>
+               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">765</Data>
@@ -1325,7 +1377,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4700</Data>
+               <Data ss:Type="Number">4900</Data>
             </Cell>
          </Row>
          <Row>
@@ -1351,7 +1403,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4800</Data>
+               <Data ss:Type="Number">5000</Data>
             </Cell>
          </Row>
          <Row>
@@ -1377,7 +1429,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">4900</Data>
+               <Data ss:Type="Number">5100</Data>
             </Cell>
          </Row>
          <Row>
@@ -1403,7 +1455,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5000</Data>
+               <Data ss:Type="Number">5200</Data>
             </Cell>
          </Row>
          <Row>
@@ -1429,7 +1481,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5100</Data>
+               <Data ss:Type="Number">5300</Data>
             </Cell>
          </Row>
          <Row>
@@ -1443,7 +1495,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Buyer tax information</Data>
+               <Data ss:Type="String">Buyer tax information</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1455,7 +1507,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5200</Data>
+               <Data ss:Type="Number">5400</Data>
             </Cell>
          </Row>
          <Row>
@@ -1481,7 +1533,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5300</Data>
+               <Data ss:Type="Number">5500</Data>
             </Cell>
          </Row>
          <Row>
@@ -1507,7 +1559,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5400</Data>
+               <Data ss:Type="Number">5600</Data>
             </Cell>
          </Row>
          <Row>
@@ -1521,7 +1573,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Mandatory element. E.g. "VAT" or "GST"</Data>
+               <Data ss:Type="String">Mandatory element. E.g. "VAT" or "GST"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">VAT</Data>
@@ -1533,7 +1585,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5500</Data>
+               <Data ss:Type="Number">5700</Data>
             </Cell>
          </Row>
          <Row>
@@ -1559,7 +1611,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5600</Data>
+               <Data ss:Type="Number">5800</Data>
             </Cell>
          </Row>
          <Row>
@@ -1573,7 +1625,7 @@
                <Data ss:Type="String">Buyers legal registration name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The official name of the party as registered with the relevant fiscal authority.</Data>
+               <Data ss:Type="String">The official name of the party as registered with the relevant fiscal authority.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Skanska Sverige AB</Data>
@@ -1585,7 +1637,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5700</Data>
+               <Data ss:Type="Number">5900</Data>
             </Cell>
          </Row>
          <Row>
@@ -1599,10 +1651,10 @@
                <Data ss:Type="String">Buyers legal registration identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identifies a company as registered with the company registration scheme.</Data>
+               <Data ss:Type="String">Identifies a company as registered with the company registration scheme.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5560363763</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID</Data>
@@ -1611,7 +1663,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5800</Data>
+               <Data ss:Type="Number">6000</Data>
             </Cell>
          </Row>
          <Row>
@@ -1625,10 +1677,10 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme identifier of the buyer legal registration identifier.</Data>
+               <Data ss:Type="String">The identification scheme identifier of the buyer legal registration identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0002</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
@@ -1637,7 +1689,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">5900</Data>
+               <Data ss:Type="Number">6100</Data>
             </Cell>
          </Row>
          <Row>
@@ -1663,7 +1715,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6000</Data>
+               <Data ss:Type="Number">6200</Data>
             </Cell>
          </Row>
          <Row>
@@ -1677,7 +1729,7 @@
                <Data ss:Type="String">Buyers legal registration address city name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Associates with the registered address of the party within a Corporate Registration Scheme. The name of a city, town, or village.</Data>
+               <Data ss:Type="String">Associates with the registered address of the party within a Corporate Registration Scheme. The name of a city, town, or village.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Stockholm</Data>
@@ -1689,7 +1741,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6100</Data>
+               <Data ss:Type="Number">6300</Data>
             </Cell>
          </Row>
          <Row>
@@ -1715,7 +1767,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6200</Data>
+               <Data ss:Type="Number">6400</Data>
             </Cell>
          </Row>
          <Row>
@@ -1729,7 +1781,7 @@
                <Data ss:Type="String">Country code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String">A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">SE</Data>
@@ -1741,7 +1793,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6300</Data>
+               <Data ss:Type="Number">6500</Data>
             </Cell>
          </Row>
          <Row>
@@ -1755,7 +1807,7 @@
                <Data ss:Type="String">Contact information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Buyer contact information</Data>
+               <Data ss:Type="String">Buyer contact information</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1767,7 +1819,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6400</Data>
+               <Data ss:Type="Number">6600</Data>
             </Cell>
          </Row>
          <Row>
@@ -1793,7 +1845,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6500</Data>
+               <Data ss:Type="Number">6700</Data>
             </Cell>
          </Row>
          <Row>
@@ -1819,7 +1871,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6600</Data>
+               <Data ss:Type="Number">6800</Data>
             </Cell>
          </Row>
          <Row>
@@ -1845,7 +1897,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6700</Data>
+               <Data ss:Type="Number">6900</Data>
             </Cell>
          </Row>
          <Row>
@@ -1859,7 +1911,7 @@
                <Data ss:Type="String">Seller information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Description of seller</Data>
+               <Data ss:Type="String">Description of seller</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1871,7 +1923,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6800</Data>
+               <Data ss:Type="Number">7000</Data>
             </Cell>
          </Row>
          <Row>
@@ -1897,7 +1949,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">6900</Data>
+               <Data ss:Type="Number">7100</Data>
             </Cell>
          </Row>
          <Row>
@@ -1911,10 +1963,10 @@
                <Data ss:Type="String">Seller party electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identifies the seller party's electronic address</Data>
+               <Data ss:Type="String">Identifies the seller party's electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5560363763</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:SellerSupplierParty/cac:Party/cbc:EndpointID</Data>
@@ -1923,7 +1975,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7000</Data>
+               <Data ss:Type="Number">7200</Data>
             </Cell>
          </Row>
          <Row>
@@ -1937,10 +1989,10 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for the electronic address</Data>
+               <Data ss:Type="String">Scheme identifier for the electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:SellerSupplierParty/cac:Party/cbc:EndpointID/schemeID</Data>
@@ -1949,7 +2001,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7100</Data>
+               <Data ss:Type="Number">7300</Data>
             </Cell>
          </Row>
          <Row>
@@ -1975,7 +2027,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7200</Data>
+               <Data ss:Type="Number">7400</Data>
             </Cell>
          </Row>
          <Row>
@@ -1992,7 +2044,7 @@
                <Data ss:Type="String">BEAst: T0009 or T6001, Identification of the supplier. Only one identification of the seller will be used. Peppol: Identifies a party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5560363763</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:SellerSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID</Data>
@@ -2001,7 +2053,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7300</Data>
+               <Data ss:Type="Number">7500</Data>
             </Cell>
          </Row>
          <Row>
@@ -2015,10 +2067,10 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for party identification</Data>
+               <Data ss:Type="String">Scheme identifier for party identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:SellerSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID/schemeID</Data>
@@ -2027,7 +2079,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7400</Data>
+               <Data ss:Type="Number">7600</Data>
             </Cell>
          </Row>
          <Row>
@@ -2041,7 +2093,7 @@
                <Data ss:Type="String">Party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Name of seller</Data>
+               <Data ss:Type="String">Name of seller</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2053,7 +2105,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7500</Data>
+               <Data ss:Type="Number">7700</Data>
             </Cell>
          </Row>
          <Row>
@@ -2079,7 +2131,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7600</Data>
+               <Data ss:Type="Number">7800</Data>
             </Cell>
          </Row>
          <Row>
@@ -2093,7 +2145,7 @@
                <Data ss:Type="String">Postal address </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Postal address of the Seller</Data>
+               <Data ss:Type="String">Postal address of the Seller</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2105,7 +2157,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7700</Data>
+               <Data ss:Type="Number">7900</Data>
             </Cell>
          </Row>
          <Row>
@@ -2131,7 +2183,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7800</Data>
+               <Data ss:Type="Number">8000</Data>
             </Cell>
          </Row>
          <Row>
@@ -2157,7 +2209,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">7900</Data>
+               <Data ss:Type="Number">8100</Data>
             </Cell>
          </Row>
          <Row>
@@ -2183,7 +2235,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8000</Data>
+               <Data ss:Type="Number">8200</Data>
             </Cell>
          </Row>
          <Row>
@@ -2209,7 +2261,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8100</Data>
+               <Data ss:Type="Number">8300</Data>
             </Cell>
          </Row>
          <Row>
@@ -2223,7 +2275,7 @@
                <Data ss:Type="String">Country subdivision</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: For specifying a region, county, state, province etc. within a country by using text.</Data>
+               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">765</Data>
@@ -2235,7 +2287,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8200</Data>
+               <Data ss:Type="Number">8400</Data>
             </Cell>
          </Row>
          <Row>
@@ -2261,7 +2313,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8300</Data>
+               <Data ss:Type="Number">8500</Data>
             </Cell>
          </Row>
          <Row>
@@ -2287,7 +2339,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8400</Data>
+               <Data ss:Type="Number">8600</Data>
             </Cell>
          </Row>
          <Row>
@@ -2313,7 +2365,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8500</Data>
+               <Data ss:Type="Number">8700</Data>
             </Cell>
          </Row>
          <Row>
@@ -2339,7 +2391,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8600</Data>
+               <Data ss:Type="Number">8800</Data>
             </Cell>
          </Row>
          <Row>
@@ -2365,7 +2417,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8700</Data>
+               <Data ss:Type="Number">8900</Data>
             </Cell>
          </Row>
          <Row>
@@ -2379,7 +2431,7 @@
                <Data ss:Type="String">Seller legal registration name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The official name of the party as registered with the relevant fiscal authority.</Data>
+               <Data ss:Type="String">The official name of the party as registered with the relevant fiscal authority.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Paroc Aktiebolag</Data>
@@ -2391,7 +2443,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8800</Data>
+               <Data ss:Type="Number">9000</Data>
             </Cell>
          </Row>
          <Row>
@@ -2405,10 +2457,10 @@
                <Data ss:Type="String">Seller legal registration identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identifies a company as registered with the company registration scheme.</Data>
+               <Data ss:Type="String">Identifies a company as registered with the company registration scheme.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5560363763</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID</Data>
@@ -2417,7 +2469,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">8900</Data>
+               <Data ss:Type="Number">9100</Data>
             </Cell>
          </Row>
          <Row>
@@ -2431,10 +2483,10 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme identifier of the buyer legal registration identifier.</Data>
+               <Data ss:Type="String">The identification scheme identifier of the buyer legal registration identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0002</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
@@ -2443,7 +2495,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">9000</Data>
+               <Data ss:Type="Number">9200</Data>
             </Cell>
          </Row>
          <Row>
@@ -2469,7 +2521,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">9100</Data>
+               <Data ss:Type="Number">9300</Data>
             </Cell>
          </Row>
          <Row>
@@ -2483,7 +2535,7 @@
                <Data ss:Type="String">Sellers legal registration address city name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Associates with the registered address of the party within a Corporate Registration Scheme. The name of a city, town, or village.</Data>
+               <Data ss:Type="String">Associates with the registered address of the party within a Corporate Registration Scheme. The name of a city, town, or village.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Skövde</Data>
@@ -2495,7 +2547,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">9200</Data>
+               <Data ss:Type="Number">9400</Data>
             </Cell>
          </Row>
          <Row>
@@ -2521,7 +2573,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">9300</Data>
+               <Data ss:Type="Number">9500</Data>
             </Cell>
          </Row>
          <Row>
@@ -2535,7 +2587,7 @@
                <Data ss:Type="String">Country code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String">A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">SE</Data>
@@ -2547,7 +2599,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">9400</Data>
+               <Data ss:Type="Number">9600</Data>
             </Cell>
          </Row>
          <Row>
@@ -2561,7 +2613,7 @@
                <Data ss:Type="String">Contact</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Seller contact information</Data>
+               <Data ss:Type="String">Seller contact information</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2573,7 +2625,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">9500</Data>
+               <Data ss:Type="Number">9700</Data>
             </Cell>
          </Row>
          <Row>
@@ -2599,7 +2651,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">9600</Data>
+               <Data ss:Type="Number">9800</Data>
             </Cell>
          </Row>
          <Row>
@@ -2625,7 +2677,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">9700</Data>
+               <Data ss:Type="Number">9900</Data>
             </Cell>
          </Row>
          <Row>
@@ -2651,7 +2703,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">9800</Data>
+               <Data ss:Type="Number">10000</Data>
             </Cell>
          </Row>
          <Row>
@@ -2677,7 +2729,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">9900</Data>
+               <Data ss:Type="Number">10100</Data>
             </Cell>
          </Row>
          <Row>
@@ -2691,7 +2743,7 @@
                <Data ss:Type="String">Party information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Description of the originator party</Data>
+               <Data ss:Type="String">Description of the originator party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2703,7 +2755,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">10000</Data>
+               <Data ss:Type="Number">10200</Data>
             </Cell>
          </Row>
          <Row>
@@ -2717,7 +2769,7 @@
                <Data ss:Type="String">Party identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identification of the originator</Data>
+               <Data ss:Type="String">Identification of the originator</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2729,7 +2781,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">10100</Data>
+               <Data ss:Type="Number">10300</Data>
             </Cell>
          </Row>
          <Row>
@@ -2746,7 +2798,7 @@
                <Data ss:Type="String">BEAst: T0129 or T6001, identification of the Ship-from Location. Only one of the identities will be used. Peppol: Identifies a party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5561111111</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OriginatorCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID</Data>
@@ -2755,7 +2807,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">10200</Data>
+               <Data ss:Type="Number">10400</Data>
             </Cell>
          </Row>
          <Row>
@@ -2769,10 +2821,10 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for party identification</Data>
+               <Data ss:Type="String">Scheme identifier for party identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OriginatorCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID/schemeID</Data>
@@ -2781,7 +2833,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">10300</Data>
+               <Data ss:Type="Number">10500</Data>
             </Cell>
          </Row>
          <Row>
@@ -2795,7 +2847,7 @@
                <Data ss:Type="String">Party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Name of the originator</Data>
+               <Data ss:Type="String">Name of the originator</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2807,7 +2859,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">10400</Data>
+               <Data ss:Type="Number">10600</Data>
             </Cell>
          </Row>
          <Row>
@@ -2833,7 +2885,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">10500</Data>
+               <Data ss:Type="Number">10700</Data>
             </Cell>
          </Row>
          <Row>
@@ -2847,7 +2899,7 @@
                <Data ss:Type="String">Contact</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The originators contact information</Data>
+               <Data ss:Type="String">The originators contact information</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2859,7 +2911,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">10600</Data>
+               <Data ss:Type="Number">10800</Data>
             </Cell>
          </Row>
          <Row>
@@ -2873,65 +2925,13 @@
                <Data ss:Type="String">Contact person name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The name of the contact person.</Data>
+               <Data ss:Type="String">The name of the contact person.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Erik Nilsson</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OriginatorCustomerParty/cac:Party/cac:Contact/cbc:Name</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="Number">4</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="Number">10700</Data>
-            </Cell>
-         </Row>
-         <Row>
-            <Cell>
-               <Data ss:Type="String">0..1</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">•  •  •  •  cbc:Telephone</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">Contact telephone number</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">Peppol: A phone number for the contact person. If the person has a direct number, this is that number.</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">0707676767</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">/ubl:Order/cac:OriginatorCustomerParty/cac:Party/cac:Contact/cbc:Telephone</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="Number">4</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="Number">10800</Data>
-            </Cell>
-         </Row>
-         <Row>
-            <Cell>
-               <Data ss:Type="String">0..1</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">•  •  •  •  cbc:ElectronicMail</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">Contact email address</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">Peppol: The e-mail address for the contact person. If the person has a direct e-mail this is that email.</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">erik@nilssons.se</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">/ubl:Order/cac:OriginatorCustomerParty/cac:Party/cac:Contact/cbc:ElectronicMail</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">4</Data>
@@ -2945,13 +2945,65 @@
                <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact telephone number</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A phone number for the contact person. If the person has a direct number, this is that number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0707676767</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:OriginatorCustomerParty/cac:Party/cac:Contact/cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">11000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact email address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The e-mail address for the contact person. If the person has a direct e-mail this is that email.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">erik@nilssons.se</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:OriginatorCustomerParty/cac:Party/cac:Contact/cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">11100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
                <Data ss:Type="String">•  cac:AccountingCustomerParty</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Invoicee party</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Information regarding the receiver of the invoice based on the order (Invoicee)</Data>
+               <Data ss:Type="String">Information regarding the receiver of the invoice based on the order (Invoicee)</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2963,7 +3015,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">11000</Data>
+               <Data ss:Type="Number">11200</Data>
             </Cell>
          </Row>
          <Row>
@@ -2977,7 +3029,7 @@
                <Data ss:Type="String">Party information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Description of the invoicee party</Data>
+               <Data ss:Type="String">Description of the invoicee party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -2989,7 +3041,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">11100</Data>
+               <Data ss:Type="Number">11300</Data>
             </Cell>
          </Row>
          <Row>
@@ -3003,10 +3055,10 @@
                <Data ss:Type="String">Invoicee party electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identifies the invoicee party's electronic address</Data>
+               <Data ss:Type="String">Identifies the invoicee party's electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5560339086</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AccountingCustomerParty/cac:Party/cbc:EndpointID</Data>
@@ -3015,7 +3067,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">11200</Data>
+               <Data ss:Type="Number">11400</Data>
             </Cell>
          </Row>
          <Row>
@@ -3029,10 +3081,10 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for the electronic address</Data>
+               <Data ss:Type="String">Scheme identifier for the electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AccountingCustomerParty/cac:Party/cbc:EndpointID/schemeID</Data>
@@ -3041,7 +3093,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">11300</Data>
+               <Data ss:Type="Number">11500</Data>
             </Cell>
          </Row>
          <Row>
@@ -3055,7 +3107,7 @@
                <Data ss:Type="String">Party identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identification of the invoicee party</Data>
+               <Data ss:Type="String">Identification of the invoicee party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3067,7 +3119,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">11400</Data>
+               <Data ss:Type="Number">11600</Data>
             </Cell>
          </Row>
          <Row>
@@ -3084,7 +3136,7 @@
                <Data ss:Type="String">BEAst: T0085 or T6001, Identity of the Invoicee. Use only one identity on the partner. Peppol: An identifer for the invoicee party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5560339086</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID</Data>
@@ -3093,7 +3145,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">11500</Data>
+               <Data ss:Type="Number">11700</Data>
             </Cell>
          </Row>
          <Row>
@@ -3107,10 +3159,10 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for party identification</Data>
+               <Data ss:Type="String">Scheme identifier for party identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID/schemeID</Data>
@@ -3119,7 +3171,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">11600</Data>
+               <Data ss:Type="Number">11800</Data>
             </Cell>
          </Row>
          <Row>
@@ -3145,7 +3197,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">11700</Data>
+               <Data ss:Type="Number">11900</Data>
             </Cell>
          </Row>
          <Row>
@@ -3171,7 +3223,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">11800</Data>
+               <Data ss:Type="Number">12000</Data>
             </Cell>
          </Row>
          <Row>
@@ -3185,7 +3237,7 @@
                <Data ss:Type="String">Postal address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Postal address of the invoicee</Data>
+               <Data ss:Type="String">Postal address of the invoicee</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3197,7 +3249,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">11900</Data>
+               <Data ss:Type="Number">12100</Data>
             </Cell>
          </Row>
          <Row>
@@ -3223,7 +3275,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">12000</Data>
+               <Data ss:Type="Number">12200</Data>
             </Cell>
          </Row>
          <Row>
@@ -3249,7 +3301,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">12100</Data>
+               <Data ss:Type="Number">12300</Data>
             </Cell>
          </Row>
          <Row>
@@ -3275,7 +3327,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">12200</Data>
+               <Data ss:Type="Number">12400</Data>
             </Cell>
          </Row>
          <Row>
@@ -3301,7 +3353,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">12300</Data>
+               <Data ss:Type="Number">12500</Data>
             </Cell>
          </Row>
          <Row>
@@ -3315,7 +3367,7 @@
                <Data ss:Type="String">Country subdivision</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: For specifying a region, county, state, province etc. within a country by using text.</Data>
+               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">765</Data>
@@ -3327,7 +3379,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">12400</Data>
+               <Data ss:Type="Number">12600</Data>
             </Cell>
          </Row>
          <Row>
@@ -3353,7 +3405,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">12500</Data>
+               <Data ss:Type="Number">12700</Data>
             </Cell>
          </Row>
          <Row>
@@ -3379,7 +3431,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">12600</Data>
+               <Data ss:Type="Number">12800</Data>
             </Cell>
          </Row>
          <Row>
@@ -3405,7 +3457,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">12700</Data>
+               <Data ss:Type="Number">12900</Data>
             </Cell>
          </Row>
          <Row>
@@ -3431,7 +3483,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">12800</Data>
+               <Data ss:Type="Number">13000</Data>
             </Cell>
          </Row>
          <Row>
@@ -3445,7 +3497,7 @@
                <Data ss:Type="String">Party tax scheme</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Tax information of the invoicee party</Data>
+               <Data ss:Type="String">Tax information of the invoicee party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3457,7 +3509,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">12900</Data>
+               <Data ss:Type="Number">13100</Data>
             </Cell>
          </Row>
          <Row>
@@ -3483,7 +3535,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">13000</Data>
+               <Data ss:Type="Number">13200</Data>
             </Cell>
          </Row>
          <Row>
@@ -3509,7 +3561,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">13100</Data>
+               <Data ss:Type="Number">13300</Data>
             </Cell>
          </Row>
          <Row>
@@ -3523,7 +3575,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Tax scheme identifier. E.g. "VAT" or "GST"</Data>
+               <Data ss:Type="String">Tax scheme identifier. E.g. "VAT" or "GST"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">VAT</Data>
@@ -3535,7 +3587,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">13200</Data>
+               <Data ss:Type="Number">13400</Data>
             </Cell>
          </Row>
          <Row>
@@ -3549,7 +3601,7 @@
                <Data ss:Type="String">Party legal entity</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Legal information of the invoicee party</Data>
+               <Data ss:Type="String">Legal information of the invoicee party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3561,7 +3613,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">13300</Data>
+               <Data ss:Type="Number">13500</Data>
             </Cell>
          </Row>
          <Row>
@@ -3575,7 +3627,7 @@
                <Data ss:Type="String">Invoicee's Legal registration name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The official name of the invoicee party as registered with the relevant fiscal authority.</Data>
+               <Data ss:Type="String">The official name of the invoicee party as registered with the relevant fiscal authority.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Skanska Sverige AB</Data>
@@ -3587,7 +3639,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">13400</Data>
+               <Data ss:Type="Number">13600</Data>
             </Cell>
          </Row>
          <Row>
@@ -3601,10 +3653,10 @@
                <Data ss:Type="String">Company identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identifies a company as registered with the company registration scheme.</Data>
+               <Data ss:Type="String">Identifies a company as registered with the company registration scheme.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5560363763</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID</Data>
@@ -3613,7 +3665,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">13500</Data>
+               <Data ss:Type="Number">13700</Data>
             </Cell>
          </Row>
          <Row>
@@ -3628,10 +3680,10 @@
 								identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme identifier of the buyer legal registration identifier.</Data>
+               <Data ss:Type="String">The identification scheme identifier of the buyer legal registration identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0002</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
@@ -3640,7 +3692,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">13600</Data>
+               <Data ss:Type="Number">13800</Data>
             </Cell>
          </Row>
          <Row>
@@ -3666,7 +3718,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">13700</Data>
+               <Data ss:Type="Number">13900</Data>
             </Cell>
          </Row>
          <Row>
@@ -3680,7 +3732,7 @@
                <Data ss:Type="String">City name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Associates with the registered address of the party within a Corporate Registration Scheme. The name of a city, town, or village.</Data>
+               <Data ss:Type="String">Associates with the registered address of the party within a Corporate Registration Scheme. The name of a city, town, or village.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Stockholm</Data>
@@ -3692,7 +3744,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">13800</Data>
+               <Data ss:Type="Number">14000</Data>
             </Cell>
          </Row>
          <Row>
@@ -3718,7 +3770,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">13900</Data>
+               <Data ss:Type="Number">14100</Data>
             </Cell>
          </Row>
          <Row>
@@ -3732,7 +3784,7 @@
                <Data ss:Type="String">Country code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String">A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">SE</Data>
@@ -3744,7 +3796,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">14000</Data>
+               <Data ss:Type="Number">14200</Data>
             </Cell>
          </Row>
          <Row>
@@ -3758,7 +3810,7 @@
                <Data ss:Type="String">Contact</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Invoicee contact information</Data>
+               <Data ss:Type="String">Invoicee contact information</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -3770,7 +3822,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">14100</Data>
+               <Data ss:Type="Number">14300</Data>
             </Cell>
          </Row>
          <Row>
@@ -3784,7 +3836,7 @@
                <Data ss:Type="String">Contact person name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The name of the contact person.</Data>
+               <Data ss:Type="String">The name of the contact person.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Alexander Janving</Data>
@@ -3796,7 +3848,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">14200</Data>
+               <Data ss:Type="Number">14400</Data>
             </Cell>
          </Row>
          <Row>
@@ -3810,7 +3862,7 @@
                <Data ss:Type="String">Contact telephone number</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: A phone number for the contact person. If the person has a direct number, this is that number.</Data>
+               <Data ss:Type="String">A phone number for the contact person. If the person has a direct number, this is that number.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">46-0104492024</Data>
@@ -3822,7 +3874,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">14300</Data>
+               <Data ss:Type="Number">14500</Data>
             </Cell>
          </Row>
          <Row>
@@ -3836,7 +3888,7 @@
                <Data ss:Type="String">Contact email address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The e-mail address for the contact person. If the person has a direct e-mail this is that email.</Data>
+               <Data ss:Type="String">The e-mail address for the contact person. If the person has a direct e-mail this is that email.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">dummy.user@skanska.se</Data>
@@ -3848,7 +3900,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">14400</Data>
+               <Data ss:Type="Number">14600</Data>
             </Cell>
          </Row>
          <Row>
@@ -3874,7 +3926,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">14500</Data>
+               <Data ss:Type="Number">14700</Data>
             </Cell>
          </Row>
          <Row>
@@ -3900,7 +3952,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">14600</Data>
+               <Data ss:Type="Number">14800</Data>
             </Cell>
          </Row>
          <Row>
@@ -3917,7 +3969,7 @@
                <Data ss:Type="String">BEAst: T0036 or T6001, Identity of the Consignee. Only one Identity of the party will be used. Peppol: An identifer for the location to where the ordered items should be delivered.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5560339086</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:Delivery/cac:DeliveryLocation/cbc:ID</Data>
@@ -3926,7 +3978,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">14700</Data>
+               <Data ss:Type="Number">14900</Data>
             </Cell>
          </Row>
          <Row>
@@ -3940,10 +3992,10 @@
                <Data ss:Type="String">Deliver to location identifier identification scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme identifier of the Deliver to location identifier.</Data>
+               <Data ss:Type="String">The identification scheme identifier of the Deliver to location identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:Delivery/cac:DeliveryLocation/cbc:ID/schemeID</Data>
@@ -3952,7 +4004,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">14800</Data>
+               <Data ss:Type="Number">15000</Data>
             </Cell>
          </Row>
          <Row>
@@ -3978,7 +4030,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">14900</Data>
+               <Data ss:Type="Number">15100</Data>
             </Cell>
          </Row>
          <Row>
@@ -4004,7 +4056,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">15000</Data>
+               <Data ss:Type="Number">15200</Data>
             </Cell>
          </Row>
          <Row>
@@ -4030,7 +4082,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">15100</Data>
+               <Data ss:Type="Number">15300</Data>
             </Cell>
          </Row>
          <Row>
@@ -4056,7 +4108,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">15200</Data>
+               <Data ss:Type="Number">15400</Data>
             </Cell>
          </Row>
          <Row>
@@ -4082,7 +4134,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">15300</Data>
+               <Data ss:Type="Number">15500</Data>
             </Cell>
          </Row>
          <Row>
@@ -4108,7 +4160,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">15400</Data>
+               <Data ss:Type="Number">15600</Data>
             </Cell>
          </Row>
          <Row>
@@ -4122,7 +4174,7 @@
                <Data ss:Type="String">Country subdivision</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: For specifying a region, county, state, province etc. within a country by using text.</Data>
+               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">765</Data>
@@ -4134,7 +4186,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">15500</Data>
+               <Data ss:Type="Number">15700</Data>
             </Cell>
          </Row>
          <Row>
@@ -4160,7 +4212,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">15600</Data>
+               <Data ss:Type="Number">15800</Data>
             </Cell>
          </Row>
          <Row>
@@ -4186,7 +4238,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">15700</Data>
+               <Data ss:Type="Number">15900</Data>
             </Cell>
          </Row>
          <Row>
@@ -4212,7 +4264,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">15800</Data>
+               <Data ss:Type="Number">16000</Data>
             </Cell>
          </Row>
          <Row>
@@ -4238,7 +4290,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">15900</Data>
+               <Data ss:Type="Number">16100</Data>
             </Cell>
          </Row>
          <Row>
@@ -4252,7 +4304,7 @@
                <Data ss:Type="String">Requested delivery period </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: The Requested Delivery Period should be set at line level, not here. Peppol:</Data>
+               <Data ss:Type="String">BEAst: The Requested Delivery Period should be set at line level, not here.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4264,7 +4316,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">16000</Data>
+               <Data ss:Type="Number">16200</Data>
             </Cell>
          </Row>
          <Row>
@@ -4278,65 +4330,13 @@
                <Data ss:Type="String">Period start date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The date on which the period starts. The start dates counts as part of the period.Format ="YYYY-MM-DD"</Data>
+               <Data ss:Type="String">The date on which the period starts. The start dates counts as part of the period.Format ="YYYY-MM-DD"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-11-01</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:Delivery/cac:RequestedDeliveryPeriod/cbc:StartDate</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="Number">3</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="Number">16100</Data>
-            </Cell>
-         </Row>
-         <Row>
-            <Cell>
-               <Data ss:Type="String">0..1</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">•  •  •  cbc:StartTime</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">Period start time</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">Peppol: The time at which this period begins. Format = "hh:mm:ss"</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">12:30:00</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">/ubl:Order/cac:Delivery/cac:RequestedDeliveryPeriod/cbc:StartTime</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="Number">3</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="Number">16200</Data>
-            </Cell>
-         </Row>
-         <Row>
-            <Cell>
-               <Data ss:Type="String">0..1</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">•  •  •  cbc:EndDate</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">Period end date</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">Peppol: The date on which the period ends. The end date counts as part of the period.Format ="YYYY-MM-DD"</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">2021-11-03</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">/ubl:Order/cac:Delivery/cac:RequestedDeliveryPeriod/cbc:EndDate</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -4350,13 +4350,65 @@
                <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
+               <Data ss:Type="String">•  •  •  cbc:StartTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Period start time</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The time at which this period begins. Format = "hh:mm:ss"</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">12:30:00</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:Delivery/cac:RequestedDeliveryPeriod/cbc:StartTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">16400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:EndDate</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Period end date</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The date on which the period ends. The end date counts as part of the period.Format ="YYYY-MM-DD"</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">2021-11-03</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:Delivery/cac:RequestedDeliveryPeriod/cbc:EndDate</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">16500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
                <Data ss:Type="String">•  •  •  cbc:EndTime</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Period end time</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The time at which this period end. Format = "hh:mm:ss"</Data>
+               <Data ss:Type="String">The time at which this period end. Format = "hh:mm:ss"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">15:30:00</Data>
@@ -4368,7 +4420,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">16400</Data>
+               <Data ss:Type="Number">16600</Data>
             </Cell>
          </Row>
          <Row>
@@ -4394,7 +4446,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">16500</Data>
+               <Data ss:Type="Number">16700</Data>
             </Cell>
          </Row>
          <Row>
@@ -4408,7 +4460,7 @@
                <Data ss:Type="String">Party identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identification of the delivery party. The party to whom the goods are delivered</Data>
+               <Data ss:Type="String">Identification of the delivery party. The party to whom the goods are delivered</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4420,7 +4472,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">16600</Data>
+               <Data ss:Type="Number">16800</Data>
             </Cell>
          </Row>
          <Row>
@@ -4437,7 +4489,7 @@
                <Data ss:Type="String">BEAst: T0037 or T6001, Identity of the Delivery party. Use only one identity of this party. Peppol: In this BIS: The identifier of the party that should receive the ordered items</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5560339086</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:Delivery/cac:DeliveryParty/cac:PartyIdentification/cbc:ID</Data>
@@ -4446,7 +4498,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">16700</Data>
+               <Data ss:Type="Number">16900</Data>
             </Cell>
          </Row>
          <Row>
@@ -4461,10 +4513,10 @@
 								identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme identifier of the deliverparty identifier.</Data>
+               <Data ss:Type="String">The identification scheme identifier of the deliverparty identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0002</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:Delivery/cac:DeliveryParty/cac:PartyIdentification/cbc:ID/schemeID</Data>
@@ -4473,7 +4525,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">16800</Data>
+               <Data ss:Type="Number">17000</Data>
             </Cell>
          </Row>
          <Row>
@@ -4499,7 +4551,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">16900</Data>
+               <Data ss:Type="Number">17100</Data>
             </Cell>
          </Row>
          <Row>
@@ -4525,7 +4577,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">17000</Data>
+               <Data ss:Type="Number">17200</Data>
             </Cell>
          </Row>
          <Row>
@@ -4539,7 +4591,7 @@
                <Data ss:Type="String">Final Delivery address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The final address for the delivery</Data>
+               <Data ss:Type="String">The final address for the delivery</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4551,7 +4603,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">17100</Data>
+               <Data ss:Type="Number">17300</Data>
             </Cell>
          </Row>
          <Row>
@@ -4577,7 +4629,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">17200</Data>
+               <Data ss:Type="Number">17400</Data>
             </Cell>
          </Row>
          <Row>
@@ -4603,7 +4655,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">17300</Data>
+               <Data ss:Type="Number">17500</Data>
             </Cell>
          </Row>
          <Row>
@@ -4629,7 +4681,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">17400</Data>
+               <Data ss:Type="Number">17600</Data>
             </Cell>
          </Row>
          <Row>
@@ -4655,7 +4707,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">17500</Data>
+               <Data ss:Type="Number">17700</Data>
             </Cell>
          </Row>
          <Row>
@@ -4669,7 +4721,7 @@
                <Data ss:Type="String">Country subdivision</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: For specifying a region, county, state, province etc. within a country by using text.</Data>
+               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">765</Data>
@@ -4681,7 +4733,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">17600</Data>
+               <Data ss:Type="Number">17800</Data>
             </Cell>
          </Row>
          <Row>
@@ -4707,7 +4759,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">17700</Data>
+               <Data ss:Type="Number">17900</Data>
             </Cell>
          </Row>
          <Row>
@@ -4733,7 +4785,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">17800</Data>
+               <Data ss:Type="Number">18000</Data>
             </Cell>
          </Row>
          <Row>
@@ -4759,7 +4811,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">17900</Data>
+               <Data ss:Type="Number">18100</Data>
             </Cell>
          </Row>
          <Row>
@@ -4785,7 +4837,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">18000</Data>
+               <Data ss:Type="Number">18200</Data>
             </Cell>
          </Row>
          <Row>
@@ -4799,7 +4851,7 @@
                <Data ss:Type="String">Contact information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Contact information for the delivery party</Data>
+               <Data ss:Type="String">Contact information for the delivery party</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4811,7 +4863,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">18100</Data>
+               <Data ss:Type="Number">18300</Data>
             </Cell>
          </Row>
          <Row>
@@ -4837,7 +4889,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">18200</Data>
+               <Data ss:Type="Number">18400</Data>
             </Cell>
          </Row>
          <Row>
@@ -4863,7 +4915,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">18300</Data>
+               <Data ss:Type="Number">18500</Data>
             </Cell>
          </Row>
          <Row>
@@ -4889,7 +4941,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">18400</Data>
+               <Data ss:Type="Number">18600</Data>
             </Cell>
          </Row>
          <Row>
@@ -4915,7 +4967,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">18500</Data>
+               <Data ss:Type="Number">18700</Data>
             </Cell>
          </Row>
          <Row>
@@ -4941,7 +4993,33 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">18600</Data>
+               <Data ss:Type="Number">18800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ShippingPriorityLevelCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Requested shipping priority</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The priority level requested by the buyer for the shipping of the order. Use value: "1" for Express/urgent/rush.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:Delivery/cac:Shipment/cbc:ShippingPriorityLevelCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">18900</Data>
             </Cell>
          </Row>
          <Row>
@@ -4967,7 +5045,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">18700</Data>
+               <Data ss:Type="Number">19000</Data>
             </Cell>
          </Row>
          <Row>
@@ -4993,7 +5071,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">18800</Data>
+               <Data ss:Type="Number">19100</Data>
             </Cell>
          </Row>
          <Row>
@@ -5019,7 +5097,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">18900</Data>
+               <Data ss:Type="Number">19200</Data>
             </Cell>
          </Row>
          <Row>
@@ -5045,7 +5123,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">19000</Data>
+               <Data ss:Type="Number">19300</Data>
             </Cell>
          </Row>
          <Row>
@@ -5071,7 +5149,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">19100</Data>
+               <Data ss:Type="Number">19400</Data>
             </Cell>
          </Row>
          <Row>
@@ -5097,7 +5175,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">19200</Data>
+               <Data ss:Type="Number">19500</Data>
             </Cell>
          </Row>
          <Row>
@@ -5123,7 +5201,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">19300</Data>
+               <Data ss:Type="Number">19600</Data>
             </Cell>
          </Row>
          <Row>
@@ -5149,7 +5227,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">19400</Data>
+               <Data ss:Type="Number">19700</Data>
             </Cell>
          </Row>
          <Row>
@@ -5163,7 +5241,7 @@
                <Data ss:Type="String">Payment terms</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Payment terms for the order described in text</Data>
+               <Data ss:Type="String">Payment terms for the order described in text</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">30 dagar</Data>
@@ -5175,7 +5253,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">19500</Data>
+               <Data ss:Type="Number">19800</Data>
             </Cell>
          </Row>
          <Row>
@@ -5189,7 +5267,7 @@
                <Data ss:Type="String">Allowance and charge information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Allowances and charges for the order</Data>
+               <Data ss:Type="String">Allowances and charges for the order</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5201,7 +5279,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">19600</Data>
+               <Data ss:Type="Number">19900</Data>
             </Cell>
          </Row>
          <Row>
@@ -5215,7 +5293,7 @@
                <Data ss:Type="String">AllowanceChargeIndicator</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Indicator used to state if the following is an allowance or charge. true = Charge, false = Allowance</Data>
+               <Data ss:Type="String">Indicator used to state if the following is an allowance or charge. true = Charge, false = Allowance</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">false</Data>
@@ -5227,7 +5305,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">19700</Data>
+               <Data ss:Type="Number">20000</Data>
             </Cell>
          </Row>
          <Row>
@@ -5241,7 +5319,7 @@
                <Data ss:Type="String">Document level allowance or charge reason code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The reason for the document level allowance or charge, expressed as a code. For allowances a subset of codelist UNCL5189 is to be used, and for charges codelist UNCL7161 applies. The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason</Data>
+               <Data ss:Type="String">The reason for the document level allowance or charge, expressed as a code. For allowances a subset of codelist UNCL5189 is to be used, and for charges codelist UNCL7161 applies. The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">95</Data>
@@ -5253,7 +5331,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">19800</Data>
+               <Data ss:Type="Number">20100</Data>
             </Cell>
          </Row>
          <Row>
@@ -5267,7 +5345,7 @@
                <Data ss:Type="String">Allowance and charges reason</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: A textual reason for the allowance or the charge. Can also be its name. The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason</Data>
+               <Data ss:Type="String">A textual reason for the allowance or the charge. Can also be its name. The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Text</Data>
@@ -5279,7 +5357,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">19900</Data>
+               <Data ss:Type="Number">20200</Data>
             </Cell>
          </Row>
          <Row>
@@ -5293,7 +5371,7 @@
                <Data ss:Type="String">Document level allowance or charge percentage</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The percentage that may be used, in conjunction with the document level allowance base amount, to calculate the document level allowance or charge amount. To state 20%, use value 20.</Data>
+               <Data ss:Type="String">The percentage that may be used, in conjunction with the document level allowance base amount, to calculate the document level allowance or charge amount. To state 20%, use value 20.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">20</Data>
@@ -5305,7 +5383,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">20000</Data>
+               <Data ss:Type="Number">20300</Data>
             </Cell>
          </Row>
          <Row>
@@ -5319,7 +5397,7 @@
                <Data ss:Type="String">Allowance and charge amount</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The net amount of the allowance or the charge exluding TAX.</Data>
+               <Data ss:Type="String">The net amount of the allowance or the charge exluding TAX.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">200</Data>
@@ -5331,7 +5409,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">20100</Data>
+               <Data ss:Type="Number">20400</Data>
             </Cell>
          </Row>
          <Row>
@@ -5345,10 +5423,10 @@
                <Data ss:Type="String">Currency identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AllowanceCharge/cbc:Amount/currencyID</Data>
@@ -5357,7 +5435,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">20200</Data>
+               <Data ss:Type="Number">20500</Data>
             </Cell>
          </Row>
          <Row>
@@ -5371,7 +5449,7 @@
                <Data ss:Type="String">Document level allowance or charge base amount</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The base amount that may be used, in conjunction with the document level allowance or charge percentage, to calculate the document level allowance or charge amount. Must be rounded to maximum 2 decimals</Data>
+               <Data ss:Type="String">The base amount that may be used, in conjunction with the document level allowance or charge percentage, to calculate the document level allowance or charge amount. Must be rounded to maximum 2 decimals</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1000</Data>
@@ -5383,7 +5461,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">20300</Data>
+               <Data ss:Type="Number">20600</Data>
             </Cell>
          </Row>
          <Row>
@@ -5397,10 +5475,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AllowanceCharge/cbc:BaseAmount/currencyID</Data>
@@ -5409,7 +5487,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">20400</Data>
+               <Data ss:Type="Number">20700</Data>
             </Cell>
          </Row>
          <Row>
@@ -5435,7 +5513,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">20500</Data>
+               <Data ss:Type="Number">20800</Data>
             </Cell>
          </Row>
          <Row>
@@ -5449,7 +5527,7 @@
                <Data ss:Type="String">TAX category code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The TAX category code that applies to the document level allowance or charge.</Data>
+               <Data ss:Type="String">The TAX category code that applies to the document level allowance or charge.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">S</Data>
@@ -5461,7 +5539,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">20600</Data>
+               <Data ss:Type="Number">20900</Data>
             </Cell>
          </Row>
          <Row>
@@ -5475,7 +5553,7 @@
                <Data ss:Type="String">TAX rate</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The TAX rate, represented as percentage that applies to the document level allowance or charge. As this element is of data type percentage, please note that no %-sign should be used. To state 25 %, use value 25.00</Data>
+               <Data ss:Type="String">The TAX rate, represented as percentage that applies to the document level allowance or charge. As this element is of data type percentage, please note that no %-sign should be used. To state 25 %, use value 25.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">25.00</Data>
@@ -5487,7 +5565,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">20700</Data>
+               <Data ss:Type="Number">21000</Data>
             </Cell>
          </Row>
          <Row>
@@ -5513,7 +5591,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">20800</Data>
+               <Data ss:Type="Number">21100</Data>
             </Cell>
          </Row>
          <Row>
@@ -5527,7 +5605,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Tax scheme identifier. E.g. “VAT” or “GST”</Data>
+               <Data ss:Type="String">Tax scheme identifier. E.g. “VAT” or “GST”</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">VAT</Data>
@@ -5539,7 +5617,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">20900</Data>
+               <Data ss:Type="Number">21200</Data>
             </Cell>
          </Row>
          <Row>
@@ -5553,91 +5631,13 @@
                <Data ss:Type="String">Tax total</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Specification of expected tax amount</Data>
+               <Data ss:Type="String">Specification of expected tax amount</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:TaxTotal</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="Number">1</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="Number">21000</Data>
-            </Cell>
-         </Row>
-         <Row>
-            <Cell>
-               <Data ss:Type="String">1..1</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">•  •  cbc:TaxAmount</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">TAX total amount</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">Peppol: The total TAX amount that is "added to the document total w/o TAX". This is the sum of all TAX subcategory amounts. The expected Tax Total in the corresponding invoice.</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">550.00</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">/ubl:Order/cac:TaxTotal/cbc:TaxAmount</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="Number">2</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="Number">21100</Data>
-            </Cell>
-         </Row>
-         <Row>
-            <Cell>
-               <Data ss:Type="String">M</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">•  •  •  @currencyID</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String"/>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">SEK</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">/ubl:Order/cac:TaxTotal/cbc:TaxAmount/currencyID</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="Number">3</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="Number">21200</Data>
-            </Cell>
-         </Row>
-         <Row>
-            <Cell>
-               <Data ss:Type="String">0..1</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">•  cac:AnticipatedMonetaryTotal</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">Anticipated monetary total</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">Peppol: Estimated total amounts for the order</Data>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String"/>
-            </Cell>
-            <Cell>
-               <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">1</Data>
@@ -5651,19 +5651,19 @@
                <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">•  •  cbc:LineExtensionAmount</Data>
+               <Data ss:Type="String">•  •  cbc:TaxAmount</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Sum of line amounts</Data>
+               <Data ss:Type="String">TAX total amount</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Sum of line amounts in the document.The total of Line Extension Amounts net of tax and settlement discounts. Must be rounded to maximum 2 decimals.</Data>
+               <Data ss:Type="String">The total TAX amount that is "added to the document total w/o TAX". This is the sum of all TAX subcategory amounts. The expected Tax Total in the corresponding invoice.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2000.00</Data>
+               <Data ss:Type="String">550.00</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:LineExtensionAmount</Data>
+               <Data ss:Type="String">/ubl:Order/cac:TaxTotal/cbc:TaxAmount</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">2</Data>
@@ -5683,13 +5683,13 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:LineExtensionAmount/currencyID</Data>
+               <Data ss:Type="String">/ubl:Order/cac:TaxTotal/cbc:TaxAmount/currencyID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">3</Data>
@@ -5703,25 +5703,51 @@
                <Data ss:Type="String">0..1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">•  •  cbc:TaxExclusiveAmount</Data>
+               <Data ss:Type="String">•  cac:AnticipatedMonetaryTotal</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Document total without TAX</Data>
+               <Data ss:Type="String">Anticipated monetary total</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The "Sum of line amounts" plus "sum of allowances on document level" plus "sum of charges on document level". Must be rounded to maximum 2 decimals.</Data>
+               <Data ss:Type="String">Estimated total amounts for the order</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">21600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:LineExtensionAmount</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Sum of line amounts</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Sum of line amounts in the document.The total of Line Extension Amounts net of tax and settlement discounts. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2000.00</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:TaxExclusiveAmount</Data>
+               <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:LineExtensionAmount</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">21600</Data>
+               <Data ss:Type="Number">21700</Data>
             </Cell>
          </Row>
          <Row>
@@ -5735,10 +5761,62 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:LineExtensionAmount/currencyID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">21800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:TaxExclusiveAmount</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document total without TAX</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The "Sum of line amounts" plus "sum of allowances on document level" plus "sum of charges on document level". Must be rounded to maximum 2 decimals.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">2000.00</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:TaxExclusiveAmount</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">21900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  @currencyID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:TaxExclusiveAmount/currencyID</Data>
@@ -5747,7 +5825,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">21700</Data>
+               <Data ss:Type="Number">22000</Data>
             </Cell>
          </Row>
          <Row>
@@ -5761,7 +5839,7 @@
                <Data ss:Type="String">Document total including TAX</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The total value including TAX. Must be rounded to maximum 2 decimals.</Data>
+               <Data ss:Type="String">The total value including TAX. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2500.00</Data>
@@ -5773,7 +5851,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">21800</Data>
+               <Data ss:Type="Number">22100</Data>
             </Cell>
          </Row>
          <Row>
@@ -5787,10 +5865,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:TaxInclusiveAmount/currencyID</Data>
@@ -5799,7 +5877,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">21900</Data>
+               <Data ss:Type="Number">22200</Data>
             </Cell>
          </Row>
          <Row>
@@ -5813,7 +5891,7 @@
                <Data ss:Type="String">Sum of allowances on document level</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Sum of all allowances on header level in the document. Allowances on line level are included in the line amount and summed up into the "sum of line amounts". Must be rounded to maximum 2 decimals.</Data>
+               <Data ss:Type="String">Sum of all allowances on header level in the document. Allowances on line level are included in the line amount and summed up into the "sum of line amounts". Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">200.00</Data>
@@ -5825,7 +5903,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22000</Data>
+               <Data ss:Type="Number">22300</Data>
             </Cell>
          </Row>
          <Row>
@@ -5839,10 +5917,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:AllowanceTotalAmount/currencyID</Data>
@@ -5851,7 +5929,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22100</Data>
+               <Data ss:Type="Number">22400</Data>
             </Cell>
          </Row>
          <Row>
@@ -5865,7 +5943,7 @@
                <Data ss:Type="String">Sum of charges on document level</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Sum of all charge on header level in the document. Charges on line level are included in the line amount and summed up into the "sum of line amounts". Must be rounded to maximum 2 decimals.</Data>
+               <Data ss:Type="String">Sum of all charge on header level in the document. Charges on line level are included in the line amount and summed up into the "sum of line amounts". Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0.00</Data>
@@ -5877,7 +5955,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22200</Data>
+               <Data ss:Type="Number">22500</Data>
             </Cell>
          </Row>
          <Row>
@@ -5891,10 +5969,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:ChargeTotalAmount/currencyID</Data>
@@ -5903,7 +5981,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22300</Data>
+               <Data ss:Type="Number">22600</Data>
             </Cell>
          </Row>
          <Row>
@@ -5917,7 +5995,7 @@
                <Data ss:Type="String">Prepaid amounts</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Any amounts that have been paid a-priory. Must be rounded to maximum 2 decimals.</Data>
+               <Data ss:Type="String">Any amounts that have been paid a-priory. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0.00</Data>
@@ -5929,7 +6007,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22400</Data>
+               <Data ss:Type="Number">22700</Data>
             </Cell>
          </Row>
          <Row>
@@ -5943,10 +6021,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:PrepaidAmount/currencyID</Data>
@@ -5955,7 +6033,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22500</Data>
+               <Data ss:Type="Number">22800</Data>
             </Cell>
          </Row>
          <Row>
@@ -5969,7 +6047,7 @@
                <Data ss:Type="String">Rounding of document total</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The amount to be added to the total to round the amount to be paid. Must be rounded to maximum 2 decimals.</Data>
+               <Data ss:Type="String">The amount to be added to the total to round the amount to be paid. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0.00</Data>
@@ -5981,7 +6059,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22600</Data>
+               <Data ss:Type="Number">22900</Data>
             </Cell>
          </Row>
          <Row>
@@ -5995,10 +6073,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:PayableRoundingAmount/currencyID</Data>
@@ -6007,7 +6085,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22700</Data>
+               <Data ss:Type="Number">23000</Data>
             </Cell>
          </Row>
          <Row>
@@ -6021,7 +6099,7 @@
                <Data ss:Type="String">Payable amount</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The amount that is expected to be paid. Must be rounded to maximum 2 decimals.</Data>
+               <Data ss:Type="String">The amount that is expected to be paid. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2250.00</Data>
@@ -6033,7 +6111,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22800</Data>
+               <Data ss:Type="Number">23100</Data>
             </Cell>
          </Row>
          <Row>
@@ -6047,10 +6125,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:PayableAmount/currencyID</Data>
@@ -6059,7 +6137,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22900</Data>
+               <Data ss:Type="Number">23200</Data>
             </Cell>
          </Row>
          <Row>
@@ -6073,7 +6151,7 @@
                <Data ss:Type="String">Order line</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Specification of order lines</Data>
+               <Data ss:Type="String">Specification of order lines</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6085,7 +6163,7 @@
                <Data ss:Type="Number">1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23000</Data>
+               <Data ss:Type="Number">23300</Data>
             </Cell>
          </Row>
          <Row>
@@ -6111,7 +6189,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23100</Data>
+               <Data ss:Type="Number">23400</Data>
             </Cell>
          </Row>
          <Row>
@@ -6125,7 +6203,7 @@
                <Data ss:Type="String">Line item</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Description of line item</Data>
+               <Data ss:Type="String">Description of line item</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6137,7 +6215,7 @@
                <Data ss:Type="Number">2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23200</Data>
+               <Data ss:Type="Number">23500</Data>
             </Cell>
          </Row>
          <Row>
@@ -6163,7 +6241,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23300</Data>
+               <Data ss:Type="Number">23600</Data>
             </Cell>
          </Row>
          <Row>
@@ -6189,7 +6267,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23400</Data>
+               <Data ss:Type="Number">23700</Data>
             </Cell>
          </Row>
          <Row>
@@ -6203,10 +6281,10 @@
                <Data ss:Type="String">Ordered quantity unit of measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The unit of measure that applies to the ordered quantity.</Data>
+               <Data ss:Type="String">The unit of measure that applies to the ordered quantity.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">MTK</Data>
+               <Data ss:Type="String">C62</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cbc:Quantity/unitCode</Data>
@@ -6215,7 +6293,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23500</Data>
+               <Data ss:Type="Number">23800</Data>
             </Cell>
          </Row>
          <Row>
@@ -6229,7 +6307,7 @@
                <Data ss:Type="String">Order line amount</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The total amount for the Line Item, including Allowance Charges but net of taxes. The expected line amount excluding TAX but inclusive of other charges, allowances and taxes.</Data>
+               <Data ss:Type="String">The total amount for the Line Item, including Allowance Charges but net of taxes. The expected line amount excluding TAX but inclusive of other charges, allowances and taxes.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2000.00</Data>
@@ -6241,7 +6319,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23600</Data>
+               <Data ss:Type="Number">23900</Data>
             </Cell>
          </Row>
          <Row>
@@ -6255,10 +6333,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cbc:LineExtensionAmount/currencyID</Data>
@@ -6267,7 +6345,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23700</Data>
+               <Data ss:Type="Number">24000</Data>
             </Cell>
          </Row>
          <Row>
@@ -6284,7 +6362,7 @@
                <Data ss:Type="String">BEAst: Indication that BackOrders are Permitted (T6724). BEAst value "160" is here "false" and "161" is here "true". The value "137" cannot in this version be used. Peppol: Indicates if the line items must be delivered in a single shipment. Default is that partial delivery is allowed (true)</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">true</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cbc:PartialDeliveryIndicator</Data>
@@ -6293,7 +6371,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23800</Data>
+               <Data ss:Type="Number">24100</Data>
             </Cell>
          </Row>
          <Row>
@@ -6319,7 +6397,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23900</Data>
+               <Data ss:Type="Number">24200</Data>
             </Cell>
          </Row>
          <Row>
@@ -6333,7 +6411,7 @@
                <Data ss:Type="String">Line delivery information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Delivery information for the order line</Data>
+               <Data ss:Type="String">Delivery information for the order line</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6345,7 +6423,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24000</Data>
+               <Data ss:Type="Number">24300</Data>
             </Cell>
          </Row>
          <Row>
@@ -6359,10 +6437,10 @@
                <Data ss:Type="String">Delivery location ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An identifer for the location to where the ordered line item should be delivered.</Data>
+               <Data ss:Type="String">An identifer for the location to where the ordered line item should be delivered.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5560339086</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Delivery/cbc:ID</Data>
@@ -6371,7 +6449,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24100</Data>
+               <Data ss:Type="Number">24400</Data>
             </Cell>
          </Row>
          <Row>
@@ -6385,10 +6463,10 @@
                <Data ss:Type="String">Deliver to location identifier identification scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme identifier of the Deliver to location identifier.</Data>
+               <Data ss:Type="String">The identification scheme identifier of the Deliver to location identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Delivery/cbc:ID/schemeID</Data>
@@ -6397,7 +6475,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24200</Data>
+               <Data ss:Type="Number">24500</Data>
             </Cell>
          </Row>
          <Row>
@@ -6411,7 +6489,7 @@
                <Data ss:Type="String">Order line requested delivery period </Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Requested delivery period for the order line</Data>
+               <Data ss:Type="String">Requested delivery period for the order line</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6423,7 +6501,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24300</Data>
+               <Data ss:Type="Number">24600</Data>
             </Cell>
          </Row>
          <Row>
@@ -6437,7 +6515,7 @@
                <Data ss:Type="String">Period start date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Delivery Period Start Date (T6319). In this version it is not possible to specify the time (T6734), only date. Peppol: The date on which the period starts. The start dates counts as part of the period. Format ="YYYY-MM-DD"</Data>
+               <Data ss:Type="String">BEAst: Delivery Period Start Date (T6319). Peppol: The date on which the period starts. The start dates counts as part of the period. Format ="YYYY-MM-DD"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-11-01</Data>
@@ -6449,7 +6527,33 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24400</Data>
+               <Data ss:Type="Number">24700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:StartTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Period start time</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: Delivery Period Start time (T6734). Peppol: The time at which this period begins. Format = "hh:mm:ss"</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">09:00:00</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Delivery/cac:RequestedDeliveryPeriod/cbc:StartTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">24800</Data>
             </Cell>
          </Row>
          <Row>
@@ -6463,7 +6567,7 @@
                <Data ss:Type="String">Period end date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Delivery Period End Date (T6320). In this version it is not possible to specify the time (T6735), only date. Peppol: The date on which the period ends. The end date counts as part of the period.Format ="YYYY-MM-DD"</Data>
+               <Data ss:Type="String">BEAst: Delivery Period End Date (T6320). Peppol: The date on which the period ends. The end date counts as part of the period.Format ="YYYY-MM-DD"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2021-11-03</Data>
@@ -6475,7 +6579,33 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24500</Data>
+               <Data ss:Type="Number">24900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:EndTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Period end time</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">BEAst: Delivery Period End Time (T6735). Peppol: The time at which this period end. Format = "hh:mm:ss"</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">10:30:00</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Delivery/cac:RequestedDeliveryPeriod/cbc:EndTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">25000</Data>
             </Cell>
          </Row>
          <Row>
@@ -6489,7 +6619,7 @@
                <Data ss:Type="String">Originator information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Information regarding the originator of the order line</Data>
+               <Data ss:Type="String">Information regarding the originator of the order line</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6501,7 +6631,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24600</Data>
+               <Data ss:Type="Number">25100</Data>
             </Cell>
          </Row>
          <Row>
@@ -6515,7 +6645,7 @@
                <Data ss:Type="String">Party identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Identification of the originator</Data>
+               <Data ss:Type="String">Identification of the originator</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6527,7 +6657,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24700</Data>
+               <Data ss:Type="Number">25200</Data>
             </Cell>
          </Row>
          <Row>
@@ -6541,10 +6671,10 @@
                <Data ss:Type="String">Order line originator party ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The party who originated Order.</Data>
+               <Data ss:Type="String">The party who originated Order.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5560339086</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:OriginatorParty/cac:PartyIdentification/cbc:ID</Data>
@@ -6553,7 +6683,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24800</Data>
+               <Data ss:Type="Number">25300</Data>
             </Cell>
          </Row>
          <Row>
@@ -6567,10 +6697,10 @@
                <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Scheme identifier for party identification</Data>
+               <Data ss:Type="String">Scheme identifier for party identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:OriginatorParty/cac:PartyIdentification/cbc:ID/schemeID</Data>
@@ -6579,7 +6709,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24900</Data>
+               <Data ss:Type="Number">25400</Data>
             </Cell>
          </Row>
          <Row>
@@ -6593,7 +6723,7 @@
                <Data ss:Type="String">Party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Name of the originator</Data>
+               <Data ss:Type="String">Name of the originator</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6605,7 +6735,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">25000</Data>
+               <Data ss:Type="Number">25500</Data>
             </Cell>
          </Row>
          <Row>
@@ -6619,7 +6749,7 @@
                <Data ss:Type="String">Order line originator party name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The party who originated Order.</Data>
+               <Data ss:Type="String">The party who originated Order.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Originator Name</Data>
@@ -6631,7 +6761,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">25100</Data>
+               <Data ss:Type="Number">25600</Data>
             </Cell>
          </Row>
          <Row>
@@ -6645,7 +6775,7 @@
                <Data ss:Type="String">Order line allowance and charges</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: A group of business terms providing information about allowances or charges applicable to the individual order line.</Data>
+               <Data ss:Type="String">A group of business terms providing information about allowances or charges applicable to the individual order line.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -6657,7 +6787,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">25200</Data>
+               <Data ss:Type="Number">25700</Data>
             </Cell>
          </Row>
          <Row>
@@ -6683,7 +6813,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">25300</Data>
+               <Data ss:Type="Number">25800</Data>
             </Cell>
          </Row>
          <Row>
@@ -6709,7 +6839,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">25400</Data>
+               <Data ss:Type="Number">25900</Data>
             </Cell>
          </Row>
          <Row>
@@ -6735,7 +6865,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">25500</Data>
+               <Data ss:Type="Number">26000</Data>
             </Cell>
          </Row>
          <Row>
@@ -6761,7 +6891,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">25600</Data>
+               <Data ss:Type="Number">26100</Data>
             </Cell>
          </Row>
          <Row>
@@ -6787,7 +6917,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">25700</Data>
+               <Data ss:Type="Number">26200</Data>
             </Cell>
          </Row>
          <Row>
@@ -6801,10 +6931,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:AllowanceCharge/cbc:Amount/currencyID</Data>
@@ -6813,7 +6943,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">25800</Data>
+               <Data ss:Type="Number">26300</Data>
             </Cell>
          </Row>
          <Row>
@@ -6839,7 +6969,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">25900</Data>
+               <Data ss:Type="Number">26400</Data>
             </Cell>
          </Row>
          <Row>
@@ -6853,10 +6983,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:AllowanceCharge/cbc:BaseAmount/currencyID</Data>
@@ -6865,7 +6995,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">26000</Data>
+               <Data ss:Type="Number">26500</Data>
             </Cell>
          </Row>
          <Row>
@@ -6891,7 +7021,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">26100</Data>
+               <Data ss:Type="Number">26600</Data>
             </Cell>
          </Row>
          <Row>
@@ -6917,7 +7047,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">26200</Data>
+               <Data ss:Type="Number">26700</Data>
             </Cell>
          </Row>
          <Row>
@@ -6931,10 +7061,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cbc:PriceAmount/currencyID</Data>
@@ -6943,7 +7073,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">26300</Data>
+               <Data ss:Type="Number">26800</Data>
             </Cell>
          </Row>
          <Row>
@@ -6960,7 +7090,7 @@
                <Data ss:Type="String">BEAst: Price Unit Basis Quantity (T6722). Peppol: The actual quantity to which the price applies.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1.00</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cbc:BaseQuantity</Data>
@@ -6969,7 +7099,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">26400</Data>
+               <Data ss:Type="Number">26900</Data>
             </Cell>
          </Row>
          <Row>
@@ -6983,10 +7113,10 @@
                <Data ss:Type="String">Base quantity unit of measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The unit of measure that applies to the base quantity.</Data>
+               <Data ss:Type="String">The unit of measure that applies to the base quantity.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">MTK</Data>
+               <Data ss:Type="String">C62</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cbc:BaseQuantity/unitCode</Data>
@@ -6995,7 +7125,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">26500</Data>
+               <Data ss:Type="Number">27000</Data>
             </Cell>
          </Row>
          <Row>
@@ -7009,7 +7139,7 @@
                <Data ss:Type="String">Price discount information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Information on discounts connected to the price</Data>
+               <Data ss:Type="String">Information on discounts connected to the price</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7021,7 +7151,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">26600</Data>
+               <Data ss:Type="Number">27100</Data>
             </Cell>
          </Row>
          <Row>
@@ -7035,10 +7165,10 @@
                <Data ss:Type="String">AllowanceChargeIndicator</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Only discounts are allowed for the price, hence the only valid value is false (meaning an allowance)</Data>
+               <Data ss:Type="String">Only discounts are allowed for the price, hence the only valid value is false (meaning an allowance)</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">false</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cac:AllowanceCharge/cbc:ChargeIndicator</Data>
@@ -7047,7 +7177,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">26700</Data>
+               <Data ss:Type="Number">27200</Data>
             </Cell>
          </Row>
          <Row>
@@ -7061,7 +7191,7 @@
                <Data ss:Type="String">Discount amount</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Discount amount connected to the price</Data>
+               <Data ss:Type="String">Discount amount connected to the price</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">200</Data>
@@ -7073,7 +7203,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">26800</Data>
+               <Data ss:Type="Number">27300</Data>
             </Cell>
          </Row>
          <Row>
@@ -7087,10 +7217,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cac:AllowanceCharge/cbc:Amount/currencyID</Data>
@@ -7099,7 +7229,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">26900</Data>
+               <Data ss:Type="Number">27400</Data>
             </Cell>
          </Row>
          <Row>
@@ -7113,7 +7243,7 @@
                <Data ss:Type="String">Item list price</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The gross price of the item before subtracting discounts. E.g. list price.</Data>
+               <Data ss:Type="String">The gross price of the item before subtracting discounts. E.g. list price.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">1000</Data>
@@ -7125,7 +7255,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">27000</Data>
+               <Data ss:Type="Number">27500</Data>
             </Cell>
          </Row>
          <Row>
@@ -7139,10 +7269,10 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
+               <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEK</Data>
+               <Data ss:Type="String">EUR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cac:AllowanceCharge/cbc:BaseAmount/currencyID</Data>
@@ -7151,7 +7281,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">27100</Data>
+               <Data ss:Type="Number">27600</Data>
             </Cell>
          </Row>
          <Row>
@@ -7177,7 +7307,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">27200</Data>
+               <Data ss:Type="Number">27700</Data>
             </Cell>
          </Row>
          <Row>
@@ -7203,7 +7333,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">27300</Data>
+               <Data ss:Type="Number">27800</Data>
             </Cell>
          </Row>
          <Row>
@@ -7229,7 +7359,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">27400</Data>
+               <Data ss:Type="Number">27900</Data>
             </Cell>
          </Row>
          <Row>
@@ -7255,7 +7385,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">27500</Data>
+               <Data ss:Type="Number">28000</Data>
             </Cell>
          </Row>
          <Row>
@@ -7281,7 +7411,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">27600</Data>
+               <Data ss:Type="Number">28100</Data>
             </Cell>
          </Row>
          <Row>
@@ -7307,7 +7437,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">27700</Data>
+               <Data ss:Type="Number">28200</Data>
             </Cell>
          </Row>
          <Row>
@@ -7333,7 +7463,59 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">27800</Data>
+               <Data ss:Type="Number">28300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cac:ManufacturersItemIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Manufacturers Item Identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:ManufacturersItemIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">28400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Manufacturers Item Identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An identifier, assigned by the items manufacturer, for the item.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">manid659</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:ManufacturersItemIdentification/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">28500</Data>
             </Cell>
          </Row>
          <Row>
@@ -7359,7 +7541,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">27900</Data>
+               <Data ss:Type="Number">28600</Data>
             </Cell>
          </Row>
          <Row>
@@ -7385,7 +7567,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">28000</Data>
+               <Data ss:Type="Number">28700</Data>
             </Cell>
          </Row>
          <Row>
@@ -7399,7 +7581,7 @@
                <Data ss:Type="String">Item standard identifier identification scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme identifier of the Item standard identifier</Data>
+               <Data ss:Type="String">The identification scheme identifier of the Item standard identifier</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">0160</Data>
@@ -7411,7 +7593,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">28100</Data>
+               <Data ss:Type="Number">28800</Data>
             </Cell>
          </Row>
          <Row>
@@ -7425,7 +7607,7 @@
                <Data ss:Type="String">Item specification reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Referece to an item specification document</Data>
+               <Data ss:Type="String">Referece to an item specification document</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7437,7 +7619,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">28200</Data>
+               <Data ss:Type="Number">28900</Data>
             </Cell>
          </Row>
          <Row>
@@ -7463,7 +7645,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">28300</Data>
+               <Data ss:Type="Number">29000</Data>
             </Cell>
          </Row>
          <Row>
@@ -7489,7 +7671,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">28400</Data>
+               <Data ss:Type="Number">29100</Data>
             </Cell>
          </Row>
          <Row>
@@ -7515,7 +7697,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">28500</Data>
+               <Data ss:Type="Number">29200</Data>
             </Cell>
          </Row>
          <Row>
@@ -7530,10 +7712,10 @@
 									identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID "BEAST:4.0", i.e. mutually agreed. Peppol: The identification scheme identifier of the Item classification identifier</Data>
+               <Data ss:Type="String">The identification scheme identifier of the Item classification identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">ZZZ</Data>
+               <Data ss:Type="String">STI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listID</Data>
@@ -7542,7 +7724,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">28600</Data>
+               <Data ss:Type="Number">29300</Data>
             </Cell>
          </Row>
          <Row>
@@ -7557,10 +7739,10 @@
 									identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The identification scheme version identifier of the Item classification identifier</Data>
+               <Data ss:Type="String">The identification scheme version identifier of the Item classification identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">3.0.2</Data>
+               <Data ss:Type="String">20.0602</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listVersionID</Data>
@@ -7569,7 +7751,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">28700</Data>
+               <Data ss:Type="Number">29400</Data>
             </Cell>
          </Row>
          <Row>
@@ -7583,10 +7765,10 @@
                <Data ss:Type="String">Clear text name equivalent of classification code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "SBMI", "SA", "AI", “ME” and "CoClass”. "SBMI" = Sveriges Bergmaterialindustrier, "SA" = Sveriges Åkeriföretag, "AI" = Återvinningsindustrierna, “ME” = Maskinentreprenörerna. Peppol: The textual equivalent of the code value</Data>
+               <Data ss:Type="String">The textual equivalent of the code value</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SBMI</Data>
+               <Data ss:Type="String">Office furniture</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/name</Data>
@@ -7595,7 +7777,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">28800</Data>
+               <Data ss:Type="Number">29500</Data>
             </Cell>
          </Row>
          <Row>
@@ -7621,7 +7803,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">28900</Data>
+               <Data ss:Type="Number">29600</Data>
             </Cell>
          </Row>
          <Row>
@@ -7635,7 +7817,7 @@
                <Data ss:Type="String">Item TAX category code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The TAX category code for the item.</Data>
+               <Data ss:Type="String">The TAX category code for the item.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">S</Data>
@@ -7647,7 +7829,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">29000</Data>
+               <Data ss:Type="Number">29700</Data>
             </Cell>
          </Row>
          <Row>
@@ -7661,7 +7843,7 @@
                <Data ss:Type="String">Line TAX rate</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The TAX percentage rate that applies to the line amount.</Data>
+               <Data ss:Type="String">The TAX percentage rate that applies to the line amount.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">25</Data>
@@ -7673,7 +7855,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">29100</Data>
+               <Data ss:Type="Number">29800</Data>
             </Cell>
          </Row>
          <Row>
@@ -7699,7 +7881,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">29200</Data>
+               <Data ss:Type="Number">29900</Data>
             </Cell>
          </Row>
          <Row>
@@ -7713,7 +7895,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Tax scheme. E.g. “VAT” or “GST”</Data>
+               <Data ss:Type="String">Tax scheme. E.g. “VAT” or “GST”</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">VAT</Data>
@@ -7725,7 +7907,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">29300</Data>
+               <Data ss:Type="Number">30000</Data>
             </Cell>
          </Row>
          <Row>
@@ -7739,7 +7921,7 @@
                <Data ss:Type="String">Additional item property information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: A group of business terms providing information about properties of the goods and services invoiced.</Data>
+               <Data ss:Type="String">A group of business terms providing information about properties of the goods and services invoiced.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7751,7 +7933,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">29400</Data>
+               <Data ss:Type="Number">30100</Data>
             </Cell>
          </Row>
          <Row>
@@ -7777,7 +7959,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">29500</Data>
+               <Data ss:Type="Number">30200</Data>
             </Cell>
          </Row>
          <Row>
@@ -7803,7 +7985,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">29600</Data>
+               <Data ss:Type="Number">30300</Data>
             </Cell>
          </Row>
          <Row>
@@ -7817,10 +7999,10 @@
                <Data ss:Type="String">Name code list id.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An identifier for the code list used for the Name code, this is bilaterally agreed</Data>
+               <Data ss:Type="String">An identifier for the code list used for the Name code, this is bilaterally agreed</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAST:4.0</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:NameCode/listID</Data>
@@ -7829,7 +8011,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">29700</Data>
+               <Data ss:Type="Number">30400</Data>
             </Cell>
          </Row>
          <Row>
@@ -7855,7 +8037,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">29800</Data>
+               <Data ss:Type="Number">30500</Data>
             </Cell>
          </Row>
          <Row>
@@ -7881,7 +8063,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">29900</Data>
+               <Data ss:Type="Number">30600</Data>
             </Cell>
          </Row>
          <Row>
@@ -7895,7 +8077,7 @@
                <Data ss:Type="String">Value quantity unit of measure</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: The unit of measure that applies to the value quantity.</Data>
+               <Data ss:Type="String">The unit of measure that applies to the value quantity.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">C62</Data>
@@ -7907,7 +8089,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">30000</Data>
+               <Data ss:Type="Number">30700</Data>
             </Cell>
          </Row>
          <Row>
@@ -7933,7 +8115,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">30100</Data>
+               <Data ss:Type="Number">30800</Data>
             </Cell>
          </Row>
          <Row>
@@ -7947,7 +8129,7 @@
                <Data ss:Type="String">Item instance information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Information relevant to an item instance or shared by the items in the order line.</Data>
+               <Data ss:Type="String">Information relevant to an item instance or shared by the items in the order line.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -7959,7 +8141,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">30200</Data>
+               <Data ss:Type="Number">30900</Data>
             </Cell>
          </Row>
          <Row>
@@ -7976,7 +8158,7 @@
                <Data ss:Type="String">BEAst: T3236, (Serial Number). Peppol: An identifier that is specific to the items in the order line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123456</Data>
+               <Data ss:Type="String">9874587</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:ItemInstance/cbc:SerialID</Data>
@@ -7985,7 +8167,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">30300</Data>
+               <Data ss:Type="Number">31000</Data>
             </Cell>
          </Row>
          <Row>
@@ -7999,7 +8181,7 @@
                <Data ss:Type="String">Item lot information</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: Information about the production lot which the order line items come from.</Data>
+               <Data ss:Type="String">Information about the production lot which the order line items come from.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -8011,7 +8193,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">30400</Data>
+               <Data ss:Type="Number">31100</Data>
             </Cell>
          </Row>
          <Row>
@@ -8025,10 +8207,10 @@
                <Data ss:Type="String">Item lot identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Peppol: An identifier for the production lot which the order line items come from.</Data>
+               <Data ss:Type="String">BEAst: T0132, (Batch Number). Peppol: An identifier for the production lot which the order line items come from.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">FGH456</Data>
+               <Data ss:Type="String">4587</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:ItemInstance/cac:LotIdentification/cbc:LotNumberID</Data>
@@ -8037,7 +8219,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">30500</Data>
+               <Data ss:Type="Number">31200</Data>
             </Cell>
          </Row>
       </Table>
