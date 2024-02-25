@@ -86,7 +86,9 @@
 					</Description>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:apply-templates select="normalize-space(synstr:Description)"/>
+					<Description>
+						<xsl:apply-templates select="normalize-space(synstr:Description)"/>
+					</Description>
 				</xsl:otherwise>
 			</xsl:choose>
 			<xsl:choose>
