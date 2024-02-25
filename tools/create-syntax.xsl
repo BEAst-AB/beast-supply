@@ -167,6 +167,10 @@
 			</xsl:choose>
 			<xsl:apply-templates select="synstr:Attribute"/>
 			<xsl:apply-templates select="synstr:Element"/>
+			<xsl:for-each select="synstr:Include">
+				<xsl:variable name="varIncludeXml" select="document(.)"/>
+				<xsl:apply-templates select="$varIncludeXml/synstr:Element"/>
+			</xsl:for-each>
 		</xsl:element>
 	</xsl:template>
 	<xsl:template match="*">
