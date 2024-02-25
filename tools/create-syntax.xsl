@@ -34,7 +34,8 @@
 						<xsl:text>/</xsl:text>
 						<xsl:variable name="xpathTerm" select="synstr:Term"/>
 						<xsl:variable name="xpathTermNsPrefix" select="substring-before(synstr:Term, ':')"/>
-						<xsl:variable name="xpathTermNs" select="/synstr:Structure/synstr:Namespace[@prefix=$xpathTermNsPrefix]"/>
+						<!--Added translate function to solve bug with invoice raw XML from Peppol primary source file-->
+						<xsl:variable name="xpathTermNs" select="translate(/synstr:Structure/synstr:Namespace[@prefix=$xpathTermNsPrefix],'&quot;','')"/>
 						<xsl:value-of select="replace( $xpathTerm, concat($xpathTermNsPrefix, ':'), concat('Q{', $xpathTermNs, '}') )"/>
 					</xsl:otherwise>
 				</xsl:choose>
@@ -47,7 +48,7 @@
 			<xsl:apply-templates select="@*"/>
 			<xsl:apply-templates select="synstr:Term"/>
 			<xsl:apply-templates select="synstr:Name"/>
-			<xsl:variable name="varOverrideNode_Description" select="$varOverrideNode/*/processing-instruction('Description')"/>
+			<xsl:variable name="varOverrideNode_Description" select="$varOverrideNode/child::*/processing-instruction('Description')"/>
 			<xsl:variable name="varOverrideNode_DescriptionAddFirst" select="$varOverrideNode/child::*/processing-instruction('DescriptionAddFirst')"/>
 			<xsl:variable name="varOverrideNode_DescriptionAddLast" select="$varOverrideNode/child::*/processing-instruction('DescriptionAddLast')"/>
 			<xsl:variable name="varOverrideNode_DataType" select="$varOverrideNode/child::*/processing-instruction('DataType')"/>
@@ -65,27 +66,27 @@
 			<xsl:choose>
 				<xsl:when test="$varOverrideNode_Description!='' and not(empty($varOverrideNode_Description))">
 					<Description>
-						<xsl:value-of select="$varOverrideNode_Description"/>
+						<xsl:value-of select="normalize-space($varOverrideNode_Description)"/>
 					</Description>
 				</xsl:when>
 				<xsl:when test="$varOverrideNode_DescriptionAddFirst!='' and not(empty($varOverrideNode_DescriptionAddFirst))">
 					<Description>
-						BEAst: <xsl:value-of select="$varOverrideNode_DescriptionAddFirst"/>
+						BEAst: <xsl:value-of select="normalize-space($varOverrideNode_DescriptionAddFirst)"/>
 						<xsl:if test="synstr:Description != ''">
-							<xsl:value-of select="concat(' Peppol: ', synstr:Description)"/>
+							<xsl:value-of select="concat('&#xa;', ' Peppol: ', normalize-space(synstr:Description))"/>
 						</xsl:if>
 					</Description>
 				</xsl:when>
 				<xsl:when test="$varOverrideNode_DescriptionAddLast!='' and not(empty($varOverrideNode_DescriptionAddLast))">
 					<Description>
 						<xsl:if test="synstr:Description != ''">
-							<xsl:value-of select="concat('Peppol: ', synstr:Description, ' BEAst: ')"/>
+							<xsl:value-of select="concat('Peppol: ', normalize-space(synstr:Description), '&#xa;', ' BEAst: ')"/>
 						</xsl:if>
-						<xsl:value-of select="$varOverrideNode_DescriptionAddLast"/>
+						<xsl:value-of select="normalize-space($varOverrideNode_DescriptionAddLast)"/>
 					</Description>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:apply-templates select="synstr:Description"/>
+					<xsl:apply-templates select="normalize-space(synstr:Description)"/>
 				</xsl:otherwise>
 			</xsl:choose>
 			<xsl:choose>
