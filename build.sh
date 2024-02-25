@@ -21,7 +21,6 @@ docker pull atomgraph/saxon
 
 # Transform the files in source dir to syntax.
 echo "Generating documentation: Invoice"
-# new way
 docker run --rm -i \
     -v $PROJECT:/src \
     -v $PROJECT/target/generated:/target \
@@ -31,8 +30,6 @@ docker run --rm -i \
     -o:/src/structure/syntax/ubl-invoice.xml \
     varOverrideSample=/src/structure/source/ubl-invoice.xml \
     -ext:on --allow-external-functions:on
-# docker run --rm -i -v $PROJECT:/src --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform -s:/src/structure/source/ubl-invoice.xml -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-invoice.xml UblBaseUrl=https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/master/structure/syntax/ UblDocBaseUrl=https://docs.peppol.eu/poacc/billing/3.0/syntax/ubl-invoice UblXmlReferenceFile=ubl-invoice.xml -ext:on --allow-external-functions:on
-
 
 echo "Generating documentation: Order"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
@@ -68,12 +65,6 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml \
      varOverrideSample=/src/structure/source/ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
-
- #   docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform \
- #   -s:/src/structure/source/ubl-advanced-despatch-advice.xml \
- #   -xsl:/src/tools/UBLInstance-To-StructureXML.xsl -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml \
- #   UblBaseUrl=https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/master/structure/syntax/ UblDocBaseUrl=https://docs.peppol.eu/poacc/upgrade-3/syntax/DespatchAdvice/ \
- #   UblXmlReferenceFile=ubl-despatch-advice.xml -ext:on --allow-external-fu
 
 echo "Generating documentation: Weight statement"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
@@ -125,11 +116,11 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     varOverrideSample=/src/structure/source/ubl-receipt-advice.xml -ext:on --allow-external-functions:on
 
 # Generate mapping documents.
-# echo "Generating mapping documents: Invoice"
-# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-#     -s:/src/structure/syntax/ubl-invoice.xml \
-#     -xsl:/src/tools/create-mapping-document.xsl \
-#     -o:/src/rules/mapping/Invoice.xml -ext:on --allow-external-functions:on
+ echo "Generating mapping documents: Invoice"
+ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+     -s:/src/structure/syntax/ubl-invoice.xml \
+     -xsl:/src/tools/create-mapping-document.xsl \
+     -o:/src/rules/mapping/Invoice.xml -ext:on --allow-external-functions:on
 echo "Generating mapping documents: Order"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
     -s:/src/structure/syntax/ubl-order.xml \
@@ -192,6 +183,26 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     -o:/src/rules/mapping/ReceiptAdvice.xml -ext:on --allow-external-functions:on
 
 # Create examples based on documentation.
+echo "Generating example: Invoice"
+ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+     -s:/src/structure/syntax/ubl-invoice.xml \
+     -xsl:/src/tools/create-example.xsl \
+     -o:/src/rules/examples/Invoice_Example_Full.xml -ext:on --allow-external-functions:on
+echo "Generating example: Order"
+ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+     -s:/src/structure/syntax/ubl-order.xml \
+     -xsl:/src/tools/create-example.xsl \
+     -o:/src/rules/examples/Order_Example_Full.xml -ext:on --allow-external-functions:on
+echo "Generating example: Order response"
+ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+     -s:/src/structure/syntax/ubl-order-response.xml \
+     -xsl:/src/tools/create-example.xsl \
+     -o:/src/rules/examples/Order_Response_Example_Full.xml -ext:on --allow-external-functions:on
+echo "Generating example: Order agreement"
+ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+     -s:/src/structure/syntax/ubl-orderagreement.xml \
+     -xsl:/src/tools/create-example.xsl \
+     -o:/src/rules/examples/Order_Agreement_Example_Full.xml -ext:on --allow-external-functions:on
 echo "Generating example: Advanced Despatch advice"
  docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
      -s:/src/structure/syntax/ubl-advanced-despatch-advice.xml \

@@ -12,28 +12,26 @@
   <cbc:ProfileID>
     urn:fdc:peppol.eu:2017:poacc:billing:01:1.0
   </cbc:ProfileID>
-  <cbc:ID>9742025</cbc:ID>
-  <cbc:IssueDate>2020-10-31</cbc:IssueDate>
-  <cbc:DueDate>2020-12-05</cbc:DueDate>
-  <cbc:InvoiceTypeCode>380
-  <?BusinessTerm BT-24?>
-</cbc:InvoiceTypeCode>
+  <cbc:ID/>
+	<cbc:IssueDate></cbc:IssueDate>
+	<cbc:DueDate></cbc:DueDate>
+	<cbc:InvoiceTypeCode></cbc:InvoiceTypeCode>
   <cbc:Note>
     FAKTURASAMMANSTÄLLNING
     Kostnadsslag 43790     Summa 409.20
   </cbc:Note>
-  <cbc:TaxPointDate>2021-11-07</cbc:TaxPointDate>
+  <cbc:TaxPointDate/>
   <cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
   <cbc:TaxCurrencyCode>SEK</cbc:TaxCurrencyCode>
 	<cbc:AccountingCost>
-		4415<?DescriptionAddFirst Can be used for natural account or code string?>
+		<?DescriptionAddFirst Can be used for natural account or code string?>
 	</cbc:AccountingCost>
-	<cbc:BuyerReference />>
+	<cbc:BuyerReference/>>
 	<cac:InvoicePeriod>
-		<?DescriptionAddFirst Also used to describe invoice period for rental items. Can also be used on line level if needed.?> 
-		<cbc:StartDate>2020-10-31</cbc:StartDate>
-		<cbc:EndDate>2020-12-05</cbc:EndDate>
-		<cbc:DescriptionCode>35</cbc:DescriptionCode>
+		<?DescriptionAddFirst Also used to describe invoice period for rental items. Can also be used on line level if needed.?>
+		<cbc:StartDate/>
+		<cbc:EndDate/>
+		<cbc:DescriptionCode></cbc:DescriptionCode>
 	</cac:InvoicePeriod>
 	<cac:OrderReference>
 		<cbc:ID>98776</cbc:ID>
@@ -42,7 +40,7 @@
 	<cac:BillingReference>
 		<cac:InvoiceDocumentReference>
 			<cbc:ID>9742024</cbc:ID>
-			<cbc:IssueDate>2021-10-15</cbc:IssueDate>
+			<cbc:IssueDate></cbc:IssueDate>
 		</cac:InvoiceDocumentReference>
 	</cac:BillingReference>
 	<cac:DespatchDocumentReference>
