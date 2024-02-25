@@ -26,7 +26,6 @@ docker run --rm -i \
     -v $PROJECT:/src \
     -v $PROJECT/target/generated:/target \
     atomgraph/saxon \
-    -xi \
     -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/master/structure/syntax/ubl-invoice.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-invoice.xml \
