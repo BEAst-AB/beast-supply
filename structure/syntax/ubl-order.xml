@@ -180,7 +180,7 @@
             <Description>A reference to the Catalogue on which this Order is based.</Description>
             <DataType>Document reference</DataType>
             <Reference type="BUSINESS_TERM">tir01-p45</Reference>
-            <Value type="EXAMPLE">Cat2023-03-07</Value>
+            <Value type="EXAMPLE"/>
          </Element>
       </Element>
       <Element cardinality="0..n">
@@ -224,13 +224,13 @@
                   <Name>Attached document Mime code</Name>
                   <Description>The mime code of the attached document.</Description>
                   <Reference type="CODE_LIST">MimeCode</Reference>
-                  <Value type="EXAMPLE">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</Value>
+                  <Value type="EXAMPLE">application/pdf</Value>
                </Attribute>
                <Attribute>
                   <Term>filename</Term>
                   <Name>Attached document filename</Name>
                   <Description>The file name of the attached document</Description>
-                  <Value type="EXAMPLE">Hours-spent.xsl</Value>
+                  <Value type="EXAMPLE">Hours-spent.pdf</Value>
                </Attribute>
             </Element>
             <Element cardinality="0..1">
@@ -262,7 +262,6 @@
  Peppol: Positive identification of the reference such as a unique identifier.</Description>
             <DataType>Document reference</DataType>
             <Reference type="BUSINESS_TERM">tir01-019</Reference>
-            <Value type="EXAMPLE">AABC654</Value>
          </Element>
       </Element>
       <Element cardinality="0..1">
@@ -300,7 +299,7 @@
                   <Name>Scheme identifier</Name>
                   <Description>Scheme identifier for the electronic address</Description>
                   <Reference type="CODE_LIST">eas</Reference>
-                  <Value type="EXAMPLE">0088</Value>
+                  <Value type="EXAMPLE">0007</Value>
                </Attribute>
             </Element>
             <Element cardinality="0..1">
@@ -315,12 +314,12 @@
  Peppol: An identification for the buyer party.</Description>
                   <Reference type="BUSINESS_TERM">tir01-022</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute usage="optional">
+                  <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0088</Value>
+                     <Value type="EXAMPLE">0007</Value>
                   </Attribute>
                </Element>
             </Element>
@@ -351,7 +350,6 @@
  Peppol: The main address line in a postal address usually the street name and number.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-032</Reference>
-                  <Value type="EXAMPLE">Warfvinges väg 25</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
@@ -361,7 +359,6 @@
  Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-027</Reference>
-                  <Value type="EXAMPLE">Department A</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
@@ -371,7 +368,6 @@
  Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-031</Reference>
-                  <Value type="EXAMPLE">Stockholm</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
@@ -381,7 +377,6 @@
  Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-024</Reference>
-                  <Value type="EXAMPLE">11251</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
@@ -389,7 +384,6 @@
                   <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-141</Reference>
-                  <Value type="EXAMPLE">765</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
@@ -435,7 +429,6 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-034</Reference>
                   <Reference type="RULE">PEPPOL-T01-R026</Reference>
-                  <Value type="EXAMPLE">SE765</Value>
                </Element>
                <Element>
                   <Term>cac:TaxScheme</Term>
@@ -460,7 +453,6 @@
                   <Description>The official name of the party as registered with the relevant fiscal authority.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-044</Reference>
-                  <Value type="EXAMPLE">Skanska Sverige AB</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CompanyID</Term>
@@ -469,13 +461,13 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-043</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute usage="Optional">
+                  <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>The identification scheme identifier of the buyer legal
 								registration identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0002</Value>
+                     <Value type="EXAMPLE">0007</Value>
                   </Attribute>
                </Element>
                <Element cardinality="0..1">
@@ -488,7 +480,6 @@
                      <Description>Associates with the registered address of the party within a Corporate Registration Scheme. The name of a city, town, or village.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir01-045</Reference>
-                     <Value type="EXAMPLE">Stockholm</Value>
                   </Element>
                   <Element>
                      <Term>cac:Country</Term>
@@ -518,7 +509,6 @@
  Peppol: The name of the contact person.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-050</Reference>
-                  <Value type="EXAMPLE">Alexander Janving</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Telephone</Term>
@@ -528,7 +518,6 @@
  Peppol: A phone number for the contact person. If the person has a direct number, this is that number.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-047</Reference>
-                  <Value type="EXAMPLE">46-0104492024</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:ElectronicMail</Term>
@@ -538,7 +527,6 @@
  Peppol: The e-mail address for the contact person. If the person has a direct e-mail this is that email.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-049</Reference>
-                  <Value type="EXAMPLE">dummy.user@skanska.se</Value>
                </Element>
             </Element>
          </Element>
@@ -563,7 +551,7 @@
                   <Name>Scheme identifier</Name>
                   <Description>Scheme identifier for the electronic address</Description>
                   <Reference type="CODE_LIST">eas</Reference>
-                  <Value type="EXAMPLE">0088</Value>
+                  <Value type="EXAMPLE">0007</Value>
                </Attribute>
             </Element>
             <Element cardinality="0..1">
@@ -579,12 +567,12 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-059</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute usage="optional">
+                  <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0088</Value>
+                     <Value type="EXAMPLE">0007</Value>
                   </Attribute>
                </Element>
             </Element>
@@ -616,7 +604,6 @@
  Peppol: The main address line in a postal address usually the street name and number.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-063</Reference>
-                  <Value type="EXAMPLE">Fack</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
@@ -626,7 +613,6 @@
  Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-064</Reference>
-                  <Value type="EXAMPLE">Avdelning XYZ</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
@@ -636,7 +622,6 @@
  Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-065</Reference>
-                  <Value type="EXAMPLE">SKÖVDE</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
@@ -646,7 +631,6 @@
  Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-068</Reference>
-                  <Value type="EXAMPLE">541 86</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
@@ -654,7 +638,6 @@
                   <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-142</Reference>
-                  <Value type="EXAMPLE">765</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
@@ -698,7 +681,6 @@
                   <Description>The official name of the party as registered with the relevant fiscal authority.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p038</Reference>
-                  <Value type="EXAMPLE">Paroc Aktiebolag</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CompanyID</Term>
@@ -707,13 +689,13 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p039</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute usage="Optional">
+                  <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>The identification scheme identifier of the buyer legal
 								registration identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0002</Value>
+                     <Value type="EXAMPLE">0007</Value>
                   </Attribute>
                </Element>
                <Element cardinality="0..1">
@@ -726,7 +708,6 @@
                      <Description>Associates with the registered address of the party within a Corporate Registration Scheme. The name of a city, town, or village.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir01-p040</Reference>
-                     <Value type="EXAMPLE">Skövde</Value>
                   </Element>
                   <Element>
                      <Term>cac:Country</Term>
@@ -756,7 +737,6 @@
  Peppol: The name of the contact person.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-074</Reference>
-                  <Value type="EXAMPLE">Order Paroc</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Telephone</Term>
@@ -766,7 +746,6 @@
  Peppol: A phone number for the contact person. If the person has a direct number, this is that number.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-077</Reference>
-                  <Value type="EXAMPLE">0701234567</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:ElectronicMail</Term>
@@ -776,7 +755,6 @@
  Peppol: The e-mail address for the contact person. If the person has a direct e-mail this is that email.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-076</Reference>
-                  <Value type="EXAMPLE">skanska@paroc.se</Value>
                </Element>
             </Element>
          </Element>
@@ -805,12 +783,12 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-081</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute usage="optional">
+                  <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0088</Value>
+                     <Value type="EXAMPLE">0007</Value>
                   </Attribute>
                </Element>
             </Element>
@@ -840,7 +818,6 @@
                   <Description>The name of the contact person.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-086</Reference>
-                  <Value type="EXAMPLE">Erik Nilsson</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Telephone</Term>
@@ -848,7 +825,6 @@
                   <Description>A phone number for the contact person. If the person has a direct number, this is that number.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-083</Reference>
-                  <Value type="EXAMPLE">0707676767</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:ElectronicMail</Term>
@@ -856,7 +832,6 @@
                   <Description>The e-mail address for the contact person. If the person has a direct e-mail this is that email.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-085</Reference>
-                  <Value type="EXAMPLE">erik@nilssons.se</Value>
                </Element>
             </Element>
          </Element>
@@ -881,7 +856,7 @@
                   <Name>Scheme identifier</Name>
                   <Description>Scheme identifier for the electronic address</Description>
                   <Reference type="CODE_LIST">eas</Reference>
-                  <Value type="EXAMPLE">0088</Value>
+                  <Value type="EXAMPLE">0007</Value>
                </Attribute>
             </Element>
             <Element cardinality="0..1">
@@ -897,12 +872,12 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-156</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute usage="optional">
+                  <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0088</Value>
+                     <Value type="EXAMPLE">0007</Value>
                   </Attribute>
                </Element>
             </Element>
@@ -943,7 +918,6 @@
  Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p014</Reference>
-                  <Value type="EXAMPLE">Department A</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
@@ -953,7 +927,6 @@
  Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p009</Reference>
-                  <Value type="EXAMPLE">Stockholm</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
@@ -963,7 +936,6 @@
  Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p015</Reference>
-                  <Value type="EXAMPLE">11251</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
@@ -971,7 +943,6 @@
                   <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p016</Reference>
-                  <Value type="EXAMPLE">765</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
@@ -1018,7 +989,6 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p018</Reference>
                   <Reference type="RULE">PEPPOL-T01-R026</Reference>
-                  <Value type="EXAMPLE">SE765</Value>
                </Element>
                <Element>
                   <Term>cac:TaxScheme</Term>
@@ -1043,7 +1013,6 @@
                   <Description>The official name of the invoicee party as registered with the relevant fiscal authority.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-159</Reference>
-                  <Value type="EXAMPLE">Skanska Sverige AB</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CompanyID</Term>
@@ -1052,14 +1021,14 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-158</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute usage="Optional">
+                  <Attribute>
                      <Term>schemeID</Term>
                      <Name>Buyer legal registration identifier identification scheme
 								identifier</Name>
                      <Description>The identification scheme identifier of the buyer legal
 								registration identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0002</Value>
+                     <Value type="EXAMPLE">0007</Value>
                   </Attribute>
                </Element>
                <Element cardinality="0..1">
@@ -1072,7 +1041,6 @@
                      <Description>Associates with the registered address of the party within a Corporate Registration Scheme. The name of a city, town, or village.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir01-160</Reference>
-                     <Value type="EXAMPLE">Stockholm</Value>
                   </Element>
                   <Element>
                      <Term>cac:Country</Term>
@@ -1100,7 +1068,6 @@
                   <Description>The name of the contact person.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p025</Reference>
-                  <Value type="EXAMPLE">Alexander Janving</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Telephone</Term>
@@ -1108,7 +1075,6 @@
                   <Description>A phone number for the contact person. If the person has a direct number, this is that number.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p026</Reference>
-                  <Value type="EXAMPLE">46-0104492024</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:ElectronicMail</Term>
@@ -1116,7 +1082,6 @@
                   <Description>The e-mail address for the contact person. If the person has a direct e-mail this is that email.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p027</Reference>
-                  <Value type="EXAMPLE">dummy.user@skanska.se</Value>
                </Element>
             </Element>
          </Element>
@@ -1138,13 +1103,13 @@
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir01-169</Reference>
                <Value type="EXAMPLE">7300010000001</Value>
-               <Attribute usage="Optional">
+               <Attribute>
                   <Term>schemeID</Term>
                   <Name>Deliver to location identifier identification scheme identifier</Name>
                   <Description>The identification scheme identifier of the Deliver to location
 							identifier.</Description>
                   <Reference type="CODE_LIST">ICD</Reference>
-                  <Value type="EXAMPLE">0088</Value>
+                  <Value type="EXAMPLE">0007</Value>
                </Attribute>
             </Element>
             <Element cardinality="0..1">
@@ -1169,7 +1134,6 @@
  Peppol: The main address line in a postal address usually the street name and number.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-092</Reference>
-                  <Value type="EXAMPLE">Testvägen 1</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
@@ -1179,7 +1143,6 @@
  Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-093</Reference>
-                  <Value type="EXAMPLE">Avdelning C</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
@@ -1189,7 +1152,6 @@
  Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-096</Reference>
-                  <Value type="EXAMPLE">Kristianstad</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
@@ -1199,7 +1161,6 @@
  Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-097</Reference>
-                  <Value type="EXAMPLE">29155</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
@@ -1207,7 +1168,6 @@
                   <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-144</Reference>
-                  <Value type="EXAMPLE">765</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
@@ -1253,7 +1213,6 @@
                <Description>The date on which the period starts. The start dates counts as part of the period.Format ="YYYY-MM-DD"</Description>
                <DataType>Date</DataType>
                <Reference type="BUSINESS_TERM">tir01-099</Reference>
-               <Value type="EXAMPLE">2021-11-01</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:StartTime</Term>
@@ -1269,7 +1228,6 @@
                <Description>The date on which the period ends. The end date counts as part of the period.Format ="YYYY-MM-DD"</Description>
                <DataType>Date</DataType>
                <Reference type="BUSINESS_TERM">tir01-100</Reference>
-               <Value type="EXAMPLE">2021-11-03</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:EndTime</Term>
@@ -1296,14 +1254,14 @@
  Peppol: In this BIS: The identifier of the party that should receive the ordered items</Description>
                   <Reference type="BUSINESS_TERM">tir01-101</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute usage="Optional">
+                  <Attribute>
                      <Term>schemeID</Term>
                      <Name>Deliver party registration identifier identification scheme
 								identifier</Name>
                      <Description>The identification scheme identifier of the deliverparty
 								identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0002</Value>
+                     <Value type="EXAMPLE">0007</Value>
                   </Attribute>
                </Element>
             </Element>
@@ -1334,7 +1292,6 @@
  Peppol: The main address line in a postal address usually the street name and number.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p029</Reference>
-                  <Value type="EXAMPLE">Testvägen 1</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
@@ -1344,7 +1301,6 @@
  Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p030</Reference>
-                  <Value type="EXAMPLE">Avdelning B</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
@@ -1354,7 +1310,6 @@
  Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p031</Reference>
-                  <Value type="EXAMPLE">Stockholm</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
@@ -1364,7 +1319,6 @@
  Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p032</Reference>
-                  <Value type="EXAMPLE">12345</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
@@ -1372,7 +1326,6 @@
                   <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p033</Reference>
-                  <Value type="EXAMPLE">765</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
@@ -1418,7 +1371,6 @@
  Peppol: The name of the contact person.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-103</Reference>
-                  <Value type="EXAMPLE">Alexander Janving</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Telephone</Term>
@@ -1428,7 +1380,6 @@
  Peppol: A phone number for the contact person. If the person has a direct number, this is that number.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-104</Reference>
-                  <Value type="EXAMPLE">0708650658</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:ElectronicMail</Term>
@@ -1438,7 +1389,6 @@
  Peppol: The e-mail address for the contact person. If the person has a direct e-mail this is that email.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-106</Reference>
-                  <Value type="EXAMPLE">alex@skanska.se</Value>
                </Element>
             </Element>
          </Element>
@@ -1452,7 +1402,6 @@
                <Description>
 						BEAst: Always set to "NA".
  Peppol: Element is mandated by syntax structure use value NA</Description>
-               <Value type="EXAMPLE">NA</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ShippingPriorityLevelCode</Term>
@@ -1461,7 +1410,7 @@
                <DataType>code</DataType>
                <Reference type="BUSINESS_TERM">tir01-p47</Reference>
                <Reference type="CODE_LIST">UNCL4219</Reference>
-               <Value type="EXAMPLE">1</Value>
+               <Value type="EXAMPLE"/>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:TransportHandlingUnit</Term>
@@ -1502,7 +1451,6 @@
  Peppol: A description of special conditions relating to the Delivery Terms.</Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">tir01-108</Reference>
-            <Value type="EXAMPLE">Transport information.</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:DeliveryLocation</Term>
@@ -1530,7 +1478,6 @@
             <Description>Payment terms for the order described in text</Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">tir01-p010</Reference>
-            <Value type="EXAMPLE">30 dagar</Value>
          </Element>
       </Element>
       <Element cardinality="0..n">
@@ -1564,7 +1511,6 @@
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">tir01-112</Reference>
             <Reference type="RULE">PEPPOL-T01-R023</Reference>
-            <Value type="EXAMPLE">Text</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:MultiplierFactorNumeric</Term>
@@ -1591,7 +1537,7 @@
 						tir01-007, DocumentCurrencyCode.</Description>
                <Reference type="CODE_LIST">ISO4217</Reference>
                <Reference type="RULE">PEPPOL-T01-R003</Reference>
-               <Value type="EXAMPLE">EUR</Value>
+               <Value type="EXAMPLE">SEK</Value>
             </Attribute>
          </Element>
          <Element cardinality="0..1">
@@ -1609,7 +1555,7 @@
 						tir01-007, DocumentCurrencyCode.</Description>
                <Reference type="CODE_LIST">ISO4217</Reference>
                <Reference type="RULE">PEPPOL-T01-R003</Reference>
-               <Value type="EXAMPLE">EUR</Value>
+               <Value type="EXAMPLE">SEK</Value>
             </Attribute>
          </Element>
          <Element cardinality="0..1">
@@ -1666,7 +1612,7 @@
 						tir01-007, DocumentCurrencyCode.</Description>
                <Reference type="CODE_LIST">ISO4217</Reference>
                <Reference type="RULE">PEPPOL-T01-R003</Reference>
-               <Value type="EXAMPLE">EUR</Value>
+               <Value type="EXAMPLE">SEK</Value>
             </Attribute>
          </Element>
       </Element>
@@ -1690,7 +1636,7 @@
 						tir01-007, DocumentCurrencyCode.</Description>
                <Reference type="CODE_LIST">ISO4217</Reference>
                <Reference type="RULE">PEPPOL-T01-R003</Reference>
-               <Value type="EXAMPLE">EUR</Value>
+               <Value type="EXAMPLE">SEK</Value>
             </Attribute>
          </Element>
          <Element cardinality="0..1">
@@ -1708,7 +1654,7 @@
 						tir01-007, DocumentCurrencyCode.</Description>
                <Reference type="CODE_LIST">ISO4217</Reference>
                <Reference type="RULE">PEPPOL-T01-R003</Reference>
-               <Value type="EXAMPLE">EUR</Value>
+               <Value type="EXAMPLE">SEK</Value>
             </Attribute>
          </Element>
          <Element cardinality="0..1">
@@ -1726,7 +1672,7 @@
 						tir01-007, DocumentCurrencyCode.</Description>
                <Reference type="CODE_LIST">ISO4217</Reference>
                <Reference type="RULE">PEPPOL-T01-R003</Reference>
-               <Value type="EXAMPLE">EUR</Value>
+               <Value type="EXAMPLE">SEK</Value>
             </Attribute>
          </Element>
          <Element cardinality="0..1">
@@ -1744,7 +1690,7 @@
 						tir01-007, DocumentCurrencyCode.</Description>
                <Reference type="CODE_LIST">ISO4217</Reference>
                <Reference type="RULE">PEPPOL-T01-R003</Reference>
-               <Value type="EXAMPLE">EUR</Value>
+               <Value type="EXAMPLE">SEK</Value>
             </Attribute>
          </Element>
          <Element cardinality="0..1">
@@ -1762,7 +1708,7 @@
 						tir01-007, DocumentCurrencyCode.</Description>
                <Reference type="CODE_LIST">ISO4217</Reference>
                <Reference type="RULE">PEPPOL-T01-R003</Reference>
-               <Value type="EXAMPLE">EUR</Value>
+               <Value type="EXAMPLE">SEK</Value>
             </Attribute>
          </Element>
          <Element cardinality="0..1">
@@ -1778,7 +1724,7 @@
 						tir01-007, DocumentCurrencyCode.</Description>
                <Reference type="CODE_LIST">ISO4217</Reference>
                <Reference type="RULE">PEPPOL-T01-R003</Reference>
-               <Value type="EXAMPLE">EUR</Value>
+               <Value type="EXAMPLE">SEK</Value>
             </Attribute>
          </Element>
          <Element cardinality="0..1">
@@ -1795,7 +1741,7 @@
 						tir01-007, DocumentCurrencyCode.</Description>
                <Reference type="CODE_LIST">ISO4217</Reference>
                <Reference type="RULE">PEPPOL-T01-R003</Reference>
-               <Value type="EXAMPLE">EUR</Value>
+               <Value type="EXAMPLE">SEK</Value>
             </Attribute>
          </Element>
          <Element>
@@ -1814,7 +1760,7 @@
 						tir01-007, DocumentCurrencyCode.</Description>
                <Reference type="CODE_LIST">ISO4217</Reference>
                <Reference type="RULE">PEPPOL-T01-R003</Reference>
-               <Value type="EXAMPLE">EUR</Value>
+               <Value type="EXAMPLE">SEK</Value>
             </Attribute>
          </Element>
       </Element>
@@ -1830,7 +1776,6 @@
  Peppol: Free-form text applying to the Order Line. This element may contain notes or any other similar information that is not contained explicitly in another structure. Is to capture any free form description related to the order line as a whole.</Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">tir01-123</Reference>
-            <Value type="EXAMPLE">%%SF_TXT:Avisering=Ingen avisering (standard)</Value>
          </Element>
          <Element>
             <Term>cac:LineItem</Term>
@@ -1865,7 +1810,7 @@
 							quantity.</Description>
                   <DataType>Code</DataType>
                   <Reference type="CODE_LIST">UNECERec20</Reference>
-                  <Value type="EXAMPLE">C62</Value>
+                  <Value type="EXAMPLE">MTK</Value>
                </Attribute>
             </Element>
             <Element cardinality="0..1">
@@ -1883,7 +1828,7 @@
 							tir01-007, DocumentCurrencyCode.</Description>
                   <Reference type="CODE_LIST">ISO4217</Reference>
                   <Reference type="RULE">PEPPOL-T01-R003</Reference>
-                  <Value type="EXAMPLE">EUR</Value>
+                  <Value type="EXAMPLE">SEK</Value>
                </Attribute>
             </Element>
             <Element cardinality="0..1">
@@ -1905,7 +1850,6 @@
  Peppol: The buyer's accounting information applied to the Line Item, expressed as text.</Description>
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">tir01-125</Reference>
-               <Value type="EXAMPLE">1234:45435:243234</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:Delivery</Term>
@@ -1918,12 +1862,12 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p037</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute usage="Optional">
+                  <Attribute>
                      <Term>schemeID</Term>
                      <Name>Deliver to location identifier identification scheme identifier</Name>
                      <Description>The identification scheme identifier of the Deliver to location identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0088</Value>
+                     <Value type="EXAMPLE">0007</Value>
                   </Attribute>
                </Element>
                <Element>
@@ -1986,13 +1930,13 @@
                      <Description>The party who originated Order.</Description>
                      <Reference type="BUSINESS_TERM">tir01-121</Reference>
                      <Value type="EXAMPLE">7300010000001</Value>
-                     <Attribute usage="optional">
+                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
                         <Description>Scheme identifier for party
 									identification</Description>
                         <Reference type="CODE_LIST">ICD</Reference>
-                        <Value type="EXAMPLE">0088</Value>
+                        <Value type="EXAMPLE">0007</Value>
                      </Attribute>
                   </Element>
                </Element>
@@ -2074,7 +2018,7 @@
 								in tir01-007, DocumentCurrencyCode.</Description>
                      <Reference type="CODE_LIST">ISO4217</Reference>
                      <Reference type="RULE">PEPPOL-T01-R003</Reference>
-                     <Value type="EXAMPLE">EUR</Value>
+                     <Value type="EXAMPLE">SEK</Value>
                   </Attribute>
                </Element>
                <Element cardinality="0..1">
@@ -2094,7 +2038,7 @@
 								in tir01-007, DocumentCurrencyCode.</Description>
                      <Reference type="CODE_LIST">ISO4217</Reference>
                      <Reference type="RULE">PEPPOL-T01-R003</Reference>
-                     <Value type="EXAMPLE">EUR</Value>
+                     <Value type="EXAMPLE">SEK</Value>
                   </Attribute>
                </Element>
             </Element>
@@ -2119,7 +2063,7 @@
 								in tir01-007, DocumentCurrencyCode.</Description>
                      <Reference type="CODE_LIST">ISO4217</Reference>
                      <Reference type="RULE">PEPPOL-T01-R003</Reference>
-                     <Value type="EXAMPLE">EUR</Value>
+                     <Value type="EXAMPLE">SEK</Value>
                   </Attribute>
                </Element>
                <Element cardinality="0..1">
@@ -2131,14 +2075,14 @@
                   <Reference type="BUSINESS_TERM">tir01-131</Reference>
                   <Reference type="RULE">PEPPOL-T01-R025</Reference>
                   <Value type="DEFAULT">1.00</Value>
-                  <Attribute usage="Optional">
+                  <Attribute>
                      <Term>unitCode</Term>
                      <Name>Base quantity unit of measure</Name>
                      <Description>The unit of measure that applies to the base
 								quantity.</Description>
                      <DataType>Code</DataType>
                      <Reference type="CODE_LIST">UNECERec20</Reference>
-                     <Value type="EXAMPLE">C62</Value>
+                     <Value type="EXAMPLE">MTK</Value>
                   </Attribute>
                </Element>
                <Element cardinality="0..1">
@@ -2166,7 +2110,7 @@
 									used in tir01-007, DocumentCurrencyCode.</Description>
                         <Reference type="CODE_LIST">ISO4217</Reference>
                         <Reference type="RULE">PEPPOL-T01-R003</Reference>
-                        <Value type="EXAMPLE">EUR</Value>
+                        <Value type="EXAMPLE">SEK</Value>
                      </Attribute>
                   </Element>
                   <Element cardinality="0..1">
@@ -2183,7 +2127,7 @@
 									used in tir01-007, DocumentCurrencyCode.</Description>
                         <Reference type="CODE_LIST">ISO4217</Reference>
                         <Reference type="RULE">PEPPOL-T01-R003</Reference>
-                        <Value type="EXAMPLE">EUR</Value>
+                        <Value type="EXAMPLE">SEK</Value>
                      </Attribute>
                   </Element>
                </Element>
@@ -2200,7 +2144,6 @@
  Peppol: Free-form field that can be used to give a text description of the item. A detailed description of the item.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-133</Reference>
-                  <Value type="EXAMPLE">Text</Value>
                </Element>
                <Element>
                   <Term>cbc:Name</Term>
@@ -2210,7 +2153,6 @@
  Peppol: A short name for an item. A short name given to an item, such as a name from a Catalogue, as distinct from a description.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-135</Reference>
-                  <Value type="EXAMPLE">PAROC CGL 20cy Putslamell. undertak. 200mm (200X1200) PL/33 3</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:BuyersItemIdentification</Term>
@@ -2252,7 +2194,7 @@
                      <Description>An identifier, assigned by the items manufacturer, for the item.</Description>
                      <DataType>Identifier</DataType>
                      <Reference type="BUSINESS_TERM">tir01-p46</Reference>
-                     <Value type="EXAMPLE">manid659</Value>
+                     <Value type="EXAMPLE"/>
                   </Element>
                </Element>
                <Element cardinality="0..1">
@@ -2312,21 +2254,21 @@
                         <Description>The identification scheme identifier of the Item
 									classification identifier</Description>
                         <Reference type="CODE_LIST">UNCL7143</Reference>
-                        <Value type="EXAMPLE">STI</Value>
+                        <Value type="EXAMPLE">ZZZ</Value>
                      </Attribute>
-                     <Attribute usage="Optional">
+                     <Attribute>
                         <Term>listVersionID</Term>
                         <Name>Item classification identifier version identification scheme
 									identifier</Name>
                         <Description>The identification scheme version identifier of the
 									Item classification identifier</Description>
-                        <Value type="EXAMPLE">20.0602</Value>
+                        <Value type="EXAMPLE">3.0.2</Value>
                      </Attribute>
-                     <Attribute usage="Optional">
+                     <Attribute>
                         <Term>name</Term>
                         <Name>Clear text name equivalent of classification code</Name>
                         <Description>The textual equivalent of the code value</Description>
-                        <Value type="EXAMPLE">Office furniture</Value>
+                        <Value type="EXAMPLE">SBMI</Value>
                      </Attribute>
                   </Element>
                </Element>
@@ -2387,7 +2329,6 @@
  Peppol: Code for the item property according to a property code system.</Description>
                      <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir01-p024</Reference>
-                     <Value type="EXAMPLE">DeliveryUnit</Value>
                      <Attribute>
                         <Term>listID</Term>
                         <Name>Name code list id.</Name>
@@ -2431,7 +2372,6 @@
  Peppol: Standardized and predefined classification of items properties.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir01-p021</Reference>
-                     <Value type="EXAMPLE">12</Value>
                   </Element>
                </Element>
                <Element cardinality="0..n">
@@ -2445,7 +2385,6 @@
 						BEAst: T3236, (Serial Number).
  Peppol: An identifier that is specific to the items in the order line.</Description>
                      <Reference type="BUSINESS_TERM">tir01-p023</Reference>
-                     <Value type="EXAMPLE">9874587</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:LotIdentification</Term>
@@ -2458,7 +2397,6 @@
 						BEAst: T0132, (Batch Number).
  Peppol: An identifier for the production lot which the order line items come from.</Description>
                         <Reference type="BUSINESS_TERM">tir01-p022</Reference>
-                        <Value type="EXAMPLE">4587</Value>
                      </Element>
                   </Element>
                </Element>

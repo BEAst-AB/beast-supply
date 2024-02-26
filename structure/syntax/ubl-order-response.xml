@@ -85,7 +85,6 @@
  Peppol: Clarification of the suppliers decision.</Description>
          <DataType>Text</DataType>
          <Reference type="BUSINESS_TERM">tir76-006</Reference>
-         <Value type="EXAMPLE">Response message with amendments in the details</Value>
       </Element>
       <Element>
          <Term>cbc:DocumentCurrencyCode</Term>
@@ -162,7 +161,7 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir76-059</Reference>
                   <Value type="EXAMPLE">DK12345678</Value>
-                  <Attribute usage="optional">
+                  <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
@@ -227,7 +226,7 @@
  Peppol: An identification for the buyer party.</Description>
                   <Reference type="BUSINESS_TERM">tir76-022</Reference>
                   <Value type="EXAMPLE">DK55412777</Value>
-                  <Attribute usage="optional">
+                  <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
@@ -602,7 +601,6 @@
                      <Description>A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
                      <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir76-149</Reference>
-                     <Value type="EXAMPLE">12345678</Value>
                      <Attribute>
                         <Term>listID</Term>
                         <Name>Item classification identifier identification scheme identifier</Name>
@@ -610,17 +608,17 @@
                         <Reference type="CODE_LIST">UNCL7143</Reference>
                         <Value type="EXAMPLE">MP</Value>
                      </Attribute>
-                     <Attribute usage="Optional">
+                     <Attribute>
                         <Term>listVersionID</Term>
                         <Name>Item classification identifier version identification scheme identifier</Name>
                         <Description>The identification scheme version identifier of the Item classification identifier</Description>
-                        <Value type="EXAMPLE">20.0601</Value>
+                        <Value type="EXAMPLE">19.0501</Value>
                      </Attribute>
-                     <Attribute usage="Optional">
+                     <Attribute>
                         <Term>name</Term>
                         <Name>Clear text name equivalent of classification code</Name>
                         <Description>The textual equivalent of the code value</Description>
-                        <Value type="EXAMPLE">Office furniture</Value>
+                        <Value type="EXAMPLE">Name</Value>
                      </Attribute>
                   </Element>
                </Element>
@@ -675,7 +673,6 @@
                      <Description>Code for the item property according to a property code system.</Description>
                      <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir76-p004</Reference>
-                     <Value type="EXAMPLE">Code</Value>
                      <Attribute>
                         <Term>listID</Term>
                         <Name>Name code list id.</Name>
@@ -703,7 +700,7 @@
                         <Description>The unit of measure that applies to the value quantity.</Description>
                         <DataType>Code</DataType>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
-                        <Value type="EXAMPLE">NAR</Value>
+                        <Value type="EXAMPLE">GRM</Value>
                      </Attribute>
                   </Element>
                   <Element cardinality="0..1">
@@ -712,7 +709,6 @@
                      <Description>Standardized and predefined classification of items properties.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir76-p009</Reference>
-                     <Value type="EXAMPLE">gram</Value>
                   </Element>
                </Element>
             </Element>

@@ -120,7 +120,7 @@
                <Data ss:Type="String">Identifies the specification of content and rules that apply to the transaction.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">urn:fdc:peppol.eu:logistics:trns:transportation_status_request:1</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cbc:CustomizationID</Data>
@@ -146,7 +146,7 @@
                <Data ss:Type="String">Identifies the Peppol profile or business process context in which the transaction appears.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">urn:fdc:peppol.eu:logistics:bis:transportation_status_w_request:1</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cbc:ProfileID</Data>
@@ -172,7 +172,7 @@
                <Data ss:Type="String">An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">TSR_1</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cbc:ID</Data>
@@ -198,7 +198,7 @@
                <Data ss:Type="String">The date when the Transportation Status Request was issued. Format = "YYYY-MM-DD".</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2011-10-06</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cbc:IssueDate</Data>
@@ -224,7 +224,7 @@
                <Data ss:Type="String">The time when the Transportation Status Request was issued.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">09:29:30+02:00</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cbc:IssueTime</Data>
@@ -250,7 +250,7 @@
                <Data ss:Type="String">An identifier (in the form of a reference number) of the Shipping Order or Forwarding Instruction associated with this shipment.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">KHN23-44044</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cbc:ShippingOrderID</Data>
@@ -264,7 +264,7 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">O</Data>
+               <Data ss:Type="String">M</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  @schemeID</Data>
@@ -276,7 +276,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">zzz</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cbc:ShippingOrderID/schemeID</Data>
@@ -302,7 +302,7 @@
                <Data ss:Type="String">The type of status being requested.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">3</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cbc:TransportationStatusTypeCode</Data>
@@ -354,7 +354,7 @@
                <Data ss:Type="String">The endpoint for the sender party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">41955619</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cbc:EndpointID</Data>
@@ -380,7 +380,7 @@
                <Data ss:Type="String">Scheme identifier for electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0198</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cbc:EndpointID/schemeID</Data>
@@ -432,7 +432,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7300010000001</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyIdentification/cbc:ID</Data>
@@ -446,7 +446,7 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">O</Data>
+               <Data ss:Type="String">M</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
@@ -458,7 +458,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0088</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyIdentification/cbc:ID/schemeID</Data>
@@ -510,7 +510,7 @@
                <Data ss:Type="String">The name of the sender party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Leman</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyName/cbc:Name</Data>
@@ -562,7 +562,7 @@
                <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Ventrupvej 6</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PostalAddress/cbc:StreetName</Data>
@@ -588,7 +588,7 @@
                <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Greve Landsby</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -614,7 +614,7 @@
                <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Greve</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PostalAddress/cbc:CityName</Data>
@@ -640,7 +640,7 @@
                <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2670</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PostalAddress/cbc:PostalZone</Data>
@@ -666,7 +666,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Region Sjælland</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -718,7 +718,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Bygning 5</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -770,7 +770,7 @@
                <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">DK</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
@@ -822,7 +822,7 @@
                <Data ss:Type="String">The sender party value added tax identifer.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">GB325456788</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyTaxScheme/cbc:CompanyID</Data>
@@ -874,7 +874,7 @@
                <Data ss:Type="String">Tax scheme identifier. E.g. "VAT" or "GST".</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">VAT</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyTaxScheme/cac:TaxScheme/cbc:ID</Data>
@@ -926,7 +926,7 @@
                <Data ss:Type="String">The name of the sender party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Consortial</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyLegalEntity/cbc:RegistrationName</Data>
@@ -952,7 +952,7 @@
                <Data ss:Type="String">The official name of the party as registered with the relevant fiscal authority.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SC234567</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyLegalEntity/cbc:CompanyID</Data>
@@ -978,7 +978,7 @@
                <Data ss:Type="String">The identification scheme identifier of the sender partys legal registration identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0089</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
@@ -1030,7 +1030,7 @@
                <Data ss:Type="String">The name of the city.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Farthing</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyLegalEntity/cac:RegistrationAddress/cbc:CityName</Data>
@@ -1082,7 +1082,7 @@
                <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">GB</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:PartyLegalEntity/cac:RegistrationAddress/cac:Country/cbc:IdentificationCode</Data>
@@ -1134,7 +1134,7 @@
                <Data ss:Type="String">The contact name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Mr Sender</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:Contact/cbc:Name</Data>
@@ -1160,7 +1160,7 @@
                <Data ss:Type="String">The phone number of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0158 1233714</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:Contact/cbc:Telephone</Data>
@@ -1186,7 +1186,7 @@
                <Data ss:Type="String">The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">sender@consignor-company.co.uk</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:SenderParty/cac:Contact/cbc:ElectronicMail</Data>
@@ -1238,7 +1238,7 @@
                <Data ss:Type="String">The endpoint id for the receiver party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">10154596</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cbc:EndpointID</Data>
@@ -1264,7 +1264,7 @@
                <Data ss:Type="String">Scheme identifier for electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0198</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cbc:EndpointID/schemeID</Data>
@@ -1316,7 +1316,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7300010000001</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyIdentification/cbc:ID</Data>
@@ -1330,7 +1330,7 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">O</Data>
+               <Data ss:Type="String">M</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
@@ -1342,7 +1342,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0088</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyIdentification/cbc:ID/schemeID</Data>
@@ -1394,7 +1394,7 @@
                <Data ss:Type="String">The name of the receiver party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">DHL Express</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyName/cbc:Name</Data>
@@ -1446,7 +1446,7 @@
                <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Jydekrogen 14</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PostalAddress/cbc:StreetName</Data>
@@ -1472,7 +1472,7 @@
                <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Indkørsel 5</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -1498,7 +1498,7 @@
                <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Vallensbæk Landsby</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PostalAddress/cbc:CityName</Data>
@@ -1524,7 +1524,7 @@
                <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2625</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PostalAddress/cbc:PostalZone</Data>
@@ -1550,7 +1550,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Region Hovedstaden</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -1602,7 +1602,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Bygning 5</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -1654,7 +1654,7 @@
                <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">DK</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
@@ -1706,7 +1706,7 @@
                <Data ss:Type="String">The receiver party value added tax identifer.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">GB325456788</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyTaxScheme/cbc:CompanyID</Data>
@@ -1758,7 +1758,7 @@
                <Data ss:Type="String">Tax scheme identifier. E.g. "VAT" or "GST".</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">VAT</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyTaxScheme/cac:TaxScheme/cbc:ID</Data>
@@ -1810,7 +1810,7 @@
                <Data ss:Type="String">The name of the receiver party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Consortial</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyLegalEntity/cbc:RegistrationName</Data>
@@ -1836,7 +1836,7 @@
                <Data ss:Type="String">The official name of the party as registered with the relevant fiscal authority.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SC234567</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyLegalEntity/cbc:CompanyID</Data>
@@ -1862,7 +1862,7 @@
                <Data ss:Type="String">The identification scheme identifier of the receiver parties legal registration identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0089</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
@@ -1914,7 +1914,7 @@
                <Data ss:Type="String">The name of the city.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Farthing</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyLegalEntity/cac:RegistrationAddress/cbc:CityName</Data>
@@ -1966,7 +1966,7 @@
                <Data ss:Type="String">A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">GB</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:PartyLegalEntity/cac:RegistrationAddress/cac:Country/cbc:IdentificationCode</Data>
@@ -2018,7 +2018,7 @@
                <Data ss:Type="String">The contact name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Mrs Receiver</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:Contact/cbc:Name</Data>
@@ -2044,7 +2044,7 @@
                <Data ss:Type="String">The phone number of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0158 1233714</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:Contact/cbc:Telephone</Data>
@@ -2070,7 +2070,7 @@
                <Data ss:Type="String">The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">msreceiver@tplogistics.co.uk</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:ReceiverParty/cac:Contact/cbc:ElectronicMail</Data>
@@ -2122,7 +2122,7 @@
                <Data ss:Type="String">The reference number of added document</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7648779</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:TransportExecutionPlanDocumentReference/cbc:ID</Data>
@@ -2148,7 +2148,7 @@
                <Data ss:Type="String">The Issue Date when the Transport Execution Plan was issued</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2021-09-29</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:TransportExecutionPlanDocumentReference/cbc:IssueDate</Data>
@@ -2174,7 +2174,7 @@
                <Data ss:Type="String">The Issue time when the Transport Execution Plan was issued</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">07:49:00+02:00</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:TransportExecutionPlanDocumentReference/cbc:IssueTime</Data>
@@ -2226,7 +2226,7 @@
                <Data ss:Type="String">Id for the consignment, often a number from the transport service provider.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">12535157654567654</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:Consignment/cbc:ID</Data>
@@ -2278,7 +2278,7 @@
                <Data ss:Type="String">An identifier for this pickup transport event within an agreed event identification scheme.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">21412312412</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:Consignment/cac:TransportEvent/cbc:IdentificationID</Data>
@@ -2304,7 +2304,7 @@
                <Data ss:Type="String">A code specifying the requested transport event type.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:Consignment/cac:TransportEvent/cbc:TransportEventTypeCode</Data>
@@ -2356,7 +2356,7 @@
                <Data ss:Type="String">The SSCC identification code of this transport handling unit.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">11111222222222</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:Consignment/cac:TransportHandlingUnit/cbc:ID</Data>
@@ -2370,7 +2370,7 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">O</Data>
+               <Data ss:Type="String">M</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
@@ -2382,7 +2382,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">sscc</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:TransportationStatusRequest/cac:Consignment/cac:TransportHandlingUnit/cbc:ID/schemeID</Data>
