@@ -19,39 +19,39 @@
 		</xsl:copy>
 	</xsl:template>
 	<xsl:template match="synstr:Element">
-		<xsl:param name="paramIncludedFile"/>
-		<xsl:param name="paramXpathContext"/>
+        <xsl:param name="paramIncludedFile"/>
+	    <xsl:param name="paramXpathContext"/>
 		<!--xsl:if test="contains($paramXpathContext, 'StandardItemIdentification')">
 		  <xsl:message>
 			<xsl:value-of select="$paramIncludedFile"/>: <xsl:value-of select="$paramXpathContext"/>
 		  </xsl:message>
 		</xsl:if-->
 		<xsl:variable name="varDocXPath2">
-			<xsl:choose>
-				<xsl:when test="$paramIncludedFile != ''">
-					<xsl:variable name="xpathTerm" select="synstr:Term"/>
-					<xsl:variable name="xpathTermNsPrefix" select="substring-before(synstr:Term, ':')"/>
-					<xsl:variable name="xpathTermNs" select="translate($varTermNs[@prefix=$xpathTermNsPrefix],'&quot;','')"/>
-					<xsl:value-of select="concat($paramXpathContext, '/', replace( $xpathTerm, concat($xpathTermNsPrefix, ':'), concat('Q{', $xpathTermNs, '}') ))"/>
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:for-each select="ancestor-or-self::*">
-						<xsl:choose>
-							<xsl:when test="fn:name(.)='Structure'">
-							</xsl:when>
-							<xsl:otherwise>
-								<xsl:text>/</xsl:text>
-								<xsl:variable name="xpathTerm" select="synstr:Term"/>
-								<xsl:variable name="xpathTermNsPrefix" select="substring-before(synstr:Term, ':')"/>
-								<!--Added translate function to solve bug with invoice raw XML from Peppol primary source file-->
-								<xsl:variable name="xpathTermNs" select="translate($varTermNs[@prefix=$xpathTermNsPrefix],'&quot;','')"/>
-								<!--xsl:variable name="xpathTermNs" select="$varTermNs[@prefix=$xpathTermNsPrefix]"/-->
-								<xsl:value-of select="replace( $xpathTerm, concat($xpathTermNsPrefix, ':'), concat('Q{', $xpathTermNs, '}') )"/>
-							</xsl:otherwise>
-						</xsl:choose>
-					</xsl:for-each>
-				</xsl:otherwise>
-			</xsl:choose>
+            <xsl:choose>
+  			  <xsl:when test="$paramIncludedFile != ''">
+			    <xsl:variable name="xpathTerm" select="synstr:Term"/>
+			    <xsl:variable name="xpathTermNsPrefix" select="substring-before(synstr:Term, ':')"/>
+			    <xsl:variable name="xpathTermNs" select="translate($varTermNs[@prefix=$xpathTermNsPrefix],'&quot;','')"/>
+			    <xsl:value-of select="concat($paramXpathContext, '/', replace( $xpathTerm, concat($xpathTermNsPrefix, ':'), concat('Q{', $xpathTermNs, '}') ))"/>
+			  </xsl:when>
+			  <xsl:otherwise>
+			    <xsl:for-each select="ancestor-or-self::*">
+				  <xsl:choose>
+					<xsl:when test="fn:name(.)='Structure'">
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:text>/</xsl:text>
+						<xsl:variable name="xpathTerm" select="synstr:Term"/>
+						<xsl:variable name="xpathTermNsPrefix" select="substring-before(synstr:Term, ':')"/>
+						<!--Added translate function to solve bug with invoice raw XML from Peppol primary source file-->
+						<xsl:variable name="xpathTermNs" select="translate($varTermNs[@prefix=$xpathTermNsPrefix],'&quot;','')"/>
+						<!--xsl:variable name="xpathTermNs" select="$varTermNs[@prefix=$xpathTermNsPrefix]"/-->
+						<xsl:value-of select="replace( $xpathTerm, concat($xpathTermNsPrefix, ':'), concat('Q{', $xpathTermNs, '}') )"/>
+					</xsl:otherwise>
+				  </xsl:choose>
+			    </xsl:for-each>
+			  </xsl:otherwise>
+            </xsl:choose>
 		</xsl:variable>
 		<xsl:variable name="varOverrideNode">
 			<xsl:evaluate xpath="$varDocXPath2" context-item="$varOverrideSampleXml"/>
@@ -90,8 +90,7 @@
 					</Description>
 				</xsl:when>
 				<xsl:when test="$varOverrideNode_DescriptionAddFirst!='' and not(empty($varOverrideNode_DescriptionAddFirst))">
-					<Description>
-						BEAst: <xsl:value-of select="normalize-space($varOverrideNode_DescriptionAddFirst)"/>
+					<Description>BEAst: <xsl:value-of select="normalize-space($varOverrideNode_DescriptionAddFirst)"/>
 						<xsl:if test="synstr:Description != ''">
 							<xsl:value-of select="concat('&#xa;', ' Peppol: ', normalize-space(synstr:Description))"/>
 						</xsl:if>
@@ -107,7 +106,7 @@
 				</xsl:when>
 				<xsl:otherwise>
 					<Description>
-						<xsl:apply-templates select="normalize-space(synstr:Description)"/>
+  					    <xsl:apply-templates select="normalize-space(synstr:Description)"/>
 					</Description>
 				</xsl:otherwise>
 			</xsl:choose>
@@ -191,39 +190,39 @@
 				<xsl:with-param name="paramOverrideNode" select="$varOverrideNode"/>
 			</xsl:apply-templates>
 			<xsl:apply-templates select="child::synstr:Include|child::synstr:Element">
-				<xsl:with-param name="paramIncludedFile" select="$paramIncludedFile"/>
+			    <xsl:with-param name="paramIncludedFile" select="$paramIncludedFile"/>
 				<xsl:with-param name="paramXpathContext" select="$varDocXPath2"/>
 			</xsl:apply-templates>
 		</xsl:element>
 	</xsl:template>
 	<xsl:template match="synstr:Include">
-		<xsl:param name="paramIncludedFile"/>
-		<xsl:param name="paramXpathContext"/>
-		<!--xsl:variable name="varIncludedFile" select="."/-->
-		<xsl:variable name="varIncludedFile">
-			<xsl:choose>
-				<xsl:when test="$paramIncludedFile != ''">
-					<xsl:value-of select="$paramIncludedFile"/>
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:value-of select="."/>
-				</xsl:otherwise>
-			</xsl:choose>
-		</xsl:variable>
-		<xsl:variable name="varIncludeXml" select="document(.)"/>
-		<xsl:apply-templates select="$varIncludeXml/synstr:Element">
-			<xsl:with-param name="paramIncludedFile" select="$varIncludedFile"/>
-			<xsl:with-param name="paramXpathContext" select="$paramXpathContext"/>
-		</xsl:apply-templates>
+      <xsl:param name="paramIncludedFile"/>
+      <xsl:param name="paramXpathContext"/>
+	  <!--xsl:variable name="varIncludedFile" select="."/-->
+	  <xsl:variable name="varIncludedFile">
+	    <xsl:choose>
+	      <xsl:when test="$paramIncludedFile != ''">
+		    <xsl:value-of select="$paramIncludedFile"/>
+	      </xsl:when>
+	      <xsl:otherwise>
+		    <xsl:value-of select="."/>
+	      </xsl:otherwise>
+	    </xsl:choose>
+	  </xsl:variable>
+	  <xsl:variable name="varIncludeXml" select="document(.)"/>
+	  <xsl:apply-templates select="$varIncludeXml/synstr:Element">
+	    <xsl:with-param name="paramIncludedFile" select="$varIncludedFile"/>
+		<xsl:with-param name="paramXpathContext" select="$paramXpathContext"/>
+      </xsl:apply-templates>
 	</xsl:template>
 	<xsl:template match="synstr:Attribute">
-		<xsl:param name="paramOverrideNode"/>
-		<Attribute>
+      <xsl:param name="paramOverrideNode"/>
+	  <Attribute>
 			<xsl:for-each select="child::*">
 				<xsl:choose>
 					<xsl:when test="fn:name(.)='Value'">
 						<xsl:apply-templates select=".">
-							<xsl:with-param name="paramOverrideNode" select="$paramOverrideNode"/>
+						  <xsl:with-param name="paramOverrideNode" select="$paramOverrideNode"/>
 						</xsl:apply-templates>
 					</xsl:when>
 					<xsl:otherwise>
@@ -231,14 +230,14 @@
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:for-each>
-		</Attribute>
+	  </Attribute>
 	</xsl:template>
 	<xsl:template match="synstr:Value">
-		<xsl:param name="paramOverrideNode"/>
-		<xsl:variable name="varParentName" select="local-name(parent::*)"/>
-		<xsl:variable name="varParentTermName" select="../../synstr:Term"/>
-		<xsl:variable name="varTermName" select="../synstr:Term"/>
-		<!--xsl:if test="../../synstr:Name = 'STANDARD ITEM IDENTIFICATION'">
+      <xsl:param name="paramOverrideNode"/>
+	  <xsl:variable name="varParentName" select="local-name(parent::*)"/>
+	  <xsl:variable name="varParentTermName" select="../../synstr:Term"/>
+	  <xsl:variable name="varTermName" select="../synstr:Term"/>
+      <!--xsl:if test="../../synstr:Name = 'STANDARD ITEM IDENTIFICATION'">
 		<xsl:message>
 		  paramOverrideNode: <xsl:copy-of select="$paramOverrideNode"/>
 		  Parent: <xsl:value-of select="$varParentName"/>
@@ -246,65 +245,65 @@
 		  Parent Term: <xsl:value-of select="$varParentTermName"/>
 		</xsl:message>
       </xsl:if-->
-		<xsl:choose>
-			<xsl:when test="$paramOverrideNode">
-				<xsl:variable name="varOverrideNode_ValueType" select="$paramOverrideNode/child::*/processing-instruction('ValueType')"/>
-				<xsl:variable name="varOverrideNode_Value">
-					<xsl:choose>
-						<xsl:when test="$varParentName = 'Attribute'">
-							<xsl:variable name="varAttributeNameXPath">
-								<xsl:variable name="xpathTerm" select="concat('/', $varParentTermName, '/@', $varTermName)"/>
-								<xsl:variable name="xpathTermNsPrefix" select="substring-before($varParentTermName, ':')"/>
-								<!--Added translate function to solve bug with invoice raw XML from Peppol primary source file-->
-								<xsl:variable name="xpathTermNs" select="translate($varTermNs[@prefix=$xpathTermNsPrefix],'&quot;','')"/>
-								<!--xsl:variable name="xpathTermNs" select="translate($varTermNs[@prefix=$xpathTermNsPrefix],'&quot;','')"/-->
-								<xsl:value-of select="replace( $xpathTerm, concat($xpathTermNsPrefix, ':'), concat('Q{', $xpathTermNs, '}') )"/>
-							</xsl:variable>
-							<xsl:if test="$varAttributeNameXPath != ''">
-								<xsl:variable name="varAttributeValue" as="xs:string?">
-									<xsl:evaluate xpath="$varAttributeNameXPath" context-item="$paramOverrideNode"/>
-								</xsl:variable>
-								<!--xsl:if test="../../synstr:Name = 'STANDARD ITEM IDENTIFICATION'">
+      <xsl:choose>
+		<xsl:when test="$paramOverrideNode">
+			<xsl:variable name="varOverrideNode_ValueType" select="$paramOverrideNode/child::*/processing-instruction('ValueType')"/>
+			<xsl:variable name="varOverrideNode_Value">
+			  <xsl:choose>
+				<xsl:when test="$varParentName = 'Attribute'">
+				  <xsl:variable name="varAttributeNameXPath">
+					<xsl:variable name="xpathTerm" select="concat('/', $varParentTermName, '/@', $varTermName)"/>
+					<xsl:variable name="xpathTermNsPrefix" select="substring-before($varParentTermName, ':')"/>
+					<!--Added translate function to solve bug with invoice raw XML from Peppol primary source file-->
+					<xsl:variable name="xpathTermNs" select="translate($varTermNs[@prefix=$xpathTermNsPrefix],'&quot;','')"/>
+					<!--xsl:variable name="xpathTermNs" select="translate($varTermNs[@prefix=$xpathTermNsPrefix],'&quot;','')"/-->
+					<xsl:value-of select="replace( $xpathTerm, concat($xpathTermNsPrefix, ':'), concat('Q{', $xpathTermNs, '}') )"/>
+				  </xsl:variable>
+				  <xsl:if test="$varAttributeNameXPath != ''">
+					<xsl:variable name="varAttributeValue" as="xs:string?">
+						<xsl:evaluate xpath="$varAttributeNameXPath" context-item="$paramOverrideNode"/>
+					</xsl:variable>
+					<!--xsl:if test="../../synstr:Name = 'STANDARD ITEM IDENTIFICATION'">
 					  <xsl:message>
  					    varAttributeNameXPath: <xsl:value-of select="$varAttributeNameXPath"/>
 					    varAttributeValue: <xsl:value-of select="$varAttributeValue"/>
 					  </xsl:message>
 					</xsl:if-->
-								<xsl:value-of select="$varAttributeValue"/>
-							</xsl:if>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:value-of select="$paramOverrideNode/child::*/child::text()[1]"/>
-						</xsl:otherwise>
-					</xsl:choose>
-				</xsl:variable>
-				<Value>
-					<xsl:choose>
-						<xsl:when test="$varOverrideNode_ValueType!=''">
-							<xsl:attribute name="type">
-								<xsl:value-of select="normalize-space($varOverrideNode_ValueType)"/>
-							</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="@type!=''">
-							<xsl:attribute name="type">
-								<xsl:value-of select="@type"/>
-							</xsl:attribute>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:attribute name="type">
-								<xsl:value-of select="'EXAMPLE'"/>
-							</xsl:attribute>
-						</xsl:otherwise>
-					</xsl:choose>
-					<xsl:value-of select="normalize-space($varOverrideNode_Value)"/>
-				</Value>
-			</xsl:when>
-			<xsl:when test="normalize-space($paramOverrideNode) != ''">
-				<xsl:value-of select="normalize-space($paramOverrideNode)"/>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:copy-of select="."/>
-			</xsl:otherwise>
+				    <xsl:value-of select="$varAttributeValue"/>
+                  </xsl:if>
+				</xsl:when>
+				<xsl:otherwise>
+				  <xsl:value-of select="$paramOverrideNode/child::*/child::text()[1]"/>
+				</xsl:otherwise>
+			  </xsl:choose>
+			</xsl:variable>
+			<Value>
+				<xsl:choose>
+					<xsl:when test="$varOverrideNode_ValueType!=''">
+						<xsl:attribute name="type">
+							<xsl:value-of select="normalize-space($varOverrideNode_ValueType)"/>
+						</xsl:attribute>
+					</xsl:when>
+					<xsl:when test="@type!=''">
+						<xsl:attribute name="type">
+							<xsl:value-of select="@type"/>
+						</xsl:attribute>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:attribute name="type">
+							<xsl:value-of select="'EXAMPLE'"/>
+						</xsl:attribute>
+					</xsl:otherwise>
+				</xsl:choose>
+				<xsl:value-of select="normalize-space($varOverrideNode_Value)"/>
+			</Value>
+		</xsl:when>
+		<xsl:when test="normalize-space($paramOverrideNode) != ''">
+			<xsl:value-of select="normalize-space($paramOverrideNode)"/>
+		</xsl:when>
+		<xsl:otherwise>
+			<xsl:copy-of select="."/>
+		</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
 	<xsl:template match="*">
