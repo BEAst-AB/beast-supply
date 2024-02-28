@@ -115,8 +115,7 @@
       <Element cardinality="0..1">
          <Term>cbc:AccountingCost</Term>
          <Name>Buyer accounting reference</Name>
-         <Description>
-						BEAst: Can be used for natural account or code string
+         <Description>BEAst: Can be used for natural account or code string
  Peppol: A textual value that specifies where to book the relevant data into the Buyer's financial accounts.</Description>
          <DataType>Text</DataType>
          <Reference type="BUSINESS_TERM">BT-19</Reference>
@@ -134,8 +133,7 @@
       <Element cardinality="0..1">
          <Term>cac:InvoicePeriod</Term>
          <Name>DELIVERY OR INVOICE PERIOD</Name>
-         <Description>
-						BEAst: Also used to describe invoice period for rental items. Can also be used on line level if needed.
+         <Description>BEAst: Also used to describe invoice period for rental items. Can also be used on line level if needed.
  Peppol: A group of business terms providing information on the invoice period. Also called delivery period. If the group is used, the invoiceing period start date and/or end date must be used.</Description>
          <Reference type="BUSINESS_TERM">BG-14</Reference>
          <Reference type="RULE">BR-IC-11</Reference>
@@ -1974,8 +1972,7 @@
          <Element>
             <Term>cbc:InvoicedQuantity</Term>
             <Name>Invoiced quantity</Name>
-            <Description>
-						BEAst: DeliveredQuantity (T6706) For rental invoices this is [number of days to invoice] x [quantity of the articles rented].
+            <Description>BEAst: DeliveredQuantity (T6706) For rental invoices this is [number of days to invoice] x [quantity of the articles rented].
  Peppol: The quantity of items (goods or services) that is charged in the Invoice line.</Description>
             <DataType>Quantity</DataType>
             <Reference type="BUSINESS_TERM">BT-129</Reference>
@@ -2020,8 +2017,7 @@
          <Element cardinality="0..1">
             <Term>cbc:AccountingCost</Term>
             <Name>Invoice line Buyer accounting reference</Name>
-            <Description>
-						BEAst: Can be used for natural account or code string
+            <Description>BEAst: Can be used for natural account or code string
  Peppol: A textual value that specifies where to book the relevant data into the Buyer's financial accounts.</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">BT-133</Reference>
@@ -2030,8 +2026,7 @@
          <Element cardinality="0..1">
             <Term>cac:InvoicePeriod</Term>
             <Name>INVOICE LINE PERIOD</Name>
-            <Description>
-						BEAst: Also used to describe invoice period for rental items. Can also be used on header level.
+            <Description>BEAst: Also used to describe invoice period for rental items. Can also be used on header level.
  Peppol: A group of business terms providing information about the period relevant for the Invoice line.</Description>
             <Reference type="BUSINESS_TERM">BG-26</Reference>
             <Element cardinality="0..1">
@@ -2065,8 +2060,7 @@
             <Element>
                <Term>cbc:LineID</Term>
                <Name>Referenced purchase order line reference</Name>
-               <Description>
-						BEAst: T3322 ReferenceToOrderLine. Purchase order line referens.
+               <Description>BEAst: T3322 ReferenceToOrderLine. Purchase order line referens.
  Peppol: An identifier for a referenced line within a purchase order, issued by the Buyer.</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-132</Reference>
@@ -2369,8 +2363,7 @@
                <Element>
                   <Term>cbc:Name</Term>
                   <Name>Item attribute name</Name>
-                  <Description>
-						BEAst: RentalDeliveryStatus (T6505); BuyersContact (T6709); DeliveryPeriodStartDate (T2051); RentalTimeQuantity Time for which an article is to be debited for. (T6478); BEAst:RentalTimeQuantityUOM Unit of measure for RentalTimeQuantity; BEAst:RentalQuantityValue To be used to describe the quantity delivered in a rental case.; BEAst:RentalQuantityValueUOM Unit of measure for DeliveredQuantity (T6706); BEAst:SiteID; BEAst:PriceMatrix; BEAst:SuppliersContact (T0113)
+                  <Description>BEAst: RentalDeliveryStatus (T6505); BuyersContact (T6709); DeliveryPeriodStartDate (T2051); RentalTimeQuantity Time for which an article is to be debited for. (T6478); BEAst:RentalTimeQuantityUOM Unit of measure for RentalTimeQuantity; BEAst:RentalQuantityValue To be used to describe the quantity delivered in a rental case.; BEAst:RentalQuantityValueUOM Unit of measure for DeliveredQuantity (T6706); BEAst:SiteID; BEAst:PriceMatrix; BEAst:SuppliersContact (T0113)
  Peppol: The name of the attribute or property of the item.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-160</Reference>
