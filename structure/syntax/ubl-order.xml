@@ -170,7 +170,7 @@
             <Description>A reference to the Catalogue on which this Order is based.</Description>
             <DataType>Document reference</DataType>
             <Reference type="BUSINESS_TERM">tir01-p45</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">Cat2023-03-07</Value>
          </Element>
       </Element>
       <Element cardinality="0..n">
@@ -297,7 +297,7 @@
  Peppol: An identification for the buyer party.</Description>
                   <Reference type="BUSINESS_TERM">tir01-022</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute>
+                  <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
@@ -436,7 +436,7 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-043</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute>
+                  <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>The identification scheme identifier of the buyer legal
@@ -538,7 +538,7 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-059</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute>
+                  <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
@@ -653,7 +653,7 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p039</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute>
+                  <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>The identification scheme identifier of the buyer legal
@@ -742,7 +742,7 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-081</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute>
+                  <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
@@ -829,7 +829,7 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-156</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute>
+                  <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
@@ -970,7 +970,7 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-158</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute>
+                  <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Buyer legal registration identifier identification scheme
 								identifier</Name>
@@ -1051,7 +1051,7 @@
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir01-169</Reference>
                <Value type="EXAMPLE">7300010000001</Value>
-               <Attribute>
+               <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Name>Deliver to location identifier identification scheme identifier</Name>
                   <Description>The identification scheme identifier of the Deliver to location
@@ -1193,7 +1193,7 @@
  Peppol: In this BIS: The identifier of the party that should receive the ordered items</Description>
                   <Reference type="BUSINESS_TERM">tir01-101</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute>
+                  <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Deliver party registration identifier identification scheme
 								identifier</Name>
@@ -1338,7 +1338,7 @@
                <DataType>code</DataType>
                <Reference type="BUSINESS_TERM">tir01-p47</Reference>
                <Reference type="CODE_LIST">UNCL4219</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">1</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:TransportHandlingUnit</Term>
@@ -1781,7 +1781,7 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p037</Reference>
                   <Value type="EXAMPLE">7300010000001</Value>
-                  <Attribute>
+                  <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Deliver to location identifier identification scheme identifier</Name>
                      <Description>The identification scheme identifier of the Deliver to location identifier.</Description>
@@ -1845,7 +1845,7 @@
                      <Description>The party who originated Order.</Description>
                      <Reference type="BUSINESS_TERM">tir01-121</Reference>
                      <Value type="EXAMPLE">7300010000001</Value>
-                     <Attribute>
+                     <Attribute usage="optional">
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
                         <Description>Scheme identifier for party
@@ -1982,7 +1982,7 @@
                   <Reference type="BUSINESS_TERM">tir01-131</Reference>
                   <Reference type="RULE">PEPPOL-T01-R025</Reference>
                   <Value type="DEFAULT">1.00</Value>
-                  <Attribute>
+                  <Attribute usage="Optional">
                      <Term>unitCode</Term>
                      <Name>Base quantity unit of measure</Name>
                      <Description>The unit of measure that applies to the base
@@ -2097,7 +2097,7 @@
                      <Description>An identifier, assigned by the items manufacturer, for the item.</Description>
                      <DataType>Identifier</DataType>
                      <Reference type="BUSINESS_TERM">tir01-p46</Reference>
-                     <Value type="EXAMPLE"/>
+                     <Value type="EXAMPLE">manid659</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">
@@ -2156,7 +2156,7 @@
                         <Reference type="CODE_LIST">UNCL7143</Reference>
                         <Value type="EXAMPLE">ZZZ</Value>
                      </Attribute>
-                     <Attribute>
+                     <Attribute usage="Optional">
                         <Term>listVersionID</Term>
                         <Name>Item classification identifier version identification scheme
 									identifier</Name>
@@ -2164,7 +2164,7 @@
 									Item classification identifier</Description>
                         <Value type="EXAMPLE">3.0.2</Value>
                      </Attribute>
-                     <Attribute>
+                     <Attribute usage="Optional">
                         <Term>name</Term>
                         <Name>Clear text name equivalent of classification code</Name>
                         <Description>The textual equivalent of the code value</Description>

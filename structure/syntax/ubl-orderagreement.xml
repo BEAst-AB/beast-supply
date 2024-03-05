@@ -226,7 +226,7 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir110-014</Reference>
                   <Value type="EXAMPLE">DK12345678</Value>
-                  <Attribute>
+                  <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
@@ -330,14 +330,14 @@
                   <Description>Identifies a company as registered with the company registration scheme.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir110-p010</Reference>
-                  <Value type="EXAMPLE"/>
-                  <Attribute>
+                  <Value type="EXAMPLE">987654321</Value>
+                  <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>The identification scheme identifier of the buyer legal
 								registration identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE"/>
+                     <Value type="EXAMPLE">0002</Value>
                   </Attribute>
                </Element>
             </Element>
@@ -410,7 +410,7 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir110-011</Reference>
                   <Value type="EXAMPLE">DK55412777</Value>
-                  <Attribute>
+                  <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
@@ -513,14 +513,14 @@
                   <Description>Identifies a company as registered with the company registration scheme.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir110-p009</Reference>
-                  <Value type="EXAMPLE"/>
-                  <Attribute>
+                  <Value type="EXAMPLE">987654321</Value>
+                  <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>The identification scheme identifier of the buyer legal
 								registration identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE"/>
+                     <Value type="EXAMPLE">0002</Value>
                   </Attribute>
                </Element>
             </Element>
@@ -578,7 +578,7 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir110-065</Reference>
                   <Value type="EXAMPLE">DK55412777</Value>
-                  <Attribute>
+                  <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
@@ -623,7 +623,7 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir110-064</Reference>
                   <Value type="EXAMPLE">DK55412777</Value>
-                  <Attribute>
+                  <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
@@ -709,7 +709,7 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir110-068</Reference>
                   <Value type="EXAMPLE">DK55412777</Value>
-                  <Attribute>
+                  <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
@@ -1408,7 +1408,7 @@
                   <DataType>Quantity</DataType>
                   <Reference type="BUSINESS_TERM">tir110-027</Reference>
                   <Value type="EXAMPLE">1</Value>
-                  <Attribute>
+                  <Attribute usage="Optional">
                      <Term>unitCode</Term>
                      <Name>Base quantity unit of measure</Name>
                      <Description>The unit of measure that applies to the base quantity.</Description>
@@ -1638,13 +1638,13 @@
                         <Reference type="CODE_LIST">UNCL7143</Reference>
                         <Value type="EXAMPLE">ZZZ</Value>
                      </Attribute>
-                     <Attribute>
+                     <Attribute usage="Optional">
                         <Term>listVersionID</Term>
                         <Name>Item classification identifier version identification scheme identifier</Name>
                         <Description>The identification scheme version identifier of the Item classification identifier</Description>
                         <Value type="EXAMPLE">3.0.2</Value>
                      </Attribute>
-                     <Attribute>
+                     <Attribute usage="Optional">
                         <Term>name</Term>
                         <Name>Clear text name equivalent of classification code</Name>
                         <Description>The textual equivalent of the code value</Description>
