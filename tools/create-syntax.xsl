@@ -218,6 +218,7 @@
 	<xsl:template match="synstr:Attribute">
       <xsl:param name="paramOverrideNode"/>
 	  <Attribute>
+			<xsl:copy-of select="@*"/>
 			<xsl:for-each select="child::*">
 				<xsl:choose>
 					<xsl:when test="fn:name(.)='Value'">
@@ -295,7 +296,14 @@
 						</xsl:attribute>
 					</xsl:otherwise>
 				</xsl:choose>
-				<xsl:value-of select="normalize-space($varOverrideNode_Value)"/>
+				<xsl:choose>
+					<xsl:when test="normalize-space($varOverrideNode_Value)!=''">
+  				      <xsl:value-of select="normalize-space($varOverrideNode_Value)"/>
+					</xsl:when>
+					<xsl:otherwise>
+  				      <xsl:value-of select="."/>
+					</xsl:otherwise>
+				</xsl:choose>
 			</Value>
 		</xsl:when>
 		<xsl:when test="normalize-space($paramOverrideNode) != ''">
