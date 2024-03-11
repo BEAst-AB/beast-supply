@@ -20,44 +20,44 @@ echo "Pulling atomgraph/saxon container"
 docker pull atomgraph/saxon
 
 # Transform the files in source dir to syntax.
-echo "Generating documentation: Invoice"
-docker run --rm -i \
-    -v $PROJECT:/src \
-    -v $PROJECT/target/generated:/target \
-    atomgraph/saxon \
-    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/master/structure/syntax/ubl-invoice.xml \
-    -xsl:/src/tools/create-syntax.xsl \
-    -o:/src/structure/syntax/ubl-invoice.xml \
-    varOverrideSample=/src/structure/source/ubl-invoice.xml \
-    -ext:on --allow-external-functions:on
+# echo "Generating documentation: Invoice"
+# docker run --rm -i \
+#     -v $PROJECT:/src \
+#     -v $PROJECT/target/generated:/target \
+#     atomgraph/saxon \
+#     -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/master/structure/syntax/ubl-invoice.xml \
+#     -xsl:/src/tools/create-syntax.xsl \
+#     -o:/src/structure/syntax/ubl-invoice.xml \
+#     varOverrideSample=/src/structure/source/ubl-invoice.xml \
+#     -ext:on --allow-external-functions:on
 
-echo "Generating documentation: Order"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$POACCBASEURL/ubl-order.xml \
-    -xsl:/src/tools/create-syntax.xsl \
-    -o:/src/structure/syntax/ubl-order.xml \
-    varOverrideSample=/src/structure/source/ubl-order.xml -ext:on --allow-external-functions:on
+# echo "Generating documentation: Order"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:$POACCBASEURL/ubl-order.xml \
+#     -xsl:/src/tools/create-syntax.xsl \
+#     -o:/src/structure/syntax/ubl-order.xml \
+#     varOverrideSample=/src/structure/source/ubl-order.xml -ext:on --allow-external-functions:on
 
-echo "Generating documentation: Order response"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$POACCBASEURL/ubl-order-response.xml \
-    -xsl:/src/tools/create-syntax.xsl \
-    -o:/src/structure/syntax/ubl-order-response.xml \
-    varOverrideSample=/src/structure/source/ubl-order-response.xml -ext:on --allow-external-functions:on
+# echo "Generating documentation: Order response"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:$POACCBASEURL/ubl-order-response.xml \
+#     -xsl:/src/tools/create-syntax.xsl \
+#     -o:/src/structure/syntax/ubl-order-response.xml \
+#     varOverrideSample=/src/structure/source/ubl-order-response.xml -ext:on --allow-external-functions:on
 
-echo "Generating documentation: Order agreement"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$POACCBASEURL/ubl-orderagreement.xml \
-    -xsl:/src/tools/create-syntax.xsl \
-    -o:/src/structure/syntax/ubl-orderagreement.xml \
-    varOverrideSample=/src/structure/source/ubl-orderagreement.xml -ext:on --allow-external-functions:on
+# echo "Generating documentation: Order agreement"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:$POACCBASEURL/ubl-orderagreement.xml \
+#     -xsl:/src/tools/create-syntax.xsl \
+#     -o:/src/structure/syntax/ubl-orderagreement.xml \
+#     varOverrideSample=/src/structure/source/ubl-orderagreement.xml -ext:on --allow-external-functions:on
 
-echo "Generating documentation: Catalogue"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$POACCBASEURL/ubl-catalogue.xml \
-    -xsl:/src/tools/create-syntax.xsl \
-    -o:/src/structure/syntax/ubl-catalogue.xml \
-    varOverrideSample=/src/structure/source/ubl-catalogue.xml -ext:on --allow-external-functions:on
+# echo "Generating documentation: Catalogue"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:$POACCBASEURL/ubl-catalogue.xml \
+#     -xsl:/src/tools/create-syntax.xsl \
+#     -o:/src/structure/syntax/ubl-catalogue.xml \
+#     varOverrideSample=/src/structure/source/ubl-catalogue.xml -ext:on --allow-external-functions:on
 
 echo "Generating documentation: Advanced Despatch advice"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
@@ -66,121 +66,121 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     -o:/src/structure/syntax/ubl-advanced-despatch-advice.xml \
      varOverrideSample=/src/structure/source/ubl-advanced-despatch-advice.xml -ext:on --allow-external-functions:on
 
-echo "Generating documentation: Weight statement"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$LOGISTICSBASEURL/ubl-weight-statement.xml \
-    -xsl:/src/tools/create-syntax.xsl \
-    -o:/src/structure/syntax/ubl-weight-statement.xml \
-    varOverrideSample=/src/structure/source/ubl-weight-statement.xml -ext:on --allow-external-functions:on
+# echo "Generating documentation: Weight statement"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:$LOGISTICSBASEURL/ubl-weight-statement.xml \
+#     -xsl:/src/tools/create-syntax.xsl \
+#    -o:/src/structure/syntax/ubl-weight-statement.xml \
+#     varOverrideSample=/src/structure/source/ubl-weight-statement.xml -ext:on --allow-external-functions:on
 
-echo "Generating documentation: Transport execution plan request"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$LOGISTICSBASEURL/ubl-transport-execution-plan-request.xml \
-    -xsl:/src/tools/create-syntax.xsl \
-    -o:/src/structure/syntax/ubl-transport-execution-plan-request.xml \
-    varOverrideSample=/src/structure/source/ubl-transport-execution-plan-request.xml -ext:on --allow-external-functions:on
+# echo "Generating documentation: Transport execution plan request"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:$LOGISTICSBASEURL/ubl-transport-execution-plan-request.xml \
+#     -xsl:/src/tools/create-syntax.xsl \
+#     -o:/src/structure/syntax/ubl-transport-execution-plan-request.xml \
+#     varOverrideSample=/src/structure/source/ubl-transport-execution-plan-request.xml -ext:on --allow-external-functions:on
 
-echo "Generating documentation: Transport execution plan"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$LOGISTICSBASEURL/ubl-transport-execution-plan.xml \
-    -xsl:/src/tools/create-syntax.xsl \
-    -o:/src/structure/syntax/ubl-transport-execution-plan.xml \
-    varOverrideSample=/src/structure/source/ubl-transport-execution-plan.xml -ext:on --allow-external-functions:on
+# echo "Generating documentation: Transport execution plan"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:$LOGISTICSBASEURL/ubl-transport-execution-plan.xml \
+#     -xsl:/src/tools/create-syntax.xsl \
+#     -o:/src/structure/syntax/ubl-transport-execution-plan.xml \
+#     varOverrideSample=/src/structure/source/ubl-transport-execution-plan.xml -ext:on --allow-external-functions:on
 
-echo "Generating documentation: Waybill"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$LOGISTICSBASEURL/ubl-waybill.xml \
-    -xsl:/src/tools/create-syntax.xsl \
-    -o:/src/structure/syntax/ubl-waybill.xml \
-    varOverrideSample=/src/structure/source/ubl-waybill.xml -ext:on --allow-external-functions:on
+# echo "Generating documentation: Waybill"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:$LOGISTICSBASEURL/ubl-waybill.xml \
+#     -xsl:/src/tools/create-syntax.xsl \
+#     -o:/src/structure/syntax/ubl-waybill.xml \
+#     varOverrideSample=/src/structure/source/ubl-waybill.xml -ext:on --allow-external-functions:on
 
-echo "Generating documentation: Transportation Status Request"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$LOGISTICSBASEURL/ubl-transportation-status-request.xml \
-    -xsl:/src/tools/create-syntax.xsl \
-    -o:/src/structure/syntax/ubl-transportation-status-request.xml \
-    varOverrideSample=/src/structure/source/ubl-transportation-status-request.xml -ext:on --allow-external-functions:on
+# echo "Generating documentation: Transportation Status Request"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:$LOGISTICSBASEURL/ubl-transportation-status-request.xml \
+#     -xsl:/src/tools/create-syntax.xsl \
+#     -o:/src/structure/syntax/ubl-transportation-status-request.xml \
+#     varOverrideSample=/src/structure/source/ubl-transportation-status-request.xml -ext:on --allow-external-functions:on
 
-echo "Generating documentation: Transportation Status"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$LOGISTICSBASEURL/ubl-transportation-status.xml \
-    -xsl:/src/tools/create-syntax.xsl \
-    -o:/src/structure/syntax/ubl-transportation-status.xml \
-    varOverrideSample=/src/structure/source/ubl-transportation-status.xml -ext:on --allow-external-functions:on
+# echo "Generating documentation: Transportation Status"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:$LOGISTICSBASEURL/ubl-transportation-status.xml \
+#     -xsl:/src/tools/create-syntax.xsl \
+#     -o:/src/structure/syntax/ubl-transportation-status.xml \
+#     varOverrideSample=/src/structure/source/ubl-transportation-status.xml -ext:on --allow-external-functions:on
 
-echo "Generating documentation: Receipt Advice"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$LOGISTICSBASEURL/ubl-receipt-advice.xml \
-    -xsl:/src/tools/create-syntax.xsl \
-    -o:/src/structure/syntax/ubl-receipt-advice.xml \
-    varOverrideSample=/src/structure/source/ubl-receipt-advice.xml -ext:on --allow-external-functions:on
+# echo "Generating documentation: Receipt Advice"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:$LOGISTICSBASEURL/ubl-receipt-advice.xml \
+#     -xsl:/src/tools/create-syntax.xsl \
+#     -o:/src/structure/syntax/ubl-receipt-advice.xml \
+#     varOverrideSample=/src/structure/source/ubl-receipt-advice.xml -ext:on --allow-external-functions:on
 
 # Generate mapping documents.
- echo "Generating mapping documents: Invoice"
- docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-     -s:/src/structure/syntax/ubl-invoice.xml \
-     -xsl:/src/tools/create-mapping-document.xsl \
-     -o:/src/rules/mapping/Invoice.xml -ext:on --allow-external-functions:on
-echo "Generating mapping documents: Order"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/syntax/ubl-order.xml \
-    -xsl:/src/tools/create-mapping-document.xsl \
-    -o:/src/rules/mapping/Order.xml -ext:on --allow-external-functions:on
-echo "Generating mapping documents: Order response"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/syntax/ubl-order-response.xml \
-    -xsl:/src/tools/create-mapping-document.xsl \
-    -o:/src/rules/mapping/OrderResponse.xml  -ext:on --allow-external-functions:on
-echo "Generating mapping documents: Order agreement"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/syntax/ubl-orderagreement.xml \
-    -xsl:/src/tools/create-mapping-document.xsl \
-    -o:/src/rules/mapping/Orderagreement.xml -ext:on --allow-external-functions:on
+#  echo "Generating mapping documents: Invoice"
+#  docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#      -s:/src/structure/syntax/ubl-invoice.xml \
+#      -xsl:/src/tools/create-mapping-document.xsl \
+#      -o:/src/rules/mapping/Invoice.xml -ext:on --allow-external-functions:on
+# echo "Generating mapping documents: Order"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/syntax/ubl-order.xml \
+#     -xsl:/src/tools/create-mapping-document.xsl \
+#     -o:/src/rules/mapping/Order.xml -ext:on --allow-external-functions:on
+# echo "Generating mapping documents: Order response"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/syntax/ubl-order-response.xml \
+#     -xsl:/src/tools/create-mapping-document.xsl \
+#     -o:/src/rules/mapping/OrderResponse.xml  -ext:on --allow-external-functions:on
+# echo "Generating mapping documents: Order agreement"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/syntax/ubl-orderagreement.xml \
+#     -xsl:/src/tools/create-mapping-document.xsl \
+#     -o:/src/rules/mapping/Orderagreement.xml -ext:on --allow-external-functions:on
 #echo ""Generating mapping documents: Catalogue"
 #docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
  #   -s:/src/structure/syntax/ubl-catalogue.xml \
   #  -xsl:/src/tools/create-mapping-document.xsl \
    # -o:/src/rules/mapping/Catalogue.xml  -ext:on --allow-external-functions:on
-echo "Generating mapping documents: Advanced Despatch advice"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/syntax/ubl-advanced-despatch-advice.xml \
-    -xsl:/src/tools/create-mapping-document.xsl \
-    -o:/src/rules/mapping/AdvancedDespatchAdvice.xml -ext:on --allow-external-functions:on
-echo "Generating mapping documents: Weight statement"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/syntax/ubl-weight-statement.xml \
-    -xsl:/src/tools/create-mapping-document.xsl \
-    -o:/src/rules/mapping/WeightStatement.xml  -ext:on --allow-external-functions:on
-echo "Generating mapping documents: Transport execution plan request"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/syntax/ubl-transport-execution-plan-request.xml \
-    -xsl:/src/tools/create-mapping-document.xsl \
-    -o:/src/rules/mapping/TransportExecutionPlanRequest.xml -ext:on --allow-external-functions:on
-echo "Generating mapping documents: Transport execution plan"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/syntax/ubl-transport-execution-plan.xml \
-    -xsl:/src/tools/create-mapping-document.xsl \
-    -o:/src/rules/mapping/TransportExecutionPlan.xml -ext:on --allow-external-functions:on
-echo "Generating mapping documents: Waybill"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/syntax/ubl-waybill.xml \
-    -xsl:/src/tools/create-mapping-document.xsl \
-    -o:/src/rules/mapping/Waybill.xml -ext:on --allow-external-functions:on
-echo "Generating mapping documents: Transportation Status Request"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/syntax/ubl-transportation-status-request.xml \
-    -xsl:/src/tools/create-mapping-document.xsl \
-    -o:/src/rules/mapping/TransportationStatusRequest.xml -ext:on --allow-external-functions:on
-echo "Generating mapping documents: Transportation Status"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/syntax/ubl-transportation-status.xml \
-    -xsl:/src/tools/create-mapping-document.xsl \
-    -o:/src/rules/mapping/TransportationStatus.xml -ext:on --allow-external-functions:on
-echo "Generating mapping documents: Receipt Advice"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/syntax/ubl-receipt-advice.xml \
-    -xsl:/src/tools/create-mapping-document.xsl \
-    -o:/src/rules/mapping/ReceiptAdvice.xml -ext:on --allow-external-functions:on
+# echo "Generating mapping documents: Advanced Despatch advice"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/syntax/ubl-advanced-despatch-advice.xml \
+#     -xsl:/src/tools/create-mapping-document.xsl \
+#     -o:/src/rules/mapping/AdvancedDespatchAdvice.xml -ext:on --allow-external-functions:on
+# echo "Generating mapping documents: Weight statement"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/syntax/ubl-weight-statement.xml \
+#     -xsl:/src/tools/create-mapping-document.xsl \
+#     -o:/src/rules/mapping/WeightStatement.xml  -ext:on --allow-external-functions:on
+# echo "Generating mapping documents: Transport execution plan request"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/syntax/ubl-transport-execution-plan-request.xml \
+#     -xsl:/src/tools/create-mapping-document.xsl \
+#     -o:/src/rules/mapping/TransportExecutionPlanRequest.xml -ext:on --allow-external-functions:on
+# echo "Generating mapping documents: Transport execution plan"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/syntax/ubl-transport-execution-plan.xml \
+#     -xsl:/src/tools/create-mapping-document.xsl \
+#     -o:/src/rules/mapping/TransportExecutionPlan.xml -ext:on --allow-external-functions:on
+# echo "Generating mapping documents: Waybill"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/syntax/ubl-waybill.xml \
+#     -xsl:/src/tools/create-mapping-document.xsl \
+#     -o:/src/rules/mapping/Waybill.xml -ext:on --allow-external-functions:on
+# echo "Generating mapping documents: Transportation Status Request"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/syntax/ubl-transportation-status-request.xml \
+#     -xsl:/src/tools/create-mapping-document.xsl \
+#     -o:/src/rules/mapping/TransportationStatusRequest.xml -ext:on --allow-external-functions:on
+# echo "Generating mapping documents: Transportation Status"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/syntax/ubl-transportation-status.xml \
+#     -xsl:/src/tools/create-mapping-document.xsl \
+#     -o:/src/rules/mapping/TransportationStatus.xml -ext:on --allow-external-functions:on
+# echo "Generating mapping documents: Receipt Advice"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/syntax/ubl-receipt-advice.xml \
+#     -xsl:/src/tools/create-mapping-document.xsl \
+#     -o:/src/rules/mapping/ReceiptAdvice.xml -ext:on --allow-external-functions:on
 
 # Create examples based on documentation.
 echo "Generating example: Invoice"
