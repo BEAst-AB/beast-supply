@@ -18,10 +18,6 @@
 	<cbc:DespatchAdviceTypeCode>1</cbc:DespatchAdviceTypeCode>
 	<cbc:Note>Some note about the delivery</cbc:Note>
 	
-	<cac:OrderReference>
-		<cbc:ID>AEG012345</cbc:ID>
-	</cac:OrderReference>
-
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>P-12345</cbc:ID>
 		<cbc:DocumentType>ProjectReference</cbc:DocumentType>
@@ -143,12 +139,17 @@
 		<cbc:DeliveredQuantity unitCode="TNE">12.255</cbc:DeliveredQuantity>
 		
 		<cac:OrderLineReference>
-			<cbc:LineID>10</cbc:LineID>
+			<cbc:LineID>NA</cbc:LineID>
+			<cbc:SalesOrderLineID>10</cbc:SalesOrderLineID>
+			<cac:OrderReference>
+				<cbc:ID>NA</cbc:ID>
+				<cbc:SalesOrderID>O5337412</cbc:SalesOrderID>
+			</cac:OrderReference>	
 		</cac:OrderLineReference>
 
 		<cac:DocumentReference>
 			<cbc:ID>MT8723456</cbc:ID>
-			<cbc:DocumentType>MaterialTicketNumber</cbc:DocumentType>
+			<cbc:DocumentTypeCode>14</cbc:DocumentTypeCode>
 		</cac:DocumentReference>
 
 		<cac:Item>
@@ -160,14 +161,6 @@
 			<cac:CommodityClassification>
 				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="221014" name="SBMI">KO2001220000</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
-
-			<cac:AdditionalItemProperty>
-				<cbc:Name>NA</cbc:Name>
-				<cbc:NameCode listID="IPNC">Price</cbc:NameCode>
-				<cbc:Value>123.00</cbc:Value>
-				<cbc:ValueQualifier>CON</cbc:ValueQualifier>
-			</cac:AdditionalItemProperty>
-
 		</cac:Item>
 	</cac:DespatchLine>
 	
