@@ -36,7 +36,7 @@
          <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">BT-1</Reference>
          <Reference type="RULE">BR-02</Reference>
-         <Value type="EXAMPLE"/>
+         <Value type="EXAMPLE">33445566</Value>
       </Element>
       <Element>
          <Term>cbc:IssueDate</Term>
@@ -46,7 +46,7 @@
          <Reference type="BUSINESS_TERM">BT-2</Reference>
          <Reference type="RULE">BR-03</Reference>
          <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
-         <Value type="EXAMPLE"/>
+         <Value type="EXAMPLE">2017-11-01</Value>
       </Element>
       <Element cardinality="0..1">
          <Term>cbc:DueDate</Term>
@@ -56,7 +56,7 @@
          <Reference type="BUSINESS_TERM">BT-9</Reference>
          <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
          <Reference type="RULE">BR-CO-25</Reference>
-         <Value type="EXAMPLE"/>
+         <Value type="EXAMPLE">2017-11-01</Value>
       </Element>
       <Element>
          <Term>cbc:InvoiceTypeCode</Term>
@@ -68,7 +68,7 @@
          <Reference type="RULE">BR-CL-01</Reference>
          <Reference type="RULE">PEPPOL-EN16931-P0100</Reference>
          <Reference type="CODE_LIST">UNCL1001-inv</Reference>
-         <Value type="EXAMPLE"/>
+         <Value type="EXAMPLE">380</Value>
       </Element>
       <Element cardinality="0..1">
          <Term>cbc:Note</Term>
@@ -87,7 +87,7 @@
          <DataType>Date</DataType>
          <Reference type="BUSINESS_TERM">BT-7</Reference>
          <Reference type="RULE">BR-CO-03</Reference>
-         <Value type="EXAMPLE"/>
+         <Value type="EXAMPLE">2017-11-01</Value>
       </Element>
       <Element>
          <Term>cbc:DocumentCurrencyCode</Term>
@@ -119,7 +119,7 @@
  Peppol: A textual value that specifies where to book the relevant data into the Buyer's financial accounts.</Description>
          <DataType>Text</DataType>
          <Reference type="BUSINESS_TERM">BT-19</Reference>
-         <Value type="EXAMPLE"/>
+         <Value type="EXAMPLE">4217:2323:2323</Value>
       </Element>
       <Element cardinality="0..1">
          <Term>cbc:BuyerReference</Term>
@@ -128,7 +128,7 @@
          <DataType>Text</DataType>
          <Reference type="BUSINESS_TERM">BT-10</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R003</Reference>
-         <Value type="EXAMPLE"/>
+         <Value type="EXAMPLE">abs1234</Value>
       </Element>
       <Element cardinality="0..1">
          <Term>cac:InvoicePeriod</Term>
@@ -145,7 +145,7 @@
             <Reference type="BUSINESS_TERM">BT-73</Reference>
             <Reference type="RULE">BR-CO-19</Reference>
             <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">2017-10-01</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:EndDate</Term>
@@ -156,7 +156,7 @@
             <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
             <Reference type="RULE">BR-29</Reference>
             <Reference type="RULE">BR-CO-19</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">2017-10-31</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:DescriptionCode</Term>
@@ -168,7 +168,7 @@
             <Reference type="RULE">BR-CL-06</Reference>
             <Reference type="RULE">PEPPOL-EN16931-CL006</Reference>
             <Reference type="CODE_LIST">UNCL2005</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">35</Value>
          </Element>
       </Element>
       <Element cardinality="0..1">
@@ -218,7 +218,7 @@
                <DataType>Date</DataType>
                <Reference type="BUSINESS_TERM">BT-26</Reference>
                <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">2017-09-15</Value>
             </Element>
          </Element>
       </Element>
@@ -288,14 +288,14 @@
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">BT-18, BT-122</Reference>
             <Reference type="RULE">BR-52</Reference>
-            <Value type="EXAMPLE"/>
-            <Attribute>
+            <Value type="EXAMPLE">AB23456</Value>
+            <Attribute usage="Optional">
                <Term>schemeID</Term>
                <Name>Scheme identifier</Name>
                <Description>The identification scheme identifier of the Invoiced object identifier.</Description>
                <Reference type="RULE">BR-CL-07</Reference>
                <Reference type="CODE_LIST">UNCL1153</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">AUN</Value>
             </Attribute>
          </Element>
          <Element cardinality="0..1">
@@ -304,7 +304,7 @@
             <Description>Code "130" MUST be used to indicate an invoice object reference. Not used for other additional documents</Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-18</Reference>
-            <Value type="DEFAULT"/>
+            <Value type="DEFAULT">130</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:DocumentDescription</Term>
@@ -312,7 +312,7 @@
             <Description>A description of the supporting document, such as: timesheet, usage report etc.</Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-123</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">Time list</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:Attachment</Term>
@@ -324,7 +324,7 @@
                <Description>An attached document embedded as binary object (Base64) or sent together with the invoice.</Description>
                <DataType>Binary object</DataType>
                <Reference type="BUSINESS_TERM">BT-125</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
                <Attribute>
                   <Term>mimeCode</Term>
                   <Name>Attached document Mime code</Name>
@@ -333,14 +333,14 @@
                   <Reference type="RULE">UBL-DT-06</Reference>
                   <Reference type="RULE">BR-CL-24</Reference>
                   <Reference type="CODE_LIST">MimeCode</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">text/csv</Value>
                </Attribute>
                <Attribute>
                   <Term>filename</Term>
                   <Name>Attached document Filename</Name>
                   <Description>The file name of the attached document</Description>
                   <Reference type="RULE">UBL-DT-07</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Hours-spent.csv</Value>
                </Attribute>
             </Element>
             <Element cardinality="0..1">
@@ -353,7 +353,7 @@
                   <Description>The URL (Uniform Resource Locator) that identifies where the external document is located. A means of locating the resource, including its primary access mechanism, e.g. http:// or ftp://.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-124</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">http://www.example.com/index.html</Value>
                </Element>
             </Element>
          </Element>
@@ -401,13 +401,13 @@
                <Reference type="RULE">PEPPOL-COMMON-R049</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
                <Reference type="RULE">PEPPOL-EN16931-CL008</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">7300010000001</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Seller electronic address identification scheme identifier</Name>
                   <Description>The identification scheme identifier of the Seller electronic address</Description>
                   <Reference type="CODE_LIST">eas</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">0088</Value>
                </Attribute>
             </Element>
             <Element cardinality="0..n">
@@ -432,8 +432,8 @@
                   <Reference type="RULE">PEPPOL-COMMON-R048</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R049</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
-                  <Value type="EXAMPLE"/>
-                  <Attribute>
+                  <Value type="EXAMPLE">5060012349998</Value>
+                  <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Seller or bank assigned creditor identifier identification scheme identifier</Name>
                      <Description>The identification scheme identifier of the Seller identifier. For bank assigned creditor identifier (BT-90), value MUST be "SEPA"</Description>
@@ -441,7 +441,7 @@
                      <Reference type="RULE">DK-R-013</Reference>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Reference type="CODE_LIST">SEPA</Reference>
-                     <Value type="EXAMPLE"/>
+                     <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
             </Element>
@@ -455,7 +455,7 @@
                   <Description>A name by which the Seller is known, other than Seller name (also known as Business name).</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-28</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Seller Business Name AS</Value>
                </Element>
             </Element>
             <Element>
@@ -471,7 +471,7 @@
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-35</Reference>
                   <Reference type="RULE">IT-R-002</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Main Street 1</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
@@ -479,7 +479,7 @@
                   <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-36</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Po Box 351</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
@@ -488,7 +488,7 @@
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-37</Reference>
                   <Reference type="RULE">IT-R-003</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">London</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
@@ -497,7 +497,7 @@
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-38</Reference>
                   <Reference type="RULE">IT-R-004</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">W1G 8LZ</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
@@ -505,7 +505,7 @@
                   <Description>The subdivision of a country.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-39</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Region A</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
@@ -517,7 +517,7 @@
                      <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-162</Reference>
-                     <Value type="EXAMPLE"/>
+                     <Value type="EXAMPLE">Building 23</Value>
                   </Element>
                </Element>
                <Element>
@@ -533,7 +533,7 @@
                      <Reference type="RULE">BR-09</Reference>
                      <Reference type="RULE">BR-CL-14</Reference>
                      <Reference type="CODE_LIST">ISO3166</Reference>
-                     <Value type="EXAMPLE"/>
+                     <Value type="EXAMPLE">GB</Value>
                   </Element>
                </Element>
             </Element>
@@ -594,7 +594,7 @@
                   <Reference type="RULE">PEPPOL-COMMON-R048</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R049</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">NO999888777</Value>
                </Element>
                <Element>
                   <Term>cac:TaxScheme</Term>
@@ -603,7 +603,7 @@
                   <Element>
                      <Term>cbc:ID</Term>
                      <Description>Mandatory element. For Seller VAT identifier (BT-31), use value “VAT”, for the seller tax registration identifier (BT-32), use != "VAT"</Description>
-                     <Value type="EXAMPLE"/>
+                     <Value type="EXAMPLE">VAT</Value>
                   </Element>
                </Element>
             </Element>
@@ -618,7 +618,7 @@
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-27</Reference>
                   <Reference type="RULE">BR-06</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Full Formal Seller Name LTD.</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CompanyID</Term>
@@ -632,13 +632,13 @@
                   <Reference type="RULE">DK-R-014</Reference>
                   <Reference type="RULE">SE-R-003</Reference>
                   <Reference type="RULE">SE-R-004</Reference>
-                  <Value type="EXAMPLE"/>
-                  <Attribute>
+                  <Value type="EXAMPLE">987654321</Value>
+                  <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Seller legal registration identifier identification scheme identifier</Name>
                      <Description>The identification scheme identifier of the Seller legal registration identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE"/>
+                     <Value type="EXAMPLE">0002</Value>
                   </Attribute>
                </Element>
                <Element cardinality="0..1">
@@ -647,7 +647,7 @@
                   <Description>Additional legal information relevant for the Seller.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-33</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Share capital</Value>
                </Element>
             </Element>
             <Element cardinality="0..1">
@@ -661,7 +661,7 @@
                   <Description>A contact point for a legal entity or person.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-41</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">xyz123</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Telephone</Term>
@@ -669,7 +669,7 @@
                   <Description>A phone number for the contact point.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-42</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">887 654 321</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:ElectronicMail</Term>
@@ -677,7 +677,7 @@
                   <Description>An e-mail address for the contact point.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-43</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">test.name@foo.bar</Value>
                </Element>
             </Element>
          </Element>
@@ -712,13 +712,13 @@
                <Reference type="RULE">PEPPOL-COMMON-R049</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
                <Reference type="RULE">PEPPOL-EN16931-CL008</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">987654321</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Buyer electronic address identification scheme identifier</Name>
                   <Description>The identification scheme identifier of the Buyer electronic address.</Description>
                   <Reference type="CODE_LIST">eas</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">0192</Value>
                </Attribute>
             </Element>
             <Element cardinality="0..1">
@@ -742,15 +742,15 @@
                   <Reference type="RULE">PEPPOL-COMMON-R048</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R049</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
-                  <Value type="EXAMPLE"/>
-                  <Attribute>
+                  <Value type="EXAMPLE">SE8765456787</Value>
+                  <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Buyer identifier identification scheme identifier</Name>
                      <Description>The identification scheme identifier of the Buyer identifier.</Description>
                      <Reference type="RULE">BR-CL-10</Reference>
                      <Reference type="RULE">DK-R-013</Reference>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE"/>
+                     <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
             </Element>
@@ -764,7 +764,7 @@
                   <Description>A name by which the Buyer is known, other than Buyer name (also known as Business name).</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-45</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Buyer Trading Name</Value>
                </Element>
             </Element>
             <Element>
@@ -779,7 +779,7 @@
                   <Description>The main address line in an address.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-50</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Hovudgatan 32</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
@@ -787,7 +787,7 @@
                   <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-51</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Po box 43</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
@@ -795,7 +795,7 @@
                   <Description>The common name of the city, town or village, where the Buyer's address is located.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-52</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Stockholm</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
@@ -803,7 +803,7 @@
                   <Description>The identifier for an addressable group of properties according to the relevant postal service.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-53</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">34567</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
@@ -811,7 +811,7 @@
                   <Description>The subdivision of a country.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-54</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Region A</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
@@ -823,7 +823,7 @@
                      <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-163</Reference>
-                     <Value type="EXAMPLE"/>
+                     <Value type="EXAMPLE">Building F2</Value>
                   </Element>
                </Element>
                <Element>
@@ -839,7 +839,7 @@
                      <Reference type="RULE">BR-11</Reference>
                      <Reference type="RULE">BR-CL-14</Reference>
                      <Reference type="CODE_LIST">ISO3166</Reference>
-                     <Value type="EXAMPLE"/>
+                     <Value type="EXAMPLE">SE</Value>
                   </Element>
                </Element>
             </Element>
@@ -874,7 +874,7 @@
                   <Reference type="RULE">PEPPOL-COMMON-R048</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R049</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">SE8765456787</Value>
                </Element>
                <Element>
                   <Term>cac:TaxScheme</Term>
@@ -884,7 +884,7 @@
                      <Term>cbc:ID</Term>
                      <Description>Mandatory element. Use “VAT”</Description>
                      <DataType>Identifier</DataType>
-                     <Value type="DEFAULT"/>
+                     <Value type="DEFAULT">VAT</Value>
                   </Element>
                </Element>
             </Element>
@@ -899,7 +899,7 @@
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-44</Reference>
                   <Reference type="RULE">BR-07</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Buyer Full Name AS</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CompanyID</Term>
@@ -912,13 +912,13 @@
                   <Reference type="RULE">BR-AE-04</Reference>
                   <Reference type="RULE">BR-CL-11</Reference>
                   <Reference type="RULE">DK-R-014</Reference>
-                  <Value type="EXAMPLE"/>
-                  <Attribute>
+                  <Value type="EXAMPLE">5560104525</Value>
+                  <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Buyer legal registration identifier identification scheme identifier</Name>
                      <Description>The identification scheme identifier of the Buyer legal registration identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE"/>
+                     <Value type="EXAMPLE">0007</Value>
                   </Attribute>
                </Element>
             </Element>
@@ -933,7 +933,7 @@
                   <Description>A contact point for a legal entity or person.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-56</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Jens Jensen</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Telephone</Term>
@@ -941,7 +941,7 @@
                   <Description>A phone number for the contact point.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-57</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">876 654 321</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:ElectronicMail</Term>
@@ -949,7 +949,7 @@
                   <Description>An e-mail address for the contact point.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-58</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">jens.j@buyer.se</Value>
                </Element>
             </Element>
          </Element>
@@ -969,15 +969,15 @@
                <Description>This element is used for both the identification of the Payee, or the unique banking reference identifier of Payee (assigned by the Payee bank.) For payee identification use ICD code list, for SEPA bank assigned creditor reference, use SEPA.</Description>
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-60, BT-90</Reference>
-               <Value type="EXAMPLE"/>
-               <Attribute>
+               <Value type="EXAMPLE">FR932874294</Value>
+               <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Name>Payee or bank assigned creditor identifier identification scheme identifier</Name>
                   <Description>The identification scheme identifier of the payee identifier. For bank assigned creditor identifier (BT-90), value MUST be "SEPA"</Description>
                   <Reference type="RULE">BR-CL-10</Reference>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Reference type="CODE_LIST">SEPA</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">SEPA</Value>
                </Attribute>
             </Element>
          </Element>
@@ -992,7 +992,7 @@
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-59</Reference>
                <Reference type="RULE">BR-17</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">Payee Name Ltd</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
@@ -1006,14 +1006,14 @@
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-61</Reference>
                <Reference type="RULE">BR-CL-11</Reference>
-               <Value type="EXAMPLE"/>
-               <Attribute>
+               <Value type="EXAMPLE">FR932874294</Value>
+               <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Name>Payee legal registration identifier identification scheme identifier</Name>
                   <Description>The identification scheme identifier of the Payee legal registration identifier.</Description>
                   <Reference type="RULE">BR-CL-10</Reference>
                   <Reference type="CODE_LIST">ICD</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">0002</Value>
                </Attribute>
             </Element>
          </Element>
@@ -1034,7 +1034,7 @@
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-62</Reference>
                <Reference type="RULE">BR-18</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">Tax Representative Name AS</Value>
             </Element>
          </Element>
          <Element>
@@ -1049,7 +1049,7 @@
                <Description>The main address line in an address.</Description>
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-64</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">Lille gatan 545</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
@@ -1057,7 +1057,7 @@
                <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-65</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">Po Box 987</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CityName</Term>
@@ -1065,7 +1065,7 @@
                <Description>The common name of the city, town or village, where the tax representative address is located.</Description>
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-66</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">Göteborg</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:PostalZone</Term>
@@ -1073,7 +1073,7 @@
                <Description>The identifier for an addressable group of properties according to the relevant postal service.</Description>
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-67</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">12345</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:CountrySubentity</Term>
@@ -1081,7 +1081,7 @@
                <Description>The subdivision of a country.</Description>
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-68</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">Region Vest</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:AddressLine</Term>
@@ -1093,7 +1093,7 @@
                   <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-164</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">A87</Value>
                </Element>
             </Element>
             <Element>
@@ -1109,7 +1109,7 @@
                   <Reference type="RULE">BR-20</Reference>
                   <Reference type="RULE">BR-CL-14</Reference>
                   <Reference type="CODE_LIST">ISO3166</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">SE</Value>
                </Element>
             </Element>
          </Element>
@@ -1152,7 +1152,7 @@
                <Reference type="RULE">BR-IP-02</Reference>
                <Reference type="RULE">BR-IP-03</Reference>
                <Reference type="RULE">BR-IP-04</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">FR932874294</Value>
             </Element>
             <Element>
                <Term>cac:TaxScheme</Term>
@@ -1161,7 +1161,7 @@
                <Element>
                   <Term>cbc:ID</Term>
                   <Description>Mandatory element. Use “VAT”</Description>
-                  <Value type="DEFAULT"/>
+                  <Value type="DEFAULT">VAT</Value>
                </Element>
             </Element>
          </Element>
@@ -1179,7 +1179,7 @@
             <Reference type="BUSINESS_TERM">BT-72</Reference>
             <Reference type="RULE">BR-IC-11</Reference>
             <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">2017-12-01</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:DeliveryLocation</Term>
@@ -1190,13 +1190,13 @@
                <Description>An identifier for the location at which the goods and services are delivered.</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-71</Reference>
-               <Value type="EXAMPLE"/>
-               <Attribute>
+               <Value type="EXAMPLE">83745498753497</Value>
+               <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Name>Deliver to location identifier identification scheme identifier</Name>
                   <Description>The identification scheme identifier of the Deliver to location identifier.</Description>
                   <Reference type="CODE_LIST">ICD</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">0088</Value>
                </Attribute>
             </Element>
             <Element cardinality="0..1">
@@ -1210,7 +1210,7 @@
                   <Description>The main address line in an address.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-75</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Delivery Street 1</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
@@ -1218,7 +1218,7 @@
                   <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-76</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Delivery Street 2</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
@@ -1226,7 +1226,7 @@
                   <Description>The common name of the city, town or village, where the deliver to address is located.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-77</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Malmö</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:PostalZone</Term>
@@ -1234,7 +1234,7 @@
                   <Description>The identifier for an addressable group of properties according to the relevant postal service.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-78</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">86756</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CountrySubentity</Term>
@@ -1242,7 +1242,7 @@
                   <Description>The subdivision of a country.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-79</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">South Region</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
@@ -1254,7 +1254,7 @@
                      <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-165</Reference>
-                     <Value type="EXAMPLE"/>
+                     <Value type="EXAMPLE">C54</Value>
                   </Element>
                </Element>
                <Element>
@@ -1271,7 +1271,7 @@
                      <Reference type="RULE">BR-CL-14</Reference>
                      <Reference type="RULE">BR-IC-12</Reference>
                      <Reference type="CODE_LIST">ISO3166</Reference>
-                     <Value type="EXAMPLE"/>
+                     <Value type="EXAMPLE">SE</Value>
                   </Element>
                </Element>
             </Element>
@@ -1290,7 +1290,7 @@
                   <Description>The name of the party to which the goods and services are delivered.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-70</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Deliver name</Value>
                </Element>
             </Element>
          </Element>
@@ -1310,14 +1310,14 @@
             <Reference type="RULE">BR-CL-16</Reference>
             <Reference type="CODE_LIST">UNCL4461</Reference>
             <Value type="EXAMPLE">31</Value>
-            <Attribute>
+            <Attribute usage="Optional">
                <Term>name</Term>
                <Name>Payment means text</Name>
                <Description>The means, expressed as text, for how a payment is expected to be or has been settled.
                 </Description>
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-82</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">Credit transfer</Value>
             </Attribute>
          </Element>
          <Element cardinality="0..1">
@@ -1448,7 +1448,7 @@
             <Term>cbc:ChargeIndicator</Term>
             <Description>Use “true” when informing about Charges and “false” when informing about Allowances.</Description>
             <Reference type="RULE">PEPPOL-EN16931-R043</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">false</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:AllowanceChargeReasonCode</Term>
@@ -1469,7 +1469,7 @@
             <Reference type="RULE">BR-CL-20</Reference>
             <Reference type="CODE_LIST">UNCL5189</Reference>
             <Reference type="CODE_LIST">UNCL7161</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">95</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:AllowanceChargeReason</Term>
@@ -1484,7 +1484,7 @@
             <Reference type="RULE">BR-CO-21</Reference>
             <Reference type="RULE">BR-CO-22</Reference>
             <Reference type="RULE">DK-R-004</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">Discount</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:MultiplierFactorNumeric</Term>
@@ -1493,7 +1493,7 @@
             <DataType>Percentage</DataType>
             <Reference type="BUSINESS_TERM">BT-94,BT-101</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R042</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">20</Value>
          </Element>
          <Element>
             <Term>cbc:Amount</Term>
@@ -1508,14 +1508,14 @@
             <Reference type="RULE">BR-DEC-01</Reference>
             <Reference type="RULE">BR-DEC-05</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">200</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                <Reference type="CODE_LIST">ISO4217</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">EUR</Value>
             </Attribute>
          </Element>
          <Element cardinality="0..1">
@@ -1529,14 +1529,14 @@
             <Reference type="RULE">BR-DEC-06</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">1000</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                <Reference type="CODE_LIST">ISO4217</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">EUR</Value>
             </Attribute>
          </Element>
          <Element>
@@ -1555,7 +1555,7 @@
                <Reference type="RULE">BR-O-14</Reference>
                <Reference type="RULE">BR-CL-17</Reference>
                <Reference type="CODE_LIST">UNCL5305</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">S</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Percent</Term>
@@ -1582,7 +1582,7 @@
                <Reference type="RULE">BR-IP-06</Reference>
                <Reference type="RULE">BR-IP-07</Reference>
                <Reference type="RULE">SE-R-006</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">25</Value>
             </Element>
             <Element>
                <Term>cac:TaxScheme</Term>
@@ -1591,7 +1591,7 @@
                <Element>
                   <Term>cbc:ID</Term>
                   <Description>Mandatory element. Use “VAT”</Description>
-                  <Value type="DEFAULT"/>
+                  <Value type="DEFAULT">VAT</Value>
                </Element>
             </Element>
          </Element>
@@ -1613,14 +1613,14 @@
             <Reference type="RULE">BR-DEC-15</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">486.25</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5 or BT-6.</Description>
                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                <Reference type="CODE_LIST">ISO4217</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">EUR</Value>
             </Attribute>
          </Element>
          <Element cardinality="0..n">
@@ -1650,14 +1650,14 @@
                <Reference type="RULE">BR-DEC-19</Reference>
                <Reference type="RULE">UBL-DT-01</Reference>
                <Reference type="RULE">BR-CL-03</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">1945.00</Value>
                <Attribute>
                   <Term>currencyID</Term>
                   <Description>Mandatory attribute. Use BT-5</Description>
                   <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                   <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                   <Reference type="CODE_LIST">ISO4217</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">EUR</Value>
                </Attribute>
             </Element>
             <Element>
@@ -1679,14 +1679,14 @@
                <Reference type="RULE">BR-IP-09</Reference>
                <Reference type="RULE">BR-DEC-20</Reference>
                <Reference type="RULE">UBL-DT-01</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">486.25</Value>
                <Attribute>
                   <Term>currencyID</Term>
                   <Description>Mandatory attribute. Use BT-5</Description>
                   <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                   <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                   <Reference type="CODE_LIST">ISO4217</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">EUR</Value>
                </Attribute>
             </Element>
             <Element>
@@ -1711,7 +1711,7 @@
                   <Reference type="RULE">BR-IP-01</Reference>
                   <Reference type="RULE">BR-CL-17</Reference>
                   <Reference type="CODE_LIST">UNCL5305</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">S</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Percent</Term>
@@ -1721,7 +1721,7 @@
                   <Reference type="BUSINESS_TERM">BT-119</Reference>
                   <Reference type="RULE">BR-48</Reference>
                   <Reference type="RULE">SE-R-006</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">25</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:TaxExemptionReasonCode</Term>
@@ -1763,7 +1763,7 @@
                   <Reference type="RULE">BR-O-10</Reference>
                   <Reference type="RULE">BR-IG-10</Reference>
                   <Reference type="RULE">BR-IP-10</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Exempt</Value>
                </Element>
                <Element>
                   <Term>cac:TaxScheme</Term>
@@ -1772,7 +1772,7 @@
                   <Element>
                      <Term>cbc:ID</Term>
                      <Description>Mandatory element. Use “VAT”</Description>
-                     <Value type="DEFAULT"/>
+                     <Value type="DEFAULT">VAT</Value>
                   </Element>
                </Element>
             </Element>
@@ -1794,14 +1794,14 @@
             <Reference type="RULE">BR-DEC-09</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">3800.0</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                <Reference type="CODE_LIST">ISO4217</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">EUR</Value>
             </Attribute>
          </Element>
          <Element>
@@ -1815,14 +1815,14 @@
             <Reference type="RULE">BR-DEC-12</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">3600.0</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                <Reference type="CODE_LIST">ISO4217</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">EUR</Value>
             </Attribute>
          </Element>
          <Element>
@@ -1836,14 +1836,14 @@
             <Reference type="RULE">BR-DEC-14</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">4500.0</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                <Reference type="CODE_LIST">ISO4217</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">EUR</Value>
             </Attribute>
          </Element>
          <Element cardinality="0..1">
@@ -1856,14 +1856,14 @@
             <Reference type="RULE">BR-DEC-10</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">200.0</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                <Reference type="CODE_LIST">ISO4217</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">EUR</Value>
             </Attribute>
          </Element>
          <Element cardinality="0..1">
@@ -1876,14 +1876,14 @@
             <Reference type="RULE">BR-DEC-11</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">0.0</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                <Reference type="CODE_LIST">ISO4217</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">EUR</Value>
             </Attribute>
          </Element>
          <Element cardinality="0..1">
@@ -1894,7 +1894,7 @@
             <Reference type="BUSINESS_TERM">BT-113</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">1000.0</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
@@ -1902,7 +1902,7 @@
                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                <Reference type="RULE">BR-DEC-16</Reference>
                <Reference type="CODE_LIST">ISO4217</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">EUR</Value>
             </Attribute>
          </Element>
          <Element cardinality="0..1">
@@ -1914,14 +1914,14 @@
             <Reference type="RULE">BR-DEC-17</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">0.0</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                <Reference type="CODE_LIST">ISO4217</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">EUR</Value>
             </Attribute>
          </Element>
          <Element>
@@ -1935,14 +1935,14 @@
             <Reference type="RULE">BR-DEC-18</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">3500.0</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                <Reference type="CODE_LIST">ISO4217</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">EUR</Value>
             </Attribute>
          </Element>
       </Element>
@@ -1978,7 +1978,7 @@
             <Reference type="BUSINESS_TERM">BT-129</Reference>
             <Reference type="RULE">BR-22</Reference>
             <Reference type="RULE">BR-CL-23</Reference>
-            <Value type="EXAMPLE"/>
+            <Value type="EXAMPLE">100</Value>
             <Attribute>
                <Term>unitCode</Term>
                <Name>Invoiced quantity unit of measure</Name>
@@ -2064,7 +2064,7 @@
  Peppol: An identifier for a referenced line within a purchase order, issued by the Buyer.</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-132</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">3</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
@@ -2079,8 +2079,8 @@
                <Description>Weight Statement Number (T6329) @schemeID="WM"; Freight Forwarder Referens Number (T6127) @schemeID="AHY"; Despatch Advice Number (T6386) @schemeID="AAK";Line Number (e.g. despatch advice line number) @schemeID="LI"; Serial number schemeID="SE"; Sales order id schemeID="VN"</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-128</Reference>
-               <Value type="EXAMPLE"/>
-               <Attribute>
+               <Value type="EXAMPLE">AB12345</Value>
+               <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Name>Invoice line object identifier identification scheme identifier</Name>
                   <Description>The identification scheme identifier of the Invoice line object identifier.</Description>
@@ -2127,7 +2127,7 @@
                <Reference type="RULE">BR-CL-20</Reference>
                <Reference type="CODE_LIST">UNCL5189</Reference>
                <Reference type="CODE_LIST">UNCL7161</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">95</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:AllowanceChargeReason</Term>
@@ -2185,14 +2185,14 @@
                <Reference type="RULE">BR-DEC-28</Reference>
                <Reference type="RULE">UBL-DT-01</Reference>
                <Reference type="RULE">BR-CL-03</Reference>
-               <Value type="EXAMPLE"/>
+               <Value type="EXAMPLE">1000</Value>
                <Attribute>
                   <Term>currencyID</Term>
                   <Description>Mandatory attribute. Use BT-5</Description>
                   <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                   <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                   <Reference type="CODE_LIST">ISO4217</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">EUR</Value>
                </Attribute>
             </Element>
          </Element>
@@ -2301,7 +2301,7 @@
                      <Reference type="CODE_LIST">UNCL7143</Reference>
                      <Value type="EXAMPLE">SN</Value>
                   </Attribute>
-                  <Attribute>
+                  <Attribute usage="Optional">
                      <Term>listVersionID</Term>
                      <Name>Item classification identifier version identification scheme identifier</Name>
                      <Description>The identification scheme version identifier of the Item classification identifier</Description>
@@ -2368,7 +2368,7 @@
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-160</Reference>
                   <Reference type="RULE">BR-54</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Color</Value>
                </Element>
                <Element>
                   <Term>cbc:Value</Term>
@@ -2377,7 +2377,7 @@
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-161</Reference>
                   <Reference type="RULE">BR-54</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">Black</Value>
                </Element>
             </Element>
          </Element>
@@ -2414,8 +2414,8 @@
                <Reference type="BUSINESS_TERM">BT-149</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R121</Reference>
                <Reference type="RULE">BR-CL-23</Reference>
-               <Value type="EXAMPLE"/>
-               <Attribute>
+               <Value type="EXAMPLE">1</Value>
+               <Attribute usage="Optional">
                   <Term>unitCode</Term>
                   <Name>Item price base quantity unit of measure code</Name>
                   <Description>The unit of measure that applies to the Item price base quantity, must be the same as the unit code of the Invoiced/credited quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
@@ -2434,7 +2434,7 @@
                   <Term>cbc:ChargeIndicator</Term>
                   <Description>Mandatory element. Value must be “false”</Description>
                   <Reference type="RULE">PEPPOL-EN16931-R044</Reference>
-                  <Value type="FIXED"/>
+                  <Value type="FIXED">false</Value>
                </Element>
                <Element>
                   <Term>cbc:Amount</Term>
@@ -2442,7 +2442,7 @@
                   <Description>The total discount subtracted from the Item gross price to calculate the Item net price.</Description>
                   <DataType>Amount</DataType>
                   <Reference type="BUSINESS_TERM">BT-147</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">100</Value>
                   <Attribute>
                      <Term>currencyID</Term>
                      <Description>Mandatory attribute. Use BT-5</Description>
@@ -2450,7 +2450,7 @@
                      <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                      <Reference type="RULE">BR-CL-03</Reference>
                      <Reference type="CODE_LIST">ISO4217</Reference>
-                     <Value type="EXAMPLE"/>
+                     <Value type="EXAMPLE">EUR</Value>
                   </Attribute>
                </Element>
                <Element cardinality="0..1">
@@ -2461,14 +2461,14 @@
                   <Reference type="BUSINESS_TERM">BT-148</Reference>
                   <Reference type="RULE">BR-28</Reference>
                   <Reference type="RULE">BR-CL-03</Reference>
-                  <Value type="EXAMPLE"/>
+                  <Value type="EXAMPLE">123.45</Value>
                   <Attribute>
                      <Term>currencyID</Term>
                      <Description>Mandatory attribute. Use BT-5</Description>
                      <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                      <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                      <Reference type="CODE_LIST">ISO4217</Reference>
-                     <Value type="EXAMPLE"/>
+                     <Value type="EXAMPLE">EUR</Value>
                   </Attribute>
                </Element>
             </Element>

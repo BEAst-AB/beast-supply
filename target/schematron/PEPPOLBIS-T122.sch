@@ -361,9 +361,7 @@
          <assert test="false()" flag="fatal" id="PEPPOL-T122-B05802">Document MUST NOT contain elements not part of the data model.</assert>
       </rule>
       <rule context="/ubl:WeightStatement/cac:WeighingParty/cac:PhysicalLocation"/>
-      <rule context="/ubl:WeightStatement/cac:WeighingParty/cac:PhysicalLocation/cbc:ID">
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T122-B06901">Attribute 'schemeID' MUST be present.</assert>
-      </rule>
+      <rule context="/ubl:WeightStatement/cac:WeighingParty/cac:PhysicalLocation/cbc:ID"/>
       <rule context="/ubl:WeightStatement/cac:WeighingParty/cac:PhysicalLocation/cbc:Name"/>
       <rule context="/ubl:WeightStatement/cac:WeighingParty/cac:PhysicalLocation/*">
          <assert test="false()" flag="fatal" id="PEPPOL-T122-B06801">Document MUST NOT contain elements not part of the data model.</assert>
@@ -473,8 +471,6 @@
          <assert test="not(@listID) or (some $code in $clUNCL7143 satisfies $code = @listID)"
                  flag="fatal"
                  id="PEPPOL-T122-B11002">Value MUST be part of code list 'Item type identification code (UNCL7143)'.</assert>
-         <assert test="@listVersionID" flag="fatal" id="PEPPOL-T122-B11003">Attribute 'listVersionID' MUST be present.</assert>
-         <assert test="@name" flag="fatal" id="PEPPOL-T122-B11004">Attribute 'name' MUST be present.</assert>
       </rule>
       <rule context="/ubl:WeightStatement/cac:Shipment/cac:GoodsItem/cac:Item/cac:CommodityClassification/*">
          <assert test="false()" flag="fatal" id="PEPPOL-T122-B10902">Document MUST NOT contain elements not part of the data model.</assert>

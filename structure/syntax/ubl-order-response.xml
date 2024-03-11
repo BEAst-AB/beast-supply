@@ -148,7 +148,7 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir76-059</Reference>
                   <Value type="EXAMPLE">DK12345678</Value>
-                  <Attribute>
+                  <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
@@ -210,7 +210,7 @@
  Peppol: An identification for the buyer party.</Description>
                   <Reference type="BUSINESS_TERM">tir76-022</Reference>
                   <Value type="EXAMPLE">DK55412777</Value>
-                  <Attribute>
+                  <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
@@ -570,13 +570,13 @@
                         <Reference type="CODE_LIST">UNCL7143</Reference>
                         <Value type="EXAMPLE">MP</Value>
                      </Attribute>
-                     <Attribute>
+                     <Attribute usage="Optional">
                         <Term>listVersionID</Term>
                         <Name>Item classification identifier version identification scheme identifier</Name>
                         <Description>The identification scheme version identifier of the Item classification identifier</Description>
                         <Value type="EXAMPLE">19.0501</Value>
                      </Attribute>
-                     <Attribute>
+                     <Attribute usage="Optional">
                         <Term>name</Term>
                         <Name>Clear text name equivalent of classification code</Name>
                         <Description>The textual equivalent of the code value</Description>
