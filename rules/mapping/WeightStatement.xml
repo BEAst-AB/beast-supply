@@ -172,7 +172,7 @@
                <Data ss:Type="String">BEAst: T6329 Material ticket number. Peppol: Unique identity identifying the Weight Statement. An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">GOA294107</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cbc:ID</Data>
@@ -198,7 +198,7 @@
                <Data ss:Type="String">BEAst: T6325, Document Date/Time. Peppol: The date when the Weight Statement is issued. Format = "YYYY-MM-DD"</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2016-11-03</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cbc:IssueDate</Data>
@@ -224,7 +224,7 @@
                <Data ss:Type="String">BEAst: T6325, Document Date/Time. Peppol: The time when the Weight Statement is issued. Format = "hh:mm:ss+timezone". Timezone is optional to use. If omitted, the local timezone where the document was issued should be assumed.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">09:30:00+01:00</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cbc:IssueTime</Data>
@@ -250,7 +250,7 @@
                <Data ss:Type="String">BEAst: T6328 Document type. Peppol: 01 = Outbound delivery 02 = Inbound delivery</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">01</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cbc:WeightStatementTypeCode</Data>
@@ -302,7 +302,7 @@
                <Data ss:Type="String">BEAst: T6001 Party Identifier, T0009 Supplier. Peppol: Identifies the senders partys electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7300010000001</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cbc:EndpointID</Data>
@@ -328,7 +328,7 @@
                <Data ss:Type="String">Scheme identifier for electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0088</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cbc:EndpointID/schemeID</Data>
@@ -380,7 +380,7 @@
                <Data ss:Type="String">BEAst: T6001 Party Identifier, T0009 Supplier. Peppol: The identifier of the Sender party</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7300010000001</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PartyIdentification/cbc:ID</Data>
@@ -406,7 +406,7 @@
                <Data ss:Type="String">Scheme identifier for party identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0088</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PartyIdentification/cbc:ID/schemeID</Data>
@@ -458,7 +458,7 @@
                <Data ss:Type="String">BEAst: T5001 Party name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Weighing Solutions AB</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PartyName/cbc:Name</Data>
@@ -510,7 +510,7 @@
                <Data ss:Type="String">BEAst: T5003 Street name. Peppol: The main address line in a postal address usually the street name and number.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Skogsgatan nr 1</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PostalAddress/cbc:StreetName</Data>
@@ -562,7 +562,7 @@
                <Data ss:Type="String">BEAst: T5005 City name. Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Norrköping</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PostalAddress/cbc:CityName</Data>
@@ -588,7 +588,7 @@
                <Data ss:Type="String">BEAst: T6117 Postal code NeB. Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123 45</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PostalAddress/cbc:PostalZone</Data>
@@ -614,7 +614,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">NA</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -666,7 +666,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">To the right</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -718,7 +718,7 @@
                <Data ss:Type="String">BEAst: T5007 Country code. Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SE</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
@@ -770,7 +770,7 @@
                <Data ss:Type="String">BEAst: T5012 Name. Peppol: The contact name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Mats Svensson</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:Contact/cbc:Name</Data>
@@ -796,7 +796,7 @@
                <Data ss:Type="String">BEAst: T5010 Phone number. Peppol: The phone number of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0158 1233714</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:Contact/cbc:Telephone</Data>
@@ -822,7 +822,7 @@
                <Data ss:Type="String">BEAst: T5011 Email address. Peppol: The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">mats.svensson@senderab.se</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:SenderParty/cac:Contact/cbc:ElectronicMail</Data>
@@ -874,7 +874,7 @@
                <Data ss:Type="String">BEAst: T6001 Party Identifier, T0008 Buyer. Peppol: Identifies the receivers partys electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1251513513245</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cbc:EndpointID</Data>
@@ -900,7 +900,7 @@
                <Data ss:Type="String">Scheme identifier for electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0088</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cbc:EndpointID/schemeID</Data>
@@ -952,7 +952,7 @@
                <Data ss:Type="String">BEAst: T6001 Party Identifier, T0008 Buyer. Peppol: The identifier of the receiver party</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1251513513245</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PartyIdentification/cbc:ID</Data>
@@ -978,7 +978,7 @@
                <Data ss:Type="String">Scheme identifier for party identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0088</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PartyIdentification/cbc:ID/schemeID</Data>
@@ -1030,7 +1030,7 @@
                <Data ss:Type="String">BEAst: T5001 Party name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Transport Management Solutions AB</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PartyName/cbc:Name</Data>
@@ -1082,7 +1082,7 @@
                <Data ss:Type="String">BEAst: T5003 Street name. Peppol: The main address line in a postal address usually the street name and number.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Byagatan nr 14</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PostalAddress/cbc:StreetName</Data>
@@ -1134,7 +1134,7 @@
                <Data ss:Type="String">BEAst: T5005 City name. Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Norrköping</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PostalAddress/cbc:CityName</Data>
@@ -1160,7 +1160,7 @@
                <Data ss:Type="String">BEAst: T6117 Postal code NeB. Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123 45</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PostalAddress/cbc:PostalZone</Data>
@@ -1186,7 +1186,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">NA</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -1238,7 +1238,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">To the left</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -1290,7 +1290,7 @@
                <Data ss:Type="String">BEAst: T5007 Country code. Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SE</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
@@ -1342,7 +1342,7 @@
                <Data ss:Type="String">BEAst: T5012 Name. Peppol: The contact name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Nils Johansson</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:Contact/cbc:Name</Data>
@@ -1368,7 +1368,7 @@
                <Data ss:Type="String">BEAst: T5010 Phone number. Peppol: The phone number of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0158 1236543</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:Contact/cbc:Telephone</Data>
@@ -1394,7 +1394,7 @@
                <Data ss:Type="String">BEAst: T5011 Email address. Peppol: The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">nils.johansson@receiverab.se</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ReceiverParty/cac:Contact/cbc:ElectronicMail</Data>
@@ -1472,7 +1472,7 @@
                <Data ss:Type="String">BEAst: T6001 Party Identifier, T6330 Place of weighing. Peppol: The identifier of the Weighing party</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5790000435951</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PartyIdentification/cbc:ID</Data>
@@ -1498,7 +1498,7 @@
                <Data ss:Type="String">Scheme identifier for party identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0088</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PartyIdentification/cbc:ID/schemeID</Data>
@@ -1550,7 +1550,7 @@
                <Data ss:Type="String">BEAst: T5001 Party name. Peppol: The name of the weighing party</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Gravel Pit Ltd.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PartyName/cbc:Name</Data>
@@ -1602,7 +1602,7 @@
                <Data ss:Type="String">BEAst: T5003 Street name. Peppol: The main address line in a postal address usually the street name and number.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Byagatan nr 14</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PostalAddress/cbc:StreetName</Data>
@@ -1654,7 +1654,7 @@
                <Data ss:Type="String">BEAst: T5005 City name. Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Norrköping</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PostalAddress/cbc:CityName</Data>
@@ -1680,7 +1680,7 @@
                <Data ss:Type="String">BEAst: T6117 Postal code NeB. Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123 45</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PostalAddress/cbc:PostalZone</Data>
@@ -1706,7 +1706,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">NA</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -1758,7 +1758,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">To the left</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -1810,7 +1810,7 @@
                <Data ss:Type="String">BEAst: T5007 Country code. Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SE</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
@@ -1862,7 +1862,7 @@
                <Data ss:Type="String">BEAst: T6755 SiteID. Peppol: Unique ID of the site for the weighing party. If possile an ID that is issued by a authority or similar.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0114-40-019-a</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PhysicalLocation/cbc:ID</Data>
@@ -1876,7 +1876,7 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">O</Data>
+               <Data ss:Type="String">M</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  @schemeID</Data>
@@ -1914,7 +1914,7 @@
                <Data ss:Type="String">BEAst: T6465 Property Registration ID. Peppol: Physical location name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Townsend pit</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:PhysicalLocation/cbc:Name</Data>
@@ -1966,7 +1966,7 @@
                <Data ss:Type="String">BEAst: T5012 Name. Peppol: The contact name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Nils Johansson</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:Contact/cbc:Name</Data>
@@ -1992,7 +1992,7 @@
                <Data ss:Type="String">BEAst: T5010 Phone number. Peppol: The phone number of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0158 1236543</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:Contact/cbc:Telephone</Data>
@@ -2018,7 +2018,7 @@
                <Data ss:Type="String">BEAst: T5011 Email address. Peppol: The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">nils.johansson@receiverab.se</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:WeighingParty/cac:Contact/cbc:ElectronicMail</Data>
@@ -2096,7 +2096,7 @@
                <Data ss:Type="String">BEAst: T6001 Party Identifier, T3208 Carrier. Peppol: The identifier of the shippping party</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5790000435951</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PartyIdentification/cbc:ID</Data>
@@ -2122,7 +2122,7 @@
                <Data ss:Type="String">Scheme identifier for party identification</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0088</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PartyIdentification/cbc:ID/schemeID</Data>
@@ -2174,7 +2174,7 @@
                <Data ss:Type="String">BEAst: T5001 Party name. Peppol: The name of the shipper</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Tony's Trucks and Transport</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PartyName/cbc:Name</Data>
@@ -2226,7 +2226,7 @@
                <Data ss:Type="String">BEAst: T5003 Street name. Peppol: The main address line in a postal address usually the street name and number.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Skogsgatan nr 1</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PostalAddress/cbc:StreetName</Data>
@@ -2278,7 +2278,7 @@
                <Data ss:Type="String">BEAst: T5005 City name. Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Norrköping</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PostalAddress/cbc:CityName</Data>
@@ -2304,7 +2304,7 @@
                <Data ss:Type="String">BEAst: T6117 Postal code NeB. Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123 45</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PostalAddress/cbc:PostalZone</Data>
@@ -2330,7 +2330,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">NA</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -2382,7 +2382,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">To the right</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -2434,7 +2434,7 @@
                <Data ss:Type="String">BEAst: T5007 Country code. Peppol: A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SE</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
@@ -2486,7 +2486,7 @@
                <Data ss:Type="String">BEAst: T5012 Name. Peppol: The contact name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Mats Svensson</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:Contact/cbc:Name</Data>
@@ -2512,7 +2512,7 @@
                <Data ss:Type="String">BEAst: T5010 Phone number. Peppol: The phone number of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0158 1233714</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:Contact/cbc:Telephone</Data>
@@ -2538,7 +2538,7 @@
                <Data ss:Type="String">BEAst: T5011 Email address. Peppol: The electronic mail of the contact.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">mats.svensson@senderab.se</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:ShipperParty/cac:Contact/cbc:ElectronicMail</Data>
@@ -2590,7 +2590,7 @@
                <Data ss:Type="String">Use NA if no specific shipment ID is available</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">NA</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:Shipment/cbc:ID</Data>
@@ -2642,7 +2642,7 @@
                <Data ss:Type="String">Identifies the Line Item assigned by the weighing partner, the identifier must be unique within the order</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:Shipment/cac:GoodsItem/cbc:ID</Data>
@@ -2694,7 +2694,7 @@
                <Data ss:Type="String">BEAst: T6226 Article description. Peppol: Name of weighed item</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Sortering 0/2 mm krossat bergmaterial CE-märkt enligt system 2+ för användning till asfalt.</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:Shipment/cac:GoodsItem/cac:Item/cbc:Name</Data>
@@ -2746,7 +2746,7 @@
                <Data ss:Type="String">An identifier, assigned by the buyer, for the item. Associates the item with its identification according to the buyers system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">KO2001030300</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:Shipment/cac:GoodsItem/cac:Item/cac:BuyersItemIdentification/cbc:ID</Data>
@@ -2798,7 +2798,7 @@
                <Data ss:Type="String">BEAst: T0172 Supplier's article number. Peppol: An identifier, assigned by the seller, for the item. Associates the item with its identification according to the sellers system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">17589683</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:Shipment/cac:GoodsItem/cac:Item/cac:SellersItemIdentification/cbc:ID</Data>
@@ -2850,7 +2850,7 @@
                <Data ss:Type="String">BEAst: T0154 Global Trade Item Number. Peppol: Global Trade Item Number (GTIN) or other standardized identification. Associates the item with its identification according to a standard system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1234567891234</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:Shipment/cac:GoodsItem/cac:Item/cac:StandardItemIdentification/cbc:ID</Data>
@@ -2876,7 +2876,7 @@
                <Data ss:Type="String">The identification scheme identifier of the Item standard identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0160</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:Shipment/cac:GoodsItem/cac:Item/cac:StandardItemIdentification/cbc:ID/schemeID</Data>
@@ -2928,7 +2928,7 @@
                <Data ss:Type="String">A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">KO2012140200</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:Shipment/cac:GoodsItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode</Data>
@@ -2954,7 +2954,7 @@
                <Data ss:Type="String">The identification scheme identifier of the Item classification identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">ZZZ</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:Shipment/cac:GoodsItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listID</Data>
@@ -2968,7 +2968,7 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">O</Data>
+               <Data ss:Type="String">M</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  •  •  @listVersionID</Data>
@@ -2980,7 +2980,7 @@
                <Data ss:Type="String">The identification scheme version identifier of the Item classification identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">4.0</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:Shipment/cac:GoodsItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listVersionID</Data>
@@ -2994,7 +2994,7 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">O</Data>
+               <Data ss:Type="String">M</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  •  •  @name</Data>
@@ -3006,7 +3006,7 @@
                <Data ss:Type="String">The textual equivalent of the code value</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SBMI</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:Shipment/cac:GoodsItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/name</Data>
@@ -3058,7 +3058,7 @@
                <Data ss:Type="String">BEAst: T6714 Measured attribute code. Peppol: To describe the type of measurement. Use UNCL 6313 subset.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">AAF</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:Shipment/cac:GoodsItem/cac:MeasurementDimension/cbc:AttributeID</Data>
@@ -3084,7 +3084,7 @@
                <Data ss:Type="String">BEAst: T6122 Measure. Peppol: For the measure.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">12.3</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:Shipment/cac:GoodsItem/cac:MeasurementDimension/cbc:Measure</Data>
@@ -3110,7 +3110,7 @@
                <Data ss:Type="String">The unit of measure that applies to the measure.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">TNE</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:WeightStatement/cac:Shipment/cac:GoodsItem/cac:MeasurementDimension/cbc:Measure/unitCode</Data>

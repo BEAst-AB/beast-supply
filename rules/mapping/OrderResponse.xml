@@ -302,7 +302,7 @@
                <Data ss:Type="String">BEAst: T6008 and T6038, Transport information or Supplier's remark. Peppol: Clarification of the suppliers decision.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Response message with amendments in the details</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cbc:Note</Data>
@@ -576,7 +576,7 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">o</Data>
+               <Data ss:Type="String">M</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  •  @schemeID</Data>
@@ -810,7 +810,7 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">o</Data>
+               <Data ss:Type="String">M</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  •  @schemeID</Data>
@@ -2044,7 +2044,7 @@
                <Data ss:Type="String">A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">12345678</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode</Data>
@@ -2084,7 +2084,7 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">O</Data>
+               <Data ss:Type="String">M</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  •  •  @listVersionID</Data>
@@ -2096,7 +2096,7 @@
                <Data ss:Type="String">The identification scheme version identifier of the Item classification identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">20.0601</Data>
+               <Data ss:Type="String">19.0501</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listVersionID</Data>
@@ -2110,7 +2110,7 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">O</Data>
+               <Data ss:Type="String">M</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  •  •  •  @name</Data>
@@ -2122,7 +2122,7 @@
                <Data ss:Type="String">The textual equivalent of the code value</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Office furniture</Data>
+               <Data ss:Type="String">Name</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/name</Data>
@@ -2330,7 +2330,7 @@
                <Data ss:Type="String">Code for the item property according to a property code system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Code</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:NameCode</Data>
@@ -2434,7 +2434,7 @@
                <Data ss:Type="String">The unit of measure that applies to the value quantity.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">NAR</Data>
+               <Data ss:Type="String">GRM</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:ValueQuantity/unitCode</Data>
@@ -2460,7 +2460,7 @@
                <Data ss:Type="String">Standardized and predefined classification of items properties.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">gram</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:ValueQualifier</Data>
