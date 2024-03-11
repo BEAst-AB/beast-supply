@@ -298,10 +298,9 @@
          <assert test="cbc:ID" flag="fatal" id="PEPPOL-T120-B02601">Element 'cbc:ID' MUST be provided.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:DespatchSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID">
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T120-B02701">Attribute 'schemeID' MUST be present.</assert>
          <assert test="not(@schemeID) or (some $code in $clICD satisfies $code = @schemeID)"
                  flag="fatal"
-                 id="PEPPOL-T120-B02702">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
+                 id="PEPPOL-T120-B02701">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:DespatchSupplierParty/cac:Party/cac:PartyName">
          <assert test="cbc:Name" flag="fatal" id="PEPPOL-T120-B02901">Element 'cbc:Name' MUST be provided.</assert>
@@ -405,10 +404,9 @@
          <assert test="cbc:ID" flag="fatal" id="PEPPOL-T120-B06101">Element 'cbc:ID' MUST be provided.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:DeliveryCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID">
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T120-B06201">Attribute 'schemeID' MUST be present.</assert>
          <assert test="not(@schemeID) or (some $code in $clICD satisfies $code = @schemeID)"
                  flag="fatal"
-                 id="PEPPOL-T120-B06202">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
+                 id="PEPPOL-T120-B06201">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:DeliveryCustomerParty/cac:Party/cac:PartyName">
          <assert test="cbc:Name" flag="fatal" id="PEPPOL-T120-B06401">Element 'cbc:Name' MUST be provided.</assert>
@@ -503,10 +501,9 @@
          <assert test="cbc:ID" flag="fatal" id="PEPPOL-T120-B09401">Element 'cbc:ID' MUST be provided.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:BuyerCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID">
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T120-B09501">Attribute 'schemeID' MUST be present.</assert>
          <assert test="not(@schemeID) or (some $code in $clICD satisfies $code = @schemeID)"
                  flag="fatal"
-                 id="PEPPOL-T120-B09502">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
+                 id="PEPPOL-T120-B09501">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:BuyerCustomerParty/cac:Party/cac:PartyName">
          <assert test="cbc:Name" flag="fatal" id="PEPPOL-T120-B09701">Element 'cbc:Name' MUST be provided.</assert>
@@ -601,10 +598,9 @@
          <assert test="cbc:ID" flag="fatal" id="PEPPOL-T120-B12701">Element 'cbc:ID' MUST be provided.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:SellerSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID">
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T120-B12801">Attribute 'schemeID' MUST be present.</assert>
          <assert test="not(@schemeID) or (some $code in $clICD satisfies $code = @schemeID)"
                  flag="fatal"
-                 id="PEPPOL-T120-B12802">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
+                 id="PEPPOL-T120-B12801">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:SellerSupplierParty/cac:Party/cac:PartyName">
          <assert test="cbc:Name" flag="fatal" id="PEPPOL-T120-B13001">Element 'cbc:Name' MUST be provided.</assert>
@@ -699,10 +695,9 @@
          <assert test="cbc:ID" flag="fatal" id="PEPPOL-T120-B16001">Element 'cbc:ID' MUST be provided.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:OriginatorCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID">
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T120-B16101">Attribute 'schemeID' MUST be present.</assert>
          <assert test="not(@schemeID) or (some $code in $clICD satisfies $code = @schemeID)"
                  flag="fatal"
-                 id="PEPPOL-T120-B16102">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
+                 id="PEPPOL-T120-B16101">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:OriginatorCustomerParty/cac:Party/cac:PartyName">
          <assert test="cbc:Name" flag="fatal" id="PEPPOL-T120-B16301">Element 'cbc:Name' MUST be provided.</assert>
@@ -781,10 +776,9 @@
          <assert test="cbc:ID" flag="fatal" id="PEPPOL-T120-B19201">Element 'cbc:ID' MUST be provided.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:CarrierParty/cac:PartyIdentification/cbc:ID">
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T120-B19301">Attribute 'schemeID' MUST be present.</assert>
          <assert test="not(@schemeID) or (some $code in $clICD satisfies $code = @schemeID)"
                  flag="fatal"
-                 id="PEPPOL-T120-B19302">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
+                 id="PEPPOL-T120-B19301">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:CarrierParty/cac:PartyName">
          <assert test="cbc:Name" flag="fatal" id="PEPPOL-T120-B19501">Element 'cbc:Name' MUST be provided.</assert>
@@ -885,11 +879,7 @@
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cbc:TransportServiceCode"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment"/>
-      <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment/cbc:TransportEquipmentTypeCode">
-         <assert test="@listID" flag="fatal" id="PEPPOL-T120-B23001">Attribute 'listID' MUST be present.</assert>
-         <assert test="@listAgencyID" flag="fatal" id="PEPPOL-T120-B23002">Attribute 'listAgencyID' MUST be present.</assert>
-         <assert test="@listVersionID" flag="fatal" id="PEPPOL-T120-B23003">Attribute 'listVersionID' MUST be present.</assert>
-      </rule>
+      <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment/cbc:TransportEquipmentTypeCode"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment/cbc:Description"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment/cac:MeasurementDimension">
          <assert test="cbc:AttributeID" flag="fatal" id="PEPPOL-T120-B23501">Element 'cbc:AttributeID' MUST be provided.</assert>
@@ -908,10 +898,9 @@
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment/cac:ProviderParty"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment/cac:ProviderParty/cac:PartyIdentification"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment/cac:ProviderParty/cac:PartyIdentification/cbc:ID">
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T120-B24201">Attribute 'schemeID' MUST be present.</assert>
          <assert test="not(@schemeID) or (some $code in $clICD satisfies $code = @schemeID)"
                  flag="fatal"
-                 id="PEPPOL-T120-B24202">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
+                 id="PEPPOL-T120-B24201">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment/cac:ProviderParty/cac:PartyName"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:TransportEquipment/cac:ProviderParty/cac:PartyName/cbc:Name"/>
@@ -954,10 +943,7 @@
                  id="PEPPOL-T120-B25301">Element 'cbc:EnvironmentalEmissionTypeCode' MUST be provided.</assert>
          <assert test="cbc:ValueMeasure" flag="fatal" id="PEPPOL-T120-B25302">Element 'cbc:ValueMeasure' MUST be provided.</assert>
       </rule>
-      <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:EnvironmentalEmission/cbc:EnvironmentalEmissionTypeCode">
-         <assert test="@listID" flag="fatal" id="PEPPOL-T120-B25401">Attribute 'listID' MUST be present.</assert>
-         <assert test="@name" flag="fatal" id="PEPPOL-T120-B25402">Attribute 'name' MUST be present.</assert>
-      </rule>
+      <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:EnvironmentalEmission/cbc:EnvironmentalEmissionTypeCode"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Consignment/cac:OriginalDespatchTransportationService/cac:EnvironmentalEmission/cbc:ValueMeasure">
          <assert test="@unitCode" flag="fatal" id="PEPPOL-T120-B25701">Attribute 'unitCode' MUST be present.</assert>
          <assert test="not(@unitCode) or (some $code in $clUNECERec20 satisfies $code = @unitCode)"
@@ -1037,10 +1023,9 @@
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Delivery/cbc:TrackingID"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Delivery/cac:DeliveryLocation"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cbc:ID">
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T120-B28101">Attribute 'schemeID' MUST be present.</assert>
          <assert test="not(@schemeID) or (some $code in $clICD satisfies $code = @schemeID)"
                  flag="fatal"
-                 id="PEPPOL-T120-B28102">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
+                 id="PEPPOL-T120-B28101">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cbc:Name"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Delivery/cac:DeliveryLocation/cac:Address"/>
@@ -1114,10 +1099,9 @@
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Delivery/cac:Despatch/cbc:ActualDespatchTime"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress/cbc:ID">
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T120-B31101">Attribute 'schemeID' MUST be present.</assert>
          <assert test="not(@schemeID) or (some $code in $clICD satisfies $code = @schemeID)"
                  flag="fatal"
-                 id="PEPPOL-T120-B31102">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
+                 id="PEPPOL-T120-B31101">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress/cbc:StreetName"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:Delivery/cac:Despatch/cac:DespatchAddress/cbc:AdditionalStreetName"/>
@@ -1298,9 +1282,7 @@
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:GoodsItem/cbc:Quantity">
          <assert test="@unitCode" flag="fatal" id="PEPPOL-T120-B36701">Attribute 'unitCode' MUST be present.</assert>
       </rule>
-      <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:GoodsItem/cbc:TraceID">
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T120-B36901">Attribute 'schemeID' MUST be present.</assert>
-      </rule>
+      <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:GoodsItem/cbc:TraceID"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:GoodsItem/*">
          <assert test="false()" flag="fatal" id="PEPPOL-T120-B36203">Document MUST NOT contain elements not part of the data model.</assert>
       </rule>
@@ -1352,9 +1334,7 @@
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:Package/cac:ContainedPackage/cac:ContainedPackage/cac:GoodsItem/cbc:Quantity">
          <assert test="@unitCode" flag="fatal" id="PEPPOL-T120-B39101">Attribute 'unitCode' MUST be present.</assert>
       </rule>
-      <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:Package/cac:ContainedPackage/cac:ContainedPackage/cac:GoodsItem/cbc:TraceID">
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T120-B39301">Attribute 'schemeID' MUST be present.</assert>
-      </rule>
+      <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:Package/cac:ContainedPackage/cac:ContainedPackage/cac:GoodsItem/cbc:TraceID"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:Package/cac:ContainedPackage/cac:ContainedPackage/cac:GoodsItem/*">
          <assert test="false()" flag="fatal" id="PEPPOL-T120-B38603">Document MUST NOT contain elements not part of the data model.</assert>
       </rule>
@@ -1394,9 +1374,7 @@
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:Package/cac:ContainedPackage/cac:GoodsItem/cbc:Quantity">
          <assert test="@unitCode" flag="fatal" id="PEPPOL-T120-B40401">Attribute 'unitCode' MUST be present.</assert>
       </rule>
-      <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:Package/cac:ContainedPackage/cac:GoodsItem/cbc:TraceID">
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T120-B40601">Attribute 'schemeID' MUST be present.</assert>
-      </rule>
+      <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:Package/cac:ContainedPackage/cac:GoodsItem/cbc:TraceID"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:Package/cac:ContainedPackage/cac:GoodsItem/*">
          <assert test="false()" flag="fatal" id="PEPPOL-T120-B39903">Document MUST NOT contain elements not part of the data model.</assert>
       </rule>
@@ -1436,9 +1414,7 @@
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:Package/cac:GoodsItem/cbc:Quantity">
          <assert test="@unitCode" flag="fatal" id="PEPPOL-T120-B41701">Attribute 'unitCode' MUST be present.</assert>
       </rule>
-      <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:Package/cac:GoodsItem/cbc:TraceID">
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T120-B41901">Attribute 'schemeID' MUST be present.</assert>
-      </rule>
+      <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:Package/cac:GoodsItem/cbc:TraceID"/>
       <rule context="/ubl:DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:Package/cac:GoodsItem/*">
          <assert test="false()" flag="fatal" id="PEPPOL-T120-B41203">Document MUST NOT contain elements not part of the data model.</assert>
       </rule>
@@ -1585,8 +1561,6 @@
          <assert test="not(@listID) or (some $code in $clUNCL7143 satisfies $code = @listID)"
                  flag="fatal"
                  id="PEPPOL-T120-B46202">Value MUST be part of code list 'Item type identification code (UNCL7143)'.</assert>
-         <assert test="@listVersionID" flag="fatal" id="PEPPOL-T120-B46203">Attribute 'listVersionID' MUST be present.</assert>
-         <assert test="@name" flag="fatal" id="PEPPOL-T120-B46204">Attribute 'name' MUST be present.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:CommodityClassification/*">
          <assert test="false()" flag="fatal" id="PEPPOL-T120-B46102">Document MUST NOT contain elements not part of the data model.</assert>
@@ -1643,11 +1617,7 @@
          <assert test="cbc:Name" flag="fatal" id="PEPPOL-T120-B48401">Element 'cbc:Name' MUST be provided.</assert>
          <assert test="cbc:Value" flag="fatal" id="PEPPOL-T120-B48402">Element 'cbc:Value' MUST be provided.</assert>
       </rule>
-      <rule context="/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:AdditionalItemProperty/cbc:ID">
-         <assert test="@schemeDataURI" flag="fatal" id="PEPPOL-T120-B48501">Attribute 'schemeDataURI' MUST be present.</assert>
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T120-B48502">Attribute 'schemeID' MUST be present.</assert>
-         <assert test="@schemeVersionID" flag="fatal" id="PEPPOL-T120-B48503">Attribute 'schemeVersionID' MUST be present.</assert>
-      </rule>
+      <rule context="/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:AdditionalItemProperty/cbc:ID"/>
       <rule context="/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:AdditionalItemProperty/cbc:Name"/>
       <rule context="/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCode">
          <assert test="@listID" flag="fatal" id="PEPPOL-T120-B49001">Attribute 'listID' MUST be present.</assert>
@@ -1668,10 +1638,9 @@
          <assert test="cbc:ID" flag="fatal" id="PEPPOL-T120-B49701">Element 'cbc:ID' MUST be provided.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:ManufacturerParty/cac:PartyIdentification/cbc:ID">
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T120-B49801">Attribute 'schemeID' MUST be present.</assert>
          <assert test="not(@schemeID) or (some $code in $clICD satisfies $code = @schemeID)"
                  flag="fatal"
-                 id="PEPPOL-T120-B49802">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
+                 id="PEPPOL-T120-B49801">Value MUST be part of code list 'ISO 6523 ICD list'.</assert>
       </rule>
       <rule context="/ubl:DespatchAdvice/cac:DespatchLine/cac:Item/cac:ManufacturerParty/cac:PartyName">
          <assert test="cbc:Name" flag="fatal" id="PEPPOL-T120-B50001">Element 'cbc:Name' MUST be provided.</assert>
