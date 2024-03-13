@@ -1082,7 +1082,7 @@
                   <Description>Coded identification of a TAX category.</Description>
                   <DataType>Code</DataType>
                   <Reference type="BUSINESS_TERM">OP-110-005</Reference>
-                  <Value type="EXAMPLE">S</Value>
+                  <Value type="EXAMPLE">AE</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Percent</Term>
@@ -1098,7 +1098,7 @@
                   <Description>A textual statement of the reason for why the base amount is exempted from TAX.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">OP-110-007</Reference>
-                  <Value type="EXAMPLE">Text</Value>
+                  <Value type="EXAMPLE">VAT Reverse Charge</Value>
                </Element>
                <Element>
                   <Term>cac:TaxScheme</Term>
