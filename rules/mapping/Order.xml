@@ -5660,7 +5660,7 @@
                <Data ss:Type="String">The total TAX amount that is "added to the document total w/o TAX". This is the sum of all TAX subcategory amounts. The expected Tax Total in the corresponding invoice.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">425.00</Data>
+               <Data ss:Type="String">450.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:TaxTotal/cbc:TaxAmount</Data>
@@ -5790,7 +5790,7 @@
                <Data ss:Type="String">The "Sum of line amounts" plus "sum of allowances on document level" plus "sum of charges on document level". Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1700.00</Data>
+               <Data ss:Type="String">1800.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:TaxExclusiveAmount</Data>
@@ -5842,7 +5842,7 @@
                <Data ss:Type="String">The total value including TAX. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2125.00</Data>
+               <Data ss:Type="String">2250.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:TaxInclusiveAmount</Data>
@@ -5894,7 +5894,7 @@
                <Data ss:Type="String">Sum of all allowances on header level in the document. Allowances on line level are included in the line amount and summed up into the "sum of line amounts". Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">300.00</Data>
+               <Data ss:Type="String">200.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:AllowanceTotalAmount</Data>
@@ -7038,7 +7038,7 @@
                <Data ss:Type="String">BEAst: Price Amount (T6235) and the Currency code (T6018). Peppol: The net price of the item including all allowances, charges and taxes but exluding TAX. Although price is an optional element in an order it recommended as best practice to either state the price or provide reference to an appropriate source from which the price can be identified such as a contract, catalogue or a quote.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">220.00</Data>
+               <Data ss:Type="String">230.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cbc:PriceAmount</Data>
