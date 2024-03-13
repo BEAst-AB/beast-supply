@@ -1128,7 +1128,7 @@
             <Reference type="RULE">PEPPOL-T110-R004</Reference>
             <Reference type="RULE">PEPPOL-T110-R006</Reference>
             <Reference type="RULE">PEPPOL-T110-R007</Reference>
-            <Value type="EXAMPLE">32.5</Value>
+            <Value type="EXAMPLE">22.5</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1677,7 +1677,7 @@
  Peppol: The TAX category code for the item.</Description>
                      <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir110-106</Reference>
-                     <Value type="EXAMPLE">S</Value>
+                     <Value type="EXAMPLE">AE</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:Percent</Term>
