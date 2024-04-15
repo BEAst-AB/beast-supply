@@ -85,7 +85,7 @@
          <DataType>Code</DataType>
          <Reference type="BUSINESS_TERM">tir01-007</Reference>
          <Reference type="CODE_LIST">ISO4217</Reference>
-         <Value type="EXAMPLE">EUR</Value>
+         <Value type="EXAMPLE">SEK</Value>
       </Element>
       <Element cardinality="0..1">
          <Term>cbc:CustomerReference</Term>
@@ -243,7 +243,7 @@
          <Element>
             <Term>cbc:ID</Term>
             <Name>Reference identifier</Name>
-            <Description>BEAst: Reference to Agreement or Contract (T0007).
+            <Description>BEAst: Reference to Agreement or Contract (T0088).
  Peppol: Positive identification of the reference such as a unique identifier.</Description>
             <DataType>Document reference</DataType>
             <Reference type="BUSINESS_TERM">tir01-019</Reference>
@@ -284,7 +284,7 @@
                   <Name>Scheme identifier</Name>
                   <Description>Scheme identifier for the electronic address</Description>
                   <Reference type="CODE_LIST">eas</Reference>
-                  <Value type="EXAMPLE">0007</Value>
+                  <Value type="EXAMPLE">0088</Value>
                </Attribute>
             </Element>
             <Element cardinality="0..1">
@@ -303,7 +303,7 @@
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0007</Value>
+                     <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
             </Element>
@@ -450,7 +450,7 @@
                      <Description>The identification scheme identifier of the buyer legal
 								registration identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0007</Value>
+                     <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
                <Element cardinality="0..1">
@@ -535,7 +535,7 @@
                   <Name>Scheme identifier</Name>
                   <Description>Scheme identifier for the electronic address</Description>
                   <Reference type="CODE_LIST">eas</Reference>
-                  <Value type="EXAMPLE">0007</Value>
+                  <Value type="EXAMPLE">0088</Value>
                </Attribute>
             </Element>
             <Element cardinality="0..1">
@@ -555,7 +555,7 @@
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0007</Value>
+                     <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
             </Element>
@@ -677,7 +677,7 @@
                      <Description>The identification scheme identifier of the buyer legal
 								registration identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0007</Value>
+                     <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
                <Element cardinality="0..1">
@@ -769,7 +769,7 @@
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0007</Value>
+                     <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
             </Element>
@@ -839,7 +839,7 @@
                   <Name>Scheme identifier</Name>
                   <Description>Scheme identifier for the electronic address</Description>
                   <Reference type="CODE_LIST">eas</Reference>
-                  <Value type="EXAMPLE">0007</Value>
+                  <Value type="EXAMPLE">0088</Value>
                </Attribute>
             </Element>
             <Element cardinality="0..1">
@@ -859,7 +859,7 @@
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0007</Value>
+                     <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
             </Element>
@@ -1008,7 +1008,7 @@
                      <Description>The identification scheme identifier of the buyer legal
 								registration identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0007</Value>
+                     <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
                <Element cardinality="0..1">
@@ -1092,7 +1092,7 @@
                   <Description>The identification scheme identifier of the Deliver to location
 							identifier.</Description>
                   <Reference type="CODE_LIST">ICD</Reference>
-                  <Value type="EXAMPLE">0007</Value>
+                  <Value type="EXAMPLE">0088</Value>
                </Attribute>
             </Element>
             <Element cardinality="0..1">
@@ -1242,7 +1242,7 @@
                      <Description>The identification scheme identifier of the deliverparty
 								identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0007</Value>
+                     <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
             </Element>
@@ -1842,7 +1842,7 @@
                      <Name>Deliver to location identifier identification scheme identifier</Name>
                      <Description>The identification scheme identifier of the Deliver to location identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0007</Value>
+                     <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
                <Element>
@@ -1907,7 +1907,7 @@
                         <Description>Scheme identifier for party
 									identification</Description>
                         <Reference type="CODE_LIST">ICD</Reference>
-                        <Value type="EXAMPLE">0007</Value>
+                        <Value type="EXAMPLE">0088</Value>
                      </Attribute>
                   </Element>
                </Element>
