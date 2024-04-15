@@ -1056,7 +1056,7 @@
                <Data ss:Type="String">The subdivision of a country such as region, county, state, province etc.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Region</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:SellerSupplierParty/cac:Party/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -1628,7 +1628,7 @@
                <Data ss:Type="String">BEAst: Department (T5002). Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Department B</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty/cac:Party/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -1706,7 +1706,7 @@
                <Data ss:Type="String">The subdivision of a country such as region, county, state, province etc.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Region</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:BuyerCustomerParty/cac:Party/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -2850,7 +2850,7 @@
                <Data ss:Type="String">The subdivision of a country such as region, county, state, province etc.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">code</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:Delivery/cac:DeliveryParty/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -3162,7 +3162,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Additional address</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:DeliveryTerms/cac:DeliveryLocation/cac:Address/cbc:AdditionalStreetName</Data>
@@ -3240,7 +3240,7 @@
                <Data ss:Type="String">The subdivision of a country such as region, county, state, province etc.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Address</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:DeliveryTerms/cac:DeliveryLocation/cac:Address/cbc:CountrySubentity</Data>
@@ -5086,7 +5086,7 @@
                <Data ss:Type="String">BEAst: Price Code (T6025). Peppol: The type of the item price. The type may be given by using codes from UN/CEFACT code list 5387.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">AAA</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Price/cbc:PriceType</Data>
@@ -6152,7 +6152,7 @@
                <Data ss:Type="String">BEAst: Property ID (T6444). listID is Property ID Type (T6443). Peppol: Code for the item property according to a property code system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">test</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:NameCode</Data>
@@ -6178,7 +6178,7 @@
                <Data ss:Type="String">An identifier for the code list used for the Name code, this is bilaterally agreed</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">NN</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:NameCode/listID</Data>
@@ -6230,7 +6230,7 @@
                <Data ss:Type="String">BEAst: Property Compare Code (T6457). unitCode is Measure Unit NeB Type (T6706). Peppol: The unit of measure in which the property value is stated, if relevant. May not be relevant when properties are descriptive.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">30</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:ValueQuantity</Data>
@@ -6256,7 +6256,7 @@
                <Data ss:Type="String">The unit of measure that applies to the value quantity.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">MMT</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:ValueQuantity/unitCode</Data>
@@ -6282,7 +6282,7 @@
                <Data ss:Type="String">BEAst: Property Value ID (T6450). Peppol: Standardized and predefined classification of items properties.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Z3</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:ValueQualifier</Data>

@@ -281,6 +281,7 @@
                   <Description>The subdivision of a country such as region, county, state, province etc.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir110-061</Reference>
+                  <Value type="EXAMPLE">Region</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
@@ -439,6 +440,7 @@
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir110-052</Reference>
+                  <Value type="EXAMPLE">Department B</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
@@ -464,6 +466,7 @@
                   <Description>The subdivision of a country such as region, county, state, province etc.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir110-055</Reference>
+                  <Value type="EXAMPLE">Region</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
@@ -773,6 +776,7 @@
                   <Name>Country subdivision</Name>
                   <Description>The subdivision of a country such as region, county, state, province etc.</Description>
                   <DataType>Text</DataType>
+                  <Value type="EXAMPLE">code</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
@@ -858,6 +862,7 @@
                   <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir110-073</Reference>
+                  <Value type="EXAMPLE">Additional address</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
@@ -883,6 +888,7 @@
                   <Description>The subdivision of a country such as region, county, state, province etc.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir110-076</Reference>
+                  <Value type="EXAMPLE">Address</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AddressLine</Term>
@@ -1424,6 +1430,7 @@
  Peppol: The type of the item price. The type may be given by using codes from UN/CEFACT code list 5387.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">OP-110-017</Reference>
+                  <Value type="EXAMPLE">AAA</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cac:AllowanceCharge</Term>
@@ -1722,10 +1729,12 @@
  Peppol: Code for the item property according to a property code system.</Description>
                      <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir110-101</Reference>
+                     <Value type="EXAMPLE">test</Value>
                      <Attribute>
                         <Term>listID</Term>
                         <Name>Name code list id.</Name>
                         <Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
+                        <Value type="EXAMPLE">NN</Value>
                      </Attribute>
                   </Element>
                   <Element>
@@ -1744,12 +1753,14 @@
  Peppol: The unit of measure in which the property value is stated, if relevant. May not be relevant when properties are descriptive.</Description>
                      <DataType>Quantity</DataType>
                      <Reference type="BUSINESS_TERM">tir110-100</Reference>
+                     <Value type="EXAMPLE">30</Value>
                      <Attribute>
                         <Term>unitCode</Term>
                         <Name>Value quantity unit of measure</Name>
                         <Description>The unit of measure that applies to the value quantity.</Description>
                         <DataType>Code</DataType>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
+                        <Value type="EXAMPLE">MMT</Value>
                      </Attribute>
                   </Element>
                   <Element cardinality="0..1">
@@ -1759,6 +1770,7 @@
  Peppol: Standardized and predefined classification of items properties.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir110-p004</Reference>
+                     <Value type="EXAMPLE">Z3</Value>
                   </Element>
                </Element>
                <Element cardinality="0..n">

@@ -3526,7 +3526,13 @@
                <Data ss:Type="String">The standard unit of measure used to enable comparison of item price to other items.See guideline on Items and packing units in a catalogue.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">
+						unitCode
+						Standard unit of measure
+						The standard unit of measure used to enable comparison of item price to other items.See guideline on Items and packing units in a catalogue.
+						tir19-085
+						UNECERec20
+					</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:ItemComparison/cbc:Quantity/unitCode</Data>
@@ -5892,7 +5898,12 @@
                <Data ss:Type="String">An identifier for the code list used for the Name code, this is bilaterally agreed</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">
+							listID
+							Name code list id.
+							An identifier for the code list used for the Name code, this is bilaterally agreed
+
+						</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCode/listID</Data>

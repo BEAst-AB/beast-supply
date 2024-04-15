@@ -78,6 +78,7 @@
  Peppol: Clarification of the suppliers decision.</Description>
          <DataType>Text</DataType>
          <Reference type="BUSINESS_TERM">tir76-006</Reference>
+         <Value type="EXAMPLE">Response message with amendments in the details</Value>
       </Element>
       <Element>
          <Term>cbc:DocumentCurrencyCode</Term>
@@ -563,6 +564,7 @@
                      <Description>A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
                      <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir76-149</Reference>
+                     <Value type="EXAMPLE">12345678</Value>
                      <Attribute>
                         <Term>listID</Term>
                         <Name>Item classification identifier identification scheme identifier</Name>
@@ -635,10 +637,12 @@
                      <Description>Code for the item property according to a property code system.</Description>
                      <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir76-p004</Reference>
+                     <Value type="EXAMPLE">Code</Value>
                      <Attribute>
                         <Term>listID</Term>
                         <Name>Name code list id.</Name>
                         <Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
+                        <Value type="EXAMPLE">123</Value>
                      </Attribute>
                   </Element>
                   <Element>
@@ -671,6 +675,7 @@
                      <Description>Standardized and predefined classification of items properties.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir76-p009</Reference>
+                     <Value type="EXAMPLE">gram</Value>
                   </Element>
                </Element>
             </Element>
