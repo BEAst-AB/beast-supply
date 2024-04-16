@@ -1978,7 +1978,7 @@
             <Reference type="BUSINESS_TERM">BT-129</Reference>
             <Reference type="RULE">BR-22</Reference>
             <Reference type="RULE">BR-CL-23</Reference>
-            <Value type="EXAMPLE">100</Value>
+            <Value type="EXAMPLE">2.00</Value>
             <Attribute>
                <Term>unitCode</Term>
                <Name>Invoiced quantity unit of measure</Name>
@@ -2064,7 +2064,7 @@
  Peppol: An identifier for a referenced line within a purchase order, issued by the Buyer.</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-132</Reference>
-               <Value type="EXAMPLE">3</Value>
+               <Value type="EXAMPLE">1</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
@@ -2076,10 +2076,11 @@
             <Element>
                <Term>cbc:ID</Term>
                <Name>Invoice line object identifier</Name>
-               <Description>Weight Statement Number (T6329) @schemeID="WM"; Freight Forwarder Referens Number (T6127) @schemeID="AHY"; Despatch Advice Number (T6386) @schemeID="AAK";Line Number (e.g. despatch advice line number) @schemeID="LI"; Serial number schemeID="SE"; Sales order id schemeID="VN"</Description>
+               <Description>BEAst: Weight Statement Number (T6329) @schemeID="WM"; Freight Forwarder Referens Number (T6127) @schemeID="AHY"; Despatch Advice Number (T6386) @schemeID="AAK";Line Number (e.g. despatch advice line number) @schemeID="LI"; Serial number schemeID="SE"; Sales order id schemeID="VN"
+ Peppol: An identifier for an object on which the invoice line is based, given by the Seller.</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-128</Reference>
-               <Value type="EXAMPLE">AB12345</Value>
+               <Value type="EXAMPLE">1571078</Value>
                <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Name>Invoice line object identifier identification scheme identifier</Name>
@@ -2185,14 +2186,14 @@
                <Reference type="RULE">BR-DEC-28</Reference>
                <Reference type="RULE">UBL-DT-01</Reference>
                <Reference type="RULE">BR-CL-03</Reference>
-               <Value type="EXAMPLE">1000</Value>
+               <Value type="EXAMPLE">200</Value>
                <Attribute>
                   <Term>currencyID</Term>
                   <Description>Mandatory attribute. Use BT-5</Description>
                   <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                   <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                   <Reference type="CODE_LIST">ISO4217</Reference>
-                  <Value type="EXAMPLE">EUR</Value>
+                  <Value type="EXAMPLE">SEK</Value>
                </Attribute>
             </Element>
          </Element>
@@ -2378,7 +2379,7 @@
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-161</Reference>
                   <Reference type="RULE">BR-54</Reference>
-                  <Value type="EXAMPLE">Black</Value>
+                  <Value type="EXAMPLE">100</Value>
                </Element>
             </Element>
          </Element>
@@ -2443,7 +2444,7 @@
                   <Description>The total discount subtracted from the Item gross price to calculate the Item net price.</Description>
                   <DataType>Amount</DataType>
                   <Reference type="BUSINESS_TERM">BT-147</Reference>
-                  <Value type="EXAMPLE">100</Value>
+                  <Value type="EXAMPLE">23.45</Value>
                   <Attribute>
                      <Term>currencyID</Term>
                      <Description>Mandatory attribute. Use BT-5</Description>
@@ -2451,7 +2452,7 @@
                      <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                      <Reference type="RULE">BR-CL-03</Reference>
                      <Reference type="CODE_LIST">ISO4217</Reference>
-                     <Value type="EXAMPLE">EUR</Value>
+                     <Value type="EXAMPLE">SEK</Value>
                   </Attribute>
                </Element>
                <Element cardinality="0..1">
@@ -2469,7 +2470,7 @@
                      <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                      <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                      <Reference type="CODE_LIST">ISO4217</Reference>
-                     <Value type="EXAMPLE">EUR</Value>
+                     <Value type="EXAMPLE">SEK</Value>
                   </Attribute>
                </Element>
             </Element>

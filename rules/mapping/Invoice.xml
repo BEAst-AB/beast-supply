@@ -5814,7 +5814,7 @@
                <Data ss:Type="String">BEAst: DeliveredQuantity (T6706) For rental invoices this is [number of days to invoice] x [quantity of the articles rented]. Peppol: The quantity of items (goods or services) that is charged in the Invoice line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">100</Data>
+               <Data ss:Type="String">2.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cbc:InvoicedQuantity</Data>
@@ -6048,7 +6048,7 @@
                <Data ss:Type="String">BEAst: T3322 ReferenceToOrderLine. Purchase order line referens. Peppol: An identifier for a referenced line within a purchase order, issued by the Buyer.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">3</Data>
+               <Data ss:Type="String">1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:OrderLineReference/cbc:LineID</Data>
@@ -6097,10 +6097,10 @@
                <Data ss:Type="String">Invoice line object identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Weight Statement Number (T6329) @schemeID="WM"; Freight Forwarder Referens Number (T6127) @schemeID="AHY"; Despatch Advice Number (T6386) @schemeID="AAK";Line Number (e.g. despatch advice line number) @schemeID="LI"; Serial number schemeID="SE"; Sales order id schemeID="VN"</Data>
+               <Data ss:Type="String">BEAst: Weight Statement Number (T6329) @schemeID="WM"; Freight Forwarder Referens Number (T6127) @schemeID="AHY"; Despatch Advice Number (T6386) @schemeID="AAK";Line Number (e.g. despatch advice line number) @schemeID="LI"; Serial number schemeID="SE"; Sales order id schemeID="VN" Peppol: An identifier for an object on which the invoice line is based, given by the Seller.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">AB12345</Data>
+               <Data ss:Type="String">1571078</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:DocumentReference/cbc:ID</Data>
@@ -6360,7 +6360,7 @@
                <Data ss:Type="String">The base amount that may be used, in conjunction with the line level allowance or charge percentage, to calculate the line level allowance or charge amount. Must be rounded to maximum 2 decimals</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1000</Data>
+               <Data ss:Type="String">200</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:AllowanceCharge/cbc:BaseAmount</Data>
@@ -6386,7 +6386,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:AllowanceCharge/cbc:BaseAmount/currencyID</Data>
@@ -7010,7 +7010,7 @@
                <Data ss:Type="String">The value of the attribute or property of the item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Black</Data>
+               <Data ss:Type="String">100</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value</Data>
@@ -7218,7 +7218,7 @@
                <Data ss:Type="String">The total discount subtracted from the Item gross price to calculate the Item net price.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">100</Data>
+               <Data ss:Type="String">23.45</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Price/cac:AllowanceCharge/cbc:Amount</Data>
@@ -7244,7 +7244,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Price/cac:AllowanceCharge/cbc:Amount/currencyID</Data>
@@ -7296,7 +7296,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Price/cac:AllowanceCharge/cbc:BaseAmount/currencyID</Data>

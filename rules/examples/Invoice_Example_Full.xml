@@ -262,7 +262,7 @@
    <cac:InvoiceLine xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
       <cbc:ID>1</cbc:ID>
       <cbc:Note>Note from supplier</cbc:Note>
-      <cbc:InvoicedQuantity unitCode="H87">100</cbc:InvoicedQuantity>
+      <cbc:InvoicedQuantity unitCode="H87">2.00</cbc:InvoicedQuantity>
       <cbc:LineExtensionAmount currencyID="SEK">180.00</cbc:LineExtensionAmount>
       <cbc:AccountingCost>4415</cbc:AccountingCost>
       <cac:InvoicePeriod>
@@ -270,10 +270,10 @@
          <cbc:EndDate>2020-10-31</cbc:EndDate>
       </cac:InvoicePeriod>
       <cac:OrderLineReference>
-         <cbc:LineID>3</cbc:LineID>
+         <cbc:LineID>1</cbc:LineID>
       </cac:OrderLineReference>
       <cac:DocumentReference>
-         <cbc:ID schemeID="SE">AB12345</cbc:ID>
+         <cbc:ID schemeID="SE">1571078</cbc:ID>
          <cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
       </cac:DocumentReference>
       <cac:AllowanceCharge>
@@ -282,7 +282,7 @@
          <cbc:AllowanceChargeReason>Prisrabatt enligt avtal</cbc:AllowanceChargeReason>
          <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
          <cbc:Amount currencyID="SEK">20.00</cbc:Amount>
-         <cbc:BaseAmount currencyID="EUR">1000</cbc:BaseAmount>
+         <cbc:BaseAmount currencyID="SEK">200</cbc:BaseAmount>
       </cac:AllowanceCharge>
       <cac:Item>
          <cbc:Description>Superbra ventilationsslang i finfin plåt</cbc:Description>
@@ -311,7 +311,7 @@
          </cac:ClassifiedTaxCategory>
          <cac:AdditionalItemProperty>
             <cbc:Name>Color</cbc:Name>
-            <cbc:Value>Black</cbc:Value>
+            <cbc:Value>100</cbc:Value>
          </cac:AdditionalItemProperty>
       </cac:Item>
       <cac:Price>
@@ -319,8 +319,8 @@
          <cbc:BaseQuantity unitCode="EA">1</cbc:BaseQuantity>
          <cac:AllowanceCharge>
             <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-            <cbc:Amount currencyID="EUR">100</cbc:Amount>
-            <cbc:BaseAmount currencyID="EUR">123.45</cbc:BaseAmount>
+            <cbc:Amount currencyID="SEK">23.45</cbc:Amount>
+            <cbc:BaseAmount currencyID="SEK">123.45</cbc:BaseAmount>
          </cac:AllowanceCharge>
       </cac:Price>
    </cac:InvoiceLine>
