@@ -7,13 +7,13 @@
     <?DocumentTerm Invoice?>
     <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
-	
-    <cbc:ID/>
-	<cbc:IssueDate></cbc:IssueDate>
-	<cbc:DueDate></cbc:DueDate>
+
+	<cbc:ID>98670AE</cbc:ID>
+	<cbc:IssueDate>2024-04-17</cbc:IssueDate>
+	<cbc:DueDate>2024-05-17</cbc:DueDate>
 	<cbc:InvoiceTypeCode></cbc:InvoiceTypeCode>
-    <cbc:Note>FAKTURASAMMANSTÄLLNING    Kostnadsslag 43790     Summa 409.20</cbc:Note>
-    <cbc:TaxPointDate/>
+    <cbc:Note>FAKTURASAMMANSTÄLLNING   Kostnadsslag 43790     Summa 409.20</cbc:Note>
+	<cbc:TaxPointDate>2024-05-17</cbc:TaxPointDate>
     <cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
     <cbc:TaxCurrencyCode>SEK</cbc:TaxCurrencyCode>
     <cbc:AccountingCost>
@@ -23,9 +23,9 @@
 	
 	<cac:InvoicePeriod>
 		<?DescriptionAddFirst Also used to describe invoice period for rental items. Can also be used on line level if needed.?>
-		<cbc:StartDate/>
-		<cbc:EndDate/>
-		<cbc:DescriptionCode></cbc:DescriptionCode>
+		<cbc:StartDate>2024-03-01</cbc:StartDate>
+		<cbc:EndDate>2024-03-31</cbc:EndDate>
+		<cbc:DescriptionCode>35</cbc:DescriptionCode>
 	</cac:InvoicePeriod>
 	
 	<cac:OrderReference>
@@ -36,7 +36,7 @@
 	<cac:BillingReference>
 		<cac:InvoiceDocumentReference>
 			<cbc:ID>9742024</cbc:ID>
-			<cbc:IssueDate></cbc:IssueDate>
+			<cbc:IssueDate>2024-04-17</cbc:IssueDate>
 		</cac:InvoiceDocumentReference>
 	</cac:BillingReference>
 	
@@ -59,7 +59,7 @@
     <cac:AdditionalDocumentReference>
         <cbc:ID schemeID="AAG">60231136</cbc:ID>
 		<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
-		<cbc:DocumentDescrition></cbc:DocumentDescrition>
+		<cbc:DocumentDescription></cbc:DocumentDescription>
 		<cac:Attachment>
 			<cbc:EmbeddedDocumentBinaryObject mimeCode="text/csv" filename="fakturareferens.csv">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
 			<cac:ExternalReference>
@@ -203,7 +203,7 @@
 	</cac:TaxRepresentativeParty>
 	
     <cac:Delivery>
-	    <cbc:ActualDeliveryDate></cbc:ActualDeliveryDate>
+	    <cbc:ActualDeliveryDate>2024-03-31</cbc:ActualDeliveryDate>
 		
         <cac:DeliveryLocation>
             <cbc:ID schemeID="0088">7300009058334</cbc:ID>
