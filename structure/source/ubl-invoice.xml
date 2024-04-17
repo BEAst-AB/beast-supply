@@ -15,7 +15,7 @@
     <cbc:Note>FAKTURASAMMANSTÄLLNING   Kostnadsslag 43790     Summa 409.20</cbc:Note>
 	<cbc:TaxPointDate>2024-05-17</cbc:TaxPointDate>
     <cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
-    <cbc:TaxCurrencyCode>SEK</cbc:TaxCurrencyCode>
+    <cbc:TaxCurrencyCode>NOK</cbc:TaxCurrencyCode>
     <cbc:AccountingCost>
 		<?DescriptionAddFirst Can be used for natural account or code string?>
 	</cbc:AccountingCost>
@@ -58,7 +58,7 @@
 	
     <cac:AdditionalDocumentReference>
         <cbc:ID schemeID="AAG">60231136</cbc:ID>
-		<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+		<cbc:DocumentTypeCode>NA</cbc:DocumentTypeCode>
 		<cbc:DocumentDescription></cbc:DocumentDescription>
 		<cac:Attachment>
 			<cbc:EmbeddedDocumentBinaryObject mimeCode="text/csv" filename="fakturareferens.csv">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
@@ -163,13 +163,13 @@
 	
     <cac:PayeeParty>
 	    <cac:PartyIdentification>
-		    <cbc:ID schemeID="0088">7365561043532</cbc:ID>
+		    <cbc:ID schemeID="0088">7365561043543</cbc:ID>
 	    </cac:PartyIdentification>
 	    <cac:PartyName>
 		    <cbc:Name>Payment recipient</cbc:Name>
 	    </cac:PartyName>
 	    <cac:PartyLegalEntity>
-		    <cbc:CompanyID schemeID="0007">XXXXXXXXXXX</cbc:CompanyID>
+		    <cbc:CompanyID schemeID="0007">5560608837</cbc:CompanyID>
 	    </cac:PartyLegalEntity>
     </cac:PayeeParty>
 	
@@ -234,7 +234,7 @@
     </cac:Delivery>
 
     <cac:PaymentMeans>
-        <cbc:PaymentMeansCode name="Credit transfer">31</cbc:PaymentMeansCode>
+        <cbc:PaymentMeansCode name="Credit transfer">30</cbc:PaymentMeansCode>
         <cbc:PaymentID>7697699</cbc:PaymentID>
 	    <cac:CardAccount>
 		    <cbc:PrimaryAccountNumberID>1234</cbc:PrimaryAccountNumberID>
@@ -264,12 +264,12 @@
         <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 	    <cbc:AllowanceChargeReasonCode>CAP</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Försäkring</cbc:AllowanceChargeReason>
-	    <cbc:MultiplierFactorNumeric>3</cbc:MultiplierFactorNumeric>
-        <cbc:Amount currencyID="SEK">5</cbc:Amount>
-	    <cbc:BaseAmount currencyID="SEK">10</cbc:BaseAmount>
+	    <cbc:MultiplierFactorNumeric>5</cbc:MultiplierFactorNumeric>
+        <cbc:Amount currencyID="SEK">20</cbc:Amount>
+	    <cbc:BaseAmount currencyID="SEK">400</cbc:BaseAmount>
         <cac:TaxCategory>
-            <cbc:ID>E</cbc:ID>
-            <cbc:Percent>0.00</cbc:Percent>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>25.00</cbc:Percent>
             <cac:TaxScheme>
                 <cbc:ID>VAT</cbc:ID>
             </cac:TaxScheme>
@@ -284,7 +284,7 @@
             <cac:TaxCategory>
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25.00</cbc:Percent>
-		        <cbc:TaxExemptionReasonCode></cbc:TaxExemptionReasonCode>
+		        <cbc:TaxExemptionReasonCode>A0</cbc:TaxExemptionReasonCode>
 		        <cbc:TaxExemptionReason>Momslagen ej tillämplig</cbc:TaxExemptionReason>
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
@@ -295,19 +295,19 @@
 	
     <cac:LegalMonetaryTotal>
         <cbc:LineExtensionAmount currencyID="SEK">180.00</cbc:LineExtensionAmount>
-        <cbc:TaxExclusiveAmount currencyID="SEK">180.00</cbc:TaxExclusiveAmount>
-        <cbc:TaxInclusiveAmount currencyID="SEK">225.00</cbc:TaxInclusiveAmount>
-	    <cbc:AllowanceTotalAmount currencyID="SEK">20.00</cbc:AllowanceTotalAmount>
-        <cbc:ChargeTotalAmount currencyID="SEK">5</cbc:ChargeTotalAmount>
+        <cbc:TaxExclusiveAmount currencyID="SEK">200.00</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="SEK">250.00</cbc:TaxInclusiveAmount>
+	    <cbc:AllowanceTotalAmount currencyID="SEK">0.00</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="SEK">20.00</cbc:ChargeTotalAmount>
 	    <cbc:PrepaidAmount currencyID="SEK">50.00</cbc:PrepaidAmount>
         <cbc:PayableRoundingAmount currencyID="SEK">0.00</cbc:PayableRoundingAmount>
-        <cbc:PayableAmount currencyID="SEK">180.00</cbc:PayableAmount>
+        <cbc:PayableAmount currencyID="SEK">200.00</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
 
     <cac:InvoiceLine>
         <cbc:ID>1</cbc:ID>
         <cbc:Note>Note from supplier</cbc:Note>
-        <cbc:InvoicedQuantity unitCode="H87">2.00
+        <cbc:InvoicedQuantity unitCode="EA">2.00
             <?Name Invoice Quantity?>
             <?DescriptionAddFirst DeliveredQuantity (T6706) For rental invoices this is [number of days to invoice] x [quantity of the articles rented].?>
         </cbc:InvoicedQuantity>
@@ -319,8 +319,8 @@
         <cac:InvoicePeriod>
             <?Name Invoice Line Period?>
 		    <?DescriptionAddFirst Also used to describe invoice period for rental items. Can also be used on header level.?>
-		    <cbc:StartDate>2020-10-01</cbc:StartDate>
-            <cbc:EndDate>2020-10-31</cbc:EndDate>
+		    <cbc:StartDate>2024-03-01</cbc:StartDate>
+            <cbc:EndDate>2024-03-31</cbc:EndDate>
         </cac:InvoicePeriod>
 		
 	    <cac:OrderLineReference>
