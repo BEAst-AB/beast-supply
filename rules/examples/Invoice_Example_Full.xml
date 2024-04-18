@@ -43,7 +43,7 @@
    </cac:ContractDocumentReference>
    <cac:AdditionalDocumentReference>
       <cbc:ID schemeID="AAG">60231136</cbc:ID>
-      <cbc:DocumentTypeCode>NA</cbc:DocumentTypeCode>
+      <cbc:DocumentTypeCode>50</cbc:DocumentTypeCode>
       <cbc:DocumentDescription>Time list</cbc:DocumentDescription>
       <cac:Attachment>
          <cbc:EmbeddedDocumentBinaryObject mimeCode="text/csv" filename="fakturareferens.csv">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
@@ -234,10 +234,10 @@
       </cac:TaxCategory>
    </cac:AllowanceCharge>
    <cac:TaxTotal>
-      <cbc:TaxAmount currencyID="SEK">50.00</cbc:TaxAmount>
+      <cbc:TaxAmount currencyID="NOK">50.00</cbc:TaxAmount>
       <cac:TaxSubtotal>
          <cbc:TaxableAmount currencyID="SEK">200.00</cbc:TaxableAmount>
-         <cbc:TaxAmount currencyID="SEK">50.00</cbc:TaxAmount>
+         <cbc:TaxAmount currencyID="NOK">50.00</cbc:TaxAmount>
          <cac:TaxCategory>
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>25.00</cbc:Percent>
