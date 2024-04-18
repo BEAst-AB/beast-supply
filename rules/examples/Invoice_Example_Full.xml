@@ -234,14 +234,14 @@
       </cac:TaxCategory>
    </cac:AllowanceCharge>
    <cac:TaxTotal>
-      <cbc:TaxAmount currencyID="SEK">45.00</cbc:TaxAmount>
+      <cbc:TaxAmount currencyID="SEK">50.00</cbc:TaxAmount>
       <cac:TaxSubtotal>
-         <cbc:TaxableAmount currencyID="SEK">180.00</cbc:TaxableAmount>
-         <cbc:TaxAmount currencyID="SEK">45.00</cbc:TaxAmount>
+         <cbc:TaxableAmount currencyID="SEK">200.00</cbc:TaxableAmount>
+         <cbc:TaxAmount currencyID="SEK">50.00</cbc:TaxAmount>
          <cac:TaxCategory>
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>25.00</cbc:Percent>
-            <cbc:TaxExemptionReasonCode>A0</cbc:TaxExemptionReasonCode>
+            <cbc:TaxExemptionReasonCode>VATEX-EU-79-C</cbc:TaxExemptionReasonCode>
             <cbc:TaxExemptionReason>Momslagen ej tillämplig</cbc:TaxExemptionReason>
             <cac:TaxScheme>
                <cbc:ID>VAT</cbc:ID>
