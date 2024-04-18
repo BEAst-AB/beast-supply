@@ -110,7 +110,7 @@
          <Reference type="RULE">PEPPOL-EN16931-R005</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R055</Reference>
          <Reference type="CODE_LIST">ISO4217</Reference>
-         <Value type="EXAMPLE">NOK</Value>
+         <Value type="EXAMPLE">SEK</Value>
       </Element>
       <Element cardinality="0..1">
          <Term>cbc:AccountingCost</Term>
@@ -979,7 +979,7 @@
                <Description>This element is used for both the identification of the Payee, or the unique banking reference identifier of Payee (assigned by the Payee bank.) For payee identification use ICD code list, for SEPA bank assigned creditor reference, use SEPA.</Description>
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-60, BT-90</Reference>
-               <Value type="EXAMPLE">7365561043543</Value>
+               <Value type="EXAMPLE">7350053850019</Value>
                <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Name>Payee or bank assigned creditor identifier identification scheme identifier</Name>
