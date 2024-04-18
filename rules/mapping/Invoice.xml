@@ -4930,7 +4930,7 @@
                <Data ss:Type="String">The total VAT amount for the Invoice or the VAT total amount expressed in the accounting currency accepted or required in the country of the Seller. Must be rounded to maximum 2 decimals</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">50.00</Data>
+               <Data ss:Type="String">0.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxTotal/cbc:TaxAmount</Data>
@@ -5060,7 +5060,7 @@
                <Data ss:Type="String">The total VAT amount for a given VAT category. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">50.00</Data>
+               <Data ss:Type="String">0.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxAmount</Data>
@@ -5138,7 +5138,7 @@
                <Data ss:Type="String">Coded identification of a VAT category.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">S</Data>
+               <Data ss:Type="String">E</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID</Data>
@@ -5164,7 +5164,7 @@
                <Data ss:Type="String">The VAT rate, represented as percentage that applies for the relevant VAT category.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">25.00</Data>
+               <Data ss:Type="String">0.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:Percent</Data>
@@ -5424,7 +5424,7 @@
                <Data ss:Type="String">The total amount of the Invoice with VAT. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">250.00</Data>
+               <Data ss:Type="String">200.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:TaxInclusiveAmount</Data>
@@ -5684,7 +5684,7 @@
                <Data ss:Type="String">The outstanding amount that is requested to be paid. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">200.00</Data>
+               <Data ss:Type="String">150.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:PayableAmount</Data>
@@ -6854,7 +6854,7 @@
                <Data ss:Type="String">The VAT category code for the invoiced item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">S</Data>
+               <Data ss:Type="String">E</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Item/cac:ClassifiedTaxCategory/cbc:ID</Data>
@@ -6880,7 +6880,7 @@
                <Data ss:Type="String">The VAT rate, represented as percentage that applies to the invoiced item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">25.00</Data>
+               <Data ss:Type="String">0.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Item/cac:ClassifiedTaxCategory/cbc:Percent</Data>

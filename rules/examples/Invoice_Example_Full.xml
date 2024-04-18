@@ -43,7 +43,7 @@
    </cac:ContractDocumentReference>
    <cac:AdditionalDocumentReference>
       <cbc:ID schemeID="AAG">60231136</cbc:ID>
-      <cbc:DocumentTypeCode>50</cbc:DocumentTypeCode>
+      <cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
       <cbc:DocumentDescription>Time list</cbc:DocumentDescription>
       <cac:Attachment>
          <cbc:EmbeddedDocumentBinaryObject mimeCode="text/csv" filename="fakturareferens.csv">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
@@ -234,13 +234,13 @@
       </cac:TaxCategory>
    </cac:AllowanceCharge>
    <cac:TaxTotal>
-      <cbc:TaxAmount currencyID="SEK">50.00</cbc:TaxAmount>
+      <cbc:TaxAmount currencyID="SEK">0.00</cbc:TaxAmount>
       <cac:TaxSubtotal>
          <cbc:TaxableAmount currencyID="SEK">200.00</cbc:TaxableAmount>
-         <cbc:TaxAmount currencyID="SEK">50.00</cbc:TaxAmount>
+         <cbc:TaxAmount currencyID="SEK">0.00</cbc:TaxAmount>
          <cac:TaxCategory>
-            <cbc:ID>S</cbc:ID>
-            <cbc:Percent>25.00</cbc:Percent>
+            <cbc:ID>E</cbc:ID>
+            <cbc:Percent>0.00</cbc:Percent>
             <cbc:TaxExemptionReasonCode>VATEX-EU-79-C</cbc:TaxExemptionReasonCode>
             <cbc:TaxExemptionReason>Momslagen ej tillämplig</cbc:TaxExemptionReason>
             <cac:TaxScheme>
@@ -252,12 +252,12 @@
    <cac:LegalMonetaryTotal>
       <cbc:LineExtensionAmount currencyID="SEK">180.00</cbc:LineExtensionAmount>
       <cbc:TaxExclusiveAmount currencyID="SEK">200.00</cbc:TaxExclusiveAmount>
-      <cbc:TaxInclusiveAmount currencyID="SEK">250.00</cbc:TaxInclusiveAmount>
+      <cbc:TaxInclusiveAmount currencyID="SEK">200.00</cbc:TaxInclusiveAmount>
       <cbc:AllowanceTotalAmount currencyID="SEK">0.00</cbc:AllowanceTotalAmount>
       <cbc:ChargeTotalAmount currencyID="SEK">20.00</cbc:ChargeTotalAmount>
       <cbc:PrepaidAmount currencyID="SEK">50.00</cbc:PrepaidAmount>
       <cbc:PayableRoundingAmount currencyID="SEK">0.00</cbc:PayableRoundingAmount>
-      <cbc:PayableAmount currencyID="SEK">200.00</cbc:PayableAmount>
+      <cbc:PayableAmount currencyID="SEK">150.00</cbc:PayableAmount>
    </cac:LegalMonetaryTotal>
    <cac:InvoiceLine>
       <cbc:ID>1</cbc:ID>
@@ -303,8 +303,8 @@
             <cbc:ItemClassificationCode listID="SN" listVersionID="1">698679864</cbc:ItemClassificationCode>
          </cac:CommodityClassification>
          <cac:ClassifiedTaxCategory>
-            <cbc:ID>S</cbc:ID>
-            <cbc:Percent>25.00</cbc:Percent>
+            <cbc:ID>E</cbc:ID>
+            <cbc:Percent>0.00</cbc:Percent>
             <cac:TaxScheme>
                <cbc:ID>VAT</cbc:ID>
             </cac:TaxScheme>

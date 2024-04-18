@@ -306,7 +306,7 @@
             <Description>Code "130" MUST be used to indicate an invoice object reference. Not used for other additional documents</Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-18</Reference>
-            <Value type="DEFAULT">50</Value>
+            <Value type="DEFAULT">130</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:DocumentDescription</Term>
@@ -1631,7 +1631,7 @@
             <Reference type="RULE">BR-DEC-15</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
-            <Value type="EXAMPLE">50.00</Value>
+            <Value type="EXAMPLE">0.00</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5 or BT-6.</Description>
@@ -1697,7 +1697,7 @@
                <Reference type="RULE">BR-IP-09</Reference>
                <Reference type="RULE">BR-DEC-20</Reference>
                <Reference type="RULE">UBL-DT-01</Reference>
-               <Value type="EXAMPLE">50.00</Value>
+               <Value type="EXAMPLE">0.00</Value>
                <Attribute>
                   <Term>currencyID</Term>
                   <Description>Mandatory attribute. Use BT-5</Description>
@@ -1729,7 +1729,7 @@
                   <Reference type="RULE">BR-IP-01</Reference>
                   <Reference type="RULE">BR-CL-17</Reference>
                   <Reference type="CODE_LIST">UNCL5305</Reference>
-                  <Value type="EXAMPLE">S</Value>
+                  <Value type="EXAMPLE">E</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Percent</Term>
@@ -1739,7 +1739,7 @@
                   <Reference type="BUSINESS_TERM">BT-119</Reference>
                   <Reference type="RULE">BR-48</Reference>
                   <Reference type="RULE">SE-R-006</Reference>
-                  <Value type="EXAMPLE">25.00</Value>
+                  <Value type="EXAMPLE">0.00</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:TaxExemptionReasonCode</Term>
@@ -1855,7 +1855,7 @@
             <Reference type="RULE">BR-DEC-14</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
-            <Value type="EXAMPLE">250.00</Value>
+            <Value type="EXAMPLE">200.00</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
@@ -1954,7 +1954,7 @@
             <Reference type="RULE">BR-DEC-18</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
-            <Value type="EXAMPLE">200.00</Value>
+            <Value type="EXAMPLE">150.00</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
@@ -2350,7 +2350,7 @@
                   <Reference type="RULE">BR-O-12</Reference>
                   <Reference type="RULE">BR-CL-18</Reference>
                   <Reference type="CODE_LIST">UNCL5305</Reference>
-                  <Value type="EXAMPLE">S</Value>
+                  <Value type="EXAMPLE">E</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Percent</Term>
@@ -2368,7 +2368,7 @@
                   <Reference type="RULE">BR-IG-05</Reference>
                   <Reference type="RULE">BR-IP-05</Reference>
                   <Reference type="RULE">SE-R-006</Reference>
-                  <Value type="EXAMPLE">25.00</Value>
+                  <Value type="EXAMPLE">0.00</Value>
                </Element>
                <Element>
                   <Term>cac:TaxScheme</Term>
