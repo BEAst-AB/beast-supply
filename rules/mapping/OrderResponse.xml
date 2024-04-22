@@ -302,7 +302,7 @@
                <Data ss:Type="String">BEAst: T6008 and T6038, Transport information or Supplier's remark. Peppol: Clarification of the suppliers decision.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Response message with amendments in the details</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cbc:Note</Data>
@@ -2044,7 +2044,7 @@
                <Data ss:Type="String">A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">12345678</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode</Data>
@@ -2330,7 +2330,7 @@
                <Data ss:Type="String">Code for the item property according to a property code system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Code</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:NameCode</Data>
@@ -2356,7 +2356,7 @@
                <Data ss:Type="String">An identifier for the code list used for the Name code, this is bilaterally agreed</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">123</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:NameCode/listID</Data>
@@ -2460,7 +2460,7 @@
                <Data ss:Type="String">Standardized and predefined classification of items properties.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">gram</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:SellerSubstitutedLineItem/cac:Item/cac:AdditionalItemProperty/cbc:ValueQualifier</Data>

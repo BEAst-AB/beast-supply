@@ -30,7 +30,7 @@
   	<?DescriptionAddFirst Order Type (T3100). In this version "220" is the only option. The blanket order ("226") is not yet supported by Peppol, so when you mean "226", this element shall be omitted and when you mean "220", the code "220" shall be sent. ?>
   </cbc:OrderTypeCode>
   <cbc:Note>Text</cbc:Note>
-  <cbc:DocumentCurrencyCode>EUR
+  <cbc:DocumentCurrencyCode>SEK
     <?DescriptionAddFirst T6018, Currency code. ?>
   </cbc:DocumentCurrencyCode>
   <cbc:CustomerReference>oik987
@@ -79,7 +79,7 @@
 	
   <cac:Contract>
 	<cbc:ID>AABC654
-	  <?DescriptionAddFirst Reference to Agreement or Contract (T0007). ?>
+	  <?DescriptionAddFirst Reference to Agreement or Contract (T0088). ?>
 	</cbc:ID>
   </cac:Contract>
 
@@ -91,9 +91,9 @@
 	
   <cac:BuyerCustomerParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="0007">7300010000001</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
 	  <cac:PartyIdentification>
-		<cbc:ID schemeID="0007">7300010000001
+		<cbc:ID schemeID="0088">7300010000001
 			<?DescriptionAddFirst T0008 or T6001, the identity of the buyer. Only one identification of the buyer will be used. ?>
 		</cbc:ID>
 	  </cac:PartyIdentification>
@@ -137,7 +137,7 @@
 	  </cac:PartyTaxScheme>
 	  <cac:PartyLegalEntity>
         <cbc:RegistrationName>Skanska Sverige AB</cbc:RegistrationName>
-		<cbc:CompanyID schemeID="0007">7300010000001</cbc:CompanyID>
+		<cbc:CompanyID schemeID="0088">7300010000001</cbc:CompanyID>
 		<cac:RegistrationAddress>
 		  <cbc:CityName>Stockholm</cbc:CityName>
 		  <cac:Country>
@@ -161,9 +161,9 @@
 	
   <cac:SellerSupplierParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="0007">7300010000001</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
 	  <cac:PartyIdentification>
-		<cbc:ID schemeID="0007">7300010000001
+		<cbc:ID schemeID="0088">7300010000001
 			<?DescriptionAddFirst T0009 or T6001, Identification of the supplier. Only one identification of the seller will be used. ?>
 		</cbc:ID>
 	  </cac:PartyIdentification>
@@ -199,7 +199,7 @@
       </cac:PostalAddress>
       <cac:PartyLegalEntity>
         <cbc:RegistrationName>Paroc Aktiebolag</cbc:RegistrationName>
-		<cbc:CompanyID schemeID="0007">7300010000001</cbc:CompanyID>
+		<cbc:CompanyID schemeID="0088">7300010000001</cbc:CompanyID>
 		<cac:RegistrationAddress>
 		  <cbc:CityName>Skövde</cbc:CityName>
 		  <cac:Country>
@@ -225,7 +225,7 @@
 	<?DescriptionAddFirst This party is re-defined by BEAst to be the Ship-from Location. In BEAst version 3.1 both the Ship-from Location and the Originator Customer party are used. Between these two BEAst have prioritized the Ship-from Location. ?>
 	<cac:Party>
 	  <cac:PartyIdentification>
-		<cbc:ID schemeID="0007">7300010000001
+		<cbc:ID schemeID="0088">7300010000001
 			<?DescriptionAddFirst T0129 or T6001, identification of the Ship-from Location. Only one of the identities will be used. ?>
 		</cbc:ID>
 	  </cac:PartyIdentification>
@@ -244,9 +244,9 @@
 	
   <cac:AccountingCustomerParty>
 	<cac:Party>
-	  <cbc:EndpointID schemeID="0007">7300010000001</cbc:EndpointID>
+	  <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
 	  <cac:PartyIdentification>
-		<cbc:ID schemeID="0007">7300010000001
+		<cbc:ID schemeID="0088">7300010000001
 			<?DescriptionAddFirst T0085 or T6001, Identity of the Invoicee. Use only one identity on the partner. ?>
 		</cbc:ID>
 	  </cac:PartyIdentification>
@@ -290,7 +290,7 @@
 	  </cac:PartyTaxScheme>
 	  <cac:PartyLegalEntity>
 		<cbc:RegistrationName>Skanska Sverige AB</cbc:RegistrationName>
-		<cbc:CompanyID schemeID="0007">7300010000001</cbc:CompanyID>
+		<cbc:CompanyID schemeID="0088">7300010000001</cbc:CompanyID>
 		<cac:RegistrationAddress>
 		  <cbc:CityName>Stockholm</cbc:CityName>
 		  <cac:Country>
@@ -308,7 +308,7 @@
 	
   <cac:Delivery>
 	<cac:DeliveryLocation>
-	  <cbc:ID schemeID="0007">7300010000001
+	  <cbc:ID schemeID="0088">7300010000001
 		  <?DescriptionAddFirst T0036 or T6001, Identity of the Consignee. Only one Identity of the party will be used. ?>
 	  </cbc:ID>
 	  <cbc:Name>Skanska BLC i Kristianstad
@@ -351,7 +351,7 @@
 	  
     <cac:DeliveryParty>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="0007">7300010000001
+        <cbc:ID schemeID="0088">7300010000001
 			<?DescriptionAddFirst T0037 or T6001, Identity of the Delivery party. Use only one identity of this party. ?>
 		</cbc:ID>
       </cac:PartyIdentification>
@@ -479,7 +479,7 @@
 	  </cbc:AccountingCost>
 		
       <cac:Delivery>
-		<cbc:ID schemeID="0007">7300010000001</cbc:ID>
+		<cbc:ID schemeID="0088">7300010000001</cbc:ID>
         <cac:RequestedDeliveryPeriod>
           <cbc:StartDate>2021-11-01
 		    <?DescriptionAddFirst Delivery Period Start Date (T6319). ?>
@@ -498,7 +498,7 @@
 
 		<cac:OriginatorParty>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="0007">7300010000001</cbc:ID>
+				<cbc:ID schemeID="0088">7300010000001</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<cbc:Name>Originator Name</cbc:Name>
