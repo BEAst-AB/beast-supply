@@ -172,7 +172,7 @@
                <Data ss:Type="String">A unique identification of the Invoice. The sequential number required in Article 226(2) of the directive 2006/112/EC [2], to uniquely identify the Invoice within the business context, time-frame, operating systems and records of the Seller. No identification scheme is to be used.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">33445566</Data>
+               <Data ss:Type="String">98670AE</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cbc:ID</Data>
@@ -198,7 +198,7 @@
                <Data ss:Type="String">The date when the Invoice was issued. Format "YYYY-MM-DD"</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2017-11-01</Data>
+               <Data ss:Type="String">2024-04-17</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cbc:IssueDate</Data>
@@ -224,7 +224,7 @@
                <Data ss:Type="String">The date when the payment is due.Format "YYYY-MM-DD". In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2017-11-01</Data>
+               <Data ss:Type="String">2024-05-17</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cbc:DueDate</Data>
@@ -302,7 +302,7 @@
                <Data ss:Type="String">The date when the VAT becomes accountable for the Seller and for the Buyer in so far as that date can be determined and differs from the date of issue of the invoice, according to the VAT directive.This element is required if the Value added tax point date is different from the Invoice issue date.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2017-11-01</Data>
+               <Data ss:Type="String">2024-05-17</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cbc:TaxPointDate</Data>
@@ -458,7 +458,7 @@
                <Data ss:Type="String">The date when the Invoice period starts. Format = "YYYY-MM-DD".</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2017-10-01</Data>
+               <Data ss:Type="String">2024-03-01</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoicePeriod/cbc:StartDate</Data>
@@ -484,7 +484,7 @@
                <Data ss:Type="String">The date when the Invoice period ends. Format = "YYYY-MM-DD".</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2017-10-31</Data>
+               <Data ss:Type="String">2024-03-31</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoicePeriod/cbc:EndDate</Data>
@@ -692,7 +692,7 @@
                <Data ss:Type="String">The date when the Preceding Invoice was issued.Shall be provided in case the Preceding Invoice identifier is not unique. Format = "YYYY-MM-DD".</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2017-09-15</Data>
+               <Data ss:Type="String">2024-04-17</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueDate</Data>
@@ -952,7 +952,7 @@
                <Data ss:Type="String">An identifier for an object on which the invoice is based, given by the Seller, or the identifier for the supporting document.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">AB23456</Data>
+               <Data ss:Type="String">60231136</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AdditionalDocumentReference/cbc:ID</Data>
@@ -978,7 +978,7 @@
                <Data ss:Type="String">The identification scheme identifier of the Invoiced object identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">AUN</Data>
+               <Data ss:Type="String">AAG</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AdditionalDocumentReference/cbc:ID/schemeID</Data>
@@ -1134,7 +1134,7 @@
                <Data ss:Type="String">The file name of the attached document</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Hours-spent.csv</Data>
+               <Data ss:Type="String">fakturareferens.csv</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AdditionalDocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject/filename</Data>
@@ -1316,7 +1316,7 @@
                <Data ss:Type="String">Identifies the Seller's electronic address to which the application level response to the invoice may be delivered.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7300010000001</Data>
+               <Data ss:Type="String">5561043539</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cbc:EndpointID</Data>
@@ -1342,7 +1342,7 @@
                <Data ss:Type="String">The identification scheme identifier of the Seller electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0088</Data>
+               <Data ss:Type="String">0007</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cbc:EndpointID/schemeID</Data>
@@ -1394,7 +1394,7 @@
                <Data ss:Type="String">This element is used for both the identification of the Seller, or the unique banking reference identifier of Seller (assigned by the Seller bank.). For seller identification use ICD code list, for SEPA bank assigned creditor reference, use SEPA. In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5060012349998</Data>
+               <Data ss:Type="String">7365561043532</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID</Data>
@@ -1472,7 +1472,7 @@
                <Data ss:Type="String">A name by which the Seller is known, other than Seller name (also known as Business name).</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Seller Business Name AS</Data>
+               <Data ss:Type="String">Cramo</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name</Data>
@@ -1524,7 +1524,7 @@
                <Data ss:Type="String">The main address line in an address.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Main Street 1</Data>
+               <Data ss:Type="String">Rosenborgsgatan 12</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:StreetName</Data>
@@ -1547,10 +1547,10 @@
                <Data ss:Type="String">Seller address line 2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String">BEAst: Department Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Po Box 351</Data>
+               <Data ss:Type="String">Department A</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -1576,7 +1576,7 @@
                <Data ss:Type="String">The common name of the city, town or village, where the Seller address is located.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">London</Data>
+               <Data ss:Type="String">Solna</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:CityName</Data>
@@ -1602,7 +1602,7 @@
                <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant postal service.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">W1G 8LZ</Data>
+               <Data ss:Type="String">16904</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:PostalZone</Data>
@@ -1628,7 +1628,7 @@
                <Data ss:Type="String">The subdivision of a country.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Region A</Data>
+               <Data ss:Type="String">Uppland</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -1677,10 +1677,10 @@
                <Data ss:Type="String">Seller address line 3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String">BEAst: Used for grid coordinates or building details Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Building 23</Data>
+               <Data ss:Type="String">Byggnad 3</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -1732,7 +1732,7 @@
                <Data ss:Type="String">A code that identifies the country.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">GB</Data>
+               <Data ss:Type="String">SE</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
@@ -1784,7 +1784,7 @@
                <Data ss:Type="String">The Seller's VAT identifier (also known as Seller VAT identification number) or the local identification (defined by the Seller’s address) of the Seller for tax purposes or a reference that enables the Seller to state his registered tax status. In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">NO999888777</Data>
+               <Data ss:Type="String">SE556104353901</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID</Data>
@@ -1888,7 +1888,7 @@
                <Data ss:Type="String">The full formal name by which the Seller is registered in the national registry of legal entities or as a Taxable person or otherwise trades as a person or persons.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Full Formal Seller Name LTD.</Data>
+               <Data ss:Type="String">CRAMO AB</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName</Data>
@@ -1914,7 +1914,7 @@
                <Data ss:Type="String">An identifier issued by an official registrar that identifies the Seller as a legal entity or person. In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">987654321</Data>
+               <Data ss:Type="String">5561043539</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID</Data>
@@ -1940,7 +1940,7 @@
                <Data ss:Type="String">The identification scheme identifier of the Seller legal registration identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0002</Data>
+               <Data ss:Type="String">0007</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
@@ -1966,7 +1966,7 @@
                <Data ss:Type="String">Additional legal information relevant for the Seller.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Share capital</Data>
+               <Data ss:Type="String">Säte: Sollentuna</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyLegalForm</Data>
@@ -2018,7 +2018,7 @@
                <Data ss:Type="String">A contact point for a legal entity or person.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">xyz123</Data>
+               <Data ss:Type="String">WICKSEL,NILSSON,DAHL</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:Contact/cbc:Name</Data>
@@ -2044,7 +2044,7 @@
                <Data ss:Type="String">A phone number for the contact point.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">887 654 321</Data>
+               <Data ss:Type="String">0856470730</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:Contact/cbc:Telephone</Data>
@@ -2070,7 +2070,7 @@
                <Data ss:Type="String">An e-mail address for the contact point.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">test.name@foo.bar</Data>
+               <Data ss:Type="String">example@cramo.se</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingSupplierParty/cac:Party/cac:Contact/cbc:ElectronicMail</Data>
@@ -2148,7 +2148,7 @@
                <Data ss:Type="String">Identifies the Buyer's electronic address to which the invoice is delivered.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">987654321</Data>
+               <Data ss:Type="String">7300009058334</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cbc:EndpointID</Data>
@@ -2174,7 +2174,7 @@
                <Data ss:Type="String">The identification scheme identifier of the Buyer electronic address.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0192</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cbc:EndpointID/schemeID</Data>
@@ -2226,7 +2226,7 @@
                <Data ss:Type="String">An identifier of the Buyer.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SE8765456787</Data>
+               <Data ss:Type="String">5560608837</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID</Data>
@@ -2252,7 +2252,7 @@
                <Data ss:Type="String">The identification scheme identifier of the Buyer identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0088</Data>
+               <Data ss:Type="String">0007</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID/schemeID</Data>
@@ -2304,7 +2304,7 @@
                <Data ss:Type="String">A name by which the Buyer is known, other than Buyer name (also known as Business name).</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Buyer Trading Name</Data>
+               <Data ss:Type="String">JM</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyName/cbc:Name</Data>
@@ -2356,7 +2356,7 @@
                <Data ss:Type="String">The main address line in an address.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Hovudgatan 32</Data>
+               <Data ss:Type="String">Gatuadress nummer</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:StreetName</Data>
@@ -2379,10 +2379,10 @@
                <Data ss:Type="String">Buyer address line 2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String">BEAst: Department Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Po box 43</Data>
+               <Data ss:Type="String">Department X</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -2408,7 +2408,7 @@
                <Data ss:Type="String">The common name of the city, town or village, where the Buyer's address is located.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Stockholm</Data>
+               <Data ss:Type="String">STOCKHOLM</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:CityName</Data>
@@ -2434,7 +2434,7 @@
                <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant postal service.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">34567</Data>
+               <Data ss:Type="String">16982</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:PostalZone</Data>
@@ -2460,7 +2460,7 @@
                <Data ss:Type="String">The subdivision of a country.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Region A</Data>
+               <Data ss:Type="String">Uppland</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -2509,10 +2509,10 @@
                <Data ss:Type="String">Buyer address line 3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String">BEAst: Used for grid coordinates or building details Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Building F2</Data>
+               <Data ss:Type="String">Main building</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -2616,7 +2616,7 @@
                <Data ss:Type="String">The Buyer's VAT identifier (also known as Buyer VAT identification number).</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SE8765456787</Data>
+               <Data ss:Type="String">SE556060883701</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID</Data>
@@ -2720,7 +2720,7 @@
                <Data ss:Type="String">The full name of the Buyer.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Buyer Full Name AS</Data>
+               <Data ss:Type="String">JM ENTREPRENAD FÖRSÄKRING</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName</Data>
@@ -2746,7 +2746,7 @@
                <Data ss:Type="String">An identifier issued by an official registrar that identifies the Buyer as a legal entity or person.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5560104525</Data>
+               <Data ss:Type="String">5560608837</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID</Data>
@@ -2824,7 +2824,7 @@
                <Data ss:Type="String">A contact point for a legal entity or person.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Jens Jensen</Data>
+               <Data ss:Type="String">SKURUSUNDSVÄGEN / HÖGVALLAVÄGEN</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cac:Contact/cbc:Name</Data>
@@ -2850,7 +2850,7 @@
                <Data ss:Type="String">A phone number for the contact point.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">876 654 321</Data>
+               <Data ss:Type="String">08-111 111</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cac:Contact/cbc:Telephone</Data>
@@ -2876,7 +2876,7 @@
                <Data ss:Type="String">An e-mail address for the contact point.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">jens.j@buyer.se</Data>
+               <Data ss:Type="String">exempel@jm.se</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AccountingCustomerParty/cac:Party/cac:Contact/cbc:ElectronicMail</Data>
@@ -2954,7 +2954,7 @@
                <Data ss:Type="String">This element is used for both the identification of the Payee, or the unique banking reference identifier of Payee (assigned by the Payee bank.) For payee identification use ICD code list, for SEPA bank assigned creditor reference, use SEPA.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">FR932874294</Data>
+               <Data ss:Type="String">7350053850019</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:PayeeParty/cac:PartyIdentification/cbc:ID</Data>
@@ -2980,7 +2980,7 @@
                <Data ss:Type="String">The identification scheme identifier of the payee identifier. For bank assigned creditor identifier (BT-90), value MUST be "SEPA"</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">SEPA</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:PayeeParty/cac:PartyIdentification/cbc:ID/schemeID</Data>
@@ -3032,7 +3032,7 @@
                <Data ss:Type="String">The name of the Payee.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Payee Name Ltd</Data>
+               <Data ss:Type="String">Payment recipient</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:PayeeParty/cac:PartyName/cbc:Name</Data>
@@ -3084,7 +3084,7 @@
                <Data ss:Type="String">An identifier issued by an official registrar that identifies the Payee as a legal entity or person.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">FR932874294</Data>
+               <Data ss:Type="String">5560608837</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:PayeeParty/cac:PartyLegalEntity/cbc:CompanyID</Data>
@@ -3110,7 +3110,7 @@
                <Data ss:Type="String">The identification scheme identifier of the Payee legal registration identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0002</Data>
+               <Data ss:Type="String">0007</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:PayeeParty/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
@@ -3188,7 +3188,7 @@
                <Data ss:Type="String">The full name of the Seller's tax representative party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Tax Representative Name AS</Data>
+               <Data ss:Type="String">Tax representative name</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxRepresentativeParty/cac:PartyName/cbc:Name</Data>
@@ -3240,7 +3240,7 @@
                <Data ss:Type="String">The main address line in an address.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Lille gatan 545</Data>
+               <Data ss:Type="String">Skattegatan 3</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxRepresentativeParty/cac:PostalAddress/cbc:StreetName</Data>
@@ -3263,10 +3263,10 @@
                <Data ss:Type="String">Tax representative address line 2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String">BEAst: Department Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Po Box 987</Data>
+               <Data ss:Type="String">Tax department</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxRepresentativeParty/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -3292,7 +3292,7 @@
                <Data ss:Type="String">The common name of the city, town or village, where the tax representative address is located.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Göteborg</Data>
+               <Data ss:Type="String">STOCKHOLM</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxRepresentativeParty/cac:PostalAddress/cbc:CityName</Data>
@@ -3318,7 +3318,7 @@
                <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant postal service.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">12345</Data>
+               <Data ss:Type="String">16000</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxRepresentativeParty/cac:PostalAddress/cbc:PostalZone</Data>
@@ -3344,7 +3344,7 @@
                <Data ss:Type="String">The subdivision of a country.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Region Vest</Data>
+               <Data ss:Type="String">Uppland</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxRepresentativeParty/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -3393,10 +3393,10 @@
                <Data ss:Type="String">Tax representative address line 3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String">BEAst: Used for grid coordinates or building details Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A87</Data>
+               <Data ss:Type="String">vån 5</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxRepresentativeParty/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
@@ -3500,7 +3500,7 @@
                <Data ss:Type="String">The VAT identifier of the Seller's tax representative party.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">FR932874294</Data>
+               <Data ss:Type="String">SE556104353901</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxRepresentativeParty/cac:PartyTaxScheme/cbc:CompanyID</Data>
@@ -3604,7 +3604,7 @@
                <Data ss:Type="String">The date on which the supply of goods or services was made or completed. Format = "YYYY-MM-DD"</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2017-12-01</Data>
+               <Data ss:Type="String">2024-03-31</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:Delivery/cbc:ActualDeliveryDate</Data>
@@ -3656,7 +3656,7 @@
                <Data ss:Type="String">An identifier for the location at which the goods and services are delivered.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">83745498753497</Data>
+               <Data ss:Type="String">7300009058334</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:Delivery/cac:DeliveryLocation/cbc:ID</Data>
@@ -3734,7 +3734,7 @@
                <Data ss:Type="String">The main address line in an address.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Delivery Street 1</Data>
+               <Data ss:Type="String">Storgatan 162</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:StreetName</Data>
@@ -3757,10 +3757,10 @@
                <Data ss:Type="String">Deliver to address line 2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String">BEAst: Department Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Delivery Street 2</Data>
+               <Data ss:Type="String">Inköp</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:AdditionalStreetName</Data>
@@ -3786,7 +3786,7 @@
                <Data ss:Type="String">The common name of the city, town or village, where the deliver to address is located.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Malmö</Data>
+               <Data ss:Type="String">Stockholm</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:CityName</Data>
@@ -3812,7 +3812,7 @@
                <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant postal service.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">86756</Data>
+               <Data ss:Type="String">115 34</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:PostalZone</Data>
@@ -3838,7 +3838,7 @@
                <Data ss:Type="String">The subdivision of a country.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">South Region</Data>
+               <Data ss:Type="String">Uppland</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:CountrySubentity</Data>
@@ -3887,10 +3887,10 @@
                <Data ss:Type="String">Deliver to address line 3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String">BEAst: Used for grid coordinates or building details Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">C54</Data>
+               <Data ss:Type="String">Hus 1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address/cac:AddressLine/cbc:Line</Data>
@@ -4020,7 +4020,7 @@
                <Data ss:Type="String">The name of the party to which the goods and services are delivered.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Deliver name</Data>
+               <Data ss:Type="String">Goods reception employee 1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:Delivery/cac:DeliveryParty/cac:PartyName/cbc:Name</Data>
@@ -4072,7 +4072,7 @@
                <Data ss:Type="String">The means, expressed as code, for how a payment is expected to be or has been settled.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">31</Data>
+               <Data ss:Type="String">30</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:PaymentMeans/cbc:PaymentMeansCode</Data>
@@ -4202,7 +4202,7 @@
                <Data ss:Type="String">Syntax required element not related to a business term.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">NA</Data>
+               <Data ss:Type="String">VISA</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:PaymentMeans/cac:CardAccount/cbc:NetworkID</Data>
@@ -4228,7 +4228,7 @@
                <Data ss:Type="String">The name of the payment card holder.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">John Doe</Data>
+               <Data ss:Type="String">Kalle Kula</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:PaymentMeans/cac:CardAccount/cbc:HolderName</Data>
@@ -4280,7 +4280,7 @@
                <Data ss:Type="String">A unique identifier of the financial payment account, at a payment service provider, to which payment should be made. Such as IBAN or BBAN.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">NO99991122222</Data>
+               <Data ss:Type="String">SE1750000000055651055010</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID</Data>
@@ -4358,7 +4358,7 @@
                <Data ss:Type="String">An identifier for the payment service provider where a payment account is located. Such as a BIC or a national clearing code where required. No identification scheme Identifier to be used.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">9999</Data>
+               <Data ss:Type="String">ESSESESS</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:PaymentMeans/cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID</Data>
@@ -4410,7 +4410,7 @@
                <Data ss:Type="String">Unique identifier assigned by the Payee for referencing the direct debit mandate. Used in order to pre-notify the Buyer of a SEPA direct debit.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123456</Data>
+               <Data ss:Type="String">123545</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:PaymentMeans/cac:PaymentMandate/cbc:ID</Data>
@@ -4462,7 +4462,7 @@
                <Data ss:Type="String">The account to be debited by the direct debit.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">12345676543</Data>
+               <Data ss:Type="String">123123123123</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:PaymentMeans/cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID</Data>
@@ -4566,7 +4566,7 @@
                <Data ss:Type="String">Use “true” when informing about Charges and “false” when informing about Allowances.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">false</Data>
+               <Data ss:Type="String">true</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AllowanceCharge/cbc:ChargeIndicator</Data>
@@ -4592,7 +4592,7 @@
                <Data ss:Type="String">The reason for the document level allowance or charge, expressed as a code. For allowances a subset of codelist UNCL5189 is to be used, and for charges codelist UNCL7161 applies. The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">95</Data>
+               <Data ss:Type="String">CAP</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AllowanceCharge/cbc:AllowanceChargeReasonCode</Data>
@@ -4618,7 +4618,7 @@
                <Data ss:Type="String">The reason for the document level allowance or charge, expressed as text. The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Discount</Data>
+               <Data ss:Type="String">Försäkring</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AllowanceCharge/cbc:AllowanceChargeReason</Data>
@@ -4644,7 +4644,7 @@
                <Data ss:Type="String">The percentage that may be used, in conjunction with the document level allowance base amount, to calculate the document level allowance or charge amount. To state 20%, use value 20.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">20</Data>
+               <Data ss:Type="String">5</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AllowanceCharge/cbc:MultiplierFactorNumeric</Data>
@@ -4670,7 +4670,7 @@
                <Data ss:Type="String">The amount of an allowance or a charge, without VAT. Must be rounded to maximum 2 decimals</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">200</Data>
+               <Data ss:Type="String">20</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AllowanceCharge/cbc:Amount</Data>
@@ -4696,7 +4696,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AllowanceCharge/cbc:Amount/currencyID</Data>
@@ -4722,7 +4722,7 @@
                <Data ss:Type="String">The base amount that may be used, in conjunction with the document level allowance or charge percentage, to calculate the document level allowance or charge amount. Must be rounded to maximum 2 decimals</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1000</Data>
+               <Data ss:Type="String">400</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AllowanceCharge/cbc:BaseAmount</Data>
@@ -4748,7 +4748,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AllowanceCharge/cbc:BaseAmount/currencyID</Data>
@@ -4800,7 +4800,7 @@
                <Data ss:Type="String">A coded identification of what VAT category applies to the document level allowance or charge.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">S</Data>
+               <Data ss:Type="String">E</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AllowanceCharge/cac:TaxCategory/cbc:ID</Data>
@@ -4826,7 +4826,7 @@
                <Data ss:Type="String">The VAT rate, represented as percentage that applies to the document level allowance or charge.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">25</Data>
+               <Data ss:Type="String">0.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:AllowanceCharge/cac:TaxCategory/cbc:Percent</Data>
@@ -4930,7 +4930,7 @@
                <Data ss:Type="String">The total VAT amount for the Invoice or the VAT total amount expressed in the accounting currency accepted or required in the country of the Seller. Must be rounded to maximum 2 decimals</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">486.25</Data>
+               <Data ss:Type="String">0.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxTotal/cbc:TaxAmount</Data>
@@ -4956,7 +4956,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5 or BT-6.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxTotal/cbc:TaxAmount/currencyID</Data>
@@ -5008,7 +5008,7 @@
                <Data ss:Type="String">Sum of all taxable amounts subject to a specific VAT category code and VAT category rate (if the VAT category rate is applicable). Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1945.00</Data>
+               <Data ss:Type="String">200.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxableAmount</Data>
@@ -5034,7 +5034,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxableAmount/currencyID</Data>
@@ -5060,7 +5060,7 @@
                <Data ss:Type="String">The total VAT amount for a given VAT category. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">486.25</Data>
+               <Data ss:Type="String">0.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxAmount</Data>
@@ -5086,7 +5086,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxAmount/currencyID</Data>
@@ -5138,7 +5138,7 @@
                <Data ss:Type="String">Coded identification of a VAT category.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">S</Data>
+               <Data ss:Type="String">E</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID</Data>
@@ -5164,7 +5164,7 @@
                <Data ss:Type="String">The VAT rate, represented as percentage that applies for the relevant VAT category.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">25</Data>
+               <Data ss:Type="String">0.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:Percent</Data>
@@ -5190,7 +5190,7 @@
                <Data ss:Type="String">A coded statement of the reason for why the amount is exempted from VAT.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">VATEX-EU-79-C</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:TaxExemptionReasonCode</Data>
@@ -5216,7 +5216,7 @@
                <Data ss:Type="String">A textual statement of the reason why the amount is exempted from VAT or why no VAT is being charged.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Exempt</Data>
+               <Data ss:Type="String">Momslagen ej tillämplig</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:TaxExemptionReason</Data>
@@ -5320,7 +5320,7 @@
                <Data ss:Type="String">Sum of all Invoice line net amounts in the Invoice. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">3800.0</Data>
+               <Data ss:Type="String">180.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:LineExtensionAmount</Data>
@@ -5346,7 +5346,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:LineExtensionAmount/currencyID</Data>
@@ -5372,7 +5372,7 @@
                <Data ss:Type="String">The total amount of the Invoice without VAT. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">3600.0</Data>
+               <Data ss:Type="String">200.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:TaxExclusiveAmount</Data>
@@ -5398,7 +5398,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:TaxExclusiveAmount/currencyID</Data>
@@ -5424,7 +5424,7 @@
                <Data ss:Type="String">The total amount of the Invoice with VAT. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">4500.0</Data>
+               <Data ss:Type="String">200.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:TaxInclusiveAmount</Data>
@@ -5450,7 +5450,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:TaxInclusiveAmount/currencyID</Data>
@@ -5476,7 +5476,7 @@
                <Data ss:Type="String">Sum of all allowances on document level in the Invoice. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">200.0</Data>
+               <Data ss:Type="String">0.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:AllowanceTotalAmount</Data>
@@ -5502,7 +5502,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:AllowanceTotalAmount/currencyID</Data>
@@ -5528,7 +5528,7 @@
                <Data ss:Type="String">Sum of all charges on document level in the Invoice. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0.0</Data>
+               <Data ss:Type="String">20.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:ChargeTotalAmount</Data>
@@ -5554,7 +5554,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:ChargeTotalAmount/currencyID</Data>
@@ -5580,7 +5580,7 @@
                <Data ss:Type="String">The sum of amounts which have been paid in advance. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1000.0</Data>
+               <Data ss:Type="String">50.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:PrepaidAmount</Data>
@@ -5606,7 +5606,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:PrepaidAmount/currencyID</Data>
@@ -5632,7 +5632,7 @@
                <Data ss:Type="String">The amount to be added to the invoice total to round the amount to be paid. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0.0</Data>
+               <Data ss:Type="String">0.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:PayableRoundingAmount</Data>
@@ -5658,7 +5658,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:PayableRoundingAmount/currencyID</Data>
@@ -5684,7 +5684,7 @@
                <Data ss:Type="String">The outstanding amount that is requested to be paid. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">3500.0</Data>
+               <Data ss:Type="String">150.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:PayableAmount</Data>
@@ -5710,7 +5710,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:LegalMonetaryTotal/cbc:PayableAmount/currencyID</Data>
@@ -5814,7 +5814,7 @@
                <Data ss:Type="String">BEAst: DeliveredQuantity (T6706) For rental invoices this is [number of days to invoice] x [quantity of the articles rented]. Peppol: The quantity of items (goods or services) that is charged in the Invoice line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">100</Data>
+               <Data ss:Type="String">2.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cbc:InvoicedQuantity</Data>
@@ -5840,7 +5840,7 @@
                <Data ss:Type="String">The unit of measure that applies to the invoiced quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015): The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">C62</Data>
+               <Data ss:Type="String">EA</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cbc:InvoicedQuantity/unitCode</Data>
@@ -5892,7 +5892,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cbc:LineExtensionAmount/currencyID</Data>
@@ -5941,7 +5941,7 @@
                <Data ss:Type="String">INVOICE LINE PERIOD</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A group of business terms providing information about the period relevant for the Invoice line.</Data>
+               <Data ss:Type="String">BEAst: Also used to describe invoice period for rental items. Can also be used on header level. Peppol: A group of business terms providing information about the period relevant for the Invoice line.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5970,7 +5970,7 @@
                <Data ss:Type="String">The date when the Invoice period for this Invoice line starts. Format ="YYYY-MM-DD"</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2017-10-05</Data>
+               <Data ss:Type="String">2024-03-01</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:InvoicePeriod/cbc:StartDate</Data>
@@ -5996,7 +5996,7 @@
                <Data ss:Type="String">The date when the Invoice period for this Invoice line ends. Format ="YYYY-MM-DD"</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2017-10-15</Data>
+               <Data ss:Type="String">2024-03-31</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:InvoicePeriod/cbc:EndDate</Data>
@@ -6048,7 +6048,7 @@
                <Data ss:Type="String">BEAst: T3322 ReferenceToOrderLine. Purchase order line referens. Peppol: An identifier for a referenced line within a purchase order, issued by the Buyer.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">3</Data>
+               <Data ss:Type="String">1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:OrderLineReference/cbc:LineID</Data>
@@ -6097,10 +6097,10 @@
                <Data ss:Type="String">Invoice line object identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Weight Statement Number (T6329) @schemeID="WM"; Freight Forwarder Referens Number (T6127) @schemeID="AHY"; Despatch Advice Number (T6386) @schemeID="AAK";Line Number (e.g. despatch advice line number) @schemeID="LI"; Serial number schemeID="SE"; Sales order id schemeID="VN"</Data>
+               <Data ss:Type="String">BEAst: Weight Statement Number (T6329) @schemeID="WM"; Freight Forwarder Referens Number (T6127) @schemeID="AHY"; Despatch Advice Number (T6386) @schemeID="AAK";Line Number (e.g. despatch advice line number) @schemeID="LI"; Serial number schemeID="SE"; Sales order id schemeID="VN" Peppol: An identifier for an object on which the invoice line is based, given by the Seller.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">AB12345</Data>
+               <Data ss:Type="String">1571078</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:DocumentReference/cbc:ID</Data>
@@ -6126,7 +6126,7 @@
                <Data ss:Type="String">The identification scheme identifier of the Invoice line object identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">ABZ</Data>
+               <Data ss:Type="String">SE</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:DocumentReference/cbc:ID/schemeID</Data>
@@ -6256,7 +6256,7 @@
                <Data ss:Type="String">The reason for the line level allowance or charge, expressed as text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Discount</Data>
+               <Data ss:Type="String">Prisrabatt enligt avtal</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:AllowanceCharge/cbc:AllowanceChargeReason</Data>
@@ -6282,7 +6282,7 @@
                <Data ss:Type="String">The percentage that may be used, in conjunction with the line level allowance base amount, to calculate the line level allowance or charge amount.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">20</Data>
+               <Data ss:Type="String">10</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:AllowanceCharge/cbc:MultiplierFactorNumeric</Data>
@@ -6308,7 +6308,7 @@
                <Data ss:Type="String">The amount of an allowance or a charge, without VAT. Must be rounded to maximum 2 decimals</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">200</Data>
+               <Data ss:Type="String">20.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:AllowanceCharge/cbc:Amount</Data>
@@ -6334,7 +6334,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:AllowanceCharge/cbc:Amount/currencyID</Data>
@@ -6360,7 +6360,7 @@
                <Data ss:Type="String">The base amount that may be used, in conjunction with the line level allowance or charge percentage, to calculate the line level allowance or charge amount. Must be rounded to maximum 2 decimals</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1000</Data>
+               <Data ss:Type="String">200</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:AllowanceCharge/cbc:BaseAmount</Data>
@@ -6386,7 +6386,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:AllowanceCharge/cbc:BaseAmount/currencyID</Data>
@@ -6438,7 +6438,7 @@
                <Data ss:Type="String">A description for an item.The item description allows for describing the item and its features in more detail than the Item name.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Long description of the item on the invoice line</Data>
+               <Data ss:Type="String">Superbra ventilationsslang i finfin plåt</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Item/cbc:Description</Data>
@@ -6464,7 +6464,7 @@
                <Data ss:Type="String">A name for an item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Item name</Data>
+               <Data ss:Type="String">Ventilationsslang diameter 82mm</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Item/cbc:Name</Data>
@@ -6516,7 +6516,7 @@
                <Data ss:Type="String">An identifier, assigned by the Buyer, for the item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">123455</Data>
+               <Data ss:Type="String">43790</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Item/cac:BuyersItemIdentification/cbc:ID</Data>
@@ -6568,7 +6568,7 @@
                <Data ss:Type="String">An identifier, assigned by the Seller, for the item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">9873242</Data>
+               <Data ss:Type="String">9371212</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Item/cac:SellersItemIdentification/cbc:ID</Data>
@@ -6620,7 +6620,7 @@
                <Data ss:Type="String">An item identifier based on a registered scheme.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">10986700</Data>
+               <Data ss:Type="String">7391272164648</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Item/cac:StandardItemIdentification/cbc:ID</Data>
@@ -6750,7 +6750,7 @@
                <Data ss:Type="String">A code for classifying the item by its type or nature.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">9873242</Data>
+               <Data ss:Type="String">698679864</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode</Data>
@@ -6776,7 +6776,7 @@
                <Data ss:Type="String">The identification scheme identifier of the Item classification identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">STI</Data>
+               <Data ss:Type="String">SN</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listID</Data>
@@ -6802,7 +6802,7 @@
                <Data ss:Type="String">The identification scheme version identifier of the Item classification identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listVersionID</Data>
@@ -6854,7 +6854,7 @@
                <Data ss:Type="String">The VAT category code for the invoiced item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">S</Data>
+               <Data ss:Type="String">E</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Item/cac:ClassifiedTaxCategory/cbc:ID</Data>
@@ -6880,7 +6880,7 @@
                <Data ss:Type="String">The VAT rate, represented as percentage that applies to the invoiced item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">25</Data>
+               <Data ss:Type="String">0.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Item/cac:ClassifiedTaxCategory/cbc:Percent</Data>
@@ -6981,7 +6981,7 @@
                <Data ss:Type="String">Item attribute name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The name of the attribute or property of the item.</Data>
+               <Data ss:Type="String">BEAst: RentalDeliveryStatus (T6505); BuyersContact (T6709); DeliveryPeriodStartDate (T2051); RentalTimeQuantity Time for which an article is to be debited for. (T6478); BEAst:RentalTimeQuantityUOM Unit of measure for RentalTimeQuantity; BEAst:RentalQuantityValue To be used to describe the quantity delivered in a rental case.; BEAst:RentalQuantityValueUOM Unit of measure for DeliveredQuantity (T6706); BEAst:SiteID; BEAst:PriceMatrix; BEAst:SuppliersContact (T0113) Peppol: The name of the attribute or property of the item.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Color</Data>
@@ -7010,7 +7010,7 @@
                <Data ss:Type="String">The value of the attribute or property of the item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Black</Data>
+               <Data ss:Type="String">100</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemProperty/cbc:Value</Data>
@@ -7062,7 +7062,7 @@
                <Data ss:Type="String">The price of an item, exclusive of VAT, after subtracting item price discount. The Item net price has to be equal with the Item gross price less the Item price discount, if they are both provided. Item price can not be negative.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">23.45</Data>
+               <Data ss:Type="String">100</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Price/cbc:PriceAmount</Data>
@@ -7088,7 +7088,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Price/cbc:PriceAmount/currencyID</Data>
@@ -7140,7 +7140,7 @@
                <Data ss:Type="String">The unit of measure that applies to the Item price base quantity, must be the same as the unit code of the Invoiced/credited quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015): The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">C62</Data>
+               <Data ss:Type="String">EA</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Price/cbc:BaseQuantity/unitCode</Data>
@@ -7218,7 +7218,7 @@
                <Data ss:Type="String">The total discount subtracted from the Item gross price to calculate the Item net price.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">100</Data>
+               <Data ss:Type="String">23.45</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Price/cac:AllowanceCharge/cbc:Amount</Data>
@@ -7244,7 +7244,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Price/cac:AllowanceCharge/cbc:Amount/currencyID</Data>
@@ -7296,7 +7296,7 @@
                <Data ss:Type="String">Mandatory attribute. Use BT-5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:InvoiceLine/cac:Price/cac:AllowanceCharge/cbc:BaseAmount/currencyID</Data>

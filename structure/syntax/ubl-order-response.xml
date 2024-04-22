@@ -614,13 +614,13 @@
                         <Term>listVersionID</Term>
                         <Name>Item classification identifier version identification scheme identifier</Name>
                         <Description>The identification scheme version identifier of the Item classification identifier</Description>
-                        <Value type="EXAMPLE">20.0601</Value>
+                        <Value type="EXAMPLE">19.0501</Value>
                      </Attribute>
                      <Attribute usage="Optional">
                         <Term>name</Term>
                         <Name>Clear text name equivalent of classification code</Name>
                         <Description>The textual equivalent of the code value</Description>
-                        <Value type="EXAMPLE">Office furniture</Value>
+                        <Value type="EXAMPLE">Name</Value>
                      </Attribute>
                   </Element>
                </Element>
@@ -680,6 +680,7 @@
                         <Term>listID</Term>
                         <Name>Name code list id.</Name>
                         <Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
+                        <Value type="EXAMPLE">123</Value>
                      </Attribute>
                   </Element>
                   <Element>
@@ -703,7 +704,7 @@
                         <Description>The unit of measure that applies to the value quantity.</Description>
                         <DataType>Code</DataType>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
-                        <Value type="EXAMPLE">NAR</Value>
+                        <Value type="EXAMPLE">GRM</Value>
                      </Attribute>
                   </Element>
                   <Element cardinality="0..1">

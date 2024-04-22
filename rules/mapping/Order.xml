@@ -328,7 +328,7 @@
                <Data ss:Type="String">BEAst: T6018, Currency code. Peppol: The default currency for the order.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cbc:DocumentCurrencyCode</Data>
@@ -796,7 +796,7 @@
                <Data ss:Type="String">The mime code of the attached document.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</Data>
+               <Data ss:Type="String">application/pdf</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AdditionalDocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject/mimeCode</Data>
@@ -822,7 +822,7 @@
                <Data ss:Type="String">The file name of the attached document</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Hours-spent.xsl</Data>
+               <Data ss:Type="String">Hours-spent.pdf</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AdditionalDocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject/filename</Data>
@@ -923,7 +923,7 @@
                <Data ss:Type="String">Reference identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Reference to Agreement or Contract (T0007). Peppol: Positive identification of the reference such as a unique identifier.</Data>
+               <Data ss:Type="String">BEAst: Reference to Agreement or Contract (T0088). Peppol: Positive identification of the reference such as a unique identifier.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">AABC654</Data>
@@ -1680,7 +1680,7 @@
                <Data ss:Type="String">The identification scheme identifier of the buyer legal registration identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0002</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
@@ -2486,7 +2486,7 @@
                <Data ss:Type="String">The identification scheme identifier of the buyer legal registration identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0002</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
@@ -3683,7 +3683,7 @@
                <Data ss:Type="String">The identification scheme identifier of the buyer legal registration identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0002</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
@@ -4516,7 +4516,7 @@
                <Data ss:Type="String">The identification scheme identifier of the deliverparty identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0002</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:Delivery/cac:DeliveryParty/cac:PartyIdentification/cbc:ID/schemeID</Data>
@@ -5426,7 +5426,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AllowanceCharge/cbc:Amount/currencyID</Data>
@@ -5478,7 +5478,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AllowanceCharge/cbc:BaseAmount/currencyID</Data>
@@ -5660,7 +5660,7 @@
                <Data ss:Type="String">The total TAX amount that is "added to the document total w/o TAX". This is the sum of all TAX subcategory amounts. The expected Tax Total in the corresponding invoice.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">550.00</Data>
+               <Data ss:Type="String">450.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:TaxTotal/cbc:TaxAmount</Data>
@@ -5686,7 +5686,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:TaxTotal/cbc:TaxAmount/currencyID</Data>
@@ -5764,7 +5764,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:LineExtensionAmount/currencyID</Data>
@@ -5790,7 +5790,7 @@
                <Data ss:Type="String">The "Sum of line amounts" plus "sum of allowances on document level" plus "sum of charges on document level". Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2000.00</Data>
+               <Data ss:Type="String">1800.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:TaxExclusiveAmount</Data>
@@ -5816,7 +5816,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:TaxExclusiveAmount/currencyID</Data>
@@ -5842,7 +5842,7 @@
                <Data ss:Type="String">The total value including TAX. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2500.00</Data>
+               <Data ss:Type="String">2250.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:TaxInclusiveAmount</Data>
@@ -5868,7 +5868,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:TaxInclusiveAmount/currencyID</Data>
@@ -5920,7 +5920,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:AllowanceTotalAmount/currencyID</Data>
@@ -5972,7 +5972,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:ChargeTotalAmount/currencyID</Data>
@@ -6024,7 +6024,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:PrepaidAmount/currencyID</Data>
@@ -6076,7 +6076,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:PayableRoundingAmount/currencyID</Data>
@@ -6128,7 +6128,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:PayableAmount/currencyID</Data>
@@ -6284,7 +6284,7 @@
                <Data ss:Type="String">The unit of measure that applies to the ordered quantity.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">C62</Data>
+               <Data ss:Type="String">MTK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cbc:Quantity/unitCode</Data>
@@ -6336,7 +6336,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cbc:LineExtensionAmount/currencyID</Data>
@@ -6882,7 +6882,7 @@
                <Data ss:Type="String">BEAst: Percentage (T6228). Peppol: The percentage that may be used, in conjunction with the line level allowance base amount, to calculate the line level allowance or charge amount.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">20</Data>
+               <Data ss:Type="String">10</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:AllowanceCharge/cbc:MultiplierFactorNumeric</Data>
@@ -6908,7 +6908,7 @@
                <Data ss:Type="String">BEAst: Amount NeB (T6230). Peppol: The amount of an allowance or a charge, without TAX. Must be rounded to maximum 2 decimals</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">200</Data>
+               <Data ss:Type="String">100</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:AllowanceCharge/cbc:Amount</Data>
@@ -6934,7 +6934,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:AllowanceCharge/cbc:Amount/currencyID</Data>
@@ -6986,7 +6986,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:AllowanceCharge/cbc:BaseAmount/currencyID</Data>
@@ -7038,7 +7038,7 @@
                <Data ss:Type="String">BEAst: Price Amount (T6235) and the Currency code (T6018). Peppol: The net price of the item including all allowances, charges and taxes but exluding TAX. Although price is an optional element in an order it recommended as best practice to either state the price or provide reference to an appropriate source from which the price can be identified such as a contract, catalogue or a quote.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">200.00</Data>
+               <Data ss:Type="String">210.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cbc:PriceAmount</Data>
@@ -7064,7 +7064,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cbc:PriceAmount/currencyID</Data>
@@ -7116,7 +7116,7 @@
                <Data ss:Type="String">The unit of measure that applies to the base quantity.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">C62</Data>
+               <Data ss:Type="String">MTK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cbc:BaseQuantity/unitCode</Data>
@@ -7194,7 +7194,7 @@
                <Data ss:Type="String">Discount amount connected to the price</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">200</Data>
+               <Data ss:Type="String">20</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cac:AllowanceCharge/cbc:Amount</Data>
@@ -7220,7 +7220,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cac:AllowanceCharge/cbc:Amount/currencyID</Data>
@@ -7246,7 +7246,7 @@
                <Data ss:Type="String">The gross price of the item before subtracting discounts. E.g. list price.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1000</Data>
+               <Data ss:Type="String">230</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cac:AllowanceCharge/cbc:BaseAmount</Data>
@@ -7272,7 +7272,7 @@
                <Data ss:Type="String">Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">EUR</Data>
+               <Data ss:Type="String">SEK</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cac:AllowanceCharge/cbc:BaseAmount/currencyID</Data>
@@ -7715,7 +7715,7 @@
                <Data ss:Type="String">The identification scheme identifier of the Item classification identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">STI</Data>
+               <Data ss:Type="String">ZZZ</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listID</Data>
@@ -7742,7 +7742,7 @@
                <Data ss:Type="String">The identification scheme version identifier of the Item classification identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">20.0602</Data>
+               <Data ss:Type="String">3.0.2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listVersionID</Data>
@@ -7768,7 +7768,7 @@
                <Data ss:Type="String">The textual equivalent of the code value</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Office furniture</Data>
+               <Data ss:Type="String">SBMI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/name</Data>
@@ -8002,7 +8002,7 @@
                <Data ss:Type="String">An identifier for the code list used for the Name code, this is bilaterally agreed</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAST:4.0</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:NameCode/listID</Data>
