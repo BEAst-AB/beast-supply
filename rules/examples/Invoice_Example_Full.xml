@@ -4,20 +4,20 @@
          xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
    <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
    <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
-   <cbc:ID>33445566</cbc:ID>
-   <cbc:IssueDate>2017-11-01</cbc:IssueDate>
-   <cbc:DueDate>2017-11-01</cbc:DueDate>
-   <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+   <cbc:ID/>
+   <cbc:IssueDate/>
+   <cbc:DueDate/>
+   <cbc:InvoiceTypeCode/>
    <cbc:Note>FAKTURASAMMANSTÄLLNING Kostnadsslag 43790 Summa 409.20</cbc:Note>
-   <cbc:TaxPointDate>2017-11-01</cbc:TaxPointDate>
+   <cbc:TaxPointDate/>
    <cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
    <cbc:TaxCurrencyCode>SEK</cbc:TaxCurrencyCode>
-   <cbc:AccountingCost>4217:2323:2323</cbc:AccountingCost>
-   <cbc:BuyerReference>abs1234</cbc:BuyerReference>
+   <cbc:AccountingCost/>
+   <cbc:BuyerReference/>
    <cac:InvoicePeriod xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
-      <cbc:StartDate>2017-10-01</cbc:StartDate>
-      <cbc:EndDate>2017-10-31</cbc:EndDate>
-      <cbc:DescriptionCode>35</cbc:DescriptionCode>
+      <cbc:StartDate/>
+      <cbc:EndDate/>
+      <cbc:DescriptionCode/>
    </cac:InvoicePeriod>
    <cac:OrderReference xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
       <cbc:ID>98776</cbc:ID>
@@ -26,7 +26,7 @@
    <cac:BillingReference xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
       <cac:InvoiceDocumentReference>
          <cbc:ID>9742024</cbc:ID>
-         <cbc:IssueDate>2017-09-15</cbc:IssueDate>
+         <cbc:IssueDate/>
       </cac:InvoiceDocumentReference>
    </cac:BillingReference>
    <cac:DespatchDocumentReference xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
@@ -42,13 +42,13 @@
       <cbc:ID>7987093</cbc:ID>
    </cac:ContractDocumentReference>
    <cac:AdditionalDocumentReference xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
-      <cbc:ID schemeID="AUN">AB23456</cbc:ID>
-      <cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
-      <cbc:DocumentDescription>Time list</cbc:DocumentDescription>
+      <cbc:ID schemeID=""/>
+      <cbc:DocumentTypeCode/>
+      <cbc:DocumentDescription/>
       <cac:Attachment>
-         <cbc:EmbeddedDocumentBinaryObject mimeCode="text/csv" filename="Hours-spent.csv">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+         <cbc:EmbeddedDocumentBinaryObject mimeCode="" filename=""/>
          <cac:ExternalReference>
-            <cbc:URI>http://www.example.com/index.html</cbc:URI>
+            <cbc:URI/>
          </cac:ExternalReference>
       </cac:Attachment>
    </cac:AdditionalDocumentReference>
@@ -57,161 +57,161 @@
    </cac:ProjectReference>
    <cac:AccountingSupplierParty xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
       <cac:Party>
-         <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+         <cbc:EndpointID schemeID=""/>
          <cac:PartyIdentification>
-            <cbc:ID schemeID="0088">5060012349998</cbc:ID>
+            <cbc:ID schemeID=""/>
          </cac:PartyIdentification>
          <cac:PartyName>
-            <cbc:Name>Seller Business Name AS</cbc:Name>
+            <cbc:Name/>
          </cac:PartyName>
          <cac:PostalAddress>
-            <cbc:StreetName>Main Street 1</cbc:StreetName>
-            <cbc:AdditionalStreetName>Po Box 351</cbc:AdditionalStreetName>
-            <cbc:CityName>London</cbc:CityName>
-            <cbc:PostalZone>W1G 8LZ</cbc:PostalZone>
-            <cbc:CountrySubentity>Region A</cbc:CountrySubentity>
+            <cbc:StreetName/>
+            <cbc:AdditionalStreetName/>
+            <cbc:CityName/>
+            <cbc:PostalZone/>
+            <cbc:CountrySubentity/>
             <cac:AddressLine>
-               <cbc:Line>Building 23</cbc:Line>
+               <cbc:Line/>
             </cac:AddressLine>
             <cac:Country>
-               <cbc:IdentificationCode>GB</cbc:IdentificationCode>
+               <cbc:IdentificationCode/>
             </cac:Country>
          </cac:PostalAddress>
          <cac:PartyTaxScheme>
-            <cbc:CompanyID>NO999888777</cbc:CompanyID>
+            <cbc:CompanyID/>
             <cac:TaxScheme>
-               <cbc:ID>VAT</cbc:ID>
+               <cbc:ID/>
             </cac:TaxScheme>
          </cac:PartyTaxScheme>
          <cac:PartyLegalEntity>
-            <cbc:RegistrationName>Full Formal Seller Name LTD.</cbc:RegistrationName>
-            <cbc:CompanyID schemeID="0002">987654321</cbc:CompanyID>
-            <cbc:CompanyLegalForm>Share capital</cbc:CompanyLegalForm>
+            <cbc:RegistrationName/>
+            <cbc:CompanyID schemeID=""/>
+            <cbc:CompanyLegalForm/>
          </cac:PartyLegalEntity>
          <cac:Contact>
-            <cbc:Name>xyz123</cbc:Name>
-            <cbc:Telephone>887 654 321</cbc:Telephone>
-            <cbc:ElectronicMail>test.name@foo.bar</cbc:ElectronicMail>
+            <cbc:Name/>
+            <cbc:Telephone/>
+            <cbc:ElectronicMail/>
          </cac:Contact>
       </cac:Party>
    </cac:AccountingSupplierParty>
    <cac:AccountingCustomerParty xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
       <cac:Party>
-         <cbc:EndpointID schemeID="0192">987654321</cbc:EndpointID>
+         <cbc:EndpointID schemeID=""/>
          <cac:PartyIdentification>
-            <cbc:ID schemeID="0088">SE8765456787</cbc:ID>
+            <cbc:ID schemeID=""/>
          </cac:PartyIdentification>
          <cac:PartyName>
-            <cbc:Name>Buyer Trading Name</cbc:Name>
+            <cbc:Name/>
          </cac:PartyName>
          <cac:PostalAddress>
-            <cbc:StreetName>Hovudgatan 32</cbc:StreetName>
-            <cbc:AdditionalStreetName>Po box 43</cbc:AdditionalStreetName>
-            <cbc:CityName>Stockholm</cbc:CityName>
-            <cbc:PostalZone>34567</cbc:PostalZone>
-            <cbc:CountrySubentity>Region A</cbc:CountrySubentity>
+            <cbc:StreetName/>
+            <cbc:AdditionalStreetName/>
+            <cbc:CityName/>
+            <cbc:PostalZone/>
+            <cbc:CountrySubentity/>
             <cac:AddressLine>
-               <cbc:Line>Building F2</cbc:Line>
+               <cbc:Line/>
             </cac:AddressLine>
             <cac:Country>
-               <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+               <cbc:IdentificationCode/>
             </cac:Country>
          </cac:PostalAddress>
          <cac:PartyTaxScheme>
-            <cbc:CompanyID>SE8765456787</cbc:CompanyID>
+            <cbc:CompanyID/>
             <cac:TaxScheme>
-               <cbc:ID>VAT</cbc:ID>
+               <cbc:ID/>
             </cac:TaxScheme>
          </cac:PartyTaxScheme>
          <cac:PartyLegalEntity>
-            <cbc:RegistrationName>Buyer Full Name AS</cbc:RegistrationName>
-            <cbc:CompanyID schemeID="0007">5560104525</cbc:CompanyID>
+            <cbc:RegistrationName/>
+            <cbc:CompanyID schemeID=""/>
          </cac:PartyLegalEntity>
          <cac:Contact>
-            <cbc:Name>Jens Jensen</cbc:Name>
-            <cbc:Telephone>876 654 321</cbc:Telephone>
-            <cbc:ElectronicMail>jens.j@buyer.se</cbc:ElectronicMail>
+            <cbc:Name/>
+            <cbc:Telephone/>
+            <cbc:ElectronicMail/>
          </cac:Contact>
       </cac:Party>
    </cac:AccountingCustomerParty>
    <cac:PayeeParty xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
       <cac:PartyIdentification>
-         <cbc:ID schemeID="SEPA">FR932874294</cbc:ID>
+         <cbc:ID schemeID=""/>
       </cac:PartyIdentification>
       <cac:PartyName>
-         <cbc:Name>Payee Name Ltd</cbc:Name>
+         <cbc:Name/>
       </cac:PartyName>
       <cac:PartyLegalEntity>
-         <cbc:CompanyID schemeID="0002">FR932874294</cbc:CompanyID>
+         <cbc:CompanyID schemeID=""/>
       </cac:PartyLegalEntity>
    </cac:PayeeParty>
    <cac:TaxRepresentativeParty xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
       <cac:PartyName>
-         <cbc:Name>Tax Representative Name AS</cbc:Name>
+         <cbc:Name/>
       </cac:PartyName>
       <cac:PostalAddress>
-         <cbc:StreetName>Lille gatan 545</cbc:StreetName>
-         <cbc:AdditionalStreetName>Po Box 987</cbc:AdditionalStreetName>
-         <cbc:CityName>Göteborg</cbc:CityName>
-         <cbc:PostalZone>12345</cbc:PostalZone>
-         <cbc:CountrySubentity>Region Vest</cbc:CountrySubentity>
+         <cbc:StreetName/>
+         <cbc:AdditionalStreetName/>
+         <cbc:CityName/>
+         <cbc:PostalZone/>
+         <cbc:CountrySubentity/>
          <cac:AddressLine>
-            <cbc:Line>A87</cbc:Line>
+            <cbc:Line/>
          </cac:AddressLine>
          <cac:Country>
-            <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+            <cbc:IdentificationCode/>
          </cac:Country>
       </cac:PostalAddress>
       <cac:PartyTaxScheme>
-         <cbc:CompanyID>FR932874294</cbc:CompanyID>
+         <cbc:CompanyID/>
          <cac:TaxScheme>
-            <cbc:ID>VAT</cbc:ID>
+            <cbc:ID/>
          </cac:TaxScheme>
       </cac:PartyTaxScheme>
    </cac:TaxRepresentativeParty>
    <cac:Delivery xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
-      <cbc:ActualDeliveryDate>2017-12-01</cbc:ActualDeliveryDate>
+      <cbc:ActualDeliveryDate/>
       <cac:DeliveryLocation>
-         <cbc:ID schemeID="0088">83745498753497</cbc:ID>
+         <cbc:ID schemeID=""/>
          <cac:Address>
-            <cbc:StreetName>Delivery Street 1</cbc:StreetName>
-            <cbc:AdditionalStreetName>Delivery Street 2</cbc:AdditionalStreetName>
-            <cbc:CityName>Malmö</cbc:CityName>
-            <cbc:PostalZone>86756</cbc:PostalZone>
-            <cbc:CountrySubentity>South Region</cbc:CountrySubentity>
+            <cbc:StreetName/>
+            <cbc:AdditionalStreetName/>
+            <cbc:CityName/>
+            <cbc:PostalZone/>
+            <cbc:CountrySubentity/>
             <cac:AddressLine>
-               <cbc:Line>C54</cbc:Line>
+               <cbc:Line/>
             </cac:AddressLine>
             <cac:Country>
-               <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+               <cbc:IdentificationCode/>
             </cac:Country>
          </cac:Address>
       </cac:DeliveryLocation>
       <cac:DeliveryParty>
          <cac:PartyName>
-            <cbc:Name>Deliver name</cbc:Name>
+            <cbc:Name/>
          </cac:PartyName>
       </cac:DeliveryParty>
    </cac:Delivery>
    <cac:PaymentMeans xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
-      <cbc:PaymentMeansCode name="Credit transfer">31</cbc:PaymentMeansCode>
+      <cbc:PaymentMeansCode name="">31</cbc:PaymentMeansCode>
       <cbc:PaymentID>7697699</cbc:PaymentID>
       <cac:CardAccount>
          <cbc:PrimaryAccountNumberID>1234</cbc:PrimaryAccountNumberID>
-         <cbc:NetworkID>NA</cbc:NetworkID>
-         <cbc:HolderName>John Doe</cbc:HolderName>
+         <cbc:NetworkID>VISA</cbc:NetworkID>
+         <cbc:HolderName>Kalle Kula</cbc:HolderName>
       </cac:CardAccount>
       <cac:PayeeFinancialAccount>
-         <cbc:ID>NO99991122222</cbc:ID>
+         <cbc:ID>SE1750000000055651055010</cbc:ID>
          <cbc:Name>Payment Account</cbc:Name>
          <cac:FinancialInstitutionBranch>
-            <cbc:ID>9999</cbc:ID>
+            <cbc:ID>ESSESESS</cbc:ID>
          </cac:FinancialInstitutionBranch>
       </cac:PayeeFinancialAccount>
       <cac:PaymentMandate>
-         <cbc:ID>123456</cbc:ID>
+         <cbc:ID>123545</cbc:ID>
          <cac:PayerFinancialAccount>
-            <cbc:ID>12345676543</cbc:ID>
+            <cbc:ID>123123123123</cbc:ID>
          </cac:PayerFinancialAccount>
       </cac:PaymentMandate>
    </cac:PaymentMeans>
@@ -219,108 +219,108 @@
       <cbc:Note>30 dagar efter mottagen faktura</cbc:Note>
    </cac:PaymentTerms>
    <cac:AllowanceCharge xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
-      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-      <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
-      <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
-      <cbc:MultiplierFactorNumeric>20</cbc:MultiplierFactorNumeric>
-      <cbc:Amount currencyID="EUR">200</cbc:Amount>
-      <cbc:BaseAmount currencyID="EUR">1000</cbc:BaseAmount>
+      <cbc:ChargeIndicator/>
+      <cbc:AllowanceChargeReasonCode/>
+      <cbc:AllowanceChargeReason/>
+      <cbc:MultiplierFactorNumeric/>
+      <cbc:Amount currencyID=""/>
+      <cbc:BaseAmount currencyID=""/>
       <cac:TaxCategory>
-         <cbc:ID>S</cbc:ID>
-         <cbc:Percent>25</cbc:Percent>
+         <cbc:ID/>
+         <cbc:Percent/>
          <cac:TaxScheme>
-            <cbc:ID>VAT</cbc:ID>
+            <cbc:ID/>
          </cac:TaxScheme>
       </cac:TaxCategory>
    </cac:AllowanceCharge>
    <cac:TaxTotal xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
-      <cbc:TaxAmount currencyID="EUR">486.25</cbc:TaxAmount>
+      <cbc:TaxAmount currencyID=""/>
       <cac:TaxSubtotal>
-         <cbc:TaxableAmount currencyID="EUR">1945.00</cbc:TaxableAmount>
-         <cbc:TaxAmount currencyID="EUR">486.25</cbc:TaxAmount>
+         <cbc:TaxableAmount currencyID=""/>
+         <cbc:TaxAmount currencyID=""/>
          <cac:TaxCategory>
-            <cbc:ID>S</cbc:ID>
-            <cbc:Percent>25</cbc:Percent>
+            <cbc:ID/>
+            <cbc:Percent/>
             <cbc:TaxExemptionReasonCode/>
-            <cbc:TaxExemptionReason>Exempt</cbc:TaxExemptionReason>
+            <cbc:TaxExemptionReason/>
             <cac:TaxScheme>
-               <cbc:ID>VAT</cbc:ID>
+               <cbc:ID/>
             </cac:TaxScheme>
          </cac:TaxCategory>
       </cac:TaxSubtotal>
    </cac:TaxTotal>
    <cac:LegalMonetaryTotal xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
-      <cbc:LineExtensionAmount currencyID="EUR">3800.0</cbc:LineExtensionAmount>
-      <cbc:TaxExclusiveAmount currencyID="EUR">3600.0</cbc:TaxExclusiveAmount>
-      <cbc:TaxInclusiveAmount currencyID="EUR">4500.0</cbc:TaxInclusiveAmount>
-      <cbc:AllowanceTotalAmount currencyID="EUR">200.0</cbc:AllowanceTotalAmount>
-      <cbc:ChargeTotalAmount currencyID="EUR">0.0</cbc:ChargeTotalAmount>
-      <cbc:PrepaidAmount currencyID="EUR">1000.0</cbc:PrepaidAmount>
-      <cbc:PayableRoundingAmount currencyID="EUR">0.0</cbc:PayableRoundingAmount>
-      <cbc:PayableAmount currencyID="EUR">3500.0</cbc:PayableAmount>
+      <cbc:LineExtensionAmount currencyID=""/>
+      <cbc:TaxExclusiveAmount currencyID=""/>
+      <cbc:TaxInclusiveAmount currencyID=""/>
+      <cbc:AllowanceTotalAmount currencyID=""/>
+      <cbc:ChargeTotalAmount currencyID=""/>
+      <cbc:PrepaidAmount currencyID=""/>
+      <cbc:PayableRoundingAmount currencyID=""/>
+      <cbc:PayableAmount currencyID=""/>
    </cac:LegalMonetaryTotal>
    <cac:InvoiceLine xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
       <cbc:ID>1</cbc:ID>
       <cbc:Note>Note from supplier</cbc:Note>
-      <cbc:InvoicedQuantity unitCode="C62">100</cbc:InvoicedQuantity>
-      <cbc:LineExtensionAmount currencyID="EUR">180.00</cbc:LineExtensionAmount>
+      <cbc:InvoicedQuantity unitCode="H87"/>
+      <cbc:LineExtensionAmount currencyID="SEK">180.00</cbc:LineExtensionAmount>
       <cbc:AccountingCost>4415</cbc:AccountingCost>
       <cac:InvoicePeriod>
-         <cbc:StartDate>2017-10-05</cbc:StartDate>
-         <cbc:EndDate>2017-10-15</cbc:EndDate>
+         <cbc:StartDate>2020-10-01</cbc:StartDate>
+         <cbc:EndDate>2020-10-31</cbc:EndDate>
       </cac:InvoicePeriod>
       <cac:OrderLineReference>
-         <cbc:LineID>3</cbc:LineID>
+         <cbc:LineID/>
       </cac:OrderLineReference>
       <cac:DocumentReference>
-         <cbc:ID schemeID="ABZ">AB12345</cbc:ID>
+         <cbc:ID schemeID="SE"/>
          <cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
       </cac:DocumentReference>
       <cac:AllowanceCharge>
          <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-         <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
-         <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
-         <cbc:MultiplierFactorNumeric>20</cbc:MultiplierFactorNumeric>
-         <cbc:Amount currencyID="EUR">200</cbc:Amount>
-         <cbc:BaseAmount currencyID="EUR">1000</cbc:BaseAmount>
+         <cbc:AllowanceChargeReasonCode/>
+         <cbc:AllowanceChargeReason>Prisrabatt enligt avtal</cbc:AllowanceChargeReason>
+         <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
+         <cbc:Amount currencyID="SEK">20.00</cbc:Amount>
+         <cbc:BaseAmount currencyID=""/>
       </cac:AllowanceCharge>
       <cac:Item>
-         <cbc:Description>Long description of the item on the invoice line</cbc:Description>
-         <cbc:Name>Item name</cbc:Name>
+         <cbc:Description>Superbra ventilationsslang i finfin plåt</cbc:Description>
+         <cbc:Name>Ventilationsslang diameter 82mm</cbc:Name>
          <cac:BuyersItemIdentification>
-            <cbc:ID>123455</cbc:ID>
+            <cbc:ID>43790</cbc:ID>
          </cac:BuyersItemIdentification>
          <cac:SellersItemIdentification>
-            <cbc:ID>9873242</cbc:ID>
+            <cbc:ID>9371212</cbc:ID>
          </cac:SellersItemIdentification>
          <cac:StandardItemIdentification>
-            <cbc:ID schemeID="0160">10986700</cbc:ID>
+            <cbc:ID schemeID="0160">7391272164648</cbc:ID>
          </cac:StandardItemIdentification>
          <cac:OriginCountry>
             <cbc:IdentificationCode>CN</cbc:IdentificationCode>
          </cac:OriginCountry>
          <cac:CommodityClassification>
-            <cbc:ItemClassificationCode listID="STI" listVersionID="">9873242</cbc:ItemClassificationCode>
+            <cbc:ItemClassificationCode listID="SN" listVersionID="">698679864</cbc:ItemClassificationCode>
          </cac:CommodityClassification>
          <cac:ClassifiedTaxCategory>
             <cbc:ID>S</cbc:ID>
-            <cbc:Percent>25</cbc:Percent>
+            <cbc:Percent>25.00</cbc:Percent>
             <cac:TaxScheme>
                <cbc:ID>VAT</cbc:ID>
             </cac:TaxScheme>
          </cac:ClassifiedTaxCategory>
          <cac:AdditionalItemProperty>
-            <cbc:Name>Color</cbc:Name>
-            <cbc:Value>Black</cbc:Value>
+            <cbc:Name/>
+            <cbc:Value/>
          </cac:AdditionalItemProperty>
       </cac:Item>
       <cac:Price>
-         <cbc:PriceAmount currencyID="EUR">23.45</cbc:PriceAmount>
-         <cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
+         <cbc:PriceAmount currencyID="SEK">100</cbc:PriceAmount>
+         <cbc:BaseQuantity unitCode="EA"/>
          <cac:AllowanceCharge>
-            <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-            <cbc:Amount currencyID="EUR">100</cbc:Amount>
-            <cbc:BaseAmount currencyID="EUR">123.45</cbc:BaseAmount>
+            <cbc:ChargeIndicator/>
+            <cbc:Amount currencyID=""/>
+            <cbc:BaseAmount currencyID=""/>
          </cac:AllowanceCharge>
       </cac:Price>
    </cac:InvoiceLine>

@@ -11,8 +11,7 @@
       <Element>
          <Term>cbc:CustomizationID</Term>
          <Name>Specification identification</Name>
-         <Description>
-						BEAst: This document describes the BEAst profile, and how BEAst's order response messages, version 3.1, for NeC, Rental and Material are linked to the Peppol structure.
+         <Description>BEAst: This document describes the BEAst profile, and how BEAst's order response messages, version 3.1, for NeC, Rental and Material are linked to the Peppol structure.
  Peppol: Identifies the specification of content and rules that apply to the transaction.</Description>
          <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir76-001</Reference>
@@ -29,8 +28,7 @@
       <Element>
          <Term>cbc:ID</Term>
          <Name>Order response identifier</Name>
-         <Description>
-						BEAst: T3345, Order response number.
+         <Description>BEAst: T3345, Order response number.
  Peppol: A transaction instance must have an identifier. The identifier enables referencing the transaction for various purposes such as from other transactions that are part of the same process.</Description>
          <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir76-003</Reference>
@@ -39,8 +37,7 @@
       <Element cardinality="0..1">
          <Term>cbc:SalesOrderID</Term>
          <Name>Sales order reference</Name>
-         <Description>
-						BEAst: T6099, Supplier's Order number.
+         <Description>BEAst: T6099, Supplier's Order number.
  Peppol: An identifier of a referenced sales order, issued by the Seller.</Description>
          <DataType>Document Reference</DataType>
          <Reference type="BUSINESS_TERM">tir76-p007</Reference>
@@ -49,8 +46,7 @@
       <Element>
          <Term>cbc:IssueDate</Term>
          <Name>Order response issue date</Name>
-         <Description>
-						BEAst: T6325, Document Date/Time.
+         <Description>BEAst: T6325, Document Date/Time.
  Peppol: The date on which the transaction instance was issued.</Description>
          <DataType>Date</DataType>
          <Reference type="BUSINESS_TERM">tir76-004</Reference>
@@ -59,8 +55,7 @@
       <Element cardinality="0..1">
          <Term>cbc:IssueTime</Term>
          <Name>Order response issue time</Name>
-         <Description>
-						BEAst: T6325, Document Date/Time.
+         <Description>BEAst: T6325, Document Date/Time.
  Peppol: The time on which the transaction instance was issued</Description>
          <DataType>Time</DataType>
          <Reference type="BUSINESS_TERM">tir76-005</Reference>
@@ -69,29 +64,26 @@
       <Element>
          <Term>cbc:OrderResponseCode</Term>
          <Name>Response code</Name>
-         <Description>
-						BEAst: T6114, Order response status.
- Peppol: A code that indicates whether the referenced order has been received and not yet processed, or is Accepted or Rejected as whole, alternatively, Accepted with change or already delivered.If response code is Accept or Reject there may not be any response lines.</Description>
+         <Description>BEAst: T6114, Order response status.
+ Peppol: A code that indicates whether the referenced order has been received and not yet processed, or is Accepted or Rejected as whole, alternatively, Accepted with change or already delivered. If response code is Accept or Reject there may not be any response lines.</Description>
          <DataType>Code</DataType>
          <Reference type="BUSINESS_TERM">tir76-200</Reference>
+         <Reference type="RULE">PEPPOL-T76-R007</Reference>
          <Reference type="CODE_LIST">UNCL4343-T76</Reference>
          <Value type="EXAMPLE">CA</Value>
       </Element>
       <Element cardinality="0..1">
          <Term>cbc:Note</Term>
          <Name>Response clarification</Name>
-         <Description>
-						BEAst: T6008 and T6038, Transport information or Supplier's remark.
+         <Description>BEAst: T6008 and T6038, Transport information or Supplier's remark.
  Peppol: Clarification of the suppliers decision.</Description>
          <DataType>Text</DataType>
          <Reference type="BUSINESS_TERM">tir76-006</Reference>
-         <Value type="EXAMPLE">Response message with amendments in the details</Value>
       </Element>
       <Element>
          <Term>cbc:DocumentCurrencyCode</Term>
          <Name>Document currency</Name>
-         <Description>
-						BEAst: T6018, Order Currency.
+         <Description>BEAst: T6018, Order Currency.
  Peppol: The default currency for the offer.</Description>
          <Reference type="BUSINESS_TERM">tir76-007</Reference>
          <Reference type="CODE_LIST">ISO4217</Reference>
@@ -100,8 +92,7 @@
       <Element cardinality="0..1">
          <Term>cbc:CustomerReference</Term>
          <Name>Buyer reference identifier</Name>
-         <Description>
-						BEAst: T6004, Project number.
+         <Description>BEAst: T6004, Project number.
  Peppol: An identifier assigned by the Buyer used for internal routing purposes.The identifier is defined by the buyer (contact ID, department, office id, project code), but provided by the seller in the order response.</Description>
          <DataType>Identifier</DataType>
          <Reference type="BUSINESS_TERM">tir110-044</Reference>
@@ -110,13 +101,11 @@
       <Element>
          <Term>cac:OrderReference</Term>
          <Name>Order reference</Name>
-         <Description>
-						BEAst: The order response message always is preceeded by an order message. If the order response is a confirmation of something ordered by telephone, in a shop or a supplier portal, the Peppol message OrderAgreement should be used instead.</Description>
+         <Description>BEAst: The order response message always is preceeded by an order message. If the order response is a confirmation of something ordered by telephone, in a shop or a supplier portal, the Peppol message OrderAgreement should be used instead.</Description>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Order document reference</Name>
-            <Description>
-						BEAst: T3309 and T6335, Reference to the Order/Calloff.
+            <Description>BEAst: T3309 and T6335, Reference to the Order/Calloff.
  Peppol: Used to reference the order that is being responded to.</Description>
             <DataType>Document reference</DataType>
             <Reference type="BUSINESS_TERM">tir76-011</Reference>
@@ -134,8 +123,7 @@
             <Element>
                <Term>cbc:EndpointID</Term>
                <Name>Seller party electronic address</Name>
-               <Description>
-						BEAst: T0009 or T6001, Identification of the Supplier.
+               <Description>BEAst: T0009 or T6001, Identification of the Supplier.
  Peppol: Identifies the seller party's electronic address</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir76-058</Reference>
@@ -156,13 +144,12 @@
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>Seller party identification</Name>
-                  <Description>
-						BEAst: T0009 or T6001, Identification of the Supplier.
+                  <Description>BEAst: T0009 or T6001, Identification of the Supplier.
  Peppol: Identifies a party.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir76-059</Reference>
                   <Value type="EXAMPLE">DK12345678</Value>
-                  <Attribute usage="optional">
+                  <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
@@ -179,8 +166,7 @@
                <Element>
                   <Term>cbc:RegistrationName</Term>
                   <Name>Seller party name</Name>
-                  <Description>
-						BEAst: T5001, Name of the Supplier.
+                  <Description>BEAst: T5001, Name of the Supplier.
  Peppol: The name of the party.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir76-060</Reference>
@@ -200,8 +186,7 @@
             <Element>
                <Term>cbc:EndpointID</Term>
                <Name>Buyer party electronic address</Name>
-               <Description>
-						BEAst: T0008 or T6001, Identification of the Buyer.
+               <Description>BEAst: T0008 or T6001, Identification of the Buyer.
  Peppol: Identifies the buyer party's electronic address</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir76-021</Reference>
@@ -222,12 +207,11 @@
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>Buyer party identification</Name>
-                  <Description>
-						BEAst: T0008 or T6001, Identification of the Buyer.
+                  <Description>BEAst: T0008 or T6001, Identification of the Buyer.
  Peppol: An identification for the buyer party.</Description>
                   <Reference type="BUSINESS_TERM">tir76-022</Reference>
                   <Value type="EXAMPLE">DK55412777</Value>
-                  <Attribute usage="optional">
+                  <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Description>Scheme identifier for party identification</Description>
@@ -244,8 +228,7 @@
                <Element>
                   <Term>cbc:RegistrationName</Term>
                   <Name>Buyer party name</Name>
-                  <Description>
-						BEAst: T5001, Name of the Buyer.
+                  <Description>BEAst: T5001, Name of the Buyer.
  Peppol: The name of the party who ordered the items and receives the response.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir76-023</Reference>
@@ -258,8 +241,7 @@
       <Element cardinality="0..1">
          <Term>cac:Delivery</Term>
          <Name>Delivery information </Name>
-         <Description>
-						BEAst: Confirmation of delivery dates are always at line level, not here.</Description>
+         <Description>BEAst: Confirmation of delivery dates are always at line level, not here.</Description>
          <Element>
             <Term>cac:PromisedDeliveryPeriod</Term>
             <Name>Promised delivery period</Name>
@@ -303,8 +285,7 @@
       <Element cardinality="0..n">
          <Term>cac:OrderLine</Term>
          <Name>Specification of order lines</Name>
-         <Description>
-						BEAst: Orderlines should be included in the order response only when the OrderResponseCode is "CA" (Conditionally Accepted). For all other codes only the document header should be sent. When the order is Conditionally Accepted, all orderlines shall be included, not only those that are changed.</Description>
+         <Description>BEAst: Orderlines should be included in the order response only when the OrderResponseCode is "CA" (Conditionally Accepted). For all other codes only the document header should be sent. When the order is Conditionally Accepted, all orderlines shall be included, not only those that are changed.</Description>
          <Element>
             <Term>cac:LineItem</Term>
             <Name>Description of line item</Name>
@@ -312,8 +293,7 @@
             <Element>
                <Term>cbc:ID</Term>
                <Name>Document line identifier</Name>
-               <Description>
-						BEAst: T0051, Line number.
+               <Description>BEAst: T0051, Line number.
  Peppol: Identifies the response line. Each order response line MUST be unique within the order response.</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir76-120</Reference>
@@ -323,8 +303,7 @@
             <Element cardinality="0..1">
                <Term>cbc:Note</Term>
                <Name>Response clarification</Name>
-               <Description>
-						BEAst: T6031, Line item information.
+               <Description>BEAst: T6031, Line item information.
  Peppol: Clarifacation of the suppliers decision for the line.</Description>
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">tir76-204</Reference>
@@ -333,8 +312,7 @@
             <Element>
                <Term>cbc:LineStatusCode</Term>
                <Name>Response code</Name>
-               <Description>
-						BEAst: T6115 and T6384, Line Status.
+               <Description>BEAst: T6115 and T6384, Line Status.
  Peppol: A code that indicates whether the referenced order line as whole is Accepted or Rejected or, alternatively, Accepted with change.</Description>
                <Reference type="BUSINESS_TERM">tir76-202</Reference>
                <Reference type="CODE_LIST">UNCL1229</Reference>
@@ -343,8 +321,7 @@
             <Element cardinality="0..1">
                <Term>cbc:Quantity</Term>
                <Name>Quantity</Name>
-               <Description>
-						BEAst: T3240, Quantity to be delivered. unitCode = T6706, Measure Unit NeB Type.
+               <Description>BEAst: T3240, Quantity to be delivered. unitCode = T6706, Measure Unit NeB Type.
  Peppol: The quantity of items that will be delivered.</Description>
                <DataType>Quantity</DataType>
                <Reference type="BUSINESS_TERM">tir76-132</Reference>
@@ -361,8 +338,7 @@
             <Element cardinality="0..1">
                <Term>cbc:MaximumBackorderQuantity</Term>
                <Name>Maximum backorder quantity</Name>
-               <Description>
-						BEAst: T0059 and T6461, Backordered quantity.
+               <Description>BEAst: T0059 and T6461, Backordered quantity.
  Peppol: The quantity of items that will be delivered at a later time. A unit for the backordered quantity is the same as for the Quantity. If none of the remaining quantity for the response line is to be delivered, use 0 "zero".</Description>
                <DataType>Quantity</DataType>
                <Reference type="BUSINESS_TERM">tir76-p005</Reference>
@@ -379,8 +355,7 @@
                   <Element cardinality="0..1">
                      <Term>cbc:StartDate</Term>
                      <Name>Period start date</Name>
-                     <Description>
-						BEAst: T6319 and T6461, Delivery period Start date.
+                     <Description>BEAst: T6319 and T6461, Delivery period Start date.
  Peppol: The date on which the period starts. The start dates counts as part of the period.</Description>
                      <DataType>Date</DataType>
                      <Reference type="BUSINESS_TERM">tir76-126</Reference>
@@ -390,8 +365,7 @@
                   <Element cardinality="0..1">
                      <Term>cbc:StartTime</Term>
                      <Name>Period start time</Name>
-                     <Description>
-						BEAst: T6734, Delivery period Start time.
+                     <Description>BEAst: T6734, Delivery period Start time.
  Peppol: The time at which this period begins. Format = "hh:mm:ss"</Description>
                      <DataType>Time</DataType>
                      <Reference type="BUSINESS_TERM">tir76-p012</Reference>
@@ -400,8 +374,7 @@
                   <Element cardinality="0..1">
                      <Term>cbc:EndDate</Term>
                      <Name>Period end date</Name>
-                     <Description>
-						BEAst: T6320 and T6462, Delivery period End date.
+                     <Description>BEAst: T6320 and T6462, Delivery period End date.
  Peppol: The date on which the period ends. The end date counts as part of the period.</Description>
                      <DataType>Date</DataType>
                      <Reference type="BUSINESS_TERM">tir76-127</Reference>
@@ -411,8 +384,7 @@
                   <Element cardinality="0..1">
                      <Term>cbc:EndTime</Term>
                      <Name>Period end time</Name>
-                     <Description>
-						BEAst: T6735, Delivery period End time.
+                     <Description>BEAst: T6735, Delivery period End time.
  Peppol: The time at which this period end. Format = "hh:mm:ss"</Description>
                      <DataType>Time</DataType>
                      <Reference type="BUSINESS_TERM">tir76-p013</Reference>
@@ -427,8 +399,7 @@
                <Element>
                   <Term>cbc:PriceAmount</Term>
                   <Name>Item price</Name>
-                  <Description>
-						BEAst: T6235, Price amount. currencyID = T6018, Order currency.
+                  <Description>BEAst: T6235, Price amount. currencyID = T6018, Order currency.
  Peppol: The net price of an item including discounts or surcharges that apply to the price.Although price is an optional element in an offer it recommended as best practice to either state the price or provide reference to an appropriate source from which the price can be identified such as a contract, catalogue or a quote.. The price amount. The net price of the item including all allowances, charges and taxes but exluding TAX.</Description>
                   <DataType>Price amount</DataType>
                   <Reference type="BUSINESS_TERM">tir76-130</Reference>
@@ -444,8 +415,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:BaseQuantity</Term>
                   <Name>Item price base quantity</Name>
-                  <Description>
-						BEAst: T6722, Price unit basis quantity. unitCode = T6706, Measure Unit NeB Type.
+                  <Description>BEAst: T6722, Price unit basis quantity. unitCode = T6706, Measure Unit NeB Type.
  Peppol: The actual quantity to which the price applies.</Description>
                   <DataType>Quantity</DataType>
                   <Reference type="BUSINESS_TERM">tir76-131</Reference>
@@ -467,8 +437,7 @@
                <Element>
                   <Term>cbc:Name</Term>
                   <Name>Item name</Name>
-                  <Description>
-						BEAst: T6226, Article description.
+                  <Description>BEAst: T6226, Article description.
  Peppol: A short name given to an item, such as a name from a Catalogue, as distinct from a description. A short name for the item.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir76-205</Reference>
@@ -481,8 +450,7 @@
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Buyers item identifier</Name>
-                     <Description>
-						BEAst: T6022, T6417 and T0172 if T6317 = "BP", Buyers part article number.
+                     <Description>BEAst: T6022, T6417 and T0172 if T6317 = "BP", Buyers part article number.
  Peppol: An identifier, assigned by the buyer, for the item. Associates the item with its identification according to the buyer's system.</Description>
                      <DataType>Identifier</DataType>
                      <Reference type="BUSINESS_TERM">tir76-p006</Reference>
@@ -496,8 +464,7 @@
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>The Sellers item identifier</Name>
-                     <Description>
-						BEAst: T0172, Supplier's article number.
+                     <Description>BEAst: T0172, Supplier's article number.
  Peppol: An identifier, assigned by the seller, for the item. Associates the item with its identification according to the seller's system.</Description>
                      <DataType>Identifier</DataType>
                      <Reference type="BUSINESS_TERM">tir76-206</Reference>
@@ -511,8 +478,7 @@
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Item standard identifier</Name>
-                     <Description>
-						BEAst: Global Trade Item Number (T0154) or RSK Article Number Sweden (T6023). All other item number standards used within BEAst can not be used here until the organisation behind the standard decides to be a part of the codelist "ISO 6523 ICD". These are: NOBB Article Number (T6027), RT Article Number (T6460), TUN Article Number (T6028), Finfo/Vilma Article Number (T6029), Norwegian RSK Article Number (T6024), Norwegian E-number (T6026), E-number (T0260) and SGTIN (T6461).
+                     <Description>BEAst: Global Trade Item Number (T0154) or RSK Article Number Sweden (T6023). All other item number standards used within BEAst can not be used here until the organisation behind the standard decides to be a part of the codelist "ISO 6523 ICD". These are: NOBB Article Number (T6027), RT Article Number (T6460), TUN Article Number (T6028), Finfo/Vilma Article Number (T6029), Norwegian RSK Article Number (T6024), Norwegian E-number (T6026), E-number (T0260) and SGTIN (T6461).
  Peppol: An item identifier based on a registered scheme. Associates the item with its identification according to a standard system.</Description>
                      <DataType>Identifier</DataType>
                      <Reference type="BUSINESS_TERM">tir76-207</Reference>
@@ -535,8 +501,7 @@
             <Element>
                <Term>cbc:ID</Term>
                <Name>Substituted Line Item Identifier </Name>
-               <Description>
-						BEAst: T0051, Line number.
+               <Description>BEAst: T0051, Line number.
  Peppol: Identifier of the substituted line item</Description>
                <Reference type="BUSINESS_TERM">tir76-p002</Reference>
                <Value type="EXAMPLE">12356</Value>
@@ -548,8 +513,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Item name</Name>
-                  <Description>
-						BEAst: T6226, Article description of the replacing article.
+                  <Description>BEAst: T6226, Article description of the replacing article.
  Peppol: A short name optionally given to an item, such as a name from a Catalogue, as distinct from a description. A short name for the item.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir76-134</Reference>
@@ -562,8 +526,7 @@
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Sellers item identifier</Name>
-                     <Description>
-						BEAst: T0172, Supplier's article identification of the replacing article.
+                     <Description>BEAst: T0172, Supplier's article identification of the replacing article.
  Peppol: An identifier, assigned by the seller, for the item. Associates the item with its identification according to the seller's system.</Description>
                      <DataType>Identifier</DataType>
                      <Reference type="BUSINESS_TERM">tir76-135</Reference>
@@ -577,8 +540,7 @@
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Item standard identifier</Name>
-                     <Description>
-						BEAst: Global Trade Item Number (T0154) or RSK Article Number Sweden (T6023). All other item number standards used within BEAst can not be used here until the organisation behind the standard decides to be a part of the codelist "ISO 6523 ICD". These are: NOBB Article Number (T6027), RT Article Number (T6460), TUN Article Number (T6028), Finfo/Vilma Article Number (T6029), Norwegian RSK Article Number (T6024), Norwegian E-number (T6026), E-number (T0260) and SGTIN (T6461).
+                     <Description>BEAst: Global Trade Item Number (T0154) or RSK Article Number Sweden (T6023). All other item number standards used within BEAst can not be used here until the organisation behind the standard decides to be a part of the codelist "ISO 6523 ICD". These are: NOBB Article Number (T6027), RT Article Number (T6460), TUN Article Number (T6028), Finfo/Vilma Article Number (T6029), Norwegian RSK Article Number (T6024), Norwegian E-number (T6026), E-number (T0260) and SGTIN (T6461).
  Peppol: An item identifier based on a registered scheme. Associates the item with its identification according to a standard system.</Description>
                      <DataType>Identifier</DataType>
                      <Reference type="BUSINESS_TERM">tir76-136</Reference>
@@ -602,7 +564,6 @@
                      <Description>A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
                      <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir76-149</Reference>
-                     <Value type="EXAMPLE">12345678</Value>
                      <Attribute>
                         <Term>listID</Term>
                         <Name>Item classification identifier identification scheme identifier</Name>
@@ -610,17 +571,17 @@
                         <Reference type="CODE_LIST">UNCL7143</Reference>
                         <Value type="EXAMPLE">MP</Value>
                      </Attribute>
-                     <Attribute usage="Optional">
+                     <Attribute>
                         <Term>listVersionID</Term>
                         <Name>Item classification identifier version identification scheme identifier</Name>
                         <Description>The identification scheme version identifier of the Item classification identifier</Description>
-                        <Value type="EXAMPLE">20.0601</Value>
+                        <Value type="EXAMPLE">19.0501</Value>
                      </Attribute>
-                     <Attribute usage="Optional">
+                     <Attribute>
                         <Term>name</Term>
                         <Name>Clear text name equivalent of classification code</Name>
                         <Description>The textual equivalent of the code value</Description>
-                        <Value type="EXAMPLE">Office furniture</Value>
+                        <Value type="EXAMPLE">Name</Value>
                      </Attribute>
                   </Element>
                </Element>
@@ -675,7 +636,6 @@
                      <Description>Code for the item property according to a property code system.</Description>
                      <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir76-p004</Reference>
-                     <Value type="EXAMPLE">Code</Value>
                      <Attribute>
                         <Term>listID</Term>
                         <Name>Name code list id.</Name>
@@ -703,7 +663,7 @@
                         <Description>The unit of measure that applies to the value quantity.</Description>
                         <DataType>Code</DataType>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
-                        <Value type="EXAMPLE">NAR</Value>
+                        <Value type="EXAMPLE">GRM</Value>
                      </Attribute>
                   </Element>
                   <Element cardinality="0..1">
@@ -712,7 +672,6 @@
                      <Description>Standardized and predefined classification of items properties.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir76-p009</Reference>
-                     <Value type="EXAMPLE">gram</Value>
                   </Element>
                </Element>
             </Element>
@@ -724,8 +683,7 @@
             <Element>
                <Term>cbc:LineID</Term>
                <Name>Order line reference</Name>
-               <Description>
-						BEAst: T3322 and T6336, Reference to Order line.
+               <Description>BEAst: T3322 and T6336, Reference to Order line.
  Peppol: Used to reference the initial order line that correspondes to the response.All order lines should be stated when an order is changed.</Description>
                <Reference type="BUSINESS_TERM">tir76-201</Reference>
                <Value type="EXAMPLE">1</Value>
