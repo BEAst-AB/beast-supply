@@ -2,10 +2,10 @@
 
 PROJECT=$(dirname $(readlink -f "$0"))
 
-POACCBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/master/structure/syntax/"
+POACCBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/2024-q2-member-review/structure/syntax/"
 echo $POACCBASEURL
 
-LOGISTICSBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/qa/structure/syntax/"
+LOGISTICSBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/structure/syntax/"
 echo $LOGISTICSBASEURL
 
 # Delete target folder if found
@@ -25,7 +25,7 @@ docker run --rm -i \
     -v $PROJECT:/src \
     -v $PROJECT/target/generated:/target \
     atomgraph/saxon \
-    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/master/structure/syntax/ubl-invoice.xml \
+    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/2024-q2-member-review/structure/syntax/ubl-invoice.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-invoice.xml \
     varOverrideSample=/src/structure/source/ubl-invoice.xml \
