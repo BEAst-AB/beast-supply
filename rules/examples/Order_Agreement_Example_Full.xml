@@ -41,7 +41,7 @@
             <cbc:AdditionalStreetName>Department A</cbc:AdditionalStreetName>
             <cbc:CityName>Oslo</cbc:CityName>
             <cbc:PostalZone>0585</cbc:PostalZone>
-            <cbc:CountrySubentity/>
+            <cbc:CountrySubentity>Region</cbc:CountrySubentity>
             <cac:AddressLine>
                <cbc:Line>Address Line 3</cbc:Line>
             </cac:AddressLine>
@@ -51,7 +51,7 @@
          </cac:PostalAddress>
          <cac:PartyLegalEntity>
             <cbc:RegistrationName>The Supplier AB</cbc:RegistrationName>
-            <cbc:CompanyID schemeID=""/>
+            <cbc:CompanyID schemeID="0002">987654321</cbc:CompanyID>
          </cac:PartyLegalEntity>
          <cac:Contact>
             <cbc:Name>John Doe</cbc:Name>
@@ -68,10 +68,10 @@
          </cac:PartyIdentification>
          <cac:PostalAddress>
             <cbc:StreetName>Sinsenveien 40</cbc:StreetName>
-            <cbc:AdditionalStreetName/>
+            <cbc:AdditionalStreetName>Department B</cbc:AdditionalStreetName>
             <cbc:CityName>Oslo</cbc:CityName>
             <cbc:PostalZone>0501</cbc:PostalZone>
-            <cbc:CountrySubentity/>
+            <cbc:CountrySubentity>Region</cbc:CountrySubentity>
             <cac:AddressLine>
                <cbc:Line>Address Line 3</cbc:Line>
             </cac:AddressLine>
@@ -81,7 +81,7 @@
          </cac:PostalAddress>
          <cac:PartyLegalEntity>
             <cbc:RegistrationName>City Hospital</cbc:RegistrationName>
-            <cbc:CompanyID schemeID=""/>
+            <cbc:CompanyID schemeID="0002">987654321</cbc:CompanyID>
          </cac:PartyLegalEntity>
       </cac:Party>
       <cac:DeliveryContact>
@@ -129,7 +129,7 @@
             <cbc:AdditionalStreetName>Department A</cbc:AdditionalStreetName>
             <cbc:CityName>Delivery Party City name</cbc:CityName>
             <cbc:PostalZone>12345</cbc:PostalZone>
-            <cbc:CountrySubentity/>
+            <cbc:CountrySubentity>code</cbc:CountrySubentity>
             <cac:AddressLine>
                <cbc:Line>Place</cbc:Line>
             </cac:AddressLine>
@@ -146,10 +146,10 @@
          <cbc:ID>Stockholm</cbc:ID>
          <cac:Address>
             <cbc:StreetName>Vasagatan 12</cbc:StreetName>
-            <cbc:AdditionalStreetName/>
+            <cbc:AdditionalStreetName>Additional address</cbc:AdditionalStreetName>
             <cbc:CityName>Stockholm</cbc:CityName>
             <cbc:PostalZone>12345</cbc:PostalZone>
-            <cbc:CountrySubentity/>
+            <cbc:CountrySubentity>Address</cbc:CountrySubentity>
             <cac:AddressLine>
                <cbc:Line>xxx</cbc:Line>
             </cac:AddressLine>
@@ -217,7 +217,7 @@
          <cac:Price>
             <cbc:PriceAmount currencyID="EUR">1.50</cbc:PriceAmount>
             <cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
-            <cbc:PriceType/>
+            <cbc:PriceType>AAA</cbc:PriceType>
             <cac:AllowanceCharge>
                <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
                <cbc:Amount currencyID="EUR">0.20</cbc:Amount>
@@ -262,10 +262,10 @@
             </cac:ClassifiedTaxCategory>
             <cac:AdditionalItemProperty>
                <cbc:Name>Length</cbc:Name>
-               <cbc:NameCode listID=""/>
+               <cbc:NameCode listID="NN">test</cbc:NameCode>
                <cbc:Value>30 mm</cbc:Value>
-               <cbc:ValueQuantity unitCode=""/>
-               <cbc:ValueQualifier/>
+               <cbc:ValueQuantity unitCode="MMT">30</cbc:ValueQuantity>
+               <cbc:ValueQualifier>Z3</cbc:ValueQualifier>
             </cac:AdditionalItemProperty>
             <cac:Certificate>
                <cbc:ID>EU EcoLabel</cbc:ID>

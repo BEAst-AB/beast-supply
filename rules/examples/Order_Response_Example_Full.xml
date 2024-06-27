@@ -9,7 +9,7 @@
    <cbc:IssueDate>2021-07-01</cbc:IssueDate>
    <cbc:IssueTime>06:10:10</cbc:IssueTime>
    <cbc:OrderResponseCode>CA</cbc:OrderResponseCode>
-   <cbc:Note/>
+   <cbc:Note>Response message with amendments in the details</cbc:Note>
    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
    <cbc:CustomerReference>ABC-123</cbc:CustomerReference>
    <cac:OrderReference>
@@ -88,7 +88,7 @@
                <cbc:ID schemeID="0160">7400000001235</cbc:ID>
             </cac:StandardItemIdentification>
             <cac:CommodityClassification>
-               <cbc:ItemClassificationCode listID="MP" listVersionID="19.0501" name="Name"/>
+               <cbc:ItemClassificationCode listID="MP" listVersionID="19.0501" name="Name">12345678</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <cac:ClassifiedTaxCategory>
                <cbc:ID>S</cbc:ID>
@@ -99,10 +99,10 @@
             </cac:ClassifiedTaxCategory>
             <cac:AdditionalItemProperty>
                <cbc:Name>Weight</cbc:Name>
-               <cbc:NameCode listID=""/>
+               <cbc:NameCode listID="123">Code</cbc:NameCode>
                <cbc:Value>12 gram</cbc:Value>
                <cbc:ValueQuantity unitCode="GRM">12</cbc:ValueQuantity>
-               <cbc:ValueQualifier/>
+               <cbc:ValueQualifier>gram</cbc:ValueQualifier>
             </cac:AdditionalItemProperty>
          </cac:Item>
       </cac:SellerSubstitutedLineItem>
