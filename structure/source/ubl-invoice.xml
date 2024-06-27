@@ -74,7 +74,9 @@
       <cbc:EndpointID schemeID="0007">5561043539</cbc:EndpointID>
       <cac:PartyIdentification>
 		  
-        <cbc:ID schemeID="0088">7365561043532</cbc:ID>  
+        <cbc:ID schemeID="0088">7365561043532
+		<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
+	</cbc:ID>  
       </cac:PartyIdentification>
 	<cac:PartyName>
 			  <cbc:Name>Cramo</cbc:Name>
@@ -120,7 +122,9 @@
     <cac:Party>
       <cbc:EndpointID schemeID="0088">7300009058334</cbc:EndpointID>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="0007">5560608837</cbc:ID>
+        <cbc:ID schemeID="0007">5560608837
+		<?schemeID-DescriptionAddFirst Strongly recommended to use even though it is not mandatory in Peppol.?>
+		</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>
 		  <cbc:Name>JM</cbc:Name>
