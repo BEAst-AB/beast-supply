@@ -423,16 +423,7 @@
 				<?DescriptionAddFirst Use NA if there is no clear identity on the consignment. ?>
 			</cbc:ID>
 			<cbc:HazardousRiskIndicator></cbc:HazardousRiskIndicator>
-			<cbc:HandlingCode listID="">
-				<?DescriptionAddFirst Code to specify additional service from the transport company (T6466) where unique codes per transport company will be used, 
-				or for Unloading instructions code (T6343). The Unloading Instruction Codes are as follows: 
-				Z50=Semitrailer removable roof, Z51=Truck, Z52=Truck with tail lift, Z53=Truck with crane max 4 m, 
-				Z54=Truck with crane 4-9 m, Z55=Truck with crane more than 9 m, Z56=Forklift, 
-				Z57=Semitrailer, Z58=Short term storage, Z59=Porterage, Z60=Carry-in service, 
-				Z61=Standard transport, Z62=Loaded on truck, Z63=Indoor storage, Z64=Outdoor storage, 
-				Z65=Package maximum weigh, ZZ=Mutually agreed. ?>
-				<?listID-DescriptionAddFirst Use listID = "HandlingCode" for the BEAst codes listed above. ?>
-			</cbc:HandlingCode>
+			<cbc:HandlingCode listID="BeastHandlingCode">Z50</cbc:HandlingCode>
 			<cbc:HandlingInstructions>
 				<?DescriptionAddFirst Unloading Instruction (T6344). ?>
 			</cbc:HandlingInstructions>

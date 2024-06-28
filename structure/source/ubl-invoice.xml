@@ -173,7 +173,7 @@
 		  <cbc:Name>Payment recipient</cbc:Name>
 	  </cac:PartyName>
 	  <cac:PartyLegalEntity>
-		  <cbc:CompanyID schemeID="0007">XXXXXXXXXXX</cbc:CompanyID>
+		  <cbc:CompanyID schemeID="0088"></cbc:CompanyID>
 	  </cac:PartyLegalEntity>
   </cac:PayeeParty>
 	<cac:TaxRepresentativeParty>
@@ -213,7 +213,7 @@
       <cac:Address>
         <cbc:StreetName>Storgatan 162</cbc:StreetName>
         <cbc:AdditionalStreetName>
-          <?Description Department ?>
+          <?DescriptionAddFirst Department ?>
           Inköp
         </cbc:AdditionalStreetName>
         <cbc:CityName>Stockholm</cbc:CityName>
@@ -238,7 +238,7 @@
   </cac:Delivery>
 
   <cac:PaymentMeans>
-    <cbc:PaymentMeansCode>31</cbc:PaymentMeansCode>
+    <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
     <cbc:PaymentID>7697699</cbc:PaymentID>
 	  <cac:CardAccount>
 		  <cbc:PrimaryAccountNumberID>1234</cbc:PrimaryAccountNumberID>
@@ -331,7 +331,7 @@
     <cac:DocumentReference>
 	    <cbc:ID schemeID="SE">
         <?Name Document Reference ID?>
-        <?Description Weight Statement Number (T6329) @schemeID="WM"; Freight Forwarder Referens Number (T6127) @schemeID="AHY"; Despatch Advice Number (T6386) @schemeID="AAK";Line Number (e.g. despatch advice line number) @schemeID="LI"; Serial number schemeID="SE"; Sales order id schemeID="VN" ?>
+        <?DescriptionAddFirst Weight Statement Number (T6329) @schemeID="WM"; Freight Forwarder Referens Number (T6127) @schemeID="AHY"; Despatch Advice Number (T6386) @schemeID="AAK";Line Number (e.g. despatch advice line number) @schemeID="LI"; Serial number schemeID="SE"; Sales order id schemeID="VN" ?>
 		  1571078
 	  </cbc:ID>
 		<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
