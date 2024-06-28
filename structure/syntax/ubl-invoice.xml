@@ -1013,14 +1013,14 @@
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-61</Reference>
                <Reference type="RULE">BR-CL-11</Reference>
-               <Value type="EXAMPLE">XXXXXXXXXXX</Value>
+               <Value type="EXAMPLE">FR932874294</Value>
                <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Name>Payee legal registration identifier identification scheme identifier</Name>
                   <Description>The identification scheme identifier of the Payee legal registration identifier.</Description>
                   <Reference type="RULE">BR-CL-10</Reference>
                   <Reference type="CODE_LIST">ICD</Reference>
-                  <Value type="EXAMPLE">0007</Value>
+                  <Value type="EXAMPLE">0088</Value>
                </Attribute>
             </Element>
          </Element>
@@ -1224,7 +1224,8 @@
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
                   <Name>Deliver to address line 2</Name>
-                  <Description>Department</Description>
+                  <Description>BEAst: Department
+ Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-76</Reference>
                   <Value type="EXAMPLE">Delivery Street 2</Value>
@@ -1319,7 +1320,7 @@
             <Reference type="RULE">BR-49</Reference>
             <Reference type="RULE">BR-CL-16</Reference>
             <Reference type="CODE_LIST">UNCL4461</Reference>
-            <Value type="EXAMPLE">31</Value>
+            <Value type="EXAMPLE">30</Value>
             <Attribute usage="Optional">
                <Term>name</Term>
                <Name>Payment means text</Name>
@@ -2082,7 +2083,8 @@
             <Element>
                <Term>cbc:ID</Term>
                <Name>Invoice line object identifier</Name>
-               <Description>Weight Statement Number (T6329) @schemeID="WM"; Freight Forwarder Referens Number (T6127) @schemeID="AHY"; Despatch Advice Number (T6386) @schemeID="AAK";Line Number (e.g. despatch advice line number) @schemeID="LI"; Serial number schemeID="SE"; Sales order id schemeID="VN"</Description>
+               <Description>BEAst: Weight Statement Number (T6329) @schemeID="WM"; Freight Forwarder Referens Number (T6127) @schemeID="AHY"; Despatch Advice Number (T6386) @schemeID="AAK";Line Number (e.g. despatch advice line number) @schemeID="LI"; Serial number schemeID="SE"; Sales order id schemeID="VN"
+ Peppol: An identifier for an object on which the invoice line is based, given by the Seller.</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-128</Reference>
                <Value type="EXAMPLE">AB12345</Value>
