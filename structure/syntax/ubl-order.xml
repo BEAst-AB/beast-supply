@@ -243,7 +243,7 @@
          <Element>
             <Term>cbc:ID</Term>
             <Name>Reference identifier</Name>
-            <Description>BEAst: Reference to Agreement or Contract (T0007).
+            <Description>BEAst: Reference to Agreement or Contract (T0088).
  Peppol: Positive identification of the reference such as a unique identifier.</Description>
             <DataType>Document reference</DataType>
             <Reference type="BUSINESS_TERM">tir01-019</Reference>
@@ -449,7 +449,7 @@
                      <Name>Scheme identifier</Name>
                      <Description>The identification scheme identifier of the buyer legal registration identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0007</Value>
+                     <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
                <Element cardinality="0..1">
@@ -675,7 +675,7 @@
                      <Name>Scheme identifier</Name>
                      <Description>The identification scheme identifier of the buyer legal registration identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0007</Value>
+                     <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
                <Element cardinality="0..1">
@@ -1005,7 +1005,7 @@
 								identifier</Name>
                      <Description>The identification scheme identifier of the buyer legal registration identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0007</Value>
+                     <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
                <Element cardinality="0..1">
@@ -1576,7 +1576,7 @@
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">tir01-114</Reference>
             <Reference type="RULE">PEPPOL-T01-R028</Reference>
-            <Value type="EXAMPLE">550.00</Value>
+            <Value type="EXAMPLE">450.00</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -1616,7 +1616,7 @@
             <Reference type="BUSINESS_TERM">tir01-145</Reference>
             <Reference type="RULE">PEPPOL-T01-R011</Reference>
             <Reference type="RULE">PEPPOL-T01-R028</Reference>
-            <Value type="EXAMPLE">2000.00</Value>
+            <Value type="EXAMPLE">1800.00</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -1633,7 +1633,7 @@
             <Reference type="BUSINESS_TERM">tir01-147</Reference>
             <Reference type="RULE">PEPPOL-T01-R017</Reference>
             <Reference type="RULE">PEPPOL-T01-R028</Reference>
-            <Value type="EXAMPLE">2500.00</Value>
+            <Value type="EXAMPLE">2250.00</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -1824,7 +1824,7 @@
                      <Name>Deliver to location identifier identification scheme identifier</Name>
                      <Description>The identification scheme identifier of the Deliver to location identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
-                     <Value type="EXAMPLE">0007</Value>
+                     <Value type="EXAMPLE">0088</Value>
                   </Attribute>
                </Element>
                <Element>
@@ -1947,7 +1947,7 @@
                   <DataType>Percentage</DataType>
                   <Reference type="BUSINESS_TERM">tir01-p017</Reference>
                   <Reference type="RULE">PEPPOL-T01-R021</Reference>
-                  <Value type="EXAMPLE">20</Value>
+                  <Value type="EXAMPLE">10</Value>
                </Element>
                <Element>
                   <Term>cbc:Amount</Term>
@@ -1958,7 +1958,7 @@
                   <Reference type="BUSINESS_TERM">tir01-p018</Reference>
                   <Reference type="RULE">PEPPOL-T01-R022</Reference>
                   <Reference type="RULE">PEPPOL-T01-R028</Reference>
-                  <Value type="EXAMPLE">200</Value>
+                  <Value type="EXAMPLE">100</Value>
                   <Attribute>
                      <Term>currencyID</Term>
                      <Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -1999,7 +1999,7 @@
                   <Reference type="BUSINESS_TERM">tir01-130</Reference>
                   <Reference type="RULE">PEPPOL-T01-R005</Reference>
                   <Reference type="RULE">PEPPOL-T01-R019</Reference>
-                  <Value type="EXAMPLE">200.00</Value>
+                  <Value type="EXAMPLE">210.00</Value>
                   <Attribute>
                      <Term>currencyID</Term>
                      <Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -2043,7 +2043,7 @@
                      <Description>Discount amount connected to the price</Description>
                      <DataType>Price amount</DataType>
                      <Reference type="BUSINESS_TERM">tir01-p006</Reference>
-                     <Value type="EXAMPLE">200</Value>
+                     <Value type="EXAMPLE">20</Value>
                      <Attribute>
                         <Term>currencyID</Term>
                         <Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>
@@ -2059,7 +2059,7 @@
                      <DataType>Price amount</DataType>
                      <Reference type="BUSINESS_TERM">tir01-152</Reference>
                      <Reference type="RULE">PEPPOL-T01-R027</Reference>
-                     <Value type="EXAMPLE">1000</Value>
+                     <Value type="EXAMPLE">230</Value>
                      <Attribute>
                         <Term>currencyID</Term>
                         <Description>Currency identifier, value must be the same as what is used in tir01-007, DocumentCurrencyCode.</Description>

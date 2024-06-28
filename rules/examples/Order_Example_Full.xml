@@ -74,7 +74,7 @@
          </cac:PartyTaxScheme>
          <cac:PartyLegalEntity>
             <cbc:RegistrationName>Skanska Sverige AB</cbc:RegistrationName>
-            <cbc:CompanyID schemeID="0007">7300010000001</cbc:CompanyID>
+            <cbc:CompanyID schemeID="0088">7300010000001</cbc:CompanyID>
             <cac:RegistrationAddress>
                <cbc:CityName>Stockholm</cbc:CityName>
                <cac:Country>
@@ -113,7 +113,7 @@
          </cac:PostalAddress>
          <cac:PartyLegalEntity>
             <cbc:RegistrationName>Paroc Aktiebolag</cbc:RegistrationName>
-            <cbc:CompanyID schemeID="0007">7300010000001</cbc:CompanyID>
+            <cbc:CompanyID schemeID="0088">7300010000001</cbc:CompanyID>
             <cac:RegistrationAddress>
                <cbc:CityName>Skövde</cbc:CityName>
                <cac:Country>
@@ -173,7 +173,7 @@
          </cac:PartyTaxScheme>
          <cac:PartyLegalEntity>
             <cbc:RegistrationName>Skanska Sverige AB</cbc:RegistrationName>
-            <cbc:CompanyID schemeID="0007">7300010000001</cbc:CompanyID>
+            <cbc:CompanyID schemeID="0088">7300010000001</cbc:CompanyID>
             <cac:RegistrationAddress>
                <cbc:CityName>Stockholm</cbc:CityName>
                <cac:Country>
@@ -272,12 +272,12 @@
       </cac:TaxCategory>
    </cac:AllowanceCharge>
    <cac:TaxTotal>
-      <cbc:TaxAmount currencyID="SEK">550.00</cbc:TaxAmount>
+      <cbc:TaxAmount currencyID="SEK">450.00</cbc:TaxAmount>
    </cac:TaxTotal>
    <cac:AnticipatedMonetaryTotal>
       <cbc:LineExtensionAmount currencyID="SEK">2000.00</cbc:LineExtensionAmount>
-      <cbc:TaxExclusiveAmount currencyID="SEK">2000.00</cbc:TaxExclusiveAmount>
-      <cbc:TaxInclusiveAmount currencyID="SEK">2500.00</cbc:TaxInclusiveAmount>
+      <cbc:TaxExclusiveAmount currencyID="SEK">1800.00</cbc:TaxExclusiveAmount>
+      <cbc:TaxInclusiveAmount currencyID="SEK">2250.00</cbc:TaxInclusiveAmount>
       <cbc:AllowanceTotalAmount currencyID="SEK">200.00</cbc:AllowanceTotalAmount>
       <cbc:ChargeTotalAmount currencyID="SEK">0.00</cbc:ChargeTotalAmount>
       <cbc:PrepaidAmount currencyID="SEK">0.00</cbc:PrepaidAmount>
@@ -293,7 +293,7 @@
          <cbc:PartialDeliveryIndicator>true</cbc:PartialDeliveryIndicator>
          <cbc:AccountingCost>1234:45435:243234</cbc:AccountingCost>
          <cac:Delivery>
-            <cbc:ID schemeID="0007">7300010000001</cbc:ID>
+            <cbc:ID schemeID="0088">7300010000001</cbc:ID>
             <cac:RequestedDeliveryPeriod>
                <cbc:StartDate>2021-11-01</cbc:StartDate>
                <cbc:StartTime>09:00:00</cbc:StartTime>
@@ -313,17 +313,17 @@
             <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
             <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
             <cbc:AllowanceChargeReason>Text</cbc:AllowanceChargeReason>
-            <cbc:MultiplierFactorNumeric>20</cbc:MultiplierFactorNumeric>
-            <cbc:Amount currencyID="SEK">200</cbc:Amount>
+            <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
+            <cbc:Amount currencyID="SEK">100</cbc:Amount>
             <cbc:BaseAmount currencyID="SEK">1000</cbc:BaseAmount>
          </cac:AllowanceCharge>
          <cac:Price>
-            <cbc:PriceAmount currencyID="SEK">200.00</cbc:PriceAmount>
+            <cbc:PriceAmount currencyID="SEK">210.00</cbc:PriceAmount>
             <cbc:BaseQuantity unitCode="MTK">1.00</cbc:BaseQuantity>
             <cac:AllowanceCharge>
                <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-               <cbc:Amount currencyID="SEK">200</cbc:Amount>
-               <cbc:BaseAmount currencyID="SEK">1000</cbc:BaseAmount>
+               <cbc:Amount currencyID="SEK">20</cbc:Amount>
+               <cbc:BaseAmount currencyID="SEK">230</cbc:BaseAmount>
             </cac:AllowanceCharge>
          </cac:Price>
          <cac:Item>

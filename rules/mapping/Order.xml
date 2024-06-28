@@ -923,7 +923,7 @@
                <Data ss:Type="String">Reference identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Reference to Agreement or Contract (T0007). Peppol: Positive identification of the reference such as a unique identifier.</Data>
+               <Data ss:Type="String">BEAst: Reference to Agreement or Contract (T0088). Peppol: Positive identification of the reference such as a unique identifier.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">AABC654</Data>
@@ -1680,7 +1680,7 @@
                <Data ss:Type="String">The identification scheme identifier of the buyer legal registration identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
@@ -2486,7 +2486,7 @@
                <Data ss:Type="String">The identification scheme identifier of the buyer legal registration identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
@@ -3683,7 +3683,7 @@
                <Data ss:Type="String">The identification scheme identifier of the buyer legal registration identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
@@ -5660,7 +5660,7 @@
                <Data ss:Type="String">The total TAX amount that is "added to the document total w/o TAX". This is the sum of all TAX subcategory amounts. The expected Tax Total in the corresponding invoice.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">550.00</Data>
+               <Data ss:Type="String">450.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:TaxTotal/cbc:TaxAmount</Data>
@@ -5790,7 +5790,7 @@
                <Data ss:Type="String">The "Sum of line amounts" plus "sum of allowances on document level" plus "sum of charges on document level". Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2000.00</Data>
+               <Data ss:Type="String">1800.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:TaxExclusiveAmount</Data>
@@ -5842,7 +5842,7 @@
                <Data ss:Type="String">The total value including TAX. Must be rounded to maximum 2 decimals.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2500.00</Data>
+               <Data ss:Type="String">2250.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:AnticipatedMonetaryTotal/cbc:TaxInclusiveAmount</Data>
@@ -6466,7 +6466,7 @@
                <Data ss:Type="String">The identification scheme identifier of the Deliver to location identifier.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">0007</Data>
+               <Data ss:Type="String">0088</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Delivery/cbc:ID/schemeID</Data>
@@ -6882,7 +6882,7 @@
                <Data ss:Type="String">BEAst: Percentage (T6228). Peppol: The percentage that may be used, in conjunction with the line level allowance base amount, to calculate the line level allowance or charge amount.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">20</Data>
+               <Data ss:Type="String">10</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:AllowanceCharge/cbc:MultiplierFactorNumeric</Data>
@@ -6908,7 +6908,7 @@
                <Data ss:Type="String">BEAst: Amount NeB (T6230). Peppol: The amount of an allowance or a charge, without TAX. Must be rounded to maximum 2 decimals</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">200</Data>
+               <Data ss:Type="String">100</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:AllowanceCharge/cbc:Amount</Data>
@@ -7038,7 +7038,7 @@
                <Data ss:Type="String">BEAst: Price Amount (T6235) and the Currency code (T6018). Peppol: The net price of the item including all allowances, charges and taxes but exluding TAX. Although price is an optional element in an order it recommended as best practice to either state the price or provide reference to an appropriate source from which the price can be identified such as a contract, catalogue or a quote.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">200.00</Data>
+               <Data ss:Type="String">210.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cbc:PriceAmount</Data>
@@ -7194,7 +7194,7 @@
                <Data ss:Type="String">Discount amount connected to the price</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">200</Data>
+               <Data ss:Type="String">20</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cac:AllowanceCharge/cbc:Amount</Data>
@@ -7246,7 +7246,7 @@
                <Data ss:Type="String">The gross price of the item before subtracting discounts. E.g. list price.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1000</Data>
+               <Data ss:Type="String">230</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Price/cac:AllowanceCharge/cbc:BaseAmount</Data>
