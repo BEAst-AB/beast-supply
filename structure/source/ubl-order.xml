@@ -37,11 +37,9 @@
     <?DescriptionAddFirst T6005, Customer's Reference/Number. ?>
   </cbc:CustomerReference>
   <cbc:AccountingCost>1234:45435:243234</cbc:AccountingCost>
-	
   <cac:ValidityPeriod>
 	<cbc:EndDate>2021-10-31</cbc:EndDate>
   </cac:ValidityPeriod>
-	
   <cac:QuotationDocumentReference>
     <cbc:ID>56669990
 	  <?DescriptionAddFirst T6010, Reference to the offer. ?>
@@ -81,7 +79,7 @@
 	
   <cac:Contract>
 	<cbc:ID>AABC654
-	  <?DescriptionAddFirst Reference to Agreement or Contract (T0007). ?>
+	  <?DescriptionAddFirst Reference to Agreement or Contract (T0088). ?>
 	</cbc:ID>
   </cac:Contract>
 
@@ -139,7 +137,7 @@
 	  </cac:PartyTaxScheme>
 	  <cac:PartyLegalEntity>
         <cbc:RegistrationName>Skanska Sverige AB</cbc:RegistrationName>
-		<cbc:CompanyID schemeID="0007">7300010000001</cbc:CompanyID>
+		<cbc:CompanyID schemeID="0088">7300010000001</cbc:CompanyID>
 		<cac:RegistrationAddress>
 		  <cbc:CityName>Stockholm</cbc:CityName>
 		  <cac:Country>
@@ -201,7 +199,7 @@
       </cac:PostalAddress>
       <cac:PartyLegalEntity>
         <cbc:RegistrationName>Paroc Aktiebolag</cbc:RegistrationName>
-		<cbc:CompanyID schemeID="0007">7300010000001</cbc:CompanyID>
+		<cbc:CompanyID schemeID="0088">7300010000001</cbc:CompanyID>
 		<cac:RegistrationAddress>
 		  <cbc:CityName>Skövde</cbc:CityName>
 		  <cac:Country>
@@ -292,7 +290,7 @@
 	  </cac:PartyTaxScheme>
 	  <cac:PartyLegalEntity>
 		<cbc:RegistrationName>Skanska Sverige AB</cbc:RegistrationName>
-		<cbc:CompanyID schemeID="0007">7300010000001</cbc:CompanyID>
+		<cbc:CompanyID schemeID="0088">7300010000001</cbc:CompanyID>
 		<cac:RegistrationAddress>
 		  <cbc:CityName>Stockholm</cbc:CityName>
 		  <cac:Country>
@@ -437,7 +435,6 @@
 	<cbc:MultiplierFactorNumeric>20</cbc:MultiplierFactorNumeric>
 	<cbc:Amount currencyID="SEK">200</cbc:Amount>
 	<cbc:BaseAmount currencyID="SEK">1000</cbc:BaseAmount>
-	  
 	<cac:TaxCategory>
 	  <cbc:ID>S</cbc:ID>
 	  <cbc:Percent>25.00</cbc:Percent>
@@ -448,13 +445,13 @@
   </cac:AllowanceCharge>
 
   <cac:TaxTotal>
-	<cbc:TaxAmount currencyID="SEK">550.00</cbc:TaxAmount>
+	<cbc:TaxAmount currencyID="SEK">450.00</cbc:TaxAmount>
   </cac:TaxTotal>
 
   <cac:AnticipatedMonetaryTotal>
 	<cbc:LineExtensionAmount currencyID="SEK">2000.00</cbc:LineExtensionAmount>
-	<cbc:TaxExclusiveAmount currencyID="SEK">2000.00</cbc:TaxExclusiveAmount>
-	<cbc:TaxInclusiveAmount currencyID="SEK">2500.00</cbc:TaxInclusiveAmount>
+	<cbc:TaxExclusiveAmount currencyID="SEK">1800.00</cbc:TaxExclusiveAmount>
+	<cbc:TaxInclusiveAmount currencyID="SEK">2250.00</cbc:TaxInclusiveAmount>
 	<cbc:AllowanceTotalAmount currencyID="SEK">200.00</cbc:AllowanceTotalAmount>
 	<cbc:ChargeTotalAmount currencyID="SEK">0.00</cbc:ChargeTotalAmount>
 	<cbc:PrepaidAmount currencyID="SEK">0.00</cbc:PrepaidAmount>
@@ -482,7 +479,7 @@
 	  </cbc:AccountingCost>
 		
       <cac:Delivery>
-		<cbc:ID schemeID="0007">7300010000001</cbc:ID>
+		<cbc:ID schemeID="0088">7300010000001</cbc:ID>
         <cac:RequestedDeliveryPeriod>
           <cbc:StartDate>2021-11-01
 		    <?DescriptionAddFirst Delivery Period Start Date (T6319). ?>
@@ -518,10 +515,10 @@
 		<cbc:AllowanceChargeReason>Text
 		  <?DescriptionAddFirst Special Service Description (T6111). ?>
 		</cbc:AllowanceChargeReason>
-		<cbc:MultiplierFactorNumeric>20
+		<cbc:MultiplierFactorNumeric>10
 		  <?DescriptionAddFirst Percentage (T6228). ?>
 		</cbc:MultiplierFactorNumeric>
-		<cbc:Amount currencyID="SEK">200
+		<cbc:Amount currencyID="SEK">100
 		  <?DescriptionAddFirst Amount NeB (T6230). ?>
 		</cbc:Amount>
 		<cbc:BaseAmount currencyID="SEK">1000
@@ -530,7 +527,7 @@
 	  </cac:AllowanceCharge>
 		
       <cac:Price>
-        <cbc:PriceAmount currencyID="SEK">200.00
+        <cbc:PriceAmount currencyID="SEK">210.00
 		  <?DescriptionAddFirst Price Amount (T6235) and the Currency code (T6018). ?>
 		</cbc:PriceAmount>
 		<cbc:BaseQuantity unitCode="MTK">1.00
@@ -538,8 +535,8 @@
 		</cbc:BaseQuantity>
 		<cac:AllowanceCharge>
 		  <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-		  <cbc:Amount currencyID="SEK">200</cbc:Amount>
-		  <cbc:BaseAmount currencyID="SEK">1000</cbc:BaseAmount>
+		  <cbc:Amount currencyID="SEK">20</cbc:Amount>
+		  <cbc:BaseAmount currencyID="SEK">230</cbc:BaseAmount>
 		</cac:AllowanceCharge>
       </cac:Price>
 		
