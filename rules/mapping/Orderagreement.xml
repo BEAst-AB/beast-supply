@@ -3448,7 +3448,7 @@
                <Data ss:Type="String">BEAst: Special service description (T6111). Peppol: The reason for the allowance or charge, expressed as text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Discount</Data>
+               <Data ss:Type="String">Allowance</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:AllowanceCharge/cbc:AllowanceChargeReason</Data>
@@ -3630,7 +3630,7 @@
                <Data ss:Type="String">A coded identification of what TAX category applies to the document level allowance or charge.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">S</Data>
+               <Data ss:Type="String">AE</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:AllowanceCharge/cac:TaxCategory/cbc:ID</Data>
@@ -3968,7 +3968,7 @@
                <Data ss:Type="String">Coded identification of a TAX category.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">S</Data>
+               <Data ss:Type="String">AE</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID</Data>
@@ -4020,7 +4020,7 @@
                <Data ss:Type="String">A textual statement of the reason for why the base amount is exempted from TAX.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Text</Data>
+               <Data ss:Type="String">Reverse Charge</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:TaxExemptionReason</Data>
@@ -4124,7 +4124,7 @@
                <Data ss:Type="String">Sum of all line amounts in the document.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">32.5</Data>
+               <Data ss:Type="String">34.5</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:LegalMonetaryTotal/cbc:LineExtensionAmount</Data>
@@ -4332,7 +4332,7 @@
                <Data ss:Type="String">Sum of all charges on document level.Charges on line level are included in the line amount which is summed up into the "sum of line net amount".</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2.00</Data>
+               <Data ss:Type="String">0.00</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:LegalMonetaryTotal/cbc:ChargeTotalAmount</Data>
@@ -4696,7 +4696,7 @@
                <Data ss:Type="String">BEAst: Line Item Net Amount (T6234). currencyID is the same as DocumentCurrency (T6018). Peppol: Order agreeement line amountThe total amount for the order agreement line, including all taxes except TAX.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">22.50</Data>
+               <Data ss:Type="String">34.50</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cbc:LineExtensionAmount</Data>
@@ -4982,7 +4982,7 @@
                <Data ss:Type="String">BEAst: Price Amount (T6235). currencyID is the same as DocumentCurrency (T6018). Peppol: The price of an item, exclusive of TAX, after subtracting item price discount."The net price has to be equal with the gross price less the item price discount.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">1.50</Data>
+               <Data ss:Type="String">2.50</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Price/cbc:PriceAmount</Data>
@@ -5580,7 +5580,7 @@
                <Data ss:Type="String">A functional description of the attachment/image expressed as code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:ItemSpecificationDocumentReference/cbc:DocumentTypeCode</Data>
@@ -5996,7 +5996,7 @@
                <Data ss:Type="String">BEAst: Tax Category NeB Type (T6708). Peppol: The TAX category code for the item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">S</Data>
+               <Data ss:Type="String">AE</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:OrderResponse/cac:OrderLine/cac:LineItem/cac:Item/cac:ClassifiedTaxCategory/cbc:ID</Data>

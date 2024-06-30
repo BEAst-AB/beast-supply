@@ -162,12 +162,12 @@
    <cac:AllowanceCharge>
       <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
       <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
-      <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
+      <cbc:AllowanceChargeReason>Allowance</cbc:AllowanceChargeReason>
       <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
       <cbc:Amount currencyID="EUR">3.25</cbc:Amount>
       <cbc:BaseAmount currencyID="EUR">32.50</cbc:BaseAmount>
       <cac:TaxCategory>
-         <cbc:ID>S</cbc:ID>
+         <cbc:ID>AE</cbc:ID>
          <cbc:Percent>25</cbc:Percent>
          <cac:TaxScheme>
             <cbc:ID>VAT</cbc:ID>
@@ -180,9 +180,9 @@
          <cbc:TaxableAmount currencyID="EUR">31.25</cbc:TaxableAmount>
          <cbc:TaxAmount currencyID="EUR">7.81</cbc:TaxAmount>
          <cac:TaxCategory>
-            <cbc:ID>S</cbc:ID>
+            <cbc:ID>AE</cbc:ID>
             <cbc:Percent>25</cbc:Percent>
-            <cbc:TaxExemptionReason>Text</cbc:TaxExemptionReason>
+            <cbc:TaxExemptionReason>Reverse Charge</cbc:TaxExemptionReason>
             <cac:TaxScheme>
                <cbc:ID>VAT</cbc:ID>
             </cac:TaxScheme>
@@ -190,11 +190,11 @@
       </cac:TaxSubtotal>
    </cac:TaxTotal>
    <cac:LegalMonetaryTotal>
-      <cbc:LineExtensionAmount currencyID="EUR">32.5</cbc:LineExtensionAmount>
+      <cbc:LineExtensionAmount currencyID="EUR">34.5</cbc:LineExtensionAmount>
       <cbc:TaxExclusiveAmount currencyID="EUR">31.25</cbc:TaxExclusiveAmount>
       <cbc:TaxInclusiveAmount currencyID="EUR">39.06</cbc:TaxInclusiveAmount>
       <cbc:AllowanceTotalAmount currencyID="EUR">3.25</cbc:AllowanceTotalAmount>
-      <cbc:ChargeTotalAmount currencyID="EUR">2.00</cbc:ChargeTotalAmount>
+      <cbc:ChargeTotalAmount currencyID="EUR">0.00</cbc:ChargeTotalAmount>
       <cbc:PrepaidAmount currencyID="EUR">10.00</cbc:PrepaidAmount>
       <cbc:PayableRoundingAmount currencyID="EUR">0.94</cbc:PayableRoundingAmount>
       <cbc:PayableAmount currencyID="EUR">30.00</cbc:PayableAmount>
@@ -204,7 +204,7 @@
          <cbc:ID>1</cbc:ID>
          <cbc:Note>Order line note text</cbc:Note>
          <cbc:Quantity unitCode="C62">15</cbc:Quantity>
-         <cbc:LineExtensionAmount currencyID="EUR">22.50</cbc:LineExtensionAmount>
+         <cbc:LineExtensionAmount currencyID="EUR">34.50</cbc:LineExtensionAmount>
          <cac:Delivery>
             <cbc:Quantity unitCode="C62">15.00</cbc:Quantity>
             <cac:PromisedDeliveryPeriod>
@@ -215,7 +215,7 @@
             </cac:PromisedDeliveryPeriod>
          </cac:Delivery>
          <cac:Price>
-            <cbc:PriceAmount currencyID="EUR">1.50</cbc:PriceAmount>
+            <cbc:PriceAmount currencyID="EUR">2.50</cbc:PriceAmount>
             <cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
             <cbc:PriceType>AAA</cbc:PriceType>
             <cac:AllowanceCharge>
@@ -238,7 +238,7 @@
             </cac:StandardItemIdentification>
             <cac:ItemSpecificationDocumentReference>
                <cbc:ID>147852</cbc:ID>
-               <cbc:DocumentTypeCode/>
+               <cbc:DocumentTypeCode>2</cbc:DocumentTypeCode>
                <cbc:DocumentType>Timesheet</cbc:DocumentType>
                <cac:Attachment>
                   <cbc:EmbeddedDocumentBinaryObject mimeCode="image/tiff" filename="hours-spend.csv">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
@@ -254,7 +254,7 @@
                <cbc:ActionCode>CT</cbc:ActionCode>
             </cac:TransactionConditions>
             <cac:ClassifiedTaxCategory>
-               <cbc:ID>S</cbc:ID>
+               <cbc:ID>AE</cbc:ID>
                <cbc:Percent>25</cbc:Percent>
                <cac:TaxScheme>
                   <cbc:ID>VAT</cbc:ID>

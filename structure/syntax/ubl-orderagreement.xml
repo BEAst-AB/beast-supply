@@ -948,7 +948,7 @@
  Peppol: The reason for the allowance or charge, expressed as text.</Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">OP-110-012OP-110-002</Reference>
-            <Value type="EXAMPLE">Discount</Value>
+            <Value type="EXAMPLE">Allowance</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:MultiplierFactorNumeric</Term>
@@ -999,7 +999,7 @@
                <Name>Document level allowance or charge TAX category code</Name>
                <Description>A coded identification of what TAX category applies to the document level allowance or charge.</Description>
                <DataType>Code</DataType>
-               <Value type="EXAMPLE">S</Value>
+               <Value type="EXAMPLE">AE</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Percent</Term>
@@ -1086,7 +1086,7 @@
                   <Description>Coded identification of a TAX category.</Description>
                   <DataType>Code</DataType>
                   <Reference type="BUSINESS_TERM">OP-110-005</Reference>
-                  <Value type="EXAMPLE">S</Value>
+                  <Value type="EXAMPLE">AE</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Percent</Term>
@@ -1102,7 +1102,7 @@
                   <Description>A textual statement of the reason for why the base amount is exempted from TAX.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">OP-110-007</Reference>
-                  <Value type="EXAMPLE">Text</Value>
+                  <Value type="EXAMPLE">Reverse Charge</Value>
                </Element>
                <Element>
                   <Term>cac:TaxScheme</Term>
@@ -1132,7 +1132,7 @@
             <Reference type="RULE">PEPPOL-T110-R004</Reference>
             <Reference type="RULE">PEPPOL-T110-R006</Reference>
             <Reference type="RULE">PEPPOL-T110-R007</Reference>
-            <Value type="EXAMPLE">32.5</Value>
+            <Value type="EXAMPLE">34.5</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1200,7 +1200,7 @@
             <Reference type="RULE">PEPPOL-T110-R004</Reference>
             <Reference type="RULE">PEPPOL-T110-R008</Reference>
             <Reference type="RULE">PEPPOL-T110-R010</Reference>
-            <Value type="EXAMPLE">2.00</Value>
+            <Value type="EXAMPLE">0.00</Value>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1312,7 +1312,7 @@
                <Reference type="RULE">PEPPOL-T110-R006</Reference>
                <Reference type="RULE">PEPPOL-T110-R007</Reference>
                <Reference type="RULE">PEPPOL-T110-R010</Reference>
-               <Value type="EXAMPLE">22.50</Value>
+               <Value type="EXAMPLE">34.50</Value>
                <Attribute>
                   <Term>currencyID</Term>
                   <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1396,7 +1396,7 @@
                   <Reference type="BUSINESS_TERM">tir110-109</Reference>
                   <Reference type="RULE">PEPPOL-T110-R001</Reference>
                   <Reference type="RULE">PEPPOL-T110-R004</Reference>
-                  <Value type="EXAMPLE">1.50</Value>
+                  <Value type="EXAMPLE">2.50</Value>
                   <Attribute>
                      <Term>currencyID</Term>
                      <Description>Currency identifier, if element "Order agreement currency" (tir110-007) is used, this attribute must be the same code as used there.</Description>
@@ -1571,6 +1571,7 @@
                      <Reference type="BUSINESS_TERM">tir110-p008</Reference>
                      <Reference type="CODE_LIST">UNCL1001</Reference>
                      <Reference type="CODE_LIST">Image</Reference>
+                     <Value type="EXAMPLE">2</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:DocumentType</Term>
@@ -1684,7 +1685,7 @@
  Peppol: The TAX category code for the item.</Description>
                      <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir110-106</Reference>
-                     <Value type="EXAMPLE">S</Value>
+                     <Value type="EXAMPLE">AE</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cbc:Percent</Term>
