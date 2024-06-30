@@ -331,7 +331,7 @@
 		<cbc:AllowanceChargeReasonCode>95
 			<?DescriptionAddFirst Special service description code (T6719). ?>
 		</cbc:AllowanceChargeReasonCode>
-		<cbc:AllowanceChargeReason>Discount
+		<cbc:AllowanceChargeReason>Allowance
 			<?DescriptionAddFirst Special service description (T6111). ?>
 		</cbc:AllowanceChargeReason>
 		<cbc:MultiplierFactorNumeric>10
@@ -340,17 +340,16 @@
 		<cbc:Amount currencyID="EUR">3.25
 			<?currencyID-usage Mandatory?>
 			<?currencyID-CodeList ISO4217?>
-
 			<?DescriptionAddFirst Amount (T6230). currencyID is the same as DocumentCurrency (T6018). ?>
 		</cbc:Amount>
 		<cbc:BaseAmount currencyID="EUR">32.50
 			<?currencyID-usage Mandatory?>
 			<?currencyID-CodeList ISO4217?>
-		
 			<?DescriptionAddFirst Base Amount (T6229). currencyID is the same as DocumentCurrency (T6018). ?>
 		</cbc:BaseAmount>
+		
 		<cac:TaxCategory>
-			<cbc:ID>S</cbc:ID>
+			<cbc:ID>AE</cbc:ID>
 			<cbc:Percent>25</cbc:Percent>
 			<cac:TaxScheme>
 				<cbc:ID>VAT</cbc:ID>
@@ -362,24 +361,24 @@
 	<cac:TaxTotal>
 		<cbc:TaxAmount currencyID="EUR">7.81
 			<?currencyID-usage Mandatory?>
-			<?currencyID-CodeList ISO4217?>
-			
+			<?currencyID-CodeList ISO4217?>	
 		</cbc:TaxAmount>
+		
 		<cac:TaxSubtotal>
 			<cbc:TaxableAmount currencyID="EUR">31.25
 				<?currencyID-usage Mandatory?>
 				<?currencyID-CodeList ISO4217?>
-				
 			</cbc:TaxableAmount>
+			
 			<cbc:TaxAmount currencyID="EUR">7.81
 				<?currencyID-usage Mandatory?>
 				<?currencyID-CodeList ISO4217?>
-				
 			</cbc:TaxAmount>
+			
 			<cac:TaxCategory>
-				<cbc:ID>S</cbc:ID>
+				<cbc:ID>AE</cbc:ID>
 				<cbc:Percent>25</cbc:Percent>
-				<cbc:TaxExemptionReason>Text</cbc:TaxExemptionReason>
+				<cbc:TaxExemptionReason>Reverse Charge</cbc:TaxExemptionReason>
 				<cac:TaxScheme>
 					<cbc:ID>VAT</cbc:ID>
 				</cac:TaxScheme>
@@ -389,45 +388,44 @@
 	
 	
 	<cac:LegalMonetaryTotal>
-		<cbc:LineExtensionAmount currencyID="EUR">32.5
+		<cbc:LineExtensionAmount currencyID="EUR">34.5
 			<?currencyID-usage Mandatory?>
 			<?currencyID-CodeList ISO4217?>
-			
 		</cbc:LineExtensionAmount>
+		
 		<cbc:TaxExclusiveAmount currencyID="EUR">31.25
 			<?currencyID-usage Mandatory?>
 			<?currencyID-CodeList ISO4217?>
-			
 		</cbc:TaxExclusiveAmount>
+		
 		<cbc:TaxInclusiveAmount currencyID="EUR">39.06
 			<?currencyID-usage Mandatory?>
 			<?currencyID-CodeList ISO4217?>
-		
 		</cbc:TaxInclusiveAmount>
+		
 		<cbc:AllowanceTotalAmount currencyID="EUR">3.25
 			<?currencyID-usage Mandatory?>
 			<?currencyID-CodeList ISO4217?>
-			
 		</cbc:AllowanceTotalAmount>
-		<cbc:ChargeTotalAmount currencyID="EUR">2.00
+		
+		<cbc:ChargeTotalAmount currencyID="EUR">0.00
 			<?currencyID-usage Mandatory?>
 			<?currencyID-CodeList ISO4217?>
-			
 		</cbc:ChargeTotalAmount>
+		
 		<cbc:PrepaidAmount currencyID="EUR">10.00
 			<?currencyID-usage Mandatory?>
 			<?currencyID-CodeList ISO4217?>
-			
 		</cbc:PrepaidAmount>
+		
 		<cbc:PayableRoundingAmount currencyID="EUR">0.94
 			<?currencyID-usage Mandatory?>
 			<?currencyID-CodeList ISO4217?>
-	
 		</cbc:PayableRoundingAmount>
+		
 		<cbc:PayableAmount currencyID="EUR">30.00
 			<?currencyID-usage Mandatory?>
 			<?currencyID-CodeList ISO4217?>
-			
 		</cbc:PayableAmount>
 	</cac:LegalMonetaryTotal>
 	
@@ -446,10 +444,9 @@
 				<?unitCode-CodeList UNECERec20?>
 				
 			</cbc:Quantity>
-			<cbc:LineExtensionAmount currencyID="EUR">22.50
+			<cbc:LineExtensionAmount currencyID="EUR">34.50
 				<?currencyID-usage Mandatory?>
 				<?currencyID-CodeList ISO4217?>
-				
 				<?DescriptionAddFirst Line Item Net Amount (T6234). currencyID is the same as DocumentCurrency (T6018). ?>
 			</cbc:LineExtensionAmount>
 			
@@ -458,9 +455,9 @@
 				<cbc:Quantity unitCode="C62">15.00
 					<?unitCode-usage Mandatory?>
 					<?unitCode-CodeList UNECERec20?>
-					
 					<?DescriptionAddFirst Quantity to be Delivered (T3240). unitCode is Measure Unit NeB Type (T6706). ?>
 				</cbc:Quantity>
+				
 				<cac:PromisedDeliveryPeriod>
 					<cbc:StartDate>2018-08-10
 						<?DescriptionAddFirst Delivery Period Start Date (T6319). ?>
@@ -479,33 +476,33 @@
 			
 			
 			<cac:Price>
-				<cbc:PriceAmount currencyID="EUR">1.50
+				<cbc:PriceAmount currencyID="EUR">2.50
 					<?currencyID-usage Mandatory?>
 					<?currencyID-CodeList ISO4217?>
-					
 					<?DescriptionAddFirst Price Amount (T6235). currencyID is the same as DocumentCurrency (T6018). ?>
 				</cbc:PriceAmount>
+				
 				<cbc:BaseQuantity unitCode="C62">1
 					<?unitCode-usage Mandatory?>
 					<?unitCode-CodeList UNECERec20?>
-				
 					<?DescriptionAddFirst Price Unit Basis Quantity (T6722). unitCode is Measure Unit NeB Type (T6706), ?>
 				</cbc:BaseQuantity>
+				
 				<cbc:PriceType>AAA
 					<?DescriptionAddFirst Price Code (T6025). ?>
 				</cbc:PriceType>
+				
 				<cac:AllowanceCharge>
 					<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
 					<cbc:Amount currencyID="EUR">0.20
 						<?currencyID-usage Mandatory?>
 						<?currencyID-CodeList ISO4217?>
-					
 						<?DescriptionAddFirst Amount (T6230). currencyID is the same as DocumentCurrency (T6018). ?>
 					</cbc:Amount>
+					
 					<cbc:BaseAmount currencyID="EUR">1.70
 						<?currencyID-usage Mandatory?>
 						<?currencyID-CodeList ISO4217?>
-					
 						<?DescriptionAddFirst Base Amount (T6229). currencyID is the same as DocumentCurrency (T6018). ?>
 					</cbc:BaseAmount>
 				</cac:AllowanceCharge>
@@ -543,6 +540,7 @@
 					<cbc:ID>147852
 						<?DescriptionAddFirst Document Name (T6484). ?>
 					</cbc:ID>
+					<cbc:DocumentTypeCode>2</cbc:DocumentTypeCode>
 					<cbc:DocumentType>Timesheet
 						<?DescriptionAddFirst Document Type External (T6473). ?>
 					</cbc:DocumentType>
@@ -579,7 +577,7 @@
 				
 				
 				<cac:ClassifiedTaxCategory>
-					<cbc:ID>S
+					<cbc:ID>AE
 						<?DescriptionAddFirst Tax Category NeB Type (T6708). ?>
 					</cbc:ID>
 					<cbc:Percent>25
