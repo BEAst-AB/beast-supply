@@ -4,19 +4,19 @@
          xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
    <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
    <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
-   <cbc:ID>33445566</cbc:ID>
-   <cbc:IssueDate>2017-11-01</cbc:IssueDate>
-   <cbc:DueDate>2017-11-01</cbc:DueDate>
+   <cbc:ID>98670AE</cbc:ID>
+   <cbc:IssueDate>2024-04-17</cbc:IssueDate>
+   <cbc:DueDate>2024-05-17</cbc:DueDate>
    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
    <cbc:Note>FAKTURASAMMANSTÄLLNING Kostnadsslag 43790 Summa 409.20</cbc:Note>
-   <cbc:TaxPointDate>2017-11-01</cbc:TaxPointDate>
+   <cbc:TaxPointDate>2024-05-17</cbc:TaxPointDate>
    <cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
    <cbc:TaxCurrencyCode>SEK</cbc:TaxCurrencyCode>
    <cbc:AccountingCost>4217:2323:2323</cbc:AccountingCost>
    <cbc:BuyerReference>abs1234</cbc:BuyerReference>
    <cac:InvoicePeriod>
-      <cbc:StartDate>2017-10-01</cbc:StartDate>
-      <cbc:EndDate>2017-10-31</cbc:EndDate>
+      <cbc:StartDate>2024-03-01</cbc:StartDate>
+      <cbc:EndDate>2024-03-31</cbc:EndDate>
       <cbc:DescriptionCode>35</cbc:DescriptionCode>
    </cac:InvoicePeriod>
    <cac:OrderReference>
@@ -26,7 +26,7 @@
    <cac:BillingReference>
       <cac:InvoiceDocumentReference>
          <cbc:ID>9742024</cbc:ID>
-         <cbc:IssueDate>2017-09-15</cbc:IssueDate>
+         <cbc:IssueDate>2024-04-17</cbc:IssueDate>
       </cac:InvoiceDocumentReference>
    </cac:BillingReference>
    <cac:DespatchDocumentReference>
@@ -136,13 +136,13 @@
    </cac:AccountingCustomerParty>
    <cac:PayeeParty>
       <cac:PartyIdentification>
-         <cbc:ID schemeID="0088">7365561043532</cbc:ID>
+         <cbc:ID schemeID="0088">7350053850019</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>
          <cbc:Name>Payment recipient</cbc:Name>
       </cac:PartyName>
       <cac:PartyLegalEntity>
-         <cbc:CompanyID schemeID="0088">FR932874294</cbc:CompanyID>
+         <cbc:CompanyID schemeID="0007">5560608837</cbc:CompanyID>
       </cac:PartyLegalEntity>
    </cac:PayeeParty>
    <cac:TaxRepresentativeParty>
@@ -170,12 +170,12 @@
       </cac:PartyTaxScheme>
    </cac:TaxRepresentativeParty>
    <cac:Delivery>
-      <cbc:ActualDeliveryDate>2017-12-01</cbc:ActualDeliveryDate>
+      <cbc:ActualDeliveryDate>2024-03-31</cbc:ActualDeliveryDate>
       <cac:DeliveryLocation>
          <cbc:ID schemeID="0088">7300009058334</cbc:ID>
          <cac:Address>
             <cbc:StreetName>Storgatan 162</cbc:StreetName>
-            <cbc:AdditionalStreetName>Delivery Street 2</cbc:AdditionalStreetName>
+            <cbc:AdditionalStreetName>Inköp</cbc:AdditionalStreetName>
             <cbc:CityName>Stockholm</cbc:CityName>
             <cbc:PostalZone>115 34</cbc:PostalZone>
             <cbc:CountrySubentity>Uppland</cbc:CountrySubentity>
@@ -222,9 +222,9 @@
       <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
       <cbc:AllowanceChargeReasonCode>CAP</cbc:AllowanceChargeReasonCode>
       <cbc:AllowanceChargeReason>Försäkring</cbc:AllowanceChargeReason>
-      <cbc:MultiplierFactorNumeric>3</cbc:MultiplierFactorNumeric>
-      <cbc:Amount currencyID="SEK">5</cbc:Amount>
-      <cbc:BaseAmount currencyID="SEK">10</cbc:BaseAmount>
+      <cbc:MultiplierFactorNumeric>5</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="SEK">20</cbc:Amount>
+      <cbc:BaseAmount currencyID="SEK">400</cbc:BaseAmount>
       <cac:TaxCategory>
          <cbc:ID>E</cbc:ID>
          <cbc:Percent>0.00</cbc:Percent>
@@ -234,14 +234,14 @@
       </cac:TaxCategory>
    </cac:AllowanceCharge>
    <cac:TaxTotal>
-      <cbc:TaxAmount currencyID="SEK">45.00</cbc:TaxAmount>
+      <cbc:TaxAmount currencyID="SEK">0.00</cbc:TaxAmount>
       <cac:TaxSubtotal>
-         <cbc:TaxableAmount currencyID="SEK">180.00</cbc:TaxableAmount>
-         <cbc:TaxAmount currencyID="SEK">45.00</cbc:TaxAmount>
+         <cbc:TaxableAmount currencyID="SEK">200.00</cbc:TaxableAmount>
+         <cbc:TaxAmount currencyID="SEK">0.00</cbc:TaxAmount>
          <cac:TaxCategory>
-            <cbc:ID>S</cbc:ID>
-            <cbc:Percent>25.00</cbc:Percent>
-            <cbc:TaxExemptionReasonCode/>
+            <cbc:ID>E</cbc:ID>
+            <cbc:Percent>0.00</cbc:Percent>
+            <cbc:TaxExemptionReasonCode>VATEX-EU-79-C</cbc:TaxExemptionReasonCode>
             <cbc:TaxExemptionReason>Momslagen ej tillämplig</cbc:TaxExemptionReason>
             <cac:TaxScheme>
                <cbc:ID>VAT</cbc:ID>
@@ -251,29 +251,29 @@
    </cac:TaxTotal>
    <cac:LegalMonetaryTotal>
       <cbc:LineExtensionAmount currencyID="SEK">180.00</cbc:LineExtensionAmount>
-      <cbc:TaxExclusiveAmount currencyID="SEK">180.00</cbc:TaxExclusiveAmount>
-      <cbc:TaxInclusiveAmount currencyID="SEK">225.00</cbc:TaxInclusiveAmount>
-      <cbc:AllowanceTotalAmount currencyID="SEK">20.00</cbc:AllowanceTotalAmount>
-      <cbc:ChargeTotalAmount currencyID="SEK">5</cbc:ChargeTotalAmount>
+      <cbc:TaxExclusiveAmount currencyID="SEK">200.00</cbc:TaxExclusiveAmount>
+      <cbc:TaxInclusiveAmount currencyID="SEK">200.00</cbc:TaxInclusiveAmount>
+      <cbc:AllowanceTotalAmount currencyID="SEK">0.00</cbc:AllowanceTotalAmount>
+      <cbc:ChargeTotalAmount currencyID="SEK">20.00</cbc:ChargeTotalAmount>
       <cbc:PrepaidAmount currencyID="SEK">50.00</cbc:PrepaidAmount>
       <cbc:PayableRoundingAmount currencyID="SEK">0.00</cbc:PayableRoundingAmount>
-      <cbc:PayableAmount currencyID="SEK">180.00</cbc:PayableAmount>
+      <cbc:PayableAmount currencyID="SEK">150.00</cbc:PayableAmount>
    </cac:LegalMonetaryTotal>
    <cac:InvoiceLine>
       <cbc:ID>1</cbc:ID>
       <cbc:Note>Note from supplier</cbc:Note>
-      <cbc:InvoicedQuantity unitCode="H87">100</cbc:InvoicedQuantity>
+      <cbc:InvoicedQuantity unitCode="EA">2.00</cbc:InvoicedQuantity>
       <cbc:LineExtensionAmount currencyID="SEK">180.00</cbc:LineExtensionAmount>
       <cbc:AccountingCost>4415</cbc:AccountingCost>
       <cac:InvoicePeriod>
-         <cbc:StartDate>2020-10-01</cbc:StartDate>
-         <cbc:EndDate>2020-10-31</cbc:EndDate>
+         <cbc:StartDate>2024-03-01</cbc:StartDate>
+         <cbc:EndDate>2024-03-31</cbc:EndDate>
       </cac:InvoicePeriod>
       <cac:OrderLineReference>
-         <cbc:LineID>3</cbc:LineID>
+         <cbc:LineID>1</cbc:LineID>
       </cac:OrderLineReference>
       <cac:DocumentReference>
-         <cbc:ID schemeID="SE">AB12345</cbc:ID>
+         <cbc:ID schemeID="SE">1571078</cbc:ID>
          <cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
       </cac:DocumentReference>
       <cac:AllowanceCharge>
@@ -282,7 +282,7 @@
          <cbc:AllowanceChargeReason>Prisrabatt enligt avtal</cbc:AllowanceChargeReason>
          <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
          <cbc:Amount currencyID="SEK">20.00</cbc:Amount>
-         <cbc:BaseAmount currencyID="EUR">1000</cbc:BaseAmount>
+         <cbc:BaseAmount currencyID="SEK">200</cbc:BaseAmount>
       </cac:AllowanceCharge>
       <cac:Item>
          <cbc:Description>Superbra ventilationsslang i finfin plåt</cbc:Description>
@@ -303,15 +303,15 @@
             <cbc:ItemClassificationCode listID="SN" listVersionID="1">698679864</cbc:ItemClassificationCode>
          </cac:CommodityClassification>
          <cac:ClassifiedTaxCategory>
-            <cbc:ID>S</cbc:ID>
-            <cbc:Percent>25.00</cbc:Percent>
+            <cbc:ID>E</cbc:ID>
+            <cbc:Percent>0.00</cbc:Percent>
             <cac:TaxScheme>
                <cbc:ID>VAT</cbc:ID>
             </cac:TaxScheme>
          </cac:ClassifiedTaxCategory>
          <cac:AdditionalItemProperty>
             <cbc:Name>Color</cbc:Name>
-            <cbc:Value>Black</cbc:Value>
+            <cbc:Value>100</cbc:Value>
          </cac:AdditionalItemProperty>
       </cac:Item>
       <cac:Price>
@@ -319,8 +319,8 @@
          <cbc:BaseQuantity unitCode="EA">1</cbc:BaseQuantity>
          <cac:AllowanceCharge>
             <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-            <cbc:Amount currencyID="EUR">100</cbc:Amount>
-            <cbc:BaseAmount currencyID="EUR">123.45</cbc:BaseAmount>
+            <cbc:Amount currencyID="SEK">23.45</cbc:Amount>
+            <cbc:BaseAmount currencyID="SEK">123.45</cbc:BaseAmount>
          </cac:AllowanceCharge>
       </cac:Price>
    </cac:InvoiceLine>
