@@ -1912,9 +1912,9 @@
                      <Element cardinality="1..1">
                         <Term>cbc:Line</Term>
                         <Name>Address line 3</Name>
-                        <Description>BEAst: Used for any other additional address information like Building (T5004).
+                        <Description>BEAst: Used for any other additional address information like Building (T5004). Can be used for detailed information by separating the information by #
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
-                        <Value type="EXAMPLE">3rd Floor, Room 5</Value>
+                        <Value type="EXAMPLE">Lundbyleden#Område C2</Value>
                      </Element>
                   </Element>
                   <Element cardinality="0..1">
@@ -2116,10 +2116,10 @@
                      <Element cardinality="1..1">
                         <Term>cbc:Line</Term>
                         <Name>Address line 3</Name>
-                        <Description>BEAst: Used for any other additional address information like Building (T5004).
+                        <Description>BEAst: Used for any other additional address information like Building (T5004). Can be used for detailed information by separating the information by #
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                         <DataType>Text</DataType>
-                        <Value type="EXAMPLE">3rd Floor, Room 5</Value>
+                        <Value type="EXAMPLE">Lundbyleden#Område C2</Value>
                      </Element>
                   </Element>
                   <Element cardinality="0..1">
