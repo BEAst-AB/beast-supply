@@ -231,7 +231,7 @@
 	  </cac:PartyIdentification>
 	  <cac:PartyName>
 		<cbc:Name>Nilssons
-		  <?DescriptionAddFirst T5001 or T6324/T6325/T6424, Name or coordinates separated with "/". For coordinates use the format WGS84, degrees with decimals. ?>
+		  <?DescriptionAddFirst T5001 or T6324/T6325/T6424, Name or coordinates separated by #. For coordinates use the format WGS84, degrees with decimals. ?>
 		</cbc:Name>
 	  </cac:PartyName>
 	  <cac:Contact>
@@ -329,8 +329,8 @@
 		</cbc:PostalZone>
 		<cbc:CountrySubentity>765</cbc:CountrySubentity>
 		<cac:AddressLine>
-		  <cbc:Line>The Roundabout
-		    <?DescriptionAddFirst Used for all other address information. Coordinates (T6321/T6322) are given in format WGS84, degrees with decimals, separated with a "/". ?>
+		  <cbc:Line>Lundbyleden#Område C2
+			  <?DescriptionAddFirst Used for all other address information. Coordinates (T6321/T6322) are given in format WGS84, degrees with decimals, separated by #. Can be used for detailed information by separating the information by #. ?>
 		  </cbc:Line>
 		</cac:AddressLine>
 		<cac:Country>
