@@ -779,7 +779,7 @@
                <Element>
                   <Term>cbc:Name</Term>
                   <Name>Originator name</Name>
-                  <Description>BEAst: T5001 or T6324/T6325/T6424, Name or coordinates separated with "/". For coordinates use the format WGS84, degrees with decimals.
+                  <Description>BEAst: T5001 or T6324/T6325/T6424, Name or coordinates separated by #. For coordinates use the format WGS84, degrees with decimals.
  Peppol: The name of the party.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-082</Reference>
@@ -1155,11 +1155,11 @@
                   <Element>
                      <Term>cbc:Line</Term>
                      <Name>Address line 3</Name>
-                     <Description>BEAst: Used for all other address information. Coordinates (T6321/T6322) are given in format WGS84, degrees with decimals, separated with a "/".
+                     <Description>BEAst: Used for all other address information. Coordinates (T6321/T6322) are given in format WGS84, degrees with decimals, separated by #. Can be used for detailed information by separating the information by #.
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir01-p007</Reference>
-                     <Value type="EXAMPLE">The Roundabout</Value>
+                     <Value type="EXAMPLE">Lundbyleden#Område C2</Value>
                   </Element>
                </Element>
                <Element>

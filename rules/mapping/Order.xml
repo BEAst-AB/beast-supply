@@ -2873,7 +2873,7 @@
                <Data ss:Type="String">Originator name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T5001 or T6324/T6325/T6424, Name or coordinates separated with "/". For coordinates use the format WGS84, degrees with decimals. Peppol: The name of the party.</Data>
+               <Data ss:Type="String">BEAst: T5001 or T6324/T6325/T6424, Name or coordinates separated by #. For coordinates use the format WGS84, degrees with decimals. Peppol: The name of the party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Nilssons</Data>
@@ -4226,10 +4226,10 @@
                <Data ss:Type="String">Address line 3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Used for all other address information. Coordinates (T6321/T6322) are given in format WGS84, degrees with decimals, separated with a "/". Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String">BEAst: Used for all other address information. Coordinates (T6321/T6322) are given in format WGS84, degrees with decimals, separated by #. Can be used for detailed information by separating the information by #. Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Roundabout</Data>
+               <Data ss:Type="String">Lundbyleden#Område C2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:Delivery/cac:DeliveryLocation/cac:Address/cac:AddressLine/cbc:Line</Data>
