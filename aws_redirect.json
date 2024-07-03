@@ -127,7 +127,37 @@
   },
   {
     "Condition": {
-      "KeyPrefixEquals": "schematron/poacc/"
+      "KeyPrefixEquals": "LoC_Schematron.zip"
+    },
+    "Redirect": {
+      "HostName": "docs.peppol.eu",
+      "Protocol": "https",
+      "ReplaceKeyPrefixWith": "logistics/2024-Q1/files/Schematron.zip"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "4.0.3/LoC_Schematron.zip"
+    },
+    "Redirect": {
+      "HostName": "docs.peppol.eu",
+      "Protocol": "https",
+      "ReplaceKeyPrefixWith": "logistics/2024-Q1/files/Schematron.zip"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "Poacc_Schematron.zip"
+    },
+    "Redirect": {
+      "HostName": "docs.peppol.eu",
+      "Protocol": "https",
+      "ReplaceKeyPrefixWith": "poacc/upgrade-3/2024-Q2/files/PEPPOLBIS-Upgrade-Schematron.zip"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "4.0.3/Poacc_Schematron.zip"
     },
     "Redirect": {
       "HostName": "docs.peppol.eu",
