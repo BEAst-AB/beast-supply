@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+ <DespatchAdvice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</cbc:ProfileID>
+    <cbc:ID>VED-70334</cbc:ID>
+    <cbc:IssueDate>2024-03-19</cbc:IssueDate>
+    <cbc:IssueTime>17:47:23</cbc:IssueTime>
+    <cbc:Note>TT   15,5M</cbc:Note>
+    <cac:OrderReference>
+      <cbc:ID>15017</cbc:ID>
+    </cac:OrderReference>
+    <cac:AdditionalDocumentReference>
+      <cbc:ID>9009122-1</cbc:ID>
+      <cbc:DocumentType>ProjectReference</cbc:DocumentType>
+    </cac:AdditionalDocumentReference>
+    <cac:DespatchSupplierParty>
+      <cac:Party>
+        <cbc:EndpointID schemeID="0007">5334567897</cbc:EndpointID>
+        <cac:PartyIdentification>
+          <cbc:ID schemeID="0007">5334567897</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PostalAddress>
+          <cbc:StreetName>JÄRLÖV</cbc:StreetName>
+          <cbc:CityName>VEDDIGE</cbc:CityName>
+          <cbc:PostalZone>432 66</cbc:PostalZone>
+          <cac:Country>
+            <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+          </cac:Country>
+        </cac:PostalAddress>
+        <cac:PartyLegalEntity>
+          <cbc:RegistrationName>Prefab AB</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
+        <cac:Contact>
+          <cbc:Name>Some Name</cbc:Name>
+          <cbc:Telephone>+46123456789</cbc:Telephone>
+          <cbc:ElectronicMail>some.name@prefab-supplier.se</cbc:ElectronicMail>
+        </cac:Contact>
+      </cac:Party>
+    </cac:DespatchSupplierParty>
+    <cac:DeliveryCustomerParty>
+      <cac:Party>
+        <cbc:EndpointID schemeID="0007">5234567898</cbc:EndpointID>
+        <cac:PartyIdentification>
+          <cbc:ID schemeID="0007">5234567898</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PostalAddress>
+          <cbc:StreetName>Storgatan 1</cbc:StreetName>
+          <cbc:CityName>SVEDALA</cbc:CityName>
+          <cbc:PostalZone>233 22</cbc:PostalZone>
+          <cac:Country>
+            <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+          </cac:Country>
+        </cac:PostalAddress>
+        <cac:PartyLegalEntity>
+          <cbc:RegistrationName>Buyer Inc.</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
+        <cac:Contact>
+        <cbc:Name>Buyer Inc.</cbc:Name>
+        <cbc:Telephone>+4681234567</cbc:Telephone>
+        <cbc:ElectronicMail>invoices@thebuyer.se</cbc:ElectronicMail>
+      </cac:Contact>
+      </cac:Party>
+    </cac:DeliveryCustomerParty>
+    <cac:BuyerCustomerParty>
+      <cac:Party>
+        <cac:PartyIdentification>
+          <cbc:ID schemeID="0007">5234567898</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+          <cbc:Name>Buyer Inc.</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+          <cbc:StreetName>Storgatan 1</cbc:StreetName>
+          <cbc:CityName>SVEDALA</cbc:CityName>
+          <cbc:PostalZone>233 22</cbc:PostalZone>
+          <cac:Country>
+            <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+          </cac:Country>
+        </cac:PostalAddress>
+      </cac:Party>
+    </cac:BuyerCustomerParty>
+    <cac:SellerSupplierParty>
+      <cac:Party>
+        <cac:PartyIdentification>
+          <cbc:ID schemeID="0007">5334567897</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+          <cbc:Name>Prefab AB</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+          <cbc:StreetName>Testgatan 1</cbc:StreetName>
+          <cbc:CityName>STOCKHOLM</cbc:CityName>
+          <cbc:PostalZone>100 00</cbc:PostalZone>
+          <cac:Country>
+            <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+          </cac:Country>
+        </cac:PostalAddress>
+      </cac:Party>
+    </cac:SellerSupplierParty>
+    <cac:Shipment>
+      <cbc:ID>VED-70334</cbc:ID>
+      <cbc:GrossWeightMeasure unitCode="KGM">32730</cbc:GrossWeightMeasure>
+      <cac:Consignment>
+        <cbc:ID>VED-70334</cbc:ID>
+        <cac:CarrierParty>
+          <cac:PartyIdentification>
+            <cbc:ID schemeID="0007">5568466201</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>MANTUM SPECIAL AB (PAYEX)</cbc:Name>
+          </cac:PartyName>
+        </cac:CarrierParty>
+      </cac:Consignment>
+      <cac:Delivery>
+        <cac:DeliveryLocation>
+          <cbc:ID schemeID="0088">5498887942639</cbc:ID>
+          <cbc:Name>HEDEN 705:1, P-HUS HEDEN GÖTEBORG</cbc:Name>
+          <cac:Address>
+            <cbc:StreetName>STEN STUREGATAN</cbc:StreetName>
+            <cbc:CityName>GÖTEBORG</cbc:CityName>
+            <cbc:PostalZone>40010</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+            </cac:Country>
+          </cac:Address>
+        </cac:DeliveryLocation>
+        <cac:EstimatedDeliveryPeriod>
+          <cbc:StartDate>2022-02-24</cbc:StartDate>
+          <cbc:StartTime>10:30:00</cbc:StartTime>
+          <cbc:EndDate>2022-02-24</cbc:EndDate>
+          <cbc:EndTime>10:30:00</cbc:EndTime>
+        </cac:EstimatedDeliveryPeriod>
+        <cac:Despatch>
+          <cac:DespatchAddress>
+			  <cbc:ID schemeID="0088">1847452077698</cbc:ID>
+            <cbc:StreetName>JÄRLÖV</cbc:StreetName>
+            <cbc:CityName>VEDDIGE</cbc:CityName>
+            <cbc:PostalZone>432 66</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+            </cac:Country>
+          </cac:DespatchAddress>
+        </cac:Despatch>
+      </cac:Delivery>
+    </cac:Shipment>
+    <cac:DespatchLine>
+      <cbc:ID>1</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>VED-15017-1301</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D4025-TT/F 205/54</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-VED-15017-871</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>TT/F PLATTA</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1301</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>TT/F</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1301</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>TT/F</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>14</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-2005-886</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>TT/F PLATTA</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 vA2 EPD value</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA2</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">3189.34</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+		<cac:AdditionalItemProperty>
+		  <cbc:Name>Mother EPD ID</cbc:Name>
+		  <cbc:NameCode listID="IPNC">MotherEPDID</cbc:NameCode>
+		  <cbc:Value>NEPD-1717-700-SE</cbc:Value>
+		</cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">2047</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">13570</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">540</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">15260</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">15260</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>2</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>VED-15017-1301</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D4021-TT/F 249/54</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-VED-15017-508</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>TT/F PLATTA</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1301</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>TT/F</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1301</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>TT/F</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>2</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>14</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>04.28</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-2005-886</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>TT/F PLATTA</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 vA2 EPD value</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA2</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">3651.23</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+		<cac:AdditionalItemProperty>
+			<cbc:Name>Mother EPD ID</cbc:Name>
+			<cbc:NameCode listID="IPNC">MotherEPDID</cbc:NameCode>
+			<cbc:Value>NEPD-1717-700-SE</cbc:Value>
+		</cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">2494</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">15615</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">540</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">17470</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">17470</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+  </DespatchAdvice>
