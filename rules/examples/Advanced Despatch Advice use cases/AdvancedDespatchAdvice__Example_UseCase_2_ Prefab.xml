@@ -110,6 +110,16 @@
             <cbc:Name>MANTUM SPECIAL AB (PAYEX)</cbc:Name>
           </cac:PartyName>
         </cac:CarrierParty>
+
+        <!-- GWP A4 value -->
+        <cac:OriginalDespatchTransportationService>
+          <cbc:TransportServiceCode>FuelReport</cbc:TransportServiceCode>
+          <cac:EnvironmentalEmission>
+              <cbc:EnvironmentalEmissionTypeCode>CO2</cbc:EnvironmentalEmissionTypeCode>
+              <cbc:ValueMeasure unitCode="KGM">1.852442</cbc:ValueMeasure>
+          </cac:EnvironmentalEmission>
+        </cac:OriginalDespatchTransportationService>
+
       </cac:Consignment>
       <cac:Delivery>
         <cac:DeliveryLocation>
