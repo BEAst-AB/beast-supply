@@ -1,0 +1,2491 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StandardBusinessDocument xmlns="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader">
+  <StandardBusinessDocumentHeader>
+    <HeaderVersion>1.0</HeaderVersion>
+    <Sender>
+      <Identifier Authority="iso6523-actorid-upis">0007:5565394904</Identifier>
+    </Sender>
+    <Receiver>
+      <Identifier Authority="iso6523-actorid-upis">0007:5593026189</Identifier>
+    </Receiver>
+    <DocumentIdentification>
+      <Standard>urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2</Standard>
+      <TypeVersion>2.1</TypeVersion>
+      <InstanceIdentifier>9732051f-4e5c-4860-b253-7762d325b79c</InstanceIdentifier>
+      <Type>DespatchAdvice</Type>
+      <CreationDateAndTime>2024-07-04T19:18:10+02:00</CreationDateAndTime>
+    </DocumentIdentification>
+    <BusinessScope>
+      <Scope>
+        <Type>DOCUMENTID</Type>
+        <InstanceIdentifier>urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2::DespatchAdvice##urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1::2.1</InstanceIdentifier>
+      </Scope>
+      <Scope>
+        <Type>PROCESSID</Type>
+        <InstanceIdentifier>urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</InstanceIdentifier>
+      </Scope>
+    </BusinessScope>
+  </StandardBusinessDocumentHeader>
+  <DespatchAdvice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</cbc:ProfileID>
+    <cbc:ID>KUN-75682</cbc:ID>
+    <cbc:IssueDate>2024-07-04</cbc:IssueDate>
+    <cbc:IssueTime>19:18:10</cbc:IssueTime>
+    <cbc:Note>Truck 3 stuvar HD 20 
+ + Gods från fabriken (G797) 
+ + Armering från Götes Gata (A1)
+ + Lyftutrustning L13 tur och retur</cbc:Note>
+    <cac:OrderReference>
+      <cbc:ID>15663</cbc:ID>
+    </cac:OrderReference>
+    <cac:AdditionalDocumentReference>
+      <cbc:ID>10541 VÄSTRA</cbc:ID>
+      <cbc:DocumentType>ProjectReference</cbc:DocumentType>
+    </cac:AdditionalDocumentReference>
+    <cac:DespatchSupplierParty>
+      <cac:Party>
+        <cbc:EndpointID schemeID="0007">5565394904</cbc:EndpointID>
+        <cac:PartyIdentification>
+          <cbc:ID schemeID="0007">5565394904</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PostalAddress>
+          <cbc:StreetName>KUNGSGATAN 2</cbc:StreetName>
+          <cbc:CityName>KUNGSÖR</cbc:CityName>
+          <cbc:PostalZone>736 36</cbc:PostalZone>
+          <cac:Country>
+            <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+          </cac:Country>
+        </cac:PostalAddress>
+        <cac:PartyLegalEntity>
+          <cbc:RegistrationName>AB STRÄNGBETONG</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
+        <cac:Contact>
+          <cbc:Name>HENRIK VINELL</cbc:Name>
+          <cbc:Telephone>+46730378284</cbc:Telephone>
+          <cbc:ElectronicMail>henrik.vinell@strangbetong.se</cbc:ElectronicMail>
+        </cac:Contact>
+      </cac:Party>
+    </cac:DespatchSupplierParty>
+    <cac:DeliveryCustomerParty>
+      <cac:Party>
+        <cbc:EndpointID schemeID="0007">5593026189</cbc:EndpointID>
+        <cac:PartyIdentification>
+          <cbc:ID schemeID="0007">5593026189</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PostalAddress>
+          <cbc:StreetName>BOX 30116</cbc:StreetName>
+          <cbc:CityName>STOCKHOLM</cbc:CityName>
+          <cbc:PostalZone>.</cbc:PostalZone>
+          <cac:Country>
+            <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+          </cac:Country>
+        </cac:PostalAddress>
+        <cac:PartyLegalEntity>
+          <cbc:RegistrationName>CONSOLIS ELEMENT SVERIGE</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
+      </cac:Party>
+      <cac:DeliveryContact>
+        <cbc:Name>CONSOLIS ELEMENT SVERIGE</cbc:Name>
+        <cbc:Telephone>+46</cbc:Telephone>
+        <cbc:ElectronicMail>faktura@elementssverige.se</cbc:ElectronicMail>
+      </cac:DeliveryContact>
+    </cac:DeliveryCustomerParty>
+    <cac:BuyerCustomerParty>
+      <cac:Party>
+        <cac:PartyIdentification>
+          <cbc:ID schemeID="0007">5593026189</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+          <cbc:Name>CONSOLIS ELEMENT SVERIGE</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+          <cbc:StreetName>BOX 30116</cbc:StreetName>
+          <cbc:CityName>STOCKHOLM</cbc:CityName>
+          <cbc:PostalZone>.</cbc:PostalZone>
+          <cac:Country>
+            <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+          </cac:Country>
+        </cac:PostalAddress>
+      </cac:Party>
+    </cac:BuyerCustomerParty>
+    <cac:SellerSupplierParty>
+      <cac:Party>
+        <cac:PartyIdentification>
+          <cbc:ID schemeID="0007">5565394904</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+          <cbc:Name>AB STRÄNGBETONG</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+          <cbc:StreetName>GUSTAVIII BOULEVARD 36</cbc:StreetName>
+          <cbc:CityName>SOLNA</cbc:CityName>
+          <cbc:PostalZone>169 73</cbc:PostalZone>
+          <cac:Country>
+            <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+          </cac:Country>
+        </cac:PostalAddress>
+      </cac:Party>
+    </cac:SellerSupplierParty>
+    <cac:Shipment>
+      <cbc:ID>KUN-75682</cbc:ID>
+      <cbc:GrossWeightMeasure unitCode="KGM">25016.81</cbc:GrossWeightMeasure>
+      <cac:Consignment>
+        <cbc:ID>KUN-75682</cbc:ID>
+        <cac:CarrierParty>
+          <cac:PartyIdentification>
+            <cbc:ID schemeID="0007">5567878318</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>M4 GRUPPEN AB</cbc:Name>
+          </cac:PartyName>
+        </cac:CarrierParty>
+      </cac:Consignment>
+      <cac:Delivery>
+        <cac:DeliveryLocation>
+          <cbc:ID schemeID="0007">5593026189</cbc:ID>
+          <cbc:Name>Ingavarvet Östra</cbc:Name>
+          <cac:Address>
+            <cbc:StreetName>SLAGGVARPSVÄGEN 17</cbc:StreetName>
+            <cbc:CityName>FALUN</cbc:CityName>
+            <cbc:PostalZone>791 01</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+            </cac:Country>
+          </cac:Address>
+        </cac:DeliveryLocation>
+        <cac:EstimatedDeliveryPeriod>
+          <cbc:StartDate>2024-01-02</cbc:StartDate>
+          <cbc:StartTime>11:00:00</cbc:StartTime>
+          <cbc:EndDate>2024-01-02</cbc:EndDate>
+          <cbc:EndTime>11:00:00</cbc:EndTime>
+        </cac:EstimatedDeliveryPeriod>
+        <cac:Despatch>
+          <cac:DespatchAddress>
+            <cbc:StreetName>KUNGSGATAN 2</cbc:StreetName>
+            <cbc:CityName>KUNGSÖR</cbc:CityName>
+            <cbc:PostalZone>736 36</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+            </cac:Country>
+          </cac:DespatchAddress>
+        </cac:Despatch>
+      </cac:Delivery>
+    </cac:Shipment>
+    <cac:DespatchLine>
+      <cbc:ID>1</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3101-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-49</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>bd900791-dd2d-4445-abfc-79d61428a1d8</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">160.87</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">264</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1256.83</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1256.83</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>2</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3102-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-50</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>d4d2a754-c838-4412-becb-ce8ce996f78b</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>2</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">153.03</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>3</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3102-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-51</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>af24c2d8-39c6-42df-8900-bb7b1c52b9e6</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>3</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">153.03</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>4</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3102-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-52</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>7bb86de5-9087-4b83-800f-f776a0b2448b</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>4</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">153.03</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>5</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3102-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-53</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>79713c11-ea54-4978-8de8-43fe6aef567b</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>5</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">153.03</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>6</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3102-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-54</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>8b55a6bd-dbb7-47ef-9eb0-821dab4fcef2</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>6</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">153.03</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>7</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3103-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-63</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>e262f03d-4d6d-44e8-97cb-3f29c4c67f4c</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>3</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">153.03</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>8</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3102-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-56</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>70457649-6da1-4f7a-bbfe-640bb029335e</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>3</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>2</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">153.03</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>9</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3104-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-64</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>3818ae2e-6f57-493b-86ed-28132e768b93</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>3</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>3</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">152.66</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1192.68</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1192.68</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>10</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3105-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-65</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>b4095129-f6a7-4dea-bb45-b38ac359f18a</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>3</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>4</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">153.09</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1196</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1196</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>11</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3102-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-55</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>867ea0b6-4d3c-4995-9ed8-37c6b5e300b4</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>3</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>5</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">153.03</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>12</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3102-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-57</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>a55f2a60-49c5-45a4-80e1-c55d469c7e91</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>3</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>6</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">153.03</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>13</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3107-HD/F 50/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-67</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>132e4d67-c6dc-4ec1-bbd6-b6e7016c8a6f</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>5</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">77.25</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">498</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">264</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">603.52</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">603.52</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>14</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3102-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-58</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>b1129d92-6dac-471b-b070-f2a780a191db</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>5</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>2</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">153.03</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>15</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3106-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-66</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>6bb4798c-bbfe-49f8-8f3c-f0858013160a</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>5</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>3</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">164.88</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">264</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1288.11</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1288.11</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>16</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3103-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-62</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>9a80c024-e05b-45c1-aeda-960f777cddea</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>5</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>4</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">153.03</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>17</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3102-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-60</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>51114447-ff77-4a41-9e75-75ee94bbb6bf</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>5</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>5</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">153.03</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>18</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3102-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-59</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>454c9596-70e0-440c-85a0-c2dd39bac9a1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>5</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>6</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">153.03</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>19</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3102-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-61</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>1d214a6a-35c7-4645-b4e8-c49096483d4c</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>5</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>7</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">153.03</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1195.56</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>20</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+        <cbc:SalesOrderLineID>KUN-15663-1420</cbc:SalesOrderLineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>D3108-HD/F 120/20 F155</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>ELEMENT-KUN-15663-68</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Precast concrete element</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductName</cbc:Name>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeCode</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ProductTypeName</cbc:Name>
+          <cbc:Value>HD/F-20 F155</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryType</cbc:Name>
+          <cbc:Value>1420</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>FactoryTypeName</cbc:Name>
+          <cbc:Value>HD/F 120/20</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ElementGUID</cbc:Name>
+          <cbc:Value>deb52ac0-6ee3-466b-be09-32482224bc4d</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyBlock</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>AssemblyFloor</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Bundle</cbc:Name>
+          <cbc:Value>5</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>BundleOrder</cbc:Name>
+          <cbc:Value>8</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>TruckloadNumber</cbc:Name>
+          <cbc:Value>1</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Stock</cbc:Name>
+          <cbc:Value>TR09.</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Boverket Resource ID</cbc:Name>
+          <cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+          <cbc:Value>6000000059</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>Program Operator</cbc:Name>
+          <cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+          <cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Number</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+          <cbc:Value>NEPD-6998-6380-SE</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>EPD Product Name</cbc:Name>
+          <cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+          <cbc:Value>HÅLDÄCK</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+          <cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+          <cbc:Value>NA</cbc:Value>
+          <cbc:ValueQuantity unitCode="KGM">160.87</cbc:ValueQuantity>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>WD</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">1200</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>LN</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">4010</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>HT</cbc:AttributeID>
+          <cbc:Measure unitCode="MMT">264</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1256.83</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">1256.83</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>21</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>T-GODS från fabriken (1st pall)</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>DEVICE-KUN-75682-11</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Assembly device</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">300</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">300</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>22</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>ARMERING från Götes Gata (1st pall, 2st bunt 12m)</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>DEVICE-KUN-75682-12</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Assembly device</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">565</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">565</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+    <cac:DespatchLine>
+      <cbc:ID>23</cbc:ID>
+      <cbc:DeliveredQuantity unitCode="EA">1</cbc:DeliveredQuantity>
+      <cac:OrderLineReference>
+        <cbc:LineID>NA</cbc:LineID>
+      </cac:OrderLineReference>
+      <cac:Item>
+        <cbc:Name>LITET OK</cbc:Name>
+        <cac:SellersItemIdentification>
+          <cbc:ID>DEVICE-KUN-75682-3</cbc:ID>
+        </cac:SellersItemIdentification>
+        <cac:AdditionalItemProperty>
+          <cbc:Name>ItemType</cbc:Name>
+          <cbc:Value>Assembly device</cbc:Value>
+        </cac:AdditionalItemProperty>
+        <cac:Dimension>
+          <cbc:AttributeID>AAB</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">620</cbc:Measure>
+        </cac:Dimension>
+        <cac:Dimension>
+          <cbc:AttributeID>AAF</cbc:AttributeID>
+          <cbc:Measure unitCode="KGM">620</cbc:Measure>
+        </cac:Dimension>
+      </cac:Item>
+    </cac:DespatchLine>
+  </DespatchAdvice>
+</StandardBusinessDocument>
