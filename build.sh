@@ -2,10 +2,10 @@
 
 PROJECT=$(dirname $(readlink -f "$0"))
 
-POACCBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/master/structure/syntax/"
+POACCBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/2024-q2-member-review/structure/syntax/"
 echo $POACCBASEURL
 
-LOGISTICSBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/qa/structure/syntax/"
+LOGISTICSBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/main/structure/syntax/"
 echo $LOGISTICSBASEURL
 
 # Delete target folder if found
@@ -25,7 +25,7 @@ docker run --rm -i \
     -v $PROJECT:/src \
     -v $PROJECT/target/generated:/target \
     atomgraph/saxon \
-    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/master/structure/syntax/ubl-invoice.xml \
+    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/2024-q2-member-review/structure/syntax/ubl-invoice.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-invoice.xml \
     varOverrideSample=/src/structure/source/ubl-invoice.xml \
@@ -255,20 +255,24 @@ docker run --rm -i \
 echo "Testing validation rules"
 docker run --rm -i -v $PROJECT:/src anskaffelser/validator:2.1.0 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
 
-echo "Schematrons"
-for sch in $PROJECT/rules/sch/*.sch; do
-    docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/schematron:/target klakegg/schematron prepare /src/rules/sch/$(basename $sch) /target/$(basename $sch)
-done
-docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/Schematron.zip
-docker run --rm -i -v $PROJECT/target/schematron:/src -v $PROJECT/target/site/files:/target -w /src kramos/alpine-zip -r /target/Schematron.zip .
-
-echo "Exampel files"
-docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/Examples.zip
-docker run --rm -i -v $PROJECT/rules/examples:/src -v $PROJECT/target/site/files:/target -w /src kramos/alpine-zip -r /target/Examples.zip .
-
-echo "Mapping files"
-docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/Mapping.zip
-docker run --rm -i -v $PROJECT/rules/mapping:/src -v $PROJECT/target/site/files:/target -w /src kramos/alpine-zip -r /target/Mapping.zip .
+# Removing old zip files and creating new ones
+docker run --rm -i \
+  -v $PROJECT/target/site/files:/files \
+  -v $PROJECT/target/schematron:/schematron \
+  -v $PROJECT/rules/examples:/examples \
+  -v $PROJECT/rules/mapping:/mapping \
+  -w /tmp \
+  alpine:latest sh -c '
+    apk add --no-cache zip
+    rm -rf /files/Schematron.zip
+    cd /schematron && zip -r /files/Schematron.zip .
+    echo "Example files"
+    rm -rf /files/Examples.zip
+    cd /examples && zip -r /files/Examples.zip .
+    echo "Mapping files"
+    rm -rf /files/Mapping.zip
+    cd /mapping && zip -r /files/Mapping.zip .
+  '
 
 echo "Generating guides"
 docker run --rm -i -v $PROJECT:/documents -v $PROJECT/target:/target difi/asciidoctor
