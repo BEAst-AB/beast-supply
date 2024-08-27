@@ -5,28 +5,30 @@
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
   <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order_response:3</cbc:CustomizationID>
   <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:ordering:3</cbc:ProfileID>
-  <cbc:ID>101</cbc:ID>
-  <cbc:IssueDate>2019-10-01</cbc:IssueDate>
-  <cbc:IssueTime>14:23:26</cbc:IssueTime>
-  <cbc:OrderResponseCode>AP</cbc:OrderResponseCode>
-  <cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+  <cbc:ID>4552</cbc:ID>
+  <cbc:IssueDate>2013-07-01</cbc:IssueDate>
+  <cbc:IssueTime>06:10:10</cbc:IssueTime>
+  <cbc:OrderResponseCode>RE</cbc:OrderResponseCode>
+  <cbc:Note>No available translators</cbc:Note>
+  <cbc:DocumentCurrencyCode listID="ISO4217">EUR</cbc:DocumentCurrencyCode>
+  <cbc:CustomerReference>123abc</cbc:CustomerReference>
   <cac:OrderReference>
     <cbc:ID>5</cbc:ID>
   </cac:OrderReference>
   <cac:SellerSupplierParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="0007">5560125220</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="0007">5560125220</cbc:ID>
+        <cbc:ID schemeID="0192">987654325</cbc:ID>
       </cac:PartyIdentification>
     </cac:Party>
   </cac:SellerSupplierParty>
-   <cac:BuyerCustomerParty>
-     <cac:Party>
-       <cbc:EndpointID schemeID="0007">5560125220</cbc:EndpointID>
-       <cac:PartyIdentification>
-         <cbc:ID schemeID="0007">5560125220</cbc:ID>
-       </cac:PartyIdentification>
-     </cac:Party>
-   </cac:BuyerCustomerParty>
+  <cac:BuyerCustomerParty>
+      <cac:Party>
+        <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+      <cac:PartyIdentification>
+        <cbc:ID  schemeID="0088">7300010000001</cbc:ID>
+      </cac:PartyIdentification>
+    </cac:Party>
+  </cac:BuyerCustomerParty>
   </OrderResponse>

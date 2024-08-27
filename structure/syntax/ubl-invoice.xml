@@ -115,8 +115,7 @@
       <Element cardinality="0..1">
          <Term>cbc:AccountingCost</Term>
          <Name>Buyer accounting reference</Name>
-         <Description>
-						BEAst: Can be used for natural account or code string
+         <Description>BEAst: Can be used for natural account or code string
  Peppol: A textual value that specifies where to book the relevant data into the Buyer's financial accounts.</Description>
          <DataType>Text</DataType>
          <Reference type="BUSINESS_TERM">BT-19</Reference>
@@ -134,8 +133,7 @@
       <Element cardinality="0..1">
          <Term>cac:InvoicePeriod</Term>
          <Name>DELIVERY OR INVOICE PERIOD</Name>
-         <Description>
-						BEAst: Also used to describe invoice period for rental items. Can also be used on line level if needed.
+         <Description>BEAst: Also used to describe invoice period for rental items. Can also be used on line level if needed.
  Peppol: A group of business terms providing information on the invoice period. Also called delivery period. If the group is used, the invoiceing period start date and/or end date must be used.</Description>
          <Reference type="BUSINESS_TERM">BG-14</Reference>
          <Reference type="RULE">BR-IC-11</Reference>
@@ -478,8 +476,7 @@
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
                   <Name>Seller address line 2</Name>
-                  <Description>
-						BEAst: Department
+                  <Description>BEAst: Department
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-36</Reference>
@@ -518,8 +515,9 @@
                   <Element>
                      <Term>cbc:Line</Term>
                      <Name>Seller address line 3</Name>
-                     <Description>
-						BEAst: Used for grid coordinates or building details
+
+                     <Description>BEAst: Used for grid coordinates or building details
+
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-162</Reference>
@@ -638,6 +636,9 @@
                   <Reference type="RULE">DK-R-014</Reference>
                   <Reference type="RULE">SE-R-003</Reference>
                   <Reference type="RULE">SE-R-004</Reference>
+
+                  <Reference type="RULE">SE-R-013</Reference>
+
                   <Value type="EXAMPLE">5561043539</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
@@ -790,8 +791,8 @@
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
                   <Name>Buyer address line 2</Name>
-                  <Description>
-						BEAst: Department
+                  <Description>BEAst: Department
+
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-51</Reference>
@@ -828,8 +829,9 @@
                   <Element>
                      <Term>cbc:Line</Term>
                      <Name>Buyer address line 3</Name>
-                     <Description>
-						BEAst: Used for grid coordinates or building details
+
+                     <Description>BEAst: Used for grid coordinates or building details
+
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-163</Reference>
@@ -1064,8 +1066,8 @@
             <Element cardinality="0..1">
                <Term>cbc:AdditionalStreetName</Term>
                <Name>Tax representative address line 2</Name>
-               <Description>
-						BEAst: Department
+               <Description>BEAst: Department
+
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-65</Reference>
@@ -1102,8 +1104,8 @@
                <Element>
                   <Term>cbc:Line</Term>
                   <Name>Tax representative address line 3</Name>
-                  <Description>
-						BEAst: Used for grid coordinates or building details
+                  <Description>BEAst: Used for grid coordinates or building details
+
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-164</Reference>
@@ -1229,8 +1231,8 @@
                <Element cardinality="0..1">
                   <Term>cbc:AdditionalStreetName</Term>
                   <Name>Deliver to address line 2</Name>
-                  <Description>
-						BEAst: Department
+                  <Description>BEAst: Department
+
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-76</Reference>
@@ -1267,12 +1269,13 @@
                   <Element>
                      <Term>cbc:Line</Term>
                      <Name>Deliver to address line 3</Name>
-                     <Description>
-						BEAst: Used for grid coordinates or building details
+
+                     <Description>BEAst: Used for any other additional address information like Building (T5004) or a specific part of the workplace. Can be used for detailed information by separating the information by # .
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-165</Reference>
-                     <Value type="EXAMPLE">Hus 1</Value>
+                     <Value type="EXAMPLE">Lundbyleden#Område C2</Value>
+
                   </Element>
                </Element>
                <Element>
@@ -1331,8 +1334,7 @@
             <Attribute usage="Optional">
                <Term>name</Term>
                <Name>Payment means text</Name>
-               <Description>The means, expressed as text, for how a payment is expected to be or has been settled.
-                </Description>
+               <Description>The means, expressed as text, for how a payment is expected to be or has been settled.</Description>
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-82</Reference>
                <Value type="EXAMPLE">Credit transfer</Value>
@@ -1991,8 +1993,7 @@
          <Element>
             <Term>cbc:InvoicedQuantity</Term>
             <Name>Invoiced quantity</Name>
-            <Description>
-						BEAst: DeliveredQuantity (T6706) For rental invoices this is [number of days to invoice] x [quantity of the articles rented].
+            <Description>BEAst: DeliveredQuantity (T6706) For rental invoices this is [number of days to invoice] x [quantity of the articles rented].
  Peppol: The quantity of items (goods or services) that is charged in the Invoice line.</Description>
             <DataType>Quantity</DataType>
             <Reference type="BUSINESS_TERM">BT-129</Reference>
@@ -2002,10 +2003,7 @@
             <Attribute>
                <Term>unitCode</Term>
                <Name>Invoiced quantity unit of measure</Name>
-               <Description>The unit of measure that applies to the invoiced quantity.
-					Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
-					The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
-					</Description>
+               <Description>The unit of measure that applies to the invoiced quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015): The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.</Description>
                <DataType>Code</DataType>
                <Reference type="BUSINESS_TERM">BT-130</Reference>
                <Reference type="RULE">BR-23</Reference>
@@ -2037,8 +2035,7 @@
          <Element cardinality="0..1">
             <Term>cbc:AccountingCost</Term>
             <Name>Invoice line Buyer accounting reference</Name>
-            <Description>
-						BEAst: Can be used for natural account or code string
+            <Description>BEAst: Can be used for natural account or code string
  Peppol: A textual value that specifies where to book the relevant data into the Buyer's financial accounts.</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">BT-133</Reference>
@@ -2047,8 +2044,8 @@
          <Element cardinality="0..1">
             <Term>cac:InvoicePeriod</Term>
             <Name>INVOICE LINE PERIOD</Name>
-            <Description>
-						BEAst: Also used to describe invoice period for rental items. Can also be used on header level.
+            <Description>BEAst: Also used to describe invoice period for rental items. Can also be used on header level.
+
  Peppol: A group of business terms providing information about the period relevant for the Invoice line.</Description>
             <Reference type="BUSINESS_TERM">BG-26</Reference>
             <Element cardinality="0..1">
@@ -2082,8 +2079,7 @@
             <Element>
                <Term>cbc:LineID</Term>
                <Name>Referenced purchase order line reference</Name>
-               <Description>
-						BEAst: T3322 ReferenceToOrderLine. Purchase order line referens.
+               <Description>BEAst: T3322 ReferenceToOrderLine. Purchase order line referens.
  Peppol: An identifier for a referenced line within a purchase order, issued by the Buyer.</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-132</Reference>
@@ -2099,8 +2095,8 @@
             <Element>
                <Term>cbc:ID</Term>
                <Name>Invoice line object identifier</Name>
-               <Description>
-						BEAst: Weight Statement Number (T6329) @schemeID="WM"; Freight Forwarder Referens Number (T6127) @schemeID="AHY"; Despatch Advice Number (T6386) @schemeID="AAK";Line Number (e.g. despatch advice line number) @schemeID="LI"; Serial number schemeID="SE"; Sales order id schemeID="VN"
+               <Description>BEAst: Weight Statement Number (T6329) @schemeID="WM"; Freight Forwarder Referens Number (T6127) @schemeID="AHY"; Despatch Advice Number (T6386) @schemeID="AAK";Line Number (e.g. despatch advice line number) @schemeID="LI"; Serial number schemeID="SE"; Sales order id schemeID="VN"
+
  Peppol: An identifier for an object on which the invoice line is based, given by the Seller.</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-128</Reference>
@@ -2389,8 +2385,8 @@
                <Element>
                   <Term>cbc:Name</Term>
                   <Name>Item attribute name</Name>
-                  <Description>
-						BEAst: RentalDeliveryStatus (T6505); BuyersContact (T6709); DeliveryPeriodStartDate (T2051); RentalTimeQuantity Time for which an article is to be debited for. (T6478); BEAst:RentalTimeQuantityUOM Unit of measure for RentalTimeQuantity; BEAst:RentalQuantityValue To be used to describe the quantity delivered in a rental case.; BEAst:RentalQuantityValueUOM Unit of measure for DeliveredQuantity (T6706); BEAst:SiteID; BEAst:PriceMatrix; BEAst:SuppliersContact (T0113)
+                  <Description>BEAst: RentalDeliveryStatus (T6505); BuyersContact (T6709); DeliveryPeriodStartDate (T2051); RentalTimeQuantity Time for which an article is to be debited for. (T6478); BEAst:RentalTimeQuantityUOM Unit of measure for RentalTimeQuantity; BEAst:RentalQuantityValue To be used to describe the quantity delivered in a rental case.; BEAst:RentalQuantityValueUOM Unit of measure for DeliveredQuantity (T6706); BEAst:SiteID; BEAst:PriceMatrix; BEAst:SuppliersContact (T0113)
+
  Peppol: The name of the attribute or property of the item.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-160</Reference>
@@ -2445,9 +2441,7 @@
                <Attribute usage="Optional">
                   <Term>unitCode</Term>
                   <Name>Item price base quantity unit of measure code</Name>
-                  <Description>The unit of measure that applies to the Item price base quantity, must be the same as the unit code of the Invoiced/credited quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
-                    The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
-                </Description>
+                  <Description>The unit of measure that applies to the Item price base quantity, must be the same as the unit code of the Invoiced/credited quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015): The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.</Description>
                   <Reference type="CODE_LIST">UNECERec20</Reference>
                   <Reference type="RULE">PEPPOL-EN16931-R130</Reference>
                   <Value type="EXAMPLE">EA</Value>

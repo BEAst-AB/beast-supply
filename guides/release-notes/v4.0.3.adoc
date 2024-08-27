@@ -1,0 +1,63 @@
+= Version 4.0.3
+[horizontal]
+This release is based on:
+
+* Peppol Post Award Community version 3.0.13 released May 2024 and mandatory use is set to 2024-08-27.
+* link:https://docs.peppol.eu/logistics/2024-Q1/[Peppol Logistics Community version 1.0] with mandatory use 2024-02-26, i.e. no changes from Logistics Community in this BEAst Supply release.
+
+== Migration plan
+*Publication*
+The date is set to 2024-07-05. As of this date the release content is published. 
+Stakeholders can start with implementing the changes.
+
+*Mandatory use*
+The date for the release content to become mandatory is set to 2024-08-27
+As of this date the old version, November release 2023, is not allowed to be used anymore. 
+
+[horizontal]
+Changes to Peppol documentation below
+
+== BIS documentation
+
+* BIS Catalogue
+** Clarified the use of item identifiers. Previously unclear in the description if "either one of" or "at least one of" Sellers Identifier or Standard Identifier must be stated. It is now clear that it is "at least one of". This change is in line with existing validation rules of the existence of the identifiers.
+** Statement that Manufacturers item identifier must be stated if it exists is deleted since it was unclear how to interpret the statement and to impossible to verify.
+** Updated use case 5 to describe the use of deposits using RequiredRelatedItem 
+
+== Changes to syntax
+* Order transaction (T01)
+
+* Order Response transaction (T76)
+
+* Catalogue transaction (T19)
+** Added possibility (by use of a code) to indicate if an item is non-returnable after purchase. The element cac:TransactionConditions/cbc:ActionCode on item-level is used and the code is added to the codelist "Transaction condition code (OpenPeppol)", together with the previous code to indicate if an item is contracted (CT). The element cbc:ActionCode was previously fixed to the value 'CT' since it was the only allowed code, but with this change, it can be used for both purposes.
+
+
+== Changes to code lists and validation artefacts
+
+* Update of PEPPOL-COMMON-R049 which validates identifiers using ICD/EAS 0007. The change is adding validation of the check number of a Swedish Organization number.
+
+* Added rule to check that an OrderResponse with ResponseTypeCode CA (accepted with amendment on line level) actually has order response lines. The rule is introduced with severity warning and will be changed to severity fatal in next release. The rule is added to both T76 (Order Response).
+
+* Added rule to check that an OrderResponse with ResponseTypeCode AP or RE should not have order response lines. The rule is introduced with severity warning and will be changed to severity fatal in next release. The rule is added to both T76 (Order Responseand) and T116 (Order Response Advanced).
+
+* Added rule to check that an OrderResponse with ResponseTypeCode AB must not have order response lines. The rule is introduced with severity error. The rule is added to both T76 (Order Responseand).
+
+== Billing changes to code lists and validation artefacts
+
+* Added new Swedish rule (SE-R-013) for validation of the check number of a Swedish Organization number. The rule is introduced as severity warning. All rules which verify the format of Organization numbers (SE-R-003, SE-R-004 and SE-R-013) will be changed to severity fatal in the next release.
+* Update for rule NL-R-007 (mandatory payment means), the check should not fire if the document is a credit note with a positive amount.
+* Update of PEPPOL-COMMON-R049, which validates identifiers using ICD/EAS 0007. The change is adding validation of the check number of a Swedish Organization number.
+* Removing Currency code Sierra Leone SLL, new code is SLE
+* Adding Payment means code 98
+* Adding Item type identification code GMN
+* Adding charge code PRV
+* Adding VAT Exemption reason codes VATEX-FR-FRANCHISE, VATEX-FR-CNWVAT
+
+==  EN 16931 schematrons updated
+* Changes in the code lists supported
+* BT-32 path check missing in BR-AE-02, BR-AE-03, and BR-AE-04 in CII
+* [BR-63] fails if multiple URIUniversalCommunication are present
+* BR-33 / BR-CO-21 rules validation doesn't work on CII files (OK on UBL files)
+* Undocumented and missing changes in v.1.3.11 release
+* missing cardinality check for Value added tax point date (BT-7) and Value added tax point date code (BT-8) in CII

@@ -17,6 +17,7 @@
 	<?Property key="sch:prefix" PEPPOL-T120?>
 	<?Property key="sch:identifier" T120-basic?>
 
+	<cbc:CustomizationID ValueType="FIXED"/>
 	<cbc:ID>
 		<?DescriptionAddFirst T0125/T6338, Despatch Advice Number. The normal rule is that one Despatch Advice contains information about one shipment.
 		Exceptionally some accumulation may be made if all header information is common (same Vehicle, same Project, same Despatch- and Delivery Locations, same Despatch- and Delivery Dates). ?>
@@ -423,16 +424,7 @@
 				<?DescriptionAddFirst Use NA if there is no clear identity on the consignment. ?>
 			</cbc:ID>
 			<cbc:HazardousRiskIndicator></cbc:HazardousRiskIndicator>
-			<cbc:HandlingCode listID="">
-				<?DescriptionAddFirst Code to specify additional service from the transport company (T6466) where unique codes per transport company will be used, 
-				or for Unloading instructions code (T6343). The Unloading Instruction Codes are as follows: 
-				Z50=Semitrailer removable roof, Z51=Truck, Z52=Truck with tail lift, Z53=Truck with crane max 4 m, 
-				Z54=Truck with crane 4-9 m, Z55=Truck with crane more than 9 m, Z56=Forklift, 
-				Z57=Semitrailer, Z58=Short term storage, Z59=Porterage, Z60=Carry-in service, 
-				Z61=Standard transport, Z62=Loaded on truck, Z63=Indoor storage, Z64=Outdoor storage, 
-				Z65=Package maximum weigh, ZZ=Mutually agreed. ?>
-				<?listID-DescriptionAddFirst Use listID = "HandlingCode" for the BEAst codes listed above. ?>
-			</cbc:HandlingCode>
+			<cbc:HandlingCode listID="BeastHandlingCode">Z50</cbc:HandlingCode>
 			<cbc:HandlingInstructions>
 				<?DescriptionAddFirst Unloading Instruction (T6344). ?>
 			</cbc:HandlingInstructions>
@@ -605,8 +597,8 @@
 					</cbc:PostalZone>
 					<cbc:CountrySubentity></cbc:CountrySubentity>
 					<cac:AddressLine>
-						<cbc:Line>
-							<?DescriptionAddFirst Used for any other additional address information like Building (T5004). ?>
+						<cbc:Line>Lundbyleden#Område C2
+							<?DescriptionAddFirst Used for any other additional address information like Building (T5004). Can be used for detailed information by separating the information by # ?>
 						</cbc:Line>
 					</cac:AddressLine>
 					<cac:Country>
@@ -670,8 +662,8 @@
 					</cbc:PostalZone>
 					<cbc:CountrySubentity></cbc:CountrySubentity>
 					<cac:AddressLine>
-						<cbc:Line>
-							<?DescriptionAddFirst Used for any other additional address information like Building (T5004).  ?>
+						<cbc:Line>Lundbyleden#Område C2
+							<?DescriptionAddFirst Used for any other additional address information like Building (T5004).   Can be used for detailed information by separating the information by # ?>
 						</cbc:Line>
 					</cac:AddressLine>
 					<cac:Country>
@@ -920,10 +912,10 @@
 			
 			<cac:CommodityClassification>
 				<cbc:ItemClassificationCode listID="" listVersionID="" name="">
+					<?DescriptionAddFirst Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID the version of the codelist in attribute "name" and name is the name of the codelist or Source to Classification (T6467). ?>
 					<?listID-DescriptionAddFirst For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID the version of the codelist in attribute "name", i.e. mutually agreed. ?>
 					<?name-DescriptionAddFirst If construction specific lists are used, name specifies which of them is used. Possible names are: "SBMI", "SA", "AI", “ME” and "CoClass”. "SBMI" = Sveriges Bergmaterialindustrier, "SA" = Sveriges Åkeriföretag, "AI" = Återvinningsindustrierna, “ME” = Maskinentreprenörerna. 
 					Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "NOBB", "RT", "TUN", "Finfo", "RSK_SE", "RSK_NO", "ENO_SE", "ENO_NO", "SGTIN". ?>
-					<?DescriptionAddFirst Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID the version of the codelist in attribute "name" and name is the name of the codelist or Source to Classification (T6467). ?>
 				</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 			

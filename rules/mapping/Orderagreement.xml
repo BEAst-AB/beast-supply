@@ -5837,7 +5837,7 @@
                <Data ss:Type="String">Item classification identifier identification scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identification scheme identifier of the Item classification identifier</Data>
+               <Data ss:Type="String">BEAst: For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID "BEAST:4.0", i.e. mutually agreed. Peppol: The identification scheme identifier of the Item classification identifier</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">ZZZ</Data>
@@ -5889,7 +5889,7 @@
                <Data ss:Type="String">Clear text name equivalent of classification code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The textual equivalent of the code value</Data>
+               <Data ss:Type="String">BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "SBMI", "SA", "AI", “ME” and "CoClass”. "SBMI" = Sveriges Bergmaterialindustrier, "SA" = Sveriges Åkeriföretag, "AI" = Återvinningsindustrierna, “ME” = Maskinentreprenörerna. Peppol: The textual equivalent of the code value</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">SBMI</Data>
