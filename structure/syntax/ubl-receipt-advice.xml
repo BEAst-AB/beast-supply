@@ -194,7 +194,9 @@
                <Attribute>
                   <Term>filename</Term>
                   <Name>Attached document filename</Name>
-                  <Description>The file name of the attached document</Description>
+                  <Description>
+						BEAst: T6476 Embedded document file name.
+ Peppol: The file name of the attached document</Description>
                   <Value type="EXAMPLE">DamageReport_01.pdf</Value>
                </Attribute>
             </Element>
@@ -1220,7 +1222,9 @@
             <Attribute>
                <Term>unitCode</Term>
                <Name>Quantity unit of measure</Name>
-               <Description>The unit of measure that applies to the quantity.</Description>
+               <Description>
+						BEAst: T6706 Measure Unit NeB Type.
+ Peppol: The unit of measure that applies to the quantity.</Description>
                <Value type="EXAMPLE">KGM</Value>
             </Attribute>
          </Element>
@@ -1404,7 +1408,7 @@
                   <Attribute>
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
-                     <Description>The scheme identifier of the Item standard identifier. </Description>
+                     <Description>The scheme identifier of the Item standard identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0160</Value>
                   </Attribute>
