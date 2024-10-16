@@ -64,21 +64,19 @@
 		</cac:RequiredItemLocationQuantity>
 		
 		<cac:Item>
-			<cbc:Description>Produkten säljs oförädlad direkt från leverantören Cementa. Leverantörens ordinarie produktdatablad, 
-			säkerhetsdatablad och byggvarudeklaration återfinns under fliken Dokument.Artikelnummer:5200950309 Byggcement 48x20 kg</cbc:Description>
-			<cbc:Name>BYGGCEMENT 20 KG</cbc:Name>
+			<cbc:Name>weber grovbetong C32/40</cbc:Name>
 			<cbc:Keyword>xxx Synonym xxx</cbc:Keyword>
 
 			<cac:SellersItemIdentification>
-				<cbc:ID>3235829</cbc:ID>
+				<cbc:ID>5200853369</cbc:ID>
 			</cac:SellersItemIdentification>
 
 			<cac:ManufacturersItemIdentification>
-				<cbc:ID>5200950309</cbc:ID>
+				<cbc:ID>5200853369</cbc:ID>
 			</cac:ManufacturersItemIdentification>
 
 			<cac:StandardItemIdentification>
-				<cbc:ID schemeID="0160">7350090431004</cbc:ID>
+				<cbc:ID schemeID="0160">7391479734644</cbc:ID>
 			</cac:StandardItemIdentification>
 
 			<cac:ItemSpecificationDocumentReference>
@@ -86,7 +84,7 @@
 				<cbc:DocumentDescription>ItemImage</cbc:DocumentDescription>
 				<cac:Attachment>
 					<cac:ExternalReference>
-						<cbc:URI>https://media.derome.se/medias/images/171/ByggCement-2.png</cbc:URI>
+						<cbc:URI>https://media.derome.se/medias/images/171/PDS-SE-weber_grovbetong_C3240.pdf</cbc:URI>
 					</cac:ExternalReference>
 				</cac:Attachment>
 			</cac:ItemSpecificationDocumentReference>
@@ -95,7 +93,7 @@
 				<cbc:DocumentDescription>SecurityDataSheet</cbc:DocumentDescription>
 				<cac:Attachment>
 					<cac:ExternalReference>
-						<cbc:URI>https://media.derome.se/medias/docus/161/54055_SDB.pdf</cbc:URI>
+						<cbc:URI>https://media.derome.se/medias/docus/161/SDSXXP001947_-_7_-_weber_grovbetong_C32_40_-_SE.pdf</cbc:URI>
 					</cac:ExternalReference>
 				</cac:Attachment>
 			</cac:ItemSpecificationDocumentReference>
@@ -105,13 +103,47 @@
 			</cac:CommodityClassification>
 
 			<cac:AdditionalItemProperty>
-				<cbc:Name>BASTA</cbc:Name>
-				<cbc:Value>Y</cbc:Value>
+				<cbc:Name>GWP GHG A1-3 vA1 EPD value</cbc:Name>
+				<cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+				<cbc:Value>0.151 kg</cbc:Value>
+				<cbc:ValueQuantity unitCode="KGM">0.151</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+			
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Dataset ID</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDDataSetID</cbc:NameCode>
+				<cbc:Value>165f8554-00cd-43ad-aeb7-ba769854554a</cbc:Value>
+			</cac:AdditionalItemProperty>
+			
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Dataset URL</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDDataSetURL</cbc:NameCode>
+				<cbc:Value>https://epdnorway.lca-data.com/datasetdetail/process.xhtml?uuid=165f8554-00cd-43ad-aeb7-ba769854554a&amp;version=00.01.000&amp;stock=PUBLIC</cbc:Value>
+			</cac:AdditionalItemProperty>
+			
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD HR URL</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDHRURL</cbc:NameCode>
+				<cbc:Value>https://portal.environdec.com/api/api/v1/EPDLibrary/Files/07e17ba1-cf00-48e5-9cf1-d8bd90a468f8/Data</cbc:Value>
 			</cac:AdditionalItemProperty>
 
 			<cac:ManufacturerParty>
 				<cbc:Name>Saint-Gobain Weber AB</cbc:Name>
 			</cac:ManufacturerParty>
+
+			<cac:Certificate>
+				<cbc:ID>NEO</cbc:ID>
+				<cbc:CertificateTypeCode>EcoLabel</cbc:CertificateTypeCode>
+				<cbc:CertificateType>EcoLabel</cbc:CertificateType>
+				<cac:IssuerParty>
+					<cac:PartyName>
+						<cbc:Name>Svanemerket</cbc:Name>
+					</cac:PartyName>
+				</cac:IssuerParty>
+				<cac:DocumentReference>
+					<cbc:ID>http://www.svanemerket.no/</cbc:ID>
+				</cac:DocumentReference>
+			</cac:Certificate>
 
 			<cac:Dimension>
 				<cbc:AttributeID>ABJ</cbc:AttributeID>
