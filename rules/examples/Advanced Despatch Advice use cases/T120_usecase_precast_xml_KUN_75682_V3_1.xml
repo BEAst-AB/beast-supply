@@ -183,7 +183,10 @@
       </cac:OrderLineReference>
       <cac:Item>
         <cbc:Name>D3101-HD/F 120/20 F155</cbc:Name>
-        <cac:SellersItemIdentification>
+		  <cac:BuyersItemIdentification>
+			  <cbc:ID>D3101</cbc:ID>
+		  </cac:BuyersItemIdentification>
+		  <cac:SellersItemIdentification>
           <cbc:ID>ELEMENT-KUN-15663-49</cbc:ID>
         </cac:SellersItemIdentification>
         <cac:AdditionalItemProperty>
@@ -212,6 +215,9 @@
           <cbc:Value>NA</cbc:Value>
           <cbc:ValueQuantity unitCode="KGM">160.87</cbc:ValueQuantity>
         </cac:AdditionalItemProperty>
+		  <cac:ItemInstance>
+			  <cbc:SerialID>ELEMENT-KUN-15663-49</cbc:SerialID>
+		  </cac:ItemInstance>
         <cac:Dimension>
           <cbc:AttributeID>WD</cbc:AttributeID>
           <cbc:Measure unitCode="MMT">1200</cbc:Measure>
