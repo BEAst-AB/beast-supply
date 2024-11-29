@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
                 Content:
-                This file contains an Example for Use-case no 1 in Logistics Advanced Despatch Adivce.
-				Precast concrete element without transport
+                This file contains an Example for Use-case no 2 in Logistics Advanced Despatch Adivce.
+				Precast concrete element with transport
 				
 				Change Log:
 				2024-11-29
@@ -131,6 +131,68 @@
 					<cbc:Name>M4 GRUPPEN AB</cbc:Name>
 				</cac:PartyName>
 			</cac:CarrierParty>
+
+			<!-- GWP A4 value -->
+			<cac:OriginalDespatchTransportationService>
+				<cbc:TransportServiceCode>FuelReport</cbc:TransportServiceCode>
+				<cac:TransportEquipment>
+					<cbc:TransportEquipmentTypeCode listID="ClimateDatabase" listAgencyID="Boverket" listVersionID="02.05.000">6000000017</cbc:TransportEquipmentTypeCode>
+					<cbc:Description>HVO100</cbc:Description>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>FuelConsumption</cbc:AttributeID>
+						<cbc:Measure unitCode="LTR">115.6</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>EnergyContent</cbc:AttributeID>
+						<cbc:Measure unitCode="3B">3927</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>ConversionFactor</cbc:AttributeID>
+						<cbc:Measure unitCode="EA">0.52</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>DrivingDistance</cbc:AttributeID>
+						<cbc:Measure unitCode="KMT">86</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>RenewableFuel</cbc:AttributeID>
+						<cbc:Measure unitCode="P1">100.00</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>FuelMeasurementMethod</cbc:AttributeID>
+						<cbc:Description>AutomaticMeasurement</cbc:Description>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>EngineType</cbc:AttributeID>
+						<cbc:Description>EURO4</cbc:Description>
+					</cac:MeasurementDimension>
+					<cac:ProviderParty>
+						<cac:PartyIdentification>
+							<cbc:ID schemeID="0007">5560726977</cbc:ID>
+						</cac:PartyIdentification>
+						<cac:PartyName>
+							<cbc:Name>Preem AB</cbc:Name>
+						</cac:PartyName>
+					</cac:ProviderParty>
+					<cac:GoodsItem>
+						<cac:Item>
+							<cac:SellersItemIdentification>
+								<cbc:ID>123</cbc:ID>
+							</cac:SellersItemIdentification>
+							<cac:StandardItemIdentification>
+								<cbc:ID schemeID="0160">1234567891234</cbc:ID>
+							</cac:StandardItemIdentification>
+						</cac:Item>
+					</cac:GoodsItem>
+				</cac:TransportEquipment>
+
+				<cac:EnvironmentalEmission>
+					<cbc:EnvironmentalEmissionTypeCode listID="UN785" name="Carbon Dioxide">CO2</cbc:EnvironmentalEmissionTypeCode>
+					<cbc:ValueMeasure unitCode="KGM">2.8</cbc:ValueMeasure>
+				</cac:EnvironmentalEmission>
+
+			</cac:OriginalDespatchTransportationService>
+
 		</cac:Consignment>
 		<cac:Delivery>
 			<cbc:ActualDeliveryDate>2024-01-02</cbc:ActualDeliveryDate>
