@@ -7,7 +7,7 @@ echo $POACCBASEURL
 
 LOGISTICSBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/2024-Q4/structure/syntax/"
 echo $LOGISTICSBASEURL
-
+ 
 # Delete target folder if found
 if [ -e $PROJECT/target ]; then
     docker run --rm -i -v $PROJECT:/src alpine:3.6 rm -rf /src/target
