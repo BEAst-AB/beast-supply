@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalogue xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
+           xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+           xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+   <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue:3</cbc:CustomizationID>
+   <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3</cbc:ProfileID>
+   <cbc:ID>Cat-02</cbc:ID>
+   <cbc:ActionCode>Add</cbc:ActionCode>
+   <cbc:Name>Spring Catalogue</cbc:Name>
+   <cbc:IssueDate>2018-05-31</cbc:IssueDate>
+   <cbc:VersionID>v2</cbc:VersionID>
+   <cac:ValidityPeriod>
+      <cbc:StartDate>2018-05-31</cbc:StartDate>
+      <cbc:EndDate>2019-05-31</cbc:EndDate>
+   </cac:ValidityPeriod>
+   <cac:ReferencedContract>
+      <cbc:ID>Contract-01</cbc:ID>
+   </cac:ReferencedContract>
+   <cac:SourceCatalogueReference>
+      <cbc:ID>Cat-01</cbc:ID>
+   </cac:SourceCatalogueReference>
+   <cac:ProviderParty>
+      <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+      <cac:PartyIdentification>
+         <cbc:ID schemeID="0184">12345678</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PostalAddress>
+         <cbc:StreetName>Main street 1</cbc:StreetName>
+         <cbc:AdditionalStreetName>Building 23</cbc:AdditionalStreetName>
+         <cbc:CityName>London</cbc:CityName>
+         <cbc:PostalZone>N12 W34</cbc:PostalZone>
+         <cbc:CountrySubentity/>
+         <cac:AddressLine>
+            <cbc:Line>Use gate 34</cbc:Line>
+         </cac:AddressLine>
+         <cac:Country>
+            <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+         </cac:Country>
+      </cac:PostalAddress>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName>Povider Party name</cbc:RegistrationName>
+         <cbc:CompanyID schemeID="0002">8346294</cbc:CompanyID>
+         <cac:RegistrationAddress>
+            <cbc:CityName>London</cbc:CityName>
+            <cac:Country>
+               <cbc:IdentificationCode>GB</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:RegistrationAddress>
+      </cac:PartyLegalEntity>
+   </cac:ProviderParty>
+   <cac:ReceiverParty>
+      <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+      <cac:PartyIdentification>
+         <cbc:ID schemeID="0184">45645678</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PostalAddress>
+         <cbc:StreetName>Hovedgaten 12</cbc:StreetName>
+         <cbc:AdditionalStreetName>3rd floor</cbc:AdditionalStreetName>
+         <cbc:CityName>Copenhagen</cbc:CityName>
+         <cbc:PostalZone>98798</cbc:PostalZone>
+         <cbc:CountrySubentity>Jylland</cbc:CountrySubentity>
+         <cac:AddressLine>
+            <cbc:Line>Building 1</cbc:Line>
+         </cac:AddressLine>
+         <cac:Country>
+            <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+         </cac:Country>
+      </cac:PostalAddress>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName>Registration name</cbc:RegistrationName>
+         <cbc:CompanyID schemeID="0002">239478234</cbc:CompanyID>
+         <cac:RegistrationAddress>
+            <cbc:CityName>Stockholm</cbc:CityName>
+            <cac:Country>
+               <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:RegistrationAddress>
+      </cac:PartyLegalEntity>
+   </cac:ReceiverParty>
+   <cac:SellerSupplierParty>
+      <cac:Party>
+         <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+         <cac:PartyIdentification>
+            <cbc:ID schemeID="0184">11223344</cbc:ID>
+         </cac:PartyIdentification>
+         <cac:PartyName>
+            <cbc:Name>Supplier</cbc:Name>
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:StreetName>Storgata 1</cbc:StreetName>
+            <cbc:AdditionalStreetName/>
+            <cbc:CityName>Oslo</cbc:CityName>
+            <cbc:PostalZone>0612</cbc:PostalZone>
+            <cbc:CountrySubentity/>
+            <cac:AddressLine>
+               <cbc:Line>3rd line</cbc:Line>
+            </cac:AddressLine>
+            <cac:Country>
+               <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:PostalAddress>
+         <cac:Contact>
+            <cbc:Name>Ole Olsen</cbc:Name>
+            <cbc:Telephone>90123456</cbc:Telephone>
+            <cbc:ElectronicMail>ole.olsen@supplier.no</cbc:ElectronicMail>
+         </cac:Contact>
+      </cac:Party>
+   </cac:SellerSupplierParty>
+   <cac:ContractorCustomerParty>
+      <cac:Party>
+         <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+         <cac:PartyIdentification>
+            <cbc:ID schemeID="0184">DK93287241</cbc:ID>
+         </cac:PartyIdentification>
+         <cac:PartyName>
+            <cbc:Name>Customer</cbc:Name>
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:StreetName>Storgata 1</cbc:StreetName>
+            <cbc:AdditionalStreetName/>
+            <cbc:CityName>Oslo</cbc:CityName>
+            <cbc:PostalZone>0612</cbc:PostalZone>
+            <cbc:CountrySubentity/>
+            <cac:AddressLine>
+               <cbc:Line>3rd line</cbc:Line>
+            </cac:AddressLine>
+            <cac:Country>
+               <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:PostalAddress>
+         <cac:Contact>
+            <cbc:Name>Jens Olesen</cbc:Name>
+            <cbc:Telephone>29347213412</cbc:Telephone>
+            <cbc:ElectronicMail>jens.olesen@test.dk</cbc:ElectronicMail>
+         </cac:Contact>
+      </cac:Party>
+   </cac:ContractorCustomerParty>
+   <cac:TradingTerms>
+      <cbc:Information>Net within 30 days</cbc:Information>
+   </cac:TradingTerms>
+   <cac:CatalogueLine>
+      <cbc:ID>1</cbc:ID>
+      <cbc:ActionCode>Update</cbc:ActionCode>
+      <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
+      <cbc:OrderableUnit>EA</cbc:OrderableUnit>
+      <cbc:ContentUnitQuantity unitCode="C62">10</cbc:ContentUnitQuantity>
+      <cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
+      <cbc:MinimumOrderQuantity unitCode="C62">1</cbc:MinimumOrderQuantity>
+      <cbc:MaximumOrderQuantity unitCode="C62">100</cbc:MaximumOrderQuantity>
+      <cbc:WarrantyInformation/>
+      <cbc:PackLevelCode>TU</cbc:PackLevelCode>
+      <cac:LineValidityPeriod>
+         <cbc:StartDate>2018-05-31</cbc:StartDate>
+         <cbc:EndDate>2019-05-31</cbc:EndDate>
+      </cac:LineValidityPeriod>
+      <cac:ItemComparison>
+         <cbc:PriceAmount currencyID="EUR"/>
+         <cbc:Quantity unitCode="unitCode Standard unit of measure The standard unit of measure used to enable comparison of item price to other items.See guideline on Items and packing units in a catalogue. tir19-085 UNECERec20"/>
+      </cac:ItemComparison>
+      <cac:ComponentRelatedItem>
+         <cbc:ID/>
+         <cbc:Quantity unitCode="XCS"/>
+      </cac:ComponentRelatedItem>
+      <cac:AccessoryRelatedItem>
+         <cbc:ID/>
+         <cbc:Quantity unitCode="XCS"/>
+      </cac:AccessoryRelatedItem>
+      <cac:RequiredRelatedItem>
+         <cbc:ID/>
+         <cbc:Quantity unitCode="XCS"/>
+      </cac:RequiredRelatedItem>
+      <cac:ReplacedRelatedItem>
+         <cbc:ID/>
+         <cbc:Quantity unitCode="XCS"/>
+      </cac:ReplacedRelatedItem>
+      <cac:RequiredItemLocationQuantity>
+         <cbc:LeadTimeMeasure unitCode="XCS"/>
+         <cbc:MinimumQuantity unitCode="XCS"/>
+         <cbc:MaximumQuantity unitCode="XCS"/>
+         <cac:ApplicableTerritoryAddress>
+            <cbc:StreetName/>
+            <cbc:AdditionalStreetName/>
+            <cbc:CityName/>
+            <cbc:PostalZone/>
+            <cbc:CountrySubentity/>
+            <cac:AddressLine>
+               <cbc:Line/>
+            </cac:AddressLine>
+            <cac:Country>
+               <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:ApplicableTerritoryAddress>
+         <
