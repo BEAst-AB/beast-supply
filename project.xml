@@ -13,8 +13,8 @@
 	<Documentation path="">BIS DOCUMENTS (External links)</Documentation>
 	<Documentation path="profiles/3-order-only/">- Peppol BIS Order only 3.3</Documentation>
 	<Documentation path="profiles/28-ordering/">- Peppol BIS Ordering 3.3</Documentation>
-	<!--Documentation path="profiles/1-catalogueonly/">- Peppol BIS Catalogue with response 3.1</Documentation>
-	<Documentation path="profiles/64-catalogue-wo-response/">- Peppol BIS Catalogue without response 3.1</Documentation -->
+	<Documentation path="profiles/1-catalogueonly/">- Peppol BIS Catalogue with response 3.1</Documentation>
+	<Documentation path="profiles/64-catalogue-wo-response/">- Peppol BIS Catalogue without response 3.1</Documentation>
 	<Documentation path="profiles/42-orderagreement/">- Peppol BIS Order Agreement 3.0</Documentation>
 	<Documentation path="profiles/66-advanceddespatchadvice/">- Peppol BIS Advanced Despatch Advice Only 1.2</Documentation>
 	<Documentation path="profiles/67-advanceddespatchadvice_w_receiptadvice/">- Peppol BIS Advanced Despatch Advice with Receipt Advice 1.0</Documentation>
@@ -30,7 +30,7 @@
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-order.xml</Path>
-		<Title>Peppol Order transaction 3.4 (T01)</Title>
+		<Title>Peppol Order transaction 3.5 (T01)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
@@ -40,13 +40,18 @@
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-orderagreement.xml</Path>
-		<Title>Peppol Order Agreement 3.1 (T110)</Title>
+		<Title>Peppol Order Agreement 3.2 (T110)</Title>
 	</Resource>
-	<!--Resource>
+	<Resource>
     <Type>Structure-1</Type>
     <Path>structure/syntax/ubl-catalogue.xml</Path>
-    <Title>Peppol Catalogue transaction 3.2 (T19)</Title>
-  </Resource -->
+    <Title>Peppol Catalogue transaction 3.3 (T19)</Title>
+  </Resource>
+	<Resource>
+		<Type>Structure-1</Type>
+		<Path>structure/syntax/ubl-catalogueResponse.xml</Path>
+		<Title>Peppol Catalogue Response transaction 3.0 (T58)</Title>
+	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-invoice.xml</Path>
@@ -55,42 +60,42 @@
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-advanced-despatch-advice.xml</Path>
-		<Title>Peppol Advanced Despatch Advice 1.2 (T120)</Title>
+		<Title>Peppol Advanced Despatch Advice 1.3 (T120)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-receipt-advice.xml</Path>
-		<Title>Peppol Receipt Advice 1.0 (T128)</Title>
+		<Title>Peppol Receipt Advice 1.1 (T128)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-weight-statement.xml</Path>
-		<Title>Peppol Weight Statement 1.2 (T122)</Title>
+		<Title>Peppol Weight Statement 1.3 (T122)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-transport-execution-plan-request.xml</Path>
-		<Title>Peppol Transport Execution Plan Request 1.0 (T123)</Title>
+		<Title>Peppol Transport Execution Plan Request 1.1 (T123)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-transport-execution-plan.xml</Path>
-		<Title>Peppol Transport Execution Plan 1.0 (T124)</Title>
+		<Title>Peppol Transport Execution Plan 1.1 (T124)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-waybill.xml</Path>
-		<Title>Peppol Waybill 1.0 (T125)</Title>
+		<Title>Peppol Waybill 1.1 (T125)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-transportation-status-request.xml</Path>
-		<Title>Peppol Transportation Status Request 1.0 (T126)</Title>
+		<Title>Peppol Transportation Status Request 1.1 (T126)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-transportation-status.xml</Path>
-		<Title>Peppol Transportation Status 1.0 (T127)</Title>
+		<Title>Peppol Transportation Status 1.1 (T127)</Title>
 	</Resource>
 
 
@@ -119,12 +124,12 @@
 		<Path>rules/sch/parts/PEPPOL-M-T110.sch</Path>
 		<Title>Business rules for Peppol Order Agreement transaction 3.1</Title>
 	</Resource>
-	<!--Resource>
+	<Resource>
 		<Identifier>T19</Identifier>
 		<Type>native:Schematron</Type>
 		<Path>rules/sch/parts/PEPPOL-M-T19.sch</Path>
-		<Title>Business rules for Peppol Catalogue transaction 3.2</Title>
-	</Resource -->
+		<Title>Business rules for Peppol Catalogue transaction 3.3</Title>
+	</Resource>
 	<Resource>
 		<Identifier>T120</Identifier>
 		<Type>native:Schematron</Type>
