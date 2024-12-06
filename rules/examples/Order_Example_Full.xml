@@ -279,4 +279,98 @@
       <cbc:TaxExclusiveAmount currencyID="SEK">1800.00</cbc:TaxExclusiveAmount>
       <cbc:TaxInclusiveAmount currencyID="SEK">2250.00</cbc:TaxInclusiveAmount>
       <cbc:AllowanceTotalAmount currencyID="SEK">200.00</cbc:AllowanceTotalAmount>
-      <cbc:ChargeTotalAmount currencyID="SEK">0.00</cbc:ChargeTotalAmo
+      <cbc:ChargeTotalAmount currencyID="SEK">0.00</cbc:ChargeTotalAmount>
+      <cbc:PrepaidAmount currencyID="SEK">0.00</cbc:PrepaidAmount>
+      <cbc:PayableRoundingAmount currencyID="SEK">0.00</cbc:PayableRoundingAmount>
+      <cbc:PayableAmount currencyID="SEK">2250.00</cbc:PayableAmount>
+   </cac:AnticipatedMonetaryTotal>
+   <cac:OrderLine>
+      <cbc:Note>%%SF_TXT:Avisering=Ingen avisering (standard)</cbc:Note>
+      <cac:LineItem>
+         <cbc:ID>1</cbc:ID>
+         <cbc:Quantity unitCode="MTK">10.00</cbc:Quantity>
+         <cbc:LineExtensionAmount currencyID="SEK">2000.00</cbc:LineExtensionAmount>
+         <cbc:PartialDeliveryIndicator>true</cbc:PartialDeliveryIndicator>
+         <cbc:AccountingCost>1234:45435:243234</cbc:AccountingCost>
+         <cac:Delivery>
+            <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+            <cac:RequestedDeliveryPeriod>
+               <cbc:StartDate>2021-11-01</cbc:StartDate>
+               <cbc:StartTime>09:00:00</cbc:StartTime>
+               <cbc:EndDate>2021-11-03</cbc:EndDate>
+               <cbc:EndTime>10:30:00</cbc:EndTime>
+            </cac:RequestedDeliveryPeriod>
+         </cac:Delivery>
+         <cac:OriginatorParty>
+            <cac:PartyIdentification>
+               <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+               <cbc:Name>Originator Name</cbc:Name>
+            </cac:PartyName>
+         </cac:OriginatorParty>
+         <cac:AllowanceCharge>
+            <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+            <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
+            <cbc:AllowanceChargeReason>Text</cbc:AllowanceChargeReason>
+            <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
+            <cbc:Amount currencyID="SEK">100</cbc:Amount>
+            <cbc:BaseAmount currencyID="SEK">1000</cbc:BaseAmount>
+         </cac:AllowanceCharge>
+         <cac:Price>
+            <cbc:PriceAmount currencyID="SEK">210.00</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="MTK">1.00</cbc:BaseQuantity>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+               <cbc:Amount currencyID="SEK">20</cbc:Amount>
+               <cbc:BaseAmount currencyID="SEK">230</cbc:BaseAmount>
+            </cac:AllowanceCharge>
+         </cac:Price>
+         <cac:Item>
+            <cbc:Description>Text</cbc:Description>
+            <cbc:Name>PAROC CGL 20cy Putslamell. undertak. 200mm (200X1200) PL/33 3</cbc:Name>
+            <cac:BuyersItemIdentification>
+               <cbc:ID>XYZ123</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+               <cbc:ID>8522173</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:ManufacturersItemIdentification>
+               <cbc:ID>manid659</cbc:ID>
+            </cac:ManufacturersItemIdentification>
+            <cac:StandardItemIdentification>
+               <cbc:ID schemeID="0160">7654879</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:ItemSpecificationDocumentReference>
+               <cbc:ID>doc4353.pdf</cbc:ID>
+            </cac:ItemSpecificationDocumentReference>
+            <cac:CommodityClassification>
+               <cbc:ItemClassificationCode listID="ZZZ" listVersionID="3.0.2" name="SBMI">KO2012140200</cbc:ItemClassificationCode>
+            </cac:CommodityClassification>
+            <cac:ClassifiedTaxCategory>
+               <cbc:ID>S</cbc:ID>
+               <cbc:Percent>25</cbc:Percent>
+               <cac:TaxScheme>
+                  <cbc:ID>VAT</cbc:ID>
+               </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <cac:AdditionalItemProperty>
+               <cbc:ID schemeID="ISO22057"
+                       schemeVersionID="2022"
+                       schemeDataURI="https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460">77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
+               <cbc:Name>DeliveryUnit</cbc:Name>
+               <cbc:NameCode listID="BEAST:4.0">DeliveryUnit</cbc:NameCode>
+               <cbc:Value>ABC123</cbc:Value>
+               <cbc:ValueQuantity unitCode="C62">10</cbc:ValueQuantity>
+               <cbc:ValueQualifier>12</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            <cac:ItemInstance>
+               <cbc:SerialID>9874587</cbc:SerialID>
+               <cac:LotIdentification>
+                  <cbc:LotNumberID>4587</cbc:LotNumberID>
+               </cac:LotIdentification>
+            </cac:ItemInstance>
+         </cac:Item>
+      </cac:LineItem>
+   </cac:OrderLine>
+</Order>
