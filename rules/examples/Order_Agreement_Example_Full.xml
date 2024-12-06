@@ -185,4 +185,106 @@
             <cbc:TaxExemptionReason>Reverse Charge</cbc:TaxExemptionReason>
             <cac:TaxScheme>
                <cbc:ID>VAT</cbc:ID>
-      
+            </cac:TaxScheme>
+         </cac:TaxCategory>
+      </cac:TaxSubtotal>
+   </cac:TaxTotal>
+   <cac:LegalMonetaryTotal>
+      <cbc:LineExtensionAmount currencyID="EUR">34.5</cbc:LineExtensionAmount>
+      <cbc:TaxExclusiveAmount currencyID="EUR">31.25</cbc:TaxExclusiveAmount>
+      <cbc:TaxInclusiveAmount currencyID="EUR">39.06</cbc:TaxInclusiveAmount>
+      <cbc:AllowanceTotalAmount currencyID="EUR">3.25</cbc:AllowanceTotalAmount>
+      <cbc:ChargeTotalAmount currencyID="EUR">0.00</cbc:ChargeTotalAmount>
+      <cbc:PrepaidAmount currencyID="EUR">10.00</cbc:PrepaidAmount>
+      <cbc:PayableRoundingAmount currencyID="EUR">0.94</cbc:PayableRoundingAmount>
+      <cbc:PayableAmount currencyID="EUR">30.00</cbc:PayableAmount>
+   </cac:LegalMonetaryTotal>
+   <cac:OrderLine>
+      <cac:LineItem>
+         <cbc:ID>1</cbc:ID>
+         <cbc:Note>Order line note text</cbc:Note>
+         <cbc:Quantity unitCode="C62">15</cbc:Quantity>
+         <cbc:LineExtensionAmount currencyID="EUR">34.50</cbc:LineExtensionAmount>
+         <cac:Delivery>
+            <cbc:Quantity unitCode="C62">15.00</cbc:Quantity>
+            <cac:PromisedDeliveryPeriod>
+               <cbc:StartDate>2018-08-10</cbc:StartDate>
+               <cbc:StartTime>12:00:00</cbc:StartTime>
+               <cbc:EndDate>2018-08-12</cbc:EndDate>
+               <cbc:EndTime>12:00:00</cbc:EndTime>
+            </cac:PromisedDeliveryPeriod>
+         </cac:Delivery>
+         <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">2.50</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
+            <cbc:PriceType>AAA</cbc:PriceType>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+               <cbc:Amount currencyID="EUR">0.20</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">1.70</cbc:BaseAmount>
+            </cac:AllowanceCharge>
+         </cac:Price>
+         <cac:Item>
+            <cbc:Description>Brown sauce - long description</cbc:Description>
+            <cbc:Name>Brown sauce</cbc:Name>
+            <cac:BuyersItemIdentification>
+               <cbc:ID>BN-33</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+               <cbc:ID>SN-33</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+               <cbc:ID schemeID="0160">7400000001234</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:ItemSpecificationDocumentReference>
+               <cbc:ID>147852</cbc:ID>
+               <cbc:DocumentTypeCode>2</cbc:DocumentTypeCode>
+               <cbc:DocumentType>Timesheet</cbc:DocumentType>
+               <cac:Attachment>
+                  <cbc:EmbeddedDocumentBinaryObject mimeCode="image/tiff" filename="hours-spend.csv">UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</cbc:EmbeddedDocumentBinaryObject>
+                  <cac:ExternalReference>
+                     <cbc:URI>http://www.example.com/index.html</cbc:URI>
+                  </cac:ExternalReference>
+               </cac:Attachment>
+            </cac:ItemSpecificationDocumentReference>
+            <cac:CommodityClassification>
+               <cbc:ItemClassificationCode listID="ZZZ" listVersionID="3.0.2" name="SBMI">KO2012140200</cbc:ItemClassificationCode>
+            </cac:CommodityClassification>
+            <cac:TransactionConditions>
+               <cbc:ActionCode>CT</cbc:ActionCode>
+            </cac:TransactionConditions>
+            <cac:ClassifiedTaxCategory>
+               <cbc:ID>AE</cbc:ID>
+               <cbc:Percent>25</cbc:Percent>
+               <cac:TaxScheme>
+                  <cbc:ID>VAT</cbc:ID>
+               </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <cac:AdditionalItemProperty>
+               <cbc:ID schemeID="ISO22057"
+                       schemeVersionID="2022"
+                       schemeDataURI="https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460">77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
+               <cbc:Name>Length</cbc:Name>
+               <cbc:NameCode listID="NN">test</cbc:NameCode>
+               <cbc:Value>30 mm</cbc:Value>
+               <cbc:ValueQuantity unitCode="MMT">30</cbc:ValueQuantity>
+               <cbc:ValueQualifier>Z3</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            <cac:Certificate>
+               <cbc:ID>EU EcoLabel</cbc:ID>
+               <cbc:CertificateTypeCode>NA</cbc:CertificateTypeCode>
+               <cbc:CertificateType>FSC</cbc:CertificateType>
+               <cbc:Remarks>48% Certified</cbc:Remarks>
+               <cac:IssuerParty>
+                  <cac:PartyName>
+                     <cbc:Name>NA</cbc:Name>
+                  </cac:PartyName>
+               </cac:IssuerParty>
+               <cac:DocumentReference>
+                  <cbc:ID>http://www.label.eu/test/</cbc:ID>
+               </cac:DocumentReference>
+            </cac:Certificate>
+         </cac:Item>
+      </cac:LineItem>
+   </cac:OrderLine>
+</OrderResponse>

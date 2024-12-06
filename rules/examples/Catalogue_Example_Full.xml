@@ -190,4 +190,110 @@
                <cbc:IdentificationCode>DK</cbc:IdentificationCode>
             </cac:Country>
          </cac:ApplicableTerritoryAddress>
-         <
+         <cac:Price>
+            <cbc:PriceAmount currencyID="EUR"/>
+            <cbc:BaseQuantity unitCode="XCS">1</cbc:BaseQuantity>
+            <cbc:PriceType/>
+            <cbc:OrderableUnitFactorRate/>
+            <cac:ValidityPeriod>
+               <cbc:StartDate>2018-05-31</cbc:StartDate>
+               <cbc:EndDate>2019-05-31</cbc:EndDate>
+            </cac:ValidityPeriod>
+         </cac:Price>
+      </cac:RequiredItemLocationQuantity>
+      <cac:Item>
+         <cbc:Description>Office chair by John Doe.</cbc:Description>
+         <cbc:PackQuantity unitCode="XCS">30</cbc:PackQuantity>
+         <cbc:PackSizeNumeric/>
+         <cbc:Name>Office chair</cbc:Name>
+         <cbc:Keyword>Toothpaste</cbc:Keyword>
+         <cbc:BrandName/>
+         <cac:BuyersItemIdentification>
+            <cbc:ID>111111</cbc:ID>
+         </cac:BuyersItemIdentification>
+         <cac:SellersItemIdentification>
+            <cbc:ID>3249834</cbc:ID>
+         </cac:SellersItemIdentification>
+         <cac:ManufacturersItemIdentification>
+            <cbc:ID>Prod-01</cbc:ID>
+         </cac:ManufacturersItemIdentification>
+         <cac:StandardItemIdentification>
+            <cbc:ID schemeID="0160">05704066204093</cbc:ID>
+         </cac:StandardItemIdentification>
+         <cac:ItemSpecificationDocumentReference>
+            <cbc:ID>12</cbc:ID>
+            <cbc:DocumentTypeCode/>
+            <cbc:DocumentDescription/>
+            <cac:Attachment>
+               <cbc:EmbeddedDocumentBinaryObject mimeCode="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                                                 filename="Hours-spent.xls">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</cbc:EmbeddedDocumentBinaryObject>
+               <cac:ExternalReference>
+                  <cbc:URI>http://www.test.no/image.jpg</cbc:URI>
+               </cac:ExternalReference>
+            </cac:Attachment>
+         </cac:ItemSpecificationDocumentReference>
+         <cac:OriginCountry>
+            <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+         </cac:OriginCountry>
+         <cac:CommodityClassification>
+            <cbc:ItemClassificationCode listID="MP" listVersionID="20.0601" name="Office furniture"/>
+         </cac:CommodityClassification>
+         <cac:TransactionConditions>
+            <cbc:ActionCode/>
+         </cac:TransactionConditions>
+         <cac:HazardousItem>
+            <cbc:UNDGCode/>
+            <cbc:HazardClassID/>
+         </cac:HazardousItem>
+         <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>25</cbc:Percent>
+            <cac:TaxScheme>
+               <cbc:ID>VAT or GST</cbc:ID>
+            </cac:TaxScheme>
+         </cac:ClassifiedTaxCategory>
+         <cac:AdditionalItemProperty>
+            <cbc:ID schemeID="ISO22057"
+                    schemeVersionID="2022"
+                    schemeDataURI="https://define.cobuilder.no/77e416eb-a363-4258-a04e-171d843a6460/2022/">77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
+            <cbc:Name>Size</cbc:Name>
+            <cbc:NameCode listID="listID Name code list id. An identifier for the code list used for the Name code, this is bilaterally agreed"/>
+            <cbc:Value>XXL</cbc:Value>
+            <cbc:ValueQuantity unitCode="XCS">5</cbc:ValueQuantity>
+            <cbc:ValueQualifier>Allergen</cbc:ValueQualifier>
+         </cac:AdditionalItemProperty>
+         <cac:ManufacturerParty>
+            <cac:PartyName>
+               <cbc:Name>Manufacturer</cbc:Name>
+            </cac:PartyName>
+         </cac:ManufacturerParty>
+         <cac:ItemInstance>
+            <cbc:BestBeforeDate>2018-08-01</cbc:BestBeforeDate>
+            <cac:LotIdentification>
+               <cbc:LotNumberID>B-10</cbc:LotNumberID>
+            </cac:LotIdentification>
+         </cac:ItemInstance>
+         <cac:Certificate>
+            <cbc:ID>EU EcoLabel</cbc:ID>
+            <cbc:CertificateTypeCode>NA</cbc:CertificateTypeCode>
+            <cbc:CertificateType>Environmental</cbc:CertificateType>
+            <cbc:Remarks>Svanemerket</cbc:Remarks>
+            <cac:IssuerParty>
+               <cac:PartyName>
+                  <cbc:Name>NA</cbc:Name>
+               </cac:PartyName>
+            </cac:IssuerParty>
+            <cac:DocumentReference>
+               <cbc:ID>http://www.label.eu/test/</cbc:ID>
+            </cac:DocumentReference>
+         </cac:Certificate>
+         <cac:Dimension>
+            <cbc:AttributeID>LN</cbc:AttributeID>
+            <cbc:Measure unitCode="CMT"/>
+            <cbc:Description/>
+            <cbc:MinimumMeasure unitCode="CMT"/>
+            <cbc:MaximumMeasure unitCode="CMT"/>
+         </cac:Dimension>
+      </cac:Item>
+   </cac:CatalogueLine>
+</Catalogue>

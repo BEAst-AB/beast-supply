@@ -1566,4 +1566,265 @@
                <Description>A group of business terms providing information about properties of the goods and services invoiced.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
-    
+                  <Description>ID of the property if assigned by an Agency</Description>
+                  <Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
+                  <Attribute usage="Optional">
+                     <Term>schemeID</Term>
+                     <Name>Scheme identifier</Name>
+                     <Value type="EXAMPLE">ISO22057</Value>
+                  </Attribute>
+                  <Attribute usage="Optional">
+                     <Term>schemeVersionID</Term>
+                     <Name>Scheme version identifier</Name>
+                     <Value type="EXAMPLE">2022</Value>
+                  </Attribute>
+                  <Attribute usage="Optional">
+                     <Term>schemeDataURI</Term>
+                     <Name>Scheme Data URI</Name>
+                     <Value type="EXAMPLE">https://define.cobuilder.no/77e416eb-a363-4258-a04e-171d843a6460/2022/</Value>
+                  </Attribute>
+               </Element>
+               <Element>
+                  <Term>cbc:Name</Term>
+                  <Name>Item property name</Name>
+                  <Description>The name of the property.The name must be sufficiently descriptive to define the value. The definition may be supplemented with the property unit of measure when relevant.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir19-076</Reference>
+                  <Value type="EXAMPLE">Size</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:NameCode</Term>
+                  <Name>Item property code</Name>
+                  <Description>Code for the item property according to a property code system.</Description>
+                  <DataType>CODE</DataType>
+                  <Reference type="BUSINESS_TERM">tir19-p039</Reference>
+                  <Attribute>
+                     <Term>listID</Term>
+                     <Name>Name code list id.</Name>
+                     <Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
+                     <Value type="EXAMPLE">
+							listID
+							Name code list id.
+							An identifier for the code list used for the Name code, this is bilaterally agreed
+
+						</Value>
+                  </Attribute>
+               </Element>
+               <Element>
+                  <Term>cbc:Value</Term>
+                  <Name>Item property value</Name>
+                  <Description>The value of the item property.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir19-077</Reference>
+                  <Value type="EXAMPLE">XXL</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:ValueQuantity</Term>
+                  <Name>Item property unit of measure</Name>
+                  <Description>The unit of measure in which the property value is stated, if relevant. May not be relevant when properties are descriptive.</Description>
+                  <DataType>Quantity</DataType>
+                  <Reference type="BUSINESS_TERM">tir19-070</Reference>
+                  <Value type="EXAMPLE">5</Value>
+                  <Attribute>
+                     <Term>unitCode</Term>
+                     <Name>Value quantity unit of measure</Name>
+                     <Description>The unit of measure that applies to the value quantity.</Description>
+                     <DataType>Code</DataType>
+                     <Reference type="CODE_LIST">UNECERec20</Reference>
+                     <Value type="EXAMPLE">XCS</Value>
+                  </Attribute>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:ValueQualifier</Term>
+                  <Name>Property classification</Name>
+                  <Description>Standardized and predefined classification of items properties.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir19-103</Reference>
+                  <Value type="EXAMPLE">Allergen</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:ManufacturerParty</Term>
+               <Name>Manufacturer party</Name>
+               <Description/>
+               <Element>
+                  <Term>cac:PartyName</Term>
+                  <Name>Party name</Name>
+                  <Description/>
+                  <Element>
+                     <Term>cbc:Name</Term>
+                     <Name>Manufacturer party name</Name>
+                     <Description>The name of the manufacturer of the item</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir19-075</Reference>
+                     <Value type="EXAMPLE">Manufacturer</Value>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..n">
+               <Term>cac:ItemInstance</Term>
+               <Name>Item instance</Name>
+               <Description/>
+               <Element cardinality="0..1">
+                  <Term>cbc:BestBeforeDate</Term>
+                  <Name>Item best before date</Name>
+                  <Description>Used to express the best before date of the item or items in the line instance.</Description>
+                  <DataType>Date</DataType>
+                  <Reference type="BUSINESS_TERM">tir19-058</Reference>
+                  <Value type="EXAMPLE">2018-08-01</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:LotIdentification</Term>
+                  <Name>Lot identification</Name>
+                  <Description/>
+                  <Element cardinality="0..1">
+                     <Term>cbc:LotNumberID</Term>
+                     <Name>Item batch identifier</Name>
+                     <Description>Identifies the production batch that the item(s) listed in the catalogue line were part of.</Description>
+                     <DataType>Identifier</DataType>
+                     <Reference type="BUSINESS_TERM">tir19-059</Reference>
+                     <Value type="EXAMPLE">B-10</Value>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..n">
+               <Term>cac:Certificate</Term>
+               <Name>Item label information</Name>
+               <Description>Information about the items environmental, social, ethical and quality type of labelling.</Description>
+               <Element>
+                  <Term>cbc:ID</Term>
+                  <Name>Item label name</Name>
+                  <Description>The name of the product label.</Description>
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">tir19-087</Reference>
+                  <Value type="EXAMPLE">EU EcoLabel</Value>
+               </Element>
+               <Element>
+                  <Term>cbc:CertificateTypeCode</Term>
+                  <Name>Certificate type code</Name>
+                  <Description>The UBL structure used for item labeling requires this elements, use the value NA.</Description>
+                  <DataType>Code</DataType>
+                  <Value type="FIXED">NA</Value>
+               </Element>
+               <Element>
+                  <Term>cbc:CertificateType</Term>
+                  <Name>Item label type</Name>
+                  <Description>The label type such environmental, quality, social etc.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir19-089</Reference>
+                  <Value type="EXAMPLE">Environmental</Value>
+               </Element>
+               <Element cardinality="0..n">
+                  <Term>cbc:Remarks</Term>
+                  <Name>Item label value</Name>
+                  <Description>The label value that applies to the item.</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir19-088</Reference>
+                  <Value type="EXAMPLE">Svanemerket</Value>
+               </Element>
+               <Element>
+                  <Term>cac:IssuerParty</Term>
+                  <Name>Issuer party information</Name>
+                  <Description/>
+                  <Element>
+                     <Term>cac:PartyName</Term>
+                     <Name>Party name</Name>
+                     <Description/>
+                     <Element>
+                        <Term>cbc:Name</Term>
+                        <Name>Issuer name</Name>
+                        <Description>The UBL structure used for item labeling requires this elements, use the value NA.</Description>
+                        <DataType>Text</DataType>
+                        <Value type="EXAMPLE">NA</Value>
+                     </Element>
+                  </Element>
+               </Element>
+               <Element cardinality="0..n">
+                  <Term>cac:DocumentReference</Term>
+                  <Name>Label document</Name>
+                  <Description/>
+                  <Element>
+                     <Term>cbc:ID</Term>
+                     <Name>Item label reference</Name>
+                     <Description>A reference to where the label specification can be found, e.g. a URI.</Description>
+                     <DataType>Document reference</DataType>
+                     <Reference type="BUSINESS_TERM">tir19-090</Reference>
+                     <Value type="EXAMPLE">http://www.label.eu/test/</Value>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..n">
+               <Term>cac:Dimension</Term>
+               <Name>Dimension</Name>
+               <Description/>
+               <Element>
+                  <Term>cbc:AttributeID</Term>
+                  <Name>Attribute Id</Name>
+                  <Description>Height - The vertical height of the orderable unit. Length - The horizontal measure of the longer site of the orderable unit. Width - The horizontal measure of the shorter side of the orderable unit. Weight - The weight of the orderable unit incuding its packaging. Package Net weight approximately. Package Net weight exact. Package volume.</Description>
+                  <DataType>Identifier</DataType>
+                  <Reference type="BUSINESS_TERM">tir19-104</Reference>
+                  <Reference type="CODE_LIST">UNCL6313</Reference>
+                  <Value type="EXAMPLE">LN</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:Measure</Term>
+                  <Name>Measure</Name>
+                  <Description>The measure for the dimension attribute</Description>
+                  <Reference type="BUSINESS_TERM">tir19-098</Reference>
+                  <Reference type="BUSINESS_TERM">tir19-099</Reference>
+                  <Reference type="BUSINESS_TERM">tir19-100</Reference>
+                  <Reference type="BUSINESS_TERM">tir19-101</Reference>
+                  <Reference type="BUSINESS_TERM">tir19-p037</Reference>
+                  <Reference type="BUSINESS_TERM">tir19-p017</Reference>
+                  <Reference type="BUSINESS_TERM">tir19-p016</Reference>
+                  <Attribute>
+                     <Term>unitCode</Term>
+                     <Name>Measure unit code</Name>
+                     <Description>The unit code of the measurement</Description>
+                     <DataType>Code</DataType>
+                     <Reference type="CODE_LIST">UNECERec20</Reference>
+                     <Value type="EXAMPLE">CMT</Value>
+                  </Attribute>
+               </Element>
+               <Element cardinality="0..n">
+                  <Term>cbc:Description</Term>
+                  <Name>Dimension description</Name>
+                  <Description>Used for differentiating between measures with same attributeID</Description>
+                  <DataType>Text</DataType>
+                  <Reference type="BUSINESS_TERM">tir19-p038</Reference>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:MinimumMeasure</Term>
+                  <Name>Minimum storage temperature or minimum Storage Humidity</Name>
+                  <Description>The lower margin of the recommended storage temerature range for the item.</Description>
+                  <Reference type="BUSINESS_TERM">tir19-115</Reference>
+                  <Reference type="BUSINESS_TERM">OP-T19-015</Reference>
+                  <Attribute>
+                     <Term>unitCode</Term>
+                     <Name>Measure unit code</Name>
+                     <Description>The unit code of the minimum storage humidity or temperature</Description>
+                     <DataType>Code</DataType>
+                     <Reference type="CODE_LIST">UNECERec20</Reference>
+                     <Value type="EXAMPLE">CMT</Value>
+                  </Attribute>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:MaximumMeasure</Term>
+                  <Name>Maximum storage temperature or maximum Storage Humidity</Name>
+                  <Description>The upper margin of the recommended storage temerature range for the item.</Description>
+                  <Reference type="BUSINESS_TERM">tir19-116</Reference>
+                  <Reference type="BUSINESS_TERM">OP-T19-014</Reference>
+                  <Attribute>
+                     <Term>unitCode</Term>
+                     <Name>Measure unit code</Name>
+                     <Description>The unit code of the maximum storage humidity or temperature</Description>
+                     <DataType>Code</DataType>
+                     <Reference type="CODE_LIST">UNECERec20</Reference>
+                     <Value type="EXAMPLE">CMT</Value>
+                  </Attribute>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+   </Document>
+</Structure>

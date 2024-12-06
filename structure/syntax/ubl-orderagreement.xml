@@ -1773,4 +1773,201 @@
 						BEAst: Tax Category NeB Type (T6708).
  Peppol: The TAX category code for the item.</Description>
                      <DataType>Code</DataType>
-                     <Reference type="BUSINESS_TERM">tir110-106<
+                     <Reference type="BUSINESS_TERM">tir110-106</Reference>
+                     <Value type="EXAMPLE">AE</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:Percent</Term>
+                     <Name>Line TAX rate</Name>
+                     <Description>
+						BEAst: VAT Rate (T0027).
+ Peppol: The TAX percentage rate that applies to the line amount.</Description>
+                     <DataType>Percentage</DataType>
+                     <Reference type="BUSINESS_TERM">tir110-107</Reference>
+                     <Value type="EXAMPLE">25</Value>
+                  </Element>
+                  <Element>
+                     <Term>cac:TaxScheme</Term>
+                     <Name>Tax scheme information</Name>
+                     <Description/>
+                     <Element>
+                        <Term>cbc:ID</Term>
+                        <Description>
+						BEAst: Tax Base Type NeB (T6707).
+ Peppol: Tax scheme. E.g. “VAT” or “GST”</Description>
+                        <DataType>Identifier</DataType>
+                        <Reference type="BUSINESS_TERM">tir110-p006</Reference>
+                        <Value type="EXAMPLE">VAT</Value>
+                     </Element>
+                  </Element>
+               </Element>
+               <Element cardinality="0..n">
+                  <Term>cac:AdditionalItemProperty</Term>
+                  <Name>Additional item property information</Name>
+                  <Description>A group of business terms providing information about properties of the goods and services invoiced.</Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:ID</Term>
+                     <Description>ID of the property if assigned by an Agency.</Description>
+                     <Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
+                     <Attribute usage="Optional">
+                        <Term>schemeID</Term>
+                        <Name>Scheme identifier</Name>
+                        <Value type="EXAMPLE">ISO22057</Value>
+                     </Attribute>
+                     <Attribute usage="Optional">
+                        <Term>schemeVersionID</Term>
+                        <Name>Scheme version identifier</Name>
+                        <Value type="EXAMPLE">2022</Value>
+                     </Attribute>
+                     <Attribute usage="Optional">
+                        <Term>schemeDataURI</Term>
+                        <Name>Scheme Data URI</Name>
+                        <Value type="EXAMPLE">https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460</Value>
+                     </Attribute>
+                  </Element>
+                  <Element>
+                     <Term>cbc:Name</Term>
+                     <Name>Item property name</Name>
+                     <Description>
+						BEAst: Property Name (T6446).
+ Peppol: The name of the property.The name must be sufficiently descriptive to define the value. The definition may be supplemented with the property unit of measure when relevant.</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir110-098</Reference>
+                     <Value type="EXAMPLE">Length</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:NameCode</Term>
+                     <Name>Item property code</Name>
+                     <Description>
+						BEAst: Property ID (T6444). listID is Property ID Type (T6443).
+ Peppol: Code for the item property according to a property code system.</Description>
+                     <DataType>Code</DataType>
+                     <Reference type="BUSINESS_TERM">tir110-101</Reference>
+                     <Value type="EXAMPLE">test</Value>
+                     <Attribute>
+                        <Term>listID</Term>
+                        <Name>Name code list id.</Name>
+                        <Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
+                        <Value type="EXAMPLE">NN</Value>
+                     </Attribute>
+                  </Element>
+                  <Element>
+                     <Term>cbc:Value</Term>
+                     <Name>Item property value</Name>
+                     <Description>
+						BEAst: Property Value (T6452).
+ Peppol: The value of the item property.</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir110-099</Reference>
+                     <Value type="EXAMPLE">30 mm</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:ValueQuantity</Term>
+                     <Name>Item property unit of measure</Name>
+                     <Description>
+						BEAst: Property Compare Code (T6457). unitCode is Measure Unit NeB Type (T6706).
+ Peppol: The unit of measure in which the property value is stated, if relevant. May not be relevant when properties are descriptive.</Description>
+                     <DataType>Quantity</DataType>
+                     <Reference type="BUSINESS_TERM">tir110-100</Reference>
+                     <Value type="EXAMPLE">30</Value>
+                     <Attribute>
+                        <Term>unitCode</Term>
+                        <Name>Value quantity unit of measure</Name>
+                        <Description>The unit of measure that applies to the value quantity.</Description>
+                        <DataType>Code</DataType>
+                        <Reference type="CODE_LIST">UNECERec20</Reference>
+                        <Value type="EXAMPLE">MMT</Value>
+                     </Attribute>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:ValueQualifier</Term>
+                     <Name>Property classification</Name>
+                     <Description>
+						BEAst: Property Value ID (T6450).
+ Peppol: Standardized and predefined classification of items properties.</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir110-p004</Reference>
+                     <Value type="EXAMPLE">Z3</Value>
+                  </Element>
+               </Element>
+               <Element cardinality="0..n">
+                  <Term>cac:Certificate</Term>
+                  <Name>Item label information</Name>
+                  <Description>Information about the items environmental, social, ethical and quality type of labelling.</Description>
+                  <Element>
+                     <Term>cbc:ID</Term>
+                     <Name>Item label name</Name>
+                     <Description>
+						BEAst: Certificate Number (T6413).
+ Peppol: The name of the product label.</Description>
+                     <DataType>Identifier</DataType>
+                     <Reference type="BUSINESS_TERM">OP-110-013</Reference>
+                     <Value type="EXAMPLE">EU EcoLabel</Value>
+                  </Element>
+                  <Element>
+                     <Term>cbc:CertificateTypeCode</Term>
+                     <Name>Certificate type code</Name>
+                     <Description>
+						BEAst: The UBL structure used requires this element. Use the value NA.
+ Peppol: The UBL structure used for item labeling requires this elements, use the value NA.</Description>
+                     <DataType>Code</DataType>
+                     <Value type="FIXED">NA</Value>
+                  </Element>
+                  <Element>
+                     <Term>cbc:CertificateType</Term>
+                     <Name>Item label type</Name>
+                     <Description>
+						BEAst: Type of Certificate (T6412).
+ Peppol: The label type such environmental, quality, social etc.</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">OP-110-015</Reference>
+                     <Value type="EXAMPLE">FSC</Value>
+                  </Element>
+                  <Element cardinality="0..n">
+                     <Term>cbc:Remarks</Term>
+                     <Name>Item label value</Name>
+                     <Description>
+						BEAst: Percentage Certified (T6414).
+ Peppol: The label value that applies to the item.</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">OP-110-014</Reference>
+                     <Value type="EXAMPLE">48% Certified</Value>
+                  </Element>
+                  <Element>
+                     <Term>cac:IssuerParty</Term>
+                     <Name>Issuer party information</Name>
+                     <Description/>
+                     <Element>
+                        <Term>cac:PartyName</Term>
+                        <Name>Party name</Name>
+                        <Description/>
+                        <Element>
+                           <Term>cbc:Name</Term>
+                           <Name>Issuer name</Name>
+                           <Description>
+						BEAst: The UBL structure used requires this element. Use the value NA.
+ Peppol: The UBL structure used for item labeling requires this elements, use the value NA.</Description>
+                           <DataType>Text</DataType>
+                           <Value type="EXAMPLE">NA</Value>
+                        </Element>
+                     </Element>
+                  </Element>
+                  <Element cardinality="0..n">
+                     <Term>cac:DocumentReference</Term>
+                     <Name>Label document</Name>
+                     <Description/>
+                     <Element>
+                        <Term>cbc:ID</Term>
+                        <Name>Item label reference</Name>
+                        <Description>A reference to where the label specification can be found, e.g. a URI.</Description>
+                        <DataType>Document reference</DataType>
+                        <Reference type="BUSINESS_TERM">OP-110-016</Reference>
+                        <Value type="EXAMPLE">http://www.label.eu/test/</Value>
+                     </Element>
+                  </Element>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+   </Document>
+</Structure>
