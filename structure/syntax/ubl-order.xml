@@ -2312,4 +2312,157 @@
                   <Element>
                      <Term>cbc:ID</Term>
                      <Name>Item TAX category code</Name>
-                     <Descript
+                     <Description>The TAX category code for the item.</Description>
+                     <DataType>Code</DataType>
+                     <Reference type="BUSINESS_TERM">tir01-150</Reference>
+                     <Value type="EXAMPLE">S</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:Percent</Term>
+                     <Name>Line TAX rate</Name>
+                     <Description>The TAX percentage rate that applies to the line amount.</Description>
+                     <DataType>Percentage</DataType>
+                     <Reference type="BUSINESS_TERM">tir01-170</Reference>
+                     <Reference type="RULE">PEPPOL-T01-R029</Reference>
+                     <Reference type="RULE">PEPPOL-T01-R030</Reference>
+                     <Value type="EXAMPLE">25</Value>
+                  </Element>
+                  <Element>
+                     <Term>cac:TaxScheme</Term>
+                     <Name>Tax scheme information</Name>
+                     <Description/>
+                     <Element>
+                        <Term>cbc:ID</Term>
+                        <Description>Tax scheme. E.g. “VAT” or “GST”</Description>
+                        <DataType>Identifier</DataType>
+                        <Reference type="BUSINESS_TERM">tir01-p021</Reference>
+                        <Value type="EXAMPLE">VAT</Value>
+                     </Element>
+                  </Element>
+               </Element>
+               <Element cardinality="0..n">
+                  <Term>cac:AdditionalItemProperty</Term>
+                  <Name>Additional item property information</Name>
+                  <Description>A group of business terms providing information about properties of the goods and services invoiced.</Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:ID</Term>
+                     <Name>ID</Name>
+                     <Description>ID of the property if assigned by an Agency</Description>
+                     <Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
+                     <Element cardinality="O">
+                        <Term>@schemeDataURI</Term>
+                        <Name>Scheme Data URI</Name>
+                        <Description>Scheme Data URI</Description>
+                        <Value type="EXAMPLE">sdfdf</Value>
+                     </Element>
+                     <Element cardinality="O">
+                        <Term>@schemeID</Term>
+                        <Name>Scheme identifier</Name>
+                        <Description>Scheme identifier</Description>
+                        <Value type="EXAMPLE">ISO22057</Value>
+                     </Element>
+                     <Element cardinality="O">
+                        <Term>@schemeVersionID</Term>
+                        <Name>Scheme version identifier</Name>
+                        <Description>Scheme version identifier</Description>
+                        <Value type="EXAMPLE">2022</Value>
+                     </Element>
+                  </Element>
+                  <Element>
+                     <Term>cbc:Name</Term>
+                     <Name>Item property name</Name>
+                     <Description>
+						BEAst: Name of the property or Heading for the BEAst Label. When NameCode is BEAST:Destination 1-8, the name shall contain the corresponding heading (T6347, T6349, T6351, T6353, T6355, T6357, T6359, T6361). Otherwise it is T6469 or T6446. or .
+ Peppol: The name of the property.The name must be sufficiently descriptive to define the value. The definition may be supplemented with the property unit of measure when relevant.</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir01-138</Reference>
+                     <Value type="EXAMPLE">DeliveryUnit</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:NameCode</Term>
+                     <Name>Item property code</Name>
+                     <Description>
+						BEAst: .Identifies what the Name and Value contain. ListID is always BEAST:4.0. Possible values are: DeliveryUnit, Destination1, Destination2, Destination3, Destination4, Destination5, Destination6, Destination7, Destination8, UnloadingInstruction, ArticlePropertiesNeC + value in T0011, T6444+T6443(ListID).
+ Peppol: Code for the item property according to a property code system.</Description>
+                     <DataType>Code</DataType>
+                     <Reference type="BUSINESS_TERM">tir01-p024</Reference>
+                     <Value type="EXAMPLE">DeliveryUnit</Value>
+                     <Attribute>
+                        <Term>listID</Term>
+                        <Name>Name code list id.</Name>
+                        <Description>An identifier for the code list used for the Name code, this is bilaterally agreed</Description>
+                        <Value type="EXAMPLE">BEAST:4.0</Value>
+                     </Attribute>
+                  </Element>
+                  <Element>
+                     <Term>cbc:Value</Term>
+                     <Name>Item property value</Name>
+                     <Description>
+						BEAst: The content is described by the NameCode. Can be the Delivery Unit (T6340), Destination Content 1-8 (T6348, T6350, T6352, T6354, T6356, T6358, T6360, T6362), Unloading Instruction (T6344), Article Property (T6470), T6452.
+ Peppol: The value of the item property.</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir01-139</Reference>
+                     <Value type="EXAMPLE">ABC123</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:ValueQuantity</Term>
+                     <Name>Item property unit of measure</Name>
+                     <Description>
+						BEAst: T6457 (Property Compare Code) + T6706 (Measure Unit NeB Type in unitCode).
+ Peppol: The unit of measure in which the property value is stated, if relevant. May not be relevant when properties are descriptive.</Description>
+                     <DataType>Quantity</DataType>
+                     <Reference type="BUSINESS_TERM">tir01-p020</Reference>
+                     <Value type="EXAMPLE">10</Value>
+                     <Attribute>
+                        <Term>unitCode</Term>
+                        <Name>Value quantity unit of measure</Name>
+                        <Description>The unit of measure that applies to the value quantity.</Description>
+                        <DataType>Code</DataType>
+                        <Reference type="CODE_LIST">UNECERec20</Reference>
+                        <Value type="EXAMPLE">C62</Value>
+                     </Attribute>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:ValueQualifier</Term>
+                     <Name>Property classification</Name>
+                     <Description>
+						BEAst: T6450 (PropertyValueId).
+ Peppol: Standardized and predefined classification of items properties.</Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir01-p021</Reference>
+                     <Value type="EXAMPLE">12</Value>
+                  </Element>
+               </Element>
+               <Element cardinality="0..n">
+                  <Term>cac:ItemInstance</Term>
+                  <Name>Item instance information</Name>
+                  <Description>Information relevant to an item instance or shared by the items in the order line.</Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:SerialID</Term>
+                     <Name>Item serial identification</Name>
+                     <Description>
+						BEAst: T3236, (Serial Number).
+ Peppol: An identifier that is specific to the items in the order line.</Description>
+                     <Reference type="BUSINESS_TERM">tir01-p023</Reference>
+                     <Value type="EXAMPLE">9874587</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cac:LotIdentification</Term>
+                     <Name>Item lot information</Name>
+                     <Description>Information about the production lot which the order line items come from.</Description>
+                     <Element cardinality="0..1">
+                        <Term>cbc:LotNumberID</Term>
+                        <Name>Item lot identifier</Name>
+                        <Description>
+						BEAst: T0132, (Batch Number).
+ Peppol: An identifier for the production lot which the order line items come from.</Description>
+                        <Reference type="BUSINESS_TERM">tir01-p022</Reference>
+                        <Value type="EXAMPLE">4587</Value>
+                     </Element>
+                  </Element>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+   </Document>
+</Structure>
