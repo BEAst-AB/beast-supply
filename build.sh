@@ -31,10 +31,8 @@ docker run --rm -i \
     varOverrideSample=/src/structure/source/ubl-invoice.xml \
     -ext:on --allow-external-functions:on
 
-     $PROJECT/target/generated:/target atomgraph/saxon \
-
 echo "Generating documentation: Order"
-docker run --rm -i -v $PROJECT:/src -v   
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \  
     -s:$POACCBASEURL/ubl-order.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-order.xml \
