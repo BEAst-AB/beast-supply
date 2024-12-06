@@ -22,8 +22,8 @@ docker pull atomgraph/saxon
 # Transform the files in source dir to syntax.
 echo "Generating documentation: Invoice"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/2024-q4-release/structure/syntax/ubl-invoice.xml \ 
-    -xsl:/src/tools/create-syntax.xsl \
+    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/2024-q4-release/structure/syntax/ubl-invoice.xml\ 
+    -xsl:/src/tools/create-syntax.xsl\
     -o:/src/structure/syntax/ubl-invoice.xml \
     varOverrideSample=/src/structure/source/ubl-invoice.xml \
     -ext:on --allow-external-functions:on
