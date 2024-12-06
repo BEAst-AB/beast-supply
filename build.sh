@@ -25,17 +25,17 @@ docker run --rm -i \
     -v $PROJECT:/src \
     -v $PROJECT/target/generated:/target \
     atomgraph/saxon \
-    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/refs/heads/2024-q4-release/structure/syntax/ubl-invoice.xml \
-    
+    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/refs/heads/2024-q4-release/structure/syntax/ubl-invoice.xml \ 
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-invoice.xml \
     varOverrideSample=/src/structure/source/ubl-invoice.xml \
     -ext:on --allow-external-functions:on
 
-echo "Generating documentation: Order"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+     $PROJECT/target/generated:/target atomgraph/saxon \
    # -s:$POACCBASEURL/ubl-order.xml \
-   -s:https://raw.githubusercontent.com/BEAst-AB/beast-supply/transformation/structure/ubl-order.xml \
+
+echo "Generating documentation: Order"
+docker run --rm -i -v $PROJECT:/src -v   -s:https://raw.githubusercontent.com/BEAst-AB/beast-supply/transformation/structure/ubl-order.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-order.xml \
     varOverrideSample=/src/structure/source/ubl-order.xml -ext:on --allow-external-functions:on
