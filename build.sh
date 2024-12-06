@@ -34,7 +34,8 @@ docker run --rm -i \
 
 echo "Generating documentation: Order"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$POACCBASEURL/ubl-order.xml \
+   # -s:$POACCBASEURL/ubl-order.xml \
+   -s:https://raw.githubusercontent.com/BEAst-AB/beast-supply/transformation/structure/ubl-order.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-order.xml \
     varOverrideSample=/src/structure/source/ubl-order.xml -ext:on --allow-external-functions:on
