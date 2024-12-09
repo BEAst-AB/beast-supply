@@ -527,6 +527,7 @@
                   <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir19-022</Reference>
+                  <Value type="EXAMPLE">Ground floor</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
@@ -1201,7 +1202,7 @@
                      <Reference type="BUSINESS_TERM">tir19-063</Reference>
                      <Reference type="BUSINESS_TERM">tir19-113</Reference>
                      <Reference type="CODE_LIST">ISO3166</Reference>
-                     <Value type="EXAMPLE">UK</Value>
+                     <Value type="EXAMPLE">GB</Value>
                   </Element>
                </Element>
             </Element>
@@ -1497,6 +1498,7 @@
                   <Name>Item classification code</Name>
                   <Description>A classification code used to classify the type or nature of the Item. More than one classifications can be used including UNSPSC code and CPV code.</Description>
                   <Reference type="BUSINESS_TERM">tir19-069</Reference>
+                  <Value type="EXAMPLE">AZ657</Value>
                   <Attribute>
                      <Term>listID</Term>
                      <Name>Item classification identifier identification scheme identifier</Name>
@@ -1530,7 +1532,7 @@
                   <Reference type="BUSINESS_TERM">tir19-p027</Reference>
                   <Reference type="BUSINESS_TERM">tir19-p049</Reference>
                   <Reference type="CODE_LIST">TransactionCondition</Reference>
-                  <Value type="EXAMPLE">CT</Value>
+                  <Value type="EXAMPLE">NON_RETURNABLE</Value>
                </Element>
             </Element>
             <Element cardinality="0..n">

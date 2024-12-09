@@ -2018,7 +2018,7 @@
                <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Ground floor</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:SellerSupplierParty/cac:Party/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -4384,7 +4384,7 @@
                <Data ss:Type="String">A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">UK</Data>
+               <Data ss:Type="String">GB</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredItemLocationQuantity/cac:ApplicableTerritoryAddress/cac:Country/cbc:IdentificationCode</Data>
@@ -5450,7 +5450,7 @@
                <Data ss:Type="String">A classification code used to classify the type or nature of the Item. More than one classifications can be used including UNSPSC code and CPV code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">AZ657</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode</Data>
@@ -5580,7 +5580,7 @@
                <Data ss:Type="String">The code CT indicates that the item is offered in accordance to the referenced contract (tir19-p027). The code NON_RETURNABLE indicates that the item cannot be returned (tir19-p049).</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">CT</Data>
+               <Data ss:Type="String">NON_RETURNABLE</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:TransactionConditions/cbc:ActionCode</Data>

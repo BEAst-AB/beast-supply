@@ -88,7 +88,7 @@
          </cac:PartyName>
          <cac:PostalAddress>
             <cbc:StreetName>Storgata 1</cbc:StreetName>
-            <cbc:AdditionalStreetName/>
+            <cbc:AdditionalStreetName>Ground floor</cbc:AdditionalStreetName>
             <cbc:CityName>Oslo</cbc:CityName>
             <cbc:PostalZone>0612</cbc:PostalZone>
             <cbc:CountrySubentity>Region V</cbc:CountrySubentity>
@@ -187,7 +187,7 @@
                <cbc:Line>Building F</cbc:Line>
             </cac:AddressLine>
             <cac:Country>
-               <cbc:IdentificationCode>UK</cbc:IdentificationCode>
+               <cbc:IdentificationCode>GB</cbc:IdentificationCode>
             </cac:Country>
          </cac:ApplicableTerritoryAddress>
          <cac:Price>
@@ -236,10 +236,10 @@
             <cbc:IdentificationCode>DK</cbc:IdentificationCode>
          </cac:OriginCountry>
          <cac:CommodityClassification>
-            <cbc:ItemClassificationCode listID="MP" listVersionID="20.0601" name="Office furniture"/>
+            <cbc:ItemClassificationCode listID="MP" listVersionID="20.0601" name="Office furniture">AZ657</cbc:ItemClassificationCode>
          </cac:CommodityClassification>
          <cac:TransactionConditions>
-            <cbc:ActionCode>CT</cbc:ActionCode>
+            <cbc:ActionCode>NON_RETURNABLE</cbc:ActionCode>
          </cac:TransactionConditions>
          <cac:HazardousItem>
             <cbc:UNDGCode>ADR</cbc:UNDGCode>
