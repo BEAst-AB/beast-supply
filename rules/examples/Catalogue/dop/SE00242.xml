@@ -1,7 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
 <Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 		   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 		   xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-
+	
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue:3</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3</cbc:ProfileID>
+	
 	<cbc:ID>1387</cbc:ID>
 	<cbc:IssueDate>2024-08-26</cbc:IssueDate>
 	<cac:ValidityPeriod>
@@ -15,7 +19,7 @@
 			</cac:Country>
 		</cac:PostalAddress>
 		<cac:PartyLegalEntity>
-			<cbc:RegistrationName>Valbo TrÃ¤ AB</cbc:RegistrationName>
+			<cbc:RegistrationName>Valbo Trä AB</cbc:RegistrationName>
 		</cac:PartyLegalEntity>
 	</cac:ProviderParty>
 	<cac:ReceiverParty>
@@ -26,7 +30,7 @@
 			</cac:Country>
 		</cac:PostalAddress>
 		<cac:PartyLegalEntity>
-			<cbc:RegistrationName>Valbo TrÃ¤ AB</cbc:RegistrationName>
+			<cbc:RegistrationName>Valbo Trä AB</cbc:RegistrationName>
 		</cac:PartyLegalEntity>
 	</cac:ReceiverParty>
 	<cac:CatalogueLine>
@@ -34,19 +38,19 @@
 		<cac:Item>
 			<cbc:Name>Konstruktionsvirke C14 Gran Obehandlad 45x70</cbc:Name>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Svenskt TrÃ¤-ID</cbc:Name>
+				<cbc:Name>Svenskt Trä-ID</cbc:Name>
 				<cbc:Value>SE00242</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>TrÃ¤slag - svenskt namn fÃ¶r trÃ¤slag enligt SS-EN 13556</cbc:Name>
+				<cbc:Name>Träslag - svenskt namn för träslag enligt SS-EN 13556</cbc:Name>
 				<cbc:Value>Gran</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>TrÃ¤slag - botaniskt namn fÃ¶r trÃ¤slag enligt SS-EN 13556</cbc:Name>
+				<cbc:Name>Träslag - botaniskt namn för träslag enligt SS-EN 13556</cbc:Name>
 				<cbc:Value>PCAB - Picea abies</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>HÃ¥llfasthetsklass enligt SS-EN 338 (C-klasser)</cbc:Name>
+				<cbc:Name>Hållfasthetsklass enligt SS-EN 338 (C-klasser)</cbc:Name>
 				<cbc:Value>C14</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
@@ -58,12 +62,12 @@
 				<cbc:Value>Maskinell</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Profiltyp enligt Svenskt TrÃ¤ specifikation</cbc:Name>
+				<cbc:Name>Profiltyp enligt Svenskt Trä specifikation</cbc:Name>
 				<cbc:Value>Dimensionshyvlat</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Ytstruktur enligt Svenskt TrÃ¤ specifikation</cbc:Name>
-				<cbc:Value>Fyra hyvlade sidor med fyra rundade hÃ¶rn, radie 4 mm</cbc:Value>
+				<cbc:Name>Ytstruktur enligt Svenskt Trä specifikation</cbc:Name>
+				<cbc:Value>Fyra hyvlade sidor med fyra rundade hörn, radie 4 mm</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Tjocklek enligt SS-EN 1309-1</cbc:Name>
@@ -74,31 +78,31 @@
 				<cbc:Value>70 mm</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>TÃ¤ckande bredd, monterad, enligt Svenskt TrÃ¤ specifikation</cbc:Name>
+				<cbc:Name>Täckande bredd, monterad, enligt Svenskt Trä specifikation</cbc:Name>
 				<cbc:Value>70 mm</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>VirkesÃ¥tgÃ¥ng per kvadratmeter enligt Svenskt TrÃ¤ specifikation</cbc:Name>
-				<cbc:Value>14,29 lm/mÂ²</cbc:Value>
+				<cbc:Name>Virkesåtgång per kvadratmeter enligt Svenskt Trä specifikation</cbc:Name>
+				<cbc:Value>14,29 lm/m²</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Area pÃ¥ profil, med hÃ¤nsyn till utformning, enligt Svenskt TrÃ¤ specifikation</cbc:Name>
-				<cbc:Value>0,00315 mÂ²</cbc:Value>
+				<cbc:Name>Area på profil, med hänsyn till utformning, enligt Svenskt Trä specifikation</cbc:Name>
+				<cbc:Value>0,00315 m²</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>MÃ¥lfuktkvot enligt SS-EN 14298</cbc:Name>
+				<cbc:Name>Målfuktkvot enligt SS-EN 14298</cbc:Name>
 				<cbc:Value>16 %</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Hanteringsvikt per kubikmeter enligt Svenskt TrÃ¤ specifikation</cbc:Name>
-				<cbc:Value>470 kg/mÂ³</cbc:Value>
+				<cbc:Name>Hanteringsvikt per kubikmeter enligt Svenskt Trä specifikation</cbc:Name>
+				<cbc:Value>470 kg/m³</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Hanteringsvikt per meter enligt Svenskt TrÃ¤ specifikation</cbc:Name>
+				<cbc:Name>Hanteringsvikt per meter enligt Svenskt Trä specifikation</cbc:Name>
 				<cbc:Value>1,48 kg/m</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Prestandadeklarerad och CE-mÃ¤rkt enligt Europeiska ByggproduktfÃ¶rordningen (CPR)</cbc:Name>
+				<cbc:Name>Prestandadeklarerad och CE-märkt enligt Europeiska Byggproduktförordningen (CPR)</cbc:Name>
 				<cbc:Value>Ja</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
@@ -106,103 +110,103 @@
 				<cbc:Value>D-s2,d0</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Reaktion pÃ¥ brand utan provning enligt EC-beslut 2003/593/EC</cbc:Name>
+				<cbc:Name>Reaktion på brand utan provning enligt EC-beslut 2003/593/EC</cbc:Name>
 				<cbc:Value>D-s2,d0</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>BestÃ¤ndighetsklass fÃ¶r trÃ¤ avseende angrepp av rÃ¶tsvampar enligt SS-EN 350</cbc:Name>
+				<cbc:Name>Beständighetsklass för trä avseende angrepp av rötsvampar enligt SS-EN 350</cbc:Name>
 				<cbc:Value>DC 4</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Karakteristiskt vÃ¤rde fÃ¶r bÃ¶jhÃ¥llfasthet parallellt med fibrerna enligt SS-EN 338</cbc:Name>
-				<cbc:Value>14 N/mmÂ²</cbc:Value>
+				<cbc:Name>Karakteristiskt värde för böjhållfasthet parallellt med fibrerna enligt SS-EN 338</cbc:Name>
+				<cbc:Value>14 N/mm²</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Karakteristiskt vÃ¤rde fÃ¶r draghÃ¥llfasthet parallellt med fibrerna enligt SS-EN 338</cbc:Name>
-				<cbc:Value>7,2 N/mmÂ²</cbc:Value>
+				<cbc:Name>Karakteristiskt värde för draghållfasthet parallellt med fibrerna enligt SS-EN 338</cbc:Name>
+				<cbc:Value>7,2 N/mm²</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Karakteristiskt vÃ¤rde fÃ¶r draghÃ¥llfasthet vinkelrÃ¤tt mot fibrerna enligt SS-EN 338</cbc:Name>
-				<cbc:Value>0,4 N/mmÂ²</cbc:Value>
+				<cbc:Name>Karakteristiskt värde för draghållfasthet vinkelrätt mot fibrerna enligt SS-EN 338</cbc:Name>
+				<cbc:Value>0,4 N/mm²</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Karakteristiskt vÃ¤rde fÃ¶r tryckhÃ¥llfasthet parallellt med fibrerna enligt SS-EN 338</cbc:Name>
-				<cbc:Value>16 N/mmÂ²</cbc:Value>
+				<cbc:Name>Karakteristiskt värde för tryckhållfasthet parallellt med fibrerna enligt SS-EN 338</cbc:Name>
+				<cbc:Value>16 N/mm²</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Karakteristiskt vÃ¤rde fÃ¶r tryckhÃ¥llfasthet vinkelrÃ¤tt mot fibrerna enligt SS-EN 338</cbc:Name>
-				<cbc:Value>2 N/mmÂ²</cbc:Value>
+				<cbc:Name>Karakteristiskt värde för tryckhållfasthet vinkelrätt mot fibrerna enligt SS-EN 338</cbc:Name>
+				<cbc:Value>2 N/mm²</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Karakteristiskt vÃ¤rde fÃ¶r skjuvhÃ¥llfasthet enligt SS-EN 338</cbc:Name>
-				<cbc:Value>3 N/mmÂ²</cbc:Value>
+				<cbc:Name>Karakteristiskt värde för skjuvhållfasthet enligt SS-EN 338</cbc:Name>
+				<cbc:Value>3 N/mm²</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Karakteristiskt vÃ¤rde fÃ¶r elasticitetsmodul parallellt med fibrerna enligt SS-EN 338</cbc:Name>
-				<cbc:Value>4,7 kN/mmÂ²</cbc:Value>
+				<cbc:Name>Karakteristiskt värde för elasticitetsmodul parallellt med fibrerna enligt SS-EN 338</cbc:Name>
+				<cbc:Value>4,7 kN/mm²</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>MedelvÃ¤rde fÃ¶r elasticitetsmodul parallellt med fibrerna enligt SS-EN 338</cbc:Name>
-				<cbc:Value>7 kN/mmÂ²</cbc:Value>
+				<cbc:Name>Medelvärde för elasticitetsmodul parallellt med fibrerna enligt SS-EN 338</cbc:Name>
+				<cbc:Value>7 kN/mm²</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>MedelvÃ¤rde fÃ¶r elasticitetsmodul vinkelrÃ¤tt mot fibrerna enligt SS-EN 338</cbc:Name>
-				<cbc:Value>0,23 kN/mmÂ²</cbc:Value>
+				<cbc:Name>Medelvärde för elasticitetsmodul vinkelrätt mot fibrerna enligt SS-EN 338</cbc:Name>
+				<cbc:Value>0,23 kN/mm²</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>MedelvÃ¤rde fÃ¶r skjuvmodul enligt SS-EN 338</cbc:Name>
-				<cbc:Value>0,44 kN/mmÂ²</cbc:Value>
+				<cbc:Name>Medelvärde för skjuvmodul enligt SS-EN 338</cbc:Name>
+				<cbc:Value>0,44 kN/mm²</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Karakteristisk densitet enligt SS-EN 338</cbc:Name>
-				<cbc:Value>290 kg/mÂ³</cbc:Value>
+				<cbc:Value>290 kg/m³</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Medeldensitet enligt SS-EN 338</cbc:Name>
-				<cbc:Value>350 kg/mÂ³</cbc:Value>
+				<cbc:Value>350 kg/m³</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>HÃ¥rdhet parallellt med fiberriktningen, enligt Brinells testmetod</cbc:Name>
+				<cbc:Name>Hårdhet parallellt med fiberriktningen, enligt Brinells testmetod</cbc:Name>
 				<cbc:Value>3,2 HB</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>HÃ¥rdhet vinkelrÃ¤tt mot fiberriktningen, enligt Brinells testmetod</cbc:Name>
+				<cbc:Name>Hårdhet vinkelrätt mot fiberriktningen, enligt Brinells testmetod</cbc:Name>
 				<cbc:Value>1,2 HB</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>VÃ¤rmeledningsfÃ¶rmÃ¥ga parallellt med fiberiktningen enligt SS-EN ISO 10456</cbc:Name>
-				<cbc:Value>0,24 W/m Â°C</cbc:Value>
+				<cbc:Name>Värmeledningsförmåga parallellt med fiberiktningen enligt SS-EN ISO 10456</cbc:Name>
+				<cbc:Value>0,24 W/m °C</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>VÃ¤rmeledningsfÃ¶rmÃ¥ga vinkelrÃ¤tt mot fiberriktningen enligt SS-EN ISO 10456</cbc:Name>
-				<cbc:Value>0,11 W/m Â°C</cbc:Value>
+				<cbc:Name>Värmeledningsförmåga vinkelrätt mot fiberriktningen enligt SS-EN ISO 10456</cbc:Name>
+				<cbc:Value>0,11 W/m °C</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>VÃ¤rmekapacitet parallellt med fiberriktningen enligt SS-EN ISO 10456</cbc:Name>
-				<cbc:Value>1650 J/kg Â°C</cbc:Value>
+				<cbc:Name>Värmekapacitet parallellt med fiberriktningen enligt SS-EN ISO 10456</cbc:Name>
+				<cbc:Value>1650 J/kg °C</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>VÃ¤rmevÃ¤rde parallellt med fiberriktningen enligt SS-EN ISO 10456</cbc:Name>
+				<cbc:Name>Värmevärde parallellt med fiberriktningen enligt SS-EN ISO 10456</cbc:Name>
 				<cbc:Value>16,9 MJ/kg</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Krympning, axiell riktning, i stammens lÃ¤ngdriktning, enligt Svenskt TrÃ¤ specifikation</cbc:Name>
+				<cbc:Name>Krympning, axiell riktning, i stammens längdriktning, enligt Svenskt Trä specifikation</cbc:Name>
 				<cbc:Value>0,3 %</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Krympning, radiell riktning tvÃ¤rs Ã¥rsringarna, enligt Svenskt TrÃ¤ specifikation</cbc:Name>
+				<cbc:Name>Krympning, radiell riktning tvärs årsringarna, enligt Svenskt Trä specifikation</cbc:Name>
 				<cbc:Value>3,6 %</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Krympning, tangentiell riktning lÃ¤ngs Ã¥rsringarna, enligt Svenskt TrÃ¤ specifikation</cbc:Name>
+				<cbc:Name>Krympning, tangentiell riktning längs årsringarna, enligt Svenskt Trä specifikation</cbc:Name>
 				<cbc:Value>7,8 %</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Krympning, volymÃ¤ndring enligt Svenskt TrÃ¤ specifikation</cbc:Name>
+				<cbc:Name>Krympning, volymändring enligt Svenskt Trä specifikation</cbc:Name>
 				<cbc:Value>11,7 %</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>Krympning i procent, per procentenhetsÃ¤ndring av fuktkvoten, enligt Svenskt TrÃ¤ specifikation</cbc:Name>
+				<cbc:Name>Krympning i procent, per procentenhetsändring av fuktkvoten, enligt Svenskt Trä specifikation</cbc:Name>
 				<cbc:Value>0,26 %</cbc:Value>
 			</cac:AdditionalItemProperty>
 		</cac:Item>
