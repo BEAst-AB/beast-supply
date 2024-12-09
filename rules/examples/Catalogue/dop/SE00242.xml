@@ -11,8 +11,9 @@
 	<cac:ValidityPeriod>
 		<cbc:StartDate>2024-08-26</cbc:StartDate>
 	</cac:ValidityPeriod>
+	
 	<cac:ProviderParty>
-		<cbc:EndpointID schemeID="0088">5568654031</cbc:EndpointID>
+		<cbc:EndpointID schemeID="0007">5568654031</cbc:EndpointID>
 		<cac:PostalAddress>
 			<cac:Country>
 				<cbc:IdentificationCode>SE</cbc:IdentificationCode>
@@ -22,8 +23,9 @@
 			<cbc:RegistrationName>Valbo Trä AB</cbc:RegistrationName>
 		</cac:PartyLegalEntity>
 	</cac:ProviderParty>
+	
 	<cac:ReceiverParty>
-		<cbc:EndpointID schemeID="0088">5568654031</cbc:EndpointID>
+		<cbc:EndpointID schemeID="0007">5568654031</cbc:EndpointID>
 		<cac:PostalAddress>
 			<cac:Country>
 				<cbc:IdentificationCode>SE</cbc:IdentificationCode>
@@ -33,10 +35,16 @@
 			<cbc:RegistrationName>Valbo Trä AB</cbc:RegistrationName>
 		</cac:PartyLegalEntity>
 	</cac:ReceiverParty>
+	
 	<cac:CatalogueLine>
 		<cbc:ID>1</cbc:ID>
+		
 		<cac:Item>
 			<cbc:Name>Konstruktionsvirke C14 Gran Obehandlad 45x70</cbc:Name>
+			<cac:SellersItemIdentification>
+				<cbc:ID>12345</cbc:ID>
+			</cac:SellersItemIdentification>
+
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Svenskt Trä-ID</cbc:Name>
 				<cbc:Value>SE00242</cbc:Value>
