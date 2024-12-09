@@ -29,7 +29,7 @@
          <cbc:AdditionalStreetName>Building 23</cbc:AdditionalStreetName>
          <cbc:CityName>London</cbc:CityName>
          <cbc:PostalZone>N12 W34</cbc:PostalZone>
-         <cbc:CountrySubentity>District A</cbc:CountrySubentity>
+         <cbc:CountrySubentity/>
          <cac:AddressLine>
             <cbc:Line>Use gate 34</cbc:Line>
          </cac:AddressLine>
@@ -88,10 +88,10 @@
          </cac:PartyName>
          <cac:PostalAddress>
             <cbc:StreetName>Storgata 1</cbc:StreetName>
-            <cbc:AdditionalStreetName>Ground floor</cbc:AdditionalStreetName>
+            <cbc:AdditionalStreetName/>
             <cbc:CityName>Oslo</cbc:CityName>
             <cbc:PostalZone>0612</cbc:PostalZone>
-            <cbc:CountrySubentity>Region V</cbc:CountrySubentity>
+            <cbc:CountrySubentity/>
             <cac:AddressLine>
                <cbc:Line>3rd line</cbc:Line>
             </cac:AddressLine>
@@ -117,10 +117,10 @@
          </cac:PartyName>
          <cac:PostalAddress>
             <cbc:StreetName>Storgata 1</cbc:StreetName>
-            <cbc:AdditionalStreetName>Dept X</cbc:AdditionalStreetName>
+            <cbc:AdditionalStreetName/>
             <cbc:CityName>Oslo</cbc:CityName>
             <cbc:PostalZone>0612</cbc:PostalZone>
-            <cbc:CountrySubentity>District A</cbc:CountrySubentity>
+            <cbc:CountrySubentity/>
             <cac:AddressLine>
                <cbc:Line>3rd line</cbc:Line>
             </cac:AddressLine>
@@ -147,54 +147,54 @@
       <cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
       <cbc:MinimumOrderQuantity unitCode="C62">1</cbc:MinimumOrderQuantity>
       <cbc:MaximumOrderQuantity unitCode="C62">100</cbc:MaximumOrderQuantity>
-      <cbc:WarrantyInformation>One year....</cbc:WarrantyInformation>
+      <cbc:WarrantyInformation/>
       <cbc:PackLevelCode>TU</cbc:PackLevelCode>
       <cac:LineValidityPeriod>
          <cbc:StartDate>2018-05-31</cbc:StartDate>
          <cbc:EndDate>2019-05-31</cbc:EndDate>
       </cac:LineValidityPeriod>
       <cac:ItemComparison>
-         <cbc:PriceAmount currencyID="EUR">7.45</cbc:PriceAmount>
-         <cbc:Quantity unitCode="C62">1</cbc:Quantity>
+         <cbc:PriceAmount currencyID="EUR"/>
+         <cbc:Quantity unitCode="unitCode Standard unit of measure The standard unit of measure used to enable comparison of item price to other items.See guideline on Items and packing units in a catalogue. tir19-085 UNECERec20"/>
       </cac:ItemComparison>
       <cac:ComponentRelatedItem>
-         <cbc:ID>212</cbc:ID>
-         <cbc:Quantity unitCode="XCS">12</cbc:Quantity>
+         <cbc:ID/>
+         <cbc:Quantity unitCode="XCS"/>
       </cac:ComponentRelatedItem>
       <cac:AccessoryRelatedItem>
-         <cbc:ID>2121</cbc:ID>
-         <cbc:Quantity unitCode="XCS">3</cbc:Quantity>
+         <cbc:ID/>
+         <cbc:Quantity unitCode="XCS"/>
       </cac:AccessoryRelatedItem>
       <cac:RequiredRelatedItem>
-         <cbc:ID>1122</cbc:ID>
-         <cbc:Quantity unitCode="XCS">3</cbc:Quantity>
+         <cbc:ID/>
+         <cbc:Quantity unitCode="XCS"/>
       </cac:RequiredRelatedItem>
       <cac:ReplacedRelatedItem>
-         <cbc:ID>4122</cbc:ID>
-         <cbc:Quantity unitCode="XCS">1</cbc:Quantity>
+         <cbc:ID/>
+         <cbc:Quantity unitCode="XCS"/>
       </cac:ReplacedRelatedItem>
       <cac:RequiredItemLocationQuantity>
-         <cbc:LeadTimeMeasure unitCode="DAY">3</cbc:LeadTimeMeasure>
-         <cbc:MinimumQuantity unitCode="XCS">1</cbc:MinimumQuantity>
-         <cbc:MaximumQuantity unitCode="XCS">240</cbc:MaximumQuantity>
+         <cbc:LeadTimeMeasure unitCode="XCS"/>
+         <cbc:MinimumQuantity unitCode="XCS"/>
+         <cbc:MaximumQuantity unitCode="XCS"/>
          <cac:ApplicableTerritoryAddress>
-            <cbc:StreetName>Main street</cbc:StreetName>
-            <cbc:AdditionalStreetName>No 212</cbc:AdditionalStreetName>
-            <cbc:CityName>Dublin</cbc:CityName>
-            <cbc:PostalZone>234432</cbc:PostalZone>
-            <cbc:CountrySubentity>Dublin NW</cbc:CountrySubentity>
+            <cbc:StreetName/>
+            <cbc:AdditionalStreetName/>
+            <cbc:CityName/>
+            <cbc:PostalZone/>
+            <cbc:CountrySubentity/>
             <cac:AddressLine>
-               <cbc:Line>Building F</cbc:Line>
+               <cbc:Line/>
             </cac:AddressLine>
             <cac:Country>
-               <cbc:IdentificationCode>GB</cbc:IdentificationCode>
+               <cbc:IdentificationCode>DK</cbc:IdentificationCode>
             </cac:Country>
          </cac:ApplicableTerritoryAddress>
          <cac:Price>
-            <cbc:PriceAmount currencyID="EUR">6.98</cbc:PriceAmount>
+            <cbc:PriceAmount currencyID="EUR"/>
             <cbc:BaseQuantity unitCode="XCS">1</cbc:BaseQuantity>
-            <cbc:PriceType>CAT</cbc:PriceType>
-            <cbc:OrderableUnitFactorRate>1</cbc:OrderableUnitFactorRate>
+            <cbc:PriceType/>
+            <cbc:OrderableUnitFactorRate/>
             <cac:ValidityPeriod>
                <cbc:StartDate>2018-05-31</cbc:StartDate>
                <cbc:EndDate>2019-05-31</cbc:EndDate>
@@ -204,10 +204,10 @@
       <cac:Item>
          <cbc:Description>Office chair by John Doe.</cbc:Description>
          <cbc:PackQuantity unitCode="XCS">30</cbc:PackQuantity>
-         <cbc:PackSizeNumeric>1</cbc:PackSizeNumeric>
+         <cbc:PackSizeNumeric/>
          <cbc:Name>Office chair</cbc:Name>
          <cbc:Keyword>Toothpaste</cbc:Keyword>
-         <cbc:BrandName>Johnson's</cbc:BrandName>
+         <cbc:BrandName/>
          <cac:BuyersItemIdentification>
             <cbc:ID>111111</cbc:ID>
          </cac:BuyersItemIdentification>
@@ -222,8 +222,8 @@
          </cac:StandardItemIdentification>
          <cac:ItemSpecificationDocumentReference>
             <cbc:ID>12</cbc:ID>
-            <cbc:DocumentTypeCode>4</cbc:DocumentTypeCode>
-            <cbc:DocumentDescription>Test report</cbc:DocumentDescription>
+            <cbc:DocumentTypeCode/>
+            <cbc:DocumentDescription/>
             <cac:Attachment>
                <cbc:EmbeddedDocumentBinaryObject mimeCode="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
                                                  filename="Hours-spent.xls">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</cbc:EmbeddedDocumentBinaryObject>
@@ -236,14 +236,14 @@
             <cbc:IdentificationCode>DK</cbc:IdentificationCode>
          </cac:OriginCountry>
          <cac:CommodityClassification>
-            <cbc:ItemClassificationCode listID="MP" listVersionID="20.0601" name="Office furniture">AZ657</cbc:ItemClassificationCode>
+            <cbc:ItemClassificationCode listID="MP" listVersionID="20.0601" name="Office furniture"/>
          </cac:CommodityClassification>
          <cac:TransactionConditions>
-            <cbc:ActionCode>NON_RETURNABLE</cbc:ActionCode>
+            <cbc:ActionCode/>
          </cac:TransactionConditions>
          <cac:HazardousItem>
-            <cbc:UNDGCode>ADR</cbc:UNDGCode>
-            <cbc:HazardClassID>ZZ545</cbc:HazardClassID>
+            <cbc:UNDGCode/>
+            <cbc:HazardClassID/>
          </cac:HazardousItem>
          <cac:ClassifiedTaxCategory>
             <cbc:ID>S</cbc:ID>
@@ -257,7 +257,7 @@
                     schemeVersionID="2022"
                     schemeDataURI="https://define.cobuilder.no/77e416eb-a363-4258-a04e-171d843a6460/2022/">77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
             <cbc:Name>Size</cbc:Name>
-            <cbc:NameCode listID="Size">XL</cbc:NameCode>
+            <cbc:NameCode listID="listID Name code list id. An identifier for the code list used for the Name code, this is bilaterally agreed"/>
             <cbc:Value>XXL</cbc:Value>
             <cbc:ValueQuantity unitCode="XCS">5</cbc:ValueQuantity>
             <cbc:ValueQualifier>Allergen</cbc:ValueQualifier>
@@ -289,10 +289,10 @@
          </cac:Certificate>
          <cac:Dimension>
             <cbc:AttributeID>LN</cbc:AttributeID>
-            <cbc:Measure unitCode="CMT">45</cbc:Measure>
-            <cbc:Description>Height</cbc:Description>
-            <cbc:MinimumMeasure unitCode="CMT">43</cbc:MinimumMeasure>
-            <cbc:MaximumMeasure unitCode="CMT">47</cbc:MaximumMeasure>
+            <cbc:Measure unitCode="CMT"/>
+            <cbc:Description/>
+            <cbc:MinimumMeasure unitCode="CMT"/>
+            <cbc:MaximumMeasure unitCode="CMT"/>
          </cac:Dimension>
       </cac:Item>
    </cac:CatalogueLine>
