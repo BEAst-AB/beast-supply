@@ -1,14 +1,17 @@
-<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-		   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-		   xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue:3</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3</cbc:ProfileID>
+	
 	<cbc:ID>1387</cbc:ID>
 	<cbc:IssueDate>2024-08-26</cbc:IssueDate>
+	
 	<cac:ValidityPeriod>
 		<cbc:StartDate>2024-08-26</cbc:StartDate>
 	</cac:ValidityPeriod>
+	
 	<cac:ProviderParty>
-		<cbc:EndpointID schemeID="0088">5568654031</cbc:EndpointID>
+		<cbc:EndpointID schemeID="0007">5568654031</cbc:EndpointID>
 		<cac:PostalAddress>
 			<cac:Country>
 				<cbc:IdentificationCode>SE</cbc:IdentificationCode>
@@ -18,8 +21,9 @@
 			<cbc:RegistrationName>Valbo Trä AB</cbc:RegistrationName>
 		</cac:PartyLegalEntity>
 	</cac:ProviderParty>
+	
 	<cac:ReceiverParty>
-		<cbc:EndpointID schemeID="0088">5568654031</cbc:EndpointID>
+		<cbc:EndpointID schemeID="0007">5568654031</cbc:EndpointID>
 		<cac:PostalAddress>
 			<cac:Country>
 				<cbc:IdentificationCode>SE</cbc:IdentificationCode>
@@ -29,10 +33,15 @@
 			<cbc:RegistrationName>Valbo Trä AB</cbc:RegistrationName>
 		</cac:PartyLegalEntity>
 	</cac:ReceiverParty>
+	
 	<cac:CatalogueLine>
 		<cbc:ID>1</cbc:ID>
 		<cac:Item>
 			<cbc:Name>Konstruktionsvirke C14 Gran Obehandlad 45x70</cbc:Name>
+			<cac:SellersItemIdentification>
+				<cbc:ID>12345</cbc:ID>
+			</cac:SellersItemIdentification>
+
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Svenskt Trä-ID</cbc:Name>
 				<cbc:Value>SE00242</cbc:Value>
