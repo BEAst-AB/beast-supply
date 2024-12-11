@@ -5,13 +5,13 @@
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
   <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order:3</cbc:CustomizationID>
   <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:order_only:3</cbc:ProfileID>
-  <cbc:ID>5</cbc:ID>
-  <cbc:IssueDate>2013-07-01</cbc:IssueDate>
+  <cbc:ID>1</cbc:ID>
+  <cbc:IssueDate>2024-08-28</cbc:IssueDate>
   <cbc:IssueTime>05:10:10</cbc:IssueTime>
-  <cbc:DocumentCurrencyCode listID="ISO4217">EUR</cbc:DocumentCurrencyCode>
-  <cbc:AccountingCost>MAFO</cbc:AccountingCost>
+  <cbc:OrderTypeCode>227</cbc:OrderTypeCode>
+  <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
   <cac:ValidityPeriod>
-    <cbc:EndDate>2013-07-30</cbc:EndDate>
+    <cbc:EndDate>2024-08-28</cbc:EndDate>
   </cac:ValidityPeriod>
   <cac:Contract>
     <cbc:ID>C1</cbc:ID>
@@ -31,7 +31,7 @@
         <cac:RegistrationAddress>
           <cbc:CityName>Eurocity</cbc:CityName>
           <cac:Country>
-            <cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
+            <cbc:IdentificationCode>SE</cbc:IdentificationCode>
           </cac:Country>
         </cac:RegistrationAddress>
       </cac:PartyLegalEntity>
@@ -62,57 +62,38 @@
         </cac:Country>
       </cac:PostalAddress>
       <cac:PartyLegalEntity>
-        <cbc:RegistrationName>Translation Services AS</cbc:RegistrationName>
+        <cbc:RegistrationName>The Supplier AB</cbc:RegistrationName>
       </cac:PartyLegalEntity>
     </cac:Party>
   </cac:SellerSupplierParty>
-  <cac:Delivery>
-    <cac:DeliveryLocation>
-      <cac:Address>
-        <cbc:StreetName>Lower street 5</cbc:StreetName>
-        <cbc:AdditionalStreetName>Reception</cbc:AdditionalStreetName>
-        <cbc:CityName>Oslo</cbc:CityName>
-        <cbc:PostalZone>11120</cbc:PostalZone>
-        <cac:Country>
-          <cbc:IdentificationCode listID="ISO3166-1:Alpha2">NO</cbc:IdentificationCode>
-        </cac:Country>
-      </cac:Address>
-    </cac:DeliveryLocation>
-    <cac:RequestedDeliveryPeriod>
-      <cbc:StartDate>2013-07-15</cbc:StartDate>
-      <cbc:EndDate>2013-07-16</cbc:EndDate>
-    </cac:RequestedDeliveryPeriod>
-    <cac:DeliveryParty>
-      <cac:PartyName>
-        <cbc:Name>Hospital Tourist Department</cbc:Name>
-      </cac:PartyName>
-      <cac:Contact>
-        <cbc:Name>John</cbc:Name>
-        <cbc:Telephone>+465558877523</cbc:Telephone>
-        <cbc:ElectronicMail>john@cityhospital.se</cbc:ElectronicMail>
-      </cac:Contact>
-    </cac:DeliveryParty>
-  </cac:Delivery>
   <cac:TaxTotal>
-	<cbc:TaxAmount currencyID="EUR">0</cbc:TaxAmount>
+	<cbc:TaxAmount currencyID="EUR">100</cbc:TaxAmount>
   </cac:TaxTotal>
   <cac:AnticipatedMonetaryTotal>
     <cbc:LineExtensionAmount currencyID="EUR">400</cbc:LineExtensionAmount>
-    <cbc:PayableAmount currencyID="EUR">400</cbc:PayableAmount>
+    <cbc:PayableAmount currencyID="EUR">500</cbc:PayableAmount>
   </cac:AnticipatedMonetaryTotal>
   <cac:OrderLine>
     <cac:LineItem>
       <cbc:ID>1</cbc:ID>
-      <cbc:Quantity unitCode="DAY" unitCodeListID="UNECERec20">1</cbc:Quantity>
+      <cbc:Quantity unitCode="NAR">10</cbc:Quantity>
       <cbc:LineExtensionAmount currencyID="EUR">400</cbc:LineExtensionAmount>
-      <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
       <cac:Price>
-        <cbc:PriceAmount currencyID="EUR">400</cbc:PriceAmount>
+        <cbc:PriceAmount currencyID="EUR">40</cbc:PriceAmount>
       </cac:Price>
-      <cac:Item>
-        <cbc:Description>Translation service Swedish - Spanish</cbc:Description>
-        <cbc:Name>Translation</cbc:Name>
-      </cac:Item>
+       <cac:Item>
+        <cbc:Name>Surgical gloves, box of 100 pairs</cbc:Name>
+        <cac:StandardItemIdentification>
+          <cbc:ID schemeID="0160">05704066204093</cbc:ID>
+        </cac:StandardItemIdentification>
+        <cac:ClassifiedTaxCategory>
+          <cbc:ID>S</cbc:ID>
+          <cbc:Percent>25</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+          </cac:TaxScheme>
+        </cac:ClassifiedTaxCategory>
+        </cac:Item>
     </cac:LineItem>
   </cac:OrderLine>
-</Order>
+ </Order>
