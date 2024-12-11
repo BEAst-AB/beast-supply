@@ -27,15 +27,15 @@ jobs:
         run: |
           if [[ -z "$(git status --porcelain)" ]]; then
             echo "No changes to commit."
-            echo "::set-output name=changes::false"
+            echo "changes=false" >> $GITHUB_ENV
           else
             echo "Changes detected."
-            echo "::set-output name=changes::true"
+            echo "changes=true" >> $GITHUB_ENV
           fi
 
-      # Step 4: Commit only if there are changes
+      # Commit only if there are changes
       - name: Commit the generated files
-        if: steps.check_changes.outputs.changes == 'true'
+        if: env.changes == 'true'
         uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
