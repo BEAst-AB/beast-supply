@@ -1,5 +1,14 @@
 #!/bin/bash
 
+BILLINGREPO="https://github.com/OpenPEPPOL/peppol-bis-invoice-3.git"
+BILLINGBRANCH="2024-q4-release"
+LOGISTICSREPO="https://github.com/OpenPEPPOL/Logistics-bis.git"
+LOGISTICSBRANCH="2024-Q4"
+POACCREPO="https://github.com/OpenPEPPOL/poacc-upgrade-3.git"
+POACCBRANCH="2024-q4-release"
+
+
+
 # Function to clone and copy files
 sync_repo() {
   local repo_url=$1
@@ -16,6 +25,16 @@ sync_repo() {
 }
 
 # Sync files from multiple repositories without './' in target path
-sync_repo "https://github.com/OpenPEPPOL/poacc-upgrade-3.git" "2024-q4-release" "rules/sch" "rules/sch"
-sync_repo "https://github.com/OpenPEPPOL/peppol-bis-invoice-3.git" "2024-q4-release" "rules/sch" "rules/sch"
-
+# Rules
+sync_repo $BILLINGREPO $BILLINGBRANCH "rules/sch" "rules/sch"
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/sch" "rules/sch"
+sync_repo $POACCREPO $POACCBRANCH "rules/sch" "rules/sch"
+# Examples
+sync_repo $POACCREPO $POACCBRANCH "rules/examples/Cataloge wo response use cases" "rules/examples/Cataloge wo response use cases"
+sync_repo $POACCREPO $POACCBRANCH "rules/examples/Order use cases" "rules/examples/Order use cases"
+sync_repo $POACCREPO $POACCBRANCH "rules/examples/Order-response use cases" "rules/examples/Order-response use cases"
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH  "rules/examples" "rules/examples"
+# Code lists
+sync_repo $BILLINGREPO $BILLINGBRANCH "structure/codelist" "structure/codelist"
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "structure/codelist" "structure/codelist"
+sync_repo $POACCREPO $POACCBRANCH "structure/codelist" "structure/codelist"
