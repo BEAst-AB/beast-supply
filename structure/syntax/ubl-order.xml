@@ -1052,10 +1052,12 @@
                   <Value type="EXAMPLE">7300010000001</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
+
                      <Name>
 								Buyer legal registration identifier identification scheme
 								identifier
 							</Name>
+
                      <Description>The identification scheme identifier of the buyer legal registration identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
@@ -1300,6 +1302,7 @@
 								Deliver party registration identifier identification scheme
 								identifier
 							</Name>
+
                      <Description>The identification scheme identifier of the deliverparty identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
@@ -2286,28 +2289,34 @@
                      <Value type="EXAMPLE">KO2012140200</Value>
                      <Attribute>
                         <Term>listID</Term>
+
                         <Name>
 									Item classification identifier identification scheme
 									identifier
 								</Name>
                         <Description>BEAst: For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID "BEAST:4.0", i.e. mutually agreed.
+
  Peppol: The identification scheme identifier of the Item classification identifier</Description>
                         <Reference type="CODE_LIST">UNCL7143</Reference>
                         <Value type="EXAMPLE">ZZZ</Value>
                      </Attribute>
                      <Attribute usage="Optional">
                         <Term>listVersionID</Term>
+
                         <Name>
 									Item classification identifier version identification scheme
 									identifier
 								</Name>
+
                         <Description>The identification scheme version identifier of the Item classification identifier</Description>
                         <Value type="EXAMPLE">3.0.2</Value>
                      </Attribute>
                      <Attribute usage="Optional">
                         <Term>name</Term>
                         <Name>Clear text name equivalent of classification code</Name>
+
                         <Description>BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "SBMI", "SA", "AI", “ME” and "CoClass”. "SBMI" = Sveriges Bergmaterialindustrier, "SA" = Sveriges Åkeriföretag, "AI" = Återvinningsindustrierna, “ME” = Maskinentreprenörerna.
+
  Peppol: The textual equivalent of the code value</Description>
                         <Value type="EXAMPLE">SBMI</Value>
                      </Attribute>

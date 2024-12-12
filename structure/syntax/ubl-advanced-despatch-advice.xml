@@ -156,6 +156,7 @@
                   <Term>filename</Term>
                   <Name>Attached document filename</Name>
                   <Description>BEAst: filename refers to T6476.
+
  Peppol: The file name of the attached document</Description>
                   <Value type="EXAMPLE">Hours-spent.pdf</Value>
                </Attribute>
@@ -217,7 +218,9 @@
                   <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
+
                      <Description>BEAst: Strongly recommended to use even though it is not mandatory in Peppol.
+
  Peppol: Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
@@ -471,7 +474,9 @@
                   <Attribute usage="optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
+
                      <Description>BEAst: Strongly recommended to use even though it is not mandatory in Peppol.
+
  Peppol: Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
@@ -704,7 +709,9 @@
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
+
                      <Description>BEAst: Strongly recommended to use even though it is not mandatory in Peppol.
+
  Peppol: Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
@@ -929,7 +936,9 @@
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
+
                      <Description>BEAst: Strongly recommended to use even though it is not mandatory in Peppol.
+
  Peppol: Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
@@ -1153,7 +1162,9 @@
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
+
                      <Description>BEAst: Strongly recommended to use even though it is not mandatory in Peppol.
+
  Peppol: Scheme identifier for party identification</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
@@ -1379,8 +1390,10 @@
                <Attribute usage="Mandatory">
                   <Term>listID</Term>
                   <Name>Identifier for codelist for handling code</Name>
+
                   <Description>An identifier for the codelist used for the handling code</Description>
                   <Value type="EXAMPLE">BeastHandlingCode</Value>
+
                </Attribute>
             </Element>
             <Element cardinality="0..1">
@@ -1412,7 +1425,9 @@
                      <Attribute usage="Optional">
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
+
                         <Description>BEAst: It is recommended to use the schemeID.
+
  Peppol: Scheme identifier for party identification</Description>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">0088</Value>
@@ -1631,7 +1646,9 @@
                         <Term>listID</Term>
                         <Name>List Identifier</Name>
                         <Description>Identifies the codelist.</Description>
+
                         <Value type="EXAMPLE">ClimateDatabase</Value>
+
                      </Attribute>
                      <Attribute usage="Optional">
                         <Term>listAgencyID</Term>
@@ -1643,7 +1660,9 @@
                         <Term>listVersionID</Term>
                         <Name>List Version Identifier</Name>
                         <Description>Identifies the version of the List.</Description>
+
                         <Value type="EXAMPLE">02.05.000</Value>
+
                      </Attribute>
                   </Element>
                   <Element cardinality="0..1">
@@ -1672,7 +1691,9 @@
                         <Attribute>
                            <Term>unitCode</Term>
                            <Name>Measure unit of measure</Name>
+
                            <Description>BEAst: unitCode refers to T6706.
+
  Peppol: The unit of measure that applies to the measure.</Description>
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">LTR</Value>
@@ -1776,7 +1797,9 @@
                         <Term>name</Term>
                         <Name>Name of environmental emissions type</Name>
                         <Value type="EXAMPLE">Carbon Dioxide</Value>
+
                         <Description>BEAst: The textual equivalent for the code.</Description>
+
                      </Attribute>
                   </Element>
                   <Element cardinality="1..1">
@@ -1941,7 +1964,9 @@
                      <Name>Scheme identifier</Name>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
+
                      <Description>BEAst: Strongly recommended to use even though it is not mandatory in Peppol.</Description>
+
                   </Attribute>
                </Element>
                <Element cardinality="0..1">
@@ -2923,6 +2948,7 @@
                         <Term>unitCode</Term>
                         <Name>Measure unit of measure</Name>
                         <Description>BEAst: Measure Unit NeB Type (T6706)
+
  Peppol: The unit of measure that applies to the measure.</Description>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">MTR</Value>
@@ -3102,7 +3128,9 @@
                   <Attribute>
                      <Term>filename</Term>
                      <Name>Attached document filename</Name>
+
                      <Description>BEAst: filename refers to T6476.
+
  Peppol: The file name of the attached document.</Description>
                      <Value type="EXAMPLE">Hours-spent.pdf</Value>
                   </Attribute>
@@ -3228,7 +3256,9 @@
                      <Term>listID</Term>
                      <Name>Item classification identifier identification scheme
 								identifier</Name>
+
                      <Description>BEAst: For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID the version of the codelist in attribute "name", i.e. mutually agreed.
+
  Peppol: The identification scheme identifier of the Item classification identifier.</Description>
                      <Reference type="CODE_LIST">UNCL7143</Reference>
                      <Value type="EXAMPLE">ZZZ</Value>
@@ -3243,7 +3273,9 @@
                   <Attribute usage="Optional">
                      <Term>name</Term>
                      <Name>Clear text name equivalent of classification code</Name>
+
                      <Description>BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "SBMI", "SA", "AI", “ME” and "CoClass”. "SBMI" = Sveriges Bergmaterialindustrier, "SA" = Sveriges Åkeriföretag, "AI" = Återvinningsindustrierna, “ME” = Maskinentreprenörerna. Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "NOBB", "RT", "TUN", "Finfo", "RSK_SE", "RSK_NO", "ENO_SE", "ENO_NO", "SGTIN".
+
  Peppol: The name of the Identification scheme identifier when @listID = ZZZ. Must be provided when @listID = ZZZ.</Description>
                      <Value type="EXAMPLE">SBMI</Value>
                   </Attribute>
