@@ -5548,13 +5548,13 @@
          </Row>
          <Row>
             <Cell>
-               <Data ss:Type="String">0..1</Data>
+               <Data ss:Type="String">0..n</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">•  •  •  cac:TransactionConditions</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contracted item</Data>
+               <Data ss:Type="String">Transaction condition</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -5580,10 +5580,10 @@
                <Data ss:Type="String">•  •  •  •  cbc:ActionCode</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Contracted item indicator</Data>
+               <Data ss:Type="String">Contracted item indicator, Non-returnable item indicator</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The code CT indicates that the item is offered in accordance to the referenced contract.</Data>
+               <Data ss:Type="String">The code CT indicates that the item is offered in accordance to the referenced contract (tir19-p027). The code NON_RETURNABLE indicates that the item cannot be returned (tir19-p049).</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
