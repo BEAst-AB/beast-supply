@@ -273,7 +273,7 @@
                <Data ss:Type="String">Invoice note</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A textual note that gives unstructured information that is relevant to the Invoice as a whole.Such as the reason for any correction or assignment note in case the invoice has been factored.</Data>
+               <Data ss:Type="String">A textual note that gives unstructured information that is relevant to the Invoice as a whole.Such as the reason for any correction or assignment note in case the invoice has been factored. The element is not repeatable, except when both the Buyer and Seller are German, in which case the element can be repeated to meet specific legal requirements.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">FAKTURASAMMANSTÄLLNING Kostnadsslag 43790 Summa 409.20</Data>
@@ -3887,10 +3887,10 @@
                <Data ss:Type="String">Deliver to address line 3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Used for grid coordinates or building details Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String">BEAst: Used for any other additional address information like Building (T5004) or a specific part of the workplace. Can be used for detailed information by separating the information by # . Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Hus 1</Data>
+               <Data ss:Type="String">Lundbyleden#Område C2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address/cac:AddressLine/cbc:Line</Data>

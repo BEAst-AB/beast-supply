@@ -2873,7 +2873,7 @@
                <Data ss:Type="String">Originator name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: T5001 or T6324/T6325/T6424, Name or coordinates separated with "/". For coordinates use the format WGS84, degrees with decimals. Peppol: The name of the party.</Data>
+               <Data ss:Type="String">BEAst: T5001 or T6324/T6325/T6424, Name or coordinates separated by #. For coordinates use the format WGS84, degrees with decimals. Peppol: The name of the party.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Nilssons</Data>
@@ -3676,8 +3676,10 @@
                <Data ss:Type="String">•  •  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Buyer legal registration identifier identification scheme
-								identifier</Data>
+               <Data ss:Type="String">
+								Buyer legal registration identifier identification scheme
+								identifier
+							</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">The identification scheme identifier of the buyer legal registration identifier.</Data>
@@ -4226,10 +4228,10 @@
                <Data ss:Type="String">Address line 3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Used for all other address information. Coordinates (T6321/T6322) are given in format WGS84, degrees with decimals, separated with a "/". Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String">BEAst: Used for all other address information. Coordinates (T6321/T6322) are given in format WGS84, degrees with decimals, separated by #. Can be used for detailed information by separating the information by #. Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The Roundabout</Data>
+               <Data ss:Type="String">Lundbyleden#Område C2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:Delivery/cac:DeliveryLocation/cac:Address/cac:AddressLine/cbc:Line</Data>
@@ -4509,8 +4511,10 @@
                <Data ss:Type="String">•  •  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Deliver party registration identifier identification scheme
-								identifier</Data>
+               <Data ss:Type="String">
+								Deliver party registration identifier identification scheme
+								identifier
+							</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">The identification scheme identifier of the deliverparty identifier.</Data>
@@ -7708,8 +7712,10 @@
                <Data ss:Type="String">•  •  •  •  •  •  @listID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Item classification identifier identification scheme
-									identifier</Data>
+               <Data ss:Type="String">
+									Item classification identifier identification scheme
+									identifier
+								</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">BEAst: For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID "BEAST:4.0", i.e. mutually agreed. Peppol: The identification scheme identifier of the Item classification identifier</Data>
@@ -7735,8 +7741,10 @@
                <Data ss:Type="String">•  •  •  •  •  •  @listVersionID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Item classification identifier version identification scheme
-									identifier</Data>
+               <Data ss:Type="String">
+									Item classification identifier version identification scheme
+									identifier
+								</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">The identification scheme version identifier of the Item classification identifier</Data>
@@ -7938,6 +7946,110 @@
          </Row>
          <Row>
             <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">ID of the property if assigned by an Agency</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">77e416eb-a363-4258-a04e-171d843a6460</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">30200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">ISO22057</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:ID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">30300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  •  @schemeVersionID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme version identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">2022</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:ID/schemeVersionID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">30400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  •  @schemeDataURI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme Data URI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:ID/schemeDataURI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">30500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
                <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
@@ -7959,7 +8071,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">30200</Data>
+               <Data ss:Type="Number">30600</Data>
             </Cell>
          </Row>
          <Row>
@@ -7985,7 +8097,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">30300</Data>
+               <Data ss:Type="Number">30700</Data>
             </Cell>
          </Row>
          <Row>
@@ -8011,7 +8123,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">30400</Data>
+               <Data ss:Type="Number">30800</Data>
             </Cell>
          </Row>
          <Row>
@@ -8037,7 +8149,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">30500</Data>
+               <Data ss:Type="Number">30900</Data>
             </Cell>
          </Row>
          <Row>
@@ -8063,7 +8175,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">30600</Data>
+               <Data ss:Type="Number">31000</Data>
             </Cell>
          </Row>
          <Row>
@@ -8089,7 +8201,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">30700</Data>
+               <Data ss:Type="Number">31100</Data>
             </Cell>
          </Row>
          <Row>
@@ -8115,7 +8227,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">30800</Data>
+               <Data ss:Type="Number">31200</Data>
             </Cell>
          </Row>
          <Row>
@@ -8141,7 +8253,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">30900</Data>
+               <Data ss:Type="Number">31300</Data>
             </Cell>
          </Row>
          <Row>
@@ -8167,7 +8279,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">31000</Data>
+               <Data ss:Type="Number">31400</Data>
             </Cell>
          </Row>
          <Row>
@@ -8193,7 +8305,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">31100</Data>
+               <Data ss:Type="Number">31500</Data>
             </Cell>
          </Row>
          <Row>
@@ -8219,7 +8331,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">31200</Data>
+               <Data ss:Type="Number">31600</Data>
             </Cell>
          </Row>
       </Table>

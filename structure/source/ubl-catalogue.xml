@@ -1,11 +1,335 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 
-<ubl:Catalogue 
- xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
- xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
- xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
-  <?DocumentTerm Catalogue?>
+<ubl:Catalogue  xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+
+	<?DocumentTerm Catalogue?>
 	<?Property key="sch:prefix" PEPPOL-T19?>
 	<?Property key="sch:identifier" T19-basic?>
 
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue:3</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3</cbc:ProfileID>
+
+	<cbc:ID></cbc:ID>
+	<cbc:ActionCode></cbc:ActionCode>
+	<cbc:Name></cbc:Name>
+	<cbc:IssueDate></cbc:IssueDate>
+	<cbc:VersionID></cbc:VersionID>
+
+	<cac:ValidityPeriod>
+		<cbc:StartDate></cbc:StartDate>
+		<cbc:EndDate></cbc:EndDate>
+	</cac:ValidityPeriod>
+
+	<cac:ReferencedContract>
+		<cbc:ID></cbc:ID>
+	</cac:ReferencedContract>
+
+	<cac:SourceCatalogueReference>
+		<cbc:ID></cbc:ID>
+	</cac:SourceCatalogueReference>
+
+	<cac:ProviderParty>
+		<cbc:EndpointID schemeID=""></cbc:EndpointID>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID=""></cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PostalAddress>
+			<cbc:StreetName></cbc:StreetName>
+			<cbc:AdditionalStreetName></cbc:AdditionalStreetName>
+			<cbc:CityName></cbc:CityName>
+			<cbc:PostalZone></cbc:PostalZone>
+			<cbc:CountrySubentity>District A</cbc:CountrySubentity>
+			<cac:AddressLine>
+				<cbc:Line></cbc:Line>
+			</cac:AddressLine>
+			<cac:Country>
+				<cbc:IdentificationCode></cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName></cbc:RegistrationName>
+			<cbc:CompanyID schemeID=""></cbc:CompanyID>
+			<cac:RegistrationAddress>
+				<cbc:CityName></cbc:CityName>
+				<cac:Country>
+					<cbc:IdentificationCode></cbc:IdentificationCode>
+				</cac:Country>
+			</cac:RegistrationAddress>
+		</cac:PartyLegalEntity>
+	</cac:ProviderParty>
+
+	<cac:ReceiverParty>
+		<cbc:EndpointID schemeID=""></cbc:EndpointID>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID=""></cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PostalAddress>
+			<cbc:StreetName></cbc:StreetName>
+			<cbc:AdditionalStreetName></cbc:AdditionalStreetName>
+			<cbc:CityName></cbc:CityName>
+			<cbc:PostalZone></cbc:PostalZone>
+			<cbc:CountrySubentity></cbc:CountrySubentity>
+			<cac:AddressLine>
+				<cbc:Line></cbc:Line>
+			</cac:AddressLine>
+			<cac:Country>
+				<cbc:IdentificationCode></cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName></cbc:RegistrationName>
+			<cbc:CompanyID schemeID=""></cbc:CompanyID>
+			<cac:RegistrationAddress>
+				<cbc:CityName></cbc:CityName>
+				<cac:Country>
+					<cbc:IdentificationCode></cbc:IdentificationCode>
+				</cac:Country>
+			</cac:RegistrationAddress>
+		</cac:PartyLegalEntity>
+	</cac:ReceiverParty>
+
+	<cac:SellerSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID=""></cbc:EndpointID>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID=""></cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name></cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName></cbc:StreetName>
+				<cbc:AdditionalStreetName>Ground floor</cbc:AdditionalStreetName>
+				<cbc:CityName></cbc:CityName>
+				<cbc:PostalZone></cbc:PostalZone>
+				<cbc:CountrySubentity>Region V</cbc:CountrySubentity>
+				<cac:AddressLine>
+					<cbc:Line></cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode></cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:Contact>
+				<cbc:Name></cbc:Name>
+				<cbc:Telephone></cbc:Telephone>
+				<cbc:ElectronicMail></cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:SellerSupplierParty>
+
+	<cac:ContractorCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID=""></cbc:EndpointID>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID=""></cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name></cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName></cbc:StreetName>
+				<cbc:AdditionalStreetName>Dept X</cbc:AdditionalStreetName>
+				<cbc:CityName></cbc:CityName>
+				<cbc:PostalZone></cbc:PostalZone>
+				<cbc:CountrySubentity>District A</cbc:CountrySubentity>
+				<cac:AddressLine>
+					<cbc:Line></cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode></cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:Contact>
+				<cbc:Name></cbc:Name>
+				<cbc:Telephone></cbc:Telephone>
+				<cbc:ElectronicMail></cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:ContractorCustomerParty>
+
+	<cac:TradingTerms>
+		<cbc:Information></cbc:Information>
+	</cac:TradingTerms>
+
+	<cac:CatalogueLine>
+		<cbc:ID></cbc:ID>
+		<cbc:ActionCode></cbc:ActionCode>
+		<cbc:OrderableIndicator></cbc:OrderableIndicator>
+		<cbc:OrderableUnit></cbc:OrderableUnit>
+		<cbc:ContentUnitQuantity unitCode=""></cbc:ContentUnitQuantity>
+		<cbc:OrderQuantityIncrementNumeric></cbc:OrderQuantityIncrementNumeric>
+		<cbc:MinimumOrderQuantity unitCode=""></cbc:MinimumOrderQuantity>
+		<cbc:MaximumOrderQuantity unitCode=""></cbc:MaximumOrderQuantity>
+		<cbc:WarrantyInformation>One year....</cbc:WarrantyInformation>
+		<cbc:PackLevelCode></cbc:PackLevelCode>
+
+		<cac:LineValidityPeriod>
+			<cbc:StartDate></cbc:StartDate>
+			<cbc:EndDate></cbc:EndDate>
+		</cac:LineValidityPeriod>
+
+		<cac:ItemComparison>
+			<cbc:PriceAmount currencyID="">7.45</cbc:PriceAmount>
+			<cbc:Quantity unitCode="C62">1</cbc:Quantity>
+		</cac:ItemComparison>
+
+		<cac:ComponentRelatedItem>
+			<cbc:ID>212</cbc:ID>
+			<cbc:Quantity unitCode="">12</cbc:Quantity>
+		</cac:ComponentRelatedItem>
+
+		<cac:AccessoryRelatedItem>
+			<cbc:ID>2121</cbc:ID>
+			<cbc:Quantity unitCode="">3</cbc:Quantity>
+		</cac:AccessoryRelatedItem>
+
+		<cac:RequiredRelatedItem>
+			<cbc:ID>1122</cbc:ID>
+			<cbc:Quantity unitCode="">3</cbc:Quantity>
+		</cac:RequiredRelatedItem>
+
+		<cac:ReplacedRelatedItem>
+			<cbc:ID>4122</cbc:ID>
+			<cbc:Quantity unitCode="">1</cbc:Quantity>
+		</cac:ReplacedRelatedItem>
+
+		<cac:RequiredItemLocationQuantity>
+			<cbc:LeadTimeMeasure unitCode="DAY">3</cbc:LeadTimeMeasure>
+			<cbc:MinimumQuantity unitCode="">1</cbc:MinimumQuantity>
+			<cbc:MaximumQuantity unitCode="">240</cbc:MaximumQuantity>
+
+			<cac:ApplicableTerritoryAddress>
+				<cbc:StreetName>Main street</cbc:StreetName>
+				<cbc:AdditionalStreetName>No 212</cbc:AdditionalStreetName>
+				<cbc:CityName>Dublin</cbc:CityName>
+				<cbc:PostalZone>234432</cbc:PostalZone>
+				<cbc:CountrySubentity>Dublin NW</cbc:CountrySubentity>
+				<cac:AddressLine>
+					<cbc:Line>Building F</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode>GB</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:ApplicableTerritoryAddress>
+
+			<cac:Price>
+				<cbc:PriceAmount currencyID="">6.98</cbc:PriceAmount>
+				<cbc:BaseQuantity unitCode=""></cbc:BaseQuantity>
+				<cbc:PriceType>CAT</cbc:PriceType>
+				<cbc:OrderableUnitFactorRate>1</cbc:OrderableUnitFactorRate>
+				<cac:ValidityPeriod>
+					<cbc:StartDate></cbc:StartDate>
+					<cbc:EndDate></cbc:EndDate>
+				</cac:ValidityPeriod>
+			</cac:Price>
+		</cac:RequiredItemLocationQuantity>
+
+		<cac:Item>
+			<cbc:Description></cbc:Description>
+			<cbc:PackQuantity unitCode=""></cbc:PackQuantity>
+			<cbc:PackSizeNumeric>1</cbc:PackSizeNumeric>
+			<cbc:Name></cbc:Name>
+			<cbc:Keyword></cbc:Keyword>
+			<cbc:BrandName>Johnson's</cbc:BrandName>
+
+			<cac:BuyersItemIdentification>
+				<cbc:ID></cbc:ID>
+			</cac:BuyersItemIdentification>
+
+			<cac:SellersItemIdentification>
+				<cbc:ID></cbc:ID>
+			</cac:SellersItemIdentification>
+
+			<cac:ManufacturersItemIdentification>
+				<cbc:ID></cbc:ID>
+			</cac:ManufacturersItemIdentification>
+
+			<cac:StandardItemIdentification>
+				<cbc:ID schemeID=""></cbc:ID>
+			</cac:StandardItemIdentification>
+
+			<cac:ItemSpecificationDocumentReference>
+				<cbc:ID></cbc:ID>
+				<cbc:DocumentTypeCode>4</cbc:DocumentTypeCode>
+				<cbc:DocumentDescription>Test report</cbc:DocumentDescription>
+				<cac:Attachment>
+					<cbc:EmbeddedDocumentBinaryObject mimeCode="" filename=""></cbc:EmbeddedDocumentBinaryObject>
+					<cac:ExternalReference>
+						<cbc:URI></cbc:URI>
+					</cac:ExternalReference>
+				</cac:Attachment>
+			</cac:ItemSpecificationDocumentReference>
+
+			<cac:OriginCountry>
+				<cbc:IdentificationCode></cbc:IdentificationCode>
+			</cac:OriginCountry>
+
+			<cac:CommodityClassification>
+				<cbc:ItemClassificationCode listID="" listVersionID="" name="">AZ657</cbc:ItemClassificationCode>
+			</cac:CommodityClassification>
+
+			<cac:TransactionConditions>
+				<cbc:ActionCode>NON_RETURNABLE</cbc:ActionCode>
+			</cac:TransactionConditions>
+
+			<cac:HazardousItem>
+				<cbc:UNDGCode>ADR</cbc:UNDGCode>
+				<cbc:HazardClassID>ZZ545</cbc:HazardClassID>
+			</cac:HazardousItem>
+
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID></cbc:ID>
+				<cbc:Percent></cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID></cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="" schemeVersionID="" schemeDataURI=""></cbc:ID>
+				<cbc:Name></cbc:Name>
+				<cbc:NameCode listID="Size">XL</cbc:NameCode>
+				<cbc:Value></cbc:Value>
+				<cbc:ValueQuantity unitCode=""></cbc:ValueQuantity>
+				<cbc:ValueQualifier></cbc:ValueQualifier>
+			</cac:AdditionalItemProperty>
+
+			<cac:ManufacturerParty>
+				<cac:PartyName>
+					<cbc:Name>Manufacturer</cbc:Name>
+				</cac:PartyName>
+			</cac:ManufacturerParty>
+
+			<cac:ItemInstance>
+				<cbc:BestBeforeDate></cbc:BestBeforeDate>
+				<cac:LotIdentification>
+					<cbc:LotNumberID></cbc:LotNumberID>
+				</cac:LotIdentification>
+			</cac:ItemInstance>
+
+			<cac:Certificate>
+				<cbc:ID></cbc:ID>
+				<cbc:CertificateTypeCode></cbc:CertificateTypeCode>
+				<cbc:CertificateType></cbc:CertificateType>
+				<cbc:Remarks></cbc:Remarks>
+				<cac:IssuerParty>
+					<cac:PartyName>
+						<cbc:Name></cbc:Name>
+					</cac:PartyName>
+				</cac:IssuerParty>
+				<cac:DocumentReference>
+					<cbc:ID></cbc:ID>
+				</cac:DocumentReference>
+			</cac:Certificate>
+
+			<cac:Dimension>
+				<cbc:AttributeID></cbc:AttributeID>
+				<cbc:Measure unitCode="">45</cbc:Measure>
+				<cbc:Description>Height</cbc:Description>
+				<cbc:MinimumMeasure unitCode="CMT">43</cbc:MinimumMeasure>
+				<cbc:MaximumMeasure unitCode="CMT">47</cbc:MaximumMeasure>
+			</cac:Dimension>
+		</cac:Item>
+	</cac:CatalogueLine>
 </ubl:Catalogue>

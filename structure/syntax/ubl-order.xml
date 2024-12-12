@@ -821,7 +821,7 @@
                   <Term>cbc:Name</Term>
                   <Name>Originator name</Name>
                   <Description>
-						BEAst: T5001 or T6324/T6325/T6424, Name or coordinates separated with "/". For coordinates use the format WGS84, degrees with decimals.
+						BEAst: T5001 or T6324/T6325/T6424, Name or coordinates separated by #. For coordinates use the format WGS84, degrees with decimals.
  Peppol: The name of the party.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir01-082</Reference>
@@ -1052,8 +1052,10 @@
                   <Value type="EXAMPLE">7300010000001</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
-                     <Name>Buyer legal registration identifier identification scheme
-								identifier</Name>
+                     <Name>
+								Buyer legal registration identifier identification scheme
+								identifier
+							</Name>
                      <Description>The identification scheme identifier of the buyer legal registration identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
@@ -1213,11 +1215,11 @@
                      <Term>cbc:Line</Term>
                      <Name>Address line 3</Name>
                      <Description>
-						BEAst: Used for all other address information. Coordinates (T6321/T6322) are given in format WGS84, degrees with decimals, separated with a "/".
+						BEAst: Used for all other address information. Coordinates (T6321/T6322) are given in format WGS84, degrees with decimals, separated by #. Can be used for detailed information by separating the information by #.
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir01-p007</Reference>
-                     <Value type="EXAMPLE">The Roundabout</Value>
+                     <Value type="EXAMPLE">Lundbyleden#Område C2</Value>
                   </Element>
                </Element>
                <Element>
@@ -1294,8 +1296,10 @@
                   <Value type="EXAMPLE">7300010000001</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
-                     <Name>Deliver party registration identifier identification scheme
-								identifier</Name>
+                     <Name>
+								Deliver party registration identifier identification scheme
+								identifier
+							</Name>
                      <Description>The identification scheme identifier of the deliverparty identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
@@ -2282,26 +2286,28 @@
                      <Value type="EXAMPLE">KO2012140200</Value>
                      <Attribute>
                         <Term>listID</Term>
-                        <Name>Item classification identifier identification scheme
-									identifier</Name>
-                        <Description>
-						BEAst: For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID "BEAST:4.0", i.e. mutually agreed.
+                        <Name>
+									Item classification identifier identification scheme
+									identifier
+								</Name>
+                        <Description>BEAst: For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID "BEAST:4.0", i.e. mutually agreed.
  Peppol: The identification scheme identifier of the Item classification identifier</Description>
                         <Reference type="CODE_LIST">UNCL7143</Reference>
                         <Value type="EXAMPLE">ZZZ</Value>
                      </Attribute>
                      <Attribute usage="Optional">
                         <Term>listVersionID</Term>
-                        <Name>Item classification identifier version identification scheme
-									identifier</Name>
+                        <Name>
+									Item classification identifier version identification scheme
+									identifier
+								</Name>
                         <Description>The identification scheme version identifier of the Item classification identifier</Description>
                         <Value type="EXAMPLE">3.0.2</Value>
                      </Attribute>
                      <Attribute usage="Optional">
                         <Term>name</Term>
                         <Name>Clear text name equivalent of classification code</Name>
-                        <Description>
-						BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "SBMI", "SA", "AI", “ME” and "CoClass”. "SBMI" = Sveriges Bergmaterialindustrier, "SA" = Sveriges Åkeriföretag, "AI" = Återvinningsindustrierna, “ME” = Maskinentreprenörerna.
+                        <Description>BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "SBMI", "SA", "AI", “ME” and "CoClass”. "SBMI" = Sveriges Bergmaterialindustrier, "SA" = Sveriges Åkeriföretag, "AI" = Återvinningsindustrierna, “ME” = Maskinentreprenörerna.
  Peppol: The textual equivalent of the code value</Description>
                         <Value type="EXAMPLE">SBMI</Value>
                      </Attribute>
@@ -2346,6 +2352,26 @@
                   <Term>cac:AdditionalItemProperty</Term>
                   <Name>Additional item property information</Name>
                   <Description>A group of business terms providing information about properties of the goods and services invoiced.</Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:ID</Term>
+                     <Description>ID of the property if assigned by an Agency</Description>
+                     <Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
+                     <Attribute usage="Optional">
+                        <Term>schemeID</Term>
+                        <Name>Scheme identifier</Name>
+                        <Value type="EXAMPLE">ISO22057</Value>
+                     </Attribute>
+                     <Attribute usage="Optional">
+                        <Term>schemeVersionID</Term>
+                        <Name>Scheme version identifier</Name>
+                        <Value type="EXAMPLE">2022</Value>
+                     </Attribute>
+                     <Attribute usage="Optional">
+                        <Term>schemeDataURI</Term>
+                        <Name>Scheme Data URI</Name>
+                        <Value type="EXAMPLE">https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460</Value>
+                     </Attribute>
+                  </Element>
                   <Element>
                      <Term>cbc:Name</Term>
                      <Name>Item property name</Name>

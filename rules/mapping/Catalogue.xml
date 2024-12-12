@@ -770,7 +770,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">District A</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:ProviderParty/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -2018,7 +2018,7 @@
                <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Ground floor</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:SellerSupplierParty/cac:Party/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -2096,7 +2096,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Region V</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:SellerSupplierParty/cac:Party/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -2616,7 +2616,7 @@
                <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Dept X</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:ContractorCustomerParty/cac:Party/cac:PostalAddress/cbc:AdditionalStreetName</Data>
@@ -2694,7 +2694,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">District A</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:ContractorCustomerParty/cac:Party/cac:PostalAddress/cbc:CountrySubentity</Data>
@@ -3292,7 +3292,7 @@
                <Data ss:Type="String">Warranty information that applies to the catalogue line item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">One year....</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cbc:WarrantyInformation</Data>
@@ -3448,7 +3448,7 @@
                <Data ss:Type="String">The item price based on a standarized unit. E.g. Price of each liter.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">7.45</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:ItemComparison/cbc:PriceAmount</Data>
@@ -3500,7 +3500,7 @@
                <Data ss:Type="String">The quantity of standard units that are in each consumable unit.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:ItemComparison/cbc:Quantity</Data>
@@ -3526,13 +3526,7 @@
                <Data ss:Type="String">The standard unit of measure used to enable comparison of item price to other items.See guideline on Items and packing units in a catalogue.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">
-						unitCode
-						Standard unit of measure
-						The standard unit of measure used to enable comparison of item price to other items.See guideline on Items and packing units in a catalogue.
-						tir19-085
-						UNECERec20
-					</Data>
+               <Data ss:Type="String">C62</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:ItemComparison/cbc:Quantity/unitCode</Data>
@@ -3584,7 +3578,7 @@
                <Data ss:Type="String">The sellers identifier for the related item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">212</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:ComponentRelatedItem/cbc:ID</Data>
@@ -3610,7 +3604,7 @@
                <Data ss:Type="String">The quantity that applies to the relationship.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">12</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:ComponentRelatedItem/cbc:Quantity</Data>
@@ -3688,7 +3682,7 @@
                <Data ss:Type="String">The sellers identifier for the related item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">2121</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:AccessoryRelatedItem/cbc:ID</Data>
@@ -3714,7 +3708,7 @@
                <Data ss:Type="String">The quantity that applies to the relationship.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">3</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:AccessoryRelatedItem/cbc:Quantity</Data>
@@ -3792,7 +3786,7 @@
                <Data ss:Type="String">The sellers identifier for the related item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">1122</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredRelatedItem/cbc:ID</Data>
@@ -3818,7 +3812,7 @@
                <Data ss:Type="String">The quantity that applies to the relationship.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">3</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredRelatedItem/cbc:Quantity</Data>
@@ -3896,7 +3890,7 @@
                <Data ss:Type="String">The sellers identifier for the related item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">4122</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:ReplacedRelatedItem/cbc:ID</Data>
@@ -3922,7 +3916,7 @@
                <Data ss:Type="String">The quantity that applies to the relationship.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:ReplacedRelatedItem/cbc:Quantity</Data>
@@ -4000,7 +3994,7 @@
                <Data ss:Type="String">The time from when the order is placed until the item is available for delivery from the sellers' premises or at the applicable address specified for the price.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">3</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredItemLocationQuantity/cbc:LeadTimeMeasure</Data>
@@ -4026,7 +4020,7 @@
                <Data ss:Type="String">The lead time units for price lead time. The value shoud be a valid UOM code like DAY for days.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">XCS</Data>
+               <Data ss:Type="String">DAY</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredItemLocationQuantity/cbc:LeadTimeMeasure/unitCode</Data>
@@ -4052,7 +4046,7 @@
                <Data ss:Type="String">Used to indicate the threshold quantity for the given price</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredItemLocationQuantity/cbc:MinimumQuantity</Data>
@@ -4104,7 +4098,7 @@
                <Data ss:Type="String">Used to indicate maximum quantity for given price.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">240</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredItemLocationQuantity/cbc:MaximumQuantity</Data>
@@ -4182,7 +4176,7 @@
                <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Main street</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredItemLocationQuantity/cac:ApplicableTerritoryAddress/cbc:StreetName</Data>
@@ -4208,7 +4202,7 @@
                <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">No 212</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredItemLocationQuantity/cac:ApplicableTerritoryAddress/cbc:AdditionalStreetName</Data>
@@ -4234,7 +4228,7 @@
                <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Dublin</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredItemLocationQuantity/cac:ApplicableTerritoryAddress/cbc:CityName</Data>
@@ -4260,7 +4254,7 @@
                <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">234432</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredItemLocationQuantity/cac:ApplicableTerritoryAddress/cbc:PostalZone</Data>
@@ -4286,7 +4280,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Dublin NW</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredItemLocationQuantity/cac:ApplicableTerritoryAddress/cbc:CountrySubentity</Data>
@@ -4338,7 +4332,7 @@
                <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Building F</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredItemLocationQuantity/cac:ApplicableTerritoryAddress/cac:AddressLine/cbc:Line</Data>
@@ -4390,7 +4384,7 @@
                <Data ss:Type="String">A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">DK</Data>
+               <Data ss:Type="String">GB</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredItemLocationQuantity/cac:ApplicableTerritoryAddress/cac:Country/cbc:IdentificationCode</Data>
@@ -4442,7 +4436,7 @@
                <Data ss:Type="String">The price for the item at the specified locations.The price is given for each orderable unit.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">6.98</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredItemLocationQuantity/cac:Price/cbc:PriceAmount</Data>
@@ -4546,7 +4540,7 @@
                <Data ss:Type="String">The type of the item price. The type may be given by using codes from UN/CEFACT code list 5387. When prices are temporary the validity period for the price should be defined by stating the price validity period.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">CAT</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredItemLocationQuantity/cac:Price/cbc:PriceType</Data>
@@ -4572,7 +4566,7 @@
                <Data ss:Type="String">The factor used to convert the Base Quantity to an Orderable Unit. Must be specified if the Orderable Unit differs from the Base Quantity. If not present, assumed value is 1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:RequiredItemLocationQuantity/cac:Price/cbc:OrderableUnitFactorRate</Data>
@@ -4780,7 +4774,7 @@
                <Data ss:Type="String">Specifies the number of consumable units that are in each orderable unit.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cbc:PackSizeNumeric</Data>
@@ -4858,7 +4852,7 @@
                <Data ss:Type="String">A Brand name for the item</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Johnson's</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cbc:BrandName</Data>
@@ -5170,7 +5164,7 @@
                <Data ss:Type="String">A functional description of the attachment/image expressed as code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">4</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:ItemSpecificationDocumentReference/cbc:DocumentTypeCode</Data>
@@ -5196,7 +5190,7 @@
                <Data ss:Type="String">A short description of the document type.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Test report</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:ItemSpecificationDocumentReference/cbc:DocumentDescription</Data>
@@ -5456,7 +5450,7 @@
                <Data ss:Type="String">A classification code used to classify the type or nature of the Item. More than one classifications can be used including UNSPSC code and CPV code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">AZ657</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode</Data>
@@ -5586,7 +5580,7 @@
                <Data ss:Type="String">The code CT indicates that the item is offered in accordance to the referenced contract (tir19-p027). The code NON_RETURNABLE indicates that the item cannot be returned (tir19-p049).</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">NON_RETURNABLE</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:TransactionConditions/cbc:ActionCode</Data>
@@ -5638,7 +5632,7 @@
                <Data ss:Type="String">The identifier assigned to transportable hazardous goods by the United Nations, expressed as a code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">ADR</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:HazardousItem/cbc:UNDGCode</Data>
@@ -5664,7 +5658,7 @@
                <Data ss:Type="String">Identifies a hazard class applicable to dangerous goods as defined by the relevant regulation authority, such as the IMDG Class Number of the SOLAS Convention of IMO and the ADR/RID Class Number for the road/rail environment.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">ZZ545</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:HazardousItem/cbc:HazardClassID</Data>
@@ -5834,6 +5828,110 @@
          </Row>
          <Row>
             <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">ID of the property if assigned by an Agency</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">77e416eb-a363-4258-a04e-171d843a6460</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">22100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">ISO22057</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:ID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">22200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  @schemeVersionID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme version identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">2022</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:ID/schemeVersionID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">22300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  @schemeDataURI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme Data URI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">https://define.cobuilder.no/77e416eb-a363-4258-a04e-171d843a6460/2022/</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:ID/schemeDataURI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">22400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
                <Data ss:Type="String">1..1</Data>
             </Cell>
             <Cell>
@@ -5855,7 +5953,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22100</Data>
+               <Data ss:Type="Number">22500</Data>
             </Cell>
          </Row>
          <Row>
@@ -5872,7 +5970,7 @@
                <Data ss:Type="String">Code for the item property according to a property code system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">XL</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCode</Data>
@@ -5881,7 +5979,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22200</Data>
+               <Data ss:Type="Number">22600</Data>
             </Cell>
          </Row>
          <Row>
@@ -5898,12 +5996,7 @@
                <Data ss:Type="String">An identifier for the code list used for the Name code, this is bilaterally agreed</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">
-							listID
-							Name code list id.
-							An identifier for the code list used for the Name code, this is bilaterally agreed
-
-						</Data>
+               <Data ss:Type="String">Size</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCode/listID</Data>
@@ -5912,7 +6005,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22300</Data>
+               <Data ss:Type="Number">22700</Data>
             </Cell>
          </Row>
          <Row>
@@ -5938,7 +6031,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22400</Data>
+               <Data ss:Type="Number">22800</Data>
             </Cell>
          </Row>
          <Row>
@@ -5964,7 +6057,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22500</Data>
+               <Data ss:Type="Number">22900</Data>
             </Cell>
          </Row>
          <Row>
@@ -5990,7 +6083,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22600</Data>
+               <Data ss:Type="Number">23000</Data>
             </Cell>
          </Row>
          <Row>
@@ -6016,7 +6109,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22700</Data>
+               <Data ss:Type="Number">23100</Data>
             </Cell>
          </Row>
          <Row>
@@ -6042,7 +6135,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22800</Data>
+               <Data ss:Type="Number">23200</Data>
             </Cell>
          </Row>
          <Row>
@@ -6068,7 +6161,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">22900</Data>
+               <Data ss:Type="Number">23300</Data>
             </Cell>
          </Row>
          <Row>
@@ -6094,7 +6187,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23000</Data>
+               <Data ss:Type="Number">23400</Data>
             </Cell>
          </Row>
          <Row>
@@ -6120,7 +6213,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23100</Data>
+               <Data ss:Type="Number">23500</Data>
             </Cell>
          </Row>
          <Row>
@@ -6146,7 +6239,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23200</Data>
+               <Data ss:Type="Number">23600</Data>
             </Cell>
          </Row>
          <Row>
@@ -6172,7 +6265,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23300</Data>
+               <Data ss:Type="Number">23700</Data>
             </Cell>
          </Row>
          <Row>
@@ -6198,7 +6291,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23400</Data>
+               <Data ss:Type="Number">23800</Data>
             </Cell>
          </Row>
          <Row>
@@ -6224,7 +6317,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23500</Data>
+               <Data ss:Type="Number">23900</Data>
             </Cell>
          </Row>
          <Row>
@@ -6250,7 +6343,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23600</Data>
+               <Data ss:Type="Number">24000</Data>
             </Cell>
          </Row>
          <Row>
@@ -6276,7 +6369,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23700</Data>
+               <Data ss:Type="Number">24100</Data>
             </Cell>
          </Row>
          <Row>
@@ -6302,7 +6395,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23800</Data>
+               <Data ss:Type="Number">24200</Data>
             </Cell>
          </Row>
          <Row>
@@ -6328,7 +6421,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">23900</Data>
+               <Data ss:Type="Number">24300</Data>
             </Cell>
          </Row>
          <Row>
@@ -6354,7 +6447,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24000</Data>
+               <Data ss:Type="Number">24400</Data>
             </Cell>
          </Row>
          <Row>
@@ -6380,7 +6473,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24100</Data>
+               <Data ss:Type="Number">24500</Data>
             </Cell>
          </Row>
          <Row>
@@ -6406,7 +6499,7 @@
                <Data ss:Type="Number">6</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24200</Data>
+               <Data ss:Type="Number">24600</Data>
             </Cell>
          </Row>
          <Row>
@@ -6432,7 +6525,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24300</Data>
+               <Data ss:Type="Number">24700</Data>
             </Cell>
          </Row>
          <Row>
@@ -6458,7 +6551,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24400</Data>
+               <Data ss:Type="Number">24800</Data>
             </Cell>
          </Row>
          <Row>
@@ -6484,7 +6577,7 @@
                <Data ss:Type="Number">3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24500</Data>
+               <Data ss:Type="Number">24900</Data>
             </Cell>
          </Row>
          <Row>
@@ -6510,7 +6603,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24600</Data>
+               <Data ss:Type="Number">25000</Data>
             </Cell>
          </Row>
          <Row>
@@ -6527,7 +6620,7 @@
                <Data ss:Type="String">The measure for the dimension attribute</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">45</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:Dimension/cbc:Measure</Data>
@@ -6536,7 +6629,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24700</Data>
+               <Data ss:Type="Number">25100</Data>
             </Cell>
          </Row>
          <Row>
@@ -6562,7 +6655,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24800</Data>
+               <Data ss:Type="Number">25200</Data>
             </Cell>
          </Row>
          <Row>
@@ -6579,7 +6672,7 @@
                <Data ss:Type="String">Used for differentiating between measures with same attributeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Height</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:Dimension/cbc:Description</Data>
@@ -6588,7 +6681,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">24900</Data>
+               <Data ss:Type="Number">25300</Data>
             </Cell>
          </Row>
          <Row>
@@ -6605,7 +6698,7 @@
                <Data ss:Type="String">The lower margin of the recommended storage temerature range for the item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">43</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:Dimension/cbc:MinimumMeasure</Data>
@@ -6614,7 +6707,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">25000</Data>
+               <Data ss:Type="Number">25400</Data>
             </Cell>
          </Row>
          <Row>
@@ -6640,7 +6733,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">25100</Data>
+               <Data ss:Type="Number">25500</Data>
             </Cell>
          </Row>
          <Row>
@@ -6657,7 +6750,7 @@
                <Data ss:Type="String">The upper margin of the recommended storage temerature range for the item.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">47</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:Dimension/cbc:MaximumMeasure</Data>
@@ -6666,7 +6759,7 @@
                <Data ss:Type="Number">4</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">25200</Data>
+               <Data ss:Type="Number">25600</Data>
             </Cell>
          </Row>
          <Row>
@@ -6692,7 +6785,7 @@
                <Data ss:Type="Number">5</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="Number">25300</Data>
+               <Data ss:Type="Number">25700</Data>
             </Cell>
          </Row>
       </Table>

@@ -67,13 +67,14 @@
          <Reference type="RULE">BR-04</Reference>
          <Reference type="RULE">BR-CL-01</Reference>
          <Reference type="RULE">PEPPOL-EN16931-P0100</Reference>
+         <Reference type="RULE">DE-R-017</Reference>
          <Reference type="CODE_LIST">UNCL1001-inv</Reference>
          <Value type="EXAMPLE">380</Value>
       </Element>
       <Element cardinality="0..1">
          <Term>cbc:Note</Term>
          <Name>Invoice note</Name>
-         <Description>A textual note that gives unstructured information that is relevant to the Invoice as a whole.Such as the reason for any correction or assignment note in case the invoice has been factored.</Description>
+         <Description>A textual note that gives unstructured information that is relevant to the Invoice as a whole.Such as the reason for any correction or assignment note in case the invoice has been factored. The element is not repeatable, except when both the Buyer and Seller are German, in which case the element can be repeated to meet specific legal requirements.</Description>
          <DataType>Text</DataType>
          <Reference type="BUSINESS_TERM">BT-22</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R002</Reference>
@@ -129,6 +130,7 @@
          <DataType>Text</DataType>
          <Reference type="BUSINESS_TERM">BT-10</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R003</Reference>
+         <Reference type="RULE">DE-R-015</Reference>
          <Value type="EXAMPLE">abs1234</Value>
       </Element>
       <Element cardinality="0..1">
@@ -200,6 +202,7 @@
          <Name>PRECEDING INVOICE REFERENCE</Name>
          <Description>A group of business terms providing information on one or more preceding Invoices.</Description>
          <Reference type="BUSINESS_TERM">BG-3</Reference>
+         <Reference type="RULE">DE-R-026</Reference>
          <Element>
             <Term>cac:InvoiceDocumentReference</Term>
             <Name>INVOICE DOCUMENT REFERENCE</Name>
@@ -283,6 +286,7 @@
          <Reference type="BUSINESS_TERM">BG-24</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R006</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R080</Reference>
+         <Reference type="RULE">DE-R-022</Reference>
          <Element>
             <Term>cbc:ID</Term>
             <Name>Invoiced object identifier, Supporting document reference</Name>
@@ -423,6 +427,7 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-29, BT-90</Reference>
                   <Reference type="RULE">BR-CO-26</Reference>
+                  <Reference type="RULE">DE-R-030</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R042</Reference>
@@ -638,6 +643,7 @@
                   <Reference type="RULE">DK-R-014</Reference>
                   <Reference type="RULE">SE-R-003</Reference>
                   <Reference type="RULE">SE-R-004</Reference>
+                  <Reference type="RULE">SE-R-013</Reference>
                   <Value type="EXAMPLE">5561043539</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
@@ -661,6 +667,7 @@
                <Name>SELLER CONTACT</Name>
                <Description>A group of business terms providing contact information about the Seller.</Description>
                <Reference type="BUSINESS_TERM">BG-6</Reference>
+               <Reference type="RULE">DE-R-002</Reference>
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
                   <Name>Seller contact point</Name>
@@ -675,6 +682,7 @@
                   <Description>A phone number for the contact point.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-42</Reference>
+                  <Reference type="RULE">DE-R-027</Reference>
                   <Value type="EXAMPLE">0856470730</Value>
                </Element>
                <Element cardinality="0..1">
@@ -683,6 +691,7 @@
                   <Description>An e-mail address for the contact point.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-43</Reference>
+                  <Reference type="RULE">DE-R-028</Reference>
                   <Value type="EXAMPLE">example@cramo.se</Value>
                </Element>
             </Element>
@@ -979,6 +988,7 @@
                <Description>This element is used for both the identification of the Payee, or the unique banking reference identifier of Payee (assigned by the Payee bank.) For payee identification use ICD code list, for SEPA bank assigned creditor reference, use SEPA.</Description>
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-60, BT-90</Reference>
+               <Reference type="RULE">DE-R-030</Reference>
                <Value type="EXAMPLE">7350053850019</Value>
                <Attribute usage="Optional">
                   <Term>schemeID</Term>
@@ -1268,11 +1278,11 @@
                      <Term>cbc:Line</Term>
                      <Name>Deliver to address line 3</Name>
                      <Description>
-						BEAst: Used for grid coordinates or building details
+						BEAst: Used for any other additional address information like Building (T5004) or a specific part of the workplace. Can be used for detailed information by separating the information by # .
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-165</Reference>
-                     <Value type="EXAMPLE">Hus 1</Value>
+                     <Value type="EXAMPLE">Lundbyleden#Område C2</Value>
                   </Element>
                </Element>
                <Element>
@@ -1318,6 +1328,7 @@
          <Name>PAYMENT INSTRUCTIONS</Name>
          <Description>A group of business terms providing information about the payment.</Description>
          <Reference type="BUSINESS_TERM">BG-16</Reference>
+         <Reference type="RULE">DE-R-001</Reference>
          <Element>
             <Term>cbc:PaymentMeansCode</Term>
             <Name>Payment means type code</Name>
@@ -1326,13 +1337,13 @@
             <Reference type="BUSINESS_TERM">BT-81</Reference>
             <Reference type="RULE">BR-49</Reference>
             <Reference type="RULE">BR-CL-16</Reference>
+            <Reference type="RULE">DE-R-020</Reference>
             <Reference type="CODE_LIST">UNCL4461</Reference>
             <Value type="EXAMPLE">30</Value>
             <Attribute usage="Optional">
                <Term>name</Term>
                <Name>Payment means text</Name>
-               <Description>The means, expressed as text, for how a payment is expected to be or has been settled.
-                </Description>
+               <Description>The means, expressed as text, for how a payment is expected to be or has been settled.</Description>
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-82</Reference>
                <Value type="EXAMPLE">Credit transfer</Value>
@@ -1352,6 +1363,9 @@
             <Description>A group of business terms providing information about card used for payment contemporaneous with invoice issuance.</Description>
             <Reference type="BUSINESS_TERM">BG-18</Reference>
             <Reference type="RULE">BR-66</Reference>
+            <Reference type="RULE">DE-R-023-2</Reference>
+            <Reference type="RULE">DE-R-024-1</Reference>
+            <Reference type="RULE">DE-R-025-2</Reference>
             <Element>
                <Term>cbc:PrimaryAccountNumberID</Term>
                <Name>Payment card primary account number</Name>
@@ -1419,6 +1433,9 @@
             <Description>A group of business terms to specify a direct debit.</Description>
             <Reference type="BUSINESS_TERM">BG-19</Reference>
             <Reference type="RULE">BR-67</Reference>
+            <Reference type="RULE">DE-R-023-2</Reference>
+            <Reference type="RULE">DE-R-024-2</Reference>
+            <Reference type="RULE">DE-R-025-1</Reference>
             <Element cardinality="0..1">
                <Term>cbc:ID</Term>
                <Name>Mandate reference identifier</Name>
@@ -1426,6 +1443,7 @@
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-89</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R061</Reference>
+               <Reference type="RULE">DE-R-030</Reference>
                <Value type="EXAMPLE">123545</Value>
             </Element>
             <Element cardinality="0..1">
@@ -1438,6 +1456,7 @@
                   <Description>The account to be debited by the direct debit.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-91</Reference>
+                  <Reference type="RULE">DE-R-031</Reference>
                   <Value type="EXAMPLE">123123123123</Value>
                </Element>
             </Element>
@@ -1454,6 +1473,7 @@
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-20</Reference>
             <Reference type="RULE">BR-CO-25</Reference>
+            <Reference type="RULE">DE-R-018</Reference>
             <Value type="EXAMPLE">30 dagar efter mottagen faktura</Value>
          </Element>
       </Element>
@@ -1572,6 +1592,7 @@
                <Reference type="RULE">BR-O-13</Reference>
                <Reference type="RULE">BR-O-14</Reference>
                <Reference type="RULE">BR-CL-17</Reference>
+               <Reference type="RULE">DE-R-016</Reference>
                <Reference type="CODE_LIST">UNCL5305</Reference>
                <Value type="EXAMPLE">E</Value>
             </Element>
@@ -1739,6 +1760,7 @@
                   <Reference type="BUSINESS_TERM">BT-119</Reference>
                   <Reference type="RULE">BR-48</Reference>
                   <Reference type="RULE">SE-R-006</Reference>
+                  <Reference type="RULE">DE-R-014</Reference>
                   <Value type="EXAMPLE">0.00</Value>
                </Element>
                <Element cardinality="0..1">
@@ -2002,10 +2024,7 @@
             <Attribute>
                <Term>unitCode</Term>
                <Name>Invoiced quantity unit of measure</Name>
-               <Description>The unit of measure that applies to the invoiced quantity.
-					Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
-					The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
-					</Description>
+               <Description>The unit of measure that applies to the invoiced quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015): The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.</Description>
                <DataType>Code</DataType>
                <Reference type="BUSINESS_TERM">BT-130</Reference>
                <Reference type="RULE">BR-23</Reference>
@@ -2445,9 +2464,7 @@
                <Attribute usage="Optional">
                   <Term>unitCode</Term>
                   <Name>Item price base quantity unit of measure code</Name>
-                  <Description>The unit of measure that applies to the Item price base quantity, must be the same as the unit code of the Invoiced/credited quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
-                    The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
-                </Description>
+                  <Description>The unit of measure that applies to the Item price base quantity, must be the same as the unit code of the Invoiced/credited quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015): The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.</Description>
                   <Reference type="CODE_LIST">UNECERec20</Reference>
                   <Reference type="RULE">PEPPOL-EN16931-R130</Reference>
                   <Value type="EXAMPLE">EA</Value>

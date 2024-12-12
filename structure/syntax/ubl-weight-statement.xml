@@ -316,8 +316,10 @@
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
                   <Name>Address line 3</Name>
-                  <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
-                  <Value type="EXAMPLE">To the left</Value>
+                  <Description>
+						BEAst: Used for any other additional address information like Building (T5004) or a specific part of the workplace. Can be used for detailed information by separating the information by #.
+ Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                  <Value type="EXAMPLE">Lundbyleden#Område C2</Value>
                </Element>
             </Element>
             <Element>
@@ -452,8 +454,10 @@
                <Element cardinality="1..1">
                   <Term>cbc:Line</Term>
                   <Name>Address line 3</Name>
-                  <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
-                  <Value type="EXAMPLE">To the left</Value>
+                  <Description>
+						BEAst: Can be used for detailed information by separating the information by #
+ Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                  <Value type="EXAMPLE">Lundbyleden#Område C2</Value>
                </Element>
             </Element>
             <Element>
@@ -668,13 +672,19 @@
       <Element cardinality="1..1">
          <Term>cac:Shipment</Term>
          <Name>Shipment information</Name>
-         <Description/>
+         <Description>A contractual arrangement whereby an identifiable collection of goods items is to be transported from one party (usually a Supplier) to another party (usually a Customer).</Description>
          <Element cardinality="1..1">
             <Term>cbc:ID</Term>
             <Name>Shipment identity</Name>
-            <Description>Use NA if no specific shipment ID is available</Description>
+            <Description>If this ID is in the GSIN format, it should be indicated in the attribute @schemeID. Use NA if no specific shipment ID is available</Description>
             <Reference type="BUSINESS_TERM">tir16-038</Reference>
-            <Value type="EXAMPLE">NA</Value>
+            <Value type="EXAMPLE">73500538500000019</Value>
+            <Attribute usage="Optional">
+               <Term>schemeID</Term>
+               <Description>Used to indicate that the ID is in the GSIN format. The Global Shipment Identification Number (GSIN) is a number that identifies a shipment and is assigned by the seller of goods. The goods shipper collects one or more logistic units for transportation to a recipient. A GSIN is assigned to this group of logistic units to identify them as a shipment.</Description>
+               <Reference type="CODE_LIST">ShipmentIDType</Reference>
+               <Value type="EXAMPLE">GSIN</Value>
+            </Attribute>
          </Element>
          <Element cardinality="1..n">
             <Term>cac:GoodsItem</Term>
@@ -797,8 +807,7 @@
                   <Attribute>
                      <Term>unitCode</Term>
                      <Name>Measure unit of measure</Name>
-                     <Description>
-						BEAst: T6706 Measure Unit NeB Type.
+                     <Description>BEAst: T6706 Measure Unit NeB Type.
  Peppol: The unit of measure that applies to the measure.</Description>
                      <Reference type="CODE_LIST">UNECERec20</Reference>
                      <Value type="EXAMPLE">TNE</Value>

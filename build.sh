@@ -1,13 +1,13 @@
 #!/bin/sh
-
+ 
 PROJECT=$(dirname $(readlink -f "$0"))
 
-POACCBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/2024-q2-member-review/structure/syntax/"
+POACCBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/2024-q4-release/structure/syntax/"
 echo $POACCBASEURL
 
-LOGISTICSBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/main/structure/syntax/"
+LOGISTICSBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/2024-Q4/structure/syntax/"
 echo $LOGISTICSBASEURL
-
+ 
 # Delete target folder if found
 if [ -e $PROJECT/target ]; then
     docker run --rm -i -v $PROJECT:/src alpine:3.6 rm -rf /src/target
@@ -21,19 +21,15 @@ docker pull atomgraph/saxon
 
 # Transform the files in source dir to syntax.
 echo "Generating documentation: Invoice"
-docker run --rm -i \
-    -v $PROJECT:/src \
-    -v $PROJECT/target/generated:/target \
-    atomgraph/saxon \
-    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/2024-q2-member-review/structure/syntax/ubl-invoice.xml \
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/2024-q4-release/structure/syntax/ubl-invoice.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-invoice.xml \
-    varOverrideSample=/src/structure/source/ubl-invoice.xml \
-    -ext:on --allow-external-functions:on
+    varOverrideSample=/src/structure/source/ubl-invoice.xml -ext:on --allow-external-functions:on
 
 echo "Generating documentation: Order"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$POACCBASEURL/ubl-order.xml \
+    -s:/src/structure/syntax/ubl-order_poacc_temp_fix.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-order.xml \
     varOverrideSample=/src/structure/source/ubl-order.xml -ext:on --allow-external-functions:on
@@ -47,17 +43,24 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
 
 echo "Generating documentation: Order agreement"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$POACCBASEURL/ubl-orderagreement.xml \
+    -s:/src/structure/syntax/ubl-orderagreement_poacc_temp_fix.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-orderagreement.xml \
     varOverrideSample=/src/structure/source/ubl-orderagreement.xml -ext:on --allow-external-functions:on
 
 echo "Generating documentation: Catalogue"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$POACCBASEURL/ubl-catalogue.xml \
+    -s:/src/structure/syntax/ubl-catalogue_poacc_temp_fix.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-catalogue.xml \
     varOverrideSample=/src/structure/source/ubl-catalogue.xml -ext:on --allow-external-functions:on
+    
+echo "Generating documentation: Catalogue-response"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:$POACCBASEURL/ubl-catalogue-response.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-catalogue-response.xml \
+    varOverrideSample=/src/structure/source/ubl-catalogue-response.xml -ext:on --allow-external-functions:on
 
 echo "Generating documentation: Advanced Despatch advice"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
@@ -141,6 +144,11 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     -s:/src/structure/syntax/ubl-catalogue.xml \
     -xsl:/src/tools/create-mapping-document.xsl \
     -o:/src/rules/mapping/Catalogue.xml  -ext:on --allow-external-functions:on
+    echo "Generating mapping documents: Catalogue-Response"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:/src/structure/syntax/ubl-catalogue-response.xml \
+    -xsl:/src/tools/create-mapping-document.xsl \
+    -o:/src/rules/mapping/Catalogue-response.xml  -ext:on --allow-external-functions:on
 
 echo "Generating mapping documents: Advanced Despatch advice"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
@@ -204,6 +212,16 @@ echo "Generating example: Order agreement"
      -s:/src/structure/syntax/ubl-orderagreement.xml \
      -xsl:/src/tools/create-example.xsl \
      -o:/src/rules/examples/Order_Agreement_Example_Full.xml -ext:on --allow-external-functions:on
+     echo "Generating example: Catalogue"
+ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+     -s:/src/structure/syntax/ubl-catalogue.xml \
+     -xsl:/src/tools/create-example.xsl \
+     -o:/src/rules/examples/Catalogue_Example_Full.xml -ext:on --allow-external-functions:on
+echo "Generating example: Catalogue Response"
+ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+     -s:/src/structure/syntax/ubl-catalogue-response.xml \
+     -xsl:/src/tools/create-example.xsl \
+     -o:/src/rules/examples/Catalogue_Response_Example_Full.xml -ext:on --allow-external-functions:on
 echo "Generating example: Advanced Despatch advice"
  docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
      -s:/src/structure/syntax/ubl-advanced-despatch-advice.xml \

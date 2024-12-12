@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalogue xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
+           xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+           xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+   <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue:3</cbc:CustomizationID>
+   <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3</cbc:ProfileID>
+   <cbc:ID>Cat-02</cbc:ID>
+   <cbc:ActionCode>Add</cbc:ActionCode>
+   <cbc:Name>Spring Catalogue</cbc:Name>
+   <cbc:IssueDate>2018-05-31</cbc:IssueDate>
+   <cbc:VersionID>v2</cbc:VersionID>
+   <cac:ValidityPeriod>
+      <cbc:StartDate>2018-05-31</cbc:StartDate>
+      <cbc:EndDate>2019-05-31</cbc:EndDate>
+   </cac:ValidityPeriod>
+   <cac:ReferencedContract>
+      <cbc:ID>Contract-01</cbc:ID>
+   </cac:ReferencedContract>
+   <cac:SourceCatalogueReference>
+      <cbc:ID>Cat-01</cbc:ID>
+   </cac:SourceCatalogueReference>
+   <cac:ProviderParty>
+      <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+      <cac:PartyIdentification>
+         <cbc:ID schemeID="0184">12345678</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PostalAddress>
+         <cbc:StreetName>Main street 1</cbc:StreetName>
+         <cbc:AdditionalStreetName>Building 23</cbc:AdditionalStreetName>
+         <cbc:CityName>London</cbc:CityName>
+         <cbc:PostalZone>N12 W34</cbc:PostalZone>
+         <cbc:CountrySubentity>District A</cbc:CountrySubentity>
+         <cac:AddressLine>
+            <cbc:Line>Use gate 34</cbc:Line>
+         </cac:AddressLine>
+         <cac:Country>
+            <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+         </cac:Country>
+      </cac:PostalAddress>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName>Povider Party name</cbc:RegistrationName>
+         <cbc:CompanyID schemeID="0002">8346294</cbc:CompanyID>
+         <cac:RegistrationAddress>
+            <cbc:CityName>London</cbc:CityName>
+            <cac:Country>
+               <cbc:IdentificationCode>GB</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:RegistrationAddress>
+      </cac:PartyLegalEntity>
+   </cac:ProviderParty>
+   <cac:ReceiverParty>
+      <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+      <cac:PartyIdentification>
+         <cbc:ID schemeID="0184">45645678</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PostalAddress>
+         <cbc:StreetName>Hovedgaten 12</cbc:StreetName>
+         <cbc:AdditionalStreetName>3rd floor</cbc:AdditionalStreetName>
+         <cbc:CityName>Copenhagen</cbc:CityName>
+         <cbc:PostalZone>98798</cbc:PostalZone>
+         <cbc:CountrySubentity>Jylland</cbc:CountrySubentity>
+         <cac:AddressLine>
+            <cbc:Line>Building 1</cbc:Line>
+         </cac:AddressLine>
+         <cac:Country>
+            <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+         </cac:Country>
+      </cac:PostalAddress>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName>Registration name</cbc:RegistrationName>
+         <cbc:CompanyID schemeID="0002">239478234</cbc:CompanyID>
+         <cac:RegistrationAddress>
+            <cbc:CityName>Stockholm</cbc:CityName>
+            <cac:Country>
+               <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:RegistrationAddress>
+      </cac:PartyLegalEntity>
+   </cac:ReceiverParty>
+   <cac:SellerSupplierParty>
+      <cac:Party>
+         <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+         <cac:PartyIdentification>
+            <cbc:ID schemeID="0184">11223344</cbc:ID>
+         </cac:PartyIdentification>
+         <cac:PartyName>
+            <cbc:Name>Supplier</cbc:Name>
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:StreetName>Storgata 1</cbc:StreetName>
+            <cbc:AdditionalStreetName>Ground floor</cbc:AdditionalStreetName>
+            <cbc:CityName>Oslo</cbc:CityName>
+            <cbc:PostalZone>0612</cbc:PostalZone>
+            <cbc:CountrySubentity>Region V</cbc:CountrySubentity>
+            <cac:AddressLine>
+               <cbc:Line>3rd line</cbc:Line>
+            </cac:AddressLine>
+            <cac:Country>
+               <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:PostalAddress>
+         <cac:Contact>
+            <cbc:Name>Ole Olsen</cbc:Name>
+            <cbc:Telephone>90123456</cbc:Telephone>
+            <cbc:ElectronicMail>ole.olsen@supplier.no</cbc:ElectronicMail>
+         </cac:Contact>
+      </cac:Party>
+   </cac:SellerSupplierParty>
+   <cac:ContractorCustomerParty>
+      <cac:Party>
+         <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+         <cac:PartyIdentification>
+            <cbc:ID schemeID="0184">DK93287241</cbc:ID>
+         </cac:PartyIdentification>
+         <cac:PartyName>
+            <cbc:Name>Customer</cbc:Name>
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:StreetName>Storgata 1</cbc:StreetName>
+            <cbc:AdditionalStreetName>Dept X</cbc:AdditionalStreetName>
+            <cbc:CityName>Oslo</cbc:CityName>
+            <cbc:PostalZone>0612</cbc:PostalZone>
+            <cbc:CountrySubentity>District A</cbc:CountrySubentity>
+            <cac:AddressLine>
+               <cbc:Line>3rd line</cbc:Line>
+            </cac:AddressLine>
+            <cac:Country>
+               <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:PostalAddress>
+         <cac:Contact>
+            <cbc:Name>Jens Olesen</cbc:Name>
+            <cbc:Telephone>29347213412</cbc:Telephone>
+            <cbc:ElectronicMail>jens.olesen@test.dk</cbc:ElectronicMail>
+         </cac:Contact>
+      </cac:Party>
+   </cac:ContractorCustomerParty>
+   <cac:TradingTerms>
+      <cbc:Information>Net within 30 days</cbc:Information>
+   </cac:TradingTerms>
+   <cac:CatalogueLine>
+      <cbc:ID>1</cbc:ID>
+      <cbc:ActionCode>Update</cbc:ActionCode>
+      <cbc:OrderableIndicator>true</cbc:OrderableIndicator>
+      <cbc:OrderableUnit>EA</cbc:OrderableUnit>
+      <cbc:ContentUnitQuantity unitCode="C62">10</cbc:ContentUnitQuantity>
+      <cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
+      <cbc:MinimumOrderQuantity unitCode="C62">1</cbc:MinimumOrderQuantity>
+      <cbc:MaximumOrderQuantity unitCode="C62">100</cbc:MaximumOrderQuantity>
+      <cbc:WarrantyInformation>One year....</cbc:WarrantyInformation>
+      <cbc:PackLevelCode>TU</cbc:PackLevelCode>
+      <cac:LineValidityPeriod>
+         <cbc:StartDate>2018-05-31</cbc:StartDate>
+         <cbc:EndDate>2019-05-31</cbc:EndDate>
+      </cac:LineValidityPeriod>
+      <cac:ItemComparison>
+         <cbc:PriceAmount currencyID="EUR">7.45</cbc:PriceAmount>
+         <cbc:Quantity unitCode="C62">1</cbc:Quantity>
+      </cac:ItemComparison>
+      <cac:ComponentRelatedItem>
+         <cbc:ID>212</cbc:ID>
+         <cbc:Quantity unitCode="XCS">12</cbc:Quantity>
+      </cac:ComponentRelatedItem>
+      <cac:AccessoryRelatedItem>
+         <cbc:ID>2121</cbc:ID>
+         <cbc:Quantity unitCode="XCS">3</cbc:Quantity>
+      </cac:AccessoryRelatedItem>
+      <cac:RequiredRelatedItem>
+         <cbc:ID>1122</cbc:ID>
+         <cbc:Quantity unitCode="XCS">3</cbc:Quantity>
+      </cac:RequiredRelatedItem>
+      <cac:ReplacedRelatedItem>
+         <cbc:ID>4122</cbc:ID>
+         <cbc:Quantity unitCode="XCS">1</cbc:Quantity>
+      </cac:ReplacedRelatedItem>
+      <cac:RequiredItemLocationQuantity>
+         <cbc:LeadTimeMeasure unitCode="DAY">3</cbc:LeadTimeMeasure>
+         <cbc:MinimumQuantity unitCode="XCS">1</cbc:MinimumQuantity>
+         <cbc:MaximumQuantity unitCode="XCS">240</cbc:MaximumQuantity>
+         <cac:ApplicableTerritoryAddress>
+            <cbc:StreetName>Main street</cbc:StreetName>
+            <cbc:AdditionalStreetName>No 212</cbc:AdditionalStreetName>
+            <cbc:CityName>Dublin</cbc:CityName>
+            <cbc:PostalZone>234432</cbc:PostalZone>
+            <cbc:CountrySubentity>Dublin NW</cbc:CountrySubentity>
+            <cac:AddressLine>
+               <cbc:Line>Building F</cbc:Line>
+            </cac:AddressLine>
+            <cac:Country>
+               <cbc:IdentificationCode>GB</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:ApplicableTerritoryAddress>
+         <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">6.98</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="XCS">1</cbc:BaseQuantity>
+            <cbc:PriceType>CAT</cbc:PriceType>
+            <cbc:OrderableUnitFactorRate>1</cbc:OrderableUnitFactorRate>
+            <cac:ValidityPeriod>
+               <cbc:StartDate>2018-05-31</cbc:StartDate>
+               <cbc:EndDate>2019-05-31</cbc:EndDate>
+            </cac:ValidityPeriod>
+         </cac:Price>
+      </cac:RequiredItemLocationQuantity>
+      <cac:Item>
+         <cbc:Description>Office chair by John Doe.</cbc:Description>
+         <cbc:PackQuantity unitCode="XCS">30</cbc:PackQuantity>
+         <cbc:PackSizeNumeric>1</cbc:PackSizeNumeric>
+         <cbc:Name>Office chair</cbc:Name>
+         <cbc:Keyword>Toothpaste</cbc:Keyword>
+         <cbc:BrandName>Johnson's</cbc:BrandName>
+         <cac:BuyersItemIdentification>
+            <cbc:ID>111111</cbc:ID>
+         </cac:BuyersItemIdentification>
+         <cac:SellersItemIdentification>
+            <cbc:ID>3249834</cbc:ID>
+         </cac:SellersItemIdentification>
+         <cac:ManufacturersItemIdentification>
+            <cbc:ID>Prod-01</cbc:ID>
+         </cac:ManufacturersItemIdentification>
+         <cac:StandardItemIdentification>
+            <cbc:ID schemeID="0160">05704066204093</cbc:ID>
+         </cac:StandardItemIdentification>
+         <cac:ItemSpecificationDocumentReference>
+            <cbc:ID>12</cbc:ID>
+            <cbc:DocumentTypeCode>4</cbc:DocumentTypeCode>
+            <cbc:DocumentDescription>Test report</cbc:DocumentDescription>
+            <cac:Attachment>
+               <cbc:EmbeddedDocumentBinaryObject mimeCode="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                                                 filename="Hours-spent.xls">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</cbc:EmbeddedDocumentBinaryObject>
+               <cac:ExternalReference>
+                  <cbc:URI>http://www.test.no/image.jpg</cbc:URI>
+               </cac:ExternalReference>
+            </cac:Attachment>
+         </cac:ItemSpecificationDocumentReference>
+         <cac:OriginCountry>
+            <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+         </cac:OriginCountry>
+         <cac:CommodityClassification>
+            <cbc:ItemClassificationCode listID="MP" listVersionID="20.0601" name="Office furniture">AZ657</cbc:ItemClassificationCode>
+         </cac:CommodityClassification>
+         <cac:TransactionConditions>
+            <cbc:ActionCode>NON_RETURNABLE</cbc:ActionCode>
+         </cac:TransactionConditions>
+         <cac:HazardousItem>
+            <cbc:UNDGCode>ADR</cbc:UNDGCode>
+            <cbc:HazardClassID>ZZ545</cbc:HazardClassID>
+         </cac:HazardousItem>
+         <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>25</cbc:Percent>
+            <cac:TaxScheme>
+               <cbc:ID>VAT or GST</cbc:ID>
+            </cac:TaxScheme>
+         </cac:ClassifiedTaxCategory>
+         <cac:AdditionalItemProperty>
+            <cbc:ID schemeID="ISO22057"
+                    schemeVersionID="2022"
+                    schemeDataURI="https://define.cobuilder.no/77e416eb-a363-4258-a04e-171d843a6460/2022/">77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
+            <cbc:Name>Size</cbc:Name>
+            <cbc:NameCode listID="Size">XL</cbc:NameCode>
+            <cbc:Value>XXL</cbc:Value>
+            <cbc:ValueQuantity unitCode="XCS">5</cbc:ValueQuantity>
+            <cbc:ValueQualifier>Allergen</cbc:ValueQualifier>
+         </cac:AdditionalItemProperty>
+         <cac:ManufacturerParty>
+            <cac:PartyName>
+               <cbc:Name>Manufacturer</cbc:Name>
+            </cac:PartyName>
+         </cac:ManufacturerParty>
+         <cac:ItemInstance>
+            <cbc:BestBeforeDate>2018-08-01</cbc:BestBeforeDate>
+            <cac:LotIdentification>
+               <cbc:LotNumberID>B-10</cbc:LotNumberID>
+            </cac:LotIdentification>
+         </cac:ItemInstance>
+         <cac:Certificate>
+            <cbc:ID>EU EcoLabel</cbc:ID>
+            <cbc:CertificateTypeCode>NA</cbc:CertificateTypeCode>
+            <cbc:CertificateType>Environmental</cbc:CertificateType>
+            <cbc:Remarks>Svanemerket</cbc:Remarks>
+            <cac:IssuerParty>
+               <cac:PartyName>
+                  <cbc:Name>NA</cbc:Name>
+               </cac:PartyName>
+            </cac:IssuerParty>
+            <cac:DocumentReference>
+               <cbc:ID>http://www.label.eu/test/</cbc:ID>
+            </cac:DocumentReference>
+         </cac:Certificate>
+         <cac:Dimension>
+            <cbc:AttributeID>LN</cbc:AttributeID>
+            <cbc:Measure unitCode="CMT">45</cbc:Measure>
+            <cbc:Description>Height</cbc:Description>
+            <cbc:MinimumMeasure unitCode="CMT">43</cbc:MinimumMeasure>
+            <cbc:MaximumMeasure unitCode="CMT">47</cbc:MaximumMeasure>
+         </cac:Dimension>
+      </cac:Item>
+   </cac:CatalogueLine>
+</Catalogue>
