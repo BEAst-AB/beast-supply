@@ -16,6 +16,7 @@ sync_repo() {
   local source_path=$3
   local target_path=$4
 
+  echo "Syncing $repo_url $source_path"
   git clone --depth=1 --branch "$branch" "$repo_url" temp-repo
   # Ensure the target directory exists
   mkdir -p "$target_path"
@@ -27,8 +28,9 @@ sync_repo() {
 # Sync files from multiple repositories without './' in target path
 # Rules
 sync_repo $BILLINGREPO $BILLINGBRANCH "rules/sch" "rules/sch"
-sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/sch" "rules/sch"
 sync_repo $POACCREPO $POACCBRANCH "rules/sch" "rules/sch"
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/sch" "rules/sch"
+
 # Examples
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Cataloge wo response use cases" "rules/examples/Cataloge wo response use cases"
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Order use cases" "rules/examples/Order use cases"
