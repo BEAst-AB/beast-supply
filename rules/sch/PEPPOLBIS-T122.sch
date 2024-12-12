@@ -3,7 +3,7 @@
         xmlns:xi="http://www.w3.org/2001/XInclude"
         schemaVersion="iso" queryBinding="xslt2">
 
-    <title>Rules for Despatch Advice Response transaction</title>
+    <title>Rules for Weight Statement transaction</title>
 
 	<ns uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" prefix="cbc"/>
     <ns uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" prefix="cac"/>
@@ -25,7 +25,6 @@
 	<xi:include href="parts/function/checkPIVAseIT.xml"/>
 	<xi:include href="parts/function/mod97-0208.xml"/>
 	<xi:include href="parts/function/abn.xml"/>
-	<xi:include href="parts/function/checkSEOrgnr.xml"/>
     <!-- Rules -->
 
     <include href="parts/common/empty-elements.sch"/>
