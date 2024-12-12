@@ -28,6 +28,7 @@ sync_repo() {
 # Sync files from multiple repositories without './' in target path
 # Rules
 sync_repo $BILLINGREPO $BILLINGBRANCH "rules/sch" "rules/sch"
+sync_repo $BILLINGREPO $BILLINGBRANCH "structure/syntax/part" "structure/syntax/part"
 sync_repo $POACCREPO $POACCBRANCH "rules/sch" "rules/sch"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/sch" "rules/sch"
 
