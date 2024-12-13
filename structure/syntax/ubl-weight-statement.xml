@@ -756,7 +756,9 @@
                <Element cardinality="0..n">
                   <Term>cac:CommodityClassification</Term>
                   <Name>Commodity classification</Name>
-                  <Description>To classify when an item number is not sufficient.</Description>
+                  <Description>
+						BEAst: Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID the version of the codelist in attribute "name" and name is the name of the codelist or Source to Classification (T6467).
+ Peppol: To classify when an item number is not sufficient.</Description>
                   <Element cardinality="1..1">
                      <Term>cbc:ItemClassificationCode</Term>
                      <Name>Item classification code</Name>

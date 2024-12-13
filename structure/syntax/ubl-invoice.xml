@@ -2328,7 +2328,8 @@
             <Element cardinality="0..n">
                <Term>cac:CommodityClassification</Term>
                <Name>COMMODITY CLASSIFICATION</Name>
-               <Description/>
+               <Description>
+						BEAst: Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID the version of the codelist in attribute "name" and name is the name of the codelist or Source to Classification (T6467).</Description>
                <Element>
                   <Term>cbc:ItemClassificationCode</Term>
                   <Name>Item classification identifier</Name>
