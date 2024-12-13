@@ -74,7 +74,6 @@
             <Description>
 						BEAst: T6001 Party Identifier, T0009 Supplier.
  Peppol: Identifies the senders partys electronic address</Description>
-            <Value type="EXAMPLE">7300010000001</Value>
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Name>Scheme identifier</Name>
@@ -82,6 +81,7 @@
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0088</Value>
             </Attribute>
+            <Value type="EXAMPLE">7300010000001</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
@@ -94,7 +94,6 @@
 						BEAst: T6001 Party Identifier, T0009 Supplier.
  Peppol: The identifier of the Sender party</Description>
                <Reference type="RULE">PEPPOL-T122-R011</Reference>
-               <Value type="EXAMPLE">7300010000001</Value>
                <Attribute usage="Mandatory">
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
@@ -102,6 +101,7 @@
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
+               <Value type="EXAMPLE">7300010000001</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
@@ -224,7 +224,6 @@
             <Description>
 						BEAst: T6001 Party Identifier, T0008 Buyer.
  Peppol: Identifies the receivers partys electronic address</Description>
-            <Value type="EXAMPLE">1251513513245</Value>
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Name>Scheme identifier</Name>
@@ -232,6 +231,7 @@
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0088</Value>
             </Attribute>
+            <Value type="EXAMPLE">1251513513245</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
@@ -244,7 +244,6 @@
 						BEAst: T6001 Party Identifier, T0008 Buyer.
  Peppol: The identifier of the receiver party</Description>
                <Reference type="RULE">PEPPOL-T122-R012</Reference>
-               <Value type="EXAMPLE">1251513513245</Value>
                <Attribute usage="Mandatory">
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
@@ -252,6 +251,7 @@
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
+               <Value type="EXAMPLE">1251513513245</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
@@ -381,7 +381,6 @@
 						BEAst: T6001 Party Identifier, T6330 Place of weighing.
  Peppol: The identifier of the Weighing party</Description>
                <Reference type="RULE">PEPPOL-T122-R013</Reference>
-               <Value type="EXAMPLE">5790000435951</Value>
                <Attribute usage="Mandatory">
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
@@ -389,6 +388,7 @@
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
+               <Value type="EXAMPLE">5790000435951</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
@@ -485,13 +485,13 @@
 						BEAst: T6755 SiteID.
  Peppol: Unique ID of the site for the weighing party. If possile an ID that is issued by a authority or similar.</Description>
                <Reference type="RULE">PEPPOL-T122-R010</Reference>
-               <Value type="EXAMPLE">0114-40-019-a</Value>
                <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Value type="EXAMPLE">
                   schemeID
                </Value>
                </Attribute>
+               <Value type="EXAMPLE">0114-40-019-a</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:Name</Term>
@@ -548,7 +548,6 @@
 						BEAst: T6001 Party Identifier, T3208 Carrier.
  Peppol: The identifier of the shippping party</Description>
                <Reference type="RULE">PEPPOL-T122-R014</Reference>
-               <Value type="EXAMPLE">5790000435951</Value>
                <Attribute usage="Mandatory">
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
@@ -556,6 +555,7 @@
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
+               <Value type="EXAMPLE">5790000435951</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
@@ -678,13 +678,13 @@
             <Name>Shipment identity</Name>
             <Description>If this ID is in the GSIN format, it should be indicated in the attribute @schemeID. Use NA if no specific shipment ID is available</Description>
             <Reference type="BUSINESS_TERM">tir16-038</Reference>
-            <Value type="EXAMPLE">73500538500000019</Value>
             <Attribute usage="Optional">
                <Term>schemeID</Term>
                <Description>Used to indicate that the ID is in the GSIN format. The Global Shipment Identification Number (GSIN) is a number that identifies a shipment and is assigned by the seller of goods. The goods shipper collects one or more logistic units for transportation to a recipient. A GSIN is assigned to this group of logistic units to identify them as a shipment.</Description>
                <Reference type="CODE_LIST">ShipmentIDType</Reference>
                <Value type="EXAMPLE">GSIN</Value>
             </Attribute>
+            <Value type="EXAMPLE">73500538500000019</Value>
          </Element>
          <Element cardinality="1..n">
             <Term>cac:GoodsItem</Term>
@@ -744,13 +744,13 @@
 						BEAst: T0154 Global Trade Item Number.
  Peppol: Global Trade Item Number (GTIN) or other standardized identification. Associates the item with its identification according to a standard system.</Description>
                      <Reference type="RULE">PEPPOL-T122-R003</Reference>
-                     <Value type="EXAMPLE">1234567891234</Value>
                      <Attribute usage="Mandatory">
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
                         <Description>The identification scheme identifier of the Item standard identifier</Description>
                         <Value type="EXAMPLE">0160</Value>
                      </Attribute>
+                     <Value type="EXAMPLE">1234567891234</Value>
                   </Element>
                </Element>
                <Element cardinality="0..n">
@@ -763,11 +763,11 @@
                      <Description>
 						BEAst: Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID the version of the codelist in attribute "name" and name is the name of the codelist or Source to Classification (T6467).
  Peppol: A code for classifying the item by its type or nature. Classification codes are used to allow grouping of similar items for a various purposes e.g. public procurement (CPV), e-Commerce (UNSPSC) etc.</Description>
-                     <Value type="EXAMPLE">KO2012140200</Value>
                      <Attribute usage="Mandatory">
                         <Term>listID</Term>
                         <Name>Item classification identifier identification scheme identifier</Name>
-                        <Description>BEAst: For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID the version of the codelist in attribute "name", i.e. mutually agreed.
+                        <Description>
+						BEAst: For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID the version of the codelist in attribute "name", i.e. mutually agreed.
  Peppol: The identification scheme identifier of the Item classification identifier.</Description>
                         <Reference type="CODE_LIST">UNCL7143</Reference>
                         <Value type="EXAMPLE">ZZZ</Value>
@@ -781,10 +781,12 @@
                      <Attribute usage="Optional">
                         <Term>name</Term>
                         <Name>Clear text name equivalent of classification code</Name>
-                        <Description>BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "AI", "CoClass”, “ME”, "SA", "SB", "SBF", and "SBMI". AI: Återvinningsindustrierna, ME: Maskinentreprenörerna, SA: Sveriges Åkeriföretag, SB: Svensk Betong, SBF: Svensk Beläggningsförening, SBMI: Sveriges Bergmaterialindustrier. Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "NOBB", "RT", "TUN", "Finfo", "RSK_SE", "RSK_NO", "ENO_SE", "ENO_NO".
+                        <Description>
+						BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "AI", "CoClass”, “ME”, "SA", "SB", "SBF", and "SBMI". AI: Återvinningsindustrierna, ME: Maskinentreprenörerna, SA: Sveriges Åkeriföretag, SB: Svensk Betong, SBF: Svensk Beläggningsförening, SBMI: Sveriges Bergmaterialindustrier. Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "NOBB", "RT", "TUN", "Finfo", "RSK_SE", "RSK_NO", "ENO_SE", "ENO_NO".
  Peppol: The textual equivalent of the code value</Description>
                         <Value type="EXAMPLE">SBMI</Value>
                      </Attribute>
+                     <Value type="EXAMPLE">KO2012140200</Value>
                   </Element>
                </Element>
             </Element>
@@ -807,15 +809,16 @@
                   <Description>
 						BEAst: T6122 Measure.
  Peppol: For the measure.</Description>
-                  <Value type="EXAMPLE">12.3</Value>
                   <Attribute>
                      <Term>unitCode</Term>
                      <Name>Measure unit of measure</Name>
-                     <Description>BEAst: T6706 Measure Unit NeB Type.
+                     <Description>
+						BEAst: T6706 Measure Unit NeB Type.
  Peppol: The unit of measure that applies to the measure.</Description>
                      <Reference type="CODE_LIST">UNECERec20</Reference>
                      <Value type="EXAMPLE">TNE</Value>
                   </Attribute>
+                  <Value type="EXAMPLE">12.3</Value>
                </Element>
             </Element>
          </Element>
