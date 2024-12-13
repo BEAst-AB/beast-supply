@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<ubl:Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+		   xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+	<?DocumentTerm Catalogue?>
+	<?Property key="sch:prefix" PEPPOL-T19?>
+	<?Property key="sch:identifier" T19-basic?>
+
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue:3</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:catalogue_only:3</cbc:ProfileID>
+
+	<cbc:ID>123456</cbc:ID>
+	<cbc:ActionCode>Add</cbc:ActionCode>
+	<cbc:IssueDate>2024-08-01</cbc:IssueDate>
+
+	<cac:ValidityPeriod>
+		<cbc:StartDate>2024-11-05</cbc:StartDate>
+	</cac:ValidityPeriod>
+
+	<cac:ReferencedContract>
+		<cbc:ID>CRT1387</cbc:ID>
+	</cac:ReferencedContract>
+
+	<cac:ProviderParty>
+		<cbc:EndpointID schemeID="0007">5560129206</cbc:EndpointID>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="0007">5560129206</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName>Derome AB</cbc:RegistrationName>
+		</cac:PartyLegalEntity>
+	</cac:ProviderParty>
+	
+	<cac:ReceiverParty>
+		<cbc:EndpointID schemeID="0007">5560999202</cbc:EndpointID>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="0007">5560999202</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyLegalEntity>
+			<cbc:RegistrationName>Peab AB</cbc:RegistrationName>
+		</cac:PartyLegalEntity>
+	</cac:ReceiverParty>
+	
+	
+	
+	<cac:CatalogueLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:ActionCode>Add</cbc:ActionCode>
+		<cbc:OrderableIndicator>true</cbc:OrderableIndicator>
+		<cbc:OrderableUnit>XSA</cbc:OrderableUnit>
+		<cbc:ContentUnitQuantity unitCode="KGM">20.00</cbc:ContentUnitQuantity>
+		
+		<cac:RequiredItemLocationQuantity>
+			<cbc:LeadTimeMeasure unitCode="DAY">1</cbc:LeadTimeMeasure>
+			<cbc:MinimumQuantity unitCode="XSA">1.00</cbc:MinimumQuantity>		
+			<cac:Price>
+				<cbc:PriceAmount currencyID="SEK">1.00</cbc:PriceAmount>
+				<cbc:BaseQuantity unitCode="XSA">1</cbc:BaseQuantity>
+				<cac:ValidityPeriod>
+					<cbc:StartDate>2024-12-01</cbc:StartDate>
+					<cbc:EndDate>2025-01-31</cbc:EndDate>
+				</cac:ValidityPeriod>
+			</cac:Price>
+		</cac:RequiredItemLocationQuantity>
+		
+		<cac:Item>
+			<cbc:Description>Produkten säljs oförädlad direkt från leverantören Cementa. Leverantörens ordinarie produktdatablad, 
+			säkerhetsdatablad och byggvarudeklaration återfinns under fliken Dokument.Artikelnummer:5200950309 Byggcement 48x20 kg</cbc:Description>
+			<cbc:Name>BYGGCEMENT 20 KG</cbc:Name>
+			<cbc:Keyword>xxx Synonym xxx</cbc:Keyword>
+
+			<cac:SellersItemIdentification>
+				<cbc:ID>3235829</cbc:ID>
+			</cac:SellersItemIdentification>
+
+			<cac:ManufacturersItemIdentification>
+				<cbc:ID>5200950309</cbc:ID>
+			</cac:ManufacturersItemIdentification>
+
+			<cac:StandardItemIdentification>
+				<cbc:ID schemeID="0160">7350090431004</cbc:ID>
+			</cac:StandardItemIdentification>
+
+			<cac:ItemSpecificationDocumentReference>
+				<cbc:ID>Byggcement-2</cbc:ID>
+				<cbc:DocumentDescription>ItemImage</cbc:DocumentDescription>
+				<cac:Attachment>
+					<cac:ExternalReference>
+						<cbc:URI>https://media.derome.se/medias/images/171/ByggCement-2.png</cbc:URI>
+					</cac:ExternalReference>
+				</cac:Attachment>
+			</cac:ItemSpecificationDocumentReference>
+
+			<cac:ItemSpecificationDocumentReference>
+				<cbc:ID>Byggcement-2</cbc:ID>
+				<cbc:DocumentDescription>ItemImage</cbc:DocumentDescription>
+				<cac:Attachment>
+					<cac:ExternalReference>
+						<cbc:URI>https://media.derome.se/medias/images/171/ByggCement-2.png</cbc:URI>
+					</cac:ExternalReference>
+				</cac:Attachment>
+			</cac:ItemSpecificationDocumentReference>
+
+			<cac:CommodityClassification>
+				<cbc:ItemClassificationCode listID="TST">95000000</cbc:ItemClassificationCode>
+			</cac:CommodityClassification>
+
+			<cac:AdditionalItemProperty>
+				<cbc:Name>BASTA</cbc:Name>
+				<cbc:Value>Y</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:ManufacturerParty>
+				<cac:PartyName>
+					<cbc:Name>Saint-Gobain Weber AB</cbc:Name>
+				</cac:PartyName>
+			</cac:ManufacturerParty>
+			
+			<cac:Dimension>
+				<cbc:AttributeID>ABJ</cbc:AttributeID>
+				<cbc:Measure unitCode="MTQ">0.100</cbc:Measure>
+			</cac:Dimension>
+
+		</cac:Item>
+	</cac:CatalogueLine>
+</ubl:Catalogue>

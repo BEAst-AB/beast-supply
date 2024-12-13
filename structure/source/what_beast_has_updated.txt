@@ -36,12 +36,6 @@ In this version (4.0.2) the following changes are made:
 	- Added file beast_usecase9.adoc.
 	- Added file beast_usecase10.adoc.
 	- Edited file index.adoc.
-	In folder rules/snippets/advanceddespatch we have edited:
-	- Snippet file for Advanced Despatch Advice, snippet-30-1.xml, updated (bug corrected).
-		- tag itemproperty:	"<cbc:Value>Purchase</cbc:Value>" changed to "<cbc:Value>Rental</cbc:Value>".
-	- Snippet file for Advanced Despatch Advice, snippet-30-4.xml, updated (bug corrected).
-		- tag fuel:	"<cbc:TransportEquipmentTypeCode listID="FuelGroup" listAgencyID="Trafikverket" listVersionID="2023:1">HVO</cbc:TransportEquipmentTypeCode>" 
-		  changed to "<cbc:TransportEquipmentTypeCode listID="FuelGroup" listAgencyID="Boverket" listVersionID="2023:1">HVO</cbc:TransportEquipmentTypeCode>" 
 
 - Message documentation of Advanced Despatch Advice
 	In folder structure/source included comments in
@@ -49,11 +43,4 @@ In this version (4.0.2) the following changes are made:
 	-  ubl-receipt-advice.xml.
 	-  ubl-weight-statement.xml.
 
-- Codelists updated with new values from POAC.
-	-  UNCL1001_T01.xml. "105" and "402" are added.
-	-  eas.xml.          Refreshed to the same as in POAC.
-	-  ICD.xml.          Refreshed to the same as in POAC.
-	-  UNCL7143.xml.     Refreshed to the same as in POAC.
-	-  UNERec19.xml.     Refreshed to the same as in POAC.
-	-  UNERec20-11e.xml. Refreshed to the same as in POAC.
-	-  UNERec21-9e.xml.  Refreshed to the same as in POAC.
+- Codelists and Rules are copied from PoAC and LoC

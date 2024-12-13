@@ -5447,10 +5447,10 @@
                <Data ss:Type="String">Item classification code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A classification code used to classify the type or nature of the Item. More than one classifications can be used including UNSPSC code and CPV code.</Data>
+               <Data ss:Type="String">BEAst: Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID the version of the codelist in attribute "name" and name is the name of the codelist or Source to Classification (T6467). Peppol: A classification code used to classify the type or nature of the Item. More than one classifications can be used including UNSPSC code and CPV code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">AZ657</Data>
+               <Data ss:Type="String">KO2012140200</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode</Data>
@@ -5473,10 +5473,10 @@
                <Data ss:Type="String">Item classification identifier identification scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identification scheme identifier of the Item classification identifier</Data>
+               <Data ss:Type="String">BEAst: For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID the version of the codelist in attribute "name", i.e. mutually agreed. Peppol: The identification scheme identifier of the Item classification identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">MP</Data>
+               <Data ss:Type="String">ZZZ</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listID</Data>
@@ -5502,7 +5502,7 @@
                <Data ss:Type="String">The identification scheme version identifier of the Item classification identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">20.0601</Data>
+               <Data ss:Type="String">3.0.2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/listVersionID</Data>
@@ -5525,10 +5525,10 @@
                <Data ss:Type="String">Clear text name equivalent of classification code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The textual equivalent of the code value</Data>
+               <Data ss:Type="String">BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "AI", "CoClass”, “ME”, "SA", "SB", "SBF", and "SBMI". AI: Återvinningsindustrierna, ME: Maskinentreprenörerna, SA: Sveriges Åkeriföretag, SB: Svensk Betong, SBF: Svensk Beläggningsförening, SBMI: Sveriges Bergmaterialindustrier. Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "NOBB", "RT", "TUN", "Finfo", "RSK_SE", "RSK_NO", "ENO_SE", "ENO_NO". Peppol: The textual equivalent of the code value</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Office furniture</Data>
+               <Data ss:Type="String">SBMI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/name</Data>
