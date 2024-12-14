@@ -268,34 +268,30 @@
 	<xsl:template match="synstr:Attribute">
 		<xsl:param name="paramOverrideNode"/>
 		<Attribute>
-
 			<xsl:copy-of select="@*"/>
 			<xsl:for-each select="child::*">
 				<xsl:choose>
-					<xsl:when test="fn:name(.)='Description'">
-						<xsl:apply-templates select=".">
-
-							<xsl:with-param name="paramOverrideNode" select="$paramOverrideNode"/>
-
-						</xsl:apply-templates>
-					</xsl:when>
+					<!-- Process Value first -->
 					<xsl:when test="fn:name(.)='Value'">
 						<xsl:apply-templates select=".">
 							<xsl:with-param name="paramOverrideNode" select="$paramOverrideNode"/>
 						</xsl:apply-templates>
 					</xsl:when>
+					<!-- Process Description after Value -->
+					<xsl:when test="fn:name(.)='Description'">
+						<xsl:apply-templates select=".">
+							<xsl:with-param name="paramOverrideNode" select="$paramOverrideNode"/>
+						</xsl:apply-templates>
+					</xsl:when>
+					<!-- Process other elements -->
 					<xsl:otherwise>
 						<xsl:apply-templates select="."/>
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:for-each>
-			<!--xsl:if test="(../../synstr:Term = 'cac:CommodityClassification' and ../synstr:Term = 'cbc:ItemClassificationCode') or (../../synstr:Term = 'cac:AdditionalItemProperty' and ../synstr:Term = 'cbc:NameCode')">
-			  <xsl:message>
-			    Peppol documentation attribute: <xsl:value-of select="synstr:Term"/> value: <xsl:value-of select="synstr:Value"/>
-			  </xsl:message>
-			</xsl:if-->
-			<xsl:if test="empty(synstr:Description)">
 
+			<!-- Additional logic for empty Description -->
+			<xsl:if test="empty(synstr:Description)">
 				<xsl:variable name="varParentName" select="local-name(parent::*)"/>
 				<xsl:variable name="varParentTermName" select="../../synstr:Term"/>
 				<xsl:variable name="varTermName" select="../synstr:Term"/>
@@ -307,19 +303,13 @@
 					<xsl:with-param name="varTermName" select="$varAttrTermName"/>
 				</xsl:call-template>
 			</xsl:if>
+
+			<!-- Additional logic for empty Value -->
 			<xsl:if test="empty(synstr:Value)">
 				<xsl:variable name="varParentName" select="local-name(parent::*)"/>
 				<xsl:variable name="varParentTermName" select="../../synstr:Term"/>
 				<xsl:variable name="varTermName" select="../synstr:Term"/>
 				<xsl:variable name="varAttrTermName" select="synstr:Term"/>
-				<!--xsl:message>
-			    Peppol documentation attribute: <xsl:value-of select="synstr:Term"/> value is empty. But exists value from override file.
-			    varParentName: <xsl:value-of select="$varParentName"/> 
-			    varParentTermName: <xsl:value-of select="$varParentTermName"/> 
-			    varTermName: <xsl:value-of select="$varTermName"/> 
-			    varAttrTermName: <xsl:value-of select="$varAttrTermName"/> 
-			  </xsl:message-->
-
 				<xsl:call-template name="mapValue">
 					<xsl:with-param name="paramOverrideNode" select="$paramOverrideNode"/>
 					<xsl:with-param name="varParentName" select="'Attribute'"/>
@@ -328,8 +318,8 @@
 				</xsl:call-template>
 			</xsl:if>
 		</Attribute>
-
 	</xsl:template>
+
 	<xsl:template match="synstr:Description">
 		<xsl:param name="paramOverrideNode"/>
 		<xsl:variable name="varParentName" select="local-name(parent::*)"/>
