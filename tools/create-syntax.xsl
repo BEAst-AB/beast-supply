@@ -135,6 +135,7 @@
 					<xsl:copy-of select="synstr:DataType"/>
 				</xsl:otherwise>
 			</xsl:choose>
+			<!-- Process Business Term -->
 			<xsl:choose>
 				<xsl:when test="$varOverrideNode_BusinessTerm!='' and not(empty($varOverrideNode_BusinessTerm))">
 					<xsl:for-each select="$varOverrideNode_BusinessTerm">
@@ -147,6 +148,7 @@
 					<xsl:copy-of select="synstr:Reference[@type='BUSINESS_TERM']"/>
 				</xsl:otherwise>
 			</xsl:choose>
+			<!-- Process Rule -->
 			<xsl:choose>
 				<xsl:when test="$varOverrideNode_Rule!='' and not(empty($varOverrideNode_Rule))">
 					<xsl:for-each select="$varOverrideNode_Rule">
@@ -159,6 +161,7 @@
 					<xsl:copy-of select="synstr:Reference[@type='RULE']"/>
 				</xsl:otherwise>
 			</xsl:choose>
+			<!-- Process Code List -->
 			<xsl:choose>
 				<xsl:when test="$varOverrideNode_CodeList!='' and not(empty($varOverrideNode_CodeList))">
 					<xsl:for-each select="$varOverrideNode_CodeList">
@@ -171,9 +174,11 @@
 					<xsl:copy-of select="synstr:Reference[@type='CODE_LIST']"/>
 				</xsl:otherwise>
 			</xsl:choose>
+			<!-- Process Attribute -->
 			<xsl:apply-templates select="synstr:Attribute">
 				<xsl:with-param name="paramOverrideNode" select="$varOverrideNode"/>
 			</xsl:apply-templates>
+			<!-- Process Value -->
 			<xsl:choose>
 				<xsl:when test="empty(synstr:Value) and normalize-space($varOverrideNode_Value)!=''">
 					<Value>
@@ -212,6 +217,7 @@
 			</xsl:apply-templates>
 		</xsl:element>
 	</xsl:template>
+	<!-- Process Include files for Invoice  -->
 	<xsl:template match="synstr:Include">
 
 		<xsl:param name="paramIncludedFile"/>
@@ -265,6 +271,7 @@
 			<xsl:with-param name="paramXpathContext" select="$varDocXPathContext"/>
 		</xsl:apply-templates>
 	</xsl:template>
+	<!-- Template for Attribute -->
 	<xsl:template match="synstr:Attribute">
 		<xsl:param name="paramOverrideNode"/>
 		<Attribute>
@@ -319,7 +326,7 @@
 			</xsl:if>
 		</Attribute>
 	</xsl:template>
-
+	<!-- Template for Description -->
 	<xsl:template match="synstr:Description">
 		<xsl:param name="paramOverrideNode"/>
 		<xsl:variable name="varParentName" select="local-name(parent::*)"/>
@@ -341,6 +348,7 @@
 			<xsl:with-param name="varDescription" select="text()"/>
 		</xsl:call-template>
 	</xsl:template>
+	<!-- Template for Value -->
 	<xsl:template match="synstr:Value">
 		<xsl:param name="paramOverrideNode"/>
 		<xsl:variable name="varParentName" select="local-name(parent::*)"/>
@@ -361,6 +369,7 @@
 			<xsl:with-param name="varTermName" select="$varTermName"/>
 		</xsl:call-template>
 	</xsl:template>
+	<!-- Template for all other elements -->
 	<xsl:template match="*">
 		<xsl:element name="{name()}">
 			<xsl:apply-templates select="@*|node()"/>
