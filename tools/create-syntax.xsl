@@ -406,8 +406,7 @@
 					</Description>
 				</xsl:when>
 				<xsl:when test="$varOverrideNode_DescriptionAddFirst!='' and not(empty($varOverrideNode_DescriptionAddFirst))">
-					<Description>
-						BEAst: <xsl:value-of select="normalize-space($varOverrideNode_DescriptionAddFirst)"/>
+					<Description>BEAst: <xsl:value-of select="normalize-space($varOverrideNode_DescriptionAddFirst)"/>
 						<xsl:if test="$varDescription != ''">
 							<xsl:value-of select="concat('&#xa;', ' Peppol: ', normalize-space($varDescription))"/>
 						</xsl:if>
