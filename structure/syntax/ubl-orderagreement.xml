@@ -1639,8 +1639,7 @@
                      <Attribute>
                         <Term>listID</Term>
                         <Name>Item classification identifier identification scheme identifier</Name>
-                        <Description>
-						BEAst: For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID the version of the codelist in attribute "name", i.e. mutually agreed.
+                        <Description>BEAst: For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID the version of the codelist in attribute "name", i.e. mutually agreed.
  Peppol: The identification scheme identifier of the Item classification identifier</Description>
                         <Reference type="CODE_LIST">UNCL7143</Reference>
                         <Value type="EXAMPLE">ZZZ</Value>
@@ -1654,8 +1653,7 @@
                      <Attribute usage="Optional">
                         <Term>name</Term>
                         <Name>Clear text name equivalent of classification code</Name>
-                        <Description>
-						BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "AI", "CoClass”, “ME”, "RF" "SA", "SB", "SBF", and "SBMI". AI: Återvinningsindustrierna, ME: Maskinentreprenörerna, RF: Rentalföretagen, SA: Sveriges Åkeriföretag, SB: Svensk Betong, SBF: Svensk Beläggningsförening, SBMI: Sveriges Bergmaterialindustrier. Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "NOBB", "RT", "TUN", "Finfo", "RSK_SE", "RSK_NO", "ENO_SE", "ENO_NO".
+                        <Description>BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "AI", "CoClass”, “ME”, "RF" "SA", "SB", "SBF", and "SBMI". AI: Återvinningsindustrierna, ME: Maskinentreprenörerna, RF: Rentalföretagen, SA: Sveriges Åkeriföretag, SB: Svensk Betong, SBF: Svensk Beläggningsförening, SBMI: Sveriges Bergmaterialindustrier. Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "NOBB", "RT", "TUN", "Finfo", "RSK_SE", "RSK_NO", "ENO_SE", "ENO_NO".
  Peppol: The textual equivalent of the code value</Description>
                         <Value type="EXAMPLE">SBMI</Value>
                      </Attribute>
