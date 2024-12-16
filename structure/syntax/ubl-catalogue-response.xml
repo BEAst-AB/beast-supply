@@ -66,7 +66,6 @@
             <Description>Identifies the sender party's electronic address</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir58-009</Reference>
-            <Value type="EXAMPLE">7300010000001</Value>
             <Attribute>
                <Term>schemeID</Term>
                <Name>Scheme identifier</Name>
@@ -74,6 +73,7 @@
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0088</Value>
             </Attribute>
+            <Value type="EXAMPLE">7300010000001</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
@@ -85,7 +85,6 @@
                <Description>It should be possible to specify the identifier or identifiers for the party.</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir58-008</Reference>
-               <Value type="EXAMPLE">12345678</Value>
                <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
@@ -93,6 +92,7 @@
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0184</Value>
                </Attribute>
+               <Value type="EXAMPLE">12345678</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
@@ -119,7 +119,6 @@
             <Description>Identifies the reciver party's electronic address</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir58-012</Reference>
-            <Value type="EXAMPLE">7300010000001</Value>
             <Attribute>
                <Term>schemeID</Term>
                <Name>Scheme identifier</Name>
@@ -127,6 +126,7 @@
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0088</Value>
             </Attribute>
+            <Value type="EXAMPLE">7300010000001</Value>
          </Element>
          <Element cardinality="0..n">
             <Term>cac:PartyIdentification</Term>
@@ -138,7 +138,6 @@
                <Description>It should be possible to specify the identifier or identifiers for the party.</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir58-011</Reference>
-               <Value type="EXAMPLE">12345678</Value>
                <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
@@ -146,6 +145,7 @@
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0184</Value>
                </Attribute>
+               <Value type="EXAMPLE">12345678</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">

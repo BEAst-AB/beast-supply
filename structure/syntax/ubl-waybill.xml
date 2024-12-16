@@ -77,12 +77,12 @@
             <Term>cbc:EndpointID</Term>
             <Name>Endpoint ID </Name>
             <Description>An identifier for the end point of the routing service for the Consignor party (e.g., EAN Location Number, GLN).</Description>
-            <Value type="EXAMPLE">13246149</Value>
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0198</Value>
             </Attribute>
+            <Value type="EXAMPLE">13246149</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
@@ -93,12 +93,12 @@
                <Name>ID </Name>
                <Description>The ID used for identification.</Description>
                <Reference type="RULE">PEPPOL-T125-R031</Reference>
-               <Value type="EXAMPLE">7300010000001</Value>
                <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
+               <Value type="EXAMPLE">7300010000001</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
@@ -185,7 +185,6 @@
                <Term>cbc:CompanyID</Term>
                <Name>Consignor parties legal registration name </Name>
                <Description>The official name of the party as registered with the relevant fiscal authority.</Description>
-               <Value type="EXAMPLE">13246149</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Scheme identifier </Name>
@@ -193,6 +192,7 @@
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0198</Value>
                </Attribute>
+               <Value type="EXAMPLE">13246149</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:RegistrationAddress</Term>
@@ -250,12 +250,12 @@
             <Term>cbc:EndpointID</Term>
             <Name>Endpoint ID </Name>
             <Description>An identifier for the end point of the routing service for the carrier party (e.g., EAN Location Number, GLN).</Description>
-            <Value type="EXAMPLE">0108023-3</Value>
             <Attribute usage="Mandatory">
                <Term>schemeID</Term>
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0212</Value>
             </Attribute>
+            <Value type="EXAMPLE">0108023-3</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
@@ -265,12 +265,12 @@
                <Term>cbc:ID</Term>
                <Description/>
                <Reference type="RULE">PEPPOL-T125-R032</Reference>
-               <Value type="EXAMPLE">7300010000001</Value>
                <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
+               <Value type="EXAMPLE">7300010000001</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
@@ -357,7 +357,6 @@
                <Term>cbc:CompanyID</Term>
                <Name>Carrier parties legal registration name </Name>
                <Description>The official name of the party as registered with the relevant fiscal authority.</Description>
-               <Value type="EXAMPLE">0108023-3</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Scheme identifier </Name>
@@ -365,6 +364,7 @@
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0212</Value>
                </Attribute>
+               <Value type="EXAMPLE">0108023-3</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:RegistrationAddress</Term>
@@ -448,12 +448,12 @@
                <Term>cbc:ID</Term>
                <Description/>
                <Reference type="RULE">PEPPOL-T125-R033</Reference>
-               <Value type="EXAMPLE">7300010000001</Value>
                <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
+               <Value type="EXAMPLE">7300010000001</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
@@ -540,7 +540,6 @@
                <Term>cbc:CompanyID</Term>
                <Name>Freight forwarders parties legal registration name </Name>
                <Description>The official name of the party as registered with the relevant fiscal authority.</Description>
-               <Value type="EXAMPLE">0108023-3</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Scheme identifier </Name>
@@ -548,6 +547,7 @@
                   <Reference type="CODE_LIST">ICD</Reference>
                   <Value type="EXAMPLE">0212</Value>
                </Attribute>
+               <Value type="EXAMPLE">0108023-3</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:RegistrationAddress</Term>
@@ -606,13 +606,13 @@
             <Name>Shipment identifier</Name>
             <Description>Identifies a shipment. Freight forwarders reference number. If this ID is in the GSIN format, it should be indicated in the attribute @schemeID.</Description>
             <Reference type="BUSINESS_TERM">tir16-038</Reference>
-            <Value type="EXAMPLE">73500538500000019</Value>
             <Attribute usage="optional">
                <Term>schemeID</Term>
                <Description>Used to indicate that the ID is in the GSIN format. The Global Shipment Identification Number (GSIN) is a number that identifies a shipment and is assigned by the seller of goods. The goods shipper collects one or more logistic units for transportation to a recipient. A GSIN is assigned to this group of logistic units to identify them as a shipment.</Description>
                <Reference type="CODE_LIST">ShipmentIDType</Reference>
                <Value type="EXAMPLE">GSIN</Value>
             </Attribute>
+            <Value type="EXAMPLE">73500538500000019</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cbc:Information</Term>
@@ -630,13 +630,13 @@
                <Name>Consignment identifier </Name>
                <Description>If this ID is in the GINC format, it should be indicated in the attribute @schemeID.</Description>
                <Reference type="BUSINESS_TERM">tir16-040</Reference>
-               <Value type="EXAMPLE">735005233GS1TRANSPORT000001</Value>
                <Attribute usage="optional">
                   <Term>schemeID</Term>
                   <Description>Used to indicate that the ID is in the GINC (Global Identification Number for Consignment) format. This number identifies a consignment, which is a logical grouping of goods (one or more logistics units) transferred to a freight forwarder to be transported for a specific journey. The consignment number must be allocated by a freight forwarder (or a carrier acting as a freight forwarder) or a consignor, but only if prior agreement of the freight forwarder is given.</Description>
                   <Reference type="CODE_LIST">ConsignmentIDType</Reference>
                   <Value type="EXAMPLE">GINC</Value>
                </Attribute>
+               <Value type="EXAMPLE">735005233GS1TRANSPORT000001</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:ConsigneeAssignedID</Term>
@@ -657,11 +657,11 @@
                <Reference type="RULE">PEPPOL-T125-R005</Reference>
                <Reference type="RULE">PEPPOL-T125-R008</Reference>
                <Reference type="RULE">PEPPOL-T125-R040</Reference>
-               <Value type="EXAMPLE">1030</Value>
                <Attribute>
                   <Term>unitCode</Term>
                   <Value type="EXAMPLE">KGM</Value>
                </Attribute>
+               <Value type="EXAMPLE">1030</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:GrossVolumeMeasure</Term>
@@ -669,22 +669,22 @@
                <Description>The gross volumen of the consignment. Must be greather or equal the the volumen specified for the included transport handling unites if this is specified. Mandatory if grosswaight or loading lenght is not specified.</Description>
                <Reference type="RULE">PEPPOL-T125-R006</Reference>
                <Reference type="RULE">PEPPOL-T125-R008</Reference>
-               <Value type="EXAMPLE">20</Value>
                <Attribute>
                   <Term>unitCode</Term>
                   <Value type="EXAMPLE">MTQ</Value>
                </Attribute>
+               <Value type="EXAMPLE">20</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:LoadingLengthMeasure</Term>
                <Name>Loading length measure </Name>
                <Description>The total length in a means of transport or a piece of transport equipment which, given the width and height of the transport means, will accommodate all of the consignments in a single consolidation. Mandatory if grossweight or grossvolumen is not specified</Description>
                <Reference type="RULE">PEPPOL-T125-R008</Reference>
-               <Value type="EXAMPLE">0.4</Value>
                <Attribute>
                   <Term>unitCode</Term>
                   <Value type="EXAMPLE">MTR</Value>
                </Attribute>
+               <Value type="EXAMPLE">0.4</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cbc:HazardousRiskIndicator</Term>
@@ -698,11 +698,11 @@
                <Description>The total numbers of transport handling units is this consignment</Description>
                <Reference type="RULE">PEPPOL-T125-R003</Reference>
                <Reference type="RULE">PEPPOL-T125-R004</Reference>
-               <Value type="EXAMPLE">1</Value>
                <Attribute>
                   <Term>unitCode</Term>
                   <Value type="EXAMPLE">EA</Value>
                </Attribute>
+               <Value type="EXAMPLE">1</Value>
             </Element>
             <Element cardinality="1..1">
                <Term>cac:ConsigneeParty</Term>
@@ -716,12 +716,12 @@
                      <Term>cbc:ID</Term>
                      <Description/>
                      <Reference type="RULE">PEPPOL-T125-R034</Reference>
-                     <Value type="EXAMPLE">7300010000001</Value>
                      <Attribute usage="Optional">
                         <Term>schemeID</Term>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">0088</Value>
                      </Attribute>
+                     <Value type="EXAMPLE">7300010000001</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">
@@ -808,7 +808,6 @@
                      <Term>cbc:CompanyID</Term>
                      <Name>Consignee or delivery parties legal registration id </Name>
                      <Description>The official name of the party as registered with the relevant fiscal authority.</Description>
-                     <Value type="EXAMPLE">1567535-0</Value>
                      <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier </Name>
@@ -816,6 +815,7 @@
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">0212</Value>
                      </Attribute>
+                     <Value type="EXAMPLE">1567535-0</Value>
                   </Element>
                   <Element cardinality="0..1">
                      <Term>cac:RegistrationAddress</Term>
@@ -916,12 +916,12 @@
                   <Term>cbc:ID</Term>
                   <Name>Identifier transport handling unit </Name>
                   <Description>The Transport Handling Unit is identified with a Serial Shipping Container Code (SSCC). The GS1 identification key used to identify logistics units. The key comprises an extension digit, GS1 Company Prefix, serial reference and check digit.</Description>
-                  <Value type="EXAMPLE">173500538500000061</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Reference type="CODE_LIST">TransportHandlingUnitIDType</Reference>
                      <Value type="EXAMPLE">SSCC</Value>
                   </Attribute>
+                  <Value type="EXAMPLE">173500538500000061</Value>
                </Element>
                <Element cardinality="1..1">
                   <Term>cbc:TransportHandlingUnitTypeCode</Term>
@@ -935,11 +935,11 @@
                   <Name>Handling Code </Name>
                   <Description>The handling for this transporthandling unit expressed as a code</Description>
                   <Reference type="CODE_LIST">HandlingCode</Reference>
-                  <Value type="EXAMPLE">ZZ</Value>
                   <Attribute usage="Optional">
                      <Term>listID</Term>
                      <Value type="EXAMPLE">HandlingCode</Value>
                   </Attribute>
+                  <Value type="EXAMPLE">ZZ</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:HandlingInstructions</Term>
@@ -1017,13 +1017,13 @@
                      <Term>cbc:Measure</Term>
                      <Name>Measure </Name>
                      <Description>For the measure. Use UN/ECE Recommendation 20 and 21.subset.</Description>
-                     <Value type="EXAMPLE">123</Value>
                      <Attribute>
                         <Term>unitCode</Term>
                         <Name>Measure unit of measure </Name>
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">MTR</Value>
                      </Attribute>
+                     <Value type="EXAMPLE">123</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">
@@ -1041,12 +1041,12 @@
                      <Term>cbc:Measure</Term>
                      <Name>Measure </Name>
                      <Description>The value of the minimal temperature measurement.</Description>
-                     <Value type="EXAMPLE">-21</Value>
                      <Attribute>
                         <Term>unitCode</Term>
                         <Name>Measure unit of measure </Name>
                         <Value type="EXAMPLE">CEL</Value>
                      </Attribute>
+                     <Value type="EXAMPLE">-21</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">
@@ -1064,12 +1064,12 @@
                      <Term>cbc:Measure</Term>
                      <Name>Measure </Name>
                      <Description>The value of the maximum temperature measurement.</Description>
-                     <Value type="EXAMPLE">-21</Value>
                      <Attribute>
                         <Term>unitCode</Term>
                         <Name>Measure unit of measure </Name>
                         <Value type="EXAMPLE">CEL</Value>
                      </Attribute>
+                     <Value type="EXAMPLE">-21</Value>
                   </Element>
                </Element>
                <Element cardinality="0..n">
@@ -1106,7 +1106,6 @@
                            <Term>cbc:ItemClassificationCode</Term>
                            <Name>Item classification code</Name>
                            <Description/>
-                           <Value type="EXAMPLE">KO2012140200</Value>
                            <Attribute usage="Mandatory">
                               <Term>listID</Term>
                               <Description>The identification scheme identifier of the Item classification identifier.</Description>
@@ -1121,6 +1120,7 @@
                               <Term>name</Term>
                               <Value type="EXAMPLE">SBMI</Value>
                            </Attribute>
+                           <Value type="EXAMPLE">KO2012140200</Value>
                         </Element>
                      </Element>
                      <Element cardinality="0..n">
@@ -1174,7 +1174,6 @@
                            <Term>cbc:NetWeightMeasure</Term>
                            <Name>Net Weight Measure </Name>
                            <Description>Net weight of the Hazardous item.</Description>
-                           <Value type="EXAMPLE">123</Value>
                            <Attribute usage="Mandatory">
                               <Term>unitCode</Term>
                               <Name>Measure unit of measure</Name>
@@ -1182,12 +1181,12 @@
                               <Reference type="CODE_LIST">UNECERec20</Reference>
                               <Value type="EXAMPLE">KGM</Value>
                            </Attribute>
+                           <Value type="EXAMPLE">123</Value>
                         </Element>
                         <Element cardinality="0..1">
                            <Term>cbc:NetVolumeMeasure</Term>
                            <Name>Net Volume Measure </Name>
                            <Description>Net volume of the Hazardous item.</Description>
-                           <Value type="EXAMPLE">12.3</Value>
                            <Attribute usage="Mandatory">
                               <Term>unitCode</Term>
                               <Name>Measure unit of measure</Name>
@@ -1195,6 +1194,7 @@
                               <Reference type="CODE_LIST">UNECERec20</Reference>
                               <Value type="EXAMPLE">MTQ</Value>
                            </Attribute>
+                           <Value type="EXAMPLE">12.3</Value>
                         </Element>
                         <Element cardinality="0..n">
                            <Term>cac:HazardousGoodsTransit</Term>
@@ -1221,7 +1221,6 @@
                               <Term>cbc:Measure</Term>
                               <Name>Measure </Name>
                               <Description>The value of this temperature measurement.</Description>
-                              <Value type="EXAMPLE">78</Value>
                               <Attribute usage="Mandatory">
                                  <Term>unitCode</Term>
                                  <Name>Measure unit of measure</Name>
@@ -1229,6 +1228,7 @@
                                  <Reference type="CODE_LIST">UNECERec20</Reference>
                                  <Value type="EXAMPLE">CEL</Value>
                               </Attribute>
+                              <Value type="EXAMPLE">78</Value>
                            </Element>
                         </Element>
                      </Element>
@@ -1325,13 +1325,13 @@
                   <Term>cbc:ID</Term>
                   <Name>Identity of the delivery location</Name>
                   <Description>Identifies the delivery location.</Description>
-                  <Value type="EXAMPLE">5790000435951</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
                   </Attribute>
+                  <Value type="EXAMPLE">5790000435951</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Name</Term>
@@ -1411,7 +1411,6 @@
                      <Term>cbc:LatitudeDegreesMeasure</Term>
                      <Name>Latitude degrees</Name>
                      <Description>The X coordinate. Use degrees with decimals.</Description>
-                     <Value type="EXAMPLE">59.331660358041425</Value>
                      <Attribute usage="Mandatory">
                         <Term>unitCode</Term>
                         <Name>Latitude degrees unit of measure</Name>
@@ -1419,12 +1418,12 @@
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">DD</Value>
                      </Attribute>
+                     <Value type="EXAMPLE">59.331660358041425</Value>
                   </Element>
                   <Element cardinality="1..1">
                      <Term>cbc:LongitudeDegreesMeasure</Term>
                      <Name>Longitude degrees</Name>
                      <Description>The Y coordinate. Use degrees with decimals.</Description>
-                     <Value type="EXAMPLE">18.063363084988005</Value>
                      <Attribute usage="Mandatory">
                         <Term>unitCode</Term>
                         <Name>Longitude degrees unit of measure</Name>
@@ -1432,6 +1431,7 @@
                         <Reference type="CODE_LIST">UNECERec20</Reference>
                         <Value type="EXAMPLE">DD</Value>
                      </Attribute>
+                     <Value type="EXAMPLE">18.063363084988005</Value>
                   </Element>
                </Element>
             </Element>
@@ -1568,7 +1568,6 @@
                         <Term>cbc:LatitudeDegreesMeasure</Term>
                         <Name>Latitude degrees</Name>
                         <Description>The X coordinate. Use degrees with decimals.</Description>
-                        <Value type="EXAMPLE">59.33169866504851</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
                            <Name>Latitude degrees unit of measure</Name>
@@ -1576,12 +1575,12 @@
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">DD</Value>
                         </Attribute>
+                        <Value type="EXAMPLE">59.33169866504851</Value>
                      </Element>
                      <Element cardinality="1..1">
                         <Term>cbc:LongitudeDegreesMeasure</Term>
                         <Name>Longitude degrees</Name>
                         <Description>The Y coordinate. Use degrees with decimals.</Description>
-                        <Value type="EXAMPLE">18.063330898492403</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
                            <Name>Longitude degrees unit of measure</Name>
@@ -1589,12 +1588,12 @@
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">DD</Value>
                         </Attribute>
+                        <Value type="EXAMPLE">18.063330898492403</Value>
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cbc:AltitudeMeasure</Term>
                         <Name>Altitude</Name>
                         <Description>The Z coordinate.</Description>
-                        <Value type="EXAMPLE">12.5</Value>
                         <Attribute usage="Mandatory">
                            <Term>unitCode</Term>
                            <Name>Altitude unit of measure</Name>
@@ -1602,6 +1601,7 @@
                            <Reference type="CODE_LIST">UNECERec20</Reference>
                            <Value type="EXAMPLE">MTR</Value>
                         </Attribute>
+                        <Value type="EXAMPLE">12.5</Value>
                      </Element>
                   </Element>
                </Element>
@@ -1708,7 +1708,6 @@
                <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                <Name>Embedded binary object</Name>
                <Description>The referenced document can here be inserted as a binary object.</Description>
-               <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
                <Attribute>
                   <Term>mimeCode</Term>
                   <Reference type="CODE_LIST">MimeCode</Reference>
@@ -1718,6 +1717,7 @@
                   <Term>filename</Term>
                   <Value type="EXAMPLE">Hours-spent.pdf</Value>
                </Attribute>
+               <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:ExternalReference</Term>
@@ -1833,11 +1833,11 @@
                   <Term>cbc:ID</Term>
                   <Name>Person ID </Name>
                   <Description>The ID for a person. The type of ID can be specified in a schemeID.</Description>
-                  <Value type="EXAMPLE">45976</Value>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Value type="EXAMPLE">zzz</Value>
                   </Attribute>
+                  <Value type="EXAMPLE">45976</Value>
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:FirstName</Term>
@@ -1867,7 +1867,6 @@
                <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                <Name>Embedded binary object</Name>
                <Description>The referenced document can here be inserted as a binary object.</Description>
-               <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
                <Attribute>
                   <Term>mimeCode</Term>
                   <Reference type="CODE_LIST">MimeCode</Reference>
@@ -1877,6 +1876,7 @@
                   <Term>filename</Term>
                   <Value type="EXAMPLE">Hours-spent.pdf</Value>
                </Attribute>
+               <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:ExternalReference</Term>
