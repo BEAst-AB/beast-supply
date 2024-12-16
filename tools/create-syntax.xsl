@@ -271,14 +271,14 @@
 			<xsl:copy-of select="@*"/>
 			<xsl:for-each select="child::*">
 				<xsl:choose>
-					<!-- Process Value first -->
-					<xsl:when test="fn:name(.)='Value'">
+					<!-- Process Description  -->
+					<xsl:when test="fn:name(.)='Description'">
 						<xsl:apply-templates select=".">
 							<xsl:with-param name="paramOverrideNode" select="$paramOverrideNode"/>
 						</xsl:apply-templates>
 					</xsl:when>
-					<!-- Process Description after Value -->
-					<xsl:when test="fn:name(.)='Description'">
+					<!-- Process Value  -->
+					<xsl:when test="fn:name(.)='Value'">
 						<xsl:apply-templates select=".">
 							<xsl:with-param name="paramOverrideNode" select="$paramOverrideNode"/>
 						</xsl:apply-templates>
