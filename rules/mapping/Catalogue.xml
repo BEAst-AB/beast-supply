@@ -195,7 +195,7 @@
                <Data ss:Type="String">Catalogue action code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Identifies how a received catalogue should be used against existing catalogue lines sent in previous catalogues, so that no discrepancies occur between the suppliers and customers information. Describes how to treat existing items, not part of the received catalogue and those that are included (unchanged, changed or deleted). Default action is to fully replace the source catalogue.</Data>
+               <Data ss:Type="String">BEAst: Recommended to always replace, Peppol: Identifies how a received catalogue should be used against existing catalogue lines sent in previous catalogues, so that no discrepancies occur between the suppliers and customers information. Describes how to treat existing items, not part of the received catalogue and those that are included (unchanged, changed or deleted). Default action is to fully replace the source catalogue.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Add</Data>
@@ -247,7 +247,7 @@
                <Data ss:Type="String">Catalogue issue date</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The date on which the catalogue instance was issued. Format = "YYYY-MM-DD"</Data>
+               <Data ss:Type="String">BEAst: T6325, Document Date/Time. Peppol: The date on which the catalogue instance was issued. Format = "YYYY-MM-DD"</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">2018-05-31</Data>
@@ -377,7 +377,7 @@
                <Data ss:Type="String">Contract reference</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identification of a contract.</Data>
+               <Data ss:Type="String">BEAst: Use this ID to link the catalogue to the framework or project agreement Peppol: The identification of a contract.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -4693,7 +4693,7 @@
                <Data ss:Type="String">Item description</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Free-form field that can be used to give a text description of the item. A detailed description of the item.</Data>
+               <Data ss:Type="String">BEAst: Product Information (T6037). Peppol: Free-form field that can be used to give a text description of the item. A detailed description of the item.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Office chair by John Doe.</Data>
@@ -4797,7 +4797,7 @@
                <Data ss:Type="String">Item name</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A short name for an item.</Data>
+               <Data ss:Type="String">BEAst: Article Description (T6226). Peppol: A short name for an item.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">Office chair</Data>
@@ -4901,10 +4901,10 @@
                <Data ss:Type="String">Buyers item identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An identifier, assigned by the buyer, for the item. Associates the item with its identification according to the buyer's system.</Data>
+               <Data ss:Type="String">BEAst: Buyer's Article Number (T6022 or T0172 when T6317 = "BP" or Littera (T6417)). Peppol: An identifier, assigned by the buyer, for the item. Associates the item with its identification according to the buyer's system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">111111</Data>
+               <Data ss:Type="String">XYZ123</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:BuyersItemIdentification/cbc:ID</Data>
@@ -4953,10 +4953,10 @@
                <Data ss:Type="String">The Sellers item identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An identifier, assigned by the seller, for the item. Associates the item with its identification according to the seller's system.</Data>
+               <Data ss:Type="String">BEAst: Supplier's Artcle Number (T0172 when T6317 = "SA"). Peppol: An identifier, assigned by the seller, for the item. Associates the item with its identification according to the seller's system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">3249834</Data>
+               <Data ss:Type="String">8522173</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:SellersItemIdentification/cbc:ID</Data>
@@ -5057,10 +5057,10 @@
                <Data ss:Type="String">Item standard identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An item identifier based on a registered scheme. Associates the item with its identification according to a standard system.</Data>
+               <Data ss:Type="String">BEAst: Global Trade Item Number (T0154) or RSK Article Number Sweden (T6023). All other item number standards used within BEAst can not be used here until the organisation behind the standard decides to be a part of the codelist "ISO 6523 ICD". These are: NOBB Article Number (T6027), RT Article Number (T6460), TUN Article Number (T6028), Finfo/Vilma Article Number (T6029), Norwegian RSK Article Number (T6024), Norwegian E-number (T6026), E-number (T0260) and SGTIN (T6461). Peppol: An item identifier based on a registered scheme. Associates the item with its identification according to a standard system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">05704066204093</Data>
+               <Data ss:Type="String">7654879</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:StandardItemIdentification/cbc:ID</Data>
@@ -5525,7 +5525,7 @@
                <Data ss:Type="String">Clear text name equivalent of classification code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "AI", "CoClass”, “ME”, "RF" "SA", "SB", "SBF", "SBMI", "SW". AI: Återvinningsindustrierna, ME: Maskinentreprenörerna, RF: Rentalföretagen, SA: Sveriges Åkeriföretag, SB: Svensk Betong, SBF: Svensk Beläggningsförening, SBMI: Sveriges Bergmaterialindustrier, SW: Swedish Wood. Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "NOBB", "RT", "TUN", "Finfo", "RSK_SE", "RSK_NO", "ENO_SE", "ENO_NO". Peppol: The textual equivalent of the code value</Data>
+               <Data ss:Type="String">BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "AI", "CoClass”, “ME”, "RF" "SA", "SB", "SBF", "SBMI", "SW". AI: Återvinningsindustrierna, ME: Maskinentreprenörerna, RF: Rentalföretagen, SA: Sveriges Åkeriföretag, SB: Svensk Betong, SBF: Svensk Beläggningsförening, SBMI: Sveriges Bergmaterialindustrier, SW: Swedish Wood. Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "BK04", "ENO_SE", "ENO_NO", "ETIM", "Finfo", "RT", "TUN", "RSK_SE", "RSK_NO". Peppol: The textual equivalent of the code value</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">SBMI</Data>
@@ -5918,7 +5918,7 @@
                <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">https://define.cobuilder.no/77e416eb-a363-4258-a04e-171d843a6460/2022/</Data>
+               <Data ss:Type="String">https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:ID/schemeDataURI</Data>
@@ -5944,7 +5944,7 @@
                <Data ss:Type="String">The name of the property.The name must be sufficiently descriptive to define the value. The definition may be supplemented with the property unit of measure when relevant.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Size</Data>
+               <Data ss:Type="String">EPD Number</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:Name</Data>
@@ -5970,7 +5970,7 @@
                <Data ss:Type="String">Code for the item property according to a property code system.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">XL</Data>
+               <Data ss:Type="String">EPDNumber</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCode</Data>
@@ -5996,7 +5996,7 @@
                <Data ss:Type="String">An identifier for the code list used for the Name code, this is bilaterally agreed</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Size</Data>
+               <Data ss:Type="String">IPNC</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:NameCode/listID</Data>
@@ -6022,7 +6022,7 @@
                <Data ss:Type="String">The value of the item property.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">XXL</Data>
+               <Data ss:Type="String">NEPD-1717-700-SE</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:Value</Data>
@@ -6048,7 +6048,7 @@
                <Data ss:Type="String">The unit of measure in which the property value is stated, if relevant. May not be relevant when properties are descriptive.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">5</Data>
+               <Data ss:Type="String">15</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:ValueQuantity</Data>
@@ -6074,7 +6074,7 @@
                <Data ss:Type="String">The unit of measure that applies to the value quantity.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">XCS</Data>
+               <Data ss:Type="String">EA</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:ValueQuantity/unitCode</Data>
@@ -6100,7 +6100,7 @@
                <Data ss:Type="String">Standardized and predefined classification of items properties.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Allergen</Data>
+               <Data ss:Type="String">Climate Data</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:ValueQualifier</Data>
