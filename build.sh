@@ -283,7 +283,7 @@ docker run --rm -i \
   alpine:latest sh -c '
     apk add --no-cache zip
     rm -rf /files/Schematron.zip
-    cd /schematron && zip -r /files/Schematron.zip .
+    cd /schematron && zip -r /files/BEAstSchematron.zip .
     echo "Example files"
     rm -rf /files/Examples.zip
     cd /examples && zip -r /files/Examples.zip .
