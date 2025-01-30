@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+                Content:
+                This file contains a Example of Miljödata NU! base information in UBL Despatch Adivce for rebar category.
+				
+				Change Log:
+				2023-05-16
+				- Initial version
+				2024-05-07
+				- Updated to version 1.2 of Advanced Despatch Advice, i.e. Delivery Contact info is moved from cac:DeliveryContact to ac:DeliveryCustomerParty/cac:Contact
+				2025-01-30
+				- Removed the additional itemp property for Trafikverkets resource id
+		
+-->
+<DespatchAdvice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</cbc:ProfileID>
+	<cbc:ID>43413589</cbc:ID>
+	<!-- Unique ID from the supplier -->
+	<cbc:IssueDate>2020-12-21</cbc:IssueDate>
+	<cbc:IssueTime>13:14:34</cbc:IssueTime>
+	<cbc:Note>Some note about the delivery</cbc:Note>
+
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>9876986</cbc:ID>
+		<cbc:DocumentType>ProjectReference</cbc:DocumentType>
+	</cac:AdditionalDocumentReference>
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>9876986-1-5544</cbc:ID>
+		<cbc:DocumentType>AccountingCost</cbc:DocumentType>
+	</cac:AdditionalDocumentReference>
+
+	<cac:DespatchSupplierParty>
+		<!-- Mandatory, the party that despatcheds the goods or provides service -->
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">5565784724</cbc:EndpointID>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0007">5565784724</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PostalAddress>
+				<cbc:StreetName>Cylindervägen 12</cbc:StreetName>
+				<cbc:CityName>Nacka Strand</cbc:CityName>
+				<cbc:PostalZone>131 52</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>BE Group AB</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Name>Anders Eriksson</cbc:Name>
+				<cbc:Telephone>010-123456789</cbc:Telephone>
+				<cbc:ElectronicMail>info@begroup.se</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:DespatchSupplierParty>
+	<cac:DeliveryCustomerParty>
+		<!-- Mandatory, the party that recieves the goods or service -->
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">5560339086</cbc:EndpointID>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0007">5560339086</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PostalAddress>
+				<cbc:StreetName>Warfvinges väg 25</cbc:StreetName>
+				<cbc:CityName>Stockholm</cbc:CityName>
+				<cbc:PostalZone>112 74</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Skanska Sverige AB</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Name>Alexander Janving</cbc:Name>
+				<cbc:Telephone>010-448 00 000</cbc:Telephone>
+				<cbc:ElectronicMail>some.email@skanska.se</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+
+	</cac:DeliveryCustomerParty>
+	<cac:BuyerCustomerParty>
+		<!-- BEAst recommends sending BuyerCustomerParty even if it is optional since it is easier for the receiver. -->
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0007">5560339086</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>Skanska Sverige AB</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Warfvinges väg 25</cbc:StreetName>
+				<cbc:CityName>Stockholm</cbc:CityName>
+				<cbc:PostalZone>112 74</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+		</cac:Party>
+	</cac:BuyerCustomerParty>
+	<cac:SellerSupplierParty>
+		<!-- BEAst recommends sending SellerSupplierParty even if it is optional since it is easier for the receiver. -->
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0007">5565784724</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>BE Group AB</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Cylindervägen 12</cbc:StreetName>
+				<cbc:CityName>Nacka Strand</cbc:CityName>
+				<cbc:PostalZone>131 52</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+		</cac:Party>
+	</cac:SellerSupplierParty>
+	<cac:Shipment>
+		<cbc:ID>1</cbc:ID>
+		<!-- Mandatory Shipment number (fraktsedelsnummer) is mapped to this field -->
+		<cac:Delivery>
+			<cac:EstimatedDeliveryPeriod>
+				<cbc:StartDate>2022-11-23</cbc:StartDate>
+				<cbc:EndDate>2022-11-23</cbc:EndDate>
+			</cac:EstimatedDeliveryPeriod>
+		</cac:Delivery>
+	</cac:Shipment>
+	<cac:DespatchLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:DeliveredQuantity unitCode="EA">84</cbc:DeliveredQuantity>
+
+		<!-- OrderLineReference LineID is Mandatory, if no order number and line has been provided by the buyer, set it to NA (For example, if no digital order has been issued.)
+		<cac:OrderLineReference>
+			<cbc:LineID>NA</cbc:LineID>
+		</cac:OrderLineReference>  -->
+		<cac:OrderLineReference>
+			<cbc:LineID>1</cbc:LineID>
+			<cac:OrderReference>
+				<cbc:ID>90000123</cbc:ID>
+			</cac:OrderReference>
+		</cac:OrderLineReference>
+
+		<cac:Item>
+			<!-- If a up to date and complete masterdata/catalog are available for the receiver of this message
+			then the only necessary Item information to send would be StandardItemIdentification as GTIN-->
+			<cbc:Name>Armeringsstål K500CT 10 MM 6 M</cbc:Name>
+			<cac:BuyersItemIdentification>
+				<cbc:ID>9870202</cbc:ID>
+				<!-- Litera number or similar, used for the buyer reference -->
+			</cac:BuyersItemIdentification>
+			<cac:SellersItemIdentification>
+				<cbc:ID>1401102040</cbc:ID>
+			</cac:SellersItemIdentification>
+			<cac:ManufacturersItemIdentification>
+				<cbc:ID>1401102040</cbc:ID>
+			</cac:ManufacturersItemIdentification>
+			<!-- GTIN-->
+			<cac:StandardItemIdentification>
+				<cbc:ID schemeID="0160">7318936539543</cbc:ID>
+			</cac:StandardItemIdentification>
+
+			<!-- UNSPSC -->
+			<cac:CommodityClassification>
+				<cbc:ItemClassificationCode listID="TST" listVersionID="26.0801" name="UNSPSC">30103623</cbc:ItemClassificationCode>
+			</cac:CommodityClassification>
+
+			<!-- Machine readable data -->
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Dataset ID</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDDataSetID</cbc:NameCode>
+				<cbc:Value>165f8554-00cd-43ad-aeb7-ba769854554a</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<!-- Machine readable data -->
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Dataset URL</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDDataSetURL</cbc:NameCode>
+				<cbc:Value>https://epdireland.lca-data.com/resource/processes/f256594a-a7bf-4bbb-91d0-65be256377c0?format=xml&amp;version=00.04.001</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<!-- Human readable data -->
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Program Operator</cbc:Name>
+				<cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
+				<cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<!-- Human readable data -->
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Number</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
+				<cbc:Value>NEPD-1260-406-EN</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<!-- Human readable data -->
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Product Name</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
+				<cbc:Value>Gyproc® Normal – Standard Plasterboard</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<!-- Human readable data -->
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD HR URL</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDHRURL</cbc:NameCode>
+				<cbc:Value>https://epdireland.lca-data.com/resource/processes/f256594a-a7bf-4bbb-91d0-65be256377c0?format=html&amp;version=00.04.001</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<!-- Human readable data -->
+			<cac:AdditionalItemProperty>
+				<cbc:Name>EPD Data Set Product Name</cbc:Name>
+				<cbc:NameCode listID="IPNC">EPDDataSetProductName</cbc:NameCode>
+				<cbc:Value>Armeringsstål K500CT</cbc:Value>
+			</cac:AdditionalItemProperty>
+			<!-- GWP data calculated from supplier -->
+			<cac:AdditionalItemProperty>
+				<cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+				<cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="KGM">124</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+
+			<!-- Generic climate data -->
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Boverket Resource ID</cbc:Name>
+				<cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
+				<cbc:Value>6000000154</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:Dimension>
+				<cbc:AttributeID>AAF</cbc:AttributeID>
+				<cbc:Measure unitCode="KGM">3.72</cbc:Measure>
+			</cac:Dimension>
+
+		</cac:Item>
+	</cac:DespatchLine>
+</DespatchAdvice>
