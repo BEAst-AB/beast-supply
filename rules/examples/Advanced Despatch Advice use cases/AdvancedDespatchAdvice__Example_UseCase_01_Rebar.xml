@@ -10,6 +10,7 @@
 				- Updated to version 1.2 of Advanced Despatch Advice, i.e. Delivery Contact info is moved from cac:DeliveryContact to ac:DeliveryCustomerParty/cac:Contact
 				2025-01-30
 				- Removed the additional itemp property for Trafikverkets resource id
+				- Changed some properties to releate to EPD for rebar instead of gypsum board
 		
 -->
 <DespatchAdvice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -187,25 +188,25 @@
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Program Operator</cbc:Name>
 				<cbc:NameCode listID="IPNC">ProgramOperator</cbc:NameCode>
-				<cbc:Value>The Norwegian EPD Foundation</cbc:Value>
+				<cbc:Value>EPD International</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<!-- Human readable data -->
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD Number</cbc:Name>
 				<cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
-				<cbc:Value>NEPD-1260-406-EN</cbc:Value>
+				<cbc:Value>SP-04910</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<!-- Human readable data -->
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD Product Name</cbc:Name>
 				<cbc:NameCode listID="IPNC">EPDProductName</cbc:NameCode>
-				<cbc:Value>Gyproc® Normal – Standard Plasterboard</cbc:Value>
+				<cbc:Value>Steel Billets and Hot rolled steel</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<!-- Human readable data -->
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD HR URL</cbc:Name>
 				<cbc:NameCode listID="IPNC">EPDHRURL</cbc:NameCode>
-				<cbc:Value>https://epdireland.lca-data.com/resource/processes/f256594a-a7bf-4bbb-91d0-65be256377c0?format=html&amp;version=00.04.001</cbc:Value>
+				<cbc:Value>https://api.environdec.com/api/v1/EPDLibrary/Files/42c9c6f0-b51c-4517-fb3c-08dbfcbc4c1b/Data</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<!-- Human readable data -->
 			<cac:AdditionalItemProperty>
