@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:msxsl="urn:schemas-microsoft-com:xslt"
+          xmlns:o="urn:schemas-microsoft-com:office:office"
+          xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:str="urn:fdc:difi.no:2017:vefa:structure-1"
+          xmlns:x="urn:schemas-microsoft-com:office:excel">
+   <Styles>
+      <Style ss:ID="Default" ss:Name="Normal">
+         <Alignment ss:Vertical="Bottom"/>
+         <Borders/>
+         <Font ss:FontName="Calibri"
+               x:Family="Swiss"
+               ss:Size="11"
+               ss:Color="#000000"/>
+         <Interior/>
+         <NumberFormat/>
+         <Protection/>
+      </Style>
+      <Style ss:ID="s24" ss:Name="Heading 3">
+         <Borders>
+            <Border ss:Position="Bottom"
+                    ss:LineStyle="Continuous"
+                    ss:Weight="2"
+                    ss:Color="#8EA9DB"/>
+         </Borders>
+         <Font ss:FontName="Calibri"
+               x:Family="Swiss"
+               ss:Size="11"
+               ss:Color="#339966"
+               ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="s63" ss:Parent="s24">
+         <Borders>
+            <Border ss:Position="Bottom"
+                    ss:LineStyle="Continuous"
+                    ss:Weight="2"
+                    ss:Color="#8EA9DB"/>
+         </Borders>
+         <Font ss:FontName="Calibri"
+               x:Family="Swiss"
+               ss:Size="11"
+               ss:Color="#333333"
+               ss:Bold="1"/>
+         <Interior/>
+      </Style>
+   </Styles>
+   <Worksheet ss:Name="Sheet1">
+      <Table>
+         <Column ss:Width="30"/>
+         <Column ss:Width="200"/>
+         <Column ss:Width="200"/>
+         <Column ss:Width="200"/>
+         <Column ss:Width="200"/>
+         <Column ss:Width="200"/>
+         <Column ss:Width="30"/>
+         <Row>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Card</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Term</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Name</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Description</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Example</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">XPath</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Node Level</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Sequence</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">ubl:ApplicationResponse</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">0</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">0</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:CustomizationID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Specification identification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies the specification of content and rules that apply to the transaction.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">urn:fdc:peppol.eu:poacc:trns:catalogue_response:3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cbc:CustomizationID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:ProfileID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Business process type identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies the BII profile or business process context in which the transaction appears.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cbc:ProfileID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Response identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An transaction instance must contain an identifier. The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">R-12</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:IssueDate</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Response issue date</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The date on which the transaction instance was issued.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">2018-05-31</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cbc:IssueDate</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:IssueTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Response issue time</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The time at which the transaction instance was issued.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">10:34:21</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cbc:IssueTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..n</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:Note</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Response textual notes</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Used to make any comments or instructions relevant to the response, including the date that the reported decision becomes effective.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Additional instructions</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cbc:Note</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:SenderParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Sender party</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:SenderParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:EndpointID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Sender party electronic address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies the sender party's electronic address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">7300010000001</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:SenderParty/cbc:EndpointID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier for the electronic address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0088</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:SenderParty/cbc:EndpointID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party Identification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:SenderParty/cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">It should be possible to specify the identifier or identifiers for the party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">12345678</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:SenderParty/cac:PartyIdentification/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier of the Provider identification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0184</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:SenderParty/cac:PartyIdentification/cbc:ID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PartyLegalEntity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:SenderParty/cac:PartyLegalEntity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:RegistrationName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The name of the party sending the response.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Seller company Ltd.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:SenderParty/cac:PartyLegalEntity/cbc:RegistrationName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:ReceiverParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Receiver party</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:ReceiverParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:EndpointID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Reciever party electronic address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies the reciver party's electronic address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">7300010000001</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:ReceiverParty/cbc:EndpointID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier for the electronic address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0088</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:ReceiverParty/cbc:EndpointID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..n</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party Identification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:ReceiverParty/cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">It should be possible to specify the identifier or identifiers for the party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">12345678</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:ReceiverParty/cac:PartyIdentification/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier of the Provider identification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0184</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:ReceiverParty/cac:PartyIdentification/cbc:ID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:PartyLegalEntity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:ReceiverParty/cac:PartyLegalEntity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:RegistrationName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The name of the party receiving the response.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Customer AS</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:ReceiverParty/cac:PartyLegalEntity/cbc:RegistrationName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..n</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:DocumentResponse</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document response</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:DocumentResponse</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Response</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Response</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:DocumentResponse/cac:Response</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ResponseCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Coded decision</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A code for the description of the response to the transaction document. AP= Accepted, RE = Rejected, UN/Cefact 4343 Response type code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">AP</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:DocumentResponse/cac:Response/cbc:ResponseCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:DocumentReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:DocumentResponse/cac:DocumentReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies the document being referred to.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Cat-12</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:DocumentResponse/cac:DocumentReference/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:VersionID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document version</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The version of the document that has been identified with the document identifier.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">1.0</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:ApplicationResponse/cac:DocumentResponse/cac:DocumentReference/cbc:VersionID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2800</Data>
+            </Cell>
+         </Row>
+      </Table>
+   </Worksheet>
+</Workbook>

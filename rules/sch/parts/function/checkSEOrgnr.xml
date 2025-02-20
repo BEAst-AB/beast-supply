@@ -11,7 +11,7 @@
 			<variable name="mainPart" select="substring($number, 1, 9)"/>
 			<variable name="checkDigit" select="substring($number, 10, 1)"/>
 			<variable name="sum" as="xs:integer">
-				<value-of select="sum(
+			  <value-of select="sum(
 						for $pos in 1 to string-length($mainPart) return 
 							if ($pos mod 2 = 1) 
 							then (number(substring($mainPart, string-length($mainPart) - $pos + 1, 1)) * 2) mod 10 + 
