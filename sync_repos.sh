@@ -1,11 +1,11 @@
 #!/bin/bash
 
 BILLINGREPO="https://github.com/OpenPEPPOL/peppol-bis-invoice-3.git"
-BILLINGBRANCH="main"
+BILLINGBRANCH="master"
 LOGISTICSREPO="https://github.com/OpenPEPPOL/Logistics-bis.git"
 LOGISTICSBRANCH="main"
 POACCREPO="https://github.com/OpenPEPPOL/poacc-upgrade-3.git"
-POACCBRANCH="main"
+POACCBRANCH="master"
 
 
 
