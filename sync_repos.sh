@@ -21,7 +21,7 @@ sync_repo() {
   # Ensure the target directory exists
   mkdir -p "$target_path"
   # Copy contents of the source directory to the target directory
-  cp -rf temp-repo/"$source_path"/* "$target_path"
+  \cp -rvf temp-repo/"$source_path"/* "$target_path"
   rm -rf temp-repo # Clean up temporary repo
 }
 
@@ -43,7 +43,7 @@ sync_repo $BILLINGREPO $BILLINGBRANCH "structure/codelist" "structure/codelist"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "structure/codelist" "structure/codelist"
 sync_repo $POACCREPO $POACCBRANCH "structure/codelist" "structure/codelist"
 
-# Code lists
+# Guides
 sync_repo $POACCREPO $POACCBRANCH "guides/profiles/1-catalogueonly" "guides/profiles/1-catalogueonly"
 sync_repo $POACCREPO $POACCBRANCH "guides/profiles/64-catalogue-wo-response" "guides/profiles/64-catalogue-wo-response"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/66-advanceddespatchadvice" "guides/profiles/66-advanceddespatchadvice"
@@ -54,3 +54,4 @@ sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/70-transportexecution
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/71-waybill" "guides/profiles/71-waybill"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/72-transportationstatus_w_request" "guides/profiles/72-transportationstatus_w_request"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/73-transportationstatus" "guides/profiles/73-transportationstatus"
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/shared" "guides/shared"
