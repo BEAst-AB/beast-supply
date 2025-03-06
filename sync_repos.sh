@@ -21,7 +21,7 @@ sync_repo() {
   # Ensure the target directory exists
   mkdir -p "$target_path"
   # Copy contents of the source directory to the target directory
-  cp -r temp-repo/"$source_path"/* "$target_path"
+  cp -rf temp-repo/"$source_path"/* "$target_path"
   rm -rf temp-repo # Clean up temporary repo
 }
 
