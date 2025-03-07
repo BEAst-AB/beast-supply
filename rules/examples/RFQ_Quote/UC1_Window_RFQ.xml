@@ -6,10 +6,10 @@
         xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
 	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrdm068:ver3.0:extended:urn:www.peppol.eu:bis:peppol35a:ver1.0</cbc:CustomizationID>
 	<cbc:ProfileID>urn:www.cenbii.eu:profile:bii35:ver3.0</cbc:ProfileID>
-	<cbc:ID>123456</cbc:ID>
+	<cbc:ID>654321</cbc:ID>
 	<cbc:IssueDate>2025-03-07</cbc:IssueDate>
 	<cbc:IssueTime>08:29:00</cbc:IssueTime>
-	<cbc:Note>Vi tackar för er förfrågan och offererar enligt nedan.</cbc:Note>
+	<cbc:Note>Välkommen att svara på förfrågan till kv Skatan</cbc:Note>
 
 	<!-- ReceiverParty  -->
 	<cac:ReceiverParty>
@@ -123,17 +123,34 @@
 			<cac:CommodityClassification>
 				<cbc:ItemClassificationCode listID="MN">AFKO M0:0</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
+			<cac:CommodityClassification>
+				<!-- UNSPSC code for "Fixed Window" -->
+				<cbc:ItemClassificationCode listID="TST">30171609</cbc:ItemClassificationCode>
+			</cac:CommodityClassification>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Window type according to EN 12519</cbc:Name>
+				<cbc:NameCode listID="EN12519">WindowType</cbc:NameCode>
+				<cbc:Value>FixedWindow</cbc:Value>
+			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
 				<cbc:ID schemeID="EN12519" schemeVersionID="2018" schemeDataURI="https://define.cobuilder.no/77e416eb-a363-4258-a04e-171d843a6460/2018/">77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
 				<cbc:Name>Frame width according to EN 12519</cbc:Name>
+				<cbc:NameCode>FrameWidth</cbc:NameCode>
 				<cbc:Value>NA</cbc:Value>
 				<cbc:ValueQuantity unitCode="MMT">480</cbc:ValueQuantity>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
 				<cbc:ID schemeID="EN12519" schemeVersionID="2018" schemeDataURI="https://define.cobuilder.no/66e416eb-a363-4258-a04e-171d843a6460/2018/">66e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
 				<cbc:Name>Frame height according to EN 12519</cbc:Name>
+				<cbc:NameCode>FrameHeight</cbc:NameCode>
 				<cbc:Value>NA</cbc:Value>
 				<cbc:ValueQuantity unitCode="MMT">1380</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="EN12519" schemeVersionID="2018" schemeDataURI="https://define.cobuilder.no/88e416eb-a363-4258-a04e-171d843a6460/2018/">88e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
+				<cbc:Name>Frame material</cbc:Name>
+				<cbc:NameCode>FrameMaterial</cbc:NameCode>
+				<cbc:Value>Aluminium</cbc:Value>
 			</cac:AdditionalItemProperty>
 		</cac:Item>
 	</cac:CatalogueRequestLine>
