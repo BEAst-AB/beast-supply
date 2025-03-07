@@ -40,8 +40,8 @@ sync_repo $LOGISTICSREPO $LOGISTICSBRANCH  "rules/examples" "rules/examples"
 
 # Code lists
 sync_repo $BILLINGREPO $BILLINGBRANCH "structure/codelist" "structure/codelist"
-sync_repo $POACCREPO $POACCBRANCH "structure/codelist" "structure/codelist"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "structure/codelist" "structure/codelist"
+sync_repo $POACCREPO $POACCBRANCH "structure/codelist" "structure/codelist"
 
 # Guides
 sync_repo $POACCREPO $POACCBRANCH "guides/profiles/1-catalogueonly" "guides/profiles/1-catalogueonly"
