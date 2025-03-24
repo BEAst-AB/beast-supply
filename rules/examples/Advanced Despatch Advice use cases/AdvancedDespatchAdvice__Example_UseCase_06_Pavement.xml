@@ -63,8 +63,8 @@
 			</cac:PartyIdentification>
 			<cac:PostalAddress>
 				<cbc:StreetName>Byggvägen 40</cbc:StreetName>
-				<cbc:CityName>Uppsala</cbc:CityName>
-				<cbc:PostalZone>654 32</cbc:PostalZone>
+				<cbc:CityName>Växjö</cbc:CityName>
+				<cbc:PostalZone>352 74</cbc:PostalZone>
 				<cac:Country>
 					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 				</cac:Country>
@@ -88,8 +88,8 @@
 			</cac:PartyIdentification>
 			<cac:PostalAddress>
 				<cbc:StreetName>Byggvägen 40</cbc:StreetName>
-				<cbc:CityName>Uppsala</cbc:CityName>
-				<cbc:PostalZone>654 32</cbc:PostalZone>
+				<cbc:CityName>Växjö</cbc:CityName>
+				<cbc:PostalZone>352 74</cbc:PostalZone>
 				<cac:Country>
 					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 				</cac:Country>
@@ -162,7 +162,7 @@
 		<cac:Delivery>
 			<cac:DeliveryLocation>
 				<cbc:ID schemeID="0007">5560339086</cbc:ID>
-				<cbc:Name>Skanska Slussen SN94</cbc:Name>
+				<cbc:Name>Vägsträcka SN94</cbc:Name>
 				<cac:Address>
 					<cbc:StreetName>Katarinavägen 21</cbc:StreetName>
 					<cbc:AdditionalStreetName>SN94</cbc:AdditionalStreetName>
@@ -215,13 +215,11 @@
 			<cac:SellersItemIdentification>
 				<cbc:ID>1000051</cbc:ID>
 			</cac:SellersItemIdentification>
+			
+			<!-- Used for tracability purposes. Could be same as SellersItemIdentification if product is bought from manufacturer. -->
 			<cac:ManufacturersItemIdentification>
 				<cbc:ID>ASFT-ABT11-100150</cbc:ID>
 			</cac:ManufacturersItemIdentification>
-			<!-- GTIN -->
-			<cac:StandardItemIdentification>
-				<cbc:ID schemeID="0160">7311234567893</cbc:ID>
-			</cac:StandardItemIdentification>
 
 			<!-- UNSPSC -->
 			<cac:CommodityClassification>
@@ -274,37 +272,12 @@
 				<cbc:ValueQuantity unitCode="KGM">0.015</cbc:ValueQuantity>
 			</cac:AdditionalItemProperty>
 
-			<!-- Certifiering alternativ 1: Om det är samma certifiering på material och tillverkning -->
+			<!-- Certifiering alternativ -->
 			<cac:Certificate>
 				<cbc:ID>1162-CPR-0997</cbc:ID>
 				<cbc:CertificateTypeCode>CE</cbc:CertificateTypeCode>
 				<cbc:CertificateType>Factory Production Control Certification</cbc:CertificateType>
 				<cbc:Remarks>Certified under EN 13108 series</cbc:Remarks>
-				<cac:IssuerParty>
-					<cac:PartyName>
-						<cbc:Name>DNV GL Business Assurance Sweden AB</cbc:Name>
-					</cac:PartyName>
-				</cac:IssuerParty>
-			</cac:Certificate>
-
-			<cac:Certificate>
-				<cbc:ID>CERT-2025-0001</cbc:ID><!-- Påhittat nummer -->
-				<cbc:CertificateTypeCode>SSEN13108-1</cbc:CertificateTypeCode>
-				<cbc:CertificateType>Bituminous mixtures - Material specifications</cbc:CertificateType>
-				<cbc:Remarks>Defines requirements and testing methods for asphalt concrete.</cbc:Remarks>
-				<cac:IssuerParty>
-					<cac:PartyName>
-						<cbc:Name>DNV GL Business Assurance Sweden AB</cbc:Name>
-					</cac:PartyName>
-				</cac:IssuerParty>
-			</cac:Certificate>
-
-			<!-- Certifiering alternativ 2: Om material och tillverkning har separata certifieringar -->
-			<cac:Certificate>
-				<cbc:ID>1162-CPR-0997</cbc:ID>
-				<cbc:CertificateTypeCode>CE</cbc:CertificateTypeCode>
-				<cbc:CertificateType>Factory Production Control Certification</cbc:CertificateType>
-				<cbc:Remarks>Certified under EN 13108 series for 2024</cbc:Remarks>
 				<cac:IssuerParty>
 					<cac:PartyName>
 						<cbc:Name>DNV GL Business Assurance Sweden AB</cbc:Name>
