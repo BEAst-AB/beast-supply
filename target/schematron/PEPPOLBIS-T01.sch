@@ -1111,26 +1111,7 @@
          <assert test="cbc:Name" flag="fatal" id="PEPPOL-T01-B30201">Element 'cbc:Name' MUST be provided.</assert>
          <assert test="cbc:Value" flag="fatal" id="PEPPOL-T01-B30202">Element 'cbc:Value' MUST be provided.</assert>
       </rule>
-      <rule context="/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:ID">
-         <assert test="@schemeDataURI" flag="fatal" id="PEPPOL-T01-B30301">Element '@schemeDataURI' MUST be provided.</assert>
-         <assert test="@schemeID" flag="fatal" id="PEPPOL-T01-B30302">Element '@schemeID' MUST be provided.</assert>
-         <assert test="@schemeVersionID" flag="fatal" id="PEPPOL-T01-B30303">Element '@schemeVersionID' MUST be provided.</assert>
-      </rule>
-      <rule context="/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:ID/@schemeDataURI"/>
-      <rule context="/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:ID/@schemeDataURI/*">
-         <assert test="false()" flag="fatal" id="PEPPOL-T01-B30401">Document MUST NOT contain elements not part of the data model.</assert>
-      </rule>
-      <rule context="/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:ID/@schemeID"/>
-      <rule context="/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:ID/@schemeID/*">
-         <assert test="false()" flag="fatal" id="PEPPOL-T01-B30501">Document MUST NOT contain elements not part of the data model.</assert>
-      </rule>
-      <rule context="/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:ID/@schemeVersionID"/>
-      <rule context="/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:ID/@schemeVersionID/*">
-         <assert test="false()" flag="fatal" id="PEPPOL-T01-B30601">Document MUST NOT contain elements not part of the data model.</assert>
-      </rule>
-      <rule context="/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:ID/*">
-         <assert test="false()" flag="fatal" id="PEPPOL-T01-B30304">Document MUST NOT contain elements not part of the data model.</assert>
-      </rule>
+      <rule context="/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:ID"/>
       <rule context="/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:Name"/>
       <rule context="/ubl:Order/cac:OrderLine/cac:LineItem/cac:Item/cac:AdditionalItemProperty/cbc:NameCode">
          <assert test="@listID" flag="fatal" id="PEPPOL-T01-B30801">Attribute 'listID' MUST be present.</assert>
