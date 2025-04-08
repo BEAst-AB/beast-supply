@@ -135,7 +135,7 @@
 		<cac:Consignment>
 			<cbc:ID>NA</cbc:ID>
 			<cac:CarrierParty>
-				<!-- Valfri info om man har den-->
+				<!-- Optional info if the sanufacturer got the info -->
 				<cac:PartyIdentification>
 					<cbc:ID schemeID="0007">5560691684</cbc:ID>
 				</cac:PartyIdentification>
@@ -151,7 +151,7 @@
 			</cac:CarrierParty>
 		</cac:Consignment>
 		<cac:ShipmentStage>
-			<!-- Valfri info om man har den-->
+			<!-- Optional info if the sanufacturer got the info -->
 			<cbc:TransportModeCode>3</cbc:TransportModeCode>
 			<cac:TransportMeans>
 				<cac:RoadTransport>
@@ -213,10 +213,12 @@
 		<cac:Item>
 			<cbc:Name>ABT 11 100/150</cbc:Name>
 			<cac:SellersItemIdentification>
-				<cbc:ID>1000051</cbc:ID>
+				<cbc:ID>ASFT-ABT11-100150</cbc:ID>
 			</cac:SellersItemIdentification>
 			
-			<!-- Used for tracability purposes. Could be same as SellersItemIdentification if product is bought from manufacturer. -->
+			<!-- Used for tracability purposes. Used when no GTIN is present for StandardItemIdentification. 
+				 Could be same as SellersItemIdentification if product is bought from manufacturer.
+				 -->
 			<cac:ManufacturersItemIdentification>
 				<cbc:ID>ASFT-ABT11-100150</cbc:ID>
 			</cac:ManufacturersItemIdentification>
@@ -233,6 +235,7 @@
 				<cbc:Value>165f8554-00cd-43ad-aeb7-ba769854554a</cbc:Value>
 			</cac:AdditionalItemProperty>
 
+			<!-- Generella EPDer publiceras men specefika produceras efteråt lokalt. Mor/dotter EPD likt för Betongen, förklaring på denna hanteringen. -->
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD Dataset URL</cbc:Name>
 				<cbc:NameCode listID="IPNC">EPDDataSetURL</cbc:NameCode>
@@ -268,11 +271,11 @@
 			<cac:AdditionalItemProperty>
 				<cbc:Name>GWP GHG A1-3 EPD value per kilogram</cbc:Name>
 				<cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
-				<cbc:Value>15 kg CO₂ eq/ton</cbc:Value>
+				<cbc:Value>NA</cbc:Value>
 				<cbc:ValueQuantity unitCode="KGM">0.015</cbc:ValueQuantity>
 			</cac:AdditionalItemProperty>
 
-			<!-- Certifiering alternativ -->
+			<!-- Certification -->
 			<cac:Certificate>
 				<cbc:ID>1162-CPR-0997</cbc:ID>
 				<cbc:CertificateTypeCode>CE</cbc:CertificateTypeCode>
@@ -285,7 +288,7 @@
 				</cac:IssuerParty>
 			</cac:Certificate>
 
-			<!-- Produktdimensioner -->
+			<!-- Product dimensions -->
 			<cac:Dimension>
 				<cbc:AttributeID>ABT</cbc:AttributeID>
 				<cbc:Measure unitCode="KGM">1000</cbc:Measure>
