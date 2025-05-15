@@ -18,51 +18,44 @@
   </cac:Contract>
   <cac:BuyerCustomerParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0007">5561111111</cbc:EndpointID>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+        <cbc:ID schemeID="0007">5561111111</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>
-        <cbc:Name>City Hospital</cbc:Name>
+        <cbc:Name>Kund AB</cbc:Name>
       </cac:PartyName>
       <cac:PartyLegalEntity>
-        <cbc:RegistrationName>City Hospital 345433</cbc:RegistrationName>
-        <cbc:CompanyID schemeID="0088">7300010000001</cbc:CompanyID>
+        <cbc:RegistrationName>Kund AB</cbc:RegistrationName>
+        <cbc:CompanyID schemeID="0007">5561111111</cbc:CompanyID>
         <cac:RegistrationAddress>
-          <cbc:CityName>Eurocity</cbc:CityName>
+          <cbc:CityName>Vetlanda</cbc:CityName>
           <cac:Country>
             <cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
           </cac:Country>
         </cac:RegistrationAddress>
       </cac:PartyLegalEntity>
       <cac:Contact>
-        <cbc:Name>Martin Foggerty</cbc:Name>
-        <cbc:Telephone>+46555785488</cbc:Telephone>
-        <cbc:ElectronicMail>martin.foggerty@cityhospital.se</cbc:ElectronicMail>
+        <cbc:Name>Karin Kund</cbc:Name>
       </cac:Contact>
     </cac:Party>
   </cac:BuyerCustomerParty>
   <cac:SellerSupplierParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="0192">987654325</cbc:EndpointID>
-      <cac:PartyIdentification>
-        <cbc:ID schemeID="0192">987654325</cbc:ID>
-      </cac:PartyIdentification>
-      <cac:PostalAddress>
-        <cbc:StreetName>Harbour street</cbc:StreetName>
-        <cbc:AdditionalStreetName>Dock 45</cbc:AdditionalStreetName>
-        <cbc:CityName>Bergen</cbc:CityName>
-        <cbc:PostalZone>5005</cbc:PostalZone>
-        <cbc:CountrySubentity>Region West</cbc:CountrySubentity>
-        <cac:AddressLine>
-          <cbc:Line>Gate 34</cbc:Line>
-        </cac:AddressLine>
-        <cac:Country>
-          <cbc:IdentificationCode>NO</cbc:IdentificationCode>
-        </cac:Country>
-      </cac:PostalAddress>
+      <cbc:EndpointID schemeID="0007">5569999999</cbc:EndpointID>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="0007">5569999999</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PostalAddress>
+			<cbc:StreetName>Brogårdsgatan 1</cbc:StreetName>
+			<cbc:CityName>Vetlanda</cbc:CityName>
+			<cbc:PostalZone>57438</cbc:PostalZone>
+			<cac:Country>
+				<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:PostalAddress>
       <cac:PartyLegalEntity>
-        <cbc:RegistrationName>The Supplier AB</cbc:RegistrationName>
+        <cbc:RegistrationName>Elitfönster AB</cbc:RegistrationName>
       </cac:PartyLegalEntity>
     </cac:Party>
   </cac:SellerSupplierParty>
