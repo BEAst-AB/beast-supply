@@ -7,21 +7,21 @@
    <cbc:ID>44332211</cbc:ID>
    <cbc:IssueDate>2025-03-08</cbc:IssueDate>
    <cbc:IssueTime>14:14:34</cbc:IssueTime>
-   <cbc:DocumentStatusCode>9</cbc:DocumentStatusCode>  <!-- TODO-->
-   <cbc:ReceiptAdviceTypeCode>D</cbc:ReceiptAdviceTypeCode>   <!-- TODO-->
+   <cbc:DocumentStatusCode>9</cbc:DocumentStatusCode> 
+   <cbc:ReceiptAdviceTypeCode>S</cbc:ReceiptAdviceTypeCode>   
 	
    <cac:DespatchDocumentReference>
       <cbc:ID>11223344</cbc:ID>
       <cbc:IssueDate>2025-03-08</cbc:IssueDate>
       <cbc:IssueTime>13:14:34</cbc:IssueTime>
-      <cbc:DocumentStatusCode>AB</cbc:DocumentStatusCode>  <!-- TODO-->
-   </cac:DespatchDocumentReference>
+      <cbc:DocumentStatusCode>AP</cbc:DocumentStatusCode> 
+	</cac:DespatchDocumentReference>
 	
      <cac:DeliveryCustomerParty> <!-- samma som köpare-->
       <cac:Party>
-         <cbc:EndpointID schemeID="0007">5561111111</cbc:EndpointID>
+         <cbc:EndpointID schemeID="0007">5560144106</cbc:EndpointID>
 	  <cac:PartyIdentification>
-		  <cbc:ID schemeID="0007">5561111111</cbc:ID>
+		  <cbc:ID schemeID="0007">5560144106</cbc:ID>
 	  </cac:PartyIdentification>
          <cac:PartyName>
             <cbc:Name>Kund AB</cbc:Name>
@@ -34,9 +34,9 @@
 	
    <cac:DespatchSupplierParty> <!-- samma som säljare-->
       <cac:Party>
-         <cbc:EndpointID schemeID="0007">5569999999</cbc:EndpointID>
+         <cbc:EndpointID schemeID="0007">7999000057</cbc:EndpointID>
 		<cac:PartyIdentification>
-			<cbc:ID schemeID="0007">5569999999</cbc:ID>
+			<cbc:ID schemeID="0007">7999000057</cbc:ID>
 		</cac:PartyIdentification>
          <cac:PartyName>
             <cbc:Name>Elitfönster</cbc:Name>
@@ -46,10 +46,32 @@
 		  </cac:PartyLegalEntity>
       </cac:Party>
    </cac:DespatchSupplierParty>
+   <cac:Shipment>
+   <cbc:ID>1212343445</cbc:ID>
+		<cac:TransportHandlingUnit>
+			<cbc:ID>11111222222222</cbc:ID>
+			<cbc:TransportHandlingUnitTypeCode>AG</cbc:TransportHandlingUnitTypeCode>
+		</cac:TransportHandlingUnit>
+   </cac:Shipment>
 	<cac:ReceiptLine>  <!-- TODO-->
 		<cbc:ID>1</cbc:ID>
 		<cac:DespatchLineReference>
 			<cbc:LineID>1</cbc:LineID>
 		</cac:DespatchLineReference>
+		<cac:Item>
+			<cbc:Name>Elitfönster Original Alu Objekt, fast karm</cbc:Name>
+
+			<cac:BuyersItemIdentification>
+				<cbc:ID>FF12</cbc:ID>
+			</cac:BuyersItemIdentification>
+
+			<cac:SellersItemIdentification>
+				<cbc:ID>71020000110</cbc:ID>
+			</cac:SellersItemIdentification>
+			<!-- GTIN-->
+			<cac:StandardItemIdentification>
+				<cbc:ID schemeID="0160">1234567890</cbc:ID>
+			</cac:StandardItemIdentification>
+		</cac:Item>
 	</cac:ReceiptLine>
 </ubl:ReceiptAdvice>

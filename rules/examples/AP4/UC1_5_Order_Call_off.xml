@@ -9,25 +9,24 @@
   <cbc:IssueDate>2025-03-07</cbc:IssueDate>
   <cbc:IssueTime>08:33:00</cbc:IssueTime>
    <cbc:DocumentCurrencyCode listID="ISO4217">SEK</cbc:DocumentCurrencyCode>
-  <cbc:AccountingCost>MAFO</cbc:AccountingCost>
   <cac:ValidityPeriod>
     <cbc:EndDate>2025-03-08</cbc:EndDate>
   </cac:ValidityPeriod>
-  <cac:Contract>
-    <cbc:ID>C1</cbc:ID>  <!-- TODO-->
-  </cac:Contract>
+	<cac:QuotationDocumentReference>
+		<cbc:ID>123456</cbc:ID> <!-- är detta den som mappas till Quoten-->
+	</cac:QuotationDocumentReference>
   <cac:BuyerCustomerParty> <!--Klar-->
     <cac:Party>
-      <cbc:EndpointID schemeID="0007">5561111111</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0007">5560144106</cbc:EndpointID>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="0007">5561111111</cbc:ID>
+        <cbc:ID schemeID="0007">5560144106</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyName>
         <cbc:Name>Kund AB</cbc:Name>
       </cac:PartyName>
       <cac:PartyLegalEntity>
         <cbc:RegistrationName>Kund AB</cbc:RegistrationName>
-        <cbc:CompanyID schemeID="0007">5561111111</cbc:CompanyID>
+        <cbc:CompanyID schemeID="0007">5560144106</cbc:CompanyID>
         <cac:RegistrationAddress>
           <cbc:CityName>Vetlanda</cbc:CityName>
           <cac:Country>
@@ -42,9 +41,9 @@
   </cac:BuyerCustomerParty>
   <cac:SellerSupplierParty> <!--Klar-->
     <cac:Party>
-      <cbc:EndpointID schemeID="0007">5569999999</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0007">7999000057</cbc:EndpointID>
 		<cac:PartyIdentification>
-			<cbc:ID schemeID="0007">5569999999</cbc:ID>
+			<cbc:ID schemeID="0007">7999000057</cbc:ID>
 		</cac:PartyIdentification>
 		<cac:PostalAddress>
 			<cbc:StreetName>Brogårdsgatan 1</cbc:StreetName>
@@ -84,66 +83,37 @@
     </cac:DeliveryParty>
   </cac:Delivery>
   <cac:TaxTotal>  <!-- TODO-->
-		<cbc:TaxAmount currencyID="EUR">28.75</cbc:TaxAmount>
+		<cbc:TaxAmount currencyID="SEK">0</cbc:TaxAmount>
   </cac:TaxTotal>
   <cac:AnticipatedMonetaryTotal>  <!-- TODO-->
-    <cbc:LineExtensionAmount currencyID="EUR">115</cbc:LineExtensionAmount>
-    <cbc:PayableAmount currencyID="EUR">143.75</cbc:PayableAmount>
+    <cbc:LineExtensionAmount currencyID="SEK">1000.00</cbc:LineExtensionAmount>
+    <cbc:PayableAmount currencyID="SEK">1000.00</cbc:PayableAmount>
   </cac:AnticipatedMonetaryTotal>
-  <cac:OrderLine>  <!-- TODO-->
+  <cac:OrderLine>  
     <cac:LineItem>
       <cbc:ID>1</cbc:ID>
-      <cbc:Quantity unitCode="NAR" unitCodeListID="UNECERec20">10</cbc:Quantity>
-      <cbc:LineExtensionAmount currencyID="EUR">40</cbc:LineExtensionAmount>
+      <cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:Quantity>
+      <cbc:LineExtensionAmount currencyID="SEK">1000.00</cbc:LineExtensionAmount>
       <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
       <cac:Price>
-        <cbc:PriceAmount currencyID="EUR">4</cbc:PriceAmount>
+        <cbc:PriceAmount currencyID="SEK">1000.00</cbc:PriceAmount>
       </cac:Price>
        <cac:Item>
-        <cbc:Description>1x12 pack sauce bags</cbc:Description>
-        <cbc:Name>Brown sauce</cbc:Name>
-        <cac:SellersItemIdentification>
-          <cbc:ID>SN-33</cbc:ID>
-        </cac:SellersItemIdentification>
-        <cac:StandardItemIdentification>
-          <cbc:ID schemeID="0160">05704066204093</cbc:ID>
-        </cac:StandardItemIdentification>
-        <cac:ClassifiedTaxCategory>
-          <cbc:ID schemeID="UNCL5305">S</cbc:ID>
-          <cbc:Percent>25</cbc:Percent>
-          <cac:TaxScheme>
-            <cbc:ID>VAT</cbc:ID>
-          </cac:TaxScheme>
-        </cac:ClassifiedTaxCategory>
-        </cac:Item>
-    </cac:LineItem>
-  </cac:OrderLine>
-  <cac:OrderLine>  <!-- TODO-->
-    <cac:LineItem>
-      <cbc:ID>2</cbc:ID>
-      <cbc:Quantity unitCode="NAR" unitCodeListID="UNECERec20">5</cbc:Quantity>
-      <cbc:LineExtensionAmount currencyID="EUR">30</cbc:LineExtensionAmount>
-      <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
-      <cac:Price>
-        <cbc:PriceAmount currencyID="EUR">6</cbc:PriceAmount>
-      </cac:Price>
-       <cac:Item>
-        <cbc:Description>1x12 pack sauce bags</cbc:Description>
-        <cbc:Name>White sauce</cbc:Name>
-        <cac:SellersItemIdentification>
-          <cbc:ID>SN-34</cbc:ID>
-        </cac:SellersItemIdentification>
-        <cac:StandardItemIdentification>
-          <cbc:ID schemeID="0160">08722700575887</cbc:ID>
-        </cac:StandardItemIdentification>
-        <cac:ClassifiedTaxCategory>
-          <cbc:ID schemeID="UNCL5305">S</cbc:ID>
-          <cbc:Percent>25</cbc:Percent>
-          <cac:TaxScheme>
-            <cbc:ID>VAT</cbc:ID>
-          </cac:TaxScheme>
-        </cac:ClassifiedTaxCategory>
-        </cac:Item>
+			<cbc:Name>Elitfönster Original Alu Objekt, fast karm</cbc:Name>
+
+			<cac:BuyersItemIdentification>
+				<cbc:ID>FF12</cbc:ID>
+			</cac:BuyersItemIdentification>
+
+			<cac:SellersItemIdentification>
+				<cbc:ID>71020000110</cbc:ID>
+			</cac:SellersItemIdentification>
+			<!-- GTIN-->
+			<cac:StandardItemIdentification>
+				<cbc:ID schemeID="0160">1234567890</cbc:ID>
+			</cac:StandardItemIdentification>
+
+		</cac:Item>
     </cac:LineItem>
   </cac:OrderLine>
 </Order>

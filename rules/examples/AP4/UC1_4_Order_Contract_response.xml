@@ -7,8 +7,8 @@
   <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:ordering:3</cbc:ProfileID>
   <cbc:ID>97531</cbc:ID>
   <cbc:IssueDate>2025-03-07</cbc:IssueDate>
-  <cbc:IssueTime>08:3:00</cbc:IssueTime>
-  <cbc:OrderResponseCode>CA</cbc:OrderResponseCode>  <!-- TODO-->
+  <cbc:IssueTime>08:32:00</cbc:IssueTime>
+  <cbc:OrderResponseCode>CA</cbc:OrderResponseCode>
   <cbc:Note>Response message with amendments in the details</cbc:Note>
   <cbc:DocumentCurrencyCode listID="ISO4217">SEK</cbc:DocumentCurrencyCode>
   <cbc:CustomerReference>Your ref</cbc:CustomerReference>
@@ -17,9 +17,9 @@
   </cac:OrderReference>
   <cac:SellerSupplierParty> <!-- klar-->
     <cac:Party>
-      <cbc:EndpointID schemeID="0007">5569999999</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0007">7999000057</cbc:EndpointID>
       <cac:PartyIdentification>
-        <cbc:ID schemeID="0007">5569999999</cbc:ID>
+        <cbc:ID schemeID="0007">7999000057</cbc:ID>
       </cac:PartyIdentification>
       <cac:PartyLegalEntity>
         <cbc:RegistrationName>Elitfönster AB</cbc:RegistrationName>
@@ -28,9 +28,9 @@
   </cac:SellerSupplierParty>
    <cac:BuyerCustomerParty> <!-- klar-->
      <cac:Party>
-     <cbc:EndpointID schemeID="0007">5561111111</cbc:EndpointID>
+     <cbc:EndpointID schemeID="0007">5560144106</cbc:EndpointID>
      <cac:PartyIdentification>
-       <cbc:ID schemeID="0007">5561111111</cbc:ID>
+       <cbc:ID schemeID="0007">5560144106</cbc:ID>
       </cac:PartyIdentification>
     </cac:Party>
   </cac:BuyerCustomerParty>
@@ -40,34 +40,25 @@
       <cbc:EndDate>2025-03-08</cbc:EndDate>
     </cac:PromisedDeliveryPeriod>
   </cac:Delivery>
-  <cac:OrderLine>  <!-- TODO-->
+  <cac:OrderLine>
     <cac:LineItem>
       <cbc:ID>1</cbc:ID>
-      <cbc:LineStatusCode>5</cbc:LineStatusCode>
+      <cbc:LineStatusCode>3</cbc:LineStatusCode>
 	  <cac:Item>
-			<cbc:Name>Brown sauce</cbc:Name>
+			<cbc:Name>Elitfönster Original Alu Objekt, fast karm</cbc:Name>
+				<cac:BuyersItemIdentification>
+				<cbc:ID>FF12</cbc:ID>
+			</cac:BuyersItemIdentification>
 			<cac:SellersItemIdentification>
-			  <cbc:ID>SN-33</cbc:ID>
+			  <cbc:ID>71020000110</cbc:ID>
 			</cac:SellersItemIdentification>
+			<cac:StandardItemIdentification>
+				<cbc:ID schemeID="0160">1234567890</cbc:ID>
+			</cac:StandardItemIdentification>
 		</cac:Item>		
       </cac:LineItem>
       <cac:OrderLineReference>
 		  <cbc:LineID>1</cbc:LineID>
-      </cac:OrderLineReference>
-  </cac:OrderLine> 
-  <cac:OrderLine>  <!-- TODO-->
-    <cac:LineItem>
-      <cbc:ID>2</cbc:ID>
-      <cbc:LineStatusCode>7</cbc:LineStatusCode>
-      <cac:Item>
-			<cbc:Name>White sauce</cbc:Name>
-			<cac:SellersItemIdentification>
-			  <cbc:ID>SN-34</cbc:ID>
-			</cac:SellersItemIdentification>
-		</cac:Item>		
-      </cac:LineItem>
-      <cac:OrderLineReference>
-		  <cbc:LineID>2</cbc:LineID>
       </cac:OrderLineReference>
   </cac:OrderLine> 
 </OrderResponse>
