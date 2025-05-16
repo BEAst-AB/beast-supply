@@ -4,49 +4,49 @@
                    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
    <cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:receipt_advice:1</cbc:CustomizationID>
    <cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_w_receipt_advice:1</cbc:ProfileID>
-   <cbc:ID>5658999</cbc:ID>
-   <cbc:IssueDate>2021-09-10</cbc:IssueDate>
-   <cbc:IssueTime>12:01:00</cbc:IssueTime>
-   <cbc:DocumentStatusCode>9</cbc:DocumentStatusCode>
-   <cbc:ReceiptAdviceTypeCode>D</cbc:ReceiptAdviceTypeCode>
+   <cbc:ID>44332211</cbc:ID>
+   <cbc:IssueDate>2025-03-08</cbc:IssueDate>
+   <cbc:IssueTime>14:14:34</cbc:IssueTime>
+   <cbc:DocumentStatusCode>9</cbc:DocumentStatusCode>  <!-- TODO-->
+   <cbc:ReceiptAdviceTypeCode>D</cbc:ReceiptAdviceTypeCode>   <!-- TODO-->
 	
    <cac:DespatchDocumentReference>
-      <cbc:ID>565899</cbc:ID>
-      <cbc:IssueDate>2021-09-10</cbc:IssueDate>
-      <cbc:IssueTime>12:00:00</cbc:IssueTime>
-      <cbc:DocumentStatusCode>AB</cbc:DocumentStatusCode>
+      <cbc:ID>11223344</cbc:ID>
+      <cbc:IssueDate>2025-03-08</cbc:IssueDate>
+      <cbc:IssueTime>13:14:34</cbc:IssueTime>
+      <cbc:DocumentStatusCode>AB</cbc:DocumentStatusCode>  <!-- TODO-->
    </cac:DespatchDocumentReference>
 	
-     <cac:DeliveryCustomerParty>
+     <cac:DeliveryCustomerParty> <!-- samma som köpare-->
       <cac:Party>
-         <cbc:EndpointID schemeID="0088">5798000000124</cbc:EndpointID>
-         <cac:PartyIdentification>
-            <cbc:ID schemeID="0088"> 5790000435951</cbc:ID>
-         </cac:PartyIdentification>
+         <cbc:EndpointID schemeID="0007">5561111111</cbc:EndpointID>
+	  <cac:PartyIdentification>
+		  <cbc:ID schemeID="0007">5561111111</cbc:ID>
+	  </cac:PartyIdentification>
          <cac:PartyName>
-            <cbc:Name> Receiver inc. </cbc:Name>
+            <cbc:Name>Kund AB</cbc:Name>
          </cac:PartyName>
 		  <cac:PartyLegalEntity>
-			  <cbc:RegistrationName> Receiver inc.</cbc:RegistrationName>
+			  <cbc:RegistrationName>Kund AB</cbc:RegistrationName>
 		  </cac:PartyLegalEntity>
       </cac:Party>
    </cac:DeliveryCustomerParty>
 	
-   <cac:DespatchSupplierParty>
+   <cac:DespatchSupplierParty> <!-- samma som säljare-->
       <cac:Party>
-         <cbc:EndpointID schemeID="0088"> 7300010000001</cbc:EndpointID>
-         <cac:PartyIdentification>
-            <cbc:ID schemeID="0088"> 7300010000001</cbc:ID>
-         </cac:PartyIdentification>
+         <cbc:EndpointID schemeID="0007">5569999999</cbc:EndpointID>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="0007">5569999999</cbc:ID>
+		</cac:PartyIdentification>
          <cac:PartyName>
-            <cbc:Name> Sender inc. </cbc:Name>
+            <cbc:Name>Elitfönster</cbc:Name>
          </cac:PartyName>
 		  <cac:PartyLegalEntity>
-			  <cbc:RegistrationName> Sender inc.</cbc:RegistrationName>
+			  <cbc:RegistrationName>Elitfönster</cbc:RegistrationName>
 		  </cac:PartyLegalEntity>
       </cac:Party>
    </cac:DespatchSupplierParty>
-	<cac:ReceiptLine>
+	<cac:ReceiptLine>  <!-- TODO-->
 		<cbc:ID>1</cbc:ID>
 		<cac:DespatchLineReference>
 			<cbc:LineID>1</cbc:LineID>

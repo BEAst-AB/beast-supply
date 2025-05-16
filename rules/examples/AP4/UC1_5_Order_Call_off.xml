@@ -5,18 +5,18 @@
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
   <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order:3</cbc:CustomizationID>
   <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:order_only:3</cbc:ProfileID>
-  <cbc:ID>1</cbc:ID>
-  <cbc:IssueDate>2013-07-01</cbc:IssueDate>
-  <cbc:IssueTime>05:10:10</cbc:IssueTime>
-   <cbc:DocumentCurrencyCode listID="ISO4217">EUR</cbc:DocumentCurrencyCode>
+  <cbc:ID>2468</cbc:ID>
+  <cbc:IssueDate>2025-03-07</cbc:IssueDate>
+  <cbc:IssueTime>08:33:00</cbc:IssueTime>
+   <cbc:DocumentCurrencyCode listID="ISO4217">SEK</cbc:DocumentCurrencyCode>
   <cbc:AccountingCost>MAFO</cbc:AccountingCost>
   <cac:ValidityPeriod>
-    <cbc:EndDate>2013-07-30</cbc:EndDate>
+    <cbc:EndDate>2025-03-08</cbc:EndDate>
   </cac:ValidityPeriod>
   <cac:Contract>
-    <cbc:ID>C1</cbc:ID>
+    <cbc:ID>C1</cbc:ID>  <!-- TODO-->
   </cac:Contract>
-  <cac:BuyerCustomerParty>
+  <cac:BuyerCustomerParty> <!--Klar-->
     <cac:Party>
       <cbc:EndpointID schemeID="0007">5561111111</cbc:EndpointID>
       <cac:PartyIdentification>
@@ -40,7 +40,7 @@
       </cac:Contact>
     </cac:Party>
   </cac:BuyerCustomerParty>
-  <cac:SellerSupplierParty>
+  <cac:SellerSupplierParty> <!--Klar-->
     <cac:Party>
       <cbc:EndpointID schemeID="0007">5569999999</cbc:EndpointID>
 		<cac:PartyIdentification>
@@ -59,41 +59,38 @@
       </cac:PartyLegalEntity>
     </cac:Party>
   </cac:SellerSupplierParty>
-  <cac:Delivery>
+  <cac:Delivery> <!-- Samma som buyer -->
     <cac:DeliveryLocation>
-      <cac:Address>
-        <cbc:StreetName>Lower street 5</cbc:StreetName>
-        <cbc:AdditionalStreetName>Reception</cbc:AdditionalStreetName>
-        <cbc:CityName>Stockholm</cbc:CityName>
-        <cbc:PostalZone>11120</cbc:PostalZone>
+     <cac:Address>
+        <cbc:StreetName>Kundgatan 1</cbc:StreetName>
+			<cbc:CityName>Vetlanda</cbc:CityName>
+			<cbc:PostalZone>574 33</cbc:PostalZone>
         <cac:Country>
           <cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
         </cac:Country>
       </cac:Address>
     </cac:DeliveryLocation>
-    <cac:RequestedDeliveryPeriod>
-      <cbc:StartDate>2013-07-15</cbc:StartDate>
-      <cbc:EndDate>2013-07-16</cbc:EndDate>
+   <cac:RequestedDeliveryPeriod>
+      <cbc:StartDate>2025-03-08</cbc:StartDate>
+      <cbc:EndDate>2025-03-08</cbc:EndDate>
     </cac:RequestedDeliveryPeriod>
     <cac:DeliveryParty>
       <cac:PartyName>
-        <cbc:Name>Hospital Tourist Department</cbc:Name>
+        <cbc:Name>Kund AB</cbc:Name>
       </cac:PartyName>
-      <cac:Contact>
-        <cbc:Name>John</cbc:Name>
-        <cbc:Telephone>+465558877523</cbc:Telephone>
-        <cbc:ElectronicMail>john@cityhospital.se</cbc:ElectronicMail>
-      </cac:Contact>
+     <cac:Contact>
+			<cbc:Name>Karin Kund</cbc:Name>
+		</cac:Contact>
     </cac:DeliveryParty>
   </cac:Delivery>
-  <cac:TaxTotal>
+  <cac:TaxTotal>  <!-- TODO-->
 		<cbc:TaxAmount currencyID="EUR">28.75</cbc:TaxAmount>
   </cac:TaxTotal>
-  <cac:AnticipatedMonetaryTotal>
+  <cac:AnticipatedMonetaryTotal>  <!-- TODO-->
     <cbc:LineExtensionAmount currencyID="EUR">115</cbc:LineExtensionAmount>
     <cbc:PayableAmount currencyID="EUR">143.75</cbc:PayableAmount>
   </cac:AnticipatedMonetaryTotal>
-  <cac:OrderLine>
+  <cac:OrderLine>  <!-- TODO-->
     <cac:LineItem>
       <cbc:ID>1</cbc:ID>
       <cbc:Quantity unitCode="NAR" unitCodeListID="UNECERec20">10</cbc:Quantity>
@@ -121,7 +118,7 @@
         </cac:Item>
     </cac:LineItem>
   </cac:OrderLine>
-  <cac:OrderLine>
+  <cac:OrderLine>  <!-- TODO-->
     <cac:LineItem>
       <cbc:ID>2</cbc:ID>
       <cbc:Quantity unitCode="NAR" unitCodeListID="UNECERec20">5</cbc:Quantity>
@@ -138,34 +135,6 @@
         </cac:SellersItemIdentification>
         <cac:StandardItemIdentification>
           <cbc:ID schemeID="0160">08722700575887</cbc:ID>
-        </cac:StandardItemIdentification>
-        <cac:ClassifiedTaxCategory>
-          <cbc:ID schemeID="UNCL5305">S</cbc:ID>
-          <cbc:Percent>25</cbc:Percent>
-          <cac:TaxScheme>
-            <cbc:ID>VAT</cbc:ID>
-          </cac:TaxScheme>
-        </cac:ClassifiedTaxCategory>
-        </cac:Item>
-    </cac:LineItem>
-  </cac:OrderLine>
-  <cac:OrderLine>
-    <cac:LineItem>
-      <cbc:ID>3</cbc:ID>
-      <cbc:Quantity unitCode="NAR" unitCodeListID="UNECERec20">15</cbc:Quantity>
-      <cbc:LineExtensionAmount currencyID="EUR">45</cbc:LineExtensionAmount>
-      <cbc:AccountingCost>MAFO-1</cbc:AccountingCost>
-      <cac:Price>
-        <cbc:PriceAmount currencyID="EUR">3</cbc:PriceAmount>
-      </cac:Price>
-       <cac:Item>
-        <cbc:Description>1x12 pack sauce bags</cbc:Description>
-        <cbc:Name>Pepper sauce</cbc:Name>
-        <cac:SellersItemIdentification>
-          <cbc:ID>SN-35</cbc:ID>
-        </cac:SellersItemIdentification>
-        <cac:StandardItemIdentification>
-          <cbc:ID schemeID="0160">08722700577584</cbc:ID>
         </cac:StandardItemIdentification>
         <cac:ClassifiedTaxCategory>
           <cbc:ID schemeID="UNCL5305">S</cbc:ID>
