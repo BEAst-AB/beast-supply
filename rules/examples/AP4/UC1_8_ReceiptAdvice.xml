@@ -8,7 +8,7 @@
    <cbc:IssueDate>2025-03-08</cbc:IssueDate>
    <cbc:IssueTime>14:14:34</cbc:IssueTime>
    <cbc:DocumentStatusCode>9</cbc:DocumentStatusCode> 
-   <cbc:ReceiptAdviceTypeCode>S</cbc:ReceiptAdviceTypeCode>   
+   <cbc:ReceiptAdviceTypeCode>D</cbc:ReceiptAdviceTypeCode>   
 	
    <cac:DespatchDocumentReference>
       <cbc:ID>11223344</cbc:ID>
@@ -46,13 +46,6 @@
 		  </cac:PartyLegalEntity>
       </cac:Party>
    </cac:DespatchSupplierParty>
-   <cac:Shipment>
-   <cbc:ID>1212343445</cbc:ID>
-		<cac:TransportHandlingUnit>
-			<cbc:ID>11111222222222</cbc:ID>
-			<cbc:TransportHandlingUnitTypeCode>AG</cbc:TransportHandlingUnitTypeCode>
-		</cac:TransportHandlingUnit>
-   </cac:Shipment>
 	<cac:ReceiptLine>  <!-- TODO-->
 		<cbc:ID>1</cbc:ID>
 		<cac:DespatchLineReference>
