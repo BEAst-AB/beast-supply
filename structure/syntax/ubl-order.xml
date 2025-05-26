@@ -1000,10 +1000,8 @@
                   <Reference type="BUSINESS_TERM">tir01-158</Reference>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
-                     <Name>
-								Buyer legal registration identifier identification scheme
-								identifier
-							</Name>
+                     <Name>Buyer legal registration identifier identification scheme
+								identifier</Name>
                      <Description>The identification scheme identifier of the buyer legal registration identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
@@ -1234,10 +1232,8 @@
                   <Reference type="BUSINESS_TERM">tir01-101</Reference>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
-                     <Name>
-								Deliver party registration identifier identification scheme
-								identifier
-							</Name>
+                     <Name>Deliver party registration identifier identification scheme
+								identifier</Name>
                      <Description>The identification scheme identifier of the deliverparty identifier.</Description>
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0088</Value>
@@ -1368,6 +1364,27 @@
                   <Reference type="BUSINESS_TERM">tir01-106</Reference>
                   <Value type="EXAMPLE">alex@skanska.se</Value>
                </Element>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:Despatch</Term>
+            <Name>Despatch information</Name>
+            <Description/>
+            <Element>
+               <Term>cbc:RequestedDespatchDate</Term>
+               <Name>Requested despatch date</Name>
+               <Description>The date on which the buyer requests the ordered goods be ready for pickup at the seller’s warehouse or an agreed-upon pickup location.</Description>
+               <DataType>Date</DataType>
+               <Reference type="BUSINESS_TERM">tir01-p053</Reference>
+               <Value type="EXAMPLE">2025-02-17</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:RequestedDespatchTime</Term>
+               <Name>Requested despatch time</Name>
+               <Description>The time (in addition to the date) on which the buyer requests the ordered goods be ready for pickup at the seller’s warehouse or an agreed-upon pickup location.</Description>
+               <DataType>Time</DataType>
+               <Reference type="BUSINESS_TERM">tir01-p054</Reference>
+               <Value type="EXAMPLE">10:30:00</Value>
             </Element>
          </Element>
          <Element cardinality="0..1">
@@ -2185,10 +2202,8 @@
                      <Reference type="BUSINESS_TERM">tir01-149</Reference>
                      <Attribute>
                         <Term>listID</Term>
-                        <Name>
-									Item classification identifier identification scheme
-									identifier
-								</Name>
+                        <Name>Item classification identifier identification scheme
+									identifier</Name>
                         <Description>BEAst: For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID the version of the codelist in attribute "name", i.e. mutually agreed.
  Peppol: The identification scheme identifier of the Item classification identifier</Description>
                         <Reference type="CODE_LIST">UNCL7143</Reference>
@@ -2196,10 +2211,8 @@
                      </Attribute>
                      <Attribute usage="Optional">
                         <Term>listVersionID</Term>
-                        <Name>
-									Item classification identifier version identification scheme
-									identifier
-								</Name>
+                        <Name>Item classification identifier version identification scheme
+									identifier</Name>
                         <Description>The identification scheme version identifier of the Item classification identifier</Description>
                         <Value type="EXAMPLE">3.0.2</Value>
                      </Attribute>
@@ -2254,21 +2267,25 @@
                   <Description>A group of business terms providing information about properties of the goods and services invoiced.</Description>
                   <Element cardinality="0..1">
                      <Term>cbc:ID</Term>
+                     <Name>ID</Name>
                      <Description>ID of the property if assigned by an Agency</Description>
+                     <Attribute usage="Optional">
+                        <Term>schemeDataURI</Term>
+                        <Name>Scheme Data URI</Name>
+                        <Description>Scheme Data URI</Description>
+                        <Value type="EXAMPLE">https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460</Value>
+                     </Attribute>
                      <Attribute usage="Optional">
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
+                        <Description>Scheme identifier</Description>
                         <Value type="EXAMPLE">ISO22057</Value>
                      </Attribute>
                      <Attribute usage="Optional">
                         <Term>schemeVersionID</Term>
                         <Name>Scheme version identifier</Name>
+                        <Description>Scheme version identifier</Description>
                         <Value type="EXAMPLE">2022</Value>
-                     </Attribute>
-                     <Attribute usage="Optional">
-                        <Term>schemeDataURI</Term>
-                        <Name>Scheme Data URI</Name>
-                        <Value type="EXAMPLE">https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460</Value>
                      </Attribute>
                      <Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
                   </Element>
