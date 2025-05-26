@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
 	<assert>
-    <description>Swedish organisation numbers should be numeric.</description>
-		<scope>SE-R-003</scope>
+    <description>The last digit of a Swedish organization number must be valid according to the Luhn algorithm.</description>
+		<scope>SE-R-013</scope>
 	</assert>
 	<test>
 		<assert>
-			<success>SE-R-003</success>
+			<success>SE-R-013</success>
 		</assert>
 
 <Invoice 
@@ -25,7 +25,7 @@
 
 	<cac:AccountingSupplierParty>
 		<cac:Party>
-			<cbc:EndpointID schemeID="0007">5566778899</cbc:EndpointID>
+			<cbc:EndpointID schemeID="0007">2021005489</cbc:EndpointID>
 			<cac:PostalAddress>
 				<cbc:StreetName>Storgatan 1</cbc:StreetName>
 				<cbc:CityName>Stockholm</cbc:CityName>
@@ -48,7 +48,7 @@
 			</cac:PartyTaxScheme>
 			<cac:PartyLegalEntity>
 				<cbc:RegistrationName>Allsälj AB</cbc:RegistrationName>
-				<cbc:CompanyID schemeID="0007">1234567890</cbc:CompanyID>
+				<cbc:CompanyID>2021005489</cbc:CompanyID>
 				<cbc:CompanyLegalForm>Säte: Stockholm</cbc:CompanyLegalForm>
 			</cac:PartyLegalEntity>
 		</cac:Party>
@@ -56,7 +56,7 @@
 
 	<cac:AccountingCustomerParty>
 		<cac:Party>
-			<cbc:EndpointID schemeID="0007">1234512345</cbc:EndpointID>
+			<cbc:EndpointID schemeID="0007">2021005489</cbc:EndpointID>
 			<cac:PartyName>
 				<cbc:Name>Kommunteknisk service</cbc:Name>
 			</cac:PartyName>
@@ -70,7 +70,7 @@
 			</cac:PostalAddress>
 			<cac:PartyLegalEntity>
 				<cbc:RegistrationName>Kommunens Tekniska  Bolag AB</cbc:RegistrationName>
-				<cbc:CompanyID schemeID="0007">1234512345</cbc:CompanyID>
+				<cbc:CompanyID schemeID="0007">2021005489</cbc:CompanyID>
 			</cac:PartyLegalEntity>
 		</cac:Party>
 	</cac:AccountingCustomerParty>
@@ -162,7 +162,7 @@
 	</test>
 	<test>
 		<assert>
-			<error>SE-R-003</error>
+			<error>SE-R-013</error>
 		</assert>
 <Invoice 
  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
@@ -180,7 +180,7 @@
 
 	<cac:AccountingSupplierParty>
 		<cac:Party>
-			<cbc:EndpointID schemeID="0007">5566778899</cbc:EndpointID>
+			<cbc:EndpointID schemeID="0007">2021005489</cbc:EndpointID>
 			<cac:PostalAddress>
 				<cbc:StreetName>Storgatan 1</cbc:StreetName>
 				<cbc:CityName>Stockholm</cbc:CityName>
@@ -197,7 +197,7 @@
 			</cac:PartyTaxScheme>
 			<cac:PartyLegalEntity>
 				<cbc:RegistrationName>Allsälj AB</cbc:RegistrationName>
-				<cbc:CompanyID schemeID="0007">SE12345678</cbc:CompanyID>
+				<cbc:CompanyID>2021005480</cbc:CompanyID>
 				<cbc:CompanyLegalForm>Säte: Stockholm</cbc:CompanyLegalForm>
 			</cac:PartyLegalEntity>
 		</cac:Party>
@@ -205,7 +205,7 @@
 
 	<cac:AccountingCustomerParty>
 		<cac:Party>
-			<cbc:EndpointID schemeID="0007">1234512345</cbc:EndpointID>
+			<cbc:EndpointID schemeID="0007">2021005489</cbc:EndpointID>
 			<cac:PartyName>
 				<cbc:Name>Kommunteknisk service</cbc:Name>
 			</cac:PartyName>

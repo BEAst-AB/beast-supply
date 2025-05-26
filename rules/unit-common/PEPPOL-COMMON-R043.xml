@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-T120-base-1.1">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-t01-base-3.0">
 	<assert>
 		<description>Invalid Beligan organization number (0208) provided.</description>
 		<scope>PEPPOL-COMMON-R043</scope>
 	</assert>
-
+	
 	<test>
 		<assert>
 			<success number="3">PEPPOL-COMMON-R043</success>
 		</assert>
-		<DespatchAdvice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
 
 			<cac:BuyerCustomerParty>
 				<cac:Party>
@@ -22,20 +22,20 @@
 					<cac:PartyLegalEntity>
 						<cbc:CompanyID schemeID="0208">0739484052</cbc:CompanyID>
 					</cac:PartyLegalEntity>
-				</cac:Party>
+				</cac:Party>				
 			</cac:BuyerCustomerParty>
 
-		</DespatchAdvice>
+		</Order>
 	</test>
-
-
-	<test>
+   
+    
+    <test>
 		<assert>
 			<error number="3">PEPPOL-COMMON-R043</error>
 		</assert>
-		<DespatchAdvice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		<Order xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
 
 			<cac:BuyerCustomerParty>
 				<cac:Party>
@@ -49,10 +49,10 @@
 				</cac:Party>
 			</cac:BuyerCustomerParty>
 
-		</DespatchAdvice>
+		</Order>
 	</test>
-
-
-
-
+    
+    
+    
+	
 </testSet>
