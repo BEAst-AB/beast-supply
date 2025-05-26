@@ -3,7 +3,7 @@
 BILLINGREPO="https://github.com/OpenPEPPOL/peppol-bis-invoice-3.git"
 BILLINGBRANCH="2025-Q2"
 LOGISTICSREPO="https://github.com/OpenPEPPOL/Logistics-bis.git"
-LOGISTICSBRANCH="main"
+LOGISTICSBRANCH="2025-Q2-review"
 POACCREPO="https://github.com/OpenPEPPOL/poacc-upgrade-3.git"
 POACCBRANCH="2025-Q2"
 
@@ -39,11 +39,6 @@ sync_repo $BILLINGREPO $BILLINGBRANCH "rules/sch" "rules/sch"
 sync_repo $BILLINGREPO $BILLINGBRANCH "structure/syntax/part" "structure/syntax/part"
 sync_repo $POACCREPO $POACCBRANCH "rules/sch" "rules/sch"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/sch" "rules/sch"
-
-
-# Temp fix until Logistics is updated to use the new common.sh file
-sync_repo $POACCREPO $POACCBRANCH "rules/sch/parts/common.sch" "rules/sch/parts/common.sch"
-
 
 # Examples
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Cataloge wo response use cases" "rules/examples/Cataloge wo response use cases"
