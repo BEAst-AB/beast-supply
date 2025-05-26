@@ -7,8 +7,6 @@ LOGISTICSBRANCH="main"
 POACCREPO="https://github.com/OpenPEPPOL/poacc-upgrade-3.git"
 POACCBRANCH="2025-Q2"
 
-
-
 # Function to clone and copy files
 sync_repo() {
   local repo_url=$1
