@@ -18,12 +18,22 @@ sync_repo() {
 
   echo "Syncing $repo_url $source_path"
   git clone --depth=1 --branch "$branch" "$repo_url" temp-repo
-  # Ensure the target directory exists
-  mkdir -p "$target_path"
-  # Copy contents of the source directory to the target directory
-  cp -rvf temp-repo/"$source_path"/* "$target_path"
-  rm -rf temp-repo # Clean up temporary repo
+
+  if [ -d "temp-repo/$source_path" ]; then
+    mkdir -p "$target_path"
+    cp -rvf temp-repo/"$source_path"/* "$target_path"
+  elif [ -f "temp-repo/$source_path" ]; then
+    mkdir -p "$(dirname "$target_path")"
+    cp -vf temp-repo/"$source_path" "$target_path"
+  else
+    echo "Source path not found: $source_path"
+    rm -rf temp-repo
+    return 1
+  fi
+
+  rm -rf temp-repo
 }
+
 
 # Sync files from multiple repositories without './' in target path
 # Rules
@@ -31,7 +41,9 @@ sync_repo $BILLINGREPO $BILLINGBRANCH "rules/sch" "rules/sch"
 sync_repo $BILLINGREPO $BILLINGBRANCH "structure/syntax/part" "structure/syntax/part"
 sync_repo $POACCREPO $POACCBRANCH "rules/sch" "rules/sch"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/sch" "rules/sch"
-cp -vf $POACCREPO/rules/sch/parts/common.sh $LOGISTICSREPO/rules/sch/parts/common.sh 
+
+# Temp fix until Logistics is updated to use the new common.sh file
+sync_repo $POACCREPO $POACCBRANCH "rules/sch/parts/common.sh" "rules/sch/parts/common.sh"
 
 
 # Examples
