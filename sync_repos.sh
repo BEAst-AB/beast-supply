@@ -43,7 +43,7 @@ sync_repo $POACCREPO $POACCBRANCH "rules/sch" "rules/sch"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/sch" "rules/sch"
 
 # Temp fix until Logistics is updated to use the new common.sh file
-sync_repo $POACCREPO $POACCBRANCH "rules/sch/parts/common.sh" "rules/sch/parts/common.sh"
+sync_repo $POACCREPO $POACCBRANCH "rules/sch/parts/common.sch" "rules/sch/parts/common.sch"
 
 
 # Examples
