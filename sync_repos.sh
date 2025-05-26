@@ -31,6 +31,7 @@ sync_repo $BILLINGREPO $BILLINGBRANCH "rules/sch" "rules/sch"
 sync_repo $BILLINGREPO $BILLINGBRANCH "structure/syntax/part" "structure/syntax/part"
 sync_repo $POACCREPO $POACCBRANCH "rules/sch" "rules/sch"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/sch" "rules/sch"
+cp -vf $POACCREPO/rules/sch/parts/common.sh $LOGISTICSREPO/rules/sch/parts/common.sh 
 
 
 # Examples
