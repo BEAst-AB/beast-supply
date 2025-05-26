@@ -29,7 +29,7 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
 
 echo "Generating documentation: Order"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/syntax/ubl-order_poacc_temp_fix.xml \
+    -s:$POACCBASEURL/ubl-order \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-order.xml \
     varOverrideSample=/src/structure/source/ubl-order.xml -ext:on --allow-external-functions:on
@@ -43,14 +43,14 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
 
 echo "Generating documentation: Order agreement"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/syntax/ubl-orderagreement_poacc_temp_fix.xml \
+    -s:$POACCBASEURL/ubl-orderagreement.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-orderagreement.xml \
     varOverrideSample=/src/structure/source/ubl-orderagreement.xml -ext:on --allow-external-functions:on
 
 echo "Generating documentation: Catalogue"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:/src/structure/syntax/ubl-catalogue_poacc_temp_fix.xml \
+    -s:$POACCBASEURL/ubl-catalogue.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-catalogue.xml \
     varOverrideSample=/src/structure/source/ubl-catalogue.xml -ext:on --allow-external-functions:on
