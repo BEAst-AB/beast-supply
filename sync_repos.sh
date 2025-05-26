@@ -60,6 +60,11 @@ sync_repo $POACCREPO $POACCBRANCH "structure/codelist" "structure/codelist"
 sync_repo $BILLINGREPO $BILLINGBRANCH "rules/unit-UBL-SE" "rules/unit-UBL-SE" 
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/unit-common"  "rules/unit-common" 
 sync_repo $POACCREPO $POACCBRANCH "rules/unit-common"  "rules/unit-common" 
+sync_repo $POACCREPO $POACCBRANCH "rules/unit-common"  "rules/unit-order" 
+sync_repo $POACCREPO $POACCBRANCH "rules/unit-common"  "rules/order-agreement" 
+sync_repo $POACCREPO $POACCBRANCH "rules/unit-common"  "rules/order-response" 
+sync_repo $POACCREPO $POACCBRANCH "rules/unit-common"  "rules/unit-catalogue" 
+sync_repo $POACCREPO $POACCBRANCH "rules/unit-common"  "rules/unit-invoice-response" 
 
 # Guides
 sync_repo $POACCREPO $POACCBRANCH "guides/profiles/1-catalogueonly" "guides/profiles/1-catalogueonly"
