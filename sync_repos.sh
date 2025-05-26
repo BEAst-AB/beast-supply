@@ -55,6 +55,11 @@ sync_repo $BILLINGREPO $BILLINGBRANCH "structure/codelist" "structure/codelist"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "structure/codelist" "structure/codelist"
 sync_repo $POACCREPO $POACCBRANCH "structure/codelist" "structure/codelist"
 
+# Tests
+sync_repo $BILLINGREPO $BILLINGBRANCH "rules/unit-UBL-SE" "rules/unit-UBL-SE" 
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/unit-common"  "rules/unit-common" 
+sync_repo $POACCREPO $POACCBRANCH "rules/unit-common"  "rules/unit-common" 
+
 # Guides
 sync_repo $POACCREPO $POACCBRANCH "guides/profiles/1-catalogueonly" "guides/profiles/1-catalogueonly"
 sync_repo $POACCREPO $POACCBRANCH "guides/profiles/64-catalogue-wo-response" "guides/profiles/64-catalogue-wo-response"
