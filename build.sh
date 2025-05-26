@@ -118,6 +118,13 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     -o:/src/structure/syntax/ubl-receipt-advice.xml \
     varOverrideSample=/src/structure/source/ubl-receipt-advice.xml -ext:on --allow-external-functions:on
 
+echo "Generating documentation: Movement Document"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:$LOGISTICSBASEURL/ubl-weight-statement.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-movement-document.xml \
+    varOverrideSample=/src/structure/source/ubl-movement-document.xml -ext:on --allow-external-functions:on
+
 # Generate mapping documents.
  echo "Generating mapping documents: Invoice"
  docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
