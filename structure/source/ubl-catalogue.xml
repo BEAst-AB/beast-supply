@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ubl:Catalogue  xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-
+<ubl:Catalogue xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
 	<?DocumentTerm Catalogue?>
 	<?Property key="sch:prefix" PEPPOL-T19?>
 	<?Property key="sch:identifier" T19-basic?>
@@ -11,11 +12,11 @@
 
 	<cbc:ID></cbc:ID>
 	<cbc:ActionCode>
-		<?DescriptionAddFirst Recommended to always replace,   ?>
+		<?DescriptionAddFirst Recommended to always replace,?>
 	</cbc:ActionCode>
 	<cbc:Name></cbc:Name>
 	<cbc:IssueDate>
-		<?DescriptionAddFirst T6325, Document Date/Time.  ?>
+		<?DescriptionAddFirst T6325, Document Date/Time.?>
 	</cbc:IssueDate>
 	<cbc:VersionID></cbc:VersionID>
 
@@ -25,7 +26,7 @@
 	</cac:ValidityPeriod>
 
 	<cac:ReferencedContract>
-		<?DescriptionAddFirst Use this ID to link the catalogue to the framework or project agreement  ?>
+		<?DescriptionAddFirst Use this ID to link the catalogue to the framework or project agreement Finland: This is an example of Finnish guide text for the linking of contracts to catalogue.?>
 		<cbc:ID></cbc:ID>
 	</cac:ReferencedContract>
 
@@ -232,34 +233,31 @@
 
 		<cac:Item>
 			<cbc:Description>
-				<?DescriptionAddFirst Product Information (T6037). ?></cbc:Description>
+				<?DescriptionAddFirst Product Information (T6037).?>
+			</cbc:Description>
 			<cbc:PackQuantity unitCode=""></cbc:PackQuantity>
 			<cbc:PackSizeNumeric>1</cbc:PackSizeNumeric>
 			<cbc:Name>
-				<?DescriptionAddFirst Article Description (T6226). ?>
+				<?DescriptionAddFirst Article Description (T6226).?>
 			</cbc:Name>
 			<cbc:Keyword></cbc:Keyword>
 			<cbc:BrandName>Johnson's</cbc:BrandName>
 
 			<cac:BuyersItemIdentification>
-				<cbc:ID>
-					XYZ123
-					<?DescriptionAddFirst Buyer's Article Number (T6022 or T0172 when T6317 = "BP" or Littera (T6417)). ?>
+				<cbc:ID> XYZ123 <?DescriptionAddFirst Buyer's Article Number (T6022 or T0172 when T6317 = "BP" or Littera (T6417)). Finland: GUID number?>
 				</cbc:ID>
 			</cac:BuyersItemIdentification>
 			<cac:SellersItemIdentification>
-				<cbc:ID>
-					8522173
-					<?DescriptionAddFirst Supplier's Artcle Number (T0172 when T6317 = "SA"). ?>
+				<cbc:ID> 8522173 <?DescriptionAddFirst Supplier's Artcle Number (T0172 when T6317 = "SA").?>
 				</cbc:ID>
 			</cac:SellersItemIdentification>
 			<cac:ManufacturersItemIdentification>
-				<cbc:ID></cbc:ID>
+				<cbc:ID>
+					<?DescriptionAddFirst Finland: Concrete element identifier?>
+				</cbc:ID>
 			</cac:ManufacturersItemIdentification>
 			<cac:StandardItemIdentification>
-				<cbc:ID schemeID="0160">
-					7654879
-					<?DescriptionAddFirst Global Trade Item Number (T0154) or RSK Article Number Sweden (T6023). All other item number standards used within BEAst can not be used here until the organisation behind the standard decides to be a part of the codelist "ISO 6523 ICD". These are: NOBB Article Number (T6027), RT Article Number (T6460), TUN Article Number (T6028), Finfo/Vilma Article Number (T6029), Norwegian RSK Article Number (T6024), Norwegian E-number (T6026), E-number (T0260) and SGTIN (T6461). ?>
+				<cbc:ID schemeID="0160"> 7654879 <?DescriptionAddFirst Global Trade Item Number (T0154) or RSK Article Number Sweden (T6023). All other item number standards used within BEAst can not be used here until the organisation behind the standard decides to be a part of the codelist "ISO 6523 ICD". These are: NOBB Article Number (T6027), RT Article Number (T6460), TUN Article Number (T6028), Finfo/Vilma Article Number (T6029), Norwegian RSK Article Number (T6024), Norwegian E-number (T6026), E-number (T0260) and SGTIN (T6461). Finland GTIN or SGITIN?>
 				</cbc:ID>
 			</cac:StandardItemIdentification>
 
@@ -281,11 +279,9 @@
 
 			<cac:CommodityClassification>
 				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="3.0.2" name="SBMI">
-					KO2012140200
-					<?DescriptionAddFirst Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID the version of the codelist in attribute "name" and name is the name of the codelist or Source to Classification (T6467). ?>
-					<?listID-DescriptionAddFirst For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID the version of the codelist in attribute "name", i.e. mutually agreed. ?>
-					<?name-DescriptionAddFirst If construction specific lists are used, name specifies which of them is used. Possible names are: "AI", "CoClass”, “ME”, "RF" "SA", "SB", "SBF", "SBMI", "SW". AI: Återvinningsindustrierna, ME: Maskinentreprenörerna, RF: Rentalföretagen, SA: Sveriges Åkeriföretag, SB: Svensk Betong, SBF: Svensk Beläggningsförening, SBMI: Sveriges Bergmaterialindustrier, SW: Swedish Wood.
-					Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "BK04", "ENO_SE", "ENO_NO", "ETIM", "Finfo", "RT", "TUN", "RSK_SE", "RSK_NO". ?>
+					KO2012140200 <?DescriptionAddFirst Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID the version of the codelist in attribute "name" and name is the name of the codelist or Source to Classification (T6467).?>
+					<?listID-DescriptionAddFirst For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID the version of the codelist in attribute "name", i.e. mutually agreed.?>
+					<?name-DescriptionAddFirst If construction specific lists are used, name specifies which of them is used. Possible names are: "AI", "CoClass”, “ME”, "RF" "SA", "SB", "SBF", "SBMI", "SW". AI: Återvinningsindustrierna, ME: Maskinentreprenörerna, RF: Rentalföretagen, SA: Sveriges Åkeriföretag, SB: Svensk Betong, SBF: Svensk Beläggningsförening, SBMI: Sveriges Bergmaterialindustrier, SW: Swedish Wood. Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "BK04", "ENO_SE", "ENO_NO", "ETIM", "Finfo", "RT", "TUN", "RSK_SE", "RSK_NO".?>
 				</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
 
@@ -307,16 +303,17 @@
 			</cac:ClassifiedTaxCategory>
 
 			<cac:AdditionalItemProperty>
-				<cbc:ID schemeDataURI="https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460" schemeID="ISO22057" schemeVersionID="2022">
-					77e416eb-a363-4258-a04e-171d843a6460
-					<?Description ID of the property if assigned by an Agency?>
+				<cbc:ID
+					schemeDataURI="https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460"
+					schemeID="ISO22057" schemeVersionID="2022"> 77e416eb-a363-4258-a04e-171d843a6460 <?Description ID of the property if assigned by an Agency?>
 					<?Cardinality 0..1?>
 					<?schemeDataURI-Name Scheme Data URI?>
 					<?schemeDataURI-usage Optional?>
 					<?schemeID-Name Scheme identifier?>
 					<?schemeID-usage Optional?>
 					<?schemeVersionID-Name Scheme version identifier?>
-					<?schemeVersionID-usage Optional?>
+					<?schemeVersionID-usage Optional
+Finland: Use values from Implementation guide list.?>
 				</cbc:ID>
 				<cbc:Name>EPD Number</cbc:Name>
 				<cbc:NameCode listID="IPNC">EPDNumber</cbc:NameCode>
