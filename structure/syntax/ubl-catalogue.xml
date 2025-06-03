@@ -95,7 +95,7 @@
       <Element cardinality="0..1">
          <Term>cac:ReferencedContract</Term>
          <Name>Contract reference</Name>
-         <Description>BEAst: Use this ID to link the catalogue to the framework or project agreement
+         <Description>BEAst: Use this ID to link the catalogue to the framework or project agreement Finland: This is an example of Finnish guide text for the linking of contracts to catalogue.
  Peppol: The identification of a contract.</Description>
          <Element>
             <Term>cbc:ID</Term>
@@ -1356,7 +1356,7 @@
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>Buyers item identifier</Name>
-                  <Description>BEAst: Buyer's Article Number (T6022 or T0172 when T6317 = "BP" or Littera (T6417)).
+                  <Description>BEAst: Buyer's Article Number (T6022 or T0172 when T6317 = "BP" or Littera (T6417)). Finland: GUID number
  Peppol: An identifier, assigned by the buyer, for the item. Associates the item with its identification according to the buyer's system.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir19-p040</Reference>
@@ -1385,7 +1385,8 @@
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>Manufacturers item identifer</Name>
-                  <Description>The manufacturers identifier for the item.</Description>
+                  <Description>BEAst: Finland: Concrete element identifier
+ Peppol: The manufacturers identifier for the item.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir19-114</Reference>
                   <Value type="EXAMPLE">Prod-01</Value>
@@ -1399,7 +1400,7 @@
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>Item standard identifier</Name>
-                  <Description>BEAst: Global Trade Item Number (T0154) or RSK Article Number Sweden (T6023). All other item number standards used within BEAst can not be used here until the organisation behind the standard decides to be a part of the codelist "ISO 6523 ICD". These are: NOBB Article Number (T6027), RT Article Number (T6460), TUN Article Number (T6028), Finfo/Vilma Article Number (T6029), Norwegian RSK Article Number (T6024), Norwegian E-number (T6026), E-number (T0260) and SGTIN (T6461).
+                  <Description>BEAst: Global Trade Item Number (T0154) or RSK Article Number Sweden (T6023). All other item number standards used within BEAst can not be used here until the organisation behind the standard decides to be a part of the codelist "ISO 6523 ICD". These are: NOBB Article Number (T6027), RT Article Number (T6460), TUN Article Number (T6028), Finfo/Vilma Article Number (T6029), Norwegian RSK Article Number (T6024), Norwegian E-number (T6026), E-number (T0260) and SGTIN (T6461). Finland GTIN or SGITIN
  Peppol: An item identifier based on a registered scheme. Associates the item with its identification according to a standard system.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir19-092</Reference>
