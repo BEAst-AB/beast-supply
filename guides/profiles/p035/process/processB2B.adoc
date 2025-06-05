@@ -1,0 +1,23 @@
+
+= Business processes for B2B (Business To Business)
+
+In this document we focus on the process that normally first is implemented between companies - Quotation and optionally a Request for Quotation.
+Normally the Buyer will start the process by sending a RFQ, a Pre-award T035 RequestForCatalogue, and the Seller will return a Quote, a Pre-award
+T036 Catalogue. However the Request is optional and the process can be that only the Quote is used.
+
+In B2B processes the Pre-Award Catalogue Request and Catalogue can be used to establish a Framework Agreement between the companies as a common base 
+for future business. In this case the Reference to a Contract will be missing in the Catalogue Request (RFQ) if one is used, and in the Catalogue 
+itself if a RFQ is not preceding the Catalogue.  
+
+Also, in B2B processes, the transactions can be used as a RFQ and Quote based on an established Framework Agreement or without one. 
+
+
+
+== Property 
+
+In this document the term “property” is mentioned in several places. It is a way to describe the item when an item number is not known or it is not a 
+standard product. 
+The property can be identified by a NameCode that must be known by both sender and receiver, but better is to identify the property with an ID that is 
+defined in a standard public Data Dictionary (DD) and to provide the attributes where to find the DD. 
+
+It is recommended to use Property identification from standardised Data Dictionaries.   
