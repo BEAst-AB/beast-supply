@@ -1,5 +1,3 @@
-include::settings.adoc[]
-
 = {doctitle}
 {name-op-en}
 v{revision}
@@ -16,9 +14,12 @@ v{revision}
 :title-logo-image: {imagesdir}/peppol.png
 
 {description}
-include::../../shared/copyright.adoc[]
 
 :leveloffset: +1
+
+include::process/index.adoc[]
+
+include::profiles/index.adoc[]
 
 include::process/index.adoc[]
 
