@@ -1,0 +1,12 @@
+
+== Use case 4 from B2B (Business To Business)
+
+This UseCase describes a situation where the RFQ and Quote have a mix of lines with Rented and Purchased products.  
+There also is a mix of lines where the Item Number is known in most cases but defined by a set of Properties in one case, requesting the Supplier 
+to select the best alternative. 
+
+For lines covering Rented products, two quantities are needed. The number of Items and the number of Days to rent it. The main quantity is the Rental 
+Period, and it is sent in cbc:MinimumQuantity and cbc:MaximumQuantity. If the price is for a quantity of more than one of the rented item, that quantity 
+should be sent in cbc:ContentUnitQuantity. 
+
+Since no Framework Agreement exists, terms are included in the Quote.  
