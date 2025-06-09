@@ -39,20 +39,18 @@
 |The pre award catalogue request may include information about contacts to obtain additional information. 
 
 2+h|Item
-|tir-020
-|An item in a pre-award catalogue request shall be uniquely identifiable by a name and an identifier.
 |tir-021
 |An item may have a description.
 |tir-022
 |It shall be possible to refer an item to the corresponding classes from one or more classification systems.
 |tir-023
-|It shall be possible to specify information requirement on the items.
+|It shall be possible to specify information requirement and requirements on property values on the items.
 |tir-024
-a|It shall be possible to specify the required physical location for an requested item.
+a|It shall be possible to specify the required physical location for an requested item, both the Despatch- and Delivery-Location.
 
-* In case of goods, it is the location the goods should be delivered to
-* In case of services, it is the location where the service should be provided
-* In case of works, it is the location where the works should be provided
+* In case of goods, Delivery Location is the location the goods should be delivered to. Despatch Location is Ship-from place.
+* In case of services, Delivery Location is the location where the service should be provided. If relevant (service is a transport), Despatch Location is Ship-from place. 
+* In case of works, Delivery Location is the location where the works should be provided. Despatch Location is not relevant.
 |tir-025
 |It shall be possible to state requirements on how the item can be ordered.
 |tir-026
