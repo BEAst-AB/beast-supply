@@ -6,27 +6,14 @@ to use external references in the form of URI’s for attachments.
 If binary objects are attached to the Pre-Award Catalogue Request, the valid values for mimetype can be found in section <<Mime code of attached 
 document>>
 
-[source]
+[source, xml, indent=0]
 .Example of using an external reference
 ----
-<cac:Item>
-  ...
-  <cac:ItemSpecificationDocumentReference>
-    <cbc:ID>LK8788</cbc:ID>
-    <cbc:DocumentDescription>Product image</cbc:DocumentDescription>
-    <cac:Attachment>
-      <cac:ExternalReference>
-        <cbc:URI>http://img.trioving.net/Låskasser/LK8788_PRD_FPM_000.JPG</cbc:URI>
-      </cac:ExternalReference>
-    </cac:Attachment>
-  </cac:ItemSpecificationDocumentReference>
-  ...
-</cac:Item>
+include::../../../../structure/snippets/Snippet_67.xml[tags=external]
 ----
 
 [source, xml, indent=0]
 .Example of using attached binary objects
 ----
 include::../../../../structure/snippets/Snippet_68.xml[tags=attachment]
-
 ----

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CatalogueRequest xmlns="urn:oasis:names:specification:ubl:schema:xsd:CatalogueRequest-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</cbc:ProfileID>
+	<cbc:ID>5658999</cbc:ID>
+	
+	<!-- tag::attachment[] -->
+	<cac:Item>
+		...
+		<cac:ItemSpecificationDocumentReference>
+			<cbc:ID>LK8788</cbc:ID>
+			<cbc:DocumentDescription>Product image</cbc:DocumentDescription>
+			<cac:Attachment>
+				<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="TestReport_6675.pdf">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</cbc:EmbeddedDocumentBinaryObject>
+			</cac:Attachment>
+		</cac:ItemSpecificationDocumentReference>
+		...
+	</cac:Item>
+	<!-- end::attachment[] -->	
+</CatalogueRequest>
