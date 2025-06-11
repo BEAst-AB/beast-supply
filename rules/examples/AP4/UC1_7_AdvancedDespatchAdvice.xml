@@ -133,6 +133,295 @@
 				<cbc:ID schemeID="0160">1234567890</cbc:ID>
 			</cac:StandardItemIdentification>
 
+			<cac:ItemSpecificationDocumentReference>
+				<cbc:ID>5x14 FF12</cbc:ID>
+				<cbc:DocumentType>ProductImage</cbc:DocumentType>
+				<cac:Attachment>
+					<cac:ExternalReference>
+						<cbc:URI>https://www.elitfonster.se/images/71020000110.jpg</cbc:URI>
+					</cac:ExternalReference>
+				</cac:Attachment>
+			</cac:ItemSpecificationDocumentReference>
+
+			<cac:CommodityClassification>
+				<cbc:ItemClassificationCode listID="MN">AFKO M0:0</cbc:ItemClassificationCode>
+			</cac:CommodityClassification>
+
+			<cac:ManufacturerParty>
+				<cac:PartyName>
+					<cbc:Name>Elitfönster</cbc:Name>
+				</cac:PartyName>
+			</cac:ManufacturerParty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="ISO22057" schemeVersionID="2022"
+					schemeDataURI="https://define.cobuilder.no/77e416eb-a363-4258-a04e-171d843a6460/2022/">
+					77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
+				<cbc:Name>GWP GHG Value per KG</cbc:Name>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="KGM">4.30</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="EN12519" schemeVersionID="2022"
+					schemeDataURI="https://example.com/datadictionary?guid=a1b2c3d4-e5f6-7890-abcd-123456789012&amp;version=2022">
+					a1b2c3d4-e5f6-7890-abcd-123456789012</cbc:ID>
+				<cbc:Name>Frame width according to EN 12519</cbc:Name>
+				<cbc:NameCode listID="EN12519">FrameWidth</cbc:NameCode>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="MMT">480</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="EN12519" schemeVersionID="2022"
+					schemeDataURI="https://example.com/datadictionary?guid=b2c3d4e5-f6g7-8901-bcde-234567890123&amp;version=2022">
+					b2c3d4e5-f6g7-8901-bcde-234567890123</cbc:ID>
+				<cbc:Name>Frame height according to EN 12519</cbc:Name>
+				<cbc:NameCode listID="EN12519">FrameHeight</cbc:NameCode>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="MMT">1380</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="EN14351-1" schemeVersionID="2022"
+					schemeDataURI="https://example.com/datadictionary?guid=c3d4e5f6-g7h8-9012-cdef-345678901234&amp;version=2022">
+					c3d4e5f6-g7h8-9012-cdef-345678901234</cbc:ID>
+				<cbc:Name>Thermal transmittance according to EN 14351-1</cbc:Name>
+				<cbc:NameCode listID="EN14351-1">ThermalTransmittance</cbc:NameCode>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="D55">1.38</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="EN14351-1" schemeVersionID="2022"
+					schemeDataURI="https://example.com/datadictionary?guid=d4e5f6g7-h8i9-0123-defg-456789012345&amp;version=2022">
+					d4e5f6g7-h8i9-0123-defg-456789012345</cbc:ID>
+				<cbc:Name>Airborne sound reduction index</cbc:Name>
+				<cbc:NameCode listID="EN14351-1">AirborneSoundReductionIndex</cbc:NameCode>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="2N">36</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="EN14351-1" schemeVersionID="2022"
+					schemeDataURI="https://example.com/datadictionary?guid=e5f6g7h8-i9j0-1234-efgh-567890123456&amp;version=2022">
+					e5f6g7h8-i9j0-1234-efgh-567890123456</cbc:ID>
+				<cbc:Name>Light transmittance according to EN 14351-1</cbc:Name>
+				<cbc:NameCode listID="EN14351-1">LightTransmittance</cbc:NameCode>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="P1">74</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="EN14351-1" schemeVersionID="2022"
+					schemeDataURI="https://example.com/datadictionary?guid=f6g7h8i9-j0k1-2345-fghi-678901234567&amp;version=2022">
+					f6g7h8i9-j0k1-2345-fghi-678901234567</cbc:ID>
+				<cbc:Name>Total solar energy transmittance accordning to EN 14351-1</cbc:Name>
+				<cbc:NameCode listID="EN14351-1">SolarAbsorptanceFactor</cbc:NameCode>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="P1">0.28</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="EN12208" schemeVersionID="2022"
+					schemeDataURI="https://example.com/datadictionary?guid=g7h8i9j0-k1l2-3456-ghij-789012345678&amp;version=2022">
+					g7h8i9j0-k1l2-3456-ghij-789012345678</cbc:ID>
+				<cbc:Name>Watertightness according to EN 12208 (class)</cbc:Name>
+				<cbc:NameCode listID="EN12208(class)">WaterTightness</cbc:NameCode>
+				<cbc:Value>7A</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="ZZZ" schemeVersionID="1.0"
+					schemeDataURI="https://example.com/datadictionary?guid=h8i9j0k1-l2m3-4567-hijk-890123456789&amp;version=1.0">
+					h8i9j0k1-l2m3-4567-hijk-890123456789</cbc:ID>
+				<cbc:Name>Finish colour - interior</cbc:Name>
+				<cbc:NameCode listID="ZZZ">FinishColour?Interior</cbc:NameCode>
+				<cbc:Value>NCS-S 0502-Y</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="ZZZ" schemeVersionID="1.0"
+					schemeDataURI="https://example.com/datadictionary?guid=i9j0k1l2-m3n4-5678-ijkl-901234567890&amp;version=1.0">
+					i9j0k1l2-m3n4-5678-ijkl-901234567890</cbc:ID>
+				<cbc:Name>Finish colour - exterior</cbc:Name>
+				<cbc:NameCode listID="ZZZ">FinishColour?Exterior</cbc:NameCode>
+				<cbc:Value>NCS S 0502-Y AL</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="EN13501-2" schemeVersionID="2022"
+					schemeDataURI="https://example.com/datadictionary?guid=j0k1l2m3-n4o5-6789-jklm-012345678901&amp;version=2022">
+					j0k1l2m3-n4o5-6789-jklm-012345678901</cbc:ID>
+				<cbc:Name>Resistance to fire according to EN 13501-2</cbc:Name>
+				<cbc:NameCode listID="EN13501-2">FireResistance</cbc:NameCode>
+				<cbc:Value>EI30</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="ZZZ" schemeVersionID="1.0"
+					schemeDataURI="https://example.com/datadictionary?guid=k1l2m3n4-o5p6-7890-klmn-123456789012&amp;version=1.0">
+					k1l2m3n4-o5p6-7890-klmn-123456789012</cbc:ID>
+				<cbc:Name>Gross weight</cbc:Name>
+				<cbc:NameCode listID="ZZZ">GrossWeight</cbc:NameCode>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="KGM">48</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="ZZZ" schemeVersionID="1.0"
+					schemeDataURI="https://example.com/datadictionary?guid=l2m3n4o5-p6q7-8901-lmno-234567890123&amp;version=1.0">
+					l2m3n4o5-p6q7-8901-lmno-234567890123</cbc:ID>
+				<cbc:Name>Net weight</cbc:Name>
+				<cbc:NameCode listID="ZZZ">NetWeight</cbc:NameCode>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="KGM">43</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="ISO717-1" schemeVersionID="2022"
+					schemeDataURI="https://example.com/datadictionary?guid=m3n4o5p6-q7r8-9012-mnop-345678901234&amp;version=2022">
+					m3n4o5p6-q7r8-9012-mnop-345678901234</cbc:ID>
+				<cbc:Name>Spectrum adaptation term C/Ctr according to ISO 717-1</cbc:Name>
+				<cbc:NameCode listID="ISO717-1">SpectrumAdaptationTerm</cbc:NameCode>
+				<cbc:Value>43</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="ZZZ" schemeVersionID="1.0"
+					schemeDataURI="https://example.com/datadictionary?guid=n4o5p6q7-r8s9-0123-nopq-456789012345&amp;version=1.0">
+					n4o5p6q7-r8s9-0123-nopq-456789012345</cbc:ID>
+				<cbc:Name>Jamb extension groove</cbc:Name>
+				<cbc:NameCode listID="ZZZ">JambExtensionGroove</cbc:NameCode>
+				<cbc:Value>Yes</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="EN1627" schemeVersionID="2022"
+					schemeDataURI="https://example.com/datadictionary?guid=o5p6q7r8-s9t0-1234-opqr-567890123456&amp;version=2022">
+					o5p6q7r8-s9t0-1234-opqr-567890123456</cbc:ID>
+				<cbc:Name>Burglar resistance according to EN 1627 (class)</cbc:Name>
+				<cbc:NameCode listID="EN1627">BurglarResistance</cbc:NameCode>
+				<cbc:Value>RC2</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="ZZZ" schemeVersionID="1.0"
+					schemeDataURI="https://example.com/datadictionary?guid=p6q7r8s9-t0u1-2345-pqrs-678901234567&amp;version=1.0">
+					p6q7r8s9-t0u1-2345-pqrs-678901234567</cbc:ID>
+				<cbc:Name>Has ventilation device</cbc:Name>
+				<cbc:NameCode listID="ZZZ">HasVentilationDevice</cbc:NameCode>
+				<cbc:Value>Ja</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="EN12519" schemeVersionID="2022"
+					schemeDataURI="https://example.com/datadictionary?guid=q7r8s9t0-u1v2-3456-qrst-789012345678&amp;version=2022">
+					q7r8s9t0-u1v2-3456-qrst-789012345678</cbc:ID>
+				<cbc:Name>Window type according to EN 12519</cbc:Name>
+				<cbc:NameCode listID="EN12519">WindowType</cbc:NameCode>
+				<cbc:Value>FixedWindow</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="ZZZ" schemeVersionID="1.0"
+					schemeDataURI="https://example.com/datadictionary?guid=r8s9t0u1-v2w3-4567-rstu-890123456789&amp;version=1.0">
+					r8s9t0u1-v2w3-4567-rstu-890123456789</cbc:ID>
+				<cbc:Name>Bottom elevation</cbc:Name>
+				<cbc:NameCode listID="ZZZ">BottomElevation</cbc:NameCode>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="MMT">NA</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="ZZZ" schemeVersionID="1.0"
+					schemeDataURI="https://example.com/datadictionary?guid=s9t0u1v2-w3x4-5678-stuv-901234567890&amp;version=1.0">
+					s9t0u1v2-w3x4-5678-stuv-901234567890</cbc:ID>
+				<cbc:Name>Frame depth</cbc:Name>
+				<cbc:NameCode listID="ZZZ">FrameDepth</cbc:NameCode>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="MMT">115</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="EN12207" schemeVersionID="2022"
+					schemeDataURI="https://example.com/datadictionary?guid=t0u1v2w3-x4y5-6789-tuvw-012345678901&amp;version=2022">
+					t0u1v2w3-x4y5-6789-tuvw-012345678901</cbc:ID>
+				<cbc:Name>Air permeability according to EN 12207 (class)</cbc:Name>
+				<cbc:NameCode listID="EN12207">AirPermeability</cbc:NameCode>
+				<cbc:Value>Class3</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="ZZZ" schemeVersionID="1.0"
+					schemeDataURI="https://example.com/datadictionary?guid=u1v2w3x4-y5z6-7890-uvwx-123456789012&amp;version=1.0">
+					u1v2w3x4-y5z6-7890-uvwx-123456789012</cbc:ID>
+				<cbc:Name>Solar protection device</cbc:Name>
+				<cbc:NameCode listID="ZZZ">SolarProtectionDevice</cbc:NameCode>
+				<cbc:Value>Inget</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="EN12519" schemeVersionID="2022"
+					schemeDataURI="https://example.com/datadictionary?guid=v2w3x4y5-z6a7-8901-vwxy-234567890123&amp;version=2022">
+					v2w3x4y5-z6a7-8901-vwxy-234567890123</cbc:ID>
+				<cbc:Name>Threshold height according to EN 12519</cbc:Name>
+				<cbc:NameCode listID="EN12519">ThresholdHeight</cbc:NameCode>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="MMT">NA</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="EN12519" schemeVersionID="2022"
+					schemeDataURI="https://example.com/datadictionary?guid=w3x4y5z6-a7b8-9012-wxyz-345678901234&amp;version=2022">
+					w3x4y5z6-a7b8-9012-wxyz-345678901234</cbc:ID>
+				<cbc:Name>Clear opening width according to EN 12519</cbc:Name>
+				<cbc:NameCode listID="EN12519">ClearOpeningWidth</cbc:NameCode>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="MMT">500</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="EN12519" schemeVersionID="2022"
+					schemeDataURI="https://example.com/datadictionary?guid=x4y5z6a7-b8c9-0123-xyza-456789012345&amp;version=2022">
+					x4y5z6a7-b8c9-0123-xyza-456789012345</cbc:ID>
+				<cbc:Name>Clear opening height according to EN 12519</cbc:Name>
+				<cbc:NameCode listID="EN12519">ClearOpeningHeight</cbc:NameCode>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="MMT">600</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="ZZZ" schemeVersionID="1.0"
+					schemeDataURI="https://example.com/datadictionary?guid=y5z6a7b8-c9d0-1234-yzab-567890123456&amp;version=1.0">
+					y5z6a7b8-c9d0-1234-yzab-567890123456</cbc:ID>
+				<cbc:Name>Protection against falling through according to BBR</cbc:Name>
+				<cbc:NameCode listID="ZZZ">ProtectionAgainstFallingThrough</cbc:NameCode>
+				<cbc:Value>Laminerad in- och utsida</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="EN12519" schemeVersionID="2022"
+					schemeDataURI="https://example.com/datadictionary?guid=z6a7b8c9-d0e1-2345-zabc-678901234567&amp;version=2022">
+					z6a7b8c9-d0e1-2345-zabc-678901234567</cbc:ID>
+				<cbc:Name>Direction of rotation according to EN 12519</cbc:Name>
+				<cbc:NameCode listID="EN12519">DirectionOfRotating</cbc:NameCode>
+				<cbc:Value>Left hand opening</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:Dimension>
+				<cbc:AttributeID>WD</cbc:AttributeID>
+				<cbc:Measure unitCode="MMT" unitCodeListID="UNECERec20">480</cbc:Measure>
+			</cac:Dimension>
+			<cac:Dimension>
+				<cbc:AttributeID>HT</cbc:AttributeID>
+				<cbc:Measure unitCode="MMT" unitCodeListID="UNECERec20">1380</cbc:Measure>
+			</cac:Dimension>
+			<cac:Dimension>
+				<cbc:AttributeID>AAF</cbc:AttributeID>
+				<cbc:Measure unitCode="KGM" unitCodeListID="UNECERec20">26.00</cbc:Measure>
+			</cac:Dimension>
+
 		</cac:Item>
 	</cac:DespatchLine>
 	
