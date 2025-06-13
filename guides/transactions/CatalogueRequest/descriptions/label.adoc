@@ -1,7 +1,11 @@
 
 = Labels and Requirements
 
-Public actors will have requirements related to the environment, fair trade and other factors; they may also demand that basic human rights are respected in the product production and trade. To be able to highlight products that meet some of these criteria, the Pre-Award Catalogue Request contains elements to document Environmental labelling and Social certificates. The labels are connected to the relevant product or service on line level enabling the buyer to evaluate them in the tendering tool. Detailed information about the different labels can be found on the issuing party’s web-site which is referred to via an URI.
+The party requesting the pre-award catalogue may have have requirements related to the environment, fair trade and other factors; they may also 
+demand that basic human rights are respected in the product production and trade. To be able to highlight products that meet some of these criteria, 
+the Pre-Award Catalogue Request contains elements to document Environmental labelling and Social certificates. The labels are connected to the 
+relevant product or service on line level enabling the buyer to evaluate them in the tendering tool. Detailed information about the different labels 
+can be found on the issuing party’s web-site which is referred to via an URI.
 
 In post-awards process, when the buyer use the search engines in their eProcurement system to purchase the products and services, the labels will be visible and the buyer has the possibility to choose products that is marked with a label. The post-award catalogue has the same structure so it´s important to reuse the information used in pre-award catalogue.
 Several labels can be connected to each product. As part of the identification the code list is provided so the service provider can define and implement the information in the system.
@@ -32,27 +36,17 @@ Classification Code (ID): EOP +
 Certificate TypeCode: OrganicLabel (Ecological)
 |===
 
-[source]
+[source, xml, indent=0]
 .Example of labeling in an PreAward Catalogue message
 ----
-<cac:Certificate>
-  <cbc:ID>NEO</cbc:ID>
-  <cbc:CertificateTypeCode>EcoLabel</cbc:CertificateTypeCode>
-  <cbc:CertificateType>EcoLabel</cbc:CertificateType>
-  <cac:IssuerParty>
-    <cac:PartyName>
-      <cbc:Name>Svanemerket</cbc:Name>
-    </cac:PartyName>
-  </cac:IssuerParty>
-  <cac:DocumentReference>
-    <cbc:ID>http://www.svanemerket.no/</cbc:ID>
-  </cac:DocumentReference>
-</cac:Certificate>
+include::../../../../structure/snippets/Label.xml[tags=label]
 ----
 
-Furthermore, public actors may also have requirements regarding register enrollment, quality assurance standards or other relevant factors. These requirements may be met by the economic operator through certificates, self-declarations or other means of proof.
+Furthermore, the party requesting the pre-award catalogue may also have requirements regarding register enrollment, quality assurance standards or 
+other relevant factors. These requirements may be met by the economic operator through certificates, self-declarations or other means of proof.
 
-For this matter, eCertis may be used to specify both requirements and their means of proof. A guide to eCertis can be found here: link:https://ec.europa.eu/tools/ecertis/assets/eCertisQuickGuidePublic_en.pdf[]
+For this matter, eCertis may be used to specify both requirements and their means of proof. A guide to eCertis can be found here: 
+link:https://ec.europa.eu/tools/ecertis/assets/eCertisQuickGuidePublic_en.pdf[]
 
 .Example of eCertis requirements and certifications in a pre-award Catalogue request
 [source, xml, indent=0]

@@ -18,5 +18,21 @@
 		</cac:ItemSpecificationDocumentReference>
 		...
 	</cac:Item>
-	<!-- end::attachment[] -->	
+	<!-- end::attachment[] -->
+
+	<!-- tag::vat[] -->
+	<cac:Item>
+		...
+		<cac:ClassifiedTaxCategory>
+			<cbc:ID>S</cbc:ID>
+			<cbc:Percent>25</cbc:Percent>
+			<cac:TaxScheme>
+				<cbc:ID>VAT</cbc:ID>
+			</cac:TaxScheme>
+		</cac:ClassifiedTaxCategory>
+		...
+	</cac:Item>
+	<!-- end::vat[] -->
+
+
 </CatalogueRequest>

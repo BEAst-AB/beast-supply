@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CatalogueRequest xmlns="urn:oasis:names:specification:ubl:schema:xsd:CatalogueRequest-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</cbc:ProfileID>
+	<cbc:ID>5658999</cbc:ID>
+	
+	<!-- tag::label[] -->
+	<cac:Certificate>
+		<cbc:ID>NEO</cbc:ID>
+		<cbc:CertificateTypeCode>EcoLabel</cbc:CertificateTypeCode>
+		<cbc:CertificateType>EcoLabel</cbc:CertificateType>
+		<cac:IssuerParty>
+			<cac:PartyName>
+				<cbc:Name>Svanemerket</cbc:Name>
+			</cac:PartyName>
+		</cac:IssuerParty>
+		<cac:DocumentReference>
+			<cbc:ID>http://www.svanemerket.no/</cbc:ID>
+		</cac:DocumentReference>
+	</cac:Certificate>
+	<!-- end::label[] -->	
+	
+</CatalogueRequest>
