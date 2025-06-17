@@ -6,7 +6,9 @@
 	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</cbc:ProfileID>
 	<cbc:ID>5658999</cbc:ID>
 	
-	<!-- tag::example1[] -->
+	<!-- tag::example[] -->
+	<!-- Example of use in the PreAward Catalogue request message. -->
+
 	<cac:AdditionalItemProperty>
 		<cbc:Name>Colour</cbc:Name>
 		<cbc:Value>Red</cbc:Value>
@@ -22,9 +24,10 @@
 		<cbc:Name>GeneticallyModified</cbc:Name>
 		<cbc:Value>True</cbc:Value>
 	</cac:AdditionalItemProperty>
-	<!-- end::example1[] -->
 
-	<!-- tag::example2[] -->
+	
+	<!-- Here an example of a Property that is defined with a Name-code in a codelist. -->
+
 	<cac:AdditionalItemProperty>
 		   <cbc:Name>Thermal transmittance</cbc:Name>
 		   <cbc:NameCode listID="EN14351-1">ThermalTransmittance</cbc:NameCode>
@@ -33,9 +36,10 @@
 			      <cbc:MaximumValue>1.4</cbc:MaximumValue>
 		</cac:ItemPropertyRange>
 	</cac:AdditionalItemProperty>
-	<!-- end::example2[] -->
 
-	<!-- tag::example3[] -->
+
+	<!-- And here an example of a Property defined by an ID in a DataTemplate with link. -->
+
 	<cac:AdditionalItemProperty>
 		<cbc:ID schemeID="ISO22057" schemeVersionID="2022" schemeDataURI="https://define.cobuilder.no/77e416eb-a363-4258-a04e- 
  			171d843a6460/2022/">77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
@@ -43,7 +47,6 @@
 		   <cbc:Value>NA</cbc:Value>
 		   <cbc:ValueQuantity unitCode="MTR">4.30</cbc:ValueQuantity>
 	</cac:AdditionalItemProperty>
-	<!-- end::example3[] -->
-
+	<!-- end::example[] -->
 
 </CatalogueRequest>
