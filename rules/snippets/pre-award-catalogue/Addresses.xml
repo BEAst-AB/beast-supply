@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalogue xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</cbc:ProfileID>
+
+	<!-- tag::Address-H[] -->
+	<cac:SellerSupplierParty>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0088">7300010000001</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>Despatch from Name</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Industrigatan 6</cbc:StreetName>
+				<cbc:CityName>Malmö</cbc:CityName>
+				<cbc:PostalZone>87654</cbc:PostalZone>
+				<cac:AddressLine>
+					<cbc:Line>Warehouse 1</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+		</cac:Party>
+	</cac:SellerSupplierParty>
+
+	<cac:ContractorCustomerParty>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="ZZZ">23947</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>Delivery to Name</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Huvudgatan 56</cbc:StreetName>
+				<cbc:CityName>Lund</cbc:CityName>
+				<cbc:PostalZone>34567</cbc:PostalZone>
+				<cac:AddressLine>
+					<cbc:Line>Building 2</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+		</cac:Party>
+	</cac:ContractorCustomerParty>
+	<!-- end::Address-H[] -->
+
+	<!-- tag::Address-L[] -->
+	<cac:ApplicableTerritoryAddress>
+		<cbc:AddressTypeCode>DSP</cbc:AddressTypeCode>
+		<cbc:StreetName>Harbour lane 4</cbc:StreetName>
+		<cbc:CityName>London</cbc:CityName>
+		<cbc:PostalZone>21334</cbc:PostalZone>
+		<cac:Country>
+			<cbc:IdentificationCode listID="ISO3166-1:Alpha2">UK</cbc:IdentificationCode>
+		</cac:Country>
+	</cac:ApplicableTerritoryAddress>
+
+	<cac:ApplicableTerritoryAddress>
+		<cbc:AddressTypeCode>DEL</cbc:AddressTypeCode>
+		<cbc:StreetName>Mainstreet 123</cbc:StreetName>
+		<cbc:CityName>Birmingham</cbc:CityName>
+		<cbc:PostalZone>12334</cbc:PostalZone>
+		<cac:Country>
+			<cbc:IdentificationCode listID="ISO3166-1:Alpha2">UK</cbc:IdentificationCode>
+		</cac:Country>
+	</cac:ApplicableTerritoryAddress>
+	<!-- end::Address-L[] -->
+
+
+</Catalogue>

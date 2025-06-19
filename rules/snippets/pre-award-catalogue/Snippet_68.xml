@@ -71,7 +71,14 @@
 		</cac:PostalAddress>
 	</cac:ReceiverParty>
 	<!-- end::receiver[] -->
-	
+
+	<!-- tag::trading-terms[] -->
+	<cac:TradingTerms>
+		<cbc:Information>EXW#Ex Works</cbc:Information>
+		<cbc:Reference>INCOTerms</cbc:Reference>
+	</cac:TradingTerms>
+	<!-- end::trading-terms[] -->
+
 	<!-- tag::lot-ref[] -->
 	<cac:CatalogueLine>
 		<cbc:ID>1</cbc:ID>

@@ -1,16 +1,16 @@
 
 = Reference to the call for tenders (Procurement project identifier)
 
-In B2G processes t		he pre-award catalogue shall refer to a previous call for tenders with pre-award catalogue request, often called the 
+In B2G processes the pre-award catalogue shall refer to a previous call for tenders with pre-award catalogue request, often called the 
 *procurement project identifier*. The identifier shall be provided in the element  `cac:ReferencedContract/cac:ContractDocumentReference/cbc:ID` 
- and the reference to the Request in 'cac:ReferencedContract/cbc:ID' with `cac:ReferencedContract/cbc:ContractTypeCode` = 311.
+ and the reference to the Request in `cac:ReferencedContract/cbc:ID` with `cac:ReferencedContract/cbc:ContractTypeCode` = 311.
 
 When the referenced call for tenders has lots, the lot identifier shall be sent at line level in the element `cbc:ContractSubdivision`.
 
 In B2B processes the same group and elements are used in a similar way. The reference to a preceding Catalogue Request (RFQ) is the same if one is 
 received, but instead of having a “procurement project identifier”, a Project reference can be sent. If no RFQ is received, the 
-'cac:ContractDocumentReference/cbc:ID' instead can contain a reference to a Framework Agreement or some other Contract between the parties. 
-The 'cbc:ContractTypeCode' should reflect that if that is the case.  
+`cac:ContractDocumentReference/cbc:ID` instead can contain a reference to a Framework Agreement or some other Contract between the parties. 
+The `cbc:ContractTypeCode` should reflect that if that is the case.  
 
 .Example on procurement project identifier
 [source, xml, indent=0]
@@ -19,7 +19,7 @@ include::../../../../rules/snippets/pre-award-catalogue/Snippet_68.xml[tags=proc
 ----
 <1>  Code 311 is mandatory
 <2>  The procurement project identifier
-<3>  Codes 315 and 537 can be used if there is no RFQ to refer to.
+<3>  Codes 315 and 539 can be used if there is no RFQ to refer to.
 <4>  Reference to the customer's Project ID if one exists. Use **NA** otherwise.  
 
 .Lot identifier on line level

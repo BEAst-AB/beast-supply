@@ -77,6 +77,14 @@
 		<cbc:MinimumOrderQuantity unitCode="LTR" unitCodeListID="UNECERec20">100</cbc:MinimumOrderQuantity>
 		<cbc:MaximumOrderQuantity unitCode="LTR" unitCodeListID="UNECERec20">1000</cbc:MaximumOrderQuantity>
 		<cbc:PackLevelCode listID="GS17009:PEPPOL">HN</cbc:PackLevelCode>
+
+		<!-- tag::line-validity[] -->
+		<cac:LineValidityPeriod>
+			<cbc:StartDate>2017-01-01</cbc:StartDate>
+			<cbc:EndDate>2017-12-31</cbc:EndDate>
+		</cac:LineValidityPeriod>
+		<!-- end::line-validity[] -->
+
 		<!-- tag::item-comparison[] -->
 		<cac:ItemComparison>
 			<cbc:PriceAmount currencyID="EUR">1.5</cbc:PriceAmount>
@@ -104,12 +112,16 @@
 		<!-- tag::item-price[] -->
 		<cac:RequiredItemLocationQuantity>
 			<cac:Price>
-				<cbc:PriceAmount currencyID="EUR">1.5</cbc:PriceAmount>
+				<cbc:PriceAmount currencyID="NOK">75.00</cbc:PriceAmount>
 				<cac:ValidityPeriod>
-					<cbc:StartDate>2017-01-01</cbc:StartDate>
-					<cbc:EndDate>2017-05-15</cbc:EndDate>
+					<cbc:StartDate>2017-04-01</cbc:StartDate>
+					<cbc:EndDate>2017-04-30</cbc:EndDate>
 				</cac:ValidityPeriod>
-			</cac:Price>		
+				<cac:ValidityPeriod>
+					<cbc:StartDate>2017-08-01</cbc:StartDate>
+					<cbc:EndDate>2017-08-31</cbc:EndDate>
+				</cac:ValidityPeriod>
+			</cac:Price>
 		</cac:RequiredItemLocationQuantity>
 		<!-- end::item-price[] -->
 		
