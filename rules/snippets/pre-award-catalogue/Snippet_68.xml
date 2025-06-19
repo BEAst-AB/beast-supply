@@ -13,14 +13,27 @@
 		<cbc:StartDate>2016-08-01</cbc:StartDate>
 		<cbc:EndDate>2016-12-31</cbc:EndDate>
 	</cac:ValidityPeriod>
+	
 	<!-- tag::procurement[] -->
+	<!-- In B2G processes:-->
 	<cac:ReferencedContract>
+		<cbc:ID>ABC123</cbc:ID>
 		<cbc:ContractTypeCode listID="UNCL1001">311</cbc:ContractTypeCode> <!--1-->
 		<cac:ContractDocumentReference>
 			<cbc:ID>CRT1387</cbc:ID> <!--2-->
 		</cac:ContractDocumentReference>
 	</cac:ReferencedContract>
+
+	<!-- In B2B processes:-->
+	<cac:ReferencedContract>
+		<cbc:ID>ABC123</cbc:ID>
+		<cbc:ContractTypeCode listID="UNCL1001">315</cbc:ContractTypeCode>	<!--3-->
+		<cac:ContractDocumentReference>
+			<cbc:ID>PROJ-123</cbc:ID>	<!--4-->
+		</cac:ContractDocumentReference>
+	</cac:ReferencedContract>
 	<!-- end::procurement[] -->
+	
 	<!-- tag::provider[] -->
 	<cac:ProviderParty>
 		<cac:PartyIdentification>
@@ -58,6 +71,7 @@
 		</cac:PostalAddress>
 	</cac:ReceiverParty>
 	<!-- end::receiver[] -->
+	
 	<!-- tag::lot-ref[] -->
 	<cac:CatalogueLine>
 		<cbc:ID>1</cbc:ID>
