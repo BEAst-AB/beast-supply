@@ -122,7 +122,23 @@
 			<cac:StandardItemIdentification>
 				<cbc:ID schemeID="GTIN">99023409093843</cbc:ID>
 			</cac:StandardItemIdentification>
-			<!-- tag::attachment[] -->
+			<!-- tag::attachment1[] -->
+			<cac:Item>
+				...
+				<cac:ItemSpecificationDocumentReference>
+					<cbc:ID>LK8788</cbc:ID>
+					<cbc:DocumentDescription>Product image</cbc:DocumentDescription>
+					<cac:Attachment>
+						<cac:ExternalReference>
+							<cbc:URI>http://img.trioving.net/Låskasser/LK8788_PRD_FPM_000.JPG</cbc:URI>
+						</cac:ExternalReference>
+					</cac:Attachment>
+				</cac:ItemSpecificationDocumentReference>
+				...
+			</cac:Item>
+			<!-- end::attachment1[] -->
+
+			<!-- tag::attachment2[] -->
 			<cac:ItemSpecificationDocumentReference>
 				<cbc:ID>2384-34232-342-34-2333</cbc:ID>
 				<cac:Attachment>
@@ -130,7 +146,8 @@
 						>ZGVmYXVsdA==</cbc:EmbeddedDocumentBinaryObject>
 				</cac:Attachment>
 			</cac:ItemSpecificationDocumentReference>
-			<!-- end::attachment[] -->
+			<!-- end::attachment2[] -->
+
 			<cac:OriginCountry>
 				<cbc:IdentificationCode listID="ISO3166-1:Alpha2">FR</cbc:IdentificationCode>
 			</cac:OriginCountry>

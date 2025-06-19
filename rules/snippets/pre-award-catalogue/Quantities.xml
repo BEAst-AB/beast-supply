@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalogue xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</cbc:ProfileID>
+
+	<!-- tag::example1[] -->
+	<cac:CatalogueLine>
+		<cbc:ID>4</cbc:ID>
+		<cbc:OrderableUnit>EA</cbc:OrderableUnit>
+		<cbc:ContentUnitQuantity unitCode="MLT" unitCodeListID="UNECERec20">250</cbc:ContentUnitQuantity>
+		<cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
+		<cbc:MinimumOrderQuantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:MinimumOrderQuantity>
+		<cbc:PackLevelCode listID="GS17009:PEPPOL">CU</cbc:PackLevelCode>
+		...
+		<cac:Item>
+			<cbc:Name languageID="en">Shampoo 250 ml</cbc:Name>
+			<cbc:PackSizeNumeric>1</cbc:PackSizeNumeric>
+			<cac:SellersItemIdentification>
+				<cbc:ID>1111</cbc:ID>
+			</cac:SellersItemIdentification>
+			...
+		</cac:Item>
+		...
+	</cac:CatalogueLine>
+	<!-- end::example1[] -->
+
+	<!-- tag::example2[] -->
+	<cac:CatalogueLine>
+		<cbc:ID>8</cbc:ID>
+		<cbc:OrderableUnit>CS</cbc:OrderableUnit>
+		<cbc:ContentUnitQuantity unitCode="EA" unitCodeListID="UNECERec20">2500</cbc:ContentUnitQuantity>
+		<cbc:OrderQuantityIncrementNumeric>1</cbc:OrderQuantityIncrementNumeric>
+		<cbc:MinimumOrderQuantity unitCode="CS" unitCodeListID="UNECERec20">1</cbc:MinimumOrderQuantity>
+		<cbc:PackLevelCode listID="GS17009:PEPPOL">TU</cbc:PackLevelCode>
+		<cac:ComponentRelatedItem>
+			<cbc:ID>A</cbc:ID>
+			<cbc:Quantity unitCode="EA" unitCodeListID="UNECERec20">5</cbc:Quantity>
+		</cac:ComponentRelatedItem>
+		...
+		<cac:Item>
+			<cbc:Description languageID="en">5*500 Copy paper</cbc:Description>
+			<cbc:PackQuantity unitCode="CS" unitCodeListID="UNECERec20">5</cbc:PackQuantity>
+			<cbc:PackSizeNumeric>5</cbc:PackSizeNumeric>
+			<cac:SellersItemIdentification>
+				<cbc:ID>AA</cbc:ID>
+			</cac:SellersItemIdentification>
+			...
+		</cac:Item>
+		...
+	</cac:CatalogueLine>
+	<!-- end::example2[] -->
+
+	<!-- tag::example3[] -->
+	<cac:CatalogueLine>
+		<cbc:ID>8</cbc:ID>
+		<cbc:OrderableUnit>EA</cbc:OrderableUnit>
+		<cbc:ContentUnitQuantity unitCode="31" unitCodeListID="UNECERec20">10</cbc:ContentUnitQuantity>
+		...
+	</cac:CatalogueLine>
+	<!-- end::example3[] -->
+
+</Catalogue>
