@@ -62,7 +62,10 @@ sync_repo $POACCREPO $POACCBRANCH "rules/unit-common"  "rules/unit-catalogue"
 sync_repo $POACCREPO $POACCBRANCH "rules/unit-common"  "rules/unit-invoice-response" 
 
 # Guides
-sync_repo $POACCREPO $POACCBRANCH "guides/profiles/1-catalogueonly" "guides/profiles/1-catalogueonly"
+sync_repo $POACCREPO $POACCBRANCH "guides/profiles/28-ordering" "guides/profiles/28-ordering"
+sync_repo $POACCREPO $POACCBRANCH "guides/profiles/3-order-only" "guides/profiles/3-order-only"
+sync_repo $POACCREPO $POACCBRANCH "guides/profiles/42-orderagreement" "guides/profiles/42-orderagreement"
+sync_repo $POACCREPO $POACCBRANCH "guides/profiles/63-invoiceresponse" "guides/profiles/63-invoiceresponse"
 sync_repo $POACCREPO $POACCBRANCH "guides/profiles/64-catalogue-wo-response" "guides/profiles/64-catalogue-wo-response"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/66-advanceddespatchadvice" "guides/profiles/66-advanceddespatchadvice"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/67-advanceddespatchadvice_w_receiptadvice" "guides/profiles/67-advanceddespatchadvice_w_receiptadvice"
