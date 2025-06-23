@@ -6,10 +6,15 @@
 	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</cbc:ProfileID>
 	<cbc:ID>5658999</cbc:ID>
 	
-	<!-- tag::itemclassification[] -->
-	<cac:CommodityClassification>
-		   <cbc:ItemClassificationCode listID="MN">AFKO M0:0</cbc:ItemClassificationCode>
-	</cac:CommodityClassification>
-	<!-- end::itemclassification[] -->	
+	<!-- tag::keyword[] -->
+	<cac:Item>
+		<cbc:Description> Pallet of water </cbc:Description>
+		<cbc:Name>Water</cbc:Name>
+		<cbc:Keyword>sparkling%natural%water</cbc:Keyword>
+		<cac:SellersItemIdentification>
+			<cbc:ID>111111</cbc:ID>
+		</cac:SellersItemIdentification>
+	</cac:Item>
+	<!-- end::keyword[] -->	
 	
 </Catalogue>
