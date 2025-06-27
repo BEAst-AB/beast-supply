@@ -298,6 +298,14 @@
 		<inherit>peppolbis-en16931-base-3.0-cii</inherit>
 	</configuration>
 
+
+	<configuration>
+		<identifier>sbdh-base-2.3</identifier>
+		<title>Standard Business Document Header</title>
+		<declaration type="xml.uncefact">http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader::StandardBusinessDocument</declaration>
+		<inherit>uncefact-sbdh-2.3</inherit>
+	</configuration>
+
 	<!-- UBL -->
 
 	<configuration>
@@ -339,4 +347,3 @@
 	</configuration>
 
 </buildConfigurations>
-
