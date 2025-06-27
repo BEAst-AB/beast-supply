@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ubl:Order  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+<Order  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
             xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
             xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
             xmlns:n0="urn:oasis:names:specification:ubl:schema:xsd:CommonSignatureComponents-2"
@@ -7,7 +7,7 @@
             xmlns:sac="urn:oasis:names:specification:ubl:schema:xsd:SignatureAggregateComponents-2"
             xmlns:sbc="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2"
             xmlns:ccts-cct="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2"
-            xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
 	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order:3</cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:ordering:3</cbc:ProfileID>
 	<cbc:ID>110494120</cbc:ID>
@@ -249,4 +249,4 @@
 			</cac:Item>
 		</cac:LineItem>
 	</cac:OrderLine>
-</ubl:Order>
+</Order>

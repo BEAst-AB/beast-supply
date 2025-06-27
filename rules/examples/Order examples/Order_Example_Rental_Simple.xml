@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Order  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+            xmlns:n0="urn:oasis:names:specification:ubl:schema:xsd:CommonSignatureComponents-2"
+            xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
+            xmlns:sac="urn:oasis:names:specification:ubl:schema:xsd:SignatureAggregateComponents-2"
+            xmlns:sbc="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2"
+            xmlns:ccts-cct="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2"
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2">
+	<cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order:3</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:ordering:3</cbc:ProfileID>
+
+	<cbc:ID>40622705</cbc:ID>
+	<cbc:IssueDate>2025-06-25</cbc:IssueDate>
+	<cbc:IssueTime>08:29:39</cbc:IssueTime>
+	<cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+	<cbc:CustomerReference>13</cbc:CustomerReference><!-- Underkonto eller Aktivitet-->
+	<cac:ValidityPeriod>
+		<cbc:EndDate>2025-06-30</cbc:EndDate>
+	</cac:ValidityPeriod>
+	<cac:Contract>
+		<cbc:ID>90567789</cbc:ID>
+	</cac:Contract>
+	<cac:ProjectReference>
+		<cbc:ID>7106095</cbc:ID>
+	</cac:ProjectReference>
+	<!-- Depå exempelvis fås av projektnummer eller postnummer -->
+	<cac:BuyerCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">5598653227</cbc:EndpointID>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0007">5598653227</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>Snabbschakt AB</cbc:Name>
+			</cac:PartyName>
+			<!--			<cac:PartyTaxScheme>
+				<cbc:CompanyID>SE556613492901</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>-->
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Snabbschakt AB</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Name>Dummy User</cbc:Name>
+				<cbc:Telephone>+46701234567</cbc:Telephone>
+				<cbc:ElectronicMail>dummy.user@snabbschakt.se</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:BuyerCustomerParty>
+	<cac:SellerSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">5512345678</cbc:EndpointID>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="0007">5512345678</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>XHyra AB</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Sveavägen 159</cbc:StreetName>
+				<cbc:AdditionalStreetName>Depå</cbc:AdditionalStreetName>
+				<cbc:CityName>Stockholm</cbc:CityName>
+				<cbc:PostalZone>113 46</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>XHyra AB</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+			<cac:Contact><!-- används för att hitta rätt depå som ett alternativ till projektnummer
+				/ postnummer -->
+				<cbc:Name>Depå Jordbro</cbc:Name>
+				<cbc:Telephone>+46701234567</cbc:Telephone>
+				<cbc:ElectronicMail>jordbro@xhyra.se</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:SellerSupplierParty>
+	<cac:Delivery>
+		<cac:DeliveryLocation>
+			<cbc:Name>Rudsberget hus 1-7</cbc:Name>
+			<cac:Address>
+				<cbc:StreetName>Elverumsgatan 7</cbc:StreetName>
+				<cbc:CityName>Karlstad</cbc:CityName>
+				<cbc:PostalZone>65221</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:Address>
+		</cac:DeliveryLocation>
+		<cac:Shipment>
+			<cbc:ID>NA</cbc:ID>
+			<cac:TransportHandlingUnit>
+				<cbc:ShippingMarks>Snabbschaktprojektet i rondellen</cbc:ShippingMarks>
+			</cac:TransportHandlingUnit>
+		</cac:Shipment>
+	</cac:Delivery>
+
+	<cac:OrderLine>
+		<cac:LineItem>
+			<cbc:ID>1</cbc:ID>
+			<cbc:Quantity unitCode="EA">1.00</cbc:Quantity>
+			<cbc:LineExtensionAmount currencyID="SEK">1.00</cbc:LineExtensionAmount>
+			<cbc:AccountingCost>5181</cbc:AccountingCost><!-- Konto -->
+			<cac:Delivery>
+				<cac:RequestedDeliveryPeriod>
+					<cbc:StartDate>2025-08-16</cbc:StartDate>
+				</cac:RequestedDeliveryPeriod>
+			</cac:Delivery>
+			<cac:Price>
+				<cbc:PriceAmount currencyID="SEK">1.00</cbc:PriceAmount>
+			</cac:Price>
+			<cac:Item>
+				<cbc:Name>Telefonorder, ringer under dagen</cbc:Name>
+				<cac:SellersItemIdentification>
+					<cbc:ID>2038819</cbc:ID>
+				</cac:SellersItemIdentification>
+				<!--				<cac:AdditionalItemProperty>
+					<cbc:ID>1234</cbc:ID>
+					<cbc:Name></cbc:Name>
+					<cbc:Value>Jordbro</cbc:Value>
+				</cac:AdditionalItemProperty>
+				<cac:AdditionalItemProperty>
+					<cbc:ID>34567</cbc:ID>
+					<cbc:Name>Avdelning</cbc:Name>
+					<cbc:Value>El</cbc:Value>
+				</cac:AdditionalItemProperty>-->
+			</cac:Item>
+		</cac:LineItem>
+	</cac:OrderLine>
+</Order>
