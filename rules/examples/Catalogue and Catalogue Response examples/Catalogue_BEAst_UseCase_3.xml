@@ -7,9 +7,9 @@
 				
 		
 -->
-<ubl:Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 		   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-		   xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+		   xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
 	<?DocumentTerm Catalogue?>
 	<?Property key="sch:prefix" PEPPOL-T19?>
 	<?Property key="sch:identifier" T19-basic?>
@@ -72,8 +72,8 @@
 		</cac:RequiredItemLocationQuantity>
 		
 		<cac:Item>
-			<cbc:Description>Produkten säljs oförädlad direkt från leverantören Cementa. Leverantörens ordinarie produktdatablad, 
-			säkerhetsdatablad och byggvarudeklaration återfinns under fliken Dokument.Artikelnummer:5200950309 Byggcement 48x20 kg</cbc:Description>
+			<cbc:Description>Produkten sï¿½ljs ofï¿½rï¿½dlad direkt frï¿½n leverantï¿½ren Cementa. Leverantï¿½rens ordinarie produktdatablad, 
+			sï¿½kerhetsdatablad och byggvarudeklaration ï¿½terfinns under fliken Dokument.Artikelnummer:5200950309 Byggcement 48x20 kg</cbc:Description>
 			<cbc:Name>BYGGCEMENT 20 KG</cbc:Name>
 			<cbc:Keyword>xxx Synonym xxx</cbc:Keyword>
 
@@ -131,4 +131,4 @@
 
 		</cac:Item>
 	</cac:CatalogueLine>
-</ubl:Catalogue>
+</Catalogue>

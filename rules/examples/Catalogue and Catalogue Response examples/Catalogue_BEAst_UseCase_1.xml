@@ -7,9 +7,9 @@
 				
 		
 -->
-<ubl:Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+<Catalogue xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 		   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-		   xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+		   xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
   <?DocumentTerm Catalogue?>
 	<?Property key="sch:prefix" PEPPOL-T19?>
 	<?Property key="sch:identifier" T19-basic?>
@@ -77,7 +77,7 @@
 		</cac:RequiredItemLocationQuantity>
 
 		<cac:Item>
-			<cbc:Name>Mottagning Träavfall obehandlat  </cbc:Name>
+			<cbc:Name>Mottagning Trï¿½avfall obehandlat  </cbc:Name>
 			
 			<cac:SellersItemIdentification>
 				<cbc:ID>10301</cbc:ID>
@@ -91,4 +91,4 @@
 			</cac:CommodityClassification>
 		</cac:Item>
 	</cac:CatalogueLine>
-</ubl:Catalogue>
+</Catalogue>
