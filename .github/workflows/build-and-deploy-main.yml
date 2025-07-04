@@ -34,7 +34,7 @@ jobs:
 
       # Step 5: Branch name for deployment
       - name: Branch name
-        run: echo Deploying on ${{ secrets.AWS_S3_PATH }}/${GITHUB_REF#refs/heads/}
+        run: echo Deploying on ${{ secrets.AWS_S3_PATH }}
 
       # Step 6: Deploy on S3
       - name: Deploy on S3
