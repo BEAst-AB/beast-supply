@@ -44,7 +44,10 @@ sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/sch" "rules/sch"
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Cataloge wo response use cases" "rules/examples/Cataloge wo response use cases"
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Order use cases" "rules/examples/Order use cases"
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Order-response use cases" "rules/examples/Order-response use cases"
-sync_repo $LOGISTICSREPO $LOGISTICSBRANCH  "rules/examples" "rules/examples"
+# Sync all examples except AdvancedDespatchAdvice__Example_UseCase_06_Concrete_material
+git checkout -- "rules/examples/AdvancedDespatchAdvice__Example_UseCase_06_Concrete_material.xml"
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/examples" "rules/examples"
+
 
 # Code lists
 sync_repo $BILLINGREPO $BILLINGBRANCH "structure/codelist" "structure/codelist"
