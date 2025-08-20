@@ -45,7 +45,7 @@ sync_repo $POACCREPO $POACCBRANCH "rules/examples/Cataloge wo response use cases
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Order use cases" "rules/examples/Order use cases"
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Order-response use cases" "rules/examples/Order-response use cases"
 # Sync all examples except AdvancedDespatchAdvice__Example_UseCase_06_Concrete_material
-git checkout -- "rules/examples/AdvancedDespatchAdvice__Example_UseCase_06_Concrete_material.xml"
+git checkout -- "rules/examples/Advanced Despatch Advice use cases/AdvancedDespatchAdvice__Example_UseCase_06_Concrete_material.xml"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/examples" "rules/examples"
 
 
