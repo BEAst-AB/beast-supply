@@ -510,7 +510,7 @@
                <Data ss:Type="String">Identifies the provider party's electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7350053850019</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:ProviderParty/cbc:EndpointID</Data>
@@ -1134,7 +1134,7 @@
                <Data ss:Type="String">Identifies the receiver party's electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7350053850019</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:ReceiverParty/cbc:EndpointID</Data>
@@ -1784,7 +1784,7 @@
                <Data ss:Type="String">Identifies the supplier party's electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7350053850019</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:SellerSupplierParty/cac:Party/cbc:EndpointID</Data>
@@ -2382,7 +2382,7 @@
                <Data ss:Type="String">Identifies the customer party's electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7350053850019</Data>
+               <Data ss:Type="String">7300010000001</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:ContractorCustomerParty/cac:Party/cbc:EndpointID</Data>
@@ -5730,7 +5730,7 @@
                <Data ss:Type="String">•  •  •  •  cbc:Percent</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Item TAX percentage</Data>
+               <Data ss:Type="String">Item TAX precentage</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">The TAX percentage rate that applies to the item unless specific trade reasons apply such as exemptions.</Data>
@@ -5834,7 +5834,7 @@
                <Data ss:Type="String">•  •  •  •  cbc:ID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">ID</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">ID of the property if assigned by an Agency</Data>
@@ -5857,19 +5857,19 @@
                <Data ss:Type="String">O</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">•  •  •  •  •  @schemeDataURI</Data>
+               <Data ss:Type="String">•  •  •  •  •  @schemeID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme Data URI</Data>
+               <Data ss:Type="String">Scheme identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme Data URI</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460</Data>
+               <Data ss:Type="String">ISO22057</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:ID/schemeDataURI</Data>
+               <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:ID/schemeID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
@@ -5883,19 +5883,19 @@
                <Data ss:Type="String">O</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">•  •  •  •  •  @schemeID</Data>
+               <Data ss:Type="String">•  •  •  •  •  @schemeVersionID</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme identifier</Data>
+               <Data ss:Type="String">Scheme version identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">ISO22057</Data>
+               <Data ss:Type="String">2022</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:ID/schemeID</Data>
+               <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:ID/schemeVersionID</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
@@ -5909,19 +5909,19 @@
                <Data ss:Type="String">O</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">•  •  •  •  •  @schemeVersionID</Data>
+               <Data ss:Type="String">•  •  •  •  •  @schemeDataURI</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme version identifier</Data>
+               <Data ss:Type="String">Scheme Data URI</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Scheme version identifier</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
-               <Data ss:Type="String">2022</Data>
+               <Data ss:Type="String">https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:ID/schemeVersionID</Data>
+               <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:AdditionalItemProperty/cbc:ID/schemeDataURI</Data>
             </Cell>
             <Cell>
                <Data ss:Type="Number">5</Data>
@@ -6357,10 +6357,10 @@
                <Data ss:Type="String">Certificate type code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The UBL structure used for item labeling requires this elements, use the value NA if not other applicable package label code.</Data>
+               <Data ss:Type="String">The UBL structure used for item labeling requires this elements, use the value NA.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">NA</Data>
+               <Data ss:Type="String"/>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:Certificate/cbc:CertificateTypeCode</Data>

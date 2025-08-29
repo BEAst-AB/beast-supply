@@ -136,7 +136,7 @@
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0088</Value>
             </Attribute>
-            <Value type="EXAMPLE">7350053850019</Value>
+            <Value type="EXAMPLE">7300010000001</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
@@ -303,7 +303,7 @@
                <Reference type="CODE_LIST">eas</Reference>
                <Value type="EXAMPLE">0088</Value>
             </Attribute>
-            <Value type="EXAMPLE">7350053850019</Value>
+            <Value type="EXAMPLE">7300010000001</Value>
          </Element>
          <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
@@ -475,7 +475,7 @@
                   <Reference type="CODE_LIST">eas</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
-               <Value type="EXAMPLE">7350053850019</Value>
+               <Value type="EXAMPLE">7300010000001</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
@@ -636,7 +636,7 @@
                   <Reference type="CODE_LIST">eas</Reference>
                   <Value type="EXAMPLE">0088</Value>
                </Attribute>
-               <Value type="EXAMPLE">7350053850019</Value>
+               <Value type="EXAMPLE">7300010000001</Value>
             </Element>
             <Element cardinality="0..1">
                <Term>cac:PartyIdentification</Term>
@@ -1581,7 +1581,7 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Percent</Term>
-                  <Name>Item TAX percentage</Name>
+                  <Name>Item TAX precentage</Name>
                   <Description>The TAX percentage rate that applies to the item unless specific trade reasons apply such as exemptions.</Description>
                   <DataType>Percentage</DataType>
                   <Reference type="BUSINESS_TERM">tir19-050</Reference>
@@ -1607,25 +1607,21 @@
                <Description>A group of business terms providing information about properties of the goods and services invoiced.</Description>
                <Element cardinality="0..1">
                   <Term>cbc:ID</Term>
-                  <Name>ID</Name>
                   <Description>ID of the property if assigned by an Agency</Description>
-                  <Attribute usage="Optional">
-                     <Term>schemeDataURI</Term>
-                     <Name>Scheme Data URI</Name>
-                     <Description>Scheme Data URI</Description>
-                     <Value type="EXAMPLE">https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460</Value>
-                  </Attribute>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Scheme identifier</Name>
-                     <Description>Scheme identifier</Description>
                      <Value type="EXAMPLE">ISO22057</Value>
                   </Attribute>
                   <Attribute usage="Optional">
                      <Term>schemeVersionID</Term>
                      <Name>Scheme version identifier</Name>
-                     <Description>Scheme version identifier</Description>
                      <Value type="EXAMPLE">2022</Value>
+                  </Attribute>
+                  <Attribute usage="Optional">
+                     <Term>schemeDataURI</Term>
+                     <Name>Scheme Data URI</Name>
+                     <Value type="EXAMPLE">https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460</Value>
                   </Attribute>
                   <Value type="EXAMPLE">77e416eb-a363-4258-a04e-171d843a6460</Value>
                </Element>
@@ -1743,11 +1739,9 @@
                <Element>
                   <Term>cbc:CertificateTypeCode</Term>
                   <Name>Certificate type code</Name>
-                  <Description>The UBL structure used for item labeling requires this elements, use the value NA if not other applicable package label code.</Description>
+                  <Description>The UBL structure used for item labeling requires this elements, use the value NA.</Description>
                   <DataType>Code</DataType>
-                  <Reference type="CODE_LIST">NA</Reference>
-                  <Reference type="CODE_LIST">PackagingMarkedLabelAccreditationCode</Reference>
-                  <Value type="EXAMPLE">NA</Value>
+                  <Value type="FIXED">NA</Value>
                </Element>
                <Element>
                   <Term>cbc:CertificateType</Term>
