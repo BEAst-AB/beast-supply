@@ -282,6 +282,7 @@
          <Name>ADDITIONAL SUPPORTING DOCUMENTS</Name>
          <Description>A group of business terms providing information about additional supporting documents substantiating the claims made in the Invoice. The additional supporting documents can be used for both referencing a document number which is expected to be known by the receiver, an external document (referenced by a URL) or as an embedded document, Base64 encoded (such as a time report).</Description>
          <Reference type="BUSINESS_TERM">BG-24</Reference>
+         <Reference type="RULE">PEPPOL-EN16931-R006</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R080</Reference>
          <Reference type="RULE">DE-R-022</Reference>
          <Element>
@@ -400,6 +401,7 @@
                <Reference type="RULE">PEPPOL-COMMON-R045</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R046</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R047</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R048</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R049</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
                <Reference type="RULE">PEPPOL-EN16931-CL008</Reference>
@@ -432,6 +434,7 @@
                   <Reference type="RULE">PEPPOL-COMMON-R045</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R046</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R047</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R048</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R049</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
                   <Attribute usage="Optional">
@@ -574,12 +577,19 @@
                   <Reference type="RULE">BR-O-02</Reference>
                   <Reference type="RULE">BR-O-03</Reference>
                   <Reference type="RULE">BR-O-04</Reference>
+                  <Reference type="RULE">BR-IG-02</Reference>
+                  <Reference type="RULE">BR-IG-03</Reference>
+                  <Reference type="RULE">BR-IG-04</Reference>
+                  <Reference type="RULE">BR-IP-02</Reference>
+                  <Reference type="RULE">BR-IP-03</Reference>
+                  <Reference type="RULE">BR-IP-04</Reference>
                   <Reference type="RULE">IT-R-001</Reference>
                   <Reference type="RULE">NO-R-001</Reference>
                   <Reference type="RULE">NO-R-002</Reference>
                   <Reference type="RULE">SE-R-001</Reference>
                   <Reference type="RULE">SE-R-002</Reference>
                   <Reference type="RULE">SE-R-005</Reference>
+                  <Reference type="RULE">DK-R-015</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R042</Reference>
@@ -588,6 +598,7 @@
                   <Reference type="RULE">PEPPOL-COMMON-R045</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R046</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R047</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R048</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R049</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
                   <Value type="EXAMPLE">SE556104353901</Value>
@@ -708,6 +719,7 @@
                <Reference type="RULE">PEPPOL-COMMON-R045</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R046</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R047</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R048</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R049</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
                <Reference type="RULE">PEPPOL-EN16931-CL008</Reference>
@@ -738,6 +750,7 @@
                   <Reference type="RULE">PEPPOL-COMMON-R045</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R046</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R047</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R048</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R049</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
                   <Attribute usage="Optional">
@@ -871,6 +884,7 @@
                   <Reference type="RULE">PEPPOL-COMMON-R045</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R046</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R047</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R048</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R049</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
                   <Value type="EXAMPLE">SE556060883701</Value>
@@ -1148,6 +1162,12 @@
                <Reference type="RULE">BR-O-02</Reference>
                <Reference type="RULE">BR-O-03</Reference>
                <Reference type="RULE">BR-O-04</Reference>
+               <Reference type="RULE">BR-IG-02</Reference>
+               <Reference type="RULE">BR-IG-03</Reference>
+               <Reference type="RULE">BR-IG-04</Reference>
+               <Reference type="RULE">BR-IP-02</Reference>
+               <Reference type="RULE">BR-IP-03</Reference>
+               <Reference type="RULE">BR-IP-04</Reference>
                <Value type="EXAMPLE">SE556104353901</Value>
             </Element>
             <Element>
@@ -1586,6 +1606,10 @@
                <Reference type="RULE">BR-G-07</Reference>
                <Reference type="RULE">BR-O-06</Reference>
                <Reference type="RULE">BR-O-07</Reference>
+               <Reference type="RULE">BR-IG-06</Reference>
+               <Reference type="RULE">BR-IG-07</Reference>
+               <Reference type="RULE">BR-IP-06</Reference>
+               <Reference type="RULE">BR-IP-07</Reference>
                <Reference type="RULE">SE-R-006</Reference>
                <Value type="EXAMPLE">0.00</Value>
             </Element>
@@ -1650,6 +1674,8 @@
                <Reference type="RULE">BR-IC-08</Reference>
                <Reference type="RULE">BR-G-08</Reference>
                <Reference type="RULE">BR-O-08</Reference>
+               <Reference type="RULE">BR-IG-08</Reference>
+               <Reference type="RULE">BR-IP-08</Reference>
                <Reference type="RULE">BR-DEC-19</Reference>
                <Reference type="RULE">UBL-DT-01</Reference>
                <Reference type="RULE">BR-CL-03</Reference>
@@ -1678,6 +1704,8 @@
                <Reference type="RULE">BR-IC-09</Reference>
                <Reference type="RULE">BR-G-09</Reference>
                <Reference type="RULE">BR-O-09</Reference>
+               <Reference type="RULE">BR-IG-09</Reference>
+               <Reference type="RULE">BR-IP-09</Reference>
                <Reference type="RULE">BR-DEC-20</Reference>
                <Reference type="RULE">UBL-DT-01</Reference>
                <Attribute>
@@ -1708,6 +1736,8 @@
                   <Reference type="RULE">BR-IC-01</Reference>
                   <Reference type="RULE">BR-G-01</Reference>
                   <Reference type="RULE">BR-O-10</Reference>
+                  <Reference type="RULE">BR-IG-01</Reference>
+                  <Reference type="RULE">BR-IP-01</Reference>
                   <Reference type="RULE">BR-CL-17</Reference>
                   <Reference type="CODE_LIST">UNCL5305</Reference>
                   <Value type="EXAMPLE">E</Value>
@@ -1737,6 +1767,8 @@
                   <Reference type="RULE">BR-IC-10</Reference>
                   <Reference type="RULE">BR-G-10</Reference>
                   <Reference type="RULE">BR-O-10</Reference>
+                  <Reference type="RULE">BR-IG-10</Reference>
+                  <Reference type="RULE">BR-IP-10</Reference>
                   <Reference type="RULE">PEPPOL-EN16931-P0104</Reference>
                   <Reference type="RULE">PEPPOL-EN16931-P0105</Reference>
                   <Reference type="RULE">PEPPOL-EN16931-P0106</Reference>
@@ -1745,7 +1777,6 @@
                   <Reference type="RULE">PEPPOL-EN16931-P0109</Reference>
                   <Reference type="RULE">PEPPOL-EN16931-P0110</Reference>
                   <Reference type="RULE">PEPPOL-EN16931-P0111</Reference>
-                  <Reference type="CODE_LIST">vatex</Reference>
                   <Value type="EXAMPLE">VATEX-EU-79-C</Value>
                </Element>
                <Element cardinality="0..1">
@@ -1761,6 +1792,8 @@
                   <Reference type="RULE">BR-IC-10</Reference>
                   <Reference type="RULE">BR-G-10</Reference>
                   <Reference type="RULE">BR-O-10</Reference>
+                  <Reference type="RULE">BR-IG-10</Reference>
+                  <Reference type="RULE">BR-IP-10</Reference>
                   <Value type="EXAMPLE">Momslagen ej tillämplig</Value>
                </Element>
                <Element>
@@ -2338,6 +2371,8 @@
                   <Reference type="RULE">BR-IC-05</Reference>
                   <Reference type="RULE">BR-G-05</Reference>
                   <Reference type="RULE">BR-O-05</Reference>
+                  <Reference type="RULE">BR-IG-05</Reference>
+                  <Reference type="RULE">BR-IP-05</Reference>
                   <Reference type="RULE">SE-R-006</Reference>
                   <Value type="EXAMPLE">0.00</Value>
                </Element>

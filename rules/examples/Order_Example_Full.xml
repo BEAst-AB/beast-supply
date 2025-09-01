@@ -238,10 +238,6 @@
             <cbc:ElectronicMail>alex@skanska.se</cbc:ElectronicMail>
          </cac:Contact>
       </cac:DeliveryParty>
-      <cac:Despatch>
-         <cbc:RequestedDespatchDate>2025-02-17</cbc:RequestedDespatchDate>
-         <cbc:RequestedDespatchTime>10:30:00</cbc:RequestedDespatchTime>
-      </cac:Despatch>
       <cac:Shipment>
          <cbc:ID>NA</cbc:ID>
          <cbc:ShippingPriorityLevelCode>1</cbc:ShippingPriorityLevelCode>
@@ -359,9 +355,9 @@
                </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
             <cac:AdditionalItemProperty>
-               <cbc:ID schemeDataURI="https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460"
-                       schemeID="ISO22057"
-                       schemeVersionID="2022">77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
+               <cbc:ID schemeID="ISO22057"
+                       schemeVersionID="2022"
+                       schemeDataURI="https://somedictionary.org/77e416eb-a363-4258-a04e-171d843a6460">77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
                <cbc:Name>DeliveryUnit</cbc:Name>
                <cbc:NameCode listID="BEAST:4.0">DeliveryUnit</cbc:NameCode>
                <cbc:Value>ABC123</cbc:Value>
