@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ubl:MovementInformation xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:MovementInformation-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	<?DocumentTerm MovementInformation?>
+	<?Property key="sch:prefix" PEPPOL-T130?>
+	<?Property key="sch:identifier" T130-basic?>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:movement_information:1</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:movement_information:1</cbc:ProfileID>
+
+	<cbc:ID>5658999</cbc:ID>															<!--   1..1   -->
+	<cbc:IssueDate>2022-09-10</cbc:IssueDate>											<!--   1..1   -->
+	<cbc:IssueTime>12:00:00</cbc:IssueTime>												<!--   0..1   -->
+	<cbc:InformationTypeCode>S4</cbc:InformationTypeCode>								<!--   1..1   -->
+
+	<cac:SenderParty>.....</cac:SenderParty>											<!--   1..1 Sender of this document  -->
+	<cac:ReceiverParty>.....</cac:ReceiverParty>										<!--   1..1 Receiver of this document  -->
+	<cac:ResponsibleParty>.....</cac:ResponsibleParty>									<!--   0..1 Responsible for this movement  -->
+
+	<cac:Signature>.....</cac:Signature>												<!--   0..n DespatchParty + DeliveryParty  -->
+
+	<cac:Shipment>																		<!--   1..1   -->
+		<cac:Consignment>																<!--   0..n   -->
+			<cbc:ID>1</cbc:ID>															<!--   1..1   -->
+			<cac:DocumentReference>.....</cac:DocumentReference>						<!--   0..n   -->
+		</cac:Consignment>																		
+		<cac:GoodsItem>																	<!--   1..n   -->
+			<cbc:Quantity unitCode="TNE">10.3</cbc:Quantity>							<!--   1..1   -->
+			<cac:Item>.....</cac:Item>													<!--   1..1   -->
+			<cac:AdditionalDocumentReference>.....</cac:AdditionalDocumentReference>	<!--   0..n   -->
+		</cac:GoodsItem>					 							
+		<cac:ShipmentStage>																<!--   1..n   -->
+			<cbc:ID>1</cbc:ID>															<!--   0..1   -->
+			<cbc:TransportModeCode>3</cbc:TransportModeCode>							<!--   1..1   -->
+			<cac:CarrierParty>.....</cac:CarrierParty>									<!--   1..n   -->
+			<cac:TransportMeans>.....</cac:TransportMeans>								<!--   0..1   -->
+			<cac:LoadingPortLocation>.....</cac:LoadingPortLocation>					<!--   0..1   -->
+			<cac:UnloadingPortLocation>.....</cac:UnloadingPortLocation>				<!--   0..1   -->
+			<cac:TransportEvent>														<!--   0..1   -->
+				<cac:Signature>.....</cac:Signature>									<!--   0..1   -->
+			</cac:TransportEvent>
+		</cac:ShipmentStage>
+		<cac:Delivery>																	<!--   1..1   -->
+			<cac:DeliveryLocation>.....</cac:DeliveryLocation>							<!--   0..1   -->
+			<cac:EstimatedDeliveryPeriod>.....</cac:EstimatedDeliveryPeriod>			<!--   0..1   -->
+			<cac:DeliveryParty>.....</cac:DeliveryParty>								<!--   1..1   -->
+			<cac:Despatch>																<!--   1..1   -->
+				<cac:DespatchLocation>.....</cac:DespatchLocation>						<!--   0..1   -->
+				<cac:DespatchParty>.....</cac:DespatchParty>							<!--   1..1   -->
+				<cac:EstimatedDespatchPeriod>.....</cac:EstimatedDespatchPeriod>		<!--   0..1   -->
+			</cac:Despatch>
+		</cac:Delivery>											
+		<cac:TransportHandlingUnit>.....</cac:TransportHandlingUnit>					<!--   0..n   -->
+	</cac:Shipment>
+</ubl:MovementInformation>
+
