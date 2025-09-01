@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
+   xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	
+   <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue_response:3</cbc:CustomizationID>
+   <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:catalogue_only:3</cbc:ProfileID>
+	
+   <cbc:ID>Y-152</cbc:ID>
+   <cbc:IssueDate>2024-08-01</cbc:IssueDate>
+   <cbc:IssueTime>16:34:21</cbc:IssueTime>
+	
+   <cac:SenderParty>
+      <cbc:EndpointID schemeID="0007">5560999202</cbc:EndpointID>
+      <cac:PartyIdentification>
+         <cbc:ID schemeID="0007">5560999202</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName>Customer name</cbc:RegistrationName>
+      </cac:PartyLegalEntity>
+   </cac:SenderParty>
+	
+   <cac:ReceiverParty>
+      <cbc:EndpointID schemeID="0007">5560129206</cbc:EndpointID>
+      <cac:PartyIdentification>
+         <cbc:ID schemeID="0007">5560129206</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName>Supplier name</cbc:RegistrationName>
+      </cac:PartyLegalEntity>
+   </cac:ReceiverParty>
+	
+   <cac:DocumentResponse>
+      <cac:Response>
+         <cbc:ResponseCode>AB</cbc:ResponseCode>
+      </cac:Response>
+	   
+      <cac:DocumentReference>
+         <cbc:ID>123456</cbc:ID>
+      </cac:DocumentReference>
+   </cac:DocumentResponse>
+</ApplicationResponse>
