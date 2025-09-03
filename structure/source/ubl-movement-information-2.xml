@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ubl:MovementInformation xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:MovementInformation-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+	<?DocumentTerm MovementInformation?>
+	<?Property key="sch:prefix" PEPPOL-T130?>
+	<?Property key="sch:identifier" T130-basic?>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:movement_information:1</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:movement_information:1</cbc:ProfileID>
+
+	<cbc:ID>5658999</cbc:ID>																	<!--   1..1   -->
+	<cbc:IssueDate>2022-09-10</cbc:IssueDate>													<!--   1..1   -->
+	<cbc:IssueTime>12:00:00</cbc:IssueTime>														<!--   0..1   -->
+	<cbc:DocumentTypeCode>S4</cbc:DocumentTypeCode>												<!--   1..1   -->
+
+	<cac:SenderParty>.....</cac:SenderParty>													<!--   1..1 Sender of this document  -->
+	<cac:ReceiverParty>.....</cac:ReceiverParty>												<!--   1..1 Receiver of this document  -->
+	<cac:ResponsibleParty>.....</cac:ResponsibleParty>											<!--   0..1 Responsible for this movement  -->
+	<cac:NotifyParty>.....</cac:NotifyParty>													<!--   0..n To receive copy of this document  -->
+
+	<cac:Shipment>																				<!--   1..1   -->
+		<cac:Consignment>																		<!--   1..n   -->
+			<cac:ActualPickupTransportEvent>													<!--   0..1   -->
+				<cac:Location></cac:Location>													<!--   0..1   -->
+				<cac:Signature>.....</cac:Signature>											<!--   1..1 Consignor Party  -->
+			</cac:ActualPickupTransportEvent>
+			<cac:ActualDeliveryTransportEvent>													<!--   0..1   -->
+				<cac:Signature>.....</cac:Signature>											<!--   1..1 Delivery Party  -->
+			</cac:ActualDeliveryTransportEvent>
+			
+			<cac:ConsignorParty>.....</cac:ConsignorParty>										<!--   1..1   -->
+
+			<cac:TransportHandlingUnit>															<!--   1..n   -->
+				<cac:GoodsItem>																	<!--   1..n   -->
+					<cac:Item>.....</cac:Item>													<!--   1..1   -->
+				</cac:GoodsItem>
+			</cac:TransportHandlingUnit>				
+			
+			<cac:DocumentReference>.....</cac:DocumentReference>								<!--   0..n   -->
+		</cac:Consignment>																		
+		
+		<cac:ShipmentStage>																		<!--   1..n   -->
+			<cac:CarrierParty>.....</cac:CarrierParty>											<!--   1..1   -->
+			<cac:TransportMeans>.....</cac:TransportMeans>										<!--   0..1   -->
+			<cac:LoadingPortLocation>.....</cac:LoadingPortLocation>							<!--   0..1   -->
+			<cac:UnloadingPortLocation>.....</cac:UnloadingPortLocation>						<!--   0..1   -->
+			<cac:TransportEvent>																<!--   0..1   -->
+				<cac:Signature>.....</cac:Signature>											<!--   1..1 Transport company  -->
+			</cac:TransportEvent>
+		</cac:ShipmentStage>
+		
+		<cac:Delivery>																			<!--   1..1   -->
+			<cac:DeliveryLocation>.....</cac:DeliveryLocation>									<!--   0..1   -->
+			<cac:EstimatedDeliveryPeriod>.....</cac:EstimatedDeliveryPeriod>					<!--   0..1   -->
+			<cac:DeliveryParty>.....</cac:DeliveryParty>										<!--   1..1   -->
+		</cac:Delivery>											
+	</cac:Shipment>
+</ubl:MovementInformation>
+
