@@ -44,7 +44,7 @@ sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/sch" "rules/sch"
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Cataloge wo response use cases" "rules/examples/Cataloge wo response use cases"
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Order use cases" "rules/examples/Order use cases"
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Order-response use cases" "rules/examples/Order-response use cases"
-# sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/examples" "rules/examples"
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/examples" "rules/examples"
 
 # Code lists
 sync_repo $BILLINGREPO $BILLINGBRANCH "structure/codelist" "structure/codelist"
@@ -67,7 +67,7 @@ sync_repo $POACCREPO $POACCBRANCH "guides/profiles/3-order-only" "guides/profile
 sync_repo $POACCREPO $POACCBRANCH "guides/profiles/42-orderagreement" "guides/profiles/42-orderagreement"
 sync_repo $POACCREPO $POACCBRANCH "guides/profiles/63-invoiceresponse" "guides/profiles/63-invoiceresponse"
 sync_repo $POACCREPO $POACCBRANCH "guides/profiles/64-catalogue-wo-response" "guides/profiles/64-catalogue-wo-response"
-# sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/66-advanceddespatchadvice" "guides/profiles/66-advanceddespatchadvice"
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/66-advanceddespatchadvice" "guides/profiles/66-advanceddespatchadvice"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/67-advanceddespatchadvice_w_receiptadvice" "guides/profiles/67-advanceddespatchadvice_w_receiptadvice"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/68-weightstatement" "guides/profiles/68-weightstatement"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/69-transportexecutionplan_w_request" "guides/profiles/69-transportexecutionplan_w_request"
