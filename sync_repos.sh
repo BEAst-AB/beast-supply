@@ -1,11 +1,11 @@
 #!/bin/bash
 
 BILLINGREPO="https://github.com/OpenPEPPOL/peppol-bis-invoice-3.git"
-BILLINGBRANCH="2025-Q2"
+BILLINGBRANCH="2025-q4-mr"
 LOGISTICSREPO="https://github.com/OpenPEPPOL/Logistics-bis.git"
-LOGISTICSBRANCH="2025-Q2-review"
+LOGISTICSBRANCH="1.1.1.Review"
 POACCREPO="https://github.com/OpenPEPPOL/poacc-upgrade-3.git"
-POACCBRANCH="2025-Q2"
+POACCBRANCH="2025-q4-mr"
 
 # Function to clone and copy files
 sync_repo() {
