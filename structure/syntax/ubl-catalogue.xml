@@ -126,7 +126,8 @@
          <Element>
             <Term>cbc:EndpointID</Term>
             <Name>Provider party electronic address</Name>
-            <Description>Identifies the provider party's electronic address</Description>
+            <Description>BEAst: In the Nordics, GLN issued by GS1 or country specific organization number is used. Finland: SchemeID 0216 is the Finnish EDI identifier (OVT code). Its structure: ‘0037’ (fixed), the Company ID (Y-tunnus without dash), plus up to 5 optional internal digits or letters
+ Peppol: Identifies the provider party's electronic address</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir19-009</Reference>
             <Attribute>
@@ -145,7 +146,8 @@
             <Element>
                <Term>cbc:ID</Term>
                <Name>Catalogue Provider identifier</Name>
-               <Description>Use in the absence of or in addition to Party Name. Use an identifier known to the document recipient.</Description>
+               <Description>BEAst: Organization number. Finland: Y-tunnus
+ Peppol: Use in the absence of or in addition to Party Name. Use an identifier known to the document recipient.</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir19-010</Reference>
                <Attribute usage="Optional">
@@ -260,7 +262,7 @@
             <Element cardinality="0..1">
                <Term>cac:RegistrationAddress</Term>
                <Name>Registration Address</Name>
-               <Description/>
+               <Description>BEAst: Indicates the city and country where the company is registered</Description>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
                   <Name>Provider legal registration city</Name>
@@ -293,7 +295,8 @@
          <Element>
             <Term>cbc:EndpointID</Term>
             <Name>Reciever party electronic address</Name>
-            <Description>Identifies the receiver party's electronic address</Description>
+            <Description>BEAst: In the Nordics, GLN issued by GS1 or country specific organization number is used. Finland: SchemeID 0216 is the Finnish EDI identifier (OVT code). Its structure: ‘0037’ (fixed), the Company ID (Y-tunnus without dash), plus up to 5 optional internal digits or letters
+ Peppol: Identifies the receiver party's electronic address</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir19-012</Reference>
             <Attribute>
@@ -312,7 +315,8 @@
             <Element>
                <Term>cbc:ID</Term>
                <Name>Catalogue receiver identifier</Name>
-               <Description>Use in the absence of or in addition to Party Name. Use an identifier known to the document recipient.</Description>
+               <Description>BEAst: Organization number. Finland: Y-tunnus
+ Peppol: Use in the absence of or in addition to Party Name. Use an identifier known to the document recipient.</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir19-013</Reference>
                <Attribute usage="Optional">
@@ -427,7 +431,7 @@
             <Element cardinality="0..1">
                <Term>cac:RegistrationAddress</Term>
                <Name>Registration address</Name>
-               <Description/>
+               <Description>BEAst: Indicates the city and country where the company is registered</Description>
                <Element cardinality="0..1">
                   <Term>cbc:CityName</Term>
                   <Name>Receiver legal registration city</Name>
@@ -465,7 +469,8 @@
             <Element cardinality="0..1">
                <Term>cbc:EndpointID</Term>
                <Name>Supplier party electronic address</Name>
-               <Description>Identifies the supplier party's electronic address</Description>
+               <Description>BEAst: In the Nordics, GLN issued by GS1 or country specific organization number is used. Finland: SchemeID 0216 is the Finnish EDI identifier (OVT code). Its structure: ‘0037’ (fixed), the Company ID (Y-tunnus without dash), plus up to 5 optional internal digits or letters
+ Peppol: Identifies the supplier party's electronic address</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir19-015</Reference>
                <Attribute>
@@ -485,7 +490,8 @@
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>Catalogue supplier identifier</Name>
-                  <Description>Use in the absence of or in addition to Party Name. Use an identifier known to the document recipient.</Description>
+                  <Description>BEAst: Organization number. Finland: Y-tunnus
+ Peppol: Use in the absence of or in addition to Party Name. Use an identifier known to the document recipient.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir19-016</Reference>
                   <Attribute usage="Optional">
@@ -626,7 +632,8 @@
             <Element cardinality="0..1">
                <Term>cbc:EndpointID</Term>
                <Name>Customer party electronic address</Name>
-               <Description>Identifies the customer party's electronic address</Description>
+               <Description>BEAst: In the Nordics, GLN issued by GS1 or country specific organization number is used. Finland: SchemeID 0216 is the Finnish EDI identifier (OVT code). Its structure: ‘0037’ (fixed), the Company ID (Y-tunnus without dash), plus up to 5 optional internal digits or letters
+ Peppol: Identifies the customer party's electronic address</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir19-054</Reference>
                <Attribute>
@@ -646,7 +653,8 @@
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>Catalogue customer identifier</Name>
-                  <Description>Use in the absence of or in addition to Party Name. Use an identifier known to the document recipient.</Description>
+                  <Description>BEAst: Organization number. Finland: Y-tunnus
+ Peppol: Use in the absence of or in addition to Party Name. Use an identifier known to the document recipient.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">tir19-055</Reference>
                   <Attribute usage="Optional">
@@ -814,7 +822,8 @@
          <Element cardinality="0..1">
             <Term>cbc:OrderableIndicator</Term>
             <Name>Orderable indicator</Name>
-            <Description>Default value is True i.e. Item on the Catalogue Line can be ordered. Can be used to indicate if an Item is temporarily out of stock (via a Catalogue Update).</Description>
+            <Description>BEAst: Can describe an item too small to be ordered, like a nail or screw, for use in estimation tools.
+ Peppol: Default value is True i.e. Item on the Catalogue Line can be ordered. Can be used to indicate if an Item is temporarily out of stock (via a Catalogue Update).</Description>
             <DataType>Boolean</DataType>
             <Reference type="BUSINESS_TERM">tir19-034</Reference>
             <Reference type="CODE_LIST">TrueFalse</Reference>

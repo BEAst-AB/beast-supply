@@ -2,7 +2,7 @@
 <!--
 This schematron uses business terms defined the CEN/EN16931-1 and is reproduced with permission from CEN. CEN bears no liability from the use of the content and implementation of this schematron and gives no warranties expressed or implied for any purpose.
 
-Last update: 2025 May release 3.0.19.
+Last update: 2025 November release 3.0.20.
  -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:u="utils" schemaVersion="iso" queryBinding="xslt2">
   <title>Rules for PEPPOL BIS 3.0 Billing</title>
@@ -38,26 +38,26 @@ Last update: 2025 May release 3.0.19.
     <variable name="length" select="string-length($val) - 1"/>
     <variable name="digits" select="reverse(for $i in string-to-codepoints(substring($val, 0, $length + 1)) return $i - 48)"/>
     <variable name="weightedSum" select="sum(for $i in (0 to $length - 1) return $digits[$i + 1] * (1 + ((($i + 1) mod 2) * 2)))"/>
-    <value-of select="(10 - ($weightedSum mod 10)) mod 10 = number(substring($val, $length + 1, 1))"/>
+    <sequence select="(10 - ($weightedSum mod 10)) mod 10 = number(substring($val, $length + 1, 1))"/>
   </function>
   <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:slack" as="xs:boolean">
     <param name="exp" as="xs:decimal"/>
     <param name="val" as="xs:decimal"/>
     <param name="slack" as="xs:decimal"/>
-    <value-of select="xs:decimal($exp + $slack) &gt;= $val and xs:decimal($exp - $slack) &lt;= $val"/>
+    <sequence select="xs:decimal($exp + $slack) &gt;= $val and xs:decimal($exp - $slack) &lt;= $val"/>
   </function>
   <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:mod11" as="xs:boolean">
     <param name="val"/>
     <variable name="length" select="string-length($val) - 1"/>
     <variable name="digits" select="reverse(for $i in string-to-codepoints(substring($val, 0, $length + 1)) return $i - 48)"/>
     <variable name="weightedSum" select="sum(for $i in (0 to $length - 1) return $digits[$i + 1] * (($i mod 6) + 2))"/>
-    <value-of select="number($val) &gt; 0 and (11 - ($weightedSum mod 11)) mod 11 = number(substring($val, $length + 1, 1))"/>
+    <sequence select="number($val) &gt; 0 and (11 - ($weightedSum mod 11)) mod 11 = number(substring($val, $length + 1, 1))"/>
   </function>
 	<function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:mod97-0208" as="xs:boolean">
 		<param name="val"/>
 		<variable name="checkdigits" select="substring($val,9,2)"/>
 		<variable name="calculated_digits" select="xs:string(97 - (xs:integer(substring($val,1,8)) mod 97))"/>
-		<value-of select="number($checkdigits) = number($calculated_digits)"/>
+		<sequence select="number($checkdigits) = number($calculated_digits)"/>
 	</function>
 <function name="u:checkCodiceIPA" as="xs:boolean" xmlns="http://www.w3.org/1999/XSL/Transform">
     <param name="arg" as="xs:string?"/>
@@ -157,7 +157,7 @@ Last update: 2025 May release 3.0.19.
   </function>
   <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:abn" as="xs:boolean">
     <param name="val"/>
-    <value-of select="(
+    <sequence select="(
 ((string-to-codepoints(substring($val,1,1)) - 49) * 10) +
 ((string-to-codepoints(substring($val,2,1)) - 48) * 1) +
 ((string-to-codepoints(substring($val,3,1)) - 48) * 3) +
@@ -185,13 +185,13 @@ Last update: 2025 May release 3.0.19.
 			<variable name="mainPart" select="substring($number, 1, 9)"/>
 			<variable name="checkDigit" select="substring($number, 10, 1)"/>
 			<variable name="sum" as="xs:integer">
-			  <value-of select="sum(
+			  <sequence select="xs:integer(sum(
 						for $pos in 1 to string-length($mainPart) return 
 							if ($pos mod 2 = 1) 
 							then (number(substring($mainPart, string-length($mainPart) - $pos + 1, 1)) * 2) mod 10 + 
 								 (number(substring($mainPart, string-length($mainPart) - $pos + 1, 1)) * 2) idiv 10 
 							else number(substring($mainPart, string-length($mainPart) - $pos + 1, 1))
-					)"/>
+					))"/>
 			</variable>
 			<variable name="calculatedCheckDigit" select="(10 - $sum mod 10) mod 10"/>
 			<sequence select="$calculatedCheckDigit = number($checkDigit)"/>
@@ -317,6 +317,16 @@ Last update: 2025 May release 3.0.19.
               (string-length(string()) = 8) and (string-length(translate(substring(string(), 1, 8),'1234567890', '')) = 0)" 
         flag="fatal">Danish organization number (CVR) MUST be stated in the correct format.</assert>
     </rule>
+    <rule context="ram:URIID[@schemeID = '0096'] | ram:ID[@schemeID = '0096'] | ram:GlobalID[@schemeID = '0096']">
+      <assert id="PEPPOL-COMMON-R052" 
+        test="(string-length(string()) = 10) and (string-length(translate(substring(string(), 1, 10),'1234567890', '')) = 0)" 
+        flag="warning">Danish chamber of commerce number (P) MUST be stated in the correct format.</assert>
+    </rule>
+    <rule context="ram:URIID[@schemeID = '0198'] | ram:ID[@schemeID = '0198'] | ram:GlobalID[@schemeID = '0198']">
+      <assert id="PEPPOL-COMMON-R053" 
+        test="(string-length(string()) = 10) and (substring(string(), 1, 2) = 'DK') and (string-length(translate(substring(string(), 3, 8), '1234567890', '')) = 0)" 
+        flag="warning">Danish ERSTORG number (SE) MUST be stated in the correct format.</assert>
+    </rule>
     <rule context="ram:URIID[@schemeID = '0208'] | ram:ID[@schemeID = '0208'] | ram:GlobalID[@schemeID = '0208']">
       <assert id="PEPPOL-COMMON-R043" test="matches(normalize-space(), '^[0-9]{10}$') and u:mod97-0208(normalize-space())" flag="fatal">Belgian enterprise number MUST be stated in the correct format.</assert>
     </rule>
@@ -332,9 +342,9 @@ Last update: 2025 May release 3.0.19.
     <rule context="ram:URIID[@schemeID = '0211'] | ram:ID[@schemeID = '0211'] | ram:GlobalID[@schemeID = '0211']">
       <assert id="PEPPOL-COMMON-R047" test="u:checkPIVAseIT(normalize-space())" flag="warning">Italian VAT Code (Partita Iva) must be stated in the correct format</assert>
     </rule>
-    <rule context="ram:URIID[@schemeID = '9906']">
+<!--     <rule context="ram:URIID[@schemeID = '9906']">
       <assert id="PEPPOL-COMMON-R048" test="u:checkPIVAseIT(normalize-space())" flag="warning">Italian VAT Code (Partita Iva) must be stated in the correct format</assert>
-    </rule>
+    </rule> -->
     <rule context="ram:URIID[@schemeID = '0007'] | ram:ID[@schemeID = '0007'] | ram:GlobalID[@schemeID = '0007']">
       <assert id="PEPPOL-COMMON-R049" test="string-length(normalize-space()) = 10 and string(number(normalize-space())) != 'NaN' and u:checkSEOrgnr(normalize-space())" flag="fatal">Swedish organization number MUST be stated in the correct format.</assert>
     </rule>
@@ -416,7 +426,7 @@ Last update: 2025 May release 3.0.19.
                                         or (substring(../ram:PaymentReference, 0, 4) = '75#'))
                                       and (string-length(ram:PayeePartyCreditorFinancialAccount/ram:IBANID/text()) = 8)
                                       )
-                              )" flag="fatal">For Danish Suppliers the PaymentReference is mandatory and MUST start with 71#, 73# or 75# (kortartkode) and and PayeePartyCreditorFinancialAccount/IBANID  (Kreditornummer) is mandatory and must be exactly 8 characters long, when Payment means equals 93 (FIK)</assert>
+                              )" flag="fatal">For Danish Suppliers using PaymentMeansCode 93, PaymentID is mandatory. The first three characters of the PaymentID MUST be 71#, 73# or 75# (kortartskode), and PayeeFinancialAccount/ID MUST be exactly 8 characters long.</assert>
       <assert id="DK-R-011" test="not((ram:TypeCode = '93')
                               and ((substring(../ram:PaymentReference, 0, 4) = '71#')
                                     or (substring(../ram:PaymentReference, 0, 4)  = '75#'))

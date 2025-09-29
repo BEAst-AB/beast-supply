@@ -507,7 +507,7 @@
                <Data ss:Type="String">Provider party electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Identifies the provider party's electronic address</Data>
+               <Data ss:Type="String">BEAst: In the Nordics, GLN issued by GS1 or country specific organization number is used. Finland: SchemeID 0216 is the Finnish EDI identifier (OVT code). Its structure: ‘0037’ (fixed), the Company ID (Y-tunnus without dash), plus up to 5 optional internal digits or letters Peppol: Identifies the provider party's electronic address</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">7350053850019</Data>
@@ -585,7 +585,7 @@
                <Data ss:Type="String">Catalogue Provider identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Use in the absence of or in addition to Party Name. Use an identifier known to the document recipient.</Data>
+               <Data ss:Type="String">BEAst: Organization number. Finland: Y-tunnus Peppol: Use in the absence of or in addition to Party Name. Use an identifier known to the document recipient.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">12345678</Data>
@@ -1001,7 +1001,7 @@
                <Data ss:Type="String">Registration Address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Indicates the city and country where the company is registered</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1131,7 +1131,7 @@
                <Data ss:Type="String">Reciever party electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Identifies the receiver party's electronic address</Data>
+               <Data ss:Type="String">BEAst: In the Nordics, GLN issued by GS1 or country specific organization number is used. Finland: SchemeID 0216 is the Finnish EDI identifier (OVT code). Its structure: ‘0037’ (fixed), the Company ID (Y-tunnus without dash), plus up to 5 optional internal digits or letters Peppol: Identifies the receiver party's electronic address</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">7350053850019</Data>
@@ -1209,7 +1209,7 @@
                <Data ss:Type="String">Catalogue receiver identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Use in the absence of or in addition to Party Name. Use an identifier known to the document recipient.</Data>
+               <Data ss:Type="String">BEAst: Organization number. Finland: Y-tunnus Peppol: Use in the absence of or in addition to Party Name. Use an identifier known to the document recipient.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">45645678</Data>
@@ -1625,7 +1625,7 @@
                <Data ss:Type="String">Registration address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">BEAst: Indicates the city and country where the company is registered</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String"/>
@@ -1781,7 +1781,7 @@
                <Data ss:Type="String">Supplier party electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Identifies the supplier party's electronic address</Data>
+               <Data ss:Type="String">BEAst: In the Nordics, GLN issued by GS1 or country specific organization number is used. Finland: SchemeID 0216 is the Finnish EDI identifier (OVT code). Its structure: ‘0037’ (fixed), the Company ID (Y-tunnus without dash), plus up to 5 optional internal digits or letters Peppol: Identifies the supplier party's electronic address</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">7350053850019</Data>
@@ -1859,7 +1859,7 @@
                <Data ss:Type="String">Catalogue supplier identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Use in the absence of or in addition to Party Name. Use an identifier known to the document recipient.</Data>
+               <Data ss:Type="String">BEAst: Organization number. Finland: Y-tunnus Peppol: Use in the absence of or in addition to Party Name. Use an identifier known to the document recipient.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">11223344</Data>
@@ -2379,7 +2379,7 @@
                <Data ss:Type="String">Customer party electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Identifies the customer party's electronic address</Data>
+               <Data ss:Type="String">BEAst: In the Nordics, GLN issued by GS1 or country specific organization number is used. Finland: SchemeID 0216 is the Finnish EDI identifier (OVT code). Its structure: ‘0037’ (fixed), the Company ID (Y-tunnus without dash), plus up to 5 optional internal digits or letters Peppol: Identifies the customer party's electronic address</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">7350053850019</Data>
@@ -2457,7 +2457,7 @@
                <Data ss:Type="String">Catalogue customer identifier</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Use in the absence of or in addition to Party Name. Use an identifier known to the document recipient.</Data>
+               <Data ss:Type="String">BEAst: Organization number. Finland: Y-tunnus Peppol: Use in the absence of or in addition to Party Name. Use an identifier known to the document recipient.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">DK93287241</Data>
@@ -3055,7 +3055,7 @@
                <Data ss:Type="String">Orderable indicator</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Default value is True i.e. Item on the Catalogue Line can be ordered. Can be used to indicate if an Item is temporarily out of stock (via a Catalogue Update).</Data>
+               <Data ss:Type="String">BEAst: Can describe an item too small to be ordered, like a nail or screw, for use in estimation tools. Peppol: Default value is True i.e. Item on the Catalogue Line can be ordered. Can be used to indicate if an Item is temporarily out of stock (via a Catalogue Update).</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">true</Data>
