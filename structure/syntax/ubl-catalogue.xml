@@ -126,7 +126,7 @@
             <Description>Identifies the provider party's electronic address</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir19-009</Reference>
-            <Value type="EXAMPLE">7300010000001</Value>
+            <Value type="EXAMPLE">7350053850019</Value>
             <Attribute>
                <Term>schemeID</Term>
                <Name>Scheme identifier</Name>
@@ -292,7 +292,7 @@
             <Description>Identifies the receiver party's electronic address</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">tir19-012</Reference>
-            <Value type="EXAMPLE">7300010000001</Value>
+            <Value type="EXAMPLE">7350053850019</Value>
             <Attribute>
                <Term>schemeID</Term>
                <Name>Scheme identifier</Name>
@@ -464,7 +464,7 @@
                <Description>Identifies the supplier party's electronic address</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir19-015</Reference>
-               <Value type="EXAMPLE">7300010000001</Value>
+               <Value type="EXAMPLE">7350053850019</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
@@ -623,7 +623,7 @@
                <Description>Identifies the customer party's electronic address</Description>
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">tir19-054</Reference>
-               <Value type="EXAMPLE">7300010000001</Value>
+               <Value type="EXAMPLE">7350053850019</Value>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
@@ -1543,7 +1543,7 @@
                </Element>
                <Element cardinality="0..1">
                   <Term>cbc:Percent</Term>
-                  <Name>Item TAX precentage</Name>
+                  <Name>Item TAX percentage</Name>
                   <Description>The TAX percentage rate that applies to the item unless specific trade reasons apply such as exemptions.</Description>
                   <DataType>Percentage</DataType>
                   <Reference type="BUSINESS_TERM">tir19-050</Reference>
@@ -1709,9 +1709,11 @@
                <Element>
                   <Term>cbc:CertificateTypeCode</Term>
                   <Name>Certificate type code</Name>
-                  <Description>The UBL structure used for item labeling requires this elements, use the value NA.</Description>
+                  <Description>The UBL structure used for item labeling requires this elements, use the value NA if not other applicable package label code.</Description>
                   <DataType>Code</DataType>
-                  <Value type="FIXED">NA</Value>
+                  <Reference type="CODE_LIST">NA</Reference>
+                  <Reference type="CODE_LIST">PackagingMarkedLabelAccreditationCode</Reference>
+                  <Value type="EXAMPLE">NA</Value>
                </Element>
                <Element>
                   <Term>cbc:CertificateType</Term>

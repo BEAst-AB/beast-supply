@@ -510,7 +510,7 @@
                <Data ss:Type="String">Identifies the provider party's electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7300010000001</Data>
+               <Data ss:Type="String">7350053850019</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:ProviderParty/cbc:EndpointID</Data>
@@ -1134,7 +1134,7 @@
                <Data ss:Type="String">Identifies the receiver party's electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7300010000001</Data>
+               <Data ss:Type="String">7350053850019</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:ReceiverParty/cbc:EndpointID</Data>
@@ -1784,7 +1784,7 @@
                <Data ss:Type="String">Identifies the supplier party's electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7300010000001</Data>
+               <Data ss:Type="String">7350053850019</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:SellerSupplierParty/cac:Party/cbc:EndpointID</Data>
@@ -2382,7 +2382,7 @@
                <Data ss:Type="String">Identifies the customer party's electronic address</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">7300010000001</Data>
+               <Data ss:Type="String">7350053850019</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:ContractorCustomerParty/cac:Party/cbc:EndpointID</Data>
@@ -5736,7 +5736,7 @@
                <Data ss:Type="String">•  •  •  •  cbc:Percent</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Item TAX precentage</Data>
+               <Data ss:Type="String">Item TAX percentage</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">The TAX percentage rate that applies to the item unless specific trade reasons apply such as exemptions.</Data>
@@ -6368,10 +6368,10 @@
                <Data ss:Type="String">Certificate type code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The UBL structure used for item labeling requires this elements, use the value NA.</Data>
+               <Data ss:Type="String">The UBL structure used for item labeling requires this elements, use the value NA if not other applicable package label code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">NA</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Catalogue/cac:CatalogueLine/cac:Item/cac:Certificate/cbc:CertificateTypeCode</Data>
