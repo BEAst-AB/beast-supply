@@ -38,7 +38,7 @@ sync_repo() {
 sync_repo $BILLINGREPO $BILLINGBRANCH "rules/sch" "rules/sch"
 sync_repo $BILLINGREPO $BILLINGBRANCH "structure/syntax/part" "structure/syntax/part"
 sync_repo $POACCREPO $POACCBRANCH "rules/sch" "rules/sch"
-#sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/sch" "rules/sch"
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/sch" "rules/sch"
 
 # Examples
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Cataloge wo response use cases" "rules/examples/Cataloge wo response use cases"
