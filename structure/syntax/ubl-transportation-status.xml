@@ -26,12 +26,6 @@
          <Reference type="RULE">PEPPOL-T127-R002</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:transportation_status_w_request:1</Value>
       </Element>
-      <Element cardinality="0..1">
-         <Term>cbc:ProfileExecutionID</Term>
-         <Name>Profile Execution ID</Name>
-         <Description>Identifies an instance of executing a profile, to associate all transactions in a collaboration.</Description>
-         <Value type="EXAMPLE">XZ-4532</Value>
-      </Element>
       <Element>
          <Term>cbc:ID</Term>
          <Name>Document identifier</Name>
@@ -40,10 +34,10 @@
          <Reference type="BUSINESS_TERM">tir16-003</Reference>
          <Value type="EXAMPLE">TS_1</Value>
       </Element>
-      <Element cardinality="1..1">
+      <Element>
          <Term>cbc:IssueDate</Term>
          <Name>Issue Date</Name>
-         <Description>The date when the Transportation Status was issued. Format = "YYYY-MM-DD".</Description>
+         <Description>The date when the Transportation Status was issued. Format = "YYYY-MM-DD". ? &lt;?Cardinality 1..1</Description>
          <DataType>Date</DataType>
          <Reference type="BUSINESS_TERM">tir16-004</Reference>
          <Value type="EXAMPLE">2023-06-06</Value>
@@ -113,7 +107,7 @@
                <Description>Specifies the status condition of the related object.</Description>
                <Attribute usage="Mandatory">
                   <Term>listID</Term>
-                  <Value type="EXAMPLE">ZZZ</Value>
+                  <Value type="EXAMPLE">zzz</Value>
                </Attribute>
                <Value type="EXAMPLE">4</Value>
             </Element>
@@ -169,7 +163,7 @@
                   <Description>Specifies the status condition of the related object.</Description>
                   <Attribute usage="Mandatory">
                      <Term>listID</Term>
-                     <Value type="EXAMPLE">ZZZ</Value>
+                     <Value type="EXAMPLE">zzz</Value>
                   </Attribute>
                   <Value type="EXAMPLE">4</Value>
                </Element>
@@ -185,7 +179,7 @@
                   <Description>The reason of the status expressed as a code.</Description>
                   <Attribute usage="Mandatory">
                      <Term>listID</Term>
-                     <Value type="EXAMPLE">ZZZ</Value>
+                     <Value type="EXAMPLE">zzz</Value>
                   </Attribute>
                   <Value type="EXAMPLE">80</Value>
                </Element>
@@ -299,7 +293,7 @@
                         <Description>The ID for a person. The type of ID can be specified in a schemeID.</Description>
                         <Attribute usage="Optional">
                            <Term>schemeID</Term>
-                           <Value type="EXAMPLE">ZZZ</Value>
+                           <Value type="EXAMPLE">zzz</Value>
                         </Attribute>
                         <Value type="EXAMPLE">45976</Value>
                      </Element>
@@ -406,7 +400,7 @@
                   <Description>Specifies the status condition of the related object.</Description>
                   <Attribute usage="Mandatory">
                      <Term>listID</Term>
-                     <Value type="EXAMPLE">ZZZ</Value>
+                     <Value type="EXAMPLE">zzz</Value>
                   </Attribute>
                   <Value type="EXAMPLE">4</Value>
                </Element>
@@ -464,7 +458,7 @@
                <Description>Specifies the status condition of the related object.</Description>
                <Attribute usage="Mandatory">
                   <Term>listID</Term>
-                  <Value type="EXAMPLE">ZZZ</Value>
+                  <Value type="EXAMPLE">zzz</Value>
                </Attribute>
                <Value type="EXAMPLE">4</Value>
             </Element>
@@ -480,7 +474,7 @@
                <Description>The reason of the status expressed as a code.</Description>
                <Attribute usage="Mandatory">
                   <Term>listID</Term>
-                  <Value type="EXAMPLE">ZZZ</Value>
+                  <Value type="EXAMPLE">zzz</Value>
                </Attribute>
                <Value type="EXAMPLE">80</Value>
             </Element>
@@ -594,7 +588,7 @@
                      <Description>The ID for a person. The type of ID can be specified in a schemeID.</Description>
                      <Attribute usage="Optional">
                         <Term>schemeID</Term>
-                        <Value type="EXAMPLE">ZZZ</Value>
+                        <Value type="EXAMPLE">zzz</Value>
                      </Attribute>
                      <Value type="EXAMPLE">45976</Value>
                   </Element>
@@ -834,7 +828,7 @@
                   <Description>The ID for a person. The type of ID can be specified in a schemeID.</Description>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
-                     <Value type="EXAMPLE">ZZZ</Value>
+                     <Value type="EXAMPLE">zzz</Value>
                   </Attribute>
                   <Value type="EXAMPLE">45976</Value>
                </Element>
