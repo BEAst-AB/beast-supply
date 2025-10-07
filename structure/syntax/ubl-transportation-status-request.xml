@@ -26,6 +26,12 @@
          <Reference type="RULE">PEPPOL-T126-R002</Reference>
          <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:transportation_status_w_request:1</Value>
       </Element>
+      <Element cardinality="0..1">
+         <Term>cbc:ProfileExecutionID</Term>
+         <Name>Profile Execution ID</Name>
+         <Description>Identifies an instance of executing a profile, to associate all transactions in a collaboration.</Description>
+         <Value type="EXAMPLE">XZ-4532</Value>
+      </Element>
       <Element>
          <Term>cbc:ID</Term>
          <Name>Document identifier</Name>
@@ -51,13 +57,19 @@
          <Reference type="RULE">PEPPOL-T123-R018</Reference>
          <Value type="EXAMPLE">09:29:30+02:00</Value>
       </Element>
+      <Element cardinality="0..1">
+         <Term>cbc:Description</Term>
+         <Name>Status Request Description </Name>
+         <Description>Description of the Status Request.</Description>
+         <Value type="EXAMPLE">Description</Value>
+      </Element>
       <Element cardinality="1..1">
          <Term>cbc:ShippingOrderID</Term>
          <Name>Shipping Order ID </Name>
          <Description>An identifier (in the form of a reference number) of the Shipping Order or Forwarding Instruction associated with this shipment.</Description>
          <Attribute usage="Optional">
             <Term>schemeID</Term>
-            <Value type="EXAMPLE">zzz</Value>
+            <Value type="EXAMPLE">ZZZ</Value>
          </Attribute>
          <Value type="EXAMPLE">KHN23-44044</Value>
       </Element>
@@ -531,6 +543,61 @@
                   <Value type="EXAMPLE">SSCC</Value>
                </Attribute>
                <Value type="EXAMPLE">173500538500000016</Value>
+            </Element>
+         </Element>
+      </Element>
+      <Element cardinality="0..n">
+         <Term>cac:DocumentReference</Term>
+         <Name>Document reference</Name>
+         <Description>Reference to additional documents relevant for this Transportation Status Request.</Description>
+         <Element>
+            <Term>cbc:ID</Term>
+            <Name>Identity of the reference</Name>
+            <Description>The reference number of added document</Description>
+            <Value type="EXAMPLE">7648779</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:DocumentTypeCode</Term>
+            <Name>Document type code</Name>
+            <Description>The type of reference. Must me part of UNCL1001</Description>
+            <Reference type="CODE_LIST">UNCL1001</Reference>
+            <Value type="EXAMPLE">380</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:DocumentType</Term>
+            <Name>Document type</Name>
+            <Description>The type of reference that cannot be specified by a code</Description>
+            <Value type="EXAMPLE">Delivery specification</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:Attachment</Term>
+            <Name>Attachment</Name>
+            <Description>Group to describe an attached document. An attachment can refer to an external document or be included with the document being exchanged.</Description>
+            <Element cardinality="0..1">
+               <Term>cbc:EmbeddedDocumentBinaryObject</Term>
+               <Name>Embedded binary object</Name>
+               <Description>The referenced document can here be inserted as a binary object.</Description>
+               <Attribute>
+                  <Term>mimeCode</Term>
+                  <Reference type="CODE_LIST">MimeCode</Reference>
+                  <Value type="EXAMPLE">application/pdf</Value>
+               </Attribute>
+               <Attribute>
+                  <Term>filename</Term>
+                  <Value type="EXAMPLE">Hours-spent.pdf</Value>
+               </Attribute>
+               <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:ExternalReference</Term>
+               <Name>External reference</Name>
+               <Description>A reference to an attached document that is external to the document(s) being exchanged.</Description>
+               <Element>
+                  <Term>cbc:URI</Term>
+                  <Name>Address to internet resource</Name>
+                  <Description>The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource.</Description>
+                  <Value type="EXAMPLE">www.beast.se</Value>
+               </Element>
             </Element>
          </Element>
       </Element>
