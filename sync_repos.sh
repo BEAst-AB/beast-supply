@@ -76,3 +76,6 @@ sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/71-waybill" "guides/p
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/72-transportationstatus_w_request" "guides/profiles/72-transportationstatus_w_request"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/73-transportationstatus" "guides/profiles/73-transportationstatus"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/shared" "guides/shared"
+
+# Namespaces
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "structure/namespace" "structure/namespace"
