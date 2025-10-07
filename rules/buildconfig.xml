@@ -3,20 +3,21 @@
 	<package url="http://docs.peppol.eu/poacc/upgrade/3.0/">PEPPOL BIS Upgrade 3.0</package>
 
 	<!-- unit testing -->
+	<testfolder>unit-advanced-despatch-advice</testfolder>
 	<testfolder>unit-catalogue</testfolder>
 	<testfolder>unit-common</testfolder>
+	<testfolder>unit-invoice-responsen</testfolder>
 	<testfolder>unit-order</testfolder>
 	<testfolder>unit-order-agreement</testfolder>
 	<testfolder>unit-order-response</testfolder>
-	<testfolder>unit-advanced-despatch-advice</testfolder>
-	<testfolder>unit-weight-statement</testfolder>
+	<testfolder>unit-receipt-advice</testfolder>
 	<testfolder>unit-transport-execution-plan-request</testfolder>
 	<testfolder>unit-transport-execution-plan</testfolder>
-	<testfolder>unit-waybill</testfolder>
 	<testfolder>unit-transportation-status-request</testfolder>
 	<testfolder>unit-transportation-status</testfolder>
-	<testfolder>unit-receipt-advice</testfolder>
-
+	<testfolder>unit-UBL-SE</testfolder>
+	<testfolder>unit-waybill</testfolder>
+	<testfolder>unit-weight-statement</testfolder>
 
 	<!-- example and snippet folders -->
 	<testfolder>examples</testfolder>
@@ -346,4 +347,3 @@
 	</configuration>
 
 </buildConfigurations>
-
