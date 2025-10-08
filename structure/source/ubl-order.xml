@@ -477,64 +477,49 @@
 	  <cbc:AccountingCost>1234:45435:243234
 	    <?DescriptionAddFirst Project Number (T6004). ?>
 	  </cbc:AccountingCost>
-		
-<cac:Delivery>
-	<cbc:ID schemeID="0088">7300010000001</cbc:ID>
-	<cac:DeliveryLocation>
-		<cbc:ID schemeID="0088">7300010000001
-		  			<?DescriptionAddFirst T0036 or T6001, Identity of the Consignee. Only one Identity of the party will be used. ?>
-		</cbc:ID>
-		<cbc:Name>Skanska BLC i Kristianstad
-	    			<?DescriptionAddFirst T5001, Name of the Consignee. ?>
-		</cbc:Name>
-		<cac:Address>
-			<cbc:StreetName>Testvägen 1
-		  				<?DescriptionAddFirst T5003, Street name/Number or Postal box number of the Consignee. ?>
-			</cbc:StreetName>
-			<cbc:AdditionalStreetName>Avdelning C
-		  				<?DescriptionAddFirst Used for Department (T5002). ?>
-			</cbc:AdditionalStreetName>
-			<cbc:CityName>Kristianstad
-		  				<?DescriptionAddFirst T5005, City name. ?>
-			</cbc:CityName>
-			<cbc:PostalZone>29155
-		  				<?DescriptionAddFirst T6117, Postal zone. ?>
-			</cbc:PostalZone>
-			<cbc:CountrySubentity>765</cbc:CountrySubentity>
-			<cac:AddressLine>
-				<cbc:Line>Lundbyleden#Område C2<?DescriptionAddFirst Used for all other address information. Coordinates (T6321/T6322) are given in format WGS84, degrees with decimals, separated by #. Can be used for detailed information by separating the information by #. ?></cbc:Line>
-			</cac:AddressLine>
-			<cac:Country>
-				<cbc:IdentificationCode>SE
-		    					<?DescriptionAddFirst T5007, Country code. ?>
-				</cbc:IdentificationCode>
-			</cac:Country>
-		</cac:Address>
-	</cac:DeliveryLocation>
-	  
-	<cac:RequestedDeliveryPeriod>
-		<?DescriptionAddFirst The Requested Delivery Period should be set at line level, not here. ?>
-		<cbc:StartDate>2021-11-01</cbc:StartDate>
-		<cbc:StartTime>12:30:00</cbc:StartTime>
-		<cbc:EndDate>2021-11-03</cbc:EndDate>
-		<cbc:EndTime>15:30:00</cbc:EndTime>
-	</cac:RequestedDeliveryPeriod>
-        <cac:RequestedDeliveryPeriod>
-          <cbc:StartDate>2021-11-01
-		    <?DescriptionAddFirst Delivery Period Start Date (T6319). ?>
-		  </cbc:StartDate>
-			<cbc:StartTime>09:00:00
-				<?DescriptionAddFirst Delivery Period Start time (T6734). ?>
-			</cbc:StartTime>
-		  <cbc:EndDate>2021-11-03
-		    <?DescriptionAddFirst Delivery Period End Date (T6320). ?>
-		  </cbc:EndDate>
-			<cbc:EndTime>10:30:00
-				<?DescriptionAddFirst Delivery Period End Time (T6735). ?>
-			</cbc:EndTime>
-        </cac:RequestedDeliveryPeriod>
-      </cac:Delivery>
 			
+			<cac:Delivery>
+				<cbc:ID schemeID="0088">7300010000001</cbc:ID>
+				<cac:DeliveryLocation>
+					<cbc:ID schemeID="0088">7300010000001
+						<?DescriptionAddFirst T0036 or T6001, Identity of the Consignee. Only one Identity of the party will be used. ?>
+					</cbc:ID>
+					<cbc:Name>Skanska BLC i Kristianstad
+						<?DescriptionAddFirst T5001, Name of the Consignee. ?>
+					</cbc:Name>
+					<cac:Address>
+						<cbc:StreetName>Testvägen 1
+							<?DescriptionAddFirst T5003, Street name/Number or Postal box number of the Consignee. ?>
+						</cbc:StreetName>
+						<cbc:AdditionalStreetName>Avdelning C
+							<?DescriptionAddFirst Used for Department (T5002). ?>
+						</cbc:AdditionalStreetName>
+						<cbc:CityName>Kristianstad
+							<?DescriptionAddFirst T5005, City name. ?>
+						</cbc:CityName>
+						<cbc:PostalZone>29155
+							<?DescriptionAddFirst T6117, Postal zone. ?>
+						</cbc:PostalZone>
+						<cbc:CountrySubentity>765</cbc:CountrySubentity>
+						<cac:AddressLine>
+							<cbc:Line>Lundbyleden#Område C2
+								<?DescriptionAddFirst Used for all other address information. Coordinates (T6321/T6322) are given in format WGS84, degrees with decimals, separated by #. Can be used for detailed information by separating the information by #. ?>
+							</cbc:Line>
+						</cac:AddressLine>
+						<cac:Country>
+							<cbc:IdentificationCode>SE
+								<?DescriptionAddFirst T5007, Country code. ?>
+							</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:Address>
+				</cac:DeliveryLocation>
+				<cac:RequestedDeliveryPeriod>
+					<cbc:StartDate>2021-11-01<?DescriptionAddFirst Delivery Period Start Date (T6319). ?></cbc:StartDate>
+					<cbc:StartTime>09:00:00<?DescriptionAddFirst Delivery Period Start time (T6734). ?></cbc:StartTime>
+					<cbc:EndDate>2021-11-03<?DescriptionAddFirst Delivery Period End Date (T6320). ?></cbc:EndDate>
+					<cbc:EndTime>10:30:00<?DescriptionAddFirst Delivery Period End Time (T6735). ?></cbc:EndTime>
+				</cac:RequestedDeliveryPeriod>
+			</cac:Delivery>
 
 		<cac:OriginatorParty>
 			<cac:PartyIdentification>
@@ -612,11 +597,10 @@
 		  <cac:CommodityClassification>
 			  <cbc:ItemClassificationCode listID="ZZZ" listVersionID="3.0.2" name="SBMI">
 				  KO2012140200
-				  <?DescriptionAddFirst Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID the version of the codelist in attribute "name" and name is the name of the codelist or Source to Classification (T6467). ?>
-				  <?listID-DescriptionAddFirst For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID the version of the codelist in attribute "name", i.e. mutually agreed. ?>
-				  <?name-DescriptionAddFirst If construction specific lists are used, name specifies which of them is used. Possible names are: "AI", "CoClass", "ME", "RF", "SA", "SB", "SBF", "SBMI", "SW". AI: Återvinningsindustrierna, ME: Maskinentreprenörerna, RF: Rentalföretagen, SA: Sveriges Åkeriföretag, SB: Svensk Betong, SBF: Svensk Beläggningsförening, SBMI: Sveriges Bergmaterialindustrier, SW: Swedish Wood. Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "BK04", "ENO_SE", "ENO_NO", "ETIM", "Finfo", "RT", "TUN", "RSK_SE", "RSK_NO"?>
-
-			  </cbc:ItemClassificationCode>
+						<?DescriptionAddFirst Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID the version of the codelist in attribute "name" and name is the name of the codelist or Source to Classification (T6467).?>
+						<?listID-DescriptionAddFirst For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID the version of the codelist in attribute "name", i.e. mutually agreed.?>
+						<?name-DescriptionAddFirst If construction specific lists are used, name specifies which of them is used. Possible names are: "AI", "CoClass", "ME", "RF", "SA", "SB", "SBF", "SBMI", "SW". AI: Återvinningsindustrierna, ME: Maskinentreprenörerna, RF: Rentalföretagen, SA: Sveriges Åkeriföretag, SB: Svensk Betong, SBF: Svensk Beläggningsförening, SBMI: Sveriges Bergmaterialindustrier, SW: Swedish Wood. Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "BK04", "ENO_SE", "ENO_NO", "ETIM", "Finfo", "RT", "TUN", "RSK_SE", "RSK_NO"?>						
+					</cbc:ItemClassificationCode>
 		  </cac:CommodityClassification>
 		  
 		  <cac:ClassifiedTaxCategory>
@@ -670,4 +654,4 @@
     </cac:LineItem>
   </cac:OrderLine>
 
-</Order>
+</ubl:Order>
