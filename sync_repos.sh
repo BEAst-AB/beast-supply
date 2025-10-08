@@ -91,4 +91,5 @@ sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/73-transportationstat
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/shared" "guides/shared"
 
 # Namespaces
+sync_repo $POACCREPO $POACCBRANCH "structure/namespace" "structure/namespace"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "structure/namespace" "structure/namespace"
