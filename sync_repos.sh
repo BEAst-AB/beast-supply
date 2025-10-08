@@ -40,6 +40,11 @@ sync_repo $BILLINGREPO $BILLINGBRANCH "structure/syntax/part" "structure/syntax/
 sync_repo $POACCREPO $POACCBRANCH "rules/sch" "rules/sch"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/sch" "rules/sch"
 
+# Snippets
+sync_repo $BILLINGREPO $BILLINGBRANCH "rules/snippets" "rules/snippets"
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/snippets" "rules/snippets"
+sync_repo $POACCREPO $POACCBRANCH "rules/snippets" "rules/snippets"
+
 # Examples
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Cataloge wo response use cases" "rules/examples/Cataloge wo response use cases"
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Order use cases" "rules/examples/Order use cases"
