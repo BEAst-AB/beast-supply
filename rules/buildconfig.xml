@@ -244,6 +244,14 @@
 		<customizationId>urn:fdc:peppol.eu:logistics:trns:transport_execution_plan:1</customizationId>
 		<inherit>peppolbis-T124-base-1.0</inherit>
 	</configuration>
+	
+	<configuration>
+		<identifier>peppolbis-124-advanced</identifier>
+		<title>Advanced Transport Execution Plan</title>
+		<profileId>urn:fdc:peppol.eu:logistics:bis:advanced_transport_execution_plan:1</profileId>
+		<customizationId>urn:fdc:peppol.eu:logistics:trns:transport_execution_plan:1</customizationId>
+		<inherit>peppolbis-T124-base-1.0</inherit>
+	</configuration>
 
 	<configuration>
 		<identifier>peppolbis-125</identifier>
@@ -260,6 +268,13 @@
 		<customizationId>urn:fdc:peppol.eu:logistics:trns:transportation_status_request:1</customizationId>
 		<inherit>peppolbis-T126-base-1.0</inherit>
 	</configuration>
+	<configuration>
+		<identifier>peppolbis-126-advanced</identifier>
+		<title>Advanced Transport Execution Plan</title>
+		<profileId>urn:fdc:peppol.eu:logistics:bis:advanced_transport_execution_plan:1</profileId>
+		<customizationId>urn:fdc:peppol.eu:logistics:trns:transportation_status_request:1</customizationId>
+		<inherit>peppolbis-T126-base-1.0</inherit>
+	</configuration>
 
 	<configuration>
 		<identifier>peppolbis-127-only</identifier>
@@ -273,6 +288,14 @@
 		<identifier>peppolbis-127-request</identifier>
 		<title>Transportation Status with Request</title>
 		<profileId>urn:fdc:peppol.eu:logistics:bis:transportation_status_w_request:1</profileId>
+		<customizationId>urn:fdc:peppol.eu:logistics:trns:transportation_status:1</customizationId>
+		<inherit>peppolbis-T127-base-1.0</inherit>
+	</configuration>
+	
+	<configuration>
+		<identifier>peppolbis-127-advanced</identifier>
+		<title>Advanced Transport Execution Plan</title>
+		<profileId>urn:fdc:peppol.eu:logistics:bis:advanced_transport_execution_plan:1</profileId>
 		<customizationId>urn:fdc:peppol.eu:logistics:trns:transportation_status:1</customizationId>
 		<inherit>peppolbis-T127-base-1.0</inherit>
 	</configuration>
