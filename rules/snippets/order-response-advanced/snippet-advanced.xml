@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OrderResponse xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
-  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-  xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-  <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order_response:3</cbc:CustomizationID>
-  <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:ordering:3</cbc:ProfileID>
+    xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+  <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order_response_advanced:3</cbc:CustomizationID>
+  <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:advanced_ordering:3</cbc:ProfileID>
   <cbc:ID>101</cbc:ID>
-  <cbc:IssueDate>2013-07-01</cbc:IssueDate>
-  <cbc:IssueTime>06:10:10</cbc:IssueTime>
+  <cbc:IssueDate>2022-02-01</cbc:IssueDate>
+  <cbc:IssueTime>18:10:10</cbc:IssueTime>
   <!-- tag::response-header[] -->
   <cbc:OrderResponseCode>CA</cbc:OrderResponseCode>
   <!-- end::response-header[] -->
@@ -19,6 +19,11 @@
     <cbc:ID>1</cbc:ID>
   </cac:OrderReference>
   <!-- end::order-ref[] -->
+  <!-- tag::orderchange-ref[] -->
+  <cac:OrderChangeDocumentReference>
+    <cbc:ID>c-1</cbc:ID>
+  </cac:OrderChangeDocumentReference>
+  <!-- end::orderchange-ref[] -->
   <cac:SellerSupplierParty>
     <cac:Party>
       <cbc:EndpointID schemeID="0007">5546577791</cbc:EndpointID>
