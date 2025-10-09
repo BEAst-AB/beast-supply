@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Order xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2"
+       xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+       xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+   <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order:3</cbc:CustomizationID>
+   <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:ordering:3</cbc:ProfileID>
+   <cbc:ID>0-123</cbc:ID>
+   <cbc:SalesOrderID>112233</cbc:SalesOrderID>
+   <cbc:IssueDate>2018-06-01</cbc:IssueDate>
+   <cbc:IssueTime>14:12:32</cbc:IssueTime>
+   <cbc:OrderTypeCode>220</cbc:OrderTypeCode>
+   <cbc:Note>Packages of other sizes are OK</cbc:Note>
+   <cbc:DocumentCurrencyCode>NOK</cbc:DocumentCurrencyCode>
+   <cbc:CustomerReference>oik987</cbc:CustomerReference>
+   <cbc:AccountingCost>1234:45435:243234</cbc:AccountingCost>
+   <cac:ValidityPeriod>
+      <cbc:EndDate>2018-06-02</cbc:EndDate>
+   </cac:ValidityPeriod>
+   <cac:QuotationDocumentReference>
+      <cbc:ID>1232424</cbc:ID>
+   </cac:QuotationDocumentReference>
+   <cac:OrderDocumentReference>
+      <cbc:ID>4832423</cbc:ID>
+   </cac:OrderDocumentReference>
+   <cac:OriginatorDocumentReference>
+      <cbc:ID>5435235</cbc:ID>
+   </cac:OriginatorDocumentReference>
+   <cac:CatalogueReference>
+      <cbc:ID>Cat2023-03-07</cbc:ID>
+   </cac:CatalogueReference>
+   <cac:AdditionalDocumentReference>
+      <cbc:ID>doc-34</cbc:ID>
+      <cbc:DocumentType>Timesheet</cbc:DocumentType>
+      <cac:Attachment>
+         <cbc:EmbeddedDocumentBinaryObject mimeCode="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                                           filename="Hours-spent.xsl">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</cbc:EmbeddedDocumentBinaryObject>
+         <cac:ExternalReference>
+            <cbc:URI>http://www.test.eu/image.jpg</cbc:URI>
+         </cac:ExternalReference>
+      </cac:Attachment>
+   </cac:AdditionalDocumentReference>
+   <cac:Contract>
+      <cbc:ID/>
+   </cac:Contract>
+   <cac:ProjectReference>
+      <cbc:ID>PID33</cbc:ID>
+   </cac:ProjectReference>
+   <cac:BuyerCustomerParty>
+      <cac:Party>
+         <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+         <cac:PartyIdentification>
+            <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+         </cac:PartyIdentification>
+         <cac:PartyName>
+            <cbc:Name>Buyer name</cbc:Name>
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:StreetName/>
+            <cbc:AdditionalStreetName/>
+            <cbc:CityName/>
+            <cbc:PostalZone/>
+            <cbc:CountrySubentity/>
+            <cac:AddressLine>
+               <cbc:Line>Gate 34</cbc:Line>
+            </cac:AddressLine>
+            <cac:Country>
+               <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:PostalAddress>
+         <cac:PartyTaxScheme>
+            <cbc:CompanyID/>
+            <cac:TaxScheme>
+               <cbc:ID>VAT or GST</cbc:ID>
+            </cac:TaxScheme>
+         </cac:PartyTaxScheme>
+         <cac:PartyLegalEntity>
+            <cbc:RegistrationName/>
+            <cbc:CompanyID schemeID="0002">987654321</cbc:CompanyID>
+            <cac:RegistrationAddress>
+               <cbc:CityName/>
+               <cac:Country>
+                  <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+               </cac:Country>
+            </cac:RegistrationAddress>
+         </cac:PartyLegalEntity>
+         <cac:Contact>
+            <cbc:Name/>
+            <cbc:Telephone/>
+            <cbc:ElectronicMail/>
+         </cac:Contact>
+      </cac:Party>
+   </cac:BuyerCustomerParty>
+   <cac:SellerSupplierParty>
+      <cac:Party>
+         <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+         <cac:PartyIdentification>
+            <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+         </cac:PartyIdentification>
+         <cac:PartyName>
+            <cbc:Name>Seller name</cbc:Name>
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:StreetName/>
+            <cbc:AdditionalStreetName/>
+            <cbc:CityName/>
+            <cbc:PostalZone/>
+            <cbc:CountrySubentity/>
+            <cac:AddressLine>
+               <cbc:Line>Gate 34</cbc:Line>
+            </cac:AddressLine>
+            <cac:Country>
+               <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:PostalAddress>
+         <cac:PartyLegalEntity>
+            <cbc:RegistrationName/>
+            <cbc:CompanyID schemeID="0002">987654321</cbc:CompanyID>
+            <cac:RegistrationAddress>
+               <cbc:CityName/>
+               <cac:Country>
+                  <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+               </cac:Country>
+            </cac:RegistrationAddress>
+         </cac:PartyLegalEntity>
+         <cac:Contact>
+            <cbc:Name/>
+            <cbc:Telephone/>
+            <cbc:ElectronicMail/>
+         </cac:Contact>
+      </cac:Party>
+   </cac:SellerSupplierParty>
+   <cac:OriginatorCustomerParty>
+      <cac:Party>
+         <cac:PartyIdentification>
+            <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+         </cac:PartyIdentification>
+         <cac:PartyName>
+            <cbc:Name>Originator name</cbc:Name>
+         </cac:PartyName>
+         <cac:Contact>
+            <cbc:Name/>
+            <cbc:Telephone/>
+            <cbc:ElectronicMail/>
+         </cac:Contact>
+      </cac:Party>
+   </cac:OriginatorCustomerParty>
+   <cac:AccountingCustomerParty>
+      <cac:Party>
+         <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+         <cac:PartyIdentification>
+            <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+         </cac:PartyIdentification>
+         <cac:PartyName>
+            <cbc:Name>Invoicee name</cbc:Name>
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:StreetName>The main address line in the postal address, usually
+							the street name and number</cbc:StreetName>
+            <cbc:AdditionalStreetName/>
+            <cbc:CityName/>
+            <cbc:PostalZone/>
+            <cbc:CountrySubentity/>
+            <cac:AddressLine>
+               <cbc:Line>Gate 34</cbc:Line>
+            </cac:AddressLine>
+            <cac:Country>
+               <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:PostalAddress>
+         <cac:PartyTaxScheme>
+            <cbc:CompanyID/>
+            <cac:TaxScheme>
+               <cbc:ID>VAT or GST</cbc:ID>
+            </cac:TaxScheme>
+         </cac:PartyTaxScheme>
+         <cac:PartyLegalEntity>
+            <cbc:RegistrationName/>
+            <cbc:CompanyID schemeID="0002">987654321</cbc:CompanyID>
+            <cac:RegistrationAddress>
+               <cbc:CityName/>
+               <cac:Country>
+                  <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+               </cac:Country>
+            </cac:RegistrationAddress>
+         </cac:PartyLegalEntity>
+         <cac:Contact>
+            <cbc:Name/>
+            <cbc:Telephone/>
+            <cbc:ElectronicMail/>
+         </cac:Contact>
+      </cac:Party>
+   </cac:AccountingCustomerParty>
+   <cac:Delivery>
+      <cac:DeliveryLocation>
+         <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+         <cbc:Name>South side goods arrival dock</cbc:Name>
+         <cac:Address>
+            <cbc:StreetName/>
+            <cbc:AdditionalStreetName/>
+            <cbc:CityName/>
+            <cbc:PostalZone/>
+            <cbc:CountrySubentity/>
+            <cac:AddressLine>
+               <cbc:Line>Gate 34</cbc:Line>
+            </cac:AddressLine>
+            <cac:Country>
+               <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:Address>
+      </cac:DeliveryLocation>
+      <cac:RequestedDeliveryPeriod>
+         <cbc:StartDate/>
+         <cbc:StartTime>12:30:00</cbc:StartTime>
+         <cbc:EndDate/>
+         <cbc:EndTime>18:00:00</cbc:EndTime>
+      </cac:RequestedDeliveryPeriod>
+      <cac:DeliveryParty>
+         <cac:PartyIdentification>
+            <cbc:ID schemeID="0002">987654321</cbc:ID>
+         </cac:PartyIdentification>
+         <cac:PartyName>
+            <cbc:Name>Surgery department</cbc:Name>
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:StreetName/>
+            <cbc:AdditionalStreetName/>
+            <cbc:CityName/>
+            <cbc:PostalZone/>
+            <cbc:CountrySubentity/>
+            <cac:AddressLine>
+               <cbc:Line>Gate 34</cbc:Line>
+            </cac:AddressLine>
+            <cac:Country>
+               <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:PostalAddress>
+         <cac:Contact>
+            <cbc:Name/>
+            <cbc:Telephone/>
+            <cbc:ElectronicMail/>
+         </cac:Contact>
+      </cac:DeliveryParty>
+      <cac:Despatch>
+         <cbc:RequestedDespatchDate>2025-02-17</cbc:RequestedDespatchDate>
+         <cbc:RequestedDespatchTime>10:30:00</cbc:RequestedDespatchTime>
+      </cac:Despatch>
+      <cac:Shipment>
+         <cbc:ID/>
+         <cbc:ShippingPriorityLevelCode>1</cbc:ShippingPriorityLevelCode>
+         <cac:TransportHandlingUnit>
+            <cbc:ShippingMarks>Receiving instructions.</cbc:ShippingMarks>
+         </cac:TransportHandlingUnit>
+      </cac:Shipment>
+   </cac:Delivery>
+   <cac:DeliveryTerms>
+      <cbc:ID>FOB</cbc:ID>
+      <cbc:SpecialTerms/>
+      <cac:DeliveryLocation>
+         <cbc:ID>Rotterdam</cbc:ID>
+      </cac:DeliveryLocation>
+   </cac:DeliveryTerms>
+   <cac:PaymentTerms>
+      <cbc:Note/>
+   </cac:PaymentTerms>
+   <cac:AllowanceCharge>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
+      <cbc:AllowanceChargeReason/>
+      <cbc:MultiplierFactorNumeric>20</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="EUR">200</cbc:Amount>
+      <cbc:BaseAmount currencyID="EUR">1000</cbc:BaseAmount>
+      <cac:TaxCategory>
+         <cbc:ID>S</cbc:ID>
+         <cbc:Percent>25.00</cbc:Percent>
+         <cac:TaxScheme>
+            <cbc:ID>VAT or GST</cbc:ID>
+         </cac:TaxScheme>
+      </cac:TaxCategory>
+   </cac:AllowanceCharge>
+   <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="EUR">200</cbc:TaxAmount>
+   </cac:TaxTotal>
+   <cac:AnticipatedMonetaryTotal>
+      <cbc:LineExtensionAmount currencyID="EUR">200</cbc:LineExtensionAmount>
+      <cbc:TaxExclusiveAmount currencyID="EUR">200</cbc:TaxExclusiveAmount>
+      <cbc:TaxInclusiveAmount currencyID="EUR">200</cbc:TaxInclusiveAmount>
+      <cbc:AllowanceTotalAmount currencyID="EUR">200</cbc:AllowanceTotalAmount>
+      <cbc:ChargeTotalAmount currencyID="EUR">200</cbc:ChargeTotalAmount>
+      <cbc:PrepaidAmount currencyID="EUR">200</cbc:PrepaidAmount>
+      <cbc:PayableRoundingAmount currencyID="EUR">200</cbc:PayableRoundingAmount>
+      <cbc:PayableAmount currencyID="EUR">200</cbc:PayableAmount>
+   </cac:AnticipatedMonetaryTotal>
+   <cac:OrderLine>
+      <cbc:Note/>
+      <cac:LineItem>
+         <cbc:ID>1</cbc:ID>
+         <cbc:Quantity unitCode="C62">10</cbc:Quantity>
+         <cbc:LineExtensionAmount currencyID="EUR">200</cbc:LineExtensionAmount>
+         <cbc:PartialDeliveryIndicator>true</cbc:PartialDeliveryIndicator>
+         <cbc:AccountingCost/>
+         <cac:Delivery>
+            <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+            <cac:DeliveryLocation>
+               <cbc:Name>South side goods arrival dock</cbc:Name>
+               <cac:Address>
+                  <cbc:StreetName/>
+                  <cbc:AdditionalStreetName/>
+                  <cbc:CityName/>
+                  <cbc:PostalZone/>
+                  <cbc:CountrySubentity/>
+                  <cac:AddressLine>
+                     <cbc:Line>Gate 34</cbc:Line>
+                  </cac:AddressLine>
+                  <cac:Country>
+                     <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+                  </cac:Country>
+               </cac:Address>
+            </cac:DeliveryLocation>
+            <cac:RequestedDeliveryPeriod>
+               <cbc:StartDate>2018-09-03</cbc:StartDate>
+               <cbc:StartTime>12:30:00</cbc:StartTime>
+               <cbc:EndDate>2018-09-15</cbc:EndDate>
+               <cbc:EndTime>18:00:00</cbc:EndTime>
+            </cac:RequestedDeliveryPeriod>
+         </cac:Delivery>
+         <cac:OriginatorParty>
+            <cac:PartyIdentification>
+               <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+               <cbc:Name>Originator name</cbc:Name>
+            </cac:PartyName>
+         </cac:OriginatorParty>
+         <cac:AllowanceCharge>
+            <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+            <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
+            <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
+            <cbc:MultiplierFactorNumeric>20</cbc:MultiplierFactorNumeric>
+            <cbc:Amount currencyID="EUR">200</cbc:Amount>
+            <cbc:BaseAmount currencyID="EUR">1000</cbc:BaseAmount>
+         </cac:AllowanceCharge>
+         <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">211.124</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+               <cbc:Amount currencyID="EUR">200</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">200</cbc:BaseAmount>
+            </cac:AllowanceCharge>
+         </cac:Price>
+         <cac:Item>
+            <cbc:Description/>
+            <cbc:Name/>
+            <cac:BuyersItemIdentification>
+               <cbc:ID>abc32432</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+               <cbc:ID>3249834</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:ManufacturersItemIdentification>
+               <cbc:ID>manid659</cbc:ID>
+            </cac:ManufacturersItemIdentification>
+            <cac:StandardItemIdentification>
+               <cbc:ID schemeID="0160">05704066204093</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:ItemSpecificationDocumentReference>
+               <cbc:ID>doc4353.pdf</cbc:ID>
+            </cac:ItemSpecificationDocumentReference>
+            <cac:CommodityClassification>
+               <cbc:ItemClassificationCode listID="STI" listVersionID="20.0602" name="Office furniture">9873242</cbc:ItemClassificationCode>
+            </cac:CommodityClassification>
+            <cac:ClassifiedTaxCategory>
+               <cbc:ID>S</cbc:ID>
+               <cbc:Percent>25</cbc:Percent>
+               <cac:TaxScheme>
+                  <cbc:ID>VAT or GST</cbc:ID>
+               </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <cac:AdditionalItemProperty>
+               <cbc:ID schemeDataURI="sdfdf" schemeID="ISO22057" schemeVersionID="2022">77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
+               <cbc:Name>Color</cbc:Name>
+               <cbc:NameCode listID="listID Name code list id. An identifier for the code list used for the Name code, this is bilaterally agreed"/>
+               <cbc:Value>Red</cbc:Value>
+               <cbc:ValueQuantity unitCode="C62">10</cbc:ValueQuantity>
+               <cbc:ValueQualifier/>
+            </cac:AdditionalItemProperty>
+            <cac:ItemInstance>
+               <cbc:SerialID/>
+               <cac:LotIdentification>
+                  <cbc:LotNumberID/>
+               </cac:LotIdentification>
+            </cac:ItemInstance>
+         </cac:Item>
+      </cac:LineItem>
+   </cac:OrderLine>
+</Order>
