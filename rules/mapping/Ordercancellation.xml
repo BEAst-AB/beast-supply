@@ -1,0 +1,2685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:msxsl="urn:schemas-microsoft-com:xslt"
+          xmlns:o="urn:schemas-microsoft-com:office:office"
+          xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:str="urn:fdc:difi.no:2017:vefa:structure-1"
+          xmlns:x="urn:schemas-microsoft-com:office:excel">
+   <Styles>
+      <Style ss:ID="Default" ss:Name="Normal">
+         <Alignment ss:Vertical="Bottom"/>
+         <Borders/>
+         <Font ss:FontName="Calibri"
+               x:Family="Swiss"
+               ss:Size="11"
+               ss:Color="#000000"/>
+         <Interior/>
+         <NumberFormat/>
+         <Protection/>
+      </Style>
+      <Style ss:ID="s24" ss:Name="Heading 3">
+         <Borders>
+            <Border ss:Position="Bottom"
+                    ss:LineStyle="Continuous"
+                    ss:Weight="2"
+                    ss:Color="#8EA9DB"/>
+         </Borders>
+         <Font ss:FontName="Calibri"
+               x:Family="Swiss"
+               ss:Size="11"
+               ss:Color="#339966"
+               ss:Bold="1"/>
+      </Style>
+      <Style ss:ID="s63" ss:Parent="s24">
+         <Borders>
+            <Border ss:Position="Bottom"
+                    ss:LineStyle="Continuous"
+                    ss:Weight="2"
+                    ss:Color="#8EA9DB"/>
+         </Borders>
+         <Font ss:FontName="Calibri"
+               x:Family="Swiss"
+               ss:Size="11"
+               ss:Color="#333333"
+               ss:Bold="1"/>
+         <Interior/>
+      </Style>
+   </Styles>
+   <Worksheet ss:Name="Sheet1">
+      <Table>
+         <Column ss:Width="30"/>
+         <Column ss:Width="200"/>
+         <Column ss:Width="200"/>
+         <Column ss:Width="200"/>
+         <Column ss:Width="200"/>
+         <Column ss:Width="200"/>
+         <Column ss:Width="30"/>
+         <Row>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Card</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Term</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Name</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Description</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Example</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">XPath</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Node Level</Data>
+            </Cell>
+            <Cell ss:StyleID="s63">
+               <Data ss:Type="String">Sequence</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">ubl:OrderCancellation</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">0</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">0</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:CustomizationID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Specification identification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies the specification of content and rules that apply to the transaction.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cbc:CustomizationID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:ProfileID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Business process type identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies the BII profile or business process context in which the transaction appears.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cbc:ProfileID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Order identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A transaction instance must have an identifier. The identifier enables referencing the transaction for various purposes such as from other transactions that are part of the same process.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0-123</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:IssueDate</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Issue date</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The date on which the transaction instance was issued.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">2022-02-01</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cbc:IssueDate</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:IssueTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Issue time</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The time assigned by the buyer on which the order was issued.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">14:12:32</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cbc:IssueTime</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:Note</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document level textual note</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Free form text applying to the Order. This element may contain notes or any other similar information that is not contained explicitly in another structure.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Packages of other sizes are OK</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cbc:Note</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cbc:CancellationNote</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document level textual note</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The general reason for cancellation of the referenced order.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The substituted items does not fit our usage.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cbc:CancellationNote</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:OrderReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Order reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:OrderReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Order document reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Used to reference the initial order.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">4832423</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:OrderReference/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:OriginatorDocumentReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Originator document </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:OriginatorDocumentReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Originator document reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A reference to Originator Document. To be able to give a reference to the internal requisition on the buyer site on which the order is based.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">5435235</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:OriginatorDocumentReference/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..n</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:AdditionalDocumentReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Additional documents</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:AdditionalDocumentReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An identifier for the referenced document.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">doc-34</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:AdditionalDocumentReference/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:DocumentType</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Document description</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Textual description of the document.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Timesheet</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:AdditionalDocumentReference/cbc:DocumentType</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Attachment</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Attachment(s)</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:AdditionalDocumentReference/cac:Attachment</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:EmbeddedDocumentBinaryObject</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Attached document</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The attached document embeded as binary object, coded as Base64. The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename that is provided by (or on behalf of) the sender of the document</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">QklTIE9yZGVyIEFncmVlbWVudCAtIDQyQQ==</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:AdditionalDocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @mimeCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Attached document Mime code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The mime code of the attached document.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:AdditionalDocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject/mimeCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @filename</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Attached document filename</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The file name of the attached document</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Hours-spent.xsl</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:AdditionalDocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject/filename</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:ExternalReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">External reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Reference to external document</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:URI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">External document URI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The Uniform Resource Identifier (URI) that identifies where the external document is located.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">http://www.test.eu/image.jpg</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:URI</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:Contract</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contract information</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Reference to contract</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:Contract</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Reference identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Positive identification of the reference such as a unique identifier.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:Contract/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:BuyerCustomerParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Buyer information</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Description of buyer</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Party</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party information</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:EndpointID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Buyer party electronic address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies the buyer party's electronic address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">987654325</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cbc:EndpointID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier for the electronic address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0192</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cbc:EndpointID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party identification </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Buyer party identification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An identification for the buyer party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">123456785</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">o</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier for party identification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0192</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Buyer name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Name of buyer The name of the party who orders the listed items.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Buyer name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyName/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Postal address </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Postal address of the buyer</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PostalAddress/cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:AdditionalStreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PostalAddress/cbc:AdditionalStreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">City</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PostalAddress/cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Post code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PostalAddress/cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:CountrySubentity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country subdivision</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PostalAddress/cbc:CountrySubentity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cac:AddressLine</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PostalAddress/cac:AddressLine</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:Line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Gate 34</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PostalAddress/cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">NL</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:PartyTaxScheme</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Buyer tax information</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyTaxScheme</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:CompanyID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Buyer TAX identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The buyers registered Value Added Tax identifier. To be stated in case reverse charge is to apply to the purchase.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cac:TaxScheme</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Tax scheme</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyTaxScheme/cac:TaxScheme</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Mandatory element.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">GST</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyTaxScheme/cac:TaxScheme/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:PartyLegalEntity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Buyer legal information</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:RegistrationName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Buyers legal registration name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The official name of the party as registered with the relevant fiscal authority.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:CompanyID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Buyers legal registration identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies a company as registered with the company registration scheme.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">987654325</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The identification scheme identifier of the buyer legal registration identifier.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0192</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cac:RegistrationAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Legal address </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity/cac:RegistrationAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Buyers legal registration address city name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Associates with the registered address of the party within a Corporate Registration Scheme. The name of a city, town, or village.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity/cac:RegistrationAddress/cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity/cac:RegistrationAddress/cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  •  cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">NL</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:PartyLegalEntity/cac:RegistrationAddress/cac:Country/cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact information</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Buyer contact information</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact person name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The name of the contact person.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:Contact/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact telephone number</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A phone number for the contact person. If the person has a direct number, this is that number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:Contact/cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact email address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The e-mail address for the contact person. If the person has a direct e-mail this is that email.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:BuyerCustomerParty/cac:Party/cac:Contact/cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:SellerSupplierParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Seller information</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Description of seller</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Party</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party information</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:EndpointID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Seller party electronic address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies the seller party's electronic address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">987654325</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cbc:EndpointID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">M</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier for the electronic address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0192</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cbc:EndpointID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party identification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Seller party identification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies a party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">123456785</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">o</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier for party identification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0192</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Name of seller</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Seller party trading name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The trading name of the party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Seller name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PartyName/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Postal address </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Postal address of the Seller</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PostalAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PostalAddress/cbc:StreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:AdditionalStreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PostalAddress/cbc:AdditionalStreetName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">City</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PostalAddress/cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Post code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PostalAddress/cbc:PostalZone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:CountrySubentity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country subdivision</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PostalAddress/cbc:CountrySubentity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cac:AddressLine</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PostalAddress/cac:AddressLine</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:Line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Address line 3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Gate 34</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PostalAddress/cac:AddressLine/cbc:Line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PostalAddress/cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">NL</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:PartyLegalEntity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Seller legal information</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:RegistrationName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Seller legal registration name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The official name of the party as registered with the relevant fiscal authority.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:CompanyID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Seller legal registration identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies a company as registered with the company registration scheme.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">987654325</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">7900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">O</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The identification scheme identifier of the buyer legal registration identifier.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0192</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cac:RegistrationAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Legal address </Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity/cac:RegistrationAddress</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Sellers legal registration address city name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Associates with the registered address of the party within a Corporate Registration Scheme. The name of a city, town, or village.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity/cac:RegistrationAddress/cbc:CityName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity/cac:RegistrationAddress/cac:Country</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  •  cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Country code</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">NL</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:PartyLegalEntity/cac:RegistrationAddress/cac:Country/cbc:IdentificationCode</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">6</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Seller contact information</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact person name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The name of the contact person.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:Contact/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact telephone number</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A phone number for the contact person. If the person has a direct number, this is that number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:Contact/cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact email address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The e-mail address for the contact person. If the person has a direct e-mail this is that email.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:SellerSupplierParty/cac:Party/cac:Contact/cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  cac:OriginatorCustomerParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Originator party</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Information regarding the originator of the order</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:OriginatorCustomerParty</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">8900</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:Party</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party information</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Description of the originator party</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:OriginatorCustomerParty/cac:Party</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9000</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party identification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identification of the originator</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:OriginatorCustomerParty/cac:Party/cac:PartyIdentification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Originator identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Identifies a party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">123456785</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:OriginatorCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">o</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  •  @schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Scheme identifier for party identification</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">0192</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:OriginatorCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID/schemeID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">5</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9300</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Party name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Name of the originator</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:OriginatorCustomerParty/cac:Party/cac:PartyName</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9400</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Originator name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The name of the party.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Originator name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:OriginatorCustomerParty/cac:Party/cac:PartyName/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9500</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The originators contact information</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:OriginatorCustomerParty/cac:Party/cac:Contact</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9600</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact person name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The name of the contact person.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:OriginatorCustomerParty/cac:Party/cac:Contact/cbc:Name</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9700</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact telephone number</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">A phone number for the contact person. If the person has a direct number, this is that number.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:OriginatorCustomerParty/cac:Party/cac:Contact/cbc:Telephone</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9800</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  •  cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Contact email address</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">The e-mail address for the contact person. If the person has a direct e-mail this is that email.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:OrderCancellation/cac:OriginatorCustomerParty/cac:Party/cac:Contact/cbc:ElectronicMail</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">4</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">9900</Data>
+            </Cell>
+         </Row>
+      </Table>
+   </Worksheet>
+</Workbook>
