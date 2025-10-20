@@ -740,7 +740,7 @@
                   <Term>schemeID</Term>
                   <Name>Scheme identifier</Name>
                   <Description>Scheme identifier for the electronic address</Description>
-                  <Value type="FIXED">0088</Value>
+                  <Value type="EXAMPLE">0088</Value>
                </Attribute>
                <Value type="EXAMPLE">7300010000001</Value>
             </Element>
@@ -1371,7 +1371,6 @@
                <Description>The TAX category code that applies to the document level allowance or charge.</Description>
                <DataType>Code</DataType>
                <Reference type="BUSINESS_TERM">tir114-p011</Reference>
-               <Reference type="CODE_LIST">UNCL5305</Reference>
                <Value type="EXAMPLE">S</Value>
             </Element>
             <Element cardinality="0..1">
@@ -2018,7 +2017,6 @@
                      <Description>The TAX category code for the item.</Description>
                      <DataType>Code</DataType>
                      <Reference type="BUSINESS_TERM">tir114-150</Reference>
-                     <Reference type="CODE_LIST">UNCL5305</Reference>
                      <Value type="EXAMPLE">S</Value>
                   </Element>
                   <Element cardinality="0..1">
