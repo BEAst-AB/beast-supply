@@ -237,11 +237,11 @@ echo "Generating example: Invoice"
      -s:/src/structure/syntax/ubl-invoice.xml \
      -xsl:/src/tools/create-example.xsl \
      -o:/src/rules/examples/Invoice_Example_Full.xml -ext:on --allow-external-functions:on
-echo "Generating example: Order"
- docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-     -s:/src/structure/syntax/ubl-order.xml \
-     -xsl:/src/tools/create-example.xsl \
-     -o:/src/rules/examples/Order_Example_Full.xml -ext:on --allow-external-functions:on
+#echo "Generating example: Order"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/syntax/ubl-order.xml \
+#     -xsl:/src/tools/create-example.xsl \
+#     -o:/src/rules/examples/Order_Example_Full.xml -ext:on --allow-external-functions:on
 echo "Generating example: Order response"
  docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
      -s:/src/structure/syntax/ubl-order-response.xml \
@@ -252,21 +252,21 @@ echo "Generating example: Order agreement"
      -s:/src/structure/syntax/ubl-orderagreement.xml \
      -xsl:/src/tools/create-example.xsl \
      -o:/src/rules/examples/Order_Agreement_Example_Full.xml -ext:on --allow-external-functions:on	 
-echo "Generating example: Order cancellation"
- docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-     -s:/src/structure/syntax/ubl-order-cancellation.xml \
-     -xsl:/src/tools/create-example.xsl \
-     -o:/src/rules/examples/Order_Cancellation_Example_Full.xml -ext:on --allow-external-functions:on
-echo "Generating example: Order change"
- docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-     -s:/src/structure/syntax/ubl-order-change.xml \
-     -xsl:/src/tools/create-example.xsl \
-     -o:/src/rules/examples/Order_Change_Example_Full.xml -ext:on --allow-external-functions:on	 
-echo "Generating example: Order response advanced"
- docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-     -s:/src/structure/syntax/ubl-order-response-advanced.xml \
-     -xsl:/src/tools/create-example.xsl \
-     -o:/src/rules/examples/Order_Response_Advanced_Example_Full.xml -ext:on --allow-external-functions:on
+#echo "Generating example: Order cancellation"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/syntax/ubl-order-cancellation.xml \
+#     -xsl:/src/tools/create-example.xsl \
+#     -o:/src/rules/examples/Order_Cancellation_Example_Full.xml -ext:on --allow-external-functions:on
+#echo "Generating example: Order change"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/syntax/ubl-order-change.xml \
+#     -xsl:/src/tools/create-example.xsl \
+#     -o:/src/rules/examples/Order_Change_Example_Full.xml -ext:on --allow-external-functions:on	 
+#echo "Generating example: Order response advanced"
+# docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#     -s:/src/structure/syntax/ubl-order-response-advanced.xml \
+#     -xsl:/src/tools/create-example.xsl \
+#     -o:/src/rules/examples/Order_Response_Advanced_Example_Full.xml -ext:on --allow-external-functions:on
 echo "Generating example: Catalogue"
  docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
      -s:/src/structure/syntax/ubl-catalogue.xml \
