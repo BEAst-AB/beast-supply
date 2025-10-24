@@ -82,4 +82,7 @@ sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/shared" "guides/shared"
 # PRACC specific
 sync_repo $PRACCREPO $PRACCBRANCH "guides/profiles/p035" "guides/profiles/p035"
 sync_repo $PRACCREPO $PRACCBRANCH "guides/transactions/Catalogue" "guides/transactions/Catalogue"
+sync_repo $PRACCREPO $PRACCBRANCH "guides/shared" "guides/shared"
 sync_repo $PRACCREPO $PRACCBRANCH "guides/transactions/CatalogueRequest" "guides/transactions/CatalogueRequest"
+sync_repo $PRACCREPO $PRACCBRANCH "guides/profiles/shared" "guides/profiles/shared"
+sync_repo $PRACCREPO $PRACCBRANCH "guides/transactions/shared" "guides/transactions/shared"
