@@ -6,6 +6,8 @@ LOGISTICSREPO="https://github.com/OpenPEPPOL/Logistics-bis.git"
 LOGISTICSBRANCH="2025-Q2-review"
 POACCREPO="https://github.com/OpenPEPPOL/poacc-upgrade-3.git"
 POACCBRANCH="2025-Q2"
+PRACCREPO="https://github.com/OpenPEPPOL/pracc.git"
+PRACCBRANCH="2025"
 
 # Function to clone and copy files
 sync_repo() {
@@ -76,3 +78,8 @@ sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/71-waybill" "guides/p
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/72-transportationstatus_w_request" "guides/profiles/72-transportationstatus_w_request"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/73-transportationstatus" "guides/profiles/73-transportationstatus"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/shared" "guides/shared"
+
+# PRACC specific
+sync_repo $PRACCREPO $PRACCBRANCH "guides/profiles/p035" "guides/profiles/p035"
+sync_repo $PRACCREPO $PRACCBRANCH "guides/transactions/Catalogue" "guides/transactions/Catalogue"
+sync_repo $PRACCREPO $PRACCBRANCH "guides/transactions/CatalogueRequest" "guides/transactions/CatalogueRequest"
