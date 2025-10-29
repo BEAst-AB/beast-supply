@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Catalogue xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+    <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue:3</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3</cbc:ProfileID>
+    <cbc:ID>Cat-12345</cbc:ID>
+    <cbc:IssueDate>2025-09-18</cbc:IssueDate>
+    <cac:ValidityPeriod>
+        <cbc:StartDate>2025-09-18</cbc:StartDate>
+    </cac:ValidityPeriod>
+    <cac:ProviderParty>
+        <cbc:EndpointID schemeID="0007">556719-5697</cbc:EndpointID>
+        <cac:PartyLegalEntity>
+            <cbc:RegistrationName>BASTAonline AB</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
+    </cac:ProviderParty>
+    <cac:ReceiverParty>
+        <cbc:EndpointID schemeID="0007">1234235234</cbc:EndpointID>
+        <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Migreringsföretaget</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
+    </cac:ReceiverParty>
+    <cac:CatalogueLine>
+        <cbc:ID>1</cbc:ID>
+        <cac:Item>
+            <cbc:Description>Beskrivning - Utförlig beskrivning</cbc:Description>
+            <cbc:Name>T BASTA + C+F + DEM + Ej emissionstest</cbc:Name>
+            <cbc:BrandName>Varumärke</cbc:BrandName>
+            <cac:SellersItemIdentification>
+                <cbc:ID>Artikelnummer</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID schemeID="0160">12345678912387</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>BASTA Criteria H11.A</cbc:Name>
+                <cbc:NameCode listID="BASTA">H11A</cbc:NameCode>
+                <cbc:Value>Fulfil</cbc:Value>
+            </cac:AdditionalItemProperty>
+            <cac:ManufacturerParty>
+                <cac:PartyName>
+                    <cbc:Name>Migreringsföretaget</cbc:Name>
+                </cac:PartyName>
+            </cac:ManufacturerParty>
+            <cac:Certificate>
+                <cbc:ID>BASTA-system</cbc:ID>
+                <cbc:CertificateTypeCode>NA</cbc:CertificateTypeCode>
+                <cbc:CertificateType>Environmental</cbc:CertificateType>
+                <cbc:Remarks>BETA</cbc:Remarks>
+                <cac:IssuerParty>
+                    <cac:PartyName>
+                        <cbc:Name>BASTAonline AB</cbc:Name>
+                    </cac:PartyName>
+                </cac:IssuerParty>
+            </cac:Certificate>
+        </cac:Item>
+    </cac:CatalogueLine>
+</Catalogue>

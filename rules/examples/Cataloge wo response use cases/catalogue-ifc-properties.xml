@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Catalogue xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns="urn:oasis:names:specification:ubl:schema:xsd:Catalogue-2">
+    <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:catalogue:3</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:catalogue_wo_response:3</cbc:ProfileID>
+    <cbc:ID>Cat-12345</cbc:ID>
+    <cbc:IssueDate>2025-09-18</cbc:IssueDate>
+    <cac:ValidityPeriod>
+        <cbc:StartDate>2025-09-18</cbc:StartDate>
+    </cac:ValidityPeriod>
+    <cac:ProviderParty>
+        <cbc:EndpointID schemeID="0007">5567195697</cbc:EndpointID>
+        <cac:PartyLegalEntity>
+            <cbc:RegistrationName>BASTAonline AB</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
+    </cac:ProviderParty>
+    <cac:ReceiverParty>
+        <cbc:EndpointID schemeID="0007">1234235234</cbc:EndpointID>
+        <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Migreringsföretaget</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
+    </cac:ReceiverParty>
+<!-- Beam ULE101 with extended properties -->
+    <cac:CatalogueLine>
+        <cbc:ID>1</cbc:ID>
+        <cac:Item>
+            <cbc:Name>Precast concrete beam ULE101</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>ULE101</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>Sellers article id</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID schemeID="0160">9501101530003</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:AdditionalItemProperty>
+                <cbc:ID schemeID="NordicDigitalConstruction:DataDictionary" schemeVersionID="1.0"
+                    schemeDataURI="https://http://ndcdictionary.org/height">
+                    9ACD8261-4893-46E9-B90D-801D35F80E36
+                </cbc:ID>
+                <cbc:Name>height</cbc:Name>
+                <cbc:NameCode listID="NCCIFCPropertySet">height</cbc:NameCode>
+                <cbc:Value>2500 mm</cbc:Value>
+                <cbc:ValueQuantity unitCode="MMT">2500</cbc:ValueQuantity>
+                <cbc:ValueQualifier>NCC_Geometric</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>length</cbc:Name>
+                <cbc:NameCode listID="NCCIFCPropertySet">length</cbc:NameCode>
+                <cbc:Value>3000 mm</cbc:Value>
+                <cbc:ValueQuantity unitCode="MMT">3000</cbc:ValueQuantity>
+                <cbc:ValueQualifier>NCC_Geometric</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>weight</cbc:Name>
+                <cbc:NameCode listID="NCCIFCPropertySet">weight</cbc:NameCode>
+                <cbc:Value>120 kg</cbc:Value>
+                <cbc:ValueQuantity unitCode="KGM">120</cbc:ValueQuantity>
+                <cbc:ValueQualifier>NCC_Geometric</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>loadbearing</cbc:Name>
+                <cbc:NameCode listID="NCCIFCPropertySet">loadbearing</cbc:NameCode>
+                <cbc:Value>true</cbc:Value>
+                <cbc:ValueQualifier>NCC_Information</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>resistance to fire</cbc:Name>
+                <cbc:NameCode listID="NCCIFCPropertySet">resistance_to_fire</cbc:NameCode>
+                <cbc:Value>EI30</cbc:Value>
+                <cbc:ValueQualifier>NCC_Information</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+        </cac:Item>
+    </cac:CatalogueLine>
+
+    <!-- New catalogue line for Wall AD101 -->
+    <cac:CatalogueLine>
+        <cbc:ID>2</cbc:ID>
+        <cac:Item>
+            <cbc:Name>Precast exterior wall AD101</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>AD101</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>Sellers article id</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID schemeID="0160">9501101530003</cbc:ID>
+            </cac:StandardItemIdentification>
+            <!-- Multiple AdditionalItemProperties for AD101 -->
+            <cac:AdditionalItemProperty>
+                <cbc:Name>height</cbc:Name>
+                <cbc:NameCode listID="NCCIFCPropertySet">height</cbc:NameCode>
+                <cbc:Value>2500 mm</cbc:Value>
+                <cbc:ValueQuantity unitCode="MMT">2500</cbc:ValueQuantity>
+                <cbc:ValueQualifier>NCC_Geometric</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>length</cbc:Name>
+                <cbc:NameCode listID="NCCIFCPropertySet">length</cbc:NameCode>
+                <cbc:Value>3000 mm</cbc:Value>
+                <cbc:ValueQuantity unitCode="MMT">3000</cbc:ValueQuantity>
+                <cbc:ValueQualifier>NCC_Geometric</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>thickness</cbc:Name>
+                <cbc:NameCode listID="NCCIFCPropertySet">thickness</cbc:NameCode>
+                <cbc:Value>25 mm</cbc:Value>
+                <cbc:ValueQuantity unitCode="MMT">25</cbc:ValueQuantity>
+                <cbc:ValueQualifier>NCC_Geometric</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>net area</cbc:Name>
+                <cbc:NameCode listID="NCCIFCPropertySet">net_area</cbc:NameCode>
+                <cbc:Value>175 m2</cbc:Value>
+                <cbc:ValueQuantity unitCode="MTK">175</cbc:ValueQuantity>
+                <cbc:ValueQualifier>NCC_Geometric</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>loadbearing</cbc:Name>
+                <cbc:NameCode listID="NCCIFCPropertySet">loadbearing</cbc:NameCode>
+                <cbc:Value>true</cbc:Value>
+                <cbc:ValueQualifier>NCC_Information</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>resistance to fire</cbc:Name>
+                <cbc:NameCode listID="NCCIFCPropertySet">resistance_to_fire</cbc:NameCode>
+                <cbc:Value>EI30</cbc:Value>
+                <cbc:ValueQualifier>NCC_Information</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>thermal transmittance</cbc:Name>
+                <cbc:NameCode listID="NCCIFCPropertySet">thermal_transmittance</cbc:NameCode>
+                <cbc:Value>1 W/m2K</cbc:Value>
+                <cbc:ValueQuantity unitCode="WMT">1</cbc:ValueQuantity>
+                <cbc:ValueQualifier>NCC_Information</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>is external</cbc:Name>
+                <cbc:NameCode listID="NCCIFCPropertySet">is_external</cbc:NameCode>
+                <cbc:Value>true</cbc:Value>
+                <cbc:ValueQualifier>NCC_Information</cbc:ValueQualifier>
+            </cac:AdditionalItemProperty>
+        </cac:Item>
+    </cac:CatalogueLine>
+</Catalogue>
