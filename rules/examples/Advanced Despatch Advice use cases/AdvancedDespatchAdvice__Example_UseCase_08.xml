@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 					Content:
-					This file contains an Example for Use-case no 8 in Lgistics ADvanced Despatch Advice.
+					This file contains an Example for Use-case no 8 Waste treatment service, no transport. Advanced Despatch Advice.
+					Change log:
+					2025-11-03: rev 1.1 Added HazardousItem information and  EWC-code.
 					
 -->
 <DespatchAdvice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -188,7 +190,7 @@
 
 		<cac:DocumentReference>
 			<cbc:ID>MT8723456</cbc:ID>
-			<cbc:DocumentTypeCode>14</cbc:DocumentTypeCode>
+			<cbc:DocumentTypeCode>14</cbc:DocumentTypeCode><!-- Weight statement number -->
 		</cac:DocumentReference>
 		
 		<cac:Item>
@@ -200,13 +202,23 @@
 			<cac:CommodityClassification>
 				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="221014" name="AI">0301010</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
+			<!-- Added in rev 1.1 -->
+			<cac:CommodityClassification>
+				<cbc:ItemClassificationCode listID="TSR" listVersionID="2021" name="EWC-code">170201*</cbc:ItemClassificationCode><!-- EWC-code with witout white spaces -->
+			</cac:CommodityClassification>
+
+			<cac:HazardousItem>
+				<cbc:ID>UN3175</cbc:ID> <!-- United Nations Dangerous Goods Code (example) -->
+				<cbc:TechnicalName>Solids containing flammable liquid, n.o.s.</cbc:TechnicalName>
+				<cbc:HazardClassID>4.1</cbc:HazardClassID>
+			</cac:HazardousItem>
 
 			<cac:AdditionalItemProperty>
-				<cbc:Name>NA</cbc:Name>
-				<cbc:NameCode listID="IPNC">Price</cbc:NameCode>
-				<cbc:Value>330.25</cbc:Value>
-				<cbc:ValueQualifier>CON</cbc:ValueQualifier>
+				<cbc:Name>Waste Declaration Number</cbc:Name>
+				<cbc:NameCode >WasteDeclarationNumber</cbc:NameCode>
+				<cbc:Value>1234567890</cbc:Value>
 			</cac:AdditionalItemProperty>
+			<!-- End Added -->
 
 			<cac:AdditionalItemProperty>
 				<cbc:Name>GWP GHG A1-3 vA1 EPD value</cbc:Name>
@@ -237,7 +249,7 @@
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Treatment Code</cbc:Name>
 				<cbc:NameCode listID="IPNC">TreatmentCode</cbc:NameCode>
-				<cbc:Value>1234567890</cbc:Value>
+				<cbc:Value>D11</cbc:Value>
 			</cac:AdditionalItemProperty>
 			
 		</cac:Item>
