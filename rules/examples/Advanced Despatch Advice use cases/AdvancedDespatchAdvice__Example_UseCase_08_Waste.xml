@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 					Content:
-					This file contains an Example for Use-case no 8 in Lgistics ADvanced Despatch Advice.
+					This file contains an Example for Use-case no 8 Waste treatment service, no transport. Advanced
+Despatch Advice.
+					Change log:
+					2025-11-03: rev 1.1 Added HazardousItem information and  EWC-code.
 					
 -->
 <DespatchAdvice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
 	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-	
+
 	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1</cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</cbc:ProfileID>
-	
+
 	<cbc:ID>43413589</cbc:ID>
 	<cbc:IssueDate>2020-12-21</cbc:IssueDate>
 	<cbc:IssueTime>13:14:34</cbc:IssueTime>
 	<cbc:DespatchAdviceTypeCode>2</cbc:DespatchAdviceTypeCode>
-	
+
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>P-12345</cbc:ID>
 		<cbc:DocumentType>ProjectReference</cbc:DocumentType>
@@ -29,7 +32,7 @@
 		<cbc:ID>SEK</cbc:ID>
 		<cbc:DocumentType>CurrencyCode</cbc:DocumentType>
 	</cac:AdditionalDocumentReference>
-	
+
 	<cac:DespatchSupplierParty>
 		<cac:Party>
 			<cbc:EndpointID schemeID="0007">5560125220</cbc:EndpointID>
@@ -54,7 +57,7 @@
 			</cac:Contact>
 		</cac:Party>
 	</cac:DespatchSupplierParty>
-	
+
 	<cac:DeliveryCustomerParty>
 		<cac:Party>
 			<cbc:EndpointID schemeID="0007">5560339086</cbc:EndpointID>
@@ -79,7 +82,7 @@
 			</cac:Contact>
 		</cac:Party>
 	</cac:DeliveryCustomerParty>
-	
+
 	<cac:BuyerCustomerParty>
 		<cac:Party>
 			<cac:PartyIdentification>
@@ -98,7 +101,7 @@
 			</cac:PartyLegalEntity>
 		</cac:Party>
 	</cac:BuyerCustomerParty>
-	
+
 	<cac:SellerSupplierParty>
 		<cac:Party>
 			<cac:PartyIdentification>
@@ -117,7 +120,7 @@
 			</cac:PartyLegalEntity>
 		</cac:Party>
 	</cac:SellerSupplierParty>
-	
+
 	<cac:Shipment>
 		<cbc:ID schemeID="GSIN">73500538500000019</cbc:ID>
 
@@ -129,12 +132,12 @@
 				</cac:RoadTransport>
 			</cac:TransportMeans>
 		</cac:ShipmentStage>
-		
+
 		<cac:Delivery>
-			
+
 			<cbc:ActualDeliveryDate>2020-12-21</cbc:ActualDeliveryDate>
 			<cbc:ActualDeliveryTime>07:15:00</cbc:ActualDeliveryTime>
-			
+
 			<cac:DeliveryLocation>
 				<cbc:ID schemeID="0088">5790000435951</cbc:ID>
 				<cbc:Name>Recycling location 123</cbc:Name>
@@ -152,11 +155,11 @@
 					</cac:LocationCoordinate>
 				</cac:Address>
 			</cac:DeliveryLocation>
-			
+
 			<cac:Despatch>
 				<cbc:ActualDespatchDate>2020-12-21</cbc:ActualDespatchDate>
 				<cbc:ActualDespatchTime>02:00:00</cbc:ActualDespatchTime>
-				
+
 				<cac:DespatchAddress>
 					<cbc:StreetName>Construction road 1</cbc:StreetName>
 					<cbc:CityName>Stockholm</cbc:CityName>
@@ -170,11 +173,11 @@
 						<cbc:LongitudeDegreesMeasure unitCode="DD">18.063330898492403</cbc:LongitudeDegreesMeasure>
 					</cac:LocationCoordinate>
 				</cac:DespatchAddress>
-				
+
 			</cac:Despatch>
 		</cac:Delivery>
 	</cac:Shipment>
-	
+
 	<cac:DespatchLine>
 		<cbc:ID>1</cbc:ID>
 		<cbc:DeliveredQuantity unitCode="TNE">2.345</cbc:DeliveredQuantity>
@@ -188,9 +191,9 @@
 
 		<cac:DocumentReference>
 			<cbc:ID>MT8723456</cbc:ID>
-			<cbc:DocumentTypeCode>14</cbc:DocumentTypeCode>
+			<cbc:DocumentTypeCode>14</cbc:DocumentTypeCode><!-- Weight statement number -->
 		</cac:DocumentReference>
-		
+
 		<cac:Item>
 			<cbc:Name>Wood waste, untreated, unpainted</cbc:Name>
 			<cac:SellersItemIdentification>
@@ -200,13 +203,24 @@
 			<cac:CommodityClassification>
 				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="221014" name="AI">0301010</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
+			<!-- Added in rev 1.1 -->
+			<cac:CommodityClassification>
+				<cbc:ItemClassificationCode listID="TSR" listVersionID="2021" name="EWC-code">
+					170201*</cbc:ItemClassificationCode><!-- EWC-code with witout white spaces -->
+			</cac:CommodityClassification>
+
+			<cac:HazardousItem>
+				<cbc:ID>UN3175</cbc:ID> <!-- United Nations Dangerous Goods Code (example) -->
+				<cbc:TechnicalName>Solids containing flammable liquid, n.o.s.</cbc:TechnicalName>
+				<cbc:HazardClassID>4.1</cbc:HazardClassID>
+			</cac:HazardousItem>
 
 			<cac:AdditionalItemProperty>
-				<cbc:Name>NA</cbc:Name>
-				<cbc:NameCode listID="IPNC">Price</cbc:NameCode>
-				<cbc:Value>330.25</cbc:Value>
-				<cbc:ValueQualifier>CON</cbc:ValueQualifier>
+				<cbc:Name>Waste Declaration Number</cbc:Name>
+				<cbc:NameCode>WasteDeclarationNumber</cbc:NameCode>
+				<cbc:Value>1234567890</cbc:Value>
 			</cac:AdditionalItemProperty>
+			<!-- End Added -->
 
 			<cac:AdditionalItemProperty>
 				<cbc:Name>GWP GHG A1-3 vA1 EPD value</cbc:Name>
@@ -237,9 +251,9 @@
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Treatment Code</cbc:Name>
 				<cbc:NameCode listID="IPNC">TreatmentCode</cbc:NameCode>
-				<cbc:Value>1234567890</cbc:Value>
+				<cbc:Value>D11</cbc:Value>
 			</cac:AdditionalItemProperty>
-			
+
 		</cac:Item>
 	</cac:DespatchLine>
 </DespatchAdvice>
