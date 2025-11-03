@@ -4,7 +4,9 @@
 					This file contains an Example for Use-case no 8 Waste treatment service, no transport. Advanced
 Despatch Advice.
 					Change log:
-					2025-11-03: rev 1.1 Added HazardousItem information and  EWC-code.
+					2025-11-03: rev 1.1 Added Declaration number and  EWC-code. Removed CO2 data since not relevant for
+waste at this point.
+					2022-10-14: Initial version created
 					
 -->
 <DespatchAdvice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -211,7 +213,7 @@ Despatch Advice.
 
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Waste Declaration Number</cbc:Name>
-				<cbc:NameCode>WasteDeclarationNumber</cbc:NameCode>
+				<cbc:NameCode listID="SE:Waste">WasteDeclarationNumber</cbc:NameCode>
 				<cbc:Value>1234567890</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<!-- End Added -->
