@@ -87,4 +87,5 @@ sync_repo $PRACCREPO $PRACCBRANCH "guides/transactions/CatalogueRequest" "guides
 sync_repo $PRACCREPO $PRACCBRANCH "guides/profiles/shared" "guides/pracc/profiles/shared"
 sync_repo $PRACCREPO $PRACCBRANCH "guides/transactions/shared" "guides/pracc/transactions/shared"
 sync_repo $PRACCREPO $PRACCBRANCH "guides/styles" "guides/pracc/styles"
+
 sync_repo $PRACCREPO $PRACCBRANCH "guides/shared" "guides/pracc/shared"
