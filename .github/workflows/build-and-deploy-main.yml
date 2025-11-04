@@ -12,6 +12,8 @@ jobs:
       # Step 1: Checkout source code (to access sync_sch.sh script)
       - name: Checkout source code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       # Step 2: Run the Sync Script
       - name: Sync from Peppol repos

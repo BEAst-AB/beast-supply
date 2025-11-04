@@ -80,12 +80,11 @@ sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/73-transportationstat
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/shared" "guides/shared"
 
 # PRACC specific
-sync_repo $PRACCREPO $PRACCBRANCH "guides/profiles/p035" "guides/pracc/profiles/p035"
-sync_repo $PRACCREPO $PRACCBRANCH "guides/transactions/Catalogue" "guides/pracc/transactions/Catalogue"
-sync_repo $PRACCREPO $PRACCBRANCH "guides/shared" "guides/pracc/shared"
-sync_repo $PRACCREPO $PRACCBRANCH "guides/transactions/CatalogueRequest" "guides/pracc/transactions/CatalogueRequest"
-sync_repo $PRACCREPO $PRACCBRANCH "guides/profiles/shared" "guides/pracc/profiles/shared"
-sync_repo $PRACCREPO $PRACCBRANCH "guides/transactions/shared" "guides/pracc/transactions/shared"
-sync_repo $PRACCREPO $PRACCBRANCH "guides/styles" "guides/pracc/styles"
-
-sync_repo $PRACCREPO $PRACCBRANCH "guides/shared" "guides/pracc/shared"
+sync_repo $PRACCREPO $PRACCBRANCH "guides/profiles/p035" "pracc/guides/profiles/p035"
+sync_repo $PRACCREPO $PRACCBRANCH "guides/transactions/Catalogue" "pracc/guides/transactions/Catalogue"
+sync_repo $PRACCREPO $PRACCBRANCH "guides/shared" "pracc/guides/shared"
+sync_repo $PRACCREPO $PRACCBRANCH "guides/transactions/CatalogueRequest" "pracc/guides/transactions/CatalogueRequest"
+sync_repo $PRACCREPO $PRACCBRANCH "guides/profiles/shared" "pracc/guides/profiles/shared"
+sync_repo $PRACCREPO $PRACCBRANCH "guides/transactions/shared" "pracc/guides/transactions/shared"
+sync_repo $PRACCREPO $PRACCBRANCH "guides/styles" "pracc/guides/styles"
+sync_repo $PRACCREPO $PRACCBRANCH "guides/shared" "pracc/guides/shared"
