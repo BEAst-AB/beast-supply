@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BILLINGREPO="https://github.com/OpenPEPPOL/peppol-bis-invoice-3.git"
-BILLINGBRANCH="2025-q2-dev "
+BILLINGBRANCH="2025-q2-dev"
 LOGISTICSREPO="https://github.com/OpenPEPPOL/Logistics-bis.git"
 LOGISTICSBRANCH="Release_1_2_Review"
 POACCREPO="https://github.com/OpenPEPPOL/poacc-upgrade-3.git"
