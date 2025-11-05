@@ -1,11 +1,11 @@
 #!/bin/bash
 
 BILLINGREPO="https://github.com/OpenPEPPOL/peppol-bis-invoice-3.git"
-BILLINGBRANCH="2024-q4-release"
+BILLINGBRANCH="2025-q2-dev "
 LOGISTICSREPO="https://github.com/OpenPEPPOL/Logistics-bis.git"
-LOGISTICSBRANCH="2024-Q4"
+LOGISTICSBRANCH="Release_1_2_Review"
 POACCREPO="https://github.com/OpenPEPPOL/poacc-upgrade-3.git"
-POACCBRANCH="2024-q4-release"
+POACCBRANCH="2025-Q2"
 
 
 
