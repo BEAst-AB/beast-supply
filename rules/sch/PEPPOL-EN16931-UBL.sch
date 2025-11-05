@@ -342,7 +342,7 @@ Last update: 2024 November release 3.0.18.
     </rule>
     <!-- Currency -->
     <rule
-      context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cac:TaxTotal[cac:TaxSubtotal]/cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount">
+      context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cac:TaxTotal[cac:TaxSubtotal]/cbc:TaxAmount | cac:TaxSubtotal/cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount">
       <assert id="PEPPOL-EN16931-R051" test="@currencyID = $documentCurrencyCode" flag="fatal">All currencyID attributes must have the same value as the invoice currency code (BT-5), except for the invoice total VAT amount in accounting currency (BT-111).</assert>
     </rule>
     <!-- Line level - invoice period -->
@@ -445,7 +445,7 @@ Last update: 2024 November release 3.0.18.
     <rule
       context="cbc:EndpointID[@schemeID = '0184'] | cac:PartyIdentification/cbc:ID[@schemeID = '0184'] | cbc:CompanyID[@schemeID = '0184']">
       <assert id="PEPPOL-COMMON-R042"
-        test="(string-length(text()) = 10) and (substring(text(), 1, 2) = 'DK') and (string-length(translate(substring(text(), 3, 8), '1234567890', '')) = 0)"
+        test="(string-length(text()) = 8) and (string-length(translate(substring(text(), 1, 8), '1234567890', '')) = 0)"
         flag="fatal">Danish organization number (CVR) MUST be stated in the correct format.</assert>
     </rule>
     <rule
@@ -550,10 +550,10 @@ Last update: 2024 November release 3.0.18.
 						and not(((substring(cbc:PaymentID, 1, 3) = '01#')
 								  or (substring(cbc:PaymentID, 1, 3) = '04#')
 								  or (substring(cbc:PaymentID, 1, 3) = '15#'))
-								and (string-length(cac:PayeeFinancialAccount/cbc:ID/text()) = 7)
+								and matches(cac:PayeeFinancialAccount/cbc:ID, '^[0-9]{7,8}$')
 								)
 						)"
-        flag="fatal">For Danish Suppliers PaymentID is mandatory and MUST start with 01#, 04# or 15# (kortartkode), and PayeeFinancialAccount/ID (Giro kontonummer) is mandatory and must be 7 characters long, when payment means equals 50 (Giro)</assert>
+        flag="fatal">For Danish Suppliers PaymentID is mandatory and MUST start with 01#, 04# or 15# (kortartkode), and PayeeFinancialAccount/ID (Giro kontonummer) is mandatory and must be 7 or 8 numerical characters long, when payment means equals 50 (Giro)</assert>
       <assert id="DK-R-009"
         test="not((cbc:PaymentMeansCode = '50')
 						and ((substring(cbc:PaymentID, 1, 3) = '04#')
@@ -569,7 +569,7 @@ Last update: 2024 November release 3.0.18.
 								and (string-length(cac:PayeeFinancialAccount/cbc:ID/text()) = 8)
 								)
 						)"
-        flag="fatal">For Danish Suppliers the PaymentID is mandatory and MUST start with 71#, 73# or 75# (kortartkode) and PayeeFinancialAccount/ID (Kreditornummer) is mandatory and must be exactly 8 characters long, when Payment means equals 93 (FIK)</assert>
+        flag="fatal">For Danish Suppliers the PaymentID is mandatory and MUST start with 71#, 73# or 75# (kortartkode) and CreditAccount/AccountID (Kreditornummer) is mandatory and MUST be exactly 8 characters long, when Payment means equals 93 (FIK)</assert>
       <assert id="DK-R-011"
         test="not((cbc:PaymentMeansCode = '93')
 						and ((substring(cbc:PaymentID, 1, 3) = '71#')
@@ -586,19 +586,25 @@ Last update: 2024 November release 3.0.18.
         test="not((cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listID = 'TST')
 						and not((cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '19.05.01')
 							   or (cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '19.0501')
+                               or (cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '26.08.01')
+                               or (cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '26.0801')
 							   )
 						)"
-        flag="warning">If ItemClassification is provided from Danish suppliers, UNSPSC version 19.0501 should be used.</assert>
+        flag="warning">If ItemClassification is provided from Danish suppliers, UNSPSC version 19.05.01 or 26.08.01 should be used.</assert>
     </rule>
     <!-- Mix level -->
     <rule context="cac:AllowanceCharge[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']">
       <assert id="DK-R-004"
         test="not((cbc:AllowanceChargeReasonCode = 'ZZZ')
-						and not((string-length(normalize-space(cbc:AllowanceChargeReason/text())) = 4)
+						and not(((string-length(normalize-space(cbc:AllowanceChargeReason/text())) = 4)
 								and (number(cbc:AllowanceChargeReason) &gt;= 0)
-								and (number(cbc:AllowanceChargeReason) &lt;= 9999))
-						)"
-        flag="fatal">When specifying non-VAT Taxes for Danish customers, Danish suppliers MUST use the AllowanceChargeReasonCode="ZZZ" and the 4-digit Tax category MUST be specified in AllowanceChargeReason</assert>
+								and (number(cbc:AllowanceChargeReason) &lt;= 9999)) or
+								(((cbc:AllowanceChargeReason and contains(cbc:AllowanceChargeReason, '#')
+                                  and not(starts-with(cbc:AllowanceChargeReason, '#'))
+                                  and not(ends-with(cbc:AllowanceChargeReason, '#')))) )
+                               )
+				 )"
+        flag="fatal">When specifying non-VAT Taxes for Danish customers, Danish suppliers MUST use the AllowanceChargeReasonCode="ZZZ" and MUST be specified in AllowanceChargeReason; Either as the 4-digit Tax category or must include a #, but the # is not allowed as first and last character</assert>
     </rule>
   </pattern>
   <!-- ITALY -->
