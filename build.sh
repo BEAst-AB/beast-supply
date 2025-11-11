@@ -117,6 +117,13 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-receipt-advice.xml \
     varOverrideSample=/src/structure/source/ubl-receipt-advice.xml -ext:on --allow-external-functions:on
+    
+echo "Generating documentation: Waste Movement"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:$LOGISTICSBASEURL/ubl-waste-movement.xml \
+    -xsl:/src/tools/create-syntax.xsl \
+    -o:/src/structure/syntax/ubl-waste-movement.xml \
+    varOverrideSample=/src/structure/source/ubl-waste-movement.xml -ext:on --allow-external-functions:on
 
 # Generate mapping documents.
  echo "Generating mapping documents: Invoice"
