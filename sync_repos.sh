@@ -88,3 +88,4 @@ sync_repo $PRACCREPO $PRACCBRANCH "guides/profiles/shared" "pracc/guides/profile
 sync_repo $PRACCREPO $PRACCBRANCH "guides/transactions/shared" "pracc/guides/transactions/shared"
 sync_repo $PRACCREPO $PRACCBRANCH "guides/styles" "pracc/guides/styles"
 sync_repo $PRACCREPO $PRACCBRANCH "guides/shared" "pracc/guides/shared"
+sync_repo $PRACCREPO $PRACCBRANCH "guides/changelog" "pracc/guides/changelog"
