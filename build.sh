@@ -197,6 +197,11 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     -s:/src/structure/syntax/ubl-receipt-advice.xml \
     -xsl:/src/tools/create-mapping-document.xsl \
     -o:/src/rules/mapping/ReceiptAdvice.xml -ext:on --allow-external-functions:on
+    echo "Generating mapping documents: Waste Movement"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:/src/structure/syntax/ubl-waste-movement.xml \
+    -xsl:/src/tools/create-mapping-document.xsl \
+    -o:/src/rules/mapping/WasteMovement.xml -ext:on --allow-external-functions:on
 
 # Create examples based on documentation.
 echo "Generating example: Invoice"
@@ -269,6 +274,11 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entry
     -s:/src/structure/syntax/ubl-receipt-advice.xml \
     -xsl:/src/tools/create-example.xsl \
     -o:/src/rules/examples/ReceiptAdvice_Example_Full.xml  -ext:on --allow-external-functions:on
+    echo "Generating example: Waste Movement"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Transform \
+    -s:/src/structure/syntax/ubl-waste-movement.xml \
+    -xsl:/src/tools/create-example.xsl \
+    -o:/src/rules/examples/WasteMovement_Example_Full.xml  -ext:on --allow-external-functions:on
 
 
 echo "Generating structure"
