@@ -1,0 +1,40 @@
+= Changelog for March release 2023
+
+== Profiles P001 - P011
+
+*Release date 2023-xx-xx*
+
+=== P012 - New Profile - Qualification Rejection 1.0
+
+=== P012 - New Profile - Invitation to Tender 1.0
+
+=== P035 - Pre-Award Catalogue - Business Requirements Update
+
+Business requirement identifiers for T036 Pre-Award Catalogue have been updated from op-t68-xxx to op-t36-xxx to align with the transaction identifier T036. This change affects all business requirements in both the transaction documentation and the profile documentation. The previous version used op-t68 identifiers which were confusing and inconsistent with the transaction naming convention.
+
+Updated requirement IDs:
+* General business requirements: op-t36-001 to op-t36-004 (previously op-t68-001 to op-t68-004)
+* Metadata requirements: op-t36-011 to op-t36-022 (previously op-t68-011 to op-t68-022)
+* Catalogue line requirements: op-t36-030 to op-t36-037 (previously op-t68-030 to op-t68-037)
+* Item requirements: op-t36-040 to op-t36-061 (previously op-t68-040 to op-t68-061)
+* Item property requirements: op-t36-070 to op-t36-075 (previously op-t68-070 to op-t68-075)
+
+=== Business Rules and Syntax Mapping
+
+* T14: Change the cardinality of cac:TenderDocumentReference in T014 from 1..1 to 1..n. TenderDocumentReference SHOULD NOT be used "more than once" was changed to "more than twice". Corresponding description were added as defined by the transaction to use code 13 for REM evidence and 310 for Tender reference. Fixed value 23 (typo - should be 13) was removed to allow for both values.
+
+=== Codelist
+Updating Codelist for SubmissionMethodCode with value "Paper and/or electronic submission". Also the corresponding business term and descriptions have been updated
+
+
+=== Editorial changes
+
+* Update description on the use of Additional document reference and Encryption Certificate in T004 and syntax mapping. Providing further examples.
+
+* Update context of PEPPOL Business Rule PEPPOL-T015-R022 (Schematron Rule Context was correct but assignement in Syntax mapping was not correct)
+
+* Update context of PEPPOL Business Rule PEPPOL-T015-R022 (Schematron Rule Context was correct but assignement in Syntax mapping was not correct)
+
+* Updated XML example for NUTS codes and CPV codes (Main /Additional commodity classification) in T004 and provided reference to the corresponding codelists of the publication office
+
+
