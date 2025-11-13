@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+   <Term>WasteMovement</Term>
+   <Property key="sch:prefix">PEPPOL-T131</Property>
+   <Property key="sch:identifier">T131-basic</Property>
+   <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:WasteMovement-2</Namespace>
+   <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
+   <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+   <Document>
+      <Term>ubl:WasteMovement</Term>
+	
+	
+	
+	     <Element>
+         <Term>cbc:CustomizationID</Term>
+         <Name>Specification identification</Name>
+         <Description>Peppol: Identifies the specification of content and rules that apply to the
+				transaction.</Description>
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">tir16-002</Reference>
+         <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:trns:waste_movement_document:1</Value>
+      </Element>
+	     <Element>
+         <Term>cbc:ProfileID</Term>
+         <Name>Business process type identifier</Name>
+         <Description>Peppol: Identifies the BII profile or business process context in which the
+				transaction appears.</Description>
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">tir16-001</Reference>
+         <Value type="EXAMPLE">urn:fdc:peppol.eu:logistics:bis:waste_movement_document:1</Value>
+      </Element>
+
+	     <Element cardinality="1..1">
+         <Term>cbc:ID</Term>
+         <Name>Document Identity</Name>
+         <Description>BEAst: Waste Movement document identity</Description>
+         <DataType>Identifier</DataType>
+         <Reference type="BUSINESS_TERM">tir16-003</Reference>
+         <Value type="EXAMPLE">5658999</Value>
+      </Element>
+
+	     <Element cardinality="1..1">
+         <Term>cbc:IssueDate</Term>
+         <Name>Document Issue Date</Name>
+         <Description>BEAst: Document creation Date. </Description>
+         <DataType>Date</DataType>
+         <Reference type="BUSINESS_TERM">tir16-004</Reference>
+         <Value type="EXAMPLE">2025-09-10</Value>
+      </Element>
+	
+	     <Element cardinality="0..1">
+         <Term>cbc:IssueTime</Term>
+         <Name>Document Issue Time</Name>
+         <Description>BEAst: Document creation Time. </Description>
+         <DataType>Time</DataType>
+         <Reference type="BUSINESS_TERM">tir16-005</Reference>
+         <Value type="EXAMPLE">12:00:00</Value>
+      </Element>
+	
+	     <Element cardinality="0..1">
+         <Term>cbc:WasteMovementTypeCode</Term>
+         <Name>Waste Movement Type Code</Name>
+         <Description>BEAst: Waste Movement Type Code. </Description>
+         <Value type="EXAMPLE">S3</Value>
+      </Element>
+
+	     <Element cardinality="0..1">
+         <Term>cbc:SequenceID</Term>
+         <Name>Sequence ID</Name>
+         <Description>BEAst: Sequence no of this shipment referring to the same Waste Notification. </Description>
+         <Value type="EXAMPLE">3</Value>
+      </Element>
+	
+	     <Element cardinality="0..1">
+         <Term>cbc:TotalMovementNumeric</Term>
+         <Name>Total Movement Numeric</Name>
+         <Description>BEAst: Total no of shipments referring to the same Waste Notification. </Description>
+         <Value type="EXAMPLE">4</Value>
+      </Element>
+
+	     <Element cardinality="0..n">
+         <Term>cac:Signature</Term>
+         <Name>Signature </Name>
+         <Description>BEAst: To attach signatures to this document. </Description>
+         <Element cardinality="1..1">
+            <Term>cbc:ID</Term>
+            <Name>Signature ID. </Name>
+            <Description>BEAst: Used to specify the role of the signing person. Can be "Sender", "Carrier", "Receiver". </Description>
+            <Value type="EXAMPLE">Sender</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:Note</Term>
+            <Name>Note. </Name>
+            <Description>BEAst: To include any textual information. </Description>
+            <Value type="EXAMPLE">Text</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:ValidationDate</Term>
+            <Name>Validation date. </Name>
+            <Description>BEAst: Validation date. </Description>
+            <Value type="EXAMPLE">2025-09-10</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:ValidationTime</Term>
+            <Name>Validation time. </Name>
+            <Description>BEAst: Validation time. </Description>
+            <Value type="EXAMPLE">12:00:00</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cbc:SignatureMethod</Term>
+            <Name>Signature Method. </Name>
+            <Description>BEAst: Text to describe the signature method. </Description>
+            <Value type="EXAMPLE">Manual</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:SignatoryParty</Term>
+            <Name>Signatory Party </Name>
+            <Description>BEAst: Describes the party that is signing. </Description>
+            <Element cardinality="0..1">
+               <Term>cac:PartyIdentification</Term>
+               <Name>Party identification</Name>
+               <Description>BEAst: Identifies the party that is signing. </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:ID</Term>
+                  <Name>Party ID </Name>
+                  <Description>BEAst: Identifies the party that is signing. </Description>
+                  <Value type="EXAMPLE">7300010000001</Value>
+                  <Attribute>
+                     <Term>schemeID</Term>
+                     <Value type="EXAMPLE">0088</Value>
+                  </Attribute>
+               </Element>
+            </Element>
+            <Element cardinality="1..1">
+               <Term>cac:PartyName</Term>
+               <Name>Party name</Name>
+               <Description>BEAst: The name of the party that is signing. </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Party Name </Name>
+                  <Description>BEAst: The name of the party that is signing. </Description>
+                  <Value type="EXAMPLE">Name of signing party.</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:Contact</Term>
+               <Name>Signature Person </Name>
+               <Description>BEAst: Defines the person that is signing.  </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:ID</Term>
+                  <Name>ID of signature person, ID06 card number or similar </Name>
+                  <Description>BEAst: The identity of the signing person.  </Description>
+                  <Value type="EXAMPLE">12345</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Name of the signing person. </Name>
+                  <Description>BEAst: Name of the signing person. </Description>
+                  <Value type="EXAMPLE">Anders Johansson</Value>
+               </Element>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:DigitalSignatureAttachment</Term>
+            <Name>Digital Signature Attachment </Name>
+            <Description>BEAst: To include the actual signature. </Description>
+            <Element>
+               <Term>cbc:EmbeddedDocumentBinaryObject</Term>
+               <Name>Embedded Binary object. </Name>
+               <Description>BEAst: The referenced document (signature) can here be inserted as a binary object. filename is the name 
+				of the attachment when stored as a document. </Description>
+               <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
+               <Attribute>
+                  <Term>mimeCode</Term>
+                  <Reference type="CODE_LIST">MimeCode</Reference>
+                  <Value type="EXAMPLE">application/pdf</Value>
+               </Attribute>
+               <Attribute>
+                  <Term>filename</Term>
+                  <Value type="EXAMPLE">Signature_112233.pdf</Value>
+               </Attribute>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:ExternalReference</Term>
+               <Name>External reference </Name>
+               <Description>BEAst: Link to the signature that is available externally. </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:URI</Term>
+                  <Name>URI </Name>
+                  <Description>BEAst: Link to the signature that is available externally. </Description>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+	
+	     <Element cardinality="1..1">
+         <Term>cac:SenderParty</Term>
+         <Name>The sender of the Movement Document</Name>
+         <Description>BEAst: This party defines the company that signs and sends the Waste Movement Document. </Description>
+         <Element cardinality="1..1">
+            <Term>cac:Party</Term>
+            <Name>Party</Name>
+            <Description>BEAst: This party defines the company that signs and sends the Waste Movement Document. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:EndpointID</Term>
+               <Name>Endpoint ID</Name>
+               <Description>BEAst: The identity used to send the Waste Movement Document electronically.. </Description>
+               <Value type="EXAMPLE">7300010000001</Value>
+               <Attribute usage="Mandatory">
+                  <Term>schemeID</Term>
+                  <Reference type="CODE_LIST">eas</Reference>
+                  <Value type="EXAMPLE">0088</Value>
+               </Attribute>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PartyIdentification</Term>
+               <Name>Party Identification</Name>
+               <Description>BEAst: This identity defines the company that signs and sends the Waste Movement Document. </Description>
+               <Element cardinality="1..1 1..1">
+                  <Term>cbc:ID</Term>
+                  <Name>Identity</Name>
+                  <Description>BEAst: This identity identifies the company that signs and sends the Waste Movement Document. </Description>
+                  <Value type="EXAMPLE">7300010000001</Value>
+                  <Attribute>
+                     <Term>schemeID</Term>
+                     <Reference type="CODE_LIST">ICD</Reference>
+                     <Value type="EXAMPLE">0088</Value>
+                  </Attribute>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PartyName</Term>
+               <Name>Party Name</Name>
+               <Description>BEAst: Party name. </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Party Name</Name>
+                  <Description>BEAst: The name of this party. </Description>
+                  <Value type="EXAMPLE">Party name</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PostalAddress</Term>
+               <Name>Postal address</Name>
+               <Description>BEAst: Postal address of the sender party </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:StreetName</Term>
+                  <Name>Address line 1. </Name>
+                  <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+                  <Value type="EXAMPLE">Busy Street</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:AdditionalStreetName</Term>
+                  <Name>Address line 2. </Name>
+                  <Description>BEAst: An additional address line in a postal address that can be used to give further details 
+					supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+                  <Value type="EXAMPLE">Department ABC</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CityName</Term>
+                  <Name>City. </Name>
+                  <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather 
+					than as a code. </Description>
+                  <Value type="EXAMPLE">Farthing</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:PostalZone</Term>
+                  <Name>Post code. </Name>
+                  <Description>BEAst: The identifier for an addressable group of properties according to the relevant national 
+					postal service, such as a ZIP code or Post Code. </Description>
+                  <Value type="EXAMPLE">AA99 1BB</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CountrySubentity</Term>
+                  <Name>Country subdivision. </Name>
+                  <Description>BEAst: TFor specifying a region, county, state, province etc. within a country by using text. </Description>
+                  <Value type="EXAMPLE">Heremouthshire</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:AddressLine</Term>
+                  <Name>Address line</Name>
+                  <Description>BEAst: One more address line that can be used to provide the full address. </Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:Line</Term>
+                     <Name>Address line 3. </Name>
+                     <Description>BEAst: An additional address line in an address that can be used to give further details 
+						supplementing the main line. </Description>
+                     <Value type="EXAMPLE">The Roundabout</Value>
+                  </Element>
+               </Element>
+               <Element cardinality="1..1">
+                  <Term>cac:Country</Term>
+                  <Name>Country</Name>
+                  <Description>BEAst: Country code. </Description>
+                  <Element cardinality="1..1">
+                     <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code</Name>
+                     <Description>BEAst: A code that identifies the country.The lists of valid countries are registered with the 
+						ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". 
+						Codes must be according to the alpha-2 representation. </Description>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
+                     <Value type="EXAMPLE">GB</Value>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:Contact</Term>
+               <Name>Contact</Name>
+               <Description>BEAst: The primary contact for this party. </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Name</Name>
+                  <Description>BEAst: The name of the contact person. </Description>
+                  <Value type="EXAMPLE">Mrs Bouquet</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:Telephone</Term>
+                  <Name>Telephone number</Name>
+                  <Description>BEAst: A phone number for the contact person. If the person has a direct number, this is that number. </Description>
+                  <Value type="EXAMPLE">0158 1233714</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:ElectronicMail</Term>
+                  <Name>Contact email address. </Name>
+                  <Description>BEAst: The e-mail address for the contact person. If the person has a direct e-mail this is that email. </Description>
+                  <Value type="EXAMPLE">bouquet@fpconsortial.co.uk</Value>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+	
+	     <Element cardinality="1..1">
+         <Term>cac:ReceiverParty</Term>
+         <Name>Receiver information </Name>
+         <Description>BEAst: This party defines the company that receives the Waste Movement document. </Description>
+         <Element cardinality="1..1">
+            <Term>cac:Party</Term>
+            <Name>Party</Name>
+            <Description>BEAst: This party defines the company that receives the Waste Movement Document. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:EndpointID</Term>
+               <Name>Receiver party electronic address. </Name>
+               <Description>BEAst: Identifies the consignee party's electronic address </Description>
+               <Value type="EXAMPLE">5798000000124</Value>
+               <Attribute usage="Mandatory">
+                  <Term>schemeID</Term>
+                  <Reference type="CODE_LIST">eas</Reference>
+                  <Value type="EXAMPLE">0088</Value>
+               </Attribute>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PartyIdentification</Term>
+               <Name>Party Identification </Name>
+               <Description>BEAst: This party identifies the company that receives the Waste Movement Document. </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:ID</Term>
+                  <Name>Receiver party identifier. </Name>
+                  <Description>BEAst: The receiving party identifier. </Description>
+                  <Value type="EXAMPLE">5790000435951</Value>
+                  <Attribute usage="Mandatory">
+                     <Term>schemeID</Term>
+                     <Reference type="CODE_LIST">ICD</Reference>
+                     <Value type="EXAMPLE">0088</Value>
+                  </Attribute>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PartyName</Term>
+               <Name>Party Name</Name>
+               <Description>BEAst: Party name. </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Party Name</Name>
+                  <Description>BEAst: The name of this party. </Description>
+                  <Value type="EXAMPLE">Party name</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PostalAddress</Term>
+               <Name>Postal address</Name>
+               <Description>BEAst: Postal address of the receiver </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:StreetName</Term>
+                  <Name>Address line 1 </Name>
+                  <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+                  <Value type="EXAMPLE">Avon Way</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:AdditionalStreetName</Term>
+                  <Name>Address line 2 </Name>
+                  <Description>BEAst: An additional address line in a postal address that can be used to give further details 
+					supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+                  <Value type="EXAMPLE">Big projects</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CityName</Term>
+                  <Name>City </Name>
+                  <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather 
+					than as a code. </Description>
+                  <Value type="EXAMPLE">Bridgtow</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:PostalZone</Term>
+                  <Name>Post code </Name>
+                  <Description>BEAst: The identifier for an addressable group of properties according to the relevant national postal 
+					service, such as a ZIP code or Post Code. </Description>
+                  <Value type="EXAMPLE">ZZ99 1ZZ</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CountrySubentity</Term>
+                  <Name>Country subdivision </Name>
+                  <Description>BEAst: For specifying a region, county, state, province etc. within a country by using text. </Description>
+                  <Value type="EXAMPLE">Avon</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:AddressLine</Term>
+                  <Name>Address line </Name>
+                  <Description>BEAst: One more address line that can be used to provide the full address. </Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:Line</Term>
+                     <Name>Address line 3 </Name>
+                     <Description>BEAst: Used for any other additional address information. </Description>
+                     <Value type="EXAMPLE">3rd Floor, Room 5</Value>
+                  </Element>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:Country</Term>
+                  <Name>Country </Name>
+                  <Description>BEAst: The country where this part is. </Description>
+                  <Element cardinality="1..1">
+                     <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code </Name>
+                     <Description>BEAst: A code that identifies the country.The lists of valid countries are registered with the 
+						ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". 
+						Codes must be according to the alpha-2 representation. </Description>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
+                     <Value type="EXAMPLE">GB</Value>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:Contact</Term>
+               <Name>Delivery Contact information </Name>
+               <Description>BEAst: Contact information </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Contact person name </Name>
+                  <Description>BEAst: The name of the contact person. </Description>
+                  <Value type="EXAMPLE">Mr Fred Churchill</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:Telephone</Term>
+                  <Name>Contact telephone number </Name>
+                  <Description>BEAst: A phone number for the contact person. If the person has a direct number, this is that number. </Description>
+                  <Value type="EXAMPLE">0127 2653214</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:ElectronicMail</Term>
+                  <Name>Contact email address </Name>
+                  <Description>BEAst: The e-mail address for the contact person. If the person has a direct e-mail this is that email. </Description>
+                  <Value type="EXAMPLE">fred@iytcorporation.gov.uk</Value>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+
+	     <Element cardinality="1..1">
+         <Term>cac:NotifierParty</Term>
+         <Name>The Notifier Party</Name>
+         <Description>BEAst: This party defines the company that responsible for the Waste Movement. </Description>
+         <Element cardinality="1..1">
+            <Term>cac:Party</Term>
+            <Name>Party</Name>
+            <Description>BEAst: This party defines the company that is responsible for the Waste Movement. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:EndpointID</Term>
+               <Name>Endpoint ID</Name>
+               <Description>BEAst: The digital address of this party. </Description>
+               <Value type="EXAMPLE">7300010000001</Value>
+               <Attribute usage="Mandatory">
+                  <Term>schemeID</Term>
+                  <Reference type="CODE_LIST">eas</Reference>
+                  <Value type="EXAMPLE">0088</Value>
+               </Attribute>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PartyIdentification</Term>
+               <Name>Party Identification</Name>
+               <Description>BEAst: This identity defines the company that is responsible for the Waste Movement. </Description>
+               <Element cardinality="1..1 1..1">
+                  <Term>cbc:ID</Term>
+                  <Name>Identity</Name>
+                  <Description>BEAst: This identity identifies the company that is responsible for the Waste Movement. </Description>
+                  <Value type="EXAMPLE">7300010000001</Value>
+                  <Attribute>
+                     <Term>schemeID</Term>
+                     <Reference type="CODE_LIST">ICD</Reference>
+                     <Value type="EXAMPLE">0088</Value>
+                  </Attribute>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PartyName</Term>
+               <Name>Party Name</Name>
+               <Description>BEAst: Party name. </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Party Name</Name>
+                  <Description>BEAst: The name of this party. </Description>
+                  <Value type="EXAMPLE">Party name</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PostalAddress</Term>
+               <Name>Postal address</Name>
+               <Description>BEAst: Postal address of this party </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:StreetName</Term>
+                  <Name>Address line 1. </Name>
+                  <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+                  <Value type="EXAMPLE">Busy Street</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:AdditionalStreetName</Term>
+                  <Name>Address line 2. </Name>
+                  <Description>BEAst: An additional address line in a postal address that can be used to give further details 
+					supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+                  <Value type="EXAMPLE">Department ABC</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CityName</Term>
+                  <Name>City. </Name>
+                  <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather 
+					than as a code. </Description>
+                  <Value type="EXAMPLE">Farthing</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:PostalZone</Term>
+                  <Name>Post code. </Name>
+                  <Description>BEAst: The identifier for an addressable group of properties according to the relevant national 
+					postal service, such as a ZIP code or Post Code. </Description>
+                  <Value type="EXAMPLE">AA99 1BB</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CountrySubentity</Term>
+                  <Name>Country subdivision. </Name>
+                  <Description>BEAst: TFor specifying a region, county, state, province etc. within a country by using text. </Description>
+                  <Value type="EXAMPLE">Heremouthshire</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:AddressLine</Term>
+                  <Name>Address line</Name>
+                  <Description>BEAst: One more address line that can be used to provide the full address. </Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:Line</Term>
+                     <Name>Address line 3. </Name>
+                     <Description>BEAst: An additional address line in an address that can be used to give further details 
+						supplementing the main line. </Description>
+                     <Value type="EXAMPLE">The Roundabout</Value>
+                  </Element>
+               </Element>
+               <Element cardinality="1..1">
+                  <Term>cac:Country</Term>
+                  <Name>Country</Name>
+                  <Description>BEAst: Country code. </Description>
+                  <Element cardinality="1..1">
+                     <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code</Name>
+                     <Description>BEAst: A code that identifies the country.The lists of valid countries are registered with the 
+						ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". 
+						Codes must be according to the alpha-2 representation. </Description>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
+                     <Value type="EXAMPLE">GB</Value>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:Contact</Term>
+               <Name>Contact</Name>
+               <Description>BEAst: The primary contact for this party. </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Name</Name>
+                  <Description>BEAst: The name of the contact person. </Description>
+                  <Value type="EXAMPLE">Mrs Bouquet</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:Telephone</Term>
+                  <Name>Telephone number</Name>
+                  <Description>BEAst: A phone number for the contact person. If the person has a direct number, this is that number. </Description>
+                  <Value type="EXAMPLE">0158 1233714</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:ElectronicMail</Term>
+                  <Name>Contact email address. </Name>
+                  <Description>BEAst: The e-mail address for the contact person. If the person has a direct e-mail this is that email. </Description>
+                  <Value type="EXAMPLE">bouquet@fpconsortial.co.uk</Value>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+
+	     <Element cardinality="0..1">
+         <Term>cac:DisposalFacilityParty</Term>
+         <Name>The Disposal Facility Party</Name>
+         <Description>BEAst: This party defines the company that receiving the Waste for Disposal. Always include this party or the
+		RecoveryFacilityParty, but never both.</Description>
+         <Element cardinality="1..1">
+            <Term>cac:Party</Term>
+            <Name>Party</Name>
+            <Description>BEAst: This party defines the company that will receive the waste for Disposal. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:EndpointID</Term>
+               <Name>Endpoint ID</Name>
+               <Description>BEAst: The digital address of this party. </Description>
+               <Value type="EXAMPLE">7300010000001</Value>
+               <Attribute usage="Mandatory">
+                  <Term>schemeID</Term>
+                  <Reference type="CODE_LIST">eas</Reference>
+                  <Value type="EXAMPLE">0088</Value>
+               </Attribute>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PartyIdentification</Term>
+               <Name>Party Identification</Name>
+               <Description>BEAst: This identity defines the company that will receive the waste for Disposal. </Description>
+               <Element cardinality="1..1 1..1">
+                  <Term>cbc:ID</Term>
+                  <Name>Identity</Name>
+                  <Description>BEAst: This identity identifies the company that will receive the waste for Disposal. </Description>
+                  <Value type="EXAMPLE">7300010000001</Value>
+                  <Attribute>
+                     <Term>schemeID</Term>
+                     <Reference type="CODE_LIST">ICD</Reference>
+                     <Value type="EXAMPLE">0088</Value>
+                  </Attribute>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PartyName</Term>
+               <Name>Party Name</Name>
+               <Description>BEAst: Party name. </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Party Name</Name>
+                  <Description>BEAst: The name of this party. </Description>
+                  <Value type="EXAMPLE">Party name</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PostalAddress</Term>
+               <Name>Postal address</Name>
+               <Description>BEAst: Postal address of this party </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:StreetName</Term>
+                  <Name>Address line 1. </Name>
+                  <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+                  <Value type="EXAMPLE">Busy Street</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:AdditionalStreetName</Term>
+                  <Name>Address line 2. </Name>
+                  <Description>BEAst: An additional address line in a postal address that can be used to give further details 
+					supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+                  <Value type="EXAMPLE">Department ABC</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CityName</Term>
+                  <Name>City. </Name>
+                  <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather 
+					than as a code. </Description>
+                  <Value type="EXAMPLE">Farthing</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:PostalZone</Term>
+                  <Name>Post code. </Name>
+                  <Description>BEAst: The identifier for an addressable group of properties according to the relevant national 
+					postal service, such as a ZIP code or Post Code. </Description>
+                  <Value type="EXAMPLE">AA99 1BB</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CountrySubentity</Term>
+                  <Name>Country subdivision. </Name>
+                  <Description>BEAst: TFor specifying a region, county, state, province etc. within a country by using text. </Description>
+                  <Value type="EXAMPLE">Heremouthshire</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:AddressLine</Term>
+                  <Name>Address line</Name>
+                  <Description>BEAst: One more address line that can be used to provide the full address. </Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:Line</Term>
+                     <Name>Address line 3. </Name>
+                     <Description>BEAst: An additional address line in an address that can be used to give further details 
+						supplementing the main line. </Description>
+                     <Value type="EXAMPLE">The Roundabout</Value>
+                  </Element>
+               </Element>
+               <Element cardinality="1..1">
+                  <Term>cac:Country</Term>
+                  <Name>Country</Name>
+                  <Description>BEAst: Country code. </Description>
+                  <Element cardinality="1..1">
+                     <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code</Name>
+                     <Description>BEAst: A code that identifies the country.The lists of valid countries are registered with the 
+						ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". 
+						Codes must be according to the alpha-2 representation. </Description>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
+                     <Value type="EXAMPLE">GB</Value>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:Contact</Term>
+               <Name>Contact</Name>
+               <Description>BEAst: The primary contact for this party. </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Name</Name>
+                  <Description>BEAst: The name of the contact person. </Description>
+                  <Value type="EXAMPLE">Mrs Bouquet</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:Telephone</Term>
+                  <Name>Telephone number</Name>
+                  <Description>BEAst: A phone number for the contact person. If the person has a direct number, this is that number. </Description>
+                  <Value type="EXAMPLE">0158 1233714</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:ElectronicMail</Term>
+                  <Name>Contact email address. </Name>
+                  <Description>BEAst: The e-mail address for the contact person. If the person has a direct e-mail this is that email. </Description>
+                  <Value type="EXAMPLE">bouquet@fpconsortial.co.uk</Value>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+
+	     <Element cardinality="0..1">
+         <Term>cac:RecoveryFacilityParty</Term>
+         <Name>The Disposal Facility Party</Name>
+         <Description>BEAst: This party defines the company that receiving the Waste for Recovery. Always include this party or the
+		DisposalFacilityParty, but never both.</Description>
+         <Element cardinality="1..1">
+            <Term>cac:Party</Term>
+            <Name>Party</Name>
+            <Description>BEAst: This party defines the company that will receive the waste for Recovery. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:EndpointID</Term>
+               <Name>Endpoint ID</Name>
+               <Description>BEAst: The digital address of this party. </Description>
+               <Value type="EXAMPLE">7300010000001</Value>
+               <Attribute usage="Mandatory">
+                  <Term>schemeID</Term>
+                  <Reference type="CODE_LIST">eas</Reference>
+                  <Value type="EXAMPLE">0088</Value>
+               </Attribute>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PartyIdentification</Term>
+               <Name>Party Identification</Name>
+               <Description>BEAst: This identity defines the company that will receive the waste for Recovery. </Description>
+               <Element cardinality="1..1 1..1">
+                  <Term>cbc:ID</Term>
+                  <Name>Identity</Name>
+                  <Description>BEAst: This identity identifies the company that will receive the waste for Recovery. </Description>
+                  <Value type="EXAMPLE">7300010000001</Value>
+                  <Attribute>
+                     <Term>schemeID</Term>
+                     <Reference type="CODE_LIST">ICD</Reference>
+                     <Value type="EXAMPLE">0088</Value>
+                  </Attribute>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PartyName</Term>
+               <Name>Party Name</Name>
+               <Description>BEAst: Party name. </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Party Name</Name>
+                  <Description>BEAst: The name of this party. </Description>
+                  <Value type="EXAMPLE">Party name</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PostalAddress</Term>
+               <Name>Postal address</Name>
+               <Description>BEAst: Postal address of this party </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:StreetName</Term>
+                  <Name>Address line 1. </Name>
+                  <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+                  <Value type="EXAMPLE">Busy Street</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:AdditionalStreetName</Term>
+                  <Name>Address line 2. </Name>
+                  <Description>BEAst: An additional address line in a postal address that can be used to give further details 
+					supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+                  <Value type="EXAMPLE">Department ABC</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CityName</Term>
+                  <Name>City. </Name>
+                  <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather 
+					than as a code. </Description>
+                  <Value type="EXAMPLE">Farthing</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:PostalZone</Term>
+                  <Name>Post code. </Name>
+                  <Description>BEAst: The identifier for an addressable group of properties according to the relevant national 
+					postal service, such as a ZIP code or Post Code. </Description>
+                  <Value type="EXAMPLE">AA99 1BB</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CountrySubentity</Term>
+                  <Name>Country subdivision. </Name>
+                  <Description>BEAst: TFor specifying a region, county, state, province etc. within a country by using text. </Description>
+                  <Value type="EXAMPLE">Heremouthshire</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:AddressLine</Term>
+                  <Name>Address line</Name>
+                  <Description>BEAst: One more address line that can be used to provide the full address. </Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:Line</Term>
+                     <Name>Address line 3. </Name>
+                     <Description>BEAst: An additional address line in an address that can be used to give further details 
+						supplementing the main line. </Description>
+                     <Value type="EXAMPLE">The Roundabout</Value>
+                  </Element>
+               </Element>
+               <Element cardinality="1..1">
+                  <Term>cac:Country</Term>
+                  <Name>Country</Name>
+                  <Description>BEAst: Country code. </Description>
+                  <Element cardinality="1..1">
+                     <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code</Name>
+                     <Description>BEAst: A code that identifies the country.The lists of valid countries are registered with the 
+						ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". 
+						Codes must be according to the alpha-2 representation. </Description>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
+                     <Value type="EXAMPLE">GB</Value>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:Contact</Term>
+               <Name>Contact</Name>
+               <Description>BEAst: The primary contact for this party. </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Name</Name>
+                  <Description>BEAst: The name of the contact person. </Description>
+                  <Value type="EXAMPLE">Mrs Bouquet</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:Telephone</Term>
+                  <Name>Telephone number</Name>
+                  <Description>BEAst: A phone number for the contact person. If the person has a direct number, this is that number. </Description>
+                  <Value type="EXAMPLE">0158 1233714</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:ElectronicMail</Term>
+                  <Name>Contact email address. </Name>
+                  <Description>BEAst: The e-mail address for the contact person. If the person has a direct e-mail this is that email. </Description>
+                  <Value type="EXAMPLE">bouquet@fpconsortial.co.uk</Value>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+
+	     <Element cardinality="1..1">
+         <Term>cac:WasteProducerParty</Term>
+         <Name>The Notifier Party</Name>
+         <Description>BEAst: This party defines the company that produced the waste. </Description>
+         <Element cardinality="1..1">
+            <Term>cac:Party</Term>
+            <Name>Party</Name>
+            <Description>BEAst: This party defines the company that produced the waste. </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:EndpointID</Term>
+               <Name>Endpoint ID</Name>
+               <Description>BEAst: The digital address of this party. </Description>
+               <Value type="EXAMPLE">7300010000001</Value>
+               <Attribute usage="Mandatory">
+                  <Term>schemeID</Term>
+                  <Reference type="CODE_LIST">eas</Reference>
+                  <Value type="EXAMPLE">0088</Value>
+               </Attribute>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PartyIdentification</Term>
+               <Name>Party Identification</Name>
+               <Description>BEAst: This identity defines the company that produced the waste. </Description>
+               <Element cardinality="1..1 1..1">
+                  <Term>cbc:ID</Term>
+                  <Name>Identity</Name>
+                  <Description>BEAst: This identity identifies the company that produced the waste. </Description>
+                  <Value type="EXAMPLE">7300010000001</Value>
+                  <Attribute>
+                     <Term>schemeID</Term>
+                     <Reference type="CODE_LIST">ICD</Reference>
+                     <Value type="EXAMPLE">0088</Value>
+                  </Attribute>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PartyName</Term>
+               <Name>Party Name</Name>
+               <Description>BEAst: Party name. </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Party Name</Name>
+                  <Description>BEAst: The name of this party. </Description>
+                  <Value type="EXAMPLE">Party name</Value>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:PostalAddress</Term>
+               <Name>Postal address</Name>
+               <Description>BEAst: Postal address of this party </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:StreetName</Term>
+                  <Name>Address line 1. </Name>
+                  <Description>BEAst: The main address line in a postal address usually the street name and number. </Description>
+                  <Value type="EXAMPLE">Busy Street</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:AdditionalStreetName</Term>
+                  <Name>Address line 2. </Name>
+                  <Description>BEAst: An additional address line in a postal address that can be used to give further details 
+					supplementing the main line. Common use are secondary house number in a complex or in a building. </Description>
+                  <Value type="EXAMPLE">Department ABC</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CityName</Term>
+                  <Name>City. </Name>
+                  <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather 
+					than as a code. </Description>
+                  <Value type="EXAMPLE">Farthing</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:PostalZone</Term>
+                  <Name>Post code. </Name>
+                  <Description>BEAst: The identifier for an addressable group of properties according to the relevant national 
+					postal service, such as a ZIP code or Post Code. </Description>
+                  <Value type="EXAMPLE">AA99 1BB</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:CountrySubentity</Term>
+                  <Name>Country subdivision. </Name>
+                  <Description>BEAst: TFor specifying a region, county, state, province etc. within a country by using text. </Description>
+                  <Value type="EXAMPLE">Heremouthshire</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:AddressLine</Term>
+                  <Name>Address line</Name>
+                  <Description>BEAst: One more address line that can be used to provide the full address. </Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:Line</Term>
+                     <Name>Address line 3. </Name>
+                     <Description>BEAst: An additional address line in an address that can be used to give further details 
+						supplementing the main line. </Description>
+                     <Value type="EXAMPLE">The Roundabout</Value>
+                  </Element>
+               </Element>
+               <Element cardinality="1..1">
+                  <Term>cac:Country</Term>
+                  <Name>Country</Name>
+                  <Description>BEAst: Country code. </Description>
+                  <Element cardinality="1..1">
+                     <Term>cbc:IdentificationCode</Term>
+                     <Name>Country code</Name>
+                     <Description>BEAst: A code that identifies the country.The lists of valid countries are registered with the 
+						ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". 
+						Codes must be according to the alpha-2 representation. </Description>
+                     <Reference type="CODE_LIST">ISO3166</Reference>
+                     <Value type="EXAMPLE">GB</Value>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:Contact</Term>
+               <Name>Contact</Name>
+               <Description>BEAst: The primary contact for this party. </Description>
+               <Element cardinality="0..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Name</Name>
+                  <Description>BEAst: The name of the contact person. </Description>
+                  <Value type="EXAMPLE">Mrs Bouquet</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:Telephone</Term>
+                  <Name>Telephone number</Name>
+                  <Description>BEAst: A phone number for the contact person. If the person has a direct number, this is that number. </Description>
+                  <Value type="EXAMPLE">0158 1233714</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:ElectronicMail</Term>
+                  <Name>Contact email address. </Name>
+                  <Description>BEAst: The e-mail address for the contact person. If the person has a direct e-mail this is that email. </Description>
+                  <Value type="EXAMPLE">bouquet@fpconsortial.co.uk</Value>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+
+	     <Element cardinality="1..1">
+         <Term>cac:Shipment</Term>
+         <Name>Shipment </Name>
+         <Description>BEAst: Shipment information </Description>
+         <Element cardinality="0..1">
+            <Term>cbc:ID</Term>
+            <Name>Identity </Name>
+            <Description>BEAst: Identifies a shipment. </Description>
+            <Reference type="BUSINESS_TERM">tir16-038</Reference>
+            <Value type="EXAMPLE">1</Value>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:Consignment</Term>
+            <Name>Consignment </Name>
+            <Description>BEAst: Consignment information </Description>
+            <Element cardinality="1..1">
+               <Term>cbc:ID</Term>
+               <Name>Identity </Name>
+               <Description>BEAst: An association to Consignment covering the shipment. Unique number assigned to goods, both for 
+				import and export. </Description>
+               <Reference type="BUSINESS_TERM">tir16-040</Reference>
+               <Value type="EXAMPLE">NA</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:HazardousRiskIndicator</Term>
+               <Name>Hazardous Risk Indicator. </Name>
+               <Description>BEAst: An indication that the transported goods in this consignment are subject to an international 
+				regulation concerning the carriage of dangerous goods (true) or not (false). </Description>
+               <Value type="EXAMPLE">false</Value>
+            </Element>
+            <Element cardinality="0..n">
+               <Term>cac:DocumentReference</Term>
+               <Name>Document Reference </Name>
+               <Description>BEAst: A reference to a document related to or relevant for this consignment. </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:ID</Term>
+                  <Name>Identity </Name>
+                  <Description>BEAst: The identity of the referenced document. </Description>
+                  <Value type="EXAMPLE">123</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:DocumentTypeCode</Term>
+                  <Name>Document Type Code </Name>
+                  <Description>BEAst: The Type code of the referenced document. </Description>
+                  <Value type="EXAMPLE">A</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cbc:DocumentType</Term>
+                  <Name>Document Type </Name>
+                  <Description>BEAst: The Type (text) of the referenced document. </Description>
+                  <Value type="EXAMPLE">Project Reference</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:Attachment</Term>
+                  <Name>Attachment </Name>
+                  <Description>BEAst: The referenced document as an attachment to the document from which it is referenced. </Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:EmbeddedDocumentBinaryObject</Term>
+                     <Name>Embedded binary object</Name>
+                     <Description>BEAst: The referenced document can here be inserted as a binary object. </Description>
+                     <Value type="EXAMPLE">aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==</Value>
+                     <Attribute>
+                        <Term>mimeCode</Term>
+                        <Value type="EXAMPLE">application/pdf</Value>
+                     </Attribute>
+                     <Attribute>
+                        <Term>filename</Term>
+                        <Value type="EXAMPLE">Hours-spent.pdf</Value>
+                     </Attribute>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cac:ExternalReference</Term>
+                     <Name>External reference </Name>
+                     <Description>BEAst: A reference to an attached document that is external to the document(s) being exchanged. </Description>
+                     <Element cardinality="0..1">
+                        <Term>cbc:URI</Term>
+                        <Name>Address to internet resource</Name>
+                        <Description>BEAst: The Uniform Resource Identifier (URI) that identifies the external object as an Internet resource. </Description>
+                        <Value type="EXAMPLE">www.beast.se</Value>
+                     </Element>
+                  </Element>
+               </Element>
+            </Element>
+         </Element>
+         <Element cardinality="0..n">
+            <Term>cac:GoodsItem</Term>
+            <Name>Goods Item. </Name>
+            <Description>BEAst: A goods item included in this shipment. </Description>
+            <Element cardinality="0..1">
+               <Term>cbc:ID</Term>
+               <Name>Line number identity </Name>
+               <Description>BEAst: Line Number. </Description>
+               <Value type="EXAMPLE">1</Value>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cbc:Quantity</Term>
+               <Name>Delivered quantity </Name>
+               <Description>BEAst: The quantity delivered. </Description>
+               <Value type="EXAMPLE">10.3</Value>
+               <Attribute usage="Mandatory">
+                  <Term>unitCode</Term>
+                  <Reference type="CODE_LIST">UNECERec20</Reference>
+                  <Value type="EXAMPLE">TNE</Value>
+               </Attribute>
+            </Element>
+            <Element cardinality="1..1">
+               <Term>cac:Item</Term>
+               <Name>Item information </Name>
+               <Description>BEAst: Item information. </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:Name</Term>
+                  <Name>Item name </Name>
+                  <Description>BEAst: A short name for an item. </Description>
+                  <Value type="EXAMPLE">beeswax</Value>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:BuyersItemIdentification</Term>
+                  <Name>Buyer's item identification </Name>
+                  <Description>BEAst: Buyer's item identification. </Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:ID</Term>
+                     <Name>Buyers item identification </Name>
+                     <Description>BEAst: An identifier, assigned by the buyer, for the item. Associates the item with its identification according to the buyer's system. </Description>
+                     <Value type="EXAMPLE">6578489</Value>
+                  </Element>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:SellersItemIdentification</Term>
+                  <Name>Seller's item identification </Name>
+                  <Description>BEAst: Seller's item identification. </Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:ID</Term>
+                     <Name>Seller's item identification </Name>
+                     <Description>BEAst: An identifier, assigned by the seller, for the item. Associates the item with its identification according to the seller's system. </Description>
+                     <Value type="EXAMPLE">17589683</Value>
+                  </Element>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:StandardItemIdentification</Term>
+                  <Name>Standard item identification </Name>
+                  <Description>BEAst: Standard item identification. Only one Standard Item Number can be used per line. </Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:ID</Term>
+                     <Name>Standard item identification </Name>
+                     <Description>BEAst: An item identifier based on a registered scheme. Associates the item with its identification according to a standard system. </Description>
+                     <Value type="EXAMPLE">1234567891234</Value>
+                     <Attribute usage="Mandatory">
+                        <Term>schemeID</Term>
+                        <Reference type="CODE_LIST">ICD</Reference>
+                        <Value type="EXAMPLE">0160</Value>
+                     </Attribute>
+                  </Element>
+               </Element>
+               <Element>
+                  <Term>cac:CommodityClassification</Term>
+                  <Element>
+                     <Term>cbc:ItemClassificationCode</Term>
+                     <Description>BEAst: Used to classify the material when the item number is not sufficient (T6466), to inform about the source of classification standard (T6467) and to provide standard branch codes for the items. The Reference to Article Class (T6466) is the ItemClassificationCode, listID = "ZZZ", listVersionID = BEAST:4.0" and name is Source to Classification (T6467). 
+Peppol: </Description>
+                     <Value type="EXAMPLE">KO2012140200</Value>
+                     <Attribute>
+                        <Term>listID</Term>
+                        <Description>BEAst: For Item Classification Codes that are found in UNCL7143, select the correct code and leave listVersionID and name empty. For construction specific list that are not a part of UNCL7143 yet ListID must always be "ZZZ" and listVersionID "BEAST:4.0", i.e. mutually agreed. 
+Peppol: </Description>
+                        <Value type="EXAMPLE">ZZZ</Value>
+                     </Attribute>
+                     <Attribute>
+                        <Term>listVersionID</Term>
+                        <Value type="EXAMPLE">3.0.2</Value>
+                     </Attribute>
+                     <Attribute>
+                        <Term>name</Term>
+                        <Description>BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "SBMI", "SA", "AI", “ME” and "CoClass”. "SBMI" = Sveriges Bergmaterialindustrier, "SA" = Sveriges Åkeriföretag, "AI" = Återvinningsindustrierna, “ME” = Maskinentreprenörerna. 
+Peppol: </Description>
+                        <Value type="EXAMPLE">SBMI</Value>
+                     </Attribute>
+                  </Element>
+               </Element>
+               <Element cardinality="0..n">
+                  <Term>cac:HazardousItem</Term>
+                  <Name>Hazardous Item. </Name>
+                  <Description>BEAst: Information pertaining to this item as a hazardous item. </Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:UNDGCode</Term>
+                     <Name>UNDG Code. </Name>
+                     <Description>BEAst: The UN code for this kind of hazardous item. </Description>
+                     <Value type="EXAMPLE">ADR</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:HazardClassID</Term>
+                     <Name>Hazard Class ID. </Name>
+                     <Description>BEAst: An identifier for the hazard class applicable to this hazardous item as defined by the relevant </Description>
+                     <Value type="EXAMPLE">Code</Value>
+                  </Element>
+               </Element>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:Delivery</Term>
+            <Name>Delivery information </Name>
+            <Description>BEAst: Delivery information </Description>
+            <Element cardinality="0..1">
+               <Term>cac:DeliveryParty</Term>
+               <Name>Delivery Party. </Name>
+               <Description>BEAst: The Party receiving e shipment. </Description>
+               <Element cardinality="1..1">
+                  <Term>cbc:EndpointID</Term>
+                  <Name>Endpoint ID</Name>
+                  <Description>BEAst: The identity used to send the Movement Document electronically. </Description>
+                  <Value type="EXAMPLE">5790000435951</Value>
+                  <Attribute usage="Mandatory">
+                     <Term>schemeID</Term>
+                     <Reference type="CODE_LIST">eas</Reference>
+                     <Value type="EXAMPLE">0088</Value>
+                  </Attribute>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:PartyIdentification</Term>
+                  <Name>Party Identification </Name>
+                  <Description>BEAst: Party identification </Description>
+                  <Element cardinality="1..1">
+                     <Term>cbc:ID</Term>
+                     <Name>Identity of the Delivery Party. </Name>
+                     <Description>BEAst: Identifies the Delivery Party. </Description>
+                     <Reference type="BUSINESS_TERM">tir01-101</Reference>
+                     <Value type="EXAMPLE">5790000435951</Value>
+                     <Attribute usage="Optional">
+                        <Term>schemeID</Term>
+                        <Name>Deliver party registration identifier identification scheme
+									identifier</Name>
+                        <Description>Peppol: The identification scheme identifier of the deliverparty
+									identifier.</Description>
+                        <Reference type="CODE_LIST">ICD</Reference>
+                        <Value type="EXAMPLE">0088</Value>
+                     </Attribute>
+                  </Element>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:PartyName</Term>
+                  <Name>Party Name </Name>
+                  <Description>BEAst: Party Name </Description>
+                  <Element cardinality="1..1">
+                     <Term>cbc:Name</Term>
+                     <Name>Name of the Consignee. </Name>
+                     <Description>BEAst: The name of the Consignee. </Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir01-102</Reference>
+                     <Value type="EXAMPLE">Name</Value>
+                  </Element>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:PostalAddress</Term>
+                  <Name>Postal Address of Consignee. </Name>
+                  <Description>BEAst: Postal Address. </Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:StreetName</Term>
+                     <Name>Street Name for Consignee. </Name>
+                     <Description>BEAst: Street name. </Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir01-p029</Reference>
+                     <Value type="EXAMPLE">Avon Way</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:AdditionalStreetName</Term>
+                     <Name>Additional Street Name for Consignee. </Name>
+                     <Description>BEAst: Additional street name. </Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir01-p030</Reference>
+                     <Value type="EXAMPLE">Purchasing</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:CityName</Term>
+                     <Name>City Name for Consignee. </Name>
+                     <Description>BEAst: Name of city. </Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir01-p031</Reference>
+                     <Value type="EXAMPLE">Bridgtow</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:PostalZone</Term>
+                     <Name>Postal Zone for Consignee. </Name>
+                     <Description>BEAst: Zip-code. </Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir01-p032</Reference>
+                     <Value type="EXAMPLE">ZZ99 1ZZ</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:CountrySubentity</Term>
+                     <Name>Country SubEntity for Consignee. </Name>
+                     <Description>BEAst: Country Sub-entity. </Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir01-p033</Reference>
+                     <Value type="EXAMPLE">Avon</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cac:AddressLine</Term>
+                     <Name>Address Line for Consignee. </Name>
+                     <Description>BEAst: Additional address line. </Description>
+                     <Element cardinality="0..1">
+                        <Term>cbc:Line</Term>
+                        <Name>Address Line for Consignee. </Name>
+                        <Description>BEAst: Used for any other additional address information. </Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">tir01-p034</Reference>
+                        <Value type="EXAMPLE">3rd Floor, Room 5</Value>
+                     </Element>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cac:Country</Term>
+                     <Name>Country for Consignee. </Name>
+                     <Description>BEAst: Country. </Description>
+                     <Element cardinality="0..1">
+                        <Term>cbc:IdentificationCode</Term>
+                        <Name>Country Code for Consignee. </Name>
+                        <Description>BEAst: Country code. </Description>
+                        <DataType>Code</DataType>
+                        <Reference type="BUSINESS_TERM">tir01-p035</Reference>
+                        <Reference type="CODE_LIST">ISO3166</Reference>
+                        <Value type="EXAMPLE">GB</Value>
+                     </Element>
+                  </Element>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:PhysicalLocation</Term>
+                  <Name>Physical location </Name>
+                  <Description>BEAst: Physical Location of the Consignee. </Description>
+                  <Element cardinality="0..1">
+                     <Term>cac:LocationCoordinate</Term>
+                     <Name>Location Coordinate </Name>
+                     <Description>BEAst: To specify the coordinates. </Description>
+                     <Element cardinality="1..1">
+                        <Term>cbc:CoordinateSystemCode</Term>
+                        <Name>Coordinate System Code. </Name>
+                        <Description>BEAst: Always "EPSG:3857" by definition. </Description>
+                        <Value type="EXAMPLE">EPSG:3857</Value>
+                     </Element>
+                     <Element cardinality="1..1">
+                        <Term>cbc:LatitudeDegreesMeasure</Term>
+                        <Name>Latitude Degrees Measure. </Name>
+                        <Description>BEAst: The X coordinate. Use degrees with decimals. </Description>
+                        <Value type="EXAMPLE">59.331660358041425</Value>
+                        <Attribute usage="Mandatory">
+                           <Term>unitCode</Term>
+                           <Reference type="CODE_LIST">UNECERec20</Reference>
+                           <Value type="EXAMPLE">DD</Value>
+                        </Attribute>
+                     </Element>
+                     <Element cardinality="1..1">
+                        <Term>cbc:LongitudeDegreesMeasure</Term>
+                        <Name>Longitude Degrees Measure. </Name>
+                        <Description>BEAst: The Y coordinate. Use degrees with decimals. </Description>
+                        <Value type="EXAMPLE">18.063363084988005</Value>
+                        <Attribute usage="Mandatory">
+                           <Term>unitCode</Term>
+                           <Reference type="CODE_LIST">UNECERec20</Reference>
+                           <Value type="EXAMPLE">DD</Value>
+                        </Attribute>
+                     </Element>
+                     <Element cardinality="0..1">
+                        <Term>cbc:AltitudeMeasure</Term>
+                        <Name>Altitude Measure. </Name>
+                        <Description>BEAst: The Z coordinate. </Description>
+                        <Value type="EXAMPLE">12.5</Value>
+                        <Attribute usage="Mandatory">
+                           <Term>unitCode</Term>
+                           <Reference type="CODE_LIST">UNECERec20</Reference>
+                           <Value type="EXAMPLE">MTR</Value>
+                        </Attribute>
+                     </Element>
+                  </Element>
+               </Element>
+               <Element cardinality="0..1">
+                  <Term>cac:Contact</Term>
+                  <Name>Consignee Contact information </Name>
+                  <Description>BEAst: Contact information </Description>
+                  <Element cardinality="0..1">
+                     <Term>cbc:Name</Term>
+                     <Name>Contact person name </Name>
+                     <Description>BEAst: The name of the contact person. </Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir01-103</Reference>
+                     <Value type="EXAMPLE">Mr Fred Churchill</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:Telephone</Term>
+                     <Name>Contact telephone number </Name>
+                     <Description>BEAst: A phone number for the contact person. If the person has a direct number, this is that number. </Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir01-104</Reference>
+                     <Value type="EXAMPLE">0127 2653214</Value>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cbc:ElectronicMail</Term>
+                     <Name>Contact email address </Name>
+                     <Description>BEAst: The e-mail address for the contact person. If the person has a direct e-mail this is that email. </Description>
+                     <DataType>Text</DataType>
+                     <Reference type="BUSINESS_TERM">tir01-106</Reference>
+                     <Value type="EXAMPLE">fred@iytcorporation.gov.uk</Value>
+                  </Element>
+               </Element>
+            </Element>
+            <Element cardinality="0..1">
+               <Term>cac:Despatch</Term>
+               <Name>Despatch information </Name>
+               <Description>BEAst: The despatch (pickup) associated with this delivery. </Description>
+               <Element cardinality="0..1">
+                  <Term>cac:DespatchParty</Term>
+                  <Name>Despatch Party </Name>
+                  <Description>BEAst: The party despatching the goods. </Description>
+                  <Element cardinality="1..1">
+                     <Term>cbc:EndpointID</Term>
+                     <Name>Endpoint ID</Name>
+                     <Description>BEAst: The identity used to send the Movement Document electronically. </Description>
+                     <Value type="EXAMPLE">5790000435951</Value>
+                     <Attribute usage="Mandatory">
+                        <Term>schemeID</Term>
+                        <Reference type="CODE_LIST">eas</Reference>
+                        <Value type="EXAMPLE">0088</Value>
+                     </Attribute>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cac:PartyIdentification</Term>
+                     <Name>Party Identification </Name>
+                     <Description>BEAst: Party identification </Description>
+                     <Element cardinality="1..1">
+                        <Term>cbc:ID</Term>
+                        <Name>Identity of the Despatching Party. </Name>
+                        <Description>BEAst: Identifies the Despatching Party. </Description>
+                        <Value type="EXAMPLE">5790000435951</Value>
+                        <Attribute>
+                           <Term>schemeID</Term>
+                           <Reference type="CODE_LIST">ICD</Reference>
+                           <Value type="EXAMPLE">0088</Value>
+                        </Attribute>
+                     </Element>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cac:PartyName</Term>
+                     <Name>Party Name </Name>
+                     <Description>BEAst: Party Name </Description>
+                     <Element cardinality="1..1">
+                        <Term>cbc:Name</Term>
+                        <Name>Name of the Consignor. </Name>
+                        <Description>BEAst: The name of the Consignor. </Description>
+                        <Value type="EXAMPLE">Name</Value>
+                     </Element>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cac:PostalAddress</Term>
+                     <Name>Address of the Consignor. </Name>
+                     <Description>BEAst: The address of the Consignor. </Description>
+                     <Element cardinality="0..1">
+                        <Term>cbc:StreetName</Term>
+                        <Name>Address line 1 </Name>
+                        <Description>BEAst: The name of the street, road, avenue, way, etc. to which the number of the building is attached.  </Description>
+                        <Value type="EXAMPLE">Avon Way</Value>
+                     </Element>
+                     <Element cardinality="0..1">
+                        <Term>cbc:AdditionalStreetName</Term>
+                        <Name>Address line 2 </Name>
+                        <Description>BEAst: An additional street name used to further clarify the address.  </Description>
+                        <Value type="EXAMPLE">way 2</Value>
+                     </Element>
+                     <Element cardinality="0..1">
+                        <Term>cbc:CityName</Term>
+                        <Name>City </Name>
+                        <Description>BEAst: The common name of the city where the postal address is. The name is written in full rather than as a code. </Description>
+                        <Value type="EXAMPLE">Bridgtow</Value>
+                     </Element>
+                     <Element cardinality="0..1">
+                        <Term>cbc:PostalZone</Term>
+                        <Name>Post code </Name>
+                        <Description>BEAst: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.  </Description>
+                        <Value type="EXAMPLE">ZZ99 1ZZ</Value>
+                     </Element>
+                     <Element cardinality="0..1">
+                        <Term>cbc:CountrySubentity</Term>
+                        <Name>Country subdivision </Name>
+                        <Description>BEAst: For specifying a region, county, state, province etc. within a country by using text. </Description>
+                        <Value type="EXAMPLE">Avon</Value>
+                     </Element>
+                     <Element cardinality="0..1">
+                        <Term>cac:AddressLine</Term>
+                        <Name>Address line 3 </Name>
+                        <Description>BEAst: Additional address information. </Description>
+                        <Element cardinality="0..1">
+                           <Term>cbc:Line</Term>
+                           <Name>Address line 3 </Name>
+                           <Description>BEAst: Used for any other additional address information </Description>
+                           <Value type="EXAMPLE">3rd Floor, Room 5</Value>
+                        </Element>
+                     </Element>
+                     <Element cardinality="0..1">
+                        <Term>cac:Country</Term>
+                        <Name>Country for Consignor. </Name>
+                        <Description>BEAst: Country. </Description>
+                        <Element cardinality="0..1">
+                           <Term>cbc:IdentificationCode</Term>
+                           <Name>Country code. </Name>
+                           <Description>BEAst: Country Code.  </Description>
+                           <Value type="EXAMPLE">GB</Value>
+                        </Element>
+                     </Element>
+                  </Element>
+                  <Element>
+                     <Term>PhysicalLocation</Term>
+                     <Element cardinality="0..1">
+                        <Term>cac:LocationCoordinate</Term>
+                        <Name>Location Coordinate </Name>
+                        <Description>BEAst: To specify the coordinates. </Description>
+                        <Element cardinality="1..1">
+                           <Term>cbc:CoordinateSystemCode</Term>
+                           <Name>Coordinate System Code. </Name>
+                           <Description>BEAst: Always "EPSG:3857" by definition. </Description>
+                           <Value type="EXAMPLE">EPSG:3857</Value>
+                        </Element>
+                        <Element cardinality="1..1">
+                           <Term>cbc:LatitudeDegreesMeasure</Term>
+                           <Name>Latitude Degrees Measure. </Name>
+                           <Description>BEAst: The X coordinate. Use degrees with decimals. </Description>
+                           <Value type="EXAMPLE">59.33169866504851</Value>
+                           <Attribute usage="Mandatory">
+                              <Term>unitCode</Term>
+                              <Reference type="CODE_LIST">UNECERec20</Reference>
+                              <Value type="EXAMPLE">DD</Value>
+                           </Attribute>
+                        </Element>
+                        <Element cardinality="1..1">
+                           <Term>cbc:LongitudeDegreesMeasure</Term>
+                           <Name>Longitude Degrees Measure. </Name>
+                           <Description>BEAst: The Y coordinate. Use degrees with decimals. </Description>
+                           <Value type="EXAMPLE">18.063330898492403</Value>
+                           <Attribute usage="Mandatory">
+                              <Term>unitCode</Term>
+                              <Reference type="CODE_LIST">UNECERec20</Reference>
+                              <Value type="EXAMPLE">DD</Value>
+                           </Attribute>
+                        </Element>
+                        <Element cardinality="0..1">
+                           <Term>cbc:AltitudeMeasure</Term>
+                           <Name>Altitude Measure. </Name>
+                           <Description>BEAst: The Z coordinate. </Description>
+                           <Value type="EXAMPLE">12.5</Value>
+                           <Attribute usage="Mandatory">
+                              <Term>unitCode</Term>
+                              <Reference type="CODE_LIST">UNECERec20</Reference>
+                              <Value type="EXAMPLE">MTR</Value>
+                           </Attribute>
+                        </Element>
+                     </Element>
+                  </Element>
+                  <Element cardinality="0..1">
+                     <Term>cac:Contact</Term>
+                     <Name>Consignor Contact information </Name>
+                     <Description>BEAst: Contact information </Description>
+                     <Element cardinality="0..1">
+                        <Term>cbc:Name</Term>
+                        <Name>Contact person name </Name>
+                        <Description>BEAst: The name of the contact person. </Description>
+                        <Value type="EXAMPLE">Mr Fred Churchill</Value>
+                     </Element>
+                     <Element cardinality="0..1">
+                        <Term>cbc:Telephone</Term>
+                        <Name>Contact telephone number </Name>
+                        <Description>BEAst: A phone number for the contact person. If the person has a direct number, this is that number. </Description>
+                        <Value type="EXAMPLE">0127 2653214</Value>
+                     </Element>
+                     <Element cardinality="0..1">
+                        <Term>cbc:ElectronicMail</Term>
+                        <Name>Contact email address </Name>
+                        <Description>BEAst: The e-mail address for the contact person. If the person has a direct e-mail this is that email. </Description>
+                        <Value type="EXAMPLE">fred@iytcorporation.gov.uk</Value>
+                     </Element>
+                  </Element>
+               </Element>
+            </Element>
+         </Element>
+      </Element>
+   </Document>
+</Structure>
