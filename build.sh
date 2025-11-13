@@ -120,7 +120,7 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     
 echo "Generating documentation: Waste Movement"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$LOGISTICSBASEURL/ubl-waste-movement.xml \
+    -s:/src/structure/source/ubl-waste-movement.xml \
     -xsl:/src/tools/create-syntax.xsl \
     -o:/src/structure/syntax/ubl-waste-movement.xml \
     varOverrideSample=/src/structure/source/ubl-waste-movement.xml -ext:on --allow-external-functions:on
