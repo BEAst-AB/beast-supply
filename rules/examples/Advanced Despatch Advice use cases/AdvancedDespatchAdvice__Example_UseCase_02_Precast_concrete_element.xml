@@ -6,7 +6,9 @@
 				
 				Change Log:
 				2025-01-09
-				- Initial version
+					- Initial version
+				2025-11-14
+					- Added several elements from Swedish Concrete Association
 		
 -->
 <DespatchAdvice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
@@ -47,8 +49,9 @@
 					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
-			<cac:PartyLegalEntity>
+			<cac:PartyLegalEntity><!-- lägg till org nr -->
 				<cbc:RegistrationName>AB STRÄNGBETONG</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">5565394904</cbc:CompanyID>
 			</cac:PartyLegalEntity>
 			<cac:Contact>
 				<cbc:Name>HENRIK VINELL</cbc:Name>
@@ -64,15 +67,17 @@
 				<cbc:ID schemeID="0007">5593026189</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PostalAddress>
-				<cbc:StreetName>BOX 30116</cbc:StreetName>
-				<cbc:CityName>STOCKHOLM</cbc:CityName>
-				<cbc:PostalZone>.</cbc:PostalZone>
+				<cbc:StreetName>Gustav Iii:S Boulevard 366</cbc:StreetName>
+				<cbc:CityName>Solna</cbc:CityName>
+				<cbc:PostalZone>169 73</cbc:PostalZone>
 				<cac:Country>
 					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
 			<cac:PartyLegalEntity>
-				<cbc:RegistrationName>CONSOLIS ELEMENT SVERIGE</cbc:RegistrationName>
+				<cbc:RegistrationName>Consolis Elements Sverige AB</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">5593026189</cbc:CompanyID>
+				
 			</cac:PartyLegalEntity>
 			<cac:Contact>
 				<cbc:Name>Kalle Karlsson</cbc:Name>
@@ -87,17 +92,19 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0007">5593026189</cbc:ID>
 			</cac:PartyIdentification>
-			<cac:PartyName>
-				<cbc:Name>CONSOLIS ELEMENT SVERIGE</cbc:Name>
-			</cac:PartyName>
 			<cac:PostalAddress>
-				<cbc:StreetName>BOX 30116</cbc:StreetName>
-				<cbc:CityName>STOCKHOLM</cbc:CityName>
-				<cbc:PostalZone>.</cbc:PostalZone>
+				<cbc:StreetName>Gustav Iii:S Boulevard 366</cbc:StreetName>
+				<cbc:CityName>Solna</cbc:CityName>
+				<cbc:PostalZone>169 73</cbc:PostalZone>
 				<cac:Country>
 					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>CONSOLIS ELEMENT SVERIGE</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">5593026189</cbc:CompanyID>
+				
+			</cac:PartyLegalEntity>
 		</cac:Party>
 	</cac:BuyerCustomerParty>
 	<cac:SellerSupplierParty>
@@ -105,17 +112,18 @@
 			<cac:PartyIdentification>
 				<cbc:ID schemeID="0007">5565394904</cbc:ID>
 			</cac:PartyIdentification>
-			<cac:PartyName>
-				<cbc:Name>AB STRÄNGBETONG</cbc:Name>
-			</cac:PartyName>
 			<cac:PostalAddress>
-				<cbc:StreetName>GUSTAVIII BOULEVARD 36</cbc:StreetName>
-				<cbc:CityName>SOLNA</cbc:CityName>
-				<cbc:PostalZone>169 73</cbc:PostalZone>
+				<cbc:StreetName>KUNGSGATAN 2</cbc:StreetName>
+				<cbc:CityName>KUNGSÖR</cbc:CityName>
+				<cbc:PostalZone>736 36</cbc:PostalZone>
 				<cac:Country>
 					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 				</cac:Country>
 			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>AB STRÄNGBETONG</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">5565394904</cbc:CompanyID>
+			</cac:PartyLegalEntity>
 		</cac:Party>
 	</cac:SellerSupplierParty>
 	<cac:Shipment>
@@ -123,6 +131,9 @@
 		<cbc:GrossWeightMeasure unitCode="KGM">25016.81</cbc:GrossWeightMeasure>
 		<cac:Consignment>
 			<cbc:ID>KUN-75682</cbc:ID>
+			<cbc:HandlingInstructions>
+				Börjar utifrån A-bocken: ELEMENT-KUN-15663-49, ELEMENT-KUN-15663-50, ELEMENT-KUN-15663-51, ELEMENT-KUN-15663-52
+			</cbc:HandlingInstructions>
 			<cac:CarrierParty>
 				<cac:PartyIdentification>
 					<cbc:ID schemeID="0007">5567878318</cbc:ID>
@@ -194,6 +205,16 @@
 			</cac:OriginalDespatchTransportationService>
 
 		</cac:Consignment>
+		
+		<cac:ShipmentStage>
+			<cbc:TransportModeCode>3</cbc:TransportModeCode>
+			<cbc:TransportMeansTypeCode>320</cbc:TransportMeansTypeCode>
+			<cac:TransportMeans>
+				<cac:RoadTransport>
+					<cbc:LicensePlateID>ABC123</cbc:LicensePlateID>
+				</cac:RoadTransport>
+			</cac:TransportMeans>
+		</cac:ShipmentStage>
 		<cac:Delivery>
 			<cbc:ActualDeliveryDate>2024-01-02</cbc:ActualDeliveryDate>
 			<cbc:ActualDeliveryTime>10:50:04</cbc:ActualDeliveryTime>
@@ -248,7 +269,7 @@
 				<cbc:ID>D3101</cbc:ID>
 			</cac:BuyersItemIdentification>
 			<cac:SellersItemIdentification>
-				<cbc:ID>ELEMENT-KUN-15663-1420</cbc:ID>
+				<cbc:ID>ELEMENT-KUN-15663</cbc:ID>
 			</cac:SellersItemIdentification>
 			<cac:CommodityClassification>
 				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="" name="SBE">SB10149</cbc:ItemClassificationCode>
@@ -281,6 +302,30 @@
 				<cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
 				<cbc:Value>NA</cbc:Value>
 				<cbc:ValueQuantity unitCode="KGM">160.87</cbc:ValueQuantity>
+			</cac:AdditionalItemProperty>
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Start unloading time</cbc:Name>
+				<cbc:NameCode listID="SSEN206">StartUnloadingTime</cbc:NameCode>
+				<cbc:Value>2023-05-03T12:40:00</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Stop unloading time</cbc:Name>
+				<cbc:NameCode listID="SSEN206">StopUnloadingTime</cbc:NameCode>
+				<cbc:Value>2023-05-03T12:50:00</cbc:Value>
+			</cac:AdditionalItemProperty>
+			
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Destination1</cbc:Name>
+				<cbc:NameCode listID="BEAST:4.0">Destination1</cbc:NameCode>
+				<cbc:Value>1-09</cbc:Value>
+			</cac:AdditionalItemProperty>
+			
+			<cac:AdditionalItemProperty>
+				<cbc:Name>Gross Area</cbc:Name>
+				<cbc:NameCode listID="BEAST:4.0">GrossArea</cbc:NameCode>
+				<cbc:Value>NA</cbc:Value>
+				<cbc:ValueQuantity unitCode="MTK">4.81</cbc:ValueQuantity>
 			</cac:AdditionalItemProperty>
 			<cac:ItemInstance>
 				<!-- Serial number for the element -->
@@ -367,10 +412,10 @@
 				<cbc:Value>HÅLDÄCK</cbc:Value>
 			</cac:AdditionalItemProperty>
 			<cac:AdditionalItemProperty>
-				<cbc:Name>GWP GHG A1-3 EPD total value for line</cbc:Name>
+				<cbc:Name>GWP GHG A1-3 EPD per kg</cbc:Name>
 				<cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
 				<cbc:Value>NA</cbc:Value>
-				<cbc:ValueQuantity unitCode="KGM">153.03</cbc:ValueQuantity>
+				<cbc:ValueQuantity unitCode="KGM">0.153</cbc:ValueQuantity>
 			</cac:AdditionalItemProperty>
 			<cac:ItemInstance>
 				<!-- Serial number for the element -->
@@ -470,10 +515,12 @@
 				<cbc:SerialID>9877698767657</cbc:SerialID>
 			</cac:ItemInstance>
 			<cac:Dimension>
+				<!-- Gross weight -->
 				<cbc:AttributeID>AAB</cbc:AttributeID>
 				<cbc:Measure unitCode="KGM">620</cbc:Measure>
 			</cac:Dimension>
 			<cac:Dimension>
+				<!-- Net net weight -->
 				<cbc:AttributeID>AAF</cbc:AttributeID>
 				<cbc:Measure unitCode="KGM">620</cbc:Measure>
 			</cac:Dimension>
