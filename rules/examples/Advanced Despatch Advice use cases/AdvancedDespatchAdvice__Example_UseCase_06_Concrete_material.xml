@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-                Content:
+                Content: Advanced Despatch Advice Example Use Case 06 Ready-mixed Concrete Material
                 Example for Use-case no 6 in Logistics Advanced Despatch Advice for concrete.
 					2024-08-22: Update with more properties
+					2025-08-20: Corrected typo Orgin -> Origin in cac:AdditionalItemProperty
+					2025-10-01: Added density handling instructions in cac:Dimension
 			
 -->
 <DespatchAdvice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -158,9 +160,9 @@
 					<cac:LocationCoordinate>
 						<cbc:CoordinateSystemCode>EPSG:3857</cbc:CoordinateSystemCode>
 						<cbc:LatitudeDegreesMeasure unitCode="DD"
-							>59.3224193803922</cbc:LatitudeDegreesMeasure>
+						>59.3224193803922</cbc:LatitudeDegreesMeasure>
 						<cbc:LongitudeDegreesMeasure unitCode="DD"
-							>18.077500623211105</cbc:LongitudeDegreesMeasure>
+						>18.077500623211105</cbc:LongitudeDegreesMeasure>
 					</cac:LocationCoordinate>
 				</cac:Address>
 			</cac:DeliveryLocation>
@@ -182,9 +184,9 @@
 					<cac:LocationCoordinate>
 						<cbc:CoordinateSystemCode>EPSG:3857</cbc:CoordinateSystemCode>
 						<cbc:LatitudeDegreesMeasure unitCode="DD"
-							>59.29701362140153</cbc:LatitudeDegreesMeasure>
+						>59.29701362140153</cbc:LatitudeDegreesMeasure>
 						<cbc:LongitudeDegreesMeasure unitCode="DD"
-							>18.02110774233039</cbc:LongitudeDegreesMeasure>
+						>18.02110774233039</cbc:LongitudeDegreesMeasure>
 					</cac:LocationCoordinate>
 				</cac:DespatchAddress>
 			</cac:Despatch>
@@ -225,7 +227,7 @@
 				<cbc:NameCode listID="IPNC">BoVResourceID</cbc:NameCode>
 				<cbc:Value>6000000029</cbc:Value>
 			</cac:AdditionalItemProperty>
-			
+
 			<!-- Specific climate data, machine readable EPD -->
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD Dataset ID</cbc:Name>
@@ -236,9 +238,10 @@
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD Dataset URL</cbc:Name>
 				<cbc:NameCode listID="IPNC">EPDDataSetURL</cbc:NameCode>
-				<cbc:Value>https://epdnorway.lca-data.com/resource/processes/165f8554-00cd-43ad-aeb7-ba769854554a?format=xml&amp;version=00.01.000</cbc:Value>
+				<cbc:Value>
+					https://epdnorway.lca-data.com/resource/processes/165f8554-00cd-43ad-aeb7-ba769854554a?format=xml&amp;version=00.01.000</cbc:Value>
 			</cac:AdditionalItemProperty>
-			
+
 			<!-- Specific climate data, human readable EPD -->
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Program Operator</cbc:Name>
@@ -261,17 +264,19 @@
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD HR URL</cbc:Name>
 				<cbc:NameCode listID="IPNC">EPDHRURL</cbc:NameCode>
-				<cbc:Value>https://www.epd-norge.no/getfile.php/1313397-1680247896/EPDer/Byggevarer/Ferdig%20betong/NEPD-2154-978_Sweexp55-C30-37-%281%29.pdf</cbc:Value>
+				<cbc:Value>
+					https://www.epd-norge.no/getfile.php/1313397-1680247896/EPDer/Byggevarer/Ferdig%20betong/NEPD-2154-978_Sweexp55-C30-37-%281%29.pdf</cbc:Value>
 			</cac:AdditionalItemProperty>
 
 			<!-- Specific climate data, GWP value calculated by the supplier  -->
+			<!-- Note that you need to divide the GWP GHG value with the density if the GWP GHG value is per M3 and not KG-->
 			<cac:AdditionalItemProperty>
 				<cbc:Name>GWP GHG A1-3 EPD value per kilogram</cbc:Name>
 				<cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
 				<cbc:Value>NA</cbc:Value>
 				<cbc:ValueQuantity unitCode="KGM">0.251</cbc:ValueQuantity>
 			</cac:AdditionalItemProperty>
-			
+
 			<!-- If the EPD is a daughter EPD, the corresponding mother EPD ID is added here -->
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Mother EPD ID</cbc:Name>
@@ -439,7 +444,7 @@
 				<cbc:Value>NA</cbc:Value>
 				<cbc:ValueQuantity unitCode="KMQ">87.5</cbc:ValueQuantity>
 			</cac:AdditionalItemProperty>
-			
+
 			<cac:AdditionalItemProperty>
 				<cbc:ID schemeID="Define:SwedishDataDictionary" schemeVersionID="">tbd</cbc:ID>
 				<cbc:Name>Ordered Quantity</cbc:Name>
@@ -447,7 +452,7 @@
 				<cbc:Value>NA</cbc:Value>
 				<cbc:ValueQuantity unitCode="KMQ">28</cbc:ValueQuantity>
 			</cac:AdditionalItemProperty>
-			
+
 			<cac:AdditionalItemProperty>
 				<cbc:ID schemeID="Define:SwedishDataDictionary" schemeVersionID="">tbd</cbc:ID>
 				<cbc:Name>Target Density</cbc:Name>
@@ -455,7 +460,7 @@
 				<cbc:Value>2350 kg/m3</cbc:Value>
 				<cbc:ValueQuantity unitCode="G18">2350</cbc:ValueQuantity>
 			</cac:AdditionalItemProperty>
-			
+
 			<cac:AdditionalItemProperty>
 				<cbc:ID schemeID="Define:SwedishDataDictionary" schemeVersionID="">tbd</cbc:ID>
 				<cbc:Name>Cement Content</cbc:Name>
@@ -488,15 +493,15 @@
 
 			<cac:AdditionalItemProperty>
 				<cbc:ID schemeID="Define:SwedishDataDictionary" schemeVersionID="">tbd</cbc:ID>
-				<cbc:Name>Addition orgin</cbc:Name>
-				<cbc:NameCode listID="SS137003">AdditionOrgin</cbc:NameCode>
+				<cbc:Name>Addition origin</cbc:Name>
+				<cbc:NameCode listID="SS137003">AdditionOrigin</cbc:NameCode>
 				<cbc:Value>Oxelesund</cbc:Value>
 			</cac:AdditionalItemProperty>
 
 			<cac:AdditionalItemProperty>
 				<cbc:ID schemeID="Define:SwedishDataDictionary" schemeVersionID="">tbd</cbc:ID>
-				<cbc:Name>Cement Orgin</cbc:Name>
-				<cbc:NameCode listID="SS137003">CementOrgin</cbc:NameCode>
+				<cbc:Name>Cement Origin</cbc:Name>
+				<cbc:NameCode listID="SS137003">CementOrigin</cbc:NameCode>
 				<cbc:Value>Slite</cbc:Value>
 			</cac:AdditionalItemProperty>
 
@@ -525,6 +530,12 @@
 					</cac:PartyName>
 				</cac:IssuerParty>
 			</cac:Certificate>
+			<cac:Dimension>
+				<!-- Density for concrete, use 2350 if no specific density exists
+					 Note that you need to divide the GWP GHG value with the density if the GWP GHG value is per M3 -->
+				<cbc:AttributeID>AAF</cbc:AttributeID>
+				<cbc:Measure unitCode="KGM">2350</cbc:Measure>
+			</cac:Dimension>
 		</cac:Item>
 	</cac:DespatchLine>
 	<cac:DespatchLine>
