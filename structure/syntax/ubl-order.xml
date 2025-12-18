@@ -1098,7 +1098,7 @@
  Peppol: A name of the location to where the ordered items should be delivered.</Description>
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">tir01-p028</Reference>
-               <Value type="EXAMPLE">Skanskas BLC i Kristianstad</Value>
+               <Value type="EXAMPLE">Skanska BLC i Kristianstad</Value>
             </Element>
             <Element>
                <Term>cac:Address</Term>
@@ -1855,10 +1855,11 @@
                   <Element cardinality="0..1">
                      <Term>cbc:Name</Term>
                      <Name>Delivery location name</Name>
-                     <Description>A name of the location to where the ordered items should be delivered.</Description>
+                     <Description>BEAst: T5001, Name of the Consignee.
+ Peppol: A name of the location to where the ordered items should be delivered.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">tir01-p062</Reference>
-                     <Value type="EXAMPLE">South side goods arrival dock</Value>
+                     <Value type="EXAMPLE">Skanska BLC i Kristianstad</Value>
                   </Element>
                   <Element>
                      <Term>cac:Address</Term>
