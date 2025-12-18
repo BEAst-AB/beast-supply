@@ -1868,30 +1868,38 @@
                      <Element cardinality="0..1">
                         <Term>cbc:StreetName</Term>
                         <Name>Address line 1</Name>
-                        <Description>The main address line in a postal address usually the street name and number.</Description>
+                        <Description>BEAst: T5003, Street name/Number or Postal box number of the Consignee.
+ Peppol: The main address line in a postal address usually the street name and number.</Description>
                         <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir01-p055</Reference>
+                        <Value type="EXAMPLE">Testvägen 1</Value>
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cbc:AdditionalStreetName</Term>
                         <Name>Address line 2</Name>
-                        <Description>An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
+                        <Description>BEAst: Used for Department (T5002).
+ Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Description>
                         <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir01-p056</Reference>
+                        <Value type="EXAMPLE">Avdelning C</Value>
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cbc:CityName</Term>
                         <Name>City</Name>
-                        <Description>The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
+                        <Description>BEAst: T5005, City name.
+ Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Description>
                         <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir01-p057</Reference>
+                        <Value type="EXAMPLE">Kristianstad</Value>
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cbc:PostalZone</Term>
                         <Name>Post code</Name>
-                        <Description>The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
+                        <Description>BEAst: T6117, Postal zone.
+ Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Description>
                         <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir01-p058</Reference>
+                        <Value type="EXAMPLE">29155</Value>
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cbc:CountrySubentity</Term>
@@ -1899,6 +1907,7 @@
                         <Description>For specifying a region, county, state, province etc. within a country by using text.</Description>
                         <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">tir01-p059</Reference>
+                        <Value type="EXAMPLE">765</Value>
                      </Element>
                      <Element cardinality="0..1">
                         <Term>cac:AddressLine</Term>
@@ -1907,10 +1916,11 @@
                         <Element>
                            <Term>cbc:Line</Term>
                            <Name>Address line 3</Name>
-                           <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                           <Description>BEAst: Used for all other address information. Coordinates (T6321/T6322) are given in format WGS84, degrees with decimals, separated by #. Can be used for detailed information by separating the information by #.
+ Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                            <DataType>Text</DataType>
                            <Reference type="BUSINESS_TERM">tir01-p060</Reference>
-                           <Value type="EXAMPLE">Gate 34</Value>
+                           <Value type="EXAMPLE">Lundbyleden#Område C2</Value>
                         </Element>
                      </Element>
                      <Element>
@@ -1920,11 +1930,12 @@
                         <Element>
                            <Term>cbc:IdentificationCode</Term>
                            <Name>Country code</Name>
-                           <Description>A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
+                           <Description>BEAst: T5007, Country code.
+ Peppol: A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Description>
                            <DataType>Code</DataType>
                            <Reference type="BUSINESS_TERM">tir01-p061</Reference>
                            <Reference type="CODE_LIST">ISO3166</Reference>
-                           <Value type="EXAMPLE">NL</Value>
+                           <Value type="EXAMPLE">SE</Value>
                         </Element>
                      </Element>
                   </Element>

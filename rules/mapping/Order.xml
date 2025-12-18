@@ -6645,10 +6645,10 @@
                <Data ss:Type="String">Address line 1</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The main address line in a postal address usually the street name and number.</Data>
+               <Data ss:Type="String">BEAst: T5003, Street name/Number or Postal box number of the Consignee. Peppol: The main address line in a postal address usually the street name and number.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Testvägen 1</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:StreetName</Data>
@@ -6671,10 +6671,10 @@
                <Data ss:Type="String">Address line 2</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
+               <Data ss:Type="String">BEAst: Used for Department (T5002). Peppol: An additional address line in a postal address that can be used to give further details supplementing the main line. Common use are secondary house number in a complex or in a building.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Avdelning C</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:AdditionalStreetName</Data>
@@ -6697,10 +6697,10 @@
                <Data ss:Type="String">City</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
+               <Data ss:Type="String">BEAst: T5005, City name. Peppol: The common name of the city where the postal address is. The name is written in full rather than as a code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">Kristianstad</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:CityName</Data>
@@ -6723,10 +6723,10 @@
                <Data ss:Type="String">Post code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
+               <Data ss:Type="String">BEAst: T6117, Postal zone. Peppol: The identifier for an addressable group of properties according to the relevant national postal service, such as a ZIP code or Post Code.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">29155</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:PostalZone</Data>
@@ -6752,7 +6752,7 @@
                <Data ss:Type="String">For specifying a region, county, state, province etc. within a country by using text.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String"/>
+               <Data ss:Type="String">765</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:CountrySubentity</Data>
@@ -6801,10 +6801,10 @@
                <Data ss:Type="String">Address line 3</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">An additional address line in an address that can be used to give further details supplementing the main line.</Data>
+               <Data ss:Type="String">BEAst: Used for all other address information. Coordinates (T6321/T6322) are given in format WGS84, degrees with decimals, separated by #. Can be used for detailed information by separating the information by #. Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">Gate 34</Data>
+               <Data ss:Type="String">Lundbyleden#Område C2</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Delivery/cac:DeliveryLocation/cac:Address/cac:AddressLine/cbc:Line</Data>
@@ -6853,10 +6853,10 @@
                <Data ss:Type="String">Country code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
+               <Data ss:Type="String">BEAst: T5007, Country code. Peppol: A code that identifies the country.The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". Codes must be according to the alpha-2 representation.</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">NL</Data>
+               <Data ss:Type="String">SE</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:LineItem/cac:Delivery/cac:DeliveryLocation/cac:Address/cac:Country/cbc:IdentificationCode</Data>
