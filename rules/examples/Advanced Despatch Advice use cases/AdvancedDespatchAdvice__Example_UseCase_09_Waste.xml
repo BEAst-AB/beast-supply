@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 					Content:
-					This file contains an Example for Use-case no 8 Waste treatment service, no transport. Advanced
-Despatch Advice.
+					This file contains an Example for Use-case no 9 in Logistics Advanced Despatch Advice.
+	
 					Change log:
 					2026-01-15: rev 1.1 
 					Added Declaration number, document status code and EWC-code. 
 					Removed CO2 data since not relevant for waste at this point.
-					
+					Updated fuel report to match new specification regarding environmental emissions.
+				
 					2022-10-14: Initial version created
-					
 -->
 <DespatchAdvice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2"
 	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-
+	
 	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:advanced_despatch_advice:1</cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:despatch_advice_only:1</cbc:ProfileID>
-
+	
 	<cbc:ID>43413589</cbc:ID>
 	<cbc:IssueDate>2020-12-21</cbc:IssueDate>
 	<cbc:IssueTime>13:14:34</cbc:IssueTime>
 	<cbc:DocumentStatusCode>22</cbc:DocumentStatusCode>
 	<cbc:DespatchAdviceTypeCode>2</cbc:DespatchAdviceTypeCode>
-
+	
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>P-12345</cbc:ID>
 		<cbc:DocumentType>ProjectReference</cbc:DocumentType>
@@ -36,8 +36,8 @@ Despatch Advice.
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>SEK</cbc:ID>
 		<cbc:DocumentType>CurrencyCode</cbc:DocumentType>
-	</cac:AdditionalDocumentReference>
-
+	</cac:AdditionalDocumentReference>	
+	
 	<cac:DespatchSupplierParty>
 		<cac:Party>
 			<cbc:EndpointID schemeID="0007">5560125220</cbc:EndpointID>
@@ -63,7 +63,7 @@ Despatch Advice.
 			</cac:Contact>
 		</cac:Party>
 	</cac:DespatchSupplierParty>
-
+	
 	<cac:DeliveryCustomerParty>
 		<cac:Party>
 			<cbc:EndpointID schemeID="0007">5560339086</cbc:EndpointID>
@@ -89,7 +89,7 @@ Despatch Advice.
 			</cac:Contact>
 		</cac:Party>
 	</cac:DeliveryCustomerParty>
-
+	
 	<cac:BuyerCustomerParty>
 		<cac:Party>
 			<cac:PartyIdentification>
@@ -109,7 +109,7 @@ Despatch Advice.
 			</cac:PartyLegalEntity>
 		</cac:Party>
 	</cac:BuyerCustomerParty>
-
+	
 	<cac:SellerSupplierParty>
 		<cac:Party>
 			<cac:PartyIdentification>
@@ -129,10 +129,93 @@ Despatch Advice.
 			</cac:PartyLegalEntity>
 		</cac:Party>
 	</cac:SellerSupplierParty>
-
+	
 	<cac:Shipment>
-		<cbc:ID>NA</cbc:ID>
+		<cbc:ID schemeID="GSIN">73500538500000019</cbc:ID>
 
+		<cac:Consignment>
+			<cbc:ID schemeID="GINC">735005233GS1TRANSPORT000001</cbc:ID>
+
+			<cac:OriginalDespatchTransportationService>
+				<cbc:TransportServiceCode>FuelReport</cbc:TransportServiceCode>
+				<cac:TransportEquipment>
+					<cbc:TransportEquipmentTypeCode listID="ClimateDatabas" listAgencyID="Boverket" listVersionID="02.05.000">6000000017</cbc:TransportEquipmentTypeCode>
+					<cbc:Description>HVO100</cbc:Description>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>FuelConsumption</cbc:AttributeID>
+						<cbc:Measure unitCode="LTR">115.6</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>EnergyContent</cbc:AttributeID>
+						<cbc:Measure unitCode="3B">3927</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>ConversionFactor</cbc:AttributeID>
+						<cbc:Measure unitCode="EA">0.52</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>DrivingDistance</cbc:AttributeID>
+						<cbc:Measure unitCode="KMT">86</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>DrivingTime</cbc:AttributeID>
+						<cbc:Measure unitCode="HUR">7.3</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>RenewableFuel</cbc:AttributeID>
+						<cbc:Measure unitCode="P1">100.00</cbc:Measure>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>FuelMeasurementMethod</cbc:AttributeID>
+						<cbc:Description>AutomaticMeasurement</cbc:Description>
+					</cac:MeasurementDimension>
+					<cac:MeasurementDimension>
+						<cbc:AttributeID>EngineType</cbc:AttributeID>
+						<cbc:Description>EURO4</cbc:Description>
+					</cac:MeasurementDimension>
+					<cac:ProviderParty>
+						<cac:PartyIdentification>
+							<cbc:ID schemeID="0007">5560726977</cbc:ID>
+						</cac:PartyIdentification>
+						<cac:PartyName>
+							<cbc:Name>Preem AB</cbc:Name>
+						</cac:PartyName>
+					</cac:ProviderParty>
+					<cac:GoodsItem>
+						<cac:Item>
+							<cac:SellersItemIdentification>
+								<cbc:ID>123</cbc:ID>
+							</cac:SellersItemIdentification>
+							<cac:StandardItemIdentification>
+								<cbc:ID schemeID="0160">1234567891234</cbc:ID>
+							</cac:StandardItemIdentification>
+						</cac:Item>
+					</cac:GoodsItem>
+				</cac:TransportEquipment>
+
+				<cac:EnvironmentalEmission>
+					<cbc:EnvironmentalEmissionTypeCode listID="UN785" name="Carbon Dioxide">CO2</cbc:EnvironmentalEmissionTypeCode>
+					<cbc:ValueMeasure unitCode="GL">2650</cbc:ValueMeasure>
+				</cac:EnvironmentalEmission>
+
+				<cac:EnvironmentalEmission>
+					<cbc:EnvironmentalEmissionTypeCode listID="UN785" name="Hydrocarbon">HC</cbc:EnvironmentalEmissionTypeCode>
+					<cbc:ValueMeasure unitCode="GL">0.015</cbc:ValueMeasure>
+				</cac:EnvironmentalEmission>
+
+				<cac:EnvironmentalEmission>
+					<cbc:EnvironmentalEmissionTypeCode listID="UN785" name="Nitric Oxide">NOX</cbc:EnvironmentalEmissionTypeCode>
+					<cbc:ValueMeasure unitCode="GL">0.750</cbc:ValueMeasure>
+				</cac:EnvironmentalEmission>
+
+				<cac:EnvironmentalEmission>
+					<cbc:EnvironmentalEmissionTypeCode listID="UN785" name="Particular Matter">PM</cbc:EnvironmentalEmissionTypeCode>
+					<cbc:ValueMeasure unitCode="GL">0.005</cbc:ValueMeasure>
+				</cac:EnvironmentalEmission>
+				
+			</cac:OriginalDespatchTransportationService>
+		</cac:Consignment>
+		
 		<cac:ShipmentStage>
 			<cbc:TransportModeCode>3</cbc:TransportModeCode>
 			<cac:TransportMeans>
@@ -141,9 +224,9 @@ Despatch Advice.
 				</cac:RoadTransport>
 			</cac:TransportMeans>
 		</cac:ShipmentStage>
-
+		
 		<cac:Delivery>
-
+			
 			<cbc:ActualDeliveryDate>2020-12-21</cbc:ActualDeliveryDate>
 			<cbc:ActualDeliveryTime>07:15:00</cbc:ActualDeliveryTime>
 
@@ -164,15 +247,15 @@ Despatch Advice.
 					</cac:LocationCoordinate>
 				</cac:Address>
 			</cac:DeliveryLocation>
-
+			
 			<cac:Despatch>
 				<cbc:ActualDespatchDate>2020-12-21</cbc:ActualDespatchDate>
 				<cbc:ActualDespatchTime>02:00:00</cbc:ActualDespatchTime>
-
+				
 				<cac:DespatchAddress>
 					<cbc:StreetName>Construction road 1</cbc:StreetName>
-					<cbc:CityName>Stockholm</cbc:CityName>
-					<cbc:PostalZone>123 45</cbc:PostalZone>
+					<cbc:CityName>Linköping</cbc:CityName>
+					<cbc:PostalZone>323 45</cbc:PostalZone>
 					<cac:Country>
 						<cbc:IdentificationCode>SE</cbc:IdentificationCode>
 					</cac:Country>
@@ -182,13 +265,44 @@ Despatch Advice.
 						<cbc:LongitudeDegreesMeasure unitCode="DD">18.063330898492403</cbc:LongitudeDegreesMeasure>
 					</cac:LocationCoordinate>
 				</cac:DespatchAddress>
-
+				
 			</cac:Despatch>
 		</cac:Delivery>
 	</cac:Shipment>
-
+	
 	<cac:DespatchLine>
 		<cbc:ID>1</cbc:ID>
+		<cbc:DeliveredQuantity unitCode="HUR">7.3</cbc:DeliveredQuantity>
+		
+		<cac:OrderLineReference>
+			<cbc:LineID>10</cbc:LineID>
+			<cac:OrderReference>
+				<cbc:ID>AEG012345</cbc:ID>
+			</cac:OrderReference>
+		</cac:OrderLineReference>
+		
+		<cac:Item>
+			<cbc:Name>Tömning av container, timersättning</cbc:Name>
+			<cac:SellersItemIdentification>
+				<cbc:ID>212611</cbc:ID>
+			</cac:SellersItemIdentification>
+			
+			<cac:CommodityClassification>
+				<cbc:ItemClassificationCode listID="ZZZ" listVersionID="4.5" name="SA">08001350000</cbc:ItemClassificationCode>
+			</cac:CommodityClassification>
+			
+			<cac:AdditionalItemProperty>
+				<cbc:Name>NA</cbc:Name>
+				<cbc:NameCode listID="IPNC">Price</cbc:NameCode>
+				<cbc:Value>1175.00</cbc:Value>
+				<cbc:ValueQualifier>CON</cbc:ValueQualifier>
+			</cac:AdditionalItemProperty>
+			
+		</cac:Item>
+	</cac:DespatchLine>
+
+	<cac:DespatchLine>
+		<cbc:ID>2</cbc:ID>
 		<cbc:DeliveredQuantity unitCode="TNE">2.345</cbc:DeliveredQuantity>
 
 		<cac:OrderLineReference><!-- Customer purchase order number -->
@@ -233,4 +347,5 @@ Despatch Advice.
 
 		</cac:Item>
 	</cac:DespatchLine>
+
 </DespatchAdvice>
