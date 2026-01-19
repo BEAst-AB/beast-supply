@@ -4,6 +4,7 @@
                 Example for Use-case no 6 in Logistics Advanced Despatch Advice for concrete.
 					2024-08-22: Update with more properties
 					2025-08-20: Corrected typo Orgin -> Origin in cac:AdditionalItemProperty
+					2025-10-01: Added density handling instructions in cac:Dimension
 			
 -->
 <DespatchAdvice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -237,7 +238,8 @@
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD Dataset URL</cbc:Name>
 				<cbc:NameCode listID="IPNC">EPDDataSetURL</cbc:NameCode>
-				<cbc:Value>https://epdnorway.lca-data.com/resource/processes/165f8554-00cd-43ad-aeb7-ba769854554a?format=xml&amp;version=00.01.000</cbc:Value>
+				<cbc:Value>
+					https://epdnorway.lca-data.com/resource/processes/165f8554-00cd-43ad-aeb7-ba769854554a?format=xml&amp;version=00.01.000</cbc:Value>
 			</cac:AdditionalItemProperty>
 
 			<!-- Specific climate data, human readable EPD -->
@@ -262,10 +264,12 @@
 			<cac:AdditionalItemProperty>
 				<cbc:Name>EPD HR URL</cbc:Name>
 				<cbc:NameCode listID="IPNC">EPDHRURL</cbc:NameCode>
-				<cbc:Value>https://www.epd-norge.no/getfile.php/1313397-1680247896/EPDer/Byggevarer/Ferdig%20betong/NEPD-2154-978_Sweexp55-C30-37-%281%29.pdf</cbc:Value>
+				<cbc:Value>
+					https://www.epd-norge.no/getfile.php/1313397-1680247896/EPDer/Byggevarer/Ferdig%20betong/NEPD-2154-978_Sweexp55-C30-37-%281%29.pdf</cbc:Value>
 			</cac:AdditionalItemProperty>
 
 			<!-- Specific climate data, GWP value calculated by the supplier  -->
+			<!-- Note that you need to divide the GWP GHG value with the density if the GWP GHG value is per M3 and not KG-->
 			<cac:AdditionalItemProperty>
 				<cbc:Name>GWP GHG A1-3 EPD value per kilogram</cbc:Name>
 				<cbc:NameCode listID="IPNC">GWP-GHG_A1-3_vA1</cbc:NameCode>
@@ -526,6 +530,12 @@
 					</cac:PartyName>
 				</cac:IssuerParty>
 			</cac:Certificate>
+			<cac:Dimension>
+				<!-- Density for concrete, use 2350 if no specific density exists
+					 Note that you need to divide the GWP GHG value with the density if the GWP GHG value is per M3 -->
+				<cbc:AttributeID>AAF</cbc:AttributeID>
+				<cbc:Measure unitCode="KGM">2350</cbc:Measure>
+			</cac:Dimension>
 		</cac:Item>
 	</cac:DespatchLine>
 	<cac:DespatchLine>
