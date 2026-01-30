@@ -47,6 +47,52 @@
 	</cac:ProviderParty>
 	<!-- end::request-provider[] -->
 
+	<!-- tag::addressH[] -->
+	<cac:SellerSupplierParty>
+		<cac:Party>
+			<cac:PartyIdentification>
+			<cbc:ID schemeID="0088">7300010000001</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>Despatch from Name</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Industrigatan 6</cbc:StreetName>
+				<cbc:CityName>Malmö</cbc:CityName>
+				<cbc:PostalZone>87654</cbc:PostalZone>
+				<cac:AddressLine>
+					<cbc:Line>Warehouse 1</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+		</cac:Party>
+	</cac:SellerSupplierParty>
+
+	<cac:ContractorCustomerParty>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="ZZZ">23947</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>Delivery to Name</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Huvudgatan 56</cbc:StreetName>
+				<cbc:CityName>Lund</cbc:CityName>
+				<cbc:PostalZone>34567</cbc:PostalZone>
+				<cac:AddressLine>
+					<cbc:Line>Building 2</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode listID="ISO3166-1:Alpha2">SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+		</cac:Party>
+	</cac:ContractorCustomerParty>
+		<!-- end::addressH[] -->
+
 	<!-- tag::version[] -->
 	<cac:RequestedCatalogueReference>
 		<cbc:ID>12345</cbc:ID>
@@ -101,7 +147,30 @@
 				</cac:Country>
 			</cac:ApplicableTerritoryAddress>
 			<!-- end::delivery-location[] -->
+
+			<!-- tag::addressL[] -->
+			<cac:ApplicableTerritoryAddress>
+				<cbc:AddressTypeCode>DEL</cbc:AddressTypeCode>
+				<cbc:StreetName>Universitätsstraße 1</cbc:StreetName>
+				<cbc:CityName>Koblenz</cbc:CityName>
+				<cbc:PostalZone>56070</cbc:PostalZone>
+				<cbc:CountrySubentity>Rheinland-Pfalz</cbc:CountrySubentity>
+				<cac:Country>
+					<cbc:IdentificationCode>DE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:ApplicableTerritoryAddress>
 			
+			<cac:ApplicableTerritoryAddress>
+				<cbc:AddressTypeCode>DSP</cbc:AddressTypeCode>
+				<cbc:StreetName>Storgatan 12</cbc:StreetName>
+				<cbc:CityName>Kristianstad</cbc:CityName>
+				<cbc:PostalZone>29154</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:ApplicableTerritoryAddress>
+			<!-- end::addressL[] -->
+
 			<cac:Price>
 				<cbc:PriceAmount currencyID="EUR">200</cbc:PriceAmount>
 				<cbc:PriceTypeCode>NE</cbc:PriceTypeCode>
@@ -119,28 +188,6 @@
 			</cac:Price>
 		</cac:RequiredItemLocationQuantity>
 		<!-- end::item-price[] -->
-
-		<!-- tag::conditional-price[] -->
-		<cac:RequiredItemLocationQuantity>
-			<cbc:MinimumQuantity unitCode="C62">100</cbc:MinimumQuantity>
-			<cbc:MaximumQuantity unitCode="C62">100</cbc:MaximumQuantity>
-
-			<cac:ApplicableTerritoryAddress>
-				<cbc:StreetName>Universitätsstraße 1</cbc:StreetName>
-				<cbc:CityName>Koblenz</cbc:CityName>
-				<cbc:PostalZone>56070</cbc:PostalZone>
-				<cbc:CountrySubentity>Rheinland-Pfalz</cbc:CountrySubentity>
-				<cac:Country>
-					<cbc:IdentificationCode>DE</cbc:IdentificationCode>
-				</cac:Country>
-			</cac:ApplicableTerritoryAddress>
-
-			<cac:Price>
-				<cbc:PriceAmount currencyID="EUR">10</cbc:PriceAmount>
-				<cbc:PriceTypeCode>NE</cbc:PriceTypeCode>
-			</cac:Price>
-		</cac:RequiredItemLocationQuantity>
-		<!-- end::conditional-price[] -->
 
 		<!-- tag::item[] -->
 		<cac:Item>
