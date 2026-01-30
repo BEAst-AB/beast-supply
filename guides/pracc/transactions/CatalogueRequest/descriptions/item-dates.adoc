@@ -7,4 +7,8 @@ in planning the vaccine program and logistics in regard to the country that it w
 also be used in the electronic catalogue if the EO must update information.
 
 .Example of best before and expiry date
-include::../Snippets/Snippet_1.xml[tags=expiry]
+include::../Snippets/Snippet-1.xml[tags=expiry]
+
+NOTE!!! Best-Before-Date and Expiry-Date are not a part of the pre-award catalogue request. Two possible solutions:
+1.  Remove this chapter from this BIS.
+2.  Add support in the transaction for a solution to request these dates to be sent. Propose to use cac:TransactionConditions.
