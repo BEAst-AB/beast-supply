@@ -47,21 +47,47 @@
 	</cac:ProviderParty>
 	<!-- end::request-provider[] -->
 
+	<!-- tag::version[] -->
+	<cac:RequestedCatalogueReference>
+		<cbc:ID>12345</cbc:ID>
+		<VersionID>3</VersionID>
+	</cac:RequestedCatalogueReference>
+	<!-- end::version[] -->
+
+	<!-- tag::reference[] -->
+	<cac:ReferencedContract>
+		<cbc:ID>CT_123</cbc:ID>
+		<cbc:ContractTypeCode>539</cbc:ContractTypeCode>
+		<cac:ContractDocumentReference>
+			<cbc:ID>PROJ_321</cbc:ID>
+		</cac:ContractDocumentReference>
+	</cac:ReferencedContract>
+	<!-- end::reference[] -->
+
+	<!-- tag::terms[] -->
+	<cac:TradingTerms>
+		<cbc:Information>EXW#Ex Works</cbc:Information>
+		<cbc:Reference>INCOTerms</cbc:Reference>
+	</cac:TradingTerms>
+	<!-- end::terms[] -->
+
 	<cac:CatalogueRequestLine>
 		<cbc:ID>86a5b9ea-a27e-887b-9399-82d9c3482db3</cbc:ID>
+
+		<!-- tag::period[] -->
 		<cac:LineValidityPeriod>
 			<cbc:StartDate>2023-01-01</cbc:StartDate>
 			<cbc:EndDate>2023-03-31</cbc:EndDate>
 		</cac:LineValidityPeriod>
+		<!-- end::period[] -->
+
 		<cac:RequiredItemLocationQuantity>
 			<cbc:MinimumQuantity unitCode="C62">100</cbc:MinimumQuantity>
 			<cbc:MaximumQuantity unitCode="C62">100</cbc:MaximumQuantity>
 			<!-- Will be changed in regard to planned Code list! -->
 			
 			<!-- tag::order-interval[] -->
-			<cbc:TradingRestrictions>
-				Quarter-yearly as per contractual agreement
-			</cbc:TradingRestrictions>
+			<cbc:TradingRestrictions>Quarter-yearly as per contractual agreement</cbc:TradingRestrictions>
 			<!-- end::order-interval[] -->
 			
 			<!-- tag::delivery-location[] -->
@@ -147,7 +173,17 @@
 			<cac:CommodityClassification>
 				<cbc:ItemClassificationCode listID="STI">LA23-9</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
-			
+
+			<!-- tag::vat[] -->
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>25</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+			<!-- end::vat[] -->
+
 			<!-- tag::item-property[] -->
 			<cac:AdditionalItemProperty>
 				<cbc:ID>1</cbc:ID>
