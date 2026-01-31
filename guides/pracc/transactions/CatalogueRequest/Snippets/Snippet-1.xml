@@ -217,9 +217,11 @@
 			</cac:ItemSpecificationDocumentReference>
 			<!-- end::attachment[] -->
 
+			<!-- tag::classification[] -->
 			<cac:CommodityClassification>
 				<cbc:ItemClassificationCode listID="STI">LA23-9</cbc:ItemClassificationCode>
 			</cac:CommodityClassification>
+			<!-- end::classification[] -->
 
 			<!-- tag::vat[] -->
 			<cac:ClassifiedTaxCategory>
@@ -235,7 +237,7 @@
 			<cac:AdditionalItemProperty>
 				<cbc:ID>1</cbc:ID>
 				<cbc:Name languageID="en">Color</cbc:Name>
-				<NameCode listID="UNCL7081">35</NameCode>
+				<cbc:NameCode listID="UNCL7081">35</cbc:NameCode>
 				<cbc:Value languageID="en">Red</cbc:Value>
 				<cbc:ValueQualifier>Color</cbc:ValueQualifier>
 			</cac:AdditionalItemProperty>
@@ -255,6 +257,23 @@
 				<cbc:ID>3</cbc:ID>
 				<cbc:Name>GeneticallyModified</cbc:Name>
 				<cbc:Value>False</cbc:Value>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				   <cbc:Name>Thermal transmittance</cbc:Name>
+				   <cbc:NameCode listID="EN14351-1">ThermalTransmittance</cbc:NameCode>
+				   <cbc:Value>NA</cbc:Value>
+				   <cac:ItemPropertyRange>
+					      <cbc:MaximumValue>1.4</cbc:MaximumValue>
+				</cac:ItemPropertyRange>
+			</cac:AdditionalItemProperty>
+
+			<cac:AdditionalItemProperty>
+				<cbc:ID schemeID="ISO22057" schemeVersionID="2022" schemeDataURI="https://define.cobuilder.no/77e416eb-a363-4258-a04e- 
+			 			171d843a6460/2022/">77e416eb-a363-4258-a04e-171d843a6460</cbc:ID>
+				   <cbc:Name>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</cbc:Name>
+				   <cbc:Value>NA</cbc:Value>
+				   <cbc:ValueQuantity unitCode="MTR">4.30</cbc:ValueQuantity>
 			</cac:AdditionalItemProperty>
 			<!-- end::item-property[] -->
 			
