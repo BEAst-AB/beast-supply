@@ -17,12 +17,19 @@
 	<cbc:IssueTime>23:00:00.000Z</cbc:IssueTime>
 
 	<cac:ReceiverParty>
-		<!-- This is the Economic Operator! -->
+		<!-- tag::epID[] -->
+		<cbc:EndpointID schemeID="0198">DK87654321</cbc:EndpointID>
+		<!-- end::epID[] -->
+
+		<!-- tag::partyID[] -->
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="0088">5790000435968</cbc:ID>
+		</cac:PartyIdentification>
+		<!-- end::partyID[] -->
 	</cac:ReceiverParty>
 
 	<!-- tag::request-provider[] -->
-	
-	<cac:ProviderParty>
+		<cac:ProviderParty>
 		<cbc:EndpointID schemeID="9958">993-12332123-06</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="9958">993-12332123-06</cbc:ID>
