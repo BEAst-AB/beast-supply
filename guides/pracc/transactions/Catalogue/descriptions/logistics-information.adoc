@@ -13,14 +13,14 @@ The Logistics elements can be used to specify different pack levels for the same
 * It shall be stated if the pack level is orderable.
 * The relation between pack levels shall be specified, e.g. that a Dispatch unit contains Traded units.
 
-WARNING: When component related items are used, all the items in the PreAward Catalogue shall specify the Sellers item identifier
+WARNING: When component related items are used, all the items in the PreAward Catalogue shall specify the Seller's item identifier
 
 Below is an example of Logistics information in a PreAward Catalogue message.
 
 .Catalogue line for Dispatch unit, highest pack level.
 [source, xml, indent=0]
 ----
-include::../../../../structure/snippets/Snippet_68_log.xml[tags=du]
+include::../Snippets/Snippet-1.xml[tags=du]
 ----
 <1>  References the sellers item identification for the component line
 <2>  Quantity of that component (each dispatch unit contains 12 traded units)
@@ -29,7 +29,7 @@ include::../../../../structure/snippets/Snippet_68_log.xml[tags=du]
 .Catalogue line for Traded unit.
 [source, xml, indent=0]
 ----
-include::../../../../structure/snippets/Snippet_68_log.xml[tags=tu]
+include::../Snippets/Snippet-1.xml[tags=tu]
 ----
 <1>  References the sellers item identification for the component line
 <2>  Quantity of that component (each traded unit contains 6 consumer units)
@@ -37,5 +37,5 @@ include::../../../../structure/snippets/Snippet_68_log.xml[tags=tu]
 .Catalogue line for Consumer unit, lowest pack level.
 [source, xml, indent=0]
 ----
-include::../../../../structure/snippets//Snippet_68_log.xml[tags=cu]
+include::../Snippets//Snippet-1.xml[tags=cu]
 ----
