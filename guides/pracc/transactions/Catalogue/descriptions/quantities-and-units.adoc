@@ -97,9 +97,5 @@ To inform that an item is catch weight (ex. Orderable quantity is pcs, but invoi
 [source]
 .Example
 ----
-<cac:CatalogueLine>
-  <cbc:ID>8</cbc:ID>
-  <cbc:OrderableUnit>EA</cbc:OrderableUnit>
-  <cbc:ContentUnitQuantity unitCode="31" unitCodeListID="UNECERec20">10
-</cbc:ContentUnitQuantity>
+include::../Snippets/Snippet-1.xml[tags=catch]
 ----

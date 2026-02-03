@@ -235,15 +235,32 @@
 			<cac:StandardItemIdentification>
 				<cbc:ID schemeID="GTIN">99023409093843</cbc:ID>
 			</cac:StandardItemIdentification>
-			<!-- tag::attachment[] -->
+			
+			<!-- tag::attachment-1[] -->
 			<cac:ItemSpecificationDocumentReference>
 				<cbc:ID>2384-34232-342-34-2333</cbc:ID>
+				<cbc:DocumentType>Product sheet</cbc:DocumentType>
+				<cbc:DocumentDescription>Sheet providing specification of products.</cbc:DocumentDescription>
 				<cac:Attachment>
-					<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf"
+					<cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" fileName="sheet_123"
 						>ZGVmYXVsdA==</cbc:EmbeddedDocumentBinaryObject>
 				</cac:Attachment>
 			</cac:ItemSpecificationDocumentReference>
-			<!-- end::attachment[] -->
+			<!-- end::attachment-1[] -->
+
+			<!-- tag::attachment-2[] -->
+			<cac:ItemSpecificationDocumentReference>
+				<cbc:ID>2384-34232-342-34-2333</cbc:ID>
+				<cbc:DocumentType>Product sheet</cbc:DocumentType>
+				<cbc:DocumentDescription>Sheet providing specification of products.</cbc:DocumentDescription>
+				<cac:Attachment>
+					<cac:ExternalReference>
+						<cbc:URI>bis.beast.se</cbc:URI>
+					</cac:ExternalReference>
+				</cac:Attachment>
+			</cac:ItemSpecificationDocumentReference>
+			<!-- end::attachment-2[] -->
+
 			<cac:OriginCountry>
 				<cbc:IdentificationCode listID="ISO3166-1:Alpha2">FR</cbc:IdentificationCode>
 			</cac:OriginCountry>
@@ -396,6 +413,10 @@
 		<cbc:OrderableUnit>EA</cbc:OrderableUnit>
 		<cbc:ContentUnitQuantity unitCode="31" unitCodeListID="UNECERec20">10</cbc:ContentUnitQuantity>
 		<!-- end::catch[] -->
+
+		<!-- tag::log[] -->
+		<cbc:PackLevelCode listID="GS17009:PEPPOL">TU</cbc:PackLevelCode>
+		<!-- end::log[] -->
 
 		<cac:LineValidityPeriod>
 			<cbc:StartDate>2026-08-01</cbc:StartDate>
