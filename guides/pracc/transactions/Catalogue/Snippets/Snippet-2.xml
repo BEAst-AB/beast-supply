@@ -40,12 +40,17 @@
 	</cac:ReferencedContract>
 	<!-- end::project[] -->
 
-	<!-- tag::provider[] -->
 	<cac:ProviderParty>
-		<cbc:EndpointID schemeID="0088">8075367945271</cbc:EndpointID>
+		<!-- tag::epid[] -->
+		<cbc:EndpointID schemeID="0198">DK87654321</cbc:EndpointID>
+		<!-- end::epid[] -->
+		
+		<!-- tag::party-id[] -->
 		<cac:PartyIdentification>
-			<cbc:ID schemeID="0088">8075367945271</cbc:ID>
+			<cbc:ID schemeID="0088">5790000435968</cbc:ID>
 		</cac:PartyIdentification>
+		<!-- tag::party-id[] -->
+
 		<cac:PartyName>
 			<cbc:Name>ABC Supplier Ltd.</cbc:Name>
 		</cac:PartyName>
@@ -58,11 +63,9 @@
 			</cac:Country>
 		</cac:PostalAddress>
 	</cac:ProviderParty>
-	<!-- end::provider[] -->
 
 	<!-- tag::receiver[] -->
 	<cac:ReceiverParty>
-		<cbc:EndpointID schemeID="0088">5790000435968</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="ZZZ">14920263491</cbc:ID>
 		</cac:PartyIdentification>
