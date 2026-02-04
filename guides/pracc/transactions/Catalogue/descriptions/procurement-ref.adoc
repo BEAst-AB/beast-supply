@@ -13,19 +13,28 @@ is received, but instead of having a “procurement project identifier”, a Pro
 the cac:ContractDocumentReference/cbc:ID instead can contain a reference to a Framework Agreement or some other Contract between the parties. 
 The cbc:ContractTypeCode should reflect that if that is the case. 
 
+[source]
 .Example of procurement project identifier in a B2G process
+----
 include::../Snippets/Snippet-1.xml[tags=procurement]
- 
+----
+
 <1>  Reference to the Catalogue Request document id.
 <2>  Code 311 is mandatory
 <3>  The procurement project identifier
 
+[source]
 .Lot identifier on line level
+----
 include::../Snippets/Snippet-1.xml[tags=lot-ref]
+----
 ...
 
+[source]
 .Example of a Project reference in a B2B process
+----
 include::../Snippets/Snippet-1.xml[tags=project]
+----
 
 <1>  Reference to the Catalogue Request document id (311), a Framework Agreement (539) or another Contract (315).
 <2>  Code 311, 315 or 539 depending on type of reference.
