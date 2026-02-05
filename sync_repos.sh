@@ -34,7 +34,6 @@ sync_repo() {
   rm -rf temp-repo
 }
 
-
 # Sync files from multiple repositories without './' in target path
 # Rules
 sync_repo $BILLINGREPO $BILLINGBRANCH "rules/sch" "rules/sch"
