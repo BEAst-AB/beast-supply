@@ -2,10 +2,10 @@
  
 PROJECT=$(dirname $(readlink -f "$0"))
 
-POACCBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/2025-q4-mr/structure/syntax/"
+POACCBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/2026-Q2-MR/structure/syntax/"
 echo $POACCBASEURL
 
-LOGISTICSBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/Release_1_2_Review/structure/syntax/"
+LOGISTICSBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/Release_1_3_Review/structure/syntax/"
 echo $LOGISTICSBASEURL
  
 # Delete target folder if found
@@ -22,7 +22,7 @@ docker pull atomgraph/saxon
 # Transform the files in source dir to syntax.
 echo "Generating documentation: Invoice"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/2025-q4-mr/structure/syntax/ubl-invoice.xml \
+    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/2026-Q2-MR/structure/syntax/ubl-invoice.xml \
     -xsl:/src/tools/create-syntax-with-overrides.xsl \
     -o:/src/structure/syntax/ubl-invoice.xml \
     varOverrideSample=/src/structure/source/ubl-invoice.xml -ext:on --allow-external-functions:on
