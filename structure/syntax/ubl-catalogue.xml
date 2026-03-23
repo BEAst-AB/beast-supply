@@ -1079,6 +1079,7 @@
                   <Value type="EXAMPLE">XCS</Value>
                </Attribute>
                <Value type="EXAMPLE">1</Value>
+               <Value type="EXAMPLE">1</Value>
             </Element>
          </Element>
          <Element cardinality="0..n">
@@ -1259,6 +1260,7 @@
                   <Description>The factor used to convert the Base Quantity to an Orderable Unit. Must be specified if the Orderable Unit differs from the Base Quantity. If not present, assumed value is 1</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">tir19-p035</Reference>
+                  <Reference type="CODE_LIST">2</Reference>
                   <Value type="EXAMPLE">1</Value>
                </Element>
                <Element cardinality="0..1">
@@ -1410,6 +1412,7 @@
                      <Reference type="CODE_LIST">ICD</Reference>
                      <Value type="EXAMPLE">0160</Value>
                   </Attribute>
+                  <Value type="EXAMPLE">7654879</Value>
                   <Value type="EXAMPLE">7654879</Value>
                </Element>
             </Element>

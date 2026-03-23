@@ -8716,6 +8716,58 @@
                <Data ss:Type="Number">33100</Data>
             </Cell>
          </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:QuotationLineReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Reference to a quotation line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:QuotationLineReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">33200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:LineID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Quotation line reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Used to reference the line of the quotation that this order line corresponds to. The reference to the quotation document is provided on header level in the order.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:QuotationLineReference/cbc:LineID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">33300</Data>
+            </Cell>
+         </Row>
       </Table>
    </Worksheet>
 </Workbook>
