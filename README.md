@@ -1,4 +1,4 @@
 
-# Beast BIS
+# BEAst BIS
 
 This repository is used for the BEAst 4 project to move BEAst to a Peppol / UBL based standard
