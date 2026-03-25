@@ -9,7 +9,6 @@ Despatch Advice.
 					2026-01-13: rev 1.1 
 					Added Declaration number, PartyLegalEntity CompanyID, Document Status Code and EWC-code. 
 					Removed CO2 data since not relevant for waste at this point.
-					
 					2022-10-14: Initial version created
 					
 -->
@@ -216,8 +215,8 @@ Despatch Advice.
 			</cac:CommodityClassification>
 			<!-- Added in rev 1.1 -->
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="TSR" listVersionID="2021" name="EWC-code">
-					170201*</cbc:ItemClassificationCode><!-- EWC-code with witout white spaces -->
+				<cbc:ItemClassificationCode listID="TSR" listVersionID="2021" name="EWC-code">170201*</cbc:ItemClassificationCode>
+				<!-- EWC-code with witout white spaces -->
 			</cac:CommodityClassification>
 
 			<cac:AdditionalItemProperty>

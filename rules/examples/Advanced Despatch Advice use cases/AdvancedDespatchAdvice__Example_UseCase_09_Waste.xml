@@ -10,7 +10,6 @@
 					Added Declaration number, PartyLegalEntity CompanyID, Document Status Code and EWC-code. 
 					Removed CO2 data since not relevant for waste at this point.
 					Updated fuel report to match new specification regarding environmental emissions.
-				
 					2022-10-14: Initial version created
 -->
 <DespatchAdvice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -330,8 +329,8 @@
 			</cac:CommodityClassification>
 			<!-- Added in rev 1.1 -->
 			<cac:CommodityClassification>
-				<cbc:ItemClassificationCode listID="TSR" listVersionID="2021" name="EWC-code">
-					170201*</cbc:ItemClassificationCode><!-- EWC-code with witout white spaces -->
+				<cbc:ItemClassificationCode listID="TSR" listVersionID="2021" name="EWC-code">170201*</cbc:ItemClassificationCode>
+				<!-- EWC-code with witout white spaces -->
 			</cac:CommodityClassification>
 
 			<cac:AdditionalItemProperty>
