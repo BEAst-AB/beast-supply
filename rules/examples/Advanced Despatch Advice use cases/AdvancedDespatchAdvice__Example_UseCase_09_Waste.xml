@@ -4,6 +4,8 @@
 					This file contains an Example for Use-case no 9 in Logistics Advanced Despatch Advice.
 	
 					Change log:
+					2026-03-25: rev 1.2
+					Added support for sub-treatment code separated by #
 					2026-01-13: rev 1.1 
 					Added Declaration number, PartyLegalEntity CompanyID, Document Status Code and EWC-code. 
 					Removed CO2 data since not relevant for waste at this point.
@@ -342,7 +344,7 @@
 			<cac:AdditionalItemProperty>
 				<cbc:Name>Treatment Code</cbc:Name>
 				<cbc:NameCode listID="IPNC">TreatmentCode</cbc:NameCode>
-				<cbc:Value>D11</cbc:Value>
+				<cbc:Value>R11#A</cbc:Value><!-- 20260128 Added support for sub-treatment code separated by # -->
 			</cac:AdditionalItemProperty>
 
 		</cac:Item>
