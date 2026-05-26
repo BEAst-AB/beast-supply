@@ -51,6 +51,9 @@ sync_repo $BILLINGREPO $BILLINGBRANCH "structure/codelist" "structure/codelist"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "structure/codelist" "structure/codelist"
 sync_repo $POACCREPO $POACCBRANCH "structure/codelist" "structure/codelist"
 
+# Remove ICD.xml from all codelist folders
+echo "Removing ICD.xml from codelist folders..."
+find structure/codelist -name "icd.xml" -type f -delete -print
 # Tests
 sync_repo $BILLINGREPO $BILLINGBRANCH "rules/unit-UBL-SE" "rules/unit-UBL-SE" 
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/unit-common"  "rules/unit-common" 
