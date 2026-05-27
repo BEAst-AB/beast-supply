@@ -1,5 +1,6 @@
 #!/bin/sh
- 
+set -e
+set -o pipefai
 PROJECT=$(dirname $(readlink -f "$0"))
 
 POACCBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/2026-Q2-QA2/structure/syntax/"
@@ -273,7 +274,7 @@ docker run --rm -i \
 echo "Testing validation rules"
 # oldest: docker run --rm -i -v $PROJECT:/src anskaffelser/validator:2.1.0 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
 #old: docker run --rm -i -v $PROJECT:/src phelger/vefa-validator:2.4.3 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
-docker run --rm -i -e "JAVA_OPTS=-Dorg.slf4j.simpleLogger.defaultLogLevel=warn" -v $PROJECT:/src phelger/vefa-validator:2.4.3 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
+docker run --rm -i -e "LOG4J_LOGGER_COM_HELGER=WARN" -v $PROJECT:/src phelger/vefa-validator:2.4.3 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
 
 # Removing old zip files and creating new ones
 docker run --rm -i \
