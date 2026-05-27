@@ -1,6 +1,4 @@
 #!/bin/sh
-set -e
-set -o pipefail
 PROJECT=$(dirname $(readlink -f "$0"))
 
 POACCBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/2026-Q2-QA2/structure/syntax/"
