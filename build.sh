@@ -271,9 +271,10 @@ docker run --rm -i \
     difi/vefa-structure:0.6.1
 
 echo "Testing validation rules"
-# old: docker run --rm -i -v $PROJECT:/src anskaffelser/validator:2.1.0 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
-#docker run --rm -i -v $PROJECT:/src phelger/vefa-validator:2.4.3 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
+# oldest: docker run --rm -i -v $PROJECT:/src anskaffelser/validator:2.1.0 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
+#old: docker run --rm -i -v $PROJECT:/src phelger/vefa-validator:2.4.3 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
 docker run --rm -i -e "JAVA_OPTS=-Dorg.slf4j.simpleLogger.defaultLogLevel=warn" -v $PROJECT:/src phelger/vefa-validator:2.4.3 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
+
 # Removing old zip files and creating new ones
 docker run --rm -i \
   -v $PROJECT/target/site/files:/files \
