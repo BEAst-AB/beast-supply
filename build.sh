@@ -272,8 +272,13 @@ docker run --rm -i \
 echo "Testing validation rules"
 # oldest: docker run --rm -i -v $PROJECT:/src anskaffelser/validator:2.1.0 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
 #old: docker run --rm -i -v $PROJECT:/src phelger/vefa-validator:2.4.3 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
-docker run --rm -i -e "LOG4J_LOGGER_COM_HELGER=WARN" -e "LOG4J_LOGGER_ROOT=WARN" -v $PROJECT:/src phelger/vefa-validator:2.4.3 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
-
+docker run --rm -i \
+  -v $PROJECT:/src \
+  -v $PROJECT/logback.xml:/logback.xml \
+  -e "JAVA_OPTS=-Dlogback.configurationFile=/logback.xml" \
+  phelger/vefa-validator:2.4.3 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
+  
+  
 # Removing old zip files and creating new ones
 docker run --rm -i \
   -v $PROJECT/target/site/files:/files \
