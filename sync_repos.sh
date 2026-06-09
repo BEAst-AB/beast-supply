@@ -3,7 +3,7 @@
 BILLINGREPO="https://github.com/OpenPEPPOL/peppol-bis-invoice-3.git"
 BILLINGBRANCH="2026-Q2-QA2"
 LOGISTICSREPO="https://github.com/OpenPEPPOL/Logistics-bis.git"
-LOGISTICSBRANCH="Release_1_3_Review"
+LOGISTICSBRANCH="2026-Q2"
 POACCREPO="https://github.com/OpenPEPPOL/poacc-upgrade-3.git"
 POACCBRANCH="2026-Q2-QA2"
 
