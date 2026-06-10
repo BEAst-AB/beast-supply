@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- tag::received[] -->
-<OrderResponse xmlns:xs="http://www.w3.org/2001/XMLSchema"
+<OrderResponse 
   xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
   xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
@@ -10,6 +10,7 @@
   <cbc:IssueDate>2013-07-01</cbc:IssueDate>
   <cbc:IssueTime>06:10:10</cbc:IssueTime>
   <cbc:OrderResponseCode>AB</cbc:OrderResponseCode> <!--1-->
+  <cbc:Note>Response message with amendments in the details</cbc:Note>
   <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
   <cbc:CustomerReference>YourRef</cbc:CustomerReference>
   <cac:OrderReference>
@@ -37,6 +38,11 @@
       </cac:PartyLegalEntity>
     </cac:Party>
   </cac:BuyerCustomerParty>
-<!--2-->
+  <cac:Delivery>
+    <cac:PromisedDeliveryPeriod>
+      <cbc:StartDate>2013-07-15</cbc:StartDate>
+      <cbc:EndDate>2013-07-16</cbc:EndDate>
+    </cac:PromisedDeliveryPeriod>
+  </cac:Delivery><!--2-->
 </OrderResponse>
 <!-- end::received[] -->

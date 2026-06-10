@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Order xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2"
-  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-  xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2"
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
   <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order:3</cbc:CustomizationID>
-  <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:order_only:3</cbc:ProfileID>
+  <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:advanced_ordering:3</cbc:ProfileID>
   <cbc:ID>1</cbc:ID>
-  <cbc:IssueDate>2013-07-01</cbc:IssueDate>
+  <cbc:IssueDate>2022-02-01</cbc:IssueDate>
   <cbc:IssueTime>14:15:20</cbc:IssueTime>
   <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
   <cbc:AccountingCost>MAFO</cbc:AccountingCost>
   <cac:ValidityPeriod>
-    <cbc:EndDate>2013-07-30</cbc:EndDate>
+    <cbc:EndDate>2022-03-01</cbc:EndDate>
   </cac:ValidityPeriod>
   <!-- tag::originator[] -->
   <cac:OriginatorDocumentReference>
@@ -76,8 +76,8 @@
       </cac:Address>
     </cac:DeliveryLocation>
     <cac:RequestedDeliveryPeriod>
-      <cbc:StartDate>2013-07-15</cbc:StartDate>
-      <cbc:EndDate>2013-07-16</cbc:EndDate>
+      <cbc:StartDate>2022-02-15</cbc:StartDate>
+      <cbc:EndDate>2022-03-01</cbc:EndDate>
     </cac:RequestedDeliveryPeriod>
     <cac:DeliveryParty>
       <cac:PartyName>
