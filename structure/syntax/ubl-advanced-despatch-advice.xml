@@ -1770,9 +1770,9 @@
                   <Element cardinality="1..1">
                      <Term>cbc:LicensePlateID</Term>
                      <Name>License plate identifier transport</Name>
-                     <Description>BEAst: Used for Transport Information (T6008). In case there is no License Plate ID, as for machines, use the manufacturer's model number together with the machine-number.
+                     <Description>BEAst: Used for Transport Information (T6008). In case there is no License Plate ID, as for machines, use the manufacturer's model number together with the machine-number.Multiple numbers should be separated by #
  Peppol: The licence plate(s) identifying the vehicle seperated by semicolon if there are more than one.</Description>
-                     <Value type="EXAMPLE">DK-DF10958;DK-DF23314</Value>
+                     <Value type="EXAMPLE">DK-DF10958#DK-DF23314</Value>
                   </Element>
                </Element>
                <Element cardinality="0..1">
