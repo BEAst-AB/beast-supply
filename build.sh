@@ -48,12 +48,12 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     -o:/src/structure/syntax/ubl-orderagreement.xml \
     varOverrideSample=/src/structure/source/ubl-orderagreement.xml -ext:on --allow-external-functions:on
 
-echo "Generating documentation: Catalogue"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$POACCBASEURL/ubl-catalogue.xml \
-    -xsl:/src/tools/create-syntax-with-overrides.xsl \
-    -o:/src/structure/syntax/ubl-catalogue.xml \
-    varOverrideSample=/src/structure/source/ubl-catalogue.xml -ext:on --allow-external-functions:on
+#echo "Generating documentation: Catalogue"
+#docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#    -s:$POACCBASEURL/ubl-catalogue.xml \
+#    -xsl:/src/tools/create-syntax-with-overrides.xsl \
+#    -o:/src/structure/syntax/ubl-catalogue.xml \
+#    varOverrideSample=/src/structure/source/ubl-catalogue.xml -ext:on --allow-external-functions:on
     
 echo "Generating documentation: Catalogue-response"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
