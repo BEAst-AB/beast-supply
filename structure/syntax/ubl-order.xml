@@ -63,7 +63,7 @@
       <Element cardinality="0..1">
          <Term>cbc:OrderTypeCode</Term>
          <Name>Order type code</Name>
-         <Description>BEAst: Order Type (T3100). In this version "220" is the only option. The blanket order ("226") is not yet supported by Peppol, so when you mean "226", this element shall be omitted and when you mean "220", the code "220" shall be sent.
+         <Description>BEAst: Order Type (T3100).
  Peppol: Indicates wether the message is an Order (tir01-153), Consignement order (tir01-p050), Blanket order (tir01-p051), Call of order (tir01-p052) or Purchase order (tir01-p063). Default is Order (tir01-153). See section Order Type Code in BIS-documentation for handling of order types.</Description>
          <Reference type="BUSINESS_TERM">tir01-153, tir01-p050, tir01-p051, tir01-p052, tir01-p063</Reference>
          <Reference type="CODE_LIST">UNCL1001_T01</Reference>
