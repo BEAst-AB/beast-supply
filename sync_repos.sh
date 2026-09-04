@@ -1,11 +1,11 @@
 #!/bin/bash
 
 BILLINGREPO="https://github.com/OpenPEPPOL/peppol-bis-invoice-3.git"
-BILLINGBRANCH="2025-q4-mr"
+BILLINGBRANCH="2026-Q2-QA2"
 LOGISTICSREPO="https://github.com/OpenPEPPOL/Logistics-bis.git"
-LOGISTICSBRANCH="Release_1_2_Review"
+LOGISTICSBRANCH="update_import_branch"
 POACCREPO="https://github.com/OpenPEPPOL/poacc-upgrade-3.git"
-POACCBRANCH="2025-q4-mr"
+POACCBRANCH="2026-Q2-QA2"
 
 # Function to clone and copy files
 sync_repo() {
@@ -40,6 +40,11 @@ sync_repo $BILLINGREPO $BILLINGBRANCH "structure/syntax/part" "structure/syntax/
 sync_repo $POACCREPO $POACCBRANCH "rules/sch" "rules/sch"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/sch" "rules/sch"
 
+# Snippets
+
+sync_repo $POACCREPO $POACCBRANCH "rules/snippets" "rules/snippets"
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/snippets" "rules/snippets"
+
 # Examples
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Cataloge wo response use cases" "rules/examples/Cataloge wo response use cases"
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Order use cases" "rules/examples/Order use cases"
@@ -50,6 +55,12 @@ sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/examples" "rules/examples"
 sync_repo $BILLINGREPO $BILLINGBRANCH "structure/codelist" "structure/codelist"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "structure/codelist" "structure/codelist"
 sync_repo $POACCREPO $POACCBRANCH "structure/codelist" "structure/codelist"
+
+
+# Remove ICD.xml from all codelist folders
+echo "Removing ICD.xml from codelist folders..."
+find structure/codelist -name "icd.xml" -type f -delete -print
+
 
 # Tests
 sync_repo $BILLINGREPO $BILLINGBRANCH "rules/unit-UBL-SE" "rules/unit-UBL-SE" 

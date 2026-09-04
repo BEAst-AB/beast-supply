@@ -55,7 +55,6 @@
          <DataType>Date</DataType>
          <Reference type="BUSINESS_TERM">BT-9</Reference>
          <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
-         <Reference type="RULE">BR-CO-25</Reference>
          <Value type="EXAMPLE">2024-05-17</Value>
       </Element>
       <Element>
@@ -356,6 +355,7 @@
                   <Description>The URL (Uniform Resource Locator) that identifies where the external document is located. A means of locating the resource, including its primary access mechanism, e.g. http:// or ftp://.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-124</Reference>
+                  <Reference type="RULE">DE-R-T02</Reference>
                   <Value type="EXAMPLE">http://www.example.com/index.html</Value>
                </Element>
             </Element>
@@ -404,6 +404,11 @@
                <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R052</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R053</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R054</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R055</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R056-1</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R056-2</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
                <Reference type="RULE">PEPPOL-EN16931-CL008</Reference>
                <Attribute>
                   <Term>schemeID</Term>
@@ -438,6 +443,11 @@
                   <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R052</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R053</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R054</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R055</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R056-1</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R056-2</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Seller or bank assigned creditor identifier identification scheme identifier</Name>
@@ -596,6 +606,11 @@
                   <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R052</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R053</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R054</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R055</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R056-1</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R056-2</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
                   <Value type="EXAMPLE">SE556104353901</Value>
                </Element>
                <Element>
@@ -718,6 +733,11 @@
                <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R052</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R053</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R054</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R055</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R056-1</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R056-2</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
                <Reference type="RULE">PEPPOL-EN16931-CL008</Reference>
                <Attribute>
                   <Term>schemeID</Term>
@@ -750,6 +770,11 @@
                   <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R052</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R053</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R054</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R055</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R056-1</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R056-2</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Buyer identifier identification scheme identifier</Name>
@@ -885,6 +910,11 @@
                   <Reference type="RULE">PEPPOL-COMMON-R050</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R052</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R053</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R054</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R055</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R056-1</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R056-2</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
                   <Value type="EXAMPLE">SE556060883701</Value>
                </Element>
                <Element>
@@ -1452,7 +1482,6 @@
             <Description>A textual description of the payment terms that apply to the amount due for payment (Including description of possible penalties). In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.</Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-20</Reference>
-            <Reference type="RULE">BR-CO-25</Reference>
             <Reference type="RULE">DE-R-018</Reference>
             <Value type="EXAMPLE">30 dagar efter mottagen faktura</Value>
          </Element>

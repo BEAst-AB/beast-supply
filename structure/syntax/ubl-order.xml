@@ -63,7 +63,7 @@
       <Element cardinality="0..1">
          <Term>cbc:OrderTypeCode</Term>
          <Name>Order type code</Name>
-         <Description>BEAst: Order Type (T3100). In this version "220" is the only option. The blanket order ("226") is not yet supported by Peppol, so when you mean "226", this element shall be omitted and when you mean "220", the code "220" shall be sent.
+         <Description>BEAst: Order Type (T3100).
  Peppol: Indicates wether the message is an Order (tir01-153), Consignement order (tir01-p050), Blanket order (tir01-p051), Call of order (tir01-p052) or Purchase order (tir01-p063). Default is Order (tir01-153). See section Order Type Code in BIS-documentation for handling of order types.</Description>
          <Reference type="BUSINESS_TERM">tir01-153, tir01-p050, tir01-p051, tir01-p052, tir01-p063</Reference>
          <Reference type="CODE_LIST">UNCL1001_T01</Reference>
@@ -2311,7 +2311,7 @@
                      <Attribute usage="Optional">
                         <Term>name</Term>
                         <Name>Clear text name equivalent of classification code</Name>
-                        <Description>BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "AI", "CoClass”, “ME”, "RF" "SA", "SB", "SBF", "SBMI", "SW". AI: Återvinningsindustrierna, ME: Maskinentreprenörerna, RF: Rentalföretagen, SA: Sveriges Åkeriföretag, SB: Svensk Betong, SBF: Svensk Beläggningsförening, SBMI: Sveriges Bergmaterialindustrier, SW: Swedish Wood. Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "BK04", "ENO_SE", "ENO_NO", "ETIM", "Finfo", "RT", "TUN", "RSK_SE", "RSK_NO".
+                        <Description>BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "AI", "CoClass”, “ME”, "RF" "SA", "SB", "SBF", "SBMI", "SW". AI: Återvinningsindustrierna, ME: Maskinentreprenörerna, RB: Retursystem Byggpall, RF: Rentalföretagen, SA: Sveriges Åkeriföretag, SB: Svensk Betong, SBF: Svensk Beläggningsförening, SBMI: Sveriges Bergmaterialindustrier, SW: Swedish Wood. Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "BK04", "ENO_SE", "ENO_NO", "ETIM", "Finfo", "RT", "TUN", "RSK_SE", "RSK_NO".
  Peppol: The textual equivalent of the code value</Description>
                         <Value type="EXAMPLE">SBMI</Value>
                      </Attribute>
@@ -2467,6 +2467,19 @@
                      </Element>
                   </Element>
                </Element>
+            </Element>
+         </Element>
+         <Element cardinality="0..1">
+            <Term>cac:QuotationLineReference</Term>
+            <Name>Reference to a quotation line</Name>
+            <Description/>
+            <Element>
+               <Term>cbc:LineID</Term>
+               <Name>Quotation line reference</Name>
+               <Description>Used to reference the line of the quotation that this order line corresponds to. The reference to the quotation document is provided on header level in the order.</Description>
+               <Reference type="BUSINESS_TERM">tir01-p064</Reference>
+               <Reference type="RULE">PEPPOL-T01-R035</Reference>
+               <Value type="EXAMPLE">3</Value>
             </Element>
          </Element>
       </Element>
