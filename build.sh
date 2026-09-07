@@ -2,10 +2,10 @@
  
 PROJECT=$(dirname $(readlink -f "$0"))
 
-POACCBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/2025-q4-mr/structure/syntax/"
+POACCBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/2026-Q2-QA2/structure/syntax/"
 echo $POACCBASEURL
 
-LOGISTICSBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/Release_1_2_Review/structure/syntax/"
+LOGISTICSBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/update_import_branch/structure/syntax/"
 echo $LOGISTICSBASEURL
  
 # Delete target folder if found
@@ -22,7 +22,7 @@ docker pull atomgraph/saxon
 # Transform the files in source dir to syntax.
 echo "Generating documentation: Invoice"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/2025-q4-mr/structure/syntax/ubl-invoice.xml \
+    -s:https://raw.githubusercontent.com/OpenPEPPOL/peppol-bis-invoice-3/2026-Q2-QA2/structure/syntax/ubl-invoice.xml \
     -xsl:/src/tools/create-syntax-with-overrides.xsl \
     -o:/src/structure/syntax/ubl-invoice.xml \
     varOverrideSample=/src/structure/source/ubl-invoice.xml -ext:on --allow-external-functions:on
@@ -48,12 +48,12 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     -o:/src/structure/syntax/ubl-orderagreement.xml \
     varOverrideSample=/src/structure/source/ubl-orderagreement.xml -ext:on --allow-external-functions:on
 
-echo "Generating documentation: Catalogue"
-docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
-    -s:$POACCBASEURL/ubl-catalogue.xml \
-    -xsl:/src/tools/create-syntax-with-overrides.xsl \
-    -o:/src/structure/syntax/ubl-catalogue.xml \
-    varOverrideSample=/src/structure/source/ubl-catalogue.xml -ext:on --allow-external-functions:on
+#echo "Generating documentation: Catalogue"
+#docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+#    -s:$POACCBASEURL/ubl-catalogue.xml \
+#    -xsl:/src/tools/create-syntax-with-overrides.xsl \
+#    -o:/src/structure/syntax/ubl-catalogue.xml \
+#    varOverrideSample=/src/structure/source/ubl-catalogue.xml -ext:on --allow-external-functions:on
     
 echo "Generating documentation: Catalogue-response"
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
@@ -272,7 +272,7 @@ docker run --rm -i \
 
 echo "Testing validation rules"
 # old: docker run --rm -i -v $PROJECT:/src anskaffelser/validator:2.1.0 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
-docker run --rm -i -v $PROJECT:/src phelger/vefa-validator:2.3.1 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
+docker run --rm -i -v $PROJECT:/src phelger/vefa-validator:2.4.3 build -x -t -n eu.peppol.poacc.upgrade.v3 -a rules -target target/validator-test /src
 
 # Removing old zip files and creating new ones
 docker run --rm -i \

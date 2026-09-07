@@ -1,0 +1,44 @@
+BEASt Supply Release Process
+
+1. Create new branch from Main (naming convention from POACC is now 2026-Q2-DEV-v3.0.17 i.e. Year-Quarter-Type-Version)
+
+2. Create an individual issue branch from the Dev branch in case it is a change that is substantial.
+
+3. Develop the issue
+
+4. Commit the change to the branch and if the branch is an individual branch - create a pull request to the DEV branch - accept the pull request or ask for a review depending on the complexity of the solution.
+
+5. When development is done, do qa and the dev-teamlead create a new branch from DEV (named the same as the Dev branch except MEMBER_REVIEW instead of DEV)
+
+6. Let the memeber review have its process
+
+7. Get the member comments and adjust accordingly 
+
+8. Create a new branch named after the release (4.0.6 or 2025-Q4, decision need to be made)
+
+9. Create a pull request from the memer review release to the release and on publication date: accept the pull request.
+adjust the import branches to import from the corresponding released branches in POACC and Logistics
+
+10. on mandatory date - check that the main and master branches from POACC and Logistics are uppdated. Create a pull request towards main and accept. Adjust the imports from POACC and Logistics to main and master.
+
+
+
+
+
+Timeline towards the rest of the branches.
+Branches to use:
+
+POACC:
+Dev branch - entire dev cycle
+Release candidate - during review
+released branch (2025-Q4 for example) from publication until mandatory
+main - from mandatory date
+
+Logistics:
+Same as Poacc but normally with a little delay
+
+
+
+
+
+

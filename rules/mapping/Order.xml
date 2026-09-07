@@ -273,7 +273,7 @@
                <Data ss:Type="String">Order type code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: Order Type (T3100). In this version "220" is the only option. The blanket order ("226") is not yet supported by Peppol, so when you mean "226", this element shall be omitted and when you mean "220", the code "220" shall be sent. Peppol: Indicates wether the message is an Order (tir01-153), Consignement order (tir01-p050), Blanket order (tir01-p051), Call of order (tir01-p052) or Purchase order (tir01-p063). Default is Order (tir01-153). See section Order Type Code in BIS-documentation for handling of order types.</Data>
+               <Data ss:Type="String">BEAst: Order Type (T3100). Peppol: Indicates wether the message is an Order (tir01-153), Consignement order (tir01-p050), Blanket order (tir01-p051), Call of order (tir01-p052) or Purchase order (tir01-p063). Default is Order (tir01-153). See section Order Type Code in BIS-documentation for handling of order types.</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">220</Data>
@@ -8155,7 +8155,7 @@
                <Data ss:Type="String">Clear text name equivalent of classification code</Data>
             </Cell>
             <Cell>
-               <Data ss:Type="String">BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "AI", "CoClass”, “ME”, "RF" "SA", "SB", "SBF", "SBMI", "SW". AI: Återvinningsindustrierna, ME: Maskinentreprenörerna, RF: Rentalföretagen, SA: Sveriges Åkeriföretag, SB: Svensk Betong, SBF: Svensk Beläggningsförening, SBMI: Sveriges Bergmaterialindustrier, SW: Swedish Wood. Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "BK04", "ENO_SE", "ENO_NO", "ETIM", "Finfo", "RT", "TUN", "RSK_SE", "RSK_NO". Peppol: The textual equivalent of the code value</Data>
+               <Data ss:Type="String">BEAst: If construction specific lists are used, name specifies which of them is used. Possible names are: "AI", "CoClass”, “ME”, "RF" "SA", "SB", "SBF", "SBMI", "SW". AI: Återvinningsindustrierna, ME: Maskinentreprenörerna, RB: Retursystem Byggpall, RF: Rentalföretagen, SA: Sveriges Åkeriföretag, SB: Svensk Betong, SBF: Svensk Beläggningsförening, SBMI: Sveriges Bergmaterialindustrier, SW: Swedish Wood. Until the list of organisations issuing Article numbers have been updated, also the following values can be used as names: "BK04", "ENO_SE", "ENO_NO", "ETIM", "Finfo", "RT", "TUN", "RSK_SE", "RSK_NO". Peppol: The textual equivalent of the code value</Data>
             </Cell>
             <Cell>
                <Data ss:Type="String">SBMI</Data>
@@ -8714,6 +8714,58 @@
             </Cell>
             <Cell>
                <Data ss:Type="Number">33100</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">0..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  cac:QuotationLineReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Reference to a quotation line</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String"/>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:QuotationLineReference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">2</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">33200</Data>
+            </Cell>
+         </Row>
+         <Row>
+            <Cell>
+               <Data ss:Type="String">1..1</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">•  •  •  cbc:LineID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Quotation line reference</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">Used to reference the line of the quotation that this order line corresponds to. The reference to the quotation document is provided on header level in the order.</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="String">/ubl:Order/cac:OrderLine/cac:QuotationLineReference/cbc:LineID</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">3</Data>
+            </Cell>
+            <Cell>
+               <Data ss:Type="Number">33300</Data>
             </Cell>
          </Row>
       </Table>
