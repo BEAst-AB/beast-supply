@@ -2,10 +2,10 @@
  
 PROJECT=$(dirname $(readlink -f "$0"))
 
-POACCBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/2026-Q2-QA2/structure/syntax/"
+POACCBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/poacc-upgrade-3/2026-Q4-MR/structure/syntax/"
 echo $POACCBASEURL
 
-LOGISTICSBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/update_import_branch/structure/syntax/"
+LOGISTICSBASEURL="https://raw.githubusercontent.com/OpenPEPPOL/logistics-bis/2026-Q4-dev/structure/syntax/"
 echo $LOGISTICSBASEURL
  
 # Delete target folder if found
