@@ -114,7 +114,6 @@
             <Description>The end date for when the order is valid. The end date for the time period within which the seller must respond. An order should contain the validity end date</Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">tir01-009</Reference>
-            <Reference type="RULE">PEPPOL-T01-R002</Reference>
             <Value type="EXAMPLE">2021-10-31</Value>
          </Element>
       </Element>
@@ -1940,7 +1939,7 @@
                      </Element>
                   </Element>
                </Element>
-               <Element>
+               <Element cardinality="0..1">
                   <Term>cac:RequestedDeliveryPeriod</Term>
                   <Name>Order line requested delivery period </Name>
                   <Description>Requested delivery period for the order line</Description>
