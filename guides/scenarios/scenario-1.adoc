@@ -17,82 +17,82 @@ Transactions in scope: Pre-award catalogue request (T035), Pre-award catalogue, 
 |Pre-award catalogue request (RFQ)
 |Buyer
 |RFQID
-|Referenced contract = CONTRACT-222
-|Request line = 1 · standard item id = 333
+|Referenced contract = Contract-01
+|Request line = 1 · standard item id = 05704066204093
 
 |Pre-award catalogue (quote)
 |Seller
-|QID
+|56669990
 |Referenced contract = RFQID
-|Catalogue line = 1 · 333 · seller item id = 444
+|Catalogue line = 1 · 05704066204093 · seller item id = 8522173
 
 |Catalogue
 |Seller
-|CATID
-|Referenced contract = CONTRACT-222 (or QID when the quote is the frame)
-|Catalogue line = 1 · 333 · 444
+|Cat-02
+|Referenced contract = Contract-01 (or 56669990 when the quote is the frame)
+|Catalogue line = 1 · 05704066204093 · 8522173
 
 |Catalogue response
 |Buyer
-|CATRID
-|Document reference = CATID
+|R-12
+|Document reference = Cat-02
 |–
 
 |Blanket order (contract)
 |Buyer
-|CONOID
-|Quotation reference = QID +
-Catalogue reference = CATID
-|Order line = 1 · 333 · 444
+|4832423
+|Quotation reference = 56669990 +
+Catalogue reference = Cat-02
+|Order line = 1 · 05704066204093 · 8522173
 
 |Order response (to blanket order)
 |Seller
 |ORID-C
-|Order reference = CONOID +
+|Order reference = 4832423 +
 Sales order id = SO-100
-|Order line = 1 · order line reference = 1 · 333 · 444
+|Order line = 1 · order line reference = 1 · 05704066204093 · 8522173
 
 |Order (call-off)
 |Buyer
-|OID
-|Quotation reference = QID · catalogue reference = CATID +
-Order document reference = CONOID
-|Order line = 1 · 333 · 444
+|110408542
+|Quotation reference = 56669990 · catalogue reference = Cat-02 +
+Order document reference = 4832423
+|Order line = 1 · 05704066204093 · 8522173
 
 |Order response
 |Seller
-|ORID
-|Order reference = OID · sales order id = SO-123
-|Order line = 1 · order line reference = 1 · 333 · 444
+|101
+|Order reference = 110408542 · sales order id = 112233
+|Order line = 1 · order line reference = 1 · 05704066204093 · 8522173
 
 |Order agreement
 |Seller
-|OAGID
-|Order reference = OID · sales order id = SO-123 +
-Contract = CONOID · originator doc. ref. = QID
-|Order agreement line = 1 · 333 · 444
+|0263bf48-9a55-4d15-adf5-2c2921036d1c
+|Order reference = 110408542 · sales order id = 112233 +
+Contract = 4832423 · originator doc. ref. = 56669990
+|Order agreement line = 1 · 05704066204093 · 8522173
 
 |Advanced despatch advice
 |Seller
-|DSPID
-|Order reference = OID
+|5658999
+|Order reference = 110408542
 |Despatch line = 1 · order line reference = 1 +
-Sales order line id = SO-123:1 · 333 · 444
+Sales order line id = 10 · 05704066204093 · 8522173
 
 |Receipt advice
 |Buyer
-|RECID
-|Order reference = OID +
-Despatch document reference = DSPID
+|rec100
+|Order reference = 110408542 +
+Despatch document reference = 5658999
 |Receipt line = 1 · despatch line reference = 1 +
-Order line reference = 1 · 333 · 444
+Order line reference = 1 · 05704066204093 · 8522173
 
 |Invoice
 |Seller
-|INVID
-|Order ref. = OID · sales order id = SO-123 · contract = CONOID +
-Despatch ref. = DSPID · receipt ref. = RECID
-|Invoice line = 1 · order line reference = 1 · 333 · 444
+|98670AE
+|Order ref. = 110408542 · sales order id = 112233 · contract = 4832423 +
+Despatch ref. = 5658999 · receipt ref. = rec100
+|Invoice line = 1 · order line reference = 1 · 05704066204093 · 8522173
 
 |===
 
@@ -108,11 +108,11 @@ As on the scenario slides, rows are the references and columns the transactions;
 
 [NOTE]
 ====
-*Blanket order as contract reference.* CONOID is the value later used in `cac:ContractDocumentReference` on the order agreement and the invoice. Confirm with trading partners that a confirmed blanket order is accepted as a contract reference.
+*Blanket order as contract reference.* The blanket order id 4832423 is the value later used in `cac:ContractDocumentReference` on the order agreement and the invoice. Confirm with trading partners that a confirmed blanket order is accepted as a contract reference.
 ====
 
 [NOTE]
 ====
-*Purchase order id present.* OID is carried at header level in every document and the order line number at line level. The sales order id travels along as a secondary key but is not needed for matching.
+*Purchase order id present.* The purchase order id 110408542 is carried at header level in every document and the order line number at line level. The sales order id travels along as a secondary key but is not needed for matching.
 ====
 

@@ -6,7 +6,7 @@ Cells marked *?* in the reference matrices are references that the current synta
 [cols="2s,3,5",options="header"]
 |===
 |Transaction |Reference |Observation
-|Order agreement (T110) |Purchase order id |`cac:OrderReference/cbc:ID` is defined as _previous order agreement identifier_, not the buyer’s order id. There is no element for OID. Affects scenario 1 and 2.
+|Order agreement (T110) |Purchase order id |`cac:OrderReference/cbc:ID` is defined as _previous order agreement identifier_, not the buyer’s order id. There is no element for 110408542. Affects scenario 1 and 2.
 |Order agreement (T110) |Order line reference |The order agreement line has no `cac:OrderLineReference`. Affects scenario 1 and 2.
 |Receipt advice (T128) |Sales order id |No sales order id at header level. `cac:AdditionalDocumentReference/cbc:ID` is proposed, as in the despatch advice. Affects scenario 4.
 |Invoice |Sales order line id |The invoice line has no `cbc:SalesOrderLineID`; line-level linking has to use `cac:OrderLineReference/cbc:LineID`. Affects scenario 4 and 5.
@@ -17,5 +17,5 @@ Decisions carried over from the original scenarios:
 . Is a confirmed blanket order acceptable as a contract reference? (scenario 1, 2)
 . Can the buyer accept a sales order id as the only order-level key? (scenario 4, 5)
 . How is one invoice covering several despatch advices linked, given the single header-level despatch document reference?
-. Is `SO-123:1` (sales order number : line number) confirmed as the convention for the sales order line id?
+. Should the sales order line id follow the pattern sales order number : line number (e.g. `112233:10`)? The example files use the plain line number (`10`).
 . Is document type code 9 (catalogue) the right value for the catalogue reference in the despatch advice?

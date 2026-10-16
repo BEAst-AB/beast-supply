@@ -16,37 +16,37 @@ Transactions in scope: Catalogue (T19), Catalogue response (T58), Advanced despa
 
 |Catalogue
 |Seller
-|CATID
-|Referenced contract = CONTRACT-222
-|Catalogue line = 1 · 333 · 444
+|Cat-02
+|Referenced contract = Contract-01
+|Catalogue line = 1 · 05704066204093 · 8522173
 
 |Catalogue response
 |Buyer
-|CATRID
-|Document reference = CATID
+|R-12
+|Document reference = Cat-02
 |–
 
 |Advanced despatch advice (one per delivery)
 |Seller
-|DSPID
+|5658999
 |No order reference — no purchase order exists. +
-Additional document reference = CATID (doc. type code 9) and = SO-123 (sales order no.)
-|Despatch line = 1 · sales order line id = SO-123:1 +
-Document reference = CATID · 333 · 444
+Additional document reference = Cat-02 (doc. type code 9) and = 112233 (sales order no.)
+|Despatch line = 1 · sales order line id = 10 +
+Document reference = Cat-02 · 05704066204093 · 8522173
 
 |Receipt advice
 |Buyer
-|RECID
-|Despatch document reference = DSPID
+|rec100
+|Despatch document reference = 5658999
 |Receipt line = 1 · despatch line reference = 1 +
-Sales order line id = SO-123:1 · 333 · 444
+Sales order line id = 10 · 05704066204093 · 8522173
 
 |Invoice
 |Seller
-|INVID
-|Sales order id = SO-123 · contract = CONTRACT-222 · receipt ref. = RECID +
+|98670AE
+|Sales order id = 112233 · contract = Contract-01 · receipt ref. = rec100 +
 Despatch ref.: one invoice can cover several despatch advices
-|Invoice line = 1 · 333 · 444 +
+|Invoice line = 1 · 05704066204093 · 8522173 +
 Sales order line id or despatch line as line reference
 
 |===

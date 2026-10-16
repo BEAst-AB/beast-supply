@@ -16,14 +16,14 @@ Transactions in scope: Catalogue (T19), Catalogue response (T58), Order agreemen
 
 |Catalogue
 |Seller
-|CATID
-|Referenced contract = CONTRACT-222
-|Catalogue line = 1 · 333 · 444
+|Cat-02
+|Referenced contract = Contract-01
+|Catalogue line = 1 · 05704066204093 · 8522173
 
 |Catalogue response
 |Buyer
-|CATRID
-|Document reference = CATID
+|R-12
+|Document reference = Cat-02
 |–
 
 |Telephone order
@@ -34,33 +34,33 @@ Transactions in scope: Catalogue (T19), Catalogue response (T58), Order agreemen
 
 |Order agreement
 |Seller
-|OAGID (used as order no.)
-|Sales order id = SO-123 · contract = CONTRACT-222 +
+|0263bf48-9a55-4d15-adf5-2c2921036d1c (used as order no.)
+|Sales order id = 112233 · contract = Contract-01 +
 No order reference — no buyer order exists
-|Order agreement line = 1 · 333 · 444
+|Order agreement line = 1 · 05704066204093 · 8522173
 
 |Advanced despatch advice
 |Seller
-|DSPID
-|Order reference = OAGID (order agreement id as order id) +
-Additional document reference = SO-123
-|Despatch line = 1 · sales order line id = SO-123:1 +
-Order line reference = 1 (order agreement line) · 333 · 444
+|5658999
+|Order reference = 0263bf48-9a55-4d15-adf5-2c2921036d1c (order agreement id as order id) +
+Additional document reference = 112233
+|Despatch line = 1 · sales order line id = 10 +
+Order line reference = 1 (order agreement line) · 05704066204093 · 8522173
 
 |Receipt advice
 |Buyer
-|RECID
-|Order reference = OAGID +
-Despatch document reference = DSPID
+|rec100
+|Order reference = 0263bf48-9a55-4d15-adf5-2c2921036d1c +
+Despatch document reference = 5658999
 |Receipt line = 1 · despatch line reference = 1 +
-Sales order line id = SO-123:1 · 333 · 444
+Sales order line id = 10 · 05704066204093 · 8522173
 
 |Invoice
 |Seller
-|INVID
-|Order ref. = OAGID · sales order id = SO-123 · contract = CONTRACT-222 +
-Despatch ref. = DSPID · receipt ref. = RECID
-|Invoice line = 1 · 333 · 444 +
+|98670AE
+|Order ref. = 0263bf48-9a55-4d15-adf5-2c2921036d1c · sales order id = 112233 · contract = Contract-01 +
+Despatch ref. = 5658999 · receipt ref. = rec100
+|Invoice line = 1 · 05704066204093 · 8522173 +
 Order line reference = 1 (order agreement line)
 
 |===
@@ -77,6 +77,6 @@ As on the scenario slides, rows are the references and columns the transactions;
 
 [NOTE]
 ====
-*Rule applied.* No purchase order id exists, so the sales order id SO-123 from the order agreement is the linking key, and the order agreement id is quoted as order reference in all later documents.
+*Rule applied.* No purchase order id exists, so the sales order id 112233 from the order agreement is the linking key, and the order agreement id is quoted as order reference in all later documents.
 ====
 

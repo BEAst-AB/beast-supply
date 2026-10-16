@@ -28,21 +28,31 @@ Except where noted, the catalogue and catalogue response precede every scenario.
 [[sample-values]]
 == Sample values
 
-The same sample values are used in all scenarios.
+The identifier values used in the scenarios are taken from the example files in Appendix A (download: link:../files/Examples.zip[Examples.zip]). Each value comes from the transaction that issues the identifier. The example files are independent of each other, so the values do not form one consistent document chain.
 
-[cols="1s,4",options="header"]
+[cols="3s,3m,6",options="header"]
 |===
-|Value |Meaning
-|RFQID · QID |Pre-award catalogue request and pre-award catalogue (quote)
-|CATID · CATRID |Catalogue and catalogue response
-|CONTRACT-222 |Contract id, referenced from the catalogue
-|CONOID |Blanket order (contract)
-|OID |Call-off order (purchase order id)
-|ORID · OAGID |Order response and order agreement
-|SO-123 / SO-123:1 |Sales order and sales order line (sales order number : line number)
-|DSPID · RECID · INVID |Despatch advice, receipt advice and invoice
-|333 / 444 |Standard item id / seller item id
+|Identifier |Example value |Example file and element
+|Pre-award catalogue (quote) |56669990 |`Order_Example_Full.xml` – `cac:QuotationDocumentReference/cbc:ID`
+|Catalogue |Cat-02 |`Catalogue_Example_Full.xml` – `cbc:ID`
+|Catalogue response |R-12 |`Catalogue_Response_Example_Full.xml` – `cbc:ID`
+|Contract, referenced from the catalogue |Contract-01 |`Catalogue_Example_Full.xml` – `cac:ReferencedContract/cbc:ID`
+|Blanket order (contract) |4832423 |`Order_Example_Full.xml` – `cac:OrderDocumentReference/cbc:ID`
+|Call-off order (purchase order id) |110408542 |`Order_Example_Full.xml` – `cbc:ID`
+|Order response |101 |`Order_Response_Example_Full.xml` – `cbc:ID`
+|Order agreement |0263bf48-9a55-4d15-adf5-2c2921036d1c |`Order_Agreement_Example_Full.xml` – `cbc:ID`
+|Sales order id |112233 |`Order_Example_Full.xml` and `Invoice_Example_Full.xml` – `cbc:SalesOrderID`
+|Sales order line id |10 |`AdvancedDespatchAdvice_Example_Full.xml` – `cac:DespatchLine/cac:OrderLineReference/cbc:SalesOrderLineID`
+|Despatch advice |5658999 |`AdvancedDespatchAdvice_Example_Full.xml` – `cbc:ID`
+|Receipt advice |rec100 |`Invoice_Example_Full.xml` – `cac:ReceiptDocumentReference/cbc:ID` (the receipt advice examples reuse the despatch advice id 5658999)
+|Invoice |98670AE |`Invoice_Example_Full.xml` – `cbc:ID`
+|Standard item id (GTIN) |05704066204093 |`Catalogue_Example_Full.xml` – `cac:StandardItemIdentification/cbc:ID`
+|Seller item id |8522173 |`Catalogue_Example_Full.xml` and `Order_Example_Full.xml` – `cac:SellersItemIdentification/cbc:ID`
 |===
+
+Appendix A has no example of a pre-award catalogue request or of an order response to a blanket order, so these keep placeholder values in scenario 1 and 2: *RFQID* (pre-award catalogue request), *ORID-C* (order response to the blanket order) and *SO-100* (its sales order id).
+
+NOTE: The sales order line id in the examples is the plain line number (10). Whether it should follow the pattern sales order number : line number (e.g. `112233:10`) is an open point, see <<open-points>>.
 
 [[linking-rule]]
 == Linking rule
@@ -52,14 +62,14 @@ Every downstream document must be traceable to one commercial commitment. Apply 
 [cols="1,3s,4,5",options="header"]
 |===
 |# |Precedence |When it applies |Carried in
-|1 |Purchase order id exists |The buyer issued an order (scenario 1, 2, 3) |Header: `cac:OrderReference/cbc:ID` = OID +
+|1 |Purchase order id exists |The buyer issued an order (scenario 1, 2, 3) |Header: `cac:OrderReference/cbc:ID` = 110408542 +
 Line: `cac:OrderLineReference/cbc:LineID` = 1
 |2 |No purchase order id — use the sales order id |An order agreement or a despatch advice starts the chain (scenario 4, 5) |Header: `cbc:SalesOrderID` (order agreement), `cac:OrderReference/cbc:SalesOrderID` (invoice) +
 Line: `cac:OrderLineReference/cbc:SalesOrderLineID`
-|3 |Contract or blanket order as the frame |Whenever a blanket order or contract exists |`cac:ContractDocumentReference/cbc:ID` = CONOID +
+|3 |Contract or blanket order as the frame |Whenever a blanket order or contract exists |`cac:ContractDocumentReference/cbc:ID` = 4832423 +
 `cac:ReferencedContract/cbc:ID` in the catalogue
-|4 |Item identity on every line |All scenarios |`cac:StandardItemIdentification/cbc:ID` = 333 +
-`cac:SellersItemIdentification/cbc:ID` = 444
+|4 |Item identity on every line |All scenarios |`cac:StandardItemIdentification/cbc:ID` = 05704066204093 +
+`cac:SellersItemIdentification/cbc:ID` = 8522173
 |===
 
 [NOTE]

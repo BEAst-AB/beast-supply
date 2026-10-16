@@ -16,50 +16,50 @@ Transactions in scope: Catalogue (T19), Catalogue response (T58), Order (T01), O
 
 |Catalogue
 |Seller
-|CATID
-|Referenced contract = CONTRACT-222
-|Catalogue line = 1 · 333 · 444
+|Cat-02
+|Referenced contract = Contract-01
+|Catalogue line = 1 · 05704066204093 · 8522173
 
 |Catalogue response
 |Buyer
-|CATRID
-|Document reference = CATID
+|R-12
+|Document reference = Cat-02
 |–
 
 |Order
 |Buyer
-|OID
-|Catalogue reference = CATID · contract = CONTRACT-222 +
+|110408542
+|Catalogue reference = Cat-02 · contract = Contract-01 +
 Project reference (optional)
-|Order line = 1 · 333 · 444
+|Order line = 1 · 05704066204093 · 8522173
 
 |Order response
 |Seller
-|ORID
-|Order reference = OID · sales order id = SO-123
-|Order line = 1 · order line reference = 1 · 333 · 444
+|101
+|Order reference = 110408542 · sales order id = 112233
+|Order line = 1 · order line reference = 1 · 05704066204093 · 8522173
 
 |Advanced despatch advice
 |Seller
-|DSPID
-|Order reference = OID
+|5658999
+|Order reference = 110408542
 |Despatch line = 1 · order line reference = 1 +
-Sales order line id = SO-123:1 · 333 · 444
+Sales order line id = 10 · 05704066204093 · 8522173
 
 |Receipt advice
 |Buyer
-|RECID
-|Order reference = OID +
-Despatch document reference = DSPID
+|rec100
+|Order reference = 110408542 +
+Despatch document reference = 5658999
 |Receipt line = 1 · despatch line reference = 1 +
-Order line reference = 1 · 333 · 444
+Order line reference = 1 · 05704066204093 · 8522173
 
 |Invoice
 |Seller
-|INVID
-|Order ref. = OID · sales order id = SO-123 · contract = CONTRACT-222 +
-Despatch ref. = DSPID · receipt ref. = RECID
-|Invoice line = 1 · order line reference = 1 · 333 · 444
+|98670AE
+|Order ref. = 110408542 · sales order id = 112233 · contract = Contract-01 +
+Despatch ref. = 5658999 · receipt ref. = rec100
+|Invoice line = 1 · order line reference = 1 · 05704066204093 · 8522173
 
 |===
 

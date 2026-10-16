@@ -16,49 +16,49 @@ Transactions in scope: Catalogue (T19), Catalogue response (T58), Order (T01) us
 
 |Catalogue
 |Seller
-|CATID
-|Referenced contract = CONTRACT-222
-|Catalogue line = 1 · 333 · 444
+|Cat-02
+|Referenced contract = Contract-01
+|Catalogue line = 1 · 05704066204093 · 8522173
 
 |Catalogue response
 |Buyer
-|CATRID
-|Document reference = CATID
+|R-12
+|Document reference = Cat-02
 |–
 
 |Blanket order (contract)
 |Buyer
-|CONOID
-|Catalogue reference = CATID · contract = CONTRACT-222
-|Order line = 1 · 333 · 444
+|4832423
+|Catalogue reference = Cat-02 · contract = Contract-01
+|Order line = 1 · 05704066204093 · 8522173
 
 |Order response (to blanket order)
 |Seller
 |ORID-C
-|Order reference = CONOID · sales order id = SO-100
+|Order reference = 4832423 · sales order id = SO-100
 |Order line = 1 · order line reference = 1
 
 |Order (call-off)
 |Buyer
-|OID
-|Catalogue reference = CATID +
-Order document reference = CONOID
-|Order line = 1 · 333 · 444
+|110408542
+|Catalogue reference = Cat-02 +
+Order document reference = 4832423
+|Order line = 1 · 05704066204093 · 8522173
 
 |Order response / order agreement
 |Seller
-|ORID / OAGID
-|Order reference = OID · sales order id = SO-123 +
-Contract = CONOID
-|Line = 1 · order line reference = 1 · 333 · 444
+|101 / 0263bf48-9a55-4d15-adf5-2c2921036d1c
+|Order reference = 110408542 · sales order id = 112233 +
+Contract = 4832423
+|Line = 1 · order line reference = 1 · 05704066204093 · 8522173
 
 |Despatch advice · receipt advice · invoice
 |Both
-|DSPID · RECID · INVID
-|Order reference = OID throughout · despatch ref. = DSPID +
-Receipt ref. = RECID · contract = CONOID
+|5658999 · rec100 · 98670AE
+|Order reference = 110408542 throughout · despatch ref. = 5658999 +
+Receipt ref. = rec100 · contract = 4832423
 |Line = 1 · order line reference = 1 +
-Sales order line id = SO-123:1 · 333 · 444
+Sales order line id = 10 · 05704066204093 · 8522173
 
 |===
 
