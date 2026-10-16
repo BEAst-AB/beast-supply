@@ -10,56 +10,48 @@ Scenario 3 starts with a single order against the catalogue. There is no blanket
 
 Transactions in scope: Catalogue (T19), Catalogue response (T58), Order (T01), Order response (T76), Advanced despatch advice (T120), Receipt advice (T128), Invoice (Peppol BIS Billing 3.0).
 
-[cols="3s,1,2,5,5",options="header"]
+[cols="3s,1,5,5",options="header"]
 |===
-|Transaction |From |Own identifier |Header-level links |Line-level links
+|Transaction |From |Header-level references |Line-level references
 
 |Catalogue
 |Seller
-|Catalogue id
-|Referenced contract = contract id
-|Catalogue line · standard item id · seller item id
+|Contract identifier (Contract ID)
+|–
 
 |Catalogue response
 |Buyer
-|Catalogue response id
-|Document reference = catalogue id
+|Document identifier (Catalogue ID)
 |–
 
 |Order
 |Buyer
-|Order id
-|Catalogue reference = catalogue id · contract = contract id +
-Project reference (optional)
-|Order line · standard item id · seller item id
+|Catalogue reference (Catalogue ID) +
+Reference identifier (Contract ID)
+|Line item identifier (Order Line Ref)
 
 |Order response
 |Seller
-|Order response id
-|Order reference = order id · sales order id
-|Order line · order line reference · standard item id · seller item id
+|Order document reference (Purchase Order ID)
+|Order line reference (Order Line Ref)
 
 |Advanced despatch advice
 |Seller
-|Despatch advice id
-|Order reference = order id
-|Despatch line · order line reference +
-Sales order line id · standard item id · seller item id
+|Order reference (Purchase Order ID)
+|Order line identifier (Order Line Ref)
 
 |Receipt advice
 |Buyer
-|Receipt advice id
-|Order reference = order id +
-Despatch document reference = despatch advice id
-|Receipt line · despatch line reference +
-Order line reference · standard item id · seller item id
+|Order reference (Purchase Order ID) +
+Identity of the Despatch Document (Desp-ID)
+|Line ID (Order Line Ref)
 
 |Invoice
 |Seller
-|Invoice number
-|Order ref. = order id · sales order id · contract = contract id +
-Despatch ref. = despatch advice id · receipt ref. = receipt advice id
-|Invoice line · order line reference · standard item id · seller item id
+|Contract reference (Contract ID) +
+Purchase order reference (Purchase Order ID) +
+Despatch advice reference (Desp-ID)
+|Referenced purchase order line reference (Order Line Ref)
 
 |===
 

@@ -10,58 +10,46 @@ In scenario 4 the buyer orders by telephone, so no electronic order exists. The 
 
 Transactions in scope: Catalogue (T19), Catalogue response (T58), Order agreement (T110), Advanced despatch advice (T120), Receipt advice (T128), Invoice (Peppol BIS Billing 3.0).
 
-[cols="3s,1,2,5,5",options="header"]
+[cols="3s,1,5,5",options="header"]
 |===
-|Transaction |From |Own identifier |Header-level links |Line-level links
+|Transaction |From |Header-level references |Line-level references
 
 |Catalogue
 |Seller
-|Catalogue id
-|Referenced contract = contract id
-|Catalogue line · standard item id · seller item id
+|–
+|–
 
 |Catalogue response
 |Buyer
-|Catalogue response id
-|Document reference = catalogue id
+|Document identifier (Catalogue ID)
 |–
 
 |Telephone order
 |Buyer
-|no purchase order id
-|Agreed verbally: catalogue id, seller item id, quantity, site
-|Not applicable
+|None — agreed verbally: catalogue, seller item, quantity, site
+|–
 
 |Order agreement
 |Seller
-|Order agreement id (used as order no.)
-|Sales order id · contract = contract id +
-No order reference — no buyer order exists
-|Order agreement line · standard item id · seller item id
+|Sales order reference (Sales Order ID)
+|Order agreement line identifier (Sales Order Line Ref)
 
 |Advanced despatch advice
 |Seller
-|Despatch advice id
-|Order reference = order agreement id (used as order id) +
-Additional document reference = sales order id
-|Despatch line · sales order line id +
-Order line reference (order agreement line) · standard item id · seller item id
+|Identity of the reference (Sales Order ID)
+|Sales order line number (Sales Order Line Ref)
 
 |Receipt advice
 |Buyer
-|Receipt advice id
-|Order reference = order agreement id +
-Despatch document reference = despatch advice id
-|Receipt line · despatch line reference +
-Sales order line id · standard item id · seller item id
+|Identity of the reference (Sales Order ID, open point) +
+Identity of the Despatch Document (Desp-ID)
+|Sales order line number (Sales Order Line Ref)
 
 |Invoice
 |Seller
-|Invoice number
-|Order ref. = order agreement id · sales order id · contract = contract id +
-Despatch ref. = despatch advice id · receipt ref. = receipt advice id
-|Invoice line · standard item id · seller item id +
-Sales order line id in `cac:InvoiceLine/cac:DocumentReference/cbc:ID` with `schemeID="VN"`
+|Sales order reference (Sales Order ID) +
+Despatch advice reference (Desp-ID)
+|Invoice line object identifier with schemeID "VN" (Sales Order Line Ref)
 
 |===
 

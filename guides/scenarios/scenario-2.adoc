@@ -10,55 +10,58 @@ Scenario 2 is identical to scenario 1 from the blanket order onwards; only the r
 
 Transactions in scope: Catalogue (T19), Catalogue response (T58), Order (T01) used as blanket order, Order (T01), Order response (T76), Order agreement (T110), Advanced despatch advice (T120), Receipt advice (T128), Invoice (Peppol BIS Billing 3.0).
 
-[cols="3s,1,2,5,5",options="header"]
+[cols="3s,1,5,5",options="header"]
 |===
-|Transaction |From |Own identifier |Header-level links |Line-level links
+|Transaction |From |Header-level references |Line-level references
 
 |Catalogue
 |Seller
-|Catalogue id
-|Referenced contract = contract id
-|Catalogue line · standard item id · seller item id
+|–
+|–
 
 |Catalogue response
 |Buyer
-|Catalogue response id
-|Document reference = catalogue id
+|Document identifier (Catalogue ID)
 |–
 
 |Blanket order (contract)
 |Buyer
-|Blanket order id
-|Catalogue reference = catalogue id · contract = contract id
-|Order line · standard item id · seller item id
-
-|Order response (to blanket order)
-|Seller
-|Order response id
-|Order reference = blanket order id · sales order id
-|Order line · order line reference
+|Catalogue reference (Catalogue ID)
+|–
 
 |Order (call-off)
 |Buyer
-|Order id
-|Catalogue reference = catalogue id +
-Order document reference = blanket order id
-|Order line · standard item id · seller item id
+|Catalogue reference (Catalogue ID)
+|Line item identifier (Order Line Ref)
 
-|Order response / order agreement
+|Order response
 |Seller
-|Order response id / order agreement id
-|Order reference = order id · sales order id +
-Contract = blanket order id
-|Line · order line reference · standard item id · seller item id
+|Order document reference (Purchase Order ID)
+|Order line reference (Order Line Ref)
 
-|Despatch advice · receipt advice · invoice
-|Both
-|Despatch advice id · receipt advice id · invoice number
-|Order reference = order id throughout · despatch ref. = despatch advice id +
-Receipt ref. = receipt advice id · contract = blanket order id
-|Line · order line reference +
-Sales order line id · standard item id · seller item id
+|Order agreement
+|Seller
+|Contract identifier (Contract ID) +
+No element in the syntax (Purchase Order ID, open point)
+|No element in the syntax (Order Line Ref, open point)
+
+|Advanced despatch advice
+|Seller
+|Order reference (Purchase Order ID)
+|Order line identifier (Order Line Ref)
+
+|Receipt advice
+|Buyer
+|Order reference (Purchase Order ID) +
+Identity of the Despatch Document (Desp-ID)
+|Line ID (Order Line Ref)
+
+|Invoice
+|Seller
+|Contract reference (Contract ID) +
+Purchase order reference (Purchase Order ID) +
+Despatch advice reference (Desp-ID)
+|Referenced purchase order line reference (Order Line Ref)
 
 |===
 

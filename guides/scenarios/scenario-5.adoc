@@ -10,44 +10,37 @@ Scenario 5 covers bulk call-offs against a catalogue where no order, order respo
 
 Transactions in scope: Catalogue (T19), Catalogue response (T58), Advanced despatch advice (T120), Receipt advice (T128), Invoice (Peppol BIS Billing 3.0).
 
-[cols="3s,1,2,5,5",options="header"]
+[cols="3s,1,5,5",options="header"]
 |===
-|Transaction |From |Own identifier |Header-level links |Line-level links
+|Transaction |From |Header-level references |Line-level references
 
 |Catalogue
 |Seller
-|Catalogue id
-|Referenced contract = contract id
-|Catalogue line · standard item id · seller item id
+|Contract identifier (Contract ID)
+|–
 
 |Catalogue response
 |Buyer
-|Catalogue response id
-|Document reference = catalogue id
+|Document identifier (Catalogue ID)
 |–
 
-|Advanced despatch advice (one per delivery)
+|Advanced despatch advice
 |Seller
-|Despatch advice id
-|No order reference — no purchase order exists. +
-Additional document reference = catalogue id (doc. type code 9) and = sales order id
-|Despatch line · sales order line id +
-Document reference = catalogue id · standard item id · seller item id
+|Identity of the reference (Catalogue ID) +
+Identity of the reference (Sales Order ID)
+|Sales order line number (Sales Order Line Ref)
 
 |Receipt advice
 |Buyer
-|Receipt advice id
-|Despatch document reference = despatch advice id
-|Receipt line · despatch line reference +
-Sales order line id · standard item id · seller item id
+|Identity of the Despatch Document (Desp-ID)
+|Sales order line number (Sales Order Line Ref)
 
 |Invoice
 |Seller
-|Invoice number
-|Sales order id · contract = contract id · receipt ref. = receipt advice id +
-Despatch ref.: one invoice can cover several despatch advices
-|Invoice line · standard item id · seller item id +
-Sales order line id in `cac:InvoiceLine/cac:DocumentReference/cbc:ID` with `schemeID="VN"`
+|Contract reference (Contract ID) +
+Sales order reference (Sales Order ID) +
+Despatch advice reference (Desp-ID)
+|Invoice line object identifier with schemeID "VN" (Sales Order Line Ref)
 
 |===
 
