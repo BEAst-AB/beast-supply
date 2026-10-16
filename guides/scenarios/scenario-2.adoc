@@ -16,49 +16,49 @@ Transactions in scope: Catalogue (T19), Catalogue response (T58), Order (T01) us
 
 |Catalogue
 |Seller
-|Cat-02
-|Referenced contract = Contract-01
-|Catalogue line = 1 · 05704066204093 · 8522173
+|Catalogue id
+|Referenced contract = contract id
+|Catalogue line · standard item id · seller item id
 
 |Catalogue response
 |Buyer
-|R-12
-|Document reference = Cat-02
+|Catalogue response id
+|Document reference = catalogue id
 |–
 
 |Blanket order (contract)
 |Buyer
-|4832423
-|Catalogue reference = Cat-02 · contract = Contract-01
-|Order line = 1 · 05704066204093 · 8522173
+|Blanket order id
+|Catalogue reference = catalogue id · contract = contract id
+|Order line · standard item id · seller item id
 
 |Order response (to blanket order)
 |Seller
-|ORID-C
-|Order reference = 4832423 · sales order id = SO-100
-|Order line = 1 · order line reference = 1
+|Order response id
+|Order reference = blanket order id · sales order id
+|Order line · order line reference
 
 |Order (call-off)
 |Buyer
-|110408542
-|Catalogue reference = Cat-02 +
-Order document reference = 4832423
-|Order line = 1 · 05704066204093 · 8522173
+|Order id
+|Catalogue reference = catalogue id +
+Order document reference = blanket order id
+|Order line · standard item id · seller item id
 
 |Order response / order agreement
 |Seller
-|101 / 0263bf48-9a55-4d15-adf5-2c2921036d1c
-|Order reference = 110408542 · sales order id = 112233 +
-Contract = 4832423
-|Line = 1 · order line reference = 1 · 05704066204093 · 8522173
+|Order response id / order agreement id
+|Order reference = order id · sales order id +
+Contract = blanket order id
+|Line · order line reference · standard item id · seller item id
 
 |Despatch advice · receipt advice · invoice
 |Both
-|5658999 · rec100 · 98670AE
-|Order reference = 110408542 throughout · despatch ref. = 5658999 +
-Receipt ref. = rec100 · contract = 4832423
-|Line = 1 · order line reference = 1 +
-Sales order line id = 10 · 05704066204093 · 8522173
+|Despatch advice id · receipt advice id · invoice number
+|Order reference = order id throughout · despatch ref. = despatch advice id +
+Receipt ref. = receipt advice id · contract = blanket order id
+|Line · order line reference +
+Sales order line id · standard item id · seller item id
 
 |===
 

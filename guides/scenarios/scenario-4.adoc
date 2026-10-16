@@ -16,14 +16,14 @@ Transactions in scope: Catalogue (T19), Catalogue response (T58), Order agreemen
 
 |Catalogue
 |Seller
-|Cat-02
-|Referenced contract = Contract-01
-|Catalogue line = 1 · 05704066204093 · 8522173
+|Catalogue id
+|Referenced contract = contract id
+|Catalogue line · standard item id · seller item id
 
 |Catalogue response
 |Buyer
-|R-12
-|Document reference = Cat-02
+|Catalogue response id
+|Document reference = catalogue id
 |–
 
 |Telephone order
@@ -34,34 +34,34 @@ Transactions in scope: Catalogue (T19), Catalogue response (T58), Order agreemen
 
 |Order agreement
 |Seller
-|0263bf48-9a55-4d15-adf5-2c2921036d1c (used as order no.)
-|Sales order id = 112233 · contract = Contract-01 +
+|Order agreement id (used as order no.)
+|Sales order id · contract = contract id +
 No order reference — no buyer order exists
-|Order agreement line = 1 · 05704066204093 · 8522173
+|Order agreement line · standard item id · seller item id
 
 |Advanced despatch advice
 |Seller
-|5658999
-|Order reference = 0263bf48-9a55-4d15-adf5-2c2921036d1c (order agreement id as order id) +
-Additional document reference = 112233
-|Despatch line = 1 · sales order line id = 10 +
-Order line reference = 1 (order agreement line) · 05704066204093 · 8522173
+|Despatch advice id
+|Order reference = order agreement id (used as order id) +
+Additional document reference = sales order id
+|Despatch line · sales order line id +
+Order line reference (order agreement line) · standard item id · seller item id
 
 |Receipt advice
 |Buyer
-|rec100
-|Order reference = 0263bf48-9a55-4d15-adf5-2c2921036d1c +
-Despatch document reference = 5658999
-|Receipt line = 1 · despatch line reference = 1 +
-Sales order line id = 10 · 05704066204093 · 8522173
+|Receipt advice id
+|Order reference = order agreement id +
+Despatch document reference = despatch advice id
+|Receipt line · despatch line reference +
+Sales order line id · standard item id · seller item id
 
 |Invoice
 |Seller
-|98670AE
-|Order ref. = 0263bf48-9a55-4d15-adf5-2c2921036d1c · sales order id = 112233 · contract = Contract-01 +
-Despatch ref. = 5658999 · receipt ref. = rec100
-|Invoice line = 1 · 05704066204093 · 8522173 +
-Sales order line id = 10 in `cac:InvoiceLine/cac:DocumentReference/cbc:ID` with `schemeID="VN"`
+|Invoice number
+|Order ref. = order agreement id · sales order id · contract = contract id +
+Despatch ref. = despatch advice id · receipt ref. = receipt advice id
+|Invoice line · standard item id · seller item id +
+Sales order line id in `cac:InvoiceLine/cac:DocumentReference/cbc:ID` with `schemeID="VN"`
 
 |===
 

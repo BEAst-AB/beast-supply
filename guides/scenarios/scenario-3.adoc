@@ -16,50 +16,50 @@ Transactions in scope: Catalogue (T19), Catalogue response (T58), Order (T01), O
 
 |Catalogue
 |Seller
-|Cat-02
-|Referenced contract = Contract-01
-|Catalogue line = 1 · 05704066204093 · 8522173
+|Catalogue id
+|Referenced contract = contract id
+|Catalogue line · standard item id · seller item id
 
 |Catalogue response
 |Buyer
-|R-12
-|Document reference = Cat-02
+|Catalogue response id
+|Document reference = catalogue id
 |–
 
 |Order
 |Buyer
-|110408542
-|Catalogue reference = Cat-02 · contract = Contract-01 +
+|Order id
+|Catalogue reference = catalogue id · contract = contract id +
 Project reference (optional)
-|Order line = 1 · 05704066204093 · 8522173
+|Order line · standard item id · seller item id
 
 |Order response
 |Seller
-|101
-|Order reference = 110408542 · sales order id = 112233
-|Order line = 1 · order line reference = 1 · 05704066204093 · 8522173
+|Order response id
+|Order reference = order id · sales order id
+|Order line · order line reference · standard item id · seller item id
 
 |Advanced despatch advice
 |Seller
-|5658999
-|Order reference = 110408542
-|Despatch line = 1 · order line reference = 1 +
-Sales order line id = 10 · 05704066204093 · 8522173
+|Despatch advice id
+|Order reference = order id
+|Despatch line · order line reference +
+Sales order line id · standard item id · seller item id
 
 |Receipt advice
 |Buyer
-|rec100
-|Order reference = 110408542 +
-Despatch document reference = 5658999
-|Receipt line = 1 · despatch line reference = 1 +
-Order line reference = 1 · 05704066204093 · 8522173
+|Receipt advice id
+|Order reference = order id +
+Despatch document reference = despatch advice id
+|Receipt line · despatch line reference +
+Order line reference · standard item id · seller item id
 
 |Invoice
 |Seller
-|98670AE
-|Order ref. = 110408542 · sales order id = 112233 · contract = Contract-01 +
-Despatch ref. = 5658999 · receipt ref. = rec100
-|Invoice line = 1 · order line reference = 1 · 05704066204093 · 8522173
+|Invoice number
+|Order ref. = order id · sales order id · contract = contract id +
+Despatch ref. = despatch advice id · receipt ref. = receipt advice id
+|Invoice line · order line reference · standard item id · seller item id
 
 |===
 

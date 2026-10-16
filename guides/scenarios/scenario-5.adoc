@@ -16,38 +16,38 @@ Transactions in scope: Catalogue (T19), Catalogue response (T58), Advanced despa
 
 |Catalogue
 |Seller
-|Cat-02
-|Referenced contract = Contract-01
-|Catalogue line = 1 · 05704066204093 · 8522173
+|Catalogue id
+|Referenced contract = contract id
+|Catalogue line · standard item id · seller item id
 
 |Catalogue response
 |Buyer
-|R-12
-|Document reference = Cat-02
+|Catalogue response id
+|Document reference = catalogue id
 |–
 
 |Advanced despatch advice (one per delivery)
 |Seller
-|5658999
+|Despatch advice id
 |No order reference — no purchase order exists. +
-Additional document reference = Cat-02 (doc. type code 9) and = 112233 (sales order no.)
-|Despatch line = 1 · sales order line id = 10 +
-Document reference = Cat-02 · 05704066204093 · 8522173
+Additional document reference = catalogue id (doc. type code 9) and = sales order id
+|Despatch line · sales order line id +
+Document reference = catalogue id · standard item id · seller item id
 
 |Receipt advice
 |Buyer
-|rec100
-|Despatch document reference = 5658999
-|Receipt line = 1 · despatch line reference = 1 +
-Sales order line id = 10 · 05704066204093 · 8522173
+|Receipt advice id
+|Despatch document reference = despatch advice id
+|Receipt line · despatch line reference +
+Sales order line id · standard item id · seller item id
 
 |Invoice
 |Seller
-|98670AE
-|Sales order id = 112233 · contract = Contract-01 · receipt ref. = rec100 +
+|Invoice number
+|Sales order id · contract = contract id · receipt ref. = receipt advice id +
 Despatch ref.: one invoice can cover several despatch advices
-|Invoice line = 1 · 05704066204093 · 8522173 +
-Sales order line id = 10 in `cac:InvoiceLine/cac:DocumentReference/cbc:ID` with `schemeID="VN"`
+|Invoice line · standard item id · seller item id +
+Sales order line id in `cac:InvoiceLine/cac:DocumentReference/cbc:ID` with `schemeID="VN"`
 
 |===
 
