@@ -1,0 +1,130 @@
+[[scenario-4]]
+= Scenario 4 – From order agreement
+
+_Telephone order in, order agreement back — the sales order id is the key_
+
+In scenario 4 the buyer orders by telephone, so no electronic order exists. The seller confirms with an order agreement, whose identifier is globally unique and is used by the buyer as the order number.
+
+[[scenario-4-transactions]]
+== Transactions and identifiers
+
+Transactions in scope: Catalogue (T19), Catalogue response (T58), Order agreement (T110), Advanced despatch advice (T120), Receipt advice (T128), Invoice (Peppol BIS Billing 3.0).
+
+[cols="3s,1,2,5,5",options="header"]
+|===
+|Transaction |From |Own identifier |Header-level links |Line-level links
+
+|Catalogue
+|Seller
+|CATID
+|Referenced contract = CONTRACT-222
+|Catalogue line = 1 · 333 · 444
+
+|Catalogue response
+|Buyer
+|CATRID
+|Document reference = CATID
+|–
+
+|Telephone order
+|Buyer
+|no purchase order id
+|Agreed verbally: catalogue id, seller item id, quantity, site
+|Not applicable
+
+|Order agreement
+|Seller
+|OAGID (used as order no.)
+|Sales order id = SO-123 · contract = CONTRACT-222 +
+No order reference — no buyer order exists
+|Order agreement line = 1 · 333 · 444
+
+|Advanced despatch advice
+|Seller
+|DSPID
+|Order reference = OAGID (order agreement id as order id) +
+Additional document reference = SO-123
+|Despatch line = 1 · sales order line id = SO-123:1 +
+Order line reference = 1 (order agreement line) · 333 · 444
+
+|Receipt advice
+|Buyer
+|RECID
+|Order reference = OAGID +
+Despatch document reference = DSPID
+|Receipt line = 1 · despatch line reference = 1 +
+Sales order line id = SO-123:1 · 333 · 444
+
+|Invoice
+|Seller
+|INVID
+|Order ref. = OAGID · sales order id = SO-123 · contract = CONTRACT-222 +
+Despatch ref. = DSPID · receipt ref. = RECID
+|Invoice line = 1 · 333 · 444 +
+Order line reference = 1 (order agreement line)
+
+|===
+
+[[scenario-4-matrix]]
+== Reference matrix
+
+Rows are the transactions in scope, columns the references that link them. Each cell names the syntax element that carries the reference in that transaction and links to its definition. An empty cell means the reference is not used in that transaction; references that are not used at all in this scenario are left out.
+
+[cols="2s,5*3",options="header"]
+|===
+|Transaction
+|Catalogue ID
+|Sales Order ID
+|Sales Order Line Ref
+|Desp-ID
+|Invoice ID
+
+|link:../syntax/Catalogue/tree/[Catalogue]
+|link:../syntax/Catalogue/cbc-ID/[cbc:ID]
+|
+|
+|
+|
+
+|link:../syntax/CatalogueResponse/tree/[Cat. resp.]
+|link:../syntax/CatalogueResponse/cac-DocumentResponse/cac-DocumentReference/cbc-ID/[cac:Document+++<wbr>+++Response/+++<wbr>+++cac:Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|
+|
+|
+|
+
+|link:../syntax/OrderAgreement/tree/[Order agr.]
+|
+|link:../syntax/OrderAgreement/cbc-SalesOrderID/[cbc:Sales+++<wbr>+++Order+++<wbr>+++ID]
+|link:../syntax/OrderAgreement/cac-OrderLine/cac-LineItem/cbc-ID/[cac:Order+++<wbr>+++Line/+++<wbr>+++cac:Line+++<wbr>+++Item/+++<wbr>+++cbc:ID]
+|
+|
+
+|link:../syntax/AdvancedDespatchAdvice/tree/[Despatch adv.]
+|
+|link:../syntax/AdvancedDespatchAdvice/cac-AdditionalDocumentReference/cbc-ID/[cac:Additional+++<wbr>+++Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|link:../syntax/AdvancedDespatchAdvice/cac-DespatchLine/cac-OrderLineReference/cbc-SalesOrderLineID/[cac:Despatch+++<wbr>+++Line/+++<wbr>+++cac:Order+++<wbr>+++Line+++<wbr>+++Reference/+++<wbr>+++cbc:Sales+++<wbr>+++Order+++<wbr>+++Line+++<wbr>+++ID]
+|link:../syntax/AdvancedDespatchAdvice/cbc-ID/[cbc:ID]
+|
+
+|link:../syntax/ReceiptAdvice/tree/[Receipt adv.]
+|
+|*?* link:../syntax/ReceiptAdvice/cac-AdditionalDocumentReference/cbc-ID/[cac:Additional+++<wbr>+++Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|link:../syntax/ReceiptAdvice/cac-ReceiptLine/cac-OrderLineReference/cbc-SalesOrderLineID/[cac:Receipt+++<wbr>+++Line/+++<wbr>+++cac:Order+++<wbr>+++Line+++<wbr>+++Reference/+++<wbr>+++cbc:Sales+++<wbr>+++Order+++<wbr>+++Line+++<wbr>+++ID]
+|link:../syntax/ReceiptAdvice/cac-DespatchDocumentReference/cbc-ID/[cac:Despatch+++<wbr>+++Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|
+
+|link:../syntax/ubl-invoice/tree/[Invoice]
+|
+|link:../syntax/ubl-invoice/cac-OrderReference/cbc-SalesOrderID/[cac:Order+++<wbr>+++Reference/+++<wbr>+++cbc:Sales+++<wbr>+++Order+++<wbr>+++ID]
+|*?* link:../syntax/ubl-invoice/cac-InvoiceLine/cac-OrderLineReference/cbc-LineID/[cac:Invoice+++<wbr>+++Line/+++<wbr>+++cac:Order+++<wbr>+++Line+++<wbr>+++Reference/+++<wbr>+++cbc:Line+++<wbr>+++ID]
+|link:../syntax/ubl-invoice/cac-DespatchDocumentReference/cbc-ID/[cac:Despatch+++<wbr>+++Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|link:../syntax/ubl-invoice/cbc-ID/[cbc:ID]
+
+|===
+
+[NOTE]
+====
+*Rule applied.* No purchase order id exists, so the sales order id SO-123 from the order agreement is the linking key, and the order agreement id is quoted as order reference in all later documents.
+====
+

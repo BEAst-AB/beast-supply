@@ -1,0 +1,75 @@
+[[introduction]]
+= Introduction
+
+This page describes five scenarios for exchanging BEAst Supply documents over Peppol. All scenarios use the same chain of transactions; they differ in where the chain starts. For each scenario the page shows which identifiers every transaction carries, and a reference matrix that names the syntax element used for each reference, with a link to its definition in the syntax.
+
+[[the-document-chain]]
+== The document chain
+
+[cols="1s,4",options="header"]
+|===
+|Transaction |Syntax
+|RFQ |https://test-docs.peppol.eu/pracc/2023/syntax/catalogueRequest/tree/[Pre-award catalogue request (T035)] — published on Peppol test-docs only
+|Quote |https://docs.peppol.eu/pracc/catalogue/1.0/syntax/catalogue/tree/[Peppol BIS Pre-award Catalogue 1.0]
+|Catalogue |link:../syntax/Catalogue/tree/[Peppol Catalogue transaction 3.5 (T19)]
+|Catalogue response |link:../syntax/CatalogueResponse/tree/[Peppol Catalogue Response transaction 3.0 (T58)]
+|Blanket order |link:../syntax/Order/tree/[Peppol Order transaction 3.7 (T01)], used as contract
+|Order |link:../syntax/Order/tree/[Peppol Order transaction 3.7 (T01)]
+|Order response |link:../syntax/OrderResponse/tree/[Peppol Order Response transaction 3.3 (T76)]
+|Order agreement |link:../syntax/OrderAgreement/tree/[Peppol Order Agreement 3.2 (T110)]
+|Weight statement |link:../syntax/WeightStatement/tree/[Peppol Weight Statement 1.3 (T122)] — not part of scenario 1–5
+|Despatch advice |link:../syntax/AdvancedDespatchAdvice/tree/[Peppol Advanced Despatch Advice 1.4 (T120)]
+|Receipt advice |link:../syntax/ReceiptAdvice/tree/[Peppol Receipt Advice 1.1 (T128)]
+|Invoice |link:../syntax/ubl-invoice/tree/[Peppol Invoice transaction 3.0]
+|===
+
+Except where noted, the catalogue and catalogue response precede every scenario. They carry the contract reference and the item identifiers — standard item id and seller item id — that all later documents reuse.
+
+[[sample-values]]
+== Sample values
+
+The same sample values are used in all scenarios.
+
+[cols="1s,4",options="header"]
+|===
+|Value |Meaning
+|RFQID · QID |Pre-award catalogue request and pre-award catalogue (quote)
+|CATID · CATRID |Catalogue and catalogue response
+|CONTRACT-222 |Contract id, referenced from the catalogue
+|CONOID |Blanket order (contract)
+|OID |Call-off order (purchase order id)
+|ORID · OAGID |Order response and order agreement
+|SO-123 / SO-123:1 |Sales order and sales order line (sales order number : line number)
+|DSPID · RECID · INVID |Despatch advice, receipt advice and invoice
+|333 / 444 |Standard item id / seller item id
+|===
+
+[[linking-rule]]
+== Linking rule
+
+Every downstream document must be traceable to one commercial commitment. Apply the levels in order and use the first one that is populated.
+
+[cols="1,3s,4,5",options="header"]
+|===
+|# |Precedence |When it applies |Carried in
+|1 |Purchase order id exists |The buyer issued an order (scenario 1, 2, 3) |Header: `cac:OrderReference/cbc:ID` = OID +
+Line: `cac:OrderLineReference/cbc:LineID` = 1
+|2 |No purchase order id — use the sales order id |An order agreement or a despatch advice starts the chain (scenario 4, 5) |Header: `cbc:SalesOrderID` (order agreement), `cac:OrderReference/cbc:SalesOrderID` (invoice) +
+Line: `cac:OrderLineReference/cbc:SalesOrderLineID`
+|3 |Contract or blanket order as the frame |Whenever a blanket order or contract exists |`cac:ContractDocumentReference/cbc:ID` = CONOID +
+`cac:ReferencedContract/cbc:ID` in the catalogue
+|4 |Item identity on every line |All scenarios |`cac:StandardItemIdentification/cbc:ID` = 333 +
+`cac:SellersItemIdentification/cbc:ID` = 444
+|===
+
+[NOTE]
+====
+*Consequence for scenario 4 and 5.* The seller owns the identifier. The buyer must be able to accept a sales order number as the only order-level key on despatch advice, receipt advice and invoice, and to match it against a contract or catalogue reference.
+====
+
+[[scenario-overview]]
+== Transactions in scope per scenario
+
+include::overview-table.adoc[]
+
+● in scope · – not used

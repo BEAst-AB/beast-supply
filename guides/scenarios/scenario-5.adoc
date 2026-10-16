@@ -1,0 +1,115 @@
+[[scenario-5]]
+= Scenario 5 – From despatch advice
+
+_Delivery note and invoice only — bulk call-offs against a catalogue_
+
+Scenario 5 covers bulk call-offs against a catalogue where no order, order response or order agreement is exchanged. Each delivery is described by its own advanced despatch advice, and the sales order id is the only order-level key. Original example: sales order 123, lines 1–3 (gravel 8/16, 0/8, 16/32), each delivered on its own despatch advice.
+
+[[scenario-5-transactions]]
+== Transactions and identifiers
+
+Transactions in scope: Catalogue (T19), Catalogue response (T58), Advanced despatch advice (T120), Receipt advice (T128), Invoice (Peppol BIS Billing 3.0).
+
+[cols="3s,1,2,5,5",options="header"]
+|===
+|Transaction |From |Own identifier |Header-level links |Line-level links
+
+|Catalogue
+|Seller
+|CATID
+|Referenced contract = CONTRACT-222
+|Catalogue line = 1 · 333 · 444
+
+|Catalogue response
+|Buyer
+|CATRID
+|Document reference = CATID
+|–
+
+|Advanced despatch advice (one per delivery)
+|Seller
+|DSPID
+|No order reference — no purchase order exists. +
+Additional document reference = CATID (doc. type code 9) and = SO-123 (sales order no.)
+|Despatch line = 1 · sales order line id = SO-123:1 +
+Document reference = CATID · 333 · 444
+
+|Receipt advice
+|Buyer
+|RECID
+|Despatch document reference = DSPID
+|Receipt line = 1 · despatch line reference = 1 +
+Sales order line id = SO-123:1 · 333 · 444
+
+|Invoice
+|Seller
+|INVID
+|Sales order id = SO-123 · contract = CONTRACT-222 · receipt ref. = RECID +
+Despatch ref.: one invoice can cover several despatch advices
+|Invoice line = 1 · 333 · 444 +
+Sales order line id or despatch line as line reference
+
+|===
+
+[[scenario-5-matrix]]
+== Reference matrix
+
+Rows are the transactions in scope, columns the references that link them. Each cell names the syntax element that carries the reference in that transaction and links to its definition. An empty cell means the reference is not used in that transaction; references that are not used at all in this scenario are left out.
+
+[cols="2s,6*3",options="header"]
+|===
+|Transaction
+|Catalogue ID
+|Contract ID
+|Sales Order ID
+|Sales Order Line Ref
+|Desp-ID
+|Invoice ID
+
+|link:../syntax/Catalogue/tree/[Catalogue]
+|link:../syntax/Catalogue/cbc-ID/[cbc:ID]
+|link:../syntax/Catalogue/cac-ReferencedContract/cbc-ID/[cac:Referenced+++<wbr>+++Contract/+++<wbr>+++cbc:ID]
+|
+|
+|
+|
+
+|link:../syntax/CatalogueResponse/tree/[Cat. resp.]
+|link:../syntax/CatalogueResponse/cac-DocumentResponse/cac-DocumentReference/cbc-ID/[cac:Document+++<wbr>+++Response/+++<wbr>+++cac:Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|
+|
+|
+|
+|
+
+|link:../syntax/AdvancedDespatchAdvice/tree/[Despatch adv.]
+|link:../syntax/AdvancedDespatchAdvice/cac-AdditionalDocumentReference/cbc-ID/[cac:Additional+++<wbr>+++Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|
+|link:../syntax/AdvancedDespatchAdvice/cac-AdditionalDocumentReference/cbc-ID/[cac:Additional+++<wbr>+++Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|link:../syntax/AdvancedDespatchAdvice/cac-DespatchLine/cac-OrderLineReference/cbc-SalesOrderLineID/[cac:Despatch+++<wbr>+++Line/+++<wbr>+++cac:Order+++<wbr>+++Line+++<wbr>+++Reference/+++<wbr>+++cbc:Sales+++<wbr>+++Order+++<wbr>+++Line+++<wbr>+++ID]
+|link:../syntax/AdvancedDespatchAdvice/cbc-ID/[cbc:ID]
+|
+
+|link:../syntax/ReceiptAdvice/tree/[Receipt adv.]
+|
+|
+|
+|link:../syntax/ReceiptAdvice/cac-ReceiptLine/cac-OrderLineReference/cbc-SalesOrderLineID/[cac:Receipt+++<wbr>+++Line/+++<wbr>+++cac:Order+++<wbr>+++Line+++<wbr>+++Reference/+++<wbr>+++cbc:Sales+++<wbr>+++Order+++<wbr>+++Line+++<wbr>+++ID]
+|link:../syntax/ReceiptAdvice/cac-DespatchDocumentReference/cbc-ID/[cac:Despatch+++<wbr>+++Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|
+
+|link:../syntax/ubl-invoice/tree/[Invoice]
+|
+|link:../syntax/ubl-invoice/cac-ContractDocumentReference/cbc-ID/[cac:Contract+++<wbr>+++Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|link:../syntax/ubl-invoice/cac-OrderReference/cbc-SalesOrderID/[cac:Order+++<wbr>+++Reference/+++<wbr>+++cbc:Sales+++<wbr>+++Order+++<wbr>+++ID]
+|*?* link:../syntax/ubl-invoice/cac-InvoiceLine/cac-OrderLineReference/cbc-LineID/[cac:Invoice+++<wbr>+++Line/+++<wbr>+++cac:Order+++<wbr>+++Line+++<wbr>+++Reference/+++<wbr>+++cbc:Line+++<wbr>+++ID]
+|link:../syntax/ubl-invoice/cac-DespatchDocumentReference/cbc-ID/[cac:Despatch+++<wbr>+++Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|link:../syntax/ubl-invoice/cbc-ID/[cbc:ID]
+
+|===
+
+[NOTE]
+====
+*Known limitation.* The invoice carries only one despatch document reference at header level, so several deliveries on one invoice must be linked per line — via the sales order line id, and the despatch line reference where the buyer supports it.
+====
+

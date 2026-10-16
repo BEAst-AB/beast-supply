@@ -1,0 +1,225 @@
+[[scenario-1]]
+= Scenario 1 – All transactions
+
+_From request for quotation to invoice — the purchase order id is the primary link_
+
+Scenario 1 covers the complete document chain: a pre-award step (request for quotation and quote), a catalogue with catalogue response, a blanket order used as the contract, call-off orders with order response and order agreement, and the delivery documents ending with the invoice. The weight statement is not part of the scenario.
+
+[[scenario-1-transactions]]
+== Transactions and identifiers
+
+Transactions in scope: Pre-award catalogue request (T035), Pre-award catalogue, Catalogue (T19), Catalogue response (T58), Order (T01) used as blanket order, Order (T01), Order response (T76), Order agreement (T110), Advanced despatch advice (T120), Receipt advice (T128), Invoice (Peppol BIS Billing 3.0).
+
+[cols="3s,1,2,5,5",options="header"]
+|===
+|Transaction |From |Own identifier |Header-level links |Line-level links
+
+|Pre-award catalogue request (RFQ)
+|Buyer
+|RFQID
+|Referenced contract = CONTRACT-222
+|Request line = 1 · standard item id = 333
+
+|Pre-award catalogue (quote)
+|Seller
+|QID
+|Referenced contract = RFQID
+|Catalogue line = 1 · 333 · seller item id = 444
+
+|Catalogue
+|Seller
+|CATID
+|Referenced contract = CONTRACT-222 (or QID when the quote is the frame)
+|Catalogue line = 1 · 333 · 444
+
+|Catalogue response
+|Buyer
+|CATRID
+|Document reference = CATID
+|–
+
+|Blanket order (contract)
+|Buyer
+|CONOID
+|Quotation reference = QID +
+Catalogue reference = CATID
+|Order line = 1 · 333 · 444
+
+|Order response (to blanket order)
+|Seller
+|ORID-C
+|Order reference = CONOID +
+Sales order id = SO-100
+|Order line = 1 · order line reference = 1 · 333 · 444
+
+|Order (call-off)
+|Buyer
+|OID
+|Quotation reference = QID · catalogue reference = CATID +
+Order document reference = CONOID
+|Order line = 1 · 333 · 444
+
+|Order response
+|Seller
+|ORID
+|Order reference = OID · sales order id = SO-123
+|Order line = 1 · order line reference = 1 · 333 · 444
+
+|Order agreement
+|Seller
+|OAGID
+|Order reference = OID · sales order id = SO-123 +
+Contract = CONOID · originator doc. ref. = QID
+|Order agreement line = 1 · 333 · 444
+
+|Advanced despatch advice
+|Seller
+|DSPID
+|Order reference = OID
+|Despatch line = 1 · order line reference = 1 +
+Sales order line id = SO-123:1 · 333 · 444
+
+|Receipt advice
+|Buyer
+|RECID
+|Order reference = OID +
+Despatch document reference = DSPID
+|Receipt line = 1 · despatch line reference = 1 +
+Order line reference = 1 · 333 · 444
+
+|Invoice
+|Seller
+|INVID
+|Order ref. = OID · sales order id = SO-123 · contract = CONOID +
+Despatch ref. = DSPID · receipt ref. = RECID
+|Invoice line = 1 · order line reference = 1 · 333 · 444
+
+|===
+
+[[scenario-1-matrix]]
+== Reference matrix
+
+Rows are the transactions in scope, columns the references that link them. Each cell names the syntax element that carries the reference in that transaction and links to its definition. An empty cell means the reference is not used in that transaction; references that are not used at all in this scenario are left out. The sales order id and sales order line id travel along as secondary keys but are not needed for matching — the purchase order id is the primary key.
+
+[cols="2s,7*3",options="header"]
+|===
+|Transaction
+|RFQ ID
+|Catalogue ID
+|Contract ID
+|Purchase Order ID
+|Order Line Ref
+|Desp-ID
+|Invoice ID
+
+|https://test-docs.peppol.eu/pracc/2023/syntax/catalogueRequest/tree/[RFQ]
+|https://test-docs.peppol.eu/pracc/2023/syntax/catalogueRequest/cbc-ID/[cbc:ID]
+|
+|
+|
+|
+|
+|
+
+|https://docs.peppol.eu/pracc/catalogue/1.0/syntax/catalogue/tree/[Quote]
+|https://docs.peppol.eu/pracc/catalogue/1.0/syntax/catalogue/cac-ReferencedContract/cbc-ID/[cac:Referenced+++<wbr>+++Contract/+++<wbr>+++cbc:ID]
+|
+|
+|
+|
+|
+|
+
+|link:../syntax/Catalogue/tree/[Catalogue]
+|link:../syntax/Catalogue/cac-ReferencedContract/cbc-ID/[cac:Referenced+++<wbr>+++Contract/+++<wbr>+++cbc:ID]
+|link:../syntax/Catalogue/cbc-ID/[cbc:ID]
+|
+|
+|
+|
+|
+
+|link:../syntax/CatalogueResponse/tree/[Cat. resp.]
+|
+|link:../syntax/CatalogueResponse/cac-DocumentResponse/cac-DocumentReference/cbc-ID/[cac:Document+++<wbr>+++Response/+++<wbr>+++cac:Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|
+|
+|
+|
+|
+
+|link:../syntax/Order/tree/[Blanket order]
+|link:../syntax/Order/cac-QuotationDocumentReference/cbc-ID/[cac:Quotation+++<wbr>+++Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|link:../syntax/Order/cac-CatalogueReference/cbc-ID/[cac:Catalogue+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|link:../syntax/Order/cbc-ID/[cbc:ID]
+|
+|–
+|
+|
+
+|link:../syntax/Order/tree/[Order]
+|link:../syntax/Order/cac-QuotationDocumentReference/cbc-ID/[cac:Quotation+++<wbr>+++Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|link:../syntax/Order/cac-CatalogueReference/cbc-ID/[cac:Catalogue+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|
+|link:../syntax/Order/cbc-ID/[cbc:ID]
+|link:../syntax/Order/cac-OrderLine/cac-LineItem/cbc-ID/[cac:Order+++<wbr>+++Line/+++<wbr>+++cac:Line+++<wbr>+++Item/+++<wbr>+++cbc:ID]
+|
+|
+
+|link:../syntax/OrderResponse/tree/[Order resp.]
+|
+|
+|
+|link:../syntax/OrderResponse/cac-OrderReference/cbc-ID/[cac:Order+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|link:../syntax/OrderResponse/cac-OrderLine/cac-OrderLineReference/cbc-LineID/[cac:Order+++<wbr>+++Line/+++<wbr>+++cac:Order+++<wbr>+++Line+++<wbr>+++Reference/+++<wbr>+++cbc:Line+++<wbr>+++ID]
+|
+|
+
+|link:../syntax/OrderAgreement/tree/[Order agr.]
+|
+|
+|link:../syntax/OrderAgreement/cac-Contract/cbc-ID/[cac:Contract/+++<wbr>+++cbc:ID]
+|*?* link:../syntax/OrderAgreement/tree/[No element in the syntax]
+|*?* link:../syntax/OrderAgreement/tree/[No element in the syntax]
+|
+|
+
+|link:../syntax/AdvancedDespatchAdvice/tree/[Despatch adv.]
+|
+|
+|
+|link:../syntax/AdvancedDespatchAdvice/cac-OrderReference/cbc-ID/[cac:Order+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|link:../syntax/AdvancedDespatchAdvice/cac-DespatchLine/cac-OrderLineReference/cbc-LineID/[cac:Despatch+++<wbr>+++Line/+++<wbr>+++cac:Order+++<wbr>+++Line+++<wbr>+++Reference/+++<wbr>+++cbc:Line+++<wbr>+++ID]
+|link:../syntax/AdvancedDespatchAdvice/cbc-ID/[cbc:ID]
+|
+
+|link:../syntax/ReceiptAdvice/tree/[Receipt adv.]
+|
+|
+|
+|link:../syntax/ReceiptAdvice/cac-OrderReference/cbc-ID/[cac:Order+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|link:../syntax/ReceiptAdvice/cac-ReceiptLine/cac-OrderLineReference/cbc-LineID/[cac:Receipt+++<wbr>+++Line/+++<wbr>+++cac:Order+++<wbr>+++Line+++<wbr>+++Reference/+++<wbr>+++cbc:Line+++<wbr>+++ID]
+|link:../syntax/ReceiptAdvice/cac-DespatchDocumentReference/cbc-ID/[cac:Despatch+++<wbr>+++Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|
+
+|link:../syntax/ubl-invoice/tree/[Invoice]
+|
+|
+|link:../syntax/ubl-invoice/cac-ContractDocumentReference/cbc-ID/[cac:Contract+++<wbr>+++Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|link:../syntax/ubl-invoice/cac-OrderReference/cbc-ID/[cac:Order+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|link:../syntax/ubl-invoice/cac-InvoiceLine/cac-OrderLineReference/cbc-LineID/[cac:Invoice+++<wbr>+++Line/+++<wbr>+++cac:Order+++<wbr>+++Line+++<wbr>+++Reference/+++<wbr>+++cbc:Line+++<wbr>+++ID]
+|link:../syntax/ubl-invoice/cac-DespatchDocumentReference/cbc-ID/[cac:Despatch+++<wbr>+++Document+++<wbr>+++Reference/+++<wbr>+++cbc:ID]
+|link:../syntax/ubl-invoice/cbc-ID/[cbc:ID]
+
+|===
+
+[NOTE]
+====
+*Blanket order as contract reference.* CONOID is the value later used in `cac:ContractDocumentReference` on the order agreement and the invoice. Confirm with trading partners that a confirmed blanket order is accepted as a contract reference.
+====
+
+[NOTE]
+====
+*Purchase order id present.* OID is carried at header level in every document and the order line number at line level. The sales order id travels along as a secondary key but is not needed for matching.
+====
+

@@ -1,0 +1,36 @@
+include::../shared/links.adoc[]
+:doctype: book
+:icons: font
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
+:last-update-label!:
+
+= image:../shared/images/peppol.png[float="right"]Scenarios and identifiers
+
+Five entry points into the same document chain — scenario 1 to 5 — and the identifiers that keep the documents linked. The purchase order id is the primary link; where no order exists, the sales order id takes over.
+
+= Link to main site of documentation
+
+link:../[Main documentation site]
+
+:leveloffset: +1
+
+include::introduction.adoc[]
+
+include::scenario-1.adoc[]
+
+include::scenario-2.adoc[]
+
+include::scenario-3.adoc[]
+
+include::scenario-4.adoc[]
+
+include::scenario-5.adoc[]
+
+include::open-points.adoc[]
+
+:leveloffset: -1

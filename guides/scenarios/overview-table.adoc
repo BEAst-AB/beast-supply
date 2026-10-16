@@ -1,0 +1,89 @@
+[cols="3s,5*2",options="header"]
+|===
+|Transaction |<<scenario-1,S1 All transactions>> |<<scenario-2,S2 From blanket order>> |<<scenario-3,S3 From order>> |<<scenario-4,S4 From order agreement>> |<<scenario-5,S5 From despatch advice>>
+
+|Pre-award catalogue request (T035)
+|●
+|–
+|–
+|–
+|–
+
+|Pre-award catalogue
+|●
+|–
+|–
+|–
+|–
+
+|Catalogue (T19)
+|●
+|●
+|●
+|●
+|●
+
+|Catalogue response (T58)
+|●
+|●
+|●
+|●
+|●
+
+|Order (T01) used as blanket order
+|●
+|●
+|–
+|–
+|–
+
+|Order (T01)
+|●
+|●
+|●
+|–
+|–
+
+|Order response (T76)
+|●
+|●
+|●
+|–
+|–
+
+|Order agreement (T110)
+|●
+|●
+|–
+|●
+|–
+
+|Weight statement (T122)
+|–
+|–
+|–
+|–
+|–
+
+|Advanced despatch advice (T120)
+|●
+|●
+|●
+|●
+|●
+
+|Receipt advice (T128)
+|●
+|●
+|●
+|●
+|●
+
+|Invoice (Peppol BIS Billing 3.0)
+|●
+|●
+|●
+|●
+|●
+
+|===
