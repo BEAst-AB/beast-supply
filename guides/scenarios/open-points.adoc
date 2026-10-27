@@ -1,17 +1,6 @@
 [[open-points]]
 = Open points
 
-Cells marked *?* in the reference matrices are references that the current syntax does not carry, or carries only through a workaround.
-
-[cols="2s,3,5",options="header"]
-|===
-|Transaction |Reference |Observation
-|Order agreement (T110) |Purchase order id |`cac:OrderReference/cbc:ID` is defined as _previous order agreement identifier_, not the buyer’s order id. There is no element for 110408542. Affects scenario 1 and 2.
-|Order agreement (T110) |Order line reference |The order agreement line has no `cac:OrderLineReference`. Affects scenario 1 and 2.
-|Receipt advice (T128) |Sales order id |No sales order id at header level. `cac:AdditionalDocumentReference/cbc:ID` is proposed, as in the despatch advice. Affects scenario 4.
-|Invoice |Sales order line id |Resolved: the invoice line has no `cbc:SalesOrderLineID`, so the sales order line id is carried in `cac:InvoiceLine/cac:DocumentReference/cbc:ID` with `schemeID="VN"` (UNCL1153: order number, vendor) and `cbc:DocumentTypeCode` 130. The line can carry only one document reference, so it cannot at the same time carry e.g. a weight statement number (`schemeID="WM"`). Affects scenario 4 and 5.
-|===
-
 Decisions carried over from the original scenarios:
 
 . Is a confirmed blanket order acceptable as a contract reference? (scenario 1, 2)
