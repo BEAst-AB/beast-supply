@@ -118,6 +118,20 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     -o:/src/structure/syntax/ubl-receipt-advice.xml \
     varOverrideSample=/src/structure/source/ubl-receipt-advice.xml -ext:on --allow-external-functions:on
 
+echo "Generating documentation: Application Response"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:$LOGISTICSBASEURL/ubl-application-response.xml \
+    -xsl:/src/tools/create-syntax-with-overrides.xsl \
+    -o:/src/structure/syntax/ubl-application-response.xml \
+    varOverrideSample=/src/structure/source/ubl-application-response.xml -ext:on --allow-external-functions:on
+
+echo "Generating documentation: Manifest"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:$LOGISTICSBASEURL/ubl-manifest.xml \
+    -xsl:/src/tools/create-syntax-with-overrides.xsl \
+    -o:/src/structure/syntax/ubl-manifest.xml \
+    varOverrideSample=/src/structure/source/ubl-manifest.xml -ext:on --allow-external-functions:on
+
 # Generate mapping documents.
  echo "Generating mapping documents: Invoice"
  docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
@@ -190,6 +204,16 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgra
     -s:/src/structure/syntax/ubl-receipt-advice.xml \
     -xsl:/src/tools/syntax-to-mappings.xsl \
     -o:/src/rules/mapping/ReceiptAdvice.xml -ext:on --allow-external-functions:on
+echo "Generating mapping documents: Application Response"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:/src/structure/syntax/ubl-application-response.xml \
+    -xsl:/src/tools/syntax-to-mappings.xsl \
+    -o:/src/rules/mapping/ApplicationResponse.xml -ext:on --allow-external-functions:on
+echo "Generating mapping documents: Manifest"
+docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target atomgraph/saxon \
+    -s:/src/structure/syntax/ubl-manifest.xml \
+    -xsl:/src/tools/syntax-to-mappings.xsl \
+    -o:/src/rules/mapping/Manifest.xml -ext:on --allow-external-functions:on
 
 # Create examples based on documentation.
 echo "Generating example: Invoice"

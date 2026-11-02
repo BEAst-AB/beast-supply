@@ -16,6 +16,8 @@
 	<testfolder>unit-transportation-status-request</testfolder>
 	<testfolder>unit-transportation-status</testfolder>
 	<testfolder>unit-receipt-advice</testfolder>
+	<testfolder>unit-application-response</testfolder>
+	<testfolder>unit-manifest</testfolder>
 
 
 	<!-- example and snippet folders -->
@@ -34,6 +36,8 @@
 	<testfolder>snippets/transportation-status-request</testfolder>
 	<testfolder>snippets/transportation-status</testfolder>
 	<testfolder>snippets/receipt-advice</testfolder>
+	<testfolder>snippets/application-response</testfolder>
+	<testfolder>snippets/manifest</testfolder>
 
 	<!-- base config -->
 	<configuration>
@@ -129,6 +133,20 @@
 		<title>Receipt Advice (T128)</title>
 		<inherit>ubl-receipt-advice-2.3</inherit>
 		<file source="sch/PEPPOLBIS-T128.sch" path="xsl/PEPPOLBIS-T128.xsl"/>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-T129-base-1.0</identifier>
+		<title>Application Response 1.0 (T129)</title>
+		<inherit>ubl-applicationresponse-2.5</inherit>
+		<file source="sch/PEPPOLBIS-T129.sch" path="xsl/PEPPOLBIS-T129.xsl"/>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-T131-base-1.0</identifier>
+		<title>Manifest 1.0 (T131)</title>
+		<inherit>ubl-manifest-1.0</inherit>
+		<file source="sch/PEPPOLBIS-T131.sch" path="xsl/PEPPOLBIS-T131.xsl"/>
 	</configuration>
 
 
@@ -379,6 +397,22 @@
 		<inherit>peppolbis-en16931-cen-ubl</inherit>
 		<inherit>peppolbis-en16931-base-3.0-ubl</inherit>
 		<inherit>peppolbis-en16931-stylesheet-3.0-ubl</inherit>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-131-manifest</identifier>
+		<title>Manifest</title>
+		<profileId>urn:fdc:peppol.eu:logistics:bis:manifest_w_application_response:1</profileId>
+		<customizationId>urn:fdc:peppol.eu:logistics:trns:manifest:1</customizationId>
+		<inherit>peppolbis-T131-base-1.0</inherit>
+	</configuration>
+
+	<configuration>
+		<identifier>peppolbis-129-manifest</identifier>
+		<title>Manifest Application Response</title>
+		<profileId>urn:fdc:peppol.eu:logistics:bis:manifest_w_application_response:1</profileId>
+		<customizationId>urn:fdc:peppol.eu:logistics:trns:application_response:1</customizationId>
+		<inherit>peppolbis-T129-base-1.0</inherit>
 	</configuration>
 
 </buildConfigurations>

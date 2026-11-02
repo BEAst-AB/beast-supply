@@ -22,6 +22,7 @@
 	<Documentation path="profiles/71-waybill/">- Peppol BIS Waybill 1.1</Documentation>
 	<Documentation path="profiles/72-transportationstatus_w_request/">- Peppol BIS Transportation Status with Request 1.1</Documentation>
 	<Documentation path="profiles/73-transportationstatus/">- Peppol BIS Transportation Status Only 1.1</Documentation>
+	<Documentation path="profiles/75-manifest_w_applicationresponse/">- Peppol BIS Manifest with Application Response 0.1 (DRAFT)</Documentation>
 	<Documentation path="profiles/billing/">- Peppol Billing 3</Documentation>
 
 	<!-- Syntax -->
@@ -94,6 +95,16 @@
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ubl-transportation-status.xml</Path>
 		<Title>Peppol Transportation Status 1.2 (T127)</Title>
+	</Resource>
+	<Resource>
+		<Type>Structure-1</Type>
+		<Path>structure/syntax/ubl-application-response.xml</Path>
+		<Title>Peppol Logistics Application Response 1.0 (T129)</Title>
+	</Resource>
+	<Resource>
+		<Type>Structure-1</Type>
+		<Path>structure/syntax/ubl-manifest.xml</Path>
+		<Title>Peppol Manifest 1.0 (T131)</Title>
 	</Resource>
 
 
@@ -181,6 +192,18 @@
 		<Type>native:Schematron</Type>
 		<Path>rules/sch/parts/PEPPOL-M-T128.sch</Path>
 		<Title>Business rules for Receipt Advice transaction 1.1</Title>
+	</Resource>
+	<Resource>
+		<Identifier>T129</Identifier>
+		<Type>native:Schematron</Type>
+		<Path>rules/sch/parts/PEPPOL-M-T129.sch</Path>
+		<Title>Business rules for Peppol Logistics Application Response transaction 1.0</Title>
+	</Resource>
+	<Resource>
+		<Identifier>T131</Identifier>
+		<Type>native:Schematron</Type>
+		<Path>rules/sch/parts/PEPPOL-M-T131.sch</Path>
+		<Title>Business rules for Peppol Manifest transaction 1.0</Title>
 	</Resource>
 
 
@@ -335,6 +358,10 @@
 	<Resource>
 		<Type>CodeList-1</Type>
 		<Path>structure/codelist/UNCL1001_T01.xml</Path>
+	</Resource>
+	<Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/UNCL1001_T131.xml</Path>
 	</Resource>
 	<Resource>
 		<Type>CodeList-1</Type>
@@ -495,6 +522,10 @@
 	<Resource>
 		<Type>Namespace-1</Type>
 		<Path>structure/namespace/ubl-application-response.xml</Path>
+	</Resource>
+	<Resource>
+		<Type>Namespace-1</Type>
+		<Path>structure/namespace/ubl-manifest.xml</Path>
 	</Resource>
 	<Resource>
 		<Type>Namespace-1</Type>

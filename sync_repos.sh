@@ -50,13 +50,14 @@ sync_repo $POACCREPO $POACCBRANCH "rules/examples/Cataloge wo response use cases
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Order use cases" "rules/examples/Order use cases"
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Order-response use cases" "rules/examples/Order-response use cases"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/examples" "rules/examples"
-# BEAst Supply has no Manifest profile (T131); drop the example that comes with the Logistics examples folder
-rm -f rules/examples/Manifest_Example_Full.xml
 
 # Code lists
 sync_repo $BILLINGREPO $BILLINGBRANCH "structure/codelist" "structure/codelist"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "structure/codelist" "structure/codelist"
 sync_repo $POACCREPO $POACCBRANCH "structure/codelist" "structure/codelist"
+
+# Namespace for Manifest (T131); its syntax is generated in build.sh
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "structure/namespace/ubl-manifest.xml" "structure/namespace/ubl-manifest.xml"
 
 
 # Remove ICD.xml from all codelist folders
@@ -68,6 +69,8 @@ find structure/codelist -name "icd.xml" -type f -delete -print
 sync_repo $BILLINGREPO $BILLINGBRANCH "rules/unit-UBL-SE" "rules/unit-UBL-SE" 
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/unit-common"  "rules/unit-common" 
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/unit-waybill"  "rules/unit-waybill" 
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/unit-manifest"  "rules/unit-manifest" 
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/unit-application-response"  "rules/unit-application-response" 
 sync_repo $POACCREPO $POACCBRANCH "rules/unit-common"  "rules/unit-common" 
 sync_repo $POACCREPO $POACCBRANCH "rules/unit-common"  "rules/unit-order" 
 sync_repo $POACCREPO $POACCBRANCH "rules/unit-common"  "rules/order-agreement" 
@@ -89,4 +92,5 @@ sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/70-transportexecution
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/71-waybill" "guides/profiles/71-waybill"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/72-transportationstatus_w_request" "guides/profiles/72-transportationstatus_w_request"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/73-transportationstatus" "guides/profiles/73-transportationstatus"
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/profiles/75-manifest_w_applicationresponse" "guides/profiles/75-manifest_w_applicationresponse"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "guides/shared" "guides/shared"
