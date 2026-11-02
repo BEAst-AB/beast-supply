@@ -65,6 +65,7 @@ find structure/codelist -name "icd.xml" -type f -delete -print
 # Tests
 sync_repo $BILLINGREPO $BILLINGBRANCH "rules/unit-UBL-SE" "rules/unit-UBL-SE" 
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/unit-common"  "rules/unit-common" 
+sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/unit-waybill"  "rules/unit-waybill" 
 sync_repo $POACCREPO $POACCBRANCH "rules/unit-common"  "rules/unit-common" 
 sync_repo $POACCREPO $POACCBRANCH "rules/unit-common"  "rules/unit-order" 
 sync_repo $POACCREPO $POACCBRANCH "rules/unit-common"  "rules/order-agreement" 
