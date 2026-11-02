@@ -50,6 +50,8 @@ sync_repo $POACCREPO $POACCBRANCH "rules/examples/Cataloge wo response use cases
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Order use cases" "rules/examples/Order use cases"
 sync_repo $POACCREPO $POACCBRANCH "rules/examples/Order-response use cases" "rules/examples/Order-response use cases"
 sync_repo $LOGISTICSREPO $LOGISTICSBRANCH "rules/examples" "rules/examples"
+# BEAst Supply has no Manifest profile (T131); drop the example that comes with the Logistics examples folder
+rm -f rules/examples/Manifest_Example_Full.xml
 
 # Code lists
 sync_repo $BILLINGREPO $BILLINGBRANCH "structure/codelist" "structure/codelist"
