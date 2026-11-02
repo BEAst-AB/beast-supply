@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:manifest_response:1</cbc:CustomizationID>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:logistics:trns:application_response:1</cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:logistics:bis:manifest_w_application_response:1</cbc:ProfileID>
 	<!-- tag::document-id[] -->
 	<cbc:ID>AR-2026-000451</cbc:ID>
@@ -36,19 +36,4 @@
 		</cac:DocumentReference>
 	</cac:DocumentResponse>
 	<!-- end::document-response-accepted[] -->
-	<!-- tag::document-response-rejected[] -->
-	<!--
-	<cac:DocumentResponse>
-		<cac:Response>
-			<cbc:ResponseCode>RE</cbc:ResponseCode>
-			<cbc:Description>Manifest rejected: consignee party could not be identified</cbc:Description>
-		</cac:Response>
-		<cac:DocumentReference>
-			<cbc:ID>MAN-2026-000451</cbc:ID>
-			<cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
-			<cbc:DocumentType>Manifest</cbc:DocumentType>
-		</cac:DocumentReference>
-	</cac:DocumentResponse>
-	-->
-	<!-- end::document-response-rejected[] -->
 </ApplicationResponse>

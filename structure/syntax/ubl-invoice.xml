@@ -17,6 +17,7 @@
          <Reference type="BUSINESS_TERM">BT-24</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R004</Reference>
          <Reference type="RULE">BR-01</Reference>
+         <Reference type="RULE">PEPPOL-EN16931-R273</Reference>
          <Value type="DEFAULT">urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</Value>
       </Element>
       <Element>
@@ -27,6 +28,7 @@
          <Reference type="BUSINESS_TERM">BT-23</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R001</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R007</Reference>
+         <Reference type="RULE">PEPPOL-EN16931-R276</Reference>
          <Value type="DEFAULT">urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</Value>
       </Element>
       <Element>
@@ -67,6 +69,7 @@
          <Reference type="RULE">BR-CL-01</Reference>
          <Reference type="RULE">PEPPOL-EN16931-P0100</Reference>
          <Reference type="RULE">DE-R-017</Reference>
+         <Reference type="RULE">PEPPOL-EN16931-R275</Reference>
          <Reference type="CODE_LIST">UNCL1001-inv</Reference>
          <Value type="EXAMPLE">380</Value>
       </Element>
@@ -97,6 +100,7 @@
          <Reference type="BUSINESS_TERM">BT-5</Reference>
          <Reference type="RULE">BR-05</Reference>
          <Reference type="RULE">BR-CL-04</Reference>
+         <Reference type="RULE">PEPPOL-EN16931-R274</Reference>
          <Reference type="CODE_LIST">ISO4217</Reference>
          <Value type="EXAMPLE">SEK</Value>
       </Element>
@@ -204,6 +208,7 @@
             <Term>cac:InvoiceDocumentReference</Term>
             <Name>INVOICE DOCUMENT REFERENCE</Name>
             <Description/>
+            <Reference type="RULE">PEPPOL-EN16931-R235</Reference>
             <Element>
                <Term>cbc:ID</Term>
                <Name>Preceding Invoice number</Name>
@@ -356,6 +361,7 @@
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-124</Reference>
                   <Reference type="RULE">DE-R-T02</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R230</Reference>
                   <Value type="EXAMPLE">http://www.example.com/index.html</Value>
                </Element>
             </Element>
@@ -383,6 +389,8 @@
             <Term>cac:Party</Term>
             <Name>PARTY</Name>
             <Description/>
+            <Reference type="RULE">PEPPOL-EN16931-R151</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R220</Reference>
             <Element>
                <Term>cbc:EndpointID</Term>
                <Name>Seller electronic address</Name>
@@ -409,7 +417,11 @@
                <Reference type="RULE">PEPPOL-COMMON-R056-1</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R056-2</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R058</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R059</Reference>
                <Reference type="RULE">PEPPOL-EN16931-CL008</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R160</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R229</Reference>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Seller electronic address identification scheme identifier</Name>
@@ -448,6 +460,8 @@
                   <Reference type="RULE">PEPPOL-COMMON-R056-1</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R056-2</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R058</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R059</Reference>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Seller or bank assigned creditor identifier identification scheme identifier</Name>
@@ -480,6 +494,8 @@
                <Description>A group of business terms providing information about the address of the Seller. Sufficient components of the address are to be filled to comply with legal requirements.</Description>
                <Reference type="BUSINESS_TERM">BG-5</Reference>
                <Reference type="RULE">BR-08</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R156</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R225</Reference>
                <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
                   <Name>Seller address line 1</Name>
@@ -535,6 +551,8 @@
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-162</Reference>
+                     <Reference type="RULE">PEPPOL-EN16931-R157</Reference>
+                     <Reference type="RULE">PEPPOL-EN16931-R226</Reference>
                      <Value type="EXAMPLE">Byggnad 3</Value>
                   </Element>
                </Element>
@@ -542,6 +560,8 @@
                   <Term>cac:Country</Term>
                   <Name>COUNTRY</Name>
                   <Description/>
+                  <Reference type="RULE">PEPPOL-EN16931-R158</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R227</Reference>
                   <Element>
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Seller country code</Name>
@@ -550,6 +570,8 @@
                      <Reference type="BUSINESS_TERM">BT-40</Reference>
                      <Reference type="RULE">BR-09</Reference>
                      <Reference type="RULE">BR-CL-14</Reference>
+                     <Reference type="RULE">PEPPOL-EN16931-R159</Reference>
+                     <Reference type="RULE">PEPPOL-EN16931-R228</Reference>
                      <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">SE</Value>
                   </Element>
@@ -611,6 +633,10 @@
                   <Reference type="RULE">PEPPOL-COMMON-R056-1</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R056-2</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R058</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R059</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R155</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R224</Reference>
                   <Value type="EXAMPLE">SE556104353901</Value>
                </Element>
                <Element>
@@ -620,6 +646,8 @@
                   <Element>
                      <Term>cbc:ID</Term>
                      <Description>Mandatory element. For Seller VAT identifier (BT-31), use value “VAT”, for the seller tax registration identifier (BT-32), use != "VAT"</Description>
+                     <Reference type="RULE">PEPPOL-EN16931-R154</Reference>
+                     <Reference type="RULE">PEPPOL-EN16931-R223</Reference>
                      <Value type="EXAMPLE">VAT</Value>
                   </Element>
                </Element>
@@ -628,6 +656,8 @@
                <Term>cac:PartyLegalEntity</Term>
                <Name>PARTY LEGAL ENTITY</Name>
                <Description/>
+               <Reference type="RULE">PEPPOL-EN16931-R152</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R221</Reference>
                <Element>
                   <Term>cbc:RegistrationName</Term>
                   <Name>Seller name</Name>
@@ -635,6 +665,8 @@
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-27</Reference>
                   <Reference type="RULE">BR-06</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R153</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R222</Reference>
                   <Value type="EXAMPLE">CRAMO AB</Value>
                </Element>
                <Element cardinality="0..1">
@@ -708,10 +740,14 @@
          <Name>BUYER</Name>
          <Description>A group of business terms providing information about the Buyer.</Description>
          <Reference type="BUSINESS_TERM">BG-7</Reference>
+         <Reference type="RULE">PEPPOL-EN16931-R140</Reference>
+         <Reference type="RULE">PEPPOL-EN16931-R209</Reference>
          <Element>
             <Term>cac:Party</Term>
             <Name>PARTY</Name>
             <Description/>
+            <Reference type="RULE">PEPPOL-EN16931-R141</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R210</Reference>
             <Element>
                <Term>cbc:EndpointID</Term>
                <Name>Buyer electronic address</Name>
@@ -738,7 +774,11 @@
                <Reference type="RULE">PEPPOL-COMMON-R056-1</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R056-2</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R058</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R059</Reference>
                <Reference type="RULE">PEPPOL-EN16931-CL008</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R150</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R219</Reference>
                <Attribute>
                   <Term>schemeID</Term>
                   <Name>Buyer electronic address identification scheme identifier</Name>
@@ -775,6 +815,8 @@
                   <Reference type="RULE">PEPPOL-COMMON-R056-1</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R056-2</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R058</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R059</Reference>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Buyer identifier identification scheme identifier</Name>
@@ -806,6 +848,8 @@
                <Description>A group of business terms providing information about the postal address for the Buyer. Sufficient components of the address are to be filled to comply with legal requirements.</Description>
                <Reference type="BUSINESS_TERM">BG-8</Reference>
                <Reference type="RULE">BR-10</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R146</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R215</Reference>
                <Element cardinality="0..1">
                   <Term>cbc:StreetName</Term>
                   <Name>Buyer address line 1</Name>
@@ -858,6 +902,8 @@
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-163</Reference>
+                     <Reference type="RULE">PEPPOL-EN16931-R147</Reference>
+                     <Reference type="RULE">PEPPOL-EN16931-R216</Reference>
                      <Value type="EXAMPLE">Main building</Value>
                   </Element>
                </Element>
@@ -865,6 +911,8 @@
                   <Term>cac:Country</Term>
                   <Name>COUNTRY</Name>
                   <Description/>
+                  <Reference type="RULE">PEPPOL-EN16931-R148</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R217</Reference>
                   <Element>
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Buyer country code</Name>
@@ -873,6 +921,8 @@
                      <Reference type="BUSINESS_TERM">BT-55</Reference>
                      <Reference type="RULE">BR-11</Reference>
                      <Reference type="RULE">BR-CL-14</Reference>
+                     <Reference type="RULE">PEPPOL-EN16931-R149</Reference>
+                     <Reference type="RULE">PEPPOL-EN16931-R218</Reference>
                      <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">SE</Value>
                   </Element>
@@ -915,6 +965,10 @@
                   <Reference type="RULE">PEPPOL-COMMON-R056-1</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R056-2</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R058</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R059</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R145</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R214</Reference>
                   <Value type="EXAMPLE">SE556060883701</Value>
                </Element>
                <Element>
@@ -925,6 +979,8 @@
                      <Term>cbc:ID</Term>
                      <Description>Mandatory element. Use “VAT”</Description>
                      <DataType>Identifier</DataType>
+                     <Reference type="RULE">PEPPOL-EN16931-R144</Reference>
+                     <Reference type="RULE">PEPPOL-EN16931-R213</Reference>
                      <Value type="DEFAULT">VAT</Value>
                   </Element>
                </Element>
@@ -933,6 +989,8 @@
                <Term>cac:PartyLegalEntity</Term>
                <Name>PARTY LEGAL ENTITY</Name>
                <Description/>
+               <Reference type="RULE">PEPPOL-EN16931-R142</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R211</Reference>
                <Element>
                   <Term>cbc:RegistrationName</Term>
                   <Name>Buyer name</Name>
@@ -940,6 +998,8 @@
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-44</Reference>
                   <Reference type="RULE">BR-07</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R143</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R212</Reference>
                   <Value type="EXAMPLE">JM ENTREPRENAD FÖRSÄKRING</Value>
                </Element>
                <Element cardinality="0..1">
@@ -1027,6 +1087,8 @@
             <Term>cac:PartyName</Term>
             <Name>PARTY NAME</Name>
             <Description/>
+            <Reference type="RULE">PEPPOL-EN16931-R188</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R256</Reference>
             <Element>
                <Term>cbc:Name</Term>
                <Name>Payee name</Name>
@@ -1048,6 +1110,8 @@
                <DataType>Identifier</DataType>
                <Reference type="BUSINESS_TERM">BT-61</Reference>
                <Reference type="RULE">BR-CL-11</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R187</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R255</Reference>
                <Attribute usage="Optional">
                   <Term>schemeID</Term>
                   <Name>Payee legal registration identifier identification scheme identifier</Name>
@@ -1069,6 +1133,8 @@
             <Term>cac:PartyName</Term>
             <Name>PARTY NAME</Name>
             <Description/>
+            <Reference type="RULE">PEPPOL-EN16931-R193</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R261</Reference>
             <Element>
                <Term>cbc:Name</Term>
                <Name>Seller tax representative name</Name>
@@ -1085,6 +1151,8 @@
             <Description>A group of business terms providing information about the postal address for the tax representative party. Sufficient components of the address are to be filled to comply with legal requirements.</Description>
             <Reference type="BUSINESS_TERM">BG-12</Reference>
             <Reference type="RULE">BR-19</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R197</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R265</Reference>
             <Element cardinality="0..1">
                <Term>cbc:StreetName</Term>
                <Name>Tax representative address line 1</Name>
@@ -1137,6 +1205,8 @@
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-164</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R198</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R266</Reference>
                   <Value type="EXAMPLE">vån 5</Value>
                </Element>
             </Element>
@@ -1144,6 +1214,8 @@
                <Term>cac:Country</Term>
                <Name>COUNTRY</Name>
                <Description/>
+               <Reference type="RULE">PEPPOL-EN16931-R199</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R267</Reference>
                <Element>
                   <Term>cbc:IdentificationCode</Term>
                   <Name>Tax representative country code</Name>
@@ -1152,6 +1224,8 @@
                   <Reference type="BUSINESS_TERM">BT-69</Reference>
                   <Reference type="RULE">BR-20</Reference>
                   <Reference type="RULE">BR-CL-14</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R200</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R268</Reference>
                   <Reference type="CODE_LIST">ISO3166</Reference>
                   <Value type="EXAMPLE">SE</Value>
                </Element>
@@ -1161,6 +1235,8 @@
             <Term>cac:PartyTaxScheme</Term>
             <Name>PARTY VAT IDENTIFIER</Name>
             <Description/>
+            <Reference type="RULE">PEPPOL-EN16931-R194</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R262</Reference>
             <Element>
                <Term>cbc:CompanyID</Term>
                <Name>Seller tax representative VAT identifier</Name>
@@ -1190,6 +1266,9 @@
                <Reference type="RULE">BR-O-02</Reference>
                <Reference type="RULE">BR-O-03</Reference>
                <Reference type="RULE">BR-O-04</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R058</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R196</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R264</Reference>
                <Value type="EXAMPLE">SE556104353901</Value>
             </Element>
             <Element>
@@ -1199,6 +1278,8 @@
                <Element>
                   <Term>cbc:ID</Term>
                   <Description>Mandatory element. Use “VAT”</Description>
+                  <Reference type="RULE">PEPPOL-EN16931-R195</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R263</Reference>
                   <Value type="DEFAULT">VAT</Value>
                </Element>
             </Element>
@@ -1294,6 +1375,8 @@
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-165</Reference>
+                     <Reference type="RULE">PEPPOL-EN16931-R180</Reference>
+                     <Reference type="RULE">PEPPOL-EN16931-R236</Reference>
                      <Value type="EXAMPLE">Lundbyleden#Område C2</Value>
                   </Element>
                </Element>
@@ -1301,6 +1384,8 @@
                   <Term>cac:Country</Term>
                   <Name>COUNTRY</Name>
                   <Description/>
+                  <Reference type="RULE">PEPPOL-EN16931-R181</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R237</Reference>
                   <Element>
                      <Term>cbc:IdentificationCode</Term>
                      <Name>Deliver to country code</Name>
@@ -1310,6 +1395,8 @@
                      <Reference type="RULE">BR-57</Reference>
                      <Reference type="RULE">BR-CL-14</Reference>
                      <Reference type="RULE">BR-IC-12</Reference>
+                     <Reference type="RULE">PEPPOL-EN16931-R182</Reference>
+                     <Reference type="RULE">PEPPOL-EN16931-R238</Reference>
                      <Reference type="CODE_LIST">ISO3166</Reference>
                      <Value type="EXAMPLE">SE</Value>
                   </Element>
@@ -1324,6 +1411,8 @@
                <Term>cac:PartyName</Term>
                <Name>PARTY NAME</Name>
                <Description/>
+               <Reference type="RULE">PEPPOL-EN16931-R183</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R239</Reference>
                <Element>
                   <Term>cbc:Name</Term>
                   <Name>Deliver to party name</Name>
@@ -1414,6 +1503,8 @@
                <Reference type="BUSINESS_TERM">BT-84</Reference>
                <Reference type="RULE">BR-50</Reference>
                <Reference type="RULE">BR-61</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R190</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R258</Reference>
                <Value type="EXAMPLE">SE1750000000055651055010</Value>
             </Element>
             <Element cardinality="0..1">
@@ -1434,6 +1525,8 @@
                   <Description>An identifier for the payment service provider where a payment account is located. Such as a BIC or a national clearing code where required. No identification scheme Identifier to be used.</Description>
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-86</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R189</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R257</Reference>
                   <Value type="EXAMPLE">ESSESESS</Value>
                </Element>
             </Element>
@@ -1467,6 +1560,8 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-91</Reference>
                   <Reference type="RULE">DE-R-031</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R191</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R259</Reference>
                   <Value type="EXAMPLE">123123123123</Value>
                </Element>
             </Element>
@@ -1483,6 +1578,7 @@
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-20</Reference>
             <Reference type="RULE">DE-R-018</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R260</Reference>
             <Value type="EXAMPLE">30 dagar efter mottagen faktura</Value>
          </Element>
       </Element>
@@ -1590,6 +1686,8 @@
             <Term>cac:TaxCategory</Term>
             <Name>TAX CATEGORY</Name>
             <Description/>
+            <Reference type="RULE">PEPPOL-EN16931-R162</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R231</Reference>
             <Element>
                <Term>cbc:ID</Term>
                <Name>Document level allowance or charge VAT category code</Name>
@@ -1602,6 +1700,8 @@
                <Reference type="RULE">BR-O-14</Reference>
                <Reference type="RULE">BR-CL-17</Reference>
                <Reference type="RULE">DE-R-016</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R165</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R234</Reference>
                <Reference type="CODE_LIST">UNCL5305</Reference>
                <Value type="EXAMPLE">E</Value>
             </Element>
@@ -1632,9 +1732,13 @@
                <Term>cac:TaxScheme</Term>
                <Name>TAX SCHEME</Name>
                <Description/>
+               <Reference type="RULE">PEPPOL-EN16931-R163</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R232</Reference>
                <Element>
                   <Term>cbc:ID</Term>
                   <Description>Mandatory element. Use “VAT”</Description>
+                  <Reference type="RULE">PEPPOL-EN16931-R164</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R233</Reference>
                   <Value type="DEFAULT">VAT</Value>
                </Element>
             </Element>
@@ -1692,6 +1796,8 @@
                <Reference type="RULE">BR-DEC-19</Reference>
                <Reference type="RULE">UBL-DT-01</Reference>
                <Reference type="RULE">BR-CL-03</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R204</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R272</Reference>
                <Attribute>
                   <Term>currencyID</Term>
                   <Description>Mandatory attribute. Use BT-5</Description>
@@ -1748,6 +1854,8 @@
                   <Reference type="RULE">BR-G-01</Reference>
                   <Reference type="RULE">BR-O-10</Reference>
                   <Reference type="RULE">BR-CL-17</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R203</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R271</Reference>
                   <Reference type="CODE_LIST">UNCL5305</Reference>
                   <Value type="EXAMPLE">E</Value>
                </Element>
@@ -1806,9 +1914,13 @@
                   <Term>cac:TaxScheme</Term>
                   <Name>TAX SCHEME</Name>
                   <Description/>
+                  <Reference type="RULE">PEPPOL-EN16931-R201</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R269</Reference>
                   <Element>
                      <Term>cbc:ID</Term>
                      <Description>Mandatory element. Use “VAT”</Description>
+                     <Reference type="RULE">PEPPOL-EN16931-R202</Reference>
+                     <Reference type="RULE">PEPPOL-EN16931-R270</Reference>
                      <Value type="DEFAULT">VAT</Value>
                   </Element>
                </Element>
@@ -1831,6 +1943,8 @@
             <Reference type="RULE">BR-DEC-09</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R184</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R252</Reference>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
@@ -1852,6 +1966,8 @@
             <Reference type="RULE">BR-DEC-12</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R185</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R253</Reference>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
@@ -1873,6 +1989,8 @@
             <Reference type="RULE">BR-DEC-14</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R186</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R254</Reference>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
@@ -2015,6 +2133,7 @@
             <Reference type="BUSINESS_TERM">BT-129</Reference>
             <Reference type="RULE">BR-22</Reference>
             <Reference type="RULE">BR-CL-23</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R250</Reference>
             <Attribute>
                <Term>unitCode</Term>
                <Name>Invoiced quantity unit of measure</Name>
@@ -2038,6 +2157,7 @@
             <Reference type="RULE">BR-DEC-23</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R251</Reference>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
@@ -2129,6 +2249,7 @@
                <Description>Code "130" MUST be used to indicate an invoice object reference. Not used for other additional documents</Description>
                <DataType>Code</DataType>
                <Reference type="BUSINESS_TERM">BT-128</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R240</Reference>
                <Value type="DEFAULT">130</Value>
             </Element>
          </Element>
@@ -2236,6 +2357,7 @@
             <Name>ITEM INFORMATION</Name>
             <Description>A group of business terms providing information about the goods and services invoiced.</Description>
             <Reference type="BUSINESS_TERM">BG-31</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R168</Reference>
             <Element cardinality="0..1">
                <Term>cbc:Description</Term>
                <Name>Item description</Name>
@@ -2251,6 +2373,8 @@
                <DataType>Text</DataType>
                <Reference type="BUSINESS_TERM">BT-153</Reference>
                <Reference type="RULE">BR-25</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R176</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R248</Reference>
                <Value type="EXAMPLE">Ventilationsslang diameter 82mm</Value>
             </Element>
             <Element cardinality="0..1">
@@ -2312,6 +2436,8 @@
                   <DataType>Code</DataType>
                   <Reference type="BUSINESS_TERM">BT-159</Reference>
                   <Reference type="RULE">BR-CL-15</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R175</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R247</Reference>
                   <Reference type="CODE_LIST">ISO3166</Reference>
                   <Value type="EXAMPLE">CN</Value>
                </Element>
@@ -2328,6 +2454,8 @@
                   <DataType>Identifier</DataType>
                   <Reference type="BUSINESS_TERM">BT-158</Reference>
                   <Reference type="RULE">BR-65</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R174</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R246</Reference>
                   <Attribute>
                      <Term>listID</Term>
                      <Name>Item classification identifier identification scheme identifier</Name>
@@ -2352,6 +2480,8 @@
                <Name>LINE VAT INFORMATION</Name>
                <Description>A group of business terms providing information about the VAT applicable for the goods and services invoiced on the Invoice line.</Description>
                <Reference type="BUSINESS_TERM">BG-30</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R170</Reference>
+               <Reference type="RULE">PEPPOL-EN16931-R242</Reference>
                <Element>
                   <Term>cbc:ID</Term>
                   <Name>Invoiced item VAT category code</Name>
@@ -2361,6 +2491,8 @@
                   <Reference type="RULE">BR-CO-04</Reference>
                   <Reference type="RULE">BR-O-12</Reference>
                   <Reference type="RULE">BR-CL-18</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R173</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R245</Reference>
                   <Reference type="CODE_LIST">UNCL5305</Reference>
                   <Value type="EXAMPLE">E</Value>
                </Element>
@@ -2384,9 +2516,13 @@
                   <Term>cac:TaxScheme</Term>
                   <Name>TAX SCHEME</Name>
                   <Description/>
+                  <Reference type="RULE">PEPPOL-EN16931-R171</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R243</Reference>
                   <Element>
                      <Term>cbc:ID</Term>
                      <Description>Mandatory element. Use “VAT”</Description>
+                     <Reference type="RULE">PEPPOL-EN16931-R172</Reference>
+                     <Reference type="RULE">PEPPOL-EN16931-R244</Reference>
                      <Value type="DEFAULT">VAT</Value>
                   </Element>
                </Element>
@@ -2413,6 +2549,8 @@
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-161</Reference>
                   <Reference type="RULE">BR-54</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R169</Reference>
+                  <Reference type="RULE">PEPPOL-EN16931-R241</Reference>
                   <Value type="EXAMPLE">100</Value>
                </Element>
             </Element>
@@ -2422,6 +2560,8 @@
             <Name>PRICE DETAILS</Name>
             <Description>A group of business terms providing information about the price applied for the goods and services invoiced on the Invoice line.</Description>
             <Reference type="BUSINESS_TERM">BG-29</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R177</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R249</Reference>
             <Element>
                <Term>cbc:PriceAmount</Term>
                <Name>Item net price</Name>
