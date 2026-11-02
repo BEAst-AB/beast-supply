@@ -2,7 +2,7 @@
 [horizontal]
 This release is based on:
 
-* Peppol Post Award Community version 3.0.22 released Nov 2026.
+* Peppol Post Award Community version 3.0.18 released Nov 2026.
 * Peppol Logistics Community version 1.4 released in Nov 2026.
 
 == Migration plan
@@ -11,7 +11,7 @@ The date is set to 2026-11-18. As of this date the release content is published.
 Stakeholders can start implementing the changes.
 
 *Mandatory use*
-The date for the release content to become mandatory is set to 2026-11-24
+The date for the release content to become mandatory is set to 2026-11-24. 
 As of this date the old version, May release 2026, is not allowed to be used anymore. 
 
 The release notes for the next planned release can be found at https://bis.beast.se/upcoming/release-notes/[Release notes for upcoming BEAst Supply 4 Release]
@@ -21,17 +21,25 @@ Changes to Peppol documentation below
 
 To access the release notes for the Logistics and Post Award Community, please follow the links below:
 
-* https://docs.peppol.eu/poacc/upgrade-3/release-notes/[Peppol Post Award Community Release Notes,window=_blank]
-* https://docs.peppol.eu/logistics/2026-Q2/release-notes/[Peppol Logistics Community Release Notes,window=_blank]
+* https://test-docs.peppol.eu/poacc/upgrade-3/2026-Q4-QA2/release-notes/[Peppol Post Award Community Release Notes,window=_blank]
+* https://test-docs.peppol.eu/logistics/2026-Q4-QA2/release-notes/[Peppol Logistics Community Release Notes,window=_blank]
 
 == Changes to syntax
 For changes in PoAC and LoC releases, please check release-notes for them.
 Please check the change of engine type codes since this is not compatible with earlier versions.
 
+* Added the syntax for Peppol Manifest 1.0 (T131) and Peppol Logistics Application Response 1.0 (T129), used in the new profile Manifest with Application Response.
+
 
 == Changes to code lists and validation artefacts
 For changes in PoAC and LoC releases, please check release-notes for them.
 
+* Added validation of Manifest (T131) and Application Response (T129).
+* Added code list UNCL1001_T131 (document type codes for Manifest).
+
 == Changes to documentation
 For changes in PoAC and LoC releases, please check release-notes for them.
+
+* Added Peppol BIS Manifest with Application Response 0.1 (DRAFT) from the Peppol Logistics Community, including example files and mapping documents for Manifest and Application Response.
+* Corrected the GLN identifiers in the order use case example UC5_Order (DeliveryLocation and DeliveryParty), which had 14 digits instead of 13 and an invalid check digit.
 
