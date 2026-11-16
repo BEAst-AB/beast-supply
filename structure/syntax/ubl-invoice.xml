@@ -69,6 +69,8 @@
          <Reference type="RULE">BR-CL-01</Reference>
          <Reference type="RULE">PEPPOL-EN16931-P0100</Reference>
          <Reference type="RULE">DE-R-017</Reference>
+         <Reference type="RULE">SK-R-001</Reference>
+         <Reference type="RULE">PEPPOL-EN16931-P0112</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R275</Reference>
          <Reference type="CODE_LIST">UNCL1001-inv</Reference>
          <Value type="EXAMPLE">380</Value>
@@ -204,6 +206,7 @@
          <Description>A group of business terms providing information on one or more preceding Invoices.</Description>
          <Reference type="BUSINESS_TERM">BG-3</Reference>
          <Reference type="RULE">DE-R-026</Reference>
+         <Reference type="RULE">SK-R-001</Reference>
          <Element>
             <Term>cac:InvoiceDocumentReference</Term>
             <Name>INVOICE DOCUMENT REFERENCE</Name>
@@ -417,7 +420,6 @@
                <Reference type="RULE">PEPPOL-COMMON-R056-1</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R056-2</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
-               <Reference type="RULE">PEPPOL-COMMON-R058</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R059</Reference>
                <Reference type="RULE">PEPPOL-EN16931-CL008</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R160</Reference>
@@ -460,7 +462,6 @@
                   <Reference type="RULE">PEPPOL-COMMON-R056-1</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R056-2</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
-                  <Reference type="RULE">PEPPOL-COMMON-R058</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R059</Reference>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
@@ -503,6 +504,7 @@
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-35</Reference>
                   <Reference type="RULE">IT-R-002</Reference>
+                  <Reference type="RULE">SK-R-002</Reference>
                   <Value type="EXAMPLE">Rosenborgsgatan 12</Value>
                </Element>
                <Element cardinality="0..1">
@@ -521,6 +523,7 @@
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-37</Reference>
                   <Reference type="RULE">IT-R-003</Reference>
+                  <Reference type="RULE">SK-R-003</Reference>
                   <Value type="EXAMPLE">Solna</Value>
                </Element>
                <Element cardinality="0..1">
@@ -530,6 +533,7 @@
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-38</Reference>
                   <Reference type="RULE">IT-R-004</Reference>
+                  <Reference type="RULE">SK-R-004</Reference>
                   <Value type="EXAMPLE">16904</Value>
                </Element>
                <Element cardinality="0..1">
@@ -551,8 +555,6 @@
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-162</Reference>
-                     <Reference type="RULE">PEPPOL-EN16931-R157</Reference>
-                     <Reference type="RULE">PEPPOL-EN16931-R226</Reference>
                      <Value type="EXAMPLE">Byggnad 3</Value>
                   </Element>
                </Element>
@@ -635,6 +637,7 @@
                   <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R058</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R059</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R062</Reference>
                   <Reference type="RULE">PEPPOL-EN16931-R155</Reference>
                   <Reference type="RULE">PEPPOL-EN16931-R224</Reference>
                   <Value type="EXAMPLE">SE556104353901</Value>
@@ -682,6 +685,9 @@
                   <Reference type="RULE">SE-R-003</Reference>
                   <Reference type="RULE">SE-R-004</Reference>
                   <Reference type="RULE">SE-R-013</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R043</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R059</Reference>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Seller legal registration identifier identification scheme identifier</Name>
@@ -740,8 +746,6 @@
          <Name>BUYER</Name>
          <Description>A group of business terms providing information about the Buyer.</Description>
          <Reference type="BUSINESS_TERM">BG-7</Reference>
-         <Reference type="RULE">PEPPOL-EN16931-R140</Reference>
-         <Reference type="RULE">PEPPOL-EN16931-R209</Reference>
          <Element>
             <Term>cac:Party</Term>
             <Name>PARTY</Name>
@@ -774,7 +778,6 @@
                <Reference type="RULE">PEPPOL-COMMON-R056-1</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R056-2</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
-               <Reference type="RULE">PEPPOL-COMMON-R058</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R059</Reference>
                <Reference type="RULE">PEPPOL-EN16931-CL008</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R150</Reference>
@@ -815,7 +818,6 @@
                   <Reference type="RULE">PEPPOL-COMMON-R056-1</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R056-2</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
-                  <Reference type="RULE">PEPPOL-COMMON-R058</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R059</Reference>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
@@ -856,6 +858,7 @@
                   <Description>The main address line in an address.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-50</Reference>
+                  <Reference type="RULE">SK-R-005</Reference>
                   <Value type="EXAMPLE">Gatuadress nummer</Value>
                </Element>
                <Element cardinality="0..1">
@@ -873,6 +876,7 @@
                   <Description>The common name of the city, town or village, where the Buyer's address is located.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-52</Reference>
+                  <Reference type="RULE">SK-R-006</Reference>
                   <Value type="EXAMPLE">STOCKHOLM</Value>
                </Element>
                <Element cardinality="0..1">
@@ -881,6 +885,7 @@
                   <Description>The identifier for an addressable group of properties according to the relevant postal service.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-53</Reference>
+                  <Reference type="RULE">SK-R-007</Reference>
                   <Value type="EXAMPLE">16982</Value>
                </Element>
                <Element cardinality="0..1">
@@ -902,8 +907,6 @@
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-163</Reference>
-                     <Reference type="RULE">PEPPOL-EN16931-R147</Reference>
-                     <Reference type="RULE">PEPPOL-EN16931-R216</Reference>
                      <Value type="EXAMPLE">Main building</Value>
                   </Element>
                </Element>
@@ -967,6 +970,7 @@
                   <Reference type="RULE">PEPPOL-COMMON-R057</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R058</Reference>
                   <Reference type="RULE">PEPPOL-COMMON-R059</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R062</Reference>
                   <Reference type="RULE">PEPPOL-EN16931-R145</Reference>
                   <Reference type="RULE">PEPPOL-EN16931-R214</Reference>
                   <Value type="EXAMPLE">SE556060883701</Value>
@@ -1013,6 +1017,9 @@
                   <Reference type="RULE">BR-AE-04</Reference>
                   <Reference type="RULE">BR-CL-11</Reference>
                   <Reference type="RULE">DK-R-014</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R043</Reference>
+                  <Reference type="RULE">PEPPOL-COMMON-R059</Reference>
                   <Attribute usage="Optional">
                      <Term>schemeID</Term>
                      <Name>Buyer legal registration identifier identification scheme identifier</Name>
@@ -1205,8 +1212,6 @@
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                   <DataType>Text</DataType>
                   <Reference type="BUSINESS_TERM">BT-164</Reference>
-                  <Reference type="RULE">PEPPOL-EN16931-R198</Reference>
-                  <Reference type="RULE">PEPPOL-EN16931-R266</Reference>
                   <Value type="EXAMPLE">vån 5</Value>
                </Element>
             </Element>
@@ -1267,6 +1272,7 @@
                <Reference type="RULE">BR-O-03</Reference>
                <Reference type="RULE">BR-O-04</Reference>
                <Reference type="RULE">PEPPOL-COMMON-R058</Reference>
+               <Reference type="RULE">PEPPOL-COMMON-R062</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R196</Reference>
                <Reference type="RULE">PEPPOL-EN16931-R264</Reference>
                <Value type="EXAMPLE">SE556104353901</Value>
@@ -1375,8 +1381,6 @@
  Peppol: An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                      <DataType>Text</DataType>
                      <Reference type="BUSINESS_TERM">BT-165</Reference>
-                     <Reference type="RULE">PEPPOL-EN16931-R180</Reference>
-                     <Reference type="RULE">PEPPOL-EN16931-R236</Reference>
                      <Value type="EXAMPLE">Lundbyleden#Område C2</Value>
                   </Element>
                </Element>
@@ -1732,8 +1736,6 @@
                <Term>cac:TaxScheme</Term>
                <Name>TAX SCHEME</Name>
                <Description/>
-               <Reference type="RULE">PEPPOL-EN16931-R163</Reference>
-               <Reference type="RULE">PEPPOL-EN16931-R232</Reference>
                <Element>
                   <Term>cbc:ID</Term>
                   <Description>Mandatory element. Use “VAT”</Description>
@@ -1914,8 +1916,6 @@
                   <Term>cac:TaxScheme</Term>
                   <Name>TAX SCHEME</Name>
                   <Description/>
-                  <Reference type="RULE">PEPPOL-EN16931-R201</Reference>
-                  <Reference type="RULE">PEPPOL-EN16931-R269</Reference>
                   <Element>
                      <Term>cbc:ID</Term>
                      <Description>Mandatory element. Use “VAT”</Description>
@@ -2157,7 +2157,6 @@
             <Reference type="RULE">BR-DEC-23</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             <Reference type="RULE">BR-CL-03</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R251</Reference>
             <Attribute>
                <Term>currencyID</Term>
                <Description>Mandatory attribute. Use BT-5</Description>
@@ -2516,8 +2515,6 @@
                   <Term>cac:TaxScheme</Term>
                   <Name>TAX SCHEME</Name>
                   <Description/>
-                  <Reference type="RULE">PEPPOL-EN16931-R171</Reference>
-                  <Reference type="RULE">PEPPOL-EN16931-R243</Reference>
                   <Element>
                      <Term>cbc:ID</Term>
                      <Description>Mandatory element. Use “VAT”</Description>
